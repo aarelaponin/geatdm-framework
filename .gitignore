@@ -10,3 +10,13 @@ Thumbs.db
 *~
 *.swp
 *.swo
+
+# Archived snapshots — local-only, not tracked in git history
+x_archive/
+
+# Office lock files
+~$*
+~$*.docx
+
+# Claude Code workspace config (user-specific)
+.claude/
