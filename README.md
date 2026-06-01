@@ -25,8 +25,10 @@ GEATDM-Method-Repository/
 │   ├── GEATDM-UsersGuide-v1.0.md          (Practical how-to guide)
 │   └── GEATDM-WP6-T62-MainDocument-v1.0.md (Complete reference)
 │
-├── 01-Toolkit/                             ← All 31 templates
-│   └── GEATDM-WP6-T61-Toolkit-v1.0.md
+├── 01-Toolkit/                             ← All 31 templates + v1.1 supplements
+│   ├── GEATDM-WP6-T61-Toolkit-v1.0.md
+│   ├── GEATDM-Toolkit-Supplement-StakeholderEngagement-v1.0.md   (v1.1, TK-33 to TK-36)
+│   └── GEATDM-Toolkit-Supplement-SourcingStrategy-v1.0.md        (v1.1, TK-32, TK-37 to TK-39)
 │
 ├── 02-Reference-Architectures/             ← The 3 RAs
 │   ├── GEATDM-WP2-T25-PDU-RA-Complete-v1.0.md
@@ -34,18 +36,42 @@ GEATDM-Method-Repository/
 │   └── GEATDM-WP4-T47-SDA-RA-Complete-v1.0.md
 │
 ├── 03-Method-Guide/                        ← Detailed method
-│   └── GEATDM-WP5-T58-MethodGuide-Complete-v1.0.md
+│   ├── GEATDM-WP5-T58-MethodGuide-Complete-v1.0.md
+│   ├── GEATDM-WP5-T59-StakeholderEngagement-v1.0.md   (v1.1)
+│   └── GEATDM-WP5-T60-SourcingStrategy-v1.0.md        (v1.1)
 │
 ├── 04-EA-Framework/                        ← EA framework components
 │   ├── GEATDM-WP1-T11-Metamodel-v1.0.md
 │   ├── GEATDM-WP1-T12-EAPrinciples-v1.0.md
 │   ├── GEATDM-WP1-T13-Governance-v1.0.md
-│   └── GEATDM-WP1-T14-EAServices-v1.0.md
+│   ├── GEATDM-WP1-T14-EAServices-v1.0.md
+│   ├── GEATDM-WP1-T15-PublicSectorReality-v1.0.md     (v1.1)
+│   └── GEATDM-WP1-T16-ArchitecturalTraps-v1.0.md      (v1.1)
 │
 ├── 05-Quick-Reference/                     ← Standalone tools
 │   ├── GEATDM-WP0-T03-Definitions-v1.0.md
 │   ├── GEATDM-WP5-T51-ClassificationGuide-v1.0.md
 │   └── GEATDM-WP5-T52-DPIChecklist-v1.0.md
+│
+├── 06-Sector-Guides/                       ← Sector guides
+│   ├── GEATDM-Sector-Customs-v1.0.md
+│   ├── GEATDM-Sector-Health-v1.0.md       (v1.1)
+│   ├── GEATDM-Sector-Education-v1.0.md    (v1.1)
+│   ├── GEATDM-Sector-Tax-v1.0.md          (v1.1)
+│   └── GEATDM-Sector-Justice-v1.0.md      (v1.1)
+│
+├── 07-AI-Plays/                            ← AI plays catalogue (v1.1)
+│   └── GEATDM-WP7-AI-Plays-Catalogue-v1.0.md
+│
+├── 08-Interoperability/                    ← Interoperability module (v1.2)
+│   ├── GEATDM-Interop-Reference-Model-v1.0.md
+│   ├── GEATDM-Interop-Method-v1.0.md
+│   └── GEATDM-Interop-Toolkit-v1.0.md
+│
+├── 09-DPI/                                 ← Digital Public Infrastructure module (v1.2)
+│   ├── GEATDM-DPI-Reference-Model-v1.0.md
+│   ├── GEATDM-DPI-Method-v1.0.md
+│   └── GEATDM-DPI-Toolkit-v1.0.md
 │
 └── README.md                               ← This file
 ```
@@ -111,6 +137,29 @@ DISCOVER → ASSESS → ADAPT → PLAN → EXECUTE
 | **Definitions** | Key terms and glossary |
 | **Classification Guide** | Detailed org classification |
 | **DPI Checklist** | National DPI assessment |
+
+### Tier 5: Sector Guides
+
+| Document | Sector |
+|----------|--------|
+| **GEATDM-Sector-Customs-v1.0** | Customs (SDA) |
+| **GEATDM-Sector-Health-v1.0** | Health — Ministry of Health (PDU), Medicines Authority (RA), Hospital Network (SDA), Public Health Institute (SDA) |
+| **GEATDM-Sector-Education-v1.0** | Education — Ministry of Education (PDU), Examinations Authority (RA), School Network (SDA), Higher Education (SDA), with worked example for the Progressa demonstration country |
+| **GEATDM-Sector-Tax-v1.0** | Tax Administration (SDA) — five-domain decomposition (Tax Services Platform, Data Platform, Risk Management, Case Management, External Integration), 12-area capability map, OECD Tax Administration 3.0 maturity, Strangler Fig + EU Accession dual-track roadmap |
+| **GEATDM-Sector-Justice-v1.0** | Justice — judiciary as a constitutionally separate branch (parallel to PDU/RA/SDA), Ministry of Justice (PDU), Prosecution / Bar / Notaries / Bailiffs (RAs), Prison / Probation / Legal Aid (SDAs); fragmented semantic stack (NIEM, OASIS LegalXML ECF, Akoma Ntoso, ECLI, ELI, e-CODEX, eIDAS) |
+
+### Tier 6: AI Plays Catalogue (v1.1)
+
+| Document | Purpose |
+|----------|---------|
+| **GEATDM-WP7-AI-Plays-Catalogue-v1.0** | Catalogue of AI plays supporting the GEATDM method — 16 plays to commission (3 cross-cutting on legal / budget / procurement; 5 KP1 GEA; 3 KP2 GIF; 4 KP3 DPI; 1 KP4 BBs) plus 7 existing Joget skills, each with prompt template, sample I/O, and reproduction notes |
+
+### Tier 7: Cross-cutting Domain Modules (v1.2)
+
+| Module | Documents | Purpose |
+|--------|-----------|---------|
+| **08-Interoperability** | Reference Model + Method (8 steps) + Toolkit (14 templates incl. Decree Drafting Kit) | National Government Interoperability Framework — the substrate every sectoral architecture consumes for cross-government data exchange. PAERA §3.4.3 + §3.2 + §5.2 #2/#5/#9 |
+| **09-DPI** | Reference Model (5-pillar) + Method (7 steps) + Toolkit (14 templates incl. 5-pillar questionnaires) | National Digital Public Infrastructure roadmap development — the foundational pillars (Access, Data, Interoperability, Identity, Governance) on which sectoral services are built. PAERA §3.4 + §5.3 + §5.7 |
 
 ---
 
