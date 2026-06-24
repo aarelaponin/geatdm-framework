@@ -34,13 +34,13 @@
 | Interoperability Reference Architecture | `GEATDM-Interop-Reference-Architecture-v1.0.docx` | The full RA — the layered rulebook (legal, organisational, semantic, technical, infrastructure + governance) the requirements are drawn from. |
 | RA-to-RFP plugin (packaged) | `RA-to-RFP-Plugin/interop-ra-to-rfp.plugin` | One-click installable bundle of the 10 skills. |
 | RA-to-RFP plugin (source) | `RA-to-RFP-Plugin/skills/*`, `RA-to-RFP-Plugin/.claude-plugin/plugin.json` | Version-controlled source of every skill. |
-| Existing Module-08 baseline | `GEATDM-Interop-Reference-Model-v1.0.md`, `-Method-v1.0.md`, `-Toolkit-v1.0.md` | The conceptual model, the 8-step method, and the template toolkit this guide builds on. |
+| Existing Module-08 baseline | `GEATDM-Interop-Method-v1.0.md`, `GEATDM-Interop-Toolkit-v1.0.md` | The 8-step method and the template toolkit this guide builds on. The RA below supersedes the earlier conceptual Reference Model (now archived in `x_archive/`). |
 
 ---
 
 ## 1. What this adds to Module 08
 
-Module 08 already provides the **Reference Model** (the concepts), the **Method** (the 8 steps to develop a national interoperability framework), and the **Toolkit** (the templates). This release adds the two pieces that take a country from *framework* to *funded delivery*:
+Module 08 already provides the **Method** (the 8 steps to develop a national interoperability framework) and the **Toolkit** (the templates). This release adds the two pieces that take a country from *framework* to *funded delivery* — and the **RA** below now serves as the module's concrete target design, superseding the earlier conceptual Reference Model (archived in `x_archive/`):
 
 1. **The Interoperability Reference Architecture (RA)** — a complete, layered rulebook for digital-government interoperability: the legal, organisational, semantic, technical and infrastructure layers, with governance and legal cross-cutting; the regulator/operator split; the GovStack Information Mediator building block; the security baseline; cross-functional requirements; the onboarding lifecycle; and an implementation roadmap. It is the *“should”* — the design any national interoperability platform ought to follow.
 
@@ -126,7 +126,7 @@ The first end-to-end application was the **Gambia GIP** under WARDIP: a Supply-a
 
 ## 5. Relationship to the rest of GEATDM
 
-- **Module 08 (this module):** the Reference Model and Method define *what* a national interoperability framework is and *how to develop it*; this RA gives the concrete target design, and the plugin turns it into *procurement*.
+- **Module 08 (this module):** the Method defines *how to develop* a national interoperability framework; this RA gives the concrete target design (superseding the earlier conceptual Reference Model), and the plugin turns it into *procurement*.
 - **Module 09 (DPI):** the platform is a DPI building block (the Information Mediator). The scope-boundary rule — *build the exchange backbone, integrate the other DPI pillars (identity, payments)* — is the operational expression of the DPI “integrate, don't rebuild” principle.
 - **02-Reference-Architectures (PDU/RA/SDA):** sectoral organisations consume the interoperability platform; their cross-government exchange requirements feed the National EA baseline this plugin reads.
 - **01-Toolkit / 03-Method-Guide:** the sourcing-strategy and procurement templates align with the vehicle decision the plugin records.

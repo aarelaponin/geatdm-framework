@@ -64,10 +64,9 @@ GEATDM-Method-Repository/
 │   └── GEATDM-WP7-AI-Plays-Catalogue-v1.0.md
 │
 ├── 08-Interoperability/                    ← Interoperability module (v1.3)
-│   ├── GEATDM-Interop-Reference-Model-v1.0.md
+│   ├── GEATDM-Interop-Reference-Architecture-v1.0.docx   (RA — the layered rulebook; supersedes the earlier Reference Model)
 │   ├── GEATDM-Interop-Method-v1.0.md
 │   ├── GEATDM-Interop-Toolkit-v1.0.md
-│   ├── GEATDM-Interop-Reference-Architecture-v1.0.docx   (RA — the layered rulebook)
 │   ├── GEATDM-Interop-RA-to-RFP-Guide-v1.0.md            (why & how to use the RA + plugin)
 │   └── RA-to-RFP-Plugin/                                 (interop-ra-to-rfp plugin: 10 skills + .plugin)
 │
@@ -161,7 +160,7 @@ DISCOVER → ASSESS → ADAPT → PLAN → EXECUTE
 
 | Module | Documents | Purpose |
 |--------|-----------|---------|
-| **08-Interoperability** | Reference Model + Method (8 steps) + Toolkit (14 templates incl. Decree Drafting Kit) + **Reference Architecture (RA)** + **RA-to-RFP plugin (10 skills)** | National Government Interoperability Framework — the substrate every sectoral architecture consumes for cross-government data exchange. The RA gives the concrete target design and the RA-to-RFP plugin turns it into an issuable, funder-compliant tender (architecture → RFP). See `GEATDM-Interop-RA-to-RFP-Guide-v1.0.md`. PAERA §3.4.3 + §3.2 + §5.2 #2/#5/#9 |
+| **08-Interoperability** | **Reference Architecture (RA)** + Method (8 steps) + Toolkit (14 templates incl. Decree Drafting Kit) + **RA-to-RFP plugin (10 skills)** | National Government Interoperability Framework — the substrate every sectoral architecture consumes for cross-government data exchange. The RA gives the concrete target design (superseding the earlier Reference Model) and the RA-to-RFP plugin turns it into an issuable, funder-compliant tender (architecture → RFP). See `GEATDM-Interop-RA-to-RFP-Guide-v1.0.md`. PAERA §3.4.3 + §3.2 + §5.2 #2/#5/#9 |
 | **09-DPI** | Reference Model (5-pillar) + Method (7 steps) + Toolkit (14 templates incl. 5-pillar questionnaires) | National Digital Public Infrastructure roadmap development — the foundational pillars (Access, Data, Interoperability, Identity, Governance) on which sectoral services are built. PAERA §3.4 + §5.3 + §5.7 |
 
 ---
