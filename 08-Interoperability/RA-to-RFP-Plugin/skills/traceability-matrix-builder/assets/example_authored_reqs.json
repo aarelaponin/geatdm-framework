@@ -1,0 +1,623 @@
+[
+ {
+  "L": "A",
+  "title": "Core principles — reuse-first",
+  "intent": "Public money should buy a capability once and reuse it everywhere. The reuse-first rule prevents the estate fragmenting into duplicate, isolated systems that each re-collect the same data.",
+  "std": "EIF; this RFP",
+  "accept": "Demonstrated in the solution design and applied to every delivered service; IV&V-verified.",
+  "reqs": [
+   "The Supplier shall, before building or procuring any GIP capability, shared component or service, verify against the national service, API and data catalogues and the shared-component catalogue that a suitable capability does not already exist, and shall reuse or adapt it where it does.",
+   "The Supplier shall justify any decision to build new by a documented capability gap, recorded as a procurement/design artefact.",
+   "The Supplier shall design every component it builds for reuse — clear purpose, a documented standard API, version control, security controls and a named owner — and shall publish it to the national catalogue.",
+   "The Supplier shall not deliver any service as an isolated solution; each service shall meet the requirements of this RFP before being admitted to production."
+  ]
+ },
+ {
+  "L": "A",
+  "title": "Core principles — resilience & traceability",
+  "intent": "Interoperable services must stay available and auditable over time. Stable identifiers and preserved audit history are what let data be trusted and traced across institutions and through system change.",
+  "std": "this RFP",
+  "accept": "Demonstrated in the solution design and applied to every delivered service; IV&V-verified.",
+  "reqs": [
+   "The Supplier shall ensure official documents and datasets exposed through the GIP use permanent, human-readable references and unique identifiers that remain stable over time.",
+   "The Supplier shall ensure any change to official content is logged with version history, and that a redirect or reference mapping preserves access where a reference location changes.",
+   "The Supplier shall ensure each consuming service keeps a reference to the authoritative source and does not create unmanaged local copies of authoritative data.",
+   "The Supplier shall ensure identifiers, references and audit history are preserved through system change and data migration."
+  ]
+ },
+ {
+  "L": "A",
+  "title": "Interoperability layers (EIF / TOGAF)",
+  "intent": "Interoperability fails when treated as a purely technical problem; connecting systems achieves nothing if institutions, data meaning, the legal basis or the infrastructure are not aligned. The work is therefore organised on the five EIF layers with governance and legal cross-cutting.",
+  "std": "EIF; TOGAF",
+  "accept": "Demonstrated in the solution design and applied to every delivered service; IV&V-verified.",
+  "reqs": [
+   "The Supplier shall organise its solution and deliverables on the five EIF layers (legal, organisational, semantic, technical, infrastructure), with governance and legal addressed as cross-cutting concerns.",
+   "The Supplier shall use TOGAF (or an equivalent agreed method) to describe the current and target states and to govern the transition, mapping each requirement to exactly one EIF layer."
+  ]
+ },
+ {
+  "L": "A",
+  "title": "National context assessment",
+  "intent": "The architecture must be adapted to The Gambia's actual conditions rather than applied generically. A context assessment determines which components to prioritise and how to adapt them.",
+  "std": "",
+  "accept": "Demonstrated in the solution design and applied to every delivered service; IV&V-verified.",
+  "reqs": [
+   "The Supplier shall, in the inception phase, assess The Gambia's context across the dimensions of digital maturity, organisational complexity, resource availability, political/legal readiness and existing systems, and shall use the assessment to confirm component priorities, the pilot scope and the detailed timeline."
+  ]
+ },
+ {
+  "L": "B",
+  "title": "Legal framework structure",
+  "intent": "A platform moving personal and official data between agencies is lawful only if the enabling legislation exists — data protection, electronic transactions, and the mandate to share data.",
+  "std": "The Gambia data-protection law; GDPR-aligned principles",
+  "accept": "Instrument/agreement drafted by the Supplier and GICTA-approved; in force before pilot go-live.",
+  "reqs": [
+   "The Supplier shall confirm and document the legal instruments that authorise inter-agency data exchange in The Gambia (data protection, electronic transactions/signatures, the data-sharing mandate), and shall ensure all GIP data exchange is designed to comply with the data-protection law and GDPR-aligned principles."
+  ]
+ },
+ {
+  "L": "B",
+  "title": "Data protection & privacy",
+  "intent": "Personal data crossing institutional boundaries must be protected by design, with a lawful basis for every exchange and proportionate controls.",
+  "std": "The Gambia data-protection law; GDPR-aligned principles",
+  "accept": "Instrument/agreement drafted by the Supplier and GICTA-approved; in force before pilot go-live.",
+  "reqs": [
+   "The Supplier shall ensure every GIP data exchange involving personal data has a documented lawful basis, applies purpose limitation and data minimisation, and carries the controls (logging, access control, encryption) required for its data-classification tier.",
+   "The Supplier shall conduct a data-protection impact assessment for each pilot flow that processes personal data and address its findings before go-live."
+  ]
+ },
+ {
+  "L": "B",
+  "title": "Interoperability agreements (two-agreement model)",
+  "intent": "Access is governed by two distinct agreement layers: membership of the platform, and permission to use a specific dataset. This keeps connection separate from data access so that being on the platform never, by itself, grants access to data.",
+  "std": "this RFP (two-agreement model)",
+  "accept": "Instrument/agreement drafted by the Supplier and GICTA-approved; in force before pilot go-live.",
+  "reqs": [
+   "The Supplier shall implement the two-agreement model so that every connecting institution signs a platform membership agreement with the operator before receiving credentials.",
+   "The Supplier shall ensure each data exchange is covered by a per-service data-sharing / service-use agreement with the data owner, and shall deliver the agreement templates.",
+   "The Supplier shall configure the GIP so that platform membership never, by itself, authorises access to any dataset.",
+   "The Supplier shall ensure no production exchange begins until both agreement layers are in force, evidenced for each pilot flow."
+  ]
+ },
+ {
+  "L": "B",
+  "title": "Cross-border legal framework",
+  "intent": "Future ECOWAS/regional exchange needs a legal basis for cross-border data transfers; the platform should not preclude it.",
+  "std": "",
+  "accept": "Instrument/agreement drafted by the Supplier and GICTA-approved; in force before pilot go-live.",
+  "reqs": [
+   "The Supplier shall ensure the GIP design does not preclude future cross-border (e.g. ECOWAS) exchange, and shall document the legal conditions (adequacy, transfer safeguards) that such exchange would require. (target-state)"
+  ]
+ },
+ {
+  "L": "B",
+  "title": "Legal-framework gap assessment & development",
+  "intent": "A platform must not outrun the law. Assessing the existing legal framework against what the GIP needs surfaces the gaps and the instruments required before go-live.",
+  "std": "",
+  "accept": "Instrument/agreement drafted by the Supplier and GICTA-approved; in force before pilot go-live.",
+  "reqs": [
+   "The Supplier shall assess The Gambia's existing legal and regulatory framework against the data-exchange and data-protection requirements of this RFP, identify the gaps, and recommend the specific legal instruments, amendments and Data Sharing Agreements needed for lawful operation — delivered as a Legal Gap Assessment & Instruments Plan in the Foundation phase."
+  ]
+ },
+ {
+  "L": "B",
+  "title": "Strategy - plan - budget linkage",
+  "intent": "A legal mandate that is not named in the multi-year programme, funded in the budget and written into ministry plans never reaches delivery.",
+  "std": "",
+  "accept": "Instrument/agreement drafted by the Supplier and GICTA-approved; in force before pilot go-live.",
+  "reqs": [
+   "The Supplier shall provide the artefacts and recommendations that enable interoperability to be named in the national strategy and the multi-year government programme.",
+   "The Supplier shall specify the funded budget lines required for GIP operation, onboarding and capability (feeding the WARDIP-to-MTEF transition).",
+   "The Supplier shall provide model procurement and planning clauses so that ministry plans and procurement carry the interoperability requirements down to sector delivery."
+  ]
+ },
+ {
+  "L": "C",
+  "title": "Architecture governance & maintenance",
+  "intent": "The standards and this requirements baseline must have a single owner who maintains and versions them, or they drift out of date and lose authority.",
+  "std": "",
+  "accept": "Governance artefact delivered and GICTA-approved before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall establish the arrangements for GICTA, as regulator, to own, maintain and version-control the interoperability standards and this requirements baseline from a single authoritative location.",
+   "The Supplier shall define an annual review cycle and a standing technical working group (with key registry and service institutions) to supply operational updates."
+  ]
+ },
+ {
+  "L": "C",
+  "title": "Governance models & selection",
+  "intent": "Governance must fit The Gambia's institutional reality; the model is selected and adapted, not imposed.",
+  "std": "",
+  "accept": "Governance artefact delivered and GICTA-approved before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall recommend and document the governance model for the GIP, adapted to The Gambia's institutional structure, and obtain GICTA endorsement before build."
+  ]
+ },
+ {
+  "L": "C",
+  "title": "Regulator / operator split",
+  "intent": "If one office writes the standards, runs the platform and judges compliance, an outage, a missed standard and a waiver are all decided by the same people. Separating rule-making from operation keeps compliance judgements independent and accountability legible.",
+  "std": "this RFP",
+  "accept": "Governance artefact delivered and GICTA-approved before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall define the operating model so that the reference architecture, standards, compliance method and sanctions are owned by GICTA as regulator.",
+   "The Supplier shall define the operating model so that platform operation, onboarding, technical validation and operational support are owned by the operator (the Supplier during the operate period, then GICTA).",
+   "The Supplier shall ensure connecting institutions retain ownership of their services and data and remain responsible for their own compliance.",
+   "The Supplier shall ensure no single body both operates the GIP and rules on compliance with it.",
+   "The Supplier shall record the regulator/operator split in the institutions' formal mandates. (target-state)"
+  ]
+ },
+ {
+  "L": "C",
+  "title": "Central platform organization (operator)",
+  "intent": "The platform needs a capable operator organisation behind the technology — operations, onboarding, service development and member support — for the GIP to deliver in practice.",
+  "std": "GovStack Information Mediator Building Block",
+  "accept": "Governance artefact delivered and GICTA-approved before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall design the operator function (the Central Platform Organization) covering platform operations, member onboarding, technical validation, service development and member support, and shall stand it up and operate it during the operate period before transferring it to GICTA."
+  ]
+ },
+ {
+  "L": "C",
+  "title": "Compliance, assurance & enforcement",
+  "intent": "Compliance checked only once, or only after go-live, is theatre. The cheapest moment to enforce is before a contract is signed; the most dangerous gap is a service that changed after approval.",
+  "std": "this RFP",
+  "accept": "Governance artefact delivered and GICTA-approved before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall implement a compliance regime that checks conformity at three checkpoints: before procurement/approval, before go-live, and periodically in operation.",
+   "The Supplier shall ensure each institution is accountable for its own compliance, including that of its contractors and vendors.",
+   "The Supplier shall provide the mechanism by which serious non-compliance can withhold budget or development approval until corrected.",
+   "The Supplier shall implement an exception register in which every exception is written, time-boxed and recorded, with no open-ended exceptions."
+  ]
+ },
+ {
+  "L": "C",
+  "title": "Procurement as an enforcement lever",
+  "intent": "Procurement is the one moment of maximum leverage and minimum sunk cost. If interoperability, reuse and the cross-functional requirements are not in the tender, they will not be in the system.",
+  "std": "this RFP",
+  "accept": "Governance artefact delivered and GICTA-approved before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall provide mandatory interoperability tender clauses for GICTA to embed in every future digital-service procurement.",
+   "The Supplier shall provide the check-before-build method so that existing components are assessed and any new build is justified before a procurement proceeds.",
+   "The Supplier shall ensure the cross-functional requirements and compliance are verifiable before a contract is signed.",
+   "The Supplier shall ensure procurement clauses require custom builds to deliver source code and reuse rights to the State, and proprietary products to provide documented APIs and data export."
+  ]
+ },
+ {
+  "L": "C",
+  "title": "Interoperability community",
+  "intent": "Standards designed only at the centre, without the people who implement them, are routinely impractical; lessons not shared are repeated as mistakes. A standing community builds a real delivery community around the platform.",
+  "std": "",
+  "accept": "Governance artefact delivered and GICTA-approved before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall establish a standing interoperability community operating through a recurring technical working group and an annual national event.",
+   "The Supplier shall structure it so GICTA leads the policy/standards agenda and the operator leads the practical platform tracks.",
+   "The Supplier shall build in private-sector and academic participation from the start, and ensure every connecting organisation is represented."
+  ]
+ },
+ {
+  "L": "C",
+  "title": "Governance documentation set",
+  "intent": "Governance only works if it is written down and usable. A defined documentation pack gives the operator and every connecting institution a single, current reference for how the platform is run and governed.",
+  "std": "",
+  "accept": "Governance artefact delivered and GICTA-approved before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall deliver the governance documentation pack: the platform operating rules, the membership and onboarding guide, the exception register, the RACI, and the service-management procedures — mirroring the operator first-year documentation set — and keep it current to transfer."
+  ]
+ },
+ {
+  "L": "D",
+  "title": "Service ownership model",
+  "intent": "When a service draws on several institutions, accountability dissolves unless one institution clearly owns it. Clear ownership is the precondition for metrics, dependencies, change control and catalogue currency.",
+  "std": "",
+  "accept": "Capability established and applied to the pilot services; IV&V-verified.",
+  "reqs": [
+   "The Supplier shall ensure every service registered on the GIP has one designated business owner and one technical owner, even where these sit in different institutions or with a supplier.",
+   "The Supplier shall ensure an SLA is in place whenever business ownership and technical operation are held by different parties.",
+   "The Supplier shall ensure ownership remains with the mandated institution even where operation is delegated, so accountability is never transferred to the operator."
+  ]
+ },
+ {
+  "L": "D",
+  "title": "Service design methodology",
+  "intent": "Services designed in isolation hard-wire one institution's assumptions, duplicate data collection and create brittle point-to-point links. A shared method makes interoperability a design constraint.",
+  "std": "BPMN; domain-driven design; OpenAPI 3.1",
+  "accept": "Capability established and applied to the pilot services; IV&V-verified.",
+  "reqs": [
+   "The Supplier shall apply a service-design method that maps the full service journey before build, from first request to final outcome.",
+   "The Supplier shall apply domain-driven design where a service spans several responsibilities, defining APIs early.",
+   "The Supplier shall model cross-institution processes in BPMN and have them agreed before systems are connected.",
+   "The Supplier shall design back-ends to be channel-independent and to reuse authoritative data rather than re-collecting it."
+  ]
+ },
+ {
+  "L": "D",
+  "title": "Service metrics",
+  "intent": "A service that is technically available can still fail its users — stuck at a handover, returning errors, leaving cases unresolved. Measuring only uptime hides these failures.",
+  "std": "",
+  "accept": "Capability established and applied to the pilot services; IV&V-verified.",
+  "reqs": [
+   "The Supplier shall ensure each pilot service measures both technical performance and service outcomes, with a minimum metric set defined before go-live.",
+   "The Supplier shall ensure each metric has a named owner, a written definition and a review method, and that multi-institution services share metrics and definitions.",
+   "The Supplier shall provide a service-metrics reporting capability and the routine to review metrics regularly. (target-state)"
+  ]
+ },
+ {
+  "L": "D",
+  "title": "Cross-institution dependency management",
+  "intent": "Undocumented dependencies are how cross-government services break in ways no single institution can diagnose. Recording them at design time turns surprises into managed risks.",
+  "std": "",
+  "accept": "Capability established and applied to the pilot services; IV&V-verified.",
+  "reqs": [
+   "The Supplier shall record every cross-institution dependency in a dependency register at the design stage, with fallback, escalation and change-impact.",
+   "The Supplier shall ensure data is exchanged only through the GIP, and that hidden or informal data flows are prohibited."
+  ]
+ },
+ {
+  "L": "D",
+  "title": "National service catalogue (business level)",
+  "intent": "Without a shared catalogue, institutions cannot see what already exists, so they rebuild services and re-collect data another body holds. The catalogue is the instrument for discovery and reuse-before-build.",
+  "std": "machine-readable metadata",
+  "accept": "Capability established and applied to the pilot services; IV&V-verified.",
+  "reqs": [
+   "The Supplier shall deliver the national service catalogue and register every pilot service in it, using standardised machine-readable metadata, before launch. (target-state for full estate)",
+   "The Supplier shall ensure each catalogue entry is kept current by the responsible service owner and stays aligned with the API and data catalogues."
+  ]
+ },
+ {
+  "L": "E",
+  "title": "Data governance framework",
+  "intent": "Realistic data governance starts from an honest view of current maturity, then sets the structures and roles to manage shared data.",
+  "std": "DAMA-DMBOK-aligned",
+  "accept": "Delivered and applied to pilot data; IV&V-verified before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall assess current data-management maturity and establish the data-governance framework (roles, decision rights, stewardship) needed for governed data sharing on the GIP."
+  ]
+ },
+ {
+  "L": "E",
+  "title": "Base registries — authoritative-source resolution",
+  "intent": "When two institutions each hold a version of the same fact, services read different values, duplicates multiply and trust erodes. Authoritative-source resolution fixes which institution is authoritative for which element.",
+  "std": "",
+  "accept": "Delivered and applied to pilot data; IV&V-verified before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall, where two or more institutions hold overlapping data, support GICTA in deciding the authoritative source for each element and implement that decision in the exchange.",
+   "The Supplier shall record every authoritative-source decision in the relevant agreement, dataset metadata and service definition.",
+   "The Supplier shall ensure reuse of authoritative data does not transfer ownership; the source institution stays accountable for quality and lawful release.",
+   "The Supplier shall ensure institutions reuse authoritative data via approved exchange services rather than local copies, unless law or an approved need requires otherwise."
+  ]
+ },
+ {
+  "L": "E",
+  "title": "Data management guides",
+  "intent": "Governance that lives only inside a document is bypassed under delivery pressure. Naming mandatory guides and requiring them at design stage makes governance a step in the method.",
+  "std": "common minimum metadata set",
+  "accept": "Delivered and applied to pilot data; IV&V-verified before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall ensure every new service applies the national data-management guides at design stage.",
+   "The Supplier shall ensure every shared dataset and API carries the common minimum metadata set.",
+   "The Supplier shall ensure data quality is managed and corrected at the source, not downstream.",
+   "The Supplier shall ensure changes to shared data definitions are governed and published before production use.",
+   "The Supplier shall keep the service catalogue and the data catalogue aligned."
+  ]
+ },
+ {
+  "L": "E",
+  "title": "Catalogue ecosystem (service / API / data)",
+  "intent": "A single registry conflates three questions — what services exist, what interfaces are available, and what data underlies them. The three catalogues must reconcile so a consumer can trace service to API to authoritative source.",
+  "std": "OpenAPI 3.1; DCAT-style metadata",
+  "accept": "Delivered and applied to pilot data; IV&V-verified before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall deliver three aligned catalogues — service (business), API (technical) and data (semantic).",
+   "The Supplier shall ensure a consumer can trace any service to the API that delivers it and to the authoritative data source behind it.",
+   "The Supplier shall ensure an API is registered in the API catalogue before it is offered for reuse.",
+   "The Supplier shall enforce check-before-build: teams consult the catalogues before building a new service or interface.",
+   "The Supplier shall ensure catalogue entries are machine-readable and integrate with portals, monitoring and management tools."
+  ]
+ },
+ {
+  "L": "E",
+  "title": "Semantic alignment with national vocabularies",
+  "intent": "Semantic interoperability needs shared vocabularies and code lists so institutions do not use the same word to mean different things. The terminology platform and the open-data platform are separate national capabilities; the GIP aligns to and consumes them rather than building them.",
+  "std": "controlled vocabularies; national code-list registry",
+  "accept": "Delivered and applied to pilot data; IV&V-verified before the Foundation gate.",
+  "reqs": [
+   "The Supplier shall ensure GIP services use approved national terms, definitions and code lists, consuming them from the national terminology / code-list registry where available, and shall not create local meanings where a national term exists.",
+   "The Supplier shall ensure each code list and value set used in pilot exchanges has a definition, owner and version, and shall record any missing authoritative code list as a recommendation to GICTA.",
+   "The Supplier shall expose non-sensitive datasets intended for open publication through the national open-data platform where available (out of scope to build), keeping the open-data channel separate from the controlled exchange platform."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "GovStack Information Mediator (GIP core)",
+  "intent": "Rather than point-to-point integrations, the GIP is a federated network in which each participating organisation installs and operates the core mediator components in its own infrastructure.",
+  "std": "GovStack Information Mediator Building Block (X-Road reference implementation)",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall design, build and commission the GIP on the GovStack Information Mediator Building Block (X-Road reference), comprising the Security Server, the synchronous Service Access layer, the asynchronous Publish/Subscribe layer and the API gateway, deployed in a federated/distributed model.",
+   "The Supplier shall provision and configure the core mediator components for each pilot participating organisation and demonstrate secure end-to-end exchange between them."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Technical standards (API)",
+  "intent": "Cross-sector interoperability holds only if everything speaks the same baseline interface, with domain extensions where international standards apply.",
+  "std": "OpenAPI 3.1; REST/JSON; HL7 FHIR R4 / ISO 20022 (domain)",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall implement OpenAPI 3.1 / REST-JSON as the mandatory interface standard for all cross-government services on the GIP.",
+   "The Supplier shall apply domain extensions only where specified (e.g. HL7 FHIR R4 for health, ISO 20022 for payments/revenue) and shall not create new SOAP/XML integrations, accommodating legacy only via adapters."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Trust services & PKI (CA, OCSP, time-stamping)",
+  "intent": "X-Road cannot run in production without its trust infrastructure: message-level signing and validation depend on a Certification Authority, an OCSP responder and an RFC-3161 time-stamping service. These are not optional extras to a generic 'PKI'.",
+  "std": "X-Road trust services — CA hierarchy, OCSP, RFC-3161 TSA; OAuth 2.0 / OpenID Connect; mutual TLS",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall provision or integrate the full X-Road trust infrastructure required for production: a Certification Authority (CA) hierarchy for member and security-server certificates, an OCSP responder for real-time certificate-status validation, and an RFC-3161 Time-Stamping Authority (TSA) for message time-stamping.",
+   "The Supplier shall implement long-term retention of time-stamps and signed message logs for the legally required evidentiary period, so that the authenticity and integrity of exchanged messages can be proven after the fact.",
+   "The Supplier shall implement documented certificate and key lifecycle management (issuance, renewal, revocation, rotation) for all GIP trust services.",
+   "The Supplier shall enforce OAuth 2.0 / OpenID Connect and mutual TLS for all system-to-system exchange on the GIP, with services declaring and honouring the level of assurance required for the data they expose."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Openness, source-code ownership & adapter pattern",
+  "intent": "A closed product that cannot be inspected, exported from or replaced becomes a permanent island in the estate. Openness keeps the State in control of what it pays for.",
+  "std": "open standards; open source preferred",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall use open, publicly documented standards for interfaces, data formats and security, and ensure every published API carries a machine-readable description and semantic versioning.",
+   "The Supplier shall prefer open-source software for core digital-government components where feasible.",
+   "The Supplier shall ensure that, for all custom-developed solutions, the State (GICTA) holds the source code, documentation, configuration and the rights to reuse, maintain and independently further-develop it (subject only to justified cybersecurity reasons for withholding publication).",
+   "The Supplier shall ensure proprietary off-the-shelf products provide documented APIs and data export so the State can build its own integration layer and migrate later.",
+   "The Supplier shall, where open source is not feasible, place an open-source adapter in front of the vendor stack and ensure the vendor solution exposes an adaptable API; the adapter is the boundary the GIP integrates with.",
+   "Where the GIP or its services create or exchange documents, the Supplier shall use open document formats — PDF/A for archival documents and ODF or OOXML for editable documents."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Building-block delivery logic",
+  "intent": "Without an ordered decision logic, the building-block idea collapses into preference and the estate fragments again. One published sequence gives every team the same default.",
+  "std": "this RFP",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall apply the building-block delivery logic in order to each capability a service needs — reuse a shared component; adopt a published specification; reuse a controllable legacy system; otherwise adapt; only then build — stopping at the first step that fits and recording the outcome.",
+   "The Supplier shall not commission a new build where a shared component, a published specification or a controllable legacy system can meet the need.",
+   "The Supplier shall treat any adapter as a transition measure only, with a named owner, justification and a target retirement date.",
+   "The Supplier shall, where a specification is used, conform to it so the service remains integrable and reusable."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Cross-functional requirements (CFR) baseline",
+  "intent": "Functional correctness is not enough: a correct but unmonitored, unversioned or weakly secured service undermines every other service it connects to. One mandatory quality floor aligns all suppliers.",
+  "std": "GovStack Cross-Functional Specifications",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall apply the national CFR baseline (adopting the GovStack Cross-Functional Specifications) to every delivered service, in architecture, procurement, delivery, testing and production approval.",
+   "The Supplier shall verify the CFR baseline at all three compliance checkpoints: before procurement, before go-live, and in operation.",
+   "The Supplier shall express CFRs in a practical, measurable, verifiable form and admit no service to production without evidence against the baseline.",
+   "The Supplier shall handle any shortfall through a corrective-action plan or a written, time-boxed exception, never an open-ended waiver."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Development framework",
+  "intent": "Reuse-first only works if there is something concrete to reuse. A development framework builds conformance to standards, openness and the CFR baseline in by default.",
+  "std": "national development framework; code repository",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall apply the national development framework for both internal builds and work delivered with private-sector partners.",
+   "The Supplier shall use the framework's reusable components, reference implementations and templates for new and significantly changed services rather than inventing equivalents.",
+   "The Supplier shall publish and version reusable components and reference implementations in the governmental code repository under the State's reuse rights.",
+   "The Supplier shall follow the framework's standard templates for documentation and handover so services can be operated and transferred without rework."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Service registry & API catalogue",
+  "intent": "The registry is the platform's nervous system: it enables dynamic discovery, version management and access control across the ecosystem.",
+  "std": "OpenAPI 3.1",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall implement the service registry and API catalogue providing dynamic service discovery, version management and access control, with all GIP services registered and discoverable with current OpenAPI 3.1 specifications."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Event management architecture",
+  "intent": "Publish-subscribe lets an agency broadcast an event — a birth, a payment, a status change — without knowing which systems consume it. For the asynchronous layer to be interoperable and testable, the event envelope and transport must be pinned, not left to the vendor.",
+  "std": "CloudEvents 1.0 envelope; AMQP and/or MQTT transport",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall implement the event-management (publish/subscribe) layer using the CloudEvents 1.0 event envelope carried over AMQP and/or MQTT transport, and demonstrate it through the event-driven pilot flow (business-registration to automatic TIN assignment, INT-16).",
+   "The Supplier shall ensure sensitive or personal data is retrieved through authenticated, access-controlled services and is never pushed onto open event streams; events shall carry references and notifications, not sensitive payloads."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Access logging & consent (exchange layer)",
+  "intent": "Regardless of which systems connect, the GIP itself must record who accessed what data, and handle consent correctly where it is the legal basis. These controls are intrinsic to the exchange layer. Separate national systems (payment/GovPay, the citizen portal, notification, national identity/IAM) are out of scope; the GIP exchanges data with source systems as the pilot requires and does not rebuild those platforms.",
+  "std": "",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall ensure all personal-data access through the GIP is logged at the exchange layer from the start, before any personal data flows, with a tamper-evident, auditable record.",
+   "The Supplier shall ensure consent is used only where the legal basis requires it and is never the default basis for government data sharing; where consent is the basis, the record is auditable and linked to the specific service or data use.",
+   "The Supplier shall expose and consume data through the GIP using the standard interfaces, so that any future use of separate national components (e.g. payment, identity, notification) is by integration through those interfaces and not by building them into the GIP."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "AI readiness & AI-operable services",
+  "intent": "AI readiness means services are built so AI-assisted tools can use them safely and, where appropriate, AI can be used inside controlled workflows — not bolting a chatbot onto a website.",
+  "std": "",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall ensure essential services continue to function without AI; AI is an additional capability, never a single point of failure and never a substitute for legal responsibility.",
+   "The Supplier shall publish machine-readable service and API descriptions in the national catalogues.",
+   "The Supplier shall ensure high-impact decisions (affecting rights, entitlements, legal status or public money) have a human handover point before final commitment.",
+   "The Supplier shall ensure that where an AI agent acts on behalf of a person or official, the system records who it acts for, what it may do and for how long, and that an untraceable action is not permitted in a critical public service.",
+   "The Supplier shall provide separate monitoring of AI components and their behaviour, distinct from general platform monitoring.",
+   "The Supplier shall ensure sensitive data is retrieved through authenticated, access-controlled services and is never pushed onto open event streams.",
+   "The Supplier shall provide AI-specific procurement clauses (transparency, human oversight, traceability, no sole reliance for high-impact decisions) for inclusion in future digital-service tenders (see Governance — procurement)."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Platform onboarding lifecycle",
+  "intent": "Without a gated lifecycle, institutions wire test systems straight into production and nobody can say whether a connected service met the baseline. Gates make go-live a decision, not an accident.",
+  "std": "this RFP",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall implement the five-stage onboarding lifecycle with an explicit gate at each stage, and onboard each pilot institution through it.",
+   "The Supplier shall require each onboarding institution to name a business owner, a technical owner and a security contact before technical setup, and complete legal and governance preparation before any technical setup begins.",
+   "The Supplier shall ensure no production connection is enabled until a test exchange is completed in a separate test environment. (target-state)",
+   "The Supplier shall require both a regulator compliance confirmation and an operator technical confirmation for production go-live.",
+   "The Supplier shall ensure emergency connections are regularised under a written, time-boxed exception within the defined period, with gates never waived permanently."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Legacy transition & exception handling",
+  "intent": "Every point-to-point link and sector platform is a future migration cost and a flow outside central audit. Freezing new fragmentation while giving honest legacy a controlled runway is what consolidates exchange onto the GIP.",
+  "std": "this RFP",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall not build any new point-to-point integration where the GIP applies, nor create any new sector-specific exchange platform.",
+   "The Supplier shall run existing point-to-point links and sector platforms only under a written, time-boxed exception with a migration plan.",
+   "The Supplier shall ensure legacy systems meet the minimum legal and security conditions before connection, via an adapter where they cannot conform directly.",
+   "The Supplier shall ensure exceptions are approved centrally and reviewed on a fixed schedule, with no open-ended renewals."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Minimum security baseline & assurance",
+  "intent": "A single hardened, audited baseline is the floor for participation: a weakly secured connected service is a risk to every other service. For a national data-exchange backbone, an independent pre-go-live security assessment is standard practice.",
+  "std": "minimum security baseline; ISO/IEC 27001-aligned controls; OWASP API Security Top 10",
+  "accept": "Independent security assessment and penetration test passed, and OWASP API Security Top 10 verified, as a mandatory Pilot go-live gate; baseline conformance IV&V-verified.",
+  "reqs": [
+   "The Supplier shall implement and enforce the minimum security baseline so every connecting institution meets it before production and maintains it throughout operation.",
+   "The Supplier shall support GICTA (regulator) in defining and maintaining the baseline and shall verify it technically as operator, checking conformance at onboarding and re-checking at periodic review.",
+   "The Supplier shall integrate GIP traffic with the national SOC for monitoring.",
+   "The Supplier shall verify every GIP API against the OWASP API Security Top 10 as a production-approval gate, with documented evidence.",
+   "The Supplier shall arrange and pass an independent pre-go-live security assessment and penetration test of the GIP and the pilot services, conducted by a party independent of the build team; all high and critical findings shall be remediated before pilot go-live."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Technology selection",
+  "intent": "GovStack IM BB (proven via X-Road) is the recommended base, but the choice must be made on The Gambia's context and recorded.",
+  "std": "GovStack Information Mediator Building Block",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall confirm and document the technology selection for the GIP against The Gambia's context, taking the GovStack Information Mediator Building Block (X-Road reference) as the recommended base, and record the decision and its rationale."
+  ]
+ },
+ {
+  "L": "F",
+  "title": "Deployment architecture",
+  "intent": "The platform must deploy onto GICTA's infrastructure with proper environment separation and operability.",
+  "std": "government hosting conditions",
+  "accept": "Implemented and demonstrated on the pilot; IV&V-verified before the Pilot gate.",
+  "reqs": [
+   "The Supplier shall deliver the deployment architecture for the GIP on GICTA-provided hosting, with separated environments and documented operability (monitoring, logging, backup, recovery)."
+  ]
+ },
+ {
+  "L": "G",
+  "title": "Hosting, data centres & cloud",
+  "intent": "Hosting follows a defined discipline, not institutional preference; cloud or alternatives must not reduce security, continuity or accountability.",
+  "std": "government hosting & sovereign-cloud conditions",
+  "accept": "Implemented and tested (incl. failover/recovery); IV&V-verified before go-live.",
+  "reqs": [
+   "The Supplier shall host GIP components and connected services in environments that meet the applicable government hosting conditions (GICTA NDC / sovereign G-Cloud).",
+   "The Supplier shall ensure any cloud or alternative hosting is approved under the applicable regulation and does not reduce security, continuity or accountability.",
+   "The Supplier shall ensure institution-operated systems can connect to the GIP and meet common operational requirements."
+  ]
+ },
+ {
+  "L": "G",
+  "title": "Network connectivity",
+  "intent": "Interoperability depends on stable, secure connectivity, with cross-boundary traffic protected to a government-network-equivalent baseline.",
+  "std": "",
+  "accept": "Implemented and tested (incl. failover/recovery); IV&V-verified before go-live.",
+  "reqs": [
+   "The Supplier shall ensure connecting institutions have reliable network access and secure network configuration for the pilot.",
+   "The Supplier shall protect cross-boundary data exchange to a government-network-equivalent baseline.",
+   "The Supplier shall use encryption and trusted certificates for all system-to-system communication."
+  ]
+ },
+ {
+  "L": "G",
+  "title": "Environment separation, resilience & continuity",
+  "intent": "Critical shared services must survive failures: separated environments, failover, tested recovery, and no dependence on a single hosting location.",
+  "std": "BC/DR",
+  "accept": "Implemented and tested (incl. failover/recovery); IV&V-verified before go-live.",
+  "reqs": [
+   "The Supplier shall separate development, test and production environments for all connected services.",
+   "The Supplier shall ensure critical shared services use failover, resilient hosting, monitoring, backups and tested recovery, with no critical service depending on a single hosting location or single supplier.",
+   "The Supplier shall ensure baseline security, logging, backup, recovery and incident response are in place before go-live, and test backup restoration before the Pilot gate."
+  ]
+ },
+ {
+  "L": "H",
+  "title": "Capability-building / Digital Transformation Academy",
+  "intent": "Capability is lost when knowledge stays with the supplier and walks out when support ends. Tying training to real work keeps capability close to delivery so GICTA can run and improve services afterwards.",
+  "std": "",
+  "accept": "Delivered and competency-certified before transfer to GICTA.",
+  "reqs": [
+   "The Supplier shall deliver capability building that is delivery-linked and role-based, taught against the real pilot services, not a separate disconnected training course.",
+   "The Supplier shall ensure each onboarding institution has trained business, data and technical focal points for the services it owns.",
+   "The Supplier shall implement a train-the-trainer model so GICTA and ministry specialists can train new institutions over time.",
+   "The Supplier shall deliver and maintain a capability register tracking trained focal points, missing roles and which institutions can onboard independently."
+  ]
+ },
+ {
+  "L": "H",
+  "title": "Priority skills mapping",
+  "intent": "Most stalled interoperability problems are misdiagnosed — a mandate or budget question handed to a technical team, or a technical problem escalated as policy. Differentiated skills tracks prevent this.",
+  "std": "",
+  "accept": "Delivered and competency-certified before transfer to GICTA.",
+  "reqs": [
+   "The Supplier shall map capability along two differentiated tracks — leaders/service owners, and architects/engineers — and use it to define the academy track content.",
+   "The Supplier shall ensure senior officials are equipped to distinguish a policy problem from an operational problem from a technical problem.",
+   "The Supplier shall review the skills matrix as the platform grows."
+  ]
+ },
+ {
+  "L": "H",
+  "title": "Elevator architect role",
+  "intent": "The policy-implementation disconnect causes many failures: decisions taken without technical reality, or technical choices locked in without policy/budget context. An elevator architect closes that gap before decisions harden.",
+  "std": "",
+  "accept": "Delivered and competency-certified before transfer to GICTA.",
+  "reqs": [
+   "The Supplier shall establish the elevator-architect role, with each onboarding institution naming one senior technical person to it.",
+   "The Supplier shall ensure that person takes part in both internal leadership discussions and cross-government technical forums.",
+   "The Supplier shall ensure GICTA and the operator include elevator architects in architecture reviews and standards work early."
+  ]
+ },
+ {
+  "L": "H",
+  "title": "Communities of practice",
+  "intent": "Hard-won knowledge stays locked inside one team or vendor and is lost when the project closes. Practitioner forums keep it current and shared so the next onboarding does not repeat the last one's mistakes.",
+  "std": "",
+  "accept": "Delivered and competency-certified before transfer to GICTA.",
+  "reqs": [
+   "The Supplier shall establish working-level communities of practice that meet regularly around real onboarding and operations cases.",
+   "The Supplier shall route capability gaps they find to the academy and standards/change proposals to the interoperability community, keeping the practitioner forum and the governance community distinct."
+  ]
+ },
+ {
+  "L": "H",
+  "title": "Sustainability model",
+  "intent": "Donor-funded build must transition to a sustainable operating base before WARDIP closes, or the platform stalls at the funding cliff.",
+  "std": "WARDIP-to-MTEF transition",
+  "accept": "Delivered and competency-certified before transfer to GICTA.",
+  "reqs": [
+   "The Supplier shall deliver a sustainability and funding model for post-transfer operation of the GIP, identifying the recurrent cost and the 2029+ MTEF budget line, and supporting the WARDIP-to-MTEF transition before the WARDIP close (31 December 2028)."
+  ]
+ }
+]

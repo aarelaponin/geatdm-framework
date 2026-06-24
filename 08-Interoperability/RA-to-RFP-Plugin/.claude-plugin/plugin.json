@@ -1,0 +1,18 @@
+{
+  "name": "interop-ra-to-rfp",
+  "version": "0.1.0",
+  "description": "Buyer-side toolkit to turn a country's interoperability reference architecture and National EA into an issuable, funder-compliant tender (RFP) for a national interoperability platform: procurement-vehicle selection, requirements authoring, RFP and annex generation, traceability, QA and transmittal.",
+  "author": {
+    "name": "FiscalAdmin OU"
+  },
+  "keywords": [
+    "interoperability",
+    "procurement",
+    "rfp",
+    "govstack",
+    "world-bank",
+    "tender",
+    "enterprise-architecture",
+    "data-exchange-platform"
+  ]
+}
