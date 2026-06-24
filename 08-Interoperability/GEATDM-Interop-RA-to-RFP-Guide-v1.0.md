@@ -34,19 +34,55 @@
 | Interoperability Reference Architecture | `GEATDM-Interop-Reference-Architecture-v1.0.docx` | The full RA — the layered rulebook (legal, organisational, semantic, technical, infrastructure + governance) the requirements are drawn from. |
 | RA-to-RFP plugin (packaged) | `RA-to-RFP-Plugin/interop-ra-to-rfp.plugin` | One-click installable bundle of the 10 skills. |
 | RA-to-RFP plugin (source) | `RA-to-RFP-Plugin/skills/*`, `RA-to-RFP-Plugin/.claude-plugin/plugin.json` | Version-controlled source of every skill. |
-| Existing Module-08 baseline | `GEATDM-Interop-Method-v1.0.md`, `GEATDM-Interop-Toolkit-v1.0.md` | The 8-step method and the template toolkit this guide builds on. The RA below supersedes the earlier conceptual Reference Model (now archived in `x_archive/`). |
+| Existing Module-08 baseline | `GEATDM-Interop-Reference-Model-v1.0.md`, `GEATDM-Interop-Method-v1.0.md`, `GEATDM-Interop-Toolkit-v1.0.md` | The conceptual model (the GIF's architectural shape), the 8-step method, and the template toolkit. The RA below **complements** these — it is the enforceable, detailed target design and the procurement engine, not a replacement. |
 
 ---
 
 ## 1. What this adds to Module 08
 
-Module 08 already provides the **Method** (the 8 steps to develop a national interoperability framework) and the **Toolkit** (the templates). This release adds the two pieces that take a country from *framework* to *funded delivery* — and the **RA** below now serves as the module's concrete target design, superseding the earlier conceptual Reference Model (archived in `x_archive/`):
+Module 08 already provides the **Reference Model** (the architectural *shape* of a GIF), the **Method** (the 8 steps to develop one) and the **Toolkit** (the templates). This release adds the two pieces that take a country from *framework* to *funded delivery* — and the **RA** below *complements* the Reference Model by giving the enforceable, detailed target design (it does **not** replace it):
 
 1. **The Interoperability Reference Architecture (RA)** — a complete, layered rulebook for digital-government interoperability: the legal, organisational, semantic, technical and infrastructure layers, with governance and legal cross-cutting; the regulator/operator split; the GovStack Information Mediator building block; the security baseline; cross-functional requirements; the onboarding lifecycle; and an implementation roadmap. It is the *“should”* — the design any national interoperability platform ought to follow.
 
 2. **The `interop-ra-to-rfp` plugin** — ten composable skills that turn that RA (plus a country's own National EA) into an **issuable, funder-compliant tender** to actually procure the platform. It is the *“how you buy it.”*
 
 Together they close the gap that repeatedly stalls real programmes: a government has a good architecture but no clean path from architecture to a defensible Request for Proposals.
+
+---
+
+## 1.A The Module-08 conceptual model — how the five pieces fit
+
+Module 08 is a **value chain from concept to procurement**. Each piece sits at a different altitude and feeds the next; none replaces another.
+
+```
+      CONCEPT             PROCESS              TARGET DESIGN           PROCUREMENT
+ ┌───────────────┐  ┌───────────────┐   ┌────────────────────┐   ┌────────────────────┐
+ │ Reference     │  │ Method        │   │ Reference          │   │ RA-to-RFP Plugin   │
+ │ Model         │─▶│ (8 steps)     │──▶│ Architecture (RA)  │──▶│ (10 skills)        │──▶ RFP / tender
+ │ "WHAT a GIF   │  │ "HOW to       │   │ "EXACTLY what to   │   │ "HOW to BUY it"    │   (issuable,
+ │  is" — shape  │  │  develop it"  │   │  build + RULES"    │   │  RA → procurement  │    funder-compliant)
+ └───────────────┘  └──────┬────────┘   └─────────┬──────────┘   └─────────▲──────────┘
+        ▲                  │ uses                 │ deepens                │ also consumes
+        │ assumes          │                 (RM's 4 layers →              │
+        └──────────────────┘             RA's 5 EIF layers: +Infrastructure)
+                      ┌──────────┐                                 ┌─────────────────────┐
+                      │ Toolkit  │                                 │ National EA         │
+                      │(templates)│                                │ (the country's      │
+                      └──────────┘                                 │  "is" baseline)     │
+                                                                   └─────────────────────┘
+```
+
+| Piece | Altitude | Question it answers | Consumes | Produces |
+|---|---|---|---|---|
+| **Reference Model** | Concept | *What* a GIF is — the generic architectural shape (4 interoperability + 4 functional layers), technology-agnostic | PAERA, EIF | The shared mental model |
+| **Method** | Process | *How* to develop a country's GIF — the 8 steps; assumes the Reference Model's shape | The Reference Model | A running GIF |
+| **Toolkit** | Tools | The templates applied at each Method step | — | Completed step artefacts |
+| **Reference Architecture (RA)** | Target design + rules | *Exactly* what to build and the mandatory rules — enforceable, detailed; extends the Reference Model with the 5th EIF layer (Infrastructure) | The Reference Model | The procurement-ready specification |
+| **RA-to-RFP Plugin** | Procurement (automation) | *How to buy it* — turns the specification into a tender | **The RA + the country's National EA** | The RFP package (RFP, Data Sheet + annexes, traceability matrix, transmittal) |
+
+**Where the plugin sits.** At the delivery end of the chain. Its two inputs are the **RA** (the *“should”*) and the country's **National EA** (the *“is”*); its output is the issuable tender. In one line: the **Reference Model and Method are the *knowledge*, the RA is the *enforceable specification*, and the plugin is the *automation* that converts that specification into procurement.**
+
+> **Layer reconciliation note.** The Reference Model frames interoperability on the EIF *four* layers (technical, semantic, organisational, legal); the RA uses the EIF *five* layers, adding **Infrastructure** as the fifth and treating governance/legal as cross-cutting. The RA's five-layer view is the superset; the Reference Model's four-layer view is the teachable subset. They are consistent, not competing.
 
 ---
 
@@ -126,7 +162,7 @@ The first end-to-end application was the **Gambia GIP** under WARDIP: a Supply-a
 
 ## 5. Relationship to the rest of GEATDM
 
-- **Module 08 (this module):** the Method defines *how to develop* a national interoperability framework; this RA gives the concrete target design (superseding the earlier conceptual Reference Model), and the plugin turns it into *procurement*.
+- **Module 08 (this module):** the **Reference Model** is the architectural shape (concept), the **Method** is *how to develop* it (process), this **RA** is the enforceable target design + rules, and the **plugin** turns the RA into *procurement*. The four are complementary altitudes of the same module — see the conceptual model in §1.A.
 - **Module 09 (DPI):** the platform is a DPI building block (the Information Mediator). The scope-boundary rule — *build the exchange backbone, integrate the other DPI pillars (identity, payments)* — is the operational expression of the DPI “integrate, don't rebuild” principle.
 - **02-Reference-Architectures (PDU/RA/SDA):** sectoral organisations consume the interoperability platform; their cross-government exchange requirements feed the National EA baseline this plugin reads.
 - **01-Toolkit / 03-Method-Guide:** the sourcing-strategy and procurement templates align with the vehicle decision the plugin records.
