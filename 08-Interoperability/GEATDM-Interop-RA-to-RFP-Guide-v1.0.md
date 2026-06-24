@@ -84,6 +84,8 @@ Module 08 is a **value chain from concept to procurement**. Each piece sits at a
 
 > **Layer reconciliation note.** The Reference Model frames interoperability on the EIF *four* layers (technical, semantic, organisational, legal); the RA uses the EIF *five* layers, adding **Infrastructure** as the fifth and treating governance/legal as cross-cutting. The RA's five-layer view is the superset; the Reference Model's four-layer view is the teachable subset. They are consistent, not competing.
 
+**Mapping to the KP2 / Implementation Plan (no plan change needed).** The Implementation Plan defines KP2 on three pillars — *Reference Model + Method + Toolkit*. The new assets in this release — the **Reference Architecture**, the **RA-to-RFP plugin**, and this guide — are **components of the Toolkit pillar** (the module's practical-delivery layer). The value chain above explains their *altitudes* for understanding; for KP2 accounting they roll up under **Toolkit**. So the published plan's "Reference Model + Method + Toolkit" framing already covers them — the plan needs no edit; the Toolkit simply grew.
+
 ---
 
 ## 2. Why this exists (the rationale)
