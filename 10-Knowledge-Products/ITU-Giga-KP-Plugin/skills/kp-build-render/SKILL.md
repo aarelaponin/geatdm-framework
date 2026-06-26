@@ -67,6 +67,12 @@ Then **look at the images** (cover + a script page + a slide-spec page). Confirm
 
 `scripts/build_render.sh <build_script.js>` does install → build → PDF → page images in one go and prints where the images landed.
 
+## Markdown export (the GitBook companion)
+
+The build script also renders to clean, GitBook-ready Markdown — for diffable version control and the written companion content. `scripts/bundle_to_md.py <build_script.js> [out.md]` parses the build script (cover, at-a-glance, every subtopic with its header table, single-message callout, script beats, slide-spec table, four-part AI tip and metadata, plus production notes, calibration and annex) and writes `KP1_ModuleN_Script_Bundle_v0.X.md` next to it by default. It is pure Python, standard library only — no docx, no LibreOffice needed.
+
+The `.md` is **generated, like the `.docx`** — never hand-edit it; edit the build script and regenerate, or the next run overwrites your change. The versioned home for the KP1 bundles (source `.js` + generated `.md`) is `10-Knowledge-Products/KP1-GEA/`; the `.docx` is rendered into the contract working folder via `OUT_PATH` and is not stored there.
+
 ## Gotchas (the ones that cost time)
 
 - **Path translation.** In Cowork the file tools see user paths (`.../itu-knowledge/...`) while bash sees the mounted path (`/sessions/<id>/mnt/itu/itu-knowledge/...`). Use bash paths in bash, file-tool paths in Read/Write. The same file, two addresses.
