@@ -442,7 +442,7 @@ body.push(...renderSubtopic({
   title: "Why an EA matters more now — and what it lets your minister actually do",
   runtime: "~5 min",
   words: 620,
-  paeraAnchor: "§2.3 Role of Enterprise Architecture; §4.5 Organisational Communication",
+  paeraAnchor: "§2.3 Role of Enterprise Architecture; §4.5 Digital Co-creation",
   singleMessage: "For thirty years, digital work meant putting paper online. That era is ending. The work now is to redesign how your ministry serves citizens — and that work needs business and IT in the same room, using the same words.",
   scriptBeats: [
     { cue: "Slide 1 — Title: 'Why an EA matters more now'. Voice-over begins." },
@@ -459,7 +459,7 @@ body.push(...renderSubtopic({
     { text: "This is the second job an Enterprise Architecture does. It gives both sides a shared language for the new work. The agreed picture — something both sides can point at. Plain words for the basic terms — service, capability, data domain — that mean the same thing to both sides. And a regular forum — the EA Board — where they sit together and decide. With these in place, the conversation about redesigning how the ministry works finally happens. Without them, it does not." },
     { cue: "Slide 7 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'In the era of digitising paper, an EA was useful. In the era of redesigning how the ministry works, an EA is necessary.'" },
     { text: "When you make the case to your minister, this is the second half of the case. Planning is one half. Shared language is the other. In the era of digitising paper, an EA was useful. In the era of redesigning how the ministry works, an EA is necessary — because without it, the business side and the IT side cannot have the conversation the redesign requires." },
-    { cue: "Slide 8 — Title: 'Sources'. Body: PAERA v1.0 §2.3 Role of Enterprise Architecture; §4.5 Organisational Communication. Footer: 'Find the link in the description.'" }
+    { cue: "Slide 8 — Title: 'Sources'. Body: PAERA v1.0 §2.3 Role of Enterprise Architecture; §4.5 Digital Co-creation. Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
     ["1", "Title slide. Title: 'EA as the lingua franca'.",
@@ -491,8 +491,8 @@ body.push(...renderSubtopic({
     ["Tags",                    "enterprise architecture, business-IT alignment, digital transformation, operating model, change management, PAERA, digital government"],
     ["Playlist (YouTube)",      "KP1 — Topic 1: Why a PAERA-anchored EA"],
     ["ToR §4 coverage",         "§4.1 (methodology framing); §4.3 (AI integration — joint-agenda prompt)"],
-    ["PAERA citations",         "§2.3 Role of Enterprise Architecture; §4.5 Organisational Communication"],
-    ["External-link list",      "PAERA v1.0 §2.3 (Role of Enterprise Architecture); PAERA v1.0 §4.5 (Organisational Communication)"]
+    ["PAERA citations",         "§2.3 Role of Enterprise Architecture; §4.5 Digital Co-creation"],
+    ["External-link list",      "PAERA v1.0 §2.3 (Role of Enterprise Architecture); PAERA v1.0 §4.5 (Digital Co-creation)"]
   ]
 }));
 
@@ -805,7 +805,7 @@ body.push(
     ["1.1", "PAERA v1.0 site (paera.govstack.global) for Problem statement §2.1 and Principle #5 Once-Only §5.2; EU European Interoperability Framework reference (Once-Only principle)."],
     ["1.2", "PAERA v1.0 §2.3 Role of Enterprise Architecture; TOGAF BDAT layering reference."],
     ["1.3", "PAERA v1.0 §1.3 (GovStack Vision); PAERA v1.0 §3.3 (Digital Infrastructure principles); PAERA v1.0 §5.2 (Architectural Principles)."],
-    ["1.4", "PAERA v1.0 §2.3 (Role of Enterprise Architecture); PAERA v1.0 §4.5 (Organisational Communication)."],
+    ["1.4", "PAERA v1.0 §2.3 (Role of Enterprise Architecture); PAERA v1.0 §4.5 (Digital Co-creation)."],
     ["1.5", "PAERA v1.0 site (paera.govstack.global); GovStack site (govstack.global); GovMarket; PAERA v1.0 §1.2 Motivation; §1.3 GovStack Vision."],
     ["1.6", "PAERA v1.0 §3.1.3 Readiness Assessment; PAERA v1.0 §5.4 Organisational Assessment & Roadmap."],
     ["1.7", "PAERA v1.0 §4.2.1 Management; PAERA v1.0 §4.2.2 Architecture; PAERA v1.0 §5.4 Organisational Assessment & Roadmap."],

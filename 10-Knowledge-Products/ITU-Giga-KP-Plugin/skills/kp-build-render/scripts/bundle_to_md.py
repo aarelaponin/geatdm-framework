@@ -200,9 +200,11 @@ def main():
     b0 = src.index("const body = []")
     b1 = src.index("const doc = new Document")
     body = src[b0:b1]
-    # PERSONA_A is passed as a bare identifier in the cover table; inline its value
-    # so the cover renders the persona instead of an empty cell.
-    body = body.replace("PERSONA_A", '"' + persona_default.replace('"', '\\"') + '"')
+    # Persona constants (PERSONA_A, PERSONA_S, …) are passed as bare identifiers in the
+    # cover table and per-subtopic; inline each constant's value so the cover and the
+    # subtopic header render the persona instead of an empty cell.
+    for cm in re.finditer(r'(PERSONA_\w+)\s*=\s*"((?:[^"\\]|\\.)*)"', src):
+        body = body.replace(cm.group(1), '"' + unesc(cm.group(2)).replace('"', '\\"') + '"')
 
     # The document title lives in the Document config (after the body), so search there
     # to avoid matching the first subtopic's title: field.

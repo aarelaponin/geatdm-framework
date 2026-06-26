@@ -19,7 +19,8 @@ Use this map when citing PAERA in any subtopic. The map is organised by methodol
 | Organisational level — overall | §4 | Used wherever institutional setup is discussed |
 | Management (CDO/CTO role, EA Practice leadership) | §4.2.1 | Used in KP1 subtopic 1.7 (EA team ask) |
 | Architecture (chief architect, EA function) | §4.2.2 | Used in KP1 subtopic 1.7 |
-| Organisational communication (EA as bridge) | §4.5 | Used in KP1 subtopic 1.4 (lingua franca argument) |
+| EA as the bridge / lingua franca (business↔IT) | §2.3 | Used in KP1 1.4 (lingua-franca argument). NOTE: the published PAERA §4.5 heading is "Digital Co-creation", not "Organisational Communication" |
+| Digital co-creation (business + IT co-create services) | §4.5 | Used in KP1 5.4, 6.5 (Digital Co-creation) |
 | Organisational taxonomy (policy unit / regulatory / service-delivery) | §4.6 + Annex A1.2 | Used in KP1 subtopic 1.5 (way to organise ministries) |
 | Digital Infrastructure — overall | §3 | Foundational reference for KP3 (DPI) |
 | Institutional setup (CDO, EA Practice, Governance Board) | §3.1, §3.1.3 | Used in KP1 subtopics 1.6, 1.7 |
@@ -54,7 +55,7 @@ Use this map when citing PAERA in any subtopic. The map is organised by methodol
 | §4 | Organisational level | All KPs |
 | §4.2.1 | Management (CDO/CTO leadership) | KP1 §1.7 |
 | §4.2.2 | Architecture (chief architect, EA function) | KP1 §1.7 |
-| §4.5 | Organisational communication | KP1 §1.4 |
+| §4.5 | Digital Co-creation | KP1 §5.4, §6.5 |
 | §4.6 | Organisational taxonomy | KP1 §1.5 |
 | §5.2 | Architectural principles (ten principles) | KP1 §1.5 |
 | §5.2 Principle #5 | Once-Only | KP1 §1.1 (Sign 4), KP2 |

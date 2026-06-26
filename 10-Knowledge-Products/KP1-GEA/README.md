@@ -11,8 +11,9 @@ The versioned home of the FiscalAdmin OÜ — ITU/Giga **Knowledge Product 1** (
 | 3 | EA repository, tooling and governance | Architect | `build_kp1_module3_v01.js` | `KP1_Module3_Script_Bundle_v0.1.md` |
 | 4 | Progressa demonstration — applying the method end-to-end | Architect | `build_kp1_module4_v01.js` | `KP1_Module4_Script_Bundle_v0.1.md` |
 | 5 | AI plays for EA — hands-on | Architect | `build_kp1_module5_v01.js` | `KP1_Module5_Script_Bundle_v0.1.md` |
+| 6 | Cross-country evidence, cross-sector applicability and dissemination | Strategist | `build_kp1_module6_v01.js` | `KP1_Module6_Script_Bundle_v0.1.md` |
 
-Remaining KP1 module (6 cross-country evidence + cross-sector applicability + dissemination) is not yet authored.
+**All six KP1 modules are authored** (Modules 1 and 6 Strategist-facing; 2–5 Architect-facing). Each passes the `kp-bundle-qa` compliance gate and has had its PAERA citations verified against the source.
 
 ## The source-of-truth rule
 
