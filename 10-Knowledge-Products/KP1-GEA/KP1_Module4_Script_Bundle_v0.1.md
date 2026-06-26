@@ -9,12 +9,12 @@
 | Date | 26 June 2026 |
 | Contract reference | RFQ-S-GIGA-2026-022 / Purchase Order #334304 (signed 24 April 2026) |
 | Topic persona | A (Architect) — chief or senior architect in a national digital agency or sector ICT unit; the practitioner who does the architecture work |
-| Subtopics | Seven subtopics (4.1 – 4.7), each shipped as one ~5-minute standalone video |
-| Topic runtime | Approximately 34 minutes across seven standalone videos |
+| Subtopics | Eight subtopics (4.1 – 4.8), each shipped as one ~5-minute standalone video |
+| Topic runtime | Approximately 39 minutes across eight standalone videos |
 | Prepared by | FiscalAdmin OÜ — Aare Lapõnin (Engagement Lead) |
 | For review by | ITU/Giga at Tuesday weekly call (Carolina Anselmino); FiscalAdmin team (Karin Kaup, Arne Lapõnin) |
 
-This bundle is the v0.1 working draft of Topic 4 — the applied demonstration topic in KP1, where the whole method is run end-to-end on a single worked example. Topics 1 through 3 taught the pieces — why an EA matters, the principles and the four layers, the repository and the governance. Topic 4 puts them in motion: it runs the five-phase lifecycle (Discover, Assess, Adapt, Plan, Execute and Govern) on Progressa, a demonstration education sector, so the architect watches each phase produce its deliverable and pass its sign-off on a realistic canvas, then takes the same method to their own sector. The audience lock is unchanged: African public-sector middle management, plain English at an eighth-grade level, each subtopic leading with the capability the architect gains rather than with a technical term. Education is the deliverable sector throughout; the closing subtopic notes that the method transfers to other sectors per ToR §4.4, without using them as worked examples. The seven videos are numbered to ITU's topic/subtopic convention (subtopics 4.1 through 4.7). Each stands alone — no meta-introductions, no playlist-stitching outros, no backward references. All slide specifications follow ITU's text-only branding (Arial Bold 28pt title, Arial 18pt body, background #E5F5FB, no images, no individuals on screen — the fictional Progressa institutions appear as plain-text labels only). Each subtopic carries an AI usage tip with a copy-paste Claude prompt that produces a working artefact. External references use the ITU convention 'Find the link in the description'.
+This bundle is the v0.1 working draft of Topic 4 — the applied demonstration topic in KP1, where the whole method is run end-to-end on a single worked example. Topics 1 through 3 taught the pieces — why an EA matters, the principles and the four layers, the repository and the governance. Topic 4 puts them in motion: it runs the five-phase lifecycle (Discover, Assess, Adapt, Plan, Execute and Govern) on Progressa, a demonstration education sector, so the architect watches each phase produce its deliverable and pass its sign-off on a realistic canvas, then takes the same method to their own sector. The Plan phase is taught in two videos — first designing the target architecture (the future-state picture the whole EA exists to produce), then sequencing it into a costed roadmap — so the learner can produce both the target architecture and the roadmap, not only diagnose the current state. The audience lock is unchanged: African public-sector middle management, plain English at an eighth-grade level, each subtopic leading with the capability the architect gains rather than with a technical term. Education is the deliverable sector throughout; the closing subtopic notes that the method transfers to other sectors per ToR §4.4, without using them as worked examples. The eight videos are numbered to ITU's topic/subtopic convention (subtopics 4.1 through 4.8). Each stands alone — no meta-introductions, no playlist-stitching outros, no backward references. All slide specifications follow ITU's text-only branding (Arial Bold 28pt title, Arial 18pt body, background #E5F5FB, no images, no individuals on screen — the fictional Progressa institutions appear as plain-text labels only). Each subtopic carries an AI usage tip with a copy-paste Claude prompt that produces a working artefact. External references use the ITU convention 'Find the link in the description'.
 
 ## 1. Document context
 
@@ -26,7 +26,7 @@ Topic 4 is the applied demonstration — the one that runs the whole method end-
 
 ### 1.2 Alignment with ITU's Knowledge Products and Video Materials Guide
 
-The same compliance items that shaped Topics 1 through 3 apply here. (1) Topic-and-subtopic numbering per Guide §1.i — subtopics 4.1 through 4.7. (2) Each video stands alone — no in-video introduction, conclusion, or reference to another video, per Guide §3.i. (3) Slides are text-only in Arial Bold 28pt title / Arial 18pt body / background #E5F5FB per Guide §3.i Slides Branding. (4) No individuals on screen — AI avatar or computer-screen-only voice-over per Guide §3 Note. (5) An AI usage tip is embedded in every subtopic per Guide §2.ii and ToR §4.3, each producing a working artefact — a demonstration canvas, a Discovery brief outline, a ranked gap analysis, a sourcing matrix, a wave roadmap, a gate-decision paper, a sector-transfer plan. Scope note: Education is the deliverable sector throughout; subtopic 4.7 carries the ToR §4.4 sector-portability statement (the method transfers to health, agriculture and social protection) as a portability note, not as cross-sector worked examples.
+The same compliance items that shaped Topics 1 through 3 apply here. (1) Topic-and-subtopic numbering per Guide §1.i — subtopics 4.1 through 4.8. (2) Each video stands alone — no in-video introduction, conclusion, or reference to another video, per Guide §3.i. (3) Slides are text-only in Arial Bold 28pt title / Arial 18pt body / background #E5F5FB per Guide §3.i Slides Branding. (4) No individuals on screen — AI avatar or computer-screen-only voice-over per Guide §3 Note. (5) An AI usage tip is embedded in every subtopic per Guide §2.ii and ToR §4.3, each producing a working artefact — a demonstration canvas, a Discovery brief outline, a ranked gap analysis, a sourcing matrix, a target-architecture skeleton, a wave roadmap, a gate-decision paper, a sector-transfer plan. Scope note: Education is the deliverable sector throughout; subtopic 4.8 carries the ToR §4.4 sector-portability statement (the method transfers to health, agriculture and social protection) as a portability note, not as cross-sector worked examples.
 
 ### 1.3 How to read this document
 
@@ -36,7 +36,7 @@ Within each script section, three rendering conventions are used: italic shaded 
 
 ## 2. Topic 4 at a glance
 
-Seven standalone subtopic videos. One Architect persona throughout. Total runtime approximately thirty-four minutes. Each video has a single message and a single learning outcome, and leads with the capability the architect gains rather than with a technical term. The videos are designed to be discoverable individually via YouTube search; the playlist provides navigation but is not required to comprehend any single video.
+Eight standalone subtopic videos. One Architect persona throughout. Total runtime approximately thirty-nine minutes. Each video has a single message and a single learning outcome, and leads with the capability the architect gains rather than with a technical term. The Plan phase spans two videos (design the target architecture, then sequence the roadmap), so the topic delivers both the target architecture and the roadmap. The videos are designed to be discoverable individually via YouTube search; the playlist provides navigation but is not required to comprehend any single video.
 
 | # | Title | Single message | Runtime |
 | --- | --- | --- | --- |
@@ -44,9 +44,10 @@ Seven standalone subtopic videos. One Architect persona throughout. Total runtim
 | 4.2 | Phase 1, Discover — map what the sector has today | Discover produces one honest picture of what the sector has today — described, not judged — signed off as accurate before any analysis begins. | ~5 min |
 | 4.3 | Phase 2, Assess — find the gaps and rank them | Assess turns Progressa's picture into a ranked gap analysis — the right problems in the right order, signed off as ground truth, including the uncomfortable ones. | ~5 min |
 | 4.4 | Phase 3, Adapt — fit PAERA and decide build, buy or share | Adapt fits PAERA to Progressa — localised principles and a deliberate build, buy, share or sandbox call for every building block — with reuse as the default that build must justify against. | ~5 min |
-| 4.5 | Phase 4, Plan — sequence the roadmap and cost it | Plan turns the decisions into a wave-sequenced, costed roadmap — the cabinet-ready document business and IT both read — with the minister's flagship landing inside the first year. | ~5 min |
-| 4.6 | Phase 5, Execute & Govern — stand up the living EA | Execute & Govern makes the architecture live — a repository kept true, a Board that enforces re-use at the gate (catching a project's fourth learner list before it is built), and the rhythm where business and IT keep deciding together. | ~5 min |
-| 4.7 | Run this on your own sector — the transferable recipe | Five phases, four sign-offs, five deliverables — change the institutions and the data domains, and the method you watched on Progressa runs on any sector you are handed. | ~4 min |
+| 4.5 | Phase 4, Plan — design the target architecture | Between the gaps and the roadmap sits the deliverable the whole EA is for — the target architecture: future-state capabilities, one owner per data domain, shared platforms and the integration map, reached by applying your principles to the gaps. | ~5 min |
+| 4.6 | Phase 4, Plan — sequence the roadmap and cost it | Plan turns the decisions into a wave-sequenced, costed roadmap — the cabinet-ready document business and IT both read — with the minister's flagship landing inside the first year. | ~5 min |
+| 4.7 | Phase 5, Execute & Govern — stand up the living EA | Execute & Govern makes the architecture live — a repository kept true, a Board that enforces re-use at the gate (catching a project's fourth learner list before it is built), and the rhythm where business and IT keep deciding together. | ~5 min |
+| 4.8 | Run this on your own sector — the transferable recipe | Five phases, four sign-offs, six deliverables — change the institutions and the data domains, and the method you watched on Progressa runs on any sector you are handed. | ~4 min |
 
 ## 3. The scripts
 
@@ -78,9 +79,9 @@ Here is the problem the minister feels. A learner is registered three times — 
 
 Progressa is fictional, on purpose. It lets us show every step in detail without exposing any real country, and the shapes it has — duplicate registries, paper re-entry, a stalled flagship — are the shapes you will recognise in your own sector. As we run the lifecycle, do one thing: keep your own sector in mind, and at each step ask what the equivalent would be for you. The institutions change. The method does not.
 
-> _Slide 5 — Title: 'What the method produces'. Body, five rows: 'A picture of what exists today.' 'A ranked gap analysis.' 'A localised framework with build/buy/share calls.' 'A sequenced, costed roadmap.' 'A living, governed architecture.'_
+> _Slide 5 — Title: 'What the method produces'. Body, six rows: 'A picture of what exists today.' 'A ranked gap analysis.' 'A localised framework with build/buy/share calls.' 'A target architecture — the designed future state.' 'A sequenced, costed roadmap.' 'A living, governed architecture.'_
 
-Running the method on Progressa produces five things, one per phase. A picture of what exists today. An honest assessment of the gaps, ranked. A framework fitted to Progressa, with each building block marked build, buy or share. A sequenced roadmap the minister can take to cabinet. And a living, governed architecture that keeps re-use happening after the consultants leave. Each one is built on a real sector, in detail, where you can see exactly how it is done.
+Running the method on Progressa produces six things across the five phases. A picture of what exists today. An honest assessment of the gaps, ranked. A framework fitted to Progressa, with each building block marked build, buy or share. A target architecture — the designed future state the gaps are closed toward. A sequenced roadmap the minister can take to cabinet. And a living, governed architecture that keeps re-use happening after the consultants leave. Each one is built on a real sector, in detail, where you can see exactly how it is done.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Progressa is a realistic education sector with the fragmentation problem most countries share — the canvas for running the whole method, step by step, so you can reproduce it on your own.'_
 
@@ -358,7 +359,84 @@ Below are the building blocks [country X]'s [sector] sector needs [list them —
 | PAERA citations | §5.6 Sourcing Strategy; §5.2 Principles |
 | External-link list | PAERA v1.0 §5.6 (Sourcing Strategy); PAERA v1.0 §5.2 (Principles) |
 
-## 3.5 Subtopic 4.5 — Phase 4, Plan — sequence the roadmap and cost it
+## 3.5 Subtopic 4.5 — Phase 4, Plan — design the target architecture
+
+| Field | Value |
+| --- | --- |
+| Persona | A (Architect) — chief or senior architect in a national digital agency or sector ICT unit; the practitioner who does the architecture work |
+| Target runtime | ~5 min (≈620 spoken words) |
+| PAERA anchor | §5.4 Organisational Assessment & Roadmap; §3.4.3 Interoperability; Annex 2 Metamodel |
+
+> **Single message —** _Between the gaps and the roadmap sits the deliverable the whole EA is for — the target architecture: a future-state picture of the capabilities, the data owners, the shared platforms and the integration map your government should have. Design it by applying your principles to the gaps, and the roadmap finally has somewhere to go._
+
+### Script (voice-over over text-only slides)
+
+> _Slide 1 — Title: 'Phase 4, Plan — design the target architecture'. Voice-over begins._
+
+Assess told you where Progressa is and where the gaps are. The roadmap will tell you how to get somewhere. But somewhere where? Between the two sits the deliverable the whole architecture exists to produce: the target architecture — the picture of the future state you are building toward. Skip it, and you sequence a roadmap to a destination nobody drew. This is where you draw it — the first half of the Plan phase, before you sequence anything.
+
+> _Slide 2 — Title: 'What the target architecture is'. Body, four rows: 'Target capabilities — each owned by one body, duplicates resolved.' 'Target data domains — one authoritative owner each.' 'Target shared platforms — identity, data exchange, consumed by all.' 'Target technology standards.' Below: 'The AS-IS picture's mirror — designed, not observed.'_
+
+The target architecture is the future-state picture, drawn in the same four layers you used for the current state — but designed, not observed. The target capability map: each capability owned by exactly one body, the duplicates resolved. The target data domains: one authoritative owner for the learner, the person, the result — the three lists collapsed to one. The target shared platforms: the identity platform and the data-exchange backbone every sector will consume. And the target technology standards. It is the current-state picture's mirror — what the sector should look like once the gaps are closed.
+
+> _Slide 3 — Title: 'Apply the principles to design it'. Body, single text block: 'You do not invent the target — you design it by applying your adopted principles to the gaps. Once-only collapses the three learner lists into one authoritative registry. Reuse-before-build makes education consume the national identity. One-owner-per-domain resolves who owns what. The principles are the design rules.'_
+
+You do not invent the target from imagination. You design it by applying the principles you adopted in Adapt to the gaps you found in Assess. Once-only says the three learner lists become one — so the target has a single authoritative Learner Registry. Reuse-before-build says education consumes the national identity rather than minting its own — so the target shows the Examination Authority consuming the Identity Authority. One-owner-per-domain resolves who owns what. The principles are not decoration; they are the design rules. Apply them to the current state, and the target architecture almost draws itself.
+
+> _Slide 4 — Title: 'The integration map — the part the AS-IS never had'. Body, single text block: 'The target adds one artefact the current state never had: which bodies exchange which data, over what mechanism, in what priority. On Progressa: PNEA reads the learner from PLR and identity from PNIA, both over PDGA's backbone, replacing the paper re-entry. It is the target's connective tissue — and the bridge to the interoperability work.'_
+
+The target adds one artefact the current state never had: the integration map. It names which bodies need to exchange which data, over what mechanism, in what priority order. On Progressa: the Examination Authority reads the learner from the Learner Registry and the identity from the Identity Authority, both over the Digital Government Authority's data-exchange backbone, replacing the paper re-entry. The integration map is the target's connective tissue — the picture of a government whose systems finally talk to each other. Here you draw it as a first cut; designing those exchanges in full detail is the interoperability work that the next knowledge product covers.
+
+> _Slide 5 — Title: 'Keep it a target, not a fantasy'. Body, single text block: 'The target must be reachable: every element traces back to a gap it closes and forward to a sourcing decision — build, buy or share — that obtains it. A target capability with no way to acquire it is a wish, not an architecture. Target and sourcing are signed off together as the agreed destination.'_
+
+One discipline keeps the target useful. It must be reachable, not a fantasy. Every element of the target should trace back to a gap it closes and forward to a sourcing decision — build, buy or share — that obtains it. A target capability with no way to build or acquire it is a wish, not an architecture. So the target architecture and the sourcing decisions are designed together: the target says what the future state is; the sourcing says how each piece is obtained. Signed off together, they are the agreed destination the roadmap then sequences.
+
+> _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The target architecture is the designed future-state picture — target capabilities, one owner per data domain, shared platforms, and the integration map — reached by applying your principles to the gaps, and traceable to a sourcing decision for every element.'_
+
+So before you sequence anything, design the target. The future-state picture in four layers, plus the integration map, reached by applying your principles to the gaps you found, every element traceable to a sourcing decision. That target is what the whole architecture exists to produce — and what the roadmap then turns into a sequence your minister can fund.
+
+> _Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §5.4 Organisational Assessment & Roadmap; §3.4.3 Interoperability; Annex 2 Metamodel. Footer: 'Find the link in the description.'_
+
+### On-screen slide specification
+
+| Slide | Element (text-only) | Notes |
+| --- | --- | --- |
+| 1 | Title slide. Title: 'Phase 4, Plan — design the target architecture'. | Standard ITU template. Subtitle (KP1 / 4.5). No images. Note: Plan has two videos — design (this) then sequence (4.6). |
+| 2 | What-the-target-is slide. Four text rows, the four target layers; 'designed, not observed'. | The target is the AS-IS picture's mirror, designed forward. Candidate centrepiece visual. Text-only. |
+| 3 | Apply-the-principles slide. Single text block. | The principles are the design rules — the target almost draws itself. Text-only. |
+| 4 | Integration-map slide. Single text block; the new artefact + the KP2 bridge. | The integration map is the target's connective tissue; first cut here, full design in the interoperability KP. Text-only. |
+| 5 | Keep-it-reachable slide. Single text block. | Every target element traces to a gap and a sourcing decision — target + sourcing signed off together. |
+| 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | Quotable take-home line; the target as the EA's central deliverable. |
+| 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the references. |
+
+### AI usage tip — Design a first-cut target architecture from your gaps
+
+**What the prompt does:** An architect who has run Assess needs to turn the ranked gaps and adopted principles into a designed future state — the target architecture — rather than jumping straight to a roadmap toward an undrawn destination.
+
+**Prompt template (copy-paste into Claude):**
+
+```text
+Below are my ranked gaps for [country X]'s [sector] sector, my adopted architecture principles, and my sourcing postures [paste the gap analysis, the principle list, and the build/buy/share matrix if you have it]. Design a first-cut target architecture by applying the principles to the gaps. Produce: (1) the target capability map — each capability with exactly one owning body, duplicates resolved; (2) the target data domains — one authoritative owner each, with the duplicate registries collapsed; (3) the target shared platforms every body will consume (identity, payments, data exchange); (4) the target technology standards; (5) a first-cut integration map — which bodies exchange which data domains, over what mechanism, in what priority. For every target element, note the gap it closes and the sourcing decision (build / buy / share) that obtains it; flag any element with no path to acquire it. Output: the four target layers, the integration map, and the gap-and-sourcing trace.
+```
+
+**Inputs and outputs:** Input: the ranked gaps, the adopted principles, and the sourcing postures. Output: a first-cut target architecture in four layers, an integration map, and a trace from each element to a gap and a sourcing decision.
+
+**Safeguard:** The target is a hypothesis produced by applying principles to your gaps — validate each owner assignment and each integration with the bodies that will live with them before sign-off. And the integration map here is a first cut to be designed in full by the interoperability work (KP2), not a finished interoperability design; do not commit exchange mechanisms off this draft alone.
+
+### Metadata
+
+| Field | Value |
+| --- | --- |
+| Working title | Phase 4, Plan — design the target architecture |
+| YouTube-optimised title | EA lifecycle Phase 4: design the target architecture before you build the roadmap |
+| Description (60 words) | Between the gaps and the roadmap sits the deliverable the whole EA exists for: the target architecture. This video shows public-sector architects how to design the future state — target capabilities with one owner each, collapsed registries, shared platforms, and the integration map — by applying their principles to the gaps, with every element traceable to a sourcing decision. AI target-architecture prompt in the description. |
+| Tags | target architecture, to-be, future state, integration map, enterprise architecture lifecycle, PAERA, once-only, GovStack, public sector architect |
+| Playlist (YouTube) | KP1 — Topic 4: Progressa demonstration, applying the method end-to-end |
+| ToR §4 coverage | §4.1 (methodology, step-by-step); §4.2 (reference frameworks — target design); §4.3 (AI integration — target-architecture prompt); §4.6 (worked on the Progressa sector) |
+| PAERA citations | §5.4 Organisational Assessment & Roadmap; §3.4.3 Interoperability; Annex 2 Metamodel |
+| External-link list | PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); PAERA v1.0 §3.4.3 (Interoperability); PAERA v1.0 Annex 2 (Metamodel) |
+
+## 3.6 Subtopic 4.6 — Phase 4, Plan — sequence the roadmap and cost it
 
 | Field | Value |
 | --- | --- |
@@ -400,7 +478,7 @@ That is Phase 4 on Progressa. Sequence into waves, each delivering something vis
 
 | Slide | Element (text-only) | Notes |
 | --- | --- | --- |
-| 1 | Title slide. Title: 'Phase 4, Plan — sequence the roadmap and cost it'. | Standard ITU template. Subtitle (KP1 / 4.5). No images. |
+| 1 | Title slide. Title: 'Phase 4, Plan — sequence the roadmap and cost it'. | Standard ITU template. Subtitle (KP1 / 4.6). No images. |
 | 2 | Waves slide. Four text rows, the wave sequence for Progressa. | Candidate centrepiece visual — the wave roadmap. Text-box rows only. Readable on mobile. |
 | 3 | Cost-it slide. Single text block. | Directional, not quotations; the minister's win lands in Wave 2 inside year one. |
 | 4 | Shared-object slide. Single text block. | Carries the lingua-franca thread — the roadmap as the shared object business and IT both read. |
@@ -435,7 +513,7 @@ Below are my ranked gaps and sourcing decisions for [country X]'s [sector] secto
 | PAERA citations | §5.4 Organisational Assessment & Roadmap; §5.7 Recommended Roadmap |
 | External-link list | PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); PAERA v1.0 §5.7 (Recommended Roadmap) |
 
-## 3.6 Subtopic 4.6 — Phase 5, Execute & Govern — stand up the living EA
+## 3.7 Subtopic 4.7 — Phase 5, Execute & Govern — stand up the living EA
 
 | Field | Value |
 | --- | --- |
@@ -481,7 +559,7 @@ That is Phase 5 on Progressa. The repository live and current. The Board binding
 
 | Slide | Element (text-only) | Notes |
 | --- | --- | --- |
-| 1 | Title slide. Title: 'Phase 5, Execute & Govern — stand up the living EA'. | Standard ITU template. Subtitle (KP1 / 4.6). No images. |
+| 1 | Title slide. Title: 'Phase 5, Execute & Govern — stand up the living EA'. | Standard ITU template. Subtitle (KP1 / 4.7). No images. |
 | 2 | Repository-and-team slide. Single text block. | The standing infrastructure of the practice. Text-only. |
 | 3 | Project-at-the-gate slide. Single text block. | Sets up the punchline — a project about to build a fourth learner list. Text-only. |
 | 4 | Board-enforces-re-use slide. Single text block. | Carries the planning-enables-re-use argument home, as the Progressa punchline. The pivotal slide. |
@@ -517,7 +595,7 @@ Below is a project proposal for [country X]'s [sector] sector [paste it: what it
 | PAERA citations | §4.2.1 Management; §4.2.2 Architecture; §5.4 Organisational Assessment & Roadmap |
 | External-link list | PAERA v1.0 §4.2.1 (Management); PAERA v1.0 §4.2.2 (Architecture); PAERA v1.0 §5.4 (Organisational Assessment & Roadmap) |
 
-## 3.7 Subtopic 4.7 — Run this on your own sector — the transferable recipe
+## 3.8 Subtopic 4.8 — Run this on your own sector — the transferable recipe
 
 | Field | Value |
 | --- | --- |
@@ -525,21 +603,21 @@ Below is a project proposal for [country X]'s [sector] sector [paste it: what it
 | Target runtime | ~4 min (≈560 spoken words) |
 | PAERA anchor | §5.4 Organisational Assessment & Roadmap; §5.7 Recommended Roadmap |
 
-> **Single message —** _The five phases, four sign-offs and five deliverables you watched on Progressa are the recipe — change the institutions and the data domains, and the same method runs on any sector you are handed._
+> **Single message —** _The five phases, four sign-offs and six deliverables you watched on Progressa are the recipe — change the institutions and the data domains, and the same method runs on any sector you are handed._
 
 ### Script (voice-over over text-only slides)
 
 > _Slide 1 — Title: 'Run this on your own sector — the transferable recipe'. Voice-over begins._
 
-You have watched the whole method run on Progressa. The last step is to make it yours. Because the value of a worked example is not Progressa — it is that the same five phases, four sign-offs and five deliverables run on any public-sector domain you are handed. Here is the recipe, stripped to what transfers.
+You have watched the whole method run on Progressa. The last step is to make it yours. Because the value of a worked example is not Progressa — it is that the same five phases, four sign-offs and six deliverables run on any public-sector domain you are handed. Here is the recipe, stripped to what transfers.
 
-> _Slide 2 — Title: 'The recipe — five phases, five deliverables'. Body, five rows: 'Discover → an honest picture.' 'Assess → a ranked gap analysis.' 'Adapt → a localised framework + sourcing matrix.' 'Plan → a wave roadmap.' 'Execute & Govern → a living governed EA.' Below: 'Four sign-offs between the first four phases.'_
+> _Slide 2 — Title: 'The recipe — five phases, six deliverables'. Body, six rows: 'Discover → an honest picture.' 'Assess → a ranked gap analysis.' 'Adapt → a localised framework + sourcing matrix.' 'Plan → a target architecture, then a wave roadmap.' 'Execute & Govern → a living governed EA.' Below: 'Four sign-offs between the first four phases.'_
 
-The recipe is five phases, each with one deliverable and, for the first four, one sign-off. Discover produces an honest picture. Assess produces a ranked gap analysis. Adapt produces a localised framework and a build-buy-share matrix. Plan produces a wave-sequenced, costed roadmap. Execute and Govern produces a living, governed architecture. Discover before you judge; judge before you adapt; adapt before you plan; plan before you execute; govern always. That order is the method.
+The recipe is five phases and six deliverables, with a sign-off after each of the first four phases. Discover produces an honest picture. Assess produces a ranked gap analysis. Adapt produces a localised framework and a build-buy-share matrix. Plan produces two: the target architecture — the designed future state — and then the wave-sequenced, costed roadmap that reaches it. Execute and Govern produces a living, governed architecture. Discover before you judge; judge before you adapt; adapt before you design the target; design the target before you sequence the roadmap; govern always. That order is the method.
 
-> _Slide 3 — Title: 'What changes, what doesn't'. Body, two columns. 'Changes: the institutions; the data domains (a patient, a farmer, a taxpayer instead of a learner); the specific gaps.' 'Stays the same: the five phases; the four sign-offs; the five deliverables; reuse-before-build; the binding Board.'_
+> _Slide 3 — Title: 'What changes, what doesn't'. Body, two columns. 'Changes: the institutions; the data domains (a patient, a farmer, a taxpayer instead of a learner); the specific gaps.' 'Stays the same: the five phases; the four sign-offs; the six deliverables; reuse-before-build; the binding Board.'_
 
-Moving to your sector, be clear about what changes and what does not. What changes: the institutions — your ministry, your authorities, your registries instead of Progressa's. The data domains — a patient, a farmer, a taxpayer instead of a learner. The specific gaps you find. What does not change: the five phases, the four sign-offs, the five deliverables, the reuse-before-build default, and the binding Board. You swap the contents; you keep the method.
+Moving to your sector, be clear about what changes and what does not. What changes: the institutions — your ministry, your authorities, your registries instead of Progressa's. The data domains — a patient, a farmer, a taxpayer instead of a learner. The specific gaps you find. What does not change: the five phases, the four sign-offs, the six deliverables, the reuse-before-build default, and the binding Board. You swap the contents; you keep the method.
 
 > _Slide 4 — Title: 'The method travels across sectors'. Body, single text block: 'The same five phases run on health (a patient record), agriculture (a farmer registry), social protection (a beneficiary record). Same shapes, same steps. Once your country has run the lifecycle once, the second sector is cheaper than the first.'_
 
@@ -549,9 +627,9 @@ And the method travels beyond education. The same five phases run on health, whe
 
 Three things to carry from Progressa when you start on your own sector. Start small — pick the one high-priority use case, the equivalent of the single learner record, and make it land in an early wave. Sign off honestly — including the politically uncomfortable gap, because the assessment that flatters fails a year later. And protect the team — the most common way the practice dies is the architects being pulled onto the urgent project of the week. Get those three right and the method does the rest.
 
-> _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Five phases, four sign-offs, five deliverables — change the institutions and the data domains, and the method you watched on Progressa runs on any sector you are handed.'_
+> _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Five phases, four sign-offs, six deliverables — change the institutions and the data domains, and the method you watched on Progressa runs on any sector you are handed.'_
 
-So that is the method, end to end, on a real sector — and the recipe to run it on yours. Five phases. Four sign-offs. Five deliverables. Reuse before build. A Board that can say no. Change the institutions and the domains, keep the method, and you can take any sector in your country from a fragmented start to a living, governed architecture.
+So that is the method, end to end, on a real sector — and the recipe to run it on yours. Five phases. Four sign-offs. Six deliverables, the target architecture and the roadmap among them. Reuse before build. A Board that can say no. Change the institutions and the domains, keep the method, and you can take any sector in your country from a fragmented start to a living, governed architecture.
 
 > _Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §5.4 Organisational Assessment & Roadmap; §5.7 Recommended Roadmap. Footer: 'Find the link in the description.'_
 
@@ -559,8 +637,8 @@ So that is the method, end to end, on a real sector — and the recipe to run it
 
 | Slide | Element (text-only) | Notes |
 | --- | --- | --- |
-| 1 | Title slide. Title: 'Run this on your own sector — the transferable recipe'. | Standard ITU template. Subtitle (KP1 / 4.7). No images. |
-| 2 | The-recipe slide. Five phase→deliverable rows plus the four-sign-offs line. | The reusable recipe in one view. Readable on mobile. |
+| 1 | Title slide. Title: 'Run this on your own sector — the transferable recipe'. | Standard ITU template. Subtitle (KP1 / 4.8). No images. |
+| 2 | The-recipe slide. Six deliverable rows across five phases (Plan has two) plus the four-sign-offs line. | The reusable recipe in one view. Readable on mobile. |
 | 3 | What-changes slide. Two columns: changes vs stays the same. | Separates the swappable contents from the fixed method. Text-only. |
 | 4 | Method-travels slide. Single text block naming health/agriculture/social protection. | ToR §4.4 sector-portability note — names sectors as where the method applies, NOT as worked examples. Text-only. |
 | 5 | Start-small slide. Three text rows of advice carried from Progressa. | The three practitioner takeaways: small, honest, protected. |
@@ -569,15 +647,15 @@ So that is the method, end to end, on a real sector — and the recipe to run it
 
 ### AI usage tip — Map the Progressa method to your sector
 
-**What the prompt does:** An architect ready to apply the method needs a one-page transfer plan — their institutions, their equivalent high-priority use case, and the five deliverables named for their sector.
+**What the prompt does:** An architect ready to apply the method needs a one-page transfer plan — their institutions, their equivalent high-priority use case, and the six deliverables named for their sector.
 
 **Prompt template (copy-paste into Claude):**
 
 ```text
-I want to run the five-phase EA method on [country X]'s [sector] sector. Here are its main bodies [list them and a one-line role each]. Produce a one-page transfer plan. (1) Classify each body (policy unit / regulatory agency / service-delivery authority / state registry / shared platform). (2) Name this sector's equivalent of Progressa's 'single learner record' — the one cross-cutting outcome a minister has promised that fragmentation is blocking, and the duplicated data domain behind it (the patient, the farmer, the beneficiary). (3) Name the five deliverables for this sector: what the Discovery brief, the gap analysis, the sourcing matrix, the wave roadmap and the governed EA would each cover here. (4) Suggest the Wave 1 and Wave 2 content. Output: a one-page transfer plan under those four headings.
+I want to run the five-phase EA method on [country X]'s [sector] sector. Here are its main bodies [list them and a one-line role each]. Produce a one-page transfer plan. (1) Classify each body (policy unit / regulatory agency / service-delivery authority / state registry / shared platform). (2) Name this sector's equivalent of Progressa's 'single learner record' — the one cross-cutting outcome a minister has promised that fragmentation is blocking, and the duplicated data domain behind it (the patient, the farmer, the beneficiary). (3) Name the six deliverables for this sector: what the Discovery brief, the gap analysis, the sourcing matrix, the target architecture, the wave roadmap and the governed EA would each cover here. (4) Suggest the Wave 1 and Wave 2 content. Output: a one-page transfer plan under those four headings.
 ```
 
-**Inputs and outputs:** Input: your sector and its main bodies. Output: a one-page transfer plan (classification, the high-priority use case, the five deliverables, the first two waves).
+**Inputs and outputs:** Input: your sector and its main bodies. Output: a one-page transfer plan (classification, the high-priority use case, the six deliverables, the first two waves).
 
 **Safeguard:** The transfer plan is a starting structure, not a substitute for running Discovery and Assess on the real sector. Confirm the gaps it assumes by actually looking — the duplicated domain it guesses may differ from what you find — before committing a roadmap or a budget to it.
 
@@ -587,7 +665,7 @@ I want to run the five-phase EA method on [country X]'s [sector] sector. Here ar
 | --- | --- |
 | Working title | Run this on your own sector — the transferable recipe |
 | YouTube-optimised title | The EA method in one recipe: five phases you can run on any government sector |
-| Description (60 words) | The value of a worked example is that it transfers. This video strips the Progressa demonstration to the recipe — five phases, four sign-offs, five deliverables, reuse-before-build, a binding Board — and shows what changes (the institutions and data domains) and what doesn't (the method) when you run it on your own sector. AI sector-transfer prompt in the description. |
+| Description (60 words) | The value of a worked example is that it transfers. This video strips the Progressa demonstration to the recipe — five phases, four sign-offs, six deliverables (the target architecture and the roadmap among them), reuse-before-build, a binding Board — and shows what changes (the institutions and data domains) and what doesn't (the method) when you run it on your own sector. AI sector-transfer prompt in the description. |
 | Tags | EA method, enterprise architecture lifecycle, sector transfer, digital government, PAERA, GovStack, methodology, public sector architect |
 | Playlist (YouTube) | KP1 — Topic 4: Progressa demonstration, applying the method end-to-end |
 | ToR §4 coverage | §4.1 (methodology, transferable recipe); §4.4 (sector portability note); §4.3 (AI integration — sector-transfer prompt) |
@@ -598,7 +676,7 @@ I want to run the five-phase EA method on [country X]'s [sector] sector. Here ar
 
 ### 4.1 Design standard — the split-screen usability test
 
-The bar for every video in Topic 4 is the split-screen test set at the kick-off call: a practitioner watching the video on one half of the screen must be able to follow along and produce the artefact on the other half. For the demonstration videos in Topic 4, 'produce the artefact' means draft the deliverable the phase produces, for the practitioner's own sector — a demonstration canvas, a Discovery brief outline, a ranked gap analysis, a sourcing matrix, a wave roadmap, a gate-decision paper, a sector-transfer plan. Each subtopic's AI usage tip operationalises this directly: the prompt turns the phase shown on Progressa into the same artefact for the listener's sector.
+The bar for every video in Topic 4 is the split-screen test set at the kick-off call: a practitioner watching the video on one half of the screen must be able to follow along and produce the artefact on the other half. For the demonstration videos in Topic 4, 'produce the artefact' means draft the deliverable the phase produces, for the practitioner's own sector — a demonstration canvas, a Discovery brief outline, a ranked gap analysis, a sourcing matrix, a target-architecture skeleton, a wave roadmap, a gate-decision paper, a sector-transfer plan. Each subtopic's AI usage tip operationalises this directly: the prompt turns the phase shown on Progressa into the same artefact for the listener's sector.
 
 ### 4.2 Slide branding
 
@@ -618,7 +696,7 @@ Every subtopic includes an external-link list in its metadata. Every script refe
 
 ### 4.6 GitBook companion content
 
-Each subtopic in this bundle ships with the video script, the slide specification, the AI usage tip and the metadata. The GitBook companion content — written, in-depth implementation guidance per the Guide §2 — is produced as a parallel deliverable, structured to mirror the same subtopic numbering. For Topic 4 the GitBook companion carries the full worked Progressa artefacts the videos can only summarise: the complete Discovery brief behind 4.2, the ranked gap analysis with maturity scorecards behind 4.3, the build-buy-share matrix behind 4.4, the wave roadmap with cost drivers behind 4.5, and the scholarship-programme gate-decision paper behind 4.6 — each presented as a fill-in template the practitioner adapts to their own sector. Cross-references between video and GitBook content use the topic/subtopic numbers.
+Each subtopic in this bundle ships with the video script, the slide specification, the AI usage tip and the metadata. The GitBook companion content — written, in-depth implementation guidance per the Guide §2 — is produced as a parallel deliverable, structured to mirror the same subtopic numbering. For Topic 4 the GitBook companion carries the full worked Progressa artefacts the videos can only summarise: the complete Discovery brief behind 4.2, the ranked gap analysis with maturity scorecards behind 4.3, the build-buy-share matrix behind 4.4, the target architecture with its integration map behind 4.5, the wave roadmap with cost drivers behind 4.6, and the scholarship-programme gate-decision paper behind 4.7 — each presented as a fill-in template the practitioner adapts to their own sector. Cross-references between video and GitBook content use the topic/subtopic numbers.
 
 ## 5. Open calibration items
 
@@ -626,23 +704,27 @@ The v0.1 drafting raised the editorial and structural decisions listed below. Th
 
 ### 5.1 PAERA-fidelity — citations verified against PAERA v1.0
 
-Every PAERA reference in Topic 4 was checked against the PAERA v1.0 document before this draft, and the section headings match the source. Verified exactly: §2.1 Problem statement and §2.3 Role of Enterprise Architecture (the Progressa problem, 4.1); §3.1.3 Readiness Assessment (the Discover phase, 4.2 and 4.3); §5.1 Capabilities Assessment (the capability scoring in Assess, 4.3); §5.4 Organisational Assessment & Roadmap (the assessment, the roadmap and governance, 4.2–4.7); §5.6 Sourcing Strategy (the build-buy-share decision, 4.4); §5.2 Principles (the localised principles, 4.4); §5.7 Recommended Roadmap (the wave sequence, 4.5 — PAERA §5.7.2–§5.7.5 name the waves: Inception, High-priority Use Case, Initial Transformation, Mass-scale Transformation); §4.2.1 Management and §4.2.2 Architecture (the team and the Board, 4.6). One residual gloss, carried for consistency with Topics 2–3: §5.2's PAERA heading is simply 'Principles', cited as 'Principles' here. No paraphrased PAERA lists are enumerated in Topic 4 (the principles and entities are referenced, not listed), so the Module-2 list-fidelity risk does not arise here.
+Every PAERA reference in Topic 4 was checked against the PAERA v1.0 document before this draft, and the section headings match the source. Verified exactly: §2.1 Problem statement and §2.3 Role of Enterprise Architecture (the Progressa problem, 4.1); §3.1.3 Readiness Assessment (the Discover phase, 4.2 and 4.3); §5.1 Capabilities Assessment (the capability scoring in Assess, 4.3); §5.4 Organisational Assessment & Roadmap (the assessment, the target, the roadmap and governance, 4.2–4.8); §5.6 Sourcing Strategy (the build-buy-share decision, 4.4); §5.2 Principles (the localised principles, 4.4); §3.4.3 Interoperability and Annex 2 Metamodel (the target architecture and its integration map, 4.5); §5.7 Recommended Roadmap (the wave sequence, 4.6 — PAERA §5.7.2–§5.7.5 name the waves: Inception, High-priority Use Case, Initial Transformation, Mass-scale Transformation); §4.2.1 Management and §4.2.2 Architecture (the team and the Board, 4.7). One residual gloss, carried for consistency with Topics 2–3: §5.2's PAERA heading is simply 'Principles', cited as 'Principles' here. No paraphrased PAERA lists are enumerated in Topic 4 (the principles and entities are referenced, not listed), so the Module-2 list-fidelity risk does not arise here.
 
 ### 5.2 Editorial tone calls
 
-Four tone choices are sharp and deserve a deliberate keep / soften / cut decision: 'this is not a Progressa problem — it is the problem most education sectors share' in 4.1; 'describe without recommending — discover first, judge second' in 4.2; 'an assessment that softens the gap fails — quietly, a year later' in 4.3 (carried deliberately from the Topic 2 and 3 honesty thread); and the scholarship-programme 'fourth learner list' punchline in 4.6. All four are intended to land as practitioner-honest rather than cynical — confirm the register suits ITU's channel voice.
+Four tone choices are sharp and deserve a deliberate keep / soften / cut decision: 'this is not a Progressa problem — it is the problem most education sectors share' in 4.1; 'describe without recommending — discover first, judge second' in 4.2; 'an assessment that softens the gap fails — quietly, a year later' in 4.3 (carried deliberately from the Topic 2 and 3 honesty thread); and the scholarship-programme 'fourth learner list' punchline in 4.7. All four are intended to land as practitioner-honest rather than cynical — confirm the register suits ITU's channel voice.
 
 ### 5.3 Structural calls
 
-Three structural items, all about avoiding repetition across the KP1 modules. (1) Boundary with Topic 2: subtopic 2.5 read the four BDAT layers on Progressa; Topic 4 runs the lifecycle on Progressa and deliberately does not re-model the layers — it assumes them and moves through Discover→Govern. Confirm the two read as the modelling lesson (Topic 2) versus the method demonstration (Topic 4), not a repeat. (2) Boundary with Topic 3: Topic 3 taught the repository, Board and review gate as generic capabilities; subtopic 4.6 shows them running on Progressa (the gate catching a real project). Confirm 4.6 reads as the worked instance of Topic 3's governance, not a re-teach. (3) Method vs taught-method: Topic 4 instantiates the five-phase lifecycle and the four sign-offs named in Topic 1's subtopic 1.6; the phase names, durations (3–4 / 6–8 / 4–6 / 6–8 weeks, then ongoing) and the ~six-months-to-a-roadmap figure are kept consistent with 1.6 — confirm they still match if 1.6 is revised.
+Four structural items. (1) Boundary with Topic 2: subtopic 2.5 read the four BDAT layers on Progressa; Topic 4 runs the lifecycle on Progressa and deliberately does not re-model the layers — it assumes them and moves through Discover→Govern. Confirm the two read as the modelling lesson (Topic 2) versus the method demonstration (Topic 4), not a repeat. (2) Boundary with Topic 3: Topic 3 taught the repository, Board and review gate as generic capabilities; subtopic 4.7 shows them running on Progressa (the gate catching a real project). Confirm 4.7 reads as the worked instance of Topic 3's governance, not a re-teach. (3) Method vs taught-method: Topic 4 instantiates the five-phase lifecycle and the four sign-offs named in Topic 1's subtopic 1.6; the phase names, durations (3–4 / 6–8 / 4–6 / 6–8 weeks, then ongoing) and the ~six-months-to-a-roadmap figure are kept consistent with 1.6 — confirm they still match if 1.6 is revised. (4) The Plan phase now spans two videos — 4.5 designs the target architecture, 4.6 sequences the roadmap — so the method's deliverable count is stated as SIX (Plan produces two), while the phase count stays FIVE and the sign-off count stays FOUR (the target and the roadmap are signed off together at the single Plan gate). This was added because the target architecture, the future-state deliverable the whole EA exists to produce, was otherwise only implied; confirm the five-phase / four-sign-off / six-deliverable framing reads cleanly, and that it stays consistent with Topic 1's 1.6 (which describes Plan as 'describe the target state and sequence into a roadmap').
 
 ### 5.4 Visual production calls
 
-Two items to confirm with ITU's look-and-feel template once delivered (action item A5): the Progressa institution map implied in 4.1 (the five bodies and their roles) and the four-wave roadmap in 4.5 (slide 2) are the two candidate centrepiece visuals of Topic 4 and merit a dedicated design iteration with ITU's production team; both are specified as plain-text rows and text-box structure only, with no icons or emblems, pending the template.
+Three items to confirm with ITU's look-and-feel template once delivered (action item A5): the Progressa institution map implied in 4.1 (the five bodies and their roles), the target-architecture picture and integration map in 4.5 (slides 2 and 4), and the four-wave roadmap in 4.6 (slide 2) are the candidate centrepiece visuals of Topic 4 and merit a dedicated design iteration with ITU's production team; all are specified as plain-text rows and text-box structure only, with no icons or emblems, pending the template. The integration map in 4.5 in particular will be redrawn in detail by KP2 (Government Interoperability Framework); the Topic 4 version is a first cut.
 
-### 5.5 Scope-boundary call — the sector-portability note in 4.7
+### 5.5 Scope-boundary call — the sector-portability note in 4.8
 
-Subtopic 4.7 (slide 4) names health, agriculture and social protection as sectors the method transfers to, with the duplicated data domain for each (a patient record, a farmer registry, a beneficiary record). This is written as the ToR §4.4 sector-portability statement — a one-line note that the method applies elsewhere — and deliberately not as worked examples (no cross-sector case is developed, in line with the Education-only scope rule). Confirm ITU reads it as a portability note rather than scope creep; if any doubt, it can be reduced to a single sentence naming only that the method is sector-agnostic, without listing the sectors.
+Subtopic 4.8 (slide 4) names health, agriculture and social protection as sectors the method transfers to, with the duplicated data domain for each (a patient record, a farmer registry, a beneficiary record). This is written as the ToR §4.4 sector-portability statement — a one-line note that the method applies elsewhere — and deliberately not as worked examples (no cross-sector case is developed, in line with the Education-only scope rule). Confirm ITU reads it as a portability note rather than scope creep; if any doubt, it can be reduced to a single sentence naming only that the method is sector-agnostic, without listing the sectors.
+
+### 5.6 The new target-architecture step and the KP2 hand-off
+
+Subtopic 4.5 (design the target architecture) was added to close a curriculum gap: across the rest of KP1 the AS-IS assessment is taught thoroughly while the TO-BE / target architecture — the future-state deliverable the whole EA exists to produce — was only implied inside the Plan and Adapt phases. 4.5 now teaches it explicitly: design the future state by applying the adopted principles to the assessed gaps, producing the target capability model, the one-owner-per-domain target data map, the target shared platforms, the target standards, and a first-cut integration map. Two confirmations for ITU: (a) the integration map produced here is deliberately a first cut — the full interoperability design (which agencies exchange which data, over which mechanism, to which standard) is the subject of KP2, the Government Interoperability Framework; 4.5 states this hand-off in the script and should not be read as duplicating KP2; (b) the addition keeps the five-phase lifecycle intact by treating 4.5 and 4.6 as the two halves of the single Plan phase, consistent with Topic 1's 1.6.
 
 ## 6. Annex — aggregate external-link list
 
@@ -654,8 +736,9 @@ Compiled across the seven subtopics for ITU's video production pipeline. To be s
 | 4.2 | PAERA v1.0 §3.1.3 (Readiness Assessment); §5.4 (Organisational Assessment & Roadmap). |
 | 4.3 | PAERA v1.0 §5.1 (Capabilities Assessment); §5.4 (Organisational Assessment & Roadmap); §3.1.3 (Readiness Assessment). |
 | 4.4 | PAERA v1.0 §5.6 (Sourcing Strategy); §5.2 (Principles). |
-| 4.5 | PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); §5.7 (Recommended Roadmap — wave sequence §5.7.2–§5.7.5). |
-| 4.6 | PAERA v1.0 §4.2.1 (Management); §4.2.2 (Architecture); §5.4 (Organisational Assessment & Roadmap). GovStack Building Block specifications (govstack.global) for the shared building blocks referenced. |
-| 4.7 | PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); §5.7 (Recommended Roadmap). |
+| 4.5 | PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); §3.4.3 (Interoperability); Annex 2 (Metamodel). |
+| 4.6 | PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); §5.7 (Recommended Roadmap — wave sequence §5.7.2–§5.7.5). |
+| 4.7 | PAERA v1.0 §4.2.1 (Management); §4.2.2 (Architecture); §5.4 (Organisational Assessment & Roadmap). GovStack Building Block specifications (govstack.global) for the shared building blocks referenced. |
+| 4.8 | PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); §5.7 (Recommended Roadmap). |
 
 All references are publicly accessible and verifiable. The Tuesday review may add or refine items based on ITU's preferred citation style for the YouTube channel. The PAERA section numbers were verified against PAERA v1.0 during drafting (see calibration item 5.1).
