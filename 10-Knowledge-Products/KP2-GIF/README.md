@@ -9,13 +9,13 @@ KP2 is the first **implementation** Knowledge Product. Where KP1 taught how to *
 | Module | Topic | Persona | Source | Markdown |
 |---|---|---|---|---|
 | 1 | Why interoperability, the four layers, and the foundation to start | Strategist | `build_kp2_module1_v01.js` | `KP2_Module1_Script_Bundle_v0.1.md` |
-| 2 | Legal framework — the Decree Drafting Kit | Strategist | _to come_ | _to come_ |
+| 2 | Legal framework — the Decree Drafting Kit | Strategist | `build_kp2_module2_v01.js` | `KP2_Module2_Script_Bundle_v0.1.md` |
 | 3 | Governance model — three-tier with RACI | Strategist | _to come_ | _to come_ |
 | 4 | Architecture + technical standards + Giga end-to-end case | Architect | _to come_ | _to come_ |
 | 5 | Implementation + member onboarding + the Linkup demo | Architect | _to come_ | _to come_ |
 | 6 | AI plays for GIF + dissemination | Strategist | _to come_ | _to come_ |
 
-**Module 1 is authored and gated** (0 hard failures on `kp-bundle-qa`; PAERA/EIF citations verified). Modules 2–6 follow the structure in `itu-knowledge/_02_Design/_KP02/KP2_Plan_v0.1.md`. The build pack (`KP2-build-pack/`) is scaffolded; its configs are generated during the Module 4–5 build with `bb-config-gen` and proven with `kp-solution-verify`.
+**Modules 1–2 are authored and gated** (0 hard failures on `kp-bundle-qa`; PAERA/EIF citations verified; Module 2's legal-source claims carried as calibration items for source-wording confirmation). Modules 3–6 follow the structure in `itu-knowledge/_02_Design/_KP02/KP2_Plan_v0.1.md`. The build pack (`KP2-build-pack/`) is scaffolded; its configs are generated during the Module 4–5 build with `bb-config-gen` and proven with `kp-solution-verify`.
 
 ## The two deliverable sides
 
@@ -56,7 +56,7 @@ Before any module is shared with ITU, run the gates: `kp-citation-verify` (PAERA
 
 ## Status
 
-Module 1 authored and gated (v0.1). Build pack scaffolded (configs pending the M4–5 build). Open calibration items for ITU's Tuesday review are in Section 5 of the Module 1 bundle and in `KP2_Plan_v0.1.md` §7 — notably the Progressa demo membership (four Security Servers: MoEYS/PEMIS, PNEA, PLR, PNIA) and the re-phased schedule + Linkup cloud access (A4).
+Modules 1–2 authored and gated (v0.1). Build pack scaffolded (configs pending the M4–5 build; Module 2 specifies the decree as the legal-layer artefact and its acceptance check). Open calibration items for ITU's Tuesday review are in Section 5 of the Module 1 bundle and in `KP2_Plan_v0.1.md` §7 — notably the Progressa demo membership (four Security Servers: MoEYS/PEMIS, PNEA, PLR, PNIA) and the re-phased schedule + Linkup cloud access (A4).
 
 ---
 
