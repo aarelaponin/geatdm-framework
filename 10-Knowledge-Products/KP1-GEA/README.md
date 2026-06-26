@@ -9,8 +9,9 @@ The versioned home of the FiscalAdmin OÜ — ITU/Giga **Knowledge Product 1** (
 | 1 | Why a PAERA-anchored EA, and the lifecycle in one page | Strategist | `build_kp1_module1_v02.js` | `KP1_Module1_Script_Bundle_v0.2.md` |
 | 2 | EA principles, the metamodel and the BDAT layers | Architect | `build_kp1_module2_v01.js` | `KP1_Module2_Script_Bundle_v0.1.md` |
 | 3 | EA repository, tooling and governance | Architect | `build_kp1_module3_v01.js` | `KP1_Module3_Script_Bundle_v0.1.md` |
+| 4 | Progressa demonstration — applying the method end-to-end | Architect | `build_kp1_module4_v01.js` | `KP1_Module4_Script_Bundle_v0.1.md` |
 
-Remaining KP1 modules (4 Progressa demonstration, 5 AI plays, 6 cross-country evidence) are not yet authored.
+Remaining KP1 modules (5 AI plays, 6 cross-country evidence) are not yet authored.
 
 ## The source-of-truth rule
 
