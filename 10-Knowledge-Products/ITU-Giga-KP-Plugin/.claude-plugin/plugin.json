@@ -1,0 +1,18 @@
+{
+  "name": "itu-giga-kp",
+  "version": "0.1.0",
+  "description": "Production kit for the FiscalAdmin OU — ITU/Giga Knowledge Products contract (RFQ-S-GIGA-2026-022, PO #334304): author a KP video-script bundle in the locked audience register, verify every PAERA citation against the source, run the ITU compliance QA gate, and build/render the docx reliably. One author skill plus three gate/mechanic skills, modelled on the RA-to-RFP kit.",
+  "author": {
+    "name": "FiscalAdmin OU"
+  },
+  "keywords": [
+    "itu",
+    "giga",
+    "knowledge-products",
+    "video-script",
+    "enterprise-architecture",
+    "paera",
+    "govstack",
+    "quality-gate"
+  ]
+}

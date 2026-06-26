@@ -20,3 +20,7 @@ x_archive/
 
 # Claude Code workspace config (user-specific)
 .claude/
+
+# Python bytecode
+__pycache__/
+*.pyc
