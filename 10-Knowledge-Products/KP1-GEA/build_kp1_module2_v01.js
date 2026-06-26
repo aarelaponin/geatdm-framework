@@ -394,7 +394,7 @@ body.push(...renderSubtopic({
   title: "Adopt your principles, don't draft them",
   runtime: "~4 min",
   words: 520,
-  paeraAnchor: "§5.2 Architectural principles; §3.3 Digital Infrastructure principles",
+  paeraAnchor: "§5.2 Principles; §3.3 Digital Infrastructure principles",
   singleMessage: "PAERA publishes ten architectural principles, already debated across many countries. Your job is to adopt them, tailor the wording to your context, and use them to settle design arguments — not to spend your first year drafting principles from scratch.",
   scriptBeats: [
     { cue: "Slide 1 — Title: 'Adopt your principles, don't draft them'. Voice-over begins." },
@@ -409,7 +409,7 @@ body.push(...renderSubtopic({
     { text: "One discipline makes principles useful instead of decorative. For each one, write three things: the statement, the reason, and the implication — what the principle forces you to do, or to refuse. Take 'reuse before build'. Statement: we consume an existing building block before we build a new one. Reason: the country pays once instead of many times. Implication: any project proposing to build its own identity or payment function must first show why the shared one cannot be used — and the EA Board can say no. A principle with a written implication can settle an argument. A principle without one cannot." },
     { cue: "Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Principles are decisions you make once so your team does not re-argue them on every project — and PAERA already made the first ten for you.'" },
     { text: "So do not spend your first year writing principles. Adopt PAERA's ten, point each one at your country's laws, give each a written implication so it can settle a real argument, and add your own only where there is a genuine gap. Principles are decisions you make once so your team does not re-argue them on every project. PAERA already made the first ten for you." },
-    { cue: "Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §5.2 (Architectural principles); §3.3 (Digital Infrastructure principles). Footer: 'Find the link in the description.'" }
+    { cue: "Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §5.2 (Principles); §3.3 (Digital Infrastructure principles). Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
     ["1", "Title slide. Title: 'Adopt your principles, don't draft them'.",
@@ -441,8 +441,8 @@ body.push(...renderSubtopic({
     ["Tags",                    "architectural principles, enterprise architecture, PAERA, once-only, interoperability, technology neutrality, EA governance, public sector architect, GovStack"],
     ["Playlist (YouTube)",      "KP1 — Topic 2: EA principles, the metamodel and the BDAT layers"],
     ["ToR §4 coverage",         "§4.1 (methodology framing); §4.2 (reference frameworks); §4.3 (AI integration — principle-card prompt)"],
-    ["PAERA citations",         "§5.2 Architectural principles; §3.3 Digital Infrastructure principles"],
-    ["External-link list",      "PAERA v1.0 §5.2 (Architectural principles); PAERA v1.0 §3.3 (Digital Infrastructure principles)"]
+    ["PAERA citations",         "§5.2 Principles; §3.3 Digital Infrastructure principles"],
+    ["External-link list",      "PAERA v1.0 §5.2 (Principles); PAERA v1.0 §3.3 (Digital Infrastructure principles)"]
   ]
 }));
 
@@ -510,7 +510,7 @@ body.push(...renderSubtopic({
   title: "BDAT on a real ministry — the Progressa walkthrough",
   runtime: "~5 min",
   words: 640,
-  paeraAnchor: "Annex 2 Metamodel; §5.2 Architectural principles",
+  paeraAnchor: "Annex 2 Metamodel; §5.2 Principles",
   singleMessage: "Watch the four layers and the shared entities applied to one real education system — Progressa's ministry, learner registry, examination authority and identity authority — and the abstract method becomes a concrete picture you can reproduce on your own sector.",
   scriptBeats: [
     { cue: "Slide 1 — Title: 'BDAT on a real ministry — the Progressa walkthrough'. Voice-over begins. (Progressa is the demonstration country; all institutions are fictional.)" },
@@ -527,7 +527,7 @@ body.push(...renderSubtopic({
     { text: "Now trace one service all the way down. Sit an examination and get a certificate. The service is delivered by the Examination Authority's run-an-examination and certify-a-result capabilities. Those are supported by the examination-management application. That application uses three data domains — the learner, the person identity, and the examination result — each owned by a different body and reached over the data-exchange backbone, which runs on the shared technology layer. That single thread, from a citizen service down to the infrastructure, is a complete reading of the system in four layers. Reproduce that on your own sector — classify the bodies, draw the capabilities, name the data owners, map the applications, list the shared technology — and you have an architecture, not an inventory." },
     { cue: "Slide 7 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Classify the bodies, draw the capabilities, name one owner per data domain, map applications to capabilities, list shared technology — and any sector becomes a connected picture.'" },
     { text: "That is BDAT on a real ministry. The method is the same on health, on agriculture, on social protection — only the bodies and the domains change. Classify, then read the four layers using the shared entities, and any sector in your country becomes a connected picture you can plan against." },
-    { cue: "Slide 8 — Title: 'Sources'. Body: PAERA v1.0 Annex 2 (Metamodel); §5.2 (Architectural principles — once-only). Footer: 'Find the link in the description.'" }
+    { cue: "Slide 8 — Title: 'Sources'. Body: PAERA v1.0 Annex 2 (Metamodel); §5.2 (Principles — once-only). Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
     ["1", "Title slide. Title: 'BDAT on a real ministry — the Progressa walkthrough'. Subtitle notes Progressa is a fictional demonstration country.",
@@ -561,8 +561,8 @@ body.push(...renderSubtopic({
     ["Tags",                    "BDAT example, enterprise architecture walkthrough, education sector, PAERA, data domain, capability map, once-only, GovStack, public sector architect"],
     ["Playlist (YouTube)",      "KP1 — Topic 2: EA principles, the metamodel and the BDAT layers"],
     ["ToR §4 coverage",         "§4.1 (methodology, worked example); §4.4 (sector portability — method transfers); §4.3 (AI integration — BDAT-skeleton prompt); §4.6 (worked demonstration on the Education sector)"],
-    ["PAERA citations",         "Annex 2 Metamodel; §5.2 Architectural principles (once-only)"],
-    ["External-link list",      "PAERA v1.0 Annex 2 (Metamodel); PAERA v1.0 §5.2 (Architectural principles)"]
+    ["PAERA citations",         "Annex 2 Metamodel; §5.2 Principles (once-only)"],
+    ["External-link list",      "PAERA v1.0 Annex 2 (Metamodel); PAERA v1.0 §5.2 (Principles)"]
   ]
 }));
 
@@ -634,7 +634,7 @@ body.push(...renderSubtopic({
   title: "The two traps to catch at Assess — bespoke and vendor-driven",
   runtime: "~4 min",
   words: 540,
-  paeraAnchor: "§1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Architectural principles; §5.6 Sourcing",
+  paeraAnchor: "§1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Principles; §5.6 Sourcing Strategy",
   singleMessage: "Two traps recur in every assessment: the bespoke trap, where each project builds its own version of a shared function, and the vendor-driven trap, where a supplier's product quietly becomes the architecture. Learn to spot both at Assess, and you protect the country from paying many times for one thing.",
   scriptBeats: [
     { cue: "Slide 1 — Title: 'The two traps to catch at Assess'. Voice-over begins." },
@@ -649,7 +649,7 @@ body.push(...renderSubtopic({
     { text: "You catch both with a few questions, asked at Assess. Does a shared building block already exist for what this project wants to build? Is the data stored to an open standard, or to one vendor's format? If this supplier doubled their price, could we replace them within two years — and if not, why not? And for anything new: is the sourcing choice deliberate — build, buy, share another country's, or test in a sandbox first — or is it just the path of least resistance? These questions turn both traps from things you discover too late into things you flag while they are still cheap to change." },
     { cue: "Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Build-your-own is rational for a project and ruinous for a country; a vendor's product should fit your architecture, not become it — and Assess is where you catch both.'" },
     { text: "So watch for the two traps. The bespoke trap — rational for a project, ruinous for a country, caught only by the whole-of-government view and a board that can say no. And the vendor-driven trap — where a product quietly becomes the architecture and the exit door closes. Both are cheap to fix at Assess and expensive to fix later. Spotting them early is one of the most valuable things you do as an architect." },
-    { cue: "Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §1.3 (GovStack Vision); §3.3 (Digital Infrastructure principles); §5.2 (Architectural principles); §5.6 (Sourcing — build / buy / share / sandbox). Footer: 'Find the link in the description.'" }
+    { cue: "Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §1.3 (GovStack Vision); §3.3 (Digital Infrastructure principles); §5.2 (Principles); §5.6 (Sourcing Strategy — build / buy / share / sandbox). Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
     ["1", "Title slide. Title: 'The two traps to catch at Assess'.",
@@ -681,8 +681,8 @@ body.push(...renderSubtopic({
     ["Tags",                    "vendor lock-in, build vs buy, reuse, enterprise architecture, sourcing, GovStack building blocks, PAERA, procurement, EA governance, public sector architect"],
     ["Playlist (YouTube)",      "KP1 — Topic 2: EA principles, the metamodel and the BDAT layers"],
     ["ToR §4 coverage",         "§4.1 (methodology framing); §4.2 (reference frameworks — sourcing); §4.3 (AI integration — two-trap screen prompt)"],
-    ["PAERA citations",         "§1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Architectural principles; §5.6 Sourcing"],
-    ["External-link list",      "PAERA v1.0 §1.3 (GovStack Vision); PAERA v1.0 §3.3 (Digital Infrastructure principles); PAERA v1.0 §5.2 (Architectural principles); PAERA v1.0 §5.6 (Sourcing)"]
+    ["PAERA citations",         "§1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Principles; §5.6 Sourcing Strategy"],
+    ["External-link list",      "PAERA v1.0 §1.3 (GovStack Vision); PAERA v1.0 §3.3 (Digital Infrastructure principles); PAERA v1.0 §5.2 (Principles); PAERA v1.0 §5.6 (Sourcing Strategy)"]
   ]
 }));
 
@@ -741,11 +741,11 @@ body.push(
   genericTable([2000, 7700], ["Subtopic", "Sources referenced"], [
     ["2.1", "PAERA v1.0 (paera.govstack.global) — Annex 2 Metamodel; §2.3 Role of Enterprise Architecture."],
     ["2.2", "PAERA v1.0 Annex 2 (Metamodel — entities and relationships)."],
-    ["2.3", "PAERA v1.0 §5.2 (Architectural principles); §3.3 (Digital Infrastructure principles)."],
+    ["2.3", "PAERA v1.0 §5.2 (Principles); §3.3 (Digital Infrastructure principles)."],
     ["2.4", "PAERA v1.0 §4.6 (Organisational taxonomy); Annex A1.2 (taxonomy detail)."],
-    ["2.5", "PAERA v1.0 Annex 2 (Metamodel); §5.2 (Architectural principles — once-only). Progressa is a fictional demonstration country; no external citation."],
+    ["2.5", "PAERA v1.0 Annex 2 (Metamodel); §5.2 (Principles — once-only). Progressa is a fictional demonstration country; no external citation."],
     ["2.6", "PAERA v1.0 §3.1.3 (Readiness Assessment); §5.4 (Organisational Assessment & Roadmap)."],
-    ["2.7", "PAERA v1.0 §1.3 (GovStack Vision); §3.3 (Digital Infrastructure principles); §5.2 (Architectural principles); §5.6 (Sourcing). GovStack Building Block specifications (govstack.global) for the shared building blocks referenced."]
+    ["2.7", "PAERA v1.0 §1.3 (GovStack Vision); §3.3 (Digital Infrastructure principles); §5.2 (Principles); §5.6 (Sourcing Strategy). GovStack Building Block specifications (govstack.global) for the shared building blocks referenced."]
   ]),
   spacer(120),
   P("All references are publicly accessible and verifiable. The Tuesday review may add or refine items based on ITU's preferred citation style for the YouTube channel, and once the exact PAERA §5.2 / §4.6 / Annex 2 wording is confirmed (see calibration item 5.1) the section references here will be locked to match.")

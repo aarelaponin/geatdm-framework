@@ -212,7 +212,7 @@ Draft a one-slide explainer titled 'What is Enterprise Architecture' for a [Cabi
 | --- | --- |
 | Persona | S (Strategist) — CDO, Director-General, sector minister or ministerial-equivalent sponsor |
 | Target runtime | ~5 min (≈620 spoken words) |
-| PAERA anchor | §1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Architectural Principles |
+| PAERA anchor | §1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Principles |
 
 > **Single message —** _Procurement rules can require interoperability. They cannot deliver it. Only planning at the level of the whole government, supported by reference architectures, can._
 
@@ -246,7 +246,7 @@ Reference architectures answer the questions projects do not. Other countries ha
 
 So when you make the case for an EA, the case is this. The four-part picture is the artefact. Planning is the function. Re-use, sustainability and complexity reduction — three things every digital ministry says it wants — none of these come from projects alone. All of them come from the planning view that an EA gives, and from the reference architectures that EA practice connects you to. That is why projects cannot fix this themselves. That is why an EA is work your minister must commission, separately, deliberately, with sustained funding.
 
-> _Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Architectural Principles. Footer: 'Find the link in the description.'_
+> _Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Principles. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -284,8 +284,8 @@ Below are 3 to 5 of [country X]'s current and planned digital-government program
 | Tags | EA planning, building block reuse, GovStack, digital procurement, sustainability, complexity reduction, reference architecture, PAERA |
 | Playlist (YouTube) | KP1 — Topic 1: Why a PAERA-anchored EA |
 | ToR §4 coverage | §4.1 (methodology framing); §4.2 (reference frameworks); §4.3 (AI integration — business-case prompt) |
-| PAERA citations | §1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Architectural Principles |
-| External-link list | PAERA v1.0 §1.3 (GovStack Vision); PAERA v1.0 §3.3 (Digital Infrastructure principles); PAERA v1.0 §5.2 (Architectural Principles) |
+| PAERA citations | §1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Principles |
+| External-link list | PAERA v1.0 §1.3 (GovStack Vision); PAERA v1.0 §3.3 (Digital Infrastructure principles); PAERA v1.0 §5.2 (Principles) |
 
 ## 3.4 Subtopic 1.4 — Why an EA matters more now — and what it lets your minister actually do
 
@@ -769,7 +769,7 @@ Compiled across the six subtopics for ITU's video production pipeline. To be spl
 | --- | --- |
 | 1.1 | PAERA v1.0 site (paera.govstack.global) for Problem statement §2.1 and Principle #5 Once-Only §5.2; EU European Interoperability Framework reference (Once-Only principle). |
 | 1.2 | PAERA v1.0 §2.3 Role of Enterprise Architecture; TOGAF BDAT layering reference. |
-| 1.3 | PAERA v1.0 §1.3 (GovStack Vision); PAERA v1.0 §3.3 (Digital Infrastructure principles); PAERA v1.0 §5.2 (Architectural Principles). |
+| 1.3 | PAERA v1.0 §1.3 (GovStack Vision); PAERA v1.0 §3.3 (Digital Infrastructure principles); PAERA v1.0 §5.2 (Principles). |
 | 1.4 | PAERA v1.0 §2.3 (Role of Enterprise Architecture); PAERA v1.0 §4.5 (Digital Co-creation). |
 | 1.5 | PAERA v1.0 site (paera.govstack.global); GovStack site (govstack.global); GovMarket; PAERA v1.0 §1.2 Motivation; §1.3 GovStack Vision. |
 | 1.6 | PAERA v1.0 §3.1.3 Readiness Assessment; PAERA v1.0 §5.4 Organisational Assessment & Roadmap. |

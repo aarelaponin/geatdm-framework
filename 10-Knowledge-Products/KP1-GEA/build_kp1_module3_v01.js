@@ -518,7 +518,7 @@ body.push(...renderSubtopic({
   title: "Review projects against the architecture",
   runtime: "~5 min",
   words: 620,
-  paeraAnchor: "§5.4 Organisational Assessment & Roadmap; §5.2 Architectural principles; §5.6 Sourcing Strategy",
+  paeraAnchor: "§5.4 Organisational Assessment & Roadmap; §5.2 Principles; §5.6 Sourcing Strategy",
   singleMessage: "The architecture review gate — a short, consistent set of questions every project passes through before funding — is what turns principles and re-use from good intentions into the actual path of least resistance.",
   scriptBeats: [
     { cue: "Slide 1 — Title: 'Review projects against the architecture'. Voice-over begins." },
@@ -533,7 +533,7 @@ body.push(...renderSubtopic({
     { text: "Every decision the gate makes goes into the repository's decision log — what was decided, and why. This is the architecture's memory. Two years on, when someone asks why the Examination Authority is not allowed its own learner list, the answer is in the log, with the reasoning, not lost with the architect who has moved on. The decision log is also what makes the gate consistent: this project is treated the way the last similar one was, because the precedent is written down." },
     { cue: "Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The review gate — a few consistent questions every project answers before funding, with logged decisions and time-boxed exceptions — is what turns re-use from a wish into the default.'" },
     { text: "So build the gate. A few questions, asked of every project the same way. A clear ruling — consume the shared block, or a written, time-boxed exception. Every decision logged with its reason. This is where principles stop being words and become the path projects actually take. The gate is the engine of the whole EA. Everything else — the repository, the Board, the principles — exists so that this moment, repeated, goes the right way." },
-    { cue: "Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §5.4 Organisational Assessment & Roadmap; §5.2 Architectural principles; §5.6 Sourcing Strategy. Footer: 'Find the link in the description.'" }
+    { cue: "Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §5.4 Organisational Assessment & Roadmap; §5.2 Principles; §5.6 Sourcing Strategy. Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
     ["1", "Title slide. Title: 'Review projects against the architecture'.",
@@ -565,8 +565,8 @@ body.push(...renderSubtopic({
     ["Tags",                    "architecture review, EA governance gate, re-use, building blocks, enterprise architecture, PAERA, sourcing, exceptions, public sector architect"],
     ["Playlist (YouTube)",      "KP1 — Topic 3: EA repository, tooling and governance"],
     ["ToR §4 coverage",         "§4.1 (methodology, step-by-step); §4.2 (reference frameworks — re-use, sourcing); §4.3 (AI integration — gate-checklist prompt)"],
-    ["PAERA citations",         "§5.4 Organisational Assessment & Roadmap; §5.2 Architectural principles; §5.6 Sourcing Strategy"],
-    ["External-link list",      "PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); PAERA v1.0 §5.2 (Architectural principles); PAERA v1.0 §5.6 (Sourcing Strategy)"]
+    ["PAERA citations",         "§5.4 Organisational Assessment & Roadmap; §5.2 Principles; §5.6 Sourcing Strategy"],
+    ["External-link list",      "PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); PAERA v1.0 §5.2 (Principles); PAERA v1.0 §5.6 (Sourcing Strategy)"]
   ]
 }));
 
@@ -747,7 +747,7 @@ body.push(
     ["3.2", "PAERA v1.0 §5.6 (Sourcing Strategy); §3.3 (Digital Infrastructure principles — technology neutrality)."],
     ["3.3", "PAERA v1.0 §4.2.2 (Architecture); §5.4 (Organisational Assessment & Roadmap)."],
     ["3.4", "PAERA v1.0 §4.2.1 (Management); §3.1 (Governance & Policy); §5.4 (Organisational Assessment & Roadmap)."],
-    ["3.5", "PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); §5.2 (Architectural principles); §5.6 (Sourcing Strategy). GovStack Building Block specifications (govstack.global) for the shared building blocks referenced."],
+    ["3.5", "PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); §5.2 (Principles); §5.6 (Sourcing Strategy). GovStack Building Block specifications (govstack.global) for the shared building blocks referenced."],
     ["3.6", "PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); §5.7 (Recommended Roadmap — intermediate-results pattern)."],
     ["3.7", "PAERA v1.0 §4.2.1 (Management); §4.2.2 (Architecture); §5.4 (Organisational Assessment & Roadmap)."]
   ]),

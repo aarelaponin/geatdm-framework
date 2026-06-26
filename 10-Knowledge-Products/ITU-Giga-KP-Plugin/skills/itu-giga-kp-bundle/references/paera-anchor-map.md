@@ -28,7 +28,7 @@ Use this map when citing PAERA in any subtopic. The map is organised by methodol
 | Legal layer (decrees, statutes) | §3.2 | Used in KP2 (Decree Drafting Kit) |
 | Digital Infrastructure principles (rule of law, security, openness) | §3.3 | Used in KP1 subtopics 1.3, 1.5; KP2; KP3 |
 | Interoperability framing (whole-of-government, once-only) | §3.4.3 | Used in KP2 subtopic 1.1 (the four-layer foundation) |
-| Architectural principles — the ten principles | §5.2 | Used in KP1 subtopic 1.5; the Once-Only principle is §5.2 Principle #5 |
+| Architectural principles — the ten principles | §5.2 | Used in KP1 subtopic 1.5; the Once-Only principle is §5.2 Principle #5. CITE as the published heading: "Principles" (not "Architectural principles") |
 | Organisational assessment & roadmap (the AS-IS → TO-BE → Roadmap arc) | §5.4 | Used in KP1 subtopics 1.6, 1.7 (lifecycle, commitments) |
 | Sourcing (build / buy / share / sandbox) | §5.6 | Used in KP3 subtopic about investment prioritisation |
 | Recommended roadmap (intermediate results pattern, wave-based) | §5.7 | Used in KP1 subtopic 1.8 (signposts); KP3 (wave roadmap) |
@@ -57,7 +57,7 @@ Use this map when citing PAERA in any subtopic. The map is organised by methodol
 | §4.2.2 | Architecture (chief architect, EA function) | KP1 §1.7 |
 | §4.5 | Digital Co-creation | KP1 §5.4, §6.5 |
 | §4.6 | Organisational taxonomy | KP1 §1.5 |
-| §5.2 | Architectural principles (ten principles) | KP1 §1.5 |
+| §5.2 | Principles (the ten architectural principles) | KP1 §1.5 |
 | §5.2 Principle #5 | Once-Only | KP1 §1.1 (Sign 4), KP2 |
 | §5.4 | Organisational assessment & roadmap | KP1 §1.6, §1.7 |
 | §5.6 | Sourcing (build / buy / share / sandbox) | KP3 |

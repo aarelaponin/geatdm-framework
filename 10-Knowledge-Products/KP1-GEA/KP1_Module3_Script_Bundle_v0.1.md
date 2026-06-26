@@ -379,7 +379,7 @@ Draft a Terms of Reference for an EA Governance Board in [country X]. Include: (
 | --- | --- |
 | Persona | A (Architect) — chief or senior architect in a national digital agency or sector ICT unit; the practitioner who does the architecture work |
 | Target runtime | ~5 min (≈620 spoken words) |
-| PAERA anchor | §5.4 Organisational Assessment & Roadmap; §5.2 Architectural principles; §5.6 Sourcing Strategy |
+| PAERA anchor | §5.4 Organisational Assessment & Roadmap; §5.2 Principles; §5.6 Sourcing Strategy |
 
 > **Single message —** _The architecture review gate — a short, consistent set of questions every project passes through before funding — is what turns principles and re-use from good intentions into the actual path of least resistance._
 
@@ -409,7 +409,7 @@ Every decision the gate makes goes into the repository's decision log — what w
 
 So build the gate. A few questions, asked of every project the same way. A clear ruling — consume the shared block, or a written, time-boxed exception. Every decision logged with its reason. This is where principles stop being words and become the path projects actually take. The gate is the engine of the whole EA. Everything else — the repository, the Board, the principles — exists so that this moment, repeated, goes the right way.
 
-> _Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §5.4 Organisational Assessment & Roadmap; §5.2 Architectural principles; §5.6 Sourcing Strategy. Footer: 'Find the link in the description.'_
+> _Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §5.4 Organisational Assessment & Roadmap; §5.2 Principles; §5.6 Sourcing Strategy. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -447,8 +447,8 @@ Build an architecture review gate checklist for [country X]'s EA Board. Here are
 | Tags | architecture review, EA governance gate, re-use, building blocks, enterprise architecture, PAERA, sourcing, exceptions, public sector architect |
 | Playlist (YouTube) | KP1 — Topic 3: EA repository, tooling and governance |
 | ToR §4 coverage | §4.1 (methodology, step-by-step); §4.2 (reference frameworks — re-use, sourcing); §4.3 (AI integration — gate-checklist prompt) |
-| PAERA citations | §5.4 Organisational Assessment & Roadmap; §5.2 Architectural principles; §5.6 Sourcing Strategy |
-| External-link list | PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); PAERA v1.0 §5.2 (Architectural principles); PAERA v1.0 §5.6 (Sourcing Strategy) |
+| PAERA citations | §5.4 Organisational Assessment & Roadmap; §5.2 Principles; §5.6 Sourcing Strategy |
+| External-link list | PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); PAERA v1.0 §5.2 (Principles); PAERA v1.0 §5.6 (Sourcing Strategy) |
 
 ## 3.6 Subtopic 3.6 — Show the EA is working — the few metrics that matter
 
@@ -669,7 +669,7 @@ Compiled across the seven subtopics for ITU's video production pipeline. To be s
 | 3.2 | PAERA v1.0 §5.6 (Sourcing Strategy); §3.3 (Digital Infrastructure principles — technology neutrality). |
 | 3.3 | PAERA v1.0 §4.2.2 (Architecture); §5.4 (Organisational Assessment & Roadmap). |
 | 3.4 | PAERA v1.0 §4.2.1 (Management); §3.1 (Governance & Policy); §5.4 (Organisational Assessment & Roadmap). |
-| 3.5 | PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); §5.2 (Architectural principles); §5.6 (Sourcing Strategy). GovStack Building Block specifications (govstack.global) for the shared building blocks referenced. |
+| 3.5 | PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); §5.2 (Principles); §5.6 (Sourcing Strategy). GovStack Building Block specifications (govstack.global) for the shared building blocks referenced. |
 | 3.6 | PAERA v1.0 §5.4 (Organisational Assessment & Roadmap); §5.7 (Recommended Roadmap — intermediate-results pattern). |
 | 3.7 | PAERA v1.0 §4.2.1 (Management); §4.2.2 (Architecture); §5.4 (Organisational Assessment & Roadmap). |
 

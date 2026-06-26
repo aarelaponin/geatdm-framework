@@ -382,7 +382,7 @@ body.push(...renderSubtopic({
   title: "Why projects can't do this themselves — EA as planning, RAs as scar tissue",
   runtime: "~5 min",
   words: 620,
-  paeraAnchor: "§1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Architectural Principles",
+  paeraAnchor: "§1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Principles",
   singleMessage: "Procurement rules can require interoperability. They cannot deliver it. Only planning at the level of the whole government, supported by reference architectures, can.",
   scriptBeats: [
     { cue: "Slide 1 — Title: 'Why projects cannot fix this themselves'. Voice-over begins." },
@@ -399,7 +399,7 @@ body.push(...renderSubtopic({
     { text: "Reference architectures answer the questions projects do not. Other countries have built these systems for decades. They learned what survives technology change and what does not. They learned which architectural decisions still hold up after twenty years and which decisions cost them dearly. A reference architecture is that learning, written down. PAERA is one such reference. Adopting it means starting with their lessons, instead of paying for the same lessons yourself over the next twenty years." },
     { cue: "Slide 6 — Title: 'EA is planning, not engineering'. Body, three large text lines: 'The four-part picture is the artefact.' 'Planning is the function.' 'Re-use, sustainability and complexity reduction — none of these come from projects. All of these come from EA.'" },
     { text: "So when you make the case for an EA, the case is this. The four-part picture is the artefact. Planning is the function. Re-use, sustainability and complexity reduction — three things every digital ministry says it wants — none of these come from projects alone. All of them come from the planning view that an EA gives, and from the reference architectures that EA practice connects you to. That is why projects cannot fix this themselves. That is why an EA is work your minister must commission, separately, deliberately, with sustained funding." },
-    { cue: "Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Architectural Principles. Footer: 'Find the link in the description.'" }
+    { cue: "Slide 7 — Title: 'Sources'. Body: PAERA v1.0 §1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Principles. Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
     ["1", "Title slide. Title: 'Why projects can't do this themselves'.",
@@ -431,8 +431,8 @@ body.push(...renderSubtopic({
     ["Tags",                    "EA planning, building block reuse, GovStack, digital procurement, sustainability, complexity reduction, reference architecture, PAERA"],
     ["Playlist (YouTube)",      "KP1 — Topic 1: Why a PAERA-anchored EA"],
     ["ToR §4 coverage",         "§4.1 (methodology framing); §4.2 (reference frameworks); §4.3 (AI integration — business-case prompt)"],
-    ["PAERA citations",         "§1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Architectural Principles"],
-    ["External-link list",      "PAERA v1.0 §1.3 (GovStack Vision); PAERA v1.0 §3.3 (Digital Infrastructure principles); PAERA v1.0 §5.2 (Architectural Principles)"]
+    ["PAERA citations",         "§1.3 GovStack Vision; §3.3 Digital Infrastructure principles; §5.2 Principles"],
+    ["External-link list",      "PAERA v1.0 §1.3 (GovStack Vision); PAERA v1.0 §3.3 (Digital Infrastructure principles); PAERA v1.0 §5.2 (Principles)"]
   ]
 }));
 
@@ -804,7 +804,7 @@ body.push(
   genericTable([2000, 7700], ["Subtopic", "Sources referenced"], [
     ["1.1", "PAERA v1.0 site (paera.govstack.global) for Problem statement §2.1 and Principle #5 Once-Only §5.2; EU European Interoperability Framework reference (Once-Only principle)."],
     ["1.2", "PAERA v1.0 §2.3 Role of Enterprise Architecture; TOGAF BDAT layering reference."],
-    ["1.3", "PAERA v1.0 §1.3 (GovStack Vision); PAERA v1.0 §3.3 (Digital Infrastructure principles); PAERA v1.0 §5.2 (Architectural Principles)."],
+    ["1.3", "PAERA v1.0 §1.3 (GovStack Vision); PAERA v1.0 §3.3 (Digital Infrastructure principles); PAERA v1.0 §5.2 (Principles)."],
     ["1.4", "PAERA v1.0 §2.3 (Role of Enterprise Architecture); PAERA v1.0 §4.5 (Digital Co-creation)."],
     ["1.5", "PAERA v1.0 site (paera.govstack.global); GovStack site (govstack.global); GovMarket; PAERA v1.0 §1.2 Motivation; §1.3 GovStack Vision."],
     ["1.6", "PAERA v1.0 §3.1.3 Readiness Assessment; PAERA v1.0 §5.4 Organisational Assessment & Roadmap."],
