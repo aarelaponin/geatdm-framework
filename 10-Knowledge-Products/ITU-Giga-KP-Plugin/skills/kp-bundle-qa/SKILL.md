@@ -20,14 +20,14 @@ compatibility: Python 3 (standard library only) for the static checks over the b
 
 A KP module is compliant or it is not, and the checks are mechanical enough to forget one by hand. The corrections that defined the ITU compliance checklist each cost a revision cycle on Module 1; this gate makes them a repeatable pass instead of a memory exercise. **Compliance is a gate, not a hope.** Run it after every build and before anything is shared.
 
-This gate does **not** check PAERA citation fidelity — that is `kp-citation-verify`. Run both; they are complementary.
+This gate does **not** check PAERA citation fidelity — that is `kp-citation-verify` — nor, for KP2–4, whether the build pack runs — that is `kp-solution-verify`. Run all three; they are complementary.
 
 ## The checks
 
 Run these over the module's **build script** (the source of truth) and the rendered PDF. `scripts/qa_bundle.py <build_script.js>` automates the static ones and prints a pass/fail report; the render review is done by eye.
 
 ### 1. Forbidden strings (highest-yield leak check)
-None of these may appear anywhere: `GEATDM`, `TK-IO-`, `TK-DPI-`, `IMF`, `Tax Administration Reference`, branded internal methodology names, or cross-sector country enumerations used as worked examples (e.g. naming Lesotho/Gambia by sector, "we have done this in other sectors"). Education is the deliverable sector; cross-sector experience stays internal. The script greps for these; a single hit fails the gate.
+None of these may appear anywhere: `GEATDM`, `TK-IO-`, `TK-DPI-`, `IMF`, `Tax Administration Reference`, branded internal methodology names, or cross-sector country enumerations used as worked examples (e.g. naming Lesotho/Gambia by sector, "we have done this in other sectors"). Education is the deliverable sector; cross-sector experience stays internal. The script greps for these; a single hit fails the gate. **For KP2–4, run the same grep over the build-pack files too** (`configs/`, `prompts/`, `runbook.md`, `acceptance/`, the pack `README.md`) — and add the internal **engine** names (`joget-`, `mtca-data-platform`) to the leak set there, since the pack must cite public specs, not the engine that generated the config. The pack is deliverable content, not just the build script.
 
 ### 2. Seven-element completeness, per subtopic
 Every subtopic must have all seven: (1) header table (Persona, Target runtime, PAERA anchor), (2) single-message box, (3) script beats, (4) on-screen slide specification, (5) AI usage tip with all four parts (problem, prompt template, inputs/outputs, safeguard), (6) metadata table, (7) end-of-subtopic page break. A subtopic missing any one is a v0 draft, not a v0.1 deliverable.

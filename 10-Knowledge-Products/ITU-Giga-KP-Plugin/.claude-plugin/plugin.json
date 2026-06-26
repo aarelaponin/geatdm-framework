@@ -1,7 +1,7 @@
 {
   "name": "itu-giga-kp",
-  "version": "0.1.0",
-  "description": "Production kit for the FiscalAdmin OU — ITU/Giga Knowledge Products contract (RFQ-S-GIGA-2026-022, PO #334304): author a KP video-script bundle in the locked audience register, verify every PAERA citation against the source, run the ITU compliance QA gate, and build/render the docx reliably. One author skill plus three gate/mechanic skills, modelled on the RA-to-RFP kit.",
+  "version": "0.2.0",
+  "description": "Production kit for the FiscalAdmin OU — ITU/Giga Knowledge Products contract (RFQ-S-GIGA-2026-022, PO #334304). KP1 (plan): author a KP video-script bundle in the locked audience register, verify every PAERA citation, run the ITU compliance gate, build/render the docx. KP2–4 (build): scaffold a runnable build pack, generate Building-Block configuration from public specs (X-Road / GovStack / Joget), and verify the solution actually runs on the Linkup + Joget stack. One author skill plus mechanic and gate skills, modelled on the RA-to-RFP kit.",
   "author": {
     "name": "FiscalAdmin OU"
   },
@@ -13,6 +13,12 @@
     "enterprise-architecture",
     "paera",
     "govstack",
+    "interoperability",
+    "dpi",
+    "x-road",
+    "joget",
+    "building-block",
+    "build-pack",
     "quality-gate"
   ]
 }

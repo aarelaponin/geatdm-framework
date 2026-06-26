@@ -39,7 +39,8 @@ From the module's **build script** (never the docx — the script is the source 
 - every `paeraAnchor` value;
 - every `"PAERA v1.0 §…"` / `"Annex …"` string in script beats, slide specs, sources slides, metadata `PAERA citations` and `External-link list`, and the Section-6 aggregate annex;
 - every **paraphrased published list** — the ten principles (2.3), the metamodel entities and relationships (2.2), the taxonomy types and supporting elements (2.4), the once-only principle number, the lifecycle phase names;
-- every non-PAERA anchor (GovStack / EIF / NIIS / UNDP / ID4D).
+- every non-PAERA anchor (GovStack / EIF / NIIS / UNDP / ID4D);
+- **for KP2–4, the build pack too** — the spec named in each `prompts/<module>.md`, the `# CITE:` header of each `configs/<bb>/…` artefact, and the spec column of `bb-config-gen/references/bb-spec-map.md`. A config must cite the **public spec it implements** (GovStack BB / X-Road API / EIF layer / W3C VC), never the internal engine (`joget-*`, `mtca`).
 
 `scripts/extract_paera_sections.py` dumps the PAERA document's heading tree and the key lists so you have the source side to diff against.
 
@@ -60,6 +61,17 @@ These are where Module 2 was exposed. Check each against the PAERA document expl
 - **The organisational taxonomy (§4.6 / Annex A1.2)** — confirm the type names (policy unit / regulatory agency / service-delivery authority) and the supporting elements (registries, shared platforms).
 - **Once-only** — confirm it is §5.2 Principle #5 (as the anchor map claims) and not a different number.
 
+### 3a. Implementation-KP list checks (KP2–4)
+
+For build modules the highest-yield defects move from PAERA paraphrases to **spec fidelity**. Check each against the published spec, not memory:
+
+- **EIF four layers** — Technical, Semantic, Organisational, Legal — cited to **EIF / NIIS**, not PAERA.
+- **GovStack Building Blocks** — the BB names and any BB-config fields (Identity, Registration/Registries, Payment, Consent, Notification) match the **GovStack BB spec**.
+- **UNDP DPI maturity** — the five-domain / level scale is **UNDP's**, domains named as published.
+- **W3C Verifiable Credentials** — the credential model and any issuance config match the **W3C VC Data Model**.
+- **X-Road identifiers** — member/subsystem ids and ACL entries match the live registry; an invented id is WRONG.
+- **Every `[confirm: …]` resolved** — an unresolved placeholder in a shipped config is a TO-CONFIRM by definition: close it against the spec or the live registry, or carry it as a calibration item. (`kp-solution-verify --ready` also fails on these.)
+
 ### 4. Emit the verdict and the fixes
 
 Output two artefacts:
@@ -75,6 +87,7 @@ If anything remains TO-CONFIRM at ship time, it goes into the bundle's Section 5
 - **Do not cite GEATDM, TK-IO-XX, TK-DPI-XX, or the IMF TA RA** as if public. They are internal; ITU does not have them. (`kp-bundle-qa` greps for these — but catch them here too.)
 - **Do not mark VERIFIED from memory.** Verified means the document was opened and the wording matched. Memory and the anchor map produce TO-CONFIRM at best.
 - **Do not let a paraphrase masquerade as a quote.** If the script states "PAERA's ten principles are A, B, C…" the list must match PAERA. If you cannot confirm, soften to "principles such as…" and carry a calibration item.
+- **Do not let a config cite its engine.** A build-pack config cites the **public spec it implements** (GovStack BB / X-Road API / EIF layer / W3C VC). The engine that generated it (`joget-*`, `mtca-data-platform`, X-Road internal ops, `GEATDM`) is internal routing, never a citation.
 
 ## What good looks like
 

@@ -136,11 +136,25 @@ Once a module is drafted, check it does not silently contradict adjacent modules
 - The Progressa worked example (a fictional country used as the demonstration canvas) is the Education-sector demonstration backbone. Modules using Progressa should refer back to the same institutions (MoEYS, PNEA, PLR, PNIA, PDGA) defined in the Inception Report §4.2.
 - The Linkup federation (X-Road 7.x demonstration platform on ITU cloud) appears in KP2/KP3/KP4 modules and must be referenced consistently.
 
+## Step 10 — Implementation-KP authoring mode (KP2–4)
+
+KP1 taught a learner how to **plan** (the deliverable was a document — a target architecture and a roadmap). KP2, KP3 and KP4 teach how to **build** that plan along PAERA's three implementation tracks — **Interoperability (KP2)**, **DPI (KP3)**, **Service delivery (KP4)** — and so they ship **two** things: the video bundle (Steps 1–9, unchanged) **and a runnable build pack**. Read `references/implementation-kp-pattern.md` before authoring any KP2–4 module.
+
+What changes for an implementation KP:
+
+- **The repeated pattern in every module:** learner + Claude + (methodology + Building-Block spec + API) → generate **configuration** → wire a **Building Block** → **working solution** on the Linkup (X-Road) + Joget stack. The AI play stops producing a document and starts producing **config that runs** — the prompt's output is the artefact.
+- **The build module = the seven elements + five build elements.** Keep all seven from Step 5 (the video stays text-only and ~5 min). Add, in the GitBook companion and the build pack — never as on-screen clutter: (1) the public spec/API it teaches against; (2) the generating prompt (output = the config); (3) the config artefact; (4) the wiring/run step; (5) the acceptance check that proves it runs.
+- **Bottom-up, cumulative Progressa.** Build KP2 → KP3 → KP4; each pack consumes the one below (KP2 the bus, KP3 the BBs on the bus, KP4 the services over the BBs), assembling into one running Progressa solution. Keep the Progressa institutions (MoEYS, PLR, PNEA, PNIA, PDGA, PayPro) and BB ids identical across packs — they are the join keys.
+- **Per-track engines, public-spec citations.** Route each block to the right engine (X-Road for KP2; `mtca-data-platform` for KP3; `joget-*` for KP4) but cite only the public spec — see `bb-config-gen` and its `references/bb-spec-map.md`.
+
+**Extra hand-offs for KP2–4** (in addition to the Step-and-gate flow below): `kp-build-pack` scaffolds the runnable pack; `bb-config-gen` fills its configs from specs; `kp-solution-verify` proves the pack actually runs on the stack. A KP2–4 module is a deliverable only when the video bundle passes `kp-citation-verify` + `kp-bundle-qa` AND the build pack passes `kp-solution-verify`.
+
 ## Reference files
 
 - `references/paera-anchor-map.md` — PAERA section lookup organised by methodological concept. Use this when citing PAERA in any subtopic.
 - `references/register-transposition.md` — how to re-register a module for a new persona (Strategist ↔ Architect) while holding the audience lock, keeping titles capability-led, and carrying both structural arguments. Read this when a module shifts persona (e.g. KP1 Module 2 onward).
 - `references/ai-prompt-patterns.md` — the catalogue of AI-usage-prompt patterns proven across Modules 1–2 (diagnostic table, ministerial slide, governance artefact, comparator card, capture template, conformance check, scored analysis, screen). Use it to pick the right four-part prompt shape per subtopic.
+- `references/implementation-kp-pattern.md` — the KP2–4 build-module anatomy, the per-track Building Blocks, and the cumulative-Progressa hand-off chain. Read before authoring any implementation KP.
 
 ## Kit hand-offs
 
