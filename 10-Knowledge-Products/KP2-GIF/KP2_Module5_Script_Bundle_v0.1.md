@@ -10,7 +10,7 @@
 | Contract reference | RFQ-S-GIGA-2026-022 / Purchase Order #334304 (signed 24 April 2026) |
 | Topic persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
 | Subtopics | Seven subtopics (5.1 – 5.7), each shipped as one ~5-minute standalone video |
-| Topic runtime | Approximately 32 minutes across seven standalone videos |
+| Topic runtime | Approximately 33 minutes across seven standalone videos |
 | Build pack | KP2-GIF/KP2-build-pack — this topic stands up the runnable proving slice: the Linkup federation, the member registrations, and the live once-only exchange that is the build pack's acceptance check |
 | Prepared by | FiscalAdmin OÜ — Aare Lapõnin (Engagement Lead) |
 | For review by | ITU/Giga at Tuesday weekly call; FiscalAdmin team (Karin Kaup, Arne Lapõnin) |
@@ -37,7 +37,7 @@ Within each script section, three rendering conventions are used: italic shaded 
 
 ## 2. Topic 5 at a glance
 
-Seven standalone subtopic videos. One Architect persona throughout. Total runtime approximately thirty-two minutes. Each video has a single message and a single learning outcome, and is discoverable individually via search; the playlist provides navigation but is not required to comprehend any single video.
+Seven standalone subtopic videos. One Architect persona throughout. Total runtime approximately thirty-three minutes. Each video has a single message and a single learning outcome, and is discoverable individually via search; the playlist provides navigation but is not required to comprehend any single video.
 
 | # | Title | Single message | Runtime |
 | --- | --- | --- | --- |
@@ -47,7 +47,7 @@ Seven standalone subtopic videos. One Architect persona throughout. Total runtim
 | 5.4 | Register a member on X-Road | Generate the subsystem registration and the access-control list — the configuration that admits one agency to the bus. | ~5 min |
 | 5.5 | Stand up the federation | Central Server, four Security Servers, a Test CA — the Linkup federation, stood up from the run book. | ~5 min |
 | 5.6 | Run the once-only exchange, live | PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real cross-server call, the data asked once. | ~5 min |
-| 5.7 | From demonstration to production | What changes between the sandboxed Linkup demonstration and a production-grade federation a country would actually run. | ~4 min |
+| 5.7 | From demonstration to production | What changes between the sandboxed Linkup demonstration and a production-grade federation a country would actually run — including migrating off and retiring the legacy point-to-point links. | ~5 min |
 
 ## 3. The scripts
 
@@ -72,6 +72,8 @@ You do not onboard a whole government at once. You build the framework in four p
 The four phases. Phase one, Core Platform, in the first six months — stand up the bus, onboard the first two members, and run one real exchange end to end. Phase two, Pilot Services, months six to twelve — turn that into a handful of real once-only services that citizens actually notice. Phase three, Multi-agency Onboarding, twelve to eighteen — bring the wider set of agencies onto a platform that has already been proven. Phase four, Optimisation and Scale, eighteen months and beyond — performance, monitoring, and the long tail of services. Each phase ends with a decision gate: a go or no-go where the funder and the Steering Committee confirm the phase actually delivered before the next is funded.
 
 Notice what the phasing protects. Phase one builds the shared bus once — and every phase after it, and every agency that later joins, reuses that one investment rather than rebuilding it. That is the whole-of-government re-use logic turned into a delivery plan: the country pays for the platform once, in phase one, and consumes it many times after. A funder who sees that is paying for a national platform, not a single project — which is exactly the case the phasing lets you make.
+
+One caution, because the words collide: these four build phases are not the five-phase EA lifecycle from KP1 — Discover, Assess, Adapt, Plan, Execute and Govern. That lifecycle is the enterprise-architecture method that produced your plan; this four-phase plan is how you deliver the interoperability framework inside its Execute-and-Govern phase. The lifecycle designs the target architecture; this schedule builds the bus. Keep the two straight when you brief anyone who took KP1.
 
 > _Slide 3 — Title: 'Each phase carries four things'. Body, four text rows: 'Outcomes — what it delivers.' 'A decision gate — go / no-go before the next phase.' 'Risks — named honestly.' 'A cost frame — benchmarked, not guessed.'_
 
@@ -482,7 +484,7 @@ Script the once-only acceptance check for [country X] / Progressa's interoperabi
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
-| Target runtime | ~4 min (≈480 spoken words) |
+| Target runtime | ~5 min (≈590 spoken words) |
 | PAERA anchor | NIIS X-Road production and operations guidance; ITU DPI Safeguards |
 
 > **Single message —** _What changes between the sandboxed Linkup demonstration and a production-grade federation a country would actually run._
@@ -493,9 +495,11 @@ Script the once-only acceptance check for [country X] / Progressa's interoperabi
 
 The demonstration proves the pattern. It is not, and must not be mistaken for, a production system. The architect's last job in this topic is to know exactly what changes between the demonstration and a production-grade federation, so the country plans and budgets for that gap rather than discovering it after go-live — which is the moment it is most expensive to discover.
 
-> _Slide 2 — Title: 'What changes for production'. Body, seven text rows: 'Separate hosts, not one VM.' 'A real certification authority, not a Test CA.' 'High availability and redundancy.' 'Real monitoring and alerting.' 'Capacity for real volumes.' '24/7 operational support.' 'Security hardening and audit.'_
+> _Slide 2 — Title: 'What changes for production'. Body, eight text rows: 'Separate hosts, not one VM.' 'A real certification authority, not a Test CA.' 'High availability and redundancy.' 'Real monitoring and alerting.' 'Capacity for real volumes.' '24/7 operational support.' 'Security hardening and audit.' 'Migrate and retire the legacy point-to-point links the bus replaces.'_
 
 The differences are specific. The demonstration runs everything on one VM; production separates the components onto real, sized hosts. The demonstration uses a Test CA; production uses a real certification authority. Production adds high availability and redundancy, so a failed component does not stop the bus. It adds real monitoring and alerting, so problems are caught before citizens notice them. It is sized for real transaction volumes, not a handful of demonstration calls. It has round-the-clock operational support — the Operating Authority's standing team. And it is security-hardened and audited to the standard a national platform carrying citizen data must meet.
+
+There is one more production task, and it does not appear on the hardening list because it concerns the old world rather than the new: migrating each agency off the legacy point-to-point links the bus replaces, and retiring them. A new bus does not retire the old links by itself — left alone, you run both, which is worse than either. So per agency the pattern is parallel-run then cut over: stand up the new once-only exchange, run it beside the agency's existing point-to-point link until you have confirmed the two agree, then switch the consumers across and decommission the old link. Retiring those links is the step that actually ends the point-to-point sprawl Topic 1 diagnosed — schedule it, agency by agency, in the multi-agency phase of the plan, with a migration-and-retirement step in each onboarding.
 
 > _Slide 3 — Title: 'The shape of the config does not change'. Body, single text block: 'The subsystem registrations, the service descriptions, the semantic map are the same. Production changes the scale, the resilience and the operations around them — not the design. So the demonstration genuinely de-risks the production build: you proved the pattern, and production is the same pattern, hardened.'_
 
@@ -514,7 +518,7 @@ So you close the implementation topic by being honest about the gap between demo
 | Slide | Element (text-only) | Notes |
 | --- | --- | --- |
 | 1 | Title slide. Title: 'From demonstration to production'. | Standard ITU template. No images. |
-| 2 | What-changes slide. Seven text rows of production differences. | The gap, made specific. Plain text list, readable on mobile. |
+| 2 | What-changes slide. Eight text rows of production differences (incl. migrating off and retiring the legacy point-to-point links). | The gap, made specific. Plain text list, readable on mobile. |
 | 3 | Config-shape-unchanged slide. Single text block on de-risking. | The reassuring synthesis — the demo de-risks the build. Text-only. |
 | 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line that closes the topic. |
 | 5 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the production-guidance references. |

@@ -43,7 +43,7 @@ Six standalone subtopic videos. One Strategist persona throughout. Total runtime
 | --- | --- | --- | --- |
 | 6.1 | The GIF AI-play catalogue | Three reusable AI plays turn weeks of specialist drafting into a reviewed afternoon — and they are the framework's toolkit, not one-offs. | ~5 min |
 | 6.2 | Watch the bus — monitoring and anomaly detection | Point Claude at the real bus logs to spot a failing or unusual exchange before a citizen does. | ~5 min |
-| 6.3 | Keep the documents honest — the consistency cross-check | Keep the decree, the governance manual and the standards catalogue saying the same thing — a cross-check that catches drift across the three. | ~5 min |
+| 6.3 | Keep the documents honest — the consistency cross-check | Keep the decree, the Governance Pack and the standards portfolio saying the same thing — a cross-check that catches drift across the three. | ~5 min |
 | 6.4 | Carry the framework to the next sector | The same four-layer framework stands up interoperability beyond education — the method is sector-portable, and the second sector is cheaper than the first. | ~4 min |
 | 6.5 | Disseminate to the four roles | Four role-shaped paths — governance, legal drafting, technical architect, member onboarding — so each learner finds their lane. | ~4 min |
 | 6.6 | From no framework to first service — the storyboard | The storyboard of a country going from nothing to its first live once-only exchange, mapped to the six topics, in months not years. | ~5 min |
@@ -194,19 +194,19 @@ Below are operational logs from [country X]'s interoperability bus, containing O
 | --- | --- |
 | Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈520 spoken words) |
-| PAERA anchor | The KP2 deliverables — the decree, the governance manual, the standards catalogue; EU EIF |
+| PAERA anchor | The KP2 deliverables — the decree, the Governance Pack, the standards portfolio; EU EIF |
 
-> **Single message —** _Keep the decree, the governance manual and the standards catalogue saying the same thing — a cross-check that catches drift across the three._
+> **Single message —** _Keep the decree, the Governance Pack and the standards portfolio saying the same thing — a cross-check that catches drift across the three._
 
 ### Script (voice-over over text-only slides)
 
 > _Slide 1 — Title: 'Keep the documents honest — the consistency cross-check'. Voice-over begins._
 
-A mature framework produces three big documents that must agree with each other: the decree, which is the legal layer; the governance manual, which is the organisational layer; and the standards catalogue, which is the technical layer. The trouble is that, separately maintained, they drift apart over time — a standard updated in the catalogue but not reflected in the decree, a role renamed in governance but not in the manual. The sixth AI play cross-checks the three for contradictions before a reviewer or a member finds them for you.
+A mature framework produces three big documents that must agree with each other: the decree, which is the legal layer; the Governance Pack, which is the organisational layer; and the standards portfolio, which is the technical layer. The trouble is that, separately maintained, they drift apart over time — a standard updated in the portfolio but not reflected in the decree, a role the Governance Pack renames but the decree still names the old way. The sixth AI play cross-checks the three for contradictions before a reviewer or a member finds them for you.
 
-> _Slide 2 — Title: 'What drifts'. Body, four text rows: 'A standard adopted in the catalogue but not authorised by the decree.' 'A role in the RACI the governance manual no longer names.' 'An exchange the decree authorises that no service implements — or the reverse.' 'The same term meaning different things in the three documents.'_
+> _Slide 2 — Title: 'What drifts'. Body, four text rows: 'A standard adopted in the catalogue but not authorised by the decree.' 'A role in the RACI the Governance Pack no longer names.' 'An exchange the decree authorises that no service implements — or the reverse.' 'The same term meaning different things in the three documents.'_
 
-Drift is specific and predictable. The standards catalogue adopts a new version, but the decree still references the old one. The RACI names a body the governance manual no longer describes. The decree authorises an exchange that no service in the catalogue implements, or a service exists that the decree never authorised. And the same term — 'member', 'service', 'authority' — is used to mean slightly different things in the three documents. Each of these is a contradiction that quietly undermines the framework's credibility the moment someone notices it.
+Drift is specific and predictable. The standards portfolio adopts a new version, but the decree still references the old one. The RACI names a body the Governance Pack no longer describes. The decree authorises an exchange that no service in the catalogue implements, or a service exists that the decree never authorised. And the same term — 'member', 'service', 'authority' — is used to mean slightly different things in the three documents. Each of these is a contradiction that quietly undermines the framework's credibility the moment someone notices it.
 
 The play reads all three documents and reports the contradictions — where they disagree, and on what. It is the document analogue of the bus monitoring: instead of watching the live traffic, it watches the documents for inconsistency. The value is catching drift before a Ministry of Justice reviewer, a joining member, or an auditor catches it for you — because a framework whose own three foundational documents contradict each other loses trust faster than almost anything else can cost it.
 
@@ -214,11 +214,11 @@ The play reads all three documents and reports the contradictions — where they
 
 The safeguard is the same shape as always. The AI flags the contradiction; a human decides which of the three documents is correct and fixes it. The play does not edit the decree on its own, because deciding whether the catalogue or the decree is right is a judgement with legal and governance consequences. The play finds the drift; a person resolves it. Run it whenever any of the three documents changes, and the framework's documents stay honest with each other as it evolves.
 
-> _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Cross-check the decree, the governance manual and the standards catalogue — the AI finds the drift, a human resolves which document is right.'_
+> _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Cross-check the decree, the Governance Pack and the standards portfolio — the AI finds the drift, a human resolves which document is right.'_
 
-So the consistency cross-check keeps the framework's three foundational documents telling the same story. The AI reads the decree, the governance manual and the standards catalogue together and flags where they have drifted apart; a human decides which is right and fixes it. Run it on every change, and you catch the contradictions yourself, before the reviewer, the member or the auditor does.
+So the consistency cross-check keeps the framework's three foundational documents telling the same story. The AI reads the decree, the Governance Pack and the standards portfolio together and flags where they have drifted apart; a human decides which is right and fixes it. Run it on every change, and you catch the contradictions yourself, before the reviewer, the member or the auditor does.
 
-> _Slide 5 — Title: 'Sources'. Body: the KP2 deliverables — the decree (Topic 2), the governance manual (Topic 3), the standards catalogue (Topic 4); EU EIF. Footer: 'Find the link in the description.'_
+> _Slide 5 — Title: 'Sources'. Body: the KP2 deliverables — the decree (Topic 2), the Governance Pack (Topic 3), the standards portfolio (Topic 4); EU EIF. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -230,17 +230,17 @@ So the consistency cross-check keeps the framework's three foundational document
 | 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
 | 5 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the references. |
 
-### AI usage tip — Cross-check the decree, governance manual and standards catalogue for drift
+### AI usage tip — Cross-check the decree, Governance Pack and standards portfolio for drift
 
 **What the prompt does:** A framework lead needs to find contradictions across the three foundational documents before a reviewer does. This prompt runs the document-consistency cross-check.
 
 **Prompt template (copy-paste into Claude):**
 
 ```text
-Below are three foundational documents of [country X]'s Government Interoperability Framework: (A) the decree (legal); (B) the governance manual (organisational); (C) the standards catalogue (technical) [paste the three, or their key sections]. Cross-check them for contradictions and report: (1) standards in the catalogue not authorised or referenced by the decree, or referenced at a different version; (2) roles/bodies in the RACI or decree that the governance manual does not describe (or the reverse); (3) exchanges the decree authorises that no catalogued service implements, or services with no decree authorisation; (4) key terms ('member', 'service', 'authority', etc.) used inconsistently across the three. For each finding: the contradiction, where it appears in each document, and a QUESTION for a human ('which is correct?') — do NOT decide which document is right. Output: a contradiction table (finding / document A / document B / question) ordered by how damaging it would be if a reviewer found it.
+Below are three foundational documents of [country X]'s Government Interoperability Framework: (A) the decree (legal); (B) the Governance Pack (organisational); (C) the standards portfolio (technical) [paste the three, or their key sections]. Cross-check them for contradictions and report: (1) standards in the catalogue not authorised or referenced by the decree, or referenced at a different version; (2) roles/bodies in the RACI or decree that the Governance Pack does not describe (or the reverse); (3) exchanges the decree authorises that no catalogued service implements, or services with no decree authorisation; (4) key terms ('member', 'service', 'authority', etc.) used inconsistently across the three. For each finding: the contradiction, where it appears in each document, and a QUESTION for a human ('which is correct?') — do NOT decide which document is right. Output: a contradiction table (finding / document A / document B / question) ordered by how damaging it would be if a reviewer found it.
 ```
 
-**Inputs and outputs:** Input: the decree, governance manual and standards catalogue. Output: a contradiction table with a human question for each, ordered by risk.
+**Inputs and outputs:** Input: the decree, Governance Pack and standards portfolio. Output: a contradiction table with a human question for each, ordered by risk.
 
 **Safeguard:** The cross-check finds drift; it must not resolve it — deciding whether the decree or the catalogue is correct is a legal and governance judgement a human owns. Run the check after every change to any of the three documents, and treat a clean result as 'no contradictions found in what was provided', not a guarantee the documents are complete.
 
@@ -250,12 +250,12 @@ Below are three foundational documents of [country X]'s Government Interoperabil
 | --- | --- |
 | Working title | The document-consistency cross-check |
 | YouTube-optimised title | Keeping a framework's decree, governance and standards from contradicting each other |
-| Description (60 words) | A framework's three foundational documents — the decree, the governance manual, the standards catalogue — drift apart when maintained separately. An AI cross-check reads all three and flags the contradictions: a standard the decree doesn't authorise, a role governance no longer names, a term used three ways. The AI finds the drift; a human resolves it. Five minutes for framework leaders. AI cross-check prompt in the description. |
-| Tags | document consistency, governance, decree, standards catalogue, framework integrity, AI cross-check, GovStack, digital government |
+| Description (60 words) | A framework's three foundational documents — the decree, the Governance Pack, the standards portfolio — drift apart when maintained separately. An AI cross-check reads all three and flags the contradictions: a standard the decree doesn't authorise, a role governance no longer names, a term used three ways. The AI finds the drift; a human resolves it. Five minutes for framework leaders. AI cross-check prompt in the description. |
+| Tags | document consistency, governance, decree, standards portfolio, framework integrity, AI cross-check, GovStack, digital government |
 | Playlist (YouTube) | KP2 — Topic 6: AI plays, dissemination and the country storyboard |
 | ToR §4 coverage | §4.3 (AI integration — consistency cross-check); §4.1 (methodology, framework integrity) |
 | PAERA citations | (cross-check operates over the KP2 deliverables and EIF) |
-| External-link list | The KP2 deliverables — the decree (Topic 2), the governance manual (Topic 3), the standards catalogue (Topic 4); EU EIF |
+| External-link list | The KP2 deliverables — the decree (Topic 2), the Governance Pack (Topic 3), the standards portfolio (Topic 4); EU EIF |
 
 ## 3.4 Subtopic 6.4 — Carry the framework to the next sector
 
@@ -518,7 +518,7 @@ Compiled across the six subtopics for ITU's video production pipeline. To be spl
 | --- | --- |
 | 6.1 | The KP2 AI plays — gif-decree-draft, gif-semantic-map, gif-openapi-gen, bb-config-gen (instances of the bb-config-gen pattern); EU EIF. |
 | 6.2 | NIIS X-Road monitoring and operational logs (niis.org); the Linkup federation (ITU cloud); ITU DPI Safeguards. |
-| 6.3 | The KP2 deliverables — the decree (Topic 2), the governance manual (Topic 3), the standards catalogue (Topic 4); EU EIF. |
+| 6.3 | The KP2 deliverables — the decree (Topic 2), the Governance Pack (Topic 3), the standards portfolio (Topic 4); EU EIF. |
 | 6.4 | ToR §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3 (interoperability framing). |
 | 6.5 | ITU Knowledge Products and Video Materials Guide (dissemination); the four framework roles. |
 | 6.6 | The KP2 method end-to-end (Topics 1–5); the four-phase plan (Topic 5); PAERA v1.0 §5.2 Principle #5 (Once-Only). |

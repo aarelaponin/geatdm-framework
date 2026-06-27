@@ -378,7 +378,7 @@ Draft a Strategic Foundation Document for a Government Interoperability Framewor
 
 > _Slide 1 — Title: 'The Use-Case Catalogue'. Voice-over begins._
 
-If your country has done the Enterprise Architecture work, you already have a first-cut integration map — a picture of which government systems ought to exchange what. That map is the input to this step. On its own, a map of everything-connects-to-everything is overwhelming and undeployable. The Use-Case Catalogue turns it into a ranked list of specific exchanges, so the framework starts with the few that matter most instead of trying to boil the ocean.
+If your country has done the Enterprise Architecture work — Knowledge Product 1 — you already have a first-cut integration map: a picture of which government systems ought to exchange what. That map is the input to this step. If you do not have one yet, build it first — inventory your government's systems, who owns them and the data they hold, and sketch which ought to exchange what. That inventory is the Discover-and-Assess work KP1 covers, and it is the precondition for everything in this knowledge product; without a picture of your current systems, you cannot rank the exchanges worth building. On its own, a map of everything-connects-to-everything is overwhelming and undeployable. The Use-Case Catalogue turns it into a ranked list of specific exchanges, so the framework starts with the few that matter most instead of trying to boil the ocean.
 
 > _Slide 2 — Title: 'One row per exchange'. Body, four text rows: 'Who provides the data, and who consumes it.' 'What data, and the citizen service it enables.' 'Readiness at each of the four layers.' 'Priority — value to the citizen against effort to build.'_
 
