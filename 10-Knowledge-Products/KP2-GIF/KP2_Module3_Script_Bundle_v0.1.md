@@ -54,7 +54,7 @@ Six standalone subtopic videos. One Strategist persona throughout. Total runtime
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~4 min (≈500 spoken words) |
 | PAERA anchor | EU EIF / NIIS X-Road governance; Estonia (Ministry of Economic Affairs and Communications + RIA); PAERA §3.1.3 (institutional setup) |
 
@@ -123,7 +123,7 @@ I am defining the Operating Authority for [country X]'s Government Interoperabil
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈580 spoken words) |
 | PAERA anchor | EU EIF / NIIS X-Road three-tier governance reference; Estonia governance model; PAERA §3.1.3 |
 
@@ -210,7 +210,7 @@ Draft a three-tier governance structure for [country X]'s Government Interoperab
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈540 spoken words) |
 | PAERA anchor | EU EIF / NIIS X-Road governance (roles and responsibilities); PAERA §3.1.3 |
 
@@ -284,7 +284,7 @@ Draft a RACI matrix for [country X]'s Government Interoperability Framework gove
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~4 min (≈500 spoken words) |
 | PAERA anchor | EU EIF / NIIS X-Road member model and member obligations; PAERA §3.1.3 |
 
@@ -356,7 +356,7 @@ Draft a member agreement (the obligations an agency accepts when it joins) for [
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~4 min (≈500 spoken words) |
 | PAERA anchor | EU EIF / NIIS X-Road technical governance (working groups); PAERA §3.1.3 |
 
@@ -428,7 +428,7 @@ Draft charters for the four standing Technical Working Groups of [country X]'s G
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈540 spoken words) |
 | PAERA anchor | EU EIF / NIIS X-Road (change control, standards governance); PAERA §3.1.3; output: the Governance Pack |
 

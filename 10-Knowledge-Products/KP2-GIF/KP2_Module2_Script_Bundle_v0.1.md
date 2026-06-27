@@ -54,7 +54,7 @@ Six standalone subtopic videos. One Strategist persona throughout. Total runtime
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~4 min (≈520 spoken words) |
 | PAERA anchor | EIF legal layer; PAERA §3.2 (legal layer); §5.2 Principle #5 (Once-Only) |
 
@@ -123,7 +123,7 @@ Below is what I know of [country X]'s current legal framework relevant to cross-
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈580 spoken words) |
 | PAERA anchor | EIF legal layer; decree models — Estonia Information Society Services Act, EU Single Digital Gateway Regulation |
 
@@ -200,7 +200,7 @@ I am preparing an interoperability decree for [country X]. Here is the Strategic
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈560 spoken words) |
 | PAERA anchor | PAERA §3.2 (legal layer); EU EIF; input: the Strategic Foundation Document |
 
@@ -272,7 +272,7 @@ Below is the Strategic Foundation Document for [country X]'s Government Interope
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈580 spoken words) |
 | PAERA anchor | Estonia Information Society Services Act; EU Once-Only Regulation; PAERA §5.2 #5 (Once-Only); national data-protection framework |
 
@@ -344,7 +344,7 @@ I am drafting one article of an interoperability decree for [country X]: the [ma
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~4 min (≈480 spoken words) |
 | PAERA anchor | EU EIF (legal & governance layers); national legislative-process references |
 
@@ -416,7 +416,7 @@ I am transmitting an interoperability decree package to the Ministry of Justice 
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈560 spoken words) |
 | PAERA anchor | PAERA §3.2 (legal layer); EU EIF; input: the Use-Case Catalogue |
 

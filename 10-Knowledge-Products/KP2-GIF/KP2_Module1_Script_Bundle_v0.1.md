@@ -55,7 +55,7 @@ Seven standalone subtopic videos. One Strategist persona throughout. Total runti
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈600 spoken words) |
 | PAERA anchor | EIF four layers; NIIS X-Road; PAERA §3.4.3 (interoperability framing); §5.2 (Whole-of-Government, Once-Only) |
 
@@ -132,7 +132,7 @@ Below is a description of how [country X] currently handles cross-agency data ex
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈620 spoken words) |
 | PAERA anchor | EIF four-layer model (Technical, Semantic, Organisational, Legal); NIIS X-Road; PAERA §3.4.3 |
 
@@ -214,7 +214,7 @@ Below is one cross-agency data exchange [country X] wants to enable [describe it
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~4 min (≈520 spoken words) |
 | PAERA anchor | PAERA §5.2 Principle #5 (Once-Only); EU Once-Only Technical System (OOTS); EU EIF |
 
@@ -291,7 +291,7 @@ Below are the main public services [country X] delivers to citizens and the data
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~4 min (≈520 spoken words) |
 | PAERA anchor | EU EIF (interoperability strategy & governance); PAERA §3.4.3; §5.2 (Whole-of-Government, Once-Only, Cross-border) |
 
@@ -368,7 +368,7 @@ Draft a Strategic Foundation Document for a Government Interoperability Framewor
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈600 spoken words) |
 | PAERA anchor | PAERA §3.4.3 (interoperability framing); EU EIF (interoperability agreements) |
 
@@ -445,7 +445,7 @@ Below is [country X]'s integration map or list of desired cross-agency data exch
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~4 min (≈520 spoken words) |
 | PAERA anchor | EU EIF (organisational layer, governance); NIIS X-Road governance model |
 
@@ -522,7 +522,7 @@ Below are the government agencies relevant to [country X]'s first interoperabili
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~4 min (≈520 spoken words) |
 | PAERA anchor | Estonia X-Road & EU OOTS (interoperability exemplars); education semantic standards; PAERA §3.4.3 |
 

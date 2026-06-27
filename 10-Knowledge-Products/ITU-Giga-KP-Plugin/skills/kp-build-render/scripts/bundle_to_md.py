@@ -186,16 +186,28 @@ def main():
     path = Path(sys.argv[1])
     src = path.read_text(encoding="utf-8")
 
-    # Persona default: Module 2+ pass a PERSONA_A constant; Module 1 hard-codes the
-    # Strategist persona as a literal ["Persona", "S (Strategist) …"] inside the helper.
-    lit = re.search(r'\["Persona",\s*"((?:[^"\\]|\\.)*)"', src)
-    pm = re.search(r'PERSONA_A\s*=\s*"((?:[^"\\]|\\.)*)"', src)
-    if lit:
-        persona_default = unesc(lit.group(1))
-    elif pm:
-        persona_default = unesc(pm.group(1))
-    else:
-        persona_default = "A (Architect)"
+    # Per-subtopic persona: read the renderSubtopic helper's ["Persona", X] row. Across the
+    # build scripts X takes three shapes, all of which must resolve to the full persona string:
+    #   1. a bare PERSONA_* constant   — ["Persona", PERSONA_S]            (KP2 modules)
+    #   2. a quoted literal            — ["Persona", "S (Strategist) …"]   (KP1 M1, M6)
+    #   3. the `persona` parameter     — ["Persona", persona]  with a signature default
+    #                                     `persona = PERSONA_A`            (KP1 M2–M5)
+    def _resolve_const(name):
+        cm = re.search(re.escape(name) + r'\s*=\s*"((?:[^"\\]|\\.)*)"', src)
+        return unesc(cm.group(1)) if cm else None
+
+    persona_default = "A (Architect)"
+    pr = re.search(r'\["Persona",\s*(PERSONA_\w+|persona|"(?:[^"\\]|\\.)*")', src)
+    if pr:
+        tok = pr.group(1)
+        if tok.startswith('"'):
+            persona_default = unesc(tok[1:-1])
+        elif tok.startswith("PERSONA_"):
+            persona_default = _resolve_const(tok) or persona_default
+        elif tok == "persona":
+            dm = re.search(r'persona\s*=\s*(PERSONA_\w+)', src)
+            if dm:
+                persona_default = _resolve_const(dm.group(1)) or persona_default
 
     b0 = src.index("const body = []")
     b1 = src.index("const doc = new Document")

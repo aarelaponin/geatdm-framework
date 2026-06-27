@@ -21,6 +21,7 @@ KP1 taught how to **plan** — its deliverable is a video bundle. KP2–4 teach 
 | `kp-build-pack` | **Mechanic** *(KP2–4)* | Scaffold and assemble the runnable build pack (configs / prompts / scripts / acceptance / runbook / manifest) that ships alongside the video bundle. |
 | `bb-config-gen` | **Generator** *(KP2–4)* | Turn a Building-Block spec + a Progressa service brief into the configuration that wires the block, routing to the right engine (X-Road / mtca / joget-*). The IR's "bb-decompose". |
 | `kp-solution-verify` | **Gate** *(KP2–4)* | Confirm the build pack is complete and actually runs — static manifest completeness, then the live acceptance suite on the stack. A pack is UNVERIFIED until it runs. |
+| `kp-curriculum-qa` | **Gate** *(cross-KP)* | The level above the per-module gates: does a whole KP cohere as a curriculum, and do several KPs cohere as a programme? Competency-coverage matrix (the gap finder), terminology + PAERA-citation consistency across modules and KPs, plus a fresh-eyes subagent pass. |
 
 ## The workflow
 
@@ -62,4 +63,4 @@ For KP2–4 the flow extends: after authoring, `kp-build-pack` scaffolds the run
 
 ---
 
-*FiscalAdmin OÜ. Kit v0.2.0, 26 June 2026 — KP1 complete; the implementation-KP extension (kp-build-pack, bb-config-gen, kp-solution-verify) added for KP2–4. Created v0.1.0 on 2 June 2026.*
+*FiscalAdmin OÜ. Kit v0.3.0, 27 June 2026 — KP1 + KP2 complete; added the cross-KP curriculum-QA gate (kp-curriculum-qa) and fixed the Markdown-generator persona bug it surfaced. v0.2.0 added the implementation-KP extension (kp-build-pack, bb-config-gen, kp-solution-verify) for KP2–4. Created v0.1.0 on 2 June 2026.*

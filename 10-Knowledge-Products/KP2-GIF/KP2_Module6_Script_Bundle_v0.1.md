@@ -54,7 +54,7 @@ Six standalone subtopic videos. One Strategist persona throughout. Total runtime
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈560 spoken words) |
 | PAERA anchor | The KP2 AI plays — gif-decree-draft, gif-semantic-map, gif-openapi-gen, bb-config-gen; EU EIF |
 
@@ -123,7 +123,7 @@ Assemble a one-page AI-play catalogue for [country X]'s Government Interoperabil
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈520 spoken words) |
 | PAERA anchor | NIIS X-Road monitoring and operational logs; the Linkup federation; ITU DPI Safeguards |
 
@@ -192,7 +192,7 @@ Below are operational logs from [country X]'s interoperability bus, containing O
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈520 spoken words) |
 | PAERA anchor | The KP2 deliverables — the decree, the governance manual, the standards catalogue; EU EIF |
 
@@ -261,7 +261,7 @@ Below are three foundational documents of [country X]'s Government Interoperabil
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~4 min (≈480 spoken words) |
 | PAERA anchor | ToR §4.4 (sector portability); EU EIF four-layer model; PAERA §3.4.3 |
 
@@ -330,7 +330,7 @@ I built a Government Interoperability Framework for [country X] in the education
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~4 min (≈480 spoken words) |
 | PAERA anchor | ITU Knowledge Products and Video Materials Guide (dissemination); the four framework roles |
 
@@ -399,7 +399,7 @@ Draft role-path dissemination outlines for [country X]'s Government Interoperabi
 
 | Field | Value |
 | --- | --- |
-| Persona | A (Architect) |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~5 min (≈540 spoken words) |
 | PAERA anchor | The KP2 method end-to-end (Topics 1–5); the four-phase plan; PAERA §5.2 Principle #5 (Once-Only) |
 
