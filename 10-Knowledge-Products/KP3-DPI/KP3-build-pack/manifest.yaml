@@ -1,0 +1,47 @@
+kp: KP3
+track: dpi
+title: Education Digital Public Infrastructure
+home: 10-Knowledge-Products/KP3-DPI
+depends_on: [KP2]
+building_blocks:
+  - registration
+  - registry-plr
+  - identity-pnia
+  - payment-paypro
+modules:
+  - id: "3.1"
+    title: "DPI foundations & the build order"
+    building_blocks: []
+    config: configs/_toolkit/3.1-assessment-and-build-order.yaml
+    prompt: prompts/3.1.md
+    acceptance: acceptance/3.1.md
+  - id: "3.2"
+    title: "The Registration BB"
+    building_blocks: [registration]
+    config: configs/registration/3.2.yaml
+    prompt: prompts/3.2.md
+    acceptance: acceptance/3.2.md
+  - id: "3.3"
+    title: "The Registry BB — bronze/silver/gold MDM"
+    building_blocks: [registry-plr]
+    config: configs/registry-plr/3.3.yaml
+    prompt: prompts/3.3.md
+    acceptance: acceptance/3.3.md
+  - id: "3.4"
+    title: "The Identity & Payment BBs — reuse, don't rebuild"
+    building_blocks: [identity-pnia, payment-paypro]
+    config: configs/identity-pnia/3.4.yaml
+    prompt: prompts/3.4.md
+    acceptance: acceptance/3.4.md
+  - id: "3.5"
+    title: "Wire & prove the foundation"
+    building_blocks: [registration, registry-plr, identity-pnia, payment-paypro]
+    config: configs/_compose/3.5-once-only.yaml
+    prompt: prompts/3.5.md
+    acceptance: acceptance/3.5.md
+  - id: "3.6"
+    title: "AI plays, govern & sustain, sector portability"
+    building_blocks: []
+    config: configs/_toolkit/3.6-ai-plays-governance.yaml
+    prompt: prompts/3.6.md
+    acceptance: acceptance/3.6.md
