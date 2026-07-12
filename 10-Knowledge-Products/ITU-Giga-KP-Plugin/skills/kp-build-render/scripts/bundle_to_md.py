@@ -168,6 +168,9 @@ def parse_subtopic(block, persona_default):
         md.append("```text\n" + ai("prompt") + "\n```\n")
         md.append(f"\n**Inputs and outputs:** {ai('io')}\n")
         md.append(f"\n**Safeguard:** {ai('safeguard')}\n")
+        local_note = ai("localOnlyNote")
+        if local_note:
+            md.append(f"\n**Note:** {local_note}\n")
 
     # metadata
     mm = re.search(r"metadataRows:\s*\[", block)

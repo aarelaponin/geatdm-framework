@@ -108,39 +108,46 @@ function visualCueBox(text) {
         ] })] })
     ] })] });
 }
-function aiPromptBox(title, problem, prompt, ioNote, safeguard) {
+function aiPromptBox(title, problem, prompt, ioNote, safeguard, localOnlyNote) {
   const W = 9700;
   const cBorder = { style: BorderStyle.SINGLE, size: 6, color: COLOR_AI_BD };
   const cBorders = { top: cBorder, bottom: cBorder, left: cBorder, right: cBorder };
+  const children = [
+    new Paragraph({ spacing: { before: 0, after: 80 }, children: [
+      new TextRun({ text: "AI usage tip — ", font: ARIAL, size: 20, bold: true, color: COLOR_AI_BD }),
+      new TextRun({ text: title, font: ARIAL, size: 20, bold: true, color: COLOR_AI_BD })
+    ] }),
+    new Paragraph({ spacing: { before: 60, after: 60 }, children: [
+      new TextRun({ text: "What the prompt does: ", font: ARIAL, size: 19, bold: true }),
+      new TextRun({ text: problem, font: ARIAL, size: 19 })
+    ] }),
+    new Paragraph({ spacing: { before: 100, after: 40 }, children: [
+      new TextRun({ text: "Prompt template (copy-paste into Claude):", font: ARIAL, size: 19, bold: true })
+    ] }),
+    new Paragraph({ spacing: { before: 0, after: 0 }, children: [
+      new TextRun({ text: prompt, font: "Courier New", size: 18 })
+    ] }),
+    new Paragraph({ spacing: { before: 100, after: 60 }, children: [
+      new TextRun({ text: "Inputs and outputs: ", font: ARIAL, size: 19, bold: true }),
+      new TextRun({ text: ioNote, font: ARIAL, size: 19 })
+    ] }),
+    new Paragraph({ spacing: { before: 60, after: localOnlyNote ? 60 : 0 }, children: [
+      new TextRun({ text: "Safeguard: ", font: ARIAL, size: 19, bold: true }),
+      new TextRun({ text: safeguard, font: ARIAL, size: 19 })
+    ] })
+  ];
+  if (localOnlyNote) {
+    children.push(new Paragraph({ spacing: { before: 0, after: 0 }, children: [
+      new TextRun({ text: "Note: ", font: ARIAL, size: 19, bold: true, color: COLOR_AI_BD }),
+      new TextRun({ text: localOnlyNote, font: ARIAL, size: 19, bold: true, color: COLOR_AI_BD })
+    ] }));
+  }
   return new Table({ width: { size: W, type: WidthType.DXA }, columnWidths: [W],
     rows: [new TableRow({ children: [
       new TableCell({ borders: cBorders, margins: { top: 150, bottom: 150, left: 200, right: 200 },
         width: { size: W, type: WidthType.DXA },
         shading: { fill: COLOR_AI_BG, type: ShadingType.CLEAR },
-        children: [
-          new Paragraph({ spacing: { before: 0, after: 80 }, children: [
-            new TextRun({ text: "AI usage tip — ", font: ARIAL, size: 20, bold: true, color: COLOR_AI_BD }),
-            new TextRun({ text: title, font: ARIAL, size: 20, bold: true, color: COLOR_AI_BD })
-          ] }),
-          new Paragraph({ spacing: { before: 60, after: 60 }, children: [
-            new TextRun({ text: "What the prompt does: ", font: ARIAL, size: 19, bold: true }),
-            new TextRun({ text: problem, font: ARIAL, size: 19 })
-          ] }),
-          new Paragraph({ spacing: { before: 100, after: 40 }, children: [
-            new TextRun({ text: "Prompt template (copy-paste into Claude):", font: ARIAL, size: 19, bold: true })
-          ] }),
-          new Paragraph({ spacing: { before: 0, after: 0 }, children: [
-            new TextRun({ text: prompt, font: "Courier New", size: 18 })
-          ] }),
-          new Paragraph({ spacing: { before: 100, after: 60 }, children: [
-            new TextRun({ text: "Inputs and outputs: ", font: ARIAL, size: 19, bold: true }),
-            new TextRun({ text: ioNote, font: ARIAL, size: 19 })
-          ] }),
-          new Paragraph({ spacing: { before: 60, after: 0 }, children: [
-            new TextRun({ text: "Safeguard: ", font: ARIAL, size: 19, bold: true }),
-            new TextRun({ text: safeguard, font: ARIAL, size: 19 })
-          ] })
-        ] })
+        children: children })
     ] })] });
 }
 function singleMessageBox(text) {
@@ -182,7 +189,7 @@ function renderSubtopic({ num, title, runtime, words, persona = PERSONA_A, paera
   }
   out.push(H3("On-screen slide specification"));
   out.push(genericTable([900, 3400, 5400], ["Slide", "Element (text-only)", "Notes"], slideSpecRows));
-  out.push(aiPromptBox(aiTip.title, aiTip.problem, aiTip.prompt, aiTip.io, aiTip.safeguard));
+  out.push(aiPromptBox(aiTip.title, aiTip.problem, aiTip.prompt, aiTip.io, aiTip.safeguard, aiTip.localOnlyNote));
   out.push(H3("Metadata"));
   out.push(specTable(metadataRows));
   out.push(pageBreak());
@@ -662,7 +669,8 @@ body.push(...renderSubtopic({
     problem: "Before pasting context into a public AI tool, an architect needs to remove anything their data-protection act covers — but it is easy to miss a name or a record. This meta-prompt produces a de-identified version and a list of what was removed.",
     prompt: "Below is a prompt I am about to send to a public AI assistant for EA work [paste your intended prompt, including the context you would paste in]. Rewrite it so that any personal data, real citizen records, security configuration, unpublished or confidential government material is replaced with neutral placeholders (e.g. 'a learner', 'a powerful programme', 'country X', 'the sector registry'), while keeping enough structure for the task to still work. Then list everything you replaced and why it was sensitive. Output: the de-identified prompt, then a table of (removed item / category / placeholder used).",
     io: "Input: the prompt and context you intend to send. Output: a de-identified prompt plus a table of what was removed and why.",
-    safeguard: "This check reduces risk; it does not guarantee compliance. When you are unsure whether something is safe to paste, treat it as unsafe and consult your data-protection officer — and remember that the placeholders must not be reversible to the real records by anyone reading the prompt."
+    safeguard: "This check reduces risk; it does not guarantee compliance. When you are unsure whether something is safe to paste, treat it as unsafe and consult your data-protection officer — and remember that the placeholders must not be reversible to the real records by anyone reading the prompt.",
+    localOnlyNote: "Run this stripping step itself only on a local/on-device LLM that sends nothing to a public cloud service or back to the vendor — not a hosted assistant. Pasting sensitive material into a public AI tool to ask it to de-identify that same material would defeat the purpose."
   },
   metadataRows: [
     ["Working title",          "Keep AI honest — verify, cite, and protect data"],
