@@ -576,6 +576,8 @@ Below is a prompt I am about to send to a public AI assistant for EA work [paste
 
 **Safeguard:** This check reduces risk; it does not guarantee compliance. When you are unsure whether something is safe to paste, treat it as unsafe and consult your data-protection officer — and remember that the placeholders must not be reversible to the real records by anyone reading the prompt.
 
+**Note:** Run this stripping step itself only on a local/on-device LLM that sends nothing to a public cloud service or back to the vendor — not a hosted assistant. Pasting sensitive material into a public AI tool to ask it to de-identify that same material would defeat the purpose.
+
 ### Metadata
 
 | Field | Value |
