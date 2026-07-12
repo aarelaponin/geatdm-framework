@@ -220,7 +220,7 @@ Build an EA programme sustainment risk register for [country X]. My context: [de
 
 You may be watching this with education in mind, or you may be a director-general responsible for several sectors. Either way, a fair question is whether this approach is tied to one sector or works across your government. The answer matters for how big a commitment you are really making — and the answer is that the method is sector-agnostic, and it compounds.
 
-> _Slide 2 — Title: 'The method does not change'. Body, single text block: 'The five phases, the four sign-offs, the five deliverables, reuse-before-build, the binding board — none of it is specific to education. It is the method. What changes when you move sector is only the contents: the institutions you map, and the record at the centre of the fragmentation.'_
+> _Slide 2 — Title: 'The method does not change'. Body, single text block: 'The five phases, the four sign-offs, the six deliverables, reuse-before-build, the binding board — none of it is specific to education. It is the method. What changes when you move sector is only the contents: the institutions you map, and the record at the centre of the fragmentation.'_
 
 Start with what stays the same, because it is most of it. The five phases — discover, assess, adapt, plan, execute and govern. The four sign-offs. The five deliverables. The reuse-before-build default. The binding governance board. None of that is specific to education. It is the method. What changes when you move to another sector is only the contents: the institutions you map, and the kind of record at the centre of the fragmentation.
 
