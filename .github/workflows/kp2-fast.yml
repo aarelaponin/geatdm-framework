@@ -38,6 +38,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # apps/console runs on Python 3.12 in its own Dockerfile and its code
+      # uses str.removesuffix/removeprefix (3.9+) accordingly -- installed
+      # first (and referenced only by its captured python-path below) so
+      # the 3.7 step after it wins the ambient `python3` PATH resolution
+      # that every other step in this job relies on.
+      - uses: actions/setup-python@v5
+        id: console-python
+        with:
+          python-version: "3.12"
+
       # Pinned to the pack's own HOST floor, not the latest Python.
       # hurl/generate.py and hurl/check_scenarios.py run on the operator's
       # system python3 -- confirmed 3.7.9 in this pack's own dev history
@@ -53,9 +63,14 @@ jobs:
       - name: Install the host scripts' only hard Python dependency
         run: pip install pyyaml
 
+      # tests/test_golden.py's own comment: generate.py's 3.7 constraints
+      # are about the host interpreter, not "whatever interpreter is
+      # running pytest" -- apps/console/tests/ imports apps/console code
+      # that requires 3.9+, so this venv is built from the 3.12 interpreter
+      # above by explicit path, not the ambient (3.7-pinned) `python3`.
       - name: Set up the venv scripts/verify.sh's pytest step needs
         run: |
-          python3 -m venv .venv
+          "${{ steps.console-python.outputs.python-path }}" -m venv .venv
           .venv/bin/pip install pytest httpx fastapi pyyaml
 
       # A fresh checkout has no .env (gitignored, never committed --
