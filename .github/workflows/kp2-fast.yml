@@ -2,8 +2,13 @@ name: KP2 fast tier
 
 # scripts/verify.sh --fast: static checks (hurl/check_scenarios.py, the
 # kp-solution-verify ship gate, scripts/check-exposure.sh) plus
-# `pytest tests/ apps/console/tests/`. No Docker container, no network, no
-# federation -- measured ~8s on a dev machine
+# `pytest tests/ apps/console/tests/`. No running containers, no network, no
+# federation -- but the Docker CLI is required, because check-exposure.sh
+# reads the rendered Compose config (profiles and ${VAR} interpolation
+# resolved) and that is what makes it worth having. That read needs neither
+# a running Docker daemon nor .env, confirmed by stopping the daemon itself
+# (10-Knowledge-Products/KP2-GIF/KP2-build-pack/tests/test_tiers.py) --
+# measured ~8s on a dev machine
 # (10-Knowledge-Products/KP2-GIF/KP2-build-pack/README.md).
 #
 # --live and --full are deliberately NOT run here, and this is the whole
