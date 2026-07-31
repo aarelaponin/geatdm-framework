@@ -80,12 +80,15 @@ jobs:
 
       # A fresh checkout has no .env (gitignored, never committed --
       # exposure-and-secrets plan Task 4) and no generated hurl/ artefacts
-      # (also gitignored). --fast still needs both: check_scenarios.py
-      # compares hurl/vars.env against .env and fails if either is stale
-      # or missing, and check-exposure.sh's own lib.sh refuses a missing
-      # .env outright. Confirmed live locally (simulating a fresh checkout
-      # by moving .env and the generated hurl/ files aside) that --fast
-      # fails without this step and passes with it -- not assumed.
+      # (also gitignored). check_scenarios.py needs both: it reads
+      # hurl/vars.env (only hurl/generate.py writes it) and compares its
+      # credentials against .env, failing if either is stale or missing.
+      # check-exposure.sh needs neither: it sources only lib-core.sh and
+      # reads deployment.yaml directly via yq_get, with no .env dependency
+      # at all (lib-split-and-tier-honesty plan). Confirmed live locally
+      # (simulating a fresh checkout by moving .env and the generated
+      # hurl/ files aside) that --fast fails without this step and passes
+      # with it -- not assumed.
       - name: Generate secrets and artefacts (fresh checkout has neither)
         run: |
           ./scripts/gen-secrets.sh
