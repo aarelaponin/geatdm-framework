@@ -2,7 +2,7 @@ name: KP2 fast tier
 
 # scripts/verify.sh --fast: static checks (hurl/check_scenarios.py, the
 # kp-solution-verify ship gate, scripts/check-exposure.sh) plus
-# `pytest tests/ apps/console/tests/`. No running containers, no network, no
+# `pytest tests/ apps/console/tests/ apps/mock-registry/tests/`. No running containers, no network, no
 # federation -- but the Docker CLI is required, because check-exposure.sh
 # reads the rendered Compose config (profiles and ${VAR} interpolation
 # resolved) and that is what makes it worth having. That read needs neither
