@@ -27,3 +27,6 @@ __pycache__/
 
 # Superpowers subagent-driven-development scratch (ledgers, briefs, reports)
 .superpowers/sdd/
+
+# Superpowers isolated worktrees
+.worktrees/
