@@ -21,6 +21,7 @@ Exit 0 = pass; non-zero = hard failures found.
 """
 import os
 import re
+import subprocess
 import sys
 
 
@@ -62,7 +63,11 @@ def load_manifest(path):
     return data
 
 
-def scan_unresolved(pack_dir, subdirs=("configs", "prompts")):
+def scan_unresolved(pack_dir, subdirs=("configs",)):
+    # prompts/ is deliberately NOT scanned: generating prompts must contain the
+    # literal "[confirm: ...]" instruction text permanently — teaching the model
+    # to emit confirm-markers is the anti-invention discipline itself (bb-config-gen).
+    # Only configs/ must be free of unresolved markers at the --ready gate.
     hits = []
     for sub in subdirs:
         base = os.path.join(pack_dir, sub)
@@ -84,6 +89,36 @@ def has_script(pack_dir, stem):
     if not os.path.isdir(sd):
         return False
     return any(fn == stem or fn.startswith(stem + ".") for fn in os.listdir(sd))
+
+
+def run_pack_checkers(pack_dir):
+    """Run a pack's own static checkers, if it ships any.
+
+    A pack whose deployment is config-as-code (Hurl scenarios, Terraform, an
+    Ansible collection) carries failure modes this script cannot see: an
+    undefined variable, a capture used before it exists, a credential that
+    disagrees with the container environment. Those packs ship their own
+    checker; the ship gate must run it, or the pack passes --ready with a
+    deployment that cannot execute.
+
+    Convention: <pack>/<tool>/check_*.py, executed with the pack as CWD.
+    """
+    found = []
+    for sub in sorted(os.listdir(pack_dir)):
+        d = os.path.join(pack_dir, sub)
+        if not os.path.isdir(d) or sub.startswith("."):
+            continue
+        for fn in sorted(os.listdir(d)):
+            if fn.startswith("check_") and fn.endswith(".py"):
+                found.append(os.path.join(sub, fn))
+    results = []
+    for rel in found:
+        proc = subprocess.run(
+            [sys.executable, rel], cwd=pack_dir,
+            capture_output=True, text=True,
+        )
+        results.append((rel, proc.returncode, (proc.stdout + proc.stderr).strip()))
+    return results
 
 
 def main():
@@ -128,6 +163,13 @@ def main():
                 if not os.path.exists(fp):
                     failures.append(f"module {mid}: missing {key} {rel}")
 
+    # the pack's own static checkers (config-as-code deployments)
+    checker_output = []
+    for rel, rc, out in run_pack_checkers(pack):
+        checker_output.append((rel, rc, out))
+        if rc != 0:
+            failures.append(f"{rel} reported problems")
+
     # unresolved [confirm:] placeholders
     unresolved = scan_unresolved(pack)
     if unresolved:
@@ -141,6 +183,11 @@ def main():
     print(f"Build pack: {kp} ({track})  modules={len(modules)}  depends_on={dep}")
     if dep not in ("[]", "", None):
         print(f"  run order: deploy {dep} BEFORE this pack (bottom-up).")
+    for rel, rc, out in checker_output:
+        print(f"  {'FAIL' if rc else 'ok  '}: {rel}")
+        if rc != 0 and out:
+            for line in out.splitlines():
+                print(f"        {line}")
     for w in warnings:
         print(f"  WARN: {w}")
     for fl in failures:

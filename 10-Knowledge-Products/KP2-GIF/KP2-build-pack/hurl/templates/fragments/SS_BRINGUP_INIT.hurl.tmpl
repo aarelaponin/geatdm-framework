@@ -1,0 +1,53 @@
+
+############################################################
+# @SS@ -- @MEMBER_NAME@ (@SS_CODE@)
+############################################################
+
+# Check that the Security Server UI is up
+GET https://{{@HOSTVAR@}}:4000
+
+HTTP 200
+
+# Log in to the Security Server
+POST https://{{@HOSTVAR@}}:4000/login
+[FormParams]
+username: {{ss_admin_user}}
+password: {{ss_admin_password}}
+
+HTTP 200
+[Captures]
+@P@_xsrf_token: cookie "XSRF-TOKEN"
+
+# Upload the global configuration anchor downloaded from the Central Server
+POST https://{{@HOSTVAR@}}:4000/api/v1/system/anchor
+X-XSRF-TOKEN: {{@P@_xsrf_token}}
+Content-Type: application/octet-stream
+```
+{{gconf_anchor}}
+```
+
+HTTP 201
+
+# Initialise the Security Server (owner + server code + token PIN)
+POST https://{{@HOSTVAR@}}:4000/api/v1/initialization
+X-XSRF-TOKEN: {{@P@_xsrf_token}}
+Content-Type: application/json
+{
+  "owner_member_class": "{{member_class}}",
+  "owner_member_code": "@MEMBER_CODE@",
+  "security_server_code": "@SS_CODE@",
+  "software_token_pin": "{{token_pin}}",
+  "ignore_warnings": true
+}
+
+HTTP 201
+
+# Log in to the software token
+PUT https://{{@HOSTVAR@}}:4000/api/v1/tokens/0/login
+X-XSRF-TOKEN: {{@P@_xsrf_token}}
+Content-Type: application/json
+{
+  "password": "{{token_pin}}"
+}
+
+HTTP *

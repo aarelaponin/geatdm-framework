@@ -24,3 +24,9 @@ x_archive/
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Superpowers subagent-driven-development scratch (ledgers, briefs, reports)
+.superpowers/sdd/
+
+# Superpowers isolated worktrees
+.worktrees/

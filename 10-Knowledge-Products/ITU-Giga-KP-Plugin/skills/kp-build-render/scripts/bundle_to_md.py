@@ -183,10 +183,16 @@ def parse_subtopic(block, persona_default):
     return "\n".join(md)
 
 
-def main():
-    if len(sys.argv) < 2:
-        sys.exit("usage: python3 bundle_to_md.py <build_script.js> [out.md]")
-    path = Path(sys.argv[1])
+def default_md_name(path):
+    """The .md filename bundle_to_md writes by default: the build script's OUT_PATH
+    .docx name with a .md extension, or the build script's own stem if not found."""
+    src = path.read_text(encoding="utf-8")
+    dm = re.search(r'path\.join\(__dirname,\s*"([^"]+\.docx)"', src)
+    return (dm.group(1)[:-5] + ".md") if dm else (path.stem + ".md")
+
+
+def build_markdown(path):
+    """Render the build script at `path` to Markdown text (no file I/O)."""
     src = path.read_text(encoding="utf-8")
 
     # Per-subtopic persona: read the renderSubtopic helper's ["Persona", X] row. Across the
@@ -275,14 +281,19 @@ def main():
             i = m.end()
 
     md_text = "\n".join(out)
-    md_text = re.sub(r"\n{3,}", "\n\n", md_text)
+    return re.sub(r"\n{3,}", "\n\n", md_text)
+
+
+def main():
+    if len(sys.argv) < 2:
+        sys.exit("usage: python3 bundle_to_md.py <build_script.js> [out.md]")
+    path = Path(sys.argv[1])
+    md_text = build_markdown(path)
 
     if len(sys.argv) > 2:
         out_path = Path(sys.argv[2])
     else:
-        dm = re.search(r'path\.join\(__dirname,\s*"([^"]+\.docx)"', src)
-        name = (dm.group(1)[:-5] + ".md") if dm else (path.stem + ".md")
-        out_path = path.with_name(name)
+        out_path = path.with_name(default_md_name(path))
     out_path.write_text(md_text, encoding="utf-8")
     print(f"Wrote {out_path} ({len(md_text)} chars)")
 

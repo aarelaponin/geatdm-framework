@@ -1,0 +1,258 @@
+# KP2 build pack — Linkup demonstration federation (X-Road 7.x)
+# Basis: NIIS KB "How to Set Up a Local Test Environment Using Docker Compose?"
+# CS + Test CA + 4 Security Servers (PDGA + PNEA + PLR + PNIA) + 2 mock
+# providers. One topology (Wave 3 Task 4, design decision 5): MoEYS is
+# retired (Wave 3 Task 1, docs/production-delta.md), not hosted, and PNIA
+# owns its own Security Server unconditionally -- no lite/full split.
+# DEMO ONLY — never production (Test CA, fixed CS creds, single host).
+
+x-sidecar: &sidecar
+  # XROAD_SS_DIGEST (deployment.yaml xroad.ss_digest, C13) wins when set;
+  # XROAD_VERSION is the plain-tag fallback.
+  # This is also where the Wave 5 monitoring add-ons are "installed": the
+  # NIIS Sidecar ships a slim tag (bare packages only) and a full tag with
+  # message logging + operational monitoring (xroad-opmonitor) +
+  # environmental monitoring (xroad-monitor) pre-installed and
+  # supervisord-managed, no separate admin-API call or env var involved
+  # (nordic-institute/X-Road-Security-Server-sidecar's
+  # security_server_sidecar_user_guide.md §1.1/§2.2). This line has never
+  # carried a "-slim" suffix, so every Security Server this pack brings up,
+  # including ss-pdga, already runs both add-ons today -- tests/test_addons.py
+  # asserts the tag stays that way.
+  image: niis/xroad-security-server-sidecar:${XROAD_SS_DIGEST:-${XROAD_VERSION:-7.7.0}}
+  environment: &sidecar-env
+    XROAD_TOKEN_PIN: ${XROAD_TOKEN_PIN:?set in .env}
+    XROAD_ADMIN_USER: ${XROAD_ADMIN_USER:-xrd}
+    XROAD_ADMIN_PASSWORD: ${XROAD_ADMIN_PASSWORD:?set in .env}
+    XROAD_LOG_LEVEL: INFO
+  networks: [linkup]
+  depends_on: [cs, ca]
+
+x-mock: &mock
+  build: ./apps/mock-registry
+  networks: [linkup]
+
+services:
+  cs:
+    # Central Server — operated by PDGA. Test/dev image: UI creds fixed xrd/secret.
+    # XROAD_CS_DIGEST (deployment.yaml xroad.cs_digest, C13) wins when set;
+    # XROAD_CS_TAG is the plain-tag fallback.
+    image: niis/xroad-central-server:${XROAD_CS_DIGEST:-${XROAD_CS_TAG:-noble-7.7.0}}
+    container_name: cs
+    environment:
+      XROAD_TOKEN_PIN: ${XROAD_TOKEN_PIN:?set in .env}
+    ports: ["${XROAD_BIND:-127.0.0.1}:4000:4000"]
+    volumes:
+      - cs-db:/var/lib/postgresql/16/main
+      - cs-conf:/etc/xroad
+    networks: [linkup]
+
+  ca:
+    # Test CA + OCSP (:8888) + TSA (:8899) — demo trust anchor.
+    # TESTCA_TAG defaults to a digest pin (.env.example) per the reproducibility
+    # rule (PLAN.md decision 1) — confirmed at P0 2026-07-25.
+    image: ghcr.io/nordic-institute/xrddev-testca:${TESTCA_TAG:-latest}
+    container_name: ca
+    ports: ["${XROAD_BIND:-127.0.0.1}:8888:8888"]
+    volumes:
+      - ca-data:/home/ca
+    networks: [linkup]
+
+  ss-pdga:
+    # Management Security Server (CS owner PDGA + MANAGEMENT subsystem).
+    <<: *sidecar
+    container_name: ss-pdga
+    ports: ["${XROAD_BIND:-127.0.0.1}:1000:4000", "${XROAD_BIND:-127.0.0.1}:1080:8080"]
+    volumes:
+      - ss-pdga-db:/var/lib/postgresql/16/main
+      - ss-pdga-conf:/etc/xroad
+      - ss-pdga-archive:/var/lib/xroad
+      - ./xroad-demo-local.ini:/etc/xroad/conf.d/local.ini
+
+  ss-pnea:
+    # PNEA — consumer (PROGRESSA/GOV/PNEA:EXAMS).
+    <<: *sidecar
+    container_name: ss-pnea
+    ports: ["${XROAD_BIND:-127.0.0.1}:2000:4000", "${XROAD_BIND:-127.0.0.1}:2080:8080"]
+    volumes:
+      - ss-pnea-db:/var/lib/postgresql/16/main
+      - ss-pnea-conf:/etc/xroad
+      - ss-pnea-archive:/var/lib/xroad
+      - ./xroad-demo-local.ini:/etc/xroad/conf.d/local.ini
+
+  ss-plr:
+    # PLR — provider (PROGRESSA/GOV/PLR:ENROLMENT).
+    <<: *sidecar
+    container_name: ss-plr
+    ports: ["${XROAD_BIND:-127.0.0.1}:3000:4000", "${XROAD_BIND:-127.0.0.1}:3080:8080"]
+    volumes:
+      - ss-plr-db:/var/lib/postgresql/16/main
+      - ss-plr-conf:/etc/xroad
+      - ss-plr-archive:/var/lib/xroad
+      - ./xroad-demo-local.ini:/etc/xroad/conf.d/local.ini
+
+  ss-pnia:
+    # PNIA — provider (PROGRESSA/GOV/PNIA:IDENTITY).
+    # Host port 5100, not 5000: macOS's AirPlay Receiver (ControlCenter) listens
+    # on 5000 by default and silently swallows the connection instead of
+    # refusing it, so a straight "5000:4000" mapping hangs on macOS rather than
+    # failing fast. Confirmed at P0, 2026-07-25.
+    <<: *sidecar
+    container_name: ss-pnia
+    ports: ["${XROAD_BIND:-127.0.0.1}:5100:4000", "${XROAD_BIND:-127.0.0.1}:5180:8080"]
+    volumes:
+      - ss-pnia-db:/var/lib/postgresql/16/main
+      - ss-pnia-conf:/etc/xroad
+      - ss-pnia-archive:/var/lib/xroad
+      - ./xroad-demo-local.ini:/etc/xroad/conf.d/local.ini
+
+  app-pnia:
+    # Mock identity registry behind ss-pnia.
+    <<: *mock
+    container_name: app-pnia
+    environment:
+      ENTITY: persons
+      CSV_FILE: /data/persons.csv
+      SPEC_FILE: /specs/pnia-identity.openapi.yaml
+      KEY_FIELD: nin
+    volumes:
+      - ./apps/data:/data:ro
+      - ./apps/specs:/specs:ro
+
+  app-plr:
+    # Mock learner registry behind ss-plr.
+    <<: *mock
+    container_name: app-plr
+    environment:
+      ENTITY: enrolments
+      CSV_FILE: /data/enrolments.csv
+      SPEC_FILE: /specs/plr-enrolment.openapi.yaml
+      KEY_FIELD: nin
+    volumes:
+      - ./apps/data:/data:ro
+      - ./apps/specs:/specs:ro
+
+  app-ptsb:
+    # Mock scholarship-awards registry behind PTSB -- the join-b Task 6
+    # live-proof fixture (design spec §2.1: "PTSB wants to ... publish
+    # awards-api so PNEA can verify that a candidate holds a scholarship
+    # award"). Not one of the canonical five -- exists only so the live join
+    # has a real, reachable backend to pass check 9 (backend reachability)
+    # against, same generic mock pattern as app-pnia/app-plr.
+    <<: *mock
+    container_name: app-ptsb
+    environment:
+      ENTITY: awards
+      CSV_FILE: /data/awards.csv
+      SPEC_FILE: /specs/ptsb-awards.openapi.yaml
+      KEY_FIELD: nin
+    volumes:
+      - ./apps/data:/data:ro
+      - ./apps/specs:/specs:ro
+
+  console:
+    # KP2 demonstration console -- demo only, never production (see
+    # docs/production-delta.md). profiles: ["demo"] keeps it off by default
+    # on a plain `docker compose up`; scripts/console.sh {up|down|reset|status}
+    # is the intended entry point. Mounts reconstruct just enough of the pack
+    # (not the whole repo) for apps/console/truth.py to load:
+    # manifest.yaml, configs/, hurl/topology.json, apps/data/*.csv -- all
+    # read-only. out/ is the one read-write mount, for the ACL journal.
+    build: ./apps/console
+    container_name: console
+    profiles: ["demo"]
+    networks: [linkup]
+    ports: ["${XROAD_BIND:-127.0.0.1}:8090:8000"]
+    environment:
+      PACK_DIR: /pack
+      OUT_DIR: /out
+      XROAD_ADMIN_USER: ${XROAD_ADMIN_USER:-xrd}
+      XROAD_ADMIN_PASSWORD: ${XROAD_ADMIN_PASSWORD:?set in .env}
+      # Task 6 (join tab): the join API's operator token, held server-side
+      # here exactly like XROAD_ADMIN_PASSWORD above -- the browser never
+      # sees it. join-api itself is reached at its Compose service name on
+      # the linkup network (JOIN_API_URL's default, apps/console/app.py).
+      KP2_JOIN_OPERATOR_TOKEN: ${KP2_JOIN_OPERATOR_TOKEN:?set in .env}
+    volumes:
+      - ./deployment.yaml:/pack/deployment.yaml:ro
+      - ./manifest.yaml:/pack/manifest.yaml:ro
+      - ./configs:/pack/configs:ro
+      - ./hurl/topology.json:/pack/hurl/topology.json:ro
+      - ./apps/data:/pack/apps/data:ro
+      - ./out:/out
+
+  join-api:
+    # KP2 member-join API -- demo only, never production (see
+    # docs/production-delta.md). profiles: ["demo"] keeps it off by default;
+    # scripts/join.sh {up|down|status} is the intended entry point.
+    #
+    # Deliberately NOT console's curated read-only mount. Console only ever
+    # reads; join-api's later tasks write configs/member-<key>/<key>.yaml,
+    # edit manifest.yaml, and run `python3 hurl/generate.py` as a subprocess
+    # inside the container. generate.py resolves its own PACK root as
+    # Path(__file__).resolve().parent.parent -- i.e. relative to wherever
+    # hurl/generate.py itself sits -- so it needs the whole pack tree present
+    # at the same relative layout, writable. It also runs `git status
+    # --porcelain configs/ manifest.yaml` (spec S9's "known gap" mitigation),
+    # which needs the enclosing .git -- the real git root, three levels above
+    # this pack directory. So: bind-mount the whole monorepo checkout,
+    # read-write, at a path that preserves that relative layout, rather than
+    # a curated per-file subset. One-time decision (see the plan's Task 1
+    # brief); no later task revisits this file.
+    build: ./apps/join-api
+    container_name: join-api
+    profiles: ["demo"]
+    networks: [linkup]
+    ports: ["${XROAD_BIND:-127.0.0.1}:8091:8000"]
+    environment:
+      PACK_DIR: /repo/10-Knowledge-Products/KP2-GIF/KP2-build-pack
+      OUT_DIR: /repo/10-Knowledge-Products/KP2-GIF/KP2-build-pack/out
+      XROAD_ADMIN_USER: ${XROAD_ADMIN_USER:-xrd}
+      XROAD_ADMIN_PASSWORD: ${XROAD_ADMIN_PASSWORD:?set in .env}
+      XROAD_TOKEN_PIN: ${XROAD_TOKEN_PIN:?set in .env}
+      KP2_JOIN_APPLICANT_TOKEN: ${KP2_JOIN_APPLICANT_TOKEN:?set in .env}
+      KP2_JOIN_OPERATOR_TOKEN: ${KP2_JOIN_OPERATOR_TOKEN:?set in .env}
+    volumes:
+      - ../../..:/repo
+      # ...with one addition, for a checkout that is a git WORKTREE. There,
+      # /repo/.git is not a directory but a FILE holding
+      # "gitdir: <abs host path>/geatdm-framework/.git/worktrees/<name>" --
+      # an absolute HOST path that does not exist inside the container, so
+      # `git status --porcelain` exits 128 and every approval 409s with
+      # "could not check whether ... is a clean checkout" (found live,
+      # join-c plan Task 1; the fail-safe refusal itself is a join-b review
+      # finding and is not being relaxed). scripts/join.sh exports
+      # KP2_GIT_COMMON_DIR (`git rev-parse --git-common-dir`, absolutised),
+      # and this mounts it at its OWN host path -- the exact path that
+      # `gitdir:` pointer names. In a plain checkout the same variable
+      # resolves to the .git the /repo mount already carries, so this is one
+      # mount with one meaning, not a worktree special case. The default is
+      # for a bare `docker compose up` that never sourced join.sh: a
+      # self-mount of the same .git, i.e. a no-op.
+      - ${KP2_GIT_COMMON_DIR:-../../../.git}:${KP2_GIT_COMMON_DIR:-/repo/.git}
+
+volumes:
+  cs-db: {name: kp2-cs-db}
+  cs-conf: {name: kp2-cs-conf}
+  ca-data: {name: kp2-ca-data}
+  ss-pdga-db: {name: kp2-ss-pdga-db}
+  ss-pdga-conf: {name: kp2-ss-pdga-conf}
+  ss-pdga-archive: {name: kp2-ss-pdga-archive}
+  ss-pnea-db: {name: kp2-ss-pnea-db}
+  ss-pnea-conf: {name: kp2-ss-pnea-conf}
+  ss-pnea-archive: {name: kp2-ss-pnea-archive}
+  ss-plr-db: {name: kp2-ss-plr-db}
+  ss-plr-conf: {name: kp2-ss-plr-conf}
+  ss-plr-archive: {name: kp2-ss-plr-archive}
+  ss-pnia-db: {name: kp2-ss-pnia-db}
+  ss-pnia-conf: {name: kp2-ss-pnia-conf}
+  ss-pnia-archive: {name: kp2-ss-pnia-archive}
+  # ss-moeys-{db,conf,archive} volumes retired with the ss-moeys service
+  # above (Wave 3 Task 1) -- not kept as reserved, unlike PINNED_PORTS in
+  # hurl/generate.py, since a volume with no service using it is dead weight,
+  # not a collision risk.
+
+networks:
+  linkup:
+    name: linkup
+    driver: bridge
