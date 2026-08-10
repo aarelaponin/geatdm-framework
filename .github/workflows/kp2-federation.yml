@@ -1,0 +1,149 @@
+# KP2 federation on DigitalOcean — on-demand up / redeploy / destroy.
+#
+# Lives here, not in the pack, because GitHub only reads workflows from the
+# monorepo root's .github/workflows/. Everything else it drives is in
+# 10-Knowledge-Products/KP2-GIF/KP2-build-pack/infra/ (Terraform module,
+# remote-deploy.sh, and the deployment analysis those two came from).
+#
+# Repository secrets required (Settings -> Secrets and variables -> Actions):
+#   DO_TOKEN                  DigitalOcean API token, write scope
+#   SPACES_ACCESS_KEY_ID      Spaces key pair, for the Terraform state bucket
+#   SPACES_SECRET_ACCESS_KEY
+#   KP2_SSH_PRIVATE_KEY       Deploy keypair: ssh-keygen -t ed25519 -f kp2-deploy
+#   KP2_SSH_PUBLIC_KEY        ...private half and public half respectively
+#
+# actions: up = create/refresh infra AND deploy the pack; deploy = rerun the
+# pack deploy on the existing droplet; destroy = tear the droplet down
+# (the DO project and state bucket survive).
+
+name: KP2 federation (DigitalOcean)
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: What to do
+        type: choice
+        options: [up, deploy, destroy]
+        default: up
+      redeploy:
+        description: "Purge + redeploy even if the federation is already running (teardown.sh --purge first)"
+        type: boolean
+        default: false
+
+concurrency: kp2-federation # one droplet, one pipeline at a time
+
+env:
+  PACK_DIR: 10-Knowledge-Products/KP2-GIF/KP2-build-pack
+  TF_DIR: 10-Knowledge-Products/KP2-GIF/KP2-build-pack/infra/terraform
+  AWS_ACCESS_KEY_ID: ${{ secrets.SPACES_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.SPACES_SECRET_ACCESS_KEY }}
+  TF_VAR_do_token: ${{ secrets.DO_TOKEN }}
+  TF_VAR_ssh_public_key: ${{ secrets.KP2_SSH_PUBLIC_KEY }}
+  TF_IN_AUTOMATION: "true"
+
+jobs:
+  federation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45 # cold deploy is ~13 min; image pulls and apt add more
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_wrapper: false
+
+      - name: Terraform init
+        working-directory: ${{ env.TF_DIR }}
+        run: terraform init -backend-config=backend.hcl
+
+      - name: Terraform destroy
+        if: inputs.action == 'destroy'
+        working-directory: ${{ env.TF_DIR }}
+        run: terraform destroy -auto-approve
+
+      - name: Terraform apply
+        if: inputs.action != 'destroy'
+        working-directory: ${{ env.TF_DIR }}
+        run: terraform apply -auto-approve
+
+      - name: Read droplet IP
+        if: inputs.action != 'destroy'
+        id: ip
+        working-directory: ${{ env.TF_DIR }}
+        run: echo "ip=$(terraform output -raw droplet_ip)" >> "$GITHUB_OUTPUT"
+
+      - name: Set up SSH
+        if: inputs.action != 'destroy'
+        env:
+          SSH_KEY: ${{ secrets.KP2_SSH_PRIVATE_KEY }}
+          IP: ${{ steps.ip.outputs.ip }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          for i in $(seq 1 30); do
+            ssh-keyscan -T 5 "$IP" >> ~/.ssh/known_hosts 2>/dev/null
+            [ -s ~/.ssh/known_hosts ] && exit 0
+            sleep 10
+          done
+          echo "droplet never answered on 22" >&2; exit 1
+
+      - name: Wait for cloud-init (docker + deps installed at boot)
+        if: inputs.action != 'destroy'
+        env:
+          IP: ${{ steps.ip.outputs.ip }}
+        run: ssh "root@$IP" cloud-init status --wait
+
+      - name: Sync monorepo checkout to droplet
+        if: inputs.action != 'destroy'
+        env:
+          IP: ${{ steps.ip.outputs.ip }}
+        # The WHOLE checkout including .git: join-api bind-mounts the
+        # monorepo and runs `git status` inside its container, so the pack
+        # directory alone is not enough (docker-compose.yml, join-api
+        # stanza). --delete keeps redeploys clean; excludes cover the
+        # gitignored/local-only trees so a running stack's out/ and .env
+        # are not clobbered.
+        #
+        # ponytail: a re-sync onto a LIVE federation resets the join-written
+        # state (configs/member-<key>/ deleted, manifest.yaml overwritten
+        # from the checkout — apps/join-api/app.py commits both droplet-side).
+        # Acceptance still passes: module 2.7's rows come from
+        # hurl/topology.json, which is regenerated from the same reset
+        # configs/, so a wiped member is skipped, not failed. What is lost is
+        # the demo state — re-run the join after a `deploy`. Fix if that
+        # becomes annoying: condition the excludes on the same live-stack
+        # test remote-deploy.sh already does, rather than rsyncing blind.
+        run: |
+          rsync -az --delete \
+            --exclude '.venv' --exclude '.pytest_cache' --exclude '__pycache__' \
+            --filter 'protect **/out' --filter 'protect **/out/**' --filter 'protect **/.env' \
+            ./ "root@$IP:/opt/kp2/repo/"
+
+      - name: Deploy federation (gen-secrets -> preflight -> deploy -> seed -> acceptance)
+        if: inputs.action != 'destroy'
+        env:
+          IP: ${{ steps.ip.outputs.ip }}
+          REDEPLOY: ${{ inputs.redeploy && '1' || '0' }}
+        run: ssh -o ServerAliveInterval=30 "root@$IP" "KP2_REDEPLOY=$REDEPLOY bash -s" < "$PACK_DIR/infra/ci/remote-deploy.sh"
+
+      - name: How to reach it
+        if: inputs.action != 'destroy'
+        env:
+          IP: ${{ steps.ip.outputs.ip }}
+        run: |
+          {
+            echo "## Federation is up on $IP"
+            echo
+            echo "Everything binds to loopback on the droplet (by design — the"
+            echo "Test CA must never face the internet). Tunnel in:"
+            echo
+            echo '```'
+            echo "ssh -L 8090:127.0.0.1:8090 -L 4000:127.0.0.1:4000 -L 8091:127.0.0.1:8091 root@$IP"
+            echo '```'
+            echo
+            echo "Console: http://127.0.0.1:8090 · CS UI: https://127.0.0.1:4000 · join-api: http://127.0.0.1:8091"
+            echo
+            echo "Done for the day? Re-run this workflow with action=destroy."
+          } >> "$GITHUB_STEP_SUMMARY"
