@@ -128,8 +128,14 @@ jobs:
         # the demo state — re-run the join after a `deploy`. Fix if that
         # becomes annoying: condition the excludes on the same live-stack
         # test remote-deploy.sh already does, rather than rsyncing blind.
+        #
+        # --chown: rsync -a preserves the sender's owner when the receiver is
+        # root, and the runner's uid 1001 means nothing on the droplet. Git
+        # then refuses the checkout as "dubious ownership" -- which breaks
+        # tests/test_path_conformance.py's `git ls-files` and join-api's
+        # in-container `git status` alike.
         run: |
-          rsync -az --delete \
+          rsync -az --delete --chown=root:root \
             --exclude '.venv' --exclude '.pytest_cache' --exclude '__pycache__' \
             --filter 'protect **/out' --filter 'protect **/out/**' --filter 'protect **/.env' \
             ./ "root@$IP:/opt/kp2/repo/"
