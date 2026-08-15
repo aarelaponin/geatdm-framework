@@ -93,7 +93,12 @@ jobs:
         if: inputs.action != 'destroy'
         env:
           IP: ${{ steps.ip.outputs.ip }}
-        run: ssh "root@$IP" cloud-init status --wait
+        # Exit 2 is "done, but with recoverable errors" (warnings), not a
+        # boot failure — only 1 means cloud-init actually broke. --long
+        # prints the recoverable errors so a degraded boot is visible in
+        # the log; preflight in the deploy step is the real gate on
+        # docker/compose/jq being there.
+        run: ssh "root@$IP" cloud-init status --wait --long || [ $? -eq 2 ]
 
       - name: Sync monorepo checkout to droplet
         if: inputs.action != 'destroy'
