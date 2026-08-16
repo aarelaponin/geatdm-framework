@@ -11,6 +11,10 @@
 #   SPACES_SECRET_ACCESS_KEY
 #   KP2_SSH_PRIVATE_KEY       Deploy keypair: ssh-keygen -t ed25519 -f kp2-deploy
 #   KP2_SSH_PUBLIC_KEY        ...private half and public half respectively
+#   KP2_CONSOLE_HTPASSWD      One PRE-HASHED htpasswd line guarding the public
+#                             console: `htpasswd -nB kp2demo` locally, paste the
+#                             output line. CI never sees the cleartext; tell the
+#                             audience the password at the demo.
 #
 # actions: up = create/refresh infra AND deploy the pack; deploy = rerun the
 # pack deploy on the existing droplet; destroy = tear the droplet down
@@ -147,6 +151,17 @@ jobs:
           REDEPLOY: ${{ inputs.redeploy && '1' || '0' }}
         run: ssh -o ServerAliveInterval=30 "root@$IP" "KP2_REDEPLOY=$REDEPLOY bash -s" < "$PACK_DIR/infra/ci/remote-deploy.sh"
 
+      # Separate step, deliberately: remote-deploy.sh exits 0 early on an
+      # already-live federation ("acceptance only"), so publish logic
+      # appended to it would be skipped on the most common invocation.
+      # Here it also means password rotation is a `deploy` re-run.
+      - name: Publish console at https://<ip> (basic auth)
+        if: inputs.action != 'destroy'
+        env:
+          IP: ${{ steps.ip.outputs.ip }}
+          HTPASSWD: ${{ secrets.KP2_CONSOLE_HTPASSWD }}
+        run: ssh "root@$IP" "KP2_CONSOLE_HTPASSWD='$HTPASSWD' bash -s" < "$PACK_DIR/infra/ci/console-publish.sh"
+
       - name: How to reach it
         if: inputs.action != 'destroy'
         env:
@@ -155,7 +170,10 @@ jobs:
           {
             echo "## Federation is up on $IP"
             echo
-            echo "Everything binds to loopback on the droplet (by design — the"
+            echo "**Console (public, basic auth):** https://$IP — share this with the audience."
+            echo "The password is the one you hashed into KP2_CONSOLE_HTPASSWD."
+            echo
+            echo "Everything else binds to loopback on the droplet (by design — the"
             echo "Test CA must never face the internet). Tunnel in:"
             echo
             echo '```'
