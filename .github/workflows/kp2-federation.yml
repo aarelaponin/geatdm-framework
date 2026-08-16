@@ -94,8 +94,12 @@ jobs:
           mkdir -p ~/.ssh
           printf '%s\n' "$SSH_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
+          # || true is load-bearing: the step runs under `bash -e`, and a
+          # keyscan against a droplet whose sshd is not up yet exits non-zero
+          # (connection refused, instantly) -- which killed the whole retry
+          # loop on attempt 1 instead of waiting out the boot.
           for i in $(seq 1 30); do
-            ssh-keyscan -T 5 "$IP" >> ~/.ssh/known_hosts 2>/dev/null
+            ssh-keyscan -T 5 "$IP" >> ~/.ssh/known_hosts 2>/dev/null || true
             [ -s ~/.ssh/known_hosts ] && exit 0
             sleep 10
           done
