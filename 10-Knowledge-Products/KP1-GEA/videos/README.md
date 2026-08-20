@@ -82,7 +82,8 @@ No API. In the browser:
 1. New notebook. Add the audio brief as a source — **and nothing else**. NotebookLM is steered by
    its sources far more than by its prompt; a notebook holding the wider corpus will roam it no
    matter what you type.
-2. Audio Overview → **Deep Dive** format, **Short** length.
+2. Audio Overview → **Deep Dive** format, **Shorter** length. (Default overshoots a 4-minute spec
+   by 60–90 seconds no matter what the prompt says.)
 3. Paste the customization prompt into the focus box.
 4. Wait a few minutes, download the `.m4a`.
 5. Save as `KP«n»_Module«m»_Audio_«x.y»_v0.«v».m4a` — the version is the **take**, and it goes up

@@ -18,7 +18,7 @@ compatibility: Requires libreoffice (soffice), pdftoppm (poppler-utils), ffmpeg 
 ## Why this exists
 
 Each KP video ships as three files that come together at the end: a per-video deck
-(`KP1_Module1_Video_1.1_v0.1.pptx`), a narration track produced elsewhere
+(`KP1_Module1_Topic1.1_Deck_v0.1.pptx`), a narration track produced elsewhere
 (`KP1_Module1_Audio_1.1_v0.2.m4a` + matching `.srt`), and a cue file that says when each slide
 appears. `scripts/slidecast.py` turns the three into the deliverable MP4. The mechanical part is
 one command; the part that needs judgement is authoring the cue file, because **the narration is a
@@ -28,14 +28,20 @@ its own SRT.
 
 ## Folder and naming conventions
 
-Everything for a topic lives in sibling folders under the KP root (e.g. `KP1-GEA/`):
+Everything for a topic lives in sibling folders under the module's video folder,
+`KP«n»-*/videos/module_«m»/` (e.g. `KP1-GEA/videos/module_1/`):
 
 ```
-KP1_Module1_Topic1_Decks/    KP1_Module1_Video_1.1_v0.1.pptx     (deck version)
-KP1_Module1_Topic1_Audios/   KP1_Module1_Audio_1.1_v0.2.m4a/.srt (audio version)
-KP1_Module1_Topic1_Cues/     KP1_Module1_Cues_1.1_v0.2.txt       (follows the AUDIO version)
-KP1_Module1_Topic1_Videos/   KP1_Module1_Video_1.1_v0.2.mp4      (follows the AUDIO version)
+KP1_Module1_Topic1_Scripts/     KP1_M1_T1_1.1_Scripts_v0.1.md
+KP1_Module1_Topic1_Decks/       KP1_Module1_Topic1.1_Deck_v0.1.pptx (deck version)
+KP1_Module1_Topic1_NotebookLM/  KP1_M1_T1_1.1_AudioBrief_v0.2.md
+KP1_Module1_Topic1_Audios/      KP1_Module1_Audio_1.1_v0.2.m4a/.srt (audio version)
+KP1_Module1_Topic1_Cues/        KP1_Module1_Cues_1.1_v0.2.txt       (follows the AUDIO version)
+KP1_Module1_Topic1_Videos/      KP1_Module1_Video_1.1_v0.2.mp4      (follows the AUDIO version)
 ```
+
+The combined module deck (`KP1_Module1_Topic1_Deck_v0.1.pptx`) and the split spec sit in the Decks
+folder too; assemble from the per-topic deck, never the combined one.
 
 The deck and audio version numbers move independently. Cue files and output videos are named after
 the **audio** version, since that is what changes the timings. Ignore `~$*.pptx` lock files in the
@@ -61,7 +67,7 @@ Method:
 
 ```
 # Slide cue file — KP1 Module 1, Video 1.1 "Why your country needs a national EA"
-# Deck:  KP1_Module1_Video_1.1_v0.1.pptx (6 slides)
+# Deck:  KP1_Module1_Topic1.1_Deck_v0.1.pptx (6 slides)
 # Audio: KP1_Module1_Audio_1.1_v0.2.srt (runs to 5:19)
 # Approximate — derived by matching SRT content beats to slide content.
 

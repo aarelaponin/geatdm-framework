@@ -42,11 +42,11 @@ Editing the waveform or the SRT guarantees the next re-roll reverts it.
 
 | Input | Where | Required |
 |---|---|---|
-| The subtopic deck | `KP«n»-*/KP«n»_Module«m»_Topic«t»_Decks/KP«n»_Module«m»_Video_«x.y»_v0.«v».pptx` | yes |
+| The subtopic deck | `KP«n»-*/videos/module_«m»/KP«n»_Module«m»_Topic«t»_Decks/KP«n»_Module«m»_Topic«x.y»_Deck_v0.«v».pptx` | yes |
 | The voice-over script | `…_Scripts/KP«n»_M«m»_T«t»_«x.y»_Scripts_v0.«v».md` | if it exists |
 | A previous take, for the audit path | `…_Audios/KP«n»_Module«m»_Audio_«x.y»_v0.«v».srt` | only for Step 6 |
 
-Outputs land in `…_Scripts/` beside the narration script:
+Outputs land in `…_NotebookLM/`, beside the other NotebookLM inputs:
 
 - `KP«n»_M«m»_T«t»_«x.y»_AudioBrief_v0.«v».md` — upload this to NotebookLM
 - `KP«n»_M«m»_T«t»_«x.y»_NotebookLM_Prompt_v0.«v».md` — the operator's runbook
@@ -124,8 +124,7 @@ Three settings matter more than the prose:
 
 ## Step 5 — Deliver both files
 
-Write both into `…_Scripts/`, alongside the narration script, at the same `v0.x` as the deck they
-were derived from. They are versioned source, not scratch: when the deck is revised, the brief is
+Write both into `…_NotebookLM/`, at the same `v0.x` as the deck they were derived from. They are versioned source, not scratch: when the deck is revised, the brief is
 revised with it and the audio is re-rolled.
 
 ## Step 6 — Audit the take
