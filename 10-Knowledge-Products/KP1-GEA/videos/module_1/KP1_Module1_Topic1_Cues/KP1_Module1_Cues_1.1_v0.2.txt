@@ -1,0 +1,11 @@
+# Slide cue file — KP1 Module 1, Video 1.1 "Why your country needs a national EA"
+# Deck:  KP1_Module1_Video_1.1_v0.1.pptx (6 slides)
+# Audio: KP1_Module1_Audio_1.1_v0.2.srt (runs to 5:19)
+# Approximate — derived by matching SRT content beats to slide content.
+
+0:00   # slide 1 — Title card (1.1 + EA lifecycle strip)
+0:33   # slide 2 — 1.1 Why your country needs a national EA (how silos are created)
+1:26   # slide 3 — Four signs your government has no shared plan
+2:43   # slide 4 — The country pays in four directions at once
+3:32   # slide 5 — One root cause: there is no shared plan
+4:48   # slide 6 — Sources ("Sources are in the video description")
