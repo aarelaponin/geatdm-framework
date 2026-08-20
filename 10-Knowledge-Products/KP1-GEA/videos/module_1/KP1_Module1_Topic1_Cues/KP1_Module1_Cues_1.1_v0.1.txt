@@ -1,5 +1,5 @@
 # Slide cue file — KP1 Module 1, Video 1.1 "Why your country needs a national EA"
-# Deck:  KP1_Module1_Video_1.1_v0.1.pptx (6 slides)
+# Deck:  KP1_Module1_Topic1.1_Deck_v0.1.pptx (6 slides)
 # Audio: KP1_Module1_Audio_1.1_v0.1.srt (runs to 5:30)
 # Approximate — derived by matching SRT content beats to slide content.
 
