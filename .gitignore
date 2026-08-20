@@ -30,3 +30,6 @@ __pycache__/
 
 # Superpowers isolated worktrees
 .worktrees/
+
+# Rendered video — regenerate from deck + audio + cues via kp-slidecast
+*.mp4
