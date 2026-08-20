@@ -5,8 +5,8 @@ description: >-
   cue file — and author that cue file by matching the narration SRT to the slides. Use WHENEVER the task touches
   KP video assembly: "create a cue file", "when does each slide appear", "combine the deck and audio into a
   video", "build video 1.1", "render the mp4", "new audio version, redo the video", "the slides are out of sync
-  with the narration". Owns the non-obvious conventions: cue files live in KP*_Module*_Topic*_Cues/ and videos
-  in KP*_Module*_Topic*_Videos/, named to match the audio version (a new audio v0.X always gets a new cue file
+  with the narration". Owns the non-obvious conventions: cue files live in the module's cues/ folder and
+  videos in video/, named to match the audio version (a new audio v0.X always gets a new cue file
   — narration remixes shift every beat); cues are authored from the SRT content beats, not from the script
   .md, because the narration is a conversational remix of the script, not a read of it; the last cue must land
   strictly before the audio ends; verification is ffprobe duration plus frames extracted at cue times, inspected.
@@ -18,7 +18,7 @@ compatibility: Requires libreoffice (soffice), pdftoppm (poppler-utils), ffmpeg 
 ## Why this exists
 
 Each KP video ships as three files that come together at the end: a per-video deck
-(`KP1_Module1_Topic1.1_Deck_v0.1.pptx`), a narration track produced elsewhere
+(`KP1_M1_1.1_Deck_v0.1.pptx`), a narration track produced elsewhere
 (`KP1_Module1_Audio_1.1_v0.2.m4a` + matching `.srt`), and a cue file that says when each slide
 appears. `scripts/slidecast.py` turns the three into the deliverable MP4. The mechanical part is
 one command; the part that needs judgement is authoring the cue file, because **the narration is a
@@ -32,20 +32,22 @@ Everything for a topic lives in sibling folders under the module's video folder,
 `KP«n»-*/videos/module_«m»/` (e.g. `KP1-GEA/videos/module_1/`):
 
 ```
-KP1_Module1_Topic1_Scripts/     KP1_M1_T1_1.1_Scripts_v0.1.md
-KP1_Module1_Topic1_Decks/       KP1_Module1_Topic1.1_Deck_v0.1.pptx (deck version)
-KP1_Module1_Topic1_NotebookLM/  KP1_M1_T1_1.1_AudioBrief_v0.2.md
-KP1_Module1_Topic1_Audios/      KP1_Module1_Audio_1.1_v0.2.m4a/.srt (audio version)
-KP1_Module1_Topic1_Cues/        KP1_Module1_Cues_1.1_v0.2.txt       (follows the AUDIO version)
-KP1_Module1_Topic1_Videos/      KP1_Module1_Video_1.1_v0.2.mp4      (follows the AUDIO version)
+scripts/      KP1_M1_1.1_Scripts_v0.1.md
+decks/        KP1_M1_1.1_Deck_v0.1.pptx    (deck version)
+notebooklm/   KP1_M1_1.1_AudioBrief_v0.2.md
+audio/        KP1_M1_1.1_Audio_v0.2.m4a/.srt (audio version)
+cues/         KP1_M1_1.1_Cues_v0.2.txt     (follows the AUDIO version)
+video/        KP1_M1_1.1_Video_v0.2.mp4    (follows the AUDIO version)
 ```
 
-The combined module deck (`KP1_Module1_Topic1_Deck_v0.1.pptx`) and the split spec sit in the Decks
-folder too; assemble from the per-topic deck, never the combined one.
+One coordinate per artefact: `KP«n»_M«m»_«x.y»_«Artefact»_v0.«v»`. The folder says which stage, the
+filename says which video — `Topic«t»` is never in either, because topic number always equals module
+number. The combined module deck drops the `«x.y»` (`KP1_M1_Deck_v0.1.pptx`) and, with the split
+spec, sits in `decks/` too; assemble from the per-topic deck, never the combined one.
 
 The deck and audio version numbers move independently. Cue files and output videos are named after
 the **audio** version, since that is what changes the timings. Ignore `~$*.pptx` lock files in the
-Decks folder.
+decks folder.
 
 ## Step 1 — author the cue file (the judgement part)
 
@@ -67,7 +69,7 @@ Method:
 
 ```
 # Slide cue file — KP1 Module 1, Video 1.1 "Why your country needs a national EA"
-# Deck:  KP1_Module1_Topic1.1_Deck_v0.1.pptx (6 slides)
+# Deck:  KP1_M1_1.1_Deck_v0.1.pptx (6 slides)
 # Audio: KP1_Module1_Audio_1.1_v0.2.srt (runs to 5:19)
 # Approximate — derived by matching SRT content beats to slide content.
 

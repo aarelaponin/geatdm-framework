@@ -42,14 +42,14 @@ Editing the waveform or the SRT guarantees the next re-roll reverts it.
 
 | Input | Where | Required |
 |---|---|---|
-| The subtopic deck | `KP«n»-*/videos/module_«m»/KP«n»_Module«m»_Topic«t»_Decks/KP«n»_Module«m»_Topic«x.y»_Deck_v0.«v».pptx` | yes |
-| The voice-over script | `…_Scripts/KP«n»_M«m»_T«t»_«x.y»_Scripts_v0.«v».md` | if it exists |
-| A previous take, for the audit path | `…_Audios/KP«n»_Module«m»_Audio_«x.y»_v0.«v».srt` | only for Step 6 |
+| The subtopic deck | `KP«n»-*/videos/module_«m»/decks/KP«n»_M«m»_«x.y»_Deck_v0.«v».pptx` | yes |
+| The voice-over script | `…/scripts/KP«n»_M«m»_«x.y»_Scripts_v0.«v».md` | if it exists |
+| A previous take, for the audit path | `…/audio/KP«n»_M«m»_«x.y»_Audio_v0.«v».srt` | only for Step 6 |
 
-Outputs land in `…_NotebookLM/`, beside the other NotebookLM inputs:
+Outputs land in `…/notebooklm/`, beside the other NotebookLM inputs:
 
-- `KP«n»_M«m»_T«t»_«x.y»_AudioBrief_v0.«v».md` — upload this to NotebookLM
-- `KP«n»_M«m»_T«t»_«x.y»_NotebookLM_Prompt_v0.«v».md` — the operator's runbook
+- `KP«n»_M«m»_«x.y»_AudioBrief_v0.«v».md` — upload this to NotebookLM
+- `KP«n»_M«m»_«x.y»_NotebookLM_Prompt_v0.«v».md` — the operator's runbook
 
 ## Step 1 — Read the deck, not the script
 
@@ -124,7 +124,7 @@ Three settings matter more than the prose:
 
 ## Step 5 — Deliver both files
 
-Write both into `…_NotebookLM/`, at the same `v0.x` as the deck they were derived from. They are versioned source, not scratch: when the deck is revised, the brief is
+Write both into `…/notebooklm/`, at the same `v0.x` as the deck they were derived from. They are versioned source, not scratch: when the deck is revised, the brief is
 revised with it and the audio is re-rolled.
 
 ## Step 6 — Audit the take
@@ -153,7 +153,7 @@ future video inherits the fix.
 Once a take passes, the pause list from Step 6 gives you the real cue points. Write them into
 `…_Cues_«x.y»_v0.«v».txt` — one `M:SS   # slide N — title` line per slide — and assemble with
 `kp-slidecast`'s `scripts/slidecast.py`, run from wherever it is installed (all four paths are
-arguments; never copy the script into the module's `…_Videos/` folder). If the pauses do not fall
+arguments; never copy the script into the module's `video/` folder). If the pauses do not fall
 near the brief's budget,
 that is a brief problem to fix on the next re-roll, not something to paper over in the cue file.
 

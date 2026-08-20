@@ -1,6 +1,6 @@
 # KP1 Module 1 (Topic 1) — Voice-over scripts
 
-Spoken narration only, one section per video (1.1 – 1.8), slide-by-slide, matching `KP1_Module1_Topic1_Deck_v0.1.pptx`. Each video is standalone. Sources slides carry no narration — hold ~5 seconds; links go in the video description.
+Spoken narration only, one section per video (1.1 – 1.8), slide-by-slide, matching `KP1_M1_Deck_v0.1.pptx`. Each video is standalone. Sources slides carry no narration — hold ~5 seconds; links go in the video description.
 
 ---
 

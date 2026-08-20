@@ -902,13 +902,13 @@ notes(s, 'Closing slide for the combined deck. Individual videos end on their so
 
 # Self-check: the split spec's slide ranges depend on this count, and a helper that
 # silently stops drawing shows up first as a slide with no voice-over.
-assert len(prs.slides._sldIdLst) == 64, 'slide count changed — update kp1_module1_split_spec.json'
+assert len(prs.slides._sldIdLst) == 64, 'slide count changed — update decks/split_spec.json'
 assert all(sl.has_notes_slide and sl.notes_slide.notes_text_frame.text.strip() for sl in prs.slides), \
     'every slide carries its voice-over in the notes'
 
 OUT = os.environ.get('OUT_PATH') or os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
-    'videos', 'module_1', 'KP1_Module1_Topic1_Decks', 'KP1_Module1_Topic1_Deck_v0.1.pptx')
+    'videos', 'module_1', 'decks', 'KP1_M1_Deck_v0.1.pptx')
 prs.save(OUT)
 print('slides:', len(prs.slides._sldIdLst))
 print('saved', OUT)

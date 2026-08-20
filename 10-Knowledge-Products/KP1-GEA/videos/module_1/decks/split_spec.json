@@ -1,7 +1,7 @@
 {
   "kicker_prefix": "KP1 · Government Enterprise Architecture · Module 1",
   "audience": "CDO · Director-General · sector minister",
-  "out_pattern": "KP1_Module1_Topic{code}_Deck_v0.1.pptx",
+  "out_pattern": "KP1_M1_{code}_Deck_v0.1.pptx",
   "cover_title_marker": "Why a PAERA-anchored",
   "cover_subtitle_marker": "Eight standalone videos",
   "videos": [
