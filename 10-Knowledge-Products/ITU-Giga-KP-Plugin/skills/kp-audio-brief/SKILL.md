@@ -153,7 +153,9 @@ future video inherits the fix.
 
 Once a take passes, the pause list from Step 6 gives you the real cue points. Write them into
 `…_Cues_«x.y»_v0.«v».txt` — one `M:SS   # slide N — title` line per slide — and assemble with
-`KP«n»_Module«m»_Topic«t»_Videos/slidecast.py`. If the pauses do not fall near the brief's budget,
+`kp-slidecast`'s `scripts/slidecast.py`, run from wherever it is installed (all four paths are
+arguments; never copy the script into the module's `…_Videos/` folder). If the pauses do not fall
+near the brief's budget,
 that is a brief problem to fix on the next re-roll, not something to paper over in the cue file.
 
 ## What good looks like
