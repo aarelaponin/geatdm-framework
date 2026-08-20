@@ -1,0 +1,89 @@
+{
+  "kicker_prefix": "KP1 · Government Enterprise Architecture · Module 1",
+  "audience": "CDO · Director-General · sector minister",
+  "out_pattern": "KP1_Module1_Topic{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "Why a PAERA-anchored",
+  "cover_subtitle_marker": "Eight standalone videos",
+  "videos": [
+    {
+      "code": "1.1",
+      "title": "Why your country needs a national EA",
+      "mins": "~4",
+      "range": [
+        3,
+        7
+      ],
+      "message": "Without a shared plan for your government’s digital systems, every new programme rebuilds what others have already built. The country pays. The citizen pays. Your minister cannot deliver what they promised."
+    },
+    {
+      "code": "1.2",
+      "title": "What an EA actually is",
+      "mins": "~3",
+      "range": [
+        8,
+        14
+      ],
+      "message": "An EA is the picture everyone agrees describes your government — minister, ministry CIO, donor, vendor. With it, you can lead the conversation. Without it, others lead it for you."
+    },
+    {
+      "code": "1.3",
+      "title": "Why projects can't do this themselves",
+      "mins": "~5",
+      "range": [
+        15,
+        21
+      ],
+      "message": "Procurement rules can require interoperability. They cannot deliver it. Only planning at the level of the whole government, supported by reference architectures, can."
+    },
+    {
+      "code": "1.4",
+      "title": "Why an EA matters more now",
+      "mins": "~5",
+      "range": [
+        22,
+        29
+      ],
+      "message": "For thirty years, digital work meant putting paper online. That era is ending. The work now is to redesign how your ministry serves citizens — and that work needs business and IT in the same room, using the same words."
+    },
+    {
+      "code": "1.5",
+      "title": "Why PAERA-anchored",
+      "mins": "~4",
+      "range": [
+        30,
+        36
+      ],
+      "message": "PAERA gives your team five years of head start. Adopt it, and the architecture work begins on day one. Do not adopt it, and your first year is spent inventing what others have already published."
+    },
+    {
+      "code": "1.6",
+      "title": "The lifecycle on one page",
+      "mins": "~5",
+      "range": [
+        37,
+        47
+      ],
+      "message": "Six months from start to a roadmap your minister can take to cabinet. Then ongoing governance. Five phases. Four sign-offs. One continuous practice."
+    },
+    {
+      "code": "1.7",
+      "title": "What you will need from your minister",
+      "mins": "~5",
+      "range": [
+        48,
+        55
+      ],
+      "message": "Four asks. A small permanent EA team. An EA Board with real authority. About two per cent of digital budget, sustained for five years. And one promise — that the team will not be pulled onto the urgent project of the week."
+    },
+    {
+      "code": "1.8",
+      "title": "Four signposts — three African, one international",
+      "mins": "~5",
+      "range": [
+        56,
+        63
+      ],
+      "message": "Rwanda, Kenya and South Africa show the pattern at African scale and in different governance shapes. Estonia is the international polestar. The pattern travels. Your country can apply it too."
+    }
+  ]
+}

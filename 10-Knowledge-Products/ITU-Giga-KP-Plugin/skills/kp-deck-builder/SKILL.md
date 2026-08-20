@@ -41,7 +41,9 @@ silently reverts it, and the split decks drift from the combined one.
 - `scripts/ITU_ppt_template.pptx` — the ITU video template, shipped with this skill. 13.333 × 7.5 in
   canvas. `deck_lib.open_template()` defaults to it; pass a path to use a different template.
 - The worked example: `KP1-GEA/build_kp1_module1_deck_v01.py` (combined deck) and
-  `KP1-GEA/kp1_module1_split_spec.json` (split). Read them before building a new module.
+  `KP1-GEA/videos/module_1/KP1_Module1_Topic1_Decks/kp1_module1_split_spec.json` (split). Read them
+  before building a new module. The build script is **content only** — it imports every helper,
+  colour and layout index from `deck_lib.py`; copy that arrangement, never the helpers themselves.
 
 ## Template anatomy (probed, don't re-probe)
 
@@ -116,9 +118,13 @@ The bundle's cues are the floor; these rules are how to render them well.
 
 ```bash
 pip install python-pptx --quiet   # if missing
-cd 10-Knowledge-Products/KP1-GEA  # module folder; template is one level up
+cd 10-Knowledge-Products/KP1-GEA  # module folder
 python build_kp1_moduleN_deck_v0X.py          # writes the combined deck
 ```
+
+The script puts `deck_lib.py`'s directory on `sys.path` itself and defaults `TEMPLATE` to the copy
+shipped with this skill, so it runs from any cwd; `TEMPLATE=` and `OUT_PATH=` override both. Its
+default output is the module's deck folder (`videos/module_<N>/…_Decks/`), next to the split spec.
 
 For a new module, copy the worked example and rewrite the content sections; compose slides from
 `deck_lib.py` helpers: `section_slide`, `title` (+`tick`), `rows_slide` (numbered or plain rows with
@@ -147,10 +153,13 @@ If the Cowork pptx skill is present, also run its `scripts/office/validate.py de
 ## Split into per-video decks
 
 ```bash
-python scripts/split_module_deck.py KP1_ModuleN_Deck_v0.X.pptx kpN_moduleM_split_spec.json videos/
+python scripts/split_module_deck.py \
+  videos/module_1/KP1_Module1_Topic1_Decks/KP1_Module1_Topic1_Deck_v0.1.pptx \
+  videos/module_1/KP1_Module1_Topic1_Decks/kp1_module1_split_spec.json \
+  videos/module_1/KP1_Module1_Topic1_Decks/
 ```
 
-The spec (worked example: `KP1-GEA/kp1_module1_split_spec.json`) lists each video's code, title,
+The spec (worked example: `kp1_module1_split_spec.json`, kept next to the decks) lists each video's code, title,
 minutes, single message and its **1-indexed inclusive slide range** in the combined deck. Each output
 keeps slide 1 (the cover, retitled in place as the video's title card: `1.3 — <title>`, kicker
 `… · Module 1 · Video 1.3`, the video's single message and runtime) plus that video's slides,

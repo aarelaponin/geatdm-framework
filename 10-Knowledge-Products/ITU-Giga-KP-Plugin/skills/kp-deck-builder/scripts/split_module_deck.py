@@ -95,7 +95,8 @@ def main():
                 ])
         cover.notes_slide.notes_text_frame.text = (
             'Title card for standalone video %s. Content slides are identical to the corresponding '
-            'section of the combined module deck; voice-over is in each slide’s notes.' % code)
+            'section of the combined deck %s; voice-over is in each slide’s notes.'
+            % (code, os.path.basename(src)))
 
         out = os.path.join(outdir, spec['out_pattern'].format(code=code))
         prs.save(out)
