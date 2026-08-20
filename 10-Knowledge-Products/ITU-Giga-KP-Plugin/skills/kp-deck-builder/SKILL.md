@@ -38,7 +38,8 @@ silently reverts it, and the split decks drift from the combined one.
 
 - The module's script bundle (`KP*_Module*_Script_Bundle_v*.md` or its build `.js`) — slide cues,
   voice-over, single messages, runtimes, sources, metadata.
-- `10-Knowledge-Products/ITU_ppt_template.pptx` — the ITU video template. 13.333 × 7.5 in canvas.
+- `scripts/ITU_ppt_template.pptx` — the ITU video template, shipped with this skill. 13.333 × 7.5 in
+  canvas. `deck_lib.open_template()` defaults to it; pass a path to use a different template.
 - The worked example: `KP1-GEA/build_kp1_module1_deck_v01.py` (combined deck) and
   `KP1-GEA/kp1_module1_split_spec.json` (split). Read them before building a new module.
 
@@ -141,7 +142,7 @@ markitdown deck.pptx | grep -iE "lorem|ipsum|TODO|\[insert|\[add image\]|\[xx\]|
 ```
 
 If the Cowork pptx skill is present, also run its `scripts/office/validate.py deck.pptx
---original ITU_ppt_template.pptx` (the `--original` baseline suppresses the template's own quirks).
+--original scripts/ITU_ppt_template.pptx` (the `--original` baseline suppresses the template's own quirks).
 
 ## Split into per-video decks
 

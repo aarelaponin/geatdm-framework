@@ -8,7 +8,7 @@ new module's deck; the worked example remains the reference for composition.
 Usage sketch:
 
     import deck_lib as dl
-    prs = dl.open_template('ITU_ppt_template.pptx')
+    prs = dl.open_template()          # the ITU template shipped next to this file
     dl.edit_cover(prs, title='...', kicker='KP1 · Government Enterprise Architecture · Module 2',
                   blurb='...', length='~30 mins across 8 videos', audience='...',
                   panel_heading='THE LIFECYCLE THIS MODULE TEACHES',
@@ -22,6 +22,8 @@ Usage sketch:
 
 All sizes in inches unless noted. Slide canvas: 13.333 x 7.5 in.
 """
+import os
+
 from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
@@ -47,8 +49,12 @@ LAYOUT_BLUE = 13         # 'Blank (blue bg)' — full-bleed F5FAFC rectangle
 LAYOUT_THANKS = 14       # '2_Thank you Slide' — "Thank you!" text baked into the layout
 
 
-def open_template(path):
-    return Presentation(path)
+TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ITU_ppt_template.pptx')
+
+
+def open_template(path=None):
+    """Open the ITU template. Defaults to the copy shipped with this skill."""
+    return Presentation(path or TEMPLATE)
 
 
 def add_slide(prs, layout_idx):
