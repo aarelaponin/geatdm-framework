@@ -16,6 +16,10 @@ KP1 taught how to **plan** — its deliverable is a video bundle. KP2–4 teach 
 |---|---|---|
 | `itu-giga-kp-bundle` | **Author** | Produce or revise a KP module script bundle — the full subtopic structure, scripts, slide specs, AI prompts, metadata. Owns the audience lock, the eight ITU compliance rules, the two structural arguments, and (Step 10) the implementation-KP authoring mode. |
 | `kp-build-render` | **Mechanic** | Build the Node.js docx and verify it — docx install, `NODE_PATH`, `node build`, `soffice` → PDF → page images. Removes the per-module setup friction. |
+| `kp-deck-builder` | **Mechanic** | Build the module's .pptx decks on the ITU template — one combined deck with the voice-over in speaker notes, split per-video decks with title cards, and the scripts-only companion .md. Owns the template's layout indices, the module-scoped numbering rule, the deck grammar and the educational design rules. Feeds `kp-audio-brief` and `kp-slidecast`. |
+| `kp-audio-brief` | **Mechanic** | Steer the subtopic's NotebookLM narration to the deck — write the audio brief (the notebook's sole source) plus the customization prompt, then audit the take on runtime, framing, terminology and filler. Owns the framing lock and the per-slide time budget. Consumes the deck from `kp-deck-builder` and the SRT from `kp-whisper-transcribe`; feeds `kp-slidecast`. |
+| `kp-whisper-transcribe` | **Mechanic** | Transcribe a narration take (`.m4a`) to the `.srt` that `kp-audio-brief` Step 6 audits, using local `openai-whisper` — no upload, no API key. Covers this Mac's install and certificate failure modes. Run whenever a fresh take lands in a `…_Audios/` folder with no matching `.srt`. |
+| `kp-slidecast` | **Mechanic** | Author the slide cue file by matching the narration SRT to the slides, then assemble the per-video deck + audio into the .mp4. Owns the cue/video folder conventions, the rule that every new audio version gets a new cue file, and ffprobe + extracted-frame verification. |
 | `kp-citation-verify` | **Gate** | Drive every PAERA citation and paraphrased term from DRAFT → VERIFIED against the real PAERA document (and, for KP2–4, every config's spec citation), before a module is shared. |
 | `kp-bundle-qa` | **Gate** | Run the ITU compliance QA gate after any build or edit — forbidden strings, seven-element completeness, numbering, no in-video intros/outros, both structural arguments, metadata and word-count checks, plus a fresh-eyes render review. Greps the build pack too. |
 | `kp-build-pack` | **Mechanic** *(KP2–4)* | Scaffold and assemble the runnable build pack (configs / prompts / scripts / acceptance / runbook / manifest) that ships alongside the video bundle. |
@@ -47,6 +51,33 @@ KP1 taught how to **plan** — its deliverable is a video bundle. KP2–4 teach 
                               (never edit the docx), then re-build & re-gate
 ```
 
+Alongside the docx track runs the video track: the same script bundle becomes the decks, the decks
+steer the generated narration, and the narration's transcript times the slides.
+
+```
+ script bundle ──► kp-deck-builder ──► module deck + per-video decks (.pptx)
+                                                │
+                                                ▼
+                                        kp-audio-brief
+                                                │  audio brief + NotebookLM prompt
+                                                ▼
+                                      NotebookLM (browser)
+                                                │  take (.m4a)
+                                                ▼
+                                    kp-whisper-transcribe
+                                                │  .srt
+                                                ▼
+                              kp-audio-brief Step 6  (srt_drift_check:
+                                                │     runtime, framing, terminology)
+                                                │ passes
+                                                ▼
+                                          kp-slidecast
+                                    cue file ──► slidecast.py ──► .mp4
+```
+
+Same cardinal rule, one layer over: **fixes go to the audio brief, never to the audio.** Editing
+the waveform or the SRT is reverted by the next re-roll.
+
 The cardinal rule, inherited from the contract's build-script convention: **fixes go to the build script and the spec, never to the docx.** Every gate emits a list of edits to apply upstream, then you re-render.
 
 ## Relationship to the contract memory
@@ -63,4 +94,4 @@ For KP2–4 the flow extends: after authoring, `kp-build-pack` scaffolds the run
 
 ---
 
-*FiscalAdmin OÜ. Kit v0.3.0, 27 June 2026 — KP1 + KP2 complete; added the cross-KP curriculum-QA gate (kp-curriculum-qa) and fixed the Markdown-generator persona bug it surfaced. v0.2.0 added the implementation-KP extension (kp-build-pack, bb-config-gen, kp-solution-verify) for KP2–4. Created v0.1.0 on 2 June 2026.*
+*FiscalAdmin OÜ. Kit v0.5.0, 20 August 2026 — added the video track end to end: `kp-deck-builder` (ITU-template decks, voice-over in speaker notes, per-video splits), `kp-audio-brief` (audio brief + NotebookLM prompt + take audit) after the first unbriefed take on KP1 M1 1.1 came back 5:31 against a 4:00 spec with the audience framing inverted, `kp-whisper-transcribe` (local take → SRT, no upload) and `kp-slidecast` (cue file + deck/audio → mp4). v0.3.0, 27 June 2026 — KP1 + KP2 complete; added the cross-KP curriculum-QA gate (kp-curriculum-qa) and fixed the Markdown-generator persona bug it surfaced. v0.2.0 added the implementation-KP extension (kp-build-pack, bb-config-gen, kp-solution-verify) for KP2–4. Created v0.1.0 on 2 June 2026.*

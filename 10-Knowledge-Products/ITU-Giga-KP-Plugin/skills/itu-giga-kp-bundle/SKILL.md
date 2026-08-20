@@ -166,6 +166,17 @@ This is the **author** skill of the `itu-giga-kp` kit. Once a module's build scr
 
 Every gate emits a fix list. **Fixes go to the build script, never to the docx**; then re-run `kp-build-render` and the gates. A module is a deliverable only when both gates pass.
 
+**The video track** runs alongside the docx and starts from the same script bundle:
+
+4. **`kp-deck-builder`** — build the module deck on the ITU template (voice-over in speaker notes, never on the slide), then split the per-video decks with title cards.
+5. **`kp-audio-brief`** — write the audio brief and the NotebookLM customization prompt that steer the narration to that deck, then (Step 6) audit the take on runtime, framing, terminology and filler.
+6. **`kp-whisper-transcribe`** — transcribe the returned `.m4a` locally to the `.srt` that Step 6 audits.
+7. **`kp-slidecast`** — author the cue file from the SRT's content beats (not from this script — the narration is a remix, not a read) and assemble deck + audio into the .mp4.
+
+Same rule, one layer over: **fixes go to the audio brief, never to the audio or the SRT** — a re-roll reverts them. And per the cardinal rule, deck fixes go to the deck build script, never to the .pptx.
+
+**`kp-curriculum-qa`** sits above all of this: run it once a KP's modules are individually gated, and again across KPs.
+
 ## Build verification — what good looks like
 
 The detailed mechanics now live in the `kp-build-render` and `kp-bundle-qa` skills. In short, after running the build script, verify before sharing:
