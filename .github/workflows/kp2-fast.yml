@@ -25,9 +25,11 @@ on:
   push:
     paths:
       - "10-Knowledge-Products/KP2-GIF/KP2-build-pack/**"
+      - ".github/workflows/kp2-fast.yml"
   pull_request:
     paths:
       - "10-Knowledge-Products/KP2-GIF/KP2-build-pack/**"
+      - ".github/workflows/kp2-fast.yml"
 
 defaults:
   run:
@@ -51,11 +53,6 @@ jobs:
 
       - name: Install the host scripts' only hard Python dependency
         run: pip install pyyaml
-
-      - name: Set up the venv scripts/verify.sh's pytest step needs
-        run: |
-          python3 -m venv .venv
-          .venv/bin/pip install pytest httpx fastapi pyyaml
 
       # A fresh checkout has no .env (gitignored, never committed --
       # exposure-and-secrets plan Task 4) and no generated hurl/ artefacts
