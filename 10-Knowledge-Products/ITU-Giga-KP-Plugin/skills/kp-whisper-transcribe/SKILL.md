@@ -64,6 +64,11 @@ export PATH="/usr/local/bin:$PATH"        # so ffmpeg is found
   --model turbo --output_format srt --output_dir <Audios-dir>
 ```
 
+`<Audios-dir>` is a language-specific folder (`videos/module_<m>/en/audio/` or `.../fr/audio/`).
+Whisper auto-detects language from the audio, but pass `--language fr` explicitly for French
+takes — auto-detect is unreliable on a short first clip, and a misdetected language can silently
+mangle the transcript's accents and punctuation.
+
 Writes `KP<n>_Module<m>_Audio_<x.y>_v0.<v>.srt` next to the source file — the exact path
 `kp-audio-brief` Step 6 (`srt_drift_check.py`) expects. `FP16 is not supported on CPU; using
 FP32 instead` is expected (no GPU) and not an error.

@@ -28,8 +28,10 @@ its own SRT.
 
 ## Folder and naming conventions
 
-Everything for a topic lives in sibling folders under the module's video folder,
-`KP«n»-*/videos/module_«m»/` (e.g. `KP1-GEA/videos/module_1/`):
+Everything for a topic lives in sibling folders under the module's **language** folder,
+`KP«n»-*/videos/module_«m»/«lang»/` (e.g. `KP1-GEA/videos/module_1/en/`) — `en` for English, `fr`
+for French, each a full mirror of the other (French is currently an empty scaffold — see the
+video track's `videos/README.md` → *Adding a language*):
 
 ```
 scripts/      KP1_M1_1.1_Scripts_v0.1.md
@@ -40,14 +42,19 @@ cues/         KP1_M1_1.1_Cues_v0.2.txt     (follows the AUDIO version)
 video/        KP1_M1_1.1_Video_v0.2.mp4    (follows the AUDIO version)
 ```
 
-One coordinate per artefact: `KP«n»_M«m»_«x.y»_«Artefact»_v0.«v»`. The folder says which stage, the
-filename says which video — `Topic«t»` is never in either, because topic number always equals module
+One coordinate per artefact, plus the language folder: `KP«n»_M«m»_«x.y»_«Artefact»_v0.«v»` inside
+`«lang»/«stage»/`. The language folder says which language, the stage folder says which stage, the
+filename says which video — filenames are **identical across `en/` and `fr/`**, only the path
+disambiguates, and `Topic«t»` is never in either, because topic number always equals module
 number. The combined module deck drops the `«x.y»` (`KP1_M1_Deck_v0.1.pptx`) and, with the split
-spec, sits in `decks/` too; assemble from the per-topic deck, never the combined one.
+spec, sits in that language's `decks/` too; assemble from the per-topic deck, never the combined
+one.
 
-The deck and audio version numbers move independently. Cue files and output videos are named after
-the **audio** version, since that is what changes the timings. Ignore `~$*.pptx` lock files in the
-decks folder.
+The deck and audio version numbers move independently, **within one language** — an English
+re-roll never bumps a French version number, and vice versa. Cue files and output videos are named
+after the **audio** version, since that is what changes the timings. **Never pair a deck, audio
+take and cue file from different languages** — even though the filenames match, they must all
+come from the same `en/` or `fr/` tree. Ignore `~$*.pptx` lock files in the decks folder.
 
 ## Step 1 — author the cue file (the judgement part)
 

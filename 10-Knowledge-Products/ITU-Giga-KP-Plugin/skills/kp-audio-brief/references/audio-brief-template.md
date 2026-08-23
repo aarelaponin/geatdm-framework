@@ -1,9 +1,13 @@
 # Audio brief template
 
 Copy this whole file to `<stem>_AudioBrief_v0.1.md`, then **rewrite only §2** from the deck.
-Sections §0, §1, §3, §4 and §5 are constant across every KP video — change them only when the
-contract's audience lock or house terminology changes, and when you do, change them here too so
-the next video inherits the fix.
+Sections §0, §1, §3, §4 and §5 are constant across every KP video **in the same language** —
+change them only when the contract's audience lock or house terminology changes, and when you do,
+change them here too so the next video inherits the fix.
+
+**Producing a French brief:** the lines marked `«FR: …»` below assume an English deliverable and
+have not been rewritten for French — resolve them here, once, before the first French video, not
+per video.
 
 Replace every `«…»` placeholder. Delete this instruction block from the copy.
 
@@ -24,7 +28,7 @@ questions that do not appear below.
 |---|---|
 | Format | Two hosts: **Host A** (interviewer) and **Host B** (subject-matter expert) |
 | Total runtime | **«M» minutes «SS» seconds (±10s). Hard ceiling «M:SS+15».** |
-| Audience | Government Chief Digital Officers, Directors-General, sector ministers, and their senior advisers — in low- and middle-income countries, many working in English as a second or third language |
+| Audience | Government Chief Digital Officers, Directors-General, sector ministers, and their senior advisers — in low- and middle-income countries, many working in English as a second or third language «FR: rewrite for the French deliverable — francophone-Africa officials working in French as their working language, not "English as a second language"» |
 | Register | Expert policy briefing. Collegial but professional — two senior advisers preparing a minister, not two podcasters reacting to news |
 | Companion deck | «N» slides; audio must align to the slide budget in §2 |
 
@@ -89,7 +93,9 @@ name section numbers. Do not summarise the sources.**
 - ❌ **No consumer-outrage vocabulary.** Not "broken", "chaos", "held hostage", "extortionate",
   "nightmare". Say: fragmented, duplicated, costly to change, locked in.
 - ❌ **No idioms or metaphors beyond the one permitted in §2.** Much of this audience listens in
-  English as an additional language and the audio is subtitled and translated.
+  English as an additional language and the audio is subtitled and translated. «FR: this rationale
+  is English-specific — rewrite for the French take (e.g. plain, unambiguous French for readers of
+  the translated/subtitled English version, or drop the clause if it no longer applies)»
 - ❌ **No crosstalk or interruption.** One speaker finishes, the other begins. The audio is cut
   to slide transitions, so overlapping speech breaks the edit.
 - ❌ **No in-video intro or outro branding.** ITU compliance rule — the video opens on content
@@ -112,6 +118,11 @@ name section numbers. Do not summarise the sources.**
 
 «Add any per-video terms here — programme names, country names, institution names — with the
 pronunciation you want.»
+
+«FR: this whole table gives English terms and English pronunciation guidance (spelling out
+"P-A-E-R-A", "EA" as an abbreviation, etc.). A French brief needs its own terminology table —
+decide per term whether it stays in English (as many technical acronyms do in French usage) or
+takes a French rendering, and how it's pronounced — rather than reusing this table verbatim.»
 
 Named sources may be mentioned **once each, in passing**, in a content slide only — never as a
 recurring "according to the sources".

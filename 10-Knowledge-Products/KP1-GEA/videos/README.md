@@ -7,32 +7,51 @@ Everything starts from the module's script bundle one level up
 (`KP1_Module1_Script_Bundle_v0.2.md`) and ends as an MP4. Seven steps, of which one is a browser
 session no script can replace.
 
+**Bilingual: English and French.** Each module runs the full pipeline once per language, in
+parallel sibling trees (`en/`, `fr/`) under the module folder — same six stages, same filenames,
+different language folder. English is the only language currently produced; `fr/` is scaffolded
+and empty, waiting on a French deck (see *Adding a language* below).
+
 ## Folder layout
 
 ```
 KP1-GEA/
-├── KP1_Module1_Script_Bundle_v0.2.md      the source for everything below
-├── build_kp1_module1_deck_v01.py          the deck's source of truth
+├── KP1_Module1_Script_Bundle_v0.2.md      the source for everything below (English)
+├── build_kp1_module1_deck_v01.py          the deck's source of truth (English)
 └── videos/module_1/
-    ├── scripts/     KP1_M1_1.1_Scripts_v0.1.md          per-topic narration    (1)
-    ├── decks/       KP1_M1_1.1_Deck_v0.1.pptx           per-topic .pptx        (2)
-    ├── notebooklm/  KP1_M1_1.1_AudioBrief_v0.2.md       brief + prompt         (3)
-    ├── audio/       KP1_M1_1.1_Audio_v0.2.m4a / .srt    takes + transcripts    (4, 5)
-    ├── cues/        KP1_M1_1.1_Cues_v0.2.txt            slide cue files        (6)
-    └── video/       KP1_M1_1.1_Video_v0.2.mp4           the deliverable        (7)
+    ├── en/
+    │   ├── scripts/     KP1_M1_1.1_Scripts_v0.1.md          per-topic narration    (1)
+    │   ├── decks/       KP1_M1_1.1_Deck_v0.1.pptx           per-topic .pptx        (2)
+    │   ├── notebooklm/  KP1_M1_1.1_AudioBrief_v0.2.md       brief + prompt         (3)
+    │   ├── audio/       KP1_M1_1.1_Audio_v0.2.m4a / .srt    takes + transcripts    (4, 5)
+    │   ├── cues/        KP1_M1_1.1_Cues_v0.2.txt            slide cue files        (6)
+    │   └── video/       KP1_M1_1.1_Video_v0.2.mp4           the deliverable        (7)
+    └── fr/
+        ├── scripts/      (empty — awaiting French production)
+        ├── decks/
+        ├── notebooklm/
+        ├── audio/
+        ├── cues/
+        └── video/
 ```
 
-One coordinate per artefact: **`KP«n»_M«m»_«x.y»_«Artefact»_v0.«v»`**. The folder says which stage,
-the filename says which video, and nothing says it twice. There is no `Topic«t»` anywhere: topic
-number always equals module number, so it only ever added a third place to get wrong.
+One coordinate per artefact, plus one for language: **`KP«n»_M«m»_«x.y»_«Artefact»_v0.«v»`** inside
+`«lang»/«stage»/`. The language folder says which language, the stage folder says which stage, the
+filename says which video — nothing says the same thing twice. Filenames are **identical across
+`en/` and `fr/`**; only the path disambiguates. There is no `Topic«t»` anywhere: topic number
+always equals module number, so it only ever added a third place to get wrong.
 
-The module-wide artefacts drop the `«x.y»` — `decks/KP1_M1_Deck_v0.1.pptx` is the combined 64-slide
-deck, `scripts/KP1_M1_Scripts_v0.1.md` the whole-module narration — which also keeps them out of any
-glob aimed at the per-topic files. `decks/split_spec.json` drives the split.
+The module-wide artefacts drop the `«x.y»` — `en/decks/KP1_M1_Deck_v0.1.pptx` is the combined
+64-slide deck, `en/scripts/KP1_M1_Scripts_v0.1.md` the whole-module narration — which also keeps
+them out of any glob aimed at the per-topic files. `en/decks/split_spec.json` drives the split for
+that language's deck; a translated deck gets its own `fr/decks/split_spec.json` once one exists,
+since slide ranges are only guaranteed to match if the French deck mirrors the English slide count.
 
 `.mp4` is gitignored — it is rebuildable from deck + audio + cues in one command.
 
 ## The steps
+
+Run this table once per language folder (`en/`, then `fr/` when it exists).
 
 | # | Step | How | Skill |
 |---|---|---|---|
@@ -49,25 +68,30 @@ glob aimed at the per-topic files. `decks/split_spec.json` drives the split.
 
 ---
 
-### 1 — Extract the narration scripts → `scripts/`
+### 1 — Extract the narration scripts → `«lang»/scripts/`
 
-The script bundle carries every topic's voice-over. Pull it out as the scripts-only companion —
-narration only, one section per topic, opening with the single message, sources slides marked
-*(No narration.)*. If you produce it module-wide first, split it along the topics.
+The script bundle carries every topic's voice-over, in that bundle's own language. Pull it out as
+the scripts-only companion — narration only, one section per topic, opening with the single
+message, sources slides marked *(No narration.)*. If you produce it module-wide first, split it
+along the topics.
 
 `kp-deck-builder` owns this; it is generated from the same content as the deck's speaker notes,
 so edit the build script and regenerate rather than editing the two out of sync.
 
-### 2 — Build and split the deck → `decks/`
+### 2 — Build and split the deck → `«lang»/decks/`
 
 ```bash
 cd 10-Knowledge-Products/KP1-GEA
-python build_kp1_module1_deck_v01.py                      # combined module deck, 64 slides
+python build_kp1_module1_deck_v01.py                      # combined module deck, 64 slides — English, writes to videos/module_1/en/decks/
 python ../ITU-Giga-KP-Plugin/skills/kp-deck-builder/scripts/split_module_deck.py \
-  videos/module_1/decks/KP1_M1_Deck_v0.1.pptx \
-  videos/module_1/decks/split_spec.json \
-  videos/module_1/decks/
+  videos/module_1/en/decks/KP1_M1_Deck_v0.1.pptx \
+  videos/module_1/en/decks/split_spec.json \
+  videos/module_1/en/decks/
 ```
+
+`build_kp1_module1_deck_v01.py` defaults to `videos/module_1/en/decks/`, since it hard-codes the
+English slide copy. Override with `OUT_PATH=...` to write anywhere else — that's also how a French
+build script (once it exists) should target `videos/module_1/fr/decks/`.
 
 The ITU template ships inside `kp-deck-builder`; the build script finds it and `deck_lib.py`
 itself, so it runs from any directory. The split spec lists each topic's slide range — re-run the
@@ -76,14 +100,16 @@ split after **any** rebuild, since ranges shift.
 Then QA before going further: `bash …/kp-deck-builder/scripts/qa_deck.sh <deck.pptx>` renders
 contact sheets to actually look at.
 
-### 3 — Write the audio brief and the prompt → `notebooklm/`
+### 3 — Write the audio brief and the prompt → `«lang»/notebooklm/`
 
 Two artefacts per topic: the **audio brief** (which becomes NotebookLM's *only* source) and the
 **customization prompt** (the guardrails you paste into the focus box). Both are derived from the
 deck, not the script — `python3 …/kp-audio-brief/scripts/extract_deck.py <deck.pptx> --budget 240`
-prints each slide's text, notes, and a proposed per-slide time budget to write against.
+prints each slide's text, notes, and a proposed per-slide time budget to write against. For French,
+run this against the French deck once it exists — the brief should already be in French, since
+NotebookLM's spoken output follows its source language.
 
-### 4 — Generate the narration in NotebookLM → `audio/` — MANUAL
+### 4 — Generate the narration in NotebookLM → `«lang»/audio/` — MANUAL
 
 No API. In the browser:
 
@@ -94,14 +120,16 @@ No API. In the browser:
    by 60–90 seconds no matter what the prompt says.)
 3. Paste the customization prompt into the focus box.
 4. Wait a few minutes, download the `.m4a`.
-5. Save as `KP«n»_M«m»_«x.y»_Audio_v0.«v».m4a` — the version is the **take**, and it goes up on
-   every re-roll.
+5. Save as `KP«n»_M«m»_«x.y»_Audio_v0.«v».m4a` under the right language's `audio/` folder — the
+   version is the **take**, and it goes up on every re-roll.
 
 ### 5 — Transcribe → `.srt` beside the `.m4a`
 
 Local `openai-whisper`, no upload and no API key. `kp-whisper-transcribe` carries the working
 recipe for this machine — the system Python is too old for `torch`, 3.11 breaks on `numba`, and the
 model download fails on a proxy certificate. Use the skill rather than rediscovering all three.
+Whisper auto-detects language, but pass `--language fr` explicitly for French takes to avoid a
+misdetection on a short clip.
 
 ### 5b — Audit the take before you cue it
 
@@ -112,16 +140,18 @@ python3 …/kp-audio-brief/scripts/srt_drift_check.py <audio.srt> --target 240 -
 Exits non-zero on runtime drift, filler and terminology failures. On two or more FAILs, **re-roll
 rather than patch** — and put the fix in the brief, because that is the only thing a re-roll reads.
 
-### 6 — Author the cue file → `cues/`
+### 6 — Author the cue file → `«lang»/cues/`
 
 One `M:SS   # slide N — title` line per slide, plus a header naming the deck, the audio and its end
 time. Cues come from the **SRT's content beats**, never from the script `.md`: the narration is a
 conversational remix, not a read, so timings cannot be transferred. Slide 1 is always `0:00`; the
 last cue must land strictly before the audio ends, giving the Sources card ~5 seconds.
 
-Exactly as many cues as the deck has slides, strictly increasing, no closing "end" cue.
+Exactly as many cues as the deck has slides, strictly increasing, no closing "end" cue. A
+language's cues are built from that same language's audio and deck — never mix languages across
+this step.
 
-### 7 — Assemble → `video/`
+### 7 — Assemble → `«lang»/video/`
 
 ```bash
 python3 …/kp-slidecast/scripts/slidecast.py deck.pptx narration.m4a cues.txt out.mp4
@@ -130,6 +160,24 @@ python3 …/kp-slidecast/scripts/slidecast.py deck.pptx narration.m4a cues.txt o
 Deck → LibreOffice → PDF → PNGs, held per cue interval, narration muxed at AAC 192k, out as H.264
 1080p30. Then verify: `ffprobe` the duration and extract a frame just after each cue time and
 **look at them**.
+
+## Adding a language
+
+`fr/` exists as an empty mirror of `en/` (six stage folders, no content yet). Populating it is not
+a file-copy job — every stage after the deck depends on French content that doesn't exist yet:
+
+1. **Translate the deck.** The deck is the pipeline's single source of truth (Step 2), so French
+   starts there — either a French-language variant of `build_kp1_module1_deck_v01.py` (translated
+   slide copy and speaker notes, same slide count so `split_spec.json` still lines up) or a
+   translated `.pptx` produced some other way, saved to `videos/module_1/fr/decks/`.
+2. Once a French deck exists, Steps 1, 3–7 run exactly as documented above with `«lang»` = `fr` —
+   the audio brief extractor, NotebookLM, Whisper, the cue author and slidecast are all
+   language-agnostic; they just need French inputs.
+3. The module-level script bundle (`KP1_Module1_Script_Bundle_v0.2.md`, one level up from
+   `videos/`) is English-only today. A French bundle would need its own file (e.g.
+   `KP1_Module1_Script_Bundle_v0.2_FR.md`) if you want the scripts-only companion in Step 1 to
+   exist in French too — that's a translation task, not a restructuring one, and is out of scope
+   of this folder move.
 
 ## Rules that keep the pipeline honest
 
@@ -140,7 +188,12 @@ waveform or the SRT. Both rules exist because the next rebuild silently reverts 
 **Cue files and videos follow the AUDIO version, not the deck version.** The two move
 independently; a new audio take shifts every beat, so `KP1_M1_1.1_Audio_v0.2.m4a` gets its own
 `KP1_M1_1.1_Cues_v0.2.txt` and `KP1_M1_1.1_Video_v0.2.mp4`. A new deck version with the same audio
-keeps its cues.
+keeps its cues. This is per-language: an English re-roll never bumps French version numbers, and
+vice versa.
+
+**Languages never mix mid-pipeline.** Every artefact for a given video is built from that same
+language's upstream artefact — a French audio take is cued against the French deck's SRT, never
+against an English one, even if the timings look close.
 
 **The whole track runs on the kit's skills**, in order: `kp-deck-builder` → `kp-audio-brief` →
 `kp-whisper-transcribe` → `kp-slidecast`. See `ITU-Giga-KP-Plugin/skills/itu-giga-kp-bundle` for

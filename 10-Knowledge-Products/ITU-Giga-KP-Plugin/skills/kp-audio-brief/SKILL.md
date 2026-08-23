@@ -42,11 +42,16 @@ Editing the waveform or the SRT guarantees the next re-roll reverts it.
 
 | Input | Where | Required |
 |---|---|---|
-| The subtopic deck | `KP«n»-*/videos/module_«m»/decks/KP«n»_M«m»_«x.y»_Deck_v0.«v».pptx` | yes |
-| The voice-over script | `…/scripts/KP«n»_M«m»_«x.y»_Scripts_v0.«v».md` | if it exists |
-| A previous take, for the audit path | `…/audio/KP«n»_M«m»_«x.y»_Audio_v0.«v».srt` | only for Step 6 |
+| The subtopic deck | `KP«n»-*/videos/module_«m»/«lang»/decks/KP«n»_M«m»_«x.y»_Deck_v0.«v».pptx` | yes |
+| The voice-over script | `…/«lang»/scripts/KP«n»_M«m»_«x.y»_Scripts_v0.«v».md` | if it exists |
+| A previous take, for the audit path | `…/«lang»/audio/KP«n»_M«m»_«x.y»_Audio_v0.«v».srt` | only for Step 6 |
 
-Outputs land in `…/notebooklm/`, beside the other NotebookLM inputs:
+`«lang»` is `en` or `fr` (see the video track's `videos/README.md`). Every input for one brief
+comes from the **same** language folder — never read an English deck against a French take's SRT,
+or vice versa.
+
+Outputs land in `…/notebooklm/` under that same language folder, beside the other NotebookLM
+inputs:
 
 - `KP«n»_M«m»_«x.y»_AudioBrief_v0.«v».md` — upload this to NotebookLM
 - `KP«n»_M«m»_«x.y»_NotebookLM_Prompt_v0.«v».md` — the operator's runbook
@@ -85,9 +90,21 @@ language, with subtitles that get translated.
 
 Copy `references/audio-brief-template.md` and **rewrite only §2** from what Step 1 printed.
 
-§0, §1, §3, §4 and §5 are constant across every KP video — the audience lock, the framing rule,
-the prohibitions, the house terminology, the definition of done. Do not re-derive them per video.
-When one of them needs to change, change it **in the template**, so the next video inherits it.
+§0, §1, §3, §4 and §5 are constant across every KP video **in the same language** — the audience
+lock, the framing rule, the prohibitions, the house terminology, the definition of done. Do not
+re-derive them per video. When one of them needs to change, change it **in the template**, so the
+next video inherits it.
+
+**These constants are not yet language-neutral.** `audio-brief-template.md` §0's audience row and
+§3's idiom prohibition both assert the listener is "working in English as a[n] second/additional
+language" — true for the English deliverable, backwards for the French one. §4's terminology
+table gives English pronunciations only. `notebooklm-prompt-template.md` hard-codes `Language:
+English` and repeats the same English-listener line inside the pasted customization prompt. None
+of this has been rewritten for French yet — both files are flagged inline with `«FR: …»` notes at
+the spots that need a real decision (a French audience line, French house terms, and whether the
+brief itself is authored in French or stays English with NotebookLM's output-language setting
+doing the work) before the first French brief is written. Resolve it once, in the templates, the
+same as any other cross-video fix — don't rediscover it per French video.
 
 Writing §2 well is the whole job. Per slide:
 

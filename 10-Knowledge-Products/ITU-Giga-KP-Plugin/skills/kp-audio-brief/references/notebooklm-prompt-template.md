@@ -24,7 +24,9 @@ notebook contains the full PAERA / EIF corpus, because the hosts are free to roa
 
 - Format: **Deep Dive** (two hosts)
 - Length: **Shorter** — Default overshoots a «M»-minute spec by 60–90 seconds
-- Language: English
+- Language: English «FR: set to French for a French take — confirm in NotebookLM whether this
+  changes only the output audio's language or also expects the source brief itself in French;
+  decide this once and record it here rather than re-deciding per video»
 
 ## Step 3 — Customization prompt (paste this)
 
@@ -33,7 +35,8 @@ Follow the source titled "AUDIO BRIEF — «KP» Module «N» Video «X.Y»" exa
 authority. Do not add anything not in it.
 
 Audience: government Chief Digital Officers, Directors-General and sector ministers, many
-listening in English as a second language. Register: two senior advisers briefing a minister —
+listening in English as a second language «FR: rewrite this clause for the French take — see the
+matching note in audio-brief-template.md §0». Register: two senior advisers briefing a minister —
 collegial, precise, unhurried. Not a podcast. Speak at roughly 140 words per minute.
 
 The listener is the government official who runs these systems, not a citizen being served.

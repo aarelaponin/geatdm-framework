@@ -41,9 +41,20 @@ silently reverts it, and the split decks drift from the combined one.
 - `scripts/ITU_ppt_template.pptx` — the ITU video template, shipped with this skill. 13.333 × 7.5 in
   canvas. `deck_lib.open_template()` defaults to it; pass a path to use a different template.
 - The worked example: `KP1-GEA/build_kp1_module1_deck_v01.py` (combined deck) and
-  `KP1-GEA/videos/module_1/decks/split_spec.json` (split). Read them
+  `KP1-GEA/videos/module_1/en/decks/split_spec.json` (split). Read them
   before building a new module. The build script is **content only** — it imports every helper,
   colour and layout index from `deck_lib.py`; copy that arrangement, never the helpers themselves.
+
+## Languages
+
+Video output is bilingual (English + French — see the video track's `videos/README.md`), with a
+full sibling tree per language: `videos/module_<N>/en/` and `videos/module_<N>/fr/`. A build
+script produces **one language's** deck. `build_kp1_module1_deck_v01.py` is the English build —
+every slide string in it is hard-coded English prose, so it is not reusable as-is for French. A
+French deck needs its own build script (translated cover/agenda/section/content/climax/sources
+copy, same slide count so the split spec still lines up) writing to `videos/module_<N>/fr/decks/`.
+The banned-vocabulary list and "8th-grade register" rule below are English-register judgments;
+a French build needs its own equivalents, not a translation of the English list word-for-word.
 
 ## Template anatomy (probed, don't re-probe)
 
@@ -124,7 +135,10 @@ python build_kp1_moduleN_deck_v0X.py          # writes the combined deck
 
 The script puts `deck_lib.py`'s directory on `sys.path` itself and defaults `TEMPLATE` to the copy
 shipped with this skill, so it runs from any cwd; `TEMPLATE=` and `OUT_PATH=` override both. Its
-default output is the module's deck folder (`videos/module_<N>/decks/`), next to the split spec.
+default output is the module's **English** deck folder (`videos/module_<N>/en/decks/`), next to
+that language's split spec. A French build script should set its own default (or be invoked with
+`OUT_PATH=.../videos/module_<N>/fr/decks/...`) — never write both languages' decks to the same
+path.
 
 For a new module, copy the worked example and rewrite the content sections; compose slides from
 `deck_lib.py` helpers: `section_slide`, `title` (+`tick`), `rows_slide` (numbered or plain rows with
@@ -154,12 +168,15 @@ If the Cowork pptx skill is present, also run its `scripts/office/validate.py de
 
 ```bash
 python scripts/split_module_deck.py \
-  videos/module_1/decks/KP1_M1_Deck_v0.1.pptx \
-  videos/module_1/decks/split_spec.json \
-  videos/module_1/decks/
+  videos/module_1/en/decks/KP1_M1_Deck_v0.1.pptx \
+  videos/module_1/en/decks/split_spec.json \
+  videos/module_1/en/decks/
 ```
 
-The spec (worked example: `videos/module_1/decks/split_spec.json`) lists each video's code, title,
+Swap `en` for `fr` for a French deck once one exists — never point the split at one language's
+deck with another language's spec.
+
+The spec (worked example: `videos/module_1/en/decks/split_spec.json`) lists each video's code, title,
 minutes, single message and its **1-indexed inclusive slide range** in the combined deck. Each output
 keeps slide 1 (the cover, retitled in place as the video's title card: `1.3 — <title>`, kicker
 `… · Module 1 · Video 1.3`, the video's single message and runtime) plus that video's slides,

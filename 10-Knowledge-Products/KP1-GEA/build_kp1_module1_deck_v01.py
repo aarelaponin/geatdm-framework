@@ -908,7 +908,7 @@ assert all(sl.has_notes_slide and sl.notes_slide.notes_text_frame.text.strip() f
 
 OUT = os.environ.get('OUT_PATH') or os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
-    'videos', 'module_1', 'decks', 'KP1_M1_Deck_v0.1.pptx')
+    'videos', 'module_1', 'en', 'decks', 'KP1_M1_Deck_v0.1.pptx')
 prs.save(OUT)
 print('slides:', len(prs.slides._sldIdLst))
 print('saved', OUT)
