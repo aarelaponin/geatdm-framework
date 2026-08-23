@@ -1,0 +1,13 @@
+# Slide cue file — KP1 Module 1, Vidéo 1.1 « Pourquoi votre pays a besoin d'une AE nationale » (FR)
+# Deck:  fr/decks/KP1_M1_1.1_Deck_v0.1.pptx (6 slides)
+# Audio: fr/audio/KP1_M1_1.1_Audio_v0.2.srt (runs to 2:33; m4a ends 2:32.9)
+# Assembly note: narration muxed with ~3.5s trailing silence so the Sources card holds ≥5s;
+# the source m4a is unchanged.
+# Approximate — derived by matching SRT content beats to slide content.
+
+0:00   # slide 1 — Title card (1.1 + EA lifecycle strip)
+0:24   # slide 2 — 1.1 Pourquoi votre pays a besoin d'une AE nationale (le schéma des silos)
+1:06   # slide 3 — Quatre signes que votre gouvernement n'a pas de plan commun
+1:45   # slide 4 — Le pays paie dans quatre directions à la fois
+2:06   # slide 5 — Une seule cause profonde : il n'y a pas de plan commun
+2:30   # slide 6 — Sources (« Les sources sont dans la description de la vidéo »)

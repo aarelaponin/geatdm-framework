@@ -1,0 +1,216 @@
+1
+00:00:00,000 --> 00:00:08,260
+Module 1, vidéo 1.1, pourquoi votre pays a besoin d'une architecture d'entreprise nationale ou AE ?
+
+2
+00:00:08,260 --> 00:00:09,680
+Le constat de départ est net.
+
+3
+00:00:10,660 --> 00:00:13,440
+Sans un plan commun pour les systèmes numériques du gouvernement,
+
+4
+00:00:13,880 --> 00:00:16,780
+chaque nouveau programme reconstruit ce que d'autres ont déjà fait.
+
+5
+00:00:17,040 --> 00:00:20,100
+Et l'enjeu est direct, le pays paie, le citoyen paie,
+
+6
+00:00:20,600 --> 00:00:24,140
+et au bout du compte, votre ministre ne peut pas tenir ses promesses.
+
+7
+00:00:24,560 --> 00:00:26,820
+La situation typique dans un ministère, on la connaît bien.
+
+8
+00:00:26,820 --> 00:00:31,220
+Des programmes isolés créent de multiples systèmes pour enregistrer les mêmes citoyens.
+
+9
+00:00:31,380 --> 00:00:31,740
+Tout à fait.
+
+10
+00:00:32,240 --> 00:00:33,480
+Et chaque système prend des années.
+
+11
+00:00:34,100 --> 00:00:37,980
+Il dépend de bailleurs distincts, comme la Banque mondiale ou la Banque africaine de développement,
+
+12
+00:00:38,560 --> 00:00:39,520
+et aucun ne communique.
+
+13
+00:00:39,740 --> 00:00:40,660
+C'est le moins classique, oui.
+
+14
+00:00:41,000 --> 00:00:43,080
+Mais une courte question de clarification.
+
+15
+00:00:43,940 --> 00:00:47,800
+Ce cloisonnement, c'est parce que les systèmes sont techniquement défaillants au départ ?
+
+16
+00:00:47,800 --> 00:00:48,680
+Non, pas du tout.
+
+17
+00:00:49,180 --> 00:00:51,660
+Le problème ne vient pas d'un système défaillant.
+
+18
+00:00:51,680 --> 00:00:52,100
+D'accord.
+
+19
+00:00:52,100 --> 00:00:56,780
+En fait, chaque programme fait très exactement ce pour quoi il a été financé.
+
+20
+00:00:57,180 --> 00:00:58,440
+Ils opèrent juste en silo.
+
+21
+00:00:58,700 --> 00:00:59,080
+Je vois.
+
+22
+00:00:59,360 --> 00:01:01,560
+Et c'est là qu'on mentionne le cadre P-A-R-A.
+
+23
+00:01:01,780 --> 00:01:05,980
+P-A-E-R-A, ou le cadre européen d'interopérabilité.
+
+24
+00:01:06,340 --> 00:01:08,060
+Avant de les passer en revue,
+
+25
+00:01:08,620 --> 00:01:12,920
+combien de registres distinguent des mêmes citoyens votre gouvernement tient ?
+
+26
+00:01:12,920 --> 00:01:13,920
+Gardez ce chiffre en tête.
+
+27
+00:01:14,140 --> 00:01:15,100
+C'est la bonne question.
+
+28
+00:01:15,100 --> 00:01:18,640
+Signe 1, des registres multiples qui ne concordent pas.
+
+29
+00:01:18,880 --> 00:01:22,280
+L'école, l'identité, le social, chacun à sa base.
+
+30
+00:01:22,480 --> 00:01:24,060
+Ce qui crée des incohérences partout.
+
+31
+00:01:24,580 --> 00:01:27,640
+Signe 2, des interconnexions reconstruites à zéro.
+
+32
+00:01:27,980 --> 00:01:31,500
+L'équipe lit les impôts et les entreprises, puis on refait tout pour la santé.
+
+33
+00:01:31,800 --> 00:01:32,200
+Exact.
+
+34
+00:01:32,600 --> 00:01:36,940
+Signe 3, une dépendance au fournisseur qui impose ses prix.
+
+35
+00:01:37,160 --> 00:01:38,580
+Oui, on est complètement bloqué.
+
+36
+00:01:38,580 --> 00:01:45,280
+Et signe 4, de ministères déconnectés, ce qui rend le principe « une seule fois » techniquement impossible.
+
+37
+00:01:45,540 --> 00:01:48,340
+Et ces signes, ils ont des impacts dans un ordre strict.
+
+38
+00:01:48,760 --> 00:01:49,940
+D'abord, l'argent.
+
+39
+00:01:50,200 --> 00:01:52,600
+De l'argent perdu dans la duplication.
+
+40
+00:01:52,940 --> 00:01:55,660
+Ensuite, le temps avec les retards imprévus.
+
+41
+00:01:55,820 --> 00:01:56,680
+C'est inévitable.
+
+42
+00:01:56,940 --> 00:02:00,980
+Puis, les citoyens qui doivent remplir les mêmes formulaires encore et encore.
+
+43
+00:02:01,120 --> 00:02:01,600
+Et enfin.
+
+44
+00:02:01,840 --> 00:02:03,260
+Le plus lourd, votre ministre.
+
+45
+00:02:03,820 --> 00:02:06,260
+Les programmes phares interministériels sont un échec.
+
+46
+00:02:06,260 --> 00:02:13,800
+Donc, la cause profonde de tout ça, c'est l'absence d'un plan commun qui indique qui est responsable et comment les systèmes s'articulent.
+
+47
+00:02:14,040 --> 00:02:14,400
+C'est ça.
+
+48
+00:02:14,960 --> 00:02:17,480
+Et une architecture d'entreprise nationale est la solution.
+
+49
+00:02:17,680 --> 00:02:18,180
+Tout simplement.
+
+50
+00:02:18,380 --> 00:02:18,540
+Oui.
+
+51
+00:02:18,980 --> 00:02:21,520
+On ne peut pas recâbler à bâtiments qu'on n'a jamais cartographiés.
+
+52
+00:02:21,840 --> 00:02:22,540
+C'est très juste.
+
+53
+00:02:22,780 --> 00:02:30,260
+La suite de ce produit montre comment commander une AE nationale, ce qu'elle livrera, et ce dont votre ministre a besoin pour qu'elle fonctionne.
+
+54
+00:02:30,600 --> 00:02:32,560
+Les sources sont dans la description de la vidéo.
+
