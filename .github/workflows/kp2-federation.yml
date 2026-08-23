@@ -16,6 +16,10 @@
 #                             output line. CI never sees the cleartext; tell the
 #                             audience the password at the demo.
 #
+# The Postgres join store (deployment.yaml: datastore.kind: postgres) needs
+# NO additional secrets: the db-sync step below reuses DO_TOKEN, the Spaces
+# key pair and the SSH key it already has.
+#
 # actions: up = create/refresh infra AND deploy the pack; deploy = rerun the
 # pack deploy on the existing droplet; destroy = tear the droplet down
 # (the DO project and state bucket survive).
@@ -49,7 +53,9 @@ env:
 jobs:
   federation:
     runs-on: ubuntu-latest
-    timeout-minutes: 45 # cold deploy is ~13 min; image pulls and apt add more
+    timeout-minutes: 55 # cold deploy is ~13 min; image pulls and apt add more;
+    # the FIRST postgres run also creates the managed DB cluster (~5-10 min
+    # of DO provisioning inside the db-sync step)
     steps:
       - uses: actions/checkout@v4
 
@@ -147,6 +153,25 @@ jobs:
             --exclude '.venv' --exclude '.pytest_cache' --exclude '__pycache__' \
             --filter 'protect **/out' --filter 'protect **/out/**' --filter 'protect **/.env' \
             ./ "root@$IP:/opt/kp2/repo/"
+
+      # Postgres join store (deployment.yaml: datastore.kind: postgres) --
+      # a fast no-op on sqlite. Applies infra/terraform-db with THIS
+      # droplet's id (runbook §6.2's firewall re-trust, the manual step
+      # nothing used to watch), ships the cluster CA cert, writes the DSNs
+      # into the droplet's .env (mode 600, never argv, masked in logs) and
+      # bootstraps the schema as admin -- all idempotent, so it simply
+      # re-asserts itself on every up/deploy. BEFORE the deploy step,
+      # deliberately: on a postgres deployment acceptance's module 2.7
+      # reads the store via `python -m store dump-records`, so the store
+      # must already work when remote-deploy.sh reaches acceptance.
+      # `destroy` never touches the DB module: separate state key +
+      # prevent_destroy on the cluster (plan §6.3) -- destroying the
+      # cluster stays a deliberate laptop procedure, never a CI action.
+      - name: Sync Postgres join store (no-op on sqlite)
+        if: inputs.action != 'destroy'
+        env:
+          IP: ${{ steps.ip.outputs.ip }}
+        run: bash "$PACK_DIR/infra/ci/db-sync.sh"
 
       - name: Deploy federation (gen-secrets -> preflight -> deploy -> seed -> acceptance)
         if: inputs.action != 'destroy'
