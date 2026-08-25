@@ -68,15 +68,30 @@ OUT_DIR = pathlib.Path(os.environ.get("OUT_DIR", "/out"))
 # cached at import time: this file's own test fixtures reassign
 # app_module.OUT_DIR per test for isolation (the same pattern the old
 # file-backed _requests_dir() relied on by re-reading the OUT_DIR global on
-# every call), and store.init() is idempotent, so re-running it here is the
-# cheap way to keep that working for the store too.
+# every call). store.init() is idempotent, but it is NOT cheap -- on
+# Postgres it opens a connection, holds a transaction with
+# pg_advisory_xact_lock, scans schema_version and re-runs both grants.sql
+# DO-blocks, every single call.
+# _INIT_CACHE memoises its result on (OUT_DIR, kind, db_url) instead of
+# calling it fresh every time -- OUT_DIR is part of the key for exactly the
+# reason above: it is the one thing that legitimately changes from call to
+# call within a single process (a test fixture), and keying on it keeps
+# each OUT_DIR's own store isolated from every other one's cache entry.
+_INIT_CACHE: dict[tuple, pathlib.Path | str] = {}
+_INIT_CACHE_LOCK = threading.Lock()
+
+
+def _cached_init() -> pathlib.Path | str:
+    key = (OUT_DIR, _DATASTORE_KIND, KP2_JOIN_DB_URL)
+    with _INIT_CACHE_LOCK:
+        cached = _INIT_CACHE.get(key)
+        if cached is None:
+            cached = _INIT_CACHE[key] = store.init(OUT_DIR, kind=_DATASTORE_KIND, db_url=KP2_JOIN_DB_URL)
+        return cached
 
 
 def _conn(*, readonly: bool = False):
-    return store.connect(
-        store.init(OUT_DIR, kind=_DATASTORE_KIND, db_url=KP2_JOIN_DB_URL),
-        readonly=readonly,
-    )
+    return store.connect(_cached_init(), readonly=readonly)
 
 
 def get_conn():
@@ -101,8 +116,8 @@ TOKEN_PIN = os.environ["XROAD_TOKEN_PIN"]
 # Moved up from beside "the operator queue" section (where it stayed for
 # most of this file's history) to right after the three raw values it is
 # built from: logging_setup.configure() below needs it immediately, to scrub
-# every record this process emits from the very first line -- see
-# "-- structured logging (E.1) --" a few lines down. Nothing between the old
+# every record this process emits from the very first line -- see the
+# structured-logging setup a few lines down. Nothing between the old
 # and new position reads JOB_SECRETS before job.run()/job.unjoin() are
 # actually called (both post-approval), so the move changes nothing else.
 JOB_SECRETS = {
@@ -112,7 +127,36 @@ JOB_SECRETS = {
 }
 
 
-def _required_token(name: str, *, allow_disabled: bool = False) -> str:
+# A cheap well-formedness gate on every INCOMING bearer token, run before
+# EITHER the static-token compare_digest or the DB fallback, so a garbage
+# bearer token never reaches either. Not secrets.token_urlsafe(24)'s own
+# alphabet ([A-Za-z0-9_-]) alone: that is what an ISSUED token (issue_token
+# below) looks like, but APPLICANT_TOKEN/OPERATOR_TOKEN come from
+# scripts/gen-secrets.sh, whose ALPHABET ('A-Za-z0-9@%+_.-') is deliberately
+# wider (that script's own comment: "narrower than [shell-safe download],
+# letters, digits, and a small set of punctuation with no meaning to
+# bash"). A regex matching only token_urlsafe's alphabet would reject a
+# live, correctly-configured operator/applicant token the moment
+# gen-secrets.sh happened to draw an '@', '%', '+' or '.' -- so this covers
+# both alphabets' characters, at both lengths (24 for gen-secrets.sh, 32 for
+# token_urlsafe(24)).
+#
+# Defined here, ahead of _required_token below, because _required_token's
+# own `check_wellformed` option (APPLICANT_TOKEN/OPERATOR_TOKEN's calls,
+# just past it) enforces this SAME regex on the CONFIGURED value, not just
+# the incoming one. Without that, an operator who hand-sets
+# KP2_JOIN_OPERATOR_TOKEN outside this shape (`openssl rand -base64 N`
+# includes '/' roughly 40% of the time, and '/' is not in this class) would
+# get a silent, permanent 403 lockout at request time -- every real request
+# bearing that correctly-configured-but-wrong-shape token fails the
+# well-formedness check before compare_digest ever runs, with nothing in
+# the logs naming the cause. Checking it here instead turns that into a
+# clear refusal at startup, naming scripts/gen-secrets.sh, the same as
+# every other _required_token refusal already does.
+_TOKEN_WELLFORMED_RE = re.compile(r"^[A-Za-z0-9@%+._-]{16,64}$")
+
+
+def _required_token(name: str, *, allow_disabled: bool = False, check_wellformed: bool = False) -> str:
     """scripts/lib-stack.sh refuses to run while XROAD_TOKEN_PIN or
     XROAD_ADMIN_PASSWORD are still a placeholder from .env.example
     on purpose. Same idea, applied
@@ -133,7 +177,16 @@ def _required_token(name: str, *, allow_disabled: bool = False) -> str:
     "disabled" the moment an operator forgot the .env line. Every other
     caller (KP2_JOIN_OPERATOR_TOKEN) has that same sentinel (any spelling
     of it) refused outright -- the operator credential can never be
-    disabled this way."""
+    disabled this way.
+
+    `check_wellformed=True` (APPLICANT_TOKEN/OPERATOR_TOKEN's own calls
+    only -- KP2_JOIN_DB_URL's call below leaves it False, since a DSN is not
+    a bearer token and does not fit this shape at all) additionally refuses
+    a value that does not match _TOKEN_WELLFORMED_RE, defined just above.
+    require_applicant/require_operator apply that identical regex to every
+    INCOMING bearer token; this is the other half of that same contract,
+    applied once, here, to the CONFIGURED value, rather than left to fail
+    unexplained on every request against it forever after."""
     value = os.environ.get(name, "")
     if value.strip().lower() == "disabled":
         if allow_disabled:
@@ -148,13 +201,23 @@ def _required_token(name: str, *, allow_disabled: bool = False) -> str:
             f"join-api: {name} is unset or still the .env.example placeholder. "
             "Run scripts/gen-secrets.sh to generate a real .env."
         )
+    if check_wellformed and not _TOKEN_WELLFORMED_RE.fullmatch(value):
+        raise RuntimeError(
+            f"join-api: {name} does not look like a token scripts/gen-secrets.sh "
+            "would produce (16-64 characters of letters, digits, '@', '%', '+', "
+            "'.', '_' or '-'). Every incoming bearer token is checked against this "
+            "same shape before it is ever compared -- a configured value outside "
+            "it would otherwise 403 every real request silently, forever, with "
+            "nothing in the logs naming why. Regenerate with scripts/gen-secrets.sh, "
+            "or if you set this by hand, keep it inside that character set."
+        )
     return value
 
 
-APPLICANT_TOKEN = _required_token("KP2_JOIN_APPLICANT_TOKEN", allow_disabled=True)
-OPERATOR_TOKEN = _required_token("KP2_JOIN_OPERATOR_TOKEN")
+APPLICANT_TOKEN = _required_token("KP2_JOIN_APPLICANT_TOKEN", allow_disabled=True, check_wellformed=True)
+OPERATOR_TOKEN = _required_token("KP2_JOIN_OPERATOR_TOKEN", check_wellformed=True)
 
-# -- structured logging (E.1, docs/production-delta.md row 34) --------------
+# -- structured logging (docs/production-delta.md row 34) --------------------
 # JSON-lines to stdout, stdlib `logging` only -- join_logging.py's own
 # docstring has the full design (imported here as `logging_setup` --
 # apps/console/app.py has its own, different, same-named module; a bare
@@ -211,7 +274,7 @@ for _dsn_env in ("KP2_JOIN_DB_URL", "KP2_JOIN_DB_URL_RO"):
 
 _LOG = logging_setup.configure("kp2.join-api", _SINK_SECRETS)
 
-# -- store backend selection (plan §1.6) ---------------------------------------
+# -- store backend selection ---------------------------------------------------
 # deployment.yaml's datastore.kind: the seam that makes `kind: postgres` fail
 # loudly at import time (store.backend_for raises NotImplementedError for
 # anything else) instead of silently being ignored. Missing file defaults to
@@ -227,12 +290,12 @@ try:
     _deployment_doc = yaml.safe_load((PACK_DIR / "deployment.yaml").read_text()) or {}
 except FileNotFoundError:
     _deployment_doc = {}
-    # security-review-remediation-plan.md Phase A (H3): a missing/truncated
-    # deployment.yaml used to silently mean "every safe default is off", with
-    # no signal anywhere. Silence was the bug -- so this fallback stays (many
-    # unit tests point PACK_DIR at a throwaway fixture directory with no
-    # deployment.yaml at all), but it can no longer be quiet about it. _LOG
-    # is configured a few lines up, immediately after _SINK_SECRETS.
+    # A missing/truncated deployment.yaml used to silently mean "every safe
+    # default is off", with no signal anywhere. Silence was the bug -- so
+    # this fallback stays (many unit tests point PACK_DIR at a throwaway
+    # fixture directory with no deployment.yaml at all), but it can no
+    # longer be quiet about it. _LOG is configured a few lines up,
+    # immediately after _SINK_SECRETS.
     _LOG.warning(
         "deployment.yaml not found at %s -- falling back to posture: demo "
         "(join_workflow.commit_gate=advisory, enforce_ownership=false, "
@@ -243,10 +306,9 @@ except FileNotFoundError:
 _DATASTORE_KIND = (_deployment_doc.get("datastore") or {}).get("kind", "sqlite")
 store.backend_for(_DATASTORE_KIND)
 
-# deployment.yaml's posture (security-review-remediation-plan.md Phase A,
-# H3): "demo" (default, docker-local) changes nothing below -- the three
-# join_workflow switches keep their own historical defaults. "production"
-# IMPLIES the safe value of each of the three (table in the plan's A.2).
+# deployment.yaml's posture: "demo" (default, docker-local) changes nothing
+# below -- the three join_workflow switches keep their own historical
+# defaults. "production" IMPLIES the safe value of each of the three.
 # An explicit join_workflow key still wins over the implication, but under
 # posture: production an explicit value that is NOT the safe one is a
 # startup refusal unless the same key is also named in
@@ -264,10 +326,10 @@ if _POSTURE not in ("demo", "production"):
 
 def _resolve_posture_switch(*, posture: str, block_name: str, block: dict, key: str, demo, production):
     """One posture-implied switch, generalised over `block_name`/`block`/
-    `key` rather than hard-coded to join_workflow's three -- a later phase
-    (Phase C's Hurl `--insecure` gate) reuses this under a different key, in
-    a different block, with its own `acknowledge_permissive` list living
-    beside it, the same way join_workflow's does.
+    `key` rather than hard-coded to join_workflow's three -- the Hurl
+    `--insecure` gate below (`hurl_insecure`) reuses this under a fourth
+    key, sharing join_workflow's own `acknowledge_permissive` list rather
+    than needing one of its own.
 
     `demo`/`production` are the two posture-implied values. An explicit
     `key` in `block` always wins over the implication; under
@@ -360,18 +422,16 @@ if not isinstance(_REQUIRE_HTTPS_SPEC_URL, bool):
         f"{_REQUIRE_HTTPS_SPEC_URL!r} is not true or false."
     )
 
-# deployment.yaml's join_workflow.hurl_insecure (security-review-remediation-
-# plan.md Phase C, M1): True (default, docker-local) is today's behaviour --
-# job.run()/job.unjoin() run Hurl with --insecure against the admin API's
-# unverifiable self-signed certificate, same as always. False
-# (posture: production) makes job.run()/job.unjoin() refuse outright before
-# any network call: re-plumbing the Hurl path to verify TLS is deliberately
-# out of this plan's scope (decision 3), so "production and not
-# acknowledged" means the join workflow does not run insecurely, not that
-# it silently tries to verify a certificate nothing can issue. Same
-# _resolve_posture_switch, same join_workflow.acknowledge_permissive list
-# the three switches above already share -- exactly what that helper's own
-# docstring anticipated this phase would do.
+# deployment.yaml's join_workflow.hurl_insecure: True (default, docker-local)
+# is today's behaviour -- job.run()/job.unjoin() run Hurl with --insecure
+# against the admin API's unverifiable self-signed certificate, same as
+# always. False (posture: production) makes job.run()/job.unjoin() refuse
+# outright before any network call: re-plumbing the Hurl path to verify TLS
+# is deliberately out of scope here, so "production and not acknowledged"
+# means the join workflow does not run insecurely, not that it silently
+# tries to verify a certificate nothing can issue. Same _resolve_posture_switch,
+# same join_workflow.acknowledge_permissive list the three switches above
+# already share -- exactly what that helper's own docstring anticipates.
 _HURL_INSECURE_ALLOWED = _resolve_posture_switch(
     posture=_POSTURE, block_name="join_workflow", block=_JOIN_WORKFLOW, key="hurl_insecure",
     demo=True, production=False,
@@ -455,7 +515,7 @@ def _token_digest(token: str) -> str:
     return hashlib.sha256(token.encode()).hexdigest()
 
 
-def require_applicant(request: Request, db: sqlite3.Connection = Depends(get_conn)) -> str:
+def require_applicant(request: Request) -> str:
     """Applicant may read any request -- any valid token, applicant
     or operator, satisfies this dependency. Used by read/submit routes.
 
@@ -463,10 +523,22 @@ def require_applicant(request: Request, db: sqlite3.Connection = Depends(get_con
     applicant token, then any token the operator has issued to a named
     agency. An issued token resolves to "applicant:<name>", which is what
     POST /requests records as submitted_by. A row that is revoked or expired
-    (plan §1.4) is treated as no match, same as a token nobody ever issued --
+    is treated as no match, same as a token nobody ever issued --
     falls through to the 403 below, exactly like today's
-    revocation-takes-effect-on-next-request behaviour, with expiry added."""
+    revocation-takes-effect-on-next-request behaviour, with expiry added.
+
+    No `db: Depends(get_conn)` parameter: that used to make FastAPI open a
+    connection on EVERY call, before this function's own body -- and
+    therefore before either compare_digest below -- ever ran, so a flood of
+    bad tokens cost a Postgres connection, an advisory-lock transaction and
+    a schema scan apiece. A connection is
+    now opened, via _conn() directly, only on the path that actually needs
+    one: the issued-token digest lookup, after both static tokens have
+    already failed to match."""
     token = _bearer_token(request)
+    if not _TOKEN_WELLFORMED_RE.fullmatch(token):
+        _LOG.info("auth.rejected", extra={"extra_fields": {"role": "applicant", "actor": _refusal_actor(request)}})
+        raise HTTPException(403, "token does not match either configured role")
     if secrets.compare_digest(token, OPERATOR_TOKEN):
         return "operator"
     # APPLICANT_TOKEN == "disabled" (row 28, docs/production-delta.md):
@@ -477,12 +549,13 @@ def require_applicant(request: Request, db: sqlite3.Connection = Depends(get_con
     # server-side (docker-compose.yml's own comment), never this one.
     if APPLICANT_TOKEN != "disabled" and secrets.compare_digest(token, APPLICANT_TOKEN):
         return "applicant"
-    row = store.find_token(db, _token_digest(token))
-    now = datetime.datetime.now(datetime.timezone.utc).isoformat()
-    if row is not None and row["revoked_at"] is None and (
-        row["expires_at"] is None or row["expires_at"] > now
-    ):
-        return f"applicant:{row['name']}"
+    with contextlib.closing(_conn()) as db:
+        row = store.find_token(db, _token_digest(token))
+        now = datetime.datetime.now(datetime.timezone.utc).isoformat()
+        if row is not None and row["revoked_at"] is None and (
+            row["expires_at"] is None or row["expires_at"] > now
+        ):
+            return f"applicant:{row['name']}"
     # Auth failure: the token DIGEST PREFIX only, never the raw token --
     # same rule and same helper (_refusal_actor, defined below in this
     # file) the 429 refusal path already applies to a bearer token that
@@ -493,9 +566,12 @@ def require_applicant(request: Request, db: sqlite3.Connection = Depends(get_con
 
 def require_operator(request: Request) -> str:
     """Approve, reject and resume are operator-only -- the
-    applicant token is rejected here, not just left unchecked."""
+    applicant token is rejected here, not just left unchecked. Same
+    well-formedness gate as require_applicant, before the one compare_digest
+    this dependency ever does -- it never touches the store at all, so the
+    only saving here is skipping compare_digest on obvious garbage."""
     token = _bearer_token(request)
-    if secrets.compare_digest(token, OPERATOR_TOKEN):
+    if _TOKEN_WELLFORMED_RE.fullmatch(token) and secrets.compare_digest(token, OPERATOR_TOKEN):
         return "operator"
     _LOG.info("auth.rejected", extra={"extra_fields": {"role": "operator", "actor": _refusal_actor(request)}})
     raise HTTPException(403, "operator token required for this endpoint")
@@ -555,7 +631,7 @@ def _take_token(bucket_key: str) -> float | None:
 
 
 # How much of a bearer token's sha256 digest is worth recording against a
-# 429 refusal (plan §1.5): enough to correlate repeat offenders across
+# 429 refusal: enough to correlate repeat offenders across
 # request_events rows, never the full digest and never the plaintext -- a
 # hash is still a credential-shaped secret (this file's own /tokens rule).
 _REFUSAL_ACTOR_DIGEST_LEN = 12
@@ -591,7 +667,58 @@ def rate_limit(request: Request, db: sqlite3.Connection = Depends(get_conn)) -> 
 app = FastAPI(title="KP2 member-join API")
 
 
-# -- request-id middleware (E.1) ----------------------------------------------
+# -- request body size limit ---------------------------------------------------
+# :8091 is reachable directly on loopback and through the console proxy
+# (docker-compose.yml), not only through nginx -- so this has to exist
+# in-app too, not only at the edge. infra/nginx/kp2-console.conf's
+# `client_max_body_size 256k;` on the `location = /join/requests` block is
+# the SAME number (that file's own comment names this constant back);
+# stated once in each file's own comment naming the other, so the two
+# numbers can never drift apart silently.
+#
+# Content-Length alone is not trustworthy -- a caller can omit it entirely
+# (chunked transfer-encoding has none) or simply lie -- so this reads the
+# body itself and counts bytes as they stream in, rejecting the moment the
+# running total crosses the limit rather than buffering the whole thing
+# first to find out. Added BEFORE the request-id middleware below (in
+# Starlette's `@app.middleware("http")` stack, the LAST one added wraps
+# OUTERMOST) so that request-id is outermost and still stamps X-Request-Id
+# on a 413 this middleware returns early.
+MAX_BODY_BYTES = 256 * 1024
+
+
+@app.middleware("http")
+async def _body_size_limit_middleware(request: Request, call_next):
+    content_length = request.headers.get("content-length")
+    if content_length is not None:
+        try:
+            declared = int(content_length)
+        except ValueError:
+            declared = None  # malformed header -- the byte-count loop below still catches an oversized body
+        if declared is not None and declared > MAX_BODY_BYTES:
+            return PlainTextResponse(
+                f"request body of {declared} bytes exceeds this API's {MAX_BODY_BYTES} byte limit",
+                status_code=413,
+            )
+    total = 0
+    chunks: list[bytes] = []
+    async for chunk in request.stream():
+        total += len(chunk)
+        if total > MAX_BODY_BYTES:
+            return PlainTextResponse(
+                f"request body exceeds this API's {MAX_BODY_BYTES} byte limit", status_code=413,
+            )
+        chunks.append(chunk)
+    # Caches the body on the Request the same way Starlette's own .body()
+    # would (it checks hasattr(self, "_body") first) -- every downstream
+    # read (FastAPI's `raw: dict` JSON parsing included) gets this same
+    # already-drained content instead of trying to read the ASGI channel a
+    # second time.
+    request._body = b"".join(chunks)
+    return await call_next(request)
+
+
+# -- request-id middleware ------------------------------------------------------
 # One id per HTTP request, generated the same way join request ids are
 # (secrets.token_urlsafe), set on logging_setup.request_id_ctx for the
 # duration of the call (every _LOG.info(...) issued while handling this
@@ -644,9 +771,10 @@ def health():
     return {"status": "ok"}
 
 
-# -- Prometheus text-format metrics (E.2, docs/production-delta.md row 34) --
-# Hand-rolled -- no prometheus_client (Global constraints: no new Python
-# dependency for E.1/E.2). This is a *surface*, not a monitoring system:
+# -- Prometheus text-format metrics (docs/production-delta.md row 34) -------
+# Hand-rolled -- no prometheus_client (this pack takes on no new Python
+# dependency for its own metrics/logging surface). This is a *surface*, not
+# a monitoring system:
 # nothing scrapes it by default, no alerting, no retention -- runbook.md's
 # scrape-config note says so, and so does the row this closes half of.
 # Gated the same way every other operator-only route is (Depends(require_operator)),
@@ -710,7 +838,7 @@ def issue_token(
     a new one; there is no retrieval endpoint, because a store that can
     return a credential is a store that can leak one.
 
-    `expires_in_days` is optional (plan §1.4): absent means no expiry, same
+    `expires_in_days` is optional: absent means no expiry, same
     as today's default."""
     agency = (body or {}).get("agency")
     if not isinstance(agency, str) or not _TOKEN_NAME_RE.fullmatch(agency):
@@ -749,8 +877,8 @@ def list_tokens(
     _role: str = Depends(require_operator),
     db: sqlite3.Connection = Depends(get_conn),
 ) -> dict:
-    """Who holds a credential, since when, and whether it has been revoked
-    (plan §1.4). Never the hashes: a hash is still a credential-shaped
+    """Who holds a credential, since when, and whether it has been revoked.
+    Never the hashes: a hash is still a credential-shaped
     secret, and an offline guess against a 24-byte token is only impossible
     while the hash is not in hand."""
     return {"tokens": [
@@ -770,8 +898,7 @@ def revoke_token(
     reads the store rather than caching it. The join requests this agency
     already submitted are untouched: they are the record of a decision, and
     they keep naming it in submitted_by. A soft-delete (revoked_at set), not
-    a row removal -- the issuance stays on the books as evidence (plan
-    §1.4)."""
+    a row removal -- the issuance stays on the books as evidence."""
     if not store.revoke_token(db, agency):
         raise HTTPException(404, f"no token issued to {agency!r}")
     return {"agency": agency, "revoked": True}
@@ -800,7 +927,7 @@ def get_catalogue(
 # The join-api's own SQLite store (apps/join-api/store.py) now owns every
 # request record; this section keeps only the id charset check, a
 # trust-boundary guard on caller input that stays in app.py by design
-# (store.py's own docstring, plan §1.2) -- request_id comes off the URL path
+# (store.py's own docstring) -- request_id comes off the URL path
 # and would otherwise reach a query unchecked.
 
 _REQUEST_ID_RE = re.compile(r"[A-Za-z0-9_-]+")
@@ -836,10 +963,10 @@ def _load_request(db: sqlite3.Connection, request_id: str) -> dict | None:
 with contextlib.closing(_conn()) as _startup_conn:
     store.recover_interrupted(_startup_conn)
 
-    # Migration refusal (plan §2): if out/join/*.json request files still
+    # Migration refusal: if out/join/*.json request files still
     # exist beside a DB that holds none, this process must refuse to start
     # rather than silently serve out of an empty store while evidence sits
-    # unmigrated next to it. scripts/migrate-join-store.py (a later task)
+    # unmigrated next to it. scripts/migrate-join-store.py
     # is the remedy; this check only needs to name it.
     _stale_requests_dir = OUT_DIR / "join"
     if (
@@ -1203,9 +1330,9 @@ def _blocking_job_lock(conn):
     return _cm()
 
 
-# -- in-process metrics (E.2) -------------------------------------------------
-# A counter dict, hand-rolled -- no prometheus_client (Global constraints:
-# no new Python dependency for E.1/E.2). Per-process, cleared by a restart,
+# -- in-process metrics ---------------------------------------------------------
+# A counter dict, hand-rolled -- no prometheus_client, same as the
+# Prometheus text-format surface above. Per-process, cleared by a restart,
 # exactly like the rate limiter's own _BUCKETS a few sections up -- the same
 # trade, for the same reason: there is one process and no replica to
 # reconcile against. "Requests by state" and "store quota usage" are
@@ -1468,7 +1595,7 @@ def add_refresh(
     _role: str = Depends(require_operator),
     db: sqlite3.Connection = Depends(get_conn),
 ) -> dict:
-    """Append a drift-refresh amendment to a request record (plan §1.3).
+    """Append a drift-refresh amendment to a request record.
     `scripts/member.sh refresh` tries this endpoint first, and falls back to
     a direct DB write only when join-api is not running -- this is the
     single-writer path that fallback exists beside, not a replacement for
