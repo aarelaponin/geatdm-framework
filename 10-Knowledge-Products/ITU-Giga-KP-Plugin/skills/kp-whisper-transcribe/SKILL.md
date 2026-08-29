@@ -3,9 +3,11 @@ name: kp-whisper-transcribe
 description: >-
   Transcribe a KP narration take (`…/audio/KP«n»_M«m»_«x.y»_Audio_v0.«v».m4a`) to the
   `.srt` that `kp-audio-brief` Step 6 audits, using local `openai-whisper` — no upload, no API
-  key. Use WHENEVER the task is "transcribe this audio", "get an SRT for this take", "run
-  whisper on <file>.m4a", or a fresh `.m4a` lands in a module's `audio/` folder with no matching
-  `.srt`. Covers the install failure modes specific to this Mac: system Python (3.7) has no
+  key. **Offline fallback when Scribe is unavailable:** `kp-scribe-transcribe` is Step 5 of the
+  video track, and this skill is what to use when the machine is offline, the ElevenLabs key is
+  unavailable, or the take must not leave the machine. Use WHENEVER the task is "transcribe this
+  audio offline", "get an SRT without uploading", "run whisper on <file>.m4a", or a fresh `.m4a`
+  lands in a module's `audio/` folder with no matching `.srt` and Scribe cannot be reached. Covers the install failure modes specific to this Mac: system Python (3.7) has no
   `torch` wheel, Python 3.11 drags in a `numba`/`llvmlite` combo with no macOS wheel and falls
   back to a `cmake` build that fails, and the model download dies with `CERTIFICATE_VERIFY_FAILED:
   self signed certificate in certificate chain` because Python's cert store doesn't trust the

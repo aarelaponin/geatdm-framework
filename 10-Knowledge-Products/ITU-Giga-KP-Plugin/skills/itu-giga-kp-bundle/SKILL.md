@@ -170,7 +170,7 @@ Every gate emits a fix list. **Fixes go to the build script, never to the docx**
 
 4. **`kp-deck-builder`** — build the module deck on the ITU template (voice-over in speaker notes, never on the slide), then split the per-video decks with title cards.
 5. **`kp-audio-brief`** — write the audio brief and the NotebookLM customization prompt that steer the narration to that deck, then (Step 6) audit the take on runtime, framing, terminology and filler.
-6. **`kp-whisper-transcribe`** — transcribe the returned `.m4a` locally to the `.srt` that Step 6 audits.
+6. **`kp-scribe-transcribe`** — transcribe the returned `.m4a` to the `.srt` that Step 6 audits, via the ElevenLabs Scribe API; speaker turns become cue boundaries, which is what Step 7 cues against. `kp-whisper-transcribe` is the offline fallback.
 7. **`kp-slidecast`** — author the cue file from the SRT's content beats (not from this script — the narration is a remix, not a read) and assemble deck + audio into the .mp4.
 
 Same rule, one layer over: **fixes go to the audio brief, never to the audio or the SRT** — a re-roll reverts them. And per the cardinal rule, deck fixes go to the deck build script, never to the .pptx.

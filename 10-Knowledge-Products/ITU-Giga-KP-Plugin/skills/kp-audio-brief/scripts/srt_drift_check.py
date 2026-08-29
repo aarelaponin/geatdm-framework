@@ -165,7 +165,10 @@ def main():
         warns.append("SIGNPOSTS — not numbered aloud: " + ", ".join(missing)
                      + " (only applies to videos with a four-signs slide)")
 
-    # 8. silence gaps — where the slide cuts can land
+    # 8. silence gaps — where the slide cuts can land.
+    # 0.6 is shared with kp-scribe-transcribe (SILENCE_GAP_S in transcribe.py and
+    # PAUSE_GAP_S in compare_srt.py): its segmenter breaks a cue on exactly this gap,
+    # so a smaller number here would offer cut points at breaks made for punctuation.
     gaps = []
     for a, b in zip(cues, cues[1:]):
         g = b["start"] - a["end"]

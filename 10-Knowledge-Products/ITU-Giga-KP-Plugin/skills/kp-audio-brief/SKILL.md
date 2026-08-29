@@ -146,7 +146,7 @@ revised with it and the audio is re-rolled.
 
 ## Step 6 — Audit the take
 
-When the `.srt` comes back:
+When the `.srt` comes back — from `kp-scribe-transcribe` (or `kp-whisper-transcribe` offline):
 
 ```bash
 python3 scripts/srt_drift_check.py <audio.srt> --target 240
