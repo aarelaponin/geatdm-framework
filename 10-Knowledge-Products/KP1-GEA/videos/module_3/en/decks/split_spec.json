@@ -1,0 +1,58 @@
+{
+  "kicker_prefix": "KP1 · Government Enterprise Architecture · Module 3",
+  "audience": "Chief architect · senior architect · sector ICT lead",
+  "out_pattern": "KP1_M3_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "Housing, governing and",
+  "cover_subtitle_marker": "Seven standalone videos",
+  "videos": [
+    {
+      "code": "3.1",
+      "title": "Set up the one place your architecture lives",
+      "mins": "~5",
+      "range": [3, 10],
+      "message": "An EA repository is the single agreed place the architecture lives — the four layers, the entities and the decisions — so that one picture of your government exists instead of many private copies. Set it up first; everything else governs what goes into it."
+    },
+    {
+      "code": "3.2",
+      "title": "Choose EA tooling without locking yourself in",
+      "mins": "~4",
+      "range": [11, 17],
+      "message": "Choose your EA tooling the way you would choose any system — reuse before buy, buy before build, keep your data in open formats you control, and never let the EA tool itself become the vendor trap it is meant to help you avoid."
+    },
+    {
+      "code": "3.3",
+      "title": "Keep the repository true — the update discipline",
+      "mins": "~4",
+      "range": [18, 25],
+      "message": "A repository is only worth what it is current. Decide who owns it, what event triggers an update, and how a change is checked — so the architecture tracks reality instead of slowly becoming a confident work of fiction."
+    },
+    {
+      "code": "3.4",
+      "title": "Stand up an EA Board that can actually say no",
+      "mins": "~5",
+      "range": [26, 33],
+      "message": "An EA Board with binding authority — the right chair, the right members, a regular cadence, and a mandate that lets it say no — is what turns the architecture from a document into the place every digital decision passes through."
+    },
+    {
+      "code": "3.5",
+      "title": "Review projects against the architecture",
+      "mins": "~5",
+      "range": [34, 40],
+      "message": "The architecture review gate — a short, consistent set of questions every project passes through before funding — is what turns principles and re-use from good intentions into the actual path of least resistance."
+    },
+    {
+      "code": "3.6",
+      "title": "Show the EA is working — the few metrics that matter",
+      "mins": "~4",
+      "range": [41, 47],
+      "message": "A handful of honest metrics — coverage, re-use rate, open exceptions, decisions made — show the minister and the team that the EA is working, and tell you where it isn't, without drowning anyone in vanity numbers."
+    },
+    {
+      "code": "3.7",
+      "title": "Keep the practice alive past year two",
+      "mins": "~5",
+      "range": [48, 55],
+      "message": "EA programmes rarely fail technically; they fade — the team gets pulled away, the repository goes stale, the Board drifts to advisory, the sponsor changes. Naming these four fade-modes and the move that counters each is how you keep the practice alive."
+    }
+  ]
+}

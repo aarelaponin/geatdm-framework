@@ -14,7 +14,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
 from deck_lib import (
     GREY, INK, ITU_BLUE, ITU_BLUE_DARK, LIGHT, MIDGREY, PANEL_GREY, SEPARATOR, WHITE,
     LAYOUT_THANKS, LAYOUT_WHITE,
-    add_slide, big_slide, box, delete_template_slides, edit_agenda, edit_cover, footer,
+    add_slide, big_slide, block_slide, box, delete_template_slides, edit_agenda,
+    edit_cover, footer, two_panel,
     hline, mini_strip, notes, num_chip, open_template, panel, panel_text, rows_slide,
     section_slide, set_text, solid, sources_slide, title)
 
@@ -75,40 +76,6 @@ def trace_stack(head, levels, closing, tag, note, label_w=2.5):
         y += h + gap
     tb = box(s, 0.72, 6.42, 11.9, 0.5)
     set_text(tb.text_frame, [[(closing, 15, True, ITU_BLUE_DARK, False)]])
-    footer(s, tag)
-    notes(s, note)
-    return s
-
-
-def block_slide(head, lead, punch, tag, note, punch_fill=LIGHT, punch_ink=ITU_BLUE_DARK,
-                lead_size=20):
-    """A paragraph of argument, then the line it lands on. Used where the bundle specifies
-    a single text block."""
-    s = add_slide(prs, LAYOUT_WHITE)
-    title(s, head)
-    tb = box(s, 0.72, 1.75, 11.9, 2.9)
-    set_text(tb.text_frame, [[(p, lead_size, False, INK, False)] for p in lead], space_after=Pt(12))
-    panel(s, 0.72, 4.85, 11.9, 1.45, punch_fill)
-    panel_text(s, 0.72, 4.9, 11.9, 1.45, [[(punch, 23, True, punch_ink, False)]])
-    footer(s, tag)
-    notes(s, note)
-    return s
-
-
-def two_panel(head, left, right, closing, tag, note, right_fill=PANEL_GREY):
-    """Comparison columns: (heading, [lines]) each side."""
-    s = add_slide(prs, LAYOUT_WHITE)
-    title(s, head)
-    cw, ch, cy = 5.9, 4.35, 1.7
-    for i, ((ph, lines), fill) in enumerate(zip((left, right), (LIGHT, right_fill))):
-        x = 0.72 + i * (cw + 0.23)
-        panel(s, x, cy, cw, ch, fill)
-        paras = [[(ph, 19, True, ITU_BLUE_DARK, False)]]
-        paras += [[(ln, 16, False, INK, False)] for ln in lines]
-        panel_text(s, x, cy, cw, ch, paras)
-    if closing:
-        tb = box(s, 0.72, 6.25, 11.9, 0.6)
-        set_text(tb.text_frame, [[(closing, 15.5, True, ITU_BLUE_DARK, False)]])
     footer(s, tag)
     notes(s, note)
     return s
@@ -320,7 +287,7 @@ notes(s, "VO: The entities are half of it. The relationships are the other half.
          "uses the same entities and the same relationships, every ministry's picture can be laid "
          "over every other ministry's picture — and they line up.")
 
-block_slide('Re-use is not a matter of good intentions',
+block_slide(prs, 'Re-use is not a matter of good intentions',
             ["Everyone says they want re-use — one identity system used by many ministries, instead "
              "of five. But before the agriculture ministry can consume the identity authority's "
              "building block, both must describe that building block the same way: same entity "
@@ -340,7 +307,7 @@ block_slide('Re-use is not a matter of good intentions',
             "achievable, instead of just hoped for.\n\nThe pivotal slide of 2.2. Hold it.",
             punch_fill=ITU_BLUE, punch_ink=WHITE)
 
-two_panel('The same few entities let business and IT understand each other',
+two_panel(prs, 'The same few entities let business and IT understand each other',
           ('The head of policy says', ['“We want to register every learner once.”']),
           ('The architect answers', ['“That is one Capability,',
                                      'one Service,',
@@ -562,7 +529,7 @@ notes(s, "VO: Three main types cover most of government. A policy unit — usual
          "front-line systems. Tell me which of the three a body is, and I can already guess its main "
          "capabilities and its main data domains before I meet anyone.")
 
-two_panel('Around those three sit the foundations everyone else stands on',
+two_panel(prs, 'Around those three sit the foundations everyone else stands on',
           ('State registries', ['The authoritative single source for a kind of thing:',
                                 'person · business · land · learner.',
                                 'A registry’s whole job is to be the one place the truth lives.']),
@@ -580,7 +547,7 @@ two_panel('Around those three sit the foundations everyone else stands on',
           "shared, not as the private property of whichever ministry happens to host them.",
           right_fill=LIGHT)
 
-block_slide('Each type comes with an expected profile',
+block_slide(prs, 'Each type comes with an expected profile',
             ["Name a body a regulatory agency, and you expect a licensing capability, a register of "
              "the regulated, an enforcement record, and an appeals process. You walk in confirming "
              "or correcting a profile — not building one from nothing.",
@@ -665,7 +632,7 @@ notes(s, "VO: Start by classifying, because classification gives us the head sta
          "bodies, classified in a minute, and we already expect what each one does.\n\nAll "
          "institutions are fictional — no emblems, no real agency names on screen.")
 
-two_panel('Business layer — capabilities belong to bodies, services sit on top',
+two_panel(prs, 'Business layer — capabilities belong to bodies, services sit on top',
           ('Capabilities', ['Register a learner — PLR',
                             'Run an examination, certify a result — PNEA',
                             'Prove identity — PNIA',
@@ -710,7 +677,7 @@ notes(s, "VO: The Data layer names the domains and their owners. The Person doma
          "registry, and you write it down.\n\nThe duplicate-registry example previews the Assess gaps "
          "in 2.6 — name the link.")
 
-two_panel('Application and Technology — every system points up and across',
+two_panel(prs, 'Application and Technology — every system points up and across',
           ('Applications', ['Enrolment system → register-a-learner (PLR)',
                             'Exam-management system → run-an-examination (PNEA)',
                             'Identity-verification service → prove-identity (PNIA)']),
@@ -867,7 +834,7 @@ notes(s, "VO: A list of gaps is not an assessment. The assessment is the priorit
          "needs to be. The output your EA Board signs off is not 'here is everything wrong'. It is "
          "'here are the right problems, in the right order, with the reasons'.")
 
-block_slide('The sign-off has one quality test of its own — honesty',
+block_slide(prs, 'The sign-off has one quality test of its own — honesty',
             ["Assess ends when the senior decision-maker confirms the gap analysis reflects ground "
              "truth. Your job is to name the right problems in the right order — including the "
              "politically uncomfortable ones — in language the decision-maker can act on."],
@@ -914,7 +881,7 @@ section('2.7', 'The two traps to catch at Assess — bespoke and vendor-driven',
         "still a line in a project plan. Learn to recognise both, and you save your country years and "
         "a great deal of money.")
 
-block_slide('Trap one — building your own is rational for a project and ruinous for a country',
+block_slide(prs, 'Trap one — building your own is rational for a project and ruinous for a country',
             ["A new project needs to identify citizens. Reusing the national platform means learning "
              "it, negotiating with the body that owns it, and accepting their timelines. Building its "
              "own small identity function is faster — for this project. So it builds its own.",
@@ -935,7 +902,7 @@ block_slide('Trap one — building your own is rational for a project and ruinou
             "a shared building block, you flag it.",
             punch_fill=ITU_BLUE, punch_ink=WHITE)
 
-two_panel('Procurement rules cannot catch it — that is why this is architecture work',
+two_panel(prs, 'Procurement rules cannot catch it — that is why this is architecture work',
           ('What a rule can do', ['Require open standards.',
                                   'Set the intention.']),
           ('What only architecture can do', ['Show the whole-of-government view where the reuse math exists.',

@@ -264,6 +264,40 @@ def sources_slide(prs, tag, items, note_text=''):
     return s
 
 
+def block_slide(prs, head, lead, punch, tag, note, punch_fill=LIGHT, punch_ink=ITU_BLUE_DARK,
+                lead_size=20):
+    """A paragraph of argument, then the line it lands on. The shape to reach for wherever a
+    bundle cue says 'single text block'. `lead` is a list of paragraphs."""
+    s = add_slide(prs, LAYOUT_WHITE)
+    title(s, head)
+    tb = box(s, 0.72, 1.75, 11.9, 2.9)
+    set_text(tb.text_frame, [[(p, lead_size, False, INK, False)] for p in lead], space_after=Pt(12))
+    panel(s, 0.72, 4.85, 11.9, 1.45, punch_fill)
+    panel_text(s, 0.72, 4.9, 11.9, 1.45, [[(punch, 23, True, punch_ink, False)]])
+    footer(s, tag)
+    notes(s, note)
+    return s
+
+
+def two_panel(prs, head, left, right, closing, tag, note, right_fill=PANEL_GREY):
+    """Comparison columns: (heading, [lines]) each side, optional closing line beneath."""
+    s = add_slide(prs, LAYOUT_WHITE)
+    title(s, head)
+    cw, ch, cy = 5.9, 4.35, 1.7
+    for i, ((ph, lines), fill) in enumerate(zip((left, right), (LIGHT, right_fill))):
+        x = 0.72 + i * (cw + 0.23)
+        panel(s, x, cy, cw, ch, fill)
+        paras = [[(ph, 19, True, ITU_BLUE_DARK, False)]]
+        paras += [[(ln, 16, False, INK, False)] for ln in lines]
+        panel_text(s, x, cy, cw, ch, paras)
+    if closing:
+        tb = box(s, 0.72, 6.25, 11.9, 0.6)
+        set_text(tb.text_frame, [[(closing, 15.5, True, ITU_BLUE_DARK, False)]])
+    footer(s, tag)
+    notes(s, note)
+    return s
+
+
 def mini_strip(slide, n, active_idx, x=8.05, y=0.42, w=0.92, gap=0.06, h=0.34):
     """Progress strip top-right on per-phase / per-step slides."""
     for j in range(n):
