@@ -1,0 +1,58 @@
+{
+  "kicker_prefix": "KP1 · Government Enterprise Architecture · Module 2",
+  "audience": "Chief architect · senior architect · sector ICT lead",
+  "out_pattern": "KP1_M2_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "Reading, modelling and",
+  "cover_subtitle_marker": "Seven standalone videos",
+  "videos": [
+    {
+      "code": "2.1",
+      "title": "Read any government in four layers",
+      "mins": "~5",
+      "range": [3, 9],
+      "message": "Every government, in any sector, can be read in four layers — Business, Data, Application, Technology. Learn the question each layer answers, the deliverable it produces, and the mistake first-time architects make, and you can decompose any ministry put in front of you."
+    },
+    {
+      "code": "2.2",
+      "title": "The shared vocabulary that makes re-use possible",
+      "mins": "~5",
+      "range": [10, 17],
+      "message": "The metamodel is the small set of entities — Capability, Service, Application, Data Domain, Technology Component — and the relationships between them that PAERA already defines. Adopt it, and two ministries' architectures can be compared, connected and re-used."
+    },
+    {
+      "code": "2.3",
+      "title": "Adopt your principles, don't draft them",
+      "mins": "~4",
+      "range": [18, 24],
+      "message": "PAERA publishes ten architectural principles, already debated across many countries. Your job is to adopt them, tailor the wording to your context, and use them to settle design arguments — not to spend your first year drafting principles from scratch."
+    },
+    {
+      "code": "2.4",
+      "title": "Classify any public body before you model it",
+      "mins": "~4",
+      "range": [25, 31],
+      "message": "PAERA publishes a taxonomy of public bodies — policy unit, regulatory agency, service-delivery authority, plus supporting elements like state registries. Classify a body first, and you already know what capabilities, data and governance to expect from it."
+    },
+    {
+      "code": "2.5",
+      "title": "BDAT on a real ministry — the Progressa walkthrough",
+      "mins": "~5",
+      "range": [32, 39],
+      "message": "Watch the four layers and the shared entities applied to one real education system — Progressa's ministry, learner registry, examination authority and identity authority — and the abstract method becomes a concrete picture you can reproduce on your own sector."
+    },
+    {
+      "code": "2.6",
+      "title": "Run a Phase 2 Assess",
+      "mins": "~5",
+      "range": [40, 47],
+      "message": "A good current-state picture is judged by a few quality tests per layer, not by its length. Learn the tests, learn the gaps you will always find, and you can run a Phase 2 Assess that names the right problems in the right order."
+    },
+    {
+      "code": "2.7",
+      "title": "The two traps to catch at Assess",
+      "mins": "~4",
+      "range": [48, 54],
+      "message": "Two traps recur in every assessment: the bespoke trap, where each project builds its own version of a shared function, and the vendor-driven trap, where a supplier's product quietly becomes the architecture. Spot both early, and you protect the country from paying many times for one thing."
+    }
+  ]
+}
