@@ -1,0 +1,17 @@
+# Slide cue file — KP1 Module 1, Video 1.6 "The lifecycle on one page"
+# Deck:  KP1_M1_1.6_Deck_v0.1.pptx (12 slides — reordered: minister sign-offs now precede Phase 5)
+# Audio: KP1_M1_1.6_Audio_v0.6.m4a (4:18)
+# Source: KP1_M1_1.6_Audio_v0.6.srt — narration follows deck order throughout.
+
+0:00   # slide 1 — Title card
+0:07   # slide 2 — 1.6 The lifecycle on one page
+0:40   # slide 3 — Five phases. Four sign-offs. Six months to a roadmap
+0:53   # slide 4 — Phase 1 — Discover
+1:18   # slide 5 — Phase 2 — Assess
+1:44   # slide 6 — Phase 3 — Adapt
+2:10   # slide 7 — Phase 4 — Plan
+2:39   # slide 8 — Your minister reviews four times — not every diagram
+2:50   # slide 9 — Phase 5 — Execute & Govern
+3:17   # slide 10 — You can skip a phase — and pay for it several times over
+3:48   # slide 11 — Week 1 to week 26 — then forever
+4:13   # slide 12 — Sources

@@ -1,0 +1,275 @@
+1
+00:00:00,180 --> 00:00:02,329
+So let's look directly at, uh,
+
+2
+00:00:03,040 --> 00:00:05,319
+the digital infrastructure inside your government.
+
+3
+00:00:05,440 --> 00:00:15,420
+Mm-hmm. Today, we are taking a deep dive into a stack of technical reports and, you know, government case studies to figure out why these systems so often just
+
+4
+00:00:15,440 --> 00:00:17,140
+feel completely fragmented.
+
+5
+00:00:17,220 --> 00:00:18,160
+Yeah, it's a huge issue.
+
+6
+00:00:18,220 --> 00:00:24,830
+Right. And our mission here is to understand why your government urgently needs a national enterprise architecture or, uh,
+
+7
+00:00:25,660 --> 00:00:34,300
+EA. Exactly. And just to be clear, when I say your, I am talking directly to you, the official running these systems, so your ministry, your program, your vendor.
+
+8
+00:00:34,400 --> 00:00:42,060
+Yeah. And it's important to note that, um, often when digital programs are funded separately, like by entities like the World Bank or bilateral partners,
+
+9
+00:00:42,520 --> 00:00:44,640
+they end up building completely isolated systems.
+
+10
+00:00:44,700 --> 00:00:51,430
+Right. But wait, if a donor funds, say, a health app, and it works perfectly for the hospitals, how is that a systemic failure?
+
+11
+00:00:51,480 --> 00:00:53,000
+I mean, the doctors are happy, right?
+
+12
+00:00:53,340 --> 00:00:56,440
+Well, the doctors might be happy, sure, but the system fails at a,
+
+13
+00:00:57,160 --> 00:01:01,180
+uh, a much broader level. We often assume these disconnected systems are broken,
+
+14
+00:01:01,840 --> 00:01:07,120
+but they aren't. They're actually behaving exactly as they were designed and, you know, financed to behave.
+
+15
+00:01:07,180 --> 00:01:10,160
+Yeah. Yeah. The app works for its isolated purpose.
+
+16
+00:01:10,300 --> 00:01:12,740
+Mm-hmm. The flaw isn't the software itself.
+
+17
+00:01:12,780 --> 00:01:15,940
+The flaw is the total lack of a shared plan.
+
+18
+00:01:16,000 --> 00:01:22,380
+Oh, I get it, because that health app cannot talk to, like, the national identity database or the tax office.
+
+19
+00:01:22,480 --> 00:01:27,520
+Exactly. And you know, there are four distinct signs your government lacks this shared plan.
+
+20
+00:01:27,580 --> 00:01:28,280
+Okay, lay them out.
+
+21
+00:01:28,340 --> 00:01:32,020
+So sign one, you have more than one register of the same citizens.
+
+22
+00:01:32,160 --> 00:01:38,800
+Yeah. The school list has one register, the national ID has another, um, the social register has a third, and none of them agree.
+
+23
+00:01:39,200 --> 00:01:42,340
+Wow, so there is just zero single source of truth.
+
+24
+00:01:42,400 --> 00:01:46,360
+Right. Which means connecting them becomes a massive headache later on.
+
+25
+00:01:46,400 --> 00:01:50,980
+Which actually brings us to sign two. Every system-to-system link is built from scratch.
+
+26
+00:01:51,160 --> 00:01:55,880
+Oh, wow. Yeah. So last year, your team connected tax office to the business register.
+
+27
+00:01:56,470 --> 00:02:02,179
+This year, you need to connect the health ministry, and you are building that bridge all over again, completely from zero.
+
+28
+00:02:02,220 --> 00:02:08,520
+And if those older systems were built, you know, a decade ago by one company, you probably hit sign three vendor lock-in.
+
+29
+00:02:08,669 --> 00:02:14,840
+Yes, exactly. Because that single vendor holds all the keys to the legacy code, and nobody else understands how it works.
+
+30
+00:02:14,880 --> 00:02:19,660
+They basically have a monopoly, so they can charge whatever they want just to make a really simple update.
+
+31
+00:02:19,800 --> 00:02:20,300
+Precisely,
+
+32
+00:02:20,920 --> 00:02:24,200
+which leads to sign four, disconnected ministries.
+
+33
+00:02:24,360 --> 00:02:33,400
+Right. Because the systems don't communicate behind the scenes, citizens must submit the exact same paper forms multiple times to different departments.
+
+34
+00:02:33,640 --> 00:02:35,079
+Ugh, that's so frustrating.
+
+35
+00:02:35,220 --> 00:02:37,100
+Yeah. The once only principle,
+
+36
+00:02:37,920 --> 00:02:42,240
+you know, the idea that a citizen provides information to the government just once it exists on paper.
+
+37
+00:02:42,500 --> 00:02:45,040
+Yeah. But in practice it is completely impossible.
+
+38
+00:02:45,120 --> 00:02:48,940
+So it all boils down to a shockingly basic problem.
+
+39
+00:02:48,950 --> 00:02:50,880
+There is just no shared blueprint.
+
+40
+00:02:51,020 --> 00:02:52,260
+No shared blueprint at all.
+
+41
+00:02:52,320 --> 00:02:56,140
+So who ultimately absorbs damage of all these fragmented systems?
+
+42
+00:02:56,150 --> 00:02:59,940
+Well, the costs hit in four specific ways and in strict order.
+
+43
+00:03:00,140 --> 00:03:01,060
+Okay. First,
+
+44
+00:03:01,700 --> 00:03:01,940
+money.
+
+45
+00:03:03,070 --> 00:03:05,820
+Okay. Because you are paying to build the same systems repeatedly.
+
+46
+00:03:06,320 --> 00:03:06,690
+Second,
+
+47
+00:03:07,420 --> 00:03:07,820
+time,
+
+48
+00:03:08,540 --> 00:03:13,440
+because every new program waits around for cross system work that nobody actually planned for.
+
+49
+00:03:13,860 --> 00:03:14,540
+Yeah, makes sense.
+
+50
+00:03:14,600 --> 00:03:16,020
+Third, citizens,
+
+51
+00:03:16,640 --> 00:03:19,920
+because they bear the burden of constantly filling out those same forms.
+
+52
+00:03:20,440 --> 00:03:20,980
+And finally,
+
+53
+00:03:22,020 --> 00:03:22,700
+your minister.
+
+54
+00:03:22,880 --> 00:03:32,060
+Oh, right, because when a multimillion-dollar flagship program just crashes due to siloed data, the minister is the one whose agenda fails.
+
+55
+00:03:32,180 --> 00:03:39,060
+Yes. Their cross ministry programs fail to land because the underlying systems simply refuse to share data.
+
+56
+00:03:39,180 --> 00:03:41,580
+Yeah. They cannot deliver on their biggest political promises.
+
+57
+00:03:41,660 --> 00:03:49,000
+So the root cause of all this friction is simply that there is no shared plan of what the digital systems actually are and, you know, who owns them.
+
+58
+00:03:49,140 --> 00:03:55,220
+Exactly. And the solution is a national enterprise architecture, because you cannot rewire a building you have never mapped.
+
+59
+00:03:55,360 --> 00:04:00,920
+That mapping is exactly what a national EA does, and the good news is you don't have to invent this map from scratch.
+
+60
+00:04:01,060 --> 00:04:07,840
+Right. There are established frameworks out there, like the European Interoperability Framework and P-A-E-R-A or PAERA.
+
+61
+00:04:08,109 --> 00:04:10,660
+And just to be clear on how those frameworks actually work,
+
+62
+00:04:11,280 --> 00:04:13,500
+they essentially provide a standardized checklist, right?
+
+63
+00:04:13,540 --> 00:04:22,320
+Mm-hmm. They dictate exactly how data must be formatted and shared so that any new system you purchase is mathematically guaranteed to plug into the old ones.
+
+64
+00:04:22,360 --> 00:04:28,680
+Exactly. It sets the technical rules of the road, and following those frameworks is, um, surprisingly efficient.
+
+65
+00:04:29,180 --> 00:04:34,380
+Is it? Yeah. It takes just six months to get to a first roadmap requiring only four key sign-offs.
+
+66
+00:04:34,420 --> 00:04:42,980
+Wow, okay. So moving from isolated systems to a mapped national EA is really the only way a government can actually function cohesively.
+
+67
+00:04:42,990 --> 00:04:46,070
+Absolutely. But it does leave us with something crucial to consider.
+
+68
+00:04:46,100 --> 00:04:55,969
+If isolated funding naturally creates isolated digital systems, how must your ministry change its initial conversations with donors to guarantee they actually fund the shared plan?
+
+69
+00:04:56,680 --> 00:04:57,969
+Sources are in the video description.

@@ -4,11 +4,11 @@ One video per **topic** (subtopic `«module».«topic»`, e.g. `1.1`). Build per
 module: the module-wide artefacts exist only as an intermediate that gets split.
 
 Everything starts from the module's script bundle one level up
-(`KP1_Module1_Script_Bundle_v0.2.md`) and ends as an MP4. Eight steps, of which two are browser
-sessions no script can replace.
+(`KP1_Module1_Script_Bundle_v0.2.md`) and ends as an MP4. Eight steps. On the default path none
+of them need a browser; the NotebookLM fallback keeps two that no script can replace.
 
 **Bilingual: English and French.** Each module runs the full pipeline once per language, in
-parallel sibling trees (`en/`, `fr/`) under the module folder — same six stages, same filenames,
+parallel sibling trees (`en/`, `fr/`) under the module folder — same seven stages, same filenames,
 different language folder. English is the only language currently produced; `fr/` is scaffolded
 and empty, waiting on a French deck (see *Adding a language* below).
 
@@ -25,7 +25,9 @@ KP1-GEA/
         ├── en/
         │   ├── scripts/     KP1_M1_1.1_Scripts_v0.1.md          per-topic narration    (1)
         │   ├── decks/       KP1_M1_1.1_Deck_v0.1.pptx           per-topic .pptx        (2)
-        │   ├── notebooklm/  KP1_M1_1.1_AudioBrief_v0.2.md       brief + prompt         (3)
+        │   ├── tts/         KP1_M1_1.1_InterviewScript_v0.1.md   interview script + config (3/4, default)
+        │   │                KP1_M1_1.1_TTSConfig_v0.1.json       + takes.log
+        │   ├── notebooklm/  KP1_M1_1.1_AudioBrief_v0.2.md       brief + prompt   (3/4, fallback)
         │   ├── audio/       KP1_M1_1.1_Audio_v0.2.m4a / .srt    takes + transcripts    (4, 5)
         │   │                KP1_M1_1.1_Stem-A_v0.2.wav          per-host stems         (4b)
         │   │                KP1_M1_1.1_Voiced_v0.2.m4a          the take, re-voiced    (4b)
@@ -34,6 +36,7 @@ KP1-GEA/
         └── fr/
             ├── scripts/      (empty — awaiting French production)
             ├── decks/
+            ├── tts/
             ├── notebooklm/
             ├── audio/
             ├── cues/
@@ -64,10 +67,10 @@ Run this table once per language folder (`en/`, then `fr/` when it exists).
 | 1 | Per-topic narration scripts | assisted | `kp-deck-builder` |
 | 2 | Deck on the ITU template, split per topic | one command | `kp-deck-builder` |
 | 3 | Audio brief + NotebookLM prompt | assisted | `kp-audio-brief` |
-| 4 | Generate the narration | **manual, in the browser** | — |
+| 4 | Generate the narration | one command | `kp-notebooklm-audio` (fallback: the browser flow below) |
 | 5 | Transcribe the take to SRT | one command | `kp-scribe-transcribe` (offline: `kp-whisper-transcribe`) |
 | 5b | Audit the take against the deck | one command | `kp-audio-brief` (Step 6) |
-| 4b | Replace both host voices | **manual, in the browser** | `voice-swap.md` |
+| 4b | Replace both host voices — **fallback path only** | **manual, in the browser** | `voice-swap.md` |
 | 6 | Slide cue file | assisted | `kp-slidecast` (Step 1) |
 | 7 | Assemble the MP4 | one command | `kp-slidecast` (Step 2) |
 
@@ -75,6 +78,12 @@ Run this table once per language folder (`en/`, then `fr/` when it exists).
 
 4b is numbered out of order on purpose: it belongs to the audio stage, but it runs **after** the
 audit, because 5b is what decides whether the take is worth re-voicing at all.
+
+**Step 4 is now a command, but nothing about the take changed** — same NotebookLM, same brief as
+sole source, same Deep Dive at Shorter length, same prompt text. `kp-notebooklm-audio` automates
+the clicking, waiting and renaming; the browser flow below stays documented as the fallback and
+still works. A third path, fully-scripted Gemini TTS, is **parked** — see
+`ITU-Giga-KP-Plugin/docs/plans/2026-08-29-kp-interview-tts.md` and its §7b.
 
 ---
 
@@ -110,6 +119,33 @@ split after **any** rebuild, since ranges shift.
 Then QA before going further: `bash …/kp-deck-builder/scripts/qa_deck.sh <deck.pptx>` renders
 contact sheets to actually look at.
 
+### 3 — Write the audio brief and the prompt → `«lang»/notebooklm/` — PARKED PATH BELOW
+
+### (parked) Interview script → take → `«lang»/tts/` — Gemini TTS
+
+No browser. Claude authors a two-speaker expert-interview script from the subtopic's narration
+script, a stdlib linter checks it against the same lists Step 5b audits with, and one command
+synthesizes the whole take with the Gemini multi-speaker TTS API.
+
+```bash
+KP=~/.venvs/kp/bin/python
+S=…/ITU-Giga-KP-Plugin/skills/kp-interview-tts/scripts
+
+python3 $S/tts_script_lint.py module_1/en/tts/KP1_M1_1.1_InterviewScript_v0.1.md   # free
+$KP    $S/tts_synthesize.py module_1/en/tts/KP1_M1_1.1_InterviewScript_v0.1.md     # ~$0.10
+```
+
+`kp-interview-tts` owns it. Runtime, terminology and framing become properties of a text file
+you diff and re-roll rather than of a generation you audit after the fact — so the fix for a
+failed take is an edit to the InterviewScript, and the re-roll costs about ten cents. The key
+lives in the macOS Keychain (`gemini-api`), the voice pair is frozen once per KP in
+`references/voice-pairs.md`, and `tts/takes.log` records the model, token counts, cost and
+duration of every take.
+
+Author against `kp-interview-tts/references/interview-format.md` — the expert carries ≥80% of
+the words, the interviewer is the ministry official's proxy rather than the citizen's, and each
+slide's word budget is inherited from the narration script.
+
 ### 3 — Write the audio brief and the prompt → `«lang»/notebooklm/`
 
 Two artefacts per topic: the **audio brief** (which becomes NotebookLM's *only* source) and the
@@ -119,7 +155,27 @@ prints each slide's text, notes, and a proposed per-slide time budget to write a
 run this against the French deck once it exists — the brief should already be in French, since
 NotebookLM's spoken output follows its source language.
 
-### 4 — Generate the narration in NotebookLM → `«lang»/audio/` — MANUAL
+### 4 — Generate the narration → `«lang»/audio/` — ONE COMMAND
+
+```bash
+NLM=~/.venvs/nlm/bin/python
+S=…/ITU-Giga-KP-Plugin/skills/kp-notebooklm-audio/scripts
+
+$NLM $S/nlm_take.py module_1/en 1.1        # one take
+$NLM $S/nlm_take.py module_1/en --all      # the whole module, sequentially
+```
+
+`kp-notebooklm-audio` owns it. It creates or reuses the subtopic's notebook, **deletes every
+existing source and uploads the current brief** so a stale version cannot steer a take, applies
+the prompt file's Step 3 block verbatim as the customization input, generates Deep Dive at
+Shorter length with the language pinned from the path, and downloads to the next free
+`…_Audio_v0.«v».m4a`. No API key — it uses your Google web session, and needs one interactive
+`notebooklm login` you run yourself.
+
+It is an unofficial client on undocumented endpoints. When it breaks, drop to the manual flow
+immediately below and ship; the artefacts never depend on the tool that made them.
+
+#### 4 (fallback) — the manual browser flow — MANUAL
 
 No API. In the browser:
 
@@ -164,7 +220,10 @@ python3 …/kp-audio-brief/scripts/srt_drift_check.py <audio.srt> --target 240 -
 Exits non-zero on runtime drift, filler and terminology failures. On two or more FAILs, **re-roll
 rather than patch** — and put the fix in the brief, because that is the only thing a re-roll reads.
 
-### 4b — Replace both host voices → `«lang»/audio/` — MANUAL
+### 4b — *Fallback path only:* replace both host voices → `«lang»/audio/` — MANUAL
+
+**Skip this step on the TTS path** — `kp-interview-tts` picks the voices at synthesis time, so
+there is no `Voiced` file and Steps 6 and 7 read the `Audio` file directly.
 
 NotebookLM has no voice picker — format, length, language and a prompt box, nothing else. Its two
 stock hosts are on hundreds of thousands of published podcasts, which is a credibility problem for
@@ -212,7 +271,7 @@ Deck → LibreOffice → PDF → PNGs, held per cue interval, narration muxed at
 
 ## Adding a language
 
-`fr/` exists as an empty mirror of `en/` (six stage folders, no content yet). Populating it is not
+`fr/` exists as an empty mirror of `en/` (seven stage folders, no content yet). Populating it is not
 a file-copy job — every stage after the deck depends on French content that doesn't exist yet:
 
 1. **Translate the deck.** The deck is the pipeline's single source of truth (Step 2), so French
@@ -244,15 +303,19 @@ vice versa.
 language's upstream artefact — a French audio take is cued against the French deck's SRT, never
 against an English one, even if the timings look close.
 
-**Everything downstream of 4b uses the `Voiced` file.** `Audio_v0.2` is the take the audit was run
+**On the fallback path, everything downstream of 4b uses the `Voiced` file.** `Audio_v0.2` is the take the audit was run
 against and it stays on disk; `Voiced_v0.2` is what gets cued, muxed and shipped. One take number
 across all four artefacts — `Audio_v0.2` → `Voiced_v0.2` → `Cues_v0.2` → `Video_v0.2` — and a
 re-roll bumps them together.
+
+**On the TTS path there is no `Voiced` file** — the take *is* the deliverable audio, so
+`Audio_v0.3` → `Cues_v0.3` → `Video_v0.3`, one version across three artefacts instead of four.
 
 **The cast is decided once, in `voice-cast.md`.** Re-picking voices per video is worse than the
 stock hosts you were escaping. Changing the cast orphans every video made before it, so record the
 change and decide, in writing, whether the back catalogue gets re-rendered.
 
-**The whole track runs on the kit's skills**, in order: `kp-deck-builder` → `kp-audio-brief` →
-`kp-scribe-transcribe` → `kp-slidecast`. See `ITU-Giga-KP-Plugin/skills/itu-giga-kp-bundle` for
+**The whole track runs on the kit's skills**, in order: `kp-deck-builder` → `kp-interview-tts`
+(or `kp-audio-brief` on the fallback path) → `kp-scribe-transcribe` → `kp-audio-brief` Step 6 →
+`kp-slidecast`. See `ITU-Giga-KP-Plugin/skills/itu-giga-kp-bundle` for
 where this sits relative to the docx track.

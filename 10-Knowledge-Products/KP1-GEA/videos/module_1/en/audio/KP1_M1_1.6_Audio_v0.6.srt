@@ -1,0 +1,267 @@
+1
+00:00:00,080 --> 00:00:04,280
+So today we are taking a deep dive into the national enterprise architecture lifecycle.
+
+2
+00:00:04,960 --> 00:00:07,020
+Uh, basically getting it all on a single page.
+
+3
+00:00:07,540 --> 00:00:11,580
+Right. It's the exact roadmap you need to modernize your country's systems.
+
+4
+00:00:11,720 --> 00:00:18,340
+Yeah, going from a complete standing start to, you know, a finalized plan that your minister can confidently take right to cabinet.
+
+5
+00:00:18,600 --> 00:00:24,660
+Exactly. But, uh, before we get into the weeds, I want you, the listener, to consider a quick question.
+
+6
+00:00:25,000 --> 00:00:26,600
+Oh, right, the timeline question.
+
+7
+00:00:26,720 --> 00:00:33,660
+Yeah. From that standing start, how long do you think it takes until you have a roadmap your minister can actually take to cabinet?
+
+8
+00:00:34,120 --> 00:00:35,879
+Just, well, hold that number in your head for now.
+
+9
+00:00:35,920 --> 00:00:37,860
+We will definitely reveal the real answer at the end.
+
+10
+00:00:37,920 --> 00:00:40,140
+It's, uh, probably surprising to some people.
+
+11
+00:00:40,220 --> 00:00:43,559
+Oh, definitely. So let's look at the overall rhythm first.
+
+12
+00:00:43,600 --> 00:00:47,380
+It's structured around five consecutive phases and four strategic sign-offs.
+
+13
+00:00:47,460 --> 00:00:53,080
+Okay, so five phases, and each phase answers just one specific question and produces exactly one deliverable, right?
+
+14
+00:00:53,440 --> 00:00:55,600
+Right. So phase one is discover.
+
+15
+00:00:56,280 --> 00:00:59,440
+The core question here is: what exists today?
+
+16
+00:00:59,680 --> 00:01:03,280
+Meaning your architects document the current digital landscape.
+
+17
+00:01:03,440 --> 00:01:09,180
+Yeah. Existing systems, legal frameworks, all of that stuff, and the deliverable is a discovery brief.
+
+18
+00:01:09,510 --> 00:01:14,400
+Got it. And then the senior decision maker signs off that this picture is actually accurate.
+
+19
+00:01:14,660 --> 00:01:18,400
+Exactly. And that phase takes, uh, three to four weeks.
+
+20
+00:01:18,500 --> 00:01:22,250
+Okay, not too bad. Then we hit phase two, which is assess.
+
+21
+00:01:22,500 --> 00:01:24,280
+Right, where we ask: what is the gap?
+
+22
+00:01:25,000 --> 00:01:32,300
+Your architects take those discovery findings and compare them against P-A-E-R-A or PAERA anchored standards.
+
+23
+00:01:32,400 --> 00:01:35,580
+Right, those are the predefined, thoroughly tested architectural principles.
+
+24
+00:01:35,660 --> 00:01:41,600
+Exactly. So that produces a gap analysis, and the sign-off confirms this analysis as the real ground truth.
+
+25
+00:01:42,220 --> 00:01:43,730
+That takes about six to eight weeks.
+
+26
+00:01:44,040 --> 00:01:46,480
+Okay, so moving on to phase three, adapt.
+
+27
+00:01:47,160 --> 00:01:48,730
+The question is: what fits your country?
+
+28
+00:01:48,980 --> 00:01:55,260
+Yeah, because PAERA provides the baseline, but, you know, you absolutely have to adapt it to your specific national context.
+
+29
+00:01:55,300 --> 00:01:58,370
+I mean, do we build, buy, share, or sandbox first?
+
+30
+00:01:58,420 --> 00:01:59,750
+That's the big sourcing question, right?
+
+31
+00:01:59,800 --> 00:02:01,880
+Yep. That is exactly what your architects determine here.
+
+32
+00:02:01,940 --> 00:02:06,920
+The deliverable is the finalized framework and the sourcing approach, which gets locked in with a sign-off.
+
+33
+00:02:07,100 --> 00:02:08,699
+Yeah, the timeframe for phase three.
+
+34
+00:02:08,970 --> 00:02:10,380
+That one is four to six weeks.
+
+35
+00:02:10,520 --> 00:02:13,900
+Okay, so then phase four is plan. How do we get there?
+
+36
+00:02:14,060 --> 00:02:22,020
+Right. Your architects sequence all this work into a target state roadmap, complete with, uh, accurate investment estimates.
+
+37
+00:02:22,280 --> 00:02:27,500
+So the deliverable is the roadmap itself, and the sign-off secures the approval and budget commitment.
+
+38
+00:02:27,620 --> 00:02:30,420
+Correct. And that phase is another six to eight weeks.
+
+39
+00:02:30,570 --> 00:02:34,120
+Let's talk about the minister's role here for a second across those first four phases.
+
+40
+00:02:34,280 --> 00:02:39,300
+It's a really crucial detail. Your minister does not review technical diagrams.
+
+41
+00:02:39,360 --> 00:02:40,769
+Yeah, they just do those four sign-offs.
+
+42
+00:02:40,880 --> 00:02:43,120
+Right. It's a very deliberate division of labor.
+
+43
+00:02:43,220 --> 00:02:47,680
+The sign-offs are specifically designed to clear political and financial obstacles.
+
+44
+00:02:47,720 --> 00:02:50,850
+Which gives the architects the authority they need to tackle the technical stuff.
+
+45
+00:02:50,940 --> 00:02:55,180
+Exactly. Which leads us to phase five, execute and govern.
+
+46
+00:02:55,220 --> 00:02:57,380
+The big question is: how do we sustain this?
+
+47
+00:02:57,420 --> 00:02:59,180
+And this is an ongoing phase, right? Yeah.
+
+48
+00:02:59,240 --> 00:02:59,420
+Yeah.
+
+49
+00:02:59,450 --> 00:03:07,920
+A small permanent team of maybe two to four senior architects turns the enterprise architecture into a living register.
+
+50
+00:03:07,940 --> 00:03:13,660
+While the enterprise architecture board does quarterly reviews indefinitely just to keep everything aligned.
+
+51
+00:03:13,720 --> 00:03:17,440
+You got it. But I do need to warn you about something.
+
+52
+00:03:17,480 --> 00:03:22,440
+When urgent monetization is needed, there is this huge pressure to just skip a phase.
+
+53
+00:03:22,900 --> 00:03:24,360
+Oh, right, just to save time.
+
+54
+00:03:24,540 --> 00:03:28,520
+Right. But skipping will cost you several times what it appeared to save.
+
+55
+00:03:28,760 --> 00:03:31,280
+Because you have to discover before you measure.
+
+56
+00:03:31,460 --> 00:03:38,100
+Yes, and adapt before you plan. Without that factual baseline, any gap analysis is totally invalid.
+
+57
+00:03:38,300 --> 00:03:42,100
+And without the adapted framework, your roadmap just fails during implementation.
+
+58
+00:03:42,220 --> 00:03:44,940
+Exactly. Well, okay, let's go back to that retrieval question from the beginning.
+
+59
+00:03:44,980 --> 00:03:46,040
+The total timeline.
+
+60
+00:03:46,080 --> 00:03:48,000
+Yeah. How long does this whole process take?
+
+61
+00:03:48,329 --> 00:03:51,300
+The answer is week one to week twenty-six.
+
+62
+00:03:51,400 --> 00:03:54,140
+It takes exactly six months to get a roadmap.
+
+63
+00:03:54,180 --> 00:03:59,240
+Discovery begins on week one, and by week twenty-six, an approved roadmap goes to cabinet.
+
+64
+00:03:59,480 --> 00:04:04,180
+So months, not years, is an actual reality, not just some catchy slogan.
+
+65
+00:04:04,300 --> 00:04:13,170
+Absolutely. Now that you see exactly what the life cycle work entails, the question is: what are the four specific asks you will need from your minister to actually run it?
+
+66
+00:04:13,470 --> 00:04:15,030
+That is something to really think about.
+
+67
+00:04:15,280 --> 00:04:18,240
+We will cover that in the next video. Sources are in the video description.

@@ -33,3 +33,10 @@ __pycache__/
 
 # Rendered video — regenerate from deck + audio + cues via kp-slidecast
 *.mp4
+
+# Per-host stems from the voice swap (Step 4b) — rebuildable from the take
+*_Stem-*.wav
+
+# Camera source + QA frame grabs — large, not versioned, live outside git
+*.mov
+**/video/_qa/

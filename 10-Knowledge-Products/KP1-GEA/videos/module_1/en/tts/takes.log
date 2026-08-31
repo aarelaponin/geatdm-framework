@@ -1,0 +1,4 @@
+ts	script	config	audio	model	tokens_in	tokens_out	usd	duration_s
+2026-08-29T15:15:01+00:00	KP1_M1_1.1_InterviewScript_v0.1.md	KP1_M1_1.1_TTSConfig_v0.1.json	KP1_M1_1.1_Audio_v0.3.m4a	gemini-3.1-flash-tts-preview	893	6877	0.1384	214.9
+2026-08-29T15:18:08+00:00	KP1_M1_1.1_InterviewScript_v0.1.md	KP1_M1_1.1_TTSConfig_v0.1.json	KP1_M1_1.1_Audio_v0.4.m4a	gemini-3.1-flash-tts-preview	893	6905	0.1390	215.8
+2026-08-29T15:20:14+00:00	KP1_M1_1.1_InterviewScript_v0.1.md	KP1_M1_1.1_TTSConfig_v0.1.json	KP1_M1_1.1_Audio_v0.5.m4a	gemini-3.1-flash-tts-preview	916	8140	0.1637	254.4

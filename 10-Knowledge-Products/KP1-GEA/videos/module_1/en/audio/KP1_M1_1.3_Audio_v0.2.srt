@@ -1,0 +1,271 @@
+1
+00:00:00,120 --> 00:00:01,220
+Welcome back to the Deep Dive.
+
+2
+00:00:01,980 --> 00:00:07,470
+So, um, today we're looking at a pretty massive headache for government digital systems.
+
+3
+00:00:07,880 --> 00:00:14,780
+We are exploring why these systems remain so fragmented even when there are, you know, strict national strategies in place.
+
+4
+00:00:14,840 --> 00:00:19,810
+Yeah, it's a huge issue because even when procurement rules mandate things like open APIs,
+
+5
+00:00:20,440 --> 00:00:20,560
+uh,
+
+6
+00:00:21,200 --> 00:00:24,870
+the citizen still ends up filling out the exact same form five times.
+
+7
+00:00:25,020 --> 00:00:26,080
+Right. Exactly.
+
+8
+00:00:26,680 --> 00:00:31,380
+And if you are reviewing new technology deployments in your ministry, you see this constantly.
+
+9
+00:00:31,590 --> 00:00:40,510
+You might ask, why does a newly funded program inside your ministry still build its own, uh, isolated payments or identity system instead of just sharing?
+
+10
+00:00:40,780 --> 00:00:45,120
+Well, the standard assumption is that these project teams just lack, you know, technical discipline.
+
+11
+00:00:45,180 --> 00:00:47,080
+Yeah. But that is actually not the case at all.
+
+12
+00:00:47,160 --> 00:00:51,040
+Oh, really? Yeah. Not at all. The reality is that project teams are highly rational.
+
+13
+00:00:51,480 --> 00:00:53,360
+They do exactly what they are funded to do.
+
+14
+00:00:53,520 --> 00:00:54,780
+Which is what? Just get it done.
+
+15
+00:00:54,920 --> 00:00:57,500
+Exactly. They need to ship on time and on budget.
+
+16
+00:00:57,840 --> 00:01:02,930
+But wait, wouldn't reusing another ministry's existing system be, like, way easier and cheaper for them?
+
+17
+00:01:03,380 --> 00:01:04,180
+You would think so, right.
+
+18
+00:01:04,860 --> 00:01:10,480
+But reusing means they have to learn the other system, negotiate access, and, uh,
+
+19
+00:01:11,520 --> 00:01:14,000
+basically accept another ministry's delays.
+
+20
+00:01:14,100 --> 00:01:16,400
+Oh, I see. So they just take the path of least resistance.
+
+21
+00:01:16,600 --> 00:01:21,460
+Yeah. Building custom system or a new register is simply faster for that one specific project.
+
+22
+00:01:22,240 --> 00:01:24,700
+Procurement rules can require certain behavior, sure,
+
+23
+00:01:25,340 --> 00:01:30,340
+but they cannot magically make interoperability the cheapest choice for an isolated project team.
+
+24
+00:01:30,440 --> 00:01:30,760
+Right.
+
+25
+00:01:31,480 --> 00:01:32,410
+So, um,
+
+26
+00:01:33,360 --> 00:01:35,580
+how do we actually change the incentives then?
+
+27
+00:01:35,680 --> 00:01:38,560
+How do we make reuse the logical choice?
+
+28
+00:01:38,600 --> 00:01:42,140
+The math only really changes when you look across the entire digital portfolio.
+
+29
+00:01:42,260 --> 00:01:43,260
+Okay. Walk me through that.
+
+30
+00:01:43,300 --> 00:01:45,140
+Sure. So let's walk through four ministries.
+
+31
+00:01:45,180 --> 00:01:48,180
+The first ministry pays to build a robust identity system.
+
+32
+00:01:48,310 --> 00:01:50,520
+Got it. Then the second ministry does not build.
+
+33
+00:01:50,560 --> 00:01:51,580
+It consumes the first one.
+
+34
+00:01:51,680 --> 00:01:52,360
+Okay. Makes sense.
+
+35
+00:01:52,400 --> 00:01:54,600
+The third ministry does not build, it consumes.
+
+36
+00:01:54,620 --> 00:01:57,000
+The fourth ministry does not build, it consumes.
+
+37
+00:01:57,040 --> 00:01:59,120
+Wow. Okay. And over time?
+
+38
+00:01:59,200 --> 00:02:05,240
+Over a five-year period, this coordinated model saves a meaningful share of its sectoral digital spend.
+
+39
+00:02:05,280 --> 00:02:09,140
+But, you know, this view requires a national enterprise architecture.
+
+40
+00:02:09,380 --> 00:02:11,360
+Right, because you have to see the big picture.
+
+41
+00:02:12,080 --> 00:02:17,840
+So what other blind spots exist when projects just operate in these silos?
+
+42
+00:02:18,290 --> 00:02:22,860
+Well, there are really two critical things that isolated projects just cannot deliver.
+
+43
+00:02:22,900 --> 00:02:25,360
+The first is sustainability.
+
+44
+00:02:25,400 --> 00:02:27,519
+What do you mean by sustainability in this context?
+
+45
+00:02:27,560 --> 00:02:33,640
+Think about it twelve years from now, the original vendor is gone, the underlying open source libraries have forked,
+
+46
+00:02:34,360 --> 00:02:36,980
+and, uh, no one actually understands the system anymore.
+
+47
+00:02:37,260 --> 00:02:41,760
+Oh, wow. Yeah, because they're incentivized to ship today, not plan for a decade later.
+
+48
+00:02:41,820 --> 00:02:44,240
+Exactly. And the second thing is complexity reduction.
+
+49
+00:02:44,280 --> 00:02:49,230
+Right. Right. To get launch approval, project teams basically say yes to everyone to please stakeholders.
+
+50
+00:02:49,860 --> 00:02:53,660
+Five years later, the system is just way too complex to even maintain safely.
+
+51
+00:02:53,670 --> 00:02:56,300
+That sounds like a nightmare for whoever inherits it.
+
+52
+00:02:56,340 --> 00:02:59,220
+So how can your program avoid repeating these exact mistakes?
+
+53
+00:02:59,450 --> 00:03:01,900
+This is where the PAERA framework comes in.
+
+54
+00:03:01,960 --> 00:03:06,829
+Oh. PAERA. It stands for the Public Administration Ecosystem Reference Architecture.
+
+55
+00:03:07,020 --> 00:03:10,200
+PAERA. Okay, what does that actually do for a ministry?
+
+56
+00:03:10,580 --> 00:03:18,560
+It documents twenty years of international lessons on which architectural decisions actually survive technology changes over time.
+
+57
+00:03:18,800 --> 00:03:19,980
+Oh, that's huge.
+
+58
+00:03:20,120 --> 00:03:26,620
+Yeah. It details what actually works. Applying this framework ensures your vendor builds on proven structural foundations.
+
+59
+00:03:26,800 --> 00:03:27,890
+So you don't have to, like,
+
+60
+00:03:28,820 --> 00:03:31,780
+finance the discovery of those lessons all over again the hard way.
+
+61
+00:03:31,840 --> 00:03:34,780
+Exactly. It removes all that unnecessary risk.
+
+62
+00:03:34,820 --> 00:03:44,320
+Well, to summarize, an enterprise architecture provides the essential planning function, which is why your minister must commission it deliberately with sustained funding.
+
+63
+00:03:44,540 --> 00:03:46,420
+Absolutely. It cannot just be an afterthought.
+
+64
+00:03:46,500 --> 00:03:46,780
+Right.
+
+65
+00:03:47,420 --> 00:03:49,480
+Well, I want to leave you with a final thought to mull over.
+
+66
+00:03:50,320 --> 00:03:54,640
+If an enterprise architecture is this vital for today's basic interoperability,
+
+67
+00:03:55,280 --> 00:04:02,430
+consider how much more critical this whole of government planning will be to survive the rapid technological shifts we're going to see over the next decade.
+
+68
+00:04:03,140 --> 00:04:05,080
+Definitely something you will need to prepare for.

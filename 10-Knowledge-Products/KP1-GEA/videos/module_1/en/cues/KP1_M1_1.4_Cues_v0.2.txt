@@ -1,0 +1,13 @@
+# Slide cue file — KP1 Module 1, Video 1.4 "Why an EA matters more now"
+# Deck:  KP1_M1_1.4_Deck_v0.1.pptx (9 slides)
+# Audio: KP1_M1_1.4_Audio_v0.2.m4a
+# Source: KP1_M1_1.4_Audio_v0.2.srt — cues matched to SRT content beats.
+0:00   # slide 1 — Title card
+0:09   # slide 2 — 1.4 Why an EA matters more now
+0:19   # slide 3 — Putting paper online is no longer the main work
+1:01   # slide 4 — The new work redesigns how citizens are served
+1:49   # slide 5 — The new work needs business and IT to decide together
+2:12   # slide 6 — They sit in the same meeting — and miss each other
+2:47   # slide 7 — An EA gives both sides one language
+3:35   # slide 8 — In the era of digitising paper, an EA was useful
+4:26   # slide 9 — Sources

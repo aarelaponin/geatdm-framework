@@ -1,0 +1,25 @@
+{
+  "_voices": "Aoede/Charon, frozen 2026-08-29, unchanged in v0.2 — see kp-interview-tts/references/voice-pairs.md. Changing this orphans every KP1 EN video made before it.",
+  "model": "gemini-3.1-flash-tts-preview",
+  "language": "en",
+  "target_seconds": 240,
+  "wpm": 150,
+  "speakers": [
+    {
+      "name": "Nadia",
+      "role": "interviewer",
+      "voice": "Aoede"
+    },
+    {
+      "name": "Daniel",
+      "role": "expert",
+      "voice": "Charon"
+    }
+  ],
+  "director_preamble": "Read the following as a recorded policy interview between two senior advisers preparing a government minister. Nadia is the interviewer, speaking for a ministry that already runs these systems; Daniel is a senior enterprise architect. The register is an expert policy briefing: collegial, measured, professional. Not a podcast — no reaction noises, no overlapping speech, no rising enthusiasm. Pace about 150 words per minute. Much of the audience is listening in English as an additional language, so keep the diction clear. Pause for a full beat at every full stop, and leave a clear breath between speakers so the recording can be cut against slides. Hold a steady volume throughout. Read every sentence as written.",
+  "pronunciations": {
+    "PAERA": "PAH-eh-rah",
+    "GovStack": "GOV-stack"
+  },
+  "_pace": "Per-slide chunked synthesis (the default since 2026-08-29), so each request is 25-95 s and the pace behaviour of a short audition applies rather than that of a 4-minute take. v0.5 was whole-take with emphatic slow wording and came out at 136 wpm, which the reviewer called too slow. This asks 150 and keeps only the pause instructions, not the 'speak slowly / never rush' adjectives that overshot to 118 on the probe."
+}

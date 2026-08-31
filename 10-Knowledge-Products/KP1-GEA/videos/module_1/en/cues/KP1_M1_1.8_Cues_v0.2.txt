@@ -1,0 +1,13 @@
+# Slide cue file — KP1 Module 1, Video 1.8 "Four signposts — three African, one international"
+# Deck:  KP1_M1_1.8_Deck_v0.1.pptx (9 slides)
+# Audio: KP1_M1_1.8_Audio_v0.2.m4a
+# Source: KP1_M1_1.8_Audio_v0.2.srt — cues matched to SRT content beats.
+0:00   # slide 1 — Title card
+0:19   # slide 2 — 1.8 Four signposts
+0:45   # slide 3 — Rwanda — small country, strong centre
+1:32   # slide 4 — Kenya — the obstacles are concrete and documented
+2:14   # slide 5 — South Africa — where you cannot impose, you federate
+2:58   # slide 6 — Estonia — the polestar, not the template
+3:51   # slide 7 — Four very different countries — the same four elements
+4:19   # slide 8 — The pattern travels
+4:50   # slide 9 — Sources

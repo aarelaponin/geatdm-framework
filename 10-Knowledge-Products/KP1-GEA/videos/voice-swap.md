@@ -1,5 +1,11 @@
 # Voice swap — putting your own voice on a NotebookLM take
 
+> **This procedure is for the NotebookLM path only.** On the default TTS path
+> (`kp-interview-tts`) the voices are chosen at synthesis time, so a voice change is an edit to
+> the subtopic's `TTSConfig` plus a re-roll (~$0.10) — no Descript, no stems, no Voice Changer,
+> and no `Voiced` artefact. The cast lives in `kp-interview-tts/references/voice-pairs.md`, and
+> the same rule holds there: changing it orphans every video made before it.
+
 **Step 4b of the video track.** Runs between the audit (5b) and the cue file (6), once per topic per
 language. Manual, in two browser tools — there is no API path, because NotebookLM has no voice
 picker and Descript has no export-by-speaker.

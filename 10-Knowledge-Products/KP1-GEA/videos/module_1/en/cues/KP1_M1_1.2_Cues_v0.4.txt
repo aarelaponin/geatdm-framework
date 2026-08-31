@@ -1,0 +1,12 @@
+# Slide cue file — KP1 Module 1, Video 1.2 "What an EA actually is"
+# Deck:  KP1_M1_1.2_Deck_v0.1.pptx (8 slides)
+# Audio: KP1_M1_1.2_Audio_v0.4.m4a
+# Source: KP1_M1_1.2_Audio_v0.4.srt — cues matched to SRT content beats.
+0:00   # slide 1 — Title card
+0:13   # slide 2 — 1.2 What an EA actually is
+0:41   # slide 3 — An EA is the agreed picture — not software you buy
+1:39   # slide 4 — Minister, donor, vendor — all use the same picture
+2:46   # slide 5 — The picture has four parts
+3:58   # slide 6 — Written down, a list of projects becomes a system
+4:07   # slide 7 — An EA is the agreed picture of your government
+4:29   # slide 8 — Sources

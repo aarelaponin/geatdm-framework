@@ -1,0 +1,12 @@
+# Slide cue file — KP1 Module 1, Video 1.5 "Why PAERA-anchored"
+# Deck:  KP1_M1_1.5_Deck_v0.1.pptx (8 slides)
+# Audio: KP1_M1_1.5_Audio_v0.2.m4a
+# Source: KP1_M1_1.5_Audio_v0.2.srt — cues matched to SRT content beats.
+0:00   # slide 1 — Title card
+0:35   # slide 2 — 1.5 Why PAERA-anchored
+0:56   # slide 3 — Two paths — one costs you a year before work begins
+1:18   # slide 4 — Five things you do not pay to invent
+4:10   # slide 5 — One framework — every sector reuses the investment
+4:46   # slide 6 — PAERA connects your team to a working network
+5:08   # slide 7 — PAERA is not a vendor choice
+5:42   # slide 8 — Sources

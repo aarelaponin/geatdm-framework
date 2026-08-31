@@ -1,0 +1,13 @@
+# Slide cue file — KP1 Module 1, Video 1.7 "What you will need from your minister"
+# Deck:  KP1_M1_1.7_Deck_v0.1.pptx (9 slides)
+# Audio: KP1_M1_1.7_Audio_v0.2.m4a
+# Source: KP1_M1_1.7_Audio_v0.2.srt — cues matched to SRT content beats.
+0:00   # slide 1 — Title card
+0:10   # slide 2 — 1.7 What you will need from your minister
+0:55   # slide 3 — Ask 1 — A small permanent EA team
+1:41   # slide 4 — Ask 2 — An EA Board with binding authority
+2:33   # slide 5 — Ask 3 — About 2% of digital budget, for five years
+3:01   # slide 6 — Ask 4 — One promise: the team stays protected
+3:54   # slide 7 — Be honest about the time horizon
+4:31   # slide 8 — A team. A Board. A budget envelope. A promise.
+4:55   # slide 9 — Sources

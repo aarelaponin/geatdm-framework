@@ -1,0 +1,315 @@
+1
+00:00:00,160 --> 00:00:00,340
+So,
+
+2
+00:00:01,160 --> 00:00:03,230
+uh, if you run government systems,
+
+3
+00:00:03,940 --> 00:00:07,860
+you probably know the absolute dread of kicking off a new digital initiative.
+
+4
+00:00:07,940 --> 00:00:09,240
+Oh, absolutely. It's daunting.
+
+5
+00:00:09,440 --> 00:00:18,880
+Right. I mean, it usually means twelve to eighteen months of just highly paid consultants drafting endless diagrams and, you know, arguing over
+
+6
+00:00:18,900 --> 00:00:22,200
+definitions before a single line of actual architecture is even drawn.
+
+7
+00:00:22,380 --> 00:00:28,840
+Yeah. You end up paying heavily for the groundwork rather than, well, paying for the digital infrastructure your country actually needs.
+
+8
+00:00:28,960 --> 00:00:34,640
+It's basically like spending a year inventing a brand-new alphabet just so you can finally sit down and write a book.
+
+9
+00:00:34,680 --> 00:00:35,900
+That's a great way to put it.
+
+10
+00:00:35,940 --> 00:00:38,920
+But for today's deep dive, we're talking about skipping that entirely.
+
+11
+00:00:38,940 --> 00:00:47,280
+We're looking at the PEERA framework, spelled P-A-E-R-A, which stands for the Public Administration Ecosystem Reference Architecture.
+
+12
+00:00:47,320 --> 00:00:49,720
+Right, which was published in twenty twenty-four under GovStack.
+
+13
+00:00:49,780 --> 00:00:52,780
+Exactly. And it essentially hands your team the dictionary on day one.
+
+14
+00:00:52,960 --> 00:00:54,740
+I mean, it basically gives you a five-year head start.
+
+15
+00:00:54,980 --> 00:00:55,540
+It really does,
+
+16
+00:00:56,380 --> 00:00:59,400
+because normally a ministry takes what we can call path one, right?
+
+17
+00:00:59,940 --> 00:01:02,200
+Designing a custom framework totally from scratch.
+
+18
+00:01:02,280 --> 00:01:03,080
+The eighteen-month-- Wait.
+
+19
+00:01:03,460 --> 00:01:11,590
+Right. But path two, which is anchoring on PEER, recognizes that public sector use cases share a whole lot of DNA.
+
+20
+00:01:12,400 --> 00:01:18,280
+Since that foundational groundwork is already done, your actual architecture work begins on day one.
+
+21
+00:01:18,320 --> 00:01:20,320
+Okay, so let's unpack the mechanics here.
+
+22
+00:01:20,380 --> 00:01:26,370
+If we aren't waiting around a year and a half for consultants to define our systems, what exactly are we getting out of the box?
+
+23
+00:01:27,100 --> 00:01:32,200
+So you inherit five distinct assets that you just no longer have to pay to invent.
+
+24
+00:01:32,520 --> 00:01:34,560
+Nice. What's the first one?
+
+25
+00:01:34,620 --> 00:01:38,170
+First, you get a pre-built classification system for government bodies.
+
+26
+00:01:38,560 --> 00:01:47,320
+Instead of spending months debating legal boundaries, every entity is already categorized as, you know, a policy unit, a regulatory agency, or a service delivery authority.
+
+27
+00:01:47,400 --> 00:01:51,910
+Wow. Okay. That must immediately clarify their legal permissions and how they interact with each other.
+
+28
+00:01:52,000 --> 00:01:54,020
+Exactly. It cuts out so much internal friction.
+
+29
+00:01:54,060 --> 00:01:57,700
+And I know the second asset tackles a pretty similar bottleneck vocabulary.
+
+30
+00:01:57,780 --> 00:01:59,460
+Ah, yes, the definitions.
+
+31
+00:01:59,560 --> 00:02:07,200
+Right. PEER provides plain terms that are defined immediately, words like capability, service application, or, uh, data domain.
+
+32
+00:02:07,620 --> 00:02:12,940
+Which is huge because when IT and your legal department sit in a room, they're actually speaking the same language now.
+
+33
+00:02:13,600 --> 00:02:15,660
+A data domain isn't up for interpretation.
+
+34
+00:02:15,760 --> 00:02:18,980
+It's just a fixed boundary of information everyone already agrees on.
+
+35
+00:02:19,170 --> 00:02:20,140
+Makes total sense.
+
+36
+00:02:20,170 --> 00:02:26,930
+And that shared language is what makes the third asset work, which is a library of common building blocks.
+
+37
+00:02:27,260 --> 00:02:34,980
+We're talking published specifications and working examples for foundational systems, things like digital identity, payments, and registers.
+
+38
+00:02:35,180 --> 00:02:39,660
+And just to clarify, for anyone who might mix those up, registers, not registries.
+
+39
+00:02:39,760 --> 00:02:41,180
+Right. Very important distinction.
+
+40
+00:02:41,260 --> 00:02:49,620
+Because a registry is just an index pointing to where information lives, but a register is the actual authoritative, legally binding source of that data itself.
+
+41
+00:02:50,310 --> 00:02:56,040
+Having a blueprint for a true register ready to go prevents, well, massive integration failures down the line.
+
+42
+00:02:56,340 --> 00:03:00,900
+Spot on. Which brings us to the fourth asset: ten architectural principles.
+
+43
+00:03:01,460 --> 00:03:05,760
+These range from baking in the rule of law to ensuring user-centered design.
+
+44
+00:03:05,820 --> 00:03:09,640
+And those have already been debated and refined across multiple countries, right?
+
+45
+00:03:09,720 --> 00:03:12,560
+Exactly. So you don't have to litigate policy from scratch.
+
+46
+00:03:13,500 --> 00:03:17,000
+And finally, the fifth asset is a ready-to-use life cycle.
+
+47
+00:03:17,020 --> 00:03:24,520
+It guides your team through specific governed phases: discover, assess, adapt, plan, execute, and govern.
+
+48
+00:03:24,840 --> 00:03:29,580
+Wait. It even includes the exact roles and sign-offs required for each of those phases, doesn't it?
+
+49
+00:03:29,660 --> 00:03:30,820
+It does. It maps it all out.
+
+50
+00:03:31,080 --> 00:03:35,560
+Okay. So I definitely see how this saves time, but I do have a genuine concern here.
+
+51
+00:03:35,660 --> 00:03:43,720
+If every single country adopts these exact same five assets, doesn't that just force every government's architecture to be identical?
+
+52
+00:03:43,730 --> 00:03:44,950
+Like really rigid?
+
+53
+00:03:45,480 --> 00:03:50,450
+That's a super common concern, but adopting peers doesn't make your system rigid, it makes it modular.
+
+54
+00:03:50,580 --> 00:03:56,320
+Okay. How so? What happens when your specific country has a totally unique regulatory environment?
+
+55
+00:03:56,360 --> 00:03:59,880
+Well, you extend these baseline principles to fit your country's specific laws.
+
+56
+00:04:00,130 --> 00:04:03,620
+The point is simply that you don't waste your budget drafting the absolute basics.
+
+57
+00:04:03,960 --> 00:04:10,100
+You start from a functional foundation, which frees up your resources to focus, you know, exclusively on your unique local needs.
+
+58
+00:04:10,240 --> 00:04:12,980
+Got it. So let's look at the practical application of that.
+
+59
+00:04:13,720 --> 00:04:17,600
+Say your minister successfully establishes this within the Ministry of Health.
+
+60
+00:04:18,320 --> 00:04:22,450
+How does that translate when you want to expand into, say, education or agriculture?
+
+61
+00:04:23,140 --> 00:04:26,000
+That is where the financial leverage really kicks in.
+
+62
+00:04:26,060 --> 00:04:32,220
+Once you build this enterprise architecture capacity in one sector, you reuse the exact same investment.
+
+63
+00:04:32,460 --> 00:04:33,620
+So you don't have to start over.
+
+64
+00:04:33,680 --> 00:04:38,060
+Exactly. You don't rebuy the framework. You don't retrain your staff on new definitions.
+
+65
+00:04:38,100 --> 00:04:43,480
+Implementing the second sector is significantly cheaper and faster, and the third is cheaper still.
+
+66
+00:04:43,540 --> 00:04:46,720
+Because the underlying alphabet is exactly the same across the board.
+
+67
+00:04:46,930 --> 00:04:50,980
+Precisely. And this interoperability connects outward to GovMarket too, right?
+
+68
+00:04:51,020 --> 00:04:58,250
+Yes. GovMarket is essentially a marketplace of vendor-built implementations that have already been checked for compliance against these exact standards.
+
+69
+00:04:58,310 --> 00:05:01,320
+So you aren't just guessing if a vendor's payment module works.
+
+70
+00:05:01,340 --> 00:05:05,700
+Right. By adopting Tiera, you join a working network of countries and partners.
+
+71
+00:05:05,840 --> 00:05:08,380
+You know the module already complies with your architecture.
+
+72
+00:05:08,400 --> 00:05:12,000
+So ultimately, adopting this isn't just about picking a vendor.
+
+73
+00:05:12,040 --> 00:05:16,900
+It's a strategic decision to reuse the groundwork other nations have already perfected.
+
+74
+00:05:16,960 --> 00:05:23,720
+Exactly. It ensures your team spends its time entirely on local solutions, not reinventing the wheel.
+
+75
+00:05:24,260 --> 00:05:30,980
+Well, we know the PEERA life cycle can yield a working digital roadmap in just six months, requiring only four sign-offs.
+
+76
+00:05:31,020 --> 00:05:34,140
+But, uh, here's something for you to chew on as we wrap up today.
+
+77
+00:05:34,200 --> 00:05:44,080
+Yeah. If the PEERA life cycle can yield a working digital roadmap that quickly with so few hurdles, how much faster could your most ambitious stalled projects finally get off the ground if you
+
+78
+00:05:44,140 --> 00:05:45,770
+just stopped trying to invent the alphabet?
+
+79
+00:05:46,600 --> 00:05:47,280
+Something to think about.
