@@ -188,8 +188,21 @@ grammar (section + content + sources + 1 title card).
 
 Ship `KP*_Module*_Scripts_v0.X.md` alongside the deck: narration only, one section per video, opening
 with the single message, then the voice-over under headings matching the deck's slide titles, sources
-slides marked "*(No narration.)*". It is generated from the same content as the notes — keep the two
-in sync by editing the build script first.
+slides marked "*(No narration.)*". Generate it from the built deck rather than writing it twice — the
+notes already are the voice-over, so deriving it is what keeps the two in sync:
+
+```bash
+python scripts/scripts_from_deck.py \
+  videos/module_2/en/decks/KP1_M2_Deck_v0.1.pptx \
+  videos/module_2/en/decks/split_spec.json \
+  videos/module_2/en/scripts/ --kp KP1 --module 2 --prefix KP1_M2
+```
+
+It writes the combined companion plus one file per video, and drops the production cues that share the
+notes with the narration. **A note paragraph counts as narration only if it opens with the `VO:` or
+`VO, slide N:` marker** — so write notes that way, keep every cue in its own paragraph, and read the
+"production cues dropped" list the script prints to confirm no narration was thrown away. Re-run it
+after any rebuild of the deck.
 
 ## Gotchas
 
