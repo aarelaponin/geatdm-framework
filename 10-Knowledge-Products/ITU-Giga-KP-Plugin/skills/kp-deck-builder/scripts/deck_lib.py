@@ -166,6 +166,22 @@ def num_chip(slide, x, y, n, d=0.34):
     return c
 
 
+def rows_block(prs, head, rows, closing, tag, note, numbered=True, top=1.6, bottom=6.3,
+               head_size=19):
+    """`rows_slide` with a headline, a footer tag and a closing line under the rows. The shape
+    to reach for wherever a bundle cue says 'N text rows'; the closing line is where the list
+    lands."""
+    s = add_slide(prs, LAYOUT_WHITE)
+    title(s, head)
+    rows_slide(s, rows, top=top, bottom=bottom, numbered=numbered, head_size=head_size)
+    if closing:
+        tb = box(s, 0.72, bottom + 0.12, 11.9, 0.6)
+        set_text(tb.text_frame, [[(closing, 15.5, True, ITU_BLUE_DARK, False)]])
+    footer(s, tag)
+    notes(s, note)
+    return s
+
+
 # ---------------------------------------------------------------- slide furniture
 def tick(slide):
     """The small ITU-blue tick top-left of content slides (mirrors the template look)."""

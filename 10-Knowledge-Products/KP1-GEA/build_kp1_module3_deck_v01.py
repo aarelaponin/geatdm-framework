@@ -16,7 +16,7 @@ from deck_lib import (
     LAYOUT_THANKS, LAYOUT_WHITE,
     add_slide, big_slide, block_slide, box, delete_template_slides, edit_agenda,
     edit_cover, footer, two_panel,
-    mini_strip, notes, open_template, panel, panel_text, rows_slide,
+    mini_strip, notes, open_template, panel, panel_text, rows_block,
     section_slide, set_text, sources_slide, title)
 
 from pptx.util import Pt
@@ -27,21 +27,6 @@ AUDIENCE = 'Chief architect · senior architect · sector ICT lead'
 
 
 # ---------------------------------------------------------------- module-local composites
-def rows_block(head, rows, closing, tag, note, numbered=True, top=1.6, bottom=6.3, head_size=19):
-    """Stacked rows with a closing line under them. Module 3 is a module of short lists —
-    the repository's contents, the graduation signs, the update triggers, the gate questions —
-    so this shape recurs; the closing line is where each list lands."""
-    s = add_slide(prs, LAYOUT_WHITE)
-    title(s, head)
-    rows_slide(s, rows, top=top, bottom=bottom, numbered=numbered, head_size=head_size)
-    if closing:
-        tb = box(s, 0.72, bottom + 0.12, 11.9, 0.6)
-        set_text(tb.text_frame, [[(closing, 15.5, True, ITU_BLUE_DARK, False)]])
-    footer(s, tag)
-    notes(s, note)
-    return s
-
-
 def fade_slide(head, idx, fade, counter, tag, note):
     """The four fade-modes of 3.7: same How-it-fades / The-counter bands every time, so the
     pattern itself teaches. Only the progress strip moves."""
@@ -130,7 +115,7 @@ section('3.1', 'Set up the one place your architecture lives',
         "Enterprise Architecture needs a home — one place where the current picture lives, that "
         "everyone works from. That home is the repository.")
 
-rows_block('A repository is a discipline, not a product',
+rows_block(prs, 'A repository is a discipline, not a product',
            [('The four layers', 'The capabilities, data domains, applications and technology you mapped.'),
             ('The relationships', 'How they connect, expressed with the shared entities.'),
             ('The decisions', 'What the EA Board ruled — and why it ruled that way.')],
@@ -253,7 +238,7 @@ section('3.2', 'Choose EA tooling without locking yourself in',
         "vendor lock-in, you can lock yourself into the tool. Here is how to choose without falling "
         "into that trap.")
 
-rows_block('Graduate when the spreadsheet hurts in three specific ways',
+rows_block(prs, 'Graduate when the spreadsheet hurts in three specific ways',
            [('You cannot see the relationships any more', 'They are scattered across tabs.'),
             ('Several people edit, and their changes collide', ''),
             ('A simple cross-layer question costs an afternoon',
@@ -361,7 +346,7 @@ block_slide(prs, 'When everyone owns currency, no one does',
             "accountability. That person does not do all the updating, but they are answerable for "
             "whether the picture is true.")
 
-rows_block('Tie updates to events, because a yearly review is eleven months stale',
+rows_block(prs, 'Tie updates to events, because a yearly review is eleven months stale',
            [('A system goes live', 'Update the application layer.'),
             ('A system is retired', 'Remove it.'),
             ('A new data domain appears', 'Add it, with its owner.'),
@@ -375,7 +360,7 @@ rows_block('Tie updates to events, because a yearly review is eleven months stal
            "the capabilities. When a real-world change happens, the repository changes with it. "
            "Events drive updates, not the calendar.")
 
-rows_block('A light gate keeps the repository conformant as it grows',
+rows_block(prs, 'A light gate keeps the repository conformant as it grows',
            [('Does the update use the shared entities correctly?', ''),
             ('Does every data domain still have exactly one owner?', ''),
             ('Is every decision logged with its reason?', '')],
@@ -460,7 +445,7 @@ block_slide(prs, 'The chair decides whether the no sticks',
             "advise it, you bring the analysis. The authority to decide sits with someone who can "
             "carry it politically. The architect informs; the chair decides.")
 
-rows_block('Membership follows the affected systems, not convenience',
+rows_block(prs, 'Membership follows the affected systems, not convenience',
            [('The sector ministry CIOs', 'Their systems carry the decisions.'),
             ('The owners of the major state registries', 'The identity authority, the population register.'),
             ('The data-protection regulator', 'Wherever data-sharing is in play.'),
@@ -491,7 +476,7 @@ two_panel(prs, 'Govern on a cadence that does not become the bottleneck',
           "slow, projects will route around it, and you are back to no governance. Binding "
           "authority plus responsiveness is what keeps projects coming through the front door.")
 
-rows_block('The Board is the standing rhythm no single project can provide',
+rows_block(prs, 'The Board is the standing rhythm no single project can provide',
            [('The repository gives the shared picture', ''),
             ('The metamodel gives the shared words', ''),
             ('The Board gives the shared rhythm',
@@ -537,7 +522,7 @@ section('3.5', 'Review projects against the architecture',
         "does its real work — not on a wall, but at the moment a project would otherwise quietly "
         "build its own version of something the country already has.")
 
-rows_block('Five questions, asked of every project, the same way every time',
+rows_block(prs, 'Five questions, asked of every project, the same way every time',
            [('Does a shared building block already exist for this?', ''),
             ('What data domains do you touch — and do you consume the owner’s copy?', ''),
             ('Do you meet the architecture principles — security by design, once-only, the rest?', ''),
@@ -638,7 +623,7 @@ section('3.6', 'Show the EA is working — the few metrics that matter',
         "single number they would put in front of the budget authority. The answer — the re-use "
         "rate — is delivered two slides on.")
 
-rows_block('Four numbers carry most of the signal',
+rows_block(prs, 'Four numbers carry most of the signal',
            [('Coverage', 'How much of your government is actually in the repository — and current.'),
             ('Re-use rate', 'Of the projects that came through the gate, how many consumed a shared '
                             'block instead of building their own.'),

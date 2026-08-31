@@ -1,0 +1,65 @@
+{
+  "kicker_prefix": "KP1 · Government Enterprise Architecture · Module 4",
+  "audience": "Chief architect · senior architect · sector ICT lead",
+  "out_pattern": "KP1_M4_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "Running the whole method",
+  "cover_subtitle_marker": "Eight standalone videos",
+  "videos": [
+    {
+      "code": "4.1",
+      "title": "Meet Progressa — a real sector with a real fragmentation problem",
+      "mins": "~5",
+      "range": [3, 9],
+      "message": "Progressa is a demonstration education sector with the fragmentation problem most countries share — the same learner registered in several places, identity proven on paper. Meet its institutions and its problem, because the rest of this module runs the full method on exactly this canvas."
+    },
+    {
+      "code": "4.2",
+      "title": "Phase 1, Discover — map what the sector has today",
+      "mins": "~5",
+      "range": [10, 16],
+      "message": "Discovery produces one deliverable — an honest picture of what the sector has today, with no recommendations yet — signed off as accurate before any analysis begins. Watch it done on Progressa."
+    },
+    {
+      "code": "4.3",
+      "title": "Phase 2, Assess — find the gaps and rank them",
+      "mins": "~5",
+      "range": [17, 23],
+      "message": "Assess turns Progressa's picture into a ranked gap analysis — the right problems, in the right order — signed off as ground truth. It is the assessment method applied to a real sector."
+    },
+    {
+      "code": "4.4",
+      "title": "Phase 3, Adapt — fit PAERA and decide build, buy or share",
+      "mins": "~5",
+      "range": [24, 30],
+      "message": "Adapt fits PAERA to Progressa — localising principles, setting sector priorities, and deciding for each building block whether to build, buy, share or sandbox — signed off as the framework and sourcing approach."
+    },
+    {
+      "code": "4.5",
+      "title": "Phase 4, Plan — design the target architecture",
+      "mins": "~5",
+      "range": [31, 37],
+      "message": "Between the gaps and the roadmap sits the deliverable the whole EA is for — the target architecture: a future-state picture of the capabilities, the data owners, the shared platforms and the integration map your government should have. Design it by applying your principles to the gaps, and the roadmap finally has somewhere to go."
+    },
+    {
+      "code": "4.6",
+      "title": "Phase 4, Plan — sequence the roadmap and cost it",
+      "mins": "~5",
+      "range": [38, 44],
+      "message": "Plan turns Progressa's decisions into a sequenced, costed roadmap in waves — the deliverable the minister takes to cabinet — signed off with budget committed."
+    },
+    {
+      "code": "4.7",
+      "title": "Phase 5, Execute & Govern — stand up the living EA",
+      "mins": "~5",
+      "range": [45, 52],
+      "message": "Execute & Govern makes Progressa's architecture live — the repository, the Board, and the review gate that catches a project trying to build its own learner list and tells it to consume the registry. This is where re-use actually happens."
+    },
+    {
+      "code": "4.8",
+      "title": "Run this on your own sector — the transferable recipe",
+      "mins": "~4",
+      "range": [53, 59],
+      "message": "The five phases, four sign-offs and six deliverables you watched on Progressa are the recipe — change the institutions and the data domains, and the same method runs on any sector you are handed."
+    }
+  ]
+}
