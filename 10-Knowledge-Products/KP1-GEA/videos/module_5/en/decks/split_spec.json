@@ -1,0 +1,58 @@
+{
+  "kicker_prefix": "KP1 · Government Enterprise Architecture · Module 5",
+  "audience": "Chief architect · senior architect · sector ICT lead",
+  "out_pattern": "KP1_M5_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "Five AI plays",
+  "cover_subtitle_marker": "Seven standalone videos",
+  "videos": [
+    {
+      "code": "5.1",
+      "title": "Use AI as a drafting partner, not an oracle — the ground rules",
+      "mins": "~5",
+      "range": [3, 9],
+      "message": "AI is a fast drafting partner for EA work, not an oracle — it produces a strong first draft you verify, never a finding you trust. Learn the four-part prompt pattern and the one rule that makes every play safe: you decide, the AI drafts."
+    },
+    {
+      "code": "5.2",
+      "title": "Play 1 — Draft your Discovery and Assess artefacts",
+      "mins": "~5",
+      "range": [10, 16],
+      "message": "The first play turns your raw Discovery notes into a structured capture template and then a ranked gap analysis — the two hardest-to-start artefacts of the assessment — in a fraction of the time, with the politics flagged for you to handle honestly."
+    },
+    {
+      "code": "5.3",
+      "title": "Play 2 — Build the whole-of-government re-use business case",
+      "mins": "~5",
+      "range": [17, 23],
+      "message": "The second play builds the business case that makes re-use visible — a cost comparison showing that each project building its own is cheaper for the project but ruinous for the country — the number that wins the budget argument."
+    },
+    {
+      "code": "5.4",
+      "title": "Play 3 — Translate between the minister and the architects",
+      "mins": "~5",
+      "range": [24, 30],
+      "message": "The third play is a translator — it turns a minister's policy goal into architecture terms and a joint agenda, and architecture decisions back into outcomes a minister understands — so the business side and the IT side can actually decide together."
+    },
+    {
+      "code": "5.5",
+      "title": "Play 4 — Draft your governance artefacts",
+      "mins": "~4",
+      "range": [31, 37],
+      "message": "The fourth play drafts the institutional documents governance needs — the Board terms of reference, the review-gate checklist, the gate-decision paper — so you arrive at the meeting with a strong draft to edit, not a blank page to dread."
+    },
+    {
+      "code": "5.6",
+      "title": "Play 5 — Generate comparator cases and a sector-transfer plan",
+      "mins": "~4",
+      "range": [38, 44],
+      "message": "The fifth play generates the persuasion material — comparator-country cards tuned to your context with real sources, and a one-page plan to run the method on a new sector — for the briefings and pitches where you need evidence and a path."
+    },
+    {
+      "code": "5.7",
+      "title": "Keep AI honest — verify, cite, and protect data",
+      "mins": "~5",
+      "range": [45, 51],
+      "message": "The safeguards that make every play safe: verify each output against a named source, cite or discard, never paste confidential or personal data, and keep the decision human — the difference between AI that helps and AI that quietly harms."
+    }
+  ]
+}
