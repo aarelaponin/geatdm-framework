@@ -635,10 +635,6 @@ phase_slide(2, 'Localised framework with sourcing decisions — your principles,
 phase_slide(3, 'Roadmap and investment plan — target state, sequenced work, investment estimates. The deliverable your minister can take to cabinet.',
             'Roadmap approved, budget committed — by the senior decision-maker and the EA Board.', '6 to 8 weeks',
             "VO: Phase four. Plan. The question: how do we get there? Architects describe the target state and sequence the work into a roadmap with investment estimates. The senior decision-maker and the EA Board approve the roadmap and commit budget. This is the deliverable your minister can take to cabinet. Six to eight weeks.")
-phase_slide(4, 'A living, governed EA — repository plus practice. The 2–4 permanent architects keep it alive; the EA Board reviews projects against it.',
-            'Quarterly Board reviews — indefinitely. New projects reviewed against the architecture; cross-ministry decisions approved; domain boundaries enforced.', 'Ongoing — your country’s permanent way of working',
-            "VO: Phase five. Execute and Govern. The question: how do we sustain this? The approved roadmap becomes a project pipeline. The small permanent EA team — two to four senior architects — turns the EA from a one-time delivery into a living repository. The EA Board reviews new projects against the architecture, approves cross-ministry decisions, enforces boundaries between domains. Quarterly reviews. Indefinitely.")
-
 s = add_slide(prs, LAYOUT_WHITE)
 title(s, 'Your minister reviews four times — not every diagram')
 hline(s, 0.9, 2.75, 11.5, MIDGREY, weight_pt=2.5)
@@ -664,6 +660,10 @@ set_text(tb.text_frame, [
 ], space_after=Pt(8))
 footer(s, T)
 notes(s, "VO: Notice the rhythm. Four sign-offs in six months. Your minister does not review every diagram. They review at four moments, each tied to a defined deliverable. Between sign-offs, the architects work. The minister's job in between is to remove obstacles — the political ones, mostly. The technical ones are why the architects were hired.")
+
+phase_slide(4, 'A living, governed EA — repository plus practice. The 2–4 permanent architects keep it alive; the EA Board reviews projects against it.',
+            'Quarterly Board reviews — indefinitely. New projects reviewed against the architecture; cross-ministry decisions approved; domain boundaries enforced.', 'Ongoing — your country’s permanent way of working',
+            "VO: Phase five. Execute and Govern. The question: how do we sustain this? The approved roadmap becomes a project pipeline. The small permanent EA team — two to four senior architects — turns the EA from a one-time delivery into a living repository. The EA Board reviews new projects against the architecture, approves cross-ministry decisions, enforces boundaries between domains. Quarterly reviews. Indefinitely.")
 
 s = add_slide(prs, LAYOUT_WHITE)
 title(s, 'You can skip a phase — and pay for it several times over')
