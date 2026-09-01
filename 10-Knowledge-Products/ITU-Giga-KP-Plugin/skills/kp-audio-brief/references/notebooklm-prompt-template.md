@@ -19,6 +19,9 @@ notebook contains the full PAERA / EIF corpus, because the hosts are free to roa
 3. Add **at most two** background sources, and only narrow extracts (e.g. PAERA §2.1 and §5.2 —
    not the whole document). If you can, add none: the brief is self-contained.
 4. Deselect every other source before hitting Generate.
+5. Before Generate, confirm the brief is the **only** selected source and the customization box
+   actually holds the pasted text — takes that ignore both look exactly like unbriefed Deep
+   Dives (podcast open, roaming content, reflective outro).
 
 ## Step 2 — Settings
 
@@ -54,7 +57,10 @@ listener to think about other sectors or institutions. The audio ends on the bri
 handoff, then one line: "Sources are in the video description." Read no URLs.
 
 Cut all filler — "you know", "like", "I mean", "basically", "totally", "right?", "wow", "oh
-absolutely". No crosstalk or interrupting; one speaker finishes before the other begins. Use no
+absolutely". No crosstalk or interrupting; one speaker finishes before the other begins. While one host
+speaks, the other stays completely silent — no single-word confirmations such as "Right",
+"Exactly", "Mm-hmm", "Okay", "Wow". Each host speaks in complete turns. Keep the whole episode
+under about «140 × runtime minutes» spoken words. Use no
 metaphors except the single one permitted in the brief.
 
 Say "PAERA" (spelled P-A-E-R-A on first mention), "the European Interoperability Framework",
@@ -90,6 +96,8 @@ Plus the judgement calls the script cannot make:
 - [ ] Every enumerated list audible and in deck order
 - [ ] Ends on the handoff into «X.Y+1» — no reflective outro
 - [ ] Nothing said that is not in the brief
+- [ ] No backchannel loop — the hosts speak in full turns
+- [ ] Word count near «140 × runtime minutes» — a large overrun means regenerate, not trim
 - [ ] «N» clean segment boundaries you can cut cues against
 
 **If two or more checks fail, regenerate rather than edit.** NotebookLM output is cheaper to

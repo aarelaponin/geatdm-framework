@@ -56,6 +56,10 @@ Address the listener as the person who *runs* these systems and can *fix* them. 
 Cover the slides **in order**. Finish each slide's content before moving to the next. End each
 slide's segment on a complete sentence — do not let a thought straddle a slide boundary.
 
+**Word budget: about «140 × runtime minutes» spoken words in total** (140 words per minute ×
+§0's runtime). Overruns are almost always words, not pace — cut words per segment rather than
+asking for faster speech.
+
 ### Slide 1 — Title card · 0:00–0:15 (15 s)
 
 Cold open, no music bed, no "welcome to the show". Host A states the topic in one or two
@@ -75,7 +79,8 @@ longer" direction, translate it into a spoken instruction here.»
 ### Slide «last» — Sources · «start»–«end» (10 s)
 
 One line only, then stop: "Sources are in the video description." **Do not read URLs. Do not
-name section numbers. Do not summarise the sources.**
+name section numbers. Do not summarise the sources.** These are the final words of the audio.
+Nothing follows them, and no question precedes them — the take ends here.
 
 ---
 
@@ -85,11 +90,15 @@ name section numbers. Do not summarise the sources.**
   around at the other institutions in your life", no invitation to reflect on other sectors. The
   audio ends on the series handoff in the final content slide, plus the one-line sources note.
 - ❌ **No "deep dive" self-reference.** Never say "deep dive", "today we're unpacking", "welcome
-  to", "our sources", "the sources say", "here's where it gets interesting".
+  to", "our sources", "the sources say", "according to the sources", "here's where it gets
+  interesting".
 - ❌ **No invented specifics.** No named country, no cost figures, no percentages, no dates,
   no institutions other than those in §2.
 - ❌ **No filler.** Remove "you know", "like", "I mean", "basically", "totally", "sort of",
   "right?", "wow", "oh absolutely", "man". Reaction interjections should be rare and short.
+- ❌ **No backchannel.** While one host speaks, the other stays silent. No single-word
+  confirmations — "Right", "Exactly", "Mm-hmm", "Okay", "Sure", "Wow", "Got it". These are the
+  single largest source of runtime overrun. Each host speaks in complete turns of full sentences.
 - ❌ **No consumer-outrage vocabulary.** Not "broken", "chaos", "held hostage", "extortionate",
   "nightmare". Say: fragmented, duplicated, costly to change, locked in.
 - ❌ **No idioms or metaphors beyond the one permitted in §2.** Much of this audience listens in
@@ -104,6 +113,11 @@ name section numbers. Do not summarise the sources.**
 ---
 
 ## 4. Terminology and pronunciation — say these exactly
+
+**This table is a word-choice and pronunciation guide for §2's content — it is not content.**
+Do not introduce, define, or discuss any term below that does not already appear in §2. When a
+constant term below is not used by this video's §2, delete its row from the copy — hosts have
+imported unused table terms and invented content around them.
 
 | Say this | Not this |
 |---|---|

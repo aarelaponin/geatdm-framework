@@ -18,6 +18,17 @@ compatibility: Python 3 with `python-pptx` (install with `pip install python-ppt
 
 # KP audio brief — steering NotebookLM to the deck
 
+> **Every step of this skill still stands.** Step 4 of the video track — taking the brief and
+> prompt into NotebookLM — is now `kp-notebooklm-audio`, one command instead of a browser
+> session, but it changes nothing about what is generated: the brief is still the notebook's sole
+> source, the prompt file's Step 3 block is still the customization input verbatim, and the
+> settings are still Deep Dive at Shorter length. Keep the template's *Step 3 — Customization
+> prompt* heading: the runner extracts the fenced block under it and refuses to guess if it is
+> missing. Step 6 is unchanged and is still the gate.
+>
+> A fully-scripted Gemini TTS alternative, `kp-interview-tts`, is **parked** — its pilot
+> decayed 24 dB across a 4-minute take.
+
 ## Why this exists
 
 Each subtopic ships as a standalone video: a deck, a narration track, and a cue file that cuts

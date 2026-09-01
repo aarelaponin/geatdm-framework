@@ -6,7 +6,9 @@ description: >-
   diarization turned into cue boundaries and a local credits ledger. Use WHENEVER the task is
   "transcribe this audio", "get an SRT for this take", "run scribe on <file>.m4a", or a fresh
   `.m4a` lands in a module's `audio/` folder with no matching `.srt`; also for "how many
-  ElevenLabs credits are left". This is Step 5 of the video track. The API key lives in the
+  ElevenLabs credits are left". This is Step 5 of the video track, and it is unchanged by which
+  path produced the take — the audio may arrive via `kp-notebooklm-audio` (the default, one
+  command) or from a manual NotebookLM session, and both are steered by `kp-audio-brief`. The API key lives in the
   macOS Keychain and never in the repo, on a command line or in shell history. Covers the two
   failure modes specific to this Mac: the corporate proxy root that only the macOS keychain
   trusts (httpx ≥ 0.28 ignores `SSL_CERT_FILE`, so `truststore` is the fix, not a cert bundle),
