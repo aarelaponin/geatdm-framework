@@ -6,17 +6,19 @@
 # Generated .pptx is NEVER hand-edited — fix here, re-render, re-run the split
 # (kp-deck-builder/scripts/split_module_deck.py + the split spec next to the decks).
 # Override paths with TEMPLATE= and OUT_PATH= env vars.
+import math
 import os
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                 '..', 'ITU-Giga-KP-Plugin', 'skills', 'kp-deck-builder', 'scripts'))
 from deck_lib import (
-    ITU_BLUE, WHITE,
+    INK, ITU_BLUE, ITU_BLUE_DARK, LIGHT, PANEL_GREY, WHITE,
     LAYOUT_THANKS,
     add_slide, big_slide, block_slide, delete_template_slides, edit_agenda,
     edit_cover, notes, open_template, rows_block,
     section_slide, sources_slide, two_panel)
+from deck_diagrams import bars_slide, play_card, prompt_anatomy
 
 prs = open_template(os.environ.get('TEMPLATE'))
 
@@ -26,6 +28,23 @@ AUDIENCE = 'Chief architect · senior architect · sector ICT lead'
 # description, not on a slide — the bundle's slide cues put no prompt text on screen.
 PROMPT_CUE = ('On screen: the play\'s copy-paste prompt is not shown on a slide — it ships in the '
               'video description so the viewer can run it on the other half of the screen.')
+
+
+# ---------------------------------------------------------------- module-local composites
+def punch_after(lead):
+    """Where the landing panel should sit for this lead — measured from the lead's own
+    length instead of the fixed 4.85, which on a two-sentence lead leaves a blank band.
+    ponytail: a character-count estimate of wrapped height, not a real text measurement;
+    the clamp keeps it inside the safe range either way, and the render QA is the check."""
+    lines = sum(max(1, math.ceil(len(para) / 85)) for para in lead)
+    height = lines * 0.34 + (len(lead) - 1) * 0.17
+    return min(4.85, max(3.55, round(1.75 + height + 0.5, 2)))
+
+
+def blk(head, lead, punch, tag, note, **kw):
+    """block_slide with the panel pulled up to meet the lead."""
+    kw.setdefault('punch_y', punch_after(lead))
+    return block_slide(prs, head, lead, punch, tag, note, **kw)
 
 
 def section(code, name, message, runtime, note):
@@ -101,7 +120,7 @@ section('5.1', 'Use AI as a drafting partner, not an oracle — the ground rules
         "Production cue: this is the foundation video for the whole module. Every play that "
         "follows assumes the four-part prompt taught here.")
 
-block_slide(prs, 'It states a wrong figure in exactly the tone it states a right one',
+blk('It states a wrong figure in exactly the tone it states a right one',
             ['AI produces a strong first draft in minutes — a gap analysis, a terms of reference, '
              'a business case. What it does not produce is a finding you can trust without '
              'checking.',
@@ -118,34 +137,41 @@ block_slide(prs, 'It states a wrong figure in exactly the tone it states a right
             "verify, never a fact to forward.")
 
 # The module's centrepiece — the prompt shape every later play reuses.
-rows_block(prs, 'Every play in this module uses the same four-part prompt',
-           [('Name the input you are pasting.',
-             '"Below is my Discovery brief for the education sector."'),
-            ('Break the task into named outputs.',
-             '"Score the capabilities, list the gaps, rank them."'),
-            ('State the exact output format you want.',
-             '"A four-row table plus three bullets."'),
-            ('Add a safeguard line for this prompt\'s specific risk.',
-             '"Flag any gap involving a politically powerful body."')],
-           'Four parts gives you a usable artefact. "Help me with my architecture" gives you mush.',
-           T,
-           "VO: Second, the shape of a good prompt. Every play in this topic uses the same four "
-           "parts. One — name the input you are pasting: below is my Discovery brief. Two — break "
-           "the task into named outputs: score the capabilities, list the gaps, rank them. Three — "
-           "state the exact output format you want: a four-row table plus three bullets. Four — "
-           "add a safeguard line that names this prompt's specific risk. A prompt with these four "
-           "parts gives you a usable artefact. A vague one — help me with my architecture — gives "
-           "you vague mush.\n\n"
-           "Production cue: the centrepiece slide of the module. Reveal the four rows one at a "
-           "time and hold the finished slide a beat longer — every later video refers back to it.")
+prompt_anatomy(prs, 'Every play in this module uses the same four-part prompt',
+               [('Name the input you are pasting.',
+                 '"Below is my Discovery brief for the education sector."'),
+                ('Break the task into named outputs.',
+                 '"Score the capabilities, list the gaps, rank them."'),
+                ('State the exact output format you want.',
+                 '"A four-row table plus three bullets."'),
+                ('Add a safeguard line for this prompt\'s specific risk.',
+                 '"Flag any gap involving a politically powerful body."')],
+               'Four parts gives you a usable artefact. "Help me with my architecture" gives you mush.',
+               T,
+               "VO: Second, the shape of a good prompt. Every play in this module uses the same four "
+               "parts. One — name the input you are pasting: below is my Discovery brief. Two — break "
+               "the task into named outputs: score the capabilities, list the gaps, rank them. Three — "
+               "state the exact output format you want: a four-row table plus three bullets. Four — "
+               "add a safeguard line that names this prompt's specific risk. A prompt with these four "
+               "parts gives you a usable artefact. A vague one — help me with my architecture — gives "
+               "you vague mush.\n\n"
+               "Production cue: the centrepiece slide of the module. The four parts are shown as one "
+               "prompt block on the right, bracketed part by part. Reveal the four parts one at a "
+               "time and hold the finished slide a beat longer — every later video refers back to it.")
 
-block_slide(prs, 'A good safeguard names how THIS prompt can mislead you',
-            ['For a gap analysis: a severity judgement about a powerful ministry must be checked '
-             'with the decision-maker, not softened by the model.',
-             'For a comparator card: discard any country example where the cited source does not '
-             'actually say what the prompt claims.'],
-            'Not "AI can make mistakes" — that helps no one.',
-            T,
+two_panel(prs, 'A good safeguard names how THIS prompt can mislead you',
+          ('FOR A GAP ANALYSIS',
+           ['A severity judgement about a powerful ministry must be checked with the '
+            'decision-maker.',
+            'Not softened by the model.',
+            'The trap here is a model being diplomatic about power.']),
+          ('FOR A COMPARATOR CARD',
+           ['Discard any country example where the cited source does not actually say what the '
+            'prompt claims.',
+            'Discard the claim, not just the citation.',
+            'The trap here is a fluent, invented source.']),
+          'Not "AI can make mistakes" — that helps no one.',
+          T,
             "VO: On that safeguard line — it is the most important part, and the easiest to get "
             "lazy about. A good safeguard names the specific way this specific prompt can mislead "
             "you. For a gap analysis: a severity judgement about a powerful ministry must be "
@@ -155,7 +181,7 @@ block_slide(prs, 'A good safeguard names how THIS prompt can mislead you',
             "the one check that catches this play's particular trap.\n\n"
             "Production cue: this slide answers the retrieval prompt set on the title slide.")
 
-block_slide(prs, 'You decide; the AI drafts',
+blk('You decide; the AI drafts',
             ['The AI prepares the Board paper; the Board rules. It ranks the gaps; you defend the '
              'ranking. It proposes a sourcing call; the architect and the EA Board own the '
              'decision.',
@@ -180,7 +206,7 @@ big_slide(prs,
           T,
           "VO: So these are the ground rules. AI is a drafting partner, not an oracle. Use the "
           "four-part prompt. Make the safeguard specific. And keep the decision yours. Hold to "
-          "these, and the plays in this topic save you days without leading you astray. Forget "
+          "these, and the plays in this module save you days without leading you astray. Forget "
           "them, and AI becomes a fast way to be confidently wrong.")
 
 sources_slide(prs, T, [
@@ -201,15 +227,14 @@ section('5.2', 'Play 1 — Draft your Discovery and Assess artefacts',
         "template, and the ranked gap analysis. AI gets you from blank page to strong draft in "
         "minutes. Here is how it goes on a real sector.\n\n" + PROMPT_CUE)
 
-block_slide(prs, 'Step 1 — walk in with a structured sheet, not a blank notebook',
-            ['Before the interviews, you paste what you know about a body — its mandate, its known '
-             'systems, its registries. The AI returns a four-layer capture template: the right '
-             'questions per layer, a reminder to describe and not recommend, and a column to '
-             'record where each answer came from.',
-             'The template is a starting structure. You still ask the questions and record the '
-             'real answers.'],
-            'Blank page to structured sheet, before the first interview.',
-            T,
+play_card(prs, 'Step 1 — walk in with a structured sheet, not a blank notebook',
+          ["A body's mandate.", 'Its known systems.', 'Its registries.'],
+          ['A four-layer capture template.', 'The right questions per layer.',
+           "A describe-don't-recommend reminder.", 'A column for where each answer came from.'],
+          ['Ask the questions.', 'Record the real answers.',
+           'The template is a structure, never the findings.'],
+          'Blank page to structured sheet, before the first interview.',
+          T,
             "VO: Step one, before the interviews. You paste what you know about a body — its "
             "mandate, its known systems, its registries. The AI returns a four-layer capture "
             "template: the right questions to ask per layer, a reminder to describe and not "
@@ -217,13 +242,14 @@ block_slide(prs, 'Step 1 — walk in with a structured sheet, not a blank notebo
             "Discovery interview with a structured sheet instead of a blank notebook. The template "
             "is a starting structure — you still ask the questions and record the real answers.")
 
-block_slide(prs, 'Step 2 — a ranked gap analysis in minutes instead of a week',
-            ['After Discovery you paste the findings back in. On a sector like Progressa\'s '
-             'education system the AI scores the capabilities — register a learner low, certify a '
-             'result high — scans for the four common gaps, and ranks them by impact and effort.',
-             'And, crucially, it flags the gaps that involve a powerful body for honest handling.'],
-            'The skeleton of the assessment that would otherwise take a week to structure.',
-            T,
+play_card(prs, 'Step 2 — a ranked gap analysis in minutes instead of a week',
+          ['Your Discovery findings.'],
+          ['Capability maturity scored.', 'The four common gaps, found.',
+           'Ranked by impact and effort.', 'Politically sensitive gaps flagged.'],
+          ['Check the ground truth.', 'Defend the ranking.',
+           'Decide how to handle the flagged gap.'],
+          'The skeleton of the assessment that would otherwise take a week to structure.',
+          T,
             "VO: Step two, after Discovery. You paste the findings back in and ask for a ranked "
             "gap analysis. On a sector like Progressa's education system, the AI scores the "
             "capabilities — register a learner low, certify a result high — scans for the four "
@@ -249,7 +275,7 @@ two_panel(prs, 'The structure is the AI\'s. The truth and the judgement are your
           "keep. And it cannot tell whether a fact in your notes is actually true. The structure "
           "is the AI's; the truth and the judgement are yours.")
 
-block_slide(prs, 'The play gives you the flag. You provide the courage',
+blk('The play gives you the flag. You provide the courage',
             ['The AI marks the duplicate learner list a powerful programme owns as a politically '
              'sensitive gap. But it cannot decide how to handle it — that is your call, made with '
              'the decision-maker, not softened to avoid a fight.',
@@ -295,23 +321,27 @@ section('5.3', 'Play 2 — Build the whole-of-government re-use business case',
         "makes it visible — a business case with a number the budget authority can act on.\n\n"
         + PROMPT_CUE)
 
-two_panel(prs, 'Cheaper for the project. Ruinous for the country',
-          ('INSIDE ONE PROJECT',
-           ['Building its own small identity function is cheaper and faster than reusing the '
-            'national one.',
-            'So every project builds its own.']),
-          ('ACROSS TEN PROJECTS',
-           ['The country has paid ten times for identity.',
-            'The citizen proves who they are on paper at every counter.']),
-          'The re-use saving only exists when you add up the whole government — the view no '
-          'project has.',
-          T,
-          "VO: Here is the argument the play helps you make. Inside any one project, building its "
-          "own small identity function is cheaper and faster than reusing the national one. So "
-          "every project builds its own. Across ten projects, the country has paid ten times for "
-          "identity, and the citizen proves who they are on paper at every counter. The saving "
-          "from re-use is real, but it only exists when you add up the whole government — which is "
-          "exactly the view no project has, and the budget authority rarely sees.")
+bars_slide(prs, 'Cheaper for the project. Ruinous for the country',
+           [('GROUP', 'INSIDE ONE PROJECT — the project manager is making the right call, for the project'),
+            ('Build its own', [('cheaper, faster', 0.22, ITU_BLUE, WHITE)], 'so every project builds its own'),
+            ('Reuse the national one', [('learn it · negotiate · wait', 0.34, PANEL_GREY, INK)], ''),
+            ('GROUP', 'ACROSS TEN PROJECTS — the column no single project ever sees'),
+            ('Each builds its own', [('', 0.085, ITU_BLUE, WHITE)] * 10, 'paid ten times for identity'),
+            ('Build once, consume ×9', [('build once', 0.22, ITU_BLUE, WHITE), ('nine consume', 0.16, LIGHT, ITU_BLUE_DARK)],
+             'the citizen proves who they are once')],
+           'The re-use saving only exists when you add up the whole government — the view no '
+           'project has.',
+           T,
+           "VO: Here is the argument the play helps you make. Inside any one project, building its "
+           "own small identity function is cheaper and faster than reusing the national one. So "
+           "every project builds its own. Across ten projects, the country has paid ten times for "
+           "identity, and the citizen proves who they are on paper at every counter. The saving "
+           "from re-use is real, but it only exists when you add up the whole government — which is "
+           "exactly the view no project has, and the budget authority rarely sees.\n\n"
+           "On screen: bar length is the argument — no figures. The top pair shows why the project "
+           "chooses to build; the bottom pair shows what that choice costs the country. Reveal the "
+           "bottom pair on 'Across ten projects'.",
+           label_w=2.75, row_h=0.6, gap=0.3, y=1.7)
 
 rows_block(prs, 'What the play produces',
            [('You paste in three to five programmes',
@@ -330,7 +360,7 @@ rows_block(prs, 'What the play produces',
            "expensive for the individual project. Then it totals across all programmes over five "
            "years, where the country-level saving finally appears as a single number.")
 
-block_slide(prs, 'A procurement rule cannot make re-use the cheapest choice for the project '
+blk('A procurement rule cannot make re-use the cheapest choice for the project '
                  'doing the work',
             ['A procurement rule can require open standards, but it cannot change the arithmetic '
              'inside a single project. Only planning at the level of the whole government can show '
@@ -349,7 +379,7 @@ block_slide(prs, 'A procurement rule cannot make re-use the cheapest choice for 
             "claim and becomes a calculation.\n\n"
             "Production cue: the pivotal slide of this video. Hold it a beat longer.")
 
-block_slide(prs, 'Use the total to motivate a costing, not to quote it',
+blk('Use the total to motivate a costing, not to quote it',
             ['The numbers are directional. Their job is to win the argument that re-use deserves a '
              'proper costing — not to be the costing.',
              'Present the country-level total as a reason to commission a detailed business case, '
@@ -393,14 +423,14 @@ section('5.4', 'Play 3 — Translate between the minister and the architects',
         "architect talks systems. They sit in the same meeting and miss each other. This play is a "
         "translator that helps both sides decide together.\n\n" + PROMPT_CUE)
 
-block_slide(prs, 'From the minister\'s sentence to the decisions it forces',
-            ['You paste the goal in the minister\'s own words — every learner should have one '
-             'record that follows them through school. The AI returns the capabilities, the '
-             'services and the data domains it implies.',
-             'And the decisions it forces: who owns the authoritative learner, which bodies must '
-             'consume it, what must be built and what must be reused.'],
-            'Architecture decisions, without losing what the minister actually asked for.',
-            T,
+play_card(prs, 'From the minister\'s sentence to the decisions it forces',
+          ["The minister's goal, in their own words.",
+           '"Every learner should have one record that follows them through school."'],
+          ['The capabilities it implies.', 'The services and the data domains.',
+           'Who owns the authoritative learner.', 'What to build and what to reuse.'],
+          ['Confirm it is what was meant.', 'Take the decisions to the Board.'],
+          'Architecture decisions, without losing what the minister actually asked for.',
+          T,
             "VO: First direction: from policy to architecture. You paste the minister's goal in "
             "their words — every learner should have one record that follows them through school. "
             "The AI returns what that means in architecture terms: the capabilities involved, the "
@@ -409,14 +439,14 @@ block_slide(prs, 'From the minister\'s sentence to the decisions it forces',
             "minister's sentence becomes a structured set of architecture decisions, without "
             "losing what the minister actually asked for.")
 
-block_slide(prs, 'And back the other way — from a technical decision to what a parent notices',
-            ['You paste a technical decision — the Examination Authority will consume the Learner '
-             'Registry over the data-exchange backbone. The AI returns what it means for the '
-             'minister and the citizen.',
-             'Parents stop re-entering their child\'s details. The single learner record becomes '
-             'possible. The flagship can be delivered.'],
-            'The architecture stops being a black box the minister has to trust.',
-            T,
+play_card(prs, 'And back the other way — from a technical decision to what a parent notices',
+          ['A technical decision.',
+           '"The Examination Authority will consume the Learner Registry."'],
+          ['Parents stop re-entering details.',
+           'The single learner record becomes possible.', 'The flagship can be delivered.'],
+          ['Brief the minister in their language.', 'Own the trade-offs it carries.'],
+          'The architecture stops being a black box the minister has to trust.',
+          T,
             "VO: Second direction, just as important: from architecture back to outcomes. You "
             "paste a technical decision — the Examination Authority will consume the Learner "
             "Registry over the data-exchange backbone. The AI returns what that means for the "
@@ -442,7 +472,7 @@ rows_block(prs, 'The most useful output is the joint agenda',
            "other to decide well. That agenda is exactly what an EA Board meeting needs to be "
            "productive instead of two groups talking past each other.")
 
-block_slide(prs, 'The tool translates. The architecture is what makes it stick',
+blk('The tool translates. The architecture is what makes it stick',
             ['An Enterprise Architecture exists to give the business side and the IT side a shared '
              'language for the new work of redesigning services. This play does the translating in '
              'real time — in the meeting, not just in theory.',
@@ -521,14 +551,15 @@ rows_block(prs, 'The review-gate checklist — the operational heart of governan
            "of governance, and the play gives you a working draft of it in minutes.",
            numbered=False)
 
-block_slide(prs, 'The gate-decision paper — arrive prepared, and let the Board rule',
-            ['You paste a real project proposal — the scholarship programme that wants its own '
-             'learner list — and the AI drafts the gate questions answered, a recommended ruling '
-             'and the decision-log entry.',
-             'The ruling it recommends is either consume the registry, or a written exception with '
-             'a sunset date and a reason.'],
-            'The Board still rules — on a structured paper, not an argument made on the spot.',
-            T,
+play_card(prs, 'The gate-decision paper — arrive prepared, and let the Board rule',
+          ['A real project proposal.',
+           'The scholarship programme that wants its own learner list.'],
+          ['The gate questions, answered.', 'A recommended ruling.',
+           'The decision-log entry.'],
+          ['The Board rules.',
+           'Consume the registry, or a time-boxed written exception.'],
+          'The Board still rules — on a structured paper, not an argument made on the spot.',
+          T,
             "VO: Third, the gate-decision paper for a real project. You paste a project proposal — "
             "the scholarship programme that wants its own learner list — and the AI drafts the "
             "gate questions answered, a recommended ruling, consume the registry or a time-boxed "
@@ -536,7 +567,7 @@ block_slide(prs, 'The gate-decision paper — arrive prepared, and let the Board
             "The Board still rules — but it rules on a clear, structured recommendation instead of "
             "an argument made on the spot.")
 
-block_slide(prs, 'A Board claiming authority it does not legally hold is overruled on first test',
+blk('A Board claiming authority it does not legally hold is overruled on first test',
             ['The documents this play drafts are institutional, and some of them — especially the '
              'Board\'s binding decision scope — interact with your country\'s laws. The AI draft '
              'is a starting point for your legal counsel, never the final text.',
@@ -599,7 +630,7 @@ rows_block(prs, 'Comparator cards that look like your country, not always Estoni
            "cabinet briefing.",
            numbered=False)
 
-block_slide(prs, 'Cite or discard — this is where AI is most dangerous',
+blk('Cite or discard — this is where AI is most dangerous',
             ['Every claim on a comparator card needs a real, checkable source. AI invents '
              'plausible-looking citations that do not say what the card claims, or do not exist at '
              'all.',
@@ -638,7 +669,7 @@ rows_block(prs, 'The sector-transfer plan — one page to start on a sector you 
            "On screen: health, agriculture and social protection are named as places the method "
            "applies, not as worked examples — education is the worked sector throughout KP1.")
 
-block_slide(prs, 'A plan to start Discovery faster, not a reason to skip it',
+blk('A plan to start Discovery faster, not a reason to skip it',
             ['The transfer plan guesses the duplicated data domain and the likely gaps for the new '
              'sector — and it may guess wrong, because it has not looked.',
              'The real gaps come from running the method on the real sector, not from a plan '
@@ -674,14 +705,14 @@ section('5.7', 'Keep AI honest — verify, cite, and protect data',
         'or discard, never paste confidential or personal data, and keep the decision human — the '
         'difference between AI that helps and AI that quietly harms.',
         '~5 minutes',
-        "VO, slide 1: Every play in this topic produces a draft fast. This last part is about the "
+        "VO, slide 1: Every play in this module produces a draft fast. This last part is about the "
         "discipline that keeps those drafts from becoming liabilities. Four safeguards. Skip them, "
         "and AI becomes a fast way to put wrong facts, fabricated sources, or leaked data into a "
         "government decision.\n\n"
         "Production cue: the closing video of the module. Its AI usage tip is a meta-prompt — "
         "strip a prompt of sensitive data — and it ships in the description.")
 
-block_slide(prs, 'Every fact the AI states is a hypothesis until you check it',
+blk('Every fact the AI states is a hypothesis until you check it',
             ['Check it against a real source — a document, a system, a named person. The plausible '
              'section number, the confident figure, the specific claim: each is exactly as '
              'convincing whether it is right or invented.',
@@ -696,7 +727,7 @@ block_slide(prs, 'Every fact the AI states is a hypothesis until you check it',
             "made-up statistic in a cabinet briefing — these damage your credibility more than a "
             "gap in the work would. Verify before you forward. Always.")
 
-block_slide(prs, 'AI fabricates citations as fluently as it writes prose',
+blk('AI fabricates citations as fluently as it writes prose',
             ['Any claim about the outside world — what another country did, what a standard '
              'requires, what a benchmark shows — needs a real, checkable source.',
              'So open the source. If it does not say what the AI claims, discard the claim, not '
@@ -728,7 +759,7 @@ rows_block(prs, 'Treat the prompt box as a public place, because it is',
            numbered=False)
 
 # The module's emotional peak — the only full-colour punch block in the deck.
-block_slide(prs, 'When something the AI drafted turns out wrong, it is your name on the decision',
+blk('When something the AI drafted turns out wrong, it is your name on the decision',
             ['Across every play the pattern holds: the AI prepares, the human decides. The Board '
              'rules on the gate paper. The architect defends the ranking. Counsel approves the '
              'terms of reference. The minister owns the roadmap.',

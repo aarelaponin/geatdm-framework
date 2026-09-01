@@ -52,7 +52,7 @@ Start with what works, because you will build these in deliberately. A small per
 
 ### Slide — Four things quietly kill them — usually in the second year
 
-Now the failures, because forewarned is forearmed. The team gets pulled onto the flagship project that is in trouble, and the architecture work stops. The minister or director-general who championed it moves on, and the successor has their own priorities. The governance board, under delivery pressure, lets one powerful project through, then another, until its no means nothing. And the funding, never secured as a multi-year commitment, quietly becomes an annual favour that one budget cycle removes. None of these is dramatic. Each is a slow fade, usually in the second year.
+Now the failures, because forewarned is forearmed. The team gets pulled onto the flagship project that is in trouble, and the architecture work stops. The minister or director-general who championed it moves on, and the successor has their own priorities. The governance board, under delivery pressure, lets one powerful project through, then another, until its "no" means nothing. And the funding, never secured as a multi-year commitment, quietly becomes an annual favour that one budget cycle removes. None of these is dramatic. Each is a slow fade, usually in the second year.
 
 ### Slide — Not one of the killers is about technology
 
@@ -82,7 +82,7 @@ You may be watching this with education in mind, or you may be a director-genera
 
 ### Slide — Most of the method does not change at all
 
-Start with what stays the same, because it is most of it. The five phases — discover, assess, adapt, plan, execute and govern. The four sign-offs. The deliverables. The reuse-before-build default. The binding governance board. None of that is specific to education. It is the method. What changes when you move to another sector is only the contents: the institutions you map, and the kind of record at the centre of the fragmentation.
+Start with what stays the same, because it is most of it. The five phases — discover, assess, adapt, plan, execute and govern. The four sign-offs. The six deliverables. The reuse-before-build default. The binding governance board. None of that is specific to education. It is the method. What changes when you move to another sector is only the contents: the institutions you map, and the kind of record at the centre of the fragmentation.
 
 ### Slide — What changes is the record at the centre
 

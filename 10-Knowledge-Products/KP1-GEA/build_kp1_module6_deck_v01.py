@@ -14,9 +14,11 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
 from deck_lib import (
     ITU_BLUE, WHITE,
     LAYOUT_THANKS,
+    ITU_BLUE_DARK, INK, LIGHT, PANEL_GREY,
     add_slide, big_slide, block_slide, delete_template_slides, edit_agenda,
     edit_cover, notes, open_template, rows_block,
     section_slide, sources_slide, two_panel)
+from deck_diagrams import bars_slide, stack_slide, wave_timeline
 
 prs = open_template(os.environ.get('TEMPLATE'))
 
@@ -111,7 +113,7 @@ rows_block(prs, 'Four governments, four shapes',
              'Results mixed and openly debated.'),
             ('South Africa — federal, so nothing can be imposed from the top',
              'Coordinated instead through a central agency and shared standards.'),
-            ('Estonia — mature',
+            ('Estonia — mature, and the reference the others are measured against',
              'Distributed registries; the once-only principle; almost every service online.')],
            'Four governments that could hardly differ more in size, resources and shape.',
            T,
@@ -237,7 +239,7 @@ rows_block(prs, 'Four things quietly kill them — usually in the second year',
             ('The sponsor changes',
              'The successor has their own priorities.'),
             ('Governance drifts to advisory under delivery pressure',
-             'One powerful project through, then another, until its no means nothing.'),
+             'One powerful project through, then another, until its "no" means nothing.'),
             ('Funding becomes an annual favour',
              'One budget cycle removes it.')],
            'None of them is dramatic. Each one is a slow fade.',
@@ -246,7 +248,7 @@ rows_block(prs, 'Four things quietly kill them — usually in the second year',
            "flagship project that is in trouble, and the architecture work stops. The minister or "
            "director-general who championed it moves on, and the successor has their own "
            "priorities. The governance board, under delivery pressure, lets one powerful project "
-           "through, then another, until its no means nothing. And the funding, never secured as a "
+           "through, then another, until its \"no\" means nothing. And the funding, never secured as a "
            "multi-year commitment, quietly becomes an annual favour that one budget cycle removes. "
            "None of these is dramatic. Each is a slow fade, usually in the second year.\n\n"
            "Production cue: this slide and the next answer the retrieval prompt set on the title "
@@ -316,7 +318,7 @@ section('6.3', 'Will it work for your other sectors? — the portability case',
         "sector-agnostic, and it compounds.\n\n" + PROMPT_CUE)
 
 block_slide(prs, 'Most of the method does not change at all',
-            ['The five phases, the four sign-offs, the deliverables, the reuse-before-build '
+            ['The five phases, the four sign-offs, the six deliverables, the reuse-before-build '
              'default, the binding governance board — none of it is specific to education. It is '
              'the method.',
              'What changes when you move to another sector is only the contents: the institutions '
@@ -324,7 +326,7 @@ block_slide(prs, 'Most of the method does not change at all',
             'The method travels. Only the contents change.',
             T,
             "VO: Start with what stays the same, because it is most of it. The five phases — "
-            "discover, assess, adapt, plan, execute and govern. The four sign-offs. The "
+            "discover, assess, adapt, plan, execute and govern. The four sign-offs. The six "
             "deliverables. The reuse-before-build default. The binding governance board. None of "
             "that is specific to education. It is the method. What changes when you move to "
             "another sector is only the contents: the institutions you map, and the kind of record "
@@ -353,24 +355,38 @@ rows_block(prs, 'What changes is the record at the centre',
            "examples. Each sector still needs its own discovery and assessment run on the ground.",
            numbered=False)
 
-block_slide(prs, 'The second sector is cheaper because the muscle is built once',
-            ['The expensive part is the first time — the permanent team, the localised framework, '
-             'the governance, and above all the shared platforms like identity and data exchange.',
-             'Once those exist, the second sector does not rebuild them; it consumes them. Health '
-             'reuses the identity platform the education work stood up. Agriculture reuses the '
-             'data-exchange backbone.'],
-            'The investment you make for one sector is, in large part, an investment for all.',
-            T,
-            "VO: Here is the part that changes the size of your decision. The hard, expensive part "
-            "of this work is building the muscle the first time — the permanent team, the "
-            "localised framework, the governance, and above all the shared platforms like identity "
-            "and data exchange. Once those exist, the second sector does not rebuild them. It "
-            "consumes them. The health sector reuses the identity platform the education work "
-            "stood up. The agriculture sector reuses the data-exchange backbone. So the second "
-            "sector is cheaper and faster than the first, and the third cheaper still. The "
-            "investment you make for one sector is, in large part, an investment for all of "
-            "them.\n\n"
-            "Production cue: the pivotal slide of this video. Hold it a beat longer.")
+bars_slide(prs, 'The second sector is cheaper because the muscle is built once',
+           [('GROUP', 'WHAT EACH SECTOR PAYS FOR — directional, not a costing'),
+            ('Sector 1 — education',
+             [('permanent team', 0.16, ITU_BLUE_DARK, WHITE), ('framework', 0.13, ITU_BLUE_DARK, WHITE),
+              ('governance', 0.13, ITU_BLUE_DARK, WHITE), ('identity · data exchange', 0.24, ITU_BLUE_DARK, WHITE),
+              ('its own architecture', 0.2, ITU_BLUE, WHITE)],
+             ''),
+            ('Sector 2 — health',
+             [('its own architecture', 0.2, ITU_BLUE, WHITE), ('consumes', 0.11, LIGHT, ITU_BLUE_DARK)],
+             'reuses the identity platform education stood up'),
+            ('Sector 3 — agriculture',
+             [('its own', 0.15, ITU_BLUE, WHITE), ('consumes', 0.11, LIGHT, ITU_BLUE_DARK)],
+             'reuses the data-exchange backbone'),
+            ('Sector 4 — social protection',
+             [('its own', 0.12, ITU_BLUE, WHITE), ('consumes', 0.11, LIGHT, ITU_BLUE_DARK)],
+             'the platforms are more complete each time')],
+           'The investment you make for one sector is, in large part, an investment for all.',
+           T,
+           "VO: Here is the part that changes the size of your decision. The hard, expensive part "
+           "of this work is building the muscle the first time — the permanent team, the "
+           "localised framework, the governance, and above all the shared platforms like identity "
+           "and data exchange. Once those exist, the second sector does not rebuild them. It "
+           "consumes them. The health sector reuses the identity platform the education work "
+           "stood up. The agriculture sector reuses the data-exchange backbone. So the second "
+           "sector is cheaper and faster than the first, and the third cheaper still. The "
+           "investment you make for one sector is, in large part, an investment for all of "
+           "them.\n\n"
+           "Production cue: the pivotal slide of this video. Hold it a beat longer. On screen: bar "
+           "length is the argument and carries no figures — the dark segments are the muscle built "
+           "once; every later sector's bar is only its own architecture plus a sliver for consuming "
+           "what exists.",
+           label_w=2.9, row_h=0.6, gap=0.22, y=1.65)
 
 block_slide(prs, 'You are not buying a one-sector tool',
             ['You are building a national capability, of which the first sector is the foundation '
@@ -614,12 +630,16 @@ section('6.6', 'Roll it out — from one sector to a national EA practice',
         "roadmap. Start small, prove it, build the shared muscle, then bring sectors on one at a "
         "time.\n\n" + PROMPT_CUE)
 
-block_slide(prs, 'Wave 1 looks like one sector. It is the foundation the rollout stands on',
-            ['Pick the sector with a clear flagship the minister cares about — the single learner '
-             'record, the single patient record — and run the full method there, end to end.',
-             'But notice what Wave 1 really builds: not just that sector\'s architecture, but the '
-             'national foundations — the permanent team, the governance board, and the first '
-             'shared platforms like identity and data exchange.'],
+stack_slide(prs, 'Wave 1 looks like one sector. It is the foundation the rollout stands on',
+            ('WAVE 1 — ONE SECTOR, THE FULL METHOD, END TO END',
+             ['A sector with a clear flagship the minister cares about — the single learner record, '
+              'the single patient record.']),
+            ('WHAT WAVE 1 REALLY BUILDS — THE NATIONAL FOUNDATIONS',
+             ['The permanent team  ·  the governance board  ·  the first shared platforms: identity, '
+              'data exchange',
+              'Every later sector stands on this — none of them builds it again.']),
+            ['The sector is what the minister sees.',
+             'The base is what the country keeps.'],
             'One sector, done well — and the national foundations, laid.',
             T,
             "VO: Wave one is one sector, done well. Pick the sector with a clear flagship the "
@@ -628,23 +648,29 @@ block_slide(prs, 'Wave 1 looks like one sector. It is the foundation the rollout
             "sector's architecture, but the national foundations — the permanent team, the "
             "governance board, and the first shared platforms like identity and data exchange. "
             "Wave one looks like one sector. It is actually the foundation the whole rollout "
-            "stands on.")
+            "stands on.\n\n"
+            "On screen: the sector block standing on a wider foundation block — reveal the base on "
+            "'but notice what wave one really builds'.")
 
-block_slide(prs, 'From Wave 2 the rollout accelerates instead of getting harder',
-            ['Each new sector consumes the shared platforms Wave 1 built, runs a lighter method '
-             'because the team, the framework and the governance are already in place, and '
-             'delivers faster for less.',
-             'Every sector that joins makes the next one easier still — the platforms get more '
-             'complete and the team more practised.'],
-            'The opposite of a programme that gets harder under its own weight.',
-            T,
-            "VO: From wave two, each new sector reuses what wave one built. The health sector "
-            "consumes the identity platform and the data-exchange backbone that already exist. Its "
-            "run of the method is lighter, because the team, the framework and the governance are "
-            "in place. It delivers faster and costs less. And every sector that joins makes the "
-            "next one easier still, because the shared platforms get more complete and the team "
-            "more practised. The rollout accelerates as it goes — the opposite of a programme that "
-            "gets harder under its own weight.")
+wave_timeline(prs, 'From Wave 2 the rollout accelerates instead of getting harder',
+              [('WAVE 1 — education', ['Full method, end to end', 'Builds the team, the board, identity, data exchange'], 3.2, 1.0),
+               ('WAVE 2 — health', ['Consumes the platforms', 'Lighter method — team and governance in place'], 2.5, 0.78),
+               ('WAVE 3 — agriculture', ['Consumes more', 'Faster, for less'], 2.0, 0.62),
+               ('WAVE 4 — social protection', ['Easier still'], 1.6, 0.5)],
+              'THE EA BOARD GOVERNS THE PIPELINE — which sector next, what each must reuse, where an exception is warranted',
+              'Shared platforms — more complete with every wave',
+              'The opposite of a programme that gets harder under its own weight.',
+              T,
+              "VO: From wave two, each new sector reuses what wave one built. The health sector "
+              "consumes the identity platform and the data-exchange backbone that already exist. Its "
+              "run of the method is lighter, because the team, the framework and the governance are "
+              "in place. It delivers faster and costs less. And every sector that joins makes the "
+              "next one easier still, because the shared platforms get more complete and the team "
+              "more practised. The rollout accelerates as it goes — the opposite of a programme that "
+              "gets harder under its own weight.\n\n"
+              "On screen: a wave roadmap — each wave a smaller block than the last, the platform bar "
+              "beneath growing, the Board bar across the top (the next slide's subject). Reveal the "
+              "waves left to right.")
 
 block_slide(prs, 'Govern the rollout — do not just launch it',
             ['The same board that reviews projects inside a sector governs the national pipeline: '

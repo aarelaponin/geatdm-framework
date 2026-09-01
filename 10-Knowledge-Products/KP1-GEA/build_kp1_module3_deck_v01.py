@@ -18,6 +18,7 @@ from deck_lib import (
     edit_cover, footer, two_panel,
     mini_strip, notes, open_template, panel, panel_text, rows_block,
     section_slide, set_text, sources_slide, title)
+from deck_diagrams import gate_flow
 
 from pptx.util import Pt
 
@@ -522,24 +523,26 @@ section('3.5', 'Review projects against the architecture',
         "does its real work — not on a wall, but at the moment a project would otherwise quietly "
         "build its own version of something the country already has.")
 
-rows_block(prs, 'Five questions, asked of every project, the same way every time',
-           [('Does a shared building block already exist for this?', ''),
-            ('What data domains do you touch — and do you consume the owner’s copy?', ''),
-            ('Do you meet the architecture principles — security by design, once-only, the rest?', ''),
-            ('Is your sourcing choice deliberate — build, buy, share, sandbox?', ''),
-            ('Can you export your data in an open format?', '')],
-           'Consistency is what makes the gate fair and predictable — so projects prepare for it '
-           'rather than resent it.',
-           T,
-           "VO: The gate is a few questions, asked of every project, the same way every time. Does "
-           "a shared building block already exist for what you want to build? What data domains "
-           "will you touch, and do you consume the owning body's copy rather than make your own? Do "
-           "you meet the architecture principles — security by design, once-only, the rest? What is "
-           "your sourcing choice, and is it deliberate? Can you export your data in an open format? "
-           "Five questions. Asked consistently. That consistency is what makes the gate fair and "
-           "predictable, so projects prepare for it rather than resent it.\n\n"
-           "Centrepiece of 3.5 — reveal one question at a time, then hold the full list on screen.",
-           top=1.55, bottom=6.2, head_size=18)
+gate_flow(prs, 'Five questions, asked of every project, the same way every time',
+          ['Does a shared building block already exist for this?',
+           'What data domains do you touch — and do you consume the owner’s copy?',
+           'Do you meet the architecture principles — security by design, once-only, the rest?',
+           'Is your sourcing choice deliberate — build, buy, share, sandbox?',
+           'Can you export your data in an open format?'],
+          'Consistency is what makes the gate fair and predictable — so projects prepare for it '
+          'rather than resent it.',
+          T,
+          "VO: The gate is a few questions, asked of every project, the same way every time. Does "
+          "a shared building block already exist for what you want to build? What data domains "
+          "will you touch, and do you consume the owning body's copy rather than make your own? Do "
+          "you meet the architecture principles — security by design, once-only, the rest? What is "
+          "your sourcing choice, and is it deliberate? Can you export your data in an open format? "
+          "Five questions. Asked consistently. That consistency is what makes the gate fair and "
+          "predictable, so projects prepare for it rather than resent it.\n\n"
+          "Centrepiece of 3.5 — the gate drawn as one mechanism: proposal → the five questions → "
+          "the Board rules → pass, or a time-boxed exception → the decision log. Reveal one question "
+          "at a time, then hold the full flow on screen; the exception and log branches are what the "
+          "next slides walk through.")
 
 block_slide(prs, 'Building is rational for the project and ruinous for the country',
             ['Left alone, a project builds its own identity function, its own learner list, its own '

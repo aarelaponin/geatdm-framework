@@ -18,6 +18,7 @@ from deck_lib import (
     edit_cover, footer, two_panel,
     hline, mini_strip, notes, num_chip, open_template, panel, panel_text, rows_slide,
     section_slide, set_text, solid, sources_slide, title)
+from deck_diagrams import entity_graph
 
 from pptx.util import Inches, Pt
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
@@ -267,25 +268,18 @@ notes(s, "VO: The fix is a metamodel. A metamodel is a small, shared dictionary.
          "Five or six entity types. That is most of the metamodel.\n\nThe core reference slide of "
          "the video — keep it on screen while the definitions are read.")
 
-s = add_slide(prs, LAYOUT_WHITE)
-title(s, 'The relationships matter as much as the entities')
-rows_slide(s, [
-    ('Capability  →  delivered by  →  Service', ''),
-    ('Capability  →  supported by  →  Application', ''),
-    ('Application  →  uses  →  Data Domain', ''),
-    ('Everything  →  runs on  →  Technology Component', ''),
-    ('Organisation  →  owns  →  each of them', ''),
-], numbered=False, head_size=20, top=1.6, bottom=6.15)
-tb = box(s, 0.72, 6.4, 11.9, 0.5)
-set_text(tb.text_frame, [[('These relationships are fixed. You do not invent them per ministry.',
-                           15.5, True, ITU_BLUE_DARK, False)]])
-footer(s, T)
-notes(s, "VO: The entities are half of it. The relationships are the other half. A Capability is "
-         "delivered by a Service. A Capability is supported by an Application. An Application uses a "
-         "Data Domain. Everything runs on a Technology Component. An Organisation owns each of "
-         "these. These relationships are fixed. You do not invent them per ministry. Once every team "
-         "uses the same entities and the same relationships, every ministry's picture can be laid "
-         "over every other ministry's picture — and they line up.")
+entity_graph(prs, 'The relationships matter as much as the entities',
+             'These relationships are fixed. You do not invent them per ministry.',
+             T,
+             "VO: The entities are half of it. The relationships are the other half. A Capability is "
+             "delivered by a Service. A Capability is supported by an Application. An Application uses a "
+             "Data Domain. Everything runs on a Technology Component. An Organisation owns each of "
+             "these. These relationships are fixed. You do not invent them per ministry. Once every team "
+             "uses the same entities and the same relationships, every ministry's picture can be laid "
+             "over every other ministry's picture — and they line up.\n\n"
+             "On screen: the metamodel drawn as a graph — arrows are the relationships; Technology is the "
+             "base everything stands on; Organisation brackets the lot as owner. Reveal the arrows in the "
+             "order the VO names them.")
 
 block_slide(prs, 'Re-use is not a matter of good intentions',
             ["Everyone says they want re-use — one identity system used by many ministries, instead "

@@ -18,7 +18,7 @@ The first rule. AI is a drafting partner, not an oracle. It produces a strong fi
 
 ### Slide — Every play in this module uses the same four-part prompt
 
-Second, the shape of a good prompt. Every play in this topic uses the same four parts. One — name the input you are pasting: below is my Discovery brief. Two — break the task into named outputs: score the capabilities, list the gaps, rank them. Three — state the exact output format you want: a four-row table plus three bullets. Four — add a safeguard line that names this prompt's specific risk. A prompt with these four parts gives you a usable artefact. A vague one — help me with my architecture — gives you vague mush.
+Second, the shape of a good prompt. Every play in this module uses the same four parts. One — name the input you are pasting: below is my Discovery brief. Two — break the task into named outputs: score the capabilities, list the gaps, rank them. Three — state the exact output format you want: a four-row table plus three bullets. Four — add a safeguard line that names this prompt's specific risk. A prompt with these four parts gives you a usable artefact. A vague one — help me with my architecture — gives you vague mush.
 
 ### Slide — A good safeguard names how THIS prompt can mislead you
 
@@ -30,7 +30,7 @@ Fourth, the rule that sits above all the others. You decide; the AI drafts. The 
 
 ### Slide — In one sentence
 
-So these are the ground rules. AI is a drafting partner, not an oracle. Use the four-part prompt. Make the safeguard specific. And keep the decision yours. Hold to these, and the plays in this topic save you days without leading you astray. Forget them, and AI becomes a fast way to be confidently wrong.
+So these are the ground rules. AI is a drafting partner, not an oracle. Use the four-part prompt. Make the safeguard specific. And keep the decision yours. Hold to these, and the plays in this module save you days without leading you astray. Forget them, and AI becomes a fast way to be confidently wrong.
 
 ### Slide — Sources
 
@@ -214,7 +214,7 @@ So the fifth play gives you the persuasion and spread material — comparator ca
 
 ### Slide — Title (5.7)
 
-Every play in this topic produces a draft fast. This last part is about the discipline that keeps those drafts from becoming liabilities. Four safeguards. Skip them, and AI becomes a fast way to put wrong facts, fabricated sources, or leaked data into a government decision.
+Every play in this module produces a draft fast. This last part is about the discipline that keeps those drafts from becoming liabilities. Four safeguards. Skip them, and AI becomes a fast way to put wrong facts, fabricated sources, or leaked data into a government decision.
 
 ### Slide — Every fact the AI states is a hypothesis until you check it
 
