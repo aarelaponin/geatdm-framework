@@ -198,7 +198,7 @@ def build_markdown(path):
     # Per-subtopic persona: read the renderSubtopic helper's ["Persona", X] row. Across the
     # build scripts X takes three shapes, all of which must resolve to the full persona string:
     #   1. a bare PERSONA_* constant   — ["Persona", PERSONA_S]            (KP2 modules)
-    #   2. a quoted literal            — ["Persona", "S (Strategist) …"]   (KP1 M1, M6)
+    #   2. a quoted literal            — ["Persona", "S (Strategist) …"]   (KP1 M1, M5)
     #   3. the `persona` parameter     — ["Persona", persona]  with a signature default
     #                                     `persona = PERSONA_A`            (KP1 M2–M4)
     def _resolve_const(name):
