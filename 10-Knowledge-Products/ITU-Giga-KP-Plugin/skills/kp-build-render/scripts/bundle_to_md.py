@@ -200,7 +200,7 @@ def build_markdown(path):
     #   1. a bare PERSONA_* constant   — ["Persona", PERSONA_S]            (KP2 modules)
     #   2. a quoted literal            — ["Persona", "S (Strategist) …"]   (KP1 M1, M6)
     #   3. the `persona` parameter     — ["Persona", persona]  with a signature default
-    #                                     `persona = PERSONA_A`            (KP1 M2–M5)
+    #                                     `persona = PERSONA_A`            (KP1 M2–M4)
     def _resolve_const(name):
         cm = re.search(re.escape(name) + r'\s*=\s*"((?:[^"\\]|\\.)*)"', src)
         return unesc(cm.group(1)) if cm else None

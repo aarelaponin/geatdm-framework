@@ -4,33 +4,33 @@ Spoken narration only, one section per video (5.1 – 5.7), slide-by-slide, matc
 
 ---
 
-## 5.1 Use AI as a drafting partner, not an oracle — the ground rules (~5 min)
+## 5.1 Is this proven, or just theory? — evidence from real programmes (~5 min)
 
-> *AI is a fast drafting partner for EA work, not an oracle — it produces a strong first draft you verify, never a finding you trust. Learn the four-part prompt pattern and the one rule that makes every play safe: you decide, the AI drafts.*
+> *This is not a theory waiting for its first trial. Across four very different governments the same architectural approach has already produced results — which means the question for you is not whether it works, but how to apply it where you are.*
 
 ### Slide — Title (5.1)
 
-AI can save you days of drafting on EA work, and it can also lead you confidently into a wrong answer. The difference is entirely in how you use it. So before any of the plays, learn the ground rules that make them safe — the small set of habits that turn AI from a risk into a fast, reliable drafting partner.
+Before you commit your agency to this approach, you are right to ask one question: is it proven, or is it a consultant's theory? The honest answer is that the core of it has already been done — in countries large and small, unitary and federal, well-resourced and not. Look at what four real governments built, and the question changes from whether it works to how you apply it.
 
-### Slide — It states a wrong figure in exactly the tone it states a right one
+### Slide — Four governments, four shapes
 
-The first rule. AI is a drafting partner, not an oracle. It produces a strong first draft of a gap analysis, a board terms of reference, a business case — in minutes instead of days. What it does not produce is a finding you can trust without checking. It will state a wrong section number, a plausible but invented figure, a confident claim with no basis, in exactly the same tone as a correct one. The draft is where your work starts, not where it ends. Treat every output as a hypothesis to verify, never a fact to forward.
+Four signposts, deliberately different. Rwanda — a small country with a strong centre, one citizen-services platform, a national identity linked across services. Kenya — physical one-stop centres and a unifying identity programme, with results that are mixed and openly debated. South Africa — a federal state where no architecture can be imposed from the top, coordinated instead through a central agency and shared standards. And Estonia — a mature reference, distributed registries, the once-only principle, almost every service online. Four governments that could hardly be more different in size, resources and shape.
 
-### Slide — Every play in this module uses the same four-part prompt
+### Slide — The same four elements show in every one
 
-Second, the shape of a good prompt. Every play in this module uses the same four parts. One — name the input you are pasting: below is my Discovery brief. Two — break the task into named outputs: score the capabilities, list the gaps, rank them. Three — state the exact output format you want: a four-row table plus three bullets. Four — add a safeguard line that names this prompt's specific risk. A prompt with these four parts gives you a usable artefact. A vague one — help me with my architecture — gives you vague mush.
+What makes them evidence is not that they are all the same — they are not — but that the same architectural elements show in every one. A small central team with real authority. A published framework that other agencies adopt rather than fight. A governance mechanism that is binding, not advisory. And a time horizon measured in years for full maturity, with intermediate results visible inside months. Four contexts, one recurring pattern. That recurrence is what tells you the pattern is real, not local luck.
 
-### Slide — A good safeguard names how THIS prompt can mislead you
+### Slide — The failures are documented too — which is what makes it evidence
 
-On that safeguard line — it is the most important part, and the easiest to get lazy about. A good safeguard names the specific way this specific prompt can mislead you. For a gap analysis: a severity judgement about a powerful ministry must be checked with the decision-maker, not softened by the model. For a comparator card: discard any country example where the cited source does not actually say what the prompt claims. The safeguard is not 'AI can make mistakes' — that helps no one. It is the one check that catches this play's particular trap.
+And be honest about the mixed results, because that honesty is what makes the evidence trustworthy. Kenya's identity programme met real obstacles — in the courts, in parliament, in implementation — and the debate is public and documented. That is not a reason to dismiss the approach; it is part of the evidence. The programmes that struggled struggled for reasons you can learn from, and the reasons are remarkably consistent. The evidence is not a brochure of successes. It is a record of what works and what does not, which is far more useful to you.
 
-### Slide — You decide; the AI drafts
+### Slide — You are not the first — the path is already charted
 
-Fourth, the rule that sits above all the others. You decide; the AI drafts. The AI can prepare the board paper, but the board rules. It can rank the gaps, but you defend the ranking. It can propose a sourcing call, but the architect and the EA Board own the decision. The moment you let the AI's output be the decision instead of the input to a decision, you have handed your judgement to a tool that has no accountability and cannot be questioned in a meeting. Use it to think faster, never to think less.
+What this means for your agency is simple and freeing. You are not the first. The path is charted, the common elements are known, and so are the common ways programmes fail. You are not being asked to invent an approach and hope it works. You are being asked to adapt a pattern that four very different governments have already shown delivers — to your country, your constraints, your sector. That is a far easier case to make to a minister than 'trust me, this should work'.
 
 ### Slide — In one sentence
 
-So these are the ground rules. AI is a drafting partner, not an oracle. Use the four-part prompt. Make the safeguard specific. And keep the decision yours. Hold to these, and the plays in this module save you days without leading you astray. Forget them, and AI becomes a fast way to be confidently wrong.
+So when someone asks whether this is proven, you have an answer. Four governments, four shapes, one recurring pattern, with the failures as well documented as the successes. It is not theory. It is a charted path. Your job is not to prove it again — it is to apply it well.
 
 ### Slide — Sources
 
@@ -38,33 +38,33 @@ So these are the ground rules. AI is a drafting partner, not an oracle. Use the 
 
 ---
 
-## 5.2 Play 1 — Draft your Discovery and Assess artefacts (~5 min)
+## 5.2 What the evidence says works — and what quietly kills these programmes (~5 min)
 
-> *The first play turns your raw Discovery notes into a structured capture template and then a ranked gap analysis — the two hardest-to-start artefacts of the assessment — in a fraction of the time, with the politics flagged for you to handle honestly.*
+> *The public record is consistent about what makes these programmes succeed and what kills them — and the killers are organisational, not technical. Knowing both lets you design your programme to last, and brief your minister on the real risks.*
 
 ### Slide — Title (5.2)
 
-The first play is the one you will use most: drafting the artefacts of Discovery and Assess. These are the slowest to start from a blank page — the capture template, and the ranked gap analysis. AI gets you from blank page to strong draft in minutes. Here is how it goes on a real sector.
+If the evidence shows the pattern works, it also shows, just as clearly, why programmes fail. And the striking thing is that the failures are almost never technical. The technology works. What kills these programmes is organisational — and because it is organisational, you can design around it from the start. Here is what the record says, on both sides.
 
-### Slide — Step 1 — walk in with a structured sheet, not a blank notebook
+### Slide — Four things make them work — build all four in deliberately
 
-Step one, before the interviews. You paste what you know about a body — its mandate, its known systems, its registries. The AI returns a four-layer capture template: the right questions to ask per layer, a reminder to describe and not recommend, and a column to record where each answer came from. You walk into the Discovery interview with a structured sheet instead of a blank notebook. The template is a starting structure — you still ask the questions and record the real answers.
+Start with what works, because you will build these in deliberately. A small permanent team, protected from being pulled onto other work. A published framework that agencies adopt because it helps them, not because it is forced. Governance that can actually say no to a project that would fragment the architecture. And funding sustained across years, not granted annually and withdrawn when priorities shift. Where these four hold, the programmes deliver. Where any one is missing, they wobble.
 
-### Slide — Step 2 — a ranked gap analysis in minutes instead of a week
+### Slide — Four things quietly kill them — usually in the second year
 
-Step two, after Discovery. You paste the findings back in and ask for a ranked gap analysis. On a sector like Progressa's education system, the AI scores the capabilities — register a learner low, certify a result high — scans for the four common gaps, ranks them by impact and effort, and, crucially, flags the gaps that involve a powerful body for honest handling. In minutes you have the skeleton of the assessment that would otherwise take a week to structure.
+Now the failures, because forewarned is forearmed. The team gets pulled onto the flagship project that is in trouble, and the architecture work stops. The minister or director-general who championed it moves on, and the successor has their own priorities. The governance board, under delivery pressure, lets one powerful project through, then another, until its "no" means nothing. And the funding, never secured as a multi-year commitment, quietly becomes an annual favour that one budget cycle removes. None of these is dramatic. Each is a slow fade, usually in the second year.
 
-### Slide — The structure is the AI's. The truth and the judgement are yours
+### Slide — Not one of the killers is about technology
 
-Be clear about the division of labour. The AI is good at structure and completeness — it will not forget to score a capability or to check for duplicate registries. What it cannot do is know the ground truth. It scores what your notes say, not what is real. It cannot feel the political weight of the gap that a powerful programme will fight to keep. And it cannot tell whether a fact in your notes is actually true. The structure is the AI's; the truth and the judgement are yours.
+Notice what every one of those killers has in common. Not one is about technology. They are about people, authority and money — protecting the team, securing the mandate, defending the governance, locking in the funding. And that is the good news, because those are exactly the things you, as the one making the case upward, can influence. The chief architect cannot protect their own team or secure their own five-year budget. Only the strategist who commissioned the work can. The failures are organisational, which means they are yours to prevent.
 
-### Slide — The play gives you the flag. You provide the courage
+### Slide — Design for the second year now, while you have the minister's attention
 
-Of everything this play produces, the honesty flag matters most. The AI will mark the duplicate learner list that a powerful programme owns as a politically sensitive gap. But it cannot decide how to handle it — that is your call, made with the decision-maker, not softened to avoid a fight. The play gives you the flag; you provide the courage. An assessment that flatters the current state to keep the peace fails quietly, a year later, when the flagship still does not exist.
+So design for the second year now, while you have the minister's attention. Get the team's protection in writing. Make the governance mandate legal, not just a memo. Secure a multi-year funding envelope, not an annual line. And plan to re-commit all of it when the sponsor changes, because the next minister will not feel bound by the last one's promises. These are not afterthoughts to add if the programme survives. They are how it survives. Build them in at the start, and you have designed out the four most common ways these programmes die.
 
 ### Slide — In one sentence
 
-So the first play gets you from blank page to a structured capture template and a ranked gap analysis fast. Use it to skip the slow part — the structuring — and spend your time on the part only you can do: getting the truth right, and ranking the gaps honestly, including the ones that are uncomfortable to name.
+So the evidence gives you two lists. What to build in — a protected team, an adopted framework, binding governance, sustained funding. And what to design out — the four organisational failures that quietly kill these programmes in their second year. Brief your minister on both. A programme designed to survive its own second year is the one that delivers.
 
 ### Slide — Sources
 
@@ -72,33 +72,33 @@ So the first play gets you from blank page to a structured capture template and 
 
 ---
 
-## 5.3 Play 2 — Build the whole-of-government re-use business case (~5 min)
+## 5.3 Will it work for your other sectors? — the portability case (~5 min)
 
-> *The second play builds the business case that makes re-use visible — a cost comparison showing that each project building its own is cheaper for the project but ruinous for the country — the number that wins the budget argument.*
+> *The method is not tied to one sector — the same five phases run on any public-sector domain, and because the hard part is building the muscle once, each sector after the first is cheaper and faster.*
 
 ### Slide — Title (5.3)
 
-The second play helps you win the hardest argument in EA: that re-use saves money, even though no single project will choose it. The trouble is that the saving is invisible at the project level and only appears across the whole government. This play makes it visible — a business case with a number the budget authority can act on.
+You may be watching this with education in mind, or you may be a director-general responsible for several sectors. Either way, a fair question is whether this approach is tied to one sector or works across your government. The answer matters for how big a commitment you are really making — and the answer is that the method is sector-agnostic, and it compounds.
 
-### Slide — Cheaper for the project. Ruinous for the country
+### Slide — Most of the method does not change at all
 
-Here is the argument the play helps you make. Inside any one project, building its own small identity function is cheaper and faster than reusing the national one. So every project builds its own. Across ten projects, the country has paid ten times for identity, and the citizen proves who they are on paper at every counter. The saving from re-use is real, but it only exists when you add up the whole government — which is exactly the view no project has, and the budget authority rarely sees.
+Start with what stays the same, because it is most of it. The five phases — discover, assess, adapt, plan, execute and govern. The four sign-offs. The six deliverables. The reuse-before-build default. The binding governance board. None of that is specific to education. It is the method. What changes when you move to another sector is only the contents: the institutions you map, and the kind of record at the centre of the fragmentation.
 
-### Slide — What the play produces
+### Slide — What changes is the record at the centre
 
-The play makes that addition for you. You paste in three to five of your country's programmes, with rough budgets, and the shared building blocks that exist. The AI produces a per-programme table: for each, the local cost of building its own versus consuming the shared block — and it honestly shows that consuming is often more expensive for the individual project. Then it totals across all programmes over five years, where the country-level saving finally appears as a single number.
+And that change is smaller than it looks. In education, the duplicated record at the heart of the fragmentation is the learner. In health it is the patient. In agriculture it is the farmer. In social protection it is the beneficiary. Different domain, identical shape — registered several times, re-entered on paper, blocking a flagship the minister has promised. The problem rhymes across sectors because the underlying cause is the same: no shared plan. So the same method resolves it.
 
-### Slide — A procurement rule cannot make re-use the cheapest choice for the project doing the work
+### Slide — The second sector is cheaper because the muscle is built once
 
-This is the central case for an EA, turned into a number. A procurement rule can require open standards, but it cannot make re-use the cheapest choice for the project doing the work. Only planning at the level of the whole government can show why re-use is worth it — and that is the view an Enterprise Architecture exists to give. This play takes that view, which usually lives in an architect's head, and puts it on one page the budget authority can read. The whole-of-government saving stops being a claim and becomes a calculation.
+Here is the part that changes the size of your decision. The hard, expensive part of this work is building the muscle the first time — the permanent team, the localised framework, the governance, and above all the shared platforms like identity and data exchange. Once those exist, the second sector does not rebuild them. It consumes them. The health sector reuses the identity platform the education work stood up. The agriculture sector reuses the data-exchange backbone. So the second sector is cheaper and faster than the first, and the third cheaper still. The investment you make for one sector is, in large part, an investment for all of them.
 
-### Slide — Use the total to motivate a costing, not to quote it
+### Slide — You are not buying a one-sector tool
 
-One discipline with this play. The numbers it produces are directional, not quotations. Their job is to make the shape of the saving visible — to win the argument that re-use is worth a proper costing — not to be the costing themselves. Present the country-level total as a reason to commission a detailed business case, and name the conditions that make the saving real: the shared blocks must exist, the Board must have authority, the funding must be sustained. Oversell the numbers and a sharp finance officer will dismiss the whole case.
+For the case you make upward, this changes the framing. You are not asking the minister to fund a tool for one sector. You are asking to build a national capability, of which the first sector is the foundation and the proof. That is a stronger case and an honest one: the first sector carries more of the cost because it builds the shared muscle; every sector after it benefits from that muscle and costs less. A minister who funds it as a one-sector project undersells it. A minister who funds it as the first wave of a national capability has understood it.
 
 ### Slide — In one sentence
 
-So the second play is your re-use argument, made concrete. It shows, programme by programme, that building your own is locally cheaper and nationally ruinous, and it totals the saving the country gets from re-use. Use it to win the funding argument that an architect, armed only with a principle, usually loses.
+So when you are asked whether this works beyond education, the answer is yes, and it gets cheaper as you go. The same method, a different record at the centre, the same shared platforms reused sector after sector. You are not making a one-sector decision. You are making the first move in building a national capability — which is exactly how to frame it when you make the case.
 
 ### Slide — Sources
 
@@ -106,33 +106,33 @@ So the second play is your re-use argument, made concrete. It shows, programme b
 
 ---
 
-## 5.4 Play 3 — Translate between the minister and the architects (~5 min)
+## 5.4 Win the commitment — the business case that gets your minister to yes (~5 min)
 
-> *The third play is a translator — it turns a minister's policy goal into architecture terms and a joint agenda, and architecture decisions back into outcomes a minister understands — so the business side and the IT side can actually decide together.*
+> *Winning the minister's commitment is not about the architecture — it is about the number. Pair the whole-of-government re-use saving with the proven evidence and an honest time horizon, and you turn a technical case into one a minister can take to cabinet.*
 
 ### Slide — Title (5.4)
 
-The third play addresses the problem at the heart of modern EA work: the business side and the IT side do not share a language. The minister talks outcomes; the architect talks systems. They sit in the same meeting and miss each other. This play is a translator that helps both sides decide together.
+You have the evidence that it works and the case that it travels. Now the hardest step: getting your minister to commit the team, the mandate and the money. Ministers do not commit to architecture. They commit to outcomes, to numbers, and to cases they can defend in cabinet. So the case you bring cannot be about the architecture. It has to be about three things: the saving, the proof, and the honest cost.
 
-### Slide — From the minister's sentence to the decisions it forces
+### Slide — Lead with the saving, not the architecture
 
-First direction: from policy to architecture. You paste the minister's goal in their words — every learner should have one record that follows them through school. The AI returns what that means in architecture terms: the capabilities involved, the services, the data domains, and the decisions it forces — who owns the authoritative learner, which bodies must consume it, what must be built versus reused. The minister's sentence becomes a structured set of architecture decisions, without losing what the minister actually asked for.
+Lead with the saving, because that is what a minister can act on. The strongest number you have is the cost of fragmentation: every programme that builds its own identity, its own registry, its own integration, means the country pays many times for one thing. A whole-of-government business case shows that consuming shared building blocks instead would save a meaningful share of the sectoral digital budget over five years. That number — not the four-layer diagram — is what opens a cabinet conversation. The architecture is how you achieve the saving; the saving is what you sell.
 
-### Slide — And back the other way — from a technical decision to what a parent notices
+### Slide — Back the number with the proof, because a minister's first worry is risk
 
-Second direction, just as important: from architecture back to outcomes. You paste a technical decision — the Examination Authority will consume the Learner Registry over the data-exchange backbone. The AI returns what that means for the minister and the citizen: parents stop re-entering their child's details, the single learner record becomes possible, the flagship can be delivered. The architecture stops being a black box the minister has to trust, and becomes a set of choices they can understand and own.
+Back the number with the proof, because a minister's first worry is risk. A saving that depends on an untested approach is easy to refuse. A saving backed by four governments that have already built the same pattern is much harder to wave away. So pair the business case with the evidence: this is not an experiment, it is a charted path that countries like yours have walked, with the obstacles documented. You are not asking the minister to bet on a theory. You are asking them to capture a saving that others have already proven is real.
 
-### Slide — The most useful output is the joint agenda
+### Slide — Ministers fund people who tell them the real timeline
 
-The play's most useful output is the joint agenda. You give it an operating-model question — should we move to once-only data sharing for education — and it decomposes the decision into three parts: the business decisions only the ministry can make, the technical decisions only the architects can make, and the joint decisions that need both in the room. For each joint decision, it names what each side needs from the other to decide well. That agenda is exactly what an EA Board meeting needs to be productive instead of two groups talking past each other.
+Then be honest about the cost and the time, because overselling loses the case the moment a sharp official tests it. Name the real cost: a small permanent team and governance, typically around two per cent of the digital-government budget, sustained for five years. And name the real horizon: about six months to a roadmap the minister can show, but years to full maturity — which means the minister who launches this will likely not be the one who completes it. Said as a weakness, that sinks the case. Said as the truth about serious institution-building, it is what separates a credible proposal from a salesman's. Ministers fund people who tell them the real timeline.
 
-### Slide — The tool translates. The architecture is what makes it stick
+### Slide — The one page, in the order a minister reads it
 
-This is the second great purpose of an EA, made practical. An Enterprise Architecture exists to give the business side and the IT side a shared language for the new work of redesigning services. This play is a tool that does the translating in real time. But a caution: the tool translates; it does not replace the shared vocabulary and the standing forum. The metamodel still has to be agreed, and the Board still has to meet. The play makes the translation faster; the architecture is what makes it stick.
+Put it on one page, in that order. The saving — the country-level number over five years. The proof — the governments that have done it. The ask — a small permanent team, a board with real authority, around two per cent of the digital budget, and a promise to protect the team. And the horizon — six months to a roadmap, then a sustained practice. Saving, proof, ask, horizon. That single page turns a technical request the minister would defer into a business case they can defend in cabinet.
 
 ### Slide — In one sentence
 
-So the third play is a translator between the minister and the architects. Goal to architecture, architecture to outcome, and the joint agenda that gets both sides deciding together. It is the shared-language job an EA exists to do — with a tool that makes it happen in the meeting, not just in theory.
+So winning the commitment is not an architecture conversation. It is a one-page business case: the saving, the proof, the ask, the honest horizon. Bring that, and you give your minister something they can say yes to and defend afterwards. Bring a diagram of four layers, and you give them something to admire and postpone.
 
 ### Slide — Sources
 
@@ -140,33 +140,33 @@ So the third play is a translator between the minister and the architects. Goal 
 
 ---
 
-## 5.5 Play 4 — Draft your governance artefacts (~4 min)
+## 5.5 Build your team's capability with open knowledge products (~4 min)
 
-> *The fourth play drafts the institutional documents governance needs — the Board terms of reference, the review-gate checklist, the gate-decision paper — so you arrive at the meeting with a strong draft to edit, not a blank page to dread.*
+> *You do not have to train your team from scratch — open knowledge products, a shared framework, and a community of practising countries mean your people can learn the method from materials that already exist, freeing your budget for the work itself.*
 
 ### Slide — Title (5.5)
 
-The fourth play drafts the documents that make governance real — and that architects most dread starting. A Board terms of reference. A review-gate checklist. A gate-decision paper for a specific project. These are formal, structured, and slow to write from scratch. The play gets you a strong draft to edit.
+One worry that stops strategists committing is capability: do we have the people who can do this, and can we afford to train them? The reassuring answer is that you do not have to build the knowledge from scratch. The method, the framework and the training materials already exist as open knowledge products — which changes what you actually need to fund.
 
-### Slide — The Board terms of reference — the one-to-two pages you take to the chair
+### Slide — The method is not locked in a consultant's head
 
-First, the Board terms of reference. You give the AI your country's relevant roles — the digitalisation officer, the sector CIOs, the registry owners, the data-protection regulator. It drafts a terms of reference with the parts that matter: the purpose, the binding decision scope spelled out as specific decision types, the membership, the cadence, the reporting line, the escalation path. You get a one-to-two-page institutional document to take to the chair, instead of a blank page and a deadline.
+The method is not locked in a consultant's head. The reference architecture is published. The building-block specifications are open. And the knowledge products — videos, written guides, worked examples, the very materials this is part of — are made to teach a practising architect the method step by step. Your team does not start from a blank page. They start from a documented method that other countries are already using, which means your training cost is a fraction of what building the knowledge yourself would be.
 
-### Slide — The review-gate checklist — the operational heart of governance
+### Slide — Three layers you draw on rather than build
 
-Second, the review-gate checklist — the questions every project answers before funding. You give it your adopted principles and the shared building blocks you have. It drafts the intake questions, what a pass looks like for each, an exception form with a sunset date, and the fields for the decision log. This is the operational heart of governance, and the play gives you a working draft of it in minutes.
+Think of the capability as three layers you can draw on rather than build. The published framework tells your team what to do — the phases, the principles, the deliverables. The worked examples and the AI plays show them how to do it faster — turning a method into a draft in minutes. And the community — the countries, the partners, the certification and the shared knowledge base around the framework — tells them who to ask when they are stuck. You are not equipping your team alone. You are connecting them to a network that is already solving these problems.
 
-### Slide — The gate-decision paper — arrive prepared, and let the Board rule
+### Slide — What you actually need to fund is time, not invention
 
-Third, the gate-decision paper for a real project. You paste a project proposal — the scholarship programme that wants its own learner list — and the AI drafts the gate questions answered, a recommended ruling, consume the registry or a time-boxed exception, and the decision-log entry. You arrive at the Board with a prepared paper. The Board still rules — but it rules on a clear, structured recommendation instead of an argument made on the spot.
+So what do you actually need to fund? Not the invention of a method — that exists. You need a small team given the time to learn it and apply it to your country, and access to the materials and the community. The expensive thing — the decades of accumulated knowledge about what works in public-sector architecture — you get for the cost of learning it, not the cost of discovering it. That is the difference between funding a team to apply a proven method and funding consultants to invent one. The first is affordable and builds lasting capability in your own people; the second is neither.
 
-### Slide — A Board claiming authority it does not legally hold is overruled on first test
+### Slide — Build the capability in your own people
 
-One firm caution with this play. The documents it drafts are institutional, and some of them — especially the Board's binding decision scope — interact with your country's laws. The AI draft is a starting point for your legal counsel, never the final text. A Board that claims authority it does not legally hold will be overruled the first time a powerful ministry tests it, and that overrule sets a precedent that is hard to undo. Draft fast with the play; ratify slowly, with counsel.
+And aim the capability at your own people, not at a consultancy you will depend on forever. The reason to use open knowledge products is not only that they are cheaper. It is that they let you build the capability inside your own institutions — architects who learn the method, apply it, and stay, instead of expertise that walks out the door when a contract ends. A strategist's quiet goal in all of this is a national capability that outlasts any single contract or consultant. Open knowledge products are how you build it in your own people.
 
 ### Slide — In one sentence
 
-So the fourth play drafts the institutional documents governance needs. The terms of reference, the review-gate checklist, the gate-decision paper. Use it to skip the dread of the blank page — and route every document that touches authority through your legal counsel before it is adopted.
+So capability is not the barrier it appears to be. The knowledge is documented, open and taught; a community is already using it; and your budget goes to a team that applies it, not to reinventing it. Use the open knowledge products to grow your own architects — and you build something that lasts longer than any contract.
 
 ### Slide — Sources
 
@@ -174,33 +174,33 @@ So the fourth play drafts the institutional documents governance needs. The term
 
 ---
 
-## 5.6 Play 5 — Generate comparator cases and a sector-transfer plan (~4 min)
+## 5.6 Roll it out — from one sector to a national EA practice (~4 min)
 
-> *The fifth play generates the persuasion material — comparator-country cards tuned to your context with real sources, and a one-page plan to run the method on a new sector — for the briefings and pitches where you need evidence and a path.*
+> *Rolling this out nationally is itself a wave roadmap — start with one sector that proves the pattern and builds the shared platforms, then bring sectors on one at a time, each cheaper than the last, until the architecture is how your whole government works.*
 
 ### Slide — Title (5.6)
 
-The fifth play produces the material you need to persuade and to spread the method: comparator cases for a briefing, and a transfer plan for a new sector. Both are research-heavy and slow by hand. The play drafts them — with one strict rule about sources.
+Suppose you have the commitment. How do you actually roll this out across a government, without trying to do everything at once and failing? The answer is the same discipline the method uses inside one sector, applied to the whole country: a wave roadmap. Start small, prove it, build the shared muscle, then bring sectors on one at a time.
 
-### Slide — Comparator cards that look like your country, not always Estonia
+### Slide — Wave 1 looks like one sector. It is the foundation the rollout stands on
 
-First, comparator cards. You give the AI your country's characteristics — size, income level, governance type, region, the constraints you face. It returns three to five genuinely comparable countries, prioritising African and other developing-country examples: for each, why it is comparable, what they actually built, one transferable lesson, and a public source for every substantive claim. Instead of always reaching for Estonia, you get signposts that look like your country, which land far better in a cabinet briefing.
+Wave one is one sector, done well. Pick the sector with a clear flagship the minister cares about — the single learner record, the single patient record. Run the full method there, end to end. But notice what wave one really builds: not just that sector's architecture, but the national foundations — the permanent team, the governance board, and the first shared platforms like identity and data exchange. Wave one looks like one sector. It is actually the foundation the whole rollout stands on.
 
-### Slide — Cite or discard — this is where AI is most dangerous
+### Slide — From Wave 2 the rollout accelerates instead of getting harder
 
-Here is the strict rule for this play, because it is where AI is most dangerous. Every claim on a comparator card must have a real, checkable source — and AI will invent plausible-looking citations that do not say what the card claims, or do not exist at all. So the rule is: cite or discard. Open the source for every example. If it does not actually document what the card says, throw that example out. A comparator card with a fabricated citation, caught in a cabinet meeting, discredits your whole briefing.
+From wave two, each new sector reuses what wave one built. The health sector consumes the identity platform and the data-exchange backbone that already exist. Its run of the method is lighter, because the team, the framework and the governance are in place. It delivers faster and costs less. And every sector that joins makes the next one easier still, because the shared platforms get more complete and the team more practised. The rollout accelerates as it goes — the opposite of a programme that gets harder under its own weight.
 
-### Slide — The sector-transfer plan — one page to start on a sector you were just handed
+### Slide — Govern the rollout — do not just launch it
 
-Second, the sector-transfer plan. The method you have built on education transfers to health, to agriculture, to social protection — only the institutions and the data domains change. You give the AI a new sector's bodies, and it returns a one-page plan: the bodies classified, this sector's equivalent of the single learner record, the five phase deliverables named for this sector, and a suggested first two waves. It is the fastest way to start the method on a sector you have just been handed.
+And govern the rollout rather than just launching it. The same board that reviews projects inside a sector governs the national pipeline: which sector comes next, what each must reuse, where an exception is genuinely warranted. This keeps the rollout coherent — every new sector building on the shared foundation instead of starting its own. A rollout that is launched and left drifts back into fragmentation, one sector at a time. A rollout that is governed compounds into a single national architecture.
 
-### Slide — A plan to start Discovery faster, not a reason to skip it
+### Slide — One page, every quarter — the national scorecard
 
-One caution on the transfer plan, the same as every play. It is a starting structure, not an assessment. It guesses the duplicated data domain and the likely gaps for the new sector — and it may guess wrong, because it has not looked. Use it to start Discovery faster, not to skip it. The real gaps come from running the method on the real sector, not from a plan written before anyone has looked.
+Finally, report the national picture upward, on one page, every quarter. How many sectors are live. The re-use rate across them. Which shared platforms are in place. This does two things. It shows the minister the national capability actually growing — sector by sector, saving by saving — which is what sustains the funding across a change of government. And it lets you see, early, if a sector is drifting from the shared foundation, while it is still cheap to correct. The national scorecard is how a multi-year rollout stays funded and stays coherent.
 
 ### Slide — In one sentence
 
-So the fifth play gives you the persuasion and spread material — comparator cards that look like your country, and a plan to take the method to a new sector. Use it freely, under one discipline: cite or discard, and confirm by looking. Evidence you cannot verify is worse than none.
+So the rollout is a wave roadmap at national scale. One sector to prove it and build the foundations. Then sectors one at a time, each reusing the last, each cheaper, all governed into one coherent architecture and reported on a single page. That is how an approach that works in one sector becomes how your whole government works.
 
 ### Slide — Sources
 
@@ -208,33 +208,33 @@ So the fifth play gives you the persuasion and spread material — comparator ca
 
 ---
 
-## 5.7 Keep AI honest — verify, cite, and protect data (~5 min)
+## 5.7 The closing case — proven, portable, and necessary now (~5 min)
 
-> *The safeguards that make every play safe: verify each output against a named source, cite or discard, never paste confidential or personal data, and keep the decision human — the difference between AI that helps and AI that quietly harms.*
+> *The case for a national EA comes down to three things you can now say with confidence — it is proven, it is portable, and in the era of redesigning how government works it is no longer optional but necessary — held together by the two reasons an EA exists: it makes re-use possible, and it gives business and IT a shared language.*
 
 ### Slide — Title (5.7)
 
-Every play in this module produces a draft fast. This last part is about the discipline that keeps those drafts from becoming liabilities. Four safeguards. Skip them, and AI becomes a fast way to put wrong facts, fabricated sources, or leaked data into a government decision.
+Bring it all together into the case you carry into the room. After everything, it reduces to three sentences a minister can hold: this is proven, it is portable, and it is necessary now. And underneath those three sit the two reasons an Enterprise Architecture exists at all — the two ideas to leave with.
 
-### Slide — Every fact the AI states is a hypothesis until you check it
+### Slide — Proven and portable — the first two you can now say plainly
 
-First, verify. Every fact an AI states is a hypothesis until you check it against a real source — a document, a system, a named person. The plausible section number, the confident figure, the specific claim: each is exactly as convincing whether it is right or invented. This is not a small risk. A wrong reference in a deliverable, a made-up statistic in a cabinet briefing — these damage your credibility more than a gap in the work would. Verify before you forward. Always.
+The first two you can now say plainly. Proven — four very different governments have built the same pattern, with the successes and the failures both documented, so you adapt a charted path rather than invent one. Portable — the method is sector-agnostic, the same phases on a learner, a patient, a farmer, and each sector after the first costs less because the muscle is built once. Proven and portable. Those alone make a strong case. But the third is the one that makes it urgent.
 
-### Slide — AI fabricates citations as fluently as it writes prose
+### Slide — For thirty years, digital government meant putting paper online. That era is ending
 
-Second, cite or discard — the rule from the comparator play, applied everywhere. Any claim about the outside world — what another country did, what a standard requires, what a benchmark shows — needs a real, checkable source. AI fabricates citations as fluently as it writes prose. So open the source. If it does not say what the AI claims, discard the claim, not just the citation. An unsourced claim you cannot verify is a liability you are choosing to carry into a meeting.
+Necessary now. For thirty years, digital government meant taking a paper process and putting it online — the form becomes a web form, the queue an appointment. That era is ending. The work that delivers real results today is different: redesigning how government serves citizens — once-only data sharing, a shared identity, a single record that follows a person across services. That work is not putting paper online. It is changing how the government operates. And it cannot be done by the IT department alone, or by the policy side alone.
 
-### Slide — Treat the prompt box as a public place, because it is
+### Slide — The two reasons an Enterprise Architecture exists
 
-Third, protect the data. Do not paste citizen personal data, security configurations, unpublished cabinet papers, or anything your data-protection act covers into a public AI tool. The plays never need it: you can run every one with placeholders — a learner, a powerful programme, country X — instead of real names and records. Your data-protection act applies to what you type into a chatbot exactly as it applies to any other system. Treat the prompt box as a public place, because it is.
+And here are the two reasons an EA exists, which are the two ideas to carry out of this whole knowledge product. First: re-use. Inside any project, building your own is cheaper than reusing — so projects fragment, and no procurement rule can change that. Only planning at the level of the whole government makes re-use rational, and only an EA gives you that view. Second: shared language. The new work needs the business side and the IT side to decide together, and they do not speak the same language. An EA gives them one — a shared picture, shared words, and a standing forum to decide in. Re-use and shared language. Everything else in this knowledge product serves those two.
 
-### Slide — When something the AI drafted turns out wrong, it is your name on the decision
+### Slide — Useful then. Necessary now
 
-Fourth, keep the decision human. Across every play, the pattern holds: the AI prepares, the human decides. The Board rules on the gate paper. The architect defends the ranking. The legal counsel approves the terms of reference. The minister owns the roadmap. Accountability cannot be handed to a tool that has no stake in the outcome and cannot be questioned afterward. When something the AI drafted turns out wrong, the answer is never the AI said so — it is your name on the decision. Use AI to decide faster and better, never to avoid deciding.
+Which is why the third sentence is the urgent one. In the era of digitising paper, an Enterprise Architecture was useful — a nice-to-have that made things tidier. In the era of redesigning how government works, it is necessary — because without it, re-use does not happen and the business and IT sides cannot have the conversation the redesign requires. The countries delivering real results have understood this. The case you make is not that an EA would be a good idea. It is that the work your government is now being asked to do cannot be done well without one.
 
 ### Slide — In one sentence
 
-So these are the safeguards that make the plays safe. Verify every fact. Cite or discard every claim. Protect the data. Keep the decision human. None of them slows you down much, and together they are the difference between AI that makes you faster and AI that makes you confidently, accountably wrong. Use the plays freely — inside these four rules.
+So that is the case, whole. Proven — four governments have done it. Portable — it works across your sectors and compounds. Necessary now — because the new work of government cannot be done without it. And underneath, the two reasons it exists: re-use, and a shared language between business and IT. Carry those into the room. That is the case for a national Enterprise Architecture — and the case for starting it where you are, now.
 
 ### Slide — Sources
 

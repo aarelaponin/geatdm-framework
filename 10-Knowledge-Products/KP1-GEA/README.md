@@ -10,10 +10,9 @@ The versioned home of the FiscalAdmin OÜ — ITU/Giga **Knowledge Product 1** (
 | 2 | EA principles, the metamodel and the BDAT layers | Architect | `build_kp1_module2_v01.js` | `KP1_Module2_Script_Bundle_v0.1.md` |
 | 3 | EA repository, tooling and governance | Architect | `build_kp1_module3_v01.js` | `KP1_Module3_Script_Bundle_v0.1.md` |
 | 4 | Progressa demonstration — applying the method end-to-end | Architect | `build_kp1_module4_v01.js` | `KP1_Module4_Script_Bundle_v0.1.md` |
-| 5 | AI plays for EA — hands-on | Architect | `build_kp1_module5_v01.js` | `KP1_Module5_Script_Bundle_v0.1.md` |
-| 6 | Cross-country evidence, cross-sector applicability and dissemination | Strategist | `build_kp1_module6_v01.js` | `KP1_Module6_Script_Bundle_v0.1.md` |
+| 5 | Cross-country evidence, cross-sector applicability and dissemination | Strategist | `build_kp1_module5_v01.js` | `KP1_Module5_Script_Bundle_v0.1.md` |
 
-**All six KP1 modules are authored** (Modules 1 and 6 Strategist-facing; 2–5 Architect-facing). Each passes the `kp-bundle-qa` compliance gate and has had its PAERA citations verified against the source.
+**All five KP1 modules are authored** (Modules 1 and 5 Strategist-facing; 2–4 Architect-facing). The original Module 5 (AI plays) was retired in September 2026: its plays duplicated the AI usage tips already carried in the other modules, and its ground rules and safeguards now live only in the GitBook companion as a standalone section. The cross-country capstone that was Module 6 was renumbered to Module 5 at the same time, subtopics and all (6.1–6.7 → 5.1–5.7). Each passes the `kp-bundle-qa` compliance gate and has had its PAERA citations verified against the source.
 
 ## The source-of-truth rule
 
@@ -46,7 +45,7 @@ Before any module is shared with ITU, run the two gates: `kp-citation-verify` (P
 
 ## Status
 
-All three modules pass the compliance gate (0 hard failures) and have had their PAERA citations verified against `itu-knowledge/_inputs/PAERA_document_v.1.0.docx`. Open calibration items for ITU's Tuesday-call review are carried in Section 5 of each bundle.
+All five modules pass the compliance gate (0 hard failures) and have had their PAERA citations verified against `itu-knowledge/_inputs/PAERA_document_v.1.0.docx`. Open calibration items for ITU's Tuesday-call review are carried in Section 5 of each bundle.
 
 ---
 

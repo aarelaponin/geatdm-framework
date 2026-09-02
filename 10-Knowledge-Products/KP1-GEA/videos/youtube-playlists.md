@@ -22,10 +22,9 @@ channel's playlist grid, persona last so a viewer self-selects before clicking.
 | 2 | KP1 Module 2 — EA principles, the metamodel and the BDAT layers (Architect) | Architect | 2.0 + 2.1–… |
 | 3 | KP1 Module 3 — EA repository, tooling and governance (Architect) | Architect | 3.0 + … |
 | 4 | KP1 Module 4 — Progressa: applying the method end-to-end (Architect) | Architect | 4.0 + … |
-| 5 | KP1 Module 5 — AI plays for EA, hands-on (Architect) | Architect | 5.0 + … |
-| 6 | KP1 Module 6 — Cross-country evidence and dissemination (Strategist) | Strategist | 6.0 + … |
+| 5 | KP1 Module 5 — Cross-country evidence and dissemination (Strategist) | Strategist | 5.0 + … |
 
-When `fr/` ships, it gets its own six — `KP1 Module 1 — Pourquoi une AE nationale …` — never mixed
+When `fr/` ships, it gets its own five — `KP1 Module 1 — Pourquoi une AE nationale …` — never mixed
 into the English playlists. Two languages in one playlist means autoplay hands a viewer a video
 they cannot understand.
 

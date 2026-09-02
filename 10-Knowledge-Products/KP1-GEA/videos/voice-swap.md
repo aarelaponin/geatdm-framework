@@ -45,7 +45,7 @@ ElevenLabs → **Voices** → **Add a voice** → **Instant Voice Clone**. Uploa
 verification statement. Two minutes.
 
 *Professional Voice Clone* wants 30 minutes to 3 hours and takes hours to train. It is materially
-better and worth doing if this series runs to all six modules — but start with the instant clone,
+better and worth doing if this series runs to all five modules — but start with the instant clone,
 ship 1.1, and upgrade only once you have heard the instant clone across a full video.
 
 ### Cast the second host
