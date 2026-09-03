@@ -141,15 +141,27 @@ def beats(block):
 
 
 def slide_vo(block):
-    """[(slide label, voice-over words), …] — one entry per cue."""
+    """[(slide label, voice-over words, cue text), …] — one entry per cue."""
     out = []
     for kind, txt in beats(block):
         if kind == "cue":
             mm = re.match(r"\s*(Slide\s*\d+)", txt)
-            out.append([mm.group(1) if mm else txt[:18], 0])
+            out.append([mm.group(1) if mm else txt[:18], 0, txt])
         elif out:
             out[-1][1] += len(txt.split())
-    return [(a, b) for a, b in out]
+    return [tuple(r) for r in out]
+
+
+def thin_slides(block):
+    """Content slides carrying too little voice-over to justify a slide of their own.
+
+    The title, recap and Sources slides are short by design — the opener and recap
+    caps are what make them short — so they are never thin-slide candidates."""
+    rows = slide_vo(block)[1:]
+    return [label for label, words, cue in rows
+            if 0 < words < THIN_SLIDE
+            and RECAP_CUE.lower() not in cue.lower()
+            and "'sources'" not in cue.lower()]
 
 
 def opener_words(block):
@@ -367,7 +379,7 @@ def main():
             flags.append("no '{}' recap beat found".format(RECAP_CUE))
         if words > CAP_WORDS:
             flags.append("{} spoken words (ceiling {})".format(words, CAP_WORDS))
-        thin = [s for s, w in slide_vo(b) if 0 < w < THIN_SLIDE]
+        thin = thin_slides(b)
         if thin:
             flags.append("thin slides (<{} words): {}".format(THIN_SLIDE, ", ".join(thin)))
         banned = [p for p in RECAP_BANNED if p in rtext.lower()]
