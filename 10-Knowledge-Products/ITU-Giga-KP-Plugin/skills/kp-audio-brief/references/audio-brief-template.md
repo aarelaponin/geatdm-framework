@@ -76,6 +76,15 @@ Host B adds one sentence naming the stake. Then move on. **No preamble about the
 «Where the deck's speaker notes carry a retrieval moment, a highlighted cell or a "hold a beat
 longer" direction, translate it into a spoken instruction here.»
 
+### Slide «recap» — "In one sentence" · «start»–«end» («s» s)
+
+The single message, said once, and then stop. No restatement of the video's sections, no
+invitation to act.
+
+The recap slide also carries an on-screen practice box. **It is not narrated.** Do not mention
+the prompt, the description, or the listener's own sector. The box is the call to action; the
+voice-over's job here is the single message and nothing else.
+
 ### Slide «last» — Sources · «start»–«end» (10 s)
 
 One line only, then stop: "Sources are in the video description." **Do not read URLs. Do not
@@ -86,9 +95,12 @@ Nothing follows them, and no question precedes them — the take ends here.
 
 ## 3. Hard prohibitions
 
+- ❌ **No spoken handoff.** No "before the next video", no "run this on your own sector", no
+  mention of the prompt or the description. That call to action lives in the on-screen practice
+  box on the recap slide and is deliberately silent.
 - ❌ **No podcast outro.** No "that raises a fascinating question for you to consider", no "look
   around at the other institutions in your life", no invitation to reflect on other sectors. The
-  audio ends on the series handoff in the final content slide, plus the one-line sources note.
+  audio ends on the recap slide's single message plus the one-line sources note.
 - ❌ **No "deep dive" self-reference.** Never say "deep dive", "today we're unpacking", "welcome
   to", "our sources", "the sources say", "according to the sources", "here's where it gets
   interesting".
@@ -151,5 +163,7 @@ The audio is correct when:
 2. A listener can tell, without seeing the slides, where each slide begins.
 3. Every enumerated list in the deck is numbered aloud, in the deck's order.
 4. Nothing is said that is not in this brief.
-5. The final words are the series handoff plus the one-line sources note.
+5. The final words are the recap slide's single message plus the one-line sources note.
+5a. Nothing is said about the practice box — not the prompt, not the description, not the
+   listener's own sector.
 6. There are audible pauses at the slide boundaries, long enough to cut against.

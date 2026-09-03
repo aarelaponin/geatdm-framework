@@ -1,6 +1,6 @@
 {
   "name": "itu-giga-kp",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Production kit for the FiscalAdmin OU — ITU/Giga Knowledge Products contract (RFQ-S-GIGA-2026-022, PO #334304). KP1 (plan): author a KP video-script bundle in the locked audience register, verify every PAERA citation, run the ITU compliance gate, and build/render the docx. KP2-4 (build): scaffold a runnable build pack, generate Building-Block configuration from public specs (X-Road / GovStack / Joget), and verify the solution actually runs on the Linkup + Joget stack. Video track (all KPs): build and split the ITU-template decks (pptx) with voice-over in speaker notes, author the narration as a two-speaker interview script and synthesize it with Gemini multi-speaker TTS (NotebookLM briefing stays as the fallback, its SRT audit as the verifier on both paths), transcribe the take to SRT with ElevenLabs Scribe (or locally with whisper, offline), then author the slide cue file and assemble deck + audio into the mp4. Plus a curriculum / cross-KP coherence gate above the per-module gates (competency coverage, terminology + citation consistency across modules and KPs). One author skill plus mechanic and gate skills, modelled on the RA-to-RFP kit.",
   "author": {
     "name": "FiscalAdmin OU"
