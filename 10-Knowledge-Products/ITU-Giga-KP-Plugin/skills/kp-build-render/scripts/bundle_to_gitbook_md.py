@@ -31,6 +31,8 @@ CALIBRATION_SECTION = re.compile(
     r"\n## 5\. Open calibration items\n.*?(?=\n## \d|\Z)", re.DOTALL
 )
 CALIBRATION_REFERENCE = " Section 5 records the open calibration items raised during drafting."
+# On the learner-facing site the tip is a thing to do, not a thing to read about.
+TIP_HEADING = ("### AI usage tip — ", "### Do this on your own sector — ")
 
 
 def strip_calibration(md_text):
@@ -40,6 +42,7 @@ def strip_calibration(md_text):
     # Section 6 (Annex) closes the gap left by the removed section 5.
     md_text = re.sub(r"^## 6\.", "## 5.", md_text, flags=re.MULTILINE)
     md_text = md_text.replace("Section 6", "Section 5")
+    md_text = md_text.replace(*TIP_HEADING)
     return re.sub(r"\n{3,}", "\n\n", md_text)
 
 

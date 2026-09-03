@@ -9,11 +9,17 @@ pages, box colours) is done separately by eye on the rendered PDF.
 
 Usage:
     python3 qa_bundle.py path/to/build_kp1_module2_v01.js
+    python3 qa_bundle.py --stats path/to/build_kp1_module2_v01.js
 
 Exit code 0 = all HARD checks passed (soft warnings may remain). Non-zero = a hard
 check failed. Hard: forbidden strings, missing seven-element pieces, numbering
-gaps. Soft (warn only): meta-intro phrases, on-camera cues, structural-argument
-coverage, metadata gaps, word-count/runtime mismatch.
+gaps, a narrated practice box. Soft (warn only): meta-intro phrases, on-camera cues,
+structural-argument coverage, metadata gaps, word-count/runtime mismatch, length
+discipline (opener / recap / word ceiling / thin slides) and the practice-box wiring.
+
+--stats prints the per-subtopic and per-module measurement table (spoken words,
+slides, opener and recap words) as Markdown. It is the acceptance instrument for a
+tightening pass: paste it into the commit message as the before/after record.
 
 Standard library only.
 """
@@ -43,6 +49,16 @@ SEVEN_KEYS = ["num", "title", "runtime", "words", "paeraAnchor",
 AITIP_PARTS = ["title", "problem", "prompt", "io", "safeguard"]
 META_ROWS = ["Working title", "YouTube", "Description", "Tags",
              "Playlist", "ToR", "PAERA citations", "External-link"]
+
+PRACTICE_LEAD_IN = "Do this on your own sector"
+RECAP_CUE = "In one sentence"
+# Soft length thresholds (KP1 tightening analysis, 2 Sep 2026; ~110 realised wpm).
+CAP_OPENER = 45
+CAP_RECAP = 35
+CAP_WORDS = 550
+THIN_SLIDE = 45
+# Belongs on the on-screen practice box, never in the recap voice-over.
+RECAP_BANNED = ["prompt", "description", "your own sector"]
 
 REUSE_SIGNATURES = ["re-use", "reuse", "whole-of-government", "whole of government"]
 LINGUA_SIGNATURES = ["lingua franca", "shared language", "business and it",
@@ -82,6 +98,103 @@ def find_subtopic_blocks(src):
     return blocks
 
 
+def field(block, name):
+    """The value of a top-level string field, or ''."""
+    m = re.search(name + r':\s*"((?:[^"\\]|\\.)*)"', block)
+    return re.sub(r"\\(.)", r"\1", m.group(1)) if m else ""
+
+
+def _slice(block, key, open_ch="["):
+    """The inner text of block's `key: [ … ]` (or `{ … }`), quote-aware."""
+    close_ch = {"[": "]", "{": "}"}[open_ch]
+    m = re.search(key + r":\s*" + re.escape(open_ch), block)
+    if not m:
+        return ""
+    i = m.end() - 1
+    depth = 0
+    in_str = False
+    while i < len(block):
+        c = block[i]
+        if in_str:
+            if c == "\\":
+                i += 2
+                continue
+            if c == '"':
+                in_str = False
+        elif c == '"':
+            in_str = True
+        elif c == open_ch:
+            depth += 1
+        elif c == close_ch:
+            depth -= 1
+            if depth == 0:
+                return block[m.end():i]
+        i += 1
+    return block[m.end():]
+
+
+def beats(block):
+    """[(kind, text), …] over scriptBeats in source order; kind is 'cue' or 'text'."""
+    inner = _slice(block, "scriptBeats")
+    return [(m.group(1), re.sub(r"\\(.)", r"\1", m.group(2)))
+            for m in re.finditer(r'(cue|text):\s*"((?:[^"\\]|\\.)*)"', inner)]
+
+
+def slide_vo(block):
+    """[(slide label, voice-over words), …] — one entry per cue."""
+    out = []
+    for kind, txt in beats(block):
+        if kind == "cue":
+            mm = re.match(r"\s*(Slide\s*\d+)", txt)
+            out.append([mm.group(1) if mm else txt[:18], 0])
+        elif out:
+            out[-1][1] += len(txt.split())
+    return [(a, b) for a, b in out]
+
+
+def opener_words(block):
+    """Words in the first text beat (the beat after the title cue)."""
+    for kind, txt in beats(block):
+        if kind == "text":
+            return len(txt.split())
+    return 0
+
+
+def recap_beat(block):
+    """(words, text) of the text beat following the 'In one sentence' cue."""
+    seen = False
+    for kind, txt in beats(block):
+        if kind == "cue" and RECAP_CUE.lower() in txt.lower():
+            seen = True
+        elif seen and kind == "text":
+            return len(txt.split()), txt
+    return 0, ""
+
+
+def spoken_words(block):
+    return sum(len(t.split()) for k, t in beats(block) if k == "text")
+
+
+def print_stats(path, blocks):
+    """The measurement table: the acceptance instrument for a tightening pass."""
+    rows = []
+    for b in blocks:
+        words = spoken_words(b)
+        rows.append((field(b, "num").split()[-1] if field(b, "num") else "?",
+                     words, len(slide_vo(b)), opener_words(b), recap_beat(b)[0]))
+    n = len(rows) or 1
+    tw = sum(r[1] for r in rows)
+    ts = sum(r[2] for r in rows)
+    print("\n### {} — measurement\n".format(path.name))
+    print("| Subtopic | Spoken words | Slides | Opener words | Recap words |")
+    print("|---|---|---|---|---|")
+    for r in rows:
+        print("| {} | {} | {} | {} | {} |".format(*r))
+    print("| **{} videos** | **{}** | **{}** | avg {} | avg {} |".format(
+        len(rows), tw, ts, sum(r[3] for r in rows) // n, sum(r[4] for r in rows) // n))
+    print("\nAverage {} spoken words and {:.1f} slides per video.".format(tw // n, ts / n))
+
+
 def report(title):
     print("\n" + "=" * 64)
     print(title)
@@ -89,15 +202,21 @@ def report(title):
 
 
 def main():
-    if len(sys.argv) < 2:
-        sys.exit("usage: python3 qa_bundle.py <build_script.js>")
-    path = Path(sys.argv[1])
+    args = [a for a in sys.argv[1:] if a != "--stats"]
+    stats_only = "--stats" in sys.argv
+    if not args:
+        sys.exit("usage: python3 qa_bundle.py [--stats] <build_script.js>")
+    path = Path(args[0])
     if not path.exists():
         sys.exit(f"not found: {path}")
     src = path.read_text(encoding="utf-8", errors="replace")
     low = src.lower()
     code = strip_comments(src)        # comments removed
     code_low = code.lower()           # for prose scans (meta-intros, on-camera)
+
+    if stats_only:
+        print_stats(path, find_subtopic_blocks(src))
+        return
 
     hard_fail = 0
     soft_warn = 0
@@ -231,6 +350,60 @@ def main():
             if not ok:
                 soft_warn += 1
             print(f"  {tag}  {num}: {words} words / {mins} min = {wpm:.0f} wpm")
+
+    # 9. Length discipline (SOFT) -----------------------------------------
+    report("9. Length discipline (SOFT — never fails the gate)")
+    for b in blocks:
+        num = field(b, "num") or "?"
+        words = spoken_words(b)
+        op = opener_words(b)
+        rw, rtext = recap_beat(b)
+        flags = []
+        if op > CAP_OPENER:
+            flags.append("opener {} words (cap {})".format(op, CAP_OPENER))
+        if rw > CAP_RECAP:
+            flags.append("recap {} words (cap {})".format(rw, CAP_RECAP))
+        if not rw:
+            flags.append("no '{}' recap beat found".format(RECAP_CUE))
+        if words > CAP_WORDS:
+            flags.append("{} spoken words (ceiling {})".format(words, CAP_WORDS))
+        thin = [s for s, w in slide_vo(b) if 0 < w < THIN_SLIDE]
+        if thin:
+            flags.append("thin slides (<{} words): {}".format(THIN_SLIDE, ", ".join(thin)))
+        banned = [p for p in RECAP_BANNED if p in rtext.lower()]
+        if banned:
+            flags.append("recap VO says {} — that belongs on the practice box".format(banned))
+        if flags:
+            print("  WARN  {}: ".format(num) + "; ".join(flags))
+            soft_warn += 1
+        else:
+            print("  PASS  {}: {} words, opener {}, recap {}".format(num, words, op, rw))
+
+    # 10. Practice box ------------------------------------------------------
+    report("10. On-screen practice box")
+    # Narrating the box is a compliance leak, so that half is HARD.
+    narrated = [(field(b, "num"), t) for b in blocks for k, t in beats(b)
+                if k == "text" and PRACTICE_LEAD_IN.lower() in t.lower()]
+    if narrated:
+        for num, t in narrated:
+            print("  FAIL  {}: voice-over contains the box lead-in — …{}…".format(num, t[:80]))
+        hard_fail += 1
+    else:
+        print("  PASS  the box lead-in is nowhere in the voice-over")
+    for b in blocks:
+        num = field(b, "num") or "?"
+        artefact = field(b, "practice")
+        if not artefact:
+            print("  WARN  {}: no practice field".format(num))
+            soft_warn += 1
+            continue
+        io = field(_slice(b, "aiTip", "{"), "io")
+        if artefact.lower().rstrip(".") in io.lower():
+            print("  PASS  {}: practice artefact matches the tip's output line".format(num))
+        else:
+            print("  WARN  {}: practice artefact '{}' is not in the tip's io line "
+                  "— the box and the tip can drift".format(num, artefact))
+            soft_warn += 1
 
     # Summary --------------------------------------------------------------
     report("SUMMARY")

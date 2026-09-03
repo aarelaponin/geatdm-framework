@@ -153,6 +153,13 @@ def parse_subtopic(block, persona_default):
         md.append("\n### On-screen slide specification\n")
         md.append(table(["Slide", "Element (text-only)", "Notes"], rows))
 
+    # on-screen practice box (recap slide; never narrated)
+    practice = field("practice").rstrip(".")
+    if practice:
+        md.append("\n**On-screen practice box (recap slide, not narrated):** "
+                  f"**Do this on your own sector.** Run the prompt in the description "
+                  f"on your own ministry — it gives you {practice}. Before the next video.\n")
+
     # ai tip
     am = re.search(r"aiTip:\s*\{", block)
     if am:

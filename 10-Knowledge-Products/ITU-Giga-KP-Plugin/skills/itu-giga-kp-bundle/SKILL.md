@@ -52,6 +52,12 @@ Walk every box before drafting. The corrections cost real revision cycles on Mod
 - [ ] **No individuals on screen.** AI-avatar narration or computer-screen-only voice-over — pick one per video. No "speaker on camera" cues.
 - [ ] **AI usage tip embedded per subtopic.** Four-part structure (problem, prompt template, inputs/outputs, safeguard). Output must be a middle-manager-grade artefact the listener can take to a real meeting.
 - [ ] **"Find the link in the description" for all external references.** No URLs read aloud. Compile per-subtopic link lists into the metadata table.
+- [ ] **Length discipline.** Opener ≤ 45 spoken words, recap ≤ 35 and a single message only, ≤ 550 spoken words for the whole video (≈ 5:00 at the ~110 wpm the narration realises). A slide carrying under 45 words of voice-over is a thin slide — fold it into a neighbour. `qa_bundle.py` reports all four as soft warnings and `--stats` prints the measurement table.
+- [ ] **On-screen practice box on the recap slide.** Every subtopic carries a `practice` field naming the artefact its AI tip produces. It renders as an un-narrated box on the recap slide: **Do this on your own sector.** Run the prompt in the description on your own ministry — it gives you [artefact]. Before the next video. It replaces the narrated "Your play" handoff, so nothing in the voice-over may mention the prompt, the description or the listener's own sector.
+- [ ] **Signpost, don't re-teach.** A concept a listener may have met in another module is carried by ONE self-contained sentence — never a paragraph that re-argues it, and never a pointer ("as Module 2 showed", "as we saw"), which breaks the stand-alone rule. The sentence must still carry the signature phrase the gate greps for. Three that work:
+  - "Procurement rules can make each contract cheaper, but only whole-of-government planning makes re-use possible."
+  - "An architecture gives the business side and IT one shared language, so a decision means the same thing in both rooms."
+  - "A reference architecture answers the questions a single project is never funded to ask, which is why the pattern is settled once and re-used."
 - [ ] **Two structural arguments present.** Planning enables re-use (procurement rules can't deliver re-use; only whole-of-government planning can). EA is the lingua franca between business and IT in the transformation era (operating-model change requires shared language). These must appear in any "why EA matters" framing.
 
 ## Step 4 — Use the build-script pattern
@@ -76,15 +82,16 @@ To produce a new module bundle:
 
 ## Step 5 — Subtopic content structure
 
-Every subtopic ships with seven elements, in this order:
+Every subtopic ships with eight elements, in this order:
 
 1. **Header table** — Persona, Target runtime (~5 min, ~620 spoken words), PAERA anchor (use `references/paera-anchor-map.md` for the lookup).
 2. **Single-message box** — One sentence stating the public-sector outcome the listener gains. Lead with what they will be able to do.
 3. **Script beats** — 4 to 8 alternating visual-cue + voice-over blocks. Each voice-over block is one substantive paragraph or two short ones. No meta-introductions, no forward-pointing outros.
 4. **On-screen slide specification** — A 3-column table (slide number, text-only element, design notes). Slide branding is implicit (Arial 28pt/18pt, #E5F5FB) but each cell describes only the text content and any minimal diagram structure (text-box arrows, plain-text tables).
-5. **AI usage tip** — A four-part block: (a) problem the prompt solves, (b) the prompt itself in monospace, copy-paste ready, (c) inputs and outputs note, (d) one safeguard caveat.
-6. **Metadata table** — Working title, YouTube-optimised title, 60-word description (with explicit mention of the AI prompt in the description), tags, playlist label, ToR §4 coverage, PAERA citations, external-link list.
-7. **End-of-subtopic page break** — Each subtopic starts on a fresh page for navigability.
+5. **On-screen practice box** — The `practice` field: the artefact string, matching the AI tip's inputs-and-outputs line so the two cannot drift. Renders on the recap slide, never narrated.
+6. **AI usage tip** — A four-part block: (a) problem the prompt solves, (b) the prompt itself in monospace, copy-paste ready, (c) inputs and outputs note, (d) one safeguard caveat.
+7. **Metadata table** — Working title, YouTube-optimised title, 60-word description (with explicit mention of the AI prompt in the description), tags, playlist label, ToR §4 coverage, PAERA citations, external-link list.
+8. **End-of-subtopic page break** — Each subtopic starts on a fresh page for navigability.
 
 ## Step 6 — AI usage prompt design
 
