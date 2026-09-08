@@ -1,0 +1,320 @@
+1
+00:00:00,180 --> 00:00:08,090
+So when you are the director, um, overseeing these massive digital systems for your ministry,
+
+2
+00:00:08,700 --> 00:00:10,920
+I think you eventually realize something pretty quickly.
+
+3
+00:00:11,100 --> 00:00:13,260
+You aren't really fighting bad technology.
+
+4
+00:00:13,420 --> 00:00:14,760
+You're fighting fragmentation.
+
+5
+00:00:15,100 --> 00:00:16,000
+Oh, absolutely. Yeah.
+
+6
+00:00:16,160 --> 00:00:24,840
+Like one department spends millions building a system to register citizens, and, and then another ministry builds their own system
+
+7
+00:00:25,400 --> 00:00:27,800
+to, you know, register those exact same citizens.
+
+8
+00:00:27,880 --> 00:00:32,619
+Right. And the result is that the people you're trying to serve are stuck filling out the exact same form, what?
+
+9
+00:00:32,820 --> 00:00:34,260
+Five times at five different counters?
+
+10
+00:00:34,600 --> 00:00:44,220
+Yeah, exactly. It happens constantly. And I, I mean, from the outside, the obvious substantive question is: Shouldn't the people running these individual programs realize the duplication and just, you
+
+11
+00:00:44,260 --> 00:00:45,540
+know, fix it internally?
+
+12
+00:00:45,920 --> 00:00:48,100
+Well, see, that's the thing. They physically cannot.
+
+13
+00:00:49,140 --> 00:00:50,400
+Wait, really? Why not?
+
+14
+00:00:50,520 --> 00:00:53,320
+Because each program is just doing exactly what it was funded to do.
+
+15
+00:00:53,480 --> 00:00:56,810
+I mean, they aren't funded to build some unified national infrastructure, right?
+
+16
+00:00:56,820 --> 00:01:01,160
+They're funded to build a school list or, uh, a tax portal.
+
+17
+00:01:01,449 --> 00:01:05,700
+Ah, so the true issue isn't a lack of technical effort inside the program.
+
+18
+00:01:05,710 --> 00:01:10,619
+No, not at all. It's the complete absence of a shared overarching plan.
+
+19
+00:01:10,660 --> 00:01:13,520
+Without that, every new initiative operates in a vacuum.
+
+20
+00:01:13,880 --> 00:01:16,660
+You just end up rebuilding what the ministry next door already built.
+
+21
+00:01:17,040 --> 00:01:20,940
+Okay, so let's unpack how a government actually falls into this trap.
+
+22
+00:01:21,380 --> 00:01:26,760
+What does this fragmentation actually look like on the ground for, uh, for the people running these programs?
+
+23
+00:01:27,080 --> 00:01:30,940
+So there are four critical signs that your government lacks a shared plan.
+
+24
+00:01:31,060 --> 00:01:34,020
+Sign one is multiple registers for the same people.
+
+25
+00:01:34,400 --> 00:01:36,180
+Okay, multiple registers. Like what?
+
+26
+00:01:36,460 --> 00:01:36,620
+Like
+
+27
+00:01:37,340 --> 00:01:44,500
+your ministry might have a social register, while the education department has a school list, and a third agency has the national ID register.
+
+28
+00:01:45,320 --> 00:01:48,740
+And because nobody agreed on a shared data standard beforehand,
+
+29
+00:01:49,660 --> 00:01:51,420
+none of these registers agree with each other.
+
+30
+00:01:51,560 --> 00:01:53,370
+Oh, wow, so they literally don't match.
+
+31
+00:01:53,480 --> 00:01:58,980
+Right. Which brings us to sign two: building system connections from zero every single time.
+
+32
+00:01:59,020 --> 00:02:02,140
+Because they don't match, you can't just flip a switch to share the information.
+
+33
+00:02:02,320 --> 00:02:07,860
+Exactly. Every time two systems need to communicate, you have to build a custom bridge from scratch.
+
+34
+00:02:08,380 --> 00:02:12,049
+For example, connecting the tax office to the business register last year.
+
+35
+00:02:12,260 --> 00:02:15,600
+Right. And then doing the exact same work from scratch
+
+36
+00:02:16,520 --> 00:02:19,680
+for the health ministry this year. It's incredibly inefficient.
+
+37
+00:02:19,760 --> 00:02:22,020
+Which I guess leads to the vendor issue.
+
+38
+00:02:22,090 --> 00:02:26,269
+Right. Because if you're relying on all this bespoke, undocumented code...
+
+39
+00:02:26,560 --> 00:02:30,070
+Yes. Sign three. Yeah. Vendor lock-in on ten-year-old systems.
+
+40
+00:02:30,340 --> 00:02:34,940
+Yeah. Where the vendor dictates the price because literally nobody else knows how the thing works.
+
+41
+00:02:35,040 --> 00:02:38,340
+Exactly. It's like a foreign language only the original developer speaks.
+
+42
+00:02:38,380 --> 00:02:40,870
+Yeah. And then finally, sign four:
+
+43
+00:02:41,540 --> 00:02:43,480
+ministries that just don't connect at all.
+
+44
+00:02:43,810 --> 00:02:48,329
+Making the, uh, the once only principle completely impossible in practice.
+
+45
+00:02:48,480 --> 00:02:56,600
+Right. So a citizen gives her ID to the health ministry, but then she still has to provide it all over again on paper to enroll her child in school.
+
+46
+00:02:56,840 --> 00:03:03,120
+It's like hiring specialized contractors to build a house, but, um, none of them are allowed to look at the same master blueprint.
+
+47
+00:03:03,190 --> 00:03:06,460
+That's exactly it. Yeah. And the costs of this pattern run in four directions.
+
+48
+00:03:06,500 --> 00:03:07,820
+Okay, let's go through the costs.
+
+49
+00:03:07,860 --> 00:03:10,940
+First is money. You're just repeatedly rebuilding systems.
+
+50
+00:03:11,120 --> 00:03:14,870
+Second is time. You're constantly waiting for unplanned cross-system work.
+
+51
+00:03:15,120 --> 00:03:17,500
+Right. Making those custom bridges you mentioned.
+
+52
+00:03:17,600 --> 00:03:22,320
+Yeah. Third is the citizens, obviously, who are burdened with repetitive forms.
+
+53
+00:03:23,080 --> 00:03:26,760
+But the fourth cost is the one that really catches leadership off guard.
+
+54
+00:03:27,040 --> 00:03:29,340
+And what's that? Your minister. Wait, your minister?
+
+55
+00:03:29,480 --> 00:03:33,240
+I would assume the minister is somewhat insulated from, like, database glitches.
+
+56
+00:03:33,760 --> 00:03:36,040
+They're insulated from small glitches, sure.
+
+57
+00:03:36,080 --> 00:03:41,840
+But your minister becomes entirely unable to deliver flagship cross-ministry programs.
+
+58
+00:03:41,960 --> 00:03:43,920
+Oh, because the systems won't talk to each other.
+
+59
+00:03:44,080 --> 00:03:48,520
+Exactly. If the technology is fragmented, the flagship policy fails.
+
+60
+00:03:48,560 --> 00:03:50,019
+The minister can't deliver.
+
+61
+00:03:50,160 --> 00:03:57,720
+So, okay, if the root cause is that nobody has written down what the systems are or how they fit together, what does the actual fix look like?
+
+62
+00:03:57,980 --> 00:04:01,240
+The solution is a national enterprise architecture or EA.
+
+63
+00:04:01,570 --> 00:04:02,920
+An enterprise architecture?
+
+64
+00:04:02,950 --> 00:04:06,120
+Yeah. It serves as that missing shared plan.
+
+65
+00:04:06,180 --> 00:04:08,560
+We're talking about frameworks like PERA.
+
+66
+00:04:08,620 --> 00:04:13,560
+That's P-A-E-R-A, the Public Administration Ecosystem Reference Architecture,
+
+67
+00:04:14,300 --> 00:04:17,260
+or, um, the European Interoperability Framework.
+
+68
+00:04:17,399 --> 00:04:19,899
+Okay, so it's not like you're buying a mega software platform.
+
+69
+00:04:19,959 --> 00:04:22,320
+No, no. They aren't software. They're structural blueprints.
+
+70
+00:04:22,740 --> 00:04:26,800
+Got it. So going back to that house analogy, it's like city zoning laws.
+
+71
+00:04:27,180 --> 00:04:35,520
+A private developer can build whatever house they want, but the zoning law dictates that all the plumbing has to connect to the main sewer line using a standard pipe.
+
+72
+00:04:35,900 --> 00:04:40,040
+Yes, exactly. You aren't micromanaging the interior design of the system.
+
+73
+00:04:40,400 --> 00:04:42,240
+You're just standardizing the connections.
+
+74
+00:04:43,060 --> 00:04:47,300
+An EA establishes the data models every new government system must follow.
+
+75
+00:04:47,340 --> 00:04:48,920
+Which breaks the vendor lock-in.
+
+76
+00:04:48,980 --> 00:04:51,760
+Right, because it's built on open shared standards.
+
+77
+00:04:51,840 --> 00:04:54,020
+Systems can inherently communicate from day one.
+
+78
+00:04:54,240 --> 00:05:03,740
+So by adopting a national enterprise architecture, you stop bleeding money on duplicate builds, you get your leverage back from vendors, and you finally make the once only
+
+79
+00:05:03,800 --> 00:05:06,740
+principle a reality for citizens.
+
+80
+00:05:07,000 --> 00:05:10,760
+It really is the only way to build digital infrastructure that actually scales.
+

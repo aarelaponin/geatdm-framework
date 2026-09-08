@@ -1,0 +1,300 @@
+1
+00:00:00,150 --> 00:00:01,710
+national enterprise architecture.
+
+2
+00:00:01,870 --> 00:00:04,390
+Right. And you know, if you run these systems in your ministry,
+
+3
+00:00:05,270 --> 00:00:08,810
+you already know the technology is... Well, it's rarely the bottleneck.
+
+4
+00:00:09,270 --> 00:00:11,340
+Yeah. The real friction is almost always political.
+
+5
+00:00:11,990 --> 00:00:20,770
+So our mission today is to extract the four non-negotiable commitments you absolutely need from your minister to actually make this work.
+
+6
+00:00:20,910 --> 00:00:28,310
+Exactly. We are specifically digging into the PAERA framework, which stands for the Public Administration Ecosystem
+
+7
+00:00:28,730 --> 00:00:29,970
+Reference Architecture.
+
+8
+00:00:30,010 --> 00:00:32,130
+Which I mean, sounds incredibly dense.
+
+9
+00:00:32,290 --> 00:00:37,710
+It does, yeah. Yeah. But really just think of it as the master urban plan for your government's digital infrastructure.
+
+10
+00:00:37,770 --> 00:00:45,140
+It's the framework that prevents, you know, five different agencies from accidentally building five completely incompatible identity systems.
+
+11
+00:00:45,390 --> 00:00:50,510
+Right. But you can have the best master plan in the world, and you still need planners to execute it.
+
+12
+00:00:50,530 --> 00:00:53,970
+Which brings us to the first ask: you need a permanent EA team.
+
+13
+00:00:54,010 --> 00:00:58,470
+We're talking two to four senior architects who report directly to your chief digital officer.
+
+14
+00:00:58,510 --> 00:01:02,670
+Okay, wait. I wanna pause on that. Why the heavy emphasis on the word permanent?
+
+15
+00:01:03,710 --> 00:01:09,440
+Because ministers usually just prefer hiring, like outside project consultants for big digital pushes rarely.
+
+16
+00:01:09,510 --> 00:01:12,320
+They do, yeah. Yeah. But consultants function like a, um,
+
+17
+00:01:13,290 --> 00:01:18,070
+a temporary construction crew. They arrive, they build a specific app, and then they leave.
+
+18
+00:01:18,190 --> 00:01:18,710
+Oh, I see.
+
+19
+00:01:19,030 --> 00:01:22,650
+A permanent EA team acts as your actual city planners.
+
+20
+00:01:22,690 --> 00:01:24,980
+They are the institutional memory of your architecture.
+
+21
+00:01:25,210 --> 00:01:30,380
+Right. They maintain those cross-cutting standards whether a massive IT project is running or not.
+
+22
+00:01:30,410 --> 00:01:33,360
+You simply cannot outsource your core digital sovereignty.
+
+23
+00:01:33,550 --> 00:01:37,930
+Exactly. Which leads us to the second ask in the PEO framework.
+
+24
+00:01:37,970 --> 00:01:44,870
+Mm-hmm. An EA board. Mm. And crucially, it needs absolute binding authority over major state registers.
+
+25
+00:01:45,050 --> 00:01:52,680
+Now, see, I can hear ministers pushing back on this immediately saying something like, "Fine, we'll hire permanent planners, but let's just make them an advisory board so we don't step on any sector
+
+26
+00:01:52,810 --> 00:01:53,820
+CIO's toes."
+
+27
+00:01:54,090 --> 00:01:55,710
+Right. That's the classic compromise.
+
+28
+00:01:55,770 --> 00:02:00,369
+Yeah. So why is there such a strict insistence that the mandate has to be binding?
+
+29
+00:02:00,420 --> 00:02:02,530
+Doesn't that just create a bureaucratic choke point?
+
+30
+00:02:02,890 --> 00:02:11,190
+Well, if you make this board purely advisory, agencies will just politely listen to the recommendations and then, you know, go buy whatever redundant software they wanted anyway.
+
+31
+00:02:11,250 --> 00:02:12,450
+Yeah, that happens all the time.
+
+32
+00:02:12,510 --> 00:02:21,719
+The EA board, which really needs to be chaired by the CDO or the minister directly, it has to be the mandatory checkpoint for every digital decision.
+
+33
+00:02:22,450 --> 00:02:29,130
+Without binding authority, your EA is just, um, an expensive PDF that nobody reads.
+
+34
+00:02:29,450 --> 00:02:33,850
+So the mandate is what gives your architects the teeth they need to enforce the rules.
+
+35
+00:02:33,970 --> 00:02:37,410
+Exactly. Okay, so we have permanent planners, and we've given them teeth.
+
+36
+00:02:37,450 --> 00:02:39,939
+The third ask is about funding them, right?
+
+37
+00:02:39,970 --> 00:02:42,670
+The briefs call for a five-year budget envelope.
+
+38
+00:02:42,850 --> 00:02:43,090
+Yes,
+
+39
+00:02:43,810 --> 00:02:47,170
+specifically representing about 2% of your total digital budget.
+
+40
+00:02:47,330 --> 00:02:52,520
+But why a five-year lock-in? Why not just fund them annually like every other department in the ministry?
+
+41
+00:02:52,750 --> 00:02:57,510
+Because annual line items disappear the moment a crisis hits or y- you know, the political winds shift.
+
+42
+00:02:58,030 --> 00:03:02,110
+Enterprise architecture is that quiet foundational governance overhead.
+
+43
+00:03:02,120 --> 00:03:05,470
+The stuff that makes the fast-moving projects actually run smoothly.
+
+44
+00:03:05,550 --> 00:03:08,939
+Right. So by protecting that 2% inside a five-year envelope,
+
+45
+00:03:09,650 --> 00:03:13,530
+you ensure the foundational work actually survives ministerial turnover.
+
+46
+00:03:13,570 --> 00:03:18,430
+Which perfectly tees up the fourth ask, and honestly, this one reads more like a psychological contract.
+
+47
+00:03:18,490 --> 00:03:24,710
+It really is. You need a written promise that this EA team will not be pulled onto the urgent project of the week.
+
+48
+00:03:25,070 --> 00:03:26,990
+I struggle to see how this works in reality, though.
+
+49
+00:03:27,270 --> 00:03:33,020
+Like, if a flagship government app crashes, why wouldn't the minister pull their best architects into the trenches to go fix it?
+
+50
+00:03:33,210 --> 00:03:36,970
+Because doing exactly that is the number one way EA programs die.
+
+51
+00:03:37,370 --> 00:03:42,450
+Really? Yeah. When you pull your EA team into the trenches to write code for a temporary crisis,
+
+52
+00:03:43,070 --> 00:03:46,320
+all the overarching architectural governance completely stops.
+
+53
+00:03:46,890 --> 00:03:47,950
+The standards erode.
+
+54
+00:03:48,010 --> 00:03:51,430
+Oh, wow. So ask four is essentially a political firewall.
+
+55
+00:03:51,810 --> 00:03:56,830
+It is. You have to get this protection in writing, or your EA program will just quietly die in its second year.
+
+56
+00:03:57,250 --> 00:04:07,079
+And you need time for this to work. The briefs outline a horizon of, uh, six months to get a roadmap, 18 to 24 months to operate, and five full years for mature governance.
+
+57
+00:04:07,490 --> 00:04:08,300
+It takes discipline,
+
+58
+00:04:09,509 --> 00:04:11,370
+but the global evidence proves it works.
+
+59
+00:04:12,090 --> 00:04:15,709
+We have four very different governments using these exact four elements.
+
+60
+00:04:15,810 --> 00:04:19,830
+Right. Starting with Rwanda, they have a small, strong center using the Orimbo platform.
+
+61
+00:04:20,050 --> 00:04:24,180
+Then there's Kenya using their one-stop Huduma centers and the Huduma Namba system.
+
+62
+00:04:24,830 --> 00:04:28,130
+Though the research notes Kenya Air's results are pretty mixed and openly debated.
+
+63
+00:04:28,450 --> 00:04:31,350
+Yeah, which usually points back to one of the four pillars slipping.
+
+64
+00:04:32,110 --> 00:04:37,890
+Then you have South Africa, which coordinates federally through SITA using shared standards.
+
+65
+00:04:38,030 --> 00:04:39,470
+And finally, Estonia.
+
+66
+00:04:40,840 --> 00:04:46,820
+They are highly mature, utilizing distributed registers on X-Road, which enables the once only principle.
+
+67
+00:04:47,070 --> 00:04:50,650
+Right, where citizens never have to give the government the same data twice.
+
+68
+00:04:51,210 --> 00:04:58,250
+But here's what confuses me. Given that South Africa is federal and Rwanda is highly centralized, how do they use the exact same pattern?
+
+69
+00:04:58,590 --> 00:05:05,570
+Well, despite the different sizes and constitutions, the foundational architecture relies entirely on having those same four elements securely in place.
+
+70
+00:05:06,040 --> 00:05:09,130
+The mechanics of adoption change, but the engine is identical.
+
+71
+00:05:09,550 --> 00:05:12,310
+A team, a board, a budget envelope, and a promise.
+
+72
+00:05:12,930 --> 00:05:17,510
+You just need to put all four on a single page and ask your minister for the complete package.
+
+73
+00:05:17,890 --> 00:05:18,829
+Exactly. Yeah.
+
+74
+00:05:18,930 --> 00:05:22,560
+And you know, the minister who launches this work won't be the one who completes it.
+
+75
+00:05:23,310 --> 00:05:30,710
+If your minister hears that five-year timeline and sees it as a feature rather than a problem, you've found the exact right leader.
+

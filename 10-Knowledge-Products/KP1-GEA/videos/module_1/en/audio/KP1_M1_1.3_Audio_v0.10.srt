@@ -1,0 +1,256 @@
+1
+00:00:00,150 --> 00:00:03,100
+well, why they fail to create cohesive systems.
+
+2
+00:00:03,310 --> 00:00:05,510
+Right. They just end up completely fragmented.
+
+3
+00:00:05,550 --> 00:00:06,660
+Exactly. Yeah.
+
+4
+00:00:06,670 --> 00:00:10,670
+And we're gonna explore why a national enterprise architecture, or EA,
+
+5
+00:00:11,410 --> 00:00:12,750
+is sort of the ultimate fix.
+
+6
+00:00:13,430 --> 00:00:22,330
+Our mission today is to equip you with the exact arguments your minister needs to understand why individual projects just can't solve systemic digital bloat.
+
+7
+00:00:22,450 --> 00:00:24,810
+Yeah. It is a crucial conversation to have.
+
+8
+00:00:24,870 --> 00:00:32,510
+So let's jump right in. In your ministry, you probably already require open APIs and interoperability in, like, every contract,
+
+9
+00:00:33,130 --> 00:00:35,410
+but the systems still remain disconnected.
+
+10
+00:00:35,450 --> 00:00:40,210
+Why are teams building a brand-new digital register instead of reusing an existing one?
+
+11
+00:00:40,830 --> 00:00:42,390
+I mean, is that just a failure of discipline?
+
+12
+00:00:42,850 --> 00:00:45,870
+Uh, no, actually. The team is acting completely rationally.
+
+13
+00:00:46,050 --> 00:00:48,130
+Wait, really? How is building from scratch rational?
+
+14
+00:00:48,190 --> 00:00:50,690
+Well, procurement rules do mandate behavior, sure.
+
+15
+00:00:50,719 --> 00:00:54,350
+Mm. But they don't make that behavior the cheapest or, you know, the easiest choice.
+
+16
+00:00:54,490 --> 00:00:55,570
+Ah, I see what you mean.
+
+17
+00:00:55,650 --> 00:00:55,870
+Right.
+
+18
+00:00:56,710 --> 00:01:06,440
+To a project team with a strict budget and a really tight deadline, reusing another ministry's system means learning it, negotiating access, and basically accepting
+
+19
+00:01:06,470 --> 00:01:06,889
+delays.
+
+20
+00:01:06,930 --> 00:01:08,230
+So it just slows them down.
+
+21
+00:01:08,270 --> 00:01:11,770
+Exactly. Building their own building block is simply faster.
+
+22
+00:01:11,780 --> 00:01:14,389
+They are doing exactly what they were funded to do.
+
+23
+00:01:14,450 --> 00:01:16,610
+Okay, that makes sense on a micro level.
+
+24
+00:01:16,650 --> 00:01:20,470
+But if the project teams are acting rationally within those constraints,
+
+25
+00:01:21,430 --> 00:01:26,540
+how do we show the minister that this is, you know, financially unsustainable across the government?
+
+26
+00:01:26,690 --> 00:01:31,290
+So the math only really changes when you zoom out from that isolated project view.
+
+27
+00:01:31,490 --> 00:01:32,610
+Right. You need the bigger picture.
+
+28
+00:01:32,670 --> 00:01:34,630
+Exactly. Let's count out the whole of government view.
+
+29
+00:01:35,170 --> 00:01:37,970
+Ministry one pays to build the identity system.
+
+30
+00:01:38,090 --> 00:01:44,170
+Okay. Then ministry two consumes it, ministry three consumes it, ministry four consumes it.
+
+31
+00:01:44,210 --> 00:01:47,200
+Wow, so you have four ministries running on that one initial investment.
+
+32
+00:01:47,410 --> 00:01:52,170
+Precisely. Over five years, the country saves a massive share of its digital spend.
+
+33
+00:01:52,790 --> 00:01:58,530
+This portfolio level view is exactly what an EA provides your minister for funding decisions.
+
+34
+00:01:58,590 --> 00:02:00,270
+That is a huge financial win.
+
+35
+00:02:01,150 --> 00:02:05,630
+A minister will definitely grasp the cost savings of avoiding duplicate builds.
+
+36
+00:02:05,810 --> 00:02:08,930
+Oh, absolutely. But beyond just immediate cost savings,
+
+37
+00:02:09,570 --> 00:02:14,710
+what long-term necessities are these individual projects failing to deliver to your program?
+
+38
+00:02:14,910 --> 00:02:17,890
+Well, there are two specific things projects cannot deliver.
+
+39
+00:02:17,990 --> 00:02:19,850
+Uh, the first is sustainability.
+
+40
+00:02:19,930 --> 00:02:21,110
+Sustainability in what sense?
+
+41
+00:02:21,450 --> 00:02:24,170
+Like, projects are incentivized to ship, right?
+
+42
+00:02:24,270 --> 00:02:33,850
+They aren't funded to plan for 12 years later when the original vendor vanishes or, you know, the open source library forks, and literally no one fully understands the system
+
+43
+00:02:33,890 --> 00:02:34,350
+anymore.
+
+44
+00:02:34,430 --> 00:02:36,410
+Oh yeah, the classic legacy software trap.
+
+45
+00:02:36,450 --> 00:02:38,910
+That makes total sense. So what's the second thing?
+
+46
+00:02:38,930 --> 00:02:46,119
+The second is complexity reduction. Project teams lack the authority to say no to feature requests from all the stakeholders they must please.
+
+47
+00:02:46,250 --> 00:02:48,850
+Right. They just have to keep saying yes to keep everyone happy.
+
+48
+00:02:48,990 --> 00:02:55,410
+Exactly. And five years later, those accumulated yeses make the system too complex to maintain or change.
+
+49
+00:02:55,470 --> 00:02:59,959
+So given the inevitability of vendor changes and all this accumulating complexity,
+
+50
+00:03:00,619 --> 00:03:05,959
+how do we avoid paying for the exact same lessons other countries have learned the hard way over the last 20 years?
+
+51
+00:03:06,270 --> 00:03:12,150
+By using reference architectures, um, specifically like the PAERA framework.
+
+52
+00:03:12,210 --> 00:03:17,390
+PAERA. Right, the Public Administration Ecosystem Reference Architecture.
+
+53
+00:03:17,450 --> 00:03:23,910
+It basically writes down decades of global learning regarding what actually survives technology change.
+
+54
+00:03:24,070 --> 00:03:25,870
+Oh, wow. That's incredibly useful.
+
+55
+00:03:25,990 --> 00:03:31,210
+Yeah. It really is. Within this framework, the four-part picture is the artifact, and planning is the function.
+
+56
+00:03:31,390 --> 00:03:33,980
+Got it. So when we present the final recommendation,
+
+57
+00:03:34,710 --> 00:03:40,360
+how do we summarize the absolute necessity of separating the architecture from the individual project deliverables?
+
+58
+00:03:40,850 --> 00:03:46,950
+It boils down to this, um, reuse, sustainability, and complexity reduction don't come from projects.
+
+59
+00:03:47,010 --> 00:03:47,930
+They come from planning.
+
+60
+00:03:48,010 --> 00:03:49,170
+Right. Planning is the key.
+
+61
+00:03:49,210 --> 00:03:56,140
+Yes. That is why your minister must commission an enterprise architecture separately and deliberately with sustained funding.
+
+62
+00:03:56,250 --> 00:03:58,120
+It has to be its own distinct priority.
+
+63
+00:03:58,900 --> 00:04:02,550
+Well, this has been an incredibly eye-opening look at how to tackle digital bloat.
+
+64
+00:04:02,930 --> 00:04:04,649
+Glad to shed some light on it.
+

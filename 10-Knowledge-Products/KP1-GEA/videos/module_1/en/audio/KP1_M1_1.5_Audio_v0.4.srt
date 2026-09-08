@@ -1,0 +1,275 @@
+1
+00:00:00,120 --> 00:00:05,340
+Module 1, Video 1.5: Why PAERA anchored.
+
+2
+00:00:05,520 --> 00:00:07,460
+Yeah. So PAERA
+
+3
+00:00:08,060 --> 00:00:10,720
+gives your team a five-year head start. Right.
+
+4
+00:00:10,760 --> 00:00:14,400
+Like if you adopt it, your architecture work begins on day one.
+
+5
+00:00:14,480 --> 00:00:19,300
+Oh, wow. Otherwise, you know, your first year is basically spent inventing what is already published.
+
+6
+00:00:19,320 --> 00:00:23,810
+Well, when we talk about architectural work for a government, we're really talking about enterprise architecture, right?
+
+7
+00:00:23,900 --> 00:00:27,680
+Exactly. Like the agreed structural picture- Okay... of your government.
+
+8
+00:00:27,740 --> 00:00:31,220
+So if a ministry needs to draw that picture, um,
+
+9
+00:00:31,880 --> 00:00:33,960
+what are the actual options on the table?
+
+10
+00:00:34,700 --> 00:00:40,210
+You essentially have two paths. Okay. Path one is designing an EA framework for your country completely from scratch.
+
+11
+00:00:40,360 --> 00:00:44,840
+Right. And, uh, path two is anchoring on one that already exists.
+
+12
+00:00:44,880 --> 00:00:47,800
+I mean, path one just sounds like a massive administrative bottleneck.
+
+13
+00:00:47,980 --> 00:00:51,790
+Mm. What is the actual cost and time before we see any usable architecture?
+
+14
+00:00:51,920 --> 00:00:57,300
+It is severe. I mean, you are looking at 12 to 18 months of hiring consultants just to lay the groundwork.
+
+15
+00:00:57,340 --> 00:00:59,040
+Wait, a year and a half just for groundwork?
+
+16
+00:00:59,120 --> 00:01:07,390
+Yeah, yeah. You are paying them to define basic terminology and, you know, debate principles before a single architect draws any picture of any ministry.
+
+17
+00:01:07,920 --> 00:01:10,480
+So you're just spending all that time stuck in semantic debates.
+
+18
+00:01:10,580 --> 00:01:12,620
+Right. Which brings us to path two,
+
+19
+00:01:13,620 --> 00:01:17,460
+anchoring on PAERA, the Public Administration Ecosystem
+
+20
+00:01:18,120 --> 00:01:19,400
+Reference Architecture.
+
+21
+00:01:20,130 --> 00:01:22,390
+And that was published in 2024 under GovStack, right?
+
+22
+00:01:22,440 --> 00:01:29,470
+Correct. And because it is built explicitly for the public sector use case, well, that groundwork is already done, so the work begins on day one.
+
+23
+00:01:29,560 --> 00:01:32,640
+Exactly. But, um, I wanna push back here a little.
+
+24
+00:01:33,060 --> 00:01:35,740
+What specific groundwork are we actually avoiding paying for?
+
+25
+00:01:35,800 --> 00:01:39,360
+Like, what tangible things does PAERA hand a team on day one?
+
+26
+00:01:39,880 --> 00:01:44,570
+Well, there are five specific things. First, a defined way to organize ministries and authorities.
+
+27
+00:01:44,700 --> 00:01:45,420
+Okay. How so?
+
+28
+00:01:45,820 --> 00:01:49,780
+So instead of your team arguing for three months over how to classify a government body,
+
+29
+00:01:50,400 --> 00:01:52,100
+the classification is already published.
+
+30
+00:01:52,200 --> 00:01:59,150
+Oh, so you know immediately if a body is a policy unit, a regulatory agency, or like a service delivery authority.
+
+31
+00:01:59,260 --> 00:02:01,890
+Exactly, which saves endless committee meetings.
+
+32
+00:02:02,360 --> 00:02:08,220
+Right. But how do you ensure all those different authorities are actually speaking the same language once they're classified?
+
+33
+00:02:08,360 --> 00:02:13,720
+Well, that is the second thing. You get plain words for basic terms defined on day one.
+
+34
+00:02:13,760 --> 00:02:14,680
+Like what kind of terms?
+
+35
+00:02:14,780 --> 00:02:18,620
+Uh, terms like capability, service, application, and data domain.
+
+36
+00:02:18,920 --> 00:02:20,680
+The vocabulary is just completely settled.
+
+37
+00:02:21,080 --> 00:02:22,410
+That makes sense. And the third?
+
+38
+00:02:22,700 --> 00:02:25,480
+Third is a library of common building blocks.
+
+39
+00:02:25,560 --> 00:02:32,900
+Oh, right. Yeah. We are talking about foundational elements like identity, payments, information sharing, and registers.
+
+40
+00:02:33,120 --> 00:02:36,130
+Wait, really? So if my ministry needs a secure payment system,
+
+41
+00:02:36,840 --> 00:02:39,530
+my architects don't have to design the underlying structure?
+
+42
+00:02:39,840 --> 00:02:43,240
+No, they don't. These come with published specifications and working examples.
+
+43
+00:02:43,280 --> 00:02:43,960
+You just use them.
+
+44
+00:02:44,000 --> 00:02:44,940
+Wow, that's huge.
+
+45
+00:02:45,100 --> 00:02:53,020
+It is. Fourth, PAERA gives you 10 architectural principles, covering everything from the rule of law to user-centered design.
+
+46
+00:02:53,200 --> 00:02:55,780
+And I assume those are already heavily debated globally.
+
+47
+00:02:55,900 --> 00:03:02,520
+Heavily debated. So your team's job is simply to extend them for your country's context, not draft them from a blank page.
+
+48
+00:03:02,780 --> 00:03:04,020
+Which is much faster.
+
+49
+00:03:04,120 --> 00:03:05,780
+Absolutely. And fifth
+
+50
+00:03:06,480 --> 00:03:14,799
+is a way to run the work. Okay. PAERO provides a lifecycle discover, assess, adapt, plan, execute, and govern.
+
+51
+00:03:14,860 --> 00:03:21,820
+Got it. And it comes with all the required roles and sign-offs already mapped out per phase, which we will actually walk through in the next video.
+
+52
+00:03:21,880 --> 00:03:25,760
+Okay, so that makes sense for getting an initial sector off the ground.
+
+53
+00:03:25,780 --> 00:03:29,800
+But, um, what happens when a government wants to expand?
+
+54
+00:03:30,760 --> 00:03:31,240
+What do you mean?
+
+55
+00:03:31,620 --> 00:03:34,200
+Like, let's say we establish this for the Ministry of Education.
+
+56
+00:03:34,829 --> 00:03:42,000
+Uh-huh. When we move to health or social protection or agriculture, are we forced to start from scratch because those sectors are fundamentally different?
+
+57
+00:03:42,340 --> 00:03:45,320
+Ah. That is a common concern, but the answer is no.
+
+58
+00:03:45,840 --> 00:03:48,420
+PAERA works seamlessly across all those sectors.
+
+59
+00:03:48,460 --> 00:03:54,970
+Wait, really? Yeah. Building the enterprise architecture muscle once means every next sector reuses that exact same investment.
+
+60
+00:03:55,410 --> 00:03:57,880
+The framework is not rebought or recustomized.
+
+61
+00:03:57,960 --> 00:04:00,359
+So the second sector is inherently cheaper to integrate.
+
+62
+00:04:00,380 --> 00:04:02,120
+Right, and the third is cheaper still.
+
+63
+00:04:02,160 --> 00:04:08,260
+Wow. But beyond just having a static framework, what active resources does this actually connect your ministry to?
+
+64
+00:04:08,600 --> 00:04:11,530
+Well, adopting PAERA plugs you into a working network.
+
+65
+00:04:11,940 --> 00:04:19,250
+Your team gets access to the building block specifications, GovMarket, which offers implementations that are already compliance checked.
+
+66
+00:04:19,340 --> 00:04:24,820
+Oh, nice. Yeah. Plus a prototyping sandbox to safely test integrations and a shared knowledge base.
+
+67
+00:04:25,160 --> 00:04:27,520
+Ultimately, PAERA is not a vendor choice.
+
+68
+00:04:27,860 --> 00:04:35,060
+Right. It is the choice to start with the work other countries have already done, so your team spends its time on what is specific to your country.
+
+69
+00:04:35,080 --> 00:04:36,480
+Sources are in the video description.

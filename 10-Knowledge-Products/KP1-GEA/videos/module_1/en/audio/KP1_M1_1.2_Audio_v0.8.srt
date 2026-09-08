@@ -1,0 +1,296 @@
+1
+00:00:00,150 --> 00:00:05,510
+And our mission today is really to demystify what's called a national enterprise architecture.
+
+2
+00:00:05,750 --> 00:00:10,480
+Right. And, you know, once we define what a national enterprise architecture actually is- Mm.
+
+3
+00:00:10,630 --> 00:00:13,850
+Uh, and we'll just say EA for short going forward,
+
+4
+00:00:14,470 --> 00:00:16,890
+you realize it's essentially the ultimate shortcut.
+
+5
+00:00:17,210 --> 00:00:22,830
+Yeah, a shortcut for, you know, those of you running these systems in your ministry to take control of your digital ecosystem
+
+6
+00:00:23,470 --> 00:00:24,550
+rather than, um,
+
+7
+00:00:25,270 --> 00:00:27,610
+rather than just being led by outside vendors or donors.
+
+8
+00:00:27,670 --> 00:00:29,570
+Exactly. It's about taking the reins back.
+
+9
+00:00:29,970 --> 00:00:39,250
+But I mean, when I first hear the term EA, my immediate assumption is that we're talking about, like, procuring another massively expensive software package or some big vendor tool.
+
+10
+00:00:39,290 --> 00:00:43,290
+Emphatically no. That is, uh, probably the biggest misconception out there.
+
+11
+00:00:43,680 --> 00:00:46,670
+An EA is not a piece of software, and it's not a vendor product.
+
+12
+00:00:46,730 --> 00:00:49,990
+At its core, it's really just a set of documents and diagrams.
+
+13
+00:00:50,110 --> 00:00:57,420
+Just documents. Just documents. And together, they form what the briefing calls the agreed picture of how your government works.
+
+14
+00:00:57,890 --> 00:01:02,770
+So mapping out the services you deliver, the data you hold, and the infrastructure running underneath it all.
+
+15
+00:01:02,830 --> 00:01:12,070
+Okay, but, um, wait. If this is literally just a set of documents and diagrams, how does paper actually stop a massive tech
+
+16
+00:01:12,090 --> 00:01:17,710
+vendor from bulldozing a ministry into buying, you know, unnecessary software?
+
+17
+00:01:17,750 --> 00:01:19,270
+Like, paper doesn't enforce rules.
+
+18
+00:01:20,010 --> 00:01:23,980
+Well, paper itself doesn't, sure, but the consensus it forces absolutely does.
+
+19
+00:01:24,070 --> 00:01:24,610
+Oh, I see.
+
+20
+00:01:24,650 --> 00:01:33,590
+Yeah. Without this exact shared picture, every important conversation just breaks down because you can't lead a negotiation about your digital future or even tell a vendor no
+
+21
+00:01:34,230 --> 00:01:37,950
+if your own internal departments can't even agree on what your present system looks like.
+
+22
+00:01:37,990 --> 00:01:41,610
+That makes total sense. So this agreed picture becomes your objective baseline.
+
+23
+00:01:41,830 --> 00:01:47,010
+Exactly. Okay, so if we think of this like a master blueprint that entirely different stakeholders have to read.
+
+24
+00:01:47,050 --> 00:01:49,690
+Mm. Um, who are the actual users of this picture?
+
+25
+00:01:49,710 --> 00:01:51,970
+Well, the briefing outlines four main users.
+
+26
+00:01:52,330 --> 00:02:01,949
+First, you have the minister. They use it to brief the cabinet because without it, they really can't accurately describe what the country's digital spend is actually buying.
+
+27
+00:02:02,509 --> 00:02:09,140
+Right. And then if the minister is one user, I imagine outside players like donors and vendors are the others.
+
+28
+00:02:09,210 --> 00:02:10,570
+Precisely. Yeah.
+
+29
+00:02:10,610 --> 00:02:16,770
+A donor uses this picture before funding a new program just to see exactly how their investment fits with existing systems.
+
+30
+00:02:16,910 --> 00:02:18,670
+To make sure they aren't being redundant, I guess.
+
+31
+00:02:18,890 --> 00:02:25,630
+Right. And then a vendor uses it to ensure whatever proposed system they wanna build actually matches the environment that is already there.
+
+32
+00:02:25,670 --> 00:02:34,630
+Which introduces a brilliant dynamic. So we have the minister, the donor, the vendor, but the fourth user is you, the official managing these systems.
+
+33
+00:02:34,730 --> 00:02:37,270
+Yes, and- Because you hold the blueprint, the EA,
+
+34
+00:02:37,910 --> 00:02:40,730
+and you use it to keep all three of those other users aligned.
+
+35
+00:02:41,010 --> 00:02:45,050
+That's a great way to put it. You ensure the donor funds what the country actually needs.
+
+36
+00:02:45,390 --> 00:02:50,209
+The vendor builds what fits, and the minister can face the cabinet with a coherent story.
+
+37
+00:02:50,270 --> 00:02:52,220
+So let's, uh, zoom in on this blueprint.
+
+38
+00:02:52,500 --> 00:02:56,350
+The briefing outlines four specific layers to this picture.
+
+39
+00:02:56,370 --> 00:02:57,360
+What are we looking at first?
+
+40
+00:02:57,990 --> 00:03:04,010
+First, you map the services. This is simply what your government does and for whom.
+
+41
+00:03:04,030 --> 00:03:09,290
+It is the layer the minister talks about most because, well, it's what the public actually interacts with.
+
+42
+00:03:09,510 --> 00:03:14,910
+Right. But if services are what the public sees, there has to be something powering them behind the scenes.
+
+43
+00:03:14,950 --> 00:03:16,970
+Which brings us to the second layer, data.
+
+44
+00:03:17,270 --> 00:03:27,010
+Data. Yes. This documents the information your government holds, who owns it, and crucially, where the authoritative copy the register actually
+
+45
+00:03:27,170 --> 00:03:27,690
+lives.
+
+46
+00:03:27,850 --> 00:03:30,280
+Oh, and we should make sure we say register, not registered.
+
+47
+00:03:30,290 --> 00:03:35,710
+That's exactly. Register. And that naturally flows into the third layer, which is applications.
+
+48
+00:03:36,270 --> 00:03:40,110
+This is the software that actively uses the data to deliver the services.
+
+49
+00:03:40,350 --> 00:03:42,540
+Wait, I always kinda thought of applications coming first.
+
+50
+00:03:42,670 --> 00:03:45,110
+Right. But you're saying data comes before applications.
+
+51
+00:03:45,250 --> 00:03:48,370
+Yes, strictly in that order. Data, then applications.
+
+52
+00:03:48,430 --> 00:03:50,690
+Because the applications are just there to use the data.
+
+53
+00:03:50,850 --> 00:04:00,490
+Got it. And then you have the fourth and final layer, technology, the underlying infrastructure like networks, hosting, and security that just has to be running for anything else to function.
+
+54
+00:04:00,550 --> 00:04:03,010
+Okay, here is a point of confusion for me, though.
+
+55
+00:04:03,090 --> 00:04:06,799
+Mm. Usually, we think of technology as the most permanent foundation of anything.
+
+56
+00:04:07,579 --> 00:04:12,140
+But in digital systems, we constantly hear about the rapid pace of tech evolution.
+
+57
+00:04:12,869 --> 00:04:15,500
+So is technology really the permanent foundation here?
+
+58
+00:04:15,810 --> 00:04:19,730
+That raises a crucial point, and the answer is emphatically no.
+
+59
+00:04:19,870 --> 00:04:22,770
+Technology actually cycles roughly every decade.
+
+60
+00:04:22,830 --> 00:04:24,510
+Wait, really? Just a decade?
+
+61
+00:04:24,610 --> 00:04:27,850
+Just a decade, and applications come and go even faster than that.
+
+62
+00:04:28,190 --> 00:04:32,130
+It's actually the data that is the longest-lived part of the entire architecture.
+
+63
+00:04:32,610 --> 00:04:34,770
+Data outlasts everything else in government.
+
+64
+00:04:34,830 --> 00:04:37,500
+Wow. Okay, so when a ministry finally sits down
+
+65
+00:04:38,190 --> 00:04:42,690
+and documents these four-part services, data, applications, technology,
+
+66
+00:04:43,690 --> 00:04:46,650
+what is the tangible transformation? Like, what's the result?
+
+67
+00:04:46,750 --> 00:04:50,430
+Your digital landscape stops being a list of unrelated projects.
+
+68
+00:04:50,470 --> 00:04:52,910
+It becomes a true deliberate system.
+
+69
+00:04:52,970 --> 00:04:54,390
+You can actually plan around it.
+
+70
+00:04:54,490 --> 00:05:04,460
+Exactly. You can plan investments against it, and you can finally have substantive discussions across different ministries without having to re-explain the basics every single
+
+71
+00:05:04,490 --> 00:05:05,590
+time you meet.
+
+72
+00:05:05,650 --> 00:05:07,480
+Because you finally have that agreed picture.
+
+73
+00:05:07,550 --> 00:05:10,710
+Precisely. An EA isn't a piece of software you buy.
+
+74
+00:05:10,740 --> 00:05:17,250
+It is the agreed picture that empowers you to dictate what comes next rather than leaving that power to a vendor or donor.
+

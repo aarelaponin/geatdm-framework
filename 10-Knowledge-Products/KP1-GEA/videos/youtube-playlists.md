@@ -51,6 +51,10 @@ Written companion, with the worked examples and the full prompts:
 https://<gitbook-url>/kp1/module-1
 
 PAERA v1.0: https://paera.govstack.global
+
+The plays run in any AI assistant. Optional Claude kit:
+https://github.com/alaponin/ea-plays-kit
+
 Produced by FiscalAdmin OÜ for ITU/Giga.
 ```
 
@@ -74,8 +78,17 @@ Sources
 The play from this video, with a worked example: https://<gitbook-url>/…
 Full module: [playlist link]
 
+The play runs in any AI assistant. Optional Claude kit:
+https://github.com/alaponin/ea-plays-kit
+
 Produced by FiscalAdmin OÜ for ITU/Giga.
 ```
+
+The kit line is one line and it is the **repo**, never a release number — the install command
+changes, the repo URL does not, and a description edited across five modules of videos is an
+hour nobody wants to spend twice. It goes in all five modules' playlist and per-video
+descriptions. Keep the "runs in any AI assistant" half: the plays are tool-neutral and the
+description is where ITU will look for that.
 
 Write these before uploading. Retro-fitting nine descriptions in the Studio UI is an hour you
 won't want to spend twice.

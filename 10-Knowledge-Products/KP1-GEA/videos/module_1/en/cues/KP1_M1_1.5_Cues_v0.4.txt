@@ -1,0 +1,8 @@
+0:00   # slide 1 — title card
+0:19   # slide 2 — Which framework do you use to draw the picture?
+0:34   # slide 3 — Two paths — one costs you a year before work begins
+1:35   # slide 4 — Five things you do not pay to invent
+3:21   # slide 5 — One framework — every sector reuses the investment
+4:02   # slide 6 — PAERA connects your team to a working network
+4:25   # slide 7 — In one sentence
+4:33   # slide 8 — Sources
