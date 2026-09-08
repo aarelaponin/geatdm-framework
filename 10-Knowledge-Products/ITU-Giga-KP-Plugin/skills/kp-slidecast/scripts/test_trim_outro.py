@@ -38,6 +38,33 @@ def test_no_deck_keeps_the_four_cue_cap():
     assert open_end(c[4:], None) == 1         # marker first: one cue, inside the cap
 
 
+def test_an_announced_close_is_cut_from_the_announcement():
+    # 4.6: the walk back stopped one cue in, because the middle of the outro is thick with deck
+    # vocabulary. The announcement is the boundary, not the deck words that follow it.
+    c = cues("The ministry runs three registries and none of them agree.",
+             "Before we wrap up, I want to leave you with a thought to mull over.",
+             "Could you use this to align the registry architecture of another ministry",
+             "before they even sit down to design a shared service?")
+    assert outro_start(c, TERMS) == 1, outro_start(c, TERMS)
+
+
+def test_the_outro_behind_the_sources_line_is_found():
+    # 2.4: closing turn, THEN the required sources line. A strict walk back from the end stops
+    # on the sources line and reports the take as clean.
+    c = cues("So the big takeaway: before you model, classify the ministry.",
+             "Are you treating your shared platforms as foundations or as private property?",
+             "That is a really great question to leave on.",
+             "Absolutely. Sources are in the video description.")
+    assert outro_start(c, TERMS) == 1, outro_start(c, TERMS)
+
+
+def test_a_sources_line_after_clean_content_is_not_an_outro():
+    c = cues("The ministry runs three registries and none of them agree.",
+             "That is the whole message of this video, and it is the one to keep.",
+             "Sources are in the video description.")
+    assert outro_start(c, TERMS) is None, outro_start(c, TERMS)
+
+
 def test_a_clean_open_is_left_alone():
     assert open_end(cues("The ministry runs three registries.", "Yes, and none agree."),
                     TERMS) is None

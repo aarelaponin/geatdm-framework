@@ -33,6 +33,8 @@ PAUSE_S = 30
 SHOW_OPEN_PHRASES = {"deep dive", "welcome to", "unpacking", "today we're unpacking",
                      "here's where it gets"}
 RUNTIME_RE = re.compile(r"total runtime.*?(\d+)\s*minutes?(?:\s*(\d+)\s*seconds?)?", re.I)
+# "FAIL  OVER — runtime 6:12 vs target 5:00 (\u00b145s); cut 72s"
+TAKE_LEN_RE = re.compile(r"runtime (\d+):(\d+)")
 BRIEF_RE = re.compile(r"^KP\d+_M\d+_(\d+\.\d+)_AudioBrief_v0\.(\d+)\.md$")
 
 
@@ -42,9 +44,18 @@ def run(*cmd):
 
 
 def newest(d, pat):
+    """Highest _v0.N in the directory, ignoring anything that is not a version of the artefact.
+
+    The glob is loose enough to catch Finder's copy duplicates ("…_Deck_v0.2 2.pptx"), which
+    carry no parseable version and used to crash every caller. A name that does not match is not
+    a version of this artefact, so it is skipped rather than guessed at.
+    """
     best = None
     for f in d.glob(pat):
-        v = int(re.search(r"_v0\.(\d+)\.", f.name).group(1))
+        m = re.search(r"_v0\.(\d+)\.", f.name)
+        if not m:
+            continue
+        v = int(m.group(1))
         if best is None or v > best[0]:
             best = (v, f)
     return best[1] if best else None
@@ -111,8 +122,27 @@ def attempt(lang, sub, target, deck):
     # not a verdict" — it matches vocabulary, so a segment the hosts covered thoroughly in their
     # own words scores low. Re-rolling on THIN spends takes on nothing.
     thin = [ln.strip() for ln in cov.splitlines() if ln.strip().startswith("MISS")]
-    return bool(fails or thin), (f"{raw.name} -> {take.name}\n    "
-                                 + "\n    ".join(fails + thin + residue or ["clean"]))
+    note = f"{raw.name} -> {take.name}\n    " + "\n    ".join(fails + thin + residue or ["clean"])
+    return bool(fails or thin), note, take, fails + thin
+
+
+def best_on_runtime(tried, target):
+    """Of the exhausted tries, the take closest to target \u2014 but only if runtime is all that ails it.
+
+    Decided 8 Sep 2026: a subtopic that re-rolls three times and only ever misses the clock has a
+    script-length problem, not a take problem, and the next roll is a coin flip. Any other defect
+    still escalates to a person, because a shorter wrong take is not better than a long one.
+    """
+    best = None
+    for take, fails in tried:
+        lens = [TAKE_LEN_RE.search(f) for f in fails]
+        if not fails or any(not m for m in lens):
+            return None          # something other than OVER/UNDER is unresolved
+        m, s = lens[0].groups()
+        off = int(m) * 60 + int(s) - target
+        if best is None or abs(off) < abs(best[1]):
+            best = (take, off)
+    return best
 
 
 def main():
@@ -131,17 +161,29 @@ def main():
     elif a.start:
         subs = {k: v for k, v in subs.items() if float(k) >= float(a.start)}
 
-    unresolved = []
+    unresolved, settled = [], []
     for sub, brief in subs.items():
         target = target_seconds(brief)
+        tried = []
         for i in range(1, a.tries + 1):
-            rc, note = attempt(lang, sub, target, deck_for(lang, sub))
+            rc, note, take, fails = attempt(lang, sub, target, deck_for(lang, sub))
             print(f"{sub} try {i}/{a.tries} (target {target}s): {note}", flush=True)
             if rc == 0:
                 break
+            tried.append((take, fails))
             time.sleep(PAUSE_S)   # same courtesy the batch runner shows an unofficial endpoint
         else:
-            unresolved.append(sub)
+            best = best_on_runtime(tried, target)
+            if best:
+                take, off = best
+                settled.append(f"{sub}: {take.name} ({off:+d}s)")
+                print(f"    settled on runtime \u2014 {take.name} is {abs(off)}s "
+                      f"{'over' if off > 0 else 'under'}, the closest of {len(tried)}", flush=True)
+            else:
+                unresolved.append(sub)
+    if settled:
+        print("\nsettled on the closest take (runtime was the only defect left): "
+              + "; ".join(settled))
     print("\nunresolved (fix the brief, not the prompt): "
           + (", ".join(unresolved) if unresolved else "none"))
     return 1 if unresolved else 0

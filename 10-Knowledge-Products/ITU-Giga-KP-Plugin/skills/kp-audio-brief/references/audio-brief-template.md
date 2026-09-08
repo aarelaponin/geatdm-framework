@@ -101,36 +101,56 @@ appended outro at build time.)*
 
 ---
 
-## 3. Hard prohibitions
+## 3. Register and word choice
+
+The hosts are two senior advisers briefing a minister. Everything below governs *how* §2's
+substance is said.
+
+**Severity is carried by the consequence, not by an adjective.** "The same citizen record is
+captured four times, in four systems, and none of them agree" is stronger than any adjective and
+is the only emphasis this audience credits. When a host wants to convey that something is bad,
+they state its cost.
+
+**Characterising the problem — this is the whole vocabulary.** §2 describes systems that do not
+work well together. These are the words for saying so. There are no others, and no synonyms of
+the right-hand column:
+
+| Say this | Never this |
+|---|---|
+| fragmented, siloed, not joined up | broken, a mess |
+| duplicated, captured twice, re-keyed | chaos, chaotic |
+| locked in to one supplier, costly to switch | held hostage, extortionate |
+| costly to change, slow to change | a nightmare, insane, crazy |
+| inconsistent, out of step | a disaster, hopeless |
 
 - ❌ **No spoken handoff.** No "before the next video", no "run this on your own sector", no
-  mention of the prompt or the companion material. That call to action lives in the on-screen practice
-  box on the recap slide and is deliberately silent.
+  mention of the prompt or the companion material. That call to action lives in the on-screen
+  practice box on the recap slide and is deliberately silent.
 - ❌ **No podcast outro.** No "that raises a fascinating question for you to consider", no "look
   around at the other institutions in your life", no invitation to reflect on other sectors or on
-  private companies. The audio ends on the recap slide's single message — nothing follows it.
-- ❌ **No "deep dive" self-reference.** Never say "deep dive", "today we're unpacking", "welcome
-  to", "our sources", "the sources say", "according to the sources", "here's where it gets
-  interesting".
+  private companies, and never "think about" as a closing turn. The audio ends on the last content
+  slide's message plus the sources line.
+- ❌ **No standing source attribution.** Never "our sources", "the sources say", "according to
+  the sources". The hosts speak from knowledge; a named source may be mentioned once, in passing.
 - ❌ **No invented specifics.** No named country, no cost figures, no percentages, no dates,
   no institutions other than those in §2.
-- ❌ **Keep filler low.** Minimise "you know", "like", "I mean", "basically", "totally", "sort
-  of", "right?", "wow", "oh absolutely", "man". Reaction interjections should be rare and short.
-  The audit allows up to 2.5 markers per 100 words — a two-host conversation carries some, and
-  asking for zero only bought re-rolls.
+- ❌ **No filler.** Remove "you know", "like", "I mean", "basically", "totally", "sort of",
+  "right?", "wow", "oh absolutely", "man". Reaction interjections should be rare and short.
 - ❌ **No backchannel.** While one host speaks, the other stays silent. No single-word
-  confirmations — "Right", "Exactly", "Mm-hmm", "Okay", "Sure", "Wow", "Got it". These are the
-  single largest source of runtime overrun. Each host speaks in complete turns of full sentences.
-- ❌ **No consumer-outrage vocabulary.** Not "broken", "chaos", "held hostage", "extortionate",
-  "nightmare". Say: fragmented, duplicated, costly to change, locked in.
-- ❌ **No idioms or metaphors beyond the one permitted in §2.** Much of this audience listens in
-  English as an additional language and the audio is subtitled and translated. «FR: this rationale
+  confirmations — "Right", "Exactly", "Mm-hmm", "Okay", "Sure", "Wow", "Got it".
+- ❌ **No idioms or metaphors.** Much of this audience listens in English as an additional
+  language and the audio is subtitled and translated. «FR: this rationale
   is English-specific — rewrite for the French take (e.g. plain, unambiguous French for readers of
   the translated/subtitled English version, or drop the clause if it no longer applies)»
 - ❌ **No crosstalk or interruption.** One speaker finishes, the other begins. The audio is cut
   to slide transitions, so overlapping speech breaks the edit.
-- ❌ **No in-video intro or outro branding.** ITU compliance rule — the video opens on content
-  and closes on the recap slide's message, over a silent Sources slide.
+- ❌ **No in-video branding.** ITU compliance rule — no programme name, no channel name, no
+  production credit anywhere in the audio.
+- ❌ **The show-open is accepted residue.** "Welcome to today's deep dive" and similar
+  openers are not re-rolled for (decided 8 Sep 2026) — `trim_outro.py` cuts them where it can
+  reach them, and where it cannot they ship. Do not add a ban for them here: five brief
+  revisions did not move the rate below 83%, and the dead rule cost the rules around it their
+  authority.
 
 ---
 

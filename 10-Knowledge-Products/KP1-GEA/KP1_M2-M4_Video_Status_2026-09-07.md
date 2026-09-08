@@ -82,13 +82,34 @@ Six subtopics have now exhausted three re-rolls on the same vocabulary failure. 
 own trigger for a **brief-template** fix rather than a per-video one — and since `make_brief.py`
 regenerates from `references/audio-brief-template.md`, a §3 rewrite reaches all 22 in one command.
 
-## Open decisions
+## Decisions — 8 September 2026
 
-1. **Show-open residue ships on air.** Eight accepted takes still say "welcome to today's deep dive".
-   This is live against ITU's no-in-video-branding rule and the brief's own §3. Reversible: one
-   hand-set head cut per video. Decided 7 Sep to unblock; revisit before delivery.
-2. **§3 rewrite.** The banned-vocabulary list demonstrably does not work in its current form.
-   Needs a different formulation, not a longer list.
+1. **Show-open residue is accepted, permanently.** "Welcome to today's deep dive" ships where
+   `trim_outro.py` cannot reach it. Five brief revisions never moved the rate below 83%; it is a
+   property of the generator, not of the brief. The ban is **removed from §3** rather than left
+   standing and ignored — a rule with a 17% compliance rate costs the rules beside it their
+   authority. ITU's no-in-video-**branding** rule is unaffected and still enforced (no programme
+   name, no channel name, no production credit).
+2. **§3 rewritten, not lengthened.** `## 3. Hard prohibitions` → `## 3. Register and word
+   choice`. Three changes, in order of expected effect:
+   - The outrage vocabulary moves from bullet 7 of 11 into a **paired substitution table at the
+     top of the section** — the "Say this | Not this" form §4 uses, which is the only part of the
+     brief the generator reliably obeys. Every banned word now sits beside the word to use
+     instead, in the same row.
+   - A positive rule fills the vacuum that produced the outrage words in the first place: **the
+     hosts reach for "nightmare" because they are trying to convey severity and the brief gives
+     them no sanctioned way to do it.** So: *severity is carried by the consequence, not by an
+     adjective* — "the same citizen record is captured four times, in four systems, and none of
+     them agree" instead of "it's a nightmare".
+   - Two dead bullets removed, one live one split out: the sources-attribution ban ("our
+     sources", "the sources say") was buried in the same bullet as the show-open and is a real,
+     current blocker on 3.4, 4.6 and 4.7 — it now stands alone.
+   All 22 briefs and prompts regenerated from the new template.
+3. **Runtime stalemates settle on the closest take.** A subtopic that re-rolls to the try limit
+   and only ever misses the clock has a script-length problem, not a take problem, and the next
+   roll is a coin flip. `take_until_pass.py` now picks the take nearest the target and reports it
+   — **but only when runtime is the sole remaining defect.** Any other failure still escalates to
+   a person: a shorter wrong take is not better than a long one.
 
 ## Next
 

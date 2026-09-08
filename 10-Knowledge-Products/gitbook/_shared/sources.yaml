@@ -1,0 +1,81 @@
+# The reading list for the "Working with AI" chapter (structure draft §5.3).
+# Re-checked with `cite-or-discard` before every publish; bump `verified` when you do.
+verified: 2026-09-07
+sources:
+  - key: uk-playbook
+    title: AI Playbook for the UK Government
+    url: https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government
+    publisher: GOV.UK
+    date: 10 Feb 2025
+    used_for: "the ten principles: verification, accountability, data protection"
+    tier: T1 government
+  - key: au-strategy
+    title: Continental Artificial Intelligence Strategy
+    url: https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy
+    publisher: African Union
+    date: Aug 2024
+    used_for: regional policy frame; responsible and equitable use
+    tier: T1 intergovernmental
+  - key: oecd-governing
+    title: Governing with Artificial Intelligence
+    url: https://www.oecd.org/en/publications/2025/06/governing-with-artificial-intelligence_398fa287.html
+    publisher: OECD
+    date: 18 Sep 2025
+    used_for: 200 government AI cases, risks and oversight
+    tier: T1 intergovernmental
+  - key: oai-hallucinate
+    title: Why language models hallucinate
+    url: https://openai.com/index/why-language-models-hallucinate/
+    publisher: OpenAI
+    date: Sep 2025
+    used_for: why fluency is not evidence
+    tier: T2 vendor research
+  - key: oai-sycophancy
+    title: Expanding on what we missed with sycophancy
+    url: https://openai.com/index/expanding-on-sycophancy/
+    publisher: OpenAI
+    date: May 2025
+    used_for: why it agrees with your framing
+    tier: T2 vendor
+  - key: charlotin
+    title: AI Hallucination Cases
+    url: https://www.damiencharlotin.com/hallucinations/
+    publisher: Damien Charlotin
+    date: 2023→, updated daily
+    used_for: what unchecked citations cost
+    tier: T2 curated primary sources
+  - key: google-prompting
+    title: Prompting guide 101
+    url: https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf
+    publisher: Google
+    date: Oct 2024
+    used_for: Persona · Task · Context · Format
+    tier: T2 vendor guide
+  - key: oai-prompting
+    title: Prompt engineering best practices for ChatGPT
+    url: https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt
+    publisher: OpenAI
+    date: living
+    used_for: be specific, iterate, set the tone
+    tier: T2 vendor guide
+  - key: anthropic-prompting
+    title: Prompt engineering overview
+    url: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
+    publisher: Anthropic
+    date: living
+    used_for: clarity, examples, structure, roles, chaining
+    tier: T2 vendor guide
+  - key: dair
+    title: Prompt Engineering Guide
+    url: https://www.promptingguide.ai/
+    publisher: DAIR.AI
+    date: living
+    used_for: the technique vocabulary; hallucination-reduction section
+    tier: T3 community reference
+  - key: ai-fluency
+    title: "AI Fluency: Framework & Foundations"
+    url: https://academy.claude.com/courses/ai-fluency-framework-foundations
+    publisher: Anthropic / Claude Academy
+    date: free course
+    used_for: "the four Ds — Delegation, Description, Discernment, Diligence"
+    tier: T2 vendor course
