@@ -1,0 +1,402 @@
+[
+ {
+  "ref": "README",
+  "title": "Developing a Gov Enterprise Architecture (GEA)",
+  "parent": null,
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/README.md",
+  "path": "kp1/README.md",
+  "gitbook_id": "bhn5Z6AeR3qWfjmNkaFw"
+ },
+ {
+  "ref": "start-here",
+  "title": "Start here",
+  "parent": "README",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/README.md",
+  "path": "start-here/README.md",
+  "gitbook_id": "62xK3eEClIQBZX6itGY9"
+ },
+ {
+  "ref": "how-to-use-the-plays",
+  "title": "How to use the plays",
+  "parent": "start-here",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/how-to-use-the-plays.md",
+  "path": "start-here/how-to-use-the-plays.md",
+  "gitbook_id": "tbSL44tiwRyTYLzFwzns"
+ },
+ {
+  "ref": "working-with-ai",
+  "title": "Working with AI — the ground rules",
+  "parent": "start-here",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/working-with-ai.md",
+  "path": "start-here/working-with-ai.md",
+  "gitbook_id": "lP91WS1G4321f4nF9U4G"
+ },
+ {
+  "ref": "prompting-techniques",
+  "title": "Prompting techniques",
+  "parent": "start-here",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/prompting-techniques.md",
+  "path": "start-here/prompting-techniques.md",
+  "gitbook_id": "c9mBXrEQFGshpO815Bvd"
+ },
+ {
+  "ref": "ea-plays-kit",
+  "title": "The ea-plays kit",
+  "parent": "start-here",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/ea-plays-kit.md",
+  "path": "start-here/ea-plays-kit.md",
+  "gitbook_id": "XTqlu1PztF3LlhFOH3Y5"
+ },
+ {
+  "ref": "play-0",
+  "title": "Play 0 — Build your country context",
+  "parent": "start-here",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/play-0.md",
+  "path": "start-here/play-0.md",
+  "gitbook_id": "YJXG76iz25StzdYN5Jmj"
+ },
+ {
+  "ref": "progressa",
+  "title": "Progressa — the demonstration country",
+  "parent": "start-here",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md",
+  "path": "start-here/progressa.md",
+  "gitbook_id": "O61WX3AOqY2mMYakJrzd"
+ },
+ {
+  "ref": "video-index",
+  "title": "Video index",
+  "parent": "start-here",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/video-index.md",
+  "path": "start-here/video-index.md",
+  "gitbook_id": "Jb8V0u85zAyZbWBhpqom"
+ },
+ {
+  "ref": "module-1",
+  "title": "Module 1 — Why a PAERA-anchored EA",
+  "parent": "README",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-1/README.md",
+  "path": "kp1/module-1/README.md",
+  "gitbook_id": "2EVnLKFpKmyRU5w1S7dy"
+ },
+ {
+  "ref": "1-1",
+  "title": "1.1 Why your country needs a national EA",
+  "parent": "module-1",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-1/1-1.md",
+  "path": "kp1/module-1/1-1.md",
+  "gitbook_id": "NwLiuSf7t0p1PAhrYMqV"
+ },
+ {
+  "ref": "1-2",
+  "title": "1.2 What an EA actually is, in one breath",
+  "parent": "module-1",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-1/1-2.md",
+  "path": "kp1/module-1/1-2.md",
+  "gitbook_id": "j6MDPH7uOR71hM59332q"
+ },
+ {
+  "ref": "1-3",
+  "title": "1.3 Why projects can't do this themselves",
+  "parent": "module-1",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-1/1-3.md",
+  "path": "kp1/module-1/1-3.md",
+  "gitbook_id": "8O23ruZo9lLQYTc3z1JD"
+ },
+ {
+  "ref": "1-4",
+  "title": "1.4 Why an EA matters more now — and what it lets your minister actually do",
+  "parent": "module-1",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-1/1-4.md",
+  "path": "kp1/module-1/1-4.md",
+  "gitbook_id": "FQLcXHedqS3KbGC1olKP"
+ },
+ {
+  "ref": "1-5",
+  "title": "1.5 Why PAERA-anchored — the head start you do not pay for twice",
+  "parent": "module-1",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-1/1-5.md",
+  "path": "kp1/module-1/1-5.md",
+  "gitbook_id": "0wLFTEsdFaYT7DxwgzSF"
+ },
+ {
+  "ref": "1-6",
+  "title": "1.6 The lifecycle on one page",
+  "parent": "module-1",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-1/1-6.md",
+  "path": "kp1/module-1/1-6.md",
+  "gitbook_id": "ab49yKE5257R2wbH22PU"
+ },
+ {
+  "ref": "1-7",
+  "title": "1.7 What you will need from your minister — and how to ask for it",
+  "parent": "module-1",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-1/1-7.md",
+  "path": "kp1/module-1/1-7.md",
+  "gitbook_id": "mT9uQ5gMnTBOJg7vnB1X"
+ },
+ {
+  "ref": "module-2",
+  "title": "Module 2 — Principles, the metamodel and the BDAT layers",
+  "parent": "README",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-2/README.md",
+  "path": "kp1/module-2/README.md",
+  "gitbook_id": "oZqwM0uae900hKqN9yRb"
+ },
+ {
+  "ref": "2-1",
+  "title": "2.1 Read any government in four layers",
+  "parent": "module-2",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-2/2-1.md",
+  "path": "kp1/module-2/2-1.md",
+  "gitbook_id": "zDd2ZBe7LSiJZLR060nM"
+ },
+ {
+  "ref": "2-2",
+  "title": "2.2 The shared vocabulary that makes re-use possible",
+  "parent": "module-2",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-2/2-2.md",
+  "path": "kp1/module-2/2-2.md",
+  "gitbook_id": "UZIxPPkeOFIkY0ztayw8"
+ },
+ {
+  "ref": "2-3",
+  "title": "2.3 Adopt your principles, don't draft them",
+  "parent": "module-2",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-2/2-3.md",
+  "path": "kp1/module-2/2-3.md",
+  "gitbook_id": "eq26FYjcDt33NEnF3iRt"
+ },
+ {
+  "ref": "2-4",
+  "title": "2.4 Classify any public body before you model it",
+  "parent": "module-2",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-2/2-4.md",
+  "path": "kp1/module-2/2-4.md",
+  "gitbook_id": "tmnL6mbcMObY6VY64CtJ"
+ },
+ {
+  "ref": "2-5",
+  "title": "2.5 BDAT on a real ministry — the Progressa walkthrough",
+  "parent": "module-2",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-2/2-5.md",
+  "path": "kp1/module-2/2-5.md",
+  "gitbook_id": "KDp7EamMnFUtUP81RgwZ"
+ },
+ {
+  "ref": "2-6",
+  "title": "2.6 Run a Phase 2 Assess — what good looks like, and the gaps you'll find",
+  "parent": "module-2",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-2/2-6.md",
+  "path": "kp1/module-2/2-6.md",
+  "gitbook_id": "aWoA4aOqUiN1SW9M2Hzm"
+ },
+ {
+  "ref": "2-7",
+  "title": "2.7 The two traps to catch at Assess — bespoke and vendor-driven",
+  "parent": "module-2",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-2/2-7.md",
+  "path": "kp1/module-2/2-7.md",
+  "gitbook_id": "KG9TBzTyTc2hLgcRUMpb"
+ },
+ {
+  "ref": "module-3",
+  "title": "Module 3 — EA repository, tooling and governance",
+  "parent": "README",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-3/README.md",
+  "path": "kp1/module-3/README.md",
+  "gitbook_id": "EXeeTuhY43iLZyYb93Wm"
+ },
+ {
+  "ref": "3-1",
+  "title": "3.1 Set up the one place your architecture lives",
+  "parent": "module-3",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-3/3-1.md",
+  "path": "kp1/module-3/3-1.md",
+  "gitbook_id": "3HM92J5jj2NUdptaNdfc"
+ },
+ {
+  "ref": "3-2",
+  "title": "3.2 Choose EA tooling without locking yourself in",
+  "parent": "module-3",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-3/3-2.md",
+  "path": "kp1/module-3/3-2.md",
+  "gitbook_id": "OVwMrsb2IFTJTOl4Mbbz"
+ },
+ {
+  "ref": "3-3",
+  "title": "3.3 Keep the repository true — the update discipline",
+  "parent": "module-3",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-3/3-3.md",
+  "path": "kp1/module-3/3-3.md",
+  "gitbook_id": "WuFehmTAxaMeXhzlOHkU"
+ },
+ {
+  "ref": "3-4",
+  "title": "3.4 Stand up an EA Board that can actually say no",
+  "parent": "module-3",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-3/3-4.md",
+  "path": "kp1/module-3/3-4.md",
+  "gitbook_id": "svWUyKGYLbkSVVBl3NIE"
+ },
+ {
+  "ref": "3-5",
+  "title": "3.5 Review projects against the architecture",
+  "parent": "module-3",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-3/3-5.md",
+  "path": "kp1/module-3/3-5.md",
+  "gitbook_id": "oXaDN9GUK7BYiO35elnh"
+ },
+ {
+  "ref": "3-6",
+  "title": "3.6 Show the EA is working — the few metrics that matter",
+  "parent": "module-3",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-3/3-6.md",
+  "path": "kp1/module-3/3-6.md",
+  "gitbook_id": "9NCexO3zGTiKhVWUdYLk"
+ },
+ {
+  "ref": "3-7",
+  "title": "3.7 Keep the practice alive past year two",
+  "parent": "module-3",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-3/3-7.md",
+  "path": "kp1/module-3/3-7.md",
+  "gitbook_id": "KvwjMx9oQadedQZQCtws"
+ },
+ {
+  "ref": "module-4",
+  "title": "Module 4 — Progressa end-to-end — the method on one sector",
+  "parent": "README",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-4/README.md",
+  "path": "kp1/module-4/README.md",
+  "gitbook_id": "oGwKP4rlOFHgik0fuSVr"
+ },
+ {
+  "ref": "4-1",
+  "title": "4.1 Meet Progressa — a real sector with a real fragmentation problem",
+  "parent": "module-4",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-4/4-1.md",
+  "path": "kp1/module-4/4-1.md",
+  "gitbook_id": "djENMon77z61XabzYuzW"
+ },
+ {
+  "ref": "4-2",
+  "title": "4.2 Phase 1, Discover — map what the sector has today",
+  "parent": "module-4",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-4/4-2.md",
+  "path": "kp1/module-4/4-2.md",
+  "gitbook_id": "reYPEI6dVqRgnTHkTfxS"
+ },
+ {
+  "ref": "4-3",
+  "title": "4.3 Phase 2, Assess — find the gaps and rank them",
+  "parent": "module-4",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-4/4-3.md",
+  "path": "kp1/module-4/4-3.md",
+  "gitbook_id": "QGjvQ2UYvzAc16SSqm8Q"
+ },
+ {
+  "ref": "4-4",
+  "title": "4.4 Phase 3, Adapt — fit PAERA and decide build, buy or share",
+  "parent": "module-4",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-4/4-4.md",
+  "path": "kp1/module-4/4-4.md",
+  "gitbook_id": "ugGjfWqEEiyL5ISydFN6"
+ },
+ {
+  "ref": "4-5",
+  "title": "4.5 Phase 4, Plan — design the target architecture",
+  "parent": "module-4",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-4/4-5.md",
+  "path": "kp1/module-4/4-5.md",
+  "gitbook_id": "rLQVDjKhXLyiBCCe57Zq"
+ },
+ {
+  "ref": "4-6",
+  "title": "4.6 Phase 4, Plan — sequence the roadmap and cost it",
+  "parent": "module-4",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-4/4-6.md",
+  "path": "kp1/module-4/4-6.md",
+  "gitbook_id": "7p9klOxAwjPiioDYt7FF"
+ },
+ {
+  "ref": "4-7",
+  "title": "4.7 Phase 5, Execute & Govern — stand up the living EA",
+  "parent": "module-4",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-4/4-7.md",
+  "path": "kp1/module-4/4-7.md",
+  "gitbook_id": "fbHBuFjFn9D6xWDfAAUo"
+ },
+ {
+  "ref": "4-8",
+  "title": "4.8 Run this on your own sector — the transferable recipe",
+  "parent": "module-4",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-4/4-8.md",
+  "path": "kp1/module-4/4-8.md",
+  "gitbook_id": "kCTXIyWS9rb8BKaHyM9Z"
+ },
+ {
+  "ref": "module-5",
+  "title": "Module 5 — Evidence, rollout and the case",
+  "parent": "README",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-5/README.md",
+  "path": "kp1/module-5/README.md",
+  "gitbook_id": "clM0fhxd6V0JxgUywuu4"
+ },
+ {
+  "ref": "5-1",
+  "title": "5.1 Is this proven, or just theory? — evidence from real programmes",
+  "parent": "module-5",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-5/5-1.md",
+  "path": "kp1/module-5/5-1.md",
+  "gitbook_id": "kEkq2gZWpYMZjqAjye45"
+ },
+ {
+  "ref": "5-2",
+  "title": "5.2 What the evidence says works — and what quietly kills these programmes",
+  "parent": "module-5",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-5/5-2.md",
+  "path": "kp1/module-5/5-2.md",
+  "gitbook_id": "lEbq5AunT7VjoBMWcpPv"
+ },
+ {
+  "ref": "5-3",
+  "title": "5.3 Roll it out across sectors — and why the second is cheaper",
+  "parent": "module-5",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-5/5-3.md",
+  "path": "kp1/module-5/5-3.md",
+  "gitbook_id": "hkT98pl6xAzY3s5UlZRB"
+ },
+ {
+  "ref": "5-4",
+  "title": "5.4 Win the commitment — the business case that gets your minister to yes",
+  "parent": "module-5",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-5/5-4.md",
+  "path": "kp1/module-5/5-4.md",
+  "gitbook_id": "OSwe474BmVS1FuH3VkNr"
+ },
+ {
+  "ref": "5-5",
+  "title": "5.5 Build your team's capability with open knowledge products",
+  "parent": "module-5",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-5/5-5.md",
+  "path": "kp1/module-5/5-5.md",
+  "gitbook_id": "4aZSEZwUzOtB1QSXf67l"
+ },
+ {
+  "ref": "5-6",
+  "title": "5.6 The closing case — proven, portable, and necessary now",
+  "parent": "module-5",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/module-5/5-6.md",
+  "path": "kp1/module-5/5-6.md",
+  "gitbook_id": "hLEidFAroEkfRig7fpAi"
+ },
+ {
+  "ref": "your-country-workbook",
+  "title": "Your country workbook",
+  "parent": "README",
+  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp1/your-country-workbook.md",
+  "path": "kp1/your-country-workbook.md",
+  "gitbook_id": "QHNzZzesKDIsuHUg0dZk"
+ }
+]
