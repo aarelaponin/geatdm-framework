@@ -44,9 +44,18 @@ def run(*cmd):
 
 
 def newest(d, pat):
+    """Highest _v0.N in the directory, ignoring anything that is not a version of the artefact.
+
+    The glob is loose enough to catch Finder's copy duplicates ("…_Deck_v0.2 2.pptx"), which
+    carry no parseable version and used to crash every caller. A name that does not match is not
+    a version of this artefact, so it is skipped rather than guessed at.
+    """
     best = None
     for f in d.glob(pat):
-        v = int(re.search(r"_v0\.(\d+)\.", f.name).group(1))
+        m = re.search(r"_v0\.(\d+)\.", f.name)
+        if not m:
+            continue
+        v = int(m.group(1))
         if best is None or v > best[0]:
             best = (v, f)
     return best[1] if best else None

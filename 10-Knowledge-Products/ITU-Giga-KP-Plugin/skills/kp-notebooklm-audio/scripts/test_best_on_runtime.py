@@ -2,7 +2,7 @@
 """The one thing that can silently ship the wrong take: the runtime stalemate picker."""
 from pathlib import Path
 
-from take_until_pass import best_on_runtime
+from take_until_pass import best_on_runtime, newest
 
 OVER = "FAIL  OVER — runtime {} vs target 5:00 (±45s); cut 72s"
 UNDER = "FAIL  UNDER — runtime {} vs target 5:00 (±45s)"
@@ -25,6 +25,17 @@ def test_a_non_runtime_defect_still_escalates():
 
 def test_coverage_miss_is_not_a_runtime_defect():
     assert best_on_runtime([(P("a.m4a"), ["MISS slide 4"])], 300) is None
+
+
+def test_newest_ignores_finder_copy_duplicates(tmp=None):
+    """"…_Deck_v0.2 2.pptx" has no parseable version — it used to crash every caller."""
+    import tempfile
+    d = Path(tempfile.mkdtemp())
+    for n in ("KP1_M2_2.4_Deck_v0.1.pptx", "KP1_M2_2.4_Deck_v0.2.pptx",
+              "KP1_M2_2.4_Deck_v0.2 2.pptx"):
+        (d / n).touch()
+    assert newest(d, "*_2.4_Deck_v0.*.pptx").name == "KP1_M2_2.4_Deck_v0.2.pptx"
+    assert newest(d, "*_9.9_Deck_v0.*.pptx") is None
 
 
 if __name__ == "__main__":
