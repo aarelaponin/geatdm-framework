@@ -315,6 +315,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the four signposts and the framing."]
   ],
   aiTip: {
+    play: "5.1",
+    input: "A0 §5, A8",
+    skill: "ea-comparator-evidence",
+    skillAlso: ["cite-or-discard"],
     title: "Generate comparator-country evidence tuned to your context",
     problem: "A Strategist building the proof case wants comparator countries that look like theirs — not the usual high-income examples — each with a real source, to show a minister the approach is already proven.",
     prompt: "My country is [country X], with these characteristics: [population, income classification, governance type (unitary / federal / hybrid), region, key constraints]. Drawing on publicly documented national EA or digital-government programmes — give priority to African and other developing-country examples — list 3 to 5 countries with similar characteristics that have built a comparable coordination function. For each: country name, why it is comparable (one sentence), what they actually built (2–3 bullets), one transferable lesson, and a public source URL for each substantive claim. Then add a short synthesis: the architectural elements that recur across all of them. Include at least one example with mixed or contested results, cited honestly. Output: per-country cards, the recurring-elements synthesis, and a 'most transferable lessons' summary.",
@@ -374,6 +378,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "5.2",
+    input: "A21, A27",
+    skill: "ea-governance-drafter",
+    skillAlso: [],
     title: "Build your programme's sustainment risk register",
     problem: "A Strategist needs to make the four organisational failure modes manageable in their own context — a risk register that scores each, names the counter and the owner, and gives an early-warning signal so a fade is caught before it has happened.",
     prompt: "Build an EA programme sustainment risk register for [country X]. My context: [describe — how secure the sponsor is, team size, whether funding is a multi-year envelope or an annual line, whether the governance mandate is legal or just a memo]. Cover the four organisational failure modes: (1) the team pulled onto urgent delivery; (2) the sponsor changing; (3) governance drifting to advisory; (4) funding becoming an annual favour. For each, give: likelihood and impact in my context, the counter-move, the owner of that counter, and an early-warning signal that tells me it is starting (e.g. months since the last governance meeting, weeks since the team last did architecture work, the funding's multi-year status). Output: a risk register table plus the list of early-warning signals to watch.",
@@ -433,6 +441,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "5.3",
+    input: "A28, BB status register",
+    skill: "ea-method-runner",
+    skillAlso: ["bb-landscape-check", "ea-institution-mapper"],
     title: "Map the method to a second sector",
     problem: "A Strategist weighing a multi-sector commitment wants a quick, concrete map of how the method would run on a second sector — what changes, and what it can reuse from the first.",
     prompt: "I have run, or plan to run, the EA method on [country X]'s [first sector]. I am considering [second sector]. Here are its main bodies [list them, one line each]. Produce a one-page map. (1) Classify each body (policy unit / regulatory agency / service-delivery authority / state registry / shared platform). (2) Name this sector's equivalent of the central duplicated record (the learner, the patient, the farmer, the beneficiary) and the flagship it is blocking. (3) Name the six deliverables for this sector. (4) List what this sector can REUSE from the first sector's work — the identity platform, the data-exchange backbone, the team, the framework, the governance — versus what is genuinely new. Output: a one-page map under those four headings.",
@@ -492,6 +504,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "5.4",
+    input: "A3, A8 rev.2, A21 rev.2, A26",
+    skill: "ea-cost-case",
+    skillAlso: ["ea-comparator-evidence", "cite-or-discard"],
     title: "Draft the one-page ministerial business case",
     problem: "A Strategist needs the case on one page in the order a minister reads — the saving, the proof, the ask, the honest horizon — built from their own programmes and comparator evidence.",
     prompt: "Draft a one-page business case for a national EA programme, addressed to the minister of [country X], in this order. (1) The saving: from these programmes [paste 3–5 with rough budgets and the identity/payment/data-exchange components each needs], estimate the country-level cost of each building its own versus consuming shared building blocks, over five years, as a directional figure. (2) The proof: 2–3 comparable countries that have built the same pattern, each with a public source. (3) The ask: a small permanent team, a governance board with binding authority, about 2% of the digital-government budget sustained for five years, and a written promise to protect the team. (4) The horizon: about six months to an approved roadmap, then a sustained multi-year practice, stated honestly. Output: a one-page case under those four headings.",
@@ -551,6 +567,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "5.5",
+    input: "A6",
+    skill: "ea-open-learning-catalogue",
+    skillAlso: [],
     title: "Build your team's capability-building plan",
     problem: "A Strategist committing to the work needs a concrete plan to bring a small team up to capability using open materials — what to learn from where, in what order, and what to actually fund.",
     prompt: "I am building a small EA team in [country X] — about [N] people, with backgrounds in [describe]. Using open knowledge products (a published reference architecture, open building-block specifications, video and written knowledge products, and a community of practising countries), produce a capability-building plan. (1) A learning sequence: what the team should learn first, second, third, and from which kind of material. (2) The three layers to draw on — the framework (what to do), worked examples and AI plays (how to do it faster), and the community (who to ask) — with how to use each. (3) What to fund: the team's time to learn, access, and any gaps the open materials do not cover. (4) How to build capability that stays in your own people rather than in consultants. Output: a capability-building plan under those four headings.",
@@ -610,6 +630,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "5.6",
+    input: "A26, A28 rev.2, BB status register",
+    skill: "ea-method-runner",
+    skillAlso: ["bb-landscape-check"],
     title: "Sequence your national rollout into waves",
     problem: "A Strategist with commitment in hand needs a national rollout sequenced as waves — which sector first to build the foundations, then which to bring on, each reusing the last — plus the scorecard to report it.",
     prompt: "I am planning a national EA rollout for [country X] across these sectors [list them, with the flagship outcome each has if known]. Sequence it into waves. (1) Wave 1: recommend the foundation sector — the one with the clearest flagship — and note that Wave 1 also stands up the permanent team, the governance board, and the first shared platforms (identity, data exchange). (2) Waves 2 onward: order the remaining sectors, and for each name what it REUSES from earlier waves (which shared platforms) versus what is new. (3) The national scorecard: the few metrics to report quarterly (sectors live, re-use rate, shared platforms in place). Output: a wave sequence with reuse noted per wave, plus the scorecard metrics.",
@@ -669,6 +693,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "5.7",
+    input: "A29, A31, A8 rev.2",
+    skill: "ea-comparator-evidence",
+    skillAlso: ["cite-or-discard", "ea-cost-case"],
     title: "Draft your closing one-page case for the minister",
     problem: "A Strategist needs the whole case on one page in the structure that persuades — proven, portable, necessary now — built from their own context and grounded in the two reasons an EA exists.",
     prompt: "Draft a one-page closing case for a national EA programme, addressed to the minister of [country X], structured as: (1) Proven — 2–3 comparable countries that built the same pattern, each with a public source. (2) Portable — that the method is sector-agnostic and each sector after the first costs less, with my sectors [list them] named. (3) Necessary now — that the current work of government (once-only data sharing, shared identity, redesigned services) cannot be done without it. Then a closing paragraph stating the two reasons an EA exists: it makes whole-of-government re-use possible (which no procurement rule can), and it gives the business and IT sides a shared language. Tone: a minister's briefing, confident and honest. Output: a one-page case under those headings plus the closing paragraph.",

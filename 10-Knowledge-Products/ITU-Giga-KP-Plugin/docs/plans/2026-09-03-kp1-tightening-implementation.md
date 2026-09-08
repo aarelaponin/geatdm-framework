@@ -100,6 +100,26 @@ Do these first and commit them as a kit bump (v0.9.0). They are additive. The fo
 
 **`skills/kp-deck-builder/scripts/deck_lib.py` — `practice_box(slide, artefact)`** [Phase B → WP7]. A bordered Arial 18pt text block at the foot of the recap slide with the bold lead-in "Do this on your own sector." and the sentence "Run the prompt in the description on your own ministry — it gives you [artefact]. Before the next video." Three lines maximum at the recap slide's width; the mobile split-screen test in the production notes is the acceptance check. `big_slide` gains an optional `practice=` argument so recap slides pick it up with one parameter.
 
+> **Amended 6 Sep 2026, on building Module 1 (WP8).** Two changes to the spec above, both
+> forced by what the box actually reads like on a slide:
+>
+> 1. **`practice_box(slide, task, artefact)` — two strings, not one; `big_slide(practice=(task,
+>    artefact))`.** The `practice` field is pinned to the Output half of the tip's `io`, which
+>    is an I/O spec, so it names the artefact's *shape* — "a structured ToR document",
+>    "a 3-column decomposition plus a meeting agenda". On a slide that reads as a generic call
+>    to action: the viewer cannot tell what the artefact is *about*. The subject lives in the
+>    tip's `title`, which is already imperative and specific ("Draft a Terms of Reference for
+>    your EA Governance Board"), so the box pairs the two. Both strings stay verbatim from the
+>    tip, so neither can drift.
+> 2. **"companion material", not "the description".** Where the prompt lives differs per
+>    channel (YouTube description, GitBook, a workbook) and will change; the slide is cut once,
+>    and naming a platform dates it. `srt_drift_check.py` bans the box phrases accordingly —
+>    but not bare "your own sector" (4.1 uses it descriptively) and not "the video description"
+>    (the permitted sources line).
+>
+> Height is four lines, not three: the longest task + artefact pair runs to 2 + 2 lines at
+> 18pt across the full content width. The build script asserts nothing overlaps the box.
+
 **`skills/kp-audio-brief/scripts/extract_deck.py`** [Phase B → WP7]. When a text frame begins with the lead-in, print it under an `[on-screen only — not narrated]` label instead of in the visible-text list, and exclude its words from the `--budget` weighting.
 
 **`skills/kp-audio-brief/references/audio-brief-template.md`** [Phase B → WP7, but the D5 text change can be made now]. §2 recap-slide block gains the fixed line: "The slide also carries an on-screen practice box. It is not narrated. Do not mention the prompt, the description, or the listener's own sector." Per D5, the §2 sequence becomes recap → Sources and the handoff slide entry is removed. §5 (definition of done) and the Step 5 take checklist gain "nothing said about the practice box". `srt_drift_check.py`'s banned list gains "in the description" and "your own sector" so the audit catches an imported box.

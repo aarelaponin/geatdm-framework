@@ -65,7 +65,7 @@ def main():
     spec = json.load(open(specpath))
 
     for v in spec['videos']:
-        code, name, mins = v['code'], v['title'], v['mins']
+        code, name = v['code'], v['title']
         a, b = v['range']
         prs = Presentation(src)
         sldIdLst = prs.slides._sldIdLst
@@ -88,9 +88,12 @@ def main():
                     [('%s · Video %s' % (spec['kicker_prefix'], code), 13, True, BLUE_DARK, False)],
                     [(v['message'], 12, False, GREY, True)],
                 ])
-            elif t.startswith('Length'):
+            elif 'Target audience' in t or t.startswith('Length'):
+                # No runtime on the title card. The narration is generated per take and its
+                # length changes with every re-roll, so a printed "~4 mins" is stale as soon
+                # as the audio is re-cut — Module 1 shipped cards claiming ~3 mins over a
+                # 5:17 take. Runtime belongs to the video file, not the slide.
                 retext(sh.text_frame, [
-                    [('Length: ', 14, True, INK, False), ('%s mins' % mins, 14, False, INK, False)],
                     [('Target audience: ', 14, True, INK, False), (spec['audience'], 14, False, INK, False)],
                 ])
         cover.notes_slide.notes_text_frame.text = (

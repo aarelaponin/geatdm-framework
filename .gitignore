@@ -40,3 +40,6 @@ __pycache__/
 # Camera source + QA frame grabs — large, not versioned, live outside git
 *.mov
 **/video/_qa/
+
+# Deck QA contact sheets — regenerate from the .pptx via kp-deck-builder
+**/decks/_qa*/

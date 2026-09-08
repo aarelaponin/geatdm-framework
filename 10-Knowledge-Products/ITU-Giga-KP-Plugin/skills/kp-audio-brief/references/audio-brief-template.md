@@ -82,32 +82,42 @@ The single message, said once, and then stop. No restatement of the video's sect
 invitation to act.
 
 The recap slide also carries an on-screen practice box. **It is not narrated.** Do not mention
-the prompt, the description, or the listener's own sector. The box is the call to action; the
+the prompt, the companion material, or the listener's own sector. The box is the call to action; the
 voice-over's job here is the single message and nothing else.
 
 ### Slide «last» — Sources · «start»–«end» (10 s)
 
-One line only, then stop: "Sources are in the video description." **Do not read URLs. Do not
-name section numbers. Do not summarise the sources.** These are the final words of the audio.
-Nothing follows them, and no question precedes them — the take ends here.
+**Nothing is spoken over this slide.** The take ends on the previous slide's message; the
+Sources slide is a silent five-second bookend and the links are compiled into the video
+description. **Do not read URLs, do not name section numbers, do not summarise the sources**, and
+do not close with a question, a reflection, or a thought for the listener — the recording simply
+stops.
+
+*(Changed 6 Sep 2026. The brief used to require a spoken "Sources are in the video description."
+The two-host generator never produced it — not once in ~20 takes across five brief revisions —
+while reliably appending a reflective outro instead. The line was a kit convention, not an ITU
+requirement, so it was dropped rather than defended. `kp-slidecast`'s `trim_outro.py` removes the
+appended outro at build time.)*
 
 ---
 
 ## 3. Hard prohibitions
 
 - ❌ **No spoken handoff.** No "before the next video", no "run this on your own sector", no
-  mention of the prompt or the description. That call to action lives in the on-screen practice
+  mention of the prompt or the companion material. That call to action lives in the on-screen practice
   box on the recap slide and is deliberately silent.
 - ❌ **No podcast outro.** No "that raises a fascinating question for you to consider", no "look
-  around at the other institutions in your life", no invitation to reflect on other sectors. The
-  audio ends on the recap slide's single message plus the one-line sources note.
+  around at the other institutions in your life", no invitation to reflect on other sectors or on
+  private companies. The audio ends on the recap slide's single message — nothing follows it.
 - ❌ **No "deep dive" self-reference.** Never say "deep dive", "today we're unpacking", "welcome
   to", "our sources", "the sources say", "according to the sources", "here's where it gets
   interesting".
 - ❌ **No invented specifics.** No named country, no cost figures, no percentages, no dates,
   no institutions other than those in §2.
-- ❌ **No filler.** Remove "you know", "like", "I mean", "basically", "totally", "sort of",
-  "right?", "wow", "oh absolutely", "man". Reaction interjections should be rare and short.
+- ❌ **Keep filler low.** Minimise "you know", "like", "I mean", "basically", "totally", "sort
+  of", "right?", "wow", "oh absolutely", "man". Reaction interjections should be rare and short.
+  The audit allows up to 2.5 markers per 100 words — a two-host conversation carries some, and
+  asking for zero only bought re-rolls.
 - ❌ **No backchannel.** While one host speaks, the other stays silent. No single-word
   confirmations — "Right", "Exactly", "Mm-hmm", "Okay", "Sure", "Wow", "Got it". These are the
   single largest source of runtime overrun. Each host speaks in complete turns of full sentences.
@@ -120,7 +130,7 @@ Nothing follows them, and no question precedes them — the take ends here.
 - ❌ **No crosstalk or interruption.** One speaker finishes, the other begins. The audio is cut
   to slide transitions, so overlapping speech breaks the edit.
 - ❌ **No in-video intro or outro branding.** ITU compliance rule — the video opens on content
-  and closes on the sources line.
+  and closes on the recap slide's message, over a silent Sources slide.
 
 ---
 
@@ -163,7 +173,8 @@ The audio is correct when:
 2. A listener can tell, without seeing the slides, where each slide begins.
 3. Every enumerated list in the deck is numbered aloud, in the deck's order.
 4. Nothing is said that is not in this brief.
-5. The final words are the recap slide's single message plus the one-line sources note.
-5a. Nothing is said about the practice box — not the prompt, not the description, not the
+5. The final words are the recap slide's single message. Nothing is spoken over the Sources
+   slide.
+5a. Nothing is said about the practice box — not the prompt, not the companion material, not the
    listener's own sector.
 6. There are audible pauses at the slide boundaries, long enough to cut against.

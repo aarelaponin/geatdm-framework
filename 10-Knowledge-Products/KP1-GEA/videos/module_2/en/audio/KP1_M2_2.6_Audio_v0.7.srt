@@ -1,0 +1,280 @@
+1
+00:00:00,150 --> 00:00:03,690
+Right. Specifically within your ministry's PAERA- Mm.
+
+2
+00:00:03,830 --> 00:00:05,910
+Uh, the enterprise architecture framework.
+
+3
+00:00:06,090 --> 00:00:14,090
+Yeah, exactly. And the mission here is, like, figuring out how to map out the current state of these really complex internal systems.
+
+4
+00:00:14,400 --> 00:00:20,310
+Mm-hmm. You know, finding the actual gaps without just drowning in some massive five hundred page audit.
+
+5
+00:00:20,390 --> 00:00:24,890
+Exactly. Because the goal isn't to just list every single thing wrong with your program.
+
+6
+00:00:24,950 --> 00:00:28,370
+I mean, you really wanna find the right problems, uh, in the right order.
+
+7
+00:00:28,710 --> 00:00:32,160
+But wait, doesn't an exhaustive audit actually give you a better baseline?
+
+8
+00:00:32,590 --> 00:00:38,010
+Like, if you document every single asset and process, isn't that a better foundation for decision-making?
+
+9
+00:00:38,330 --> 00:00:40,850
+Uh, no, not really. Quality definitely beats volume here.
+
+10
+00:00:40,939 --> 00:00:45,030
+An exhaustive audit usually just obscures the actual structural realities of your program.
+
+11
+00:00:45,130 --> 00:00:47,130
+Oh, so you kinda miss the forest for the trees.
+
+12
+00:00:47,170 --> 00:00:54,710
+Right. So instead of just documenting everything, the current state picture is evaluated against three universal tests across all the architectural layers.
+
+13
+00:00:54,770 --> 00:00:57,190
+First up, it has to be complete enough to decide.
+
+14
+00:00:57,229 --> 00:00:59,610
+Complete enough to decide. Meaning what exactly?
+
+15
+00:00:59,630 --> 00:01:04,310
+Meaning it only covers the capabilities and systems that materially impact the minister's objective.
+
+16
+00:01:04,550 --> 00:01:06,490
+Minor elements, you just note them and move on.
+
+17
+00:01:06,610 --> 00:01:07,730
+Got it. And the second test.
+
+18
+00:01:07,950 --> 00:01:14,460
+It must be owned. Every single capability, data domain, and application needs a named owner.
+
+19
+00:01:14,850 --> 00:01:15,850
+Because if nobody owns it...
+
+20
+00:01:15,950 --> 00:01:24,210
+Exactly. If it's unowned, well, no department is budgeting for its maintenance or security, which is a critical finding, not just some minor oversight.
+
+21
+00:01:24,270 --> 00:01:27,010
+Yikes. Yeah, that makes sense. So what is the third test?
+
+22
+00:01:27,420 --> 00:01:30,830
+The third test is that the architecture has to be traceable.
+
+23
+00:01:30,850 --> 00:01:40,410
+Say you have a digital service, right? If you can't trace that back up to a specific ministry capability, uh, that is a huge functional gap in understanding how the enterprise actually
+
+24
+00:01:40,490 --> 00:01:41,030
+operates.
+
+25
+00:01:41,370 --> 00:01:45,980
+Okay, so applying those three universal tests reveals the baseline structural issues.
+
+26
+00:01:46,610 --> 00:01:50,430
+But we also have to apply specific tests to each architectural layer, right?
+
+27
+00:01:50,470 --> 00:01:53,510
+Mm-hmm. Like business, data application, and technology.
+
+28
+00:01:53,810 --> 00:02:02,010
+Yeah, exactly. For example, testing the business layer means you have to identify actual capabilities, like what the ministry does, say, issuing permits,
+
+29
+00:02:02,590 --> 00:02:06,110
+rather than just, you know, mapping out organizational departments on a chart.
+
+30
+00:02:06,170 --> 00:02:10,850
+Oh, right. And for the data layer, you'd look for a single authoritative copy of information, right?
+
+31
+00:02:10,910 --> 00:02:20,610
+You hit the nail on the head. And when we apply these specific layer tests across a government enterprise, we almost always uncover four specific
+
+32
+00:02:20,620 --> 00:02:21,539
+functional failures.
+
+33
+00:02:21,630 --> 00:02:24,930
+Oh, wow. Four reliable disasters just hiding in the architecture.
+
+34
+00:02:24,970 --> 00:02:25,690
+What are they?
+
+35
+00:02:25,770 --> 00:02:28,770
+So first is the duplicate register. We see this all the time.
+
+36
+00:02:28,850 --> 00:02:36,110
+Multiple regulatory bodies keeping conflicting copies of the exact same data domain, like citizen addresses or tax statuses.
+
+37
+00:02:36,330 --> 00:02:38,910
+Oh, that sounds like an absolute mess. Well, what's the second one?
+
+38
+00:02:39,090 --> 00:02:40,290
+Orphan systems. Yeah.
+
+39
+00:02:40,310 --> 00:02:45,430
+These are those older legacy applications that literally trace to no current capability.
+
+40
+00:02:45,440 --> 00:02:49,310
+Wait, so they just sit there and consume budget without actually doing anything useful for your program?
+
+41
+00:02:49,530 --> 00:02:52,710
+Basically, yes. They deliver zero operational value.
+
+42
+00:02:53,090 --> 00:02:56,470
+The third gap is point to point spaghetti architecture.
+
+43
+00:02:56,730 --> 00:02:58,270
+Point to point spaghetti. I love that term.
+
+44
+00:02:58,450 --> 00:03:05,910
+It's very visual. Right. That's where systems talk through custom individual links instead of just using a shared data exchange building block.
+
+45
+00:03:06,030 --> 00:03:08,930
+Right, which sound incredibly fragile. And the fourth gap.
+
+46
+00:03:09,170 --> 00:03:16,590
+The fourth is having no clear owner for a shared capability, which means when that specific capability fails to perform,
+
+47
+00:03:17,150 --> 00:03:19,110
+accountability just quietly vanishes.
+
+48
+00:03:19,300 --> 00:03:21,050
+Right, because nobody wants to take the blame for it.
+
+49
+00:03:21,070 --> 00:03:26,750
+But look, documenting duplicate registers or orphan systems, that basically just generates a list of findings.
+
+50
+00:03:26,810 --> 00:03:29,250
+How do you convert that into a true phase two assess?
+
+51
+00:03:29,650 --> 00:03:32,970
+Well, you have to sequence those gaps for remediation.
+
+52
+00:03:33,010 --> 00:03:36,120
+Prioritizing them is the core output of the assessment.
+
+53
+00:03:36,790 --> 00:03:39,110
+But wait, establishing priority sounds highly political.
+
+54
+00:03:39,270 --> 00:03:45,750
+Like, what if naming a redundant register directly challenges the jurisdiction of some really powerful department within the ministry?
+
+55
+00:03:45,870 --> 00:03:55,840
+Well, that is the reality of the work. Priority comes down to two things: the magnitude of negative impact on your minister's program or the operational cost to the ministry weighed against
+
+56
+00:03:55,930 --> 00:03:58,510
+how feasible it is to actually close that gap.
+
+57
+00:03:58,990 --> 00:04:04,890
+So you wanna target high impact vulnerabilities that are actually viable to fix, both politically and technically.
+
+58
+00:04:04,950 --> 00:04:12,250
+Exactly. But when this assessment finally goes up to the enterprise architecture board for sign off, the ultimate defining metric is honesty.
+
+59
+00:04:12,530 --> 00:04:12,970
+Honesty.
+
+60
+00:04:13,810 --> 00:04:15,550
+Meaning you can't sugarcoat the findings.
+
+61
+00:04:15,710 --> 00:04:23,430
+Right. If you soften the language about a redundant register just to accommodate internal sensitivities, you completely compromise the baseline.
+
+62
+00:04:23,590 --> 00:04:25,690
+So flattery gets you nowhere in this phase.
+
+63
+00:04:25,850 --> 00:04:26,690
+Worse than nowhere.
+
+64
+00:04:27,959 --> 00:04:36,950
+An assessment that flatters the current state will just result in a severely underfunded and fundamentally flawed modernization program the very next year.
+
+65
+00:04:37,490 --> 00:04:39,670
+It leads to quiet, expensive failures.
+
+66
+00:04:39,770 --> 00:04:45,210
+Wow. Yeah, that makes total sense. So a phase two assess is absolutely not about volume.
+
+67
+00:04:45,270 --> 00:04:50,910
+It's about getting an owned traceable picture and a very honestly ordered gap analysis.
+
+68
+00:04:51,050 --> 00:04:52,310
+That is the perfect summary.
+
+69
+00:04:52,770 --> 00:04:53,050
+Awesome.
+
+70
+00:04:53,670 --> 00:04:56,130
+Well, that wraps up our deep dive for today.
+

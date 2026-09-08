@@ -84,6 +84,14 @@ One combined module deck, sectioned so any video can be lifted out standalone:
    (kicker, big number, title, single message in italics, runtime line) → the **content slides** from
    the bundle's slide cues → for most videos a blue **"In one sentence"** climax slide (the quotable,
    screenshot-ready line) → a **Sources** slide ("Find the link in the description.", no narration).
+   The recap slide — the climax where there is one, otherwise the last content slide — carries the
+   **practice box**: `big_slide(..., practice=(task, artefact))`, or `practice_box(slide, task,
+   artefact)` directly on a content slide. Both strings come verbatim from the subtopic's AI tip —
+   `task` is the tip's `title`, `artefact` is the `practice` field. **Pass both.** The `practice`
+   field alone is the Output half of an I/O spec, so it names the artefact's *shape* ("a structured
+   ToR document") and reads as a generic call to action; the tip title is what says *what the viewer
+   is doing*. It is the video's only call to action, it is **never narrated**, and the notes must say
+   so — the narrated handoff was retired with it (plan D5).
 4. **Thank-you** (layout 14) — combined deck only; standalone videos end on their sources slide.
 
 **Speaker notes carry the voice-over**, slide by slide, plus production cues (reveal order, "hold this

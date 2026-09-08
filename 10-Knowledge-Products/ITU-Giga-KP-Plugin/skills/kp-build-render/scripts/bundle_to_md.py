@@ -153,12 +153,23 @@ def parse_subtopic(block, persona_default):
         md.append("\n### On-screen slide specification\n")
         md.append(table(["Slide", "Element (text-only)", "Notes"], rows))
 
-    # on-screen practice box (recap slide; never narrated)
+    # on-screen practice box (recap slide; never narrated).
+    # Two fields, both lifted from the AI tip: the tip's title is the TASK (what the viewer
+    # does), the practice field is the ARTEFACT (what shape the result is). The artefact
+    # alone is the Output half of an I/O spec, so it reads as a generic call to action —
+    # keep the pair, and keep it identical to deck_lib.practice_box.
     practice = field("practice").rstrip(".")
     if practice:
+        tm = re.search(r"aiTip:\s*\{", block)
+        task = ""
+        if tm:
+            tip_inner, _ = balanced(block, tm.end() - 1)
+            t = re.search(r'title:\s*"((?:[^"\\]|\\.)*)"', tip_inner)
+            task = unesc(t.group(1)).rstrip(".") if t else ""
         md.append("\n**On-screen practice box (recap slide, not narrated):** "
-                  f"**Do this on your own sector.** Run the prompt in the description "
-                  f"on your own ministry — it gives you {practice}. Before the next video.\n")
+                  f"**Do this on your own sector. {task}.** "
+                  f"The prompt in the companion material gives you {practice}. "
+                  "Before the next video.\n")
 
     # ai tip
     am = re.search(r"aiTip:\s*\{", block)

@@ -28,6 +28,7 @@ from pptx import Presentation
 from pptx.util import Inches, Pt
 from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
+from pptx.enum.text import MSO_AUTO_SIZE
 from pptx.enum.shapes import MSO_SHAPE
 from pptx.oxml.ns import qn
 
@@ -252,16 +253,63 @@ def section_slide(prs, kicker, code, name, message, runtime_line, note_text):
     return s
 
 
-def big_slide(prs, text, tag, note_text, sub=None, label='IN ONE SENTENCE'):
-    """The quotable, screenshot-ready climax slide that closes a video."""
+PRACTICE_LEAD = 'Do this on your own sector.'
+
+
+def practice_box(slide, task, artefact, x=0.72, y=5.15, w=11.9, h=1.7):
+    """The on-screen, un-narrated call to action at the foot of a recap slide (plan D5).
+
+    Two fields, both lifted verbatim from the subtopic's AI tip so neither can drift:
+
+      `task`     — the tip's `title`. An imperative that names WHAT the viewer is doing
+                   ("Draft a Terms of Reference for your EA Governance Board").
+      `artefact` — the subtopic's `practice` field, which qa_bundle.py pins to the Output
+                   half of the tip's `io`. That half is an I/O spec, so it describes the
+                   SHAPE of the result ("a structured ToR document") and on its own reads
+                   as a generic call to action. The task line is what makes it specific.
+
+    The box is the video's ONLY call to action; the narrated handoff is gone, so nothing in
+    the notes may read it aloud (audio-brief-template §2 and srt_drift_check.py both stop it).
+
+    It says "companion material", never "the description" or a named platform — where the
+    prompt lives (YouTube description, GitBook, a workbook) differs per channel and changes
+    over time; the slide is cut once. Full content width, four lines of height: a long task
+    plus a long artefact is what overflows it, so re-run the mobile split-screen test after
+    changing either."""
+    p = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Inches(x), Inches(y), Inches(w), Inches(h))
+    p.adjustments[0] = 0.045
+    solid(p, WHITE, line_color=ITU_BLUE)
+    tf = p.text_frame
+    tf.word_wrap = True
+    tf.auto_size = MSO_AUTO_SIZE.NONE
+    tf.margin_left = tf.margin_right = Inches(0.25)
+    tf.margin_top = tf.margin_bottom = Inches(0.12)
+    set_text(tf, [
+        [(PRACTICE_LEAD + ' ', 18, True, ITU_BLUE_DARK, False),
+         (task + '.', 18, True, INK, False)],
+        [('The prompt in the companion material gives you %s. Before the next video.' % artefact,
+          18, False, GREY, False)],
+    ], align=PP_ALIGN.LEFT, space_after=Pt(4))
+    tf.vertical_anchor = MSO_ANCHOR.MIDDLE
+    return p
+
+
+def big_slide(prs, text, tag, note_text, sub=None, label='IN ONE SENTENCE', practice=None):
+    """The quotable, screenshot-ready climax slide that closes a video.
+
+    `practice` is the (task, artefact) pair for the D5 practice box; it adds the box at the
+    foot and lifts the copy above it. Without it the slide is laid out exactly as Modules 1-4
+    built it."""
     s = add_slide(prs, LAYOUT_BLUE)
-    tb = box(s, 1.1, 2.3, 11.1, 2.6)
+    tb = box(s, 1.1, 1.95 if (practice and sub) else 2.3, 11.1, 2.6)
     set_text(tb.text_frame, [[(text, 30, True, INK, False)]])
     if sub:
-        tb = box(s, 1.1, 5.1, 11.1, 1.0)
+        tb = box(s, 1.1, 4.2 if practice else 5.1, 11.1, 0.8)
         set_text(tb.text_frame, [[(sub, 16, False, GREY, True)]])
     tb = box(s, 1.1, 1.7, 6, 0.4)
     set_text(tb.text_frame, [[(label, 12, True, ITU_BLUE_DARK, False)]])
+    if practice:
+        practice_box(s, *practice, y=5.15)
     footer(s, tag, itu=True)
     notes(s, note_text)
     return s

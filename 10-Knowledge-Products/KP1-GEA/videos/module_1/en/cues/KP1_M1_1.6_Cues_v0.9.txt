@@ -1,0 +1,7 @@
+0:00   # slide 1 — title card
+0:09   # slide 2 — The lifecycle on one page (prediction question)
+0:23   # slide 3 — Five phases. Four sign-offs. Six months to a roadmap.
+1:00   # slide 4 — Each phase: one question, one deliverable, one sign-off
+3:18   # slide 5 — Your minister reviews four times, not every diagram
+3:40   # slide 6 — Week 1 to week 26 — then forever
+4:00   # slide 7 — Sources

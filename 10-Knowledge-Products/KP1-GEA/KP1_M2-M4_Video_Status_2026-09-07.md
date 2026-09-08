@@ -1,0 +1,105 @@
+# Status: KP1 Modules 2–4 video track (English)
+
+**Date:** 7 September 2026 · **Scope:** `videos/module_{2,3,4}/en/`, steps 1–5b of the video track.
+**Method:** briefs generated from the v0.2 split decks, 155 takes generated via `kp-notebooklm-audio`,
+transcribed via `kp-scribe-transcribe`, audited with `srt_drift_check` + `coverage_check`.
+
+## Verdict
+
+Step 3 is **complete and gated** for all 22 subtopics. Step 4 is **10 of 22 accepted**; the other
+12 have takes on disk that fail on a named, specific defect. Steps 6 and 7 (cues, assembly) have
+not started — they need no NotebookLM and can run as soon as the takes are accepted.
+
+Runtime is resolved as a class: the decks no longer print a length, and every brief targets a flat
+5:00, matching Module 1.
+
+## Where each subtopic stands
+
+`residue` = the take says "deep dive" / "welcome to" on air. Accepted as non-blocking on 7 Sep
+(see *Open decisions*); it is **not** removed from the audio.
+
+| # | State | Take | Runtime | Takes | Blocker / residue |
+|---|---|---|---|---|---|
+| 2.1 | ship | `Audio_v0.15` | 5:07 | 19 | residue: deep dive |
+| 2.2 | ship | `Audio_v0.19` | 5:04 | 19 | residue: deep dive, welcome to |
+| 2.3 | ship | `Audio_v0.2` | 4:53 | 9 | residue: deep dive, welcome to |
+| 2.4 | blocked | `Audio_v0.2` | 5:19 | 15 | "broken" |
+| 2.5 | blocked | `Audio_v0.3` | 3:52 | 13 | UNDER |
+| 2.6 | ship | `Audio_v0.7` | 4:56 | 8 | residue: deep dive |
+| 2.7 | ship | `Audio_v0.2` | 5:40 | 7 | residue: deep dive |
+| 3.1 | blocked | `Audio_v0.2` | 2:57 | 2 | UNDER |
+| 3.2 | blocked | `Audio_v0.2` | 6:09 | 2 | OVER; "hostage", "nightmare" |
+| 3.3 | blocked | `Audio_v0.4` | 6:14 | 7 | OVER; "think about" |
+| 3.4 | blocked | `Audio_v0.2` | 5:27 | 2 | "our sources", "nightmare" |
+| 3.5 | **ship** | `Audio_v0.1` | 5:16 | 1 | **fully clean** |
+| 3.6 | ship | `Audio_v0.2` | 5:19 | 4 | residue: deep dive, welcome to |
+| 3.7 | ship | `Audio_v0.2` | 5:25 | 6 | residue: deep dive, welcome to |
+| 4.1 | blocked | `Audio_v0.3` | 4:01 | 4 | UNDER |
+| 4.2 | blocked | `Audio_v0.3` | 5:48 | 3 | OVER; reflective close; "think about" |
+| 4.3 | ship | `Audio_v0.1` | 4:57 | 1 | residue: deep dive, welcome to, here's where it gets |
+| 4.4 | **ship** | `Audio_v0.4` | 4:30 | 5 | **fully clean** |
+| 4.5 | blocked | `Audio_v0.2` | 5:25 | 7 | "nightmare"; citizen framing |
+| 4.6 | blocked | `Audio_v0.2` | 4:23 | 8 | "the sources say" |
+| 4.7 | blocked | `Audio_v0.2` | 5:30 | 8 | "our sources", "chaos" |
+| 4.8 | blocked | `Audio_v0.2` | 5:53 | 5 | OVER |
+
+**Coverage is not a problem anywhere.** Across all 155 takes, `coverage_check` reports essentially
+no missed slides — the briefs steer the hosts through every slide in order. Every blocker above is
+vocabulary, runtime or the closing turn.
+
+## What changed in the kit
+
+| Change | Where | Why |
+|---|---|---|
+| `make_brief.py` (new) | `kp-audio-brief/scripts/` | Renders brief + prompt from a deck: VO notes → approved substance, slide copy → bullets, remaining notes → staging, weighted budget, terminology rows filtered to terms §2 uses. 22 briefs by hand is how the brief and deck drift apart. |
+| `take_until_pass.py` (new) | `kp-notebooklm-audio/scripts/` | take → transcribe → trim → audit, re-rolling up to N times. Gates on real defects only. |
+| `test_trim_outro.py` (new) | `kp-slidecast/scripts/` | 8 checks over both ends of the cut, both directions. |
+| `trim_outro.py` — `--deck` | `kp-slidecast/scripts/` | **Bug fix.** The head cut was silently eating real content on 9 takes, including 4.1's "Meet Progressa — it is a demonstration country…" and 2.5's "module two, video 2.5", which is the cold open the brief requires. Deck vocabulary now separates furniture from content. Without `--deck`, behaviour is unchanged. |
+| `trim_outro.py` — `outro_start` | `kp-slidecast/scripts/` | **Bug fix.** It scanned forward and took the first reflective cue in a 75 s window — usually a mid-content question (4.4: "the third sign off, right?" at 224 s) — then its reset rule discarded it, leaving the real outro uncut. Now works backwards from the end. Unblocked 2.1, 2.2, 2.6, 4.4 with no new takes. |
+| Length label dropped | `videos/module_{2,3,4}/en/decks/` | Re-split with the current `split_module_deck.py`, which already dropped it during the Module 1 work. M2–M4 had been split before that landed. |
+| Flat 5:00 brief target | all 22 briefs | Module 1 targeted 5:00 in every brief whatever the nominal length. `make_brief.py` now defaults to it. |
+
+## Findings
+
+### 1. The drift check is advisory, not the shipping gate
+Module 1's shipped videos run **3:11 to 5:30 against a single 5:00 target** — 1.3 and 1.4 shipped
+with runtime FAILs. Automating "re-roll until `srt_drift_check` exits 0" burned ~60 generations for
+nothing before this was checked. A person accepted those takes; the script never did.
+
+### 2. The show-open is a property of the generator
+`deep dive` appears in 108 of 129 takes measured (83%), `welcome to` in 42 (32%), despite §3 of the
+brief and an explicit line in every prompt. Module 1 shipped clean only because its show-openings
+landed in the first ≤4 cues, where `trim_outro` reaches them. Modules 2–4 open with a ~30 s teaser
+*first* and announce themselves after — past the cap — and the teaser uses subject vocabulary, so
+the deck-anchored cut will not touch it either.
+
+### 3. The remaining 12 blockers are two things
+- **Consumer-outrage vocabulary** (2.4, 3.2, 3.4, 4.5, 4.6, 4.7): "nightmare" 24 takes, "broken" 25,
+  "chaos" 21, "our sources" 21, "hostage" 4. §3 bans all of them by name and it is not landing.
+- **Runtime** (2.5, 3.1, 4.1 UNDER; 3.2, 3.3, 4.2, 4.8 OVER).
+
+Six subtopics have now exhausted three re-rolls on the same vocabulary failure. That is the kit's
+own trigger for a **brief-template** fix rather than a per-video one — and since `make_brief.py`
+regenerates from `references/audio-brief-template.md`, a §3 rewrite reaches all 22 in one command.
+
+## Open decisions
+
+1. **Show-open residue ships on air.** Eight accepted takes still say "welcome to today's deep dive".
+   This is live against ITU's no-in-video-branding rule and the brief's own §3. Reversible: one
+   hand-set head cut per video. Decided 7 Sep to unblock; revisit before delivery.
+2. **§3 rewrite.** The banned-vocabulary list demonstrably does not work in its current form.
+   Needs a different formulation, not a longer list.
+
+## Next
+
+1. Rewrite `audio-brief-template.md` §3 against the frequency data above; regenerate all 22 briefs.
+2. Re-roll the 12 blocked subtopics against the new briefs.
+3. Steps 6–7 for the 10 accepted takes — `draft_cues.py` then `slidecast.py`. Needs no NotebookLM
+   and is not blocked by anything above.
+4. Decide the residue question (1) before delivery.
+
+## Spend
+
+155 takes; 12,576 ElevenLabs credits used this period (110,862 remaining, resets 25 Sep).
+NotebookLM has no API cost but throttles: roughly 40% of generations timed out at 900 s during the
+heaviest batch, and recovered after a pause.

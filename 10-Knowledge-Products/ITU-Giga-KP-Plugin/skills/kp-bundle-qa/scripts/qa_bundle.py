@@ -58,7 +58,7 @@ CAP_RECAP = 35
 CAP_WORDS = 550
 THIN_SLIDE = 45
 # Belongs on the on-screen practice box, never in the recap voice-over.
-RECAP_BANNED = ["prompt", "description", "your own sector"]
+RECAP_BANNED = ["prompt", "description", "companion material", "your own sector"]
 
 REUSE_SIGNATURES = ["re-use", "reuse", "whole-of-government", "whole of government"]
 LINGUA_SIGNATURES = ["lingua franca", "shared language", "business and it",

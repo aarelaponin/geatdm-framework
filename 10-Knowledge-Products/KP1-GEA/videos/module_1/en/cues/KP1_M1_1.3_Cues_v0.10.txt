@@ -1,0 +1,8 @@
+0:00   # slide 1 — title card
+0:13   # slide 2 — The objection: we already require interoperability
+0:40   # slide 3 — Each project is rational, and builds its own
+1:26   # slide 4 — The math changes only at whole-of-government level
+2:12   # slide 5 — Two more things projects cannot deliver
+3:04   # slide 6 — A reference architecture is other countries' learning
+3:40   # slide 7 — In one sentence
+3:56   # slide 8 — Sources

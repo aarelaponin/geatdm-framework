@@ -312,6 +312,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "3.1",
+    input: "A13",
+    skill: "ea-governance-drafter",
+    skillAlso: [],
     title: "Design your EA repository's structure",
     problem: "An architect ready to stand up a repository needs a structure — the sections, the fields each captures, and the single-source rules — so the repository is usable from day one rather than an empty shell.",
     prompt: "I am setting up an EA repository for [country X]'s [sector] sector, starting in [a spreadsheet / a wiki / a dedicated tool]. I have a four-layer picture with [briefly: how many capabilities, data domains, applications you have captured]. Design the repository structure. Produce: (1) the sections/tabs it should have — at least Capabilities, Data Domains (with one named owner each), Applications (mapped to capabilities and data domains), Technology, and a Decision Log; (2) for each section, the fields it should capture; (3) the relationships to record between sections, using the PAERA metamodel entities; (4) the single-source rules — who may edit, how a change is recorded, how you prevent second copies. Output: a section-by-section schema plus a short 'single-source rules' list.",
@@ -370,6 +374,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the sourcing reference."]
   ],
   aiTip: {
+    play: "3.2",
+    input: "A16 and a candidate list",
+    skill: "ea-tool-evaluator",
+    skillAlso: ["cite-or-discard"],
     title: "Score EA tool options against lock-in and fit",
     problem: "An architect choosing a dedicated EA tool needs to compare candidates on the things that matter — open export, metamodel fit, sourcing posture and exit cost — rather than on the demo's polish.",
     prompt: "I am choosing an EA tool for [country X]. Here are the candidates [list 2–4: names or types — a shared government platform, an open-source tool, a commercial product] and my requirements [list: must represent the PAERA metamodel entities, must export to an open format, expected number of entities/users, budget constraints]. Produce a comparison table scoring each candidate on: (1) open export — can I get all my data out in a format I can read without the tool; (2) metamodel fit — can it represent my entities and relationships; (3) sourcing posture — is it reuse, buy, or build, and is that the right order; (4) cost model and exit cost — how hard to leave in two years. Then give a recommendation with one line of reasoning. Output: a comparison table plus a recommendation.",
@@ -432,6 +440,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "3.3",
+    input: "A16, A7",
+    skill: "ea-governance-drafter",
+    skillAlso: [],
     title: "Draft the repository update policy",
     problem: "An architect needs a one-page update policy that names the owner, the trigger events, the conformance check and the tie to the Board gate — so currency is a defined routine, not a good intention.",
     prompt: "Draft a one-page EA repository update policy for [country X]'s EA practice. My team is [describe: roles and size], and the kinds of change we see are [list: systems going live, systems retired, reorganisations, Board decisions, new registries]. The policy should state: (1) the single owner accountable for currency; (2) the trigger events, and for each, exactly what gets updated in the repository; (3) the light conformance check applied to each change — shared-entity use, one owner per data domain, decisions logged with reasons; (4) how updates are captured at the project-review gate so the governance process and the update are one motion. Tone: a short operational policy. Output: a one-page policy under those four headings.",
@@ -494,6 +506,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "3.4",
+    input: "A7, A0 §7",
+    skill: "ea-governance-drafter",
+    skillAlso: ["ea-legal-context"],
     title: "Draft your EA Board's Terms of Reference",
     problem: "An architect standing up the Board needs a Terms of Reference the chair can adopt — one that nails the binding decision scope and the escalation path, not just a membership list.",
     prompt: "Draft a Terms of Reference for an EA Governance Board in [country X]. Include: (1) Purpose — why the Board exists and what it governs; (2) Binding decision scope — 5–8 specific decision types within the Board's authority (e.g. approval of new digital projects above a threshold, cross-domain integration approvals, technology choices that create vendor dependencies, exceptions to the architecture); (3) Membership — Chair (CDO/CTO equivalent), permanent members (sector CIOs, major registry owners, the data-protection regulator), optional external advisor; (4) Cadence — quarterly main meetings plus a fast ad-hoc path; (5) Reporting line — to whom the Board reports up; (6) Escalation — how decisions the Board cannot resolve are escalated; (7) Mandate review — how often the ToR itself is reviewed. Tone: a formal institutional document. Output: a structured ToR ready to circulate for adoption.",
@@ -552,6 +568,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "3.5",
+    input: "A7 rev.2, A11, BB status register",
+    skill: "ea-governance-drafter",
+    skillAlso: ["bb-landscape-check"],
     title: "Build your architecture review gate checklist",
     problem: "An architect operating the Board needs a project-intake checklist — the questions, what a pass looks like, the exception form and the decision-log fields — so every project is reviewed the same consistent way.",
     prompt: "Build an architecture review gate checklist for [country X]'s EA Board. Here are my adopted principles [paste or summarise] and the shared building blocks that already exist [list: national identity, payments, data exchange, shared registries — or note if unknown]. Produce: (1) the project-intake questions — at least: does a shared block exist for this; which data domains, and does it consume the owner's copy; does it meet each principle; is the sourcing choice deliberate; can it export to an open format; (2) for each question, what a 'pass' looks like; (3) an exception form — reason, the block it bypasses, a sunset date, who approved; (4) the decision-log fields to record in the repository. Output: the checklist, the pass criteria, the exception form, and the log fields.",
@@ -610,6 +630,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "3.6",
+    input: "A16, A18",
+    skill: "ea-governance-drafter",
+    skillAlso: [],
     title: "Build your EA health scorecard",
     problem: "An architect needs a one-page quarterly scorecard — the few real metrics, how to compute each, and honest thresholds — to show the Board and minister whether the EA is working.",
     prompt: "Build a one-page quarterly EA health scorecard for [country X]'s EA practice. I can currently measure [describe what data you have: projects through the gate, repository contents, exceptions, sectors covered]. Produce: (1) the four metrics — coverage, re-use rate, open exceptions (count and age), and decisions made (count and time-to-decision) — with a one-line definition and how to compute each from my data; (2) a red/amber/green threshold for each, set honestly; (3) a short 'what's not working' section that names gaps rather than hiding them; (4) the one-line story for the minister. Avoid vanity metrics (pages, diagrams, meetings). Output: a one-page scorecard template.",
@@ -672,6 +696,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "3.7",
+    input: "A20, A6",
+    skill: "ea-governance-drafter",
+    skillAlso: [],
     title: "Build your EA sustainment risk register",
     problem: "An architect needs to make the four fade-modes manageable — a risk register that scores each in their context, names the counter-move and the owner, and defines an early-warning signal so a fade is caught before it has happened.",
     prompt: "Build an EA sustainment risk register for [country X]'s EA practice. My context: [describe — sponsor and how secure, team size, whether the budget is a line item or an annual favour, whether the Board's mandate is legal or just a memo]. Cover the four fade-modes: (1) the team pulled onto urgent delivery; (2) the repository going stale; (3) the Board drifting to advisory; (4) the sponsor changing. For each, give: likelihood and impact in my context, the counter-move, the owner of that counter, and an early-warning signal that tells me it is starting (e.g. months since the last Board meeting, weeks since the last repository update, number of overrides this quarter). Output: a risk register table plus the list of early-warning signals to watch.",

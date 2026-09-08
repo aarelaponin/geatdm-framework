@@ -301,6 +301,10 @@ body.push(...renderSubtopic({
       "Lets viewers track down the cited materials via the YouTube description."]
   ],
   aiTip: {
+    play: "1.1",
+    input: "A0 §1",
+    skill: "country-context-pack",
+    skillAlso: ["cite-or-discard"],
     title: "Diagnose your country's fragmentation symptoms",
     problem: "A Strategist new to EA may need to assess whether their country actually shows the four symptoms described in this video, and how severely. This prompt produces a defensible diagnostic table the Strategist can take into a cabinet briefing.",
     prompt: "Below is a description of [country X]'s digital landscape and recent digital initiatives [paste 1–3 paragraphs of context, including any known cross-agency systems, identity programmes, and recent digital-government strategy documents]. For each of the four common fragmentation symptoms — duplicate registries, bespoke point-to-point integrations, legacy vendor lock-in, sectoral islands — assess whether the described landscape shows that symptom. Output a 4-row table: symptom, severity (None / Partial / Severe), evidence cited from the input, illustrative cost direction (money / time / citizen experience / policy capacity). Be conservative — claim Severe only if the evidence is in the input. End with 3 bullets: which symptoms need immediate diagnostic work, which are likely false negatives, what additional information would sharpen the assessment.",
@@ -358,6 +362,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the framing."]
   ],
   aiTip: {
+    play: "1.2",
+    input: "A0 §1, A0 §6",
+    skill: "ea-institution-mapper",
+    skillAlso: [],
     title: "Draft a one-slide 'what is EA' explainer for ministers",
     problem: "A Strategist who has watched this video may need to brief their minister, cabinet or sector CIO on what an EA is, in one slide, in non-technical language. This prompt produces a country-tailored explainer.",
     prompt: "Draft a one-slide explainer titled 'What is Enterprise Architecture' for a [Cabinet briefing / ministerial induction / sector CIO onboarding] in [country X]. The slide should include: a one-sentence definition; the four BDAT layers (Business, Data, Application, Technology) with one-line examples specific to [country X]'s public-sector context — e.g. mention a real sector ministry, a known state registry, a known service]; a single concluding line on why this matters for digital service delivery. Tone: factual, non-technical, suitable for ministers. Output as plain text formatted as: TITLE, then four BODY bullets, then CONCLUSION.",
@@ -418,6 +426,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the framing."]
   ],
   aiTip: {
+    play: "1.3",
+    input: "A0 §2, A1",
+    skill: "ea-cost-case",
+    skillAlso: ["cite-or-discard"],
     title: "Build the whole-of-government business case for building-block re-use",
     problem: "A Strategist needs to demonstrate to cabinet, budget authority or donor that re-use of building blocks is cheaper at the country level than at the project level, even though each individual project would not choose it. This prompt produces a draft business case that makes the math visible.",
     prompt: "Below are 3 to 5 of [country X]'s current and planned digital-government programmes [paste short descriptions, ideally with rough budget envelopes and the identity / payment / data-exchange components each programme needs]. For the country as a whole, estimate the cost difference between (a) each programme building its own version of identity, payments and data-exchange components, vs (b) all programmes consuming a shared set of GovStack-aligned building blocks. Acknowledge that option (b) is locally MORE expensive for each individual project. Output: per-programme table showing the local cost of 'do it yourself' (cheaper for this project) vs the local cost of 'consume the BB' (more expensive for this project), plus a country-level total over 5 years. End with a 'what makes this calculation work' note — the conditions (BB availability, governance authority, sustained funding, training capacity) that turn the country-level math from theoretical to realised.",
@@ -478,6 +490,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the framing."]
   ],
   aiTip: {
+    play: "1.4",
+    input: "A0 §3, A2",
+    skill: "ea-legal-context",
+    skillAlso: [],
     title: "Translate an operating-model question into a business-IT joint agenda",
     problem: "A Strategist contemplating operating-model change (rather than process automation) often struggles to surface what the joint business-IT decisions actually are. This prompt produces a structured agenda the Strategist can use to convene business management and IT leadership in the same room.",
     prompt: "Below is a description of an operating-model question my [ministry / agency] is considering — for example 'should we move to a Once-Only data-sharing model', 'should we redesign citizen service delivery around digital identity', 'should we offer this service through digital-only channels': [paste the question and 1–3 paragraphs of context, including any known constraints — legal, policy, technical, political]. Decompose the question into (a) the pure business decisions only organisational management can make (policy, legal, who owns what), (b) the pure IT decisions only the architect can make (technology choice, security model, integration pattern), and (c) the joint decisions that require business and IT in the same room. For each joint decision, frame it in plain language both groups can understand, and identify what each side needs from the other to make a good decision. Output: a 3-column table (business / IT / joint), plus a 5-bullet 'agenda for the first joint meeting' with named decisions.",
@@ -542,6 +558,10 @@ body.push(...renderSubtopic({
       "Lets viewers track sources via the YouTube description."]
   ],
   aiTip: {
+    play: "1.5",
+    input: "A0 §2, the initiatives list, A1",
+    skill: "paera-reference-check",
+    skillAlso: ["cite-or-discard"],
     title: "Map your country's existing initiatives against PAERA's five foundations",
     problem: "A Strategist needs to understand which PAERA foundations their country has already partially built and which need to be built from scratch — a defensible map that frames the EA business case.",
     prompt: "Below are [country X]'s existing digital-government initiatives and reference materials [paste 2–6 short descriptions, including any national strategy documents, interoperability platforms, identity programmes, sector EAs already published]. For each initiative, indicate which of PAERA's five foundations it already addresses: (1) taxonomy of public-sector organisations, (2) metamodel of entities and relationships, (3) pattern library and building blocks, (4) architectural principles, (5) methodology. Each initiative may cover none, one or several. Then summarise: which foundations are already covered (and where), which need to be built, and where existing work would need to be reframed to fit PAERA. Output: per-initiative table plus 3-bullet summary.",
@@ -610,6 +630,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the PAERA citations."]
   ],
   aiTip: {
+    play: "1.6",
+    input: "A0 §4, A4, A5",
+    skill: "ea-governance-drafter",
+    skillAlso: ["ea-institution-mapper"],
     title: "Draft a phase-by-phase RACI for your country's EA programme",
     problem: "Before the lifecycle starts, the Strategist needs to know who in their country plays which role at which phase. This prompt produces a draft RACI matrix that surfaces the role gaps.",
     prompt: "Below is a description of [country X]'s existing institutional roles relevant to a national EA programme: [list the CDO/CTO or equivalent, sector ministry CIOs, ICT unit head, any existing EA function, the Governance Board if one exists, the procurement authority, the data protection regulator, the budget authority — and any roles you know are missing]. For each phase of the PAERA-anchored EA lifecycle (Discover, Assess, Adapt, Plan, Execute & Govern), draft a RACI matrix — who is Responsible, Accountable, Consulted, Informed. Identify any role gap (a phase responsibility with no existing role to assign it) and flag for resolution before the phase starts. Output: a 5-row RACI table (one row per phase, columns R/A/C/I) plus a 'role gaps' list at the end.",
@@ -672,6 +696,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the PAERA citations."]
   ],
   aiTip: {
+    play: "1.7",
+    input: "A0 §4, A0 §7, A3, A6, A8",
+    skill: "ea-governance-drafter",
+    skillAlso: ["ea-legal-context"],
     title: "Draft a Terms of Reference for your EA Governance Board",
     problem: "A Strategist who agrees with this video needs to actually establish the Governance Board. This prompt produces a country-tailored Terms of Reference document.",
     prompt: "Draft a Terms of Reference for an EA Governance Board in [country X]. Include: (1) Purpose — why the Board exists and what it governs; (2) Binding decision scope — list 5–8 specific decision types within the Board's authority (e.g. approval of new digital-government projects above a threshold, cross-domain integration approvals, technology selections that create new vendor dependencies, exceptions to the architecture); (3) Membership composition — Chair (CDO/CTO equivalent), permanent members (sector ministry CIOs by name or by post), optional external advisor; (4) Cadence — quarterly main meetings, ad-hoc for urgent decisions; (5) Reporting line — to whom the Board reports up; (6) Escalation — how decisions the Board cannot resolve get escalated; (7) Mandate review — how often the Terms of Reference itself is reviewed. Tone: formal, ministerial document. Length: 1–2 pages. Output: structured Terms of Reference ready to circulate for cabinet approval.",
@@ -734,6 +762,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the four signposts."]
   ],
   aiTip: {
+    play: "1.8",
+    input: "A0 §5",
+    skill: "ea-comparator-evidence",
+    skillAlso: ["cite-or-discard"],
     title: "Generate comparator-country signposts that fit your context",
     problem: "Rwanda, Kenya, South Africa and Estonia are useful starting signposts but may not be the most directly comparable to a given country. The middle manager building a case upward may want a comparator list tuned to their own country's specific situation — for a cabinet briefing or a donor pitch.",
     prompt: "My country is [country X], with these characteristics: [population, income classification, governance type (unitary / federal / hybrid), region, key political constraints, current digital-government maturity]. Drawing on publicly documented EA programmes — give priority to African and other developing-country examples — list 3 to 5 countries with similar characteristics that have a published national EA framework or comparable digital-government coordination function. For each: country name, similarity rationale (one sentence on why it is comparable to [country X]), what they actually built (2 to 3 bullets), one transferable lesson for [country X]. Cite a public source URL for each substantive claim — government strategy documents, published frameworks, peer-reviewed case studies, or credible journalism. Avoid examples where the public information is marketing rather than substance. Output: per-country card plus a 2-bullet 'most transferable lessons' summary.",

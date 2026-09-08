@@ -90,6 +90,8 @@ The authoritative project memory lives in the contract tree at `itu-knowledge/CL
 
 This folder is the version-controlled **source of truth** for the kit. To use the skills live in Claude, install the plugin via the app's plugin/marketplace mechanism (Settings → Capabilities), or package the folder as a `.plugin` archive. Editing the files here does not change an already-installed copy — re-install or re-sync after changes.
 
+This is the **production** kit — the one that makes the Knowledge Products. The **learner** kit is a separate repo: [`alaponin/ea-plays-kit`](https://github.com/alaponin/ea-plays-kit), the optional "with the kit" layer for the KP AI plays. Different audience, different lifecycle, nothing shared but the plays themselves.
+
 ---
 
 For KP2–4 the flow extends: after authoring, `kp-build-pack` scaffolds the runnable pack, `bb-config-gen` fills its configs from public specs, and `kp-solution-verify` proves it runs — in addition to `kp-citation-verify` and `kp-bundle-qa` on the video. See `itu-giga-kp-bundle` Step 10 and `references/implementation-kp-pattern.md`.
