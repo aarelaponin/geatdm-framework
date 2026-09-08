@@ -1,14 +1,14 @@
 {
   "kicker_prefix": "KP1 · Government Enterprise Architecture · Module 3",
   "audience": "Chief architect · senior architect · sector ICT lead",
-  "out_pattern": "KP1_M3_{code}_Deck_v0.1.pptx",
+  "out_pattern": "KP1_M3_{code}_Deck_v0.2.pptx",
   "cover_title_marker": "Housing, governing and",
   "cover_subtitle_marker": "Seven standalone videos",
   "videos": [
     {
       "code": "3.1",
       "title": "Set up the one place your architecture lives",
-      "mins": "~5",
+      "mins": "~4",
       "range": [3, 10],
       "message": "An EA repository is the single agreed place the architecture lives — the four layers, the entities and the decisions — so that one picture of your government exists instead of many private copies. Set it up first; everything else governs what goes into it."
     },
@@ -29,14 +29,14 @@
     {
       "code": "3.4",
       "title": "Stand up an EA Board that can actually say no",
-      "mins": "~5",
+      "mins": "~4",
       "range": [26, 33],
       "message": "An EA Board with binding authority — the right chair, the right members, a regular cadence, and a mandate that lets it say no — is what turns the architecture from a document into the place every digital decision passes through."
     },
     {
       "code": "3.5",
       "title": "Review projects against the architecture",
-      "mins": "~5",
+      "mins": "~4",
       "range": [34, 40],
       "message": "The architecture review gate — a short, consistent set of questions every project passes through before funding — is what turns principles and re-use from good intentions into the actual path of least resistance."
     },

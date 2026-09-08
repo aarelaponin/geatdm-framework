@@ -308,6 +308,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the framing via the YouTube description."]
   ],
   aiTip: {
+    play: "2.1",
+    input: "A0 §6",
+    skill: "bdat-assessor",
+    skillAlso: [],
     title: "Generate a four-layer reading template for a ministry",
     problem: "An architect beginning Discovery on a new ministry needs a structured capture template — the right questions per layer, tuned to that ministry — so the interviews produce a usable BDAT description rather than scattered notes.",
     prompt: "I am about to begin Discovery on [name the ministry or body] in [country X]'s [sector] sector. Below is what I know so far [paste 1–3 paragraphs: the body's mandate, known systems, known registries]. Produce a four-layer reading template I can fill in during interviews. For each layer — Business, Data, Application, Technology — give: (1) the single question the layer answers, (2) 4–6 specific interview questions tuned to this body, (3) the deliverable the layer should produce, (4) the one mistake to avoid for this layer. For the Business layer, prompt me to capture capabilities (what the body can do) and services (how citizens receive them), not the org chart. For the Data layer, prompt me to name one owner per data domain. Output: a four-section template, each section headed by the layer name.",
@@ -370,6 +374,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the metamodel reference."]
   ],
   aiTip: {
+    play: "2.2",
+    input: "a draft model, or the initiatives list",
+    skill: "paera-reference-check",
+    skillAlso: [],
     title: "Check a draft architecture against the PAERA metamodel",
     problem: "An architect with a draft model — their own or one inherited from a ministry or a vendor — needs to know whether it conforms to the shared metamodel before it is connected to anything else. This prompt produces a conformance check that surfaces private-language elements and missing relationships.",
     prompt: "Below is a draft architecture for [name the body or system] [paste the model: the elements and how they relate, in whatever form you have — a list, a table, a description]. Check it against the PAERA metamodel, whose entity types are Capability, Service, Application, Data Domain, Technology Component and Organisation, with the relationships: Capability delivered-by Service, Capability supported-by Application, Application uses Data Domain, everything runs-on Technology Component, Organisation owns each. For each element in my draft, map it to a PAERA entity type. Flag any element that does not map cleanly (a candidate private-language term or a missing entity). List every relationship in the metamodel that my draft is missing — for example a Data Domain with no named owning Organisation, or an Application with no Capability above it. Output: a mapping table (my element / PAERA entity / note), then a list of non-conforming elements, then a list of missing relationships, then 3 suggested corrections.",
@@ -428,6 +436,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the principle set."]
   ],
   aiTip: {
+    play: "2.3",
+    input: "A0 §7",
+    skill: "paera-reference-check",
+    skillAlso: ["ea-legal-context"],
     title: "Turn a PAERA principle into a country-tailored principle card",
     problem: "An architect adopting the ten principles needs each one rendered as a working principle card — tailored to the country's laws and given a clear implication — so the EA Board can actually use it to settle decisions.",
     prompt: "Below is one PAERA architectural principle I am adopting: [paste the principle name and PAERA's wording]. And here is my country's relevant context: [name the country; list the relevant laws — data protection act, procurement law, e-government decree — and any policy constraints]. Produce a country-tailored principle card with four parts: (1) Statement — the principle in one sentence, pointed at my country's context; (2) Rationale — why it matters here, in one or two sentences; (3) Implication — the specific thing this principle forces a project to do or to refuse, written so the EA Board can apply it; (4) The decision it lets the Board make — one concrete example of a project decision this principle settles. Tone: plain, usable by a governance board. Output: a single principle card under four headings.",
@@ -486,6 +498,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the taxonomy reference."]
   ],
   aiTip: {
+    play: "2.4",
+    input: "A0 §6",
+    skill: "ea-institution-mapper",
+    skillAlso: [],
     title: "Classify a public body and generate its expected profile",
     problem: "Before Discovery, an architect wants a fast, defensible first classification of a body and the expected profile that comes with it — so the interviews confirm a hypothesis rather than start blank.",
     prompt: "Below is a short description of a public body in [country X]: [paste the body's name, mandate, and anything known about what it does and what it holds]. Using the PAERA organisational taxonomy — policy unit (sets policy, owns rules), regulatory agency (licenses, supervises, enforces), service-delivery authority (runs services at scale), plus supporting elements: state registry (authoritative single source for one kind of thing) and shared platform (identity / payments / data exchange used across bodies) — do the following. (1) Classify the body into the most likely type, and note if it straddles two. (2) Give its expected profile for that type: 3–5 likely capabilities, 2–4 likely data domains it owns, the governance you would expect, and 2 typical risks. (3) List 5 questions to confirm the classification in interview. Output: classification, expected-profile table, confirmation questions.",
@@ -548,6 +564,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the metamodel and once-only references."]
   ],
   aiTip: {
+    play: "2.5",
+    input: "A0 §6, A5, A9, A12",
+    skill: "bdat-assessor",
+    skillAlso: ["ea-institution-mapper"],
     title: "Draft a first-pass BDAT skeleton for a sector",
     problem: "An architect starting on a new sector wants a first-pass four-layer skeleton from what they already know — classified bodies, capabilities by owner, data domains with single owners, applications mapped — with duplicate-owner conflicts flagged for the Assess.",
     prompt: "Below are the main public bodies in [country X]'s [sector] sector and what each does [paste a short list: body name, mandate, known systems, known registries]. Produce a first-pass BDAT skeleton. (1) Classification: assign each body a PAERA taxonomy type (policy unit / regulatory agency / service-delivery authority / state registry / shared platform). (2) Business layer: list the main capabilities and, for each, the single body that should own it; list the main citizen-facing services on top. (3) Data layer: list the main data domains and, for each, the single owning body; flag any domain that appears to have more than one owner as a possible duplicate registry. (4) Application layer: map each known system to a capability and the data domains it uses; flag any system that maps to no capability. (5) Technology layer: list the shared platforms and standards. Output: five sections, with all duplicate-owner and orphan-system conflicts flagged at the end.",
@@ -610,6 +630,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the Assess references."]
   ],
   aiTip: {
+    play: "2.6",
+    input: "A13, A11",
+    skill: "bdat-assessor",
+    skillAlso: [],
     title: "Turn AS-IS notes into a scored gap analysis",
     problem: "An architect with four-layer current-state notes needs to convert them into a scored, ordered gap analysis the EA Board can sign off — not just a list of everything wrong.",
     prompt: "Below are my current-state (AS-IS) notes for [name the sector or body] in [country X], organised by layer [paste your Business, Data, Application, Technology notes]. Produce a scored gap analysis. (1) Identify gaps, looking on purpose for the four common ones: duplicate registries (more than one owner of a data domain), orphan systems (applications mapped to no capability), point-to-point integration with no shared data exchange, and capabilities or domains with no clear owner. (2) For each gap, give: the layer, a one-line description, severity (Low / Medium / High — based on cost, citizen burden and risk), effort to close (Low / Medium / High), and a priority that favours high impact where movement is possible. (3) Give a per-layer maturity score (1–5). (4) List the three highest-priority gaps with a one-paragraph rationale each. Output: a gap table, a per-layer maturity line, and the top-three rationale.",
@@ -668,6 +692,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the sourcing and principles references."]
   ],
   aiTip: {
+    play: "2.7",
+    input: "A14, BB status register",
+    skill: "bb-landscape-check",
+    skillAlso: ["bb-sourcing-researcher"],
     title: "Run a two-trap screen on a project proposal",
     problem: "When a new project or system proposal crosses the architect's desk, they need a fast screen for the bespoke trap and the vendor-driven trap — and a recommended sourcing posture to put to the project team and the EA Board.",
     prompt: "Below is a project proposal or system description for [country X]'s [sector] [paste the proposal: what it will build or buy, the functions it needs, any named data formats or suppliers]. And here is what shared building blocks already exist in the country [paste a short list: national identity, payments, data exchange, any shared registries — or note if unknown]. Run a two-trap screen. (1) Bespoke trap: list any function in the proposal that duplicates an existing shared building block, and for each, the reuse alternative. (2) Vendor-driven trap: flag any sign of lock-in — proprietary data formats, integration to a product rather than a standard, unclear exit path — and estimate, in words, how hard the supplier would be to replace in two years. (3) For each flagged item, give the question to put to the project team. (4) Recommend a sourcing posture for the proposal overall: build, buy, share, or sandbox-first, with one line of reasoning. Output: two trap sections, the questions, and the sourcing recommendation.",

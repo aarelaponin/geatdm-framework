@@ -312,6 +312,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the framing."]
   ],
   aiTip: {
+    play: "4.1",
+    input: "A0 §6, A12, the sector problem paragraph",
+    skill: "ea-institution-mapper",
+    skillAlso: [],
     title: "Build your own demonstration canvas",
     problem: "An architect about to learn the method on Progressa learns faster with their own sector as a parallel canvas. This prompt produces a one-page canvas mirroring Progressa, to run the method against.",
     prompt: "Build a one-page demonstration canvas for [country X]'s [sector] sector, mirroring the Progressa education example. Produce: (1) the main public bodies and a one-line role for each, classified as policy unit / regulatory agency / service-delivery authority / state registry / shared platform; (2) the fragmentation symptoms likely present — duplicate registries (what is registered more than once), paper re-entry, point-to-point integration, a capability with no clear owner; (3) the 'stalled flagship' — the one cross-cutting outcome a minister has promised that the fragmentation is blocking. Output: a one-page canvas under those three headings, to run the five-phase method against.",
@@ -370,6 +374,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "4.2",
+    input: "A22, A0 §7",
+    skill: "ea-method-runner",
+    skillAlso: ["cite-or-discard"],
     title: "Draft your Discovery brief outline",
     problem: "An architect starting Discovery on their own sector needs a brief outline that captures the right things and keeps recommendations out — so the picture is usable and the sign-off can challenge it.",
     prompt: "Draft a Discovery brief outline for [country X]'s [sector] sector. Structure it under the five collection areas: (1) strategies in force; (2) systems that exist; (3) registries and their owners; (4) stakeholders; (5) legal framework. For each area, list the specific questions to capture and the format to record the answer. Add a rule at the top: describe what is, do not recommend — recommendations belong to the Assess phase. Add a 'source' column so every entry records where it came from (document, interview, system). End with the sign-off question the decision-maker will be asked: is this picture accurate enough to build on? Output: a Discovery brief outline.",
@@ -428,6 +436,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "4.3",
+    input: "A23, A14",
+    skill: "ea-method-runner",
+    skillAlso: [],
     title: "Turn your Discovery brief into a ranked gap analysis",
     problem: "An architect with Discovery findings needs to convert them into a scored, ranked gap analysis the decision-maker can sign off — not just a list of what's wrong.",
     prompt: "Below are my Discovery findings for [country X]'s [sector] sector [paste the brief: bodies, systems, registries, data flows]. Produce a ranked gap analysis. (1) Score the main capabilities for maturity (Low / Medium / High) against a single-source-of-truth, once-only standard. (2) Identify gaps, looking on purpose for the four common ones: duplicate registries, an available shared platform not being consumed, point-to-point integration with no shared data exchange, and capabilities/domains with no clear owner. (3) For each gap give: severity (cost, citizen burden, the stalled flagship), effort to close, and a priority that favours high impact where movement is possible. (4) Flag any gap involving a politically powerful body for honest handling at sign-off. Output: a maturity table, a ranked gap table, and the honesty flags.",
@@ -486,6 +498,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "4.4",
+    input: "A14 rev.2, BB status register",
+    skill: "ea-method-runner",
+    skillAlso: ["bb-landscape-check", "bb-sourcing-researcher"],
     title: "Build your sourcing matrix",
     problem: "An architect in the Adapt phase needs a deliberate build/buy/share/sandbox call for each building block, defaulting to reuse, with any 'build' that duplicates an existing shared block flagged.",
     prompt: "Below are the building blocks [country X]'s [sector] sector needs [list them — e.g. identity, payments, a sector registry, a case-management system, data exchange] and the shared platforms that already exist nationally [list: national identity, payments, data exchange, any shared registries — or note if unknown]. Produce a sourcing matrix. For each building block, give a deliberate call — BUILD, BUY, SHARE or SANDBOX — defaulting to reuse and share, with one line of reasoning each. Flag any BUILD that duplicates an existing shared block, and any BUY that risks vendor lock-in. End with the one or two blocks that are the authoritative core worth building well. Output: a sourcing matrix (block / call / reason) plus the flags.",
@@ -544,6 +560,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "4.5",
+    input: "A24, A11, BB status register",
+    skill: "ea-method-runner",
+    skillAlso: ["bb-landscape-check"],
     title: "Design a first-cut target architecture from your gaps",
     problem: "An architect who has run Assess needs to turn the ranked gaps and adopted principles into a designed future state — the target architecture — rather than jumping straight to a roadmap toward an undrawn destination.",
     prompt: "Below are my ranked gaps for [country X]'s [sector] sector, my adopted architecture principles, and my sourcing postures [paste the gap analysis, the principle list, and the build/buy/share matrix if you have it]. Design a first-cut target architecture by applying the principles to the gaps. Produce: (1) the target capability map — each capability with exactly one owning body, duplicates resolved; (2) the target data domains — one authoritative owner each, with the duplicate registries collapsed; (3) the target shared platforms every body will consume (identity, payments, data exchange); (4) the target technology standards; (5) a first-cut integration map — which bodies exchange which data domains, over what mechanism, in what priority. For every target element, note the gap it closes and the sourcing decision (build / buy / share) that obtains it; flag any element with no path to acquire it. Output: the four target layers, the integration map, and the gap-and-sourcing trace.",
@@ -602,6 +622,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "4.6",
+    input: "A25, A3",
+    skill: "ea-method-runner",
+    skillAlso: [],
     title: "Sequence your roadmap into waves",
     problem: "An architect in the Plan phase needs to turn ranked gaps and sourcing decisions into a wave-sequenced roadmap that puts an early visible win first and respects dependencies.",
     prompt: "Below are my ranked gaps and sourcing decisions for [country X]'s [sector] sector [paste the ranked gap list and the build/buy/share matrix]. Sequence the work into waves, following the pattern: Wave 1 inception (stand up the repository and Board, make the core registry authoritative); Wave 2 the high-priority use case (the one cross-cutting outcome the minister has promised); Wave 3 build-out (the shared data exchange); Wave 4 mass scale. For each wave give: what it delivers (something visible, not just groundwork), its prerequisites from earlier waves, and a directional cost driver (people / integration / platform). Put the minister's promised outcome in an early wave. Output: a four-wave roadmap with deliverables, dependencies and cost drivers.",
@@ -664,6 +688,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "4.7",
+    input: "A26, A19, A7 rev.2, BB status register",
+    skill: "ea-method-runner",
+    skillAlso: ["bb-landscape-check"],
     title: "Run a gate decision on a real project",
     problem: "An architect operating the Board needs to turn a project proposal into a gate decision the Board can ratify — the questions answered, a ruling, and the decision-log entry.",
     prompt: "Below is a project proposal for [country X]'s [sector] sector [paste it: what it will build or buy, the functions it needs] and the shared building blocks that already exist [list: the core registry, identity, payments, data exchange — note which are authoritative and available, not just planned]. Run a gate decision. (1) Answer the gate questions: does a shared block already exist for what this builds; which data domains does it touch and does it consume the owner's copy; does it meet the principles; is the sourcing choice deliberate. (2) Recommend a ruling: consume the shared block, or grant a written exception with a sunset date and reason. (3) Draft the decision-log entry (what was decided, why). Output: the answered questions, the recommended ruling, and the decision-log entry.",
@@ -722,6 +750,10 @@ body.push(...renderSubtopic({
       "Lets viewers verify the references."]
   ],
   aiTip: {
+    play: "4.8",
+    input: "A26, A0 §6 for the next sector",
+    skill: "ea-method-runner",
+    skillAlso: ["ea-institution-mapper"],
     title: "Map the Progressa method to your sector",
     problem: "An architect ready to apply the method needs a one-page transfer plan — their institutions, their equivalent high-priority use case, and the six deliverables named for their sector.",
     prompt: "I want to run the five-phase EA method on [country X]'s [sector] sector. Here are its main bodies [list them and a one-line role each]. Produce a one-page transfer plan. (1) Classify each body (policy unit / regulatory agency / service-delivery authority / state registry / shared platform). (2) Name this sector's equivalent of Progressa's 'single learner record' — the one cross-cutting outcome a minister has promised that fragmentation is blocking, and the duplicated data domain behind it (the patient, the farmer, the beneficiary). (3) Name the six deliverables for this sector: what the Discovery brief, the gap analysis, the sourcing matrix, the target architecture, the wave roadmap and the governed EA would each cover here. (4) Suggest the Wave 1 and Wave 2 content. Output: a one-page transfer plan under those four headings.",
