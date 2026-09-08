@@ -1,0 +1,268 @@
+1
+00:00:00,140 --> 00:00:06,910
+Have you ever, like, tried to prove to leadership that a massive government tech overhaul is actually working?
+
+2
+00:00:07,900 --> 00:00:14,000
+I mean, you wanna show progress, but it's so easy to just drown them in a fifty-page report of completely meaningless numbers.
+
+3
+00:00:14,120 --> 00:00:23,640
+Oh, it's the classic trap. You, uh, you desperately need to show the people holding the purse strings that their money is well spent, but you just end up burying the actual reality.
+
+4
+00:00:23,660 --> 00:00:26,630
+Right, in a mountain of data and charts that basically don't mean a thing.
+
+5
+00:00:27,500 --> 00:00:28,760
+So let's cut right through that noise.
+
+6
+00:00:30,220 --> 00:00:35,580
+Welcome to today's deep dive. I'm your host, and joining me today to unpack this is our resident expert.
+
+7
+00:00:35,740 --> 00:00:39,520
+Great to be here, and yeah, this is a topic I am very passionate about.
+
+8
+00:00:39,840 --> 00:00:45,860
+So today, we're diving into the factual metrics that measure the true impact of a national enterprise architecture.
+
+9
+00:00:46,230 --> 00:00:53,640
+And just to ground us, when we say enterprise architecture, or EA, we're basically talking about the master blueprint of an organization's IT systems.
+
+10
+00:00:53,780 --> 00:00:55,600
+Yeah, exactly. It's how everything connects.
+
+11
+00:00:55,660 --> 00:01:05,420
+Right. So our mission today is to distill the success of that blueprint down to a handful of honest numbers and, you know, spot the busy work metrics that teams use to
+
+12
+00:01:05,480 --> 00:01:06,800
+hide stalled progress.
+
+13
+00:01:07,180 --> 00:01:14,200
+Because before you can prove the EA's value to a budget authority, you really have to know which numbers actually reflect reality.
+
+14
+00:01:14,240 --> 00:01:17,510
+I mean, there are four essential metrics that carry the real signal here:
+
+15
+00:01:18,200 --> 00:01:21,550
+coverage, reuse rate, open exceptions, and decisions.
+
+16
+00:01:21,780 --> 00:01:25,440
+Okay, let's take those apart a bit 'cause I can immediately see a temptation here.
+
+17
+00:01:25,450 --> 00:01:30,850
+Oh. If I'm reviewing this, couldn't I just, uh, count how many systems my team has mapped out to show progress?
+
+18
+00:01:30,880 --> 00:01:35,240
+Like point to a massive stack of diagrams and say, "Look at all this coverage."
+
+19
+00:01:35,700 --> 00:01:37,840
+You could, but that is exactly the trap.
+
+20
+00:01:38,000 --> 00:01:40,600
+Coverage isn't about how many pages you've generated.
+
+21
+00:01:40,700 --> 00:01:44,880
+It's about how much of your government's tech is actually documented in the repository.
+
+22
+00:01:44,910 --> 00:01:45,880
+And it has to be current, right?
+
+23
+00:01:46,040 --> 00:01:47,420
+Crucially current, yes.
+
+24
+00:01:48,040 --> 00:01:53,460
+Because if your map of the IT landscape is outdated, well, it's essentially useless.
+
+25
+00:01:53,700 --> 00:02:01,480
+That makes total sense. And looking at the other metrics, it seems like they aren't just measuring progress, they're almost acting like early warning systems.
+
+26
+00:02:01,790 --> 00:02:03,020
+Take decisions, for example.
+
+27
+00:02:03,100 --> 00:02:06,140
+Yeah, that tracks how fast the board makes gate decisions.
+
+28
+00:02:06,420 --> 00:02:10,299
+Basically, the checkpoints where new tech projects get approved or blocked.
+
+29
+00:02:10,340 --> 00:02:17,040
+Because I'd imagine if that approval process takes too long, frustrated departments will just bypass the architecture entirely, right?
+
+30
+00:02:17,100 --> 00:02:19,280
+They'll just build their own shadow IT to get things done.
+
+31
+00:02:19,740 --> 00:02:25,720
+Spot on. If the board is too slow, the EA becomes a bottleneck, and projects just route right around it.
+
+32
+00:02:25,800 --> 00:02:28,920
+And, uh, the same logic applies to open exceptions.
+
+33
+00:02:28,960 --> 00:02:29,640
+Which are the waivers.
+
+34
+00:02:30,060 --> 00:02:37,020
+Right. It tracks the number and age of outstanding waivers, official permissions for a project to break the architecture rules.
+
+35
+00:02:37,080 --> 00:02:45,200
+If you have a growing pile of old unresolved waivers, it means system fragmentation is quietly sneaking right back into your government.
+
+36
+00:02:45,280 --> 00:02:46,780
+Okay, so we have our core four.
+
+37
+00:02:47,720 --> 00:02:54,170
+But if we connect this to the bottom line, say you only have thirty seconds in an elevator with a minister or budget authority,
+
+38
+00:02:54,880 --> 00:02:58,040
+what is the single metric you put in front of them to secure your funding?
+
+39
+00:02:58,180 --> 00:03:06,620
+Oh, it has to be the reuse rate. You look at the projects that came through those gate decisions and ask how many consumed a shared building block instead of building their own.
+
+40
+00:03:06,680 --> 00:03:12,300
+Wait, so like using an existing identity platform instead of coding a brand new one from scratch?
+
+41
+00:03:12,340 --> 00:03:17,540
+Exactly. Every time a department does that, the country pays for it once instead of, you know, twenty times.
+
+42
+00:03:17,600 --> 00:03:26,500
+Oh, I love that. So it's kind of like an office buying one commercial espresso machine for the break room instead of reimbursing fifty different employees for their own individual coffee makers.
+
+43
+00:03:26,700 --> 00:03:36,600
+That is a perfect analogy. When you track that over a year, a rising reuse rate is really the closest thing you have to hard proof that the EA is paying for
+
+44
+00:03:36,640 --> 00:03:42,540
+itself. It takes this highly abstract argument that good planning enables reuse.
+
+45
+00:03:42,580 --> 00:03:45,170
+And turns it into a tangible number that actually goes up.
+
+46
+00:03:45,440 --> 00:03:48,060
+Yes. That's the metric that protects your funding.
+
+47
+00:03:48,340 --> 00:03:52,340
+But knowing what to measure is really only half the battle, isn't it?
+
+48
+00:03:52,380 --> 00:03:56,440
+The other half is presenting the truth without falling back on what we'd call vanity metrics.
+
+49
+00:03:56,600 --> 00:03:59,280
+Oh, you've got to avoid vanity metrics at all costs.
+
+50
+00:03:59,540 --> 00:04:03,370
+The number of diagrams drawn, pages written, meetings held.
+
+51
+00:04:03,420 --> 00:04:05,540
+I mean, these measure activity, not effect.
+
+52
+00:04:05,820 --> 00:04:10,510
+Because a stalled EA program can easily hide behind a thousand pages of documentation.
+
+53
+00:04:10,560 --> 00:04:17,760
+Exactly. The golden rule is this: if a metric would still go up while the architecture quietly stopped mattering, well, it's the wrong metric.
+
+54
+00:04:17,920 --> 00:04:22,320
+I get that. But there is a massive psychological temptation here.
+
+55
+00:04:22,360 --> 00:04:30,440
+If you're going in front of a minister, human nature says you want to present a perfectly green, flawless quarterly scorecard to prove you're doing a great job.
+
+56
+00:04:30,560 --> 00:04:40,460
+You really have to resist that urge. You should be reporting those four core metrics on a single page every quarter to the board and the minister, and you absolutely have to include
+
+57
+00:04:40,500 --> 00:04:41,420
+the bad news.
+
+58
+00:04:41,500 --> 00:04:44,520
+Like a coverage gap in a sector that won't cooperate.
+
+59
+00:04:44,640 --> 00:04:49,780
+Yes, or the aging exceptions that some powerful ministry just refuses to close.
+
+60
+00:04:50,500 --> 00:04:56,250
+A scorecard that is honestly amber, you know, showing some warning signs, is what builds long-term trust.
+
+61
+00:04:56,300 --> 00:04:57,800
+Because it proves you're telling the truth.
+
+62
+00:04:57,960 --> 00:05:02,219
+Right, which keeps the EA funded across different political administrations.
+
+63
+00:05:02,380 --> 00:05:05,900
+A scorecard that is always perfectly green is one nobody believes the second time.
+
+64
+00:05:06,180 --> 00:05:07,420
+So to wrap this up,
+
+65
+00:05:08,240 --> 00:05:14,280
+skip the busy work metrics. If you want to prove your tech overhaul is actually working, track coverage that is current,
+
+66
+00:05:14,900 --> 00:05:17,800
+reuse rates, open exceptions, and gate decisions.
+
+67
+00:05:18,100 --> 00:05:19,950
+You want to measure effect, not just activity.
+

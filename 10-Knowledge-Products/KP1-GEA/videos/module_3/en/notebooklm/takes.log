@@ -1,0 +1,12 @@
+ts	subtopic	brief	prompt	notebook_id	audio	duration_s	wall_s
+2026-09-07T09:02:12+00:00	3.1	KP1_M3_3.1_AudioBrief_v0.2.md	KP1_M3_3.1_NotebookLM_Prompt_v0.2.md	25af5395-94b3-4da1-8014-431cbb944ad4	KP1_M3_3.1_Audio_v0.1.m4a	197.3	315
+2026-09-07T09:54:45+00:00	3.2	KP1_M3_3.2_AudioBrief_v0.2.md	KP1_M3_3.2_NotebookLM_Prompt_v0.2.md	ee33fa63-408d-4587-973f-f16d75c1a063	KP1_M3_3.2_Audio_v0.1.m4a	387.8	272
+2026-09-07T10:15:45+00:00	3.3	KP1_M3_3.3_AudioBrief_v0.2.md	KP1_M3_3.3_NotebookLM_Prompt_v0.2.md	cfc7c012-7ac4-4b84-b99b-3a7e3feb580b	KP1_M3_3.3_Audio_v0.1.m4a	254.1	251
+2026-09-07T10:20:44+00:00	3.3	KP1_M3_3.3_AudioBrief_v0.2.md	KP1_M3_3.3_NotebookLM_Prompt_v0.2.md	cfc7c012-7ac4-4b84-b99b-3a7e3feb580b	KP1_M3_3.3_Audio_v0.3.m4a	392.4	243
+2026-09-07T10:26:19+00:00	3.3	KP1_M3_3.3_AudioBrief_v0.2.md	KP1_M3_3.3_NotebookLM_Prompt_v0.2.md	cfc7c012-7ac4-4b84-b99b-3a7e3feb580b	KP1_M3_3.3_Audio_v0.5.m4a	355.5	261
+2026-09-07T10:47:42+00:00	3.4	KP1_M3_3.4_AudioBrief_v0.2.md	KP1_M3_3.4_NotebookLM_Prompt_v0.2.md	67324f44-7f19-4129-8e02-51a915871448	KP1_M3_3.4_Audio_v0.1.m4a	341.4	273
+2026-09-07T11:09:49+00:00	3.5	KP1_M3_3.5_AudioBrief_v0.2.md	KP1_M3_3.5_NotebookLM_Prompt_v0.2.md	03df204f-25cf-405b-a03f-cce497f4946f	KP1_M3_3.5_Audio_v0.1.m4a	316.9	316
+2026-09-07T11:46:17+00:00	3.6	KP1_M3_3.6_AudioBrief_v0.2.md	KP1_M3_3.6_NotebookLM_Prompt_v0.2.md	dad23347-52b3-4d55-b433-b2fca759fc87	KP1_M3_3.6_Audio_v0.1.m4a	334.6	253
+2026-09-07T11:51:33+00:00	3.6	KP1_M3_3.6_AudioBrief_v0.2.md	KP1_M3_3.6_NotebookLM_Prompt_v0.2.md	dad23347-52b3-4d55-b433-b2fca759fc87	KP1_M3_3.6_Audio_v0.3.m4a	333.1	253
+2026-09-07T12:12:47+00:00	3.7	KP1_M3_3.7_AudioBrief_v0.2.md	KP1_M3_3.7_NotebookLM_Prompt_v0.2.md	8e8e8d70-8b7c-469c-ae91-afd27a8dd0dd	KP1_M3_3.7_Audio_v0.1.m4a	340.7	264
+2026-09-07T12:34:06+00:00	3.7	KP1_M3_3.7_AudioBrief_v0.2.md	KP1_M3_3.7_NotebookLM_Prompt_v0.2.md	8e8e8d70-8b7c-469c-ae91-afd27a8dd0dd	KP1_M3_3.7_Audio_v0.3.m4a	372.2	266
