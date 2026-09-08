@@ -27,6 +27,15 @@ except ImportError:
 TITLE_SECONDS = 15
 SOURCES_SECONDS = 10
 
+# The recap slide's practice box (deck_lib.PRACTICE_LEAD) is on-screen only. It must reach the
+# brief flagged, or a take reads it aloud — the one compliance leak D5 introduced.
+PRACTICE_LEAD = "Do this on your own sector."
+PRACTICE_FLAG = "[PRACTICE BOX — on-screen only, NOT narrated: say nothing about the prompt, the companion material, or the viewer's own sector]"
+
+
+def is_practice(text):
+    return text.strip().startswith(PRACTICE_LEAD)
+
 
 def shape_text(slide):
     out = []
@@ -34,6 +43,14 @@ def shape_text(slide):
         if sh.has_text_frame and sh.text_frame.text.strip():
             out.append(sh.text_frame.text.strip())
     return out
+
+
+def practice_text(texts):
+    """The practice box, if this slide carries one — reported apart from the narrated copy."""
+    for t in texts:
+        if is_practice(t):
+            return t
+    return None
 
 
 def notes_text(slide):
@@ -105,9 +122,10 @@ def main():
         slides.append({
             "n": i,
             "title": texts[0] if texts else f"(slide {i})",
-            "texts": texts,
+            "texts": [t for t in texts if not is_practice(t)],
             "notes": notes,
             "vo_words": vo_words(notes),
+            "practice": practice_text(texts),
         })
 
     if args.budget:
@@ -134,6 +152,9 @@ def main():
         print(head)
         for t in s["texts"][1:]:
             print("  · " + t.replace("\n", "\n    "))
+        if s["practice"]:
+            print("  " + PRACTICE_FLAG)
+            print("    " + s["practice"].replace("\n", " "))
         if s["notes"]:
             print("  [NOTES] " + s["notes"].replace("\n", "\n            "))
     if args.budget:
