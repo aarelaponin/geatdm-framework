@@ -129,15 +129,20 @@ def attempt(lang, sub, target, deck):
 def best_on_runtime(tried, target):
     """Of the exhausted tries, the take closest to target \u2014 but only if runtime is all that ails it.
 
-    Decided 8 Sep 2026: a subtopic that re-rolls three times and only ever misses the clock has a
-    script-length problem, not a take problem, and the next roll is a coin flip. Any other defect
-    still escalates to a person, because a shorter wrong take is not better than a long one.
+    Decided 8 Sep 2026: a subtopic that re-rolls to the limit and never gets the clock right is a
+    coin flip on the next roll, so settle it. Candidates are the takes whose ONLY defect is
+    runtime — a take with a banned phrase or a coverage MISS is not a candidate, because a shorter
+    wrong take is not better than a long one. If no take qualifies, the subtopic escalates.
+
+    First cut of this required EVERY try to be runtime-only, which meant one bad try buried a
+    clean-but-long take. On the 8 Sep batch that hid 3.3 (4:13, runtime the only defect) and 4.6
+    (6:03, same) behind sibling tries that failed on vocabulary.
     """
     best = None
     for take, fails in tried:
         lens = [TAKE_LEN_RE.search(f) for f in fails]
         if not fails or any(not m for m in lens):
-            return None          # something other than OVER/UNDER is unresolved
+            continue             # this take has a real defect; it is not a candidate
         m, s = lens[0].groups()
         off = int(m) * 60 + int(s) - target
         if best is None or abs(off) < abs(best[1]):

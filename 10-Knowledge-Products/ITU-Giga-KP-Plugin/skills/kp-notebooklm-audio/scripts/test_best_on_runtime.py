@@ -18,9 +18,20 @@ def test_picks_the_take_closest_to_target():
 
 
 def test_a_non_runtime_defect_still_escalates():
-    tried = [(P("a.m4a"), [OVER.format("6:12")]),
+    """No take is clean on everything but the clock, so nobody settles."""
+    tried = [(P("a.m4a"), [OVER.format("6:12"), "FAIL  FILLER — 2.7 per 100 words"]),
              (P("b.m4a"), [OVER.format("5:10"), "FAIL  BANNED PHRASES — nightmare×2"])]
     assert best_on_runtime(tried, 300) is None
+
+
+def test_one_bad_try_does_not_bury_a_clean_but_long_take():
+    # 4.6 on 8 Sep: try 2 was OVER and nothing else, but tries 1 and 3 had real defects and the
+    # first cut of this rule required ALL tries to be runtime-only, so it escalated.
+    tried = [(P("a.m4a"), [OVER.format("5:54"), "FAIL  TERMINOLOGY — say 'register'"]),
+             (P("b.m4a"), [OVER.format("6:03")]),
+             (P("c.m4a"), [OVER.format("5:53"), "FAIL  BANNED PHRASES — nightmare×1"])]
+    take, off = best_on_runtime(tried, 300)
+    assert (take.name, off) == ("b.m4a", 63), (take, off)
 
 
 def test_coverage_miss_is_not_a_runtime_defect():
