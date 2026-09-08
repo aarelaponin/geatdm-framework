@@ -46,6 +46,23 @@ SECOND_PERSON = [
 ]
 
 
+# The take's last line is boilerplate the brief asks for. It is not content, and the outro
+# hides behind it: on 2.4 the closing turn ran cues 60-62 and the sources line was cue 63, so a
+# strict walk back from the end stopped on the first cue and found nothing.
+SOURCES_LINE = re.compile(r"\bsources are in the (?:video )?description\b", re.I)
+
+
+def turns_to_listener(text):
+    """A question, or an announced closing thought.
+
+    Deliberately NOT bare second person: the brief REQUIRES "in your ministry", "your programme",
+    "your vendor" throughout the content, so walking back over every cue containing "you" would
+    eat the recap. A question mark or an explicit reflective closer is what marks the turn.
+    """
+    low = text.lower()
+    return text.rstrip().endswith("?") or any(re.search(p, low) for p in REFLECTIVE_CLOSE)
+
+
 def outro_start(cues, terms=None):
     """Index of the first cue belonging to the closing turn, or None.
 
@@ -59,14 +76,32 @@ def outro_start(cues, terms=None):
     the listener: "think about your own work", "so for you listening, think about it", "if you
     mapped your own organization's operations today". Deck vocabulary separates that from
     content, exactly as it does for the show-open at the other end.
+
+    Deck vocabulary alone is not enough, though. The show-open is furniture — it says nothing
+    about the subject — but the closing turn often aims the subject AT the listener: "how many
+    fragmented fourth lists are hiding in your project?" is nine-tenths deck vocabulary, so the
+    walk-back stopped on the very last cue and cut nothing. On the 8 Sep batch that left the
+    closing turn standing in 5 of 6 takes. So the walk also steps over a cue that turns to the
+    listener, not only one that is furniture.
     """
     end = cues[-1]["end"]
     if terms is not None:
-        i = len(cues)
+        # An announced closing thought is unambiguous: everything after "I want to leave you with
+        # a thought to mull over" is outro, including the cues that reuse deck vocabulary heavily
+        # enough to read as content. The walk cannot see those — on 4.6 it stopped one cue in and
+        # would have left half a sentence on air.
+        for k, c in enumerate(cues):
+            if c["start"] >= end - TAIL_WINDOW_S and k > 0 \
+                    and any(re.search(p, c["text"].lower()) for p in REFLECTIVE_CLOSE):
+                return k
+        i = stop = len(cues)
+        while i > 0 and SOURCES_LINE.search(cues[i - 1]["text"]):
+            i = stop = i - 1
         while i > 0 and cues[i - 1]["start"] >= end - TAIL_WINDOW_S \
-                and is_furniture(cues[i - 1]["text"], terms):
+                and (is_furniture(cues[i - 1]["text"], terms)
+                     or turns_to_listener(cues[i - 1]["text"])):
             i -= 1
-        if i == len(cues) or i == 0:
+        if i == stop or i == 0:
             # i == 0 means every cue back to the start read as furniture, which is not an outro —
             # it is a take with vocabulary the deck does not share. Cutting there would delete the
             # whole recording.

@@ -31,6 +31,9 @@ BANNED_PHRASES = [
     # consumer-outrage register
     "broken", "chaos", "held hostage", "hostage", "extortionate", "nightmare",
     "insane", "crazy",
+    # added 8 Sep: the brief's §3 substitution table bans these in its "never this" column, and
+    # the gate did not check them — 4.5 swapped "nightmare" for "a mess" and passed.
+    "a mess", "a disaster", "hopeless",
     # the on-screen practice box, imported into the take (plan D5 — the box is never
     # narrated, and the "Your play" handoff it replaced is gone from the voice-over).
     # Deliberately NOT "your own sector" on its own: 4.1 uses it descriptively, and
