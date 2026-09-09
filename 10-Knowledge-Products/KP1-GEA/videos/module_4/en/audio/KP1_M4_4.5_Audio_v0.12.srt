@@ -1,0 +1,272 @@
+1
+00:00:00,200 --> 00:00:04,830
+Um, imagine trying to build, like, a massive futuristic highway system,
+
+2
+00:00:05,440 --> 00:00:08,860
+but your only strategy is to just pave over existing dirt paths.
+
+3
+00:00:09,320 --> 00:00:12,740
+Right, without ever actually drawing a blueprint for where the cities are gonna go.
+
+4
+00:00:12,800 --> 00:00:22,320
+Exactly. And, you know, that is exactly what happens when a digital government tries to upgrade these siloed, duplicated IT systems without a target architecture.
+
+5
+00:00:22,420 --> 00:00:23,470
+Yeah, just doesn't work.
+
+6
+00:00:24,320 --> 00:00:32,520
+So welcome to today's deep dive. Today, we are focusing on phase four, which is plan, design the target architecture of an enterprise architecture.
+
+7
+00:00:32,759 --> 00:00:39,260
+And, um, you can think of an enterprise architecture as basically the master urban plan for a digital government.
+
+8
+00:00:39,460 --> 00:00:45,600
+Right. It is this comprehensive blueprint that makes sure every department isn't just, you know, building their own isolated villages.
+
+9
+00:00:45,640 --> 00:00:51,150
+Yeah, and that blueprint is super crucial because you can't just start paving a road and hope it leads somewhere functional.
+
+10
+00:00:51,280 --> 00:00:59,480
+Exactly. The entire purpose of your architecture work is to produce this target, this defined picture of the future state you are actually building toward.
+
+11
+00:00:59,920 --> 00:01:05,239
+Okay, but my first instinct here would be to just look at our map of this current fragmented state
+
+12
+00:01:06,020 --> 00:01:10,420
+and, I don't know, draw a utopian version of it where everything works perfectly.
+
+13
+00:01:10,600 --> 00:01:12,460
+Well, that is a very common trap, actually.
+
+14
+00:01:12,560 --> 00:01:16,840
+Oh, really? Yeah, because utopia doesn't fix your specific gaps.
+
+15
+00:01:17,000 --> 00:01:20,620
+Mm-hmm. You do not invent the target architecture from imagination.
+
+16
+00:01:20,680 --> 00:01:22,080
+Okay, so where does it come from?
+
+17
+00:01:22,140 --> 00:01:28,160
+It is designed by applying strict design rules to the exact gaps you identified in your current state.
+
+18
+00:01:28,300 --> 00:01:29,220
+Ah, got it.
+
+19
+00:01:29,260 --> 00:01:35,700
+The principles you adopt, like the once only rule or reuse before build, they aren't just mission statements.
+
+20
+00:01:35,740 --> 00:01:39,020
+They dictate exactly how the future state is drawn.
+
+21
+00:01:39,080 --> 00:01:44,390
+Since it isn't just based on imagination, let's look at how those design rules, like, physically shape the system.
+
+22
+00:01:44,680 --> 00:01:48,220
+So they shape the future state across four distinct layers.
+
+23
+00:01:48,260 --> 00:01:50,560
+First, you have target capabilities. Okay.
+
+24
+00:01:50,720 --> 00:01:55,800
+This is where every single capability is owned by exactly one body, which resolves all that duplication.
+
+25
+00:01:56,000 --> 00:02:02,539
+Makes sense. Second is target data domains, meaning there is one authoritative owner for each specific domain.
+
+26
+00:02:02,600 --> 00:02:04,900
+Okay, let's ground that in reality for a second.
+
+27
+00:02:04,960 --> 00:02:14,720
+Mm-hmm. Because it sounds great in theory, but, um, how does this fix the reality of citizens having their data rekeyed and captured multiple times?
+
+28
+00:02:14,880 --> 00:02:22,180
+Right. So- Like in the old fragmented system, a teenager getting their driver's license might have to submit their birth certificate
+
+29
+00:02:22,540 --> 00:02:26,300
+to the transport department, the school board, and the tax office separately.
+
+30
+00:02:26,600 --> 00:02:30,680
+Yeah, and this is where the once only principle does the heavy lifting.
+
+31
+00:02:30,920 --> 00:02:39,840
+Okay. That rule dictates that those three separate duplicated learner lists, they are forced to become a single authoritative learner register.
+
+32
+00:02:40,180 --> 00:02:42,740
+Ah, so that register becomes the single source of truth.
+
+33
+00:02:42,800 --> 00:02:47,710
+Exactly. Okay, so the data now lives in one place, but what about the systems that actually need to use it?
+
+34
+00:02:48,240 --> 00:02:51,360
+That brings us to the third layer, which is target shared platforms.
+
+35
+00:02:51,390 --> 00:02:58,630
+Right. Because of the reuse before build principle, an examination authority doesn't mint its own separate identity records.
+
+36
+00:02:58,780 --> 00:03:02,000
+It simply consumes data from a central identity authority.
+
+37
+00:03:02,400 --> 00:03:05,580
+So shared platforms operate like, uh, a city's plumbing.
+
+38
+00:03:05,680 --> 00:03:08,740
+Everyone taps into the same pipes instead of digging their own private wells.
+
+39
+00:03:09,160 --> 00:03:17,720
+That is exactly it. And the fourth layer, target technology standards, dictates the building codes for how all those shared pipes and platforms must be constructed.
+
+40
+00:03:17,820 --> 00:03:19,160
+Just to ensure they fit together. Right.
+
+41
+00:03:19,670 --> 00:03:23,200
+So we've forced all these departments to give up their private learner lists.
+
+42
+00:03:23,880 --> 00:03:27,220
+But if the examination authority doesn't have its own list anymore,
+
+43
+00:03:27,960 --> 00:03:30,740
+how do they actually know who is taking the test?
+
+44
+00:03:30,920 --> 00:03:33,280
+Yeah. I mean, they have to talk to each other now.
+
+45
+00:03:33,500 --> 00:03:35,860
+They do, and that requires an integration map.
+
+46
+00:03:36,080 --> 00:03:37,540
+Okay. The integration map.
+
+47
+00:03:37,620 --> 00:03:44,100
+Yeah. Think of your current state like a house where every single room has its own separate electrical grid.
+
+48
+00:03:44,160 --> 00:03:48,580
+The integration map is the master circuit breaker that finally unifies them.
+
+49
+00:03:48,640 --> 00:03:55,580
+Oh, wow. It details which bodies exchange which data over what mechanism and in what priority order.
+
+50
+00:03:55,640 --> 00:04:00,080
+So in our example, the examination authority reads the learner data from the learner register.
+
+51
+00:04:00,380 --> 00:04:04,120
+Right. And verifies the identity through the identity authority.
+
+52
+00:04:04,280 --> 00:04:08,780
+Yes, and both of those exchanges happen over a shared data exchange backbone.
+
+53
+00:04:08,860 --> 00:04:11,730
+Which is a building block provided by the digital government authority.
+
+54
+00:04:12,160 --> 00:04:17,240
+Exactly. This entirely replaces the need for paper re-entry.
+
+55
+00:04:17,280 --> 00:04:20,600
+Well, that sounds highly efficient, but I can see a massive pitfall here.
+
+56
+00:04:20,800 --> 00:04:27,940
+Oh. Yeah. How do we guarantee this beautiful integration map doesn't just end up sitting on a desk as an expensive wish list?
+
+57
+00:04:28,460 --> 00:04:30,820
+Well, the architecture must be reachable.
+
+58
+00:04:30,920 --> 00:04:35,690
+Every single element of the target must trace back to a specific gap it closes.
+
+59
+00:04:35,840 --> 00:04:39,810
+Okay. And it has to trace forward to a concrete sourcing decision.
+
+60
+00:04:39,820 --> 00:04:42,000
+Are you gonna build it, buy it, or share it?
+
+61
+00:04:42,420 --> 00:04:45,940
+Meaning a target capability with no realistic way to obtain it
+
+62
+00:04:46,540 --> 00:04:47,380
+is just a wish.
+
+63
+00:04:47,720 --> 00:04:53,620
+Precisely. Because of this, the target architecture and the sourcing decisions must be designed and signed off together.
+
+64
+00:04:53,660 --> 00:04:57,260
+They form the agreed destination that your roadmap will then sequence.
+
+65
+00:04:57,300 --> 00:05:05,560
+To recap, the target architecture is the essential blueprint, bridging the gap between recognizing your digital problems and drawing the roadmap to fix them.
+
+66
+00:05:05,600 --> 00:05:10,020
+Yeah. Built on strict principles, a unified integration map, and concrete sourcing decisions.
+
+67
+00:05:10,240 --> 00:05:11,400
+But consider this before you go.
+
+68
+00:05:12,220 --> 00:05:20,450
+If every single element in your target architecture must trace directly forward to a sourcing decision, whether that is build, buy, or share,
+

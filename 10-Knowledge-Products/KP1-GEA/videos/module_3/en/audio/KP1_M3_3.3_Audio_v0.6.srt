@@ -1,0 +1,296 @@
+1
+00:00:00,160 --> 00:00:09,940
+Welcome to, uh, The Deep Dive. Today, our mission is exploring how you, the government official running your ministry systems, can actually keep your national enterprise
+
+2
+00:00:09,980 --> 00:00:11,680
+architecture repository true.
+
+3
+00:00:11,960 --> 00:00:14,940
+Right. The EA, or P-A-E-R-A as it's often called.
+
+4
+00:00:15,000 --> 00:00:20,720
+Yeah, exactly. And, you know, we really need to establish that this repository has one ultimate enemy.
+
+5
+00:00:21,160 --> 00:00:23,260
+It's not a technical glitch or a cyberattack.
+
+6
+00:00:23,680 --> 00:00:25,780
+It's s, um... It's staleness.
+
+7
+00:00:26,120 --> 00:00:28,640
+Oh, absolutely. Staleness is the silent killer here.
+
+8
+00:00:28,980 --> 00:00:33,730
+Because an architecture that is, say, six months behind reality is actually worse than none at all.
+
+9
+00:00:33,880 --> 00:00:36,560
+People trust it, and it basically lies to them.
+
+10
+00:00:36,620 --> 00:00:38,220
+Yeah, that's exactly the danger.
+
+11
+00:00:38,260 --> 00:00:44,320
+So why is an architecture that's six months out of date actually worse than having no architecture at all?
+
+12
+00:00:44,340 --> 00:00:46,449
+I mean, shouldn't some map be better than no map?
+
+13
+00:00:46,720 --> 00:00:50,600
+Well, it comes down to how we behave. A missing architecture makes people ask questions.
+
+14
+00:00:50,910 --> 00:00:51,680
+If there's no map,
+
+15
+00:00:52,400 --> 00:00:54,960
+they, uh, they go find out how things actually connect.
+
+16
+00:00:55,140 --> 00:00:56,130
+Right. They do a legwork.
+
+17
+00:00:56,440 --> 00:01:01,180
+Exactly. But a wrong architecture that answers their questions, it just answers them wrongly.
+
+18
+00:01:01,300 --> 00:01:03,380
+Oh, wow, so they feel confident when they shouldn't.
+
+19
+00:01:03,740 --> 00:01:04,339
+Precisely.
+
+20
+00:01:05,019 --> 00:01:09,960
+Just imagine your repository claims the examination authority consumes the learner register.
+
+21
+00:01:10,140 --> 00:01:11,680
+Okay. A pretty standard setup.
+
+22
+00:01:11,800 --> 00:01:15,240
+Yeah. But in reality, they quietly built their own,
+
+23
+00:01:16,200 --> 00:01:21,590
+um, duplicated, siloed copy of that register last quarter.
+
+24
+00:01:21,790 --> 00:01:24,170
+Wait, really? Just went rogue and built their own?
+
+25
+00:01:24,220 --> 00:01:31,080
+It happens all the time. And if your repository doesn't show that, then every ministry decision is being built on a falsehood.
+
+26
+00:01:31,120 --> 00:01:33,080
+Currency isn't just a nice-to-have feature.
+
+27
+00:01:33,580 --> 00:01:34,760
+It is the whole value.
+
+28
+00:01:34,960 --> 00:01:37,900
+Because you'd be making decisions based on a ghost system.
+
+29
+00:01:37,980 --> 00:01:41,220
+Right. Okay, so if currency is the entire value,
+
+30
+00:01:41,840 --> 00:01:47,220
+how does a ministry actually operationalize this without it becoming a massive administrative chore?
+
+31
+00:01:47,300 --> 00:01:49,880
+Like, who should exactly be responsible for updating it?
+
+32
+00:01:49,960 --> 00:01:52,770
+Well, there must be one named owner. Usually, that's your chief architect.
+
+33
+00:01:52,840 --> 00:01:54,860
+Okay, just one person, not a committee.
+
+34
+00:01:55,260 --> 00:01:58,380
+Definitely not a committee. Okay. Because, you know, when everyone owns currency, no one does.
+
+35
+00:01:58,780 --> 00:02:01,770
+That makes total sense. But how do we schedule these updates?
+
+36
+00:02:01,800 --> 00:02:04,140
+I mean, please don't tell me it's some sort of annual audit.
+
+37
+00:02:04,280 --> 00:02:10,400
+No, no, absolutely not. A yearly calendar review basically guarantees the EA is 11 months stale.
+
+38
+00:02:10,500 --> 00:02:14,960
+Yeah, useless. Instead, you have to tie updates to real-world events.
+
+39
+00:02:15,520 --> 00:02:18,780
+There are four specific event-driven triggers you have to use.
+
+40
+00:02:18,940 --> 00:02:19,700
+Okay, what's number one?
+
+41
+00:02:19,860 --> 00:02:20,240
+Number one,
+
+42
+00:02:21,280 --> 00:02:22,140
+a system goes live.
+
+43
+00:02:23,000 --> 00:02:25,940
+When that happens, you immediately update the application layer.
+
+44
+00:02:26,160 --> 00:02:27,380
+Makes sense. Number two,
+
+45
+00:02:28,720 --> 00:02:29,660
+a system is retired,
+
+46
+00:02:31,120 --> 00:02:32,220
+so you just remove it.
+
+47
+00:02:32,480 --> 00:02:33,860
+Out with the old. Got it.
+
+48
+00:02:34,000 --> 00:02:34,840
+Right. Number three,
+
+49
+00:02:36,000 --> 00:02:37,280
+a new data domain appears.
+
+50
+00:02:38,060 --> 00:02:40,460
+You add it, and crucially, you add it with its owner.
+
+51
+00:02:40,780 --> 00:02:43,250
+Okay. What's the last one? Number four. Yep.
+
+52
+00:02:43,250 --> 00:02:47,460
+The board makes a decision. You record that decision along with its reason.
+
+53
+00:02:47,500 --> 00:02:49,140
+Let me push back on this a little bit, though.
+
+54
+00:02:49,180 --> 00:02:54,300
+If updates are tied to all these different events, doesn't that risk filling the repository with private language?
+
+55
+00:02:54,440 --> 00:02:54,960
+Oh, for sure.
+
+56
+00:02:55,000 --> 00:02:59,700
+Like, you just get orphaned items and fragmented data as different teams log their own changes, right?
+
+57
+00:02:59,740 --> 00:03:06,000
+And that is the exact risk, and the solution to that is a light gate, a checkpoint you implement during board reviews.
+
+58
+00:03:06,160 --> 00:03:07,460
+A gate at the board level.
+
+59
+00:03:07,720 --> 00:03:10,920
+Yeah. It's the absolute cheapest moment to update.
+
+60
+00:03:10,960 --> 00:03:16,140
+Oh. Because a project is already detailing what it will build, what it will consume, and what it will touch.
+
+61
+00:03:16,360 --> 00:03:19,380
+Oh, right. Their bags are already open for inspection, so to speak.
+
+62
+00:03:19,500 --> 00:03:23,340
+Exactly. So at this gate, you do three quick checks.
+
+63
+00:03:23,420 --> 00:03:27,020
+Number one, does the update use the shared entities correctly?
+
+64
+00:03:27,420 --> 00:03:32,140
+Basically making sure they're using the right building blocks and not inventing new terms.
+
+65
+00:03:32,240 --> 00:03:37,580
+Right. Keep the language standard. Number two, does every data domain still have exactly one owner?
+
+66
+00:03:37,660 --> 00:03:41,600
+Okay. And number three, is every decision logged with its reason?
+
+67
+00:03:41,700 --> 00:03:48,380
+That is so clean. It makes the governance process and the update discipline just a single unified motion.
+
+68
+00:03:48,580 --> 00:03:52,220
+It does. It prevents the whole thing from becoming costly to change later on.
+
+69
+00:03:52,560 --> 00:03:55,220
+It's brilliant because it keeps the repository true.
+
+70
+00:03:55,280 --> 00:04:00,880
+You have one named owner, event-triggered updates, and this light conformance check at the board level.
+
+71
+00:04:00,920 --> 00:04:01,980
+That's the discipline.
+
+72
+00:04:02,000 --> 00:04:11,390
+And if you neglect that discipline, within a year, you don't just have a flawed IT tool, you have a widely trusted work of fiction driving your ministry's most costly
+
+73
+00:04:11,440 --> 00:04:12,040
+decisions.
+
+74
+00:04:12,080 --> 00:04:13,560
+Which is terrifying, honestly.
+

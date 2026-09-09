@@ -6,9 +6,14 @@ transcribed via `kp-scribe-transcribe`, audited with `srt_drift_check` + `covera
 
 ## Verdict
 
-Step 3 is **complete and gated** for all 22 subtopics. Step 4 is **10 of 22 accepted**; the other
-12 have takes on disk that fail on a named, specific defect. Steps 6 and 7 (cues, assembly) have
-not started — they need no NotebookLM and can run as soon as the takes are accepted.
+Step 4 is **complete: 22 of 22 accepted** as of 9 Sep — 10 before the §3 rewrite, 6 cleared by
+it, 3 settled on runtime, 2 accepted by decision (3.1, 3.2), and 2.5 came back fully clean. Steps
+6 and 7 (cues, assembly) have **not started for any of the 22** — they need no NotebookLM and are
+now the only thing between these takes and finished videos.
+
+Three takes of record are fully clean (3.5, 4.4, 2.5). Eight carry accepted show-open residue.
+3.2 carries three outrage words by decision. 2.4, 3.3, 4.6 were settled on runtime at +45s, −47s
+and +63s against a 5:00 target — inside the range Module 1 shipped (3:11–5:30).
 
 Runtime is resolved as a class: the decks no longer print a length, and every brief targets a flat
 5:00, matching Module 1.
@@ -23,25 +28,25 @@ Runtime is resolved as a class: the decks no longer print a length, and every br
 | 2.1 | ship | `Audio_v0.15` | 5:07 | 19 | residue: deep dive |
 | 2.2 | ship | `Audio_v0.19` | 5:04 | 19 | residue: deep dive, welcome to |
 | 2.3 | ship | `Audio_v0.2` | 4:53 | 9 | residue: deep dive, welcome to |
-| 2.4 | blocked | `Audio_v0.2` | 5:19 | 15 | "broken" |
-| 2.5 | blocked | `Audio_v0.3` | 3:52 | 13 | UNDER |
+| 2.4 | ship | `Audio_v0.10` | 5:45 | 14 | settled on runtime (+45s); residue |
+| 2.5 | **ship** | `Audio_v0.11` | 4:22 | 11 | **fully clean**; weak close ("It does,") |
 | 2.6 | ship | `Audio_v0.7` | 4:56 | 8 | residue: deep dive |
 | 2.7 | ship | `Audio_v0.2` | 5:40 | 7 | residue: deep dive |
-| 3.1 | blocked | `Audio_v0.2` | 2:57 | 2 | UNDER |
-| 3.2 | blocked | `Audio_v0.2` | 6:09 | 2 | OVER; "hostage", "nightmare" |
-| 3.3 | blocked | `Audio_v0.4` | 6:14 | 7 | OVER; "think about" |
-| 3.4 | blocked | `Audio_v0.2` | 5:27 | 2 | "our sources", "nightmare" |
+| 3.1 | ship | `Audio_v0.5` | 5:38 | 6 | accepted 9 Sep; residue + "registry" (see note) |
+| 3.2 | ship | `Audio_v0.7` | 5:00 | 8 | accepted 9 Sep; **"nightmare", "a mess", "hostage" on air** |
+| 3.3 | ship | `Audio_v0.6` | 4:13 | 10 | settled on runtime (−47s); residue |
+| 3.4 | ship | `Audio_v0.6` | — | 6 | residue: deep dive, welcome to |
 | 3.5 | **ship** | `Audio_v0.1` | 5:16 | 1 | **fully clean** |
 | 3.6 | ship | `Audio_v0.2` | 5:19 | 4 | residue: deep dive, welcome to |
 | 3.7 | ship | `Audio_v0.2` | 5:25 | 6 | residue: deep dive, welcome to |
-| 4.1 | blocked | `Audio_v0.3` | 4:01 | 4 | UNDER |
-| 4.2 | blocked | `Audio_v0.3` | 5:48 | 3 | OVER; reflective close; "think about" |
+| 4.1 | ship | `Audio_v0.5` | — | 5 | residue: deep dive, welcome to |
+| 4.2 | ship | `Audio_v0.9` | — | 9 | residue: deep dive, welcome to, unpacking |
 | 4.3 | ship | `Audio_v0.1` | 4:57 | 1 | residue: deep dive, welcome to, here's where it gets |
 | 4.4 | **ship** | `Audio_v0.4` | 4:30 | 5 | **fully clean** |
-| 4.5 | blocked | `Audio_v0.2` | 5:25 | 7 | "nightmare"; citizen framing |
-| 4.6 | blocked | `Audio_v0.2` | 4:23 | 8 | "the sources say" |
-| 4.7 | blocked | `Audio_v0.2` | 5:30 | 8 | "our sources", "chaos" |
-| 4.8 | blocked | `Audio_v0.2` | 5:53 | 5 | OVER |
+| 4.5 | ship | `Audio_v0.12` | 5:20 | 12 | residue: deep dive, welcome to |
+| 4.6 | ship | `Audio_v0.7` | 6:03 | 8 | settled on runtime (+63s); residue |
+| 4.7 | ship | `Audio_v0.9` | — | 9 | residue: deep dive |
+| 4.8 | ship | `Audio_v0.7` | — | 7 | residue: deep dive |
 
 **Coverage is not a problem anywhere.** Across all 155 takes, `coverage_check` reports essentially
 no missed slides — the briefs steer the hosts through every slide in order. Every blocker above is
@@ -118,6 +123,44 @@ regenerates from `references/audio-brief-template.md`, a §3 rewrite reaches all
 3. Steps 6–7 for the 10 accepted takes — `draft_cues.py` then `slidecast.py`. Needs no NotebookLM
    and is not blocked by anything above.
 4. Decide the residue question (1) before delivery.
+
+## Accepted by decision — 9 September 2026
+
+**3.1 → `Audio_v0.5`** (5:38, best of 6). Runtime in tolerance, no outro defect. Its two
+reported failures are both arguable:
+- `TERMINOLOGY — say 'register' / 'registers'` fires on "the learner registry" — but the brief
+  itself names the system **"Learner Registry"** four times, so the hosts are using the deck's own
+  proper noun. The check is `\bregistr(y|ies)\b` with no proper-noun exemption. This is a
+  **false positive**, and it accounts for a large share of the 8-of-32 terminology failures in the
+  8 Sep batch. It never blocked a take on its own, so it has cost nothing yet — but it will
+  mislead the next person who reads a report.
+- `think about` fires on "That is wild to think about, just a spreadsheet" — mid-content, not the
+  closing turn the ban is aimed at.
+
+**3.2 → `Audio_v0.7`** (5:00 exactly, best of 8, and the only one of the eight with a single
+failure). It ships **three outrage words on air**, which is the defect the §3 rewrite was written
+to remove:
+- "Which is the **nightmare** scenario."
+- "Their changes collide, they lock each other out, and it's just **a mess**."
+- "How do we ensure that vendor doesn't hold our architecture **hostage**?"
+
+3.2 resisted the rewrite completely — all three of its 8 Sep takes carried `hostage` and
+`nightmare`. Accepting it is a deliberate trade, reversible by a hand-edit of three lines or by
+re-rolling this subtopic alone later.
+
+## Known and deliberately not fixed
+
+1. **`registry` false positive.** `srt_drift_check`'s house-term row is `\bregistr(y|ies)\b` with
+   no proper-noun exemption, so it fires on "the learner registry" even though the brief names the
+   system **"Learner Registry"**. It never blocked a take on its own — every take that failed it
+   failed something else too — but it inflated the terminology numbers in the 8 Sep batch (8 of 32)
+   and will mislead the next reader of a report.
+2. **Trailing backchannel survives the trim.** 2.5's accepted take ends on "It does," — a two-word
+   host confirmation sitting between the content and the outro the trim removed. The cut is correct;
+   the dangling turn is not a good close. §3 bans backchannel outright, so extending the cut back
+   over trailing single-word confirmations would fix it once for every take.
+3. **Filler threshold.** 3 of 32 takes failed at 2.6-2.7 per 100 words against a 2.5 ceiling. At
+   that margin the threshold is the more likely problem than the takes.
 
 ## Spend
 

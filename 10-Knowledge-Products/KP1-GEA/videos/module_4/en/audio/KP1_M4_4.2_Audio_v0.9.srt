@@ -1,0 +1,280 @@
+1
+00:00:00,160 --> 00:00:09,780
+Welcome to the Deep Dive. Today we're, uh, we're looking at how to map out what your ministry or program actually has today, and how to avoid making some incredibly expensive mistakes.
+
+2
+00:00:09,920 --> 00:00:15,639
+Yeah. We're gonna be unpacking phase one of the P-A-E-R-A or PAERA lifecycle.
+
+3
+00:00:15,780 --> 00:00:18,040
+Right. Specifically, the discover phase.
+
+4
+00:00:18,960 --> 00:00:25,430
+And we'll use our ongoing case study of the Progresa Education Ministry to guide us through how this works in practice.
+
+5
+00:00:25,820 --> 00:00:31,710
+Okay, let's unpack this because, you know, my natural instinct when looking at an architecture is to focus on what's wrong.
+
+6
+00:00:32,360 --> 00:00:37,690
+Why does this phase focus strictly on what exists today rather than, well, the problems?
+
+7
+00:00:37,800 --> 00:00:39,660
+Yeah. It feels kinda counterintuitive, I know.
+
+8
+00:00:39,700 --> 00:00:43,080
+Hmm. But jumping to conclusions actually biases the entire process.
+
+9
+00:00:43,120 --> 00:00:48,840
+Right. If you start diagnosing issues before you finish mapping the landscape, you miss critical hidden details.
+
+10
+00:00:49,560 --> 00:00:54,100
+In our Progresa case study, this discovery phase takes a tightly boxed three to four weeks.
+
+11
+00:00:54,160 --> 00:00:55,700
+Wow, just three to four weeks.
+
+12
+00:00:55,760 --> 00:00:59,910
+Yeah, it's very focused, and the goal is to produce one single deliverable, the discovery brief.
+
+13
+00:01:00,170 --> 00:01:04,200
+You're just building an accurate baseline of where the sector is right now, nothing more.
+
+14
+00:01:04,280 --> 00:01:06,840
+So if I'm a director general reviewing this brief,
+
+15
+00:01:07,540 --> 00:01:09,180
+how do I know it's actually comprehensive?
+
+16
+00:01:09,220 --> 00:01:13,220
+Like, what exactly are we gathering in those few weeks without getting totally bogged down?
+
+17
+00:01:13,800 --> 00:01:16,880
+You keep it focused by collecting five specific elements.
+
+18
+00:01:17,520 --> 00:01:20,180
+Together, they give you the structural DNA of the ministry.
+
+19
+00:01:20,630 --> 00:01:26,300
+You start with the strategies in force, things like the national digital strategy or the education sector plan.
+
+20
+00:01:26,420 --> 00:01:27,960
+Right, so you understand the official goals.
+
+21
+00:01:28,100 --> 00:01:28,520
+Exactly.
+
+22
+00:01:29,180 --> 00:01:35,000
+Then you map the existing systems. That could be a school census or, you know, a social grant system.
+
+23
+00:01:35,040 --> 00:01:36,790
+And I imagine you also need to know, uh,
+
+24
+00:01:37,560 --> 00:01:39,120
+who actually controls what.
+
+25
+00:01:39,200 --> 00:01:39,440
+Yes.
+
+26
+00:01:40,390 --> 00:01:42,600
+That leads right into the third and fourth elements.
+
+27
+00:01:42,740 --> 00:01:45,170
+Right. The registers and their owners. Okay.
+
+28
+00:01:45,220 --> 00:01:48,550
+Like knowing exactly who holds the learner lists or the identity register,
+
+29
+00:01:49,160 --> 00:01:53,780
+and then the broader stakeholders, which includes the ministry authorities and the donors funding each piece.
+
+30
+00:01:54,000 --> 00:01:55,160
+Got it, and the last one.
+
+31
+00:01:55,200 --> 00:01:58,820
+Finally, you capture the legal framework, such as data protection acts.
+
+32
+00:01:58,860 --> 00:02:05,100
+You gather these five elements because they define the boundaries of what is legally, technically, and politically possible.
+
+33
+00:02:05,160 --> 00:02:07,540
+Okay. Here is where I wanna push back a little bit.
+
+34
+00:02:07,620 --> 00:02:12,250
+Let's say I'm looking at our architecture, and I see systems that are, um,
+
+35
+00:02:13,520 --> 00:02:19,460
+fragmented, siloed, and require citizen data to be duplicated and rekeyed manually.
+
+36
+00:02:20,150 --> 00:02:23,220
+Right. My instinct is to step in and fix it immediately.
+
+37
+00:02:23,840 --> 00:02:27,740
+Why just gather data when there are glaring, obvious problems?
+
+38
+00:02:27,780 --> 00:02:31,020
+Because the central rule of phase one is to describe
+
+39
+00:02:31,680 --> 00:02:33,840
+without recommending. Just describe. Just describe.
+
+40
+00:02:34,280 --> 00:02:35,760
+Using Progresa as an example,
+
+41
+00:02:36,380 --> 00:02:43,760
+if your architects find three separate learner lists that are, say, locked into one supplier- Yeah... you simply record the fact.
+
+42
+00:02:44,240 --> 00:02:47,300
+You note that they exist, who owns them, and what data they hold.
+
+43
+00:02:47,520 --> 00:02:50,600
+Even if I know it's incredibly costly to change later, I just write it down?
+
+44
+00:02:50,660 --> 00:02:57,080
+You just record the facts. The judgment of whether this is a problem or what priority it takes belongs entirely to the next phase.
+
+45
+00:02:57,200 --> 00:02:58,799
+Discover first, judge second.
+
+46
+00:02:58,880 --> 00:03:00,600
+That requires some serious discipline.
+
+47
+00:03:00,700 --> 00:03:05,740
+It really does. Yeah. If you mix the two, you end up designing solutions before you fully map the environment.
+
+48
+00:03:05,800 --> 00:03:09,350
+Okay, so what does this all mean for actually finishing the phase?
+
+49
+00:03:09,940 --> 00:03:14,800
+How do we know when this discovery brief is done, and we can finally move on to judging the systems?
+
+50
+00:03:15,560 --> 00:03:18,080
+It ends with the first formal sign-off.
+
+51
+00:03:19,080 --> 00:03:27,690
+A senior decision maker, such as the digitalization officer who chairs the National Enterprise Architecture, or EA board, signs off on one single metric.
+
+52
+00:03:27,920 --> 00:03:29,790
+Which is? That the picture is accurate.
+
+53
+00:03:29,960 --> 00:03:32,200
+Just accurate. It doesn't need to be, like, complete.
+
+54
+00:03:32,320 --> 00:03:35,980
+I would think a director general wants a perfect map before making any decisions.
+
+55
+00:03:36,360 --> 00:03:38,440
+Well, this raises an important question about scale.
+
+56
+00:03:38,960 --> 00:03:41,570
+No, it does not need to be perfectly complete.
+
+57
+00:03:41,940 --> 00:03:44,240
+It just needs to be accurate enough to build on.
+
+58
+00:03:44,300 --> 00:03:47,680
+Uh. This approval gate is cheap and fast to pass through.
+
+59
+00:03:47,760 --> 00:03:49,910
+Skipping it, however, is incredibly expensive.
+
+60
+00:03:50,020 --> 00:03:52,180
+Because if your foundation is off...
+
+61
+00:03:52,240 --> 00:03:57,190
+Exactly. If you build an assessment on a wrong picture, you produce wrong priorities.
+
+62
+00:03:57,329 --> 00:04:03,820
+Mm-hmm. And redirecting an entire ministry after it has started acting on wrong priorities is profoundly costly to change.
+
+63
+00:04:03,920 --> 00:04:08,230
+Yeah, that makes total sense. Get the baseline signed off as true, and the next phase stands on solid ground.
+
+64
+00:04:08,640 --> 00:04:15,510
+Precisely. That clarifies a lot. So to bring this all together for our Progresa case study, how would you summarize the core rules of this first phase?
+
+65
+00:04:15,860 --> 00:04:19,950
+Phase one comes down to four pillars. One question, what exists today?
+
+66
+00:04:20,820 --> 00:04:21,490
+One deliverable,
+
+67
+00:04:22,350 --> 00:04:24,550
+the discovery brief. Right. One discipline,
+
+68
+00:04:25,440 --> 00:04:27,650
+describe, do not recommend. And one sign-off,
+
+69
+00:04:28,320 --> 00:04:29,409
+the picture is accurate.
+
+70
+00:04:29,430 --> 00:04:30,800
+You gather, you do not judge.
+
