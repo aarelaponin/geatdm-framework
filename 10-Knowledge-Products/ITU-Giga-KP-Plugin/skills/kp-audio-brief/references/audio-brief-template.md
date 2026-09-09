@@ -69,6 +69,10 @@ sentences, in this spirit:
 
 Host B adds one sentence naming the stake. Then move on. **No preamble about the sources.**
 
+The title card is the deck's section slide, so it carries the opener's voice-over in its notes:
+the cold open is the way *into* that substance, which follows in the same segment, not the whole
+segment. Everything after the two opening sentences comes from those notes.
+
 ### Slide «n» — «slide title» · «start»–«end» («s» s)
 
 «The slide's own bullets, restated as the content the hosts must cover — nothing more.»

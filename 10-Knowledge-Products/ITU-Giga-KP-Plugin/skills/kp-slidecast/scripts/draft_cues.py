@@ -45,7 +45,10 @@ def main():
     # assigned to a slide, assignments never go backwards, and the total affinity is maximised.
     # First-match scoring put slide 4 at "and then finally, sign four" — an incidental early
     # hit — because it only ever looked at one cue at a time.
-    body = slides[1:-1]                                  # bookends placed by hand
+    # The title card is body[0] and part of the alignment: the hosts' opener restates its
+    # title and message, so the DP is what decides when the first content slide arrives —
+    # which is the whole point. Only the silent Sources bookend is placed by hand.
+    body = slides[:-1]
     S, N = len(body), len(cues)
     aff = [[len(words[i] & body[s][2]) for s in range(S)] for i in range(N)]
 
@@ -69,12 +72,7 @@ def main():
         path[i] = s_idx
         s_idx = back[i][s_idx]
 
-    # slide 1 is the title card: it holds from 0:00 until the first real pause after ~6 s,
-    # then the section slide (body[0]) takes over. The DP places body[1..] from there.
-    title_end = next((cues[j]["start"] - 0.15 for j in range(1, N)
-                      if cues[j]["start"] > 6 and cues[j]["start"] - cues[j - 1]["end"] >= PAUSE_S),
-                     8.0)
-    starts = [0.0, title_end]
+    starts = [0.0]                                       # the title card is always 0:00
     for s in range(1, S):
         first = next((i for i in range(N) if path[i] == s), None)
         if first is None:

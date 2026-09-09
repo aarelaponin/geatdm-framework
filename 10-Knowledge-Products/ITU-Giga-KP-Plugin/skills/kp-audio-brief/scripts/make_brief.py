@@ -100,11 +100,19 @@ def title_of(texts, i):
 
 
 def single_message(slide1_texts):
-    """The one-sentence promise, carried on the title card under the KP·module·video line."""
+    """The one-sentence promise on the title card.
+
+    On the section slide (the title card since split_module_deck.py stopped prepending the
+    cover) it is its own shape, the second one left after the kicker, the number and the
+    runtime line are dropped as chrome — i.e. straight after the title. On a pre-2026-09
+    deck's retitled cover it shared a shape with the KP·module·video line.
+    """
     for t in slide1_texts:
         if t.lstrip().upper().startswith("KP") and "\n" in t:
             return t.split("\n", 1)[1].replace("\n", " ").strip()
-    return ""
+    named = [t.strip() for t in slide1_texts
+             if not EYEBROW.match(t.strip()) and not CHROME.match(t.strip())]
+    return named[1].replace("\n", " ").strip() if len(named) > 1 else ""
 
 
 def load(deck):
@@ -129,9 +137,13 @@ def segment(s, start, secs, first, last_content, sources):
     head = (f"### Slide {s['n']} — {s['title']} · {mmss(start)}–{mmss(start + secs)} "
             f"({secs} s · ~{len(s['substance'].split())} words of substance)\n")
     if first:
-        return (head + "Cold open. No music, no \"welcome\". Host A names the module, the video "
-                "number and the title; Host B adds the one sentence below. Then move on — no "
-                "preamble about the sources.\n\n> " + s["_message"] + "\n")
+        # The title card is now the section slide, and it carries the opener's VO in its notes,
+        # so the cold open is a preamble to that substance rather than the whole segment.
+        head += ("Cold open. No music, no \"welcome\". Host A names the module, the video "
+                 "number and the title; Host B adds the one sentence below. Then move on — no "
+                 "preamble about the sources.\n\n> " + s["_message"] + "\n\n")
+        if not s["substance"]:
+            return head
     if sources:
         return (head + "**This is the close. Perform it as written — it is the wrap-up.**\n\n"
                 "The two-host format normally ends by leaving the listener with a thought or a "

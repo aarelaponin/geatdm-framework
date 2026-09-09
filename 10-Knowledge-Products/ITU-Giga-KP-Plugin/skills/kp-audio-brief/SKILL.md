@@ -81,8 +81,9 @@ cell to land hardest) that the script omits. Where notes and script disagree, th
 
 ## Step 2 — Set the runtime and check the budget
 
-Default to the deck's own spec — the title card carries "Length: ~N mins". Do not inherit the
-previous take's runtime; that is the number you are correcting.
+Default to `make_brief.py`'s house 5:00 — the title card prints no runtime (a printed length is
+stale the moment the audio is re-cut). Override with `--runtime` only for a deliberately shorter
+or longer video. Do not inherit the previous take's runtime; that is the number you are correcting.
 
 The script's weighted split is a starting point, not an answer. Adjust it by hand for:
 

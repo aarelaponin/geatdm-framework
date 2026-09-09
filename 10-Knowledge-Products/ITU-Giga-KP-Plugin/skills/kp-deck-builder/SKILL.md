@@ -184,13 +184,15 @@ python scripts/split_module_deck.py \
 Swap `en` for `fr` for a French deck once one exists — never point the split at one language's
 deck with another language's spec.
 
-The spec (worked example: `videos/module_1/en/decks/split_spec.json`) lists each video's code, title,
-minutes, single message and its **1-indexed inclusive slide range** in the combined deck. Each output
-keeps slide 1 (the cover, retitled in place as the video's title card: `1.3 — <title>`, kicker
-`… · Module 1 · Video 1.3`, the video's single message and runtime) plus that video's slides,
-untouched, notes included. The agenda and thank-you slides stay only in the combined deck. After any
-rebuild of the combined deck, re-run the split — ranges may have shifted; verify counts against the
-grammar (section + content + sources + 1 title card).
+The spec (worked example: `videos/module_1/en/decks/split_spec.json`) lists each video's code and its
+**1-indexed inclusive slide range** in the combined deck; the other fields are documentation. Each
+output is that range, untouched, notes included — nothing is added or retitled. **One title card, not
+two:** the range opens on the video's section slide, which already carries the module-scoped kicker
+`KP1 · MODULE 1 · VIDEO 1.3`, the number, the title and the single message, so the module cover is no
+longer prepended (it was a second card saying the same thing, ~10 s of dead screen and an extra slide
+for the cue file to place). The agenda, cover and thank-you slides stay only in the combined deck.
+After any rebuild of the combined deck, re-run the split — ranges may have shifted; verify counts
+against the grammar (section + content + sources).
 
 ## The scripts-only companion
 
@@ -221,7 +223,6 @@ after any rebuild of the deck.
 - **pptxgenjs is the wrong tool here** — template-based work is python-pptx territory; pptxgenjs
   cannot start from the ITU template.
 - **LibreOffice renders Arial true to width**, so the contact-sheet overflow check is trustworthy.
-- **Cover title length**: split title cards drop to 24pt when the video title exceeds ~40 chars.
 - **Path duality in Cowork**: file tools see user paths, bash sees the mounted path — same file, two
   addresses.
 
@@ -230,6 +231,6 @@ after any rebuild of the deck.
 The combined deck validates and renders with no overflow, one footer per slide, module-scoped
 numbering, an assertion in every headline you can read as a standalone argument, voice-over in every
 content slide's notes, and one obvious centrepiece. The split decks' slide counts match the grammar,
-and each opens with a correct title card. Then: `SendUserFile` the decks, commit them to the module
+and each opens on its section slide as the one title card. Then: `SendUserFile` the decks, commit them to the module
 folder (`videos/` for the splits), and log any wording changes back into the script bundle via
 `kp-build-render` so docx and deck stay consistent.

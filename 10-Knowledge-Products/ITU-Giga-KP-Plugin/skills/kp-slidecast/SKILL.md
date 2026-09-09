@@ -69,29 +69,30 @@ titles, body text and the speaker notes, which carry the original VO and staging
 
 Method:
 
-1. List the slides in order with their key content (title card, section card, each content slide,
-   Sources card).
+1. List the slides in order with their key content (title card — the section slide, since the split
+   stopped prepending the cover — each content slide, Sources card).
 2. Read the SRT and find the **content beat** where the conversation arrives at each slide's
    subject — e.g. the four-signs slide starts where a speaker says "we look for four signs", not
    where the topic is first hinted at. Transitions in the narration ("Right. So…", "Which brings us
    to…", a direct question) are the usual cue points.
-3. Slide 1 (title card) is always `0:00`. The Sources card cues where the narration says sources
-   are in the description, or after the closing thought ends.
+3. Slide 1 (the title card) is always `0:00`, and it holds through the whole scripted opener — the
+   hosts stretch a ~40-word hook to 45–90 s, so slide 2 cues where the audio actually arrives at
+   the first content slide, not at the first pause. The Sources card cues where the narration says
+   sources are in the description, or after the closing thought ends.
 4. Write one line per slide, `M:SS` + a `#` comment naming the slide, plus a header comment block
    recording deck file, audio file, audio end time, and that timings are approximate:
 
 ```
 # Slide cue file — KP1 Module 1, Video 1.1 "Why your country needs a national EA"
-# Deck:  KP1_M1_1.1_Deck_v0.1.pptx (6 slides)
+# Deck:  KP1_M1_1.1_Deck_v0.2.pptx (5 slides)
 # Audio: KP1_Module1_Audio_1.1_v0.2.srt (runs to 5:19)
 # Approximate — derived by matching SRT content beats to slide content.
 
 0:00   # slide 1 — Title card
-0:33   # slide 2 — section card / setup
-1:26   # slide 3 — Four signs your government has no shared plan
-2:43   # slide 4 — The country pays in four directions at once
-3:32   # slide 5 — One root cause: there is no shared plan
-4:48   # slide 6 — Sources
+1:26   # slide 2 — Four signs your government has no shared plan
+2:43   # slide 3 — The country pays in four directions at once
+3:32   # slide 4 — One root cause: there is no shared plan
+4:48   # slide 5 — Sources
 ```
 
 Rules: exactly as many cues as the deck has slides; strictly increasing; no final "end" cue (the
