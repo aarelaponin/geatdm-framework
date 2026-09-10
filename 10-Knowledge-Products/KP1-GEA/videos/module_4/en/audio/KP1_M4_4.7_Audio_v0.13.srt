@@ -1,0 +1,296 @@
+1
+00:00:00,120 --> 00:00:02,420
+You know, when we look at government infrastructure, it's, uh,
+
+2
+00:00:03,080 --> 00:00:06,000
+it's pretty easy to just picture a ribbon-cutting ceremony.
+
+3
+00:00:06,040 --> 00:00:07,540
+Yeah, like building a physical bridge.
+
+4
+00:00:07,760 --> 00:00:11,800
+Exactly. You know, the bridge is built, the photo is taken, and everyone just goes home.
+
+5
+00:00:12,000 --> 00:00:14,500
+Right. Because the physical structure has a clear finish line.
+
+6
+00:00:15,060 --> 00:00:22,000
+But, um, step into the world of digital architecture for government systems, and that finish line completely vanishes.
+
+7
+00:00:22,360 --> 00:00:29,600
+Which brings us to today's deep dive. We're looking at phase five of digital architecture, which is called Execute and Govern.
+
+8
+00:00:30,140 --> 00:00:40,020
+Yes. And we'll be using our demonstration country, Progressa, pronounced progress, to see how a theoretical roadmap actually survives the real world.
+
+9
+00:00:40,040 --> 00:00:45,380
+Right. And if you're a government official managing these systems in your ministry or, you know, your program,
+
+10
+00:00:46,080 --> 00:00:51,340
+this is exactly how you prevent your digital systems from becoming completely fragmented and duplicated.
+
+11
+00:00:51,460 --> 00:00:52,180
+It really is.
+
+12
+00:00:52,260 --> 00:00:56,660
+And here is the truly fascinating part: phase five is actually the phase that never ends.
+
+13
+00:00:57,120 --> 00:01:04,860
+Yeah. It's all about turning an approved national enterprise architecture roadmap into, well, a continuous project pipeline.
+
+14
+00:01:05,200 --> 00:01:07,460
+So how does Progressa actually pull that off?
+
+15
+00:01:07,860 --> 00:01:12,280
+Well, it relies on three main things. First, the repository goes live.
+
+16
+00:01:12,380 --> 00:01:14,860
+Okay. As in, like the single store of architecture.
+
+17
+00:01:15,020 --> 00:01:16,440
+Right. It holds the layers,
+
+18
+00:01:17,060 --> 00:01:22,200
+uh, the sourcing decisions, the principles, and crucially, the decision log.
+
+19
+00:01:22,500 --> 00:01:26,290
+Oh, wow. So if someone tries to override a standard three years from now-
+
+20
+00:01:26,420 --> 00:01:29,500
+You have the exact record of why that standard was set in the first place.
+
+21
+00:01:29,560 --> 00:01:30,870
+That is incredibly useful.
+
+22
+00:01:30,900 --> 00:01:33,560
+It is, and it's managed by one named architect.
+
+23
+00:01:34,120 --> 00:01:38,080
+But, you know, a repository is just a dead database if no one is constantly updating it.
+
+24
+00:01:38,200 --> 00:01:40,670
+Right. Which brings us to the second thing, right?
+
+25
+00:01:40,700 --> 00:01:41,540
+The permanent team.
+
+26
+00:01:41,620 --> 00:01:47,820
+Exactly. A team of two to four architects who act as the standing muscle for cross-cutting decisions.
+
+27
+00:01:48,080 --> 00:01:49,560
+Okay, wait. Let me push back on that for a second.
+
+28
+00:01:49,600 --> 00:01:50,060
+Sure. Go ahead.
+
+29
+00:01:50,480 --> 00:01:54,700
+Why fund a permanent team if there are no active projects running at a given moment?
+
+30
+00:01:55,280 --> 00:01:58,620
+I mean, it sounds like paying a construction crew to just stand around in an empty lot.
+
+31
+00:01:58,920 --> 00:02:04,860
+I get that. But remember, this team reports directly to the digitalization officer.
+
+32
+00:02:04,870 --> 00:02:11,930
+Maintaining the P-EAR, uh, uh, the Public Administration Ecosystem Reference Architecture is an ongoing practice.
+
+33
+00:02:12,180 --> 00:02:14,460
+Oh, because external technology keeps evolving.
+
+34
+00:02:14,520 --> 00:02:18,020
+Exactly. Security protocols change, legacy systems decay.
+
+35
+00:02:18,080 --> 00:02:21,540
+If you don't have that team, cross-system alignment just disappears entirely.
+
+36
+00:02:21,600 --> 00:02:25,540
+Okay, that makes sense. So what is the third thing making phase five real?
+
+37
+00:02:25,580 --> 00:02:31,850
+The review gate. Let's say a new well-funded scholarship program arrives in Progressa in a real hurry.
+
+38
+00:02:32,090 --> 00:02:34,160
+Which, uh, happens all the time in government.
+
+39
+00:02:34,240 --> 00:02:35,200
+Oh, definitely. Yeah.
+
+40
+00:02:35,220 --> 00:02:40,780
+And they plan to build their own small learner register because integrating with the existing one just seems too slow.
+
+41
+00:02:40,840 --> 00:02:47,460
+I mean, that is like a department buying entirely new software just to avoid learning the secure centralized system everyone else uses.
+
+42
+00:02:47,560 --> 00:02:48,230
+Exactly. Wow.
+
+43
+00:02:48,240 --> 00:02:51,520
+It's a totally rational, fast choice for that specific project.
+
+44
+00:02:51,660 --> 00:02:53,340
+But incredibly costly for the whole of government.
+
+45
+00:02:53,540 --> 00:03:00,420
+Yes. And this is where the review gate steps in to ask a very simple question: Does a shared building block already exist?
+
+46
+00:03:00,700 --> 00:03:02,980
+And in this case, the answer is yes.
+
+47
+00:03:03,780 --> 00:03:05,240
+The learner register from wave one.
+
+48
+00:03:05,360 --> 00:03:07,250
+Exactly. They don't need a new one.
+
+49
+00:03:07,280 --> 00:03:08,700
+So what does the board actually do then?
+
+50
+00:03:08,720 --> 00:03:09,940
+Do they step in?
+
+51
+00:03:09,960 --> 00:03:10,220
+Yes.
+
+52
+00:03:10,880 --> 00:03:16,400
+The board rules that the project absolutely must consume the existing learner register.
+
+53
+00:03:16,440 --> 00:03:18,359
+They cannot build a fourth list.
+
+54
+00:03:18,400 --> 00:03:21,220
+But couldn't a simple procurement rule catch that?
+
+55
+00:03:21,240 --> 00:03:22,740
+Like, you know, when checking budgets.
+
+56
+00:03:23,340 --> 00:03:25,630
+No, a standard procurement rule wouldn't catch this at all.
+
+57
+00:03:25,780 --> 00:03:32,460
+That only looks at vendors. To catch this requires a whole of government view and a board that can actually say no.
+
+58
+00:03:32,840 --> 00:03:34,440
+What happens if the board doesn't step in?
+
+59
+00:03:34,640 --> 00:03:35,520
+Let's say they just, you know,
+
+60
+00:03:36,200 --> 00:03:36,900
+let it slide.
+
+61
+00:03:37,040 --> 00:03:41,720
+Well, if they let it slide, the systems become highly fragmented, siloed, and duplicated.
+
+62
+00:03:41,800 --> 00:03:43,260
+Just redundant data everywhere.
+
+63
+00:03:43,300 --> 00:03:47,380
+Right. The same citizen data gets rekeyed across multiple systems.
+
+64
+00:03:47,420 --> 00:03:51,540
+You end up locked into one supplier, and it becomes incredibly costly to change.
+
+65
+00:03:52,040 --> 00:03:54,520
+Wow. So how do you prevent that in the long term?
+
+66
+00:03:54,560 --> 00:04:01,960
+To prevent it, the board sits the business side and the IT side over the same repository four times a year, so they decide together forever.
+
+67
+00:04:02,020 --> 00:04:04,980
+Every single quarter. That is a serious commitment.
+
+68
+00:04:05,060 --> 00:04:09,820
+It is, but that's how you establish the standing muscle to keep things permanently aligned.
+
+69
+00:04:09,840 --> 00:04:11,260
+It goes back to what we said at the start.
+
+70
+00:04:11,600 --> 00:04:15,180
+Digital architecture isn't a physical bridge where you just cut a ribbon and walk away.
+
+71
+00:04:15,340 --> 00:04:25,220
+No, it's a living practice. You need to keep the repository live, use that review gate to catch duplicated efforts early, and make sure the board's decisions
+
+72
+00:04:25,240 --> 00:04:25,850
+are binding.
+
+73
+00:04:26,360 --> 00:04:29,700
+Which is a huge takeaway for anyone listening who works in a ministry.
+
+74
+00:04:29,740 --> 00:04:31,520
+It's all about that continuous oversight.
+

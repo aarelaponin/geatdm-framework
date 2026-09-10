@@ -288,3 +288,78 @@ re-cueing; the phonetic row for Progressa (§5 of the opener review) is still no
 
 Publication: YouTube metadata for M2–M4 (M1 has `KP1_M1_YouTube_Upload_Metadata_v0.1.md` as the
 pattern), the on-camera module intros, and the French mirror.
+
+## Name-slip re-rolls — 10 September 2026
+
+The opener review's §4 factual slips, fixed at the brief and re-rolled. **Four of five landed;
+4.3 does not converge and needs a decision.** No video has been re-cued or re-assembled yet — the
+four new takes are accepted but the cue files and MP4s on disk still belong to the old takes.
+
+| Video | Was | Now | Runtime | State |
+|---|---|---|---|---|
+| 3.4 | v0.6 "Pan-European Architecture" | **v0.10** | 4:44 | clean; says "PAERA framework", no expansion |
+| 4.4 | v0.4 "LoCTI principles" | **v0.10** | 4:15 | clean; plain "localized", PAERA correct |
+| 4.6 | v0.7 "Progressive Phase Four", "PAERA or PR" | **v0.14** | 4:48 | clean |
+| 4.7 | v0.9 "the progressive framework" | **v0.13** | 4:31 | clean |
+| 4.3 | v0.1 "Pay Your Anchored Standards" | — | — | **blocked, see below** |
+
+37 takes generated: 3.4 ×4, 4.3 ×16, 4.4 ×6, 4.6 ×7, 4.7 ×4. Only the four takes of record are
+committed, as before.
+
+### 4.3 mangles PAERA in all ten of its takes
+
+`PERA` ×4 takes, `PEERA` ×2, `PAERO` ×2, `PEURA` ×2. Every roll produced a different wrong form,
+so this is not a coin flip that another try wins — it is what this subtopic's notebook does with
+the name. It is now the kit's own trigger for a **brief-level fix rather than another re-roll**.
+Options, cheapest first:
+
+1. **Drop the acronym from 4.3's §2.** The video is Phase 2 Assess; it needs "the reference
+   architecture", not the initialism. If §2 never says PAERA, the hosts have nothing to mangle —
+   and the unconditional §4 row still catches them if they reach for it anyway.
+2. **Accept one wrong form**, as the show-open residue was accepted on 7 Sep. Weaker here: the
+   others are all correct now, so 4.3 would be the only video misnaming the framework.
+3. Keep re-rolling. Ten takes say this does not pay.
+
+### The check was passing the defect it was re-rolling for — three times
+
+Each fix below was found only because a take that had "passed" was read by hand.
+
+| Problem | Why it passed | Fix |
+|---|---|---|
+| `registry` fired on the decks' own copy ("Learner Registry", "duplicate registries" — 20 of 22 decks) | house-term row had no notion of deck vocabulary | `srt_drift_check --deck`, wired through `take_until_pass`; a row whose wrong form is in the deck is skipped. Same fix `trim_outro.py` took on 9 Sep |
+| "Progresa" (one s) failed all three 4.4 tries while two takes were otherwise clean | it is a **homophone** of Progressa — the spelling in an SRT is the transcriber's choice, not evidence about the audio | row removed. The pronunciation the brief asks for (pro-GRESS-a, not the Mexican PROGRESA) is real but **checkable only by ear** |
+| `PERA`, then `PEURA`, shipped through a list containing `PRA`/`Para`/`Paira`/`Piera` | a whitelist of known wrong forms cannot anticipate the next one | fails closed now: any capitalised token within **two edits of PAERA** that the deck does not itself use. The deck supplies the exemptions (PNEA, PNIA, PDGA, PLR) |
+
+### The same slip is in videos already accepted, including a shipped one
+
+The fail-closed rule was swept over every take on disk:
+
+- **1.1 v0.13 says "PERA"** — Module 1, re-rendered 9 Sep, published.
+- **1.5 v0.4 says "PAERO"**; its earlier v0.2 said "PEERA".
+- **4.8 v0.7 says "PAER"** — the accepted take of record.
+
+None was caught before because the checker could not see it. Not acted on: it is the same
+decision as 4.3 above, and it now reaches Module 1.
+
+### What changed in the kit
+
+| Change | Where |
+|---|---|
+| Progressa phonetic row (pro-GRESS-a, double s, not the Mexican programme) | `audio-brief-template.md` §4 + `make_brief.py` `TERM_ROWS` |
+| `localised principles` row (not "LoCTI") | same |
+| EA-vs-PAERA row — they are two different things (3.3 conflated them) | same |
+| **PAERA row is unconditional.** The §2 filter was stripping it from 16 of 22 briefs; the name reaches the hosts through every deck's Sources card, which renders as silence and so never triggered the filter. Three of the takes with no row invented an expansion | same |
+| **Expansion is no longer requested** — "say the name and carry on; expand it only where §2 does". Across KP1 only 1.5's §2 introduces PAERA; every later video is talking to an audience that already knows the term | same |
+| Prompt terminology line: pins the expansion, and adds the Progressa pronunciation **only where the brief uses it** | `make_brief.py` `PROMPT` |
+| `--deck`, homophone row removed, PAERA near-miss rule | `srt_drift_check.py` |
+| passes `--deck` to the audit | `take_until_pass.py` |
+
+All 35 briefs and prompts regenerated; `brief_deck_check` clean on all five modules;
+`test_resolve` OK.
+
+### Next
+
+1. Decide 4.3 (option 1 above is the cheap one), and whether 1.1, 1.5 and 4.8 follow.
+2. Re-cue and re-assemble 3.4, 4.4, 4.6, 4.7 from their new takes — cue files and MP4s still
+   belong to the superseded ones.
+3. Then publication, as before.

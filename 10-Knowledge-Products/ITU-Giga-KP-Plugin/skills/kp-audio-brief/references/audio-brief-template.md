@@ -163,14 +163,21 @@ the right-hand column:
 **This table is a word-choice and pronunciation guide for §2's content — it is not content.**
 Do not introduce, define, or discuss any term below that does not already appear in §2. When a
 constant term below is not used by this video's §2, delete its row from the copy — hosts have
-imported unused table terms and invented content around them.
+imported unused table terms and invented content around them. **The PAERA row is the exception:
+keep it in every brief.** The name reaches the hosts whether §2 uses it or not — every deck's
+Sources card cites PAERA v1.0 — and the takes that had no PAERA row invented an expansion on
+air. The row constrains a term the generator uses anyway; it does not introduce one. It does
+not ask for the expansion either — across KP1 only 1.5's §2 introduces PAERA, and every later
+video is talking to an audience that already knows the term.
 
 | Say this | Not this |
 |---|---|
-| the **PAERA** framework — the Public Administration Ecosystem Reference Architecture (spell "P-A-E-R-A" the first time only) | "the PRA framework", "Paira", "Para" |
+| **PAERA**, or the PAERA framework — say the name and carry on. Expand it only where §2 expands it; by this point the audience knows the term. Where §2 does, the one expansion is the Public Administration Ecosystem Reference Architecture | "the PRA framework", "Paira", "Para", "PR"; "Pan-European Architecture", "Pay Your Anchored Standards", or any other guessed expansion — and no expansion at all in a video whose §2 does not give one |
+| **Progressa** — pro-GRESS-a, three syllables, double s. It is this course's demonstration country and nothing else | "Progressive", "Progresa" with one s, or PROGRESA the Mexican programme |
+| **localised** principles — PAERA's principles pointed at your own laws | "LoCTI principles" or any acronym; localised is a plain English word here |
 | the **European Interoperability Framework** | "the EU-European Interoperability Framework" |
 | the **once-only principle** | "the ask-once principle" |
-| **national Enterprise Architecture**; abbreviate to **"EA"** only after saying it in full once | "an EA" on first use |
+| **national Enterprise Architecture**; abbreviate to **"EA"** only after saying it in full once. The EA is your country's own architecture; PAERA is the reference architecture it is anchored to — two different things | "an EA" on first use; "the EA, or PAERA as it is often called" |
 | **register** (a list of people or entities) | "registry" |
 | **building block** | "module", "component" |
 | **GovStack** | "Gov Stack", "the GovStack platform" |

@@ -1,0 +1,240 @@
+1
+00:00:00,120 --> 00:00:03,760
+So, um, imagine you're zoning a massive new city.
+
+2
+00:00:03,770 --> 00:00:06,020
+You don't just pour all the concrete at once, right?
+
+3
+00:00:06,520 --> 00:00:16,100
+You lay the plumbing, you sequence the construction, and, well, you figure out how to fund the project without the money just vanishing halfway through, and a digital ecosystem requires that
+
+4
+00:00:16,120 --> 00:00:17,480
+exact same discipline.
+
+5
+00:00:17,560 --> 00:00:21,660
+Yeah, absolutely. I mean, a city half-built is essentially an expensive ghost town,
+
+6
+00:00:22,280 --> 00:00:25,940
+and the digital equivalent is honestly just as costly.
+
+7
+00:00:25,960 --> 00:00:33,100
+You end up with these, you know, fragmented, siloed systems where data is constantly being rekeyed and efforts are endlessly duplicated.
+
+8
+00:00:33,600 --> 00:00:40,020
+Right. Which brings us to today's deep dive into phase four, which is the plan phase of large-scale digital transformation.
+
+9
+00:00:40,610 --> 00:00:49,260
+We're looking at how complex systems actually move from abstract policy decisions to a fully sequenced, costed roadmap in, what, just six to eight weeks.
+
+10
+00:00:49,320 --> 00:00:50,780
+Yeah, it's a very fast turnaround.
+
+11
+00:00:50,860 --> 00:00:59,800
+It really is. And we'll be using the demonstration country Progressa and the POA framework, that's the Public Administration Ecosystem Reference Architecture,
+
+12
+00:01:00,320 --> 00:01:01,240
+as our models today.
+
+13
+00:01:02,000 --> 00:01:11,560
+So whether you are managing an ecosystem of services in your ministry or trying to align a massive multi-year budget, we are unpacking how you actually structure a
+
+14
+00:01:11,620 --> 00:01:16,240
+rollout that satisfies both your technical architects and your budget decision-makers.
+
+15
+00:01:16,520 --> 00:01:24,700
+Exactly. And Progressa approaches this by, you know, breaking the massive target goal into four distinct waves, because you really have to start with the foundation.
+
+16
+00:01:25,240 --> 00:01:26,880
+So wave one is inception.
+
+17
+00:01:27,420 --> 00:01:29,300
+Okay, what does inception actually entail?
+
+18
+00:01:29,460 --> 00:01:34,180
+Well, this is where you establish your repository and an enterprise architecture board to actually govern the rules.
+
+19
+00:01:34,240 --> 00:01:37,680
+And crucially, this is also when the learner register becomes authoritative.
+
+20
+00:01:38,120 --> 00:01:43,180
+Let's pause and define what that means in practice because, you know, authoritative is kind of a heavy architectural term.
+
+21
+00:01:43,240 --> 00:01:49,440
+Right. Yeah, it is. It basically means the learner register becomes the single unquestionable source of truth for the entire government.
+
+22
+00:01:50,240 --> 00:01:57,020
+So no other department is allowed to just invent or store their own separate, unverified student profiles anymore.
+
+23
+00:01:57,360 --> 00:01:59,640
+Okay, wait, I have a question about the sequencing here then.
+
+24
+00:02:00,520 --> 00:02:04,420
+Wave two is supposed to deliver the high priority use case, right?
+
+25
+00:02:04,860 --> 00:02:06,740
+Specifically, the single learner record.
+
+26
+00:02:07,380 --> 00:02:12,240
+But the actual shared data exchange backbone doesn't get built until wave three.
+
+27
+00:02:12,300 --> 00:02:13,240
+Yes, that's the plan.
+
+28
+00:02:13,360 --> 00:02:17,790
+So why push the single learner record out so early, like inside the first year?
+
+29
+00:02:18,420 --> 00:02:25,100
+I mean, wouldn't it make more technical sense to just wait until that entire data backbone is completely finished before you start connecting systems?
+
+30
+00:02:25,180 --> 00:02:26,200
+Technically, sure. Yeah.
+
+31
+00:02:26,340 --> 00:02:28,710
+Perhaps. But politically, waiting is fatal.
+
+32
+00:02:29,020 --> 00:02:32,150
+I mean, every wave must deliver something visible, not just groundwork.
+
+33
+00:02:32,460 --> 00:02:39,800
+If a government minister promises a single learner record, and you say, "Well, wait until year five to deliver it," you lose all your political support.
+
+34
+00:02:39,900 --> 00:02:42,040
+Oh, wow. Right. You lose the funding too.
+
+35
+00:02:42,100 --> 00:02:45,130
+Exactly. Delivering that primary policy promise early
+
+36
+00:02:45,760 --> 00:02:51,400
+in wave two proves the system actually works, and it maintains momentum for the heavy lifting later.
+
+37
+00:02:51,440 --> 00:03:01,020
+That makes perfect sense. So you secure the early win, programs stop keeping isolated lists, and then in wave three, you can finally justify the heavy investment for that data exchange
+
+38
+00:03:01,100 --> 00:03:01,580
+backbone.
+
+39
+00:03:01,840 --> 00:03:06,400
+Right. The digital plumbing that automatically routes all that information across the government.
+
+40
+00:03:06,420 --> 00:03:11,900
+And then wave four is mass scale, which brings every single education service onto that backbone.
+
+41
+00:03:12,100 --> 00:03:18,580
+Okay. But this deliberate sequence brings us to honestly the most difficult hurdle, which is paying for it.
+
+42
+00:03:18,740 --> 00:03:25,140
+Oh, yeah. The documentation really stresses the need for honest directional costing for each wave.
+
+43
+00:03:25,860 --> 00:03:29,900
+So wave one is mostly personnel costs for that enterprise architecture team.
+
+44
+00:03:30,260 --> 00:03:34,310
+Wave two requires funding for integration, like connecting authorities to the registers.
+
+45
+00:03:34,350 --> 00:03:38,100
+And then wave three requires massive infrastructure investment for the backbone, right?
+
+46
+00:03:38,260 --> 00:03:40,440
+Exactly. I think the keyword there is directional.
+
+47
+00:03:41,160 --> 00:03:44,000
+You're not looking for an exact invoice down to the penny.
+
+48
+00:03:44,420 --> 00:03:48,840
+You just need a solid estimate to secure a multi-year envelope, right?
+
+49
+00:03:48,880 --> 00:03:54,080
+Because relying on an annual budget line that vanishes next year is how these projects stall.
+
+50
+00:03:54,140 --> 00:03:55,820
+Right. You need that five-year guarantee.
+
+51
+00:03:55,860 --> 00:04:02,440
+Yeah. And looking at how this roadmap document functions, it acts almost like a Rosetta Stone for the entire organization.
+
+52
+00:04:02,500 --> 00:04:08,190
+That's a great way to put it. It really is the single page both sides point at, like a minister reads the outcomes and the dates.
+
+53
+00:04:08,700 --> 00:04:12,180
+They see, oh, single learner record delivered by next year.
+
+54
+00:04:12,240 --> 00:04:16,810
+While the technical architects read the exact same document and see the strict dependencies.
+
+55
+00:04:16,899 --> 00:04:22,880
+Right. They see, ah, wave two cannot start until the learner register is made authoritative in wave one.
+
+56
+00:04:22,920 --> 00:04:27,600
+So policy goals and technical realities align without requiring any translation.
+
+57
+00:04:27,640 --> 00:04:29,580
+And everything culminates in the fourth sign-off.
+
+58
+00:04:30,100 --> 00:04:36,620
+Roughly six months from the first day of discovery, decision-makers approve this roadmap and commit that multi-year budget.
+
+59
+00:04:37,040 --> 00:04:40,340
+The plan is locked, and the project finally moves from planning to building.
+
+60
+00:04:40,740 --> 00:04:48,600
+Yeah. And that strict sequence and guaranteed capital are exactly what prevent the rollout from becoming fragmented or locked into one supplier down the line.
+

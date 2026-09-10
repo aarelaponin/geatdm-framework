@@ -58,10 +58,28 @@ FILLER = [
 # term -> (wrong forms, correct form)
 TERMINOLOGY = [
     (r"\bPRA framework\b", "PAERA (not 'PRA')"),
-    (r"\bPara\b|\bPaira\b|\bPiera\b", "PAERA — spelled P-A-E-R-A on first mention"),
+    # "PERA" joined the list on 10 Sep: two of the five re-rolled takes dropped the A. Every
+    # variant here is a form actually heard on air, not a guess at what might go wrong.
+    (r"\bPara\b|\bPaira\b|\bPiera\b|\bPERA\b|\bPeira\b",
+     "PAERA — spelled P-A-E-R-A, all five letters"),
     (r"EU[- ]European Interoperability", "'the European Interoperability Framework'"),
     (r"\bask[- ]once\b", "'the once-only principle'"),
     (r"\bregistr(y|ies)\b", "'register' / 'registers' (KP house term)"),
+    # Invented PAERA expansions and name slips — heard on air in the 7-9 Sep batch. The audit
+    # could not see them, so the re-roll loop passed takes carrying the exact defect it was
+    # re-rolling for.
+    (r"\bPan[- ]European Architecture\b|\bPay Your Anchored Standards\b",
+     "the Public Administration Ecosystem Reference Architecture — the only expansion of PAERA"),
+    (r"\bPAERA(?: framework)? or PR\b|\bthe PR framework\b",
+     "PAERA — spelled P-A-E-R-A, never abbreviated further"),
+    (r"\bLoCTI\b|\bLockty\b|\bLoctee\b|\bLoc[- ]Tee\b", "'localised principles'"),
+    (r"\bProgressive (?:framework|architecture|phase|Phase)\b|\bphase \w+ of the progressive\b",
+     "Progressa — pro-GRESS-a, the demonstration country"),
+    # ponytail: no row for "Progresa" spelled with one s. It is a homophone of "Progressa", so
+    # the spelling in an SRT is the transcriber's choice, not evidence about the audio — the
+    # 10 Sep 4.4 batch failed all three tries on it while two of those takes were otherwise
+    # clean. The pronunciation the brief asks for (pro-GRESS-a, not the Mexican PROGRESA) is
+    # real but only checkable by ear; the brief and prompt steer it, no automated gate can.
 ]
 
 # citizen-at-the-counter framing — the inversion that matters most
@@ -129,12 +147,66 @@ def mmss(sec):
     return f"{int(sec) // 60}:{int(sec) % 60:02d}"
 
 
+def _lev(a, b):
+    prev = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        cur = [i]
+        for j, cb in enumerate(b, 1):
+            cur.append(min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (ca != cb)))
+        prev = cur
+    return prev[-1]
+
+
+def paera_near_misses(text, deck_text):
+    """Any near-miss of PAERA the deck does not itself use.
+
+    A list of known wrong forms cannot keep up: "PRA" and "Paira" were on it, then 10 Sep
+    produced "PERA" on two takes and "PEURA" on the next one. Each time the gate passed a take
+    carrying the defect it was re-rolling for. So this fails closed — flag anything two edits
+    from PAERA — and uses the deck as the exemption list, because the real acronyms around it
+    (PNEA, PNIA, PDGA, PLR) are all named in the deck and PAERA's manglings are not.
+    """
+    deck_words = set(re.findall(r"\b[A-Za-z]{2,8}\b", deck_text.upper()))
+    bad = set()
+    for tok in set(re.findall(r"\b[A-Z][A-Za-z]{2,6}\b", text)):
+        up = tok.upper()
+        if up == "PAERA" or up in deck_words:
+            continue
+        if _lev(up, "PAERA") <= 2:
+            bad.add(tok)
+    return sorted(bad)
+
+
+def deck_terms(path):
+    """House-term rows the deck's own copy uses, so they cannot count as drift.
+
+    Twenty of the twenty-two KP1 decks write "Learner Registry" or "duplicate registries" in
+    approved slide copy, and the house-term row failed every take that quoted them. That cost
+    4.3 a whole re-roll on 10 Sep, and inflated the terminology numbers in the 8 Sep batch.
+    Same fix trim_outro.py took: let the deck say what its own vocabulary is.
+    """
+    from pptx import Presentation                                    # only needed with --deck
+    blob = []
+    for slide in Presentation(path).slides:
+        for sh in slide.shapes:
+            if sh.has_text_frame:
+                blob.append(sh.text_frame.text)
+        if slide.has_notes_slide:
+            blob.append(slide.notes_slide.notes_text_frame.text)
+    text = " ".join(blob)
+    return {pat for pat, _ in TERMINOLOGY if re.search(pat, text, re.I)}, text
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("srt")
     ap.add_argument("--target", type=int, default=240, help="target runtime, seconds")
     ap.add_argument("--tolerance", type=int, default=15, help="± seconds allowed")
+    ap.add_argument("--deck", help="the video's .pptx — house-term rows whose wrong form appears "
+                                   "in the deck's own copy are skipped, because the hosts are "
+                                   "then quoting approved substance, not drifting from it")
     args = ap.parse_args()
+    deck_vocab, deck_text = deck_terms(args.deck) if args.deck else (set(), "")
 
     cues = parse_srt(args.srt)
     if not cues:
@@ -205,8 +277,16 @@ def main():
 
     # 5. terminology
     for pat, fix in TERMINOLOGY:
+        if pat in deck_vocab:
+            continue        # the deck says it too — see --deck
         if re.search(pat, full, re.I):
             fails.append(f"TERMINOLOGY — say {fix}")
+
+    if deck_text:
+        near = paera_near_misses(full, deck_text)
+        if near:
+            fails.append("TERMINOLOGY — " + ", ".join(near)
+                         + " is not PAERA; say P-A-E-R-A, all five letters")
 
     # 6. framing inversion
     fr = [p for p in CITIZEN_FRAMING if re.search(p, low)]

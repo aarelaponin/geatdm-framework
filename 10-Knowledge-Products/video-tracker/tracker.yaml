@@ -85,7 +85,8 @@ kps:
              en: {accepted: v0.7, note: 'accepted by decision 9 Sep — ships "nightmare", "a mess", "hostage" on air; reversible by re-roll'}}
           - {code: "3.3", title: "Keep the repository true — the update discipline", mins: ~4,
              en: {accepted: v0.6, note: 'settled on runtime (−47s)'}}
-          - {code: "3.4", title: "Stand up an EA Board that can actually say no", mins: ~4, en: {accepted: v0.6}}
+          - {code: "3.4", title: "Stand up an EA Board that can actually say no", mins: ~4,
+             en: {accepted: v0.10, note: 're-rolled 10 Sep for the PAERA expansion slip; cues + MP4 still on v0.6'}}
           - {code: "3.5", title: "Review projects against the architecture", mins: ~4, en: {accepted: v0.1, note: 'fully clean'}}
           - {code: "3.6", title: "Show the EA is working — the few metrics that matter", mins: ~4, en: {accepted: v0.2}}
           - {code: "3.7", title: "Keep the practice alive past year two", mins: ~5, en: {accepted: v0.2}}
@@ -98,12 +99,15 @@ kps:
         topics:
           - {code: "4.1", title: "Meet Progressa — a real sector with a real fragmentation problem", mins: ~3, en: {accepted: v0.5}}
           - {code: "4.2", title: "Phase 1, Discover — map what the sector has today", mins: ~4, en: {accepted: v0.9}}
-          - {code: "4.3", title: "Phase 2, Assess — find the gaps and rank them", mins: ~3, en: {accepted: v0.1}}
-          - {code: "4.4", title: "Phase 3, Adapt — fit PAERA and decide build, buy or share", mins: ~3, en: {accepted: v0.4, note: 'fully clean'}}
+          - {code: "4.3", title: "Phase 2, Assess — find the gaps and rank them", mins: ~3,
+             en: {accepted: v0.1, blocker: 'PAERA mangled in all 10 takes (PERA/PEERA/PAERO/PEURA) — re-rolling does not converge; needs a brief fix or a decision'}}
+          - {code: "4.4", title: "Phase 3, Adapt — fit PAERA and decide build, buy or share", mins: ~3,
+             en: {accepted: v0.10, note: 're-rolled 10 Sep — LoCTI slip gone; cues + MP4 still on v0.4'}}
           - {code: "4.5", title: "Phase 4, Plan — design the target architecture", mins: ~4, en: {accepted: v0.12}}
           - {code: "4.6", title: "Phase 4, Plan — sequence the roadmap and cost it", mins: ~4,
-             en: {accepted: v0.7, note: 'settled on runtime (+63s)'}}
-          - {code: "4.7", title: "Phase 5, Execute & Govern — stand up the living EA", mins: ~3, en: {accepted: v0.9}}
+             en: {accepted: v0.14, note: 're-rolled 10 Sep, name slips gone (4:48); cues + MP4 still on v0.7'}}
+          - {code: "4.7", title: "Phase 5, Execute & Govern — stand up the living EA", mins: ~3,
+             en: {accepted: v0.13, note: 're-rolled 10 Sep, name slips gone (4:31); cues + MP4 still on v0.9'}}
           - {code: "4.8", title: "Run this on your own sector — the transferable recipe", mins: ~4, en: {accepted: v0.7}}
 
       - number: 5

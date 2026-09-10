@@ -1,0 +1,272 @@
+1
+00:00:00,120 --> 00:00:00,930
+So, um,
+
+2
+00:00:02,040 --> 00:00:05,940
+imagine your ministry spends $50 million on a new digital ID system.
+
+3
+00:00:06,000 --> 00:00:11,440
+Okay. And then, you know, you find out the Department of Education just spent forty million building the exact same thing next door.
+
+4
+00:00:11,820 --> 00:00:14,580
+Yeah. I mean, it happens all the time. It is a classic problem.
+
+5
+00:00:14,640 --> 00:00:15,260
+It really is.
+
+6
+00:00:15,940 --> 00:00:22,900
+So today, we are doing a deep dive into how you actually stop this massive duplication.
+
+7
+00:00:22,960 --> 00:00:29,820
+Our mission is to explore how large government digital systems can be upgraded without becoming completely siloed.
+
+8
+00:00:29,880 --> 00:00:36,680
+Exactly. And we are looking at a framework called PAERA, the Public Administration Ecosystem Reference Architecture.
+
+9
+00:00:36,860 --> 00:00:41,720
+Right. And specifically, we are focusing on phase three, which is known as Adapt.
+
+10
+00:00:42,500 --> 00:00:46,900
+We will use a demonstration country called ProgresA to see how this actually works on the ground.
+
+11
+00:00:46,940 --> 00:00:48,900
+So this is where the theory hits reality, right?
+
+12
+00:00:48,940 --> 00:00:52,660
+Because to avoid that duplicated spending, your program needs a master blueprint.
+
+13
+00:00:52,780 --> 00:00:53,940
+Right, an enterprise architecture.
+
+14
+00:00:54,600 --> 00:00:58,660
+But, um, you cannot just drop a generic blueprint onto a government.
+
+15
+00:00:58,700 --> 00:01:04,650
+During the Adapt phase, architects take the PAERA framework and fit it to ProgresA's specific needs.
+
+16
+00:01:05,120 --> 00:01:07,100
+Without breaking the overarching logic.
+
+17
+00:01:08,000 --> 00:01:10,540
+But wait, if your minister has to adjust the rules anyway,
+
+18
+00:01:11,280 --> 00:01:14,140
+why not just write new principles from scratch?
+
+19
+00:01:14,180 --> 00:01:17,920
+Wouldn't you want them to perfectly match your local terrain?
+
+20
+00:01:18,020 --> 00:01:23,880
+Well, uh, you would think so, but drafting from scratch just takes months of bureaucratic arguing.
+
+21
+00:01:23,940 --> 00:01:24,460
+Oh, I bet.
+
+22
+00:01:24,520 --> 00:01:30,510
+Yeah. It is highly inefficient. Instead, you inherit the foundational thinking, and you just localize the wording.
+
+23
+00:01:31,020 --> 00:01:38,130
+For instance, ProgresA takes the baseline once only principle and points it directly at their local data protection act.
+
+24
+00:01:38,780 --> 00:01:42,200
+Okay, so they keep the strong foundation but make it legally binding locally.
+
+25
+00:01:42,260 --> 00:01:44,580
+Exactly, and they add necessary local context.
+
+26
+00:01:44,740 --> 00:01:47,830
+Yeah. Like, uh, principle for offline access in rural schools.
+
+27
+00:01:48,320 --> 00:01:50,580
+Plus, every principle gets a written implication.
+
+28
+00:01:50,600 --> 00:01:56,380
+A written implication. So if an agency tries to ignore a rule later- Mm. -the board has a written standard to settle the argument.
+
+29
+00:01:56,430 --> 00:01:58,780
+Precisely. It keeps things from getting fragmented.
+
+30
+00:01:58,840 --> 00:02:03,380
+Okay, so once the rules are localized, how does your ministry actually get the technology?
+
+31
+00:02:03,440 --> 00:02:05,880
+Like, how do they acquire the digital building blocks?
+
+32
+00:02:06,320 --> 00:02:12,020
+So looking at the blueprints, they use a deliberate matrix of four choices for sourcing.
+
+33
+00:02:12,500 --> 00:02:13,140
+You have build,
+
+34
+00:02:13,740 --> 00:02:15,780
+buy, share and sandbox.
+
+35
+00:02:16,040 --> 00:02:19,660
+Got it. So four options. Let us walk through those.
+
+36
+00:02:19,720 --> 00:02:21,540
+How do they decide what to build?
+
+37
+00:02:21,600 --> 00:02:23,540
+Well, they build things like the learner register.
+
+38
+00:02:23,980 --> 00:02:25,980
+Right, because that is the authoritative core.
+
+39
+00:02:26,100 --> 00:02:28,100
+Nobody else can own that data.
+
+40
+00:02:28,240 --> 00:02:31,220
+Exactly. But then you have things like identity and data exchange.
+
+41
+00:02:32,020 --> 00:02:32,549
+For those-
+
+42
+00:02:32,980 --> 00:02:33,660
+They share them.
+
+43
+00:02:33,900 --> 00:02:35,740
+Right. They choose to share. ProgresS
+
+44
+00:02:36,440 --> 00:02:39,140
+consumes the national identity authority's platform.
+
+45
+00:02:39,590 --> 00:02:41,530
+They never mint a second identity.
+
+46
+00:02:41,640 --> 00:02:46,440
+Which is brilliant, because otherwise, data just ends up being rekeyed across duplicated systems.
+
+47
+00:02:46,560 --> 00:02:49,620
+Right, and they also share the digital government authority as backbone.
+
+48
+00:02:49,900 --> 00:02:54,010
+Oh, okay. But what about features that are not totally unique to government, like exam management?
+
+49
+00:02:54,400 --> 00:02:56,060
+You would not build that from scratch, right?
+
+50
+00:02:56,080 --> 00:03:01,540
+No, you buy it. It is a solved problem. There are mature products on the market, so you just purchase a license.
+
+51
+00:03:02,320 --> 00:03:05,359
+Building that custom would just leave you locked in- Yeah. -to one supplier.
+
+52
+00:03:05,480 --> 00:03:07,420
+Or make things really costly to change later.
+
+53
+00:03:07,810 --> 00:03:11,620
+That makes total sense. So what about the fourth option, the sandbox?
+
+54
+00:03:11,780 --> 00:03:17,460
+Ah, right. Sandbox is for wildcard situations, like a brand-new analytics capability.
+
+55
+00:03:18,290 --> 00:03:23,240
+Nobody is entirely sure how it will integrate, so it must be tested before committing.
+
+56
+00:03:23,320 --> 00:03:25,600
+So you prove it works without risking the budget.
+
+57
+00:03:26,280 --> 00:03:29,240
+So looking at these four options, is there a default?
+
+58
+00:03:29,370 --> 00:03:31,720
+The default is always to reuse and share.
+
+59
+00:03:32,280 --> 00:03:37,109
+Always. Okay. Building custom is an exception that requires serious justification,
+
+60
+00:03:37,740 --> 00:03:43,500
+and securing those whole of government savings requires a sector-wide architect, not just a procurement rule.
+
+61
+00:03:43,560 --> 00:03:46,440
+Right, to stop individual agencies from just going rogue.
+
+62
+00:03:46,900 --> 00:03:49,500
+And this whole Adapt phase is actually surprisingly fast, right?
+
+63
+00:03:49,680 --> 00:03:50,780
+Like four to six weeks.
+
+64
+00:03:50,880 --> 00:03:53,160
+Yeah. But it ends with a very consequential gate.
+
+65
+00:03:53,840 --> 00:04:00,300
+The board officially signs off on the localized principles in that specific build, buy, share sandbox matrix.
+
+66
+00:04:00,580 --> 00:04:06,890
+So if you skip that final sign-off, every individual project just relitigates the build versus reuse debate all over again.
+
+67
+00:04:06,940 --> 00:04:11,640
+Exactly. Which causes the exact duplicated systems this architecture exists to prevent.
+
+68
+00:04:11,840 --> 00:04:15,400
+Right. That sign-off legally commits the agencies to cooperation.
+

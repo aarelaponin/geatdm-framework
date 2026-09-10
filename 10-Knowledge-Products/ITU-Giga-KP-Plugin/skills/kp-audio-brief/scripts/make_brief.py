@@ -310,17 +310,35 @@ The audio is correct when:
 """
 
 # Constant rows, kept only when the video's §2 actually uses the term — an unused row is content
-# the hosts invent around. Each row is (trigger regex, "say this", "not this").
+# the hosts invent around. Each row is (trigger regex, "say this", "not this"); a trigger of None
+# means always keep.
+#
+# PAERA is always kept. Its name reaches the hosts whether or not §2 uses it — every deck's
+# Sources card cites PAERA v1.0, and the Sources segment is rendered as silence, so the trigger
+# never saw it. Sixteen of the twenty-two M2-M4 briefs came out with no PAERA row, and three of
+# those takes then invented an expansion on air ("Pan-European Architecture",
+# "Pay Your Anchored Standards"). This row does not introduce the term; it constrains a term the
+# generator uses anyway.
 TERM_ROWS = [
-    (r"\bPAERA\b", "the **PAERA** framework — the Public Administration Ecosystem Reference "
-                   "Architecture (spell \"P-A-E-R-A\" the first time only)",
-     "\"the PRA framework\", \"Paira\", \"Para\""),
+    (None, "**PAERA**, or the PAERA framework — say the name and carry on. Expand it only where "
+           "§2 expands it; by this point the audience knows the term. Where §2 does, the one "
+           "expansion is the Public Administration Ecosystem Reference Architecture",
+     "\"the PRA framework\", \"Paira\", \"Para\", \"PR\"; \"Pan-European Architecture\", "
+     "\"Pay Your Anchored Standards\", or any other guessed expansion — and no expansion at all "
+     "in a video whose §2 does not give one"),
+    (r"\bProgressa\b", "**Progressa** — pro-GRESS-a, three syllables, double s. It is this "
+                        "course's demonstration country and nothing else",
+     "\"Progressive\", \"Progresa\" with one s, or PROGRESA the Mexican programme"),
+    (r"\blocalis", "**localised** principles — PAERA's principles pointed at your own laws",
+     "\"LoCTI principles\" or any acronym; localised is a plain English word here"),
     (r"European Interoperability Framework", "the **European Interoperability Framework**",
      "\"the EU-European Interoperability Framework\""),
     (r"once-only", "the **once-only principle**", "\"the ask-once principle\""),
     (r"\bEnterprise Architecture\b|\bEA\b",
      "**national Enterprise Architecture**; abbreviate to **\"EA\"** only after saying it in "
-     "full once", "\"an EA\" on first use"),
+     "full once. The EA is your country's own architecture; PAERA is the reference architecture "
+     "it is anchored to — two different things",
+     "\"an EA\" on first use; \"the EA, or PAERA as it is often called\""),
     (r"\bregisters\b|\b(?:the|a|one|national|base|authoritative) register\b",
      "**register** (a list of people or entities)", "\"registry\""),
     (r"building block", "**building block**", "\"module\", \"component\""),
@@ -465,15 +483,23 @@ def main():
         clock += a
 
     body = "\n".join(parts)
-    used = [f"| {say} | {no} |" for pat, say, no in TERM_ROWS if re.search(pat, body, re.I)]
+    used = [f"| {say} | {no} |" for pat, say, no in TERM_ROWS
+            if pat is None or re.search(pat, body, re.I)]
     fields = dict(
         kp=kp, mod=mod, sub=sub, title=title, deck=deck.name, nslides=len(slides), secs=secs,
         mins=round(secs / 60), ceiling=mmss(secs + 60), ceilmins=round(secs / 60) + 1,
         lo=mmss(secs - 30), hi=mmss(secs + 30), segments=body, terms="\n".join(used) + "\n",
         brief=f"{stem}_AudioBrief_v0.{ver}.md",
-        termline="Say \"PAERA\" (spelled P-A-E-R-A on first mention), \"register\" not "
-                 "\"registry\", \"building block\" — never \"module\" or \"component\". "
-                 "Invent no figures, dates, countries or examples.",
+        # The Progressa clause is conditional for the same reason TERM_ROWS are filtered: naming
+        # the demonstration country to a video that never uses it invites the hosts to bring it in.
+        termline="Say \"PAERA\" as a name; do not expand it unless the brief does, and if you "
+                 "do, the only expansion is \"Public Administration Ecosystem Reference "
+                 "Architecture\". "
+                 "\"register\" not \"registry\", \"building block\" — never \"module\" or "
+                 "\"component\". "
+                 + ("Say \"Progressa\" as pro-GRESS-a — never \"Progressive\", never "
+                    "\"Progresa\". " if re.search(r"\bProgressa\b", body, re.I) else "")
+                 + "Invent no figures, dates, countries or examples.",
     )
     for name, tpl in ((fields["brief"], BRIEF),
                       (f"{stem}_NotebookLM_Prompt_v0.{ver}.md", PROMPT)):

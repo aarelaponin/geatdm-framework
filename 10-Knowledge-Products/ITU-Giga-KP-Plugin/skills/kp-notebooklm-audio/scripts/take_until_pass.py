@@ -102,8 +102,11 @@ def attempt(lang, sub, target, deck):
     if rc != 0:
         return 1, "trim failed:\n" + out[-800:]
     take = newest(lang / "audio", f"*_{sub}_Audio_v0.*.m4a")
+    # --deck for the same reason trim_outro takes one: a house term the deck's own copy uses is
+    # the deck's vocabulary, not drift. Without it the loop spends tries on "duplicate registries",
+    # which is approved slide text on twenty of the twenty-two decks.
     rc, out = run("python3", SKILLS / "kp-audio-brief/scripts/srt_drift_check.py",
-                  take.with_suffix(".srt"), "--target", target, "--tolerance", 45)
+                  take.with_suffix(".srt"), "--deck", deck, "--target", target, "--tolerance", 45)
     fails, residue = [], []
     for ln in (l.strip() for l in out.splitlines()):
         if not ln.startswith("FAIL"):
