@@ -1,0 +1,16 @@
+# Slide cue file — KP1 Module 2, Video 2.3 "Adopt your principles, don't draft them"
+# Deck:  KP1_M2_2.3_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M2_2.3_Audio_v0.2.m4a (runs to 4:53.6)
+# Approximate — derived by matching SRT content beats to slide content.
+# Note: the take states slide 3's definition inside the opener ("settle design arguments
+# before they start", 0:18) and then tells the forty-drafts story, so slide 3 is cued over
+# that story rather than left unshown.
+
+0:00   # slide 1 — title card (cold open: show-open)
+0:18   # slide 2 — Hook: three months, forty drafts, no agreement
+0:38   # slide 3 — A principle settles a design argument before it starts
+0:58   # slide 4 — PAERA gives you ten, already debated
+2:14   # slide 5 — Adopting them is three steps, not a three-month workshop
+3:31   # slide 6 — Statement, reason, implication
+4:26   # slide 7 — In one sentence
+4:48   # slide 8 — Sources

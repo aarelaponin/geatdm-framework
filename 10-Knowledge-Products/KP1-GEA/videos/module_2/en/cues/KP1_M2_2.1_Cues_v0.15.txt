@@ -1,0 +1,13 @@
+# Slide cue file — KP1 Module 2, Video 2.1 "Read any government in four layers"
+# Deck:  KP1_M2_2.1_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M2_2.1_Audio_v0.15.m4a (runs to 5:08.3)
+# Approximate — derived by matching SRT content beats to slide content.
+
+0:00   # slide 1 — title card (cold open: the address-update vignette)
+0:11   # slide 2 — Hook: four layers, one question / one deliverable / one mistake
+0:33   # slide 3 — Business layer: the org-chart mistake
+1:20   # slide 4 — Data layer outlasts every application above it
+2:38   # slide 5 — Application portfolio, not a software inventory
+3:32   # slide 6 — Technology layer: too deep, too early
+4:26   # slide 7 — The layers connect downward
+5:03   # slide 8 — Sources

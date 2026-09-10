@@ -26,7 +26,8 @@ kps:
     root: KP1-GEA
     note: >-
       35 content videos after the Sep 2026 tightening pass. Module 1 videos were rebuilt 9 Sep with
-      the hook slide; Modules 2–4 takes all accepted 9 Sep, cues + assembly not started.
+      the hook slide; Module 2 cued and assembled 10 Sep; Modules 3–4 takes accepted 9 Sep, cues +
+      assembly not started.
     intro:                              # KP-level on-camera introduction (introduces the five modules)
       title: KP1 introduction — what the five modules cover (on camera)
       path: videos/intro                # not created yet; scripts/ video/ under <path>/<lang>/

@@ -1,0 +1,13 @@
+# Slide cue file — KP1 Module 2, Video 2.7 "The two traps to catch at Assess"
+# Deck:  KP1_M2_2.7_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M2_2.7_Audio_v0.2.m4a (runs to 5:40.3)
+# Approximate — derived by matching SRT content beats to slide content.
+
+0:00   # slide 1 — title card (cold open: the skyscraper-generator analogy)
+0:16   # slide 2 — Hook: two traps, cheap to stop at Assess
+1:02   # slide 3 — Trap one: building your own
+2:25   # slide 4 — Procurement rules cannot catch it
+3:12   # slide 5 — Trap two: the product becomes the architecture
+4:21   # slide 6 — Four questions catch both
+5:25   # slide 7 — In one sentence
+5:35   # slide 8 — Sources

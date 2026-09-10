@@ -1,0 +1,17 @@
+# Slide cue file — KP1 Module 2, Video 2.2 "The shared vocabulary that makes re-use possible"
+# Deck:  KP1_M2_2.2_Deck_v0.2.pptx (9 slides)
+# Audio: KP1_M2_2.2_Audio_v0.19.m4a (runs to 5:04.5)
+# Approximate — derived by matching SRT content beats to slide content.
+# Note: the take covers "adopt it, don't design it" early (2:21–2:45, inside the entity
+# discussion) and never returns to it, so slide 7 is cued over the closing turn where the
+# hosts name the adopted entities ("one capability, one service, one data domain").
+
+0:00   # slide 1 — title card (cold open: show-open + skyscraper set-up)
+0:12   # slide 2 — Hook: two ministries, four words for two things
+1:04   # slide 3 — A metamodel is a small shared dictionary
+2:48   # slide 4 — The relationships matter as much as the entities
+3:27   # slide 5 — Re-use is not a matter of good intentions
+4:18   # slide 6 — Business and IT read the same map (register every learner once)
+4:43   # slide 7 — You adopt the metamodel — you don't design it
+4:55   # slide 8 — In one sentence
+4:59   # slide 9 — Sources

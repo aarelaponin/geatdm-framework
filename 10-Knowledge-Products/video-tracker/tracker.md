@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-10 17:07 (data v1)
+# KP video tracker — generated 2026-09-10 20:34 (data v1)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -26,13 +26,13 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 2.0 | Module 2 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 2.1 | Read any government in four layers | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.15, SRT v0.15, Accepted v0.15 |  |
-| 2.2 | The shared vocabulary that makes re-use possible | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.19, SRT v0.19, Accepted v0.19 |  |
-| 2.3 | Adopt your principles, don't draft them | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2 |  |
-| 2.4 | Classify any public body before you model it | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.10, SRT v0.10, Accepted v0.10 | settled on runtime (+45s) |
-| 2.5 | BDAT on a real ministry — the Progressa walkthrough | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.11, SRT v0.11, Accepted v0.11 | fully clean; weak close ("It does,") |
-| 2.6 | Run a Phase 2 Assess | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7 |  |
-| 2.7 | The two traps to catch at Assess | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2 |  |
+| 2.1 | Read any government in four layers | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.15, SRT v0.15, Accepted v0.15, Cues v0.15, MP4 v0.15 |  |
+| 2.2 | The shared vocabulary that makes re-use possible | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.19, SRT v0.19, Accepted v0.19, Cues v0.19, MP4 v0.19 |  |
+| 2.3 | Adopt your principles, don't draft them | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 |  |
+| 2.4 | Classify any public body before you model it | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.10, SRT v0.10, Accepted v0.10, Cues v0.10, MP4 v0.10 | settled on runtime (+45s) |
+| 2.5 | BDAT on a real ministry — the Progressa walkthrough | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.11, SRT v0.11, Accepted v0.11, Cues v0.11, MP4 v0.11 | fully clean; weak close ("It does,") |
+| 2.6 | Run a Phase 2 Assess | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7, Cues v0.7, MP4 v0.7 |  |
+| 2.7 | The two traps to catch at Assess | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 |  |
 
 ### Module 3 — EA repository, tooling and governance (Architect)
 

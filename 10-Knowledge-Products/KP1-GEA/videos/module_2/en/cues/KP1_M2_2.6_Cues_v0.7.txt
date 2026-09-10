@@ -1,0 +1,14 @@
+# Slide cue file — KP1 Module 2, Video 2.6 "Run a Phase 2 Assess"
+# Deck:  KP1_M2_2.6_Deck_v0.2.pptx (9 slides)
+# Audio: KP1_M2_2.6_Audio_v0.7.m4a (runs to 4:56.1)
+# Approximate — derived by matching SRT content beats to slide content.
+
+0:00   # slide 1 — title card (cold open, head-trimmed)
+0:06   # slide 2 — Hook: a description good enough to decide from
+0:47   # slide 3 — Three tests apply to every layer
+1:41   # slide 4 — Then hold each layer to its own test
+2:10   # slide 5 — Four gaps show up in almost every first assessment
+3:21   # slide 6 — A list of gaps is not an assessment — the priority order is
+4:04   # slide 7 — The sign-off test: honesty
+4:39   # slide 8 — In one sentence
+4:51   # slide 9 — Sources

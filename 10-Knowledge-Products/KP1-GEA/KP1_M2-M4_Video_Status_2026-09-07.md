@@ -8,8 +8,9 @@ transcribed via `kp-scribe-transcribe`, audited with `srt_drift_check` + `covera
 
 Step 4 is **complete: 22 of 22 accepted** as of 9 Sep — 10 before the §3 rewrite, 6 cleared by
 it, 3 settled on runtime, 2 accepted by decision (3.1, 3.2), and 2.5 came back fully clean. Steps
-6 and 7 (cues, assembly) have **not started for any of the 22** — they need no NotebookLM and are
-now the only thing between these takes and finished videos.
+6 and 7 (cues, assembly) are **done for Module 2** (7 of 7, 10 Sep — see the section at the end)
+and have not started for Modules 3 and 4 (15 subtopics). They need no NotebookLM and are the only
+thing between those takes and finished videos.
 
 Three takes of record are fully clean (3.5, 4.4, 2.5). Eight carry accepted show-open residue.
 3.2 carries three outrage words by decision. 2.4, 3.3, 4.6 were settled on runtime at +45s, −47s
@@ -167,3 +168,58 @@ re-rolling this subtopic alone later.
 155 takes; 12,576 ElevenLabs credits used this period (110,862 remaining, resets 25 Sep).
 NotebookLM has no API cost but throttles: roughly 40% of generations timed out at 900 s during the
 heaviest batch, and recovered after a pause.
+
+## Module 2 assembly — 10 September 2026
+
+Steps 6 and 7 for all seven English subtopics, against the rebuilt post-hook v0.2 decks and the
+takes of record. `rendered N slides, N cues` with no count warning on every one; MP4 duration
+equals the m4a; a frame extracted at each cue and inspected shows the slide the cue promised, in
+order, Sources last.
+
+| Video | Take | Slides | Duration | Size | Sources tail |
+|---|---|---|---|---|---|
+| 2.1 | v0.15 | 8 | 5:08 | 10 MB | 5.3 s |
+| 2.2 | v0.19 | 9 | 5:04 | 10 MB | 5.5 s |
+| 2.3 | v0.2 | 8 | 4:53 | 10 MB | 5.6 s |
+| 2.4 | v0.10 | 8 | 5:45 | 12 MB | 5.5 s |
+| 2.5 | v0.11 | 8 | 4:22 | 9 MB | 10.7 s |
+| 2.6 | v0.7 | 9 | 4:56 | 10 MB | 5.1 s |
+| 2.7 | v0.2 | 8 | 5:40 | 12 MB | 5.3 s |
+
+**`draft_cues.py` was a starting point, not the answer.** On six of the seven it collapsed runs of
+slides into one-second gaps and flagged them itself (`slides [3, 4, 6, 7, 8] are under 5 s apart`).
+Only 2.7 came back usable. Every cue file here was authored by reading the take's SRT against the
+deck, as `kp-slidecast` Step 1 requires; the drafts were used only to confirm slide counts.
+
+**Title-card holds are now 4–21 s** (2.5 · 0:04, 2.6 · 0:06, 2.1 · 0:11, 2.2 · 0:12, 2.7 · 0:16,
+2.3 · 0:18, 2.4 · 0:21) against the 35–70 s the opener review measured on the two-title-card decks.
+The hook slide did the work it was added for.
+
+### Two takes cover the deck out of order — cued, not re-rolled
+
+- **2.2** covers "adopt it, don't design it" (slide 7) at 2:21–2:45, inside the entity discussion,
+  and never returns to it. Cues must be strictly increasing, so slide 7 is placed over the closing
+  turn (4:43–4:55), where the hosts name the adopted entities — "one capability exposed via one
+  service governed by one data domain". The cost is that slide 6 loses its own punchline line at
+  4:48. Reversible by a cue edit if the subtopic is ever re-rolled.
+- **2.4** walks the expected profile (2:28–3:12) before the supporting elements (3:16), the reverse
+  of the deck. Slide 3 holds across both type blocks; slide 5 is cued at 4:52, over the
+  misclassification passage — which is the expected profile failing, so it reads as intended.
+- **2.3** states slide 3's definition inside the opener ("settle design arguments before they
+  start", 0:18) and then tells the forty-drafts story. Slide 3 is cued over that story rather than
+  left unshown.
+
+Each is recorded in a note at the top of the cue file it affects.
+
+### Also true, not fixed here
+
+- **2.5's Sources tail is 10.7 s**, because the take's last words are the weak close ("It does,")
+  at 4:22 and the cue sits at the preceding sentence start. In range — 1.6 shipped 10.7 s — but it
+  is the same trailing-backchannel defect noted under *Known and deliberately not fixed*.
+- The per-video title cards still print a length label (`~5 minutes · standalone video`). The
+  7 Sep note recorded the label as dropped from the decks; it is dropped from the *section* slides,
+  not from the title card. Cosmetic, and identical in Module 1.
+
+### Next
+
+Modules 3 and 4, same two steps, 15 subtopics — nothing blocks them.

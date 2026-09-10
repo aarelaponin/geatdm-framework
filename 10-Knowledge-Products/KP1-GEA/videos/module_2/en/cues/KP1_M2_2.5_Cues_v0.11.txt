@@ -1,0 +1,14 @@
+# Slide cue file — KP1 Module 2, Video 2.5 "BDAT on a real ministry — the Progressa walkthrough"
+# Deck:  KP1_M2_2.5_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M2_2.5_Audio_v0.11.m4a (runs to 4:22.7)
+# Approximate — derived by matching SRT content beats to slide content.
+# Slide 3 at 0:28 per the opener review of 9 Sep — the hosts list the five bodies straight away.
+
+0:00   # slide 1 — title card (cold open: X-ray glasses)
+0:04   # slide 2 — Hook: put the four layers on a real sector
+0:28   # slide 3 — Classify the bodies first — the five bodies
+1:23   # slide 4 — Business layer: capability vs service
+2:02   # slide 5 — Data layer: one domain, one owner
+3:15   # slide 6 — Application and Technology
+3:48   # slide 7 — In one sentence: one service traced top to bottom
+4:12   # slide 8 — Sources
