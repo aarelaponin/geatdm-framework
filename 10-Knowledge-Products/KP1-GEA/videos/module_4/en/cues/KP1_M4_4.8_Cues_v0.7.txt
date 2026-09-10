@@ -1,0 +1,13 @@
+# Slide cue file — KP1 Module 4, Video 4.8 "Run this on your own sector — the transferable recipe"
+# Deck:  KP1_M4_4.8_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M4_4.8_Audio_v0.7.m4a (runs to 5:22.8)
+# Approximate — derived by matching SRT content beats to slide content.
+
+0:00   # slide 1 — title card (cold open: the hospital and the agriculture department buy the same system)
+0:21   # slide 2 — Hook: swap the data, keep the method
+0:54   # slide 3 — The recipe: five phases, six deliverables, four sign-offs
+2:12   # slide 4 — Swap the contents, keep the method
+2:48   # slide 5 — The method travels — a patient record instead of a learner record
+3:35   # slide 6 — Three things to carry into your own sector
+4:52   # slide 7 — In one sentence
+5:12   # slide 8 — Sources

@@ -1,0 +1,16 @@
+# Slide cue file — KP1 Module 3, Video 3.4 "Stand up an EA Board that can actually say no"
+# Deck:  KP1_M3_3.4_Deck_v0.2.pptx (9 slides)
+# Audio: KP1_M3_3.4_Audio_v0.6.m4a (runs to 5:42.5)
+# Approximate — derived by matching SRT content beats to slide content.
+# On air at 0:56: "PAERA, your Pan-European Architecture framework" — wrong expansion, logged in
+# the opener review of 9 Sep §4 and accepted with the other slips. Not a cue problem.
+
+0:00   # slide 1 — title card (cold open: the blueprint nobody follows)
+0:16   # slide 2 — Hook: the repository holds the architecture, the Board gives it authority
+0:47   # slide 3 — An advisory board produces minutes; a binding board produces decisions
+2:21   # slide 4 — The chair decides whether the no sticks
+3:19   # slide 5 — Membership follows the affected systems
+4:23   # slide 6 — A cadence that governs without blocking
+5:04   # slide 7 — The Board is the standing rhythm: picture, words, rhythm
+5:20   # slide 8 — In one sentence
+5:35   # slide 9 — Sources

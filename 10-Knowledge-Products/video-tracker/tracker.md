@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-10 20:34 (data v1)
+# KP video tracker — generated 2026-09-10 21:03 (data v1)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -39,27 +39,27 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 3.0 | Module 3 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 3.1 | Set up the one place your architecture lives | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.5, SRT v0.5, Accepted v0.5 | accepted by decision 9 Sep; "registry" check is a false positive |
-| 3.2 | Choose EA tooling without locking yourself in | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7 | accepted by decision 9 Sep — ships "nightmare", "a mess", "hostage" on air; reversible by re-roll |
-| 3.3 | Keep the repository true — the update discipline | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.6, SRT v0.6, Accepted v0.6 | settled on runtime (−47s) |
-| 3.4 | Stand up an EA Board that can actually say no | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.6, SRT v0.6, Accepted v0.6 |  |
-| 3.5 | Review projects against the architecture | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.1, SRT v0.1, Accepted v0.1 | fully clean |
-| 3.6 | Show the EA is working — the few metrics that matter | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2 |  |
-| 3.7 | Keep the practice alive past year two | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2 |  |
+| 3.1 | Set up the one place your architecture lives | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 | accepted by decision 9 Sep; "registry" check is a false positive |
+| 3.2 | Choose EA tooling without locking yourself in | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7, Cues v0.7, MP4 v0.7 | accepted by decision 9 Sep — ships "nightmare", "a mess", "hostage" on air; reversible by re-roll |
+| 3.3 | Keep the repository true — the update discipline | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | settled on runtime (−47s) |
+| 3.4 | Stand up an EA Board that can actually say no | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 |  |
+| 3.5 | Review projects against the architecture | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.1, SRT v0.1, Accepted v0.1, Cues v0.1, MP4 v0.1 | fully clean |
+| 3.6 | Show the EA is working — the few metrics that matter | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 |  |
+| 3.7 | Keep the practice alive past year two | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 |  |
 
 ### Module 4 — Progressa demonstration — applying the method end-to-end (Architect)
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 4.0 | Module 4 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 4.1 | Meet Progressa — a real sector with a real fragmentation problem | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.5, SRT v0.5, Accepted v0.5 |  |
-| 4.2 | Phase 1, Discover — map what the sector has today | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.9, SRT v0.9, Accepted v0.9 |  |
-| 4.3 | Phase 2, Assess — find the gaps and rank them | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.1, SRT v0.1, Accepted v0.1 |  |
-| 4.4 | Phase 3, Adapt — fit PAERA and decide build, buy or share | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.4, SRT v0.4, Accepted v0.4 | fully clean |
-| 4.5 | Phase 4, Plan — design the target architecture | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.12, SRT v0.12, Accepted v0.12 |  |
-| 4.6 | Phase 4, Plan — sequence the roadmap and cost it | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7 | settled on runtime (+63s) |
-| 4.7 | Phase 5, Execute & Govern — stand up the living EA | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.9, SRT v0.9, Accepted v0.9 |  |
-| 4.8 | Run this on your own sector — the transferable recipe | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7 |  |
+| 4.1 | Meet Progressa — a real sector with a real fragmentation problem | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 |  |
+| 4.2 | Phase 1, Discover — map what the sector has today | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.9, SRT v0.9, Accepted v0.9, Cues v0.9, MP4 v0.9 |  |
+| 4.3 | Phase 2, Assess — find the gaps and rank them | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.1, SRT v0.1, Accepted v0.1, Cues v0.1, MP4 v0.1 |  |
+| 4.4 | Phase 3, Adapt — fit PAERA and decide build, buy or share | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.4, SRT v0.4, Accepted v0.4, Cues v0.4, MP4 v0.4 | fully clean |
+| 4.5 | Phase 4, Plan — design the target architecture | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.12, SRT v0.12, Accepted v0.12, Cues v0.12, MP4 v0.12 |  |
+| 4.6 | Phase 4, Plan — sequence the roadmap and cost it | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7, Cues v0.7, MP4 v0.7 | settled on runtime (+63s) |
+| 4.7 | Phase 5, Execute & Govern — stand up the living EA | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.9, SRT v0.9, Accepted v0.9, Cues v0.9, MP4 v0.9 |  |
+| 4.8 | Run this on your own sector — the transferable recipe | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7, Cues v0.7, MP4 v0.7 |  |
 
 ### Module 5 — Cross-country evidence, cross-sector applicability and dissemination (Strategist)
 

@@ -8,9 +8,11 @@ transcribed via `kp-scribe-transcribe`, audited with `srt_drift_check` + `covera
 
 Step 4 is **complete: 22 of 22 accepted** as of 9 Sep — 10 before the §3 rewrite, 6 cleared by
 it, 3 settled on runtime, 2 accepted by decision (3.1, 3.2), and 2.5 came back fully clean. Steps
-6 and 7 (cues, assembly) are **done for Module 2** (7 of 7, 10 Sep — see the section at the end)
-and have not started for Modules 3 and 4 (15 subtopics). They need no NotebookLM and are the only
-thing between those takes and finished videos.
+6 and 7 (cues, assembly) are **complete for all 22** as of 10 Sep — Modules 2, 3 and 4 are 22
+finished English videos. See the two sections at the end.
+
+What is left across these three modules is publication: YouTube metadata, the module intros
+(on camera, not started), and the French mirror.
 
 Three takes of record are fully clean (3.5, 4.4, 2.5). Eight carry accepted show-open residue.
 3.2 carries three outrage words by decision. 2.4, 3.3, 4.6 were settled on runtime at +45s, −47s
@@ -223,3 +225,66 @@ Each is recorded in a note at the top of the cue file it affects.
 ### Next
 
 Modules 3 and 4, same two steps, 15 subtopics — nothing blocks them.
+
+## Modules 3 and 4 assembly — 10 September 2026
+
+The same two steps for the remaining fifteen English subtopics, against the post-hook v0.2 decks
+and the takes of record. `rendered N slides, N cues` with no count warning on any of them; every
+MP4 duration equals its m4a; a frame extracted at each cue and inspected shows the slide the cue
+promised, in order, Sources last.
+
+| Video | Take | Slides | Duration | Size | Sources tail |
+|---|---|---|---|---|---|
+| 3.1 | v0.5 | 9 | 5:38 | 12 MB | 7.4 s |
+| 3.2 | v0.7 | 8 | 5:01 | 10 MB | 8.9 s |
+| 3.3 | v0.6 | 9 | 4:14 | 8 MB | 5.6 s |
+| 3.4 | v0.6 | 9 | 5:43 | 11 MB | 7.5 s |
+| 3.5 | v0.1 | 8 | 5:17 | 12 MB | 5.9 s |
+| 3.6 | v0.2 | 8 | 5:20 | 11 MB | 6.0 s |
+| 3.7 | v0.2 | 9 | 5:26 | 11 MB | 5.8 s |
+| 4.1 | v0.5 | 8 | 5:33 | 12 MB | 7.2 s |
+| 4.2 | v0.9 | 8 | 4:31 | 9 MB | 6.2 s |
+| 4.3 | v0.1 | 8 | 4:58 | 11 MB | 5.7 s |
+| 4.4 | v0.4 | 8 | 4:31 | 9 MB | 6.0 s |
+| 4.5 | v0.12 | 8 | 5:21 | 12 MB | 6.7 s |
+| 4.6 | v0.7 | 8 | 6:03 | 12 MB | 6.0 s |
+| 4.7 | v0.9 | 7 | 4:40 | 10 MB | 6.1 s |
+| 4.8 | v0.7 | 8 | 5:23 | 11 MB | 10.8 s |
+
+**Title-card holds across all 22 are 4–24 s** (M3: 3.6 at 0:07, 3.1 at 0:20, 3.5 at 0:19, 3.3 at
+0:21, 3.7 at 0:18, 3.4 at 0:16, 3.2 at 0:16; M4: 4.2 at 0:15, the rest 0:18–0:24), against the
+35–80 s the opener review measured on the two-title-card decks. Nothing needed a re-roll.
+
+### Takes that cover their deck out of order
+
+Same pattern as Module 2, same treatment — cued and noted in the cue file, not re-rolled. Cue
+times must strictly increase, so where a take states a slide's point early and never returns, the
+slide is placed at the nearest later moment that still reads:
+
+- **3.1** enumerates the three things a repository holds (slide 3's body) at 2:11, *after* the
+  second-copy warning at 1:00. Slide 5 ("what it holds, concretely") opens at 1:50 and covers the
+  whole block; its Progressa owners land inside it at 2:58.
+- **3.3** interleaves the light gate (2:49), the Board as the cheapest moment (3:06) and the three
+  checks (3:23). Slide 6 holds across all three; slide 7 opens where the hosts state its point.
+- **4.1** makes slide 5's point (fictional on purpose) at 0:40, inside the opener. Slide 5 is cued
+  at 3:24, where the hosts turn from the problem to the method — 8 s, the last place it reads as a
+  set-up rather than a contradiction.
+- **4.5** states slide 4's rule (you do not invent the target) at 0:59 and then walks the four
+  target layers, which are slide 3's body. Slide 4 holds across the walk: the walk *is* that rule
+  being applied, and once-only forcing the three learner lists into one lands inside it.
+- **4.8** reaches slide 5's material (the method travels) before slide 4's (swap the contents), but
+  only by ~35 s, so both land on their own beat.
+
+### The §4 name slips ship as accepted
+
+The opener review's five factual slips are in these renders, since no take was re-rolled: 3.4's
+"Pan-European Architecture" (0:56), 4.3's "Pay Your Anchored Standards" (0:55), 4.4's "LoCTI
+principles" and Mexican-programme "PROGRESA", 4.6's "Progressive Phase Four" and "PAERA or PR",
+4.7's "the progressive framework". Each is noted at the top of the affected cue file so the next
+person does not read it as a cue error. Fixing them means re-rolling those five takes and
+re-cueing; the phonetic row for Progressa (§5 of the opener review) is still not in the template.
+
+### Next
+
+Publication: YouTube metadata for M2–M4 (M1 has `KP1_M1_YouTube_Upload_Metadata_v0.1.md` as the
+pattern), the on-camera module intros, and the French mirror.

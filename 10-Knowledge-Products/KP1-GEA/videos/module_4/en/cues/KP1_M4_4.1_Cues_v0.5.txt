@@ -1,0 +1,16 @@
+# Slide cue file — KP1 Module 4, Video 4.1 "Meet Progressa — a real sector with a real fragmentation problem"
+# Deck:  KP1_M4_4.1_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M4_4.1_Audio_v0.5.m4a (runs to 5:33.2)
+# Approximate — derived by matching SRT content beats to slide content.
+# Note: the take makes slide 5's point (fictional on purpose) at 0:40, inside the opener, and
+# never returns to it. Slide 5 is cued at 3:24, where the hosts turn from the problem to the
+# method — the last place it still reads as a set-up rather than a contradiction.
+
+0:00   # slide 1 — title card (cold open: the minister's promise, the child proving it three times)
+0:24   # slide 2 — Hook: to see the method work you need a realistic place to run it
+1:00   # slide 3 — Five bodies: a policy unit, a service authority, two registries, a platform
+1:33   # slide 4 — One learner, three registrations, and the three lists do not agree
+3:24   # slide 5 — Fictional on purpose — so every step can be shown in full
+3:34   # slide 6 — Five phases, six deliverables
+5:11   # slide 7 — In one sentence
+5:26   # slide 8 — Sources

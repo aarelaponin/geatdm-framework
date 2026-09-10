@@ -1,0 +1,14 @@
+# Slide cue file — KP1 Module 3, Video 3.7 "Keep the practice alive past year two"
+# Deck:  KP1_M3_3.7_Deck_v0.2.pptx (9 slides)
+# Audio: KP1_M3_3.7_Audio_v0.2.m4a (runs to 5:25.8)
+# Approximate — derived by matching SRT content beats to slide content.
+
+0:00   # slide 1 — title card (cold open: the rusting bridge)
+0:18   # slide 2 — Hook: most EA programmes do not fail, they fade
+1:12   # slide 3 — Fade one: the architects are seconded to the crisis
+2:25   # slide 4 — Fade two: an unused repository is a dead one
+3:31   # slide 5 — Fade three: a Board overruled in silence
+4:08   # slide 6 — Fade four: an EA that depends on one champion
+4:57   # slide 7 — You are building something designed to outlast you
+5:08   # slide 8 — In one sentence
+5:20   # slide 9 — Sources

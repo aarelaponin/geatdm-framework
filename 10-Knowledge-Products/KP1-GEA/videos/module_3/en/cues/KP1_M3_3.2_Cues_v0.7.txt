@@ -1,0 +1,13 @@
+# Slide cue file — KP1 Module 3, Video 3.2 "Choose EA tooling without locking yourself in"
+# Deck:  KP1_M3_3.2_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M3_3.2_Audio_v0.7.m4a (runs to 5:00.9)
+# Approximate — derived by matching SRT content beats to slide content.
+
+0:00   # slide 1 — title card (cold open: the spreadsheet that grew)
+0:16   # slide 2 — Hook: the spreadsheet stops coping, don't swap one lock-in for another
+1:04   # slide 3 — Graduate when the spreadsheet hurts in three specific ways
+1:43   # slide 4 — Reuse before buy, buy before build
+2:51   # slide 5 — The export test
+3:38   # slide 6 — Bend the tool to your metamodel, never the reverse
+4:31   # slide 7 — In one sentence
+4:52   # slide 8 — Sources

@@ -1,0 +1,13 @@
+# Slide cue file — KP1 Module 3, Video 3.6 "Show the EA is working — the few metrics that matter"
+# Deck:  KP1_M3_3.6_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M3_3.6_Audio_v0.2.m4a (runs to 5:19.9)
+# Approximate — derived by matching SRT content beats to slide content.
+
+0:00   # slide 1 — title card (cold open: the fifty-page report)
+0:07   # slide 2 — Hook: the minister's fair question
+1:14   # slide 3 — Four numbers carry most of the signal
+2:45   # slide 4 — The re-use rate is the one for the budget authority
+3:48   # slide 5 — A metric that rises while the architecture stops mattering is wrong
+4:17   # slide 6 — A scorecard that is always green is believed once
+5:06   # slide 7 — In one sentence
+5:14   # slide 8 — Sources

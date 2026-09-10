@@ -1,0 +1,15 @@
+# Slide cue file — KP1 Module 3, Video 3.5 "Review projects against the architecture"
+# Deck:  KP1_M3_3.5_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M3_3.5_Audio_v0.1.m4a (runs to 5:16.9)
+# Approximate — derived by matching SRT content beats to slide content.
+# Slide 3 at 1:07 per the opener review of 9 Sep — the alternative it names (~0:32) applies only
+# to a deck without a hook slide.
+
+0:00   # slide 1 — title card (cold open: the hosts name the video)
+0:19   # slide 2 — Hook: a Board with authority needs something to do with it
+1:07   # slide 3 — Five questions, asked of every project the same way
+2:56   # slide 4 — The gate is where the whole-of-government view meets the decision
+3:38   # slide 5 — An exception without an expiry becomes the permanent normal
+4:33   # slide 6 — The decision log is the architecture's memory
+5:00   # slide 7 — In one sentence
+5:11   # slide 8 — Sources

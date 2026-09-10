@@ -1,0 +1,16 @@
+# Slide cue file — KP1 Module 4, Video 4.5 "Phase 4, Plan — design the target architecture"
+# Deck:  KP1_M4_4.5_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M4_4.5_Audio_v0.12.m4a (runs to 5:20.7)
+# Approximate — derived by matching SRT content beats to slide content.
+# Note: the take states slide 4's rule (you do not invent the target) at 0:59 and then walks the
+# four target layers, which are slide 3's body. Slide 4 holds across that walk — the walk is that
+# rule being applied, and once-only forcing the three learner lists into one lands inside it.
+
+0:00   # slide 1 — title card (cold open: paving over dirt paths)
+0:22   # slide 2 — Hook: the target architecture, the picture of the future state
+0:39   # slide 3 — The target is the current-state picture, designed instead of observed
+0:59   # slide 4 — You do not invent the target — you apply your principles to your gaps
+3:17   # slide 5 — The integration map is the artefact the current state never had
+4:12   # slide 6 — Every target element traces back to a gap and forward to a sourcing call
+4:47   # slide 7 — In one sentence
+5:14   # slide 8 — Sources

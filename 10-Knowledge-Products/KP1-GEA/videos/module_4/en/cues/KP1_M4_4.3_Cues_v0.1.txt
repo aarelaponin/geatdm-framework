@@ -1,0 +1,15 @@
+# Slide cue file — KP1 Module 4, Video 4.3 "Phase 2, Assess — find the gaps and rank them"
+# Deck:  KP1_M4_4.3_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M4_4.3_Audio_v0.1.m4a (runs to 4:57.7)
+# Approximate — derived by matching SRT content beats to slide content.
+# On air at 0:55: "PAERA or Pay Your Anchored Standards" — garbled expansion, logged in the
+# opener review of 9 Sep §4 and accepted. Not a cue problem.
+
+0:00   # slide 1 — title card (cold open: the vague sense that things are bad)
+0:20   # slide 2 — Hook: Phase 2, Assess. Now you judge.
+0:52   # slide 3 — Score the capabilities and "things are bad" becomes a map
+2:04   # slide 4 — Four gaps surface — and one has no owner
+3:11   # slide 5 — The duplicate learner registry tops the list
+3:50   # slide 6 — Sign-off two carries an honesty test
+4:31   # slide 7 — In one sentence
+4:52   # slide 8 — Sources

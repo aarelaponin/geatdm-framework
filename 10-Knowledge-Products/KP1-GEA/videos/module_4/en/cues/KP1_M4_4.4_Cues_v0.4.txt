@@ -1,0 +1,15 @@
+# Slide cue file — KP1 Module 4, Video 4.4 "Phase 3, Adapt — fit PAERA and decide build, buy or share"
+# Deck:  KP1_M4_4.4_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M4_4.4_Audio_v0.4.m4a (runs to 4:31.0)
+# Approximate — derived by matching SRT content beats to slide content.
+# On air: "LoCTI principles" (1:00) and "PROGRESA" read as the Mexican programme — logged in the
+# opener review of 9 Sep §4 and accepted. Not a cue problem.
+
+0:00   # slide 1 — title card (cold open: every project reinvents the login portal)
+0:20   # slide 2 — Hook: Phase 3, Adapt. PAERA is a starting point, not a constraint.
+0:52   # slide 3 — Progressa inherits and localises, it does not draft from scratch
+2:00   # slide 4 — Four kinds of decision: build, buy, share, sandbox
+3:11   # slide 5 — Reuse before build is where the country-level saving is chosen
+3:44   # slide 6 — Sign-off three commits the shape of everything that follows
+4:12   # slide 7 — In one sentence
+4:25   # slide 8 — Sources

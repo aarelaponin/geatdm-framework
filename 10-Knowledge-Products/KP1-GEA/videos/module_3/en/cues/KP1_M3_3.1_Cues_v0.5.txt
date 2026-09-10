@@ -1,0 +1,17 @@
+# Slide cue file — KP1 Module 3, Video 3.1 "Set up the one place your architecture lives"
+# Deck:  KP1_M3_3.1_Deck_v0.2.pptx (9 slides)
+# Audio: KP1_M3_3.1_Audio_v0.5.m4a (runs to 5:38.4)
+# Approximate — derived by matching SRT content beats to slide content.
+# Note: the take enumerates the three things a repository holds (slide 3's body) at 2:11, after
+# the second-copy warning at 1:00, the reverse of the deck. Slide 5 ("what it holds, concretely")
+# therefore opens at 1:50 and covers the whole block; its Progressa owners land inside it at 2:58.
+
+0:00   # slide 1 — title card (cold open: the mismatched-blueprints analogy)
+0:20   # slide 2 — Hook: you have the four-layer picture. Where does it live?
+0:30   # slide 3 — A repository is a discipline, not a product
+1:00   # slide 4 — A second copy destroys the single source of truth
+1:50   # slide 5 — What it holds, concretely — data domains with owners
+4:00   # slide 6 — A spreadsheet everyone uses beats a platform nobody does
+5:01   # slide 7 — The object both sides point at
+5:20   # slide 8 — In one sentence
+5:31   # slide 9 — Sources

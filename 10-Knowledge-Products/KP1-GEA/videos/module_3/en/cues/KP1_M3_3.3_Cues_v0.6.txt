@@ -1,0 +1,17 @@
+# Slide cue file — KP1 Module 3, Video 3.3 "Keep the repository true — the update discipline"
+# Deck:  KP1_M3_3.3_Deck_v0.2.pptx (9 slides)
+# Audio: KP1_M3_3.3_Audio_v0.6.m4a (runs to 4:13.6)
+# Approximate — derived by matching SRT content beats to slide content.
+# Note: the take interleaves the light gate (2:49) with the Board being the cheapest moment
+# (3:06) and the three checks (3:23). Slide 6 holds across all three; slide 7 opens at 3:41,
+# where the hosts state its point — governance and update as a single motion.
+
+0:00   # slide 1 — title card (cold open: show-open + the one enemy)
+0:21   # slide 2 — Hook: staleness
+0:36   # slide 3 — A missing architecture makes people ask questions; a wrong one answers them
+1:47   # slide 4 — When everyone owns currency, no one does
+1:58   # slide 5 — Tie updates to events, not to a yearly review
+2:49   # slide 6 — A light gate keeps the repository conformant
+3:41   # slide 7 — The cheapest moment to update is when a project comes to the Board
+3:53   # slide 8 — In one sentence
+4:08   # slide 9 — Sources
