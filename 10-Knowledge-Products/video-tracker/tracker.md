@@ -1,0 +1,155 @@
+# KP video tracker — generated 2026-09-10 17:07 (data v1)
+
+Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
+
+## KP1 — Government Enterprise Architecture
+
+- **KP1.0 KP1 introduction — what the five modules cover (on camera)** [en] ○○○○ 0/4 — next: Script
+
+### Module 1 — Why a PAERA-anchored EA, and the lifecycle in one page (Strategist)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 1.0 | Module 1 introduction (on camera, ~1:55) | en | `●●○○` | 2/4 | Mastered | Script v0.2, Filmed M1_intro.mov | Raw take M1_intro.mov (30 Aug) predates the tightening — IntroScript v0.2 still says "eight short videos". Re-cut with the Module 1 videos; ITU §4.3 calibration item open. |
+| 1.1 | Why your country needs a national EA | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.7, Take v0.13, SRT v0.13, Accepted v0.13, Cues v0.13, MP4 v0.13 |  |
+| 1.1 | Why your country needs a national EA | fr | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 | French pilot — from the pre-tightening deck |
+| 1.2 | What an EA actually is | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.7, Take v0.8, SRT v0.8, Accepted v0.8, Cues v0.8, MP4 v0.8 |  |
+| 1.3 | Why projects can't do this themselves | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.6, Take v0.10, SRT v0.10, Accepted v0.10, Cues v0.10, MP4 v0.10 |  |
+| 1.4 | Why an EA matters more now | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.6, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 |  |
+| 1.5 | Why PAERA-anchored | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.5, Take v0.4, SRT v0.4, Accepted v0.4, Cues v0.4, MP4 v0.4 |  |
+| 1.6 | The lifecycle on one page | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.7, Take v0.9, SRT v0.9, Accepted v0.9, Cues v0.9, MP4 v0.9 |  |
+| 1.7 | What you will need from your minister | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.5, Take v0.10, SRT v0.10, Accepted v0.10, Cues v0.10, MP4 v0.10 |  |
+| 1.8 | (former) Your first play | en | `retired` | 7/10 | — | Script v0.1, Deck v0.1, Take v0.2, SRT v0.2, Cues v0.2, MP4 v0.2 | folded into a two-slide close on 1.7 in the Sep 2026 tightening; files on disk are leftovers |
+
+### Module 2 — EA principles, the metamodel and the BDAT layers (Architect)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 2.0 | Module 2 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
+| 2.1 | Read any government in four layers | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.15, SRT v0.15, Accepted v0.15 |  |
+| 2.2 | The shared vocabulary that makes re-use possible | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.19, SRT v0.19, Accepted v0.19 |  |
+| 2.3 | Adopt your principles, don't draft them | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2 |  |
+| 2.4 | Classify any public body before you model it | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.10, SRT v0.10, Accepted v0.10 | settled on runtime (+45s) |
+| 2.5 | BDAT on a real ministry — the Progressa walkthrough | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.11, SRT v0.11, Accepted v0.11 | fully clean; weak close ("It does,") |
+| 2.6 | Run a Phase 2 Assess | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7 |  |
+| 2.7 | The two traps to catch at Assess | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2 |  |
+
+### Module 3 — EA repository, tooling and governance (Architect)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 3.0 | Module 3 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
+| 3.1 | Set up the one place your architecture lives | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.5, SRT v0.5, Accepted v0.5 | accepted by decision 9 Sep; "registry" check is a false positive |
+| 3.2 | Choose EA tooling without locking yourself in | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7 | accepted by decision 9 Sep — ships "nightmare", "a mess", "hostage" on air; reversible by re-roll |
+| 3.3 | Keep the repository true — the update discipline | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.6, SRT v0.6, Accepted v0.6 | settled on runtime (−47s) |
+| 3.4 | Stand up an EA Board that can actually say no | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.6, SRT v0.6, Accepted v0.6 |  |
+| 3.5 | Review projects against the architecture | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.1, SRT v0.1, Accepted v0.1 | fully clean |
+| 3.6 | Show the EA is working — the few metrics that matter | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2 |  |
+| 3.7 | Keep the practice alive past year two | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2 |  |
+
+### Module 4 — Progressa demonstration — applying the method end-to-end (Architect)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 4.0 | Module 4 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
+| 4.1 | Meet Progressa — a real sector with a real fragmentation problem | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.5, SRT v0.5, Accepted v0.5 |  |
+| 4.2 | Phase 1, Discover — map what the sector has today | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.9, SRT v0.9, Accepted v0.9 |  |
+| 4.3 | Phase 2, Assess — find the gaps and rank them | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.1, SRT v0.1, Accepted v0.1 |  |
+| 4.4 | Phase 3, Adapt — fit PAERA and decide build, buy or share | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.4, SRT v0.4, Accepted v0.4 | fully clean |
+| 4.5 | Phase 4, Plan — design the target architecture | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.12, SRT v0.12, Accepted v0.12 |  |
+| 4.6 | Phase 4, Plan — sequence the roadmap and cost it | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7 | settled on runtime (+63s) |
+| 4.7 | Phase 5, Execute & Govern — stand up the living EA | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.9, SRT v0.9, Accepted v0.9 |  |
+| 4.8 | Run this on your own sector — the transferable recipe | en | `●●●●●●●○○○` | 7/10 | Cues | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7 |  |
+
+### Module 5 — Cross-country evidence, cross-sector applicability and dissemination (Strategist)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 5.0 | Module 5 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
+| 5.1 | Is this proven, or just theory? — evidence from real programmes | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.2, Deck v0.2, Brief v0.2 |  |
+| 5.2 | What the evidence says works — and what quietly kills these programmes | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.2, Deck v0.2, Brief v0.2 |  |
+| 5.3 | Roll it out across sectors — and why the second is cheaper | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.2, Deck v0.2, Brief v0.2 |  |
+| 5.4 | Win the commitment — the business case that gets your minister to yes | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.2, Deck v0.2, Brief v0.2 |  |
+| 5.5 | Build your team's capability with open knowledge products | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.2, Deck v0.2, Brief v0.2 |  |
+| 5.6 | The closing case — proven, portable, and necessary now | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.2, Deck v0.2, Brief v0.2 |  |
+
+## KP2 — Government Interoperability Framework
+
+- **KP2.0 KP2 introduction — what the six modules cover (on camera)** [en] ○○○○ 0/4 — next: Script
+
+### Module 1 — Why interoperability, the four layers, and the foundation to start (Strategist)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 1.0 | Module 1 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
+| 1.1 | Why interoperability can't be bought, only built | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 1.2 | The four layers of interoperability | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 1.3 | The once-only promise | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 1.4 | The Strategic Foundation Document | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 1.5 | The Use-Case Catalogue | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 1.6 | Mapping your stakeholders | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 1.7 | What the world already proved | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+
+### Module 2 — Legal framework — the Decree Drafting Kit (Strategist)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 2.0 | Module 2 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
+| 2.1 | Why the platform needs a legal mandate | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 2.2 | Anatomy of an interoperability decree | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 2.3 | The Explanatory Memorandum and Preamble | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 2.4 | The Draft Articles Package | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 2.5 | The Cover Note and Two-Track Regulatory Memo | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 2.6 | The decree as configuration | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+
+### Module 3 — Governance model — three-tier with RACI (Strategist)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 3.0 | Module 3 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
+| 3.1 | Why a bus needs an owner | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 3.2 | The three tiers of governance | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 3.3 | The RACI matrix | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 3.4 | Member obligations | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 3.5 | The four Technical Working Groups | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 3.6 | Governance as living configuration | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+
+### Module 4 — Architecture + technical standards + Giga end-to-end case (Architect)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 4.0 | Module 4 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
+| 4.1 | Place every component — the four functional layers | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.2 | Secure every call — the three trust zones | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.3 | Adopt the standards portfolio | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.4 | Generate the semantic map | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.5 | Generate a service contract | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.6 | Put a real data source on the bus — the Giga case | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.7 | Wire a service onto the bus | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.8 | Make the exchange lawful — the data-protection envelope | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+
+### Module 5 — Implementation + member onboarding + the Linkup demo (Architect)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 5.0 | Module 5 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
+| 5.1 | Plan the build in four phases | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 5.2 | State what a member must have — the Member Requirements | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 5.3 | Make 'connected' mean 'dependable' — the SLA | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 5.4 | Register a member on X-Road | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 5.5 | Stand up the federation | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 5.6 | Run the once-only exchange, live | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 5.7 | From demonstration to production | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+
+### Module 6 — AI plays for GIF + dissemination (Strategist)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 6.0 | Module 6 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
+| 6.1 | The GIF AI-play catalogue | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 6.2 | Watch the bus — monitoring and anomaly detection | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 6.3 | Keep the documents honest — the consistency cross-check | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 6.4 | Carry the framework to the next sector | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 6.5 | Disseminate to the four roles | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 6.6 | From no framework to first service — the storyboard | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+

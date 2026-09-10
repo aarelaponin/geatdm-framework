@@ -1,0 +1,219 @@
+# KP video tracker — manifest + manual state.
+#
+# What lives here: the list of KPs / modules / topics, and the few facts that cannot be read
+# off disk.  Everything else (scripts, decks, briefs, takes, SRTs, cues, MP4s and their
+# versions) is detected by render_tracker.py from videos/<module>/<lang>/.
+#
+# Per topic, per language, you may set:
+#   accepted:  true | "v0.13"   the take of record has passed audit (a version string pins it;
+#                               the tracker warns if a newer take appears on disk)
+#   published: true | URL       on YouTube (a URL becomes a link)
+#   blocker:   "text"           shows red; the row lands under BLOCKED in "Next actions"
+#   note:      "text"           anything worth seeing next to the row
+# On-camera rows (KP intro, m.0 module intros) additionally accept:
+#   filmed:    true|false       overrides the .mov-on-disk detection
+#   mastered:  true|false       overrides the KP1_M1_1.0_Video_v*.mp4 detection
+#
+# Bump `version` when the manifest structure or the topic list changes (not for a status tick).
+
+version: 1
+languages: [en, fr]        # fr rows are hidden by default until something exists for them
+
+kps:
+  - id: KP1
+    number: 1
+    title: Government Enterprise Architecture
+    root: KP1-GEA
+    note: >-
+      35 content videos after the Sep 2026 tightening pass. Module 1 videos were rebuilt 9 Sep with
+      the hook slide; Modules 2–4 takes all accepted 9 Sep, cues + assembly not started.
+    intro:                              # KP-level on-camera introduction (introduces the five modules)
+      title: KP1 introduction — what the five modules cover (on camera)
+      path: videos/intro                # not created yet; scripts/ video/ under <path>/<lang>/
+      en:
+        note: Replaces the retired Module 5 (AI plays). Script not started.
+
+    modules:
+      - number: 1
+        title: Why a PAERA-anchored EA, and the lifecycle in one page
+        persona: Strategist
+        path: videos/module_1
+        intro:
+          title: Module 1 introduction (on camera, ~1:55)
+          en:
+            note: >-
+              Raw take M1_intro.mov (30 Aug) predates the tightening — IntroScript v0.2 still says
+              "eight short videos". Re-cut with the Module 1 videos; ITU §4.3 calibration item open.
+        topics:
+          - {code: "1.1", title: "Why your country needs a national EA", mins: ~4,
+             en: {accepted: v0.13}, fr: {accepted: v0.2, note: 'French pilot — from the pre-tightening deck'}}
+          - {code: "1.2", title: "What an EA actually is", mins: ~3, en: {accepted: v0.8}}
+          - {code: "1.3", title: "Why projects can't do this themselves", mins: ~4, en: {accepted: v0.10}}
+          - {code: "1.4", title: "Why an EA matters more now", mins: ~4, en: {accepted: v0.5}}
+          - {code: "1.5", title: "Why PAERA-anchored", mins: ~4, en: {accepted: v0.4}}
+          - {code: "1.6", title: "The lifecycle on one page", mins: ~4, en: {accepted: v0.9}}
+          - {code: "1.7", title: "What you will need from your minister", mins: ~5, en: {accepted: v0.10}}
+          - {code: "1.8", title: "(former) Your first play",
+             retired: "folded into a two-slide close on 1.7 in the Sep 2026 tightening; files on disk are leftovers"}
+
+      - number: 2
+        title: EA principles, the metamodel and the BDAT layers
+        persona: Architect
+        path: videos/module_2
+        intro: {title: Module 2 introduction (on camera)}
+        topics:
+          - {code: "2.1", title: "Read any government in four layers", mins: ~5, en: {accepted: v0.15}}
+          - {code: "2.2", title: "The shared vocabulary that makes re-use possible", mins: ~5, en: {accepted: v0.19}}
+          - {code: "2.3", title: "Adopt your principles, don't draft them", mins: ~4, en: {accepted: v0.2}}
+          - {code: "2.4", title: "Classify any public body before you model it", mins: ~4,
+             en: {accepted: v0.10, note: 'settled on runtime (+45s)'}}
+          - {code: "2.5", title: "BDAT on a real ministry — the Progressa walkthrough", mins: ~5,
+             en: {accepted: v0.11, note: 'fully clean; weak close ("It does,")'}}
+          - {code: "2.6", title: "Run a Phase 2 Assess", mins: ~5, en: {accepted: v0.7}}
+          - {code: "2.7", title: "The two traps to catch at Assess", mins: ~4, en: {accepted: v0.2}}
+
+      - number: 3
+        title: EA repository, tooling and governance
+        persona: Architect
+        path: videos/module_3
+        intro: {title: Module 3 introduction (on camera)}
+        topics:
+          - {code: "3.1", title: "Set up the one place your architecture lives", mins: ~4,
+             en: {accepted: v0.5, note: 'accepted by decision 9 Sep; "registry" check is a false positive'}}
+          - {code: "3.2", title: "Choose EA tooling without locking yourself in", mins: ~4,
+             en: {accepted: v0.7, note: 'accepted by decision 9 Sep — ships "nightmare", "a mess", "hostage" on air; reversible by re-roll'}}
+          - {code: "3.3", title: "Keep the repository true — the update discipline", mins: ~4,
+             en: {accepted: v0.6, note: 'settled on runtime (−47s)'}}
+          - {code: "3.4", title: "Stand up an EA Board that can actually say no", mins: ~4, en: {accepted: v0.6}}
+          - {code: "3.5", title: "Review projects against the architecture", mins: ~4, en: {accepted: v0.1, note: 'fully clean'}}
+          - {code: "3.6", title: "Show the EA is working — the few metrics that matter", mins: ~4, en: {accepted: v0.2}}
+          - {code: "3.7", title: "Keep the practice alive past year two", mins: ~5, en: {accepted: v0.2}}
+
+      - number: 4
+        title: Progressa demonstration — applying the method end-to-end
+        persona: Architect
+        path: videos/module_4
+        intro: {title: Module 4 introduction (on camera)}
+        topics:
+          - {code: "4.1", title: "Meet Progressa — a real sector with a real fragmentation problem", mins: ~3, en: {accepted: v0.5}}
+          - {code: "4.2", title: "Phase 1, Discover — map what the sector has today", mins: ~4, en: {accepted: v0.9}}
+          - {code: "4.3", title: "Phase 2, Assess — find the gaps and rank them", mins: ~3, en: {accepted: v0.1}}
+          - {code: "4.4", title: "Phase 3, Adapt — fit PAERA and decide build, buy or share", mins: ~3, en: {accepted: v0.4, note: 'fully clean'}}
+          - {code: "4.5", title: "Phase 4, Plan — design the target architecture", mins: ~4, en: {accepted: v0.12}}
+          - {code: "4.6", title: "Phase 4, Plan — sequence the roadmap and cost it", mins: ~4,
+             en: {accepted: v0.7, note: 'settled on runtime (+63s)'}}
+          - {code: "4.7", title: "Phase 5, Execute & Govern — stand up the living EA", mins: ~3, en: {accepted: v0.9}}
+          - {code: "4.8", title: "Run this on your own sector — the transferable recipe", mins: ~4, en: {accepted: v0.7}}
+
+      - number: 5
+        title: Cross-country evidence, cross-sector applicability and dissemination
+        persona: Strategist
+        path: videos/module_5
+        intro: {title: Module 5 introduction (on camera)}
+        topics:
+          - {code: "5.1", title: "Is this proven, or just theory? — evidence from real programmes", mins: ~4}
+          - {code: "5.2", title: "What the evidence says works — and what quietly kills these programmes", mins: ~3}
+          - {code: "5.3", title: "Roll it out across sectors — and why the second is cheaper", mins: ~5}
+          - {code: "5.4", title: "Win the commitment — the business case that gets your minister to yes", mins: ~4}
+          - {code: "5.5", title: "Build your team's capability with open knowledge products", mins: ~4}
+          - {code: "5.6", title: "The closing case — proven, portable, and necessary now", mins: ~3}
+
+  - id: KP2
+    number: 2
+    title: Government Interoperability Framework
+    root: KP2-GIF
+    note: All six script bundles authored and gated (v0.1). No video track started — videos/ does not exist yet.
+    intro:
+      title: KP2 introduction — what the six modules cover (on camera)
+      path: videos/intro
+    modules:
+      - number: 1
+        title: Why interoperability, the four layers, and the foundation to start
+        persona: Strategist
+        path: videos/module_1
+        intro: {title: Module 1 introduction (on camera)}
+        topics:
+          - {code: "1.1", title: "Why interoperability can't be bought, only built"}
+          - {code: "1.2", title: "The four layers of interoperability"}
+          - {code: "1.3", title: "The once-only promise"}
+          - {code: "1.4", title: "The Strategic Foundation Document"}
+          - {code: "1.5", title: "The Use-Case Catalogue"}
+          - {code: "1.6", title: "Mapping your stakeholders"}
+          - {code: "1.7", title: "What the world already proved"}
+      - number: 2
+        title: Legal framework — the Decree Drafting Kit
+        persona: Strategist
+        path: videos/module_2
+        intro: {title: Module 2 introduction (on camera)}
+        topics:
+          - {code: "2.1", title: "Why the platform needs a legal mandate"}
+          - {code: "2.2", title: "Anatomy of an interoperability decree"}
+          - {code: "2.3", title: "The Explanatory Memorandum and Preamble"}
+          - {code: "2.4", title: "The Draft Articles Package"}
+          - {code: "2.5", title: "The Cover Note and Two-Track Regulatory Memo"}
+          - {code: "2.6", title: "The decree as configuration"}
+      - number: 3
+        title: Governance model — three-tier with RACI
+        persona: Strategist
+        path: videos/module_3
+        intro: {title: Module 3 introduction (on camera)}
+        topics:
+          - {code: "3.1", title: "Why a bus needs an owner"}
+          - {code: "3.2", title: "The three tiers of governance"}
+          - {code: "3.3", title: "The RACI matrix"}
+          - {code: "3.4", title: "Member obligations"}
+          - {code: "3.5", title: "The four Technical Working Groups"}
+          - {code: "3.6", title: "Governance as living configuration"}
+      - number: 4
+        title: Architecture + technical standards + Giga end-to-end case
+        persona: Architect
+        path: videos/module_4
+        intro: {title: Module 4 introduction (on camera)}
+        topics:
+          - {code: "4.1", title: "Place every component — the four functional layers"}
+          - {code: "4.2", title: "Secure every call — the three trust zones"}
+          - {code: "4.3", title: "Adopt the standards portfolio"}
+          - {code: "4.4", title: "Generate the semantic map"}
+          - {code: "4.5", title: "Generate a service contract"}
+          - {code: "4.6", title: "Put a real data source on the bus — the Giga case"}
+          - {code: "4.7", title: "Wire a service onto the bus"}
+          - {code: "4.8", title: "Make the exchange lawful — the data-protection envelope"}
+      - number: 5
+        title: Implementation + member onboarding + the Linkup demo
+        persona: Architect
+        path: videos/module_5
+        intro: {title: Module 5 introduction (on camera)}
+        topics:
+          - {code: "5.1", title: "Plan the build in four phases"}
+          - {code: "5.2", title: "State what a member must have — the Member Requirements"}
+          - {code: "5.3", title: "Make 'connected' mean 'dependable' — the SLA"}
+          - {code: "5.4", title: "Register a member on X-Road"}
+          - {code: "5.5", title: "Stand up the federation"}
+          - {code: "5.6", title: "Run the once-only exchange, live"}
+          - {code: "5.7", title: "From demonstration to production"}
+      - number: 6
+        title: AI plays for GIF + dissemination
+        persona: Strategist
+        path: videos/module_6
+        intro: {title: Module 6 introduction (on camera)}
+        topics:
+          - {code: "6.1", title: "The GIF AI-play catalogue"}
+          - {code: "6.2", title: "Watch the bus — monitoring and anomaly detection"}
+          - {code: "6.3", title: "Keep the documents honest — the consistency cross-check"}
+          - {code: "6.4", title: "Carry the framework to the next sector"}
+          - {code: "6.5", title: "Disseminate to the four roles"}
+          - {code: "6.6", title: "From no framework to first service — the storyboard"}
+
+  # KP3 (DPI) and KP4 are not tracked yet — uncomment and fill in when their content exists.
+  # - id: KP3
+  #   number: 3
+  #   title: Digital Public Infrastructure
+  #   root: KP3-DPI
+  #   intro: {title: KP3 introduction (on camera), path: videos/intro}
+  #   modules:
+  #     - number: 1
+  #       title: ...
+  #       path: videos/module_1
+  #       intro: {title: Module 1 introduction (on camera)}
+  #       topics:
+  #         - {code: "1.1", title: "..."}
