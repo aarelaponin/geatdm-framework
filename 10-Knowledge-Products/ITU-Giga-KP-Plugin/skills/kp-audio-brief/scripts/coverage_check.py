@@ -34,7 +34,7 @@ WORD = re.compile(r"[a-z][a-z-]{3,}")
 # perfectly covered section slide "thin" for not saying "voice-over" and "standalone".
 CHROME = re.compile(
     r"^(?:\d\.\d\s*·|KP\d+\s*·\s*Government|~\d+\s*minutes?\s*·|Length:|Target audience:|"
-    r"www\.itu\.int|IN ONE SENTENCE|THE LIFECYCLE THIS MODULE TEACHES|\d+\s*sign-offs?\s*·)",
+    r"www\.itu\.int|IN ONE SENTENCE|WHERE WE START|THE LIFECYCLE THIS MODULE TEACHES|\d+\s*sign-offs?\s*·)",
     re.I)
 
 

@@ -18,6 +18,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                 '..', 'ITU-Giga-KP-Plugin', 'skills', 'kp-deck-builder', 'scripts'))
 from deck_lib import (
+    TITLE_CARD_NOTE, hook_slide,
     GREY, INK, ITU_BLUE, ITU_BLUE_DARK, LIGHT, PANEL_GREY, WHITE,
     LAYOUT_THANKS, LAYOUT_WHITE,
     add_slide, big_slide, block_slide, box, delete_template_slides, edit_agenda,
@@ -60,9 +61,47 @@ def fade_slide(head, idx, fade, counter, tag, note):
     return s
 
 
+# Opener (hook) slide copy per video — headline + two to four supporting lines, written from
+# the same `### Slide — Title` narration that the section() note carries. Not a preview of the
+# next slide's list. See deck_lib.hook_slide().
+HOOKS = {'3.1': ('You have the four-layer picture of a sector. Where does it live?',
+         ['A slide deck on your laptop: out of date within a month, disagreed with within two.',
+          'It needs a home.']),
+ '3.2': ('The spreadsheet stops coping. Do not swap one lock-in for another.',
+         ['Hundreds of entities, several sectors, relationships you cannot see in rows and '
+          'columns.',
+          'In buying a tool to help your government avoid vendor lock-in, you can lock yourself '
+          'into the tool.']),
+ '3.3': ('A repository has one enemy, and it is not technical.',
+         ['Staleness.',
+          'An architecture six months behind reality is worse than none — people trust it, and it '
+          'lies to them.',
+          'Keeping it true is unglamorous and constant.']),
+ '3.4': ('The repository holds the architecture. The Board gives it authority.',
+         ['Without a governance board, the architecture is a document people can ignore.',
+          'With a real one — that can say no — it becomes the place every significant digital '
+          'decision passes through.']),
+ '3.5': ('A Board with authority needs something to do with it.',
+         ['The architecture review gate: every significant new project passes a short, consistent '
+          'set of questions before it gets funded.',
+          'This is where the architecture does its real work.']),
+ '3.6': ('Your minister’s fair question: is this EA work actually doing anything?',
+         ['You need an answer that is honest, short and true.',
+          'A handful of metrics, not a fifty-page report. Pick them carefully.']),
+ '3.7': ('Most EA programmes do not fail dramatically. They fade.',
+         ['The first six months go well.',
+          'Then, somewhere in the second year, the practice quietly stops mattering.',
+          'The fade is predictable, and it comes in four forms.'])}
+
+
 def section(code, name, message, runtime, note):
-    return section_slide(prs, 'KP1 · MODULE 3 · VIDEO %s' % code, code, name, message,
-                         runtime + ' · standalone video · voice-over on text slides', note)
+    s = section_slide(prs, 'KP1 · MODULE 3 · VIDEO %s' % code, code, name, message,
+                         runtime + ' · standalone video · voice-over on text slides', TITLE_CARD_NOTE)
+    # The opener slide: the `### Slide — Title` narration gets a slide of its own, so the
+    # cue file has something to show while the hosts run the opener (45–90 s in practice).
+    head, lines = HOOKS[code]
+    hook_slide(prs, head, lines, '%s · %s' % (code, name), note)
+    return s
 
 
 # ---------------------------------------------------------------- COVER (edit slide 1)
@@ -122,7 +161,7 @@ section('3.1', 'Set up the one place your architecture lives',
         'entities and the decisions — so that one picture of your government exists instead of many '
         'private copies. Set it up first; everything else governs what goes into it.',
         '~4 minutes',
-        "VO, slide 1: You have the four-layer picture of a sector. Where does it live? If the answer "
+        "VO: You have the four-layer picture of a sector. Where does it live? If the answer "
         "is a slide deck on your laptop, the architecture will be out of date within a month and "
         "disagreed with within two. It needs a home: the repository.")
 
@@ -240,7 +279,7 @@ section('3.2', 'Choose EA tooling without locking yourself in',
         'build, keep your data in open formats you control, and never let the EA tool itself become '
         'the vendor trap it is meant to help you avoid.',
         '~4 minutes',
-        "VO, slide 1: At some point a spreadsheet stops coping — hundreds of entities, several "
+        "VO: At some point a spreadsheet stops coping — hundreds of entities, several "
         "sectors, relationships you cannot see in rows and columns. Here is the danger: in buying a "
         "tool to help your government avoid vendor lock-in, you can lock yourself into the tool.")
 
@@ -323,7 +362,7 @@ section('3.3', 'Keep the repository true — the update discipline',
         'update, and how a change is checked — so the architecture tracks reality instead of slowly '
         'becoming a confident work of fiction.',
         '~4 minutes',
-        "VO, slide 1: A repository has one enemy, and it is not technical. It is staleness. An "
+        "VO: A repository has one enemy, and it is not technical. It is staleness. An "
         "architecture six months behind reality is worse than none — because people trust it, and "
         "it lies to them. Keeping it true is unglamorous and constant.")
 
@@ -417,7 +456,7 @@ section('3.4', 'Stand up an EA Board that can actually say no',
         'and a mandate that lets it say no — is what turns the architecture from a document into the '
         'place every digital decision passes through.',
         '~4 minutes',
-        "VO, slide 1: The repository holds the architecture; the Board is what gives it authority. "
+        "VO: The repository holds the architecture; the Board is what gives it authority. "
         "Without a governance board the architecture is a document people can ignore. With a real "
         "one — that can say no — it becomes the place every significant digital decision passes "
         "through.")
@@ -523,7 +562,7 @@ section('3.5', 'Review projects against the architecture',
         'through before funding — is what turns principles and re-use from good intentions into the '
         'actual path of least resistance.',
         '~4 minutes',
-        "VO, slide 1: A Board with authority needs something to do with it: the architecture review "
+        "VO: A Board with authority needs something to do with it: the architecture review "
         "gate, where every significant new project passes through a short, consistent set of "
         "questions before it gets funded. This is where the architecture does its real work.")
 
@@ -622,7 +661,7 @@ section('3.6', 'Show the EA is working — the few metrics that matter',
         'the minister and the team that the EA is working, and tell you where it isn’t, without '
         'drowning anyone in vanity numbers.',
         '~4 minutes',
-        "VO, slide 1: Sooner or later your minister asks the fair question: is this EA work actually "
+        "VO: Sooner or later your minister asks the fair question: is this EA work actually "
         "doing anything? You need an answer that is honest, short and true — a handful of metrics, "
         "not a fifty-page report. Pick them carefully.\n\nRETRIEVAL MOMENT: before the four-metrics "
         "slide, ask the viewer which single number they would put in front of the budget authority. "
@@ -710,7 +749,7 @@ section('3.7', 'Keep the practice alive past year two',
         'goes stale, the Board drifts to advisory, the sponsor changes. Naming these four fade-modes '
         'and the move that counters each is how you keep the practice alive.',
         '~5 minutes',
-        "VO, slide 1: Most EA programmes do not fail dramatically. They fade. The first six months go "
+        "VO: Most EA programmes do not fail dramatically. They fade. The first six months go "
         "well; then, somewhere in the second year, the practice quietly stops mattering. The fade is "
         "predictable, and it comes in four forms.\n\nRETRIEVAL MOMENT: before the first fade slide, "
         "ask the viewer to name the ways they have seen a programme fade. The four answers are "
@@ -816,7 +855,7 @@ notes(s, 'Closing slide for the combined deck. Individual videos end on their so
 
 # Self-check: the split spec's slide ranges depend on this count, and a helper that
 # silently stops drawing shows up first as a slide with no voice-over.
-assert len(prs.slides._sldIdLst) == 56, 'slide count changed — update decks/split_spec.json'
+assert len(prs.slides._sldIdLst) == 63, 'slide count changed — update decks/split_spec.json'
 assert all(sl.has_notes_slide and sl.notes_slide.notes_text_frame.text.strip() for sl in prs.slides), \
     'every slide carries its voice-over in the notes'
 

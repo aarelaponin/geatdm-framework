@@ -10,6 +10,10 @@ Spoken narration only, one section per video (4.1 – 4.8), slide-by-slide, matc
 
 ### Slide — Title (4.1)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — To see the method work, you need a realistic place to run it.
+
 To see the method work, you need a realistic place to run it. Progressa is a demonstration country with an education sector like many across the continent — real institutions, a real fragmentation problem, and a minister who wants results.
 
 ### Slide — Five bodies: a policy unit, a service authority, two registries, a platform
@@ -43,6 +47,10 @@ So this is Progressa. A realistic education sector, five institutions, and the f
 > *Discovery produces one deliverable — an honest picture of what the sector has today, with no recommendations yet — signed off as accurate before any analysis begins. Watch it done on Progressa.*
 
 ### Slide — Title (4.2)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Phase 1 — Discover. One question: what exists today?
 
 The first phase is Discover. One question: what exists today? Not what is wrong — that comes later. An accurate picture of where the sector is now. On Progressa, Discovery takes about three to four weeks and produces a single deliverable: the Discovery brief.
 
@@ -78,6 +86,10 @@ That is Phase 1 on Progressa. One question — what exists today. One deliverabl
 
 ### Slide — Title (4.3)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Phase 2 — Assess. Now you judge.
+
 Phase two is Assess. Now you judge: what is the gap between where Progressa is and where it needs to be? The deliverable is the current state in four layers, maturity scorecards, and a gap analysis that ranks the problems. About six to eight weeks.
 
 ### Slide — Score the capabilities and “things are bad” becomes a map
@@ -111,6 +123,10 @@ That is Phase 2 on Progressa. Score the capabilities. Name the four gaps. Rank b
 > *Adapt fits PAERA to Progressa — localising principles, setting sector priorities, and deciding for each building block whether to build, buy, share or sandbox — signed off as the framework and sourcing approach.*
 
 ### Slide — Title (4.4)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Phase 3 — Adapt. PAERA is a starting point, not a constraint.
 
 Phase three is Adapt. PAERA is a starting point, not a constraint, so now the architects shape it to Progressa — its own principles, its sector priorities, and a sourcing decision for each building block. About four to six weeks.
 
@@ -146,6 +162,10 @@ That is Phase 3 on Progressa. Localise the principles. Make a deliberate sourcin
 
 ### Slide — Title (4.5)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — The target architecture: the picture of the future state you are building toward.
+
 Between where Progressa is today and how it gets somewhere sits the deliverable the whole architecture exists to produce: the target architecture, the picture of the future state you are building toward. Skip it, and you sequence a roadmap to a destination nobody drew.
 
 ### Slide — The target is the current-state picture, designed instead of observed
@@ -179,6 +199,10 @@ So before you sequence anything, design the target: the future-state picture in 
 > *Plan turns Progressa's decisions into a sequenced, costed roadmap in waves — the deliverable the minister takes to cabinet — signed off with budget committed.*
 
 ### Slide — Title (4.6)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Phase 4 — Plan. In what order, at what cost?
 
 Phase four is Plan. Now the decisions become a sequence: how does Progressa get from today to the target, in what order, at what cost? The deliverable is a roadmap in waves with investment estimates. About six to eight weeks.
 
@@ -214,6 +238,10 @@ That is Phase 4 on Progressa. Sequence into waves, each delivering something vis
 
 ### Slide — Title (4.7)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Phase 5 — Execute and Govern. The phase that never ends.
+
 Phase five is Execute and Govern — the phase that never ends. The approved roadmap becomes a project pipeline, and a small permanent EA team turns it into a living practice. Three things make it real on Progressa: the repository, the Board, the review gate.
 
 ### Slide — The repository goes live and a small permanent team keeps it true
@@ -243,6 +271,10 @@ That is Phase 5 on Progressa. The repository live and current. The Board binding
 > *The five phases, four sign-offs and six deliverables you watched on Progressa are the recipe — change the institutions and the data domains, and the same method runs on any sector you are handed.*
 
 ### Slide — Title (4.8)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Swap the data. Keep the method.
 
 The value of a worked example is not Progressa itself — it is that the same five phases, four sign-offs and six deliverables run on any public-sector domain you are handed. Here is the recipe, stripped to what transfers.
 

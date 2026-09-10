@@ -236,7 +236,9 @@ def rows_slide(slide, rows, top=1.55, bottom=6.85, numbered=True, head_size=19, 
 
 
 def section_slide(prs, kicker, code, name, message, runtime_line, note_text):
-    """Blue-bg divider that doubles as the standalone video's opening slide.
+    """Blue-bg divider that doubles as the standalone video's title card (one card, not two —
+    split_module_deck.py no longer prepends the cover). The opener's VO belongs on the
+    hook_slide() that follows it; pass TITLE_CARD_NOTE here.
     kicker e.g. 'KP1 · MODULE 1 · VIDEO 1.3' — module-scoped, never 'of N'."""
     s = add_slide(prs, LAYOUT_BLUE)
     tb = box(s, 0.9, 0.9, 8, 0.5)
@@ -251,6 +253,39 @@ def section_slide(prs, kicker, code, name, message, runtime_line, note_text):
     set_text(tb.text_frame, [[(runtime_line, 12, False, GREY, False)]])
     notes(s, note_text)
     return s
+
+
+HOOK_LABEL = 'WHERE WE START'
+
+
+def hook_slide(prs, head, lines, tag, note_text, label=HOOK_LABEL):
+    """The opener slide — sits between the title card and the first content slide.
+
+    Every script narrates an opener (the `### Slide — Title` block: a vignette, an objection, a
+    phase framing) before the first content slide, and the two-host format stretches those ~40
+    words to 45–90 s. Until 2026-09 that narration had no slide of its own, so the title card
+    stayed on screen while the hosts were already teaching (KP1_Video_Opener_Review_2026-09-09).
+    This slide is what the cue file shows for that stretch; its notes carry the opener's VO, so
+    the brief still feeds it to the hosts and the title card itself is the silent cold open.
+
+    `head` is one line, big — the hook. `lines` are two to four short supporting lines from the
+    scripted opener (not a preview of the next slide's list). No chart, no diagram."""
+    s = add_slide(prs, LAYOUT_BLUE)
+    tb = box(s, 1.1, 1.45, 6, 0.4)
+    set_text(tb.text_frame, [[(label, 12, True, ITU_BLUE_DARK, False)]])
+    tb = box(s, 1.1, 1.95, 11.1, 1.9)
+    set_text(tb.text_frame, [[(head, 30, True, INK, False)]])
+    if lines:
+        tb = box(s, 1.1, 3.95, 11.1, 2.6)
+        set_text(tb.text_frame, [[(ln, 17, False, GREY, False)] for ln in lines], space_after=Pt(8))
+    footer(s, tag, itu=True)
+    notes(s, note_text)
+    return s
+
+
+TITLE_CARD_NOTE = ('Title card — the cold open. The hosts name the module, the video number, the title '
+                   'and the single message on this slide; no scripted narration. Hold until the opener '
+                   'begins; the opener is narrated on the next slide.')
 
 
 PRACTICE_LEAD = 'Do this on your own sector.'

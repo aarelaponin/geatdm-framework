@@ -80,8 +80,14 @@ One combined module deck, sectioned so any video can be lifted out standalone:
    (for KP1: the five lifecycle phases). Length = total minutes across the module's videos.
 2. **Agenda** — the module's videos with runtimes on the left; the module's argument in one or two
    italic sentences on the right.
-3. **Per video, in order:** a blue **section slide** that doubles as the standalone video's opening
-   (kicker, big number, title, single message in italics, runtime line) → the **content slides** from
+3. **Per video, in order:** a blue **section slide** that doubles as the standalone video's title card
+   (kicker, big number, title, single message in italics, runtime line; notes = `TITLE_CARD_NOTE`, no
+   VO — it is the silent cold open) → a blue **hook slide** (`hook_slide()`: eyebrow `WHERE WE START`,
+   one big line, two to four supporting lines) that carries the `### Slide — Title` opener's VO in its
+   notes — the hosts stretch that ~40-word opener to 45–90 s, and before 2026-09 nothing was on
+   screen for it but the title card (see `KP1-GEA/KP1_Video_Opener_Review_2026-09-09.md`); the build
+   script keeps the copy in a `HOOKS = {code: (headline, [lines])}` table next to `section()`, written
+   from the opener narration, never a preview of the next slide's list → the **content slides** from
    the bundle's slide cues → for most videos a blue **"In one sentence"** climax slide (the quotable,
    screenshot-ready line) → a **Sources** slide ("Find the link in the description.", no narration).
    The recap slide — the climax where there is one, otherwise the last content slide — carries the
@@ -191,7 +197,9 @@ two:** the range opens on the video's section slide, which already carries the m
 `KP1 · MODULE 1 · VIDEO 1.3`, the number, the title and the single message, so the module cover is no
 longer prepended (it was a second card saying the same thing, ~10 s of dead screen and an extra slide
 for the cue file to place). The agenda, cover and thank-you slides stay only in the combined deck.
-After any rebuild of the combined deck, re-run the split — ranges may have shifted; verify counts
+After any rebuild of the combined deck, re-run the split with `--infer-ranges` — it reads each
+video's range off the section-slide kickers and writes it back into the spec, so nothing is counted
+by hand; verify counts
 against the grammar (section + content + sources).
 
 ## The scripts-only companion

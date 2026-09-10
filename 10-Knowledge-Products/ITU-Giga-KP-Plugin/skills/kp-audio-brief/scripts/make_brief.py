@@ -33,7 +33,7 @@ LENGTH_RE = re.compile(r"Length:\s*~?\s*(\d+)\s*min", re.I)
 CHROME = re.compile(
     r"^(?:KP\d+\s*·\s*Government|Length:|Target audience:|www\.itu\.int|"
     r"~?\d+\s*minutes?\s*·|standalone video\s*·|\d+\.\d+\s*·|\d+\.\d+$|"
-    r"THE [A-Z ]+ THIS MODULE TEACHES|IN ONE SENTENCE)", re.I)
+    r"THE [A-Z ]+ THIS MODULE TEACHES|IN ONE SENTENCE|WHERE WE START)", re.I)
 
 VO_RE = re.compile(r"^\s*VO\b[^:]*:\s*", re.I)
 EYEBROW = re.compile(r"^KP\d+\s*·\s*MODULE\s*\d+\s*·\s*VIDEO\s*\d+\.\d+$", re.I)

@@ -33,6 +33,21 @@ def slide_title(slide):
     return ''
 
 
+HOOK_LABEL = 'WHERE WE START'   # deck_lib.HOOK_LABEL — the opener slide's eyebrow
+TITLE_NOTE = ('*(Cold open — no scripted narration. The hosts name the module, the video number, '
+              'the title and the single message; hold until the opener begins.)*')
+
+
+def hook_headline(slide):
+    """The opener slide's headline, or '' if this is not a hook slide. deck_lib.hook_slide()
+    places the eyebrow label first and the headline right after it."""
+    shapes = [sh for sh in slide.shapes if sh.has_text_frame]
+    for k, sh in enumerate(shapes):
+        if sh.text_frame.text.strip() == HOOK_LABEL and k + 1 < len(shapes):
+            return shapes[k + 1].text_frame.text.strip()
+    return ''
+
+
 def is_climax(slide):
     return any(sh.has_text_frame and sh.text_frame.text.strip() == 'IN ONE SENTENCE'
                for sh in slide.shapes)
@@ -81,7 +96,11 @@ def main():
             sl = slides[n - 1]
             head = slide_title(sl)
             if n == lo:
-                head = 'Title (%s)' % v['code']
+                # The title card is the silent cold open; its opener VO moved to the hook slide.
+                items.append(('Title (%s)' % v['code'], TITLE_NOTE))
+                continue
+            elif hook_headline(sl):
+                head = hook_headline(sl)
             elif is_climax(sl):
                 head = 'In one sentence'
             if head == 'Sources':

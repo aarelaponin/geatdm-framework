@@ -16,6 +16,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                 '..', 'ITU-Giga-KP-Plugin', 'skills', 'kp-deck-builder', 'scripts'))
 from deck_lib import (
+    TITLE_CARD_NOTE, hook_slide,
     GREY, INK, ITU_BLUE, ITU_BLUE_DARK, LIGHT, MIDGREY, WHITE,
     LAYOUT_THANKS, LAYOUT_WHITE,
     add_slide, big_slide, block_slide, box, delete_template_slides, edit_agenda,
@@ -34,9 +35,51 @@ PB = ('PRACTICE BOX (on-screen only — never read it, never paraphrase it, neve
       'It replaces the narrated handoff: this video ends on the recap and the Sources slide.')
 
 
+# Opener (hook) slide copy per video — headline + two to four supporting lines, written from
+# the same `### Slide — Title` narration that the section() note carries. Not a preview of the
+# next slide's list. See deck_lib.hook_slide().
+HOOKS = {'4.1': ('To see the method work, you need a realistic place to run it.',
+         ['Progressa — a demonstration country with an education sector like many across the '
+          'continent.',
+          'Real institutions. A real fragmentation problem. A minister who wants results.']),
+ '4.2': ('Phase 1 — Discover. One question: what exists today?',
+         ['Not what is wrong — that comes later.',
+          'About three to four weeks on Progressa.',
+          'One deliverable: the Discovery brief.']),
+ '4.3': ('Phase 2 — Assess. Now you judge.',
+         ['What is the gap between where Progressa is and where it needs to be?',
+          'The current state in four layers, maturity scorecards, and a gap analysis that ranks '
+          'the problems.',
+          'About six to eight weeks.']),
+ '4.4': ('Phase 3 — Adapt. PAERA is a starting point, not a constraint.',
+         ['The architects shape it to Progressa — its own principles, its sector priorities,',
+          'and a sourcing decision for each building block.',
+          'About four to six weeks.']),
+ '4.5': ('The target architecture: the picture of the future state you are building toward.',
+         ['It sits between where Progressa is today and how it gets somewhere.',
+          'Skip it, and you sequence a roadmap to a destination nobody drew.']),
+ '4.6': ('Phase 4 — Plan. In what order, at what cost?',
+         ['How does Progressa get from today to the target?',
+          'The deliverable: a roadmap in waves, with investment estimates.',
+          'About six to eight weeks.']),
+ '4.7': ('Phase 5 — Execute and Govern. The phase that never ends.',
+         ['The approved roadmap becomes a project pipeline.',
+          'A small permanent EA team turns it into a living practice.',
+          'Three things make it real: the repository, the Board, the review gate.']),
+ '4.8': ('Swap the data. Keep the method.',
+         ['The value of a worked example is not Progressa itself.',
+          'The same five phases, four sign-offs and six deliverables run on any public-sector '
+          'domain you are handed.'])}
+
+
 def section(code, name, message, runtime, note):
-    return section_slide(prs, 'KP1 · MODULE 4 · VIDEO %s' % code, code, name, message,
-                         runtime + ' · standalone video · voice-over on text slides', note)
+    s = section_slide(prs, 'KP1 · MODULE 4 · VIDEO %s' % code, code, name, message,
+                         runtime + ' · standalone video · voice-over on text slides', TITLE_CARD_NOTE)
+    # The opener slide: the `### Slide — Title` narration gets a slide of its own, so the
+    # cue file has something to show while the hosts run the opener (45–90 s in practice).
+    head, lines = HOOKS[code]
+    hook_slide(prs, head, lines, '%s · %s' % (code, name), note)
+    return s
 
 
 # ---------------------------------------------------------------- COVER (edit slide 1)
@@ -102,7 +145,7 @@ section('4.1', 'Meet Progressa — a real sector with a real fragmentation probl
         'paper. Meet its institutions and its problem, because the rest of this module runs the '
         'full method on exactly this canvas.',
         '~3 minutes',
-        "VO, slide 1: To see the method work, you need a realistic place to run it. Progressa is a "
+        "VO: To see the method work, you need a realistic place to run it. Progressa is a "
         "demonstration country with an education sector like many across the continent — real "
         "institutions, a real fragmentation problem, and a minister who wants results.\n\n"
         "On screen: Progressa is a fictional demonstration country. All institutions are "
@@ -203,7 +246,7 @@ section('4.2', 'Phase 1, Discover — map what the sector has today',
         'no recommendations yet — signed off as accurate before any analysis begins. Watch it done '
         'on Progressa.',
         '~4 minutes',
-        "VO, slide 1: The first phase is Discover. One question: what exists today? Not what is "
+        "VO: The first phase is Discover. One question: what exists today? Not what is "
         "wrong — that comes later. An accurate picture of where the sector is now. On Progressa, "
         "Discovery takes about three to four weeks and produces a single deliverable: the "
         "Discovery brief.")
@@ -299,7 +342,7 @@ section('4.3', 'Phase 2, Assess — find the gaps and rank them',
         'right order — signed off as ground truth. It is the assessment method applied to a real '
         'sector.',
         '~3 minutes',
-        "VO, slide 1: Phase two is Assess. Now you judge: what is the gap between where Progressa "
+        "VO: Phase two is Assess. Now you judge: what is the gap between where Progressa "
         "is and where it needs to be? The deliverable is the current state in four layers, "
         "maturity scorecards, and a gap analysis that ranks the problems. About six to eight "
         "weeks.\n\n"
@@ -393,7 +436,7 @@ section('4.4', 'Phase 3, Adapt — fit PAERA and decide build, buy or share',
         'deciding for each building block whether to build, buy, share or sandbox — signed off as '
         'the framework and sourcing approach.',
         '~3 minutes',
-        "VO, slide 1: Phase three is Adapt. PAERA is a starting point, not a constraint, so now "
+        "VO: Phase three is Adapt. PAERA is a starting point, not a constraint, so now "
         "the architects shape it to Progressa — its own principles, its sector priorities, and a "
         "sourcing decision for each building block. About four to six weeks.")
 
@@ -501,7 +544,7 @@ section('4.5', 'Phase 4, Plan — design the target architecture',
         'platforms and the integration map your government should have. Design it by applying your '
         'principles to the gaps, and the roadmap finally has somewhere to go.',
         '~4 minutes',
-        "VO, slide 1: Between where Progressa is today and how it gets somewhere sits the "
+        "VO: Between where Progressa is today and how it gets somewhere sits the "
         "deliverable the whole architecture exists to produce: the target architecture, the "
         "picture of the future state you are building toward. Skip it, and you sequence a roadmap "
         "to a destination nobody drew.")
@@ -605,7 +648,7 @@ section('4.6', 'Phase 4, Plan — sequence the roadmap and cost it',
         'Plan turns Progressa\'s decisions into a sequenced, costed roadmap in waves — the '
         'deliverable the minister takes to cabinet — signed off with budget committed.',
         '~4 minutes',
-        "VO, slide 1: Phase four is Plan. Now the decisions become a sequence: how does Progressa "
+        "VO: Phase four is Plan. Now the decisions become a sequence: how does Progressa "
         "get from today to the target, in what order, at what cost? The deliverable is a roadmap "
         "in waves with investment estimates. About six to eight weeks.")
 
@@ -717,7 +760,7 @@ section('4.7', 'Phase 5, Execute & Govern — stand up the living EA',
         'the review gate that catches a project trying to build its own learner list and tells it '
         'to consume the registry. This is where re-use actually happens.',
         '~3 minutes',
-        "VO, slide 1: Phase five is Execute and Govern — the phase that never ends. The approved "
+        "VO: Phase five is Execute and Govern — the phase that never ends. The approved "
         "roadmap becomes a project pipeline, and a small permanent EA team turns it into a living "
         "practice. Three things make it real on Progressa: the repository, the Board, the review "
         "gate.\n\n"
@@ -806,7 +849,7 @@ section('4.8', 'Run this on your own sector — the transferable recipe',
         'recipe — change the institutions and the data domains, and the same method runs on any '
         'sector you are handed.',
         '~4 minutes',
-        "VO, slide 1: The value of a worked example is not Progressa itself — it is that the same "
+        "VO: The value of a worked example is not Progressa itself — it is that the same "
         "five phases, four sign-offs and six deliverables run on any public-sector domain you are "
         "handed. Here is the recipe, stripped to what transfers.")
 
@@ -905,7 +948,7 @@ notes(s, 'Closing slide for the combined deck. Individual videos end on their so
 
 # Self-check: the split spec's slide ranges depend on this count, and a helper that
 # silently stops drawing shows up first as a slide with no voice-over.
-assert len(prs.slides._sldIdLst) == 58, 'slide count changed — update decks/split_spec.json'
+assert len(prs.slides._sldIdLst) == 66, 'slide count changed — update decks/split_spec.json'
 assert all(sl.has_notes_slide and sl.notes_slide.notes_text_frame.text.strip() for sl in prs.slides), \
     'every slide carries its voice-over in the notes'
 

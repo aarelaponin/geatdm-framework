@@ -16,6 +16,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                 '..', 'ITU-Giga-KP-Plugin', 'skills', 'kp-deck-builder', 'scripts'))
 from deck_lib import (
+    TITLE_CARD_NOTE, hook_slide,
     GREY, INK, ITU_BLUE, ITU_BLUE_DARK, LIGHT, MIDGREY, PANEL_GREY, WHITE,
     LAYOUT_BLUE, LAYOUT_THANKS, LAYOUT_WHITE,
     add_slide, big_slide, block_slide, box, delete_template_slides, edit_agenda,
@@ -120,9 +121,48 @@ def trace_climax(levels, tag, note, practice, label='IN ONE SENTENCE'):
     return s
 
 
+# Opener (hook) slide copy per video — headline + two to four supporting lines, written from
+# the same `### Slide — Title` narration that the section() note carries. Not a preview of the
+# next slide's list. See deck_lib.hook_slide().
+HOOKS = {'2.1': ('Four layers. For each: one question, one deliverable, one mistake.',
+         ['Business · Data · Application · Technology',
+          'The question the layer answers. The deliverable you produce.',
+          'The mistake that catches first-time architects.']),
+ '2.2': ('Two ministries. Two architectures. Four words for two things.',
+         ['One calls a thing a “service”; the other calls the same thing a “function”.',
+          'One ministry’s “application” is another’s “system”.',
+          'You cannot compare them, connect them, or tell whether they are doing the same work '
+          'twice.']),
+ '2.3': ('Three months. Forty drafts. No agreement.',
+         ['Someone says: let us write our country’s architectural principles.',
+          'Half the drafts contradict each other.',
+          'There is a faster way — the principles already exist.']),
+ '2.4': ('Classify the body before you model it.',
+         ['The kind of body tells you in advance what it does, what data it owns, and how it is '
+          'governed.',
+          'PAERA publishes a taxonomy that sorts public bodies into a few types.']),
+ '2.5': ('Put the four layers on a real sector.',
+         ['Progressa — a demonstration country with an education system like many across the '
+          'continent.',
+          'A ministry, an examination authority, a learner registry, an identity authority,',
+          'and a digital government authority running shared platforms.']),
+ '2.6': ('Assess: a description good enough to decide from.',
+         ['The current-state picture and the gap analysis the roadmap is built on.',
+          'The quality tests, layer by layer.',
+          'The gaps you will almost always find.']),
+ '2.7': ('Two traps — cheap to stop while they are still a line in a project plan.',
+         ['Governments fall into them again and again.',
+          'At the Assess phase, you are the one positioned to spot them — before they are built.'])}
+
+
 def section(code, name, message, runtime, note):
-    return section_slide(prs, 'KP1 · MODULE 2 · VIDEO %s' % code, code, name, message,
-                         runtime + ' · standalone video · voice-over on text slides', note)
+    s = section_slide(prs, 'KP1 · MODULE 2 · VIDEO %s' % code, code, name, message,
+                         runtime + ' · standalone video · voice-over on text slides', TITLE_CARD_NOTE)
+    # The opener slide: the `### Slide — Title` narration gets a slide of its own, so the
+    # cue file has something to show while the hosts run the opener (45–90 s in practice).
+    head, lines = HOOKS[code]
+    hook_slide(prs, head, lines, '%s · %s' % (code, name), note)
+    return s
 
 
 # ---------------------------------------------------------------- COVER (edit slide 1)
@@ -180,7 +220,7 @@ section('2.1', 'Read any government in four layers',
         'Technology. Learn the question each layer answers, the deliverable it produces, and the '
         'mistake first-time architects make, and you can decompose any ministry put in front of you.',
         '~5 minutes',
-        "VO, slide 1: An Enterprise Architecture describes a government in four layers: Business, Data, Application, Technology. For each layer you need three things — the question it answers, the deliverable you produce, and the mistake that catches first-time architects.\n\n"
+        "VO: An Enterprise Architecture describes a government in four layers: Business, Data, Application, Technology. For each layer you need three things — the question it answers, the deliverable you produce, and the mistake that catches first-time architects.\n\n"
         "RETRIEVAL MOMENT: before the Business slide, ask the viewer to name the mistake they think "
         "catches first-time architects on each layer. The four answers are delivered on the next "
         "four slides, one per layer.")
@@ -244,7 +284,7 @@ section('2.2', 'The shared vocabulary that makes re-use possible',
         "it, and two ministries' architectures can be compared, connected and re-used. Skip it, and "
         "every team draws a different picture that no one else can read.",
         '~5 minutes',
-        "VO, slide 1: Two ministries each hand you an architecture. One calls a thing a 'service'; the other calls the same thing a 'function'. One ministry's 'application' is another's 'system'. You cannot compare them, connect them, or tell whether they are doing the same work twice.")
+        "VO: Two ministries each hand you an architecture. One calls a thing a 'service'; the other calls the same thing a 'function'. One ministry's 'application' is another's 'system'. You cannot compare them, connect them, or tell whether they are doing the same work twice.")
 
 s = add_slide(prs, LAYOUT_WHITE)
 title(s, 'A metamodel is a small shared dictionary')
@@ -323,7 +363,7 @@ section('2.3', "Adopt your principles, don't draft them",
         'job is to adopt them, tailor the wording to your context, and use them to settle design '
         'arguments — not to spend your first year drafting principles from scratch.',
         '~4 minutes',
-        "VO, slide 1: Every architecture team faces the same temptation early on. Someone says: let us write our country's architectural principles. Three months later there are forty drafts, half contradicting each other, and no agreement. There is a faster way — the principles already exist.")
+        "VO: Every architecture team faces the same temptation early on. Someone says: let us write our country's architectural principles. Three months later there are forty drafts, half contradicting each other, and no agreement. There is a faster way — the principles already exist.")
 
 s = add_slide(prs, LAYOUT_WHITE)
 title(s, 'A principle is a short rule that settles a design argument before it starts')
@@ -426,7 +466,7 @@ section('2.4', 'Classify any public body before you model it',
         'first, and you already know what capabilities, data and governance to expect from it — '
         'before you interview anyone.',
         '~4 minutes',
-        "VO, slide 1: Before you model a government body, know what kind of body it is — because the kind tells you in advance what it does, what data it owns, and how it is governed. PAERA publishes a taxonomy that sorts public bodies into a few types.")
+        "VO: Before you model a government body, know what kind of body it is — because the kind tells you in advance what it does, what data it owns, and how it is governed. PAERA publishes a taxonomy that sorts public bodies into a few types.")
 
 s = add_slide(prs, LAYOUT_WHITE)
 title(s, 'Three types cover most of government')
@@ -508,7 +548,7 @@ section('2.5', 'BDAT on a real ministry — the Progressa walkthrough',
         "Progressa's ministry, learner registry, examination authority and identity authority — and "
         'the abstract method becomes a concrete picture you can reproduce on your own sector.',
         '~5 minutes',
-        "VO, slide 1: Put the four layers on a real sector. Progressa is a demonstration country with an education system like many across the continent: a ministry, an examination authority, a learner registry, an identity authority, and a digital government authority running shared platforms.\n\n"
+        "VO: Put the four layers on a real sector. Progressa is a demonstration country with an education system like many across the continent: a ministry, an examination authority, a learner registry, an identity authority, and a digital government authority running shared platforms.\n\n"
         "On screen: Progressa is a fictional demonstration country — say so once, here.")
 
 s = add_slide(prs, LAYOUT_WHITE)
@@ -594,7 +634,7 @@ section('2.6', 'Run a Phase 2 Assess',
         'Learn the tests, learn the gaps you will always find, and you can run a Phase 2 Assess that '
         'names the right problems in the right order.',
         '~5 minutes',
-        "VO, slide 1: The Assess phase produces the current-state picture and the gap analysis the roadmap is built on. The hard part is writing a description good enough to decide from. So you need the quality tests, layer by layer, and the gaps you will almost always find.")
+        "VO: The Assess phase produces the current-state picture and the gap analysis the roadmap is built on. The hard part is writing a description good enough to decide from. So you need the quality tests, layer by layer, and the gaps you will almost always find.")
 
 s = add_slide(prs, LAYOUT_WHITE)
 title(s, 'Three tests apply to every layer')
@@ -692,7 +732,7 @@ section('2.7', 'The two traps to catch at Assess — bespoke and vendor-driven',
         'becomes the architecture. Learn to spot both at Assess, and you protect the country from '
         'paying many times for one thing.',
         '~4 minutes',
-        "VO, slide 1: Two traps catch governments again and again. As the architect at the Assess phase, you are the one positioned to spot them early — before they are built, while they are still a line in a project plan.")
+        "VO: Two traps catch governments again and again. As the architect at the Assess phase, you are the one positioned to spot them early — before they are built, while they are still a line in a project plan.")
 
 block_slide(prs, 'Trap one — building your own is rational for a project and ruinous for a country',
             ["A new project needs to identify citizens. Reusing the national platform means learning "
@@ -771,7 +811,7 @@ notes(s, 'Closing slide for the combined deck. Individual videos end on their so
 
 # Self-check: the split spec's slide ranges depend on this count, and a helper that
 # silently stops drawing shows up first as a slide with no voice-over.
-assert len(prs.slides._sldIdLst) == 54, 'slide count changed — update decks/split_spec.json'
+assert len(prs.slides._sldIdLst) == 61, 'slide count changed — update decks/split_spec.json'
 assert all(sl.has_notes_slide and sl.notes_slide.notes_text_frame.text.strip() for sl in prs.slides), \
     'every slide carries its voice-over in the notes'
 

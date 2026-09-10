@@ -10,6 +10,10 @@ Spoken narration only, one section per video (3.1 – 3.7), slide-by-slide, matc
 
 ### Slide — Title (3.1)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — You have the four-layer picture of a sector. Where does it live?
+
 You have the four-layer picture of a sector. Where does it live? If the answer is a slide deck on your laptop, the architecture will be out of date within a month and disagreed with within two. It needs a home: the repository.
 
 ### Slide — A repository is a discipline, not a product
@@ -48,6 +52,10 @@ So before tooling, before governance, set up the one place — the single store 
 
 ### Slide — Title (3.2)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — The spreadsheet stops coping. Do not swap one lock-in for another.
+
 At some point a spreadsheet stops coping — hundreds of entities, several sectors, relationships you cannot see in rows and columns. Here is the danger: in buying a tool to help your government avoid vendor lock-in, you can lock yourself into the tool.
 
 ### Slide — Graduate when the spreadsheet hurts in three specific ways
@@ -81,6 +89,10 @@ Choose your tooling like any government system: graduate when the spreadsheet tr
 > *A repository is only worth what it is current. Decide who owns it, what event triggers an update, and how a change is checked — so the architecture tracks reality instead of slowly becoming a confident work of fiction.*
 
 ### Slide — Title (3.3)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — A repository has one enemy, and it is not technical.
 
 A repository has one enemy, and it is not technical. It is staleness. An architecture six months behind reality is worse than none — because people trust it, and it lies to them. Keeping it true is unglamorous and constant.
 
@@ -120,6 +132,10 @@ Keep the repository true. One named owner. Updates triggered by events, not a ye
 
 ### Slide — Title (3.4)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — The repository holds the architecture. The Board gives it authority.
+
 The repository holds the architecture; the Board is what gives it authority. Without a governance board the architecture is a document people can ignore. With a real one — that can say no — it becomes the place every significant digital decision passes through.
 
 ### Slide — An advisory board produces minutes; a binding board produces decisions
@@ -158,6 +174,10 @@ Stand up a Board that can say no: binding, not advisory, chaired by someone seni
 
 ### Slide — Title (3.5)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — A Board with authority needs something to do with it.
+
 A Board with authority needs something to do with it: the architecture review gate, where every significant new project passes through a short, consistent set of questions before it gets funded. This is where the architecture does its real work.
 
 ### Slide — Five questions, asked of every project, the same way every time
@@ -192,6 +212,10 @@ So build the gate. A few questions, asked of every project the same way. A clear
 
 ### Slide — Title (3.6)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Your minister’s fair question: is this EA work actually doing anything?
+
 Sooner or later your minister asks the fair question: is this EA work actually doing anything? You need an answer that is honest, short and true — a handful of metrics, not a fifty-page report. Pick them carefully.
 
 ### Slide — Four numbers carry most of the signal
@@ -225,6 +249,10 @@ So measure a few things, honestly. Coverage. Re-use rate. Open exceptions. Decis
 > *EA programmes rarely fail technically; they fade — the team gets pulled away, the repository goes stale, the Board drifts to advisory, the sponsor changes. Naming these four fade-modes and the move that counters each is how you keep the practice alive.*
 
 ### Slide — Title (3.7)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Most EA programmes do not fail dramatically. They fade.
 
 Most EA programmes do not fail dramatically. They fade. The first six months go well; then, somewhere in the second year, the practice quietly stops mattering. The fade is predictable, and it comes in four forms.
 

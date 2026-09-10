@@ -10,6 +10,10 @@ Spoken narration only, one section per video (5.1 – 5.6), slide-by-slide, matc
 
 ### Slide — Title (5.1)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Is this proven, or a consultant’s theory?
+
 Before you commit your agency, you are right to ask: is this proven, or a consultant's theory? The honest answer is that the core of it has already been done — in countries large and small, unitary and federal, well-resourced and not.
 
 ### Slide — Four governments, four shapes
@@ -44,6 +48,10 @@ So when someone asks whether this is proven, you have an answer: four government
 
 ### Slide — Title (5.2)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — What works is known. The killers are the harder half.
+
 If the evidence shows what works, it also shows why programmes fail — and the failures are almost never technical. What works is known: a protected team, a framework agencies adopt, governance that can say no, funding sustained for years. The killers are the harder half.
 
 ### Slide — Four things quietly kill them — usually in the second year
@@ -73,6 +81,10 @@ So the evidence gives you two lists: what to build in, and the four organisation
 > *The method is sector-agnostic — only the record at the centre changes — so roll it out as a wave roadmap: one sector first to build the shared platforms, then sectors one at a time, each cheaper than the last, governed into a single national architecture.*
 
 ### Slide — Title (5.3)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Beyond one sector: does the method travel, and how do you roll it out?
 
 Suppose you want this beyond one sector. Two questions follow: does the method travel, and how do you roll it out without trying to do everything at once? The answers are linked — and the second sector is cheaper than the first.
 
@@ -108,6 +120,10 @@ So the method travels, and the rollout is a wave roadmap: one sector to build th
 
 ### Slide — Title (5.4)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Ministers do not commit to architecture. They commit to numbers.
+
 The hardest step is getting your minister to commit the team, the mandate and the money. Ministers do not commit to architecture; they commit to numbers and to cases they can defend in cabinet. So bring three things: the saving, the proof, the honest cost.
 
 ### Slide — Lead with the saving, not the architecture
@@ -142,6 +158,10 @@ Winning the commitment is not an architecture conversation. It is a one-page bus
 
 ### Slide — Title (5.5)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Do we have the people — and can we afford to train them?
+
 One worry that stops strategists committing is capability: do we have the people, and can we afford to train them? You do not have to build the knowledge from scratch. The method, the framework and the training materials already exist as open knowledge products.
 
 ### Slide — The method is not locked in a consultant's head
@@ -175,6 +195,10 @@ So capability is not the barrier it appears to be. The knowledge is documented, 
 > *The case for a national EA comes down to three things you can now say with confidence — it is proven, it is portable, and in the era of redesigning how government works it is no longer optional but necessary — held together by the two reasons an EA exists: it makes re-use possible, and it gives business and IT a shared language.*
 
 ### Slide — Title (5.6)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Three sentences a minister can hold.
 
 Bring it all together into the case you carry into the room. It reduces to three sentences a minister can hold: this is proven, it is portable, and it is necessary now. Underneath those sit the two reasons an Enterprise Architecture exists at all.
 

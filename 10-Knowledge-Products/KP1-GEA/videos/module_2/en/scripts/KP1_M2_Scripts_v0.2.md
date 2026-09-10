@@ -10,6 +10,10 @@ Spoken narration only, one section per video (2.1 – 2.7), slide-by-slide, matc
 
 ### Slide — Title (2.1)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Four layers. For each: one question, one deliverable, one mistake.
+
 An Enterprise Architecture describes a government in four layers: Business, Data, Application, Technology. For each layer you need three things — the question it answers, the deliverable you produce, and the mistake that catches first-time architects.
 
 ### Slide — The Business layer describes what a body does — not how it is arranged
@@ -43,6 +47,10 @@ The four layers are not four separate documents. They connect. Every service tra
 > *The metamodel is the small set of entities — Capability, Service, Application, Data Domain, Technology Component — and the relationships between them that PAERA already defines. Adopt it, and two ministries' architectures can be compared, connected and re-used. Skip it, and every team draws a different picture that no one else can read.*
 
 ### Slide — Title (2.2)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Two ministries. Two architectures. Four words for two things.
 
 Two ministries each hand you an architecture. One calls a thing a 'service'; the other calls the same thing a 'function'. One ministry's 'application' is another's 'system'. You cannot compare them, connect them, or tell whether they are doing the same work twice.
 
@@ -82,6 +90,10 @@ The metamodel is the small shared dictionary that lets two ministries' architect
 
 ### Slide — Title (2.3)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Three months. Forty drafts. No agreement.
+
 Every architecture team faces the same temptation early on. Someone says: let us write our country's architectural principles. Three months later there are forty drafts, half contradicting each other, and no agreement. There is a faster way — the principles already exist.
 
 ### Slide — A principle is a short rule that settles a design argument before it starts
@@ -115,6 +127,10 @@ Do not spend your first year writing principles. Adopt PAERA's ten, point each a
 > *PAERA publishes a taxonomy of public bodies — policy unit, regulatory agency, service-delivery authority, plus supporting elements like state registries. Classify a body first, and you already know what capabilities, data and governance to expect from it — before you interview anyone.*
 
 ### Slide — Title (2.4)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Classify the body before you model it.
 
 Before you model a government body, know what kind of body it is — because the kind tells you in advance what it does, what data it owns, and how it is governed. PAERA publishes a taxonomy that sorts public bodies into a few types.
 
@@ -150,6 +166,10 @@ Before you model, classify. Policy unit, regulatory agency, service-delivery aut
 
 ### Slide — Title (2.5)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Put the four layers on a real sector.
+
 Put the four layers on a real sector. Progressa is a demonstration country with an education system like many across the continent: a ministry, an examination authority, a learner registry, an identity authority, and a digital government authority running shared platforms.
 
 ### Slide — Classify the bodies first — that is where the head start comes from
@@ -183,6 +203,10 @@ Trace one service down. Sit an examination and get a certificate: the Examinatio
 > *A good current-state picture is judged by a few quality tests per layer, not by its length. Learn the tests, learn the gaps you will always find, and you can run a Phase 2 Assess that names the right problems in the right order.*
 
 ### Slide — Title (2.6)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Assess: a description good enough to decide from.
 
 The Assess phase produces the current-state picture and the gap analysis the roadmap is built on. The hard part is writing a description good enough to decide from. So you need the quality tests, layer by layer, and the gaps you will almost always find.
 
@@ -221,6 +245,10 @@ A Phase 2 Assess is not about volume. It is a current-state picture that is owne
 > *Two traps recur in every assessment: the bespoke trap, where each project builds its own version of a shared function, and the vendor-driven trap, where a supplier's product quietly becomes the architecture. Learn to spot both at Assess, and you protect the country from paying many times for one thing.*
 
 ### Slide — Title (2.7)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Two traps — cheap to stop while they are still a line in a project plan.
 
 Two traps catch governments again and again. As the architect at the Assess phase, you are the one positioned to spot them early — before they are built, while they are still a line in a project plan.
 

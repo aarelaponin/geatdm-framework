@@ -17,6 +17,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                 '..', 'ITU-Giga-KP-Plugin', 'skills', 'kp-deck-builder', 'scripts'))
 from deck_lib import (
+    TITLE_CARD_NOTE, hook_slide,
     ITU_BLUE, WHITE,
     LAYOUT_THANKS,
     add_slide, big_slide, block_slide, delete_template_slides, edit_agenda,
@@ -52,9 +53,40 @@ def panels(prs, *a, **k):
     return two_panel(prs, *a, **k)
 
 
+# Opener (hook) slide copy per video — headline + two to four supporting lines, written from
+# the same `### Slide — Title` narration that the section() note carries. Not a preview of the
+# next slide's list. See deck_lib.hook_slide().
+HOOKS = {'5.1': ('Is this proven, or a consultant’s theory?',
+         ['You are right to ask before you commit your agency.',
+          'The core of it has already been done — in countries large and small, unitary and '
+          'federal, well-resourced and not.']),
+ '5.2': ('What works is known. The killers are the harder half.',
+         ['A protected team. A framework agencies adopt. Governance that can say no. Funding '
+          'sustained for years.',
+          'The failures are almost never technical.']),
+ '5.3': ('Beyond one sector: does the method travel, and how do you roll it out?',
+         ['Two questions, and the answers are linked.',
+          'The second sector is cheaper than the first.']),
+ '5.4': ('Ministers do not commit to architecture. They commit to numbers.',
+         ['The hardest step is getting the team, the mandate and the money.',
+          'Bring three things: the saving, the proof, the honest cost.']),
+ '5.5': ('Do we have the people — and can we afford to train them?',
+         ['You do not have to build the knowledge from scratch.',
+          'The method, the framework and the training materials already exist as open knowledge '
+          'products.']),
+ '5.6': ('Three sentences a minister can hold.',
+         ['This is proven. It is portable. It is necessary now.',
+          'Underneath those sit the two reasons an Enterprise Architecture exists at all.'])}
+
+
 def section(code, name, message, runtime, note):
-    return section_slide(prs, 'KP1 · MODULE 5 · VIDEO %s' % code, code, name, message,
-                         runtime + ' · standalone video · voice-over on text slides', note)
+    s = section_slide(prs, 'KP1 · MODULE 5 · VIDEO %s' % code, code, name, message,
+                         runtime + ' · standalone video · voice-over on text slides', TITLE_CARD_NOTE)
+    # The opener slide: the `### Slide — Title` narration gets a slide of its own, so the
+    # cue file has something to show while the hosts run the opener (45–90 s in practice).
+    head, lines = HOOKS[code]
+    hook_slide(prs, head, lines, '%s · %s' % (code, name), note)
+    return s
 
 
 # ---------------------------------------------------------------- COVER (edit slide 1)
@@ -118,7 +150,7 @@ section('5.1', 'Is this proven, or just theory? — evidence from real programme
         'the same architectural approach has already produced results — which means the question '
         'for you is not whether it works, but how to apply it where you are.',
         '~4 minutes',
-        "VO, slide 1: Before you commit your agency, you are right to ask: is this proven, or a "
+        "VO: Before you commit your agency, you are right to ask: is this proven, or a "
         "consultant's theory? The honest answer is that the core of it has already been done — in "
         "countries large and small, unitary and federal, well-resourced and not.\n\n"
         "On screen: the four countries appear as plain typography only — no flags, no national "
@@ -228,7 +260,7 @@ section('5.2', 'What the evidence says works — and what quietly kills these pr
         'them — and the killers are organisational, not technical. Knowing both lets you design '
         'your programme to last, and brief your minister on the real risks.',
         '~3 minutes',
-        "VO, slide 1: If the evidence shows what works, it also shows why programmes fail — and "
+        "VO: If the evidence shows what works, it also shows why programmes fail — and "
         "the failures are almost never technical. What works is known: a protected team, a "
         "framework agencies adopt, governance that can say no, funding sustained for years. The "
         "killers are the harder half.\n\n"
@@ -316,7 +348,7 @@ section('5.3', 'Roll it out across sectors — and why the second is cheaper',
         'a wave roadmap: one sector first to build the shared platforms, then sectors one at a '
         'time, each cheaper than the last, governed into a single national architecture.',
         '~5 minutes',
-        "VO, slide 1: Suppose you want this beyond one sector. Two questions follow: does the "
+        "VO: Suppose you want this beyond one sector. Two questions follow: does the "
         "method travel, and how do you roll it out without trying to do everything at once? The "
         "answers are linked — and the second sector is cheaper than the first.")
 
@@ -428,7 +460,7 @@ section('5.4', 'Win the commitment — the business case that gets your minister
         'number. Pair the whole-of-government re-use saving with the proven evidence and an honest '
         'time horizon, and you turn a technical case into one a minister can take to cabinet.',
         '~4 minutes',
-        "VO, slide 1: The hardest step is getting your minister to commit the team, the mandate "
+        "VO: The hardest step is getting your minister to commit the team, the mandate "
         "and the money. Ministers do not commit to architecture; they commit to numbers and to "
         "cases they can defend in cabinet. So bring three things: the saving, the proof, the "
         "honest cost.\n\n"
@@ -529,7 +561,7 @@ section('5.5', 'Build your team\'s capability with open knowledge products',
         'framework, and a community of practising countries mean your people can learn the method '
         'from materials that already exist, freeing your budget for the work itself.',
         '~4 minutes',
-        "VO, slide 1: One worry that stops strategists committing is capability: do we have the "
+        "VO: One worry that stops strategists committing is capability: do we have the "
         "people, and can we afford to train them? You do not have to build the knowledge from "
         "scratch. The method, the framework and the training materials already exist as open "
         "knowledge products.")
@@ -630,7 +662,7 @@ section('5.6', 'The closing case — proven, portable, and necessary now',
         'longer optional but necessary — held together by the two reasons an EA exists: it makes '
         're-use possible, and it gives business and IT a shared language.',
         '~3 minutes',
-        "VO, slide 1: Bring it all together into the case you carry into the room. It reduces to "
+        "VO: Bring it all together into the case you carry into the room. It reduces to "
         "three sentences a minister can hold: this is proven, it is portable, and it is necessary "
         "now. Underneath those sit the two reasons an Enterprise Architecture exists at all.\n\n"
         "Production cue: the closing video of the module and of KP1.")
@@ -720,7 +752,7 @@ notes(s, 'Closing slide for the combined deck. Individual videos end on their so
 
 # Self-check: the split spec's slide ranges depend on this count, and a helper that
 # silently stops drawing shows up first as a slide with no voice-over.
-assert len(prs.slides._sldIdLst) == 43, 'slide count changed — update decks/split_spec.json'
+assert len(prs.slides._sldIdLst) == 49, 'slide count changed — update decks/split_spec.json'
 assert all(sl.has_notes_slide and sl.notes_slide.notes_text_frame.text.strip() for sl in prs.slides), \
     'every slide carries its voice-over in the notes'
 

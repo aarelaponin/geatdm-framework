@@ -10,6 +10,10 @@ Spoken narration only, one section per video (1.1 – 1.7), slide-by-slide, matc
 
 ### Slide — Title (1.1)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — One citizen. Five counters. The same form, five times.
+
 You have probably seen this pattern. One programme builds a system to register citizens. Another builds another, for a different service. A third builds a third. Each takes years, funded separately. And your citizen still fills the same form five times, at five different counters.
 
 You cannot fix this inside any one programme. Each programme is doing exactly what it was funded to do.
@@ -46,6 +50,10 @@ All four signs come from one root cause. There is no shared plan. No one has wri
 
 ### Slide — Title (1.2)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — An Enterprise Architecture is a set of documents and diagrams.
+
 An Enterprise Architecture is a set of documents and diagrams. Together, they describe how your government works. What services it delivers, and to whom. What data it holds, and who owns it. What software supports those services. What infrastructure runs underneath.
 
 ### Slide — An EA is the agreed picture — not software you buy
@@ -81,6 +89,10 @@ That is what an Enterprise Architecture is. Not software. Not a tool. The agreed
 > *Procurement rules can require interoperability. They cannot deliver it. Only planning at the level of the whole government, supported by reference architectures, can.*
 
 ### Slide — Title (1.3)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — You already require interoperability. So why does the citizen still fill the form five times?
 
 You may be thinking: my country already requires this. Every new digital project must specify open APIs; every contract must require interoperability. So why does the citizen still fill the same form five times? Procurement rules can require behaviour. They cannot make it the cheapest choice.
 
@@ -120,6 +132,10 @@ So when you make the case for an EA, the case is this. The four-part picture is 
 
 ### Slide — Title (1.4)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Putting paper online was the work. It is not any more.
+
 For a long time, digital transformation in government meant one thing: take a paper process and put it online. The form becomes a web form, the queue an online appointment, the certificate a PDF. The ministry still does the same work — only the medium changes.
 
 ### Slide — Putting paper online is no longer the main work
@@ -157,6 +173,10 @@ In the era of digitising paper, an EA was useful. In the era of redesigning how 
 > *PAERA gives your team five years of head start. Adopt it, and the architecture work begins on day one. Do not adopt it, and your first year is spent inventing what others have already published.*
 
 ### Slide — Title (1.5)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Which framework do you use to draw the picture?
 
 An Enterprise Architecture is the agreed picture of your government. Which framework do you use to draw it? You have two paths — design one for your country from scratch, or anchor on one that already exists.
 
@@ -202,6 +222,10 @@ PAERA is not a vendor choice. It is the choice to start with the work other coun
 
 ### Slide — Title (1.6)
 
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — If you take one picture away from this knowledge product, take this one.
+
 If you take one picture away from this knowledge product, take this one: the EA lifecycle on a single page.
 
 ### Slide — Five phases. Four sign-offs. Six months to a roadmap.
@@ -239,6 +263,10 @@ Six months from Discovery to an approved roadmap. Then your country in permanent
 > *Four asks. A small permanent EA team. An EA Board with real authority. About two per cent of digital budget, sustained for five years. And one promise — that the team will not be pulled onto the urgent project of the week.*
 
 ### Slide — Title (1.7)
+
+*(Cold open — no scripted narration. The hosts name the module, the video number, the title and the single message; hold until the opener begins.)*
+
+### Slide — Your minister is convinced. Now the harder part.
 
 Suppose you have made the case and your minister is convinced. Now the harder part: agreeing the four specific things the minister must commit to. Each one is necessary; without any one of them the EA programme will struggle.
 
