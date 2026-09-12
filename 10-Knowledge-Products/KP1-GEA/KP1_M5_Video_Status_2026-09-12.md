@@ -123,6 +123,12 @@ and every brief has targeted a flat 5:00 since 8 Sep. Nothing upstream of the de
 
 ## Next
 
-1. Publication: YouTube metadata for M2–M5, the on-camera module intros, the KP1 intro.
+1. Publication: the YouTube metadata is written — one file per module, Modules 2-5, following
+   Module 1's pattern at `videos/module_«n»/en/KP1_M«n»_YouTube_Upload_Metadata_v0.1.md`. Each
+   carries the upload manifest, the shared Studio settings, the playlist copy and per-video
+   title, description and tags. **Both placeholders are still unresolved** — `<gitbook-url>`
+   waits on the companion space being published, and `[playlist link]` on the playlists being
+   created. Merge the GitBook change request before uploading, or the videos link nowhere.
+   Then the on-camera module intros and the KP1 intro.
 2. The four mid-sentence closes (2.1, 2.4, 3.1, 4.5) — re-roll, or ship.
 3. The French mirror.

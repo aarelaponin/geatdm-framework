@@ -526,4 +526,6 @@ that now costs a new generation.
 
 1. Decide the Sources tail on 4.4 and 4.6 — pad, or ship at ~3.6 s.
 2. Decide whether 4.8's 3:28 stands.
-3. Publication: YouTube metadata for M2-M4, the on-camera intros, the French mirror.
+3. Publication: ~~YouTube metadata for M2-M4~~ **written 12 Sep** — one file per module beside
+   Module 1's, at `videos/module_«n»/en/KP1_M«n»_YouTube_Upload_Metadata_v0.1.md`. Still to do:
+   the on-camera intros and the French mirror.
