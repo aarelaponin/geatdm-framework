@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-12 15:59 (data v1)
+# KP video tracker — generated 2026-09-12 16:08 (data v1)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -67,11 +67,11 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 |---|---|---|---|---|---|---|---|
 | 5.0 | Module 5 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 5.1 | Is this proven, or just theory? — evidence from real programmes | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.8, SRT v0.8, Accepted v0.8, Cues v0.8, MP4 v0.8 | produced 12 Sep (5:00). Three pre-decision rolls said PEA, PAEA, PIERA |
-| 5.2 | What the evidence says works — and what quietly kills these programmes | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.6, SRT v0.6, Accepted v0.3, Cues v0.3, MP4 v0.3 | produced 12 Sep. Settled on runtime at 5:56, +56s and the longest of the 29; MP4 is v0.3 but newest take is v0.6 — re-cue/re-render or delete the stale take; cues v0.3 lag take v0.6; accepted v0.3 but newest take on disk is v0.6 |
+| 5.2 | What the evidence says works — and what quietly kills these programmes | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.3, SRT v0.3, Accepted v0.3, Cues v0.3, MP4 v0.3 | produced 12 Sep. Settled on runtime at 5:56, +56s and the longest of the 29 |
 | 5.3 | Roll it out across sectors — and why the second is cheaper | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 | produced 12 Sep (4:42), clean on try 1. Weak close — ends "It really makes you think." |
 | 5.4 | Win the commitment — the business case that gets your minister to yes | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.4, SRT v0.4, Accepted v0.4, Cues v0.4, MP4 v0.4 | produced 12 Sep (5:02) |
 | 5.5 | Build your team's capability with open knowledge products | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | produced 12 Sep (4:59). v0.6 is v0.1 re-trimmed after the mid-sentence cut fix |
-| 5.6 | The closing case — proven, portable, and necessary now | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.6, SRT v0.6, Accepted v0.2, Cues v0.2, MP4 v0.2 | produced 12 Sep (4:55). No cold open — the hosts announce the video first, so the title card holds 10s; MP4 is v0.2 but newest take is v0.6 — re-cue/re-render or delete the stale take; cues v0.2 lag take v0.6; accepted v0.2 but newest take on disk is v0.6 |
+| 5.6 | The closing case — proven, portable, and necessary now | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 | produced 12 Sep (4:55). No cold open — the hosts announce the video first, so the title card holds 10s |
 
 ## KP2 — Government Interoperability Framework
 
