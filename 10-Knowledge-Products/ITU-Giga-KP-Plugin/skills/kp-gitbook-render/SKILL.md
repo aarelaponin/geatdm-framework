@@ -50,4 +50,18 @@ The site is published to GitBook. Two lessons from the API route, which still ho
 - `{% expandable %}` is dropped by the markdown importer — use `<details><summary>`. Tabs, hints, stepper, mermaid and card tables import fine.
 - Relative `.md` links resolve only inside a single `updateChangeRequestContent` batch; across batches use `/pages/<pageId>`.
 
+`publish.py` is the API route made repeatable — it reads the bytes off disk, so nothing is
+retyped:
+
+```
+export GITBOOK_TOKEN=...        # gitbook.com -> Developer -> API tokens
+python3 publish.py --space <spaceId> --manifest pages-kp2.json --cr <id> \
+                   --subject "KP2 first publish"
+```
+
+Two passes: insert every page parents-first and stamp the ids back into the manifest, then
+update every page with `linkify` output. The second pass is not optional — a link whose
+target did not exist yet is dropped, and in a card table the target cell is left empty. It
+never merges; that stays a human's call.
+
 Git Sync replaces all of that: bind the space to this repo and a push is a publish.
