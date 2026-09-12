@@ -217,7 +217,10 @@ NOT_A_NAME = {"THE", "A", "AN", "THIS", "THAT", "ITS", "OUR", "AND", "OR", "BUT"
               "CALLED", "NAMED", "ANOTHER", "SAME", "WHOLE", "GOVERNANCE", "REFERENCE",
               "ARCHITECTURE", "ESTABLISHED", "THEY", "WE", "YOU", "I", "HE", "SHE", "THERE",
               "THEN", "NOW", "WHAT", "WHICH", "WHEN", "WHERE", "HOW", "WHY", "BECAUSE",
-              "FIRST", "SECOND", "THIRD", "EVEN", "EXACTLY", "PRECISELY", "LIKE", "JUST"}
+              "FIRST", "SECOND", "THIRD", "EVEN", "EXACTLY", "PRECISELY", "LIKE", "JUST",
+              # interjections start a clause mid-caption, so the sentence-start test misses them
+              # ("…and the Oh framework" on a 5.5 roll)
+              "OH", "AH", "MM", "UM", "UH", "YES", "NO", "SURE", "WOW", "HMM", "YEAH"}
 
 
 def framework_name_slips(text, deck_text):

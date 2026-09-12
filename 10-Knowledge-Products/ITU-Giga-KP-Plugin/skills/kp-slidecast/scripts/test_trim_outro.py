@@ -90,6 +90,15 @@ def test_a_closing_question_split_across_cues_is_cut_whole():
     assert outro_start(c, TERMS) == 2, outro_start(c, TERMS)
 
 
+def test_an_announced_close_starting_mid_sentence_is_cut_whole():
+    """5.5 v0.1: the marker ("mull over") is in the second half of the sentence."""
+    c = cues("They learn the method, they build the system, and they stay.",
+             "It is about owning the Registry capability, not just renting the talent,",
+             "which leaves you a fascinating thought to mull over as we wrap up.",
+             "What other closed industries are about to be disrupted?")
+    assert outro_start(c, TERMS) == 1, outro_start(c, TERMS)
+
+
 def test_never_trims_the_whole_take():
     # Every cue furniture by this deck's vocabulary: not an outro, and cutting at 0 would delete
     # the recording.

@@ -1,0 +1,20 @@
+# Slide cue file — KP1 Module 5, Video 5.1 "Is this proven, or just theory? — evidence from real programmes"
+# Deck:  KP1_M5_5.1_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M5_5.1_Audio_v0.8.m4a (runs to 5:00.1)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# First Module 5 video. Per the 12 Sep decision the narration says "the reference architecture"
+# (0:40) — 5.1's §2 never uses the initialism, and the three takes rolled before that change
+# said PEA, PAEA and PIERA. The slides are unchanged; the Sources card still cites PAERA v1.0.
+# Residue: "deep dive" at 0:40, accepted 7 Sep.
+# The take runs right to the end — 15s covers slides 6-8 — so the Sources card gets 4.1s,
+# under the ~5s convention. Only padding fixes it.
+
+0:00   # slide 1 — title card (cold open: buy one big package and everything connects)
+0:36   # slide 2 — Hook: is this proven, or a consultant's theory?
+1:16   # slide 3 — Four governments, four shapes (Rwanda, Kenya, South Africa, Estonia)
+3:03   # slide 4 — The same four elements show in every one
+4:11   # slide 5 — The failures are documented too — which is what makes it evidence
+4:36   # slide 6 — You are not the first — the path is already charted
+4:52   # slide 7 — In one sentence
+4:56   # slide 8 — Sources

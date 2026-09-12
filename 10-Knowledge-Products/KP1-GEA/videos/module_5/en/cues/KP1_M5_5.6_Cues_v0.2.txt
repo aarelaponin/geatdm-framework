@@ -1,0 +1,20 @@
+# Slide cue file — KP1 Module 5, Video 5.6 "The closing case — proven, portable, and necessary now"
+# Deck:  KP1_M5_5.6_Deck_v0.2.pptx (7 slides)
+# Audio: KP1_M5_5.6_Audio_v0.2.m4a (runs to 4:55.8)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Narration says "reference architecture" (0:10, 1:09, 1:48), never the initialism.
+# Residue: "deep dive", "welcome to" at 0:00 — this take has no cold open at all, it announces
+# itself first, so the title card holds only 10s. Accepted 7 Sep.
+# Out of deck order: the hosts use slide 4's "thirty years of paper online" as their opening
+# set-up (0:26-0:47), long before slide 4 is due. The hook holds across it — that passage is
+# the set-up for "necessary now", which is the hook's third sentence — and slide 4 is cued at
+# 2:13 where the take asks why it is urgent now and answers with the once-only principle.
+
+0:00   # slide 1 — title card (the hosts announce the video; no cold open)
+0:10   # slide 2 — Hook: three sentences a minister can hold
+1:00   # slide 3 — Proven and portable — the first two you can say plainly
+2:13   # slide 4 — For thirty years, digital government meant putting paper online. That era is ending
+3:15   # slide 5 — The two reasons an Enterprise Architecture exists
+4:33   # slide 6 — In one sentence
+4:50   # slide 7 — Sources

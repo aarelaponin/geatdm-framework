@@ -1,0 +1,21 @@
+# Slide cue file — KP1 Module 5, Video 5.3 "Roll it out across sectors — and why the second is cheaper"
+# Deck:  KP1_M5_5.3_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M5_5.3_Audio_v0.2.m4a (runs to 4:42.3)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Narration says "reference architecture" (0:48), never the initialism — 5.3's §2 does not use
+# it. Residue: "deep dive", "welcome to" at 0:19, accepted 7 Sep.
+# Slide 6 is cued over the scorecard AND the governance that follows it: the take names the
+# scorecard at 3:40 and then spends 3:45-4:24 on the board catching a drifting sector and
+# sustaining funding across a change of government, which is slide 6's own message line.
+# Weak close: the take ends "It really makes you think." — no question, so the Sources card
+# carries it, but it is the same trailing-reflection defect noted on 2.5.
+
+0:00   # slide 1 — title card (cold open: a new water treatment plant for every new neighbourhood)
+0:19   # slide 2 — Hook: does the method travel, and how do you roll it out?
+0:59   # slide 3 — Most of the method does not change — only the record at the centre does
+2:16   # slide 4 — Wave 1 looks like one sector. It is the foundation the rollout stands on
+3:07   # slide 5 — From Wave 2 each sector is cheaper — if the same board governs the pipeline
+3:39   # slide 6 — One page, every quarter — the national scorecard
+4:24   # slide 7 — In one sentence
+4:37   # slide 8 — Sources

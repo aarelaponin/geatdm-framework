@@ -58,6 +58,22 @@ def slide_terms(prs):
     return [(i + 1, titles[i], {w for w in s if df[w] <= 2}) for i, s in enumerate(per)]
 
 
+def advisory_slides(prs):
+    """The two slides whose vocabulary the narration is not expected to reuse.
+
+    WHERE WE START is a ~40-word scripted opener the hosts stretch to 45-90 s in their own
+    words, usually behind an analogy of their own. IN ONE SENTENCE restates the content slides,
+    so whatever vocabulary is *distinctive* to it is whatever the others did not use — on 5.6
+    that is "held", "possible" and "whole", three function words. Neither measures coverage.
+    """
+    out = set()
+    for i, sl in enumerate(prs.slides, 1):
+        text = " ".join(sh.text_frame.text for sh in sl.shapes if sh.has_text_frame)
+        if re.search(r"WHERE WE START|IN ONE SENTENCE", text, re.I):
+            out.add(i)
+    return out
+
+
 def main():
     prs = Presentation(sys.argv[1])
     srt = Path(sys.argv[2]).read_text(encoding="utf-8-sig")
@@ -68,6 +84,7 @@ def main():
     print(f"=== coverage — {Path(sys.argv[2]).name} against {Path(sys.argv[1]).name}\n")
     thin = 0
     slides = slide_terms(prs)
+    advisory = advisory_slides(prs)
     # the title card and the Sources slide are bookends: the first is a 15 s cold open and
     # nothing is spoken over the last, so neither is a coverage failure
     for n, title, terms in slides[1:-1]:
@@ -77,9 +94,14 @@ def main():
         hit = terms & take
         pct = len(hit) / len(terms)
         flag = "ok  " if pct >= 0.34 else ("THIN" if pct >= 0.15 else "MISS")
-        thin += flag != "ok  "
+        # The opener and the recap join the title card and the Sources slide as bookends —
+        # see advisory_slides(). Nine of the twenty-three shipped KP1 takes score 17-33% on the
+        # opener. Reported, never a failure.
+        if n in advisory and flag != "ok  ":
+            flag = "note"
+        thin += flag not in ("ok  ", "note")
         print(f"  {flag} slide {n:>2}  {title}  {len(hit)}/{len(terms)} terms ({pct:.0%})")
-        if flag != "ok  ":
+        if flag not in ("ok  ", "note"):
             print(f"         missing: {', '.join(sorted(terms - take)[:10])}")
     print(f"\n{thin} slide(s) thin or missing")
     return 1 if thin else 0

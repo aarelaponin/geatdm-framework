@@ -63,6 +63,19 @@ def turns_to_listener(text):
     return text.rstrip().endswith("?") or any(re.search(p, low) for p in REFLECTIVE_CLOSE)
 
 
+def _to_sentence_start(cues, i):
+    """Walk an outro cut back to a sentence boundary.
+
+    The closing turn often begins mid-sentence — 5.5's "It\u2019s about owning the capability, not
+    just renting the talent, / which leaves you with a pretty fascinating thought to mull over"
+    is one sentence across two cues, and only the second carries the reflective marker. Cutting
+    at the marker leaves the take ending on a comma.
+    """
+    while i > 0 and not cues[i - 1]["text"].rstrip().endswith((".", "!", "?")):
+        i -= 1
+    return i
+
+
 def outro_start(cues, terms=None):
     """Index of the first cue belonging to the closing turn, or None.
 
@@ -93,7 +106,7 @@ def outro_start(cues, terms=None):
         for k, c in enumerate(cues):
             if c["start"] >= end - TAIL_WINDOW_S and k > 0 \
                     and any(re.search(p, c["text"].lower()) for p in REFLECTIVE_CLOSE):
-                return k
+                return _to_sentence_start(cues, k) or k
         i = stop = len(cues)
         while i > 0 and SOURCES_LINE.search(cues[i - 1]["text"]):
             i = stop = i - 1
@@ -101,11 +114,10 @@ def outro_start(cues, terms=None):
                 and (is_furniture(cues[i - 1]["text"], terms)
                      or turns_to_listener(cues[i - 1]["text"])):
             i -= 1
-        # Never cut mid-sentence. 4.7 v0.16's closing question runs across two cues and only the
-        # second ends in "?", so the walk stepped over that one and stopped, leaving the take
-        # ending on "…transform the way your minister evaluates future policy".
-        while i > 0 and not cues[i - 1]["text"].rstrip().endswith((".", "!", "?")):
-            i -= 1
+        # Never cut mid-sentence — 4.7 v0.16's closing question ran across two cues and only the
+        # second ended in "?", so the walk stopped and left the take ending on "…evaluates
+        # future policy".
+        i = _to_sentence_start(cues, i)
         if i == stop or i == 0:
             # i == 0 means every cue back to the start read as furniture, which is not an outro —
             # it is a take with vocabulary the deck does not share. Cutting there would delete the

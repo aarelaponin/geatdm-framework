@@ -324,15 +324,23 @@ The audio is correct when:
 # only` along with the expansion request; 4.3's three rolls under the old row said the name
 # correctly and all five rolls under the new one did not (PERA, PEERA, PAERO, PEURA). It is a
 # pronunciation hint for the generator — no clean take has ever spelled it on air.
-# Two subtopics cannot say the name. 4.3 and 4.8 mangled PAERA in 15 of 18 generations on
-# 12 Sep — PERA, PEERA, PAERO, PEURA, PORA, PEORA, PEREA, PARE, PEAR, "POA", "Kia RRA",
-# "P-EAR" — under three different wordings of the row below, while every other KP1 subtopic
-# says it correctly. So these two are told not to say it at all. The slides are unchanged:
-# the title and Sources cards still carry PAERA v1.0, and only the narration avoids it.
-NO_ACRONYM = {"4.3", "4.8"}
+# A video whose own content never uses PAERA does not say it out loud.
+#
+# The 12 Sep evidence is one-sided. The briefs whose §2 actually uses the name get it right on
+# air — 4.4 and 4.6 both do. The ones that only meet it in the §4 row below guess at it, and
+# keep guessing: 4.3 (11 manglings in 14 takes), 4.8 (5 in 5), 5.1 (3 in 3) — PERA, PEERA,
+# PAERO, PEURA, PORA, PEORA, PEREA, PARE, PEAR, PEA, PAEA, PIERA, "POA", "Kia RRA", "P-EAR",
+# "Pan-African Enterprise". A term the hosts have a use for is pronounced; a term handed to
+# them in a glossary row with nothing to do is invented.
+#
+# So the row is chosen by that condition. Twenty-seven of the thirty-five KP1 briefs never use
+# the name in their content, and those twenty-seven say "the reference architecture" instead.
+# The slides are untouched either way — the title and Sources cards still carry PAERA v1.0;
+# this is the voice-over only.
+USES_NAME = re.compile(r"\bPAERA\b")
 
-# Replaces the PAERA row in those briefs. It still blocks a guessed expansion, which is the
-# failure the unconditional row was written to stop.
+# Replaces the PAERA row where the name is not used. It still blocks a guessed expansion,
+# which is the failure the unconditional row was written to stop.
 NO_ACRONYM_ROW = (None,
                   "**the reference architecture** — say it in words. This video never says the "
                   "initialism out loud; the slides carry the name, the narration does not",
@@ -504,9 +512,10 @@ def main():
         clock += a
 
     body = "\n".join(parts)
-    rows = [NO_ACRONYM_ROW if (pat is None and sub in NO_ACRONYM) else (pat, say, no)
+    names_it = bool(USES_NAME.search(body))
+    rows = [NO_ACRONYM_ROW if (pat is None and not names_it) else (pat, say, no)
             for pat, say, no in TERM_ROWS]
-    if sub in NO_ACRONYM:
+    if not names_it:
         # Other rows name PAERA in passing ("localised — PAERA's principles pointed at your own
         # laws"), which puts back the word the row above just removed.
         rewrites = [
@@ -522,7 +531,7 @@ def main():
         rows = fixed
     shipped = [(pat, say, no) for pat, say, no in rows
                if pat is None or re.search(pat, body, re.I)]
-    if sub in NO_ACRONYM:
+    if not names_it:
         left = [say for pat, say, no in shipped if pat is not None and "PAERA" in say]
         if left:
             sys.exit(f"{sub}: a shipped term row still says PAERA: {left[0]!r}")
@@ -535,7 +544,7 @@ def main():
         # The Progressa clause is conditional for the same reason TERM_ROWS are filtered: naming
         # the demonstration country to a video that never uses it invites the hosts to bring it in.
         termline=("Say \"the reference architecture\" in words; never say the initialism "
-                  "\"PAERA\" or any expansion of it. " if sub in NO_ACRONYM else
+                  "\"PAERA\" or any expansion of it. " if not names_it else
                   "Say \"PAERA\" as one word — five letters, P-A-E-R-A, never spelled out "
                   "on air — as a name; do not expand it unless the brief does, and if you "
                   "do, the only expansion is \"Public Administration Ecosystem Reference "

@@ -1,0 +1,19 @@
+# Slide cue file — KP1 Module 5, Video 5.2 "What the evidence says works — and what quietly kills these programmes"
+# Deck:  KP1_M5_5.2_Deck_v0.2.pptx (7 slides)
+# Audio: KP1_M5_5.2_Audio_v0.3.m4a (runs to 5:56.2)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Narration says "reference architecture" (0:57), never the initialism — 5.2's §2 does not use
+# it. Residue: "deep dive", "welcome to", "unpacking" at 0:24, accepted 7 Sep.
+# Settled on runtime at 5:56, 56s over target and the closest of three; the other two ran 2:33
+# and carried "think about" in the close. Longest of the 24, just past 4.6 v0.7's 6:03.
+# The take covers slide 3's four killers out of deck order — the team first (2:02), then
+# governance (2:49), funding (3:11) and the sponsor (3:33) — so slide 3 holds across all four.
+
+0:00   # slide 1 — title card (cold open: a flawless system that will be dead in twenty-four months)
+0:24   # slide 2 — Hook: what works is known; the killers are the harder half
+1:39   # slide 3 — Four things quietly kill them — usually in the second year
+3:46   # slide 4 — Not one of the killers is about technology
+4:45   # slide 5 — Design for the second year now, while you have the minister's attention
+5:44   # slide 6 — In one sentence
+5:51   # slide 7 — Sources

@@ -1,0 +1,21 @@
+# Slide cue file — KP1 Module 5, Video 5.5 "Build your team's capability with open knowledge products"
+# Deck:  KP1_M5_5.5_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M5_5.5_Audio_v0.6.m4a (runs to 4:59.1)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Narration says "reference architecture" (0:55, 1:06), never the initialism.
+# Residue: "deep dive", "welcome to" at 0:29, accepted 7 Sep.
+# v0.6 is v0.1 re-trimmed. The first cut landed on the reflective marker ("a thought to mull
+# over"), which sits in the second half of a sentence, so the take ended on a comma; trim_outro
+# now walks an outro cut back to a sentence boundary.
+# The take states slide 2's question almost verbatim at 0:16 ("do we even have the talent, and
+# can we afford to pay consultants to design it from a blank page"), so the hook cues there.
+
+0:00   # slide 1 — title card (cold open: overhaul a ministry's infrastructure from the ground up)
+0:16   # slide 2 — Hook: do we have the people — and can we afford to train them?
+0:41   # slide 3 — The method is not locked in a consultant's head
+1:28   # slide 4 — Three layers you draw on rather than build
+3:37   # slide 5 — What you actually need to fund is time, not invention
+4:37   # slide 6 — Build the capability in your own people
+4:50   # slide 7 — In one sentence
+4:54   # slide 8 — Sources

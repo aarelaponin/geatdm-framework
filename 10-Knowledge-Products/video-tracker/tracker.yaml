@@ -117,12 +117,18 @@ kps:
         path: videos/module_5
         intro: {title: Module 5 introduction (on camera)}
         topics:
-          - {code: "5.1", title: "Is this proven, or just theory? — evidence from real programmes", mins: ~4}
-          - {code: "5.2", title: "What the evidence says works — and what quietly kills these programmes", mins: ~3}
-          - {code: "5.3", title: "Roll it out across sectors — and why the second is cheaper", mins: ~5}
-          - {code: "5.4", title: "Win the commitment — the business case that gets your minister to yes", mins: ~4}
-          - {code: "5.5", title: "Build your team's capability with open knowledge products", mins: ~4}
-          - {code: "5.6", title: "The closing case — proven, portable, and necessary now", mins: ~3}
+          - {code: "5.1", title: "Is this proven, or just theory? — evidence from real programmes", mins: ~4,
+             en: {accepted: v0.8, note: 'produced 12 Sep (5:00). Three pre-decision rolls said PEA, PAEA, PIERA'}}
+          - {code: "5.2", title: "What the evidence says works — and what quietly kills these programmes", mins: ~3,
+             en: {accepted: v0.3, note: 'produced 12 Sep. Settled on runtime at 5:56, +56s and the longest of the 29'}}
+          - {code: "5.3", title: "Roll it out across sectors — and why the second is cheaper", mins: ~5,
+             en: {accepted: v0.2, note: 'produced 12 Sep (4:42), clean on try 1. Weak close — ends "It really makes you think."'}}
+          - {code: "5.4", title: "Win the commitment — the business case that gets your minister to yes", mins: ~4,
+             en: {accepted: v0.4, note: 'produced 12 Sep (5:02)'}}
+          - {code: "5.5", title: "Build your team's capability with open knowledge products", mins: ~4,
+             en: {accepted: v0.6, note: 'produced 12 Sep (4:59). v0.6 is v0.1 re-trimmed after the mid-sentence cut fix'}}
+          - {code: "5.6", title: "The closing case — proven, portable, and necessary now", mins: ~3,
+             en: {accepted: v0.2, note: 'produced 12 Sep (4:55). No cold open — the hosts announce the video first, so the title card holds 10s'}}
 
   - id: KP2
     number: 2

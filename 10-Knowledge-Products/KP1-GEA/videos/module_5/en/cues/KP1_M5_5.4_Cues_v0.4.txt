@@ -1,0 +1,18 @@
+# Slide cue file — KP1 Module 5, Video 5.4 "Win the commitment — the business case that gets your minister to yes"
+# Deck:  KP1_M5_5.4_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M5_5.4_Audio_v0.4.m4a (runs to 5:02.2)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Narration says "the reference architecture" three times (0:31, 1:32, …), never the initialism.
+# Residue: "deep dive" at 0:18, accepted 7 Sep.
+# Slide 5 carries both the ask and the horizon, and the take splits them — the 2% at 2:57 and
+# the six-month roadmap at 3:52 — so the slide holds across both.
+
+0:00   # slide 1 — title card (cold open: the four-layer diagram, and the minister's eyes glazing over)
+0:18   # slide 2 — Hook: ministers do not commit to architecture, they commit to numbers
+0:50   # slide 3 — Lead with the saving, not the architecture
+1:59   # slide 4 — Back the number with the proof, because a minister's first worry is risk
+2:52   # slide 5 — Ministers fund people who tell them the real timeline
+4:41   # slide 6 — The one page, in the order a minister reads it
+4:53   # slide 7 — In one sentence
+4:57   # slide 8 — Sources
