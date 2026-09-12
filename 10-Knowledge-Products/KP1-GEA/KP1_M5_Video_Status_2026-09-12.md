@@ -104,6 +104,23 @@ thing that silently produced a wrong answer here, not the files.
    reads as a duplicated word. Left as the author wrote it — the same sentence is in the VO note
    in `build_kp1_module5_deck_v02.py`, so a change would be one line in two places.
 
+## The length label is off the title cards
+
+Module 1's `section()` accepts a `runtime` argument and ignores it — "a minutes figure printed on
+a slide is wrong the moment the audio is re-cut". Modules 2-5 were still interpolating it, so
+every one of their title cards read `~N minutes · standalone video · voice-over on text slides`
+against Module 1's `standalone video · voice-over on text slides`. The 10 Sep note recorded this
+as "cosmetic, and identical in Module 1"; the second half was wrong.
+
+All four build scripts now carry Module 1's version of `section()`, with its comment. The decks
+were rebuilt and re-split, and extracting text and notes from all twenty-eight per-topic decks
+before and after shows **exactly one changed line each** — the title card. All twenty-eight
+videos were then re-assembled from their existing takes and cue files: `rendered N slides,
+N cues` with no count warning on any of them, and every MP4 duration still equals its m4a.
+
+The label never reached the briefs — `make_brief.py` reads `Length: ~N min`, a different string,
+and every brief has targeted a flat 5:00 since 8 Sep. Nothing upstream of the deck moved.
+
 ## Next
 
 1. Publication: YouTube metadata for M2–M5, the on-camera module intros, the KP1 intro.

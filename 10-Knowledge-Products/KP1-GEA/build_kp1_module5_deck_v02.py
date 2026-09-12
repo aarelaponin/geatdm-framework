@@ -80,8 +80,12 @@ HOOKS = {'5.1': ('Is this proven, or a consultant’s theory?',
 
 
 def section(code, name, message, runtime, note):
+    # `runtime` is accepted and ignored: the narration is generated per take and its length
+    # moves with every re-roll, so a minutes figure printed on a slide is wrong the moment
+    # the audio is re-cut. The runtime lives in the video file, not on the deck. Module 1
+    # dropped it during its rebuild; Modules 2-5 followed on 12 Sep.
     s = section_slide(prs, 'KP1 · MODULE 5 · VIDEO %s' % code, code, name, message,
-                         runtime + ' · standalone video · voice-over on text slides', TITLE_CARD_NOTE)
+                         'standalone video · voice-over on text slides', TITLE_CARD_NOTE)
     # The opener slide: the `### Slide — Title` narration gets a slide of its own, so the
     # cue file has something to show while the hosts run the opener (45–90 s in practice).
     head, lines = HOOKS[code]

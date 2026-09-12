@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-12 16:08 (data v1)
+# KP video tracker — generated 2026-09-12 16:56 (data v1)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 

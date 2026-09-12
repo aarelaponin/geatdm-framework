@@ -221,6 +221,9 @@ Each is recorded in a note at the top of the cue file it affects.
 - The per-video title cards still print a length label (`~5 minutes · standalone video`). The
   7 Sep note recorded the label as dropped from the decks; it is dropped from the *section* slides,
   not from the title card. Cosmetic, and identical in Module 1.
+  **Fixed 12 Sep** — and it was not identical in Module 1, which had already dropped it: Module 1's
+  `section()` takes `runtime` and ignores it, while Modules 2-5 were still interpolating it. All
+  four build scripts now match, the decks were rebuilt and re-split, and every video re-assembled.
 
 ### Next
 
