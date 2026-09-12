@@ -1,0 +1,18 @@
+# Slide cue file — KP1 Module 4, Video 4.7 "Phase 5, Execute & Govern — stand up the living EA"
+# Deck:  KP1_M4_4.7_Deck_v0.2.pptx (7 slides)
+# Audio: KP1_M4_4.7_Audio_v0.18.m4a (runs to 4:57.6)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Supersedes Cues_v0.9 and the unassembled v0.13/v0.15. v0.9 said "the progressive framework";
+# v0.13 said "the P-EAR"; v0.15 said "a framework called Progressa". v0.18 never names the
+# framework, which is correct here — 4.7's §2 does not introduce it.
+# v0.18 is v0.16 re-trimmed: the first pass cut one caption and left the take ending mid-clause
+# ("…evaluates future policy"). Residue: "deep dive" and "welcome to" at 0:26, accepted 7 Sep.
+
+0:00   # slide 1 — title card (cold open: the roadmap is approved, so the hard work is over — isn't it)
+0:26   # slide 2 — Hook: Phase 5, Execute and Govern. The phase that never ends.
+1:03   # slide 3 — The repository goes live and a small permanent team keeps it true
+2:06   # slide 4 — A funded project in a hurry plans to build its own learner list
+3:33   # slide 5 — The Board rules: consume the Registry. Do not build a fourth list
+4:39   # slide 6 — In one sentence
+4:52   # slide 7 — Sources

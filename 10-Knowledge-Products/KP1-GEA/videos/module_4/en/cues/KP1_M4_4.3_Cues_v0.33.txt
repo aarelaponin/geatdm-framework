@@ -1,0 +1,20 @@
+# Slide cue file — KP1 Module 4, Video 4.3 "Phase 2, Assess — find the gaps and rank them"
+# Deck:  KP1_M4_4.3_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M4_4.3_Audio_v0.33.m4a (runs to 5:17.6)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Supersedes Cues_v0.1. This take is the first of seventeen to get the framework's name right,
+# and it does it by not saying it: per the 12 Sep decision the narration says "the reference
+# architecture" (1:00, 1:02, 2:09) and the initialism is left to the slides, which still carry
+# PAERA on the title and Sources cards. Slide 3's VO note in build_kp1_module4_deck_v02.py was
+# changed to match — the slide copy was not touched.
+# Residue: "deep dive" and "welcome to" at 0:30, accepted 7 Sep.
+
+0:00   # slide 1 — title card (cold open: the digital ID exists, the school still wants the paper birth certificate)
+0:18   # slide 2 — Hook: Phase 2, Assess. Now you judge.
+0:54   # slide 3 — Score the capabilities and "things are bad" becomes a map
+2:28   # slide 4 — Four gaps surface on Progressa — and one has no owner
+3:48   # slide 5 — The duplicate learner registry tops the list — it hurts most and it can move
+4:33   # slide 6 — Sign-off two carries an honesty test you can fail quietly
+5:09   # slide 7 — In one sentence
+5:13   # slide 8 — Sources

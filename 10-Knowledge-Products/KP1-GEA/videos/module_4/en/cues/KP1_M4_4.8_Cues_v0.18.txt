@@ -1,0 +1,21 @@
+# Slide cue file — KP1 Module 4, Video 4.8 "Run this on your own sector — the transferable recipe"
+# Deck:  KP1_M4_4.8_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M4_4.8_Audio_v0.18.m4a (runs to 3:28.8)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Supersedes Cues_v0.7. That take said "PAER"; the four 12 Sep re-rolls before the brief change
+# said PERA, PARE, PEAR and "Kia RRA". Per the 12 Sep decision this video's narration says
+# "the reference architecture" (0:16) and never the initialism — the slides are unchanged and
+# the Sources card still carries PAERA v1.0. 4.8's §2 never named it in the first place.
+# Residue: "deep dive" and "welcome to" at 0:00, accepted 7 Sep.
+# Short: 3:28 against a 5:00 target — the closest of three, the other two failing on the name
+# and on "nightmare". Inside the 3:11–5:30 Module 1 shipped, but the shortest of the 23.
+
+0:00   # slide 1 — title card (cold open: a recipe for fixing fragmented public-sector systems)
+0:16   # slide 2 — Hook: Swap the data. Keep the method.
+0:51   # slide 3 — The recipe: five phases, six deliverables, four sign-offs
+1:52   # slide 4 — Swap the contents. Keep the method
+2:22   # slide 5 — The method travels — and the second sector is cheaper than the first
+2:37   # slide 6 — Three things to carry from Progressa into your own sector
+3:17   # slide 7 — In one sentence
+3:23   # slide 8 — Sources

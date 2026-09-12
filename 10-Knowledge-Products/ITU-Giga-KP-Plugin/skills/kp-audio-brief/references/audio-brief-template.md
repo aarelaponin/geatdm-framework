@@ -168,11 +168,14 @@ keep it in every brief.** The name reaches the hosts whether §2 uses it or not 
 Sources card cites PAERA v1.0 — and the takes that had no PAERA row invented an expansion on
 air. The row constrains a term the generator uses anyway; it does not introduce one. It does
 not ask for the expansion either — across KP1 only 1.5's §2 introduces PAERA, and every later
-video is talking to an audience that already knows the term.
+video is talking to an audience that already knows the term. **It does spell the letters out**,
+which the 10 Sep rewrite dropped: 4.3's three rolls under the old row said the name correctly and
+its five rolls under the new one said PERA, PEERA, PAERO and PEURA. The spelling is a hint to the
+generator, not a direction to the hosts — no clean take ever spelled it on air.
 
 | Say this | Not this |
 |---|---|
-| **PAERA**, or the PAERA framework — say the name and carry on. Expand it only where §2 expands it; by this point the audience knows the term. Where §2 does, the one expansion is the Public Administration Ecosystem Reference Architecture | "the PRA framework", "Paira", "Para", "PR"; "Pan-European Architecture", "Pay Your Anchored Standards", or any other guessed expansion — and no expansion at all in a video whose §2 does not give one |
+| **PAERA** — five letters, P-A-E-R-A, pronounced as one word, never spelled out on air. Say the name and carry on. Expand it only where §2 expands it; by this point the audience knows the term. Where §2 does, the one expansion is the Public Administration Ecosystem Reference Architecture | "PERA", "PEERA", "PAERO", "PEURA", "the PRA framework", "Paira", "Para", "PR"; "Pan-European Architecture", "Pay Your Anchored Standards", or any other guessed expansion — and no expansion at all in a video whose §2 does not give one |
 | **Progressa** — pro-GRESS-a, three syllables, double s. It is this course's demonstration country and nothing else | "Progressive", "Progresa" with one s, or PROGRESA the Mexican programme |
 | **localised** principles — PAERA's principles pointed at your own laws | "LoCTI principles" or any acronym; localised is a plain English word here |
 | the **European Interoperability Framework** | "the EU-European Interoperability Framework" |

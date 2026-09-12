@@ -319,13 +319,34 @@ The audio is correct when:
 # those takes then invented an expansion on air ("Pan-European Architecture",
 # "Pay Your Anchored Standards"). This row does not introduce the term; it constrains a term the
 # generator uses anyway.
+#
+# The letters stay spelled out. The 10 Sep rewrite dropped `spell "P-A-E-R-A" the first time
+# only` along with the expansion request; 4.3's three rolls under the old row said the name
+# correctly and all five rolls under the new one did not (PERA, PEERA, PAERO, PEURA). It is a
+# pronunciation hint for the generator — no clean take has ever spelled it on air.
+# Two subtopics cannot say the name. 4.3 and 4.8 mangled PAERA in 15 of 18 generations on
+# 12 Sep — PERA, PEERA, PAERO, PEURA, PORA, PEORA, PEREA, PARE, PEAR, "POA", "Kia RRA",
+# "P-EAR" — under three different wordings of the row below, while every other KP1 subtopic
+# says it correctly. So these two are told not to say it at all. The slides are unchanged:
+# the title and Sources cards still carry PAERA v1.0, and only the narration avoids it.
+NO_ACRONYM = {"4.3", "4.8"}
+
+# Replaces the PAERA row in those briefs. It still blocks a guessed expansion, which is the
+# failure the unconditional row was written to stop.
+NO_ACRONYM_ROW = (None,
+                  "**the reference architecture** — say it in words. This video never says the "
+                  "initialism out loud; the slides carry the name, the narration does not",
+                  "\"PAERA\" or any attempt at pronouncing it, and any expansion of it")
+
 TERM_ROWS = [
-    (None, "**PAERA**, or the PAERA framework — say the name and carry on. Expand it only where "
-           "§2 expands it; by this point the audience knows the term. Where §2 does, the one "
-           "expansion is the Public Administration Ecosystem Reference Architecture",
-     "\"the PRA framework\", \"Paira\", \"Para\", \"PR\"; \"Pan-European Architecture\", "
-     "\"Pay Your Anchored Standards\", or any other guessed expansion — and no expansion at all "
-     "in a video whose §2 does not give one"),
+    (None, "**PAERA** — five letters, P-A-E-R-A, pronounced as one word, never spelled out "
+           "on air. Say the name and carry on. "
+           "Expand it only where §2 expands it; by this point the audience knows the term. "
+           "Where §2 does, the one expansion is the Public Administration Ecosystem Reference "
+           "Architecture",
+     "\"PERA\", \"PEERA\", \"PAERO\", \"PEURA\", \"the PRA framework\", \"Paira\", \"Para\", "
+     "\"PR\"; \"Pan-European Architecture\", \"Pay Your Anchored Standards\", or any other "
+     "guessed expansion — and no expansion at all in a video whose §2 does not give one"),
     (r"\bProgressa\b", "**Progressa** — pro-GRESS-a, three syllables, double s. It is this "
                         "course's demonstration country and nothing else",
      "\"Progressive\", \"Progresa\" with one s, or PROGRESA the Mexican programme"),
@@ -483,8 +504,29 @@ def main():
         clock += a
 
     body = "\n".join(parts)
-    used = [f"| {say} | {no} |" for pat, say, no in TERM_ROWS
-            if pat is None or re.search(pat, body, re.I)]
+    rows = [NO_ACRONYM_ROW if (pat is None and sub in NO_ACRONYM) else (pat, say, no)
+            for pat, say, no in TERM_ROWS]
+    if sub in NO_ACRONYM:
+        # Other rows name PAERA in passing ("localised — PAERA's principles pointed at your own
+        # laws"), which puts back the word the row above just removed.
+        rewrites = [
+            ("PAERA's", "the reference architecture's"),
+            ("PAERA is the reference architecture it is anchored to",
+             "the reference architecture is the separate thing it is anchored to"),
+        ]
+        fixed = []
+        for pat, say, no in rows:
+            for a, b in rewrites:
+                say = say.replace(a, b)
+            fixed.append((pat, say, no))
+        rows = fixed
+    shipped = [(pat, say, no) for pat, say, no in rows
+               if pat is None or re.search(pat, body, re.I)]
+    if sub in NO_ACRONYM:
+        left = [say for pat, say, no in shipped if pat is not None and "PAERA" in say]
+        if left:
+            sys.exit(f"{sub}: a shipped term row still says PAERA: {left[0]!r}")
+    used = [f"| {say} | {no} |" for pat, say, no in shipped]
     fields = dict(
         kp=kp, mod=mod, sub=sub, title=title, deck=deck.name, nslides=len(slides), secs=secs,
         mins=round(secs / 60), ceiling=mmss(secs + 60), ceilmins=round(secs / 60) + 1,
@@ -492,11 +534,14 @@ def main():
         brief=f"{stem}_AudioBrief_v0.{ver}.md",
         # The Progressa clause is conditional for the same reason TERM_ROWS are filtered: naming
         # the demonstration country to a video that never uses it invites the hosts to bring it in.
-        termline="Say \"PAERA\" as a name; do not expand it unless the brief does, and if you "
-                 "do, the only expansion is \"Public Administration Ecosystem Reference "
-                 "Architecture\". "
-                 "\"register\" not \"registry\", \"building block\" — never \"module\" or "
-                 "\"component\". "
+        termline=("Say \"the reference architecture\" in words; never say the initialism "
+                  "\"PAERA\" or any expansion of it. " if sub in NO_ACRONYM else
+                  "Say \"PAERA\" as one word — five letters, P-A-E-R-A, never spelled out "
+                  "on air — as a name; do not expand it unless the brief does, and if you "
+                  "do, the only expansion is \"Public Administration Ecosystem Reference "
+                  "Architecture\". ")
+                 + "\"register\" not \"registry\", \"building block\" — never \"module\" or "
+                   "\"component\". "
                  + ("Say \"Progressa\" as pro-GRESS-a — never \"Progressive\", never "
                     "\"Progresa\". " if re.search(r"\bProgressa\b", body, re.I) else "")
                  + "Invent no figures, dates, countries or examples.",

@@ -1,0 +1,20 @@
+# Slide cue file — KP1 Module 4, Video 4.4 "Phase 3, Adapt — fit PAERA and decide build, buy or share"
+# Deck:  KP1_M4_4.4_Deck_v0.2.pptx (8 slides)
+# Audio: KP1_M4_4.4_Audio_v0.10.m4a (runs to 4:15.4)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Supersedes Cues_v0.4. That take said "LoCTI principles" at 1:00; this one says plain
+# "localized" and gets PAERA right, which is why it was re-rolled (10 Sep name-slip pass).
+# Residue: "deep dive" at 0:15, accepted 7 Sep.
+# The Sources card gets 3.6s, under the ~5s convention — the take's closing turn runs to 4:15.4
+# and the only earlier cut (4:00.6) is slide 6's own "skip it and every project re-litigates".
+# Fix is 2s of silence padded onto the take, not a cue edit.
+
+0:00   # slide 1 — title card (cold open: $50m on a digital ID, forty million next door)
+0:15   # slide 2 — Hook: Phase 3, Adapt. PAERA is a starting point, not a constraint.
+1:08   # slide 3 — Progressa inherits and localises, it does not draft from scratch
+1:58   # slide 4 — Four kinds of decision: build, buy, share, sandbox
+3:26   # slide 5 — Reuse before build is where the country-level saving is chosen
+3:46   # slide 6 — Sign-off three commits the shape of everything that follows
+4:07   # slide 7 — In one sentence
+4:12   # slide 8 — Sources

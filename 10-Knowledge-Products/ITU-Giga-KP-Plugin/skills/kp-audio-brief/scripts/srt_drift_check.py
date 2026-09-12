@@ -75,6 +75,12 @@ TERMINOLOGY = [
     (r"\bLoCTI\b|\bLockty\b|\bLoctee\b|\bLoc[- ]Tee\b", "'localised principles'"),
     (r"\bProgressive (?:framework|architecture|phase|Phase)\b|\bphase \w+ of the progressive\b",
      "Progressa — pro-GRESS-a, the demonstration country"),
+    # The country promoted to a framework. 4.7 v0.13 said "the progressive framework", was
+    # re-rolled for it, and v0.15 said "a framework called Progressa" — the same error with the
+    # name spelled right, which the row above could not see.
+    (r"\bProgress[ae]s?[- ](?:framework|architecture|methodology|model)\b"
+     r"|\b(?:framework|architecture|methodology|model) called Progress[ae]s?\b",
+     "Progressa is the demonstration country, not a framework — the framework is PAERA"),
     # ponytail: no row for "Progresa" spelled with one s. It is a homophone of "Progressa", so
     # the spelling in an SRT is the transcriber's choice, not evidence about the audio — the
     # 10 Sep 4.4 batch failed all three tries on it while two of those takes were otherwise
@@ -113,6 +119,9 @@ REFLECTIVE_CLOSE = [
     r"\bfinal thought\b", r"\bmull over\b", r"\bleaves? (?:us|you) with\b",
     r"\bthought (?:for you|to (?:leave|take))\b", r"\bone (?:last|final) (?:thought|question)\b",
     r"\bbrings? up a\b.{0,20}\b(?:thought|question)\b",
+    # 4.7 v0.16: "And consider this implication for your own government structures." — an
+    # announced closing thought with none of the words above in it.
+    r"\bconsider\b.{0,40}\b(?:your own|for you)\b",
 ]
 
 REQUIRED_SIGNPOSTS = [
@@ -175,6 +184,70 @@ def paera_near_misses(text, deck_text):
         if _lev(up, "PAERA") <= 2:
             bad.add(tok)
     return sorted(bad)
+
+
+EXPANSION = re.compile(
+    r"public administration ecosystem reference architecture", re.I)
+
+
+def paera_expansion_slips(text):
+    """The acronym said next to the expansion must be PAERA.
+
+    `paera_near_misses` measures edit distance, and 4.6 v0.14 shipped "the POA framework, that's
+    the Public Administration Ecosystem Reference Architecture" — three edits from PAERA, so it
+    passed, and the take was recorded as clean. Distance cannot be widened to three without
+    flagging most three-letter acronyms on air.
+
+    The expansion is the better anchor: a take only expands the name where it introduces it, and
+    whatever acronym it puts beside it is the one the hosts are pronouncing. So wherever the
+    expansion appears, PAERA must appear within 100 characters of it.
+    """
+    bad = []
+    for m in EXPANSION.finditer(text):
+        window = text[max(0, m.start() - 100):m.end() + 100]
+        if not re.search(r"\bPAERA\b", window, re.I):
+            bad.append(text[max(0, m.start() - 60):m.start()].strip()[-60:])
+    return bad
+
+
+FRAMEWORK = re.compile(r"\b(?:framework|standards)\b", re.I)
+# Words that can sit capitalised in front of "framework" without naming one.
+NOT_A_NAME = {"THE", "A", "AN", "THIS", "THAT", "ITS", "OUR", "AND", "OR", "BUT", "SO", "WELL",
+              "YEAH", "RIGHT", "OKAY", "OK", "UM", "UH", "IT", "IS", "IN", "OF", "TO", "USING",
+              "CALLED", "NAMED", "ANOTHER", "SAME", "WHOLE", "GOVERNANCE", "REFERENCE",
+              "ARCHITECTURE", "ESTABLISHED", "THEY", "WE", "YOU", "I", "HE", "SHE", "THERE",
+              "THEN", "NOW", "WHAT", "WHICH", "WHEN", "WHERE", "HOW", "WHY", "BECAUSE",
+              "FIRST", "SECOND", "THIRD", "EVEN", "EXACTLY", "PRECISELY", "LIKE", "JUST"}
+
+
+def framework_name_slips(text, deck_text):
+    """Whatever is named right before "framework" has to be PAERA.
+
+    Edit distance and the expansion anchor both work on single tokens, and 4.8 v0.8 got past
+    both with "the Kia RRA framework" and "the PR era framework" — the name broken across two
+    words, so no token was ever close to PAERA. "framework" (and "standards") is the reliable
+    tell: in these takes the name only ever appears attached to one of them.
+
+    Capitalised words in the three before the noun are treated as the name. Deck vocabulary is
+    exempt, so "the European Interoperability Framework" and "GovStack" pass.
+    """
+    deck_words = set(re.findall(r"\b[A-Za-z]{2,20}\b", deck_text.upper()))
+    bad = []
+    for m in FRAMEWORK.finditer(text):
+        before = text[max(0, m.start() - 40):m.start()]
+        # A capital after a full stop is a sentence start, not a name ("Even with an
+        # established framework" flagged "Even" before this).
+        names = [w.group(0) for w in re.finditer(r"\b[A-Z][A-Za-z.\-]{0,14}\b", before)
+                 if not re.search(r"[.?!]\s+$", before[:w.start()])][-3:]
+        # "PAERA-anchored standards" is one token to the regex and it is correct, so test for
+        # the name inside the token rather than for equality.
+        if any("PAERA" in w.upper() for w in names):
+            continue
+        names = [w for w in names
+                 if w.upper() not in NOT_A_NAME and w.upper() not in deck_words]
+        if names:
+            bad.append(" ".join(names) + " " + m.group(0))
+    return sorted(set(bad))
 
 
 def deck_terms(path):
@@ -288,6 +361,14 @@ def main():
             fails.append("TERMINOLOGY — " + ", ".join(near)
                          + " is not PAERA; say P-A-E-R-A, all five letters")
 
+    if deck_text:
+        for slip in framework_name_slips(full, deck_text):
+            fails.append(f"TERMINOLOGY — \"{slip}\" is not PAERA; the framework has one name")
+
+    for ctx in paera_expansion_slips(full):
+        fails.append("TERMINOLOGY — the expansion is given but the acronym beside it is not "
+                     f"PAERA: \u2026{ctx}\u2026")
+
     # 6. framing inversion
     fr = [p for p in CITIZEN_FRAMING if re.search(p, low)]
     if fr:
@@ -302,6 +383,14 @@ def main():
         if missing:
             warns.append("SIGNPOSTS — the take announces four signs but does not number them "
                          "aloud: " + ", ".join(missing))
+
+    # A warn, not a fail: the brief now asks the hosts not to spell the name out, but the old
+    # row asked them to and six accepted takes (1.1, 1.5, 1.6, 3.3, 3.5, 4.2) do it once. It
+    # reads fine once and badly twice — which is a judgement, so it goes to a person.
+    spelled = len(re.findall(r"\bP[-. ]A[-. ]E[-. ]R[-. ]A\b", full))
+    if spelled:
+        warns.append(f"SPELLED OUT — the take says 'P-A-E-R-A' aloud {spelled}\u00d7; the brief "
+                     "spells it as a pronunciation hint, not a line to read")
 
     # 8. silence gaps — where the slide cuts can land.
     # 0.6 is shared with kp-scribe-transcribe (SILENCE_GAP_S in transcribe.py and

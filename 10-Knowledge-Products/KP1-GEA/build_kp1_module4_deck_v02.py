@@ -357,7 +357,11 @@ rows_block(prs, "Score the capabilities and “things are bad” becomes a map",
             ('Share data across bodies — VERY LOW', 'Almost everything still moves on paper.')],
            'Not everything is broken. Knowing exactly which part is, is the point.',
            T,
-           "VO: Start by scoring Progressa's capabilities against PAERA-anchored standards. "
+           # The narration says "the reference architecture", not the initialism: 4.3's notebook
+           # mangled PAERA in 11 of 14 generations (12 Sep). The slide and the Sources card are
+           # unchanged and still carry the name — this is the voice-over only.
+           "VO: Start by scoring Progressa's capabilities against the reference architecture's "
+           "standards. "
            "Register a learner: low maturity — three lists, none authoritative. Prove identity: "
            "medium — the Identity Authority exists but education does not consume it. Certify a "
            "result: high — the Examination Authority does this well. Share data across bodies: "

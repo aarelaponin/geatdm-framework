@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-10 23:17 (data v1)
+# KP video tracker — generated 2026-09-12 14:13 (data v1)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -42,7 +42,7 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | 3.1 | Set up the one place your architecture lives | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 | accepted by decision 9 Sep; "registry" check is a false positive |
 | 3.2 | Choose EA tooling without locking yourself in | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7, Cues v0.7, MP4 v0.7 | accepted by decision 9 Sep — ships "nightmare", "a mess", "hostage" on air; reversible by re-roll |
 | 3.3 | Keep the repository true — the update discipline | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | settled on runtime (−47s) |
-| 3.4 | Stand up an EA Board that can actually say no | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.10, SRT v0.10, Accepted v0.10, Cues v0.6, MP4 v0.6 | re-rolled 10 Sep for the PAERA expansion slip; cues + MP4 still on v0.6; MP4 is v0.6 but newest take is v0.10 — re-cue/re-render or delete the stale take; cues v0.6 lag take v0.10 |
+| 3.4 | Stand up an EA Board that can actually say no | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.10, SRT v0.10, Accepted v0.10, Cues v0.10, MP4 v0.10 | re-rolled 10 Sep for the PAERA expansion slip; cued + assembled 12 Sep (4:44) |
 | 3.5 | Review projects against the architecture | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.1, SRT v0.1, Accepted v0.1, Cues v0.1, MP4 v0.1 | fully clean |
 | 3.6 | Show the EA is working — the few metrics that matter | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 |  |
 | 3.7 | Keep the practice alive past year two | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 |  |
@@ -54,12 +54,12 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | 4.0 | Module 4 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 4.1 | Meet Progressa — a real sector with a real fragmentation problem | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 |  |
 | 4.2 | Phase 1, Discover — map what the sector has today | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.9, SRT v0.9, Accepted v0.9, Cues v0.9, MP4 v0.9 |  |
-| 4.3 | Phase 2, Assess — find the gaps and rank them | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.17, SRT v0.17, Accepted v0.1, Cues v0.1, MP4 v0.1 | BLOCKER: PAERA mangled in all 10 takes (PERA/PEERA/PAERO/PEURA) — re-rolling does not converge; needs a brief fix or a decision; MP4 is v0.1 but newest take is v0.17 — re-cue/re-render or delete the stale take; cues v0.1 lag take v0.17; accepted v0.1 but newest take on disk is v0.17 |
-| 4.4 | Phase 3, Adapt — fit PAERA and decide build, buy or share | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.10, SRT v0.10, Accepted v0.10, Cues v0.4, MP4 v0.4 | re-rolled 10 Sep — LoCTI slip gone; cues + MP4 still on v0.4; MP4 is v0.4 but newest take is v0.10 — re-cue/re-render or delete the stale take; cues v0.4 lag take v0.10 |
+| 4.3 | Phase 2, Assess — find the gaps and rank them | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.33, SRT v0.33, Accepted v0.33, Cues v0.33, MP4 v0.33 | unblocked 12 Sep — the narration says "the reference architecture", the slides keep PAERA. First of 17 takes with the name right. Cued + assembled (5:17) |
+| 4.4 | Phase 3, Adapt — fit PAERA and decide build, buy or share | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.10, SRT v0.10, Accepted v0.10, Cues v0.10, MP4 v0.10 | cued + assembled 12 Sep (4:15). Sources card gets 3.6s — the take has no closing silence |
 | 4.5 | Phase 4, Plan — design the target architecture | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.12, SRT v0.12, Accepted v0.12, Cues v0.12, MP4 v0.12 |  |
-| 4.6 | Phase 4, Plan — sequence the roadmap and cost it | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.14, SRT v0.14, Accepted v0.14, Cues v0.7, MP4 v0.7 | re-rolled 10 Sep, name slips gone (4:48); cues + MP4 still on v0.7; MP4 is v0.7 but newest take is v0.14 — re-cue/re-render or delete the stale take; cues v0.7 lag take v0.14 |
-| 4.7 | Phase 5, Execute & Govern — stand up the living EA | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.13, SRT v0.13, Accepted v0.13, Cues v0.9, MP4 v0.9 | re-rolled 10 Sep, name slips gone (4:31); cues + MP4 still on v0.9; MP4 is v0.9 but newest take is v0.13 — re-cue/re-render or delete the stale take; cues v0.9 lag take v0.13 |
-| 4.8 | Run this on your own sector — the transferable recipe | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7, Cues v0.7, MP4 v0.7 |  |
+| 4.6 | Phase 4, Plan — sequence the roadmap and cost it | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.16, SRT v0.16, Accepted v0.16, Cues v0.16, MP4 v0.16 | re-rolled 12 Sep — v0.14 said "the POA framework"; v0.16 cued + assembled (5:01). Sources card gets 3.7s |
+| 4.7 | Phase 5, Execute & Govern — stand up the living EA | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.18, SRT v0.18, Accepted v0.18, Cues v0.18, MP4 v0.18 | re-rolled 12 Sep — v0.13 said "the P-EAR", v0.15 "a framework called Progressa"; v0.18 cued + assembled (4:57) |
+| 4.8 | Run this on your own sector — the transferable recipe | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.18, SRT v0.18, Accepted v0.18, Cues v0.18, MP4 v0.18 | unblocked 12 Sep, same decision as 4.3. Cued + assembled at 3:28 — settled on runtime, 92s under target and the shortest of the 23 |
 
 ### Module 5 — Cross-country evidence, cross-sector applicability and dissemination (Strategist)
 
@@ -146,10 +146,10 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 6.0 | Module 6 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 6.1 | The GIF AI-play catalogue | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 6.2 | Watch the bus — monitoring and anomaly detection | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 6.3 | Keep the documents honest — the consistency cross-check | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 6.4 | Carry the framework to the next sector | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 6.5 | Disseminate to the four roles | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 6.6 | From no framework to first service — the storyboard | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 6.1 | The GIF AI-play catalogue | en | `○○○○○○○○○○` | 0/10 | Bundle |  |  |
+| 6.2 | Watch the bus — monitoring and anomaly detection | en | `○○○○○○○○○○` | 0/10 | Bundle |  |  |
+| 6.3 | Keep the documents honest — the consistency cross-check | en | `○○○○○○○○○○` | 0/10 | Bundle |  |  |
+| 6.4 | Carry the framework to the next sector | en | `○○○○○○○○○○` | 0/10 | Bundle |  |  |
+| 6.5 | Disseminate to the four roles | en | `○○○○○○○○○○` | 0/10 | Bundle |  |  |
+| 6.6 | From no framework to first service — the storyboard | en | `○○○○○○○○○○` | 0/10 | Bundle |  |  |
 

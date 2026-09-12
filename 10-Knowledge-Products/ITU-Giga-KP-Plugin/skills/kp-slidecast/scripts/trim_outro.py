@@ -101,6 +101,11 @@ def outro_start(cues, terms=None):
                 and (is_furniture(cues[i - 1]["text"], terms)
                      or turns_to_listener(cues[i - 1]["text"])):
             i -= 1
+        # Never cut mid-sentence. 4.7 v0.16's closing question runs across two cues and only the
+        # second ends in "?", so the walk stepped over that one and stopped, leaving the take
+        # ending on "…transform the way your minister evaluates future policy".
+        while i > 0 and not cues[i - 1]["text"].rstrip().endswith((".", "!", "?")):
+            i -= 1
         if i == stop or i == 0:
             # i == 0 means every cue back to the start read as furniture, which is not an outro —
             # it is a take with vocabulary the deck does not share. Cutting there would delete the

@@ -1,0 +1,292 @@
+1
+00:00:00,200 --> 00:00:00,360
+So,
+
+2
+00:00:02,020 --> 00:00:02,070
+um,
+
+3
+00:00:02,780 --> 00:00:06,189
+what happens when a massive government roadmap gets approved?
+
+4
+00:00:06,700 --> 00:00:12,880
+I mean, in your ministry, you know, the documents are signed, the funding is allocated, and you sort of assume the hard work is over.
+
+5
+00:00:13,160 --> 00:00:15,000
+Right. You think you just have to execute the plan.
+
+6
+00:00:15,500 --> 00:00:15,920
+Exactly.
+
+7
+00:00:16,600 --> 00:00:22,330
+But then you have to actually implement those directives across your program, and you realize pretty quickly that an approved document,
+
+8
+00:00:22,960 --> 00:00:26,320
+well, it doesn't automatically change how systems get built.
+
+9
+00:00:26,400 --> 00:00:31,760
+So welcome to today's deep dive. We're looking at phase five of the National Enterprise Architecture, or EA.
+
+10
+00:00:31,960 --> 00:00:35,000
+Yeah, phase five. It's, uh, it's titled Execute and Govern.
+
+11
+00:00:35,140 --> 00:00:42,430
+And our mission today is to explore how an approved architecture roadmap becomes a permanent practice in the demonstration country of Progressa.
+
+12
+00:00:42,680 --> 00:00:45,780
+Right. So phase five is basically the phase that never ends.
+
+13
+00:00:45,840 --> 00:00:49,190
+It's what makes the architecture a mandatory operational standard.
+
+14
+00:00:49,840 --> 00:00:56,120
+And on Progressa, there are three specific things that enforce this: uh, the repository, the board, and the review gate.
+
+15
+00:00:56,480 --> 00:01:01,290
+Okay, so with these massive government programs, I mean, they're always starting and stopping.
+
+16
+00:01:01,550 --> 00:01:03,780
+There's constant turnover with the personnel.
+
+17
+00:01:03,840 --> 00:01:06,900
+Who actually maintains the architecture when that turnover happens?
+
+18
+00:01:07,020 --> 00:01:09,080
+Well, that's where the repository comes in.
+
+19
+00:01:09,120 --> 00:01:13,920
+It goes live as the single authoritative store of Progressa's architecture.
+
+20
+00:01:14,100 --> 00:01:15,440
+So it's like the central record.
+
+21
+00:01:15,520 --> 00:01:19,800
+Exactly. It holds all the architectural layers, the sourcing decisions.
+
+22
+00:01:19,900 --> 00:01:22,800
+Meaning whether they build custom software or buy it.
+
+23
+00:01:22,940 --> 00:01:28,580
+Right, exactly. Plus, it holds the guiding principles and a formal log of all design decisions.
+
+24
+00:01:29,280 --> 00:01:37,520
+And to keep it from getting outdated, they have one named architect who is explicitly responsible for keeping it current as each project wave finishes.
+
+25
+00:01:37,820 --> 00:01:38,180
+Oh, wow,
+
+26
+00:01:38,880 --> 00:01:39,600
+just one person.
+
+27
+00:01:39,860 --> 00:01:44,460
+Well, one person updating the log, but alongside them, Progressa sets up a permanent EA team.
+
+28
+00:01:44,760 --> 00:01:48,980
+Okay, if they're overseeing an entire country's systems, how big is this team?
+
+29
+00:01:49,060 --> 00:01:49,820
+It must be huge.
+
+30
+00:01:50,120 --> 00:01:53,120
+Actually, no. It requires only two to four architects.
+
+31
+00:01:53,180 --> 00:01:55,280
+Wait, really? Just two to four?
+
+32
+00:01:55,360 --> 00:01:58,890
+Yeah, just two to four. They report directly to the digitalization officer.
+
+33
+00:01:58,920 --> 00:02:06,580
+They serve as the permanent authority for cross-cutting decisions, and, you know, they exist whether or not any single project is currently active.
+
+34
+00:02:06,680 --> 00:02:09,949
+I do have to push back a bit here on how this works in reality.
+
+35
+00:02:10,520 --> 00:02:13,860
+Like, say I'm running a well-funded scholarship program in your ministry.
+
+36
+00:02:13,940 --> 00:02:18,040
+Okay, sure. And I'm on a really tight legislative deadline.
+
+37
+00:02:18,540 --> 00:02:22,780
+I'm not gonna wait for an external team to help me integrate with the existing learner registry.
+
+38
+00:02:23,210 --> 00:02:25,140
+I'm just gonna build my own small learner list.
+
+39
+00:02:25,240 --> 00:02:27,090
+Because it's faster for you. Right. Yeah.
+
+40
+00:02:27,100 --> 00:02:33,000
+It lets me launch on time. Yeah. For a rushed project, isn't building an independent list a completely rational choice?
+
+41
+00:02:33,580 --> 00:02:36,880
+I mean, for your specific project, yes, it's a highly rational choice.
+
+42
+00:02:36,920 --> 00:02:41,880
+You're optimizing for your deadline. But that's exactly what the review gate is designed to catch.
+
+43
+00:02:42,140 --> 00:02:44,850
+Oh, so the review gate steps in before you can even build it.
+
+44
+00:02:45,000 --> 00:02:45,810
+Exactly. Yeah.
+
+45
+00:02:45,860 --> 00:02:53,700
+Before the scholarship program gets technical approval or starts development, the review gate evaluates the design against the repository.
+
+46
+00:02:54,160 --> 00:02:56,780
+It operates as a mandatory funding checkpoint.
+
+47
+00:02:56,920 --> 00:02:57,780
+And what are they looking for?
+
+48
+00:02:58,120 --> 00:03:00,750
+The review gate asks one defining question:
+
+49
+00:03:01,700 --> 00:03:04,930
+Does a shared building block already exist for this function?
+
+50
+00:03:05,340 --> 00:03:10,760
+And the repository will confirm that, yes, the learner registry was established and made authoritative back in wave one.
+
+51
+00:03:11,200 --> 00:03:17,190
+But what if the gate is bypassed? Like, what happens to the country's systems if the program just builds its own list anyway?
+
+52
+00:03:17,380 --> 00:03:20,720
+If that happens, Progressa's systems would become severely fragmented.
+
+53
+00:03:20,760 --> 00:03:24,240
+Fragmented how? Well, the learner list would be duplicated.
+
+54
+00:03:24,540 --> 00:03:33,380
+You'd have educational data sitting in totally disconnected databases, which increases the cost to maintain them and makes data synchronization impossible.
+
+55
+00:03:33,390 --> 00:03:34,700
+So how do you actually stop it?
+
+56
+00:03:34,710 --> 00:03:42,520
+The board steps in. The board reviews the gate's findings and issues a binding ruling that the project must consume the existing learner registry.
+
+57
+00:03:43,190 --> 00:03:46,640
+They explicitly direct the program not to build a fourth list.
+
+58
+00:03:47,060 --> 00:03:50,160
+Couldn't a standard procurement rule just stop them from buying the software?
+
+59
+00:03:50,600 --> 00:03:55,420
+No, because procurement evaluates budgets and vendor contracts.
+
+60
+00:03:55,460 --> 00:03:57,800
+They lack a whole-of-government architectural view.
+
+61
+00:03:58,040 --> 00:03:58,960
+Ah, I see.
+
+62
+00:03:59,000 --> 00:04:08,220
+To enforce this, you really need a board that has both the comprehensive system data and the institutional authority to halt a redundant project.
+
+63
+00:04:08,790 --> 00:04:13,400
+Their ruling goes directly into the decision log with the technical justification.
+
+64
+00:04:13,620 --> 00:04:14,100
+That makes sense.
+
+65
+00:04:14,390 --> 00:04:22,320
+And what's really interesting is that four times a year, this board convenes the business side and the IT side over the exact same repository.
+
+66
+00:04:22,360 --> 00:04:25,900
+So they're evaluating the same data to make operational decisions together.
+
+67
+00:04:25,980 --> 00:04:31,760
+Right. They evaluate the repository data to align business goals with technical constraints.
+
+68
+00:04:31,870 --> 00:04:39,520
+This ensures both sides are coordinating future waves of development based on shared technical facts rather than just isolated department goals.
+
+69
+00:04:39,640 --> 00:04:41,700
+Okay, so to summarize phase five on Progressa,
+
+70
+00:04:42,460 --> 00:04:45,900
+the repository operates as a live single source of truth.
+
+71
+00:04:46,530 --> 00:04:49,260
+The board issues binding decisions based on it.
+
+72
+00:04:49,320 --> 00:04:52,620
+The review gate prevents duplicated lists before they get funded.
+
+73
+00:04:52,660 --> 00:04:57,400
+And finally, the IT and business sides use this structure to make joint decisions quarterly forever.
+

@@ -86,7 +86,7 @@ kps:
           - {code: "3.3", title: "Keep the repository true — the update discipline", mins: ~4,
              en: {accepted: v0.6, note: 'settled on runtime (−47s)'}}
           - {code: "3.4", title: "Stand up an EA Board that can actually say no", mins: ~4,
-             en: {accepted: v0.10, note: 're-rolled 10 Sep for the PAERA expansion slip; cues + MP4 still on v0.6'}}
+             en: {accepted: v0.10, note: 're-rolled 10 Sep for the PAERA expansion slip; cued + assembled 12 Sep (4:44)'}}
           - {code: "3.5", title: "Review projects against the architecture", mins: ~4, en: {accepted: v0.1, note: 'fully clean'}}
           - {code: "3.6", title: "Show the EA is working — the few metrics that matter", mins: ~4, en: {accepted: v0.2}}
           - {code: "3.7", title: "Keep the practice alive past year two", mins: ~5, en: {accepted: v0.2}}
@@ -100,15 +100,16 @@ kps:
           - {code: "4.1", title: "Meet Progressa — a real sector with a real fragmentation problem", mins: ~3, en: {accepted: v0.5}}
           - {code: "4.2", title: "Phase 1, Discover — map what the sector has today", mins: ~4, en: {accepted: v0.9}}
           - {code: "4.3", title: "Phase 2, Assess — find the gaps and rank them", mins: ~3,
-             en: {accepted: v0.1, blocker: 'PAERA mangled in all 10 takes (PERA/PEERA/PAERO/PEURA) — re-rolling does not converge; needs a brief fix or a decision'}}
+             en: {accepted: v0.33, note: 'unblocked 12 Sep — the narration says "the reference architecture", the slides keep PAERA. First of 17 takes with the name right. Cued + assembled (5:17)'}}
           - {code: "4.4", title: "Phase 3, Adapt — fit PAERA and decide build, buy or share", mins: ~3,
-             en: {accepted: v0.10, note: 're-rolled 10 Sep — LoCTI slip gone; cues + MP4 still on v0.4'}}
+             en: {accepted: v0.10, note: 'cued + assembled 12 Sep (4:15). Sources card gets 3.6s — the take has no closing silence'}}
           - {code: "4.5", title: "Phase 4, Plan — design the target architecture", mins: ~4, en: {accepted: v0.12}}
           - {code: "4.6", title: "Phase 4, Plan — sequence the roadmap and cost it", mins: ~4,
-             en: {accepted: v0.14, note: 're-rolled 10 Sep, name slips gone (4:48); cues + MP4 still on v0.7'}}
+             en: {accepted: v0.16, note: 're-rolled 12 Sep — v0.14 said "the POA framework"; v0.16 cued + assembled (5:01). Sources card gets 3.7s'}}
           - {code: "4.7", title: "Phase 5, Execute & Govern — stand up the living EA", mins: ~3,
-             en: {accepted: v0.13, note: 're-rolled 10 Sep, name slips gone (4:31); cues + MP4 still on v0.9'}}
-          - {code: "4.8", title: "Run this on your own sector — the transferable recipe", mins: ~4, en: {accepted: v0.7}}
+             en: {accepted: v0.18, note: 're-rolled 12 Sep — v0.13 said "the P-EAR", v0.15 "a framework called Progressa"; v0.18 cued + assembled (4:57)'}}
+          - {code: "4.8", title: "Run this on your own sector — the transferable recipe", mins: ~4,
+             en: {accepted: v0.18, note: 'unblocked 12 Sep, same decision as 4.3. Cued + assembled at 3:28 — settled on runtime, 92s under target and the shortest of the 23'}}
 
       - number: 5
         title: Cross-country evidence, cross-sector applicability and dissemination

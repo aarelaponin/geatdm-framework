@@ -80,6 +80,16 @@ def test_the_closing_turn_is_cut_from_the_end():
     assert outro_start(c, TERMS) == 3, outro_start(c, TERMS)
 
 
+def test_a_closing_question_split_across_cues_is_cut_whole():
+    """4.7 v0.16: only the second half ends in "?", so the walk stopped mid-sentence."""
+    c = cues("The Board issues binding decisions from the repository.",
+             "And finally, both sides make joint decisions quarterly forever.",
+             "Exactly. And consider this implication for your own government structures.",
+             "If a unified Board can stop fragmented building blocks today, how might this model",
+             "change the way your minister evaluates future roadmaps?")
+    assert outro_start(c, TERMS) == 2, outro_start(c, TERMS)
+
+
 def test_never_trims_the_whole_take():
     # Every cue furniture by this deck's vocabulary: not an outro, and cutting at 0 would delete
     # the recording.

@@ -363,3 +363,164 @@ All 35 briefs and prompts regenerated; `brief_deck_check` clean on all five modu
 2. Re-cue and re-assemble 3.4, 4.4, 4.6, 4.7 from their new takes — cue files and MP4s still
    belong to the superseded ones.
 3. Then publication, as before.
+
+## Module 4 re-roll and assembly — 12 September 2026
+
+Picking up the 10 Sep list: re-cue and re-assemble the takes that had been re-rolled for the §4
+name slips, and resolve 4.3. **Three of Module 4's videos are now assembled from clean takes;
+4.3 and 4.8 are not, and both fail on the same thing.**
+
+### The 10 Sep re-rolls were not all clean
+
+Two of the four takes recorded as clean carried the defect they had been re-rolled for. The audit
+could not see either, for the same reason in both cases — it tests **tokens**, and the mangled
+name was not one token:
+
+| Video | Recorded 10 Sep | Actually on air |
+|---|---|---|
+| 4.4 v0.10 | clean | clean — verified |
+| 4.6 v0.14 | clean | "the **POA** framework, that's the Public Administration Ecosystem Reference Architecture" (0:50) — three edits from PAERA, and the near-miss rule fails closed at two |
+| 4.7 v0.13 | clean | "Maintaining the **P-EAR**, uh, uh, the Public Administration…" (2:04) — hyphenated, so never a token at all |
+| 3.4 v0.10 | clean | clean — verified (Module 3, not re-cued here) |
+
+### What the checker gained
+
+Three rules, each written against a take that had already passed:
+
+| Rule | Catches | Why the old rules could not |
+|---|---|---|
+| **Expansion anchor** — wherever "Public Administration Ecosystem Reference Architecture" appears, PAERA must appear within 100 characters | 4.6's `POA`, 4.7's `P-EAR` | edit distance is a property of one token; the expansion is the moment the hosts are introducing the name, whatever they call it |
+| **Framework name** — the capitalised words before "framework"/"standards" must include PAERA; deck vocabulary and sentence-initial capitals are exempt | 4.8's `Kia RRA framework` and `PR era framework` | the name split across two words, so no single token was ever close to PAERA |
+| **Progressa is not a framework** | 4.7 v0.15's "a framework called Progressa" | the existing row matched "Progressive framework" — the same error with the name spelled right went through |
+
+Plus one downgrade: reading `P-A-E-R-A` aloud is now a **warning**, not a failure. Six accepted
+takes do it once (1.1, 1.5, 1.6, 3.3, 3.5, 4.2) because the pre-10-Sep brief asked for it. It
+reads fine once and badly twice, which is a judgement, so it goes to a person.
+
+`trim_outro` also gained a rule: **never cut mid-sentence.** 4.7 v0.16's closing question ran
+across two cues and only the second ended in "?", so the walk stepped over that one and stopped,
+leaving the take ending on "…transform the way your minister evaluates future policy". The cut now
+walks back to a sentence boundary. `test_trim_outro.py` and the new `test_paera_expansion.py`
+cover all of it.
+
+### The brief fix, and what it was worth
+
+The 10 Sep rewrite dropped `spell "P-A-E-R-A" the first time only` from §4 along with the
+expansion request. On 4.3 the split is clean: **three rolls under the old row said the name
+correctly, five rolls under the new one did not** (PERA, PEERA, PAERO, PEURA). The letters are
+back in the row — as a pronunciation hint, with "never spelled out on air" beside them, since the
+first roll under the restored wording read the hint aloud twice.
+
+It helps and it does not settle it. Since the fix: 4.6 clean on try 1, 4.7 clean on try 1 of the
+second round, 4.8 mangled on all three of round two (`PERA`, `PARE`), 4.3 mangled on five of six.
+
+### Assembled — three of five
+
+| Video | Take | Runtime | Slides | Sources tail | Note |
+|---|---|---|---|---|---|
+| 4.4 | **v0.10** | 4:15 | 8 | 3.6 s | clean; "deep dive" residue at 0:15 |
+| 4.6 | **v0.16** | 5:01 | 8 | 3.7 s | re-rolled off v0.14's "POA"; PAERA once, correct, at 1:19 |
+| 4.7 | **v0.18** | 4:57 | 7 | 5.6 s | v0.16 re-trimmed; never names the framework, which is right here — 4.7's §2 does not introduce it |
+
+`rendered N slides, N cues` with no count warning on all three; MP4 duration equals the m4a; a
+frame extracted at every cue and inspected shows the slide the cue promised, in order, Sources
+last.
+
+**4.4 and 4.6 give the Sources card under 4 s**, against the ~5 s convention and the 5.1–10.8 s
+the other twenty shipped with. Neither take has any closing silence — the last content beat runs
+to within four seconds of the end — and the only earlier cut in each case is the previous slide's
+own punchline. A cue edit cannot fix it. Three seconds of silence padded onto the take can, and
+that is the one thing the pipeline's rules forbid doing by hand, so it is left for a decision.
+
+### 4.3 and 4.8 could not say the name — so they stopped trying
+
+| | Rolls on 12 Sep | Name correct before the decision |
+|---|---|---|
+| 4.3 | 6 | 1 (v0.28 — but 6:22 and "our sources" on air) |
+| 4.8 | 4 | 0 (`PERA`, `PARE`, `PEAR`, and `Kia RRA` before them) |
+
+Eighteen NotebookLM generations across the two, under three wordings of the §4 row, and neither
+converged. Every other Module 4 subtopic gets it right. **4.8's §2 never mentioned PAERA at all** —
+the name reached its hosts only through the §4 row, unconditional since 10 Sep, so on that video
+the row was not constraining a term the generator uses anyway, it was handing it one.
+
+**Decision — 12 September 2026: these two videos do not say the initialism.** The slides are
+unchanged and still carry PAERA — the title card, the Sources card, the deck's own copy. Only the
+narration says "the reference architecture". Two changes implement it:
+
+- `make_brief.py` grows a `NO_ACRONYM` set (`{"4.3", "4.8"}`) that swaps the §4 PAERA row for one
+  reading *"**the reference architecture** — say it in words. This video never says the initialism
+  out loud; the slides carry the name, the narration does not"*, rewrites PAERA out of the other
+  rows that mention it in passing, and changes the prompt's terminology line to match. A guard
+  exits rather than shipping a brief that still names it in a row it will actually use.
+- 4.3's §2 came from slide 3's VO speaker note in `build_kp1_module4_deck_v02.py`
+  ("against PAERA-anchored standards" → "against the reference architecture's standards").
+  The deck was rebuilt and re-split; extracting text and notes from all eight per-topic decks
+  before and after shows **exactly one changed line** — that note. No slide copy moved.
+
+It worked on the first roll that cleared the other gates. 4.3 v0.33 says "the reference
+architecture" three times and no initialism at all; 4.8 v0.18 says it once and none.
+
+The set is an empirical exception, not a rule: these two subtopics' notebooks have demonstrated
+they cannot say the name, and no other KP1 subtopic is in it.
+
+### Assembled — all five
+
+| Video | Take | Runtime | Slides | Sources tail | Note |
+|---|---|---|---|---|---|
+| 4.3 | **v0.33** | 5:17 | 8 | 4.6 s | says "the reference architecture"; first of 17 takes with the name right |
+| 4.4 | **v0.10** | 4:15 | 8 | 3.6 s | clean |
+| 4.6 | **v0.16** | 5:01 | 8 | 3.7 s | re-rolled off v0.14's "POA" |
+| 4.7 | **v0.18** | 4:57 | 7 | 5.6 s | v0.16 re-trimmed; never names the framework |
+| 4.8 | **v0.18** | 3:28 | 8 | 5.8 s | says "the reference architecture"; **shortest of the 23** |
+
+`rendered N slides, N cues` with no count warning on all five; MP4 duration equals the m4a; a
+frame extracted at every cue and inspected shows the slide the cue promised, in order, Sources
+last.
+
+### Two things left open, both deliberate
+
+- **4.4 and 4.6 give the Sources card under 4 s**, against the ~5 s convention and the 5.1–10.8 s
+  the other twenty shipped with. Neither take has any closing silence, and the only earlier cut in
+  each case is the previous slide's own punchline, so a cue edit cannot fix it. Three seconds of
+  padded silence can, and that is the one thing the pipeline's rules forbid doing by hand.
+- **4.8 runs 3:28**, 92 s under target — `take_until_pass` settled it on runtime, which it is only
+  allowed to do when runtime is the last defect standing. Inside the 3:11–5:30 Module 1 shipped,
+  but the shortest of the twenty-three, and its hook slide is thin (22% of the slide's vocabulary).
+  Another round of rolls is the fix if the length matters.
+
+### The same slip is still in seven earlier videos
+
+Sweeping the new rules over every take of record: **1.1 (published, says "PERA")**, 1.4, 1.5, 1.6,
+1.7, 2.6, 3.4. Not acted on — the `NO_ACRONYM` mechanism is there if the same decision is taken for
+any of them, and 1.1 would mean a re-upload.
+
+### 3.4 finished too, and modules 2-4 cleaned up
+
+3.4 was the last video still on superseded cues — its v0.10 re-roll (clean, "the PAERA
+framework" at 1:38) was never cued on 10 Sep. Cued and assembled at 4:44, 9 slides, every frame
+checked. The take has no separate recap beat, so slide 8 opens inside the closing sentence;
+noted in the cue file.
+
+With that, **modules 2, 3 and 4 are 23 finished English videos** and every cue file and MP4
+matches its take of record. The tracker reports no drift on any of the 87 rows.
+
+Then the superseded files went — 208 of them, 698 MB, leaving 336 MB:
+
+| | Kept | Deleted |
+|---|---|---|
+| audio takes | the 22 of record (+ 3.4's) | 146 rejected rolls |
+| cues, MP4s | the version matching each take | 6 + 6 superseded |
+| decks | v0.2, per-topic and combined | 25 v0.1 |
+| scripts | v0.2 | 25 v0.1 |
+
+72 were tracked and are recoverable from git history; 136 were untracked rejected rolls and are
+gone for good. **The raw pre-trim parents of the trimmed takes went with them** — where a future
+change to `trim_outro` would otherwise let a take be re-cut without re-rolling, as 4.7 was today,
+that now costs a new generation.
+
+### Next
+
+1. Decide the Sources tail on 4.4 and 4.6 — pad, or ship at ~3.6 s.
+2. Decide whether 4.8's 3:28 stands.
+3. Publication: YouTube metadata for M2-M4, the on-camera intros, the French mirror.
