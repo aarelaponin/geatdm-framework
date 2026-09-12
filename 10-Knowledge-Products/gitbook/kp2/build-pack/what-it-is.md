@@ -1,0 +1,208 @@
+---
+description: "The manifest, the three configuration layers, the requirements and what the pack proves."
+icon: box
+---
+
+# What the build pack is
+
+{% hint style="info" %}
+**Copied from the build pack.** This page is `KP2-build-pack/README.md` as it stands in the pack, with a header; the pack is the source and this page is regenerated from it. Paths in backticks are relative to `KP2-build-pack/`.
+{% endhint %}
+
+
+> **On the Progressa Learner Registry (PLR).** The PNEA ← PNIA + PLR exchange this pack proves is
+> the **target-state** slice that the National Learner Registry programme delivers. In the Progressa
+> baseline the PLR is planned, not started — its absence is the sector problem. The pack builds the
+> exchange the country is working towards, not one it already has.
+
+The runnable companion to the KP2 video bundle. The videos teach the build; this
+pack **is** the ready solution — the configuration the modules generate, the prompts
+that generate it, the scripts that deploy it, and the acceptance checks that prove it.
+
+- **Track:** interoperability
+- **Depends on:** none (foundation)
+
+## Requirements
+
+- **Docker ≥ 24 with Compose v2 ≥ 2.24**, plus `git`, `curl`, `jq`, `python3`
+  3.9+ with PyYAML, a SHA-256 tool and bash 4+. `scripts/preflight.sh` checks
+  every one of them at once and installs nothing.
+- **~11 GiB RAM** in steady state, measured live (`docker stats --no-stream`:
+  four Security Servers ~2.2–2.3 GiB each, Central Server ~1.8 GiB, Test CA
+  ~88 MiB, mock providers ~65 MiB each, up from ~32 MiB before each grew a
+  second, TLS listener). Fits a 16 GB host.
+- **~15 GB free disk:** ~4.6 GB of pinned images (Security Server Sidecar
+  2.31 GB, pulled once and shared by all four servers; Central Server 1.78 GB;
+  Test CA 542 MB), ~1 GB of locally built mock / console / join-api images,
+  ~1.4 GB of named volumes once deployed, and Docker build cache above that.
+- **4 CPU cores or more.** Unmeasured, unlike the figures above: five JVMs run
+  concurrently, and a narrower host stretches the ~13-minute cold `--full`
+  rather than breaking it.
+- **A git clone of the monorepo**, with this pack at
+  `10-Knowledge-Products/KP2-GIF/KP2-build-pack/`. `join-api` bind-mounts the
+  monorepo root and its `.git`, and `scripts/package.sh` builds from `git
+  archive` — an unzipped copy stands the federation up fine, but not the join
+  demo.
+
+## Quickstart
+
+```
+scripts/demo.sh            # preflight, .env, deploy, seed, acceptance, console -- ~10 min from zero
+scripts/verify.sh --live   # re-prove it after a change
+scripts/teardown.sh        # stop; volumes survive (--purge only for a from-zero rebuild)
+```
+
+`demo.sh` names each step as it runs it and refuses if a federation is already
+deployed; step 1 is `scripts/gen-secrets.sh`, which writes the real `.env`
+(`.env.example` is a placeholder template and cannot work by itself). Then
+`exercises.md` — five exercises over the operations `runbook.md` documents,
+each with the observations to expect: break and restore the once-only proof,
+join a member, catch a published contract drifting, un-join, and watch the
+reproducibility proof run.
+
+- **Stand it up (the long way):** `runbook.md`
+- **Index:** `manifest.yaml` (module → BB → config → prompt → acceptance, with
+  `video_ref` to the Topic 5 subtopic each module realises, and the frozen
+  Progressa identifiers that are the KP3/KP4 join keys)
+- **Status against the onboarding path:** `docs/path-conformance.md` — the
+  only place the pack states what it does and does not implement of the
+  member onboarding path it teaches.
+  Generated from `docs/path-conformance.yaml`; every cited evidence path is
+  existence-checked by `tests/test_path_conformance.py`, so a status claim
+  cannot outlive the file it cites. Four statuses and no tick mark. **Where a
+  narrative document disagrees with it, it wins** — that divergence is what
+  once let findings be recorded as closed by files that never existed.
+- **Design records:** `docs/decisions/` — reasoning, never status
+- **Hand it to someone:** `scripts/package.sh` — a zip (or `.tar.gz`) built with
+  `git archive`, so it holds what a fresh clone would. Never zip the working
+  directory: it carries the real `.env`, `out/`, the `.venv` and ~25 MB of
+  darwin-only Terraform provider binary, all gitignored and all of which a
+  Finder zip copies anyway. Give a clone rather than an archive when the
+  session includes the join demo — `join-api` needs the monorepo's `.git`,
+  and the pack has to sit at
+  `<repo>/10-Knowledge-Products/KP2-GIF/KP2-build-pack` inside it
+  (`scripts/preflight.sh` refuses any other layout; `runbook.md`
+  Prerequisites says what breaks and why).
+- **Verify a change:** `scripts/verify.sh --fast|--live|--full` — three tiers,
+  chosen by the tool, not by whoever is typing. `--fast` (static checks, the
+  ship gate, exposure, the test suite — no running containers, no network)
+  **~50s**; `--live` (`--fast`, then `acceptance.sh` against a running stack)
+  **~80s**; `--full` (purge, deploy, seed, acceptance, console smoke — the
+  reproducibility proof) **~13 min** cold against the standard topology. Which
+  tier to run when, what each does and does not prove, and why `--live` never
+  performs a real member join: `runbook.md`, "Verifying a change".
+
+What's here: `deployment.yaml` (the analyst-facing deployment spec — X-Road
+version pins, network bind, the proxy authorization-cache period every
+Security Server boots with (`server_conf_cache_period`, rendered into
+`hurl/local.ini`), and (`cs_digest`/`ss_digest`/`testca_tag`) the
+digest pins that back them; `.env` carries only secrets), `docker-compose.yml`
+(X-Road 7.7.0: Central Server, Test CA, four Security Servers — PDGA plus
+PNEA, PLR and PNIA each on their own; MoEYS is retired),
+`configs/` (declarative YAML per module),
+`prompts/` (the bb-config-gen plays that generate the configs), `hurl/` (the
+federation as config-as-code — Hurl scenarios driving the admin REST APIs,
+generated from `configs/`, retargeted from X-Road 7.7.0's own `setup.hurl`),
+`acceptance/` (given/when/then per module; `once-only-exchange.md` is the
+framework's acceptance; `member.md` is the generic per-member check every
+joined member gets automatically; `join-member.md` is the join API's own
+transition + reachability check), `scripts/` (deploy / seed / acceptance /
+teardown / `member.sh list|remove|drift` — reports on, retires, and checks
+drift for joined members / `join.sh up|down|status` — the join API's own
+service lifecycle /
+`verify.sh` — the tiered entry point above), `tests/` (the golden corpus for
+`hurl/generate.py` — `test_golden.py`, no Docker), `apps/` (mock REST registries behind
+the Security Servers + OpenAPI contracts +
+Gambia-grounded, Progressa-named seed data; `apps/console/` is the optional
+one-page demonstration UI, `scripts/console.sh up` — a demo asset, not a
+module, never in the acceptance path, whose **4 · Join a member** tab is a
+thin, server-side-token-holding proxy onto `apps/join-api/` — the
+`join-member` module's own service, which validates and drives a real member
+join from a submitted payload to `ACTIVE` over the live X-Road admin API), `docs/` (production delta
+per Module 5.7; X-Road 8 note; what reading the 7.7.0 reference corrected;
+`deployment-targets.md` — the contract a `target:` other than `docker-local`
+would be written against).
+
+**What is published on this bus** is answered by artefacts rather than by
+asking someone: `onboarding/<key>/04-catalogue/<code>.md` per published
+service (the X-Road service id, the contract, the semantic entity and its
+tier-1 exchange pattern, the lawful basis, the ACL subjects, and a link to
+the signed SLA — so the SLA is reachable *from the service*, not only from
+the member) and `onboarding/catalogue.yaml` for the instance as a whole.
+`GET /catalogue` on the join API serves the same derived data as JSON, under
+the **applicant** token rather than the operator one — a catalogue gated
+behind the credential of the people who already know what is published
+answers nothing. It is `listMethods`, not `allowedMethods`: it says what was
+registered here, never what the bus will let you call, and it says that on
+the response rather than only in this paragraph. Both files are generated,
+both say on their face that appearing in them grants nothing, and both ask
+nothing new of a joining member — every field is
+something the registration already collected. The aggregate is derived
+wholesale from `manifest.yaml` + `configs/member-*/`, regenerated by
+`scripts/render-onboarding.sh` and by the join API at both ends of a
+member's life; `scripts/member.sh remove` alone does **not** regenerate it
+(`runbook.md`, "The service catalogue"). This is the register's own output,
+not a collector: it is complete for members this register admitted and blind
+to anything else on the bus, and `docs/production-delta.md` names what a
+production ecosystem still needs beside it.
+
+The number and identity of members is a property of `configs/member-*/` plus
+`manifest.yaml`'s `identity.members`, not of this pack's source code. There is
+still no `scripts/member.sh add`, and that stays true on purpose — writing
+member config by hand is exactly what this pack demonstrates you don't need
+to do — but there is an API for it:
+`apps/join-api` (`scripts/join.sh up`, or the console's **4 · Join a member**
+tab) drives a real, hosted member from a submitted payload through validation,
+operator approval, config generation and the live X-Road admin-API sequence to
+`ACTIVE, verified: true`, live-verified end to end: submit →
+approve → `ACTIVE` → `acceptance.sh` green → `member.sh list` → `member.sh
+remove` → regenerate → `acceptance.sh` green again, well under two minutes
+for the join step itself. `prompts/member.md`'s manual flow — running the prompt against an
+agency brief and committing what it produces — is still there for anyone
+without a running stack to submit against. `apps/join-api` itself covers both
+shapes of join: a hosted member (the default) and one that brings up its own
+Security Server (`security_server.own_server: true`, `runbook.md`'s "A join
+with the member's OWN Security Server"). On a single-host demo
+deployment, default a joining member to `hosted_on` an existing Security
+Server rather than its own (the join API does this by default —
+`configs/x-road-bus/join-policy.yaml`'s `default_hosting: hosted_on`): it costs zero
+extra containers and RAM, and sidesteps every own-server finding in
+`docs/production-delta.md` (a real port-allocation bug, two real Compose gaps,
+and host-CPU-contention risk under several concurrent JVMs) — reserve a
+joined member's own server for when the demonstration specifically needs one.
+A submitted payload's `code` and `subsystem` must satisfy the identifier and
+member-code conventions `docs/conventions.md` publishes — the onboarding
+path's §0.5/§1a prerequisite this pack now states rather than leaving
+implicit in `validate.py`. `security_server.dns_name` follows the same doc's
+`ss-<key>` host-naming convention, which the pack applies consistently but
+does not check at request time.
+
+What this pack is an instance of: X-Road as the message bus, join-api as the
+onboarding gate, and `configs/semantic/semantic-map.yaml` (Module 4, checked
+by `apps/join-api/validate.py` check 8, not merely published) as the
+shared field dictionary together realise GovStack's **Information Mediation**
+building block (GovStack subtopic 4.7) — a member joins the mediator once
+and reaches every other member's declared exchanges through it,
+rather than negotiating a bilateral integration per pair.
+The join API itself is an instance of GovStack's **Registration** building
+block — the payload is the eForm, `validate.py`'s checks are the eligibility
+determinants, operator approval is the registrar role, and the membership
+record is the issued credential — which is why joining an agency and a
+learner applying for a certificate run the same shape at two scales. What
+each tier-1 pattern label means, and the BB specification it anchors on, is
+`docs/pattern-register.md`.
+
+By design, KP2's slice is **Joget-free**: the member systems are mocks behind
+stable OpenAPI contracts — the seam where KP4's Joget DX apps plug in later
+without touching the X-Road configuration. `docs/kp4-seam.md` is that seam
+stated as a contract: what is frozen, the two shapes a Joget app can take,
+the data fixture it must serve, and the host it has to fit on.
+
+Built and proven with the `itu-giga-kp` kit: `bb-config-gen` fills the configs,
+`kp-solution-verify` proves the pack runs. **Status: VERIFIED** —
+`check_pack.py --ready`
+passes and the live acceptance suite is green, including the reproducibility
+proof (`teardown.sh --purge` → cold redeploy → reseed → acceptance,
+unattended) and a full console up/exercise/reset pass. Scope:
+Education only, public anchors only. Demo only — never production
+(`docs/production-delta.md`).

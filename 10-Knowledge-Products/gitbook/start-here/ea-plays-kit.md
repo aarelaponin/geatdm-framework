@@ -1,5 +1,5 @@
 ---
-description: "The optional Claude layer for the plays — fourteen skills, one per artefact family. Two lines to install; the plays run bare without it."
+description: "The optional Claude layer for the plays — twenty-two skills, one per artefact family. Two lines to install; the plays run bare without it."
 icon: plug
 ---
 
@@ -29,24 +29,34 @@ Every skill's output opens with the same header: the country, the date it was bu
 
 ## Play → skill
 
-Each play has exactly one primary skill. `cite-or-discard` runs *inside* most of the others; you do not call it directly.
+Each play has exactly one primary skill. Play numbers repeat across Knowledge Products — KP1's 2.4 is not KP2's 2.4 — so the two are listed separately. The `gif-` skills are KP2's; the rest are shared. `cite-or-discard` runs *inside* most of the others; you do not call it directly.
 
-| Skill | Plays it leads | What it adds |
-| --- | --- | --- |
-| `country-context-pack` | Play 0, 1.1 | the seven-section A0 pack every other play consumes |
-| `cite-or-discard` | runs inside most of the others | fetches each URL, grades the source by tier, and drops what does not survive |
-| `ea-institution-mapper` | 1.2, 2.4, 2.5, 4.1, 4.8, 5.3b | bodies, legal mandates, systems, posts, PAERA classification |
-| `ea-cost-case` | 1.3, 5.4 | the re-use case — assumptions first, benchmarks named, tables not charts |
-| `ea-legal-context` | 1.4, 1.7, 2.3 | the national legal register, so a ToR cites statutes that exist |
-| `paera-reference-check` | 1.5, 2.2, 2.3 | checks against PAERA as published, not the video's simplification |
-| `ea-governance-drafter` | 1.6, 1.7, 3.1, 3.3–3.7, 5.2 | ToR, RACI, repository policy, gate checklist, scorecard, risk register |
-| `bdat-assessor` | 2.1, 2.5, 2.6 | the four-layer read and the metamodel conformance check |
-| `bb-landscape-check` | 2.7, 4.4, 4.5, 4.7, 5.3 | which shared building blocks are actually **live**, not planned |
-| `bb-sourcing-researcher` | 2.7, 4.4 | which products could supply a block the country lacks |
-| `ea-tool-evaluator` | 3.2 | tool scoring on verifiable facts, plus a real export test |
-| `ea-method-runner` | 4.2–4.8, 5.3, 5.3b | the five-phase lifecycle, reading and writing your workbook |
-| `ea-comparator-evidence` | 5.1, 5.4, 5.6 | comparator cards with primary sources and one contested case |
-| `ea-open-learning-catalogue` | 5.5 | a capability plan whose links were checked today |
+| Skill | KP1 plays | KP2 plays | What it adds |
+| --- | --- | --- | --- |
+| `country-context-pack` | Play 0, 1.1 | 1.1, 1.3, 1.5 | the seven-section A0 pack every other play consumes |
+| `cite-or-discard` | *inside the others* | *inside the others* | fetches each URL, grades the source by tier, and drops what does not survive |
+| `ea-institution-mapper` | 1.2, 2.4, 4.1 | 1.6, 3.1, 3.2 | bodies, legal mandates, systems, posts, PAERA classification |
+| `ea-cost-case` | 1.3, 5.4 | — | the re-use case — assumptions first, benchmarks named, tables not charts |
+| `ea-legal-context` | 1.4 | 2.1, 4.8 | the national legal register, so a ToR cites statutes that exist |
+| `paera-reference-check` | 1.5, 2.2, 2.3 | *inside 1.7, 4.3* | checks against PAERA as published, not the video's simplification |
+| `ea-governance-drafter` | 1.6, 1.7, 3.1, 3.3–3.7, 5.2 | 3.3–3.6, 5.2, 5.3 | ToR, RACI, repository policy, gate checklist, scorecard, risk register |
+| `bdat-assessor` | 2.1, 2.5, 2.6 | — | the four-layer read and the metamodel conformance check |
+| `bb-landscape-check` | 2.7 | 4.1, 4.2 | which shared building blocks are actually **live**, not planned |
+| `bb-sourcing-researcher` | *inside 2.7* | — | which products could supply a block the country lacks |
+| `ea-tool-evaluator` | 3.2 | — | tool scoring on verifiable facts, plus a real export test |
+| `ea-method-runner` | 4.2–4.8, 5.3 | 5.1, 5.7, 5.10 | the five-phase lifecycle, reading and writing your workbook |
+| `ea-comparator-evidence` | 5.1, 5.6 | 1.7, 4.3 | comparator cards with primary sources and one contested case |
+| `ea-open-learning-catalogue` | 5.5 | — | a capability plan whose links were checked today |
+| `gif-four-layer-map` | — | 1.2 | grades one exchange at the four EIF layers and names the binding constraint |
+| `gif-foundation-drafter` | — | home, 1.4 | the two Strategist narratives: the foundation document and the country storyboard |
+| `gif-decree-draft` | — | 2.2–2.5 | decree components drafted from published legal models, never from imagination |
+| `gif-consistency-check` | — | 2.6, 5.9 | contradictions between the framework's documents, raised as questions not rulings |
+| `gif-semantic-map` | — | 4.4, 4.6 | vocabulary alignment, code-list reconciliation and the linking identifier |
+| `gif-openapi-gen` | — | 4.5, 4.7 | the OpenAPI contract and the X-Road service description derived from it |
+| `gif-federation-standup` | — | 5.4–5.6 | member registration, the federation run book, the acceptance script |
+| `gif-bus-monitor` | — | 5.8 | bus health read from exchange metadata only, never citizen data |
+
+A skill can also run as a second pass inside a play another skill leads; the play page says so when it does.
 
 Each play page carries a **With the kit** line naming the skill for that play. If you are not using Claude, ignore it — the prompt is the play.
 

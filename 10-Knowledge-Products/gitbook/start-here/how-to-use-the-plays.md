@@ -55,6 +55,6 @@ Every play asks you to paste context — a landscape brief, a programme list, a 
 The plays are not a prompt library. In each module the outputs feed each other — the fragmentation diagnostic feeds the business case, the RACI feeds the Board terms of reference — and a learner who runs a whole module leaves with a set of artefacts about their own country. The chain is written out in each Knowledge Product's workbook: for KP1 it is [Your country workbook](../kp1/your-country-workbook.md). If you have no country to hand (a student, a donor analyst), run the plays on [**Progressa**](progressa.md), the fictional demonstration country used in every Knowledge Product; the worked examples show you what to expect.
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
-<tr><td><strong>🔌 The ea-plays kit</strong></td><td>The optional Claude layer: fourteen skills, one per artefact family.</td><td><a href="ea-plays-kit.md">ea-plays-kit</a></td></tr>
+<tr><td><strong>🔌 The ea-plays kit</strong></td><td>The optional Claude layer: twenty-two skills, one per artefact family.</td><td><a href="ea-plays-kit.md">ea-plays-kit</a></td></tr>
 <tr><td><strong>🔍 Play 0</strong></td><td>Build the country context pack every play consumes.</td><td><a href="play-0.md">play-0</a></td></tr>
 </tbody></table>

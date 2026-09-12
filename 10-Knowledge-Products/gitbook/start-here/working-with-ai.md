@@ -84,6 +84,6 @@ Everything asserted above, with dates. Open the source rather than trusting this
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
 <tr><td><strong>🧭 How to use the plays</strong></td><td>What a play is, the badges, the two-step rhythm.</td><td><a href="how-to-use-the-plays.md">how-to-use-the-plays</a></td></tr>
-<tr><td><strong>🔌 The ea-plays kit</strong></td><td>The optional Claude layer: fourteen skills, one per artefact family.</td><td><a href="ea-plays-kit.md">ea-plays-kit</a></td></tr>
+<tr><td><strong>🔌 The ea-plays kit</strong></td><td>The optional Claude layer: twenty-two skills, one per artefact family.</td><td><a href="ea-plays-kit.md">ea-plays-kit</a></td></tr>
 <tr><td><strong>🔍 Play 0</strong></td><td>Build the country context pack every play consumes.</td><td><a href="play-0.md">play-0</a></td></tr>
 </tbody></table>

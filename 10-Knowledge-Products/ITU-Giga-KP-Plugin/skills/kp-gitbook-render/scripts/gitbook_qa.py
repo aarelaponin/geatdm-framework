@@ -46,7 +46,7 @@ for f in pages:
     m = re.search(r"^## Sources\n(.*?)(?=\n## |\Z)", t, re.S | re.M)
     if m:
         for line in m.group(1).strip().split("\n"):
-            if line.startswith("- ") and "http" not in line:
+            if line.startswith("- ") and "http" not in line and "on this site: [" not in line:
                 add(f, f"uncited source: {line[2:80]}")
 
     # a Bring line naming an A0 section must name the section too (B4)
@@ -60,14 +60,26 @@ for f in pages:
         if m.group(1) not in known:
             add(f, f"unknown skill {m.group(1)!r} (not in the ea-plays kit page)")
 
-# the home table's Status column uses only the agreed vocabulary
-home = open(os.path.join(ROOT, "kp1", "README.md")).read()
-tbl = re.search(r"^\| Module \| Topic.*?\n\n", home, re.S | re.M)
-if tbl:
-    for row in tbl.group(0).strip().split("\n")[2:]:
-        cell = row.rstrip("|").rsplit("|", 1)[-1].strip()
-        if cell and cell not in STATUS_WORDS:
-            findings.append(f"kp1/README.md: status {cell!r} outside {sorted(STATUS_WORDS)}")
+# every KP home table's Status column uses only the agreed vocabulary
+for kp in ("kp1", "kp2"):
+    hp = os.path.join(ROOT, kp, "README.md")
+    if not os.path.exists(hp):
+        continue
+    home = open(hp).read()
+    tbl = re.search(r"^\| Module \| Topic.*?\n\n", home, re.S | re.M)
+    if tbl:
+        for row in tbl.group(0).strip().split("\n")[2:]:
+            cell = row.rstrip("|").rsplit("|", 1)[-1].strip()
+            if cell and cell not in STATUS_WORDS:
+                findings.append(f"{kp}/README.md: status {cell!r} outside {sorted(STATUS_WORDS)}")
+
+# KP2: no page may still name the retired Module 6 as a live module
+for f in pages:
+    if "/kp2/" not in f:
+        continue
+    t = open(f).read()
+    if re.search(r"\bModule 6\b(?! was retired| in the v0\.1| was retired)", t) and "retired" not in t:
+        add(f, "names Module 6 as if it still existed (retired 12 Sep 2026)")
 
 for x in findings:
     print("FAIL", x)

@@ -1,0 +1,351 @@
+{
+ "_about": "KP2 play map — the site-side contract for the GitBook companion (gitbook/kp2). One entry per play. artefact = 'Bn — name'; consumes = artefacts or A0 sections the play reads; kind = diagnostic | drafting | translation; skill = the ea-plays skill that sharpens it (null = runs bare); the gif-* skills are KP2's own, in the kit since Sep 2026; est = time to run and read. feeds is derived from consumes by render_kp2.py. A0 §8–§10 are the KP2 Play 0 supplement. Bn numbers follow curriculum order; B38 is the country storyboard, a home-page play with no video (former 6.6).",
+ "1.1": {
+  "artefact": "B1 — Procured-vs-planned diagnostic",
+  "kind": "diagnostic",
+  "est": "~15 min",
+  "consumes": "A0 §1, A0 §8",
+  "skill": "country-context-pack",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "1.2": {
+  "artefact": "B2 — Four-layer exchange map",
+  "kind": "diagnostic",
+  "est": "~10 min",
+  "consumes": "A0 §1, A0 §9",
+  "skill": "gif-four-layer-map",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "1.3": {
+  "artefact": "B3 — Highest-value once-only exchange",
+  "kind": "diagnostic",
+  "est": "~15 min",
+  "consumes": "A0 §2, A0 §9",
+  "skill": "country-context-pack",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "1.4": {
+  "artefact": "B4 — Strategic Foundation Document",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "B1, B3, A0 §7",
+  "skill": "gif-foundation-drafter",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "1.5": {
+  "artefact": "B5 — Use-Case Catalogue",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "A0 §9, B3",
+  "skill": "country-context-pack",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "1.6": {
+  "artefact": "B6 — Stakeholder tier map",
+  "kind": "diagnostic",
+  "est": "~15 min",
+  "consumes": "A0 §4, A0 §6",
+  "skill": "ea-institution-mapper",
+  "also": []
+ },
+ "1.7": {
+  "artefact": "B7 — Standards-to-reuse shortlist",
+  "kind": "diagnostic",
+  "est": "~15 min",
+  "consumes": "A0 §1",
+  "skill": "ea-comparator-evidence",
+  "also": [
+   "paera-reference-check"
+  ]
+ },
+ "2.1": {
+  "artefact": "B8 — Legal-readiness assessment",
+  "kind": "diagnostic",
+  "est": "~15 min",
+  "consumes": "A0 §7, A0 §10",
+  "skill": "ea-legal-context",
+  "also": []
+ },
+ "2.2": {
+  "artefact": "B9 — Decree outline (five components)",
+  "kind": "drafting",
+  "est": "~15 min",
+  "consumes": "B4, B8",
+  "skill": "gif-decree-draft",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "2.3": {
+  "artefact": "B10 — Explanatory Memorandum and Preamble",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "B4, B9",
+  "skill": "gif-decree-draft",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "2.4": {
+  "artefact": "B11 — Operative article draft",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "B9, B5",
+  "skill": "gif-decree-draft",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "2.5": {
+  "artefact": "B12 — Cover Note and two-track memo",
+  "kind": "drafting",
+  "est": "~15 min",
+  "consumes": "B10, B11",
+  "skill": "gif-decree-draft",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "2.6": {
+  "artefact": "B13 — Legal acceptance check",
+  "kind": "diagnostic",
+  "est": "~15 min",
+  "consumes": "B5, B11",
+  "skill": "gif-consistency-check",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "3.1": {
+  "artefact": "B14 — Owner's mandate, regulator and operator split",
+  "kind": "drafting",
+  "est": "~15 min",
+  "consumes": "A0 §6, B4",
+  "skill": "ea-institution-mapper",
+  "also": []
+ },
+ "3.2": {
+  "artefact": "B15 — Three-tier governance structure",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "A0 §4, B14",
+  "skill": "ea-institution-mapper",
+  "also": []
+ },
+ "3.3": {
+  "artefact": "B16 — Governance RACI",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "B15, B6",
+  "skill": "ea-governance-drafter",
+  "also": []
+ },
+ "3.4": {
+  "artefact": "B17 — Member obligations and agreement",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "B16, B6",
+  "skill": "ea-governance-drafter",
+  "also": []
+ },
+ "3.5": {
+  "artefact": "B18 — Four Working Group charters",
+  "kind": "drafting",
+  "est": "~15 min",
+  "consumes": "B15",
+  "skill": "ea-governance-drafter",
+  "also": []
+ },
+ "3.6": {
+  "artefact": "B19 — Change control, standards register (with conformance fields) and semantic-registry charter",
+  "kind": "drafting",
+  "est": "~15 min",
+  "consumes": "B16, B18",
+  "skill": "ea-governance-drafter",
+  "also": []
+ },
+ "4.1": {
+  "artefact": "B20 — Component-to-layer map",
+  "kind": "diagnostic",
+  "est": "~10 min",
+  "consumes": "A0 §6",
+  "skill": "bb-landscape-check",
+  "also": []
+ },
+ "4.2": {
+  "artefact": "B21 — Trust-zone trace",
+  "kind": "drafting",
+  "est": "~15 min",
+  "consumes": "B5, B20",
+  "skill": "bb-landscape-check",
+  "also": []
+ },
+ "4.3": {
+  "artefact": "B22 — Standards portfolio",
+  "kind": "diagnostic",
+  "est": "~20 min",
+  "consumes": "B7, B20",
+  "skill": "ea-comparator-evidence",
+  "also": [
+   "paera-reference-check"
+  ]
+ },
+ "4.4": {
+  "artefact": "B23 — Semantic map",
+  "kind": "drafting",
+  "est": "~25 min",
+  "consumes": "B5, B22",
+  "skill": "gif-semantic-map",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "4.5": {
+  "artefact": "B24 — OpenAPI service contract",
+  "kind": "drafting",
+  "est": "~25 min",
+  "consumes": "B23, B22",
+  "skill": "gif-openapi-gen",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "4.6": {
+  "artefact": "B25 — Bronze/silver/gold source map",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "B23",
+  "skill": "gif-semantic-map",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "4.7": {
+  "artefact": "B26 — X-Road service description and wiring checklist",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "B24, B6",
+  "skill": "gif-openapi-gen",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "4.8": {
+  "artefact": "B27 — Data-protection envelope",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "B5, B11",
+  "skill": "ea-legal-context",
+  "also": []
+ },
+ "5.1": {
+  "artefact": "B28 — Implementation plan: phased schedule, investment, procurement, workforce, risk register and metrics",
+  "kind": "drafting",
+  "est": "~30 min",
+  "consumes": "B5, B6",
+  "skill": "ea-method-runner",
+  "also": []
+ },
+ "5.2": {
+  "artefact": "B29 — Member Requirements checklist",
+  "kind": "drafting",
+  "est": "~15 min",
+  "consumes": "B22, B13",
+  "skill": "ea-governance-drafter",
+  "also": []
+ },
+ "5.3": {
+  "artefact": "B30 — Service-Level Agreement template",
+  "kind": "drafting",
+  "est": "~15 min",
+  "consumes": "B17",
+  "skill": "ea-governance-drafter",
+  "also": []
+ },
+ "5.4": {
+  "artefact": "B31 — X-Road member registration",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "B26, B29",
+  "skill": "gif-federation-standup",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "5.5": {
+  "artefact": "B32 — Federation stand-up run book",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "B31",
+  "skill": "gif-federation-standup",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "5.6": {
+  "artefact": "B33 — Once-only acceptance script",
+  "kind": "drafting",
+  "est": "~20 min",
+  "consumes": "B32, B27",
+  "skill": "gif-federation-standup",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "5.7": {
+  "artefact": "B34 — Demonstration-to-production gap checklist",
+  "kind": "diagnostic",
+  "est": "~20 min",
+  "consumes": "B32, B28",
+  "skill": "ea-method-runner",
+  "also": []
+ },
+ "5.8": {
+  "artefact": "B35 — Bus-health summary and anomaly list",
+  "kind": "diagnostic",
+  "est": "~15 min",
+  "consumes": "B33",
+  "skill": "gif-bus-monitor",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "5.9": {
+  "artefact": "B36 — Document-consistency report",
+  "kind": "diagnostic",
+  "est": "~20 min",
+  "consumes": "B11, B19, B22",
+  "skill": "gif-consistency-check",
+  "also": [
+   "cite-or-discard"
+  ]
+ },
+ "5.10": {
+  "artefact": "B37 — Sector-portability map",
+  "kind": "drafting",
+  "est": "~15 min",
+  "consumes": "B28, B22, B23",
+  "skill": "ea-method-runner",
+  "also": []
+ },
+ "home": {
+  "artefact": "B38 — Country storyboard",
+  "kind": "drafting",
+  "est": "~15 min",
+  "consumes": "B5, B28",
+  "skill": "gif-foundation-drafter",
+  "also": [
+   "cite-or-discard"
+  ]
+ }
+}

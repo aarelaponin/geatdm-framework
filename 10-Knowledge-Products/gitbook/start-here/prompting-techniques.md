@@ -71,7 +71,7 @@ For working with an assistant rather than only prompting one, [AI Fluency: Frame
 
 ## Skills — what they are
 
-A *skill* is a prompt with its procedure, its references and its output contract packaged so an assistant loads it on demand instead of you pasting it. The plays on this site run bare as prompts; the [ea-plays kit](ea-plays-kit.md) is the same fourteen procedures as skills, for Claude.
+A *skill* is a prompt with its procedure, its references and its output contract packaged so an assistant loads it on demand instead of you pasting it. The plays on this site run bare as prompts; the [ea-plays kit](ea-plays-kit.md) is the same twenty-two procedures as skills, for Claude.
 
 ## Reading list
 
@@ -87,6 +87,6 @@ A *skill* is a prompt with its procedure, its references and its output contract
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
 <tr><td><strong>🧭 How to use the plays</strong></td><td>What a play is, the badges, the two-step rhythm.</td><td><a href="how-to-use-the-plays.md">how-to-use-the-plays</a></td></tr>
-<tr><td><strong>🔌 The ea-plays kit</strong></td><td>The optional Claude layer: fourteen skills, one per artefact family.</td><td><a href="ea-plays-kit.md">ea-plays-kit</a></td></tr>
+<tr><td><strong>🔌 The ea-plays kit</strong></td><td>The optional Claude layer: twenty-two skills, one per artefact family.</td><td><a href="ea-plays-kit.md">ea-plays-kit</a></td></tr>
 <tr><td><strong>🔍 Play 0</strong></td><td>Build the country context pack every play consumes.</td><td><a href="play-0.md">play-0</a></td></tr>
 </tbody></table>
