@@ -113,6 +113,25 @@ interval with the ffmpeg concat demuxer, muxes the narration (AAC 192k), and wri
 1080p30 MP4 with `+faststart`. It prints `rendered N slides, M cues, audio Ts` — if N ≠ M it warns
 and uses the shorter list; treat that warning as a cue-file bug, not something to ship.
 
+**Slides that move.** A deck built with `deck_lib.demo_slide(..., clip=...)` has slides whose notes open
+with `CLIP: <file>`. Give the slidecast a fifth argument, a clips file beside the cues —
+
+```bash
+python3 scripts/slidecast.py deck.pptx narration.m4a cues.txt out.mp4 clips.txt
+# clips.txt: '<slide-number> <clip.mp4>' per line, a relative path relative to clips.txt
+8   ../demo/KP2_M5_Demo_v0.1/C6-break-restore.mp4
+```
+
+— and each clip plays once at natural speed from its slide's cue, then **holds its last frame** for
+the rest of the window; a window shorter than the clip cuts it, never speeds it up. So a clip that
+comes up early against the remix holds its end state while the hosts catch up. Every slide is then
+rendered as its own frame-exact segment and the segments concatenated; without a clips file the stills
+path runs as before. `test_slidecast_clips.py` pins both behaviours.
+
+**Cueing demo slides.** `draft_cues.py` needs no change for them: it finds a demo slide by its caption
+strip's words, like any other slide — which is why captions must not reuse the key terms of the theory
+slides around them.
+
 ## Step 3 — verify (always, before sharing)
 
 ```bash
@@ -124,7 +143,9 @@ done
 ```
 
 Confirm the duration equals the audio duration, each extracted frame shows the slide its cue
-promised, and the final frame is the Sources card. Only then deliver.
+promised, and the final frame is the Sources card. For every clip slide, also extract a frame at
+`cue + clip length − 0.5 s` and look at it: it must show the clip's end state — not black, not the
+clip's first frame. Only then deliver.
 
 ## Gotchas (the ones that cost time)
 

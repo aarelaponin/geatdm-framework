@@ -34,6 +34,9 @@ def demo():
     assert opener_words(BLOCK) == 5
     assert recap_beat(BLOCK) == (3, "the single message")
     assert spoken_words(BLOCK) == 13
+    # a demo-evidence slide is short over a recording on purpose
+    demo_block = BLOCK.replace("Body: a \\\"quoted\\\" phrase, [1, 2, 3].", "Demo evidence (screen frame).")
+    assert "Demo evidence" in demo_block and thin_slides(demo_block) == []
     print("ok")
 
 

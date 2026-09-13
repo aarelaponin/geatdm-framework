@@ -56,6 +56,10 @@ RECAP_CUE = "In one sentence"
 CAP_OPENER = 45
 CAP_RECAP = 35
 CAP_WORDS = 550
+# A video whose screen carries recorded demo evidence says less (KP2 M5 review, 10 Sep 2026 §3):
+# a subtopic's `shape` field picks its ceiling; no shape is the slidecast ceiling above.
+CAP_WORDS_BY_SHAPE = {"hybrid": 450, "screen-led": 350}
+DEMO_EVIDENCE = "demo evidence"   # a cue that names it: short VO over a recording is the design
 THIN_SLIDE = 45
 # Belongs on the on-screen practice box, never in the recap voice-over.
 RECAP_BANNED = ["prompt", "description", "companion material", "your own sector"]
@@ -161,6 +165,7 @@ def thin_slides(block):
     return [label for label, words, cue in rows
             if 0 < words < THIN_SLIDE
             and RECAP_CUE.lower() not in cue.lower()
+            and DEMO_EVIDENCE not in cue.lower()
             and "'sources'" not in cue.lower()]
 
 
@@ -377,8 +382,10 @@ def main():
             flags.append("recap {} words (cap {})".format(rw, CAP_RECAP))
         if not rw:
             flags.append("no '{}' recap beat found".format(RECAP_CUE))
-        if words > CAP_WORDS:
-            flags.append("{} spoken words (ceiling {})".format(words, CAP_WORDS))
+        cap = CAP_WORDS_BY_SHAPE.get(field(b, "shape"), CAP_WORDS)
+        if words > cap:
+            flags.append("{} spoken words (ceiling {}{})".format(
+                words, cap, ", " + field(b, "shape") if field(b, "shape") else ""))
         thin = thin_slides(b)
         if thin:
             flags.append("thin slides (<{} words): {}".format(THIN_SLIDE, ", ".join(thin)))

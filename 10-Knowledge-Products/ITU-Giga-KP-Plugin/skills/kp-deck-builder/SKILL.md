@@ -161,11 +161,36 @@ is genuinely 4-cell), `mini_strip` (per-phase progress), `big_slide`, `sources_s
 `notes`. Keep slide-by-slide fidelity to the bundle's cues "to a high degree" — reorganise a slide
 only when a design rule above demands it.
 
+### Demo evidence — slides that show the running thing
+
+For a KP whose build pack runs (KP2's once-only exchange), a slide can carry real output recorded from
+it instead of a drawing. A capture run (KP2: `KP2-build-pack/scripts/demo-capture.sh`) writes the
+takes and a `takes.json` beside them (`xroad_version`, `pack_commit`, `captured_at`, `beats`); the
+build script points at that directory and reads its captions from it. Three kinds, smallest first:
+
+- `terminal_slide(prs, head, take_txt, caption, tag, note)` — a text capture (a command and its
+  output) as monospaced text on the grey panel; cut at 18 lines / 96 columns, never wrapped.
+- `artefact_slide(prs, head, take_md, caption, tag, note)` — a generated record's markdown table as
+  text rows.
+- `demo_slide(prs, head, take_png, caption, tag, note, clip=None)` — a screen frame, letterboxed; with
+  `clip=`, the notes open with `CLIP: <file>` and the video plays the clip there (`kp-slidecast`).
+
+Text captures are inside ITU's text-only rule; frames and clips are pixels and a calibration item —
+declare each as "Demo evidence (screen frame / text capture / clip)" in the bundle's slide spec.
+Every one gets a **caption strip** — the words `draft_cues.py` finds the slide by, so a caption must
+not reuse the surrounding theory slides' key terms — and a **provenance line** from `takes.json`.
+`test_demo_slides.py` pins the notes, the provenance line and the letterbox.
+
 ## QA (always, before sharing)
 
 ```bash
 bash scripts/qa_deck.sh KP1_ModuleN_Deck_v0.X.pptx   # PDF → per-slide JPGs → contact sheets
+bash scripts/qa_deck.sh KP2_M5_Deck_v0.2.pptx /tmp/deckqa <demo_dir> <pack>/.env   # a deck with demo evidence
 ```
+
+With demo evidence, the two extra arguments turn on three hard checks before anything renders: every
+`CLIP:` note names a file in `demo_dir`; every evidence slide has its provenance line; no slide text or
+note carries a secret value (a `*TOKEN*`/`*PIN*`/`*PASSWORD*`/`*SECRET*` key) from the pack's `.env`.
 
 Then **look at every sheet**. The defects that actually occurred: doubled `www.itu.int` footer
 (custom footer on layout 11), agenda list right-aligned (inherited alignment), connector lines drawn

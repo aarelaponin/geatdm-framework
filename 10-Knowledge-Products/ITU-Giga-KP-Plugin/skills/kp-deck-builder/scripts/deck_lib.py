@@ -827,3 +827,113 @@ def play_card(prs, head, paste, returns, you, closing, tag, note,
     footer(s, tag)
     notes(s, note)
     return s
+
+
+# ================================================================ demo evidence
+# Real output from a running demonstration federation, dropped onto a slide as captured —
+# never redrawn. A capture run (KP2's scripts/demo-capture.sh) writes the takes and a
+# takes.json beside them: {xroad_version, pack_commit, captured_at, beats: {id: {file, ...}}}.
+# Three kinds, smallest first: a terminal capture and an artefact table are text, inside the
+# ITU text-only rule; a screen frame is pixels, a calibration item. Every one carries
+#   - a caption strip: the slide's own vocabulary, which draft_cues.py finds it by in the SRT —
+#     so a caption must not reuse the key terms of the theory slides around it;
+#   - a provenance line read from takes.json, so a frame can never pass for a mock-up.
+# qa_deck.sh finds these slides by the DEMO_SHAPE shape name.
+import json
+import re
+
+PROVENANCE_LEAD = 'captured from the demonstration federation'
+DEMO_SHAPE = 'kp-demo-evidence'
+MONO = 'Courier New'   # LibreOffice substitutes Liberation Mono — same metrics
+
+
+def provenance(take_path):
+    """'captured from the demonstration federation · X-Road 7.7.0 · pack 1a2b3c4 · 2026-09-13'."""
+    with open(os.path.join(os.path.dirname(os.path.abspath(take_path)), 'takes.json'), encoding='utf-8') as f:
+        t = json.load(f)
+    return '%s · X-Road %s · pack %s · %s' % (PROVENANCE_LEAD, t['xroad_version'], t['pack_commit'][:7],
+                                             t['captured_at'][:10])
+
+
+def _evidence_foot(s, take_path, caption, tag, note, top):
+    tb = box(s, 0.72, top, 11.9, 0.46)
+    set_text(tb.text_frame, [[(caption, 15.5, True, ITU_BLUE_DARK, False)]])
+    tb = box(s, 0.72, top + 0.45, 11.9, 0.3)
+    set_text(tb.text_frame, [[(provenance(take_path), 9, False, GREY, False)]])
+    footer(s, tag)
+    notes(s, note)
+
+
+def terminal_slide(prs, head, take_txt, caption, tag, note, max_lines=18, max_cols=96):
+    """A text capture — a command and its output — as a monospaced block on the grey panel.
+    Never wrapped: a line past `max_cols` is cut with '…', and past `max_lines` the block ends on
+    a '…' line. Trim the capture itself if that loses the point."""
+    with open(take_txt, encoding='utf-8') as f:
+        lines = f.read().rstrip('\n').split('\n')
+    if len(lines) > max_lines:
+        lines = lines[:max_lines - 1] + ['…']
+    lines = [ln if len(ln) <= max_cols else ln[:max_cols - 1] + '…' for ln in lines]
+    s = add_slide(prs, LAYOUT_WHITE)
+    title(s, head)
+    panel(s, 0.72, 1.4, 11.9, 4.62, PANEL_GREY, radius=0.02).name = DEMO_SHAPE
+    tb = box(s, 0.95, 1.52, 11.45, 4.4)
+    tf = tb.text_frame
+    set_text(tf, [[(ln, 14, False, INK, False)] for ln in lines])
+    tf.word_wrap = False
+    for p in tf.paragraphs:
+        for r in p.runs:
+            r.font.name = MONO
+    _evidence_foot(s, take_txt, caption, tag, note, top=6.14)
+    return s
+
+
+def artefact_slide(prs, head, take_md, caption, tag, note):
+    """A generated record's first markdown pipe table as text rows: the first column is the row
+    headline, the rest joined beneath it. The header row is dropped — the headline says what the
+    table is."""
+    rows = []
+    with open(take_md, encoding='utf-8') as f:
+        for ln in f.read().splitlines():
+            if not ln.strip().startswith('|'):
+                if rows:
+                    break
+                continue
+            cells = [c.strip() for c in ln.strip().strip('|').split('|')]
+            if not all(re.fullmatch(r':?-{3,}:?', c) for c in cells):
+                rows.append(cells)
+    if len(rows) < 2:
+        raise ValueError('%s: no markdown table with a body row' % take_md)
+    s = add_slide(prs, LAYOUT_WHITE)
+    title(s, head)
+    hline(s, 0.68, 1.38, 11.9).name = DEMO_SHAPE
+    rows_slide(s, [(r[0], ' · '.join(c for c in r[1:] if c)) for r in rows[1:]],
+               top=1.5, bottom=6.0, numbered=False, head_size=16, sub_size=14)
+    _evidence_foot(s, take_md, caption, tag, note, top=6.14)
+    return s
+
+
+DEMO_AREA = (0.52, 1.2, 12.3, 4.85)   # x, y, w, h — the frame is letterboxed inside it
+
+
+def demo_slide(prs, head, take_png, caption, tag, note, clip=None):
+    """A screen frame, aspect preserved and centred in DEMO_AREA, with a thin border. With `clip`
+    (the take's .mp4), the notes open with 'CLIP: <basename>' — the slide moves in the video
+    (slidecast.py's clips file) and qa_deck.sh checks the clip exists. The frame is then the
+    clip's still, so the deck on its own still shows the moment."""
+    from PIL import Image
+    with Image.open(take_png) as im:
+        pw, ph = im.size
+    ax, ay, aw, ah = DEMO_AREA
+    k = min(aw / pw, ah / ph)
+    w, h = pw * k, ph * k
+    s = add_slide(prs, LAYOUT_WHITE)
+    title(s, head)
+    pic = s.shapes.add_picture(take_png, Inches(ax + (aw - w) / 2), Inches(ay + (ah - h) / 2),
+                               Inches(w), Inches(h))
+    pic.line.color.rgb = SEPARATOR
+    pic.line.width = Pt(1)
+    pic.name = DEMO_SHAPE
+    if clip:
+        note = 'CLIP: %s\n\n%s' % (os.path.basename(clip), note)
+    _evidence_foot(s, take_png, caption, tag, note, top=ay + ah + 0.09)
+    return s
