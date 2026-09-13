@@ -1,0 +1,69 @@
+{
+  "kicker_prefix": "KP2 · Government Interoperability Framework · Module 3",
+  "audience": "National interoperability authority · ministry CIO · development-partner lead",
+  "out_pattern": "KP2_M3_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "Who owns the bus",
+  "cover_subtitle_marker": "Six standalone videos",
+  "videos": [
+    {
+      "code": "3.1",
+      "title": "Why a bus needs an owner",
+      "mins": "~5",
+      "range": [
+        3,
+        9
+      ],
+      "message": "An interoperability platform with no owner decays in its second year — name the owner before the first member joins, and split the body that sets the rules from the body that runs the bus."
+    },
+    {
+      "code": "3.2",
+      "title": "The three tiers of governance",
+      "mins": "~5",
+      "range": [
+        10,
+        19
+      ],
+      "message": "Strategic Council, Steering Committee, Technical Working Groups — political authority, programme leadership and the specialists, each with one job."
+    },
+    {
+      "code": "3.3",
+      "title": "The RACI matrix",
+      "mins": "~5",
+      "range": [
+        20,
+        26
+      ],
+      "message": "Write down who decides, who runs, who is consulted, once — it is what stops every onboarding turning into a turf fight."
+    },
+    {
+      "code": "3.4",
+      "title": "Member obligations",
+      "mins": "~4",
+      "range": [
+        27,
+        33
+      ],
+      "message": "What an agency signs up to when it joins is the difference between a federation and a free-for-all."
+    },
+    {
+      "code": "3.5",
+      "title": "The four Technical Working Groups",
+      "mins": "~4",
+      "range": [
+        34,
+        40
+      ],
+      "message": "Security, semantics, APIs, platform operations — the four standing groups that keep the bus coherent as it grows."
+    },
+    {
+      "code": "3.6",
+      "title": "Governance as living configuration",
+      "mins": "~5",
+      "range": [
+        41,
+        48
+      ],
+      "message": "Change control and a named standards-portfolio owner keep the framework current instead of frozen at launch."
+    }
+  ]
+}

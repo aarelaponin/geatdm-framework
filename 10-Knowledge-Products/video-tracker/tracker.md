@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-13 15:42 (data v2)
+# KP video tracker — generated 2026-09-13 16:33 (data v2)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -95,24 +95,24 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 2.0 | Module 2 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 2.1 | Why the platform needs a legal mandate | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 2.2 | Anatomy of an interoperability decree | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 2.3 | The Explanatory Memorandum and Preamble | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 2.4 | The Draft Articles Package | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 2.5 | The Cover Note and Two-Track Regulatory Memo | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 2.6 | The decree as configuration | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 2.1 | Why the platform needs a legal mandate | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 2.2 | Anatomy of an interoperability decree | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 2.3 | The Explanatory Memorandum and Preamble | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 2.4 | The Draft Articles Package | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 2.5 | The Cover Note and Two-Track Regulatory Memo | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 2.6 | The decree as configuration | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
 
 ### Module 3 — Governance model — three-tier with RACI (Strategist)
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 3.0 | Module 3 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 3.1 | Why a bus needs an owner | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 3.2 | The three tiers of governance | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 3.3 | The RACI matrix | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 3.4 | Member obligations | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 3.5 | The four Technical Working Groups | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 3.6 | Governance as living configuration | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 3.1 | Why a bus needs an owner | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 3.2 | The three tiers of governance | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 3.3 | The RACI matrix | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 3.4 | Member obligations | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 3.5 | The four Technical Working Groups | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 3.6 | Governance as living configuration | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
 
 ### Module 4 — Architecture + technical standards + Giga end-to-end case (Architect)
 
