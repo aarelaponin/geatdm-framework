@@ -63,8 +63,8 @@ HOOKS = {'1.1': ('The requirement is written down. The result is not there.',
                  ['A handful of pages, not a tome.',
                   'Skip it, and every meeting re-opens the same arguments.']),
          '1.5': ('A map of everything connecting to everything cannot be built.',
-                 ['Your integration map from KP1 is the input. No map yet? Inventory your systems '
-                  'first.',
+                 ['Start from your integration map: which government systems ought to exchange what.',
+                  'No map yet? Inventory your systems, who owns them and the data they hold — first.',
                   'The catalogue turns the map into a short list of what to build next.']),
          '1.6': ('A bus with no members carries nothing.',
                  ['Interoperability is at least as much an agreement problem as a technical one.',
@@ -593,12 +593,14 @@ T = '1.5 · The Use-Case Catalogue'
 section('1.5', 'The Use-Case Catalogue',
         'Turn your integration map into a ranked catalogue of exchanges worth building — and start '
         'with the one that removes the most counters for citizens.',
-        "VO: If your country has done the Enterprise Architecture work — Knowledge Product 1 — you "
+        "VO: If your country has already planned its Enterprise Architecture — the "
+        "whole-of-government picture of which systems exist and how they should fit together — you "
         "already have a first-cut integration map: a picture of which government systems ought to "
         "exchange what. That map is the input to this step. If you do not have one yet, build it "
         "first — inventory your government's systems, who owns them and the data they hold, and "
-        "sketch which ought to exchange what. That inventory is the Discover-and-Assess work KP1 "
-        "covers, and it is the precondition for everything in this knowledge product; without a "
+        "sketch which ought to exchange what. That inventory is the first step of any Enterprise "
+        "Architecture — discovering what exists and assessing it — and the companion knowledge "
+        "product on Government Enterprise Architecture walks you through it. It is the precondition for everything in this knowledge product; without a "
         "picture of your current systems, you cannot rank the exchanges worth building. On its own, "
         "a map of everything-connects-to-everything is overwhelming and undeployable. The Use-Case "
         "Catalogue turns it into a ranked list of specific exchanges, so the framework starts with "

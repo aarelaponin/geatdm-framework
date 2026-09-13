@@ -595,7 +595,7 @@ I am wiring a service onto [country X]'s X-Road bus. Inputs: the OpenAPI contrac
 
 > _Slide 1 — Title: 'Make the exchange lawful — the data-protection envelope'. Voice-over begins._
 
-A service can be perfectly wired and perfectly secured and still must not be switched on, because technical capability is not lawful authority. The last thing the architect checks for an exchange is its data-protection envelope — the agreements and safeguards that make moving this data lawful, not merely possible. This is where the technical work you have done meets the legal and organisational layers built earlier in KP2.
+A service can be perfectly wired and perfectly secured and still must not be switched on, because technical capability is not lawful authority. The last thing the architect checks for an exchange is its data-protection envelope — the agreements and safeguards that make moving this data lawful, not merely possible. This is where the technical work you have done meets the legal and organisational layers built earlier in this knowledge product.
 
 > _Slide 2 — Title: 'The envelope has three parts'. Body, three text rows: 'A lawful basis — from the decree; the exchange must be one the decree authorises.' 'A bilateral Letter of Interest — the two agencies agree to this specific exchange, on these terms.' 'Data-protection safeguards — minimisation, purpose, consent where needed, retention.'_
 

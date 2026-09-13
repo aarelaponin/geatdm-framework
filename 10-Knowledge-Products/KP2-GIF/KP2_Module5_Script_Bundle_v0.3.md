@@ -295,9 +295,9 @@ And this is the same registration shape for every member — fill the member's d
 
 Registration is not the last gate. Between a member's security server going up and its first service going live sits the conformance test: the member proves, against the standards portfolio, that its server, its certificates and its services do what the framework requires. For routine members that is a self-assessment against a published checklist; for high-risk services a third-party check; and where the operator has built one, a conformance test suite it runs itself. A member that fails fixes and re-tests until it passes. And it is not a certificate for life — members are re-tested on a cycle, typically every two years, and whenever a binding standard changes. This is the step programmes skip when they are in a hurry, and the step whose absence is discovered when one member's malformed data breaks everyone else's service.
 
-> _Slide 5 — Title: 'It is config, not paperwork'. Body, single text block: 'The subsystem and access-control list go straight into the build pack, under the member's folder. They are part of the runnable proving slice — what kp-solution-verify deploys and checks. Registering a member is executable configuration that puts an agency on the bus.'_
+> _Slide 5 — Title: 'It is config, not paperwork'. Body, single text block: 'The subsystem and access-control list go straight into the build pack, under the member's folder. They are part of the runnable proving slice — what the build pack's acceptance check deploys and tests. Registering a member is executable configuration that puts an agency on the bus.'_
 
-The configuration goes straight into the build pack, under the member's folder — it is part of the runnable proving slice, the thing kp-solution-verify deploys and checks. So registering a member is not paperwork that describes an intention. It is executable configuration that puts a real agency on the bus, ready to provide and consume services. When you have registered the four Progressa members this way, the federation has the participants it needs for a real exchange.
+The configuration goes straight into the build pack, under the member's folder — it is part of the runnable proving slice, the thing the build pack's acceptance check deploys and tests. So registering a member is not paperwork that describes an intention. It is executable configuration that puts a real agency on the bus, ready to provide and consume services. When you have registered the four Progressa members this way, the federation has the participants it needs for a real exchange.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The subsystem registration and the access-control list admit a member — generated, confirmed, deployed — and a conformance test is the gate before its first service goes live.'_
 
@@ -313,7 +313,7 @@ So registering a member is where onboarding becomes configuration. Generate the 
 | 2 | Two-artefacts slide. Two text rows: the subsystem, the access-control list. | The config artefacts. Identifiers glossed in plain words. Text-only. |
 | 3 | Generate-then-confirm slide. Two text rows: bb-config-gen drafts; [confirm] against the registry. | The anti-invention safeguard, at its highest-stakes point. |
 | 4 | Conformance-gate slide. Three text rows: the gate, the three test approaches, re-certification. | The step between registration and first service. Text-only. |
-| 5 | It-is-config slide. Single text block on the build pack and kp-solution-verify. | The build-pack connection — executable config, not paperwork. |
+| 5 | It-is-config slide. Single text block on the build pack and its acceptance check. | The build-pack connection — executable config, not paperwork. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
 | 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the registration references. |
 
@@ -368,11 +368,11 @@ The federation has three kinds of component. The Central Server, operated by PDG
 
 Standing it up is a run-book exercise, deliberately. Each component is brought up in order — the Central Server first, then the Test CA, then each Security Server registers with the Central Server and receives its certificate. The run book makes this reproducible: anyone with the build pack can stand up the same federation, which is exactly what makes the demonstration a template rather than a one-off. For the demonstration, Linkup runs all of this on a single cloud VM in sandboxed containers — sized for showing cross-agency calls, not for production volumes.
 
-When the federation is up, you have something concrete: four real security servers, registered with a central server, trusting a common certification authority, ready to carry a real call. The configuration that does this — the federation config and each member's registration — lives in the build pack, and kp-solution-verify is what confirms the federation actually stands up, not merely that the files exist. This is the moment the abstract becomes real: up to now KP2 has produced documents and configuration; standing up the federation turns that configuration into a running platform. The bus exists, the members are on it, and the only thing left is to make a real call across it.
+When the federation is up, you have something concrete: four real security servers, registered with a central server, trusting a common certification authority, ready to carry a real call. The configuration that does this — the federation config and each member's registration — lives in the build pack, and the build pack's acceptance check is what confirms the federation actually stands up, not merely that the files exist. This is the moment the abstract becomes real: up to now this knowledge product has produced documents and configuration; standing up the federation turns that configuration into a running platform. The bus exists, the members are on it, and the only thing left is to make a real call across it.
 
 > _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Central Server, four Security Servers, a Test CA — stood up from the run book, the federation is real and ready to carry a call.'_
 
-So you stand up the federation from a run book: the Central Server at PDGA, the four Security Servers at the Progressa members, the Test CA that anchors trust. Reproducible from the build pack, confirmed by kp-solution-verify. With the federation running, the framework has stopped being a design and become a platform — ready for the call that proves it.
+So you stand up the federation from a run book: the Central Server at PDGA, the four Security Servers at the Progressa members, the Test CA that anchors trust. Reproducible from the build pack, confirmed by its acceptance check. With the federation running, the framework has stopped being a design and become a platform — ready for the call that proves it.
 
 > _Slide 5 — Title: 'Sources'. Body: NIIS X-Road federation — Central Server, Security Server, Test CA; the Linkup federation (ITU cloud). Footer: 'Find the link in the description.'_
 
@@ -419,7 +419,7 @@ Draft a stand-up run book for an X-Road demonstration federation for [country X]
 | --- | --- |
 | Persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
 | Target runtime | ~5 min (≈600 spoken words) |
-| PAERA anchor | PAERA §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check (kp-solution-verify) |
+| PAERA anchor | PAERA §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check |
 
 > **Single message —** _PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real cross-server call, the data asked once._
 
@@ -427,7 +427,7 @@ Draft a stand-up run book for an X-Road demonstration federation for [country X]
 
 > _Slide 1 — Title: 'Run the once-only exchange, live'. Voice-over begins._
 
-This is the moment the whole framework exists for: a real once-only exchange, running across the federation, for an ordinary citizen scenario. Not a mock, not a diagram — a genuine cross-server call in which the state asks the citizen once and fetches the rest. Everything in KP2 has been leading to this single call.
+This is the moment the whole framework exists for: a real once-only exchange, running across the federation, for an ordinary citizen scenario. Not a mock, not a diagram — a genuine cross-server call in which the state asks the citizen once and fetches the rest. Everything in this knowledge product has been leading to this single call.
 
 > _Slide 2 — Title: 'The scenario'. Body, three text rows: 'A learner applies for a credential at the examination authority, PNEA.' 'Without once-only: the learner brings paper proof of identity and of enrolment.' 'With once-only: PNEA pre-fills identity from PNIA and enrolment from PLR, over the bus, in seconds.'_
 
@@ -437,17 +437,17 @@ The scenario is concrete and ordinary. A learner applies for a credential at the
 
 And every layer you built is in that single call. The call routes across the trust zones, secured by mutual TLS — the technical layer. It returns only the fields the purpose needs, under the decree's lawful basis — the legal layer. It runs between members the governance admitted, under their obligations — the organisational layer. And it returns meaning, not just bytes, because it resolves only thanks to the semantic map: PNEA, PNIA and PLR agree what 'learner' and 'enrolment' mean. That agreement came from the data owners and the architects sitting together — the shared language between business and IT — and without it the call would return confident nonsense. One exchange, all four layers, all at once.
 
-> _Slide 4 — Title: 'This is the acceptance check'. Body, single text block: 'kp-solution-verify deploys the federation, the members, the service and the data, makes the call, and confirms once-only actually happens: the cross-server call resolves, identity and enrolment return, the learner is not asked twice. When it passes, KP2 is not a framework explained — it is a framework that runs.'_
+> _Slide 4 — Title: 'This is the acceptance check'. Body, single text block: 'The acceptance check deploys the federation, the members, the service and the data, makes the call, and confirms once-only actually happens: the cross-server call resolves, identity and enrolment return, the learner is not asked twice. When it passes, this is not a framework explained — it is a framework that runs.'_
 
-This is the build pack's acceptance check, and it is deliberately a single, observable thing: the cross-server call resolves, the identity and the enrolment come back, the learner is not asked twice. kp-solution-verify runs exactly this — it deploys the federation, the members, the service and the demonstration data, then makes the call and confirms once-only actually happens. When that check passes, KP2 stops being a framework explained and becomes a framework that runs. That distinction — explained versus running — is the entire reason this is an implementation Knowledge Product. In a real federation this moment has a name: the dual go-live approval. The regulator confirms the member's compliance readiness, the operator confirms its technical readiness, and both confirmations are recorded before the production connection is switched on. The acceptance check is the technical half of that approval; the compliance half is the gate register the member completed on the way here.
+This is the build pack's acceptance check, and it is deliberately a single, observable thing: the cross-server call resolves, the identity and the enrolment come back, the learner is not asked twice. An automated check runs exactly this — it deploys the federation, the members, the service and the demonstration data, then makes the call and confirms once-only actually happens. When that check passes, this knowledge product stops being a framework explained and becomes a framework that runs. That distinction — explained versus running — is the entire reason this is an implementation Knowledge Product. In a real federation this moment has a name: the dual go-live approval. The regulator confirms the member's compliance readiness, the operator confirms its technical readiness, and both confirmations are recorded before the production connection is switched on. The acceptance check is the technical half of that approval; the compliance half is the gate register the member completed on the way here.
 
-And this is why one small exchange is the proving slice for the whole of KP2 and the KPs that follow. Prove once-only here, on four members, and you have proven the pattern that KP3's building blocks and KP4's services will reuse. The smallest real once-only call is the largest possible proof that the framework works — because if the state can ask once and fetch the rest for one learner, lawfully and securely, it can do it for every service a country builds on the bus.
+And this is why one small exchange is the proving slice for this whole knowledge product and for the work that builds on it. Prove once-only here, on four members, and you have proven the pattern that your country's shared digital public infrastructure, and the services built on top of it, will reuse. The smallest real once-only call is the largest possible proof that the framework works — because if the state can ask once and fetch the rest for one learner, lawfully and securely, it can do it for every service a country builds on the bus.
 
 > _Slide 5 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A real cross-server call, the learner asked once — every layer proven in a single exchange, and both go-live approvals recorded.'_
 
-So the once-only exchange, live, is where KP2 proves itself. PNEA pre-fills identity from PNIA and enrolment from PLR, over the bus, for a real learner asked once. Technical, legal, organisational and semantic — all four layers in one resolving call, confirmed by kp-solution-verify. That single exchange is the acceptance of the whole framework, and the template every later service reuses.
+So the once-only exchange, live, is where this knowledge product proves itself. PNEA pre-fills identity from PNIA and enrolment from PLR, over the bus, for a real learner asked once. Technical, legal, organisational and semantic — all four layers in one resolving call, confirmed by the acceptance check. That single exchange is the acceptance of the whole framework, and the template every later service reuses.
 
-> _Slide 6 — Title: 'Sources'. Body: PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check (kp-solution-verify). Footer: 'Find the link in the description.'_
+> _Slide 6 — Title: 'Sources'. Body: PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -456,7 +456,7 @@ So the once-only exchange, live, is where KP2 proves itself. PNEA pre-fills iden
 | 1 | Title slide. Title: 'Run the once-only exchange, live'. | Standard ITU template. No images. |
 | 2 | Scenario slide. Three text rows: the learner, without once-only, with once-only. | The concrete citizen scenario, on the bound Progressa institutions. Text-only. |
 | 3 | Every-layer slide. Four text rows mapping the call to the four layers. | The synthesis of all of KP2 in one call. Carries the lingua-franca argument (semantic row). Text-only. |
-| 4 | Acceptance-check slide. Single text block on kp-solution-verify and 'explained vs running'. | The build-pack acceptance — the proving moment. |
+| 4 | Acceptance-check slide. Single text block on the acceptance check and 'explained vs running'. | The build-pack acceptance — the proving moment. |
 | 5 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line that crowns the topic. |
 | 6 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the once-only reference. |
 
@@ -480,12 +480,12 @@ Script the once-only acceptance check for [country X] / Progressa's interoperabi
 | --- | --- |
 | Working title | Run the once-only exchange, live |
 | YouTube-optimised title | The live once-only exchange: a government framework proven in one real call |
-| Description (60 words) | The moment the framework exists for: a real cross-server call where a learner applies for a credential and the examination authority pre-fills identity and enrolment over the bus — asked once, not on paper. Every layer (technical, legal, organisational, semantic) is in that one call, and kp-solution-verify confirms it. Five minutes for architects. AI acceptance-script prompt in the description. |
+| Description (60 words) | The moment the framework exists for: a real cross-server call where a learner applies for a credential and the examination authority pre-fills identity and enrolment over the bus — asked once, not on paper. Every layer (technical, legal, organisational, semantic) is in that one call, and an automated acceptance check confirms it. Five minutes for architects. AI acceptance-script prompt in the description. |
 | Tags | once-only, live demonstration, X-Road, cross-server call, acceptance test, interoperability proof, Progressa, GovStack, digital government |
 | Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
 | ToR §4 coverage | §4.6 (real-life demonstration) — primary; §4.1 (methodology); §4.3 (AI integration — acceptance-script prompt); §4.5 (build-pack acceptance) |
 | PAERA citations | §5.2 Principle #5 (Once-Only) |
-| External-link list | PAERA v1.0 §5.2 (Once-Only); NIIS X-Road; the build-pack acceptance check (kp-solution-verify) |
+| External-link list | PAERA v1.0 §5.2 (Once-Only); NIIS X-Road; the build-pack acceptance check |
 
 ## 3.7 Subtopic 5.7 — From demonstration to production
 
@@ -657,7 +657,7 @@ The safeguard is the same shape as always. The AI flags the contradiction; a hum
 
 So the consistency cross-check keeps the framework's three foundational documents telling the same story. The AI reads the decree, the Governance Pack and the standards portfolio together and flags where they have drifted apart; a human decides which is right and fixes it. Run it on every change, and you catch the contradictions yourself, before the reviewer, the member or the auditor does.
 
-> _Slide 5 — Title: 'Sources'. Body: the KP2 deliverables — the decree (Topic 2), the Governance Pack (Topic 3), the standards portfolio (Topic 4); EU EIF. Footer: 'Find the link in the description.'_
+> _Slide 5 — Title: 'Sources'. Body: the deliverables of this knowledge product — the decree (Topic 2), the Governance Pack (Topic 3), the standards portfolio (Topic 4); EU EIF. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -694,7 +694,7 @@ Below are three foundational documents of [country X]'s Government Interoperabil
 | Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
 | ToR §4 coverage | §4.3 (AI integration — consistency cross-check); §4.1 (methodology, framework integrity) |
 | PAERA citations | (cross-check operates over the KP2 deliverables and EIF) |
-| External-link list | The KP2 deliverables — the decree (Topic 2), the Governance Pack (Topic 3), the standards portfolio (Topic 4); EU EIF |
+| External-link list | The deliverables of this knowledge product — the decree (Topic 2), the Governance Pack (Topic 3), the standards portfolio (Topic 4); EU EIF |
 
 ## 3.10 Subtopic 5.10 — Carry the framework to the next sector
 
@@ -834,10 +834,10 @@ Compiled across the ten subtopics for ITU's video production pipeline. To be spl
 | 5.3 | NIIS X-Road service-level / SLA guidance; the member obligations (Topic 3); EU EIF. |
 | 5.4 | NIIS X-Road member and subsystem registration; access-control list configuration (niis.org). |
 | 5.5 | NIIS X-Road federation — Central Server, Security Server, configuration and Test CA (niis.org); the Linkup federation (ITU cloud). |
-| 5.6 | PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check (kp-solution-verify). |
+| 5.6 | PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check. |
 | 5.7 | NIIS X-Road production and operations guidance; ITU DPI Safeguards. |
 | 5.8 | NIIS X-Road monitoring and operational logs (niis.org); the Linkup federation (ITU cloud); ITU DPI Safeguards. |
-| 5.9 | The KP2 deliverables — the decree (Topic 2), the Governance Pack (Topic 3), the standards portfolio (Topic 4); EU EIF. |
+| 5.9 | The deliverables of this knowledge product — the decree (Topic 2), the Governance Pack (Topic 3), the standards portfolio (Topic 4); EU EIF. |
 | 5.10 | ToR §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3 (interoperability framing). |
 
 All references are publicly accessible and verifiable. The Tuesday review may add or refine items based on ITU's preferred citation style for the YouTube channel.
