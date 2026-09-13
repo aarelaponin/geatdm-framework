@@ -294,7 +294,7 @@ body.push(...renderSubtopic({
     ["1", "Title slide. Title: 'Place every component — the four functional layers'.",
       "Standard ITU template. Title Arial Bold 28pt; subtitle (KP2 / 4.1) Arial 18pt. Background #E5F5FB. No images."],
     ["2", "Four-layers slide. Four text rows naming each functional layer and its job.",
-      "The spine of the topic. Plain stacked text, no icons."],
+      "The spine of the module. Plain stacked text, no icons."],
     ["3", "Event-distribution slide. Two text rows: what events are for, why the layer is deferred rather than skipped.",
       "The once-only-at-scale beat. Text-only."],
     ["4", "Map-components slide. Single text block on placing components and reading the gaps.",
@@ -564,11 +564,11 @@ body.push(...renderSubtopic({
     { text: "Giga gives you real, published material to work from. Open APIs you can actually call. A school-master schema describing each school, and a qos schema describing its connectivity — the quality of its internet service. GeoJSON, the standard way to express a location, for where each school sits. And ISO 3166-1 alpha-3, the three-letter country codes, for indexing. These are exactly the kind of published standards and schemas the standards portfolio and the semantic map told you to reuse — and here they are, in one real dataset, ready to practise on." },
     { cue: "Slide 3 — Title: 'The bronze / silver / gold pipeline'. Body, three text rows: 'Bronze — the raw data, exactly as received; kept for audit.' 'Silver — cleaned and validated, conformed to the schema and the semantic map; bad records flagged.' 'Gold — the published, authoritative version other services consume.'" },
     { text: "Real source data is never clean enough to publish straight onto the bus, so it moves through a pipeline in three stages. Bronze — the raw data exactly as received from the source, kept untouched for audit. Silver — the cleaned and validated version, conformed to the schema and the semantic map, with bad or duplicate records flagged. Gold — the published, authoritative version that other services on the bus actually consume. This bronze, silver, gold pattern is how a messy real source becomes a registry other agencies can trust, and every data source you put on the bus follows it." },
-    { cue: "Slide 4 — Title: 'The whole topic, on one source'. Body, single text block: 'School data lands as bronze, is conformed to the schema and semantic map as silver, and is published as gold. A gold service gets an OpenAPI contract, an X-Road service description, trust-zone security, and a data-protection envelope. That is Topic 4, applied end to end.'" },
-    { text: "Now watch the whole topic tie together on one source. The school-master data lands as bronze. It is cleaned and conformed to the schema and the semantic map as silver. It is published as gold. The gold-layer service is described by an OpenAPI contract, registered as an X-Road service description, secured across the three trust zones, and made lawful by the data-protection envelope. Every piece of this topic appears, in order, on one real dataset. That is the template — and it is the same template whether the source is schools, health facilities, or a farmer registry." },
+    { cue: "Slide 4 — Title: 'The whole module, on one source'. Body, single text block: 'School data lands as bronze, is conformed to the schema and semantic map as silver, and is published as gold. A gold service gets an OpenAPI contract, an X-Road service description, trust-zone security, and a data-protection envelope. That is Module 4, applied end to end.'" },
+    { text: "Now watch the whole module tie together on one source. The school-master data lands as bronze. It is cleaned and conformed to the schema and the semantic map as silver. It is published as gold. The gold-layer service is described by an OpenAPI contract, registered as an X-Road service description, secured across the three trust zones, and made lawful by the data-protection envelope. Every piece of this module appears, in order, on one real dataset. That is the template — and it is the same template whether the source is schools, health facilities, or a farmer registry." },
     { text: "The reason to learn it on Giga rather than your own data is that Giga is public, real and already standards-aligned, so you can practise the full pipeline before you touch a live national registry where a mistake has consequences. Once you have run it once on Giga, you apply the identical pattern — bronze, silver, gold, contract, bus — to your country's own school data, and then to the next sector." },
     { cue: "Slide 5 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Bronze, silver, gold, contract, bus — the Giga case is the full method on one real source, ready to copy for your own sector.'" },
-    { text: "So the Giga case is the method made concrete. A real source, real schemas, the bronze-silver-gold pipeline, a service contract, and the bus — every step of this topic on one dataset you can actually run. Learn it here, where the data is public and forgiving, and you have a template to copy onto your own national registries with confidence." },
+    { text: "So the Giga case is the method made concrete. A real source, real schemas, the bronze-silver-gold pipeline, a service contract, and the bus — every step of this module on one dataset you can actually run. Learn it here, where the data is public and forgiving, and you have a template to copy onto your own national registries with confidence." },
     { cue: "Slide 6 — Title: 'Sources'. Body: Giga open APIs and schemas (school-master, qos); GeoJSON; ISO 3166-1 alpha-3; bronze/silver/gold MDM (Giga School Master Data architecture). Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
@@ -578,7 +578,7 @@ body.push(...renderSubtopic({
       "Names the real Giga assets. No logos, plain text."],
     ["3", "Bronze-silver-gold slide. Three text rows for the three pipeline stages.",
       "The MDM pattern. Text-only."],
-    ["4", "Whole-topic-on-one-source slide. Single text block tying every step together.",
+    ["4", "Whole-module-on-one-source slide. Single text block tying every step together.",
       "The synthesis — the template the architect copies."],
     ["5", "Single-sentence summary slide. One large text block (Arial Bold 28pt).",
       "The take-home line."],
@@ -595,7 +595,7 @@ body.push(...renderSubtopic({
   metadataRows: [
     ["Working title",          "The Giga end-to-end case"],
     ["YouTube-optimised title", "Putting real school data on an interoperability bus — the Giga worked example"],
-    ["Description (60 words)", "A real worked case: Giga's open school data — school-master and connectivity schemas, GeoJSON, country codes — moved through a bronze/silver/gold pipeline to a gold service, given an OpenAPI contract and an X-Road service description, secured and made lawful. Every step of the topic on one real source. A template you copy for your sector. Five minutes for architects. AI pipeline prompt in the description."],
+    ["Description (60 words)", "A real worked case: Giga's open school data — school-master and connectivity schemas, GeoJSON, country codes — moved through a bronze/silver/gold pipeline to a gold service, given an OpenAPI contract and an X-Road service description, secured and made lawful. Every step of the module on one real source. A template you copy for your sector. Five minutes for architects. AI pipeline prompt in the description."],
     ["Tags",                    "Giga, school data, bronze silver gold, MDM, data pipeline, GeoJSON, interoperability, X-Road, GovStack, digital government"],
     ["Playlist (YouTube)",      "KP2 — Topic 4: Architecture, standards and the Giga case"],
     ["ToR §4 coverage",         "§4.6 (real-life example — Giga) — primary; §4.1 (methodology, data pipeline); §4.3 (AI integration — pipeline prompt)"],
@@ -633,7 +633,7 @@ body.push(...renderSubtopic({
     ["2", "What-wired-means slide. Three text rows: register, discover, route-and-return.",
       "Defines 'wired' concretely. Text-only."],
     ["3", "Configuration slide. Three text rows: subsystem, service description, access-control list.",
-      "The config artefacts. Links to member onboarding (Topic 5). Text-only."],
+      "The config artefacts. Links to member onboarding (Module 5). Text-only."],
     ["4", "Information-Mediation slide. Single text block on the GovStack BB pattern.",
       "Cross-links GovStack; carries re-use to the routing component."],
     ["5", "Test-call slide. Single text block on the resolving call as acceptance.",
@@ -674,14 +674,14 @@ body.push(...renderSubtopic({
     { cue: "Slide 1 — Title: 'Make the exchange lawful — the data-protection envelope'. Voice-over begins." },
     { text: "A service can be perfectly wired and perfectly secured and still must not be switched on, because technical capability is not lawful authority. The last thing the architect checks for an exchange is its data-protection envelope — the agreements and safeguards that make moving this data lawful, not merely possible. This is where the technical work you have done meets the legal and organisational layers built earlier in this knowledge product." },
     { cue: "Slide 2 — Title: 'The envelope has three parts'. Body, three text rows: 'A lawful basis — from the decree; the exchange must be one the decree authorises.' 'A bilateral Letter of Interest — the two agencies agree to this specific exchange, on these terms.' 'Data-protection safeguards — minimisation, purpose, consent where needed, retention.'" },
-    { text: "The envelope has three parts. A lawful basis, which comes from the decree you drafted in the legal topic — the exchange must be one the decree actually authorises. A bilateral agreement — a Letter of Interest between the two agencies, the practical record that they agree to this specific exchange, on these terms. And the data-protection safeguards — that the exchange uses only the data it needs, for the stated purpose, with consent where required, and a clear retention rule. Technical capability plus these three is what makes an exchange lawful." },
+    { text: "The envelope has three parts. A lawful basis, which comes from the decree you drafted in the legal module — the exchange must be one the decree actually authorises. A bilateral agreement — a Letter of Interest between the two agencies, the practical record that they agree to this specific exchange, on these terms. And the data-protection safeguards — that the exchange uses only the data it needs, for the stated purpose, with consent where required, and a clear retention rule. Technical capability plus these three is what makes an exchange lawful." },
     { cue: "Slide 3 — Title: 'Data protection by design'. Body, three text rows: 'Minimisation is in the contract — the service returns only the fields the purpose needs.' 'Purpose and the access-control list match — only agencies with a lawful purpose can call.' 'Retention and logging are configured, not promised.'" },
     { text: "The architect's specific job is data protection by design — building the safeguards into the configuration rather than bolting them on after. Minimisation lives in the OpenAPI contract: the service returns only the fields the purpose needs, not the whole record. The purpose and the access-control list match: only the agencies with a lawful purpose can call the service. And retention and logging are configured, not merely promised in a policy. Built this way, the safeguards are part of the configuration the demonstration runs, not a document filed somewhere separate from the system." },
     { cue: "Slide 4 — Title: 'Where the three layers meet'. Body, single text block: 'The decree (legal) authorises the exchange. The member agreement and access-control list (organisational) record who may do it. The contract, security and minimisation (technical) carry it out within the envelope. An exchange is ready only when all three line up. And the rule underneath: membership of the bus never, by itself, grants access to any data — access is granted per service, by the data owner.'" },
     { text: "This is where the three layers meet on a single exchange. The decree, the legal layer, authorises it. The member agreement and the access-control list, the organisational layer, record who may do it. The contract, the security and the minimisation, the technical layer, carry it out within the envelope. An exchange is ready only when all three line up — and that is the architect's final check before a service goes live. It is also why the data-protection officer signs off, not the architect alone: the envelope is a shared responsibility, by design. This is also where the framework's most important quiet rule lives: joining the bus never, by itself, grants access to anything. Membership buys the secure channel and the trust. The right to read a specific dataset stays with the provider, who grants it per service — the Letter of Interest is that grant, and the access-control list is its technical shadow. An agency with valid certificates and a working connection still has access to nothing until a data owner says so." },
     { cue: "Slide 5 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A lawful basis, a Letter of Interest, and data protection by design — the envelope that makes a wired exchange a lawful one. Membership is never access.'" },
-    { text: "So the data-protection envelope is the final layer on a real exchange. A lawful basis from the decree, a Letter of Interest between the agencies, and data protection built into the configuration by design. With the technical work inside that envelope, an exchange is not just possible — it is lawful, and ready to go live. That completes the architecture topic: meaning, contract, security, wiring, and the envelope that makes it all lawful." },
-    { cue: "Slide 6 — Title: 'Sources'. Body: ITU DPI Safeguards / data-protection guidance; bilateral Letters of Interest; the Topic-2 decree (legal basis); EU EIF legal layer. Footer: 'Find the link in the description.'" }
+    { text: "So the data-protection envelope is the final layer on a real exchange. A lawful basis from the decree, a Letter of Interest between the agencies, and data protection built into the configuration by design. With the technical work inside that envelope, an exchange is not just possible — it is lawful, and ready to go live. That completes the architecture module: meaning, contract, security, wiring, and the envelope that makes it all lawful." },
+    { cue: "Slide 6 — Title: 'Sources'. Body: ITU DPI Safeguards / data-protection guidance; bilateral Letters of Interest; the Module 2 decree (legal basis); EU EIF legal layer. Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
     ["1", "Title slide. Title: 'Make the exchange lawful — the data-protection envelope'.",
@@ -693,7 +693,7 @@ body.push(...renderSubtopic({
     ["4", "Three-layers-meet slide. Single text block tying legal, organisational, technical together.",
       "The synthesis across KP2's layers. Text-only."],
     ["5", "Single-sentence summary slide. One large text block (Arial Bold 28pt).",
-      "The take-home line that closes the topic."],
+      "The take-home line that closes the module."],
     ["6", "Sources slide. Footer: 'Find the link in the description.'",
       "Lets viewers verify the data-protection references."]
   ],
@@ -712,7 +712,7 @@ body.push(...renderSubtopic({
     ["Playlist (YouTube)",      "KP2 — Topic 4: Architecture, standards and the Giga case"],
     ["ToR §4 coverage",         "§4.1 (methodology, data protection); §4.3 (AI integration — envelope prompt)"],
     ["PAERA citations",         "§3.2 Legal layer (the lawful basis comes from the decree); data-protection guidance cited to ITU DPI Safeguards"],
-    ["External-link list",      "ITU DPI Safeguards / data-protection guidance; bilateral Letters of Interest; the Topic-2 decree (legal basis); EU EIF legal layer"]
+    ["External-link list",      "ITU DPI Safeguards / data-protection guidance; bilateral Letters of Interest; the Module 2 decree (legal basis); EU EIF legal layer"]
   ]
 }));
 
@@ -774,7 +774,7 @@ body.push(
     ["4.5", "OpenAPI 3.x specification; OAuth 2.x / OIDC; NIIS X-Road service description; EU EIF."],
     ["4.6", "Giga open APIs and schemas (school-master, qos); GeoJSON; ISO 3166-1 alpha-3; bronze/silver/gold MDM (Giga School Master Data architecture)."],
     ["4.7", "NIIS X-Road service description / Information Mediator (niis.org); GovStack Information Mediation Building Block (govstack.global); EU EIF."],
-    ["4.8", "ITU DPI Safeguards / data-protection guidance; bilateral Letters of Interest; the Topic-2 decree (legal basis); EU EIF legal layer."]
+    ["4.8", "ITU DPI Safeguards / data-protection guidance; bilateral Letters of Interest; the Module 2 decree (legal basis); EU EIF legal layer."]
   ]),
   spacer(120),
   P("All references are publicly accessible and verifiable. The Tuesday review may add or refine items based on ITU's preferred citation style for the YouTube channel.")

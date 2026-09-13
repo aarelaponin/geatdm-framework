@@ -78,7 +78,7 @@ Here is the part that makes the decree a framework artefact and not a project do
 
 > _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The decree is the legal on-switch — it makes cross-agency exchange lawful, connection mandatory, and the citizen's data protected.'_
 
-So when you explain the decree to your minister or to a Ministry of Justice, do not present it as paperwork that follows the technical build. Present it as the on-switch. It is the instrument that turns a technically capable bus into a lawfully operating framework. The rest of this topic shows you how to draft it — five components, generated with AI, and made law by a qualified lawyer.
+So when you explain the decree to your minister or to a Ministry of Justice, do not present it as paperwork that follows the technical build. Present it as the on-switch. It is the instrument that turns a technically capable bus into a lawfully operating framework. The rest of this module shows you how to draft it — five components, generated with AI, and made law by a qualified lawyer.
 
 > _Slide 5 — Title: 'Sources'. Body: EU European Interoperability Framework (legal layer); PAERA v1.0 §3.2 (legal layer); §5.2. Footer: 'Find the link in the description.'_
 
@@ -133,7 +133,7 @@ Below is what I know of [country X]'s current legal framework relevant to cross-
 
 > _Slide 1 — Title: 'Anatomy of an interoperability decree'. Voice-over begins._
 
-A decree looks, to a non-lawyer, like one dense block of legal text. It is actually five parts, each with a different job and a different reader. If you know the five parts, you stop being a passenger waiting for the Ministry of Justice to produce something, and you become the person who hands them a structured, near-complete package and asks them to perfect it. That shift — from waiting to briefing — is what this topic gives you, and it starts with knowing the anatomy.
+A decree looks, to a non-lawyer, like one dense block of legal text. It is actually five parts, each with a different job and a different reader. If you know the five parts, you stop being a passenger waiting for the Ministry of Justice to produce something, and you become the person who hands them a structured, near-complete package and asks them to perfect it. That shift — from waiting to briefing — is what this module gives you, and it starts with knowing the anatomy.
 
 > _Slide 2 — Title: 'Five components'. Body, five text rows: 'Explanatory Memorandum — the case for the decree, in plain language.' 'Preamble — the legal authority and the recitals.' 'Draft Articles Package — the operative, binding provisions.' 'Cover Note — the transmittal to the Ministry of Justice.' 'Two-Track Regulatory Memo — how the decree and the data-protection law fit together.'_
 
@@ -149,11 +149,11 @@ There are two reasons to build the decree as five parts rather than one. The fir
 
 > _Slide 5 — Title: 'The kit, not the decree'. Body, single text block: 'What you produce is a Decree Drafting Kit — the five components as structured drafts. A qualified lawyer turns the kit into a decree that has legal force in your country. The kit speeds the lawyer; it does not replace them.'_
 
-One important framing. What this topic helps you produce is a Decree Drafting Kit — the five components, as structured, well-sourced drafts. It is not a decree with legal force. A qualified lawyer in your jurisdiction turns the kit into an instrument that is valid in your legal system. The kit's job is to give that lawyer a strong, structured starting point so they perfect rather than originate — turning months of drafting into weeks of review. That division of labour, AI-and-architect drafts, lawyer makes law, runs through the whole topic.
+One important framing. What this module helps you produce is a Decree Drafting Kit — the five components, as structured, well-sourced drafts. It is not a decree with legal force. A qualified lawyer in your jurisdiction turns the kit into an instrument that is valid in your legal system. The kit's job is to give that lawyer a strong, structured starting point so they perfect rather than originate — turning months of drafting into weeks of review. That division of labour, AI-and-architect drafts, lawyer makes law, runs through the whole module.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A decree is five parts — Memorandum, Preamble, Articles, Cover Note, Two-Track Memo — each with its own reader and its own focused draft.'_
 
-So the anatomy is five parts, each with a job and a reader: the Memorandum makes the case, the Preamble cites the authority, the Articles bind, the Cover Note transmits, and the Two-Track Memo squares the decree with the data-protection law. Knowing them is what lets you brief a Ministry of Justice with a near-complete package instead of waiting on one. This topic builds each part, component by component.
+So the anatomy is five parts, each with a job and a reader: the Memorandum makes the case, the Preamble cites the authority, the Articles bind, the Cover Note transmits, and the Two-Track Memo squares the decree with the data-protection law. Knowing them is what lets you brief a Ministry of Justice with a near-complete package instead of waiting on one. This module builds each part, component by component.
 
 > _Slide 7 — Title: 'Sources'. Body: EU European Interoperability Framework (legal layer); decree models — Estonia Information Society Services Act; EU Single Digital Gateway Regulation. Footer: 'Find the link in the description.'_
 
@@ -162,10 +162,10 @@ So the anatomy is five parts, each with a job and a reader: the Memorandum makes
 | Slide | Element (text-only) | Notes |
 | --- | --- | --- |
 | 1 | Title slide. Title: 'Anatomy of an interoperability decree'. | Standard ITU template. No images. |
-| 2 | Five-component slide. Five text rows naming each part and its one-line job. | The spine of the topic. Plain text list. |
+| 2 | Five-component slide. Five text rows naming each part and its one-line job. | The spine of the module. Plain text list. |
 | 3 | Different-reader slide. Three text rows mapping component to reader. | Explains why the parts are separate. Text-only. |
 | 4 | Why-five slide. Two text rows: reviewable in parts; generatable in parts. | Justifies the structure and previews the AI generation. |
-| 5 | Kit-not-decree slide. Single text block on the AI-drafts / lawyer-makes-law division. | The critical safeguard framing, stated up front. Recurs through the topic. |
+| 5 | Kit-not-decree slide. Single text block on the AI-drafts / lawyer-makes-law division. | The critical safeguard framing, stated up front. Recurs through the module. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
 | 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the decree models cited. |
 
@@ -210,25 +210,25 @@ I am preparing an interoperability decree for [country X]. Here is the Strategic
 
 > _Slide 1 — Title: 'The Explanatory Memorandum and Preamble'. Voice-over begins._
 
-The first two components of the decree are the ones a non-lawyer can lead on, because they are about the case and the context rather than the binding rules. The Explanatory Memorandum makes the case for the decree. The Preamble sets out the legal authority and the recitals. Both can be drafted from a document you already have — the Strategic Foundation Document from Topic 1 — and both are exactly the kind of focused, well-bounded drafting task an AI assistant does well, with you reviewing.
+The first two components of the decree are the ones a non-lawyer can lead on, because they are about the case and the context rather than the binding rules. The Explanatory Memorandum makes the case for the decree. The Preamble sets out the legal authority and the recitals. Both can be drafted from a document you already have — the Strategic Foundation Document from Module 1 — and both are exactly the kind of focused, well-bounded drafting task an AI assistant does well, with you reviewing.
 
 > _Slide 2 — Title: 'The Explanatory Memorandum — the case'. Body, four text rows: 'The problem the decree solves.' 'What the decree does, in plain language.' 'Why now — the cost of waiting.' 'The expected benefit to citizens and the state.'_
 
-The Explanatory Memorandum is the case, written for the minister and the cabinet, not the lawyer. It states the problem the decree solves — fragmentation, the citizen asked the same thing many times. It says what the decree does, in plain language. It says why now — the cost of another year without a mandate. And it names the expected benefit. If you wrote a good Strategic Foundation Document in Topic 1, the Memorandum is largely a translation of it into the form a Ministry of Justice expects. That is a task you can hand to Claude with the foundation document as input.
+The Explanatory Memorandum is the case, written for the minister and the cabinet, not the lawyer. It states the problem the decree solves — fragmentation, the citizen asked the same thing many times. It says what the decree does, in plain language. It says why now — the cost of another year without a mandate. And it names the expected benefit. If you wrote a good Strategic Foundation Document in Module 1, the Memorandum is largely a translation of it into the form a Ministry of Justice expects. That is a task you can hand to Claude with the foundation document as input.
 
 > _Slide 3 — Title: 'The Preamble — the authority'. Body, three text rows: 'The recitals — the findings the decree rests on.' 'The legal authority — the constitutional or statutory power to make this decree.' 'Every citation a [confirm] until a lawyer verifies it.'_
 
 The Preamble is different. It sets out the recitals — the formal findings the decree rests on — and, critically, the legal authority: the constitutional or statutory power under which the decree is made. Here the AI is useful for structure and for a first draft of the recitals, but every citation of authority is a placeholder — a [confirm] — until a qualified lawyer verifies that the cited power actually exists and actually supports a decree of this kind in your country. An invented or wrong authority citation is the fastest way to have the whole decree sent back. So the Preamble is generated as a scaffold, then verified line by line.
 
-> _Slide 4 — Title: 'Generate, then confirm'. Body, two text rows: 'gif-decree-draft turns the foundation document into a Memorandum draft and a Preamble scaffold.' 'You confirm every legal citation against a real statute before the package goes anywhere.'_
+> _Slide 4 — Title: 'Generate, then confirm'. Body, two text rows: 'The AI prompt turns the foundation document into a Memorandum draft and a Preamble scaffold.' 'You confirm every legal citation against a real statute before the package goes anywhere.'_
 
-This is the pattern for the whole Decree Drafting Kit, and it appears first here. The AI play — we call it gif-decree-draft — takes your Strategic Foundation Document and produces a Memorandum draft and a Preamble scaffold in minutes. That is the easy ninety per cent. The hard, essential ten per cent is yours: confirm every legal citation against a real statute, soften every claim the evidence does not support, and mark anything unverified as a [confirm] for the lawyer. Generate fast; confirm carefully. The AI accelerates the drafting; it does not get the law right for you.
+This is the pattern for the whole Decree Drafting Kit, and it appears first here. The AI prompt for this video takes your Strategic Foundation Document and produces a Memorandum draft and a Preamble scaffold in minutes. That is the easy ninety per cent. The hard, essential ten per cent is yours: confirm every legal citation against a real statute, soften every claim the evidence does not support, and mark anything unverified as a [confirm] for the lawyer. Generate fast; confirm carefully. The AI accelerates the drafting; it does not get the law right for you.
 
 > _Slide 5 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Generate the Memorandum and Preamble from your foundation document — then confirm every legal citation against a real statute before anyone relies on it.'_
 
 So the first two components come quickly, because the Memorandum restates a document you already have and the Preamble is a scaffold to be verified. Lead on the case, generate the drafts, and confirm the law. The hardest component is the Draft Articles — the binding rules themselves.
 
-> _Slide 6 — Title: 'Sources'. Body: PAERA v1.0 §3.2 (legal layer); EU European Interoperability Framework; the Strategic Foundation Document (Topic 1). Footer: 'Find the link in the description.'_
+> _Slide 6 — Title: 'Sources'. Body: PAERA v1.0 §3.2 (legal layer); EU European Interoperability Framework; the Strategic Foundation Document (Module 1). Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -237,13 +237,13 @@ So the first two components come quickly, because the Memorandum restates a docu
 | 1 | Title slide. Title: 'The Explanatory Memorandum and Preamble'. | Standard ITU template. No images. |
 | 2 | Memorandum slide. Four text rows: problem, what it does, why now, benefit. | The case structure. Text-only. |
 | 3 | Preamble slide. Three text rows: recitals, authority, [confirm] discipline. | Introduces the [confirm] placeholder convention. Text-only. |
-| 4 | Generate-then-confirm slide. Two text rows: gif-decree-draft generates; you confirm citations. | Names the AI play and the division of labour. |
+| 4 | Generate-then-confirm slide. Two text rows: the AI prompt generates; you confirm citations. | Names the AI play and the division of labour. |
 | 5 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
 | 6 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the references. |
 
-### AI usage tip — Generate the Explanatory Memorandum and Preamble (gif-decree-draft)
+### AI usage tip — Generate the Explanatory Memorandum and Preamble
 
-**What the prompt does:** A Strategist with a Strategic Foundation Document needs a first draft of the decree's Memorandum and a Preamble scaffold. This is the gif-decree-draft play for the first two components — fast draft, citations flagged for confirmation.
+**What the prompt does:** A Strategist with a Strategic Foundation Document needs a first draft of the decree's Memorandum and a Preamble scaffold. This is the decree-drafting play for the first two components — fast draft, citations flagged for confirmation.
 
 **Prompt template (copy-paste into Claude):**
 
@@ -261,7 +261,7 @@ Below is the Strategic Foundation Document for [country X]'s Government Interope
 | --- | --- |
 | Working title | The Explanatory Memorandum and Preamble |
 | YouTube-optimised title | Draft a decree's case and recitals with AI — then verify every citation |
-| Description (60 words) | The first two parts of an interoperability decree — the Explanatory Memorandum (the case) and the Preamble (the legal authority) — can be drafted from your Strategic Foundation Document. AI generates fast; you confirm every legal citation against a real statute. Five minutes for digital-government leaders. The gif-decree-draft prompt for both components is in the description. |
+| Description (60 words) | The first two parts of an interoperability decree — the Explanatory Memorandum (the case) and the Preamble (the legal authority) — can be drafted from your Strategic Foundation Document. AI generates fast; you confirm every legal citation against a real statute. Five minutes for digital-government leaders. The AI prompt for both components is in the description. |
 | Tags | explanatory memorandum, decree preamble, legislative drafting, AI legal drafting, interoperability decree, GovStack, digital government |
 | Playlist (YouTube) | KP2 — Topic 2: Legal framework — the Decree Drafting Kit |
 | ToR §4 coverage | §4.1 (methodology, legal layer); §4.3 (AI integration — gif-decree-draft, components 1-2) |
@@ -308,14 +308,14 @@ So the Draft Articles are generated, one article at a time, each against a named
 | --- | --- | --- |
 | 1 | Title slide. Title: 'The Draft Articles Package'. | Standard ITU template. No images. |
 | 2 | Core-articles slide. Seven text rows: the operative articles, the principles, the sanctions ladder. | The substantive payload. Plain text list, readable on mobile. |
-| 3 | Generate-against-a-model slide. Two text rows: named model per article; no model means [confirm]. | The anti-invention discipline — the most important safeguard in the topic. |
+| 3 | Generate-against-a-model slide. Two text rows: named model per article; no model means [confirm]. | The anti-invention discipline — the most important safeguard in the module. |
 | 4 | Business-IT-meet slide. Single text block on the articles binding the exchanges the architects build. | Carries the shared-language argument. Text-only. |
 | 5 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
 | 6 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the legal models cited. |
 
-### AI usage tip — Draft one operative article against a published model (gif-decree-draft)
+### AI usage tip — Draft one operative article against a published model
 
-**What the prompt does:** A Strategist drafting the articles needs each one generated against a real, named legal model rather than invented — the gif-decree-draft play for the binding provisions, with strict anti-invention discipline.
+**What the prompt does:** A Strategist drafting the articles needs each one generated against a real, named legal model rather than invented — the decree-drafting play for the binding provisions, with strict anti-invention discipline.
 
 **Prompt template (copy-paste into Claude):**
 
@@ -333,7 +333,7 @@ I am drafting one article of an interoperability decree for [country X]: the [ma
 | --- | --- |
 | Working title | The Draft Articles Package |
 | YouTube-optimised title | Drafting the binding articles of an interoperability decree — without inventing law |
-| Description (60 words) | The Draft Articles are the binding heart of the decree: scope, mandatory connection, the once-only obligation, data protection, the operating authority, enforcement. Each is generated against a named published law — never invented — and confirmed by a lawyer. They must bind exactly the exchanges the architects build. Five minutes for digital-government leaders. The gif-decree-draft article prompt is in the description. |
+| Description (60 words) | The Draft Articles are the binding heart of the decree: scope, mandatory connection, the once-only obligation, data protection, the operating authority, enforcement. Each is generated against a named published law — never invented — and confirmed by a lawyer. They must bind exactly the exchanges the architects build. Five minutes for digital-government leaders. The AI article prompt is in the description. |
 | Tags | draft articles, interoperability decree, mandatory connection, once-only, data protection law, legislative drafting, GovStack, digital government |
 | Playlist (YouTube) | KP2 — Topic 2: Legal framework — the Decree Drafting Kit |
 | ToR §4 coverage | §4.1 (methodology, legal layer); §4.3 (AI integration — gif-decree-draft, the articles) |
@@ -426,7 +426,7 @@ I am transmitting an interoperability decree package to the Ministry of Justice 
 
 > _Slide 1 — Title: 'The decree as configuration'. Voice-over begins._
 
-There is one last thing to do with a finished decree before it goes to the bus, and it is the step most teams skip. Read the decree back against the Use-Case Catalogue from Topic 1, and check that the two match. The decree is not a document that sits beside the technical framework. It is the legal configuration of it — the binding text that says which exchanges are lawful and required. If the decree and the catalogue disagree, the framework will authorise one thing and carry another.
+There is one last thing to do with a finished decree before it goes to the bus, and it is the step most teams skip. Read the decree back against the Use-Case Catalogue from Module 1, and check that the two match. The decree is not a document that sits beside the technical framework. It is the legal configuration of it — the binding text that says which exchanges are lawful and required. If the decree and the catalogue disagree, the framework will authorise one thing and carry another.
 
 > _Slide 2 — Title: 'Two checks against the catalogue'. Body, two text rows: 'Coverage — every exchange in the catalogue has a lawful basis in the decree.' 'Scope discipline — no article authorises an exchange that is not in the catalogue or the principles.'_
 
@@ -442,9 +442,9 @@ This is why, in the runnable build pack that accompanies this knowledge product,
 
 > _Slide 5 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A decree is finished not when it is signed, but when it authorises exactly the exchanges your framework will carry — no less, and no more.'_
 
-So read your decree as configuration. A decree is finished not when it is signed, but when it authorises exactly the exchanges your framework will carry — every one with a lawful basis, and none beyond what the framework needs. That match is the legal layer's acceptance check, and passing it hands a verified legal configuration to the architects who build the bus. That is the whole job of Topic 2: not paperwork, but the on-switch, checked.
+So read your decree as configuration. A decree is finished not when it is signed, but when it authorises exactly the exchanges your framework will carry — every one with a lawful basis, and none beyond what the framework needs. That match is the legal layer's acceptance check, and passing it hands a verified legal configuration to the architects who build the bus. That is the whole job of Module 2: not paperwork, but the on-switch, checked.
 
-> _Slide 6 — Title: 'Sources'. Body: PAERA v1.0 §3.2 (legal layer); EU European Interoperability Framework; the Use-Case Catalogue (Topic 1). Footer: 'Find the link in the description.'_
+> _Slide 6 — Title: 'Sources'. Body: PAERA v1.0 §3.2 (legal layer); EU European Interoperability Framework; the Use-Case Catalogue (Module 1). Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -454,7 +454,7 @@ So read your decree as configuration. A decree is finished not when it is signed
 | 2 | Two-checks slide. Two text rows: coverage; scope discipline. | The core acceptance logic. Text-only. |
 | 3 | How-it-binds slide. Two text rows: mandatory connection → members; once-only → required exchange. | Connects legal text to technical reality. Text-only. |
 | 4 | Legal-config-of-the-build-pack slide. Single text block naming the decree as the legal-layer artefact and its acceptance check. | The build-pack connection — the decree is a verified config, not a filed document. |
-| 5 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line that closes the topic. |
+| 5 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line that closes the module. |
 | 6 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the references. |
 
 ### AI usage tip — Check your decree authorises exactly your catalogue (the legal acceptance check)
@@ -482,7 +482,7 @@ Below are two things for [country X]'s interoperability framework: (A) the Use-C
 | Playlist (YouTube) | KP2 — Topic 2: Legal framework — the Decree Drafting Kit |
 | ToR §4 coverage | §4.1 (methodology, legal layer); §4.3 (AI integration — legal acceptance-check prompt); §4.5 (build-pack acceptance) |
 | PAERA citations | §3.2 Legal layer |
-| External-link list | PAERA v1.0 §3.2; EU European Interoperability Framework; the Use-Case Catalogue (Topic 1) |
+| External-link list | PAERA v1.0 §3.2; EU European Interoperability Framework; the Use-Case Catalogue (Module 1) |
 
 ## 4. Production notes
 
@@ -538,9 +538,9 @@ Compiled across the six subtopics for ITU's video production pipeline. To be spl
 | --- | --- |
 | 2.1 | EU European Interoperability Framework (EIF) — legal layer; PAERA v1.0 §3.2 (legal layer) and §3.4.3 (interoperability framing). |
 | 2.2 | EU EIF legal layer; published interoperability laws as decree models — Estonia Information Society Services Act; EU Single Digital Gateway Regulation. |
-| 2.3 | PAERA v1.0 §3.2 (legal layer); EU EIF; the Strategic Foundation Document (Topic 1 input). |
+| 2.3 | PAERA v1.0 §3.2 (legal layer); EU EIF; the Strategic Foundation Document (Module 1 input). |
 | 2.4 | Estonia Information Society Services Act; EU Once-Only Regulation; PAERA v1.0 §5.2 Principle #5 (Once-Only); national data-protection framework (GDPR-style reference). |
 | 2.5 | EU EIF (legal & governance layers); the country's personal-data-protection law and data-protection authority; national legislative-process references (decree vs primary legislation). |
-| 2.6 | PAERA v1.0 §3.2 (legal layer); the Use-Case Catalogue (Topic 1 input); EU EIF. |
+| 2.6 | PAERA v1.0 §3.2 (legal layer); the Use-Case Catalogue (Module 1 input); EU EIF. |
 
 All references are publicly accessible and verifiable. The Tuesday review may add or refine items based on ITU's preferred citation style for the YouTube channel.

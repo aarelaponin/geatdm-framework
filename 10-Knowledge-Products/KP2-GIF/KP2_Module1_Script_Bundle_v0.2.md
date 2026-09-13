@@ -184,11 +184,11 @@ So the discipline is simple to state and hard to skip: four layers, built in par
 | Slide | Element (text-only) | Notes |
 | --- | --- | --- |
 | 1 | Title slide. Title: 'The four layers of interoperability'. | Standard ITU template. No images. |
-| 2 | Four-layer stack. Four text rows bottom-to-top (Technical / Semantic / Organisational / Legal), one short gloss each. | The spine of the whole topic. A plain stacked text diagram — text-box rows, no icons. |
+| 2 | Four-layer stack. Four text rows bottom-to-top (Technical / Semantic / Organisational / Legal), one short gloss each. | The spine of the whole module. A plain stacked text diagram — text-box rows, no icons. |
 | 3 | Technical layer slide. Two text rows: what it is; why it is necessary but not sufficient. | Deflates the 'it's just a technical problem' assumption. |
 | 4 | Semantic layer slide. Two text rows: the same-person problem; what makes meaning travel. | Carries the shared-language argument — business and IT must agree meaning together. |
-| 5 | Organisational layer slide. Three text rows: data-sharing agreements, service levels, a governing body. | Sets up Topic 3 (governance). Text-only. |
-| 6 | Legal layer slide. Two text rows: the mandate; the cost of skipping it. 'The decree is the on-switch.' | Sets up Topic 2 (the decree). The 'on-switch' line is the memorable beat. |
+| 5 | Organisational layer slide. Three text rows: data-sharing agreements, service levels, a governing body. | Sets up Module 3 (governance). Text-only. |
+| 6 | Legal layer slide. Two text rows: the mandate; the cost of skipping it. 'The decree is the on-switch.' | Sets up Module 2 (the decree). The 'on-switch' line is the memorable beat. |
 | 7 | Three-seams slide. Three text rows: legal authorises organisational; organisational governs technical and semantic; technical and semantic make legal enforceable. | The interaction between the layers — why they are built in parallel. Text-only. |
 | 8 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
 | 9 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the four-layer model is from EIF/NIIS, not invented. |
@@ -265,7 +265,7 @@ So when you explain interoperability to your minister or your cabinet, lead with
 | 1 | Title slide. Title: 'The once-only promise'. | Standard ITU template. No images. |
 | 2 | Citizen's day slide. Single text block describing the same proof demanded three times. | The empathy beat — concrete, citizen-level. Text-only. |
 | 3 | What once-only requires. Three text rows: trusted source, lawful basis/consent, real-time fetch. | Connects the outcome back to the four layers without re-teaching them. |
-| 4 | Progressa once-only. Three text rows: the learner, the pre-fill from PNIA and PLR, asked once. | Previews the Topic 5 demonstration. Uses the bound Progressa institutions. |
+| 4 | Progressa once-only. Three text rows: the learner, the pre-fill from PNIA and PLR, asked once. | Previews the Module 5 demonstration. Uses the bound Progressa institutions. |
 | 5 | Why once-only is the north star. Two text rows: measurable; keeps the framework honest. | Reframes once-only as a management metric, not a slogan. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The quotable line for a ministerial briefing. |
 | 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the once-only references. |
@@ -479,9 +479,9 @@ Interoperability adds a twist that other digital programmes do not have. Every e
 
 The map tells you the sequence. Find a Champion consumer paired with a willing provider, and that is your first exchange — the one most likely to succeed and prove the framework. Use that first working exchange to move the Early Adopters, who needed to see it before committing. And bring the Observers along with evidence rather than argument — a working once-only exchange that citizens notice is more persuasive than any number of strategy meetings. You spend your scarce political capital where it moves the most agencies. And lock the Champions in before you build on them: a one-day inception workshop with the Tier 1 ministries, ending in a signed commitment letter from each, a named focal point and an agreed quick win. Programmes that skip the signature stall at the first cross-ministry decision, when a Champion turns out to have been a well-wisher.
 
-> _Slide 5 — Title: 'A bus needs an owner'. Body, single text block: 'None of this holds together without a body that governs the framework — admits members, sets service levels, resolves disputes. An interoperability platform with no owner decays in its second year. Governance is the next topic.'_
+> _Slide 5 — Title: 'A bus needs an owner'. Body, single text block: 'None of this holds together without a body that governs the framework — admits members, sets service levels, resolves disputes. An interoperability platform with no owner decays in its second year. Governance is the next module.'_
 
-One warning the stakeholder map makes visible. All of this — the tiers, the providers and consumers, the agreements — needs a body that governs the framework as a whole: that admits new members, sets the service levels, and resolves disputes when two agencies disagree. An interoperability platform with no owner decays in its second year, when the founding enthusiasm fades and no one is accountable for keeping it healthy. Designing that governing body is the subject of a later topic. The stakeholder map is what shows you why it is not optional.
+One warning the stakeholder map makes visible. All of this — the tiers, the providers and consumers, the agreements — needs a body that governs the framework as a whole: that admits new members, sets the service levels, and resolves disputes when two agencies disagree. An interoperability platform with no owner decays in its second year, when the founding enthusiasm fades and no one is accountable for keeping it healthy. Designing that governing body is the subject of a later module. The stakeholder map is what shows you why it is not optional.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Map the agencies into Champions, Early Adopters and Observers — and map provider against consumer for every exchange — so you spend authority where it moves the most agencies.'_
 
@@ -495,9 +495,9 @@ So the third foundation artefact is the stakeholder map. Three tiers — Champio
 | --- | --- | --- |
 | 1 | Title slide. Title: 'Mapping your stakeholders'. | Standard ITU template. No images. |
 | 2 | Three-tier slide. Three text rows: Champions, Early Adopters, Observers. | The core model. Text-only. |
-| 3 | Provider-vs-consumer slide. Two text rows on the two sides and their different incentives. | The interoperability-specific insight. Sets up fair service agreements (Topic 3/5). |
+| 3 | Provider-vs-consumer slide. Two text rows on the two sides and their different incentives. | The interoperability-specific insight. Sets up fair service agreements (Module 3/5). |
 | 4 | Sequencing slide. Four text rows: first exchange, move Early Adopters, evidence for Observers, lock the Champions in writing. | Turns the map into an onboarding sequence. |
-| 5 | Bus-needs-an-owner slide. Single text block previewing governance. | Sets up Topic 3. The 'decays in its second year' line is the memorable beat. |
+| 5 | Bus-needs-an-owner slide. Single text block previewing governance. | Sets up Module 3. The 'decays in its second year' line is the memorable beat. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
 | 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the EIF/NIIS references. |
 

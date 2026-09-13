@@ -218,7 +218,7 @@ The SLA sets the numbers a consumer can rely on. Availability — the uptime the
 
 > _Slide 3 — Title: 'The SLA makes the member obligations specific'. Body, single text block: 'The governance obligations said a member meets service levels. The SLA is where those service levels become specific numbers, agreed and signed. Without it, 'meets service levels' is a wish; with it, it is a commitment you can hold a member to.'_
 
-The SLA operationalises the member obligations from the governance topic. Those obligations said, in principle, that a member meets service levels; the SLA is where the service levels become specific numbers, agreed and signed. Without the SLA, 'meets service levels' is a wish. With it, it is a commitment the Operating Authority can hold a member to — and a number a consumer can plan around.
+The SLA operationalises the member obligations from the governance module. Those obligations said, in principle, that a member meets service levels; the SLA is where the service levels become specific numbers, agreed and signed. Without the SLA, 'meets service levels' is a wish. With it, it is a commitment the Operating Authority can hold a member to — and a number a consumer can plan around.
 
 One rule of fairness, and it is the rule that actually gets SLAs signed: set the numbers with the provider, not for them. A target the provider cannot meet is a target the provider will quietly ignore, and an SLA everyone ignores is worse than none. Agree numbers the provider can genuinely hit — and raise them over time as the platform matures — and the SLA becomes real rather than decorative. The template then makes it fast: fill in the targets for each service, agree them with the provider, sign, and reuse the same template for every service on the bus.
 
@@ -226,7 +226,7 @@ One rule of fairness, and it is the rule that actually gets SLAs signed: set the
 
 So the Service-Level Agreement is what turns a connected member into a dependable one. Availability, response time, support, incident response, change notice — the numbers a consumer can rely on, made specific from the governance obligations, agreed with the provider so they are real, and captured in a template you reuse for every service. That is the difference between a bus that works in a demonstration and one a country can run citizen services on.
 
-> _Slide 5 — Title: 'Sources'. Body: NIIS X-Road service-level / SLA guidance; the member obligations (Topic 3); EU EIF. Footer: 'Find the link in the description.'_
+> _Slide 5 — Title: 'Sources'. Body: NIIS X-Road service-level / SLA guidance; the member obligations (Module 3); EU EIF. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -234,7 +234,7 @@ So the Service-Level Agreement is what turns a connected member into a dependabl
 | --- | --- | --- |
 | 1 | Title slide. Title: 'Make 'connected' mean 'dependable' — the SLA'. | Standard ITU template. No images. |
 | 2 | What-the-SLA-sets slide. Five text rows of the SLA dimensions. | The core list. Text-only. |
-| 3 | SLA-makes-obligations-specific slide. Single text block linking to the governance obligations. | Ties the SLA to Topic 3. Text-only. |
+| 3 | SLA-makes-obligations-specific slide. Single text block linking to the governance obligations. | Ties the SLA to Module 3. Text-only. |
 | 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
 | 5 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the SLA references. |
 
@@ -289,7 +289,7 @@ Registering a member produces two configuration artefacts. The subsystem — the
 
 The bb-config-gen play generates these from the member's details and the access policy. But every identifier — the member code, the subsystem code, the certificate references — is a [confirm] until you check it against the live X-Road registry. This is the place the confirm discipline matters most in the whole framework: a wrong member code does not throw a clear error. It silently routes nowhere, or worse, to the wrong agency, which in an interoperability bus means one citizen's data going to a service that asked about another. Generate the registration; confirm every identifier against the registry before you deploy it.
 
-And this is the same registration shape for every member — fill the member's details into the same template, generate the same two artefacts. The onboarding workflow and the governance RACI wrap it into a repeatable process: the Member Requirements confirm the agency is ready, the RACI says which body approves, and this registration configuration admits it. You produce the executable configuration here; the workflow and the approvals from the earlier topics surround it. That reuse — one registration pattern applied to every member — is what lets the framework onboard its twentieth agency as cleanly as its second.
+And this is the same registration shape for every member — fill the member's details into the same template, generate the same two artefacts. The onboarding workflow and the governance RACI wrap it into a repeatable process: the Member Requirements confirm the agency is ready, the RACI says which body approves, and this registration configuration admits it. You produce the executable configuration here; the workflow and the approvals from the earlier modules surround it. That reuse — one registration pattern applied to every member — is what lets the framework onboard its twentieth agency as cleanly as its second.
 
 > _Slide 4 — Title: 'Then the member proves it conforms'. Body, three text rows: 'Registration admits the member; a conformance test is the gate before its first service goes live.' 'Self-assessment for the routine; a third-party check for high-risk services; a test suite the operator runs.' 'Re-tested every two years and on every standards change — a member that passed once is not a member that conforms now.'_
 
@@ -431,7 +431,7 @@ This is the moment the whole framework exists for: a real once-only exchange, ru
 
 > _Slide 2 — Title: 'The scenario'. Body, three text rows: 'A learner applies for a credential at the examination authority, PNEA.' 'Without once-only: the learner brings paper proof of identity and of enrolment.' 'With once-only: PNEA pre-fills identity from PNIA and enrolment from PLR, over the bus, in seconds.'_
 
-The scenario is concrete and ordinary. A learner applies for a credential at the national examination authority, PNEA. Without once-only, PNEA asks the learner to bring paper proof of who they are and proof that they were enrolled. With once-only, the moment the learner gives their national ID, PNEA's service pre-fills their identity from the national identity authority, PNIA, and their enrolment from the learner registry, PLR — both fetched over the bus, with a lawful basis, in seconds. The learner is asked once. That is the promise from the very first topic of this knowledge product, now actually running.
+The scenario is concrete and ordinary. A learner applies for a credential at the national examination authority, PNEA. Without once-only, PNEA asks the learner to bring paper proof of who they are and proof that they were enrolled. With once-only, the moment the learner gives their national ID, PNEA's service pre-fills their identity from the national identity authority, PNIA, and their enrolment from the learner registry, PLR — both fetched over the bus, with a lawful basis, in seconds. The learner is asked once. That is the promise from the very first module of this knowledge product, now actually running.
 
 > _Slide 3 — Title: 'Every layer is in this one call'. Body, four text rows: 'Technical — routed across the trust zones, secured by mutual TLS.' 'Legal — returns only the fields the purpose needs, under the decree.' 'Organisational — between members the governance admitted, under their obligations.' 'Semantic — resolves only because the agencies agree what 'learner' and 'enrolment' mean.'_
 
@@ -457,7 +457,7 @@ So the once-only exchange, live, is where this knowledge product proves itself. 
 | 2 | Scenario slide. Three text rows: the learner, without once-only, with once-only. | The concrete citizen scenario, on the bound Progressa institutions. Text-only. |
 | 3 | Every-layer slide. Four text rows mapping the call to the four layers. | The synthesis of all of KP2 in one call. Carries the lingua-franca argument (semantic row). Text-only. |
 | 4 | Acceptance-check slide. Single text block on the acceptance check and 'explained vs running'. | The build-pack acceptance — the proving moment. |
-| 5 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line that crowns the topic. |
+| 5 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line that crowns the module. |
 | 6 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the once-only reference. |
 
 ### AI usage tip — Script and verify the once-only exchange (the acceptance check)
@@ -501,13 +501,13 @@ Script the once-only acceptance check for [country X] / Progressa's interoperabi
 
 > _Slide 1 — Title: 'From demonstration to production'. Voice-over begins._
 
-The demonstration proves the pattern. It is not, and must not be mistaken for, a production system. The architect's last job in this topic is to know exactly what changes between the demonstration and a production-grade federation, so the country plans and budgets for that gap rather than discovering it after go-live — which is the moment it is most expensive to discover.
+The demonstration proves the pattern. It is not, and must not be mistaken for, a production system. The architect's last job in this module is to know exactly what changes between the demonstration and a production-grade federation, so the country plans and budgets for that gap rather than discovering it after go-live — which is the moment it is most expensive to discover.
 
 > _Slide 2 — Title: 'What changes for production'. Body, eight text rows: 'Separate hosts, not one VM.' 'A real certification authority, not a Test CA.' 'High availability and redundancy.' 'Real monitoring and alerting.' 'Capacity for real volumes.' '24/7 operational support.' 'Security hardening and audit.' 'Migrate and retire the legacy point-to-point links the bus replaces.'_
 
 The differences are specific. The demonstration runs everything on one VM; production separates the components onto real, sized hosts. The demonstration uses a Test CA; production uses a real certification authority. Production adds high availability and redundancy, so a failed component does not stop the bus. It adds real monitoring and alerting, so problems are caught before citizens notice them. It is sized for real transaction volumes, not a handful of demonstration calls. It has round-the-clock operational support — the Operating Authority's standing team. And it is security-hardened and audited to the standard a national platform carrying citizen data must meet.
 
-There is one more production task, and it does not appear on the hardening list because it concerns the old world rather than the new: migrating each agency off the legacy point-to-point links the bus replaces, and retiring them. A new bus does not retire the old links by itself — left alone, you run both, which is worse than either. So per agency the pattern is parallel-run then cut over: stand up the new once-only exchange, run it beside the agency's existing point-to-point link until you have confirmed the two agree, then switch the consumers across and decommission the old link. Retiring those links is the step that actually ends the point-to-point sprawl Topic 1 diagnosed — schedule it, agency by agency, in the multi-agency phase of the plan, with a migration-and-retirement step in each onboarding.
+There is one more production task, and it does not appear on the hardening list because it concerns the old world rather than the new: migrating each agency off the legacy point-to-point links the bus replaces, and retiring them. A new bus does not retire the old links by itself — left alone, you run both, which is worse than either. So per agency the pattern is parallel-run then cut over: stand up the new once-only exchange, run it beside the agency's existing point-to-point link until you have confirmed the two agree, then switch the consumers across and decommission the old link. Retiring those links is the step that actually ends the point-to-point sprawl Module 1 diagnosed — schedule it, agency by agency, in the multi-agency phase of the plan, with a migration-and-retirement step in each onboarding.
 
 > _Slide 3 — Title: 'The shape of the config does not change'. Body, single text block: 'The subsystem registrations, the service descriptions, the semantic map are the same. Production changes the scale, the resilience and the operations around them — not the design. So the demonstration genuinely de-risks the production build: you proved the pattern, and production is the same pattern, hardened.'_
 
@@ -517,7 +517,7 @@ The one thing not to do is ship the demonstration as production. A sandboxed sin
 
 > _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Production is the demonstration's pattern, hardened — separate hosts, a real CA, high availability, monitoring, support. Plan the gap; do not ship the demo.'_
 
-So you close the implementation topic by being honest about the gap between demonstration and production. Separate hosts, a real certification authority, high availability, monitoring, capacity, support, hardening — the production differences are specific and plannable. The configuration's shape does not change, so the demonstration de-risks the build. Plan the gap into the roadmap, budget it with the cost frame, and never ship the demonstration as the production platform. That is how a proven pattern becomes a system a country runs.
+So you close the implementation module by being honest about the gap between demonstration and production. Separate hosts, a real certification authority, high availability, monitoring, capacity, support, hardening — the production differences are specific and plannable. The configuration's shape does not change, so the demonstration de-risks the build. Plan the gap into the roadmap, budget it with the cost frame, and never ship the demonstration as the production platform. That is how a proven pattern becomes a system a country runs.
 
 > _Slide 5 — Title: 'Sources'. Body: NIIS X-Road production and operations guidance; ITU DPI Safeguards. Footer: 'Find the link in the description.'_
 
@@ -528,7 +528,7 @@ So you close the implementation topic by being honest about the gap between demo
 | 1 | Title slide. Title: 'From demonstration to production'. | Standard ITU template. No images. |
 | 2 | What-changes slide. Eight text rows of production differences (incl. migrating off and retiring the legacy point-to-point links). | The gap, made specific. Plain text list, readable on mobile. |
 | 3 | Config-shape-unchanged slide. Single text block on de-risking. | The reassuring synthesis — the demo de-risks the build. Text-only. |
-| 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line that closes the topic. |
+| 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line that closes the module. |
 | 5 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the production-guidance references. |
 
 ### AI usage tip — Build the demonstration-to-production gap checklist
@@ -657,7 +657,7 @@ The safeguard is the same shape as always. The AI flags the contradiction; a hum
 
 So the consistency cross-check keeps the framework's three foundational documents telling the same story. The AI reads the decree, the Governance Pack and the standards portfolio together and flags where they have drifted apart; a human decides which is right and fixes it. Run it on every change, and you catch the contradictions yourself, before the reviewer, the member or the auditor does.
 
-> _Slide 5 — Title: 'Sources'. Body: the deliverables of this knowledge product — the decree (Topic 2), the Governance Pack (Topic 3), the standards portfolio (Topic 4); EU EIF. Footer: 'Find the link in the description.'_
+> _Slide 5 — Title: 'Sources'. Body: the deliverables of this knowledge product — the decree (Module 2), the Governance Pack (Module 3), the standards portfolio (Module 4); EU EIF. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -694,7 +694,7 @@ Below are three foundational documents of [country X]'s Government Interoperabil
 | Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
 | ToR §4 coverage | §4.3 (AI integration — consistency cross-check); §4.1 (methodology, framework integrity) |
 | PAERA citations | (cross-check operates over the KP2 deliverables and EIF) |
-| External-link list | The deliverables of this knowledge product — the decree (Topic 2), the Governance Pack (Topic 3), the standards portfolio (Topic 4); EU EIF |
+| External-link list | The deliverables of this knowledge product — the decree (Module 2), the Governance Pack (Module 3), the standards portfolio (Module 4); EU EIF |
 
 ## 3.10 Subtopic 5.10 — Carry the framework to the next sector
 
@@ -716,7 +716,7 @@ Everything in this knowledge product was demonstrated on education — Progressa
 
 Split the framework in two. What carries unchanged to health, or agriculture, or social protection: the four-layer model, the decree pattern, the governance — the tiers, the RACI, the Operating Authority — the standards portfolio, and the bus itself, already built and running. What is genuinely new per sector: the semantic layer, because health speaks a different vocabulary than education, and the specific exchanges and services that sector needs. That — the vocabularies and the services — is the whole of the difference. And a word on order. This knowledge product demonstrated on education because the worked case was to hand; most countries sequence the framework the other way round. The first wave is usually tax, civil registration, the business register and health — high-volume, foundational reference data that every other sector reads — with education, justice, social protection and customs in the second wave. Whichever sector goes first pays for the platform; the rule that the next is cheaper holds either way.
 
-And this is the re-use argument at the scale of the whole framework. The first sector pays to build the bus, the governance and the legal mandate; the second sector reuses all of it and pays only for its own semantics and services; the third reuses more still. This is exactly the whole-of-government planning logic from the very first topic, now visible across sectors: build the shared platform once, and every sector after consumes it. The second sector is cheaper than the first, and the third cheaper than the second — and only a framework built deliberately, for the whole of government, makes that compounding possible. A set of separate sector projects never gets cheaper; a planned framework does.
+And this is the re-use argument at the scale of the whole framework. The first sector pays to build the bus, the governance and the legal mandate; the second sector reuses all of it and pays only for its own semantics and services; the third reuses more still. This is exactly the whole-of-government planning logic from the very first module, now visible across sectors: build the shared platform once, and every sector after consumes it. The second sector is cheaper than the first, and the third cheaper than the second — and only a framework built deliberately, for the whole of government, makes that compounding possible. A set of separate sector projects never gets cheaper; a planned framework does.
 
 > _Slide 3 — Title: 'The portability map is the next sector's business case'. Body, single text block: 'For a new sector, list what is reused — most of it — and what is new. That map is the business case: here is the small, sector-specific part we build; here is the large platform we already have.'_
 
@@ -831,13 +831,13 @@ Compiled across the ten subtopics for ITU's video production pipeline. To be spl
 | --- | --- |
 | 5.1 | Estonia X-Road build-out (cost and timeline benchmark); ITU DPI Safeguards (investment guidance); NIIS X-Road implementation guidance. |
 | 5.2 | NIIS X-Road member requirements and onboarding (niis.org); EU EIF. |
-| 5.3 | NIIS X-Road service-level / SLA guidance; the member obligations (Topic 3); EU EIF. |
+| 5.3 | NIIS X-Road service-level / SLA guidance; the member obligations (Module 3); EU EIF. |
 | 5.4 | NIIS X-Road member and subsystem registration; access-control list configuration (niis.org). |
 | 5.5 | NIIS X-Road federation — Central Server, Security Server, configuration and Test CA (niis.org); the Linkup federation (ITU cloud). |
 | 5.6 | PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check. |
 | 5.7 | NIIS X-Road production and operations guidance; ITU DPI Safeguards. |
 | 5.8 | NIIS X-Road monitoring and operational logs (niis.org); the Linkup federation (ITU cloud); ITU DPI Safeguards. |
-| 5.9 | The deliverables of this knowledge product — the decree (Topic 2), the Governance Pack (Topic 3), the standards portfolio (Topic 4); EU EIF. |
+| 5.9 | The deliverables of this knowledge product — the decree (Module 2), the Governance Pack (Module 3), the standards portfolio (Module 4); EU EIF. |
 | 5.10 | ToR §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3 (interoperability framing). |
 
 All references are publicly accessible and verifiable. The Tuesday review may add or refine items based on ITU's preferred citation style for the YouTube channel.

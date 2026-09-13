@@ -396,7 +396,7 @@ So the four Technical Working Groups are the fifth piece of the Governance Pack.
 | Slide | Element (text-only) | Notes |
 | --- | --- | --- |
 | 1 | Title slide. Title: 'The four Technical Working Groups'. | Standard ITU template. No images. |
-| 2 | Four-groups slide. Four text rows: specification, semantics, security, onboarding. | The core structure. Plain text list. |
+| 2 | Four-groups slide. Four text rows: security, semantics, APIs, platform operations. | The core structure. Plain text list. |
 | 3 | Semantics slide. Single text block on meaning as a business decision. | Carries the shared-language argument. Text-only. |
 | 4 | Standing-not-project slide. Two text rows contrasting project teams and Working Groups. | The persistence point. Text-only. |
 | 5 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
@@ -422,7 +422,7 @@ Draft charters for the four standing Technical Working Groups of [country X]'s G
 | --- | --- |
 | Working title | The four Technical Working Groups |
 | YouTube-optimised title | The four standing groups that keep a growing interoperability bus coherent |
-| Description (60 words) | As a framework grows, the technical work multiplies — and done ad hoc, the bus drifts into incoherence. Four standing Technical Working Groups keep it coherent: specification, semantics, security and onboarding. Semantics is where business and IT agree what the data means. Standing, not project. Four minutes for digital-government leaders. AI charter-drafting prompt in the description. |
+| Description (60 words) | As a framework grows, the technical work multiplies — and done ad hoc, the bus drifts into incoherence. Four standing Technical Working Groups keep it coherent: security, semantics, APIs and platform operations. Semantics is where business and IT agree what the data means. Standing, not project. Four minutes for digital-government leaders. AI charter-drafting prompt in the description. |
 | Tags | technical working groups, semantic interoperability, standards governance, security, onboarding, X-Road governance, EIF, GovStack, digital government |
 | Playlist (YouTube) | KP2 — Topic 3: Governance — three-tier with RACI |
 | ToR §4 coverage | §4.1 (methodology, governance); §4.3 (AI integration — Working Group charters prompt) |
@@ -459,7 +459,7 @@ Two more things need a standing owner, and both are missed as often as change co
 
 > _Slide 5 — Title: 'The Governance Pack is the organisational config'. Body, single text block: 'The three-tier structure, the RACI, the member obligations, the Working Group charters and the change-control process together are the organisational-layer configuration of the build pack. Acceptance check: every recurring decision has one named Accountable; every member has a signed agreement; the standards portfolio has a named owner and a written change process.'_
 
-This is why everything in this topic adds up to the Governance Pack — and why the Governance Pack is the organisational-layer configuration of the runnable build pack, just as the decree is the legal-layer configuration. The pack has a concrete acceptance check. Every recurring decision has exactly one named Accountable body. Every member has a signed agreement. There is a named owner for the standards portfolio, a written change-control process, a conformance regime, and a semantic registry with a steward. When those checks pass, the organisational layer of the framework is genuinely done — a living configuration that keeps working as the framework grows, not a binder that goes on a shelf after launch.
+This is why everything in this module adds up to the Governance Pack — and why the Governance Pack is the organisational-layer configuration of the runnable build pack, just as the decree is the legal-layer configuration. The pack has a concrete acceptance check. Every recurring decision has exactly one named Accountable body. Every member has a signed agreement. There is a named owner for the standards portfolio, a written change-control process, a conformance regime, and a semantic registry with a steward. When those checks pass, the organisational layer of the framework is genuinely done — a living configuration that keeps working as the framework grows, not a binder that goes on a shelf after launch.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Change control and a named owner make governance a living configuration — so the framework stays current for years instead of freezing at launch.'_
 
@@ -476,7 +476,7 @@ So governance is configuration that lives. The decree is the legal configuration
 | 3 | Standards-portfolio-owner slide. Single text block on the named role. | The single most practical governance role. Text-only. |
 | 4 | Standing-assets slide. Two text rows: the conformance regime, the semantic registry. | The two standing mechanisms the source method adds to change control. Text-only. |
 | 5 | Governance-Pack-as-config slide. Single text block naming the artefact and its acceptance check. | The build-pack connection — the organisational-layer config and its check. |
-| 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line that closes the topic. |
+| 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line that closes the module. |
 | 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the references. |
 
 ### AI usage tip — Set up your change-control process and standards-portfolio register
@@ -566,7 +566,7 @@ Compiled across the six subtopics for ITU's video production pipeline. To be spl
 | 3.2 | EU EIF / NIIS X-Road three-tier governance reference; Estonia governance model; PAERA v1.0 §3.1.3. |
 | 3.3 | EU EIF / NIIS X-Road governance (roles and responsibilities, RACI); PAERA v1.0 §3.1.3. |
 | 3.4 | EU EIF / NIIS X-Road member model and member obligations; PAERA v1.0 §3.1.3. |
-| 3.5 | EU EIF / NIIS X-Road technical governance (specification, semantics, security, onboarding working groups); PAERA v1.0 §3.1.3. |
+| 3.5 | EU EIF / NIIS X-Road technical governance (security, semantics, APIs and platform-operations working groups); PAERA v1.0 §3.1.3. |
 | 3.6 | EU EIF / NIIS X-Road (change control, standards governance); the Governance Pack (build-pack artefact); PAERA v1.0 §3.1.3. |
 
 All references are publicly accessible and verifiable. The Tuesday review may add or refine items based on ITU's preferred citation style for the YouTube channel.

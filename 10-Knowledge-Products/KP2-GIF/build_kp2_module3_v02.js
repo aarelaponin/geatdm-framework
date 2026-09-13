@@ -518,7 +518,7 @@ body.push(...renderSubtopic({
   slideSpecRows: [
     ["1", "Title slide. Title: 'The four Technical Working Groups'.",
       "Standard ITU template. No images."],
-    ["2", "Four-groups slide. Four text rows: specification, semantics, security, onboarding.",
+    ["2", "Four-groups slide. Four text rows: security, semantics, APIs, platform operations.",
       "The core structure. Plain text list."],
     ["3", "Semantics slide. Single text block on meaning as a business decision.",
       "Carries the shared-language argument. Text-only."],
@@ -539,7 +539,7 @@ body.push(...renderSubtopic({
   metadataRows: [
     ["Working title",          "The four Technical Working Groups"],
     ["YouTube-optimised title", "The four standing groups that keep a growing interoperability bus coherent"],
-    ["Description (60 words)", "As a framework grows, the technical work multiplies — and done ad hoc, the bus drifts into incoherence. Four standing Technical Working Groups keep it coherent: specification, semantics, security and onboarding. Semantics is where business and IT agree what the data means. Standing, not project. Four minutes for digital-government leaders. AI charter-drafting prompt in the description."],
+    ["Description (60 words)", "As a framework grows, the technical work multiplies — and done ad hoc, the bus drifts into incoherence. Four standing Technical Working Groups keep it coherent: security, semantics, APIs and platform operations. Semantics is where business and IT agree what the data means. Standing, not project. Four minutes for digital-government leaders. AI charter-drafting prompt in the description."],
     ["Tags",                    "technical working groups, semantic interoperability, standards governance, security, onboarding, X-Road governance, EIF, GovStack, digital government"],
     ["Playlist (YouTube)",      "KP2 — Topic 3: Governance — three-tier with RACI"],
     ["ToR §4 coverage",         "§4.1 (methodology, governance); §4.3 (AI integration — Working Group charters prompt)"],
@@ -566,7 +566,7 @@ body.push(...renderSubtopic({
     { cue: "Slide 4 — Title: 'Two more standing assets'. Body, two text rows: 'A conformance regime — how a member proves it meets a binding standard: self-assessment, a third-party check, or a test suite the operator runs; a transition period for legacy systems; re-certification every two years and on every standards change.' 'A semantic registry — the country's data dictionary, code lists and the cross-walks between sector vocabularies, stewarded by the operator, owned by the sector data owners.'" },
     { text: "Two more things need a standing owner, and both are missed as often as change control. The first is a conformance regime. A binding standard with no way to prove conformance is a wish. So each standard in the register carries a binding date, a transition period for legacy systems, and a test approach — a member's self-assessment for the routine, a third-party check for high-risk services, or a conformance test suite the operator runs. Members are re-certified on a cycle, typically every two years, and whenever a standard changes. The second is the semantic registry — the country's data dictionary, its code lists, and the cross-walks between one sector's vocabulary and another's. The operator stewards it; the sector data owners own the entries. Without it, the semantic map you agree for the first exchange is agreed again, slightly differently, for the second." },
     { cue: "Slide 5 — Title: 'The Governance Pack is the organisational config'. Body, single text block: 'The three-tier structure, the RACI, the member obligations, the Working Group charters and the change-control process together are the organisational-layer configuration of the build pack. Acceptance check: every recurring decision has one named Accountable; every member has a signed agreement; the standards portfolio has a named owner and a written change process.'" },
-    { text: "This is why everything in this topic adds up to the Governance Pack — and why the Governance Pack is the organisational-layer configuration of the runnable build pack, just as the decree is the legal-layer configuration. The pack has a concrete acceptance check. Every recurring decision has exactly one named Accountable body. Every member has a signed agreement. There is a named owner for the standards portfolio, a written change-control process, a conformance regime, and a semantic registry with a steward. When those checks pass, the organisational layer of the framework is genuinely done — a living configuration that keeps working as the framework grows, not a binder that goes on a shelf after launch." },
+    { text: "This is why everything in this module adds up to the Governance Pack — and why the Governance Pack is the organisational-layer configuration of the runnable build pack, just as the decree is the legal-layer configuration. The pack has a concrete acceptance check. Every recurring decision has exactly one named Accountable body. Every member has a signed agreement. There is a named owner for the standards portfolio, a written change-control process, a conformance regime, and a semantic registry with a steward. When those checks pass, the organisational layer of the framework is genuinely done — a living configuration that keeps working as the framework grows, not a binder that goes on a shelf after launch." },
     { cue: "Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Change control and a named owner make governance a living configuration — so the framework stays current for years instead of freezing at launch.'" },
     { text: "So governance is configuration that lives. The decree is the legal configuration; the Governance Pack is the organisational configuration; together they decide who is on the bus and how it changes over time. With both in place and kept current through change control, an interoperability framework can grow for years without drifting away from what it was designed to be. That durability is the entire reason to govern it deliberately — and it is what hands a sound organisational layer to the architects who build the bus." },
     { cue: "Slide 7 — Title: 'Sources'. Body: EU EIF / NIIS X-Road (change control, standards governance); ISO/IEC 11179 (the semantic registry); PAERA v1.0 §3.1.3; the Governance Pack (build-pack artefact). Footer: 'Find the link in the description.'" }
@@ -583,7 +583,7 @@ body.push(...renderSubtopic({
     ["5", "Governance-Pack-as-config slide. Single text block naming the artefact and its acceptance check.",
       "The build-pack connection — the organisational-layer config and its check."],
     ["6", "Single-sentence summary slide. One large text block (Arial Bold 28pt).",
-      "The take-home line that closes the topic."],
+      "The take-home line that closes the module."],
     ["7", "Sources slide. Footer: 'Find the link in the description.'",
       "Lets viewers verify the references."]
   ],
@@ -664,7 +664,7 @@ body.push(
     ["3.2", "EU EIF / NIIS X-Road three-tier governance reference; Estonia governance model; PAERA v1.0 §3.1.3."],
     ["3.3", "EU EIF / NIIS X-Road governance (roles and responsibilities, RACI); PAERA v1.0 §3.1.3."],
     ["3.4", "EU EIF / NIIS X-Road member model and member obligations; PAERA v1.0 §3.1.3."],
-    ["3.5", "EU EIF / NIIS X-Road technical governance (specification, semantics, security, onboarding working groups); PAERA v1.0 §3.1.3."],
+    ["3.5", "EU EIF / NIIS X-Road technical governance (security, semantics, APIs and platform-operations working groups); PAERA v1.0 §3.1.3."],
     ["3.6", "EU EIF / NIIS X-Road (change control, standards governance); the Governance Pack (build-pack artefact); PAERA v1.0 §3.1.3."]
   ]),
   spacer(120),

@@ -123,8 +123,8 @@ edit_cover(
     note_text='Cover for the combined Module 1 deck. Each section that follows is one standalone '
               '~4–5 minute video. This is the Strategist-facing entry point to KP2 — the national '
               'interoperability authority, the ministry CIO, the Ministry of Justice sponsor, the '
-              'development-partner lead. Where KP1 taught how to plan the architecture, KP2 teaches '
-              'how to build the interoperability layer over it.')
+              'development-partner lead. Where Enterprise Architecture plans the whole of government, '
+              'this knowledge product teaches how to build the interoperability layer over that plan.')
 
 # ---------------------------------------------------------------- AGENDA (edit slide 2)
 edit_agenda(
@@ -773,7 +773,7 @@ block(prs, 'A bus needs an owner',
       "admits new members, sets the service levels, and resolves disputes when two agencies "
       "disagree. An interoperability platform with no owner decays in its second year, when the "
       "founding enthusiasm fades and no one is accountable for keeping it healthy. Designing that "
-      "governing body is the subject of a later topic. The stakeholder map is what shows you why it "
+      "governing body is the subject of a later module. The stakeholder map is what shows you why it "
       "is not optional.")
 
 big_slide(prs,
