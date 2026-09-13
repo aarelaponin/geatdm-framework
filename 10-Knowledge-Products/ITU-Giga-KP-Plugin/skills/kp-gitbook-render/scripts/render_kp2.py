@@ -111,7 +111,7 @@ INTERNAL = [
     (r"the four-phase plan \((?:Topic|Module) 5\)", "module-5/5-1.md"),
     (r"kp-solution-verify|build-pack acceptance check", "build-pack/acceptance.md"),
     (r"Linkup federation", "build-pack/run.md"),
-    (r"ToR §4\.\d", "README.md"),
+    (r"(?:ToR|Terms of Reference) §4\.\d", "README.md"),
     (r"KP2 deliverables|deliverables of this knowledge product|KP2 method end-to-end|KP2 AI plays", "README.md"),
     (r"Knowledge Products and Video Materials Guide", "README.md"),
 ]

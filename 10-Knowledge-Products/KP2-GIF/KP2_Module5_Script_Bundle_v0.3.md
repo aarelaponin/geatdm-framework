@@ -285,9 +285,9 @@ Everything so far has been preparation — the phased plan, the Member Requireme
 
 Registering a member produces two configuration artefacts. The subsystem — the member's registered identity on the bus, made of its member class, member code and subsystem code, the identifiers the bus uses to route a call to it. And the access-control list — which other members are allowed to call this member's services, because being on the bus does not mean everyone may call everything; access is granted deliberately, service by service. Together, these two artefacts admit the agency and say exactly who may talk to it.
 
-> _Slide 3 — Title: 'Generate, then confirm against the registry'. Body, two text rows: 'bb-config-gen drafts the subsystem and the access-control entries from the member's details and the access policy.' 'Every identifier is a [confirm] until checked against the live X-Road registry — a wrong member code routes nowhere, or to the wrong agency.'_
+> _Slide 3 — Title: 'Generate, then confirm against the registry'. Body, two text rows: 'The AI prompt drafts the subsystem and the access-control entries from the member's details and the access policy.' 'Every identifier is a [confirm] until checked against the live X-Road registry — a wrong member code routes nowhere, or to the wrong agency.'_
 
-The bb-config-gen play generates these from the member's details and the access policy. But every identifier — the member code, the subsystem code, the certificate references — is a [confirm] until you check it against the live X-Road registry. This is the place the confirm discipline matters most in the whole framework: a wrong member code does not throw a clear error. It silently routes nowhere, or worse, to the wrong agency, which in an interoperability bus means one citizen's data going to a service that asked about another. Generate the registration; confirm every identifier against the registry before you deploy it.
+The AI prompt for this video generates these from the member's details and the access policy. But every identifier — the member code, the subsystem code, the certificate references — is a [confirm] until you check it against the live X-Road registry. This is the place the confirm discipline matters most in the whole framework: a wrong member code does not throw a clear error. It silently routes nowhere, or worse, to the wrong agency, which in an interoperability bus means one citizen's data going to a service that asked about another. Generate the registration; confirm every identifier against the registry before you deploy it.
 
 And this is the same registration shape for every member — fill the member's details into the same template, generate the same two artefacts. The onboarding workflow and the governance RACI wrap it into a repeatable process: the Member Requirements confirm the agency is ready, the RACI says which body approves, and this registration configuration admits it. You produce the executable configuration here; the workflow and the approvals from the earlier modules surround it. That reuse — one registration pattern applied to every member — is what lets the framework onboard its twentieth agency as cleanly as its second.
 
@@ -301,7 +301,7 @@ The configuration goes straight into the build pack, under the member's folder �
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The subsystem registration and the access-control list admit a member — generated, confirmed, deployed — and a conformance test is the gate before its first service goes live.'_
 
-So registering a member is where onboarding becomes configuration. Generate the subsystem and the access-control list with bb-config-gen, confirm every identifier against the live registry, and deploy them into the build pack. Two artefacts, the same shape for every member, admitting one agency to the bus and naming who may call it. That is the technical core of onboarding — and the configuration the demonstration runs on.
+So registering a member is where onboarding becomes configuration. Generate the subsystem and the access-control list with the AI prompt, confirm every identifier against the live registry, and deploy them into the build pack. Two artefacts, the same shape for every member, admitting one agency to the bus and naming who may call it. That is the technical core of onboarding — and the configuration the demonstration runs on.
 
 > _Slide 7 — Title: 'Sources'. Body: NIIS X-Road member and subsystem registration; access-control list configuration. Footer: 'Find the link in the description.'_
 
@@ -311,7 +311,7 @@ So registering a member is where onboarding becomes configuration. Generate the 
 | --- | --- | --- |
 | 1 | Title slide. Title: 'Register a member on X-Road'. | Standard ITU template. No images. |
 | 2 | Two-artefacts slide. Two text rows: the subsystem, the access-control list. | The config artefacts. Identifiers glossed in plain words. Text-only. |
-| 3 | Generate-then-confirm slide. Two text rows: bb-config-gen drafts; [confirm] against the registry. | The anti-invention safeguard, at its highest-stakes point. |
+| 3 | Generate-then-confirm slide. Two text rows: the AI prompt drafts; [confirm] against the registry. | The anti-invention safeguard, at its highest-stakes point. |
 | 4 | Conformance-gate slide. Three text rows: the gate, the three test approaches, re-certification. | The step between registration and first service. Text-only. |
 | 5 | It-is-config slide. Single text block on the build pack and its acceptance check. | The build-pack connection — executable config, not paperwork. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
@@ -319,7 +319,7 @@ So registering a member is where onboarding becomes configuration. Generate the 
 
 ### AI usage tip — Generate the X-Road member registration (subsystem + ACL)
 
-**What the prompt does:** An architect onboarding an agency needs the X-Road subsystem registration and the access-control list generated from the member's details and the access policy — the config that admits the member. This is the bb-config-gen play for member onboarding.
+**What the prompt does:** An architect onboarding an agency needs the X-Road subsystem registration and the access-control list generated from the member's details and the access policy — the config that admits the member. This is the member-registration play for onboarding.
 
 **Prompt template (copy-paste into Claude):**
 
@@ -720,13 +720,13 @@ And this is the re-use argument at the scale of the whole framework. The first s
 
 > _Slide 3 — Title: 'The portability map is the next sector's business case'. Body, single text block: 'For a new sector, list what is reused — most of it — and what is new. That map is the business case: here is the small, sector-specific part we build; here is the large platform we already have.'_
 
-This is the ToR's portability commitment, and it is not a footnote — it is the reason an interoperability framework is worth its cost. A platform that served only education would be hard to justify; a platform that serves education first and then every other sector at a fraction of the cost is the investment a Strategist can defend for a decade. So when you take the next sector to your minister, bring the portability map: here is what we reuse, which is most of it, and here is the small, sector-specific part we build new. That map gets cheaper to make every time, and it is the business case for the next sector.
+Portability is built in on purpose, and it is not a footnote — it is the reason an interoperability framework is worth its cost. A platform that served only education would be hard to justify; a platform that serves education first and then every other sector at a fraction of the cost is the investment a strategist can defend for a decade. So when you take the next sector to your minister, bring the portability map: here is what we reuse, which is most of it, and here is the small, sector-specific part we build new. That map gets cheaper to make every time, and it is the business case for the next sector.
 
 > _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The framework is sector-portable — build the platform once, reuse it everywhere, and the next sector is cheaper than the last.'_
 
 So the framework you built for education is sector-portable. Most of it — the bus, the governance, the legal mandate, the standards — carries unchanged; only the vocabularies and the services are new per sector. Build the platform once, reuse it everywhere, and let every sector after the first be cheaper than the one before. That compounding re-use is the framework's lasting value.
 
-> _Slide 5 — Title: 'Sources'. Body: ToR §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3. Footer: 'Find the link in the description.'_
+> _Slide 5 — Title: 'Sources'. Body: Terms of Reference §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -763,7 +763,7 @@ I built a Government Interoperability Framework for [country X] in the education
 | Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
 | ToR §4 coverage | §4.4 (sector portability) — primary; §4.1 (methodology); §4.3 (AI integration — portability-map prompt) |
 | PAERA citations | §3.4.3 Interoperability framing (the four-layer model cited to EIF) |
-| External-link list | ToR §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3 |
+| External-link list | Terms of Reference §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3 |
 
 ## 4. Production notes
 
@@ -838,6 +838,6 @@ Compiled across the ten subtopics for ITU's video production pipeline. To be spl
 | 5.7 | NIIS X-Road production and operations guidance; ITU DPI Safeguards. |
 | 5.8 | NIIS X-Road monitoring and operational logs (niis.org); the Linkup federation (ITU cloud); ITU DPI Safeguards. |
 | 5.9 | The deliverables of this knowledge product — the decree (Module 2), the Governance Pack (Module 3), the standards portfolio (Module 4); EU EIF. |
-| 5.10 | ToR §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3 (interoperability framing). |
+| 5.10 | Terms of Reference §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3 (interoperability framing). |
 
 All references are publicly accessible and verifiable. The Tuesday review may add or refine items based on ITU's preferred citation style for the YouTube channel.
