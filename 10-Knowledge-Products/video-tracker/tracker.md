@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-13 16:33 (data v2)
+# KP video tracker — generated 2026-09-13 16:46 (data v2)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -119,14 +119,14 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 4.0 | Module 4 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 4.1 | Place every component — the four functional layers | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 4.2 | Secure every call — the three trust zones | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 4.3 | Adopt the standards portfolio | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 4.4 | Generate the semantic map | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 4.5 | Generate a service contract | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 4.6 | Put a real data source on the bus — the Giga case | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 4.7 | Wire a service onto the bus | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 4.8 | Make the exchange lawful — the data-protection envelope | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.1 | Place every component — the four functional layers | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 4.2 | Secure every call — the three trust zones | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 4.3 | Adopt the standards portfolio | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 4.4 | Generate the semantic map | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 4.5 | Generate a service contract | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 4.6 | Put a real data source on the bus — the Giga case | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 4.7 | Wire a service onto the bus | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 4.8 | Make the exchange lawful — the data-protection envelope | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
 
 ### Module 5 — Implementation + member onboarding + the Linkup demo (Architect)
 

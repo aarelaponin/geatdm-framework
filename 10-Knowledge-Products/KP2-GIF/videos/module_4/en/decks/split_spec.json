@@ -1,0 +1,89 @@
+{
+  "kicker_prefix": "Government Interoperability Framework · Module 4",
+  "audience": "Chief or senior architect · integration lead · agency technical lead",
+  "out_pattern": "KP2_M4_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "Build the technical layer",
+  "cover_subtitle_marker": "Eight standalone videos",
+  "videos": [
+    {
+      "code": "4.1",
+      "title": "Place every component — the four functional layers",
+      "mins": "~5",
+      "range": [
+        3,
+        11
+      ],
+      "message": "Four functional layers — Service Access, Event Distribution, Trust and Security, Governance and Administration — give every component of the platform a place."
+    },
+    {
+      "code": "4.2",
+      "title": "Secure every call — the three trust zones",
+      "mins": "~5",
+      "range": [
+        12,
+        19
+      ],
+      "message": "Public, Member-Internal, Trust-Anchor — knowing which zone a call crosses tells you exactly what security it needs."
+    },
+    {
+      "code": "4.3",
+      "title": "Adopt the standards portfolio",
+      "mins": "~5",
+      "range": [
+        20,
+        27
+      ],
+      "message": "Adopt the published standards — REST/OpenAPI, OAuth/OIDC, mTLS, X-Road — instead of writing your own; the portfolio is the menu every member shares."
+    },
+    {
+      "code": "4.4",
+      "title": "Generate the semantic map",
+      "mins": "~5",
+      "range": [
+        28,
+        35
+      ],
+      "message": "Generate a semantic map so two agencies mean the same 'learner' before they exchange one — the hardest layer, made tractable."
+    },
+    {
+      "code": "4.5",
+      "title": "Generate a service contract",
+      "mins": "~5",
+      "range": [
+        36,
+        43
+      ],
+      "message": "Turn a service brief into an OpenAPI contract, then an X-Road service description — the configuration that puts a service on the bus."
+    },
+    {
+      "code": "4.6",
+      "title": "Put a real data source on the bus — the Giga case",
+      "mins": "~5",
+      "range": [
+        44,
+        51
+      ],
+      "message": "Take Giga's real school data through a bronze/silver/gold pipeline onto the bus — a worked exchange you can copy for your sector."
+    },
+    {
+      "code": "4.7",
+      "title": "Wire a service onto the bus",
+      "mins": "~5",
+      "range": [
+        52,
+        59
+      ],
+      "message": "The OpenAPI contract becomes an X-Road service description and the call resolves — the GovStack Information Mediation pattern."
+    },
+    {
+      "code": "4.8",
+      "title": "Make the exchange lawful — the data-protection envelope",
+      "mins": "~5",
+      "range": [
+        60,
+        66
+      ],
+      "message": "Letters of Interest plus a data-protection envelope make a real exchange lawful as well as technically possible."
+    }
+  ]
+}
