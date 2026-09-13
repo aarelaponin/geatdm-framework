@@ -48,7 +48,19 @@ EOF
 BASE="$(basename "${DECK%.pptx}")"
 soffice --headless --convert-to pdf "$DECK" --outdir "$OUT" >/dev/null
 rm -f "$OUT/$BASE"-slide-*.jpg "$OUT/$BASE"-sheet-*.jpg
-pdftoppm -jpeg -r 100 "$OUT/$BASE.pdf" "$OUT/$BASE-slide"
+if command -v pdftoppm >/dev/null; then
+  pdftoppm -jpeg -r 100 "$OUT/$BASE.pdf" "$OUT/$BASE-slide"
+else
+  # No poppler on Intel macOS (kp-slidecast's pdf_to_pngs has the story); pypdfium2 is a wheel.
+  python3 - "$OUT/$BASE.pdf" "$OUT/$BASE-slide" <<'EOF'
+import sys, pypdfium2
+doc = pypdfium2.PdfDocument(sys.argv[1])
+pad = len(str(len(doc)))
+for i, page in enumerate(doc, 1):
+    page.render(scale=100 / 72).to_pil().convert('RGB').save(f'{sys.argv[2]}-{i:0{pad}d}.jpg', quality=85)
+doc.close()
+EOF
+fi
 python3 - "$OUT" "$BASE" <<'EOF'
 import glob, math, sys
 from PIL import Image, ImageDraw

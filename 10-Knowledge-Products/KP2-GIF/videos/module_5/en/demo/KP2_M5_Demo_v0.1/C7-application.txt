@@ -1,0 +1,13 @@
+out/application-02831663233.json — the assembled application, one line per field
+
+field           value                          source
+nin             02831663233                    citizen — the one thing asked
+given_name      Bakary                         PNIA identity-api over the bus
+family_name     Faal                           PNIA identity-api over the bus
+date_of_birth   2009-04-12                     PNIA identity-api over the bus
+sex             M                              PNIA identity-api over the bus
+region          Upper River                    PNIA identity-api over the bus
+school          Basse Senior Secondary School  PLR enrolment-api over the bus
+level           Senior Secondary               PLR enrolment-api over the bus
+enrolment_year  2024                           PLR enrolment-api over the bus
+status          active                         PLR enrolment-api over the bus

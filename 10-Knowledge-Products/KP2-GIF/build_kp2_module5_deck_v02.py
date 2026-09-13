@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-# Build the KP2 Module 5 video deck on the ITU template — v0.1.
-# Content follows KP2_Module5_Script_Bundle_v0.3 (build_kp2_module5_v03.js): ten videos,
+# Build the KP2 Module 5 video deck on the ITU template — v0.2.
+# v0.2: the 10 Sep script-vs-pack corrections (5.2–5.5 text; MEMBERS and HOSTING), and 5.6 rebuilt screen-led — seven
+# of its slides are demo evidence recorded from the running federation, read from DEMO_DIR (the build pack's
+# scripts/demo-capture.sh output). The build stops if a take it names is missing.
+# Content follows KP2_Module5_Script_Bundle_v0.4 (build_kp2_module5_v04.js): ten videos,
 # 5.1 – 5.10 — Architect-facing for 5.1–5.8, Strategist-facing for 5.9–5.10, which close the
 # knowledge product. Every VO paragraph in the notes is a verbatim scriptBeats[].text from the
 # .js (vo_diff.py proves it); the recap slide of every video carries the un-narrated practice
@@ -11,6 +14,7 @@
 # Generated .pptx is NEVER hand-edited — fix here, re-render, re-run the split
 # (kp-deck-builder/scripts/split_module_deck.py + the split spec next to the decks).
 # Override paths with TEMPLATE= and OUT_PATH= env vars.
+import json
 import os
 import sys
 
@@ -20,9 +24,9 @@ from deck_lib import (
     TITLE_CARD_NOTE, hook_slide,
     INK, ITU_BLUE, ITU_BLUE_DARK, LIGHT, PANEL_GREY, WHITE,
     LAYOUT_THANKS, LAYOUT_WHITE,
-    add_slide, big_slide, block_slide, box, delete_template_slides, edit_agenda,
+    add_slide, big_slide, block_slide, box, delete_template_slides, demo_slide, edit_agenda,
     edit_cover, footer, notes, open_template, rows_block, section_slide, set_text,
-    solid, sources_slide, title, two_panel)
+    solid, sources_slide, terminal_slide, title, two_panel)
 from deck_diagrams import arrow, label, node
 from pptx.enum.shapes import MSO_SHAPE
 from pptx.enum.text import PP_ALIGN
@@ -30,17 +34,32 @@ from pptx.util import Inches
 
 prs = open_template(os.environ.get('TEMPLATE'))
 
+# 5.6's demo evidence: the takes one capture run produced, copied in whole. A new capture is a new
+# KP2_M5_Demo_v0.N directory, never an overwrite — the slides' provenance line names the run.
+DEMO_DIR = os.environ.get('DEMO_DIR') or os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), 'videos', 'module_5', 'en', 'demo', 'KP2_M5_Demo_v0.1')
+with open(os.path.join(DEMO_DIR, 'takes.json'), encoding='utf-8') as f:
+    TAKES = json.load(f)['beats']
+
+
+def take(beat_id, key='file'):
+    """(path, caption) for a recorded beat; the build stops if the take is not on disk."""
+    path = os.path.join(DEMO_DIR, TAKES[beat_id][key])
+    assert os.path.isfile(path), 'missing demo take %s — run the build pack\'s scripts/demo-capture.sh' % path
+    return path, TAKES[beat_id]['caption']
+
 AUDIENCE = 'Chief or senior architect · integration lead · agency technical lead — and, for 5.9–5.10, the strategist'
 
-# Pending the Tuesday-call decisions in KP2_M5_Script_vs_Pack_Review_2026-09-10.md §2 (which
-# members the demonstration runs, and where it is hosted). Each appears on exactly one slide
-# (5.5), so a correction is an edit here — the narration itself changes in the .js.
-MEMBERS = [('MoEYS / PEMIS', 'school-information system'),
+# The demonstration as the build pack runs it (KP2_M5_Script_vs_Pack_Review_2026-09-10.md §2): MoEYS/PEMIS is
+# retired, PDGA owns the federation and has its own Security Server. The hosting line is true of any single host,
+# so it holds whichever way the hosting decision goes. Each appears on exactly one slide (5.5); the narration
+# itself changes in the .js.
+MEMBERS = [('PDGA', 'federation owner'),
            ('PNEA', 'examination authority'),
            ('PLR', 'learner registry'),
            ('PNIA', 'identity authority')]
-HOSTING = ('For the demonstration, Linkup runs on the ITU cloud: one VM, sandboxed containers — '
-           'sized for cross-agency calls, not production volumes.')
+HOSTING = ('For the demonstration, Linkup runs on a single host — a laptop or one VM — in sandboxed '
+           'containers, sized for cross-agency calls, not production volumes.')
 
 # The practice box is the video's only call to action and is never narrated (plan D5).
 PRACTICE_NOTE = ('PRACTICE BOX (on-screen only — never read it, never paraphrase it, never point '
@@ -72,13 +91,13 @@ HOOKS = {'5.1': ('You do not onboard a whole government at once.',
                   'The Service-Level Agreement turns connected into dependable.']),
          '5.4': ('Everything so far was preparation. This step admits an agency.',
                  ['Registering a member produces real configuration.',
-                  'Generate it with AI — then confirm it against the live registry.']),
+                  'The agency applies, the operator admits it — then the join runs itself.']),
          '5.5': ('Now the live platform the members connect to.',
                  ['A small set of components, each with a clear job.',
                   'Brought up from a run book, so anyone with the build pack can reproduce it.']),
          '5.6': ('The moment the whole framework exists for.',
-                 ['A real once-only exchange, running across the federation.',
-                  'Not a mock, not a diagram — a genuine cross-server call.']),
+                 ['A learner gives one number; the state fetches the rest.',
+                  'Recorded from the running federation, exactly as it ran.']),
          '5.7': ('The demonstration proves the pattern. It is not production.',
                  ['Know exactly what changes before go-live.',
                   'After go-live is when the gap is most expensive to discover.']),
@@ -93,11 +112,11 @@ HOOKS = {'5.1': ('You do not onboard a whole government at once.',
                    'Get that split right, and the second sector costs a fraction of the first.'])}
 
 
-def section(code, name, message, note):
+def section(code, name, message, note, form='voice-over on text slides'):
     # No runtime on the title card: the narration is generated per take and its length moves
     # with every re-roll.
     s = section_slide(prs, 'KP2 · MODULE 5 · VIDEO %s' % code, code, name, message,
-                      'standalone video · voice-over on text slides', TITLE_CARD_NOTE)
+                      'standalone video · ' + form, TITLE_CARD_NOTE)
     head, lines = HOOKS[code]
     hook_slide(prs, head, lines, '%s · %s' % (code, name), note)
     return s
@@ -266,7 +285,7 @@ edit_agenda(
         ('5.3  The SLA — connected to dependable', '~4 min'),
         ('5.4  Register a member on X-Road', '~5 min'),
         ('5.5  Stand up the federation', '~5 min'),
-        ('5.6  Run the once-only exchange, live', '~5 min'),
+        ('5.6  Run the once-only exchange, live', '~3 min'),
         ('5.7  From demonstration to production', '~5 min'),
         ('5.8  Watch the bus — monitoring', '~5 min'),
         ('5.9  Keep the documents consistent', '~5 min'),
@@ -446,10 +465,13 @@ block(prs, 'Readiness becomes a checklist, not a judgement',
       "Production cue: the pivotal slide of this video. Hold it a beat longer.")
 
 flow(prs, 'The Member Requirements are the front end of onboarding', ONBOARDING,
-     'One template, applied to every joining agency in turn.',
+     'The six answers travel in the join request — checked before anyone approves it.',
      T,
-     "VO: And the template is reused for every member: fill it once as a template, apply it to "
-     "each joining agency in turn. It is the front end of the onboarding workflow — an agency "
+     "VO: And the checklist is not a separate form that gets filed and forgotten. In the build "
+     "pack it is the front of the join request itself: the six answers travel in the request an "
+     "applying agency submits, and they are checked before any operator can approve it. Two "
+     "things sit beside it on purpose — the signed membership agreement and the named "
+     "data-protection officer — and the pack says plainly where it does not hold them. An agency "
      "that passes the Member Requirements is an agency ready to be registered on the bus, which "
      "is the technical step that admits it.",
      active=0, under=ONBOARDING_UNDER)
@@ -507,13 +529,15 @@ panels(prs, 'The SLA makes the member obligations specific',
        ('THE SLA SAYS',
         ['Specific numbers, agreed and signed.',
          'A commitment the Operating Authority can hold a member to.']),
-       'And a number a consumer can plan around.',
+       'One SLA per published service — a member that only consumes signs none.',
        T,
        "VO: The SLA operationalises the member obligations from the governance module. Those "
        "obligations said, in principle, that a member meets service levels; the SLA is where the "
        "service levels become specific numbers, agreed and signed. Without the SLA, 'meets "
        "service levels' is a wish. With it, it is a commitment the Operating Authority can hold "
-       "a member to — and a number a consumer can plan around.",
+       "a member to — and a number a consumer can plan around. And the SLA belongs to a service, "
+       "not to a member: every service a provider publishes carries its own, and a member that "
+       "only consumes publishes nothing, so it signs none.",
        right_fill=LIGHT)
 
 block(prs, 'Set the numbers with the provider, not for them',
@@ -556,14 +580,14 @@ sources_slide(prs, T, [
 # ================================================================ 5.4
 T = '5.4 · Register a member on X-Road'
 section('5.4', 'Register a member on X-Road',
-        'Generate the subsystem registration and the access-control list — the configuration that '
-        'admits one agency to the bus.',
+        'The subsystem registration and the access-control list admit one agency to the bus — '
+        'produced by an admitted, validated join, not typed by hand.',
         "VO: Everything so far has been preparation — the phased plan, the Member Requirements, "
         "the Service-Level Agreement. Registering a member on X-Road is the technical step that "
         "actually admits an agency to the bus, and it produces real configuration: the subsystem "
-        "registration and the access-control list. This is a build step, and you can generate "
-        "the configuration with Claude — then confirm it against the live registry before it "
-        "goes anywhere.")
+        "registration and the access-control list. This is a build step, and nobody types it into "
+        "the bus by hand: the agency applies, the operator admits it, and the registration runs "
+        "itself.")
 
 panels(prs, 'Registration produces two configuration artefacts',
        ('THE SUBSYSTEM — WHO IT IS',
@@ -584,21 +608,22 @@ panels(prs, 'Registration produces two configuration artefacts',
        right_fill=LIGHT)
 
 # The module's emotional peak — the only full-colour punch block in the deck.
-block(prs, 'Generate the registration, then confirm every identifier',
-      ['The AI prompt drafts the subsystem and the access-control entries from the member\'s details '
-       'and the access policy.',
-       'The member code, the subsystem code, the certificate references: each is a [confirm] until '
-       'checked against the live X-Road registry.'],
-      'A wrong member code throws no error. It routes one citizen\'s data to the wrong agency.',
+block(prs, 'Admit, validate — then the join runs itself',
+      ['The agency submits a join request; a validator checks every identifier for legality and uniqueness, '
+       'fetches the contract, and checks the access list.',
+       'The operator approves only by citing the admission decision — then the registration runs over the '
+       'admin interface and proves itself with a real call.'],
+      'A wrong member code throws no error on the bus — so the validator refuses it before it gets there.',
       T,
-      "VO: The AI prompt for this video generates these from the member's details and the access "
-      "policy. But every identifier — the member code, the subsystem code, the certificate "
-      "references — is a [confirm] until you check it against the live X-Road registry. This is "
-      "the place the confirm discipline matters most in the whole framework: a wrong member code "
-      "does not throw a clear error. It silently routes nowhere, or worse, to the wrong agency, "
-      "which in an interoperability bus means one citizen's data going to a service that asked "
-      "about another. Generate the registration; confirm every identifier against the registry "
-      "before you deploy it."
+      "VO: In the build pack, the agency submits a join request carrying its details, its services "
+      "and who may call them. A validator checks it before any person acts on it: every identifier "
+      "is allocated at admission and checked for legality and uniqueness, the service contract is "
+      "fetched and screened, the access list is sane. Only then can the operator approve — and only "
+      "by citing the admission decision, so the technical join cannot run ahead of the governance "
+      "one. After approval, the registration runs itself over the bus's admin interface and proves "
+      "itself with a real call. This is where the discipline matters most: a wrong member code "
+      "throws no error on the bus. It silently routes nowhere, or to the wrong agency. So the "
+      "validator refuses it before it gets there."
       "\n\n"
       "Production cue: the pivotal slide of this video, and the module's one full-colour block. "
       "Hold it a beat longer.",
@@ -650,19 +675,19 @@ block(prs, 'Registering a member is configuration, not paperwork',
       "is part of the runnable proving slice, the thing the build pack's acceptance check "
       "deploys and tests. So registering a member is not paperwork that describes an intention. "
       "It is executable configuration that puts a real agency on the bus, ready to provide and "
-      "consume services. When you have registered the four Progressa members this way, the "
-      "federation has the participants it needs for a real exchange.")
+      "consume services. The three Progressa members — PNEA, PLR and PNIA — are registered "
+      "this way, beside PDGA, which owns the federation; together they are the participants a "
+      "real exchange needs.")
 
 big_slide(prs,
-          'The subsystem registration and the access-control list admit a member — generated, '
-          'confirmed, deployed — and a conformance test is the gate before it goes live.',
+          'The subsystem registration and the access-control list admit a member — validated, '
+          'approved, applied — and a conformance test is the gate before it goes live.',
           T,
           PRACTICE_NOTE + "\n\n"
-          "VO: So registering a member is where onboarding becomes configuration. Generate the "
-          "subsystem and the access-control list with the AI prompt, confirm every identifier "
-          "against the live registry, and deploy them into the build pack. Two artefacts, the "
-          "same shape for every member, admitting one agency to the bus and naming who may call "
-          "it. That is the technical core of onboarding — and the configuration the "
+          "VO: So registering a member is where onboarding becomes configuration. The agency is "
+          "admitted, its request validated, and the subsystem and access-control list are written "
+          "and applied for it. Two artefacts, the same shape for every member, admitting one "
+          "agency to the bus and naming who may call it. That is the technical core of onboarding — and the configuration the "
           "demonstration runs on.",
           practice=('Generate the X-Road member registration (subsystem + ACL)',
                     'the subsystem registration and access-control list with [confirm] placeholders, '
@@ -680,8 +705,8 @@ section('5.5', 'Stand up the federation',
         'Central Server, four Security Servers, a Test CA — the Linkup federation, stood up from the '
         'run book.',
         "VO: With members registered, you stand up the federation itself — the live platform "
-        "they connect to. For our demonstration this is Linkup, the X-Road federation on the ITU "
-        "cloud. It has a small set of components, each with a clear job, and you bring it up "
+        "they connect to. For our demonstration this is Linkup, an X-Road federation that runs "
+        "on a single host in sandboxed containers. It has a small set of components, each with a clear job, and you bring it up "
         "from a run book, so that anyone with the build pack can reproduce the same federation "
         "rather than admire a one-off.")
 
@@ -691,29 +716,32 @@ federation(prs, 'One registry, one gateway per member, one trust anchor', MEMBER
            "VO: The federation has three kinds of component. The Central Server, operated by "
            "PDGA, is the registry of who is a member and what services exist — the heart that "
            "every security server checks with before it routes a call. The four Security Servers "
-           "— one each at MoEYS with its school-information system PEMIS, the examination "
-           "authority PNEA, the learner registry PLR, and the identity authority PNIA — are the "
-           "members' gateways, the devices that carry the trust burden at each edge. And the "
+           "— one for PDGA, which owns the federation and runs its management services, and one "
+           "each for the examination authority PNEA, the learner registry PLR, and the identity "
+           "authority PNIA — are the gateways, the devices that carry the trust burden at each edge. And the "
            "Test CA, the certification authority that issues the certificates the security "
            "servers use to prove who they are. In production that is a real certification "
            "authority; in the demonstration, a test one."
            "\n\n"
-           "On screen: the member list and the hosting line are pending the demonstration-membership "
-           "decision — they live in MEMBERS and HOSTING at the top of the build script.")
+           "On screen: the member list and the hosting line live in MEMBERS and HOSTING at the top "
+           "of the build script.")
 
 rows_block(prs, 'Bring it up from the run book, in order',
            [('The Central Server first', 'The registry every other component checks with.'),
-            ('Then the Test CA', 'The certification authority that issues the certificates.'),
-            ('Then each Security Server', 'Registers with the Central Server and receives its certificate.')],
+            ('Then the Test CA', 'Issues the certificates, with its certificate-status and time-stamping services.'),
+            ('Then each Security Server', 'Registers, receives its certificate — and the Central Server approves it explicitly.')],
            HOSTING,
            T,
            "VO: Standing it up is a run-book exercise, deliberately. Each component is brought "
-           "up in order — the Central Server first, then the Test CA, then each Security Server "
-           "registers with the Central Server and receives its certificate. The run book makes "
+           "up in order — the Central Server first, then the Test CA with its certificate-status "
+           "and time-stamping services, then each Security Server registers with the Central "
+           "Server, receives its certificate, and waits for the Central Server to approve that "
+           "registration explicitly — the technical footprint of the admission decision. The run book makes "
            "this reproducible: anyone with the build pack can stand up the same federation, "
            "which is exactly what makes the demonstration a template rather than a one-off. For "
-           "the demonstration, Linkup runs all of this on a single cloud VM in sandboxed "
-           "containers — sized for showing cross-agency calls, not for production volumes.",
+           "the demonstration, Linkup runs all of this on a single host — a laptop or one VM — "
+           "in sandboxed containers, sized for showing cross-agency calls, not for production "
+           "volumes.",
            bottom=5.6)
 
 block(prs, 'Standing up the federation is where the abstract becomes real',
@@ -740,8 +768,8 @@ big_slide(prs,
           'federation is real and ready to carry a call.',
           T,
           PRACTICE_NOTE + "\n\n"
-          "VO: So you stand up the federation from a run book: the Central Server at PDGA, the "
-          "four Security Servers at the Progressa members, the Test CA that anchors trust. "
+          "VO: So you stand up the federation from a run book: the Central Server at PDGA, four "
+          "Security Servers for PDGA and the three Progressa members, the Test CA that anchors trust. "
           "Reproducible from the build pack, confirmed by its acceptance check. With the "
           "federation running, the framework has stopped being a design and become a platform — "
           "ready for the call that proves it.",
@@ -755,104 +783,78 @@ sources_slide(prs, T, [
 
 
 # ================================================================ 5.6
+# Screen-led: slides 4–10 are demo evidence recorded from the running federation (DEMO_DIR). One observation per
+# slide, the visible thing named before what it means. The drawn call flow stays as the picture of what the
+# recording shows; v0.1's "every layer" rows slide is the layer view (C4) now, and the proving-slice block folded
+# into the recap. The receipts capture (C3) is GitBook material, not a slide.
 T = '5.6 · Run the once-only exchange, live'
 section('5.6', 'Run the once-only exchange, live',
         'PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real '
         'cross-server call, the data asked once.',
-        "VO: This is the moment the whole framework exists for: a real once-only exchange, "
-        "running across the federation, for an ordinary citizen scenario. Not a mock, not a "
-        "diagram — a genuine cross-server call in which the state asks the citizen once and "
-        "fetches the rest. Everything in this knowledge product has been leading to this single "
-        "call."
-        "\n\n"
-        "Retrieval prompt — ask before playing on: of the four layers — technical, semantic, "
-        "organisational, legal — which are at work in this one call? Answer on the layers slide: all "
-        "four.")
+        "VO: This is the moment the whole framework exists for: a learner applies for a credential, "
+        "gives one number, and the state fetches the rest. What you are about to see was recorded "
+        "from the running federation, exactly as it ran.",
+        form='voice-over on text slides and a recorded demonstration')
 
-# The module's centrepiece.
 call_flow(prs, 'One call — identity from PNIA, enrolment from PLR',
           'Without once-only, the learner brings paper proof of both. With it, the learner is asked once.',
           T,
-          "VO: The scenario is concrete and ordinary. A learner applies for a credential at the "
-          "national examination authority, PNEA. Without once-only, PNEA asks the learner to "
-          "bring paper proof of who they are and proof that they were enrolled. With once-only, "
-          "the moment the learner gives their national ID, PNEA's service pre-fills their "
-          "identity from the national identity authority, PNIA, and their enrolment from the "
-          "learner registry, PLR — both fetched over the bus, with a lawful basis, in seconds. "
-          "The learner is asked once. That is the promise from the very first module of this "
-          "knowledge product, now actually running."
+          "VO: Here is the call you are about to watch. A learner applies for a credential at PNEA, "
+          "the examination authority. Without once-only, the learner brings paper proof of identity "
+          "and of enrolment. With it, PNEA fetches the identity from PNIA and the enrolment from PLR, "
+          "over the bus."
           "\n\n"
-          "Production cue: the centrepiece of the module. Reveal the learner and PNEA, then the two "
-          "fetches. Hold it a beat longer.")
+          "Production cue: the picture of what the recording shows. The frames that follow map onto "
+          "these boxes.")
 
-rows_block(prs, 'Every layer you built is in this one call',
-           [('Technical', 'Routed across the trust zones, secured by mutual TLS.'),
-            ('Legal', 'Only the fields the purpose needs, under the decree\'s lawful basis.'),
-            ('Organisational', 'Between members the governance admitted, under their obligations.'),
-            ('Semantic', 'It resolves because the agencies agree what "learner" and "enrolment" mean.')],
-           'One exchange, all four layers, all at once.',
-           T,
-           "VO: And every layer you built is in that single call. The call routes across the "
-           "trust zones, secured by mutual TLS — the technical layer. It returns only the fields "
-           "the purpose needs, under the decree's lawful basis — the legal layer. It runs "
-           "between members the governance admitted, under their obligations — the "
-           "organisational layer. And it returns meaning, not just bytes, because it resolves "
-           "only thanks to the semantic map: PNEA, PNIA and PLR agree what 'learner' and "
-           "'enrolment' mean. That agreement came from the data owners and the architects "
-           "sitting together — the shared language between business and IT — and without it the "
-           "call would return confident nonsense. One exchange, all four layers, all at once."
-           "\n\n"
-           "Production cue: this slide answers the retrieval prompt set on the opener.",
-           numbered=False)
+png, cap = take('C1-before')
+demo_slide(prs, 'Before the bus: ten blank rows', png, cap, T,
+           "VO: The form before the call: ten rows, all blank. Without the bus, that is ten questions "
+           "the learner answers, and two sets of paper proof.")
 
-panels(prs, 'The acceptance check is the technical half of going live',
-       ('THE ACCEPTANCE CHECK',
-        ['Deploys the federation, the members, the service and the data.',
-         'Makes the call; confirms the learner is not asked twice.']),
-       ('THE DUAL GO-LIVE APPROVAL',
-        ['The regulator confirms compliance readiness.',
-         'The operator confirms technical readiness — both recorded.']),
-       'When it passes, this is not a framework explained — it is a framework that runs.',
-       T,
-       "VO: This is the build pack's acceptance check, and it is deliberately a single, "
-       "observable thing: the cross-server call resolves, the identity and the enrolment come "
-       "back, the learner is not asked twice. An automated check runs exactly this — it deploys "
-       "the federation, the members, the service and the demonstration data, then makes the call "
-       "and confirms once-only actually happens. When that check passes, this knowledge product "
-       "stops being a framework explained and becomes a framework that runs. That distinction — "
-       "explained versus running — is the entire reason this is an implementation Knowledge "
-       "Product. In a real federation this moment has a name: the dual go-live approval. The "
-       "regulator confirms the member's compliance readiness, the operator confirms its "
-       "technical readiness, and both confirmations are recorded before the production "
-       "connection is switched on. The acceptance check is the technical half of that approval; "
-       "the compliance half is the gate register the member completed on the way here.",
-       right_fill=LIGHT)
+png, cap = take('C2-after')
+demo_slide(prs, 'One question asked, nine rows filled', png, cap, T,
+           "VO: The same form once the learner gives the national ID. Nine rows fill in: five from "
+           "PNIA, four from PLR, each labelled with its source. One question asked, nine fetched.")
 
-block(prs, 'One small exchange is the proving slice for everything after it',
-      ['Prove once-only on four members, and you have proven the pattern your country\'s shared '
-       'digital public infrastructure will reuse.',
-       'If the state can ask once and fetch the rest for one learner, it can do it for every service '
-       'on the bus.'],
-      'The smallest real once-only call is the largest proof the framework works.',
-      T,
-      "VO: And this is why one small exchange is the proving slice for this whole knowledge "
-      "product and for the work that builds on it. Prove once-only here, on four members, and "
-      "you have proven the pattern that your country's shared digital public infrastructure, and "
-      "the services built on top of it, will reuse. The smallest real once-only call is the "
-      "largest possible proof that the framework works — because if the state can ask once and "
-      "fetch the rest for one learner, lawfully and securely, it can do it for every service a "
-      "country builds on the bus.")
+png, cap = take('C4-layers')
+demo_slide(prs, 'What PNIA sends — and what it withholds', png, cap, T,
+           "VO: The second tab reads the same exchange by layer. In the legal pane, PNIA sends five "
+           "fields and names three it holds but withholds: a mother's name, a birth registration "
+           "number, an address. The purpose does not need them.")
+
+png, cap = take('C5-allowed-denied')
+demo_slide(prs, 'Same question, two callers, two answers', png, cap, T,
+           "VO: The third tab asks PNIA the identical question from two callers. PNEA is allowed. "
+           "PLR, a member of the same bus, gets an access-denied fault from PNIA's access list. "
+           "Being on the bus is not permission.")
+
+still, cap = take('C6-break-restore', 'still')
+clip, _ = take('C6-break-restore')
+demo_slide(prs, 'One grant withdrawn, one source broken', still, cap, T,
+           "VO: Now the operator withdraws PNEA's permission and runs the form again. Within seconds "
+           "the PNIA rows are denied, while the PLR rows still fill: one grant withdrawn, one source "
+           "broken. Restore it, and the form is whole.",
+           clip=clip)
+
+txt, cap = take('C7-application')
+terminal_slide(prs, 'The application, with every field\'s source', txt, cap, T,
+               "VO: The exchange is also written to disk as the assembled application: one line per "
+               "field, each with its source. The national ID is the only line the citizen supplied.")
+
+txt, cap = take('C8-acceptance')
+terminal_slide(prs, 'Six acceptance checks, all green', txt, cap, T,
+               "VO: Last, the acceptance script runs this exchange as six checks: the call, the right "
+               "learner, asked once, the denial, a clean not-found, and field conformance. All six pass "
+               "— the technical half of go-live approval.")
 
 big_slide(prs,
-          'A real cross-server call, the learner asked once — every layer proven in a single exchange, '
-          'and both go-live approvals recorded.',
+          'One field asked, nine fetched, only what the purpose needs — and six acceptance checks green.',
           T,
           PRACTICE_NOTE + "\n\n"
-          "VO: So the once-only exchange, live, is where this knowledge product proves itself. "
-          "PNEA pre-fills identity from PNIA and enrolment from PLR, over the bus, for a real "
-          "learner asked once. Technical, legal, organisational and semantic — all four layers "
-          "in one resolving call, confirmed by the acceptance check. That single exchange is the "
-          "acceptance of the whole framework, and the template every later service reuses.",
+          "VO: So the exchange is shown, not explained: one field asked, nine fetched, only what the "
+          "purpose needs, a denial the access list enforces, six checks green. That is the "
+          "framework, running.",
           practice=('Script and verify the once-only exchange (the acceptance check)',
                     'a given/when/then acceptance script with a negative check, mapped to the four '
                     'layers'))
@@ -860,7 +862,7 @@ big_slide(prs,
 sources_slide(prs, T, [
     'PAERA v1.0 — §5.2, Principle #5 (Once-Only)',
     'NIIS X-Road (niis.org)',
-    'The build pack\'s acceptance check',
+    'The Linkup demonstration federation',
 ])
 
 
@@ -1240,7 +1242,7 @@ notes(s, 'Closing slide for the combined deck. Individual videos end on their so
 
 # Self-check: the split spec's slide ranges depend on this count, and a helper that
 # silently stops drawing shows up first as a slide with no voice-over.
-assert len(prs.slides._sldIdLst) == 78, 'slide count changed — re-run the split with --infer-ranges'
+assert len(prs.slides._sldIdLst) == 82, 'slide count changed — re-run the split with --infer-ranges'
 assert all(sl.has_notes_slide and sl.notes_slide.notes_text_frame.text.strip() for sl in prs.slides), \
     'every slide carries its voice-over in the notes'
 
@@ -1256,7 +1258,7 @@ for sl in prs.slides:
 
 OUT = os.environ.get('OUT_PATH') or os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
-    'videos', 'module_5', 'en', 'decks', 'KP2_M5_Deck_v0.1.pptx')
+    'videos', 'module_5', 'en', 'decks', 'KP2_M5_Deck_v0.2.pptx')
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 prs.save(OUT)
 print('slides:', len(prs.slides._sldIdLst))

@@ -864,21 +864,29 @@ def _evidence_foot(s, take_path, caption, tag, note, top):
     notes(s, note)
 
 
-def terminal_slide(prs, head, take_txt, caption, tag, note, max_lines=18, max_cols=96):
+def terminal_slide(prs, head, take_txt, caption, tag, note, max_lines=18):
     """A text capture — a command and its output — as a monospaced block on the grey panel.
-    Never wrapped: a line past `max_cols` is cut with '…', and past `max_lines` the block ends on
-    a '…' line. Trim the capture itself if that loses the point."""
+
+    The type is as large as the capture allows: the longest line and the line count both have to fit
+    the panel, up to 20 pt (legible on a phone) and never below 12 pt. Never wrapped — past what 12 pt
+    fits, a line is cut with '…', and past `max_lines` the block ends on a '…' line. Trim the capture
+    itself if that loses the point."""
     with open(take_txt, encoding='utf-8') as f:
         lines = f.read().rstrip('\n').split('\n')
     if len(lines) > max_lines:
         lines = lines[:max_lines - 1] + ['…']
-    lines = [ln if len(ln) <= max_cols else ln[:max_cols - 1] + '…' for ln in lines]
+    w_in, h_in = 11.45, 4.35
+    em = 0.64   # a monospace advance is 0.6 em nominally; LibreOffice's substitute runs a little wider
+    fit = lambda n_cols, n_lines: min(20, w_in * 72 / (em * max(n_cols, 1)), h_in * 72 / (1.2 * n_lines))
+    size = max(12, int(fit(max(len(ln) for ln in lines), len(lines))))
+    cols = int(w_in * 72 / (em * size))
+    lines = [ln if len(ln) <= cols else ln[:cols - 1] + '…' for ln in lines]
     s = add_slide(prs, LAYOUT_WHITE)
     title(s, head)
     panel(s, 0.72, 1.4, 11.9, 4.62, PANEL_GREY, radius=0.02).name = DEMO_SHAPE
-    tb = box(s, 0.95, 1.52, 11.45, 4.4)
+    tb = box(s, 0.95, 1.52, w_in, h_in)
     tf = tb.text_frame
-    set_text(tf, [[(ln, 14, False, INK, False)] for ln in lines])
+    set_text(tf, [[(ln, size, False, INK, False)] for ln in lines])
     tf.word_wrap = False
     for p in tf.paragraphs:
         for r in p.runs:

@@ -1,12 +1,12 @@
-<!-- GENERATED from build_kp2_module5_v03.js by bundle_to_md.py — do not hand-edit; edit the build script and regenerate. -->
+<!-- GENERATED from build_kp2_module5_v04.js by bundle_to_md.py — do not hand-edit; edit the build script and regenerate. -->
 
-# KP2 Module 5 — Video Script Bundle v0.3 (ITU-aligned)
+# KP2 Module 5 — Video Script Bundle v0.4 (ITU-aligned)
 
 | Field | Value |
 | --- | --- |
 | Document | Video script bundle for Topic 5 of KP2 |
-| Version | v0.3 — aligned to ITU Knowledge Products and Video Materials Guide; Topic 6 folded in; aligned to the source method (12 September 2026) |
-| Date | 12 September 2026 (v0.1: 27 June 2026; v0.2 and v0.3: 12 September 2026) |
+| Version | v0.4 — aligned to ITU Knowledge Products and Video Materials Guide; Topic 6 folded in; aligned to the source method; corrected against the build pack, with 5.6 rebuilt around recorded demo evidence (13 September 2026) |
+| Date | 13 September 2026 (v0.1: 27 June 2026; v0.2 and v0.3: 12 September 2026) |
 | Contract reference | RFQ-S-GIGA-2026-022 / Purchase Order #334304 (signed 24 April 2026) |
 | Topic persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
 | Subtopics | Ten subtopics (5.1 – 5.10), each shipped as one ~5-minute standalone video |
@@ -15,13 +15,13 @@
 | Prepared by | FiscalAdmin OÜ — Aare Lapõnin (Engagement Lead) |
 | For review by | ITU/Giga at Tuesday weekly call; FiscalAdmin team (Karin Kaup, Arne Lapõnin) |
 
-This bundle is the v0.3 working draft of Topic 5 of KP2 — Government Interoperability Framework. Topic 5 is where the framework is stood up, proven, and then run. It takes the configuration the earlier topics produced — the decree, the Governance Pack, the semantic map and the service contracts — and turns it into a running solution: a phased implementation plan, the onboarding of real members, and a live once-only exchange on the Linkup federation. It produces the runnable proving slice of the build pack: the Linkup federation, the member registrations, and the cross-server call that is the framework's acceptance check. The ten videos walk the Architect through the four-phase implementation pattern, the Member Requirements, the Service-Level Agreement, registering a member on X-Road, standing up the federation, the live once-only exchange, and what changes from demonstration to production — and then, once the bus runs, through keeping it running: monitoring the bus from its logs, cross-checking the framework's three foundational documents for drift, and carrying the framework to the next sector. The last three were Topic 6 in v0.1; Topic 6 was retired on 12 September 2026 (its catalogue, role-paths and storyboard videos repeated the earlier topics and now live on the GitBook home page and in the KP2 intro video). The register stays plain English, eighth-grade level; technical terms are introduced in plain words on first use, and each subtopic leads with the capability the listener gains. The ten videos are numbered to ITU's convention (5.1 through 5.10), each reworked to stand alone. All slide specifications follow ITU's text-only branding. Each subtopic carries an AI usage tip with a copy-paste Claude prompt. External references use the convention 'Find the link in the description'.
+This bundle is the v0.4 working draft of Topic 5 of KP2 — Government Interoperability Framework. Topic 5 is where the framework is stood up, proven, and then run. It takes the configuration the earlier topics produced — the decree, the Governance Pack, the semantic map and the service contracts — and turns it into a running solution: a phased implementation plan, the onboarding of real members, and a live once-only exchange on the Linkup federation. It produces the runnable proving slice of the build pack: the Linkup federation, the member registrations, and the cross-server call that is the framework's acceptance check. The ten videos walk the Architect through the four-phase implementation pattern, the Member Requirements, the Service-Level Agreement, registering a member on X-Road, standing up the federation, the live once-only exchange, and what changes from demonstration to production — and then, once the bus runs, through keeping it running: monitoring the bus from its logs, cross-checking the framework's three foundational documents for drift, and carrying the framework to the next sector. The last three were Topic 6 in v0.1; Topic 6 was retired on 12 September 2026 (its catalogue, role-paths and storyboard videos repeated the earlier topics and now live on the GitBook home page and in the KP2 intro video). The register stays plain English, eighth-grade level; technical terms are introduced in plain words on first use, and each subtopic leads with the capability the listener gains. The ten videos are numbered to ITU's convention (5.1 through 5.10), each reworked to stand alone. All slide specifications follow ITU's text-only branding. Each subtopic carries an AI usage tip with a copy-paste Claude prompt. External references use the convention 'Find the link in the description'.
 
 ## 1. Document context
 
 ### 1.1 What this document is
 
-This document collects the ten video scripts that make up Topic 5 of Knowledge Product 2 (Government Interoperability Framework), with on-screen slide specifications, per-subtopic metadata, AI usage tips and production notes. It is the v0.3 working draft, aligned to ITU's Knowledge Products and Video Materials Guide, submitted for team review and for discussion with ITU/Giga at the Tuesday weekly call.
+This document collects the ten video scripts that make up Topic 5 of Knowledge Product 2 (Government Interoperability Framework), with on-screen slide specifications, per-subtopic metadata, AI usage tips and production notes. It is the v0.4 working draft, aligned to ITU's Knowledge Products and Video Materials Guide, submitted for team review and for discussion with ITU/Giga at the Tuesday weekly call.
 
 Topic 5 is the implementation and demonstration topic of KP2, and the second Architect-facing one. It presents the four-phase implementation pattern with its decision gates and cost frame, the member-onboarding artefacts (the Member Requirements and the Service-Level Agreement), the technical onboarding step of registering a member on X-Road, standing up the Linkup federation, and the live once-only exchange that proves the framework. It then turns from building to running: what changes from the sandboxed demonstration to a production-grade federation, how the Operating Authority watches the live bus from its logs, how the framework keeps its decree, Governance Pack and standards portfolio from contradicting each other, and which parts of the framework carry unchanged to the next sector. It stands up the runnable proving slice of the build pack — the framework running, not just described — and it is now the closing topic of KP2.
 
@@ -46,9 +46,9 @@ Ten standalone subtopic videos. Architect persona for 5.1–5.8; Strategist for 
 | 5.1 | Plan the build in four phases | Foundation, Pilot, Expansion, Optimisation — four phases with decision gates, an honest calendar, and the four plans beside the schedule that a funder actually reads. | ~5 min |
 | 5.2 | State what a member must have — the Member Requirements | The Member Requirements template tells an agency exactly what it must have before it can join — no surprises at go-live. | ~4 min |
 | 5.3 | Make 'connected' mean 'dependable' — the SLA | A Service-Level Agreement turns 'connected' into 'dependable' — the template makes it a fill-in, not a negotiation from scratch. | ~4 min |
-| 5.4 | Register a member on X-Road | Generate the subsystem registration and the access-control list — the configuration that admits one agency to the bus. | ~5 min |
+| 5.4 | Register a member on X-Road | The subsystem registration and the access-control list admit one agency to the bus — produced by an admitted, validated join, not typed by hand. | ~5 min |
 | 5.5 | Stand up the federation | Central Server, four Security Servers, a Test CA — the Linkup federation, stood up from the run book. | ~5 min |
-| 5.6 | Run the once-only exchange, live | PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real cross-server call, the data asked once. | ~5 min |
+| 5.6 | Run the once-only exchange, live | PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real cross-server call, the data asked once. | ~3 min |
 | 5.7 | From demonstration to production | What changes between the sandboxed Linkup demonstration and a production-grade federation a country would actually run — including migrating off and retiring the legacy point-to-point links. | ~5 min |
 | 5.8 | Watch the bus — monitoring and anomaly detection | Point Claude at the real bus logs to spot a failing or unusual exchange before a citizen does. | ~5 min |
 | 5.9 | Keep the documents honest — the consistency cross-check | Keep the decree, the Governance Pack and the standards portfolio saying the same thing — a cross-check that catches drift across the three. | ~5 min |
@@ -151,7 +151,7 @@ The requirements are concrete. A security server — the gateway device at the a
 
 The template turns readiness from a judgement call into an objective checklist. Instead of an architect deciding, agency by agency, whether someone seems ready, the agency works through the list and either meets each item or does not. That objectivity is what lets you schedule onboarding with confidence, and it protects the framework from a member that joins half-ready and breaks the exchanges it touches. It also takes the awkwardness out of saying 'not yet' — the list says it for you.
 
-And the template is reused for every member: fill it once as a template, apply it to each joining agency in turn. It is the front end of the onboarding workflow — an agency that passes the Member Requirements is an agency ready to be registered on the bus, which is the technical step that admits it.
+And the checklist is not a separate form that gets filed and forgotten. In the build pack it is the front of the join request itself: the six answers travel in the request an applying agency submits, and they are checked before any operator can approve it. Two things sit beside it on purpose — the signed membership agreement and the named data-protection officer — and the pack says plainly where it does not hold them. An agency that passes the Member Requirements is an agency ready to be registered on the bus, which is the technical step that admits it.
 
 > _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A Member Requirements checklist makes readiness objective and checkable weeks before go-live — so onboarding is scheduled, not gambled.'_
 
@@ -164,7 +164,7 @@ So before any agency is registered on the bus, it passes the Member Requirements
 | Slide | Element (text-only) | Notes |
 | --- | --- | --- |
 | 1 | Title slide. Title: 'State what a member must have — the Member Requirements'. | Standard ITU template. No images. |
-| 2 | What-a-member-must-have slide. Six text rows of requirements. | The checklist. Plain text, readable on mobile. |
+| 2 | What-a-member-must-have slide. Six text rows of requirements. | The checklist. Plain text, readable on mobile. The same six answers are the front of the build pack's join request. |
 | 3 | Readiness-is-a-checklist slide. Single text block on objectivity. | The value of the template. Text-only. |
 | 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
 | 5 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the member-onboarding references. |
@@ -218,7 +218,7 @@ The SLA sets the numbers a consumer can rely on. Availability — the uptime the
 
 > _Slide 3 — Title: 'The SLA makes the member obligations specific'. Body, single text block: 'The governance obligations said a member meets service levels. The SLA is where those service levels become specific numbers, agreed and signed. Without it, 'meets service levels' is a wish; with it, it is a commitment you can hold a member to.'_
 
-The SLA operationalises the member obligations from the governance module. Those obligations said, in principle, that a member meets service levels; the SLA is where the service levels become specific numbers, agreed and signed. Without the SLA, 'meets service levels' is a wish. With it, it is a commitment the Operating Authority can hold a member to — and a number a consumer can plan around.
+The SLA operationalises the member obligations from the governance module. Those obligations said, in principle, that a member meets service levels; the SLA is where the service levels become specific numbers, agreed and signed. Without the SLA, 'meets service levels' is a wish. With it, it is a commitment the Operating Authority can hold a member to — and a number a consumer can plan around. And the SLA belongs to a service, not to a member: every service a provider publishes carries its own, and a member that only consumes publishes nothing, so it signs none.
 
 One rule of fairness, and it is the rule that actually gets SLAs signed: set the numbers with the provider, not for them. A target the provider cannot meet is a target the provider will quietly ignore, and an SLA everyone ignores is worse than none. Agree numbers the provider can genuinely hit — and raise them over time as the platform matures — and the SLA becomes real rather than decorative. The template then makes it fast: fill in the targets for each service, agree them with the provider, sign, and reuse the same template for every service on the bus.
 
@@ -273,21 +273,21 @@ Draft a Service-Level Agreement template for services on [country X]'s interoper
 | Target runtime | ~5 min (≈640 spoken words) |
 | PAERA anchor | NIIS X-Road member and subsystem registration; access-control list configuration |
 
-> **Single message —** _Generate the subsystem registration and the access-control list — the configuration that admits one agency to the bus._
+> **Single message —** _The subsystem registration and the access-control list admit one agency to the bus — produced by an admitted, validated join, not typed by hand._
 
 ### Script (voice-over over text-only slides)
 
 > _Slide 1 — Title: 'Register a member on X-Road'. Voice-over begins._
 
-Everything so far has been preparation — the phased plan, the Member Requirements, the Service-Level Agreement. Registering a member on X-Road is the technical step that actually admits an agency to the bus, and it produces real configuration: the subsystem registration and the access-control list. This is a build step, and you can generate the configuration with Claude — then confirm it against the live registry before it goes anywhere.
+Everything so far has been preparation — the phased plan, the Member Requirements, the Service-Level Agreement. Registering a member on X-Road is the technical step that actually admits an agency to the bus, and it produces real configuration: the subsystem registration and the access-control list. This is a build step, and nobody types it into the bus by hand: the agency applies, the operator admits it, and the registration runs itself.
 
 > _Slide 2 — Title: 'Two configuration artefacts'. Body, two text rows: 'The subsystem — the member's registered identity on the bus: member class, member code, subsystem code.' 'The access-control list — which other members may call this member's services.'_
 
 Registering a member produces two configuration artefacts. The subsystem — the member's registered identity on the bus, made of its member class, member code and subsystem code, the identifiers the bus uses to route a call to it. And the access-control list — which other members are allowed to call this member's services, because being on the bus does not mean everyone may call everything; access is granted deliberately, service by service. Together, these two artefacts admit the agency and say exactly who may talk to it.
 
-> _Slide 3 — Title: 'Generate, then confirm against the registry'. Body, two text rows: 'The AI prompt drafts the subsystem and the access-control entries from the member's details and the access policy.' 'Every identifier is a [confirm] until checked against the live X-Road registry — a wrong member code routes nowhere, or to the wrong agency.'_
+> _Slide 3 — Title: 'Admit, validate — then the join runs itself'. Body, two text rows: 'The agency submits a join request; a validator checks every identifier for legality and uniqueness, fetches the contract, and checks the access list.' 'The operator approves only with the admission decision's reference — then the registration runs over the admin interface and proves itself with a real call.' Punch: 'A wrong member code throws no error on the bus — so the validator refuses it before it gets there.'_
 
-The AI prompt for this video generates these from the member's details and the access policy. But every identifier — the member code, the subsystem code, the certificate references — is a [confirm] until you check it against the live X-Road registry. This is the place the confirm discipline matters most in the whole framework: a wrong member code does not throw a clear error. It silently routes nowhere, or worse, to the wrong agency, which in an interoperability bus means one citizen's data going to a service that asked about another. Generate the registration; confirm every identifier against the registry before you deploy it.
+In the build pack, the agency submits a join request carrying its details, its services and who may call them. A validator checks it before any person acts on it: every identifier is allocated at admission and checked for legality and uniqueness, the service contract is fetched and screened, the access list is sane. Only then can the operator approve — and only by citing the admission decision, so the technical join cannot run ahead of the governance one. After approval, the registration runs itself over the bus's admin interface and proves itself with a real call. This is where the discipline matters most: a wrong member code throws no error on the bus. It silently routes nowhere, or to the wrong agency. So the validator refuses it before it gets there.
 
 And this is the same registration shape for every member — fill the member's details into the same template, generate the same two artefacts. The onboarding workflow and the governance RACI wrap it into a repeatable process: the Member Requirements confirm the agency is ready, the RACI says which body approves, and this registration configuration admits it. You produce the executable configuration here; the workflow and the approvals from the earlier modules surround it. That reuse — one registration pattern applied to every member — is what lets the framework onboard its twentieth agency as cleanly as its second.
 
@@ -297,11 +297,11 @@ Registration is not the last gate. Between a member's security server going up a
 
 > _Slide 5 — Title: 'It is config, not paperwork'. Body, single text block: 'The subsystem and access-control list go straight into the build pack, under the member's folder. They are part of the runnable proving slice — what the build pack's acceptance check deploys and tests. Registering a member is executable configuration that puts an agency on the bus.'_
 
-The configuration goes straight into the build pack, under the member's folder — it is part of the runnable proving slice, the thing the build pack's acceptance check deploys and tests. So registering a member is not paperwork that describes an intention. It is executable configuration that puts a real agency on the bus, ready to provide and consume services. When you have registered the four Progressa members this way, the federation has the participants it needs for a real exchange.
+The configuration goes straight into the build pack, under the member's folder — it is part of the runnable proving slice, the thing the build pack's acceptance check deploys and tests. So registering a member is not paperwork that describes an intention. It is executable configuration that puts a real agency on the bus, ready to provide and consume services. The three Progressa members — PNEA, PLR and PNIA — are registered this way, beside PDGA, which owns the federation; together they are the participants a real exchange needs.
 
-> _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The subsystem registration and the access-control list admit a member — generated, confirmed, deployed — and a conformance test is the gate before its first service goes live.'_
+> _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The subsystem registration and the access-control list admit a member — validated, approved, applied — and a conformance test is the gate before its first service goes live.'_
 
-So registering a member is where onboarding becomes configuration. Generate the subsystem and the access-control list with the AI prompt, confirm every identifier against the live registry, and deploy them into the build pack. Two artefacts, the same shape for every member, admitting one agency to the bus and naming who may call it. That is the technical core of onboarding — and the configuration the demonstration runs on.
+So registering a member is where onboarding becomes configuration. The agency is admitted, its request validated, and the subsystem and access-control list are written and applied for it. Two artefacts, the same shape for every member, admitting one agency to the bus and naming who may call it. That is the technical core of onboarding — and the configuration the demonstration runs on.
 
 > _Slide 7 — Title: 'Sources'. Body: NIIS X-Road member and subsystem registration; access-control list configuration. Footer: 'Find the link in the description.'_
 
@@ -311,7 +311,7 @@ So registering a member is where onboarding becomes configuration. Generate the 
 | --- | --- | --- |
 | 1 | Title slide. Title: 'Register a member on X-Road'. | Standard ITU template. No images. |
 | 2 | Two-artefacts slide. Two text rows: the subsystem, the access-control list. | The config artefacts. Identifiers glossed in plain words. Text-only. |
-| 3 | Generate-then-confirm slide. Two text rows: the AI prompt drafts; [confirm] against the registry. | The anti-invention safeguard, at its highest-stakes point. |
+| 3 | Admit-validate-join slide. Two text rows: the validated join request; approval citing the admission decision, then the automated registration. Punch line on the wrong member code. | The anti-invention safeguard, at its highest-stakes point — enforced by the validator, not by luck. |
 | 4 | Conformance-gate slide. Three text rows: the gate, the three test approaches, re-certification. | The step between registration and first service. Text-only. |
 | 5 | It-is-config slide. Single text block on the build pack and its acceptance check. | The build-pack connection — executable config, not paperwork. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
@@ -350,7 +350,7 @@ Generate the X-Road member-registration configuration for an agency joining [cou
 | --- | --- |
 | Persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
 | Target runtime | ~5 min (≈560 spoken words) |
-| PAERA anchor | NIIS X-Road federation (Central Server, Security Server, Test CA); the Linkup federation (ITU cloud) |
+| PAERA anchor | NIIS X-Road federation (Central Server, Security Server, Test CA); the Linkup demonstration federation |
 
 > **Single message —** _Central Server, four Security Servers, a Test CA — the Linkup federation, stood up from the run book._
 
@@ -358,23 +358,23 @@ Generate the X-Road member-registration configuration for an agency joining [cou
 
 > _Slide 1 — Title: 'Stand up the federation'. Voice-over begins._
 
-With members registered, you stand up the federation itself — the live platform they connect to. For our demonstration this is Linkup, the X-Road federation on the ITU cloud. It has a small set of components, each with a clear job, and you bring it up from a run book, so that anyone with the build pack can reproduce the same federation rather than admire a one-off.
+With members registered, you stand up the federation itself — the live platform they connect to. For our demonstration this is Linkup, an X-Road federation that runs on a single host in sandboxed containers. It has a small set of components, each with a clear job, and you bring it up from a run book, so that anyone with the build pack can reproduce the same federation rather than admire a one-off.
 
-> _Slide 2 — Title: 'The components'. Body, three text rows: 'Central Server (at PDGA) — the registry of members and services; the heart every security server checks with.' 'Four Security Servers (MoEYS/PEMIS, PNEA, PLR, PNIA) — each member's gateway at the edge.' 'A Test CA — the trust anchor that issues the certificates.'_
+> _Slide 2 — Title: 'The components'. Body, three text rows: 'Central Server (at PDGA) — the registry of members and services; the heart every security server checks with.' 'Four Security Servers (PDGA, PNEA, PLR, PNIA) — the owner's and each member's gateway at the edge.' 'A Test CA — the trust anchor that issues the certificates.'_
 
-The federation has three kinds of component. The Central Server, operated by PDGA, is the registry of who is a member and what services exist — the heart that every security server checks with before it routes a call. The four Security Servers — one each at MoEYS with its school-information system PEMIS, the examination authority PNEA, the learner registry PLR, and the identity authority PNIA — are the members' gateways, the devices that carry the trust burden at each edge. And the Test CA, the certification authority that issues the certificates the security servers use to prove who they are. In production that is a real certification authority; in the demonstration, a test one.
+The federation has three kinds of component. The Central Server, operated by PDGA, is the registry of who is a member and what services exist — the heart that every security server checks with before it routes a call. The four Security Servers — one for PDGA, which owns the federation and runs its management services, and one each for the examination authority PNEA, the learner registry PLR, and the identity authority PNIA — are the gateways, the devices that carry the trust burden at each edge. And the Test CA, the certification authority that issues the certificates the security servers use to prove who they are. In production that is a real certification authority; in the demonstration, a test one.
 
-> _Slide 3 — Title: 'Bring it up from the run book'. Body, single text block: 'Central Server first, then the Test CA, then each Security Server registers with the Central Server and receives its certificate. The run book makes it reproducible — anyone with the build pack stands up the same federation. For the demonstration, Linkup runs it all on one cloud VM in sandboxed containers.'_
+> _Slide 3 — Title: 'Bring it up from the run book'. Body, single text block: 'Central Server first, then the Test CA with its OCSP and time-stamping services, then each Security Server registers, receives its certificate, and is approved explicitly on the Central Server. The run book makes it reproducible — anyone with the build pack stands up the same federation. For the demonstration, Linkup runs it all on a single host — a laptop or one VM — in sandboxed containers.'_
 
-Standing it up is a run-book exercise, deliberately. Each component is brought up in order — the Central Server first, then the Test CA, then each Security Server registers with the Central Server and receives its certificate. The run book makes this reproducible: anyone with the build pack can stand up the same federation, which is exactly what makes the demonstration a template rather than a one-off. For the demonstration, Linkup runs all of this on a single cloud VM in sandboxed containers — sized for showing cross-agency calls, not for production volumes.
+Standing it up is a run-book exercise, deliberately. Each component is brought up in order — the Central Server first, then the Test CA with its certificate-status and time-stamping services, then each Security Server registers with the Central Server, receives its certificate, and waits for the Central Server to approve that registration explicitly — the technical footprint of the admission decision. The run book makes this reproducible: anyone with the build pack can stand up the same federation, which is exactly what makes the demonstration a template rather than a one-off. For the demonstration, Linkup runs all of this on a single host — a laptop or one VM — in sandboxed containers, sized for showing cross-agency calls, not for production volumes.
 
 When the federation is up, you have something concrete: four real security servers, registered with a central server, trusting a common certification authority, ready to carry a real call. The configuration that does this — the federation config and each member's registration — lives in the build pack, and the build pack's acceptance check is what confirms the federation actually stands up, not merely that the files exist. This is the moment the abstract becomes real: up to now this knowledge product has produced documents and configuration; standing up the federation turns that configuration into a running platform. The bus exists, the members are on it, and the only thing left is to make a real call across it.
 
 > _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Central Server, four Security Servers, a Test CA — stood up from the run book, the federation is real and ready to carry a call.'_
 
-So you stand up the federation from a run book: the Central Server at PDGA, the four Security Servers at the Progressa members, the Test CA that anchors trust. Reproducible from the build pack, confirmed by its acceptance check. With the federation running, the framework has stopped being a design and become a platform — ready for the call that proves it.
+So you stand up the federation from a run book: the Central Server at PDGA, four Security Servers for PDGA and the three Progressa members, the Test CA that anchors trust. Reproducible from the build pack, confirmed by its acceptance check. With the federation running, the framework has stopped being a design and become a platform — ready for the call that proves it.
 
-> _Slide 5 — Title: 'Sources'. Body: NIIS X-Road federation — Central Server, Security Server, Test CA; the Linkup federation (ITU cloud). Footer: 'Find the link in the description.'_
+> _Slide 5 — Title: 'Sources'. Body: NIIS X-Road federation — Central Server, Security Server, Test CA; the Linkup demonstration federation. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -393,7 +393,7 @@ So you stand up the federation from a run book: the Central Server at PDGA, the 
 **Prompt template (copy-paste into Claude):**
 
 ```text
-Draft a stand-up run book for an X-Road demonstration federation for [country X] / Progressa. The components are: a Central Server (operated by the digital-government authority), four Security Servers (one each at the four member agencies), and a Test CA. Produce the run book as ordered, reproducible steps: (1) bring up the Central Server and its configuration; (2) bring up the Test CA and register it as the trust anchor; (3) for each Security Server: install, register with the Central Server, obtain its certificate from the Test CA, and verify it is registered; (4) a verification step confirming all four members appear in the Central Server registry. Note which steps are demonstration-only (single VM, sandboxed containers, Test CA) and would differ in production. Mark every server identifier and address as [confirm: set per the actual environment]. Output: the ordered run book plus a 'differs in production' note per step.
+Draft a stand-up run book for an X-Road demonstration federation for [country X] / Progressa. The components are: a Central Server (operated by the digital-government authority), four Security Servers (one for that authority as the federation owner, one each at the three member agencies), and a Test CA with OCSP and time-stamping. Produce the run book as ordered, reproducible steps: (1) bring up the Central Server and its configuration; (2) bring up the Test CA, register it and its OCSP and time-stamping services as trust services, and publish the configuration anchor; (3) for each Security Server: install, import the anchor, register with the Central Server, obtain its certificates from the Test CA, and approve the registration explicitly on the Central Server; (4) a verification step confirming every member appears in the Central Server registry. Note which steps are demonstration-only (single VM, sandboxed containers, Test CA) and would differ in production. Mark every server identifier and address as [confirm: set per the actual environment]. Output: the ordered run book plus a 'differs in production' note per step.
 ```
 
 **Inputs and outputs:** Input: the federation topology (Central Server, four Security Servers, Test CA). Output: an ordered, reproducible stand-up run book with production-difference notes.
@@ -411,14 +411,14 @@ Draft a stand-up run book for an X-Road demonstration federation for [country X]
 | Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
 | ToR §4 coverage | §4.1 (methodology, deployment); §4.3 (AI integration — run-book prompt); §4.5 (build-pack — the federation) |
 | PAERA citations | (federation topology cited to NIIS X-Road) |
-| External-link list | NIIS X-Road federation — Central Server, Security Server, configuration and Test CA (niis.org); the Linkup federation (ITU cloud) |
+| External-link list | NIIS X-Road federation — Central Server, Security Server, configuration and Test CA (niis.org); the Linkup demonstration federation |
 
 ## 3.6 Subtopic 5.6 — Run the once-only exchange, live
 
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
-| Target runtime | ~5 min (≈600 spoken words) |
+| Target runtime | ~3 min (≈350 spoken words) |
 | PAERA anchor | PAERA §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check |
 
 > **Single message —** _PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real cross-server call, the data asked once._
@@ -427,38 +427,61 @@ Draft a stand-up run book for an X-Road demonstration federation for [country X]
 
 > _Slide 1 — Title: 'Run the once-only exchange, live'. Voice-over begins._
 
-This is the moment the whole framework exists for: a real once-only exchange, running across the federation, for an ordinary citizen scenario. Not a mock, not a diagram — a genuine cross-server call in which the state asks the citizen once and fetches the rest. Everything in this knowledge product has been leading to this single call.
+This is the moment the whole framework exists for: a learner applies for a credential, gives one number, and the state fetches the rest. What you are about to see was recorded from the running federation, exactly as it ran.
 
-> _Slide 2 — Title: 'The scenario'. Body, three text rows: 'A learner applies for a credential at the examination authority, PNEA.' 'Without once-only: the learner brings paper proof of identity and of enrolment.' 'With once-only: PNEA pre-fills identity from PNIA and enrolment from PLR, over the bus, in seconds.'_
+> _Slide 2 — Title: 'One call — identity from PNIA, enrolment from PLR'. Diagram: the learner → PNEA → PNIA and PLR, over the bus. The picture of what the recording shows._
 
-The scenario is concrete and ordinary. A learner applies for a credential at the national examination authority, PNEA. Without once-only, PNEA asks the learner to bring paper proof of who they are and proof that they were enrolled. With once-only, the moment the learner gives their national ID, PNEA's service pre-fills their identity from the national identity authority, PNIA, and their enrolment from the learner registry, PLR — both fetched over the bus, with a lawful basis, in seconds. The learner is asked once. That is the promise from the very first module of this knowledge product, now actually running.
+Here is the call you are about to watch. A learner applies for a credential at PNEA, the examination authority. Without once-only, the learner brings paper proof of identity and of enrolment. With it, PNEA fetches the identity from PNIA and the enrolment from PLR, over the bus.
 
-> _Slide 3 — Title: 'Every layer is in this one call'. Body, four text rows: 'Technical — routed across the trust zones, secured by mutual TLS.' 'Legal — returns only the fields the purpose needs, under the decree.' 'Organisational — between members the governance admitted, under their obligations.' 'Semantic — resolves only because the agencies agree what 'learner' and 'enrolment' mean.'_
+> _Slide 3 — Title: 'Before the bus: ten blank rows'. Demo evidence (screen frame): the application form before the call — ten rows, all blank, and the line 'Without the bus, this is ten questions.' Caption strip: 'Ten blank rows: without the bus, ten questions to answer.'_
 
-And every layer you built is in that single call. The call routes across the trust zones, secured by mutual TLS — the technical layer. It returns only the fields the purpose needs, under the decree's lawful basis — the legal layer. It runs between members the governance admitted, under their obligations — the organisational layer. And it returns meaning, not just bytes, because it resolves only thanks to the semantic map: PNEA, PNIA and PLR agree what 'learner' and 'enrolment' mean. That agreement came from the data owners and the architects sitting together — the shared language between business and IT — and without it the call would return confident nonsense. One exchange, all four layers, all at once.
+The form before the call: ten rows, all blank. Without the bus, that is ten questions the learner answers, and two sets of paper proof.
 
-> _Slide 4 — Title: 'This is the acceptance check'. Body, single text block: 'The acceptance check deploys the federation, the members, the service and the data, makes the call, and confirms once-only actually happens: the cross-server call resolves, identity and enrolment return, the learner is not asked twice. When it passes, this is not a framework explained — it is a framework that runs.'_
+> _Slide 4 — Title: 'One question asked, nine rows filled'. Demo evidence (screen frame): the same form after the call — 'asked 1 · pre-filled 9 / 9', five rows labelled PNIA over the bus, four labelled PLR over the bus. Caption strip: 'Nine fields arrive the learner was never asked for.'_
 
-This is the build pack's acceptance check, and it is deliberately a single, observable thing: the cross-server call resolves, the identity and the enrolment come back, the learner is not asked twice. An automated check runs exactly this — it deploys the federation, the members, the service and the demonstration data, then makes the call and confirms once-only actually happens. When that check passes, this knowledge product stops being a framework explained and becomes a framework that runs. That distinction — explained versus running — is the entire reason this is an implementation Knowledge Product. In a real federation this moment has a name: the dual go-live approval. The regulator confirms the member's compliance readiness, the operator confirms its technical readiness, and both confirmations are recorded before the production connection is switched on. The acceptance check is the technical half of that approval; the compliance half is the gate register the member completed on the way here.
+The same form once the learner gives the national ID. Nine rows fill in: five from PNIA, four from PLR, each labelled with its source. One question asked, nine fetched.
 
-And this is why one small exchange is the proving slice for this whole knowledge product and for the work that builds on it. Prove once-only here, on four members, and you have proven the pattern that your country's shared digital public infrastructure, and the services built on top of it, will reuse. The smallest real once-only call is the largest possible proof that the framework works — because if the state can ask once and fetch the rest for one learner, lawfully and securely, it can do it for every service a country builds on the bus.
+> _Slide 5 — Title: 'What PNIA sends — and what it withholds'. Demo evidence (screen frame): the console's layer view; the legal pane reads 'PNIA sends: given_name, family_name, date_of_birth, sex, region' and 'PNIA holds but withholds: mother_name, birth_registration_no, residence_address'. Caption strip: 'Legal, organisational, semantic, technical — read off the live response.'_
 
-> _Slide 5 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A real cross-server call, the learner asked once — every layer proven in a single exchange, and both go-live approvals recorded.'_
+The second tab reads the same exchange by layer. In the legal pane, PNIA sends five fields and names three it holds but withholds: a mother's name, a birth registration number, an address. The purpose does not need them.
 
-So the once-only exchange, live, is where this knowledge product proves itself. PNEA pre-fills identity from PNIA and enrolment from PLR, over the bus, for a real learner asked once. Technical, legal, organisational and semantic — all four layers in one resolving call, confirmed by the acceptance check. That single exchange is the acceptance of the whole framework, and the template every later service reuses.
+> _Slide 6 — Title: 'Same question, two callers, two answers'. Demo evidence (screen frame): PNEA:EXAMS 'Allowed.'; PLR:ENROLMENT 'Denied.' with the fault Server.ServerProxy.AccessDenied. Caption strip: 'PNEA: allowed. PLR, asking the identical question: AccessDenied.'_
 
-> _Slide 6 — Title: 'Sources'. Body: PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check. Footer: 'Find the link in the description.'_
+The third tab asks PNIA the identical question from two callers. PNEA is allowed. PLR, a member of the same bus, gets an access-denied fault from PNIA's access list. Being on the bus is not permission.
+
+> _Slide 7 — Title: 'One grant withdrawn, one source broken'. Demo evidence (clip, ~18 s, plays once then holds its last frame): PNEA's grant on the identity service is withdrawn; the form runs again; the PNIA rows turn to 'denied' while the PLR rows still fill; the grant is restored and the form fills whole. The slide's still is the denied moment. Caption strip: 'Grant withdrawn: the PNIA half fails, PLR still fills. Grant back: whole again.'_
+
+Now the operator withdraws PNEA's permission and runs the form again. Within seconds the PNIA rows are denied, while the PLR rows still fill: one grant withdrawn, one source broken. Restore it, and the form is whole.
+
+> _Slide 8 — Title: 'The application, with every field's source'. Demo evidence (text capture): out/application-<nin>.json rendered one line per field — field, value, source; nin is the only line whose source is the citizen. Caption strip: 'The application on disk: where every field came from.'_
+
+The exchange is also written to disk as the assembled application: one line per field, each with its source. The national ID is the only line the citizen supplied.
+
+> _Slide 9 — Title: 'Six acceptance checks, all green'. Demo evidence (text capture): scripts/acceptance.sh --summary --only 2.6 — lines 2.6.1 to 2.6.6, each PASS. Caption strip: 'Checks 2.6.1 to 2.6.6 green — the technical half of the go-live approval.'_
+
+Last, the acceptance script runs this exchange as six checks: the call, the right learner, asked once, the denial, a clean not-found, and field conformance. All six pass — the technical half of go-live approval.
+
+> _Slide 10 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'One field asked, nine fetched, only what the purpose needs — and six acceptance checks green.'_
+
+So the exchange is shown, not explained: one field asked, nine fetched, only what the purpose needs, a denial the access list enforces, six checks green. That is the framework, running.
+
+> _Slide 11 — Title: 'Sources'. Body: PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the Linkup demonstration federation. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
 | Slide | Element (text-only) | Notes |
 | --- | --- | --- |
-| 1 | Title slide. Title: 'Run the once-only exchange, live'. | Standard ITU template. No images. |
-| 2 | Scenario slide. Three text rows: the learner, without once-only, with once-only. | The concrete citizen scenario, on the bound Progressa institutions. Text-only. |
-| 3 | Every-layer slide. Four text rows mapping the call to the four layers. | The synthesis of all of KP2 in one call. Carries the lingua-franca argument (semantic row). Text-only. |
-| 4 | Acceptance-check slide. Single text block on the acceptance check and 'explained vs running'. | The build-pack acceptance — the proving moment. |
-| 5 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line that crowns the module. |
-| 6 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the once-only reference. |
+| 1 | Title card (section slide). Title: 'Run the once-only exchange, live'. | Standard ITU template. The silent cold open. No images. |
+| 2 | Call-flow diagram: the learner → PNEA → PNIA and PLR, over the bus. | The drawn 'before' picture: the recording's frames map onto its boxes. Shapes and text only. |
+| 3 | Demo evidence (screen frame). The form before the call: ten blank rows. Caption strip, provenance line. | Recorded from the running federation (beat C1-before). Pixels — the ITU calibration item in Section 5. |
+| 4 | Demo evidence (screen frame). The form after the call: asked 1, pre-filled 9 / 9, every row labelled with its source. | Beat C2-after. Calibration item. |
+| 5 | Demo evidence (screen frame). The layer view, legal pane: what PNIA sends and what it holds but withholds. | Beat C4-layers. Replaces v0.3's 'every layer' rows slide — the console says the same with live values. Calibration item. |
+| 6 | Demo evidence (screen frame). The same request from two callers: PNEA allowed, PLR AccessDenied. | Beat C5-allowed-denied. Calibration item. |
+| 7 | Demo evidence (clip). Withdraw PNEA's grant: the PNIA half fails, PLR still fills; restore. Still = the denied moment. | Beat C6-break-restore, ~18 s, plays once then holds its last frame. The one clip. Calibration item. |
+| 8 | Demo evidence (text capture). The assembled application, one line per field with its source. | Beat C7-application. Monospaced text on the grey panel — inside the text-only rule. |
+| 9 | Demo evidence (text capture). The acceptance summary, 2.6.1–2.6.6 PASS. Caption carries the go-live line. | Beat C8-acceptance. Text — inside the text-only rule. |
+| 10 | Single-sentence summary slide. One large text block (Arial Bold 28pt) and the practice box. | The take-home line that crowns the module. |
+| 11 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the once-only reference. |
 
 ### AI usage tip — Script and verify the once-only exchange (the acceptance check)
 
@@ -797,7 +820,7 @@ The v0.1 drafting (and the v0.2 fold) raised the editorial and structural decisi
 
 ### 5.1 Cost-frame and topology claims to verify
 
-Claims that should be confirmed against the source before final lock: the four-phase implementation timeline (Core Platform 0–6 months, Pilot 6–12, Multi-agency 12–18, Optimisation 18–24+) and the cost frame benchmarked to Estonia's X-Road build-out and the ITU DPI Safeguards (5.1) — confirm the figures and the timeline, since cost claims are the most scrutinised by funders; and the Linkup federation topology (Central Server at PDGA, four Security Servers at MoEYS/PEMIS, PNEA, PLR, PNIA, a Test CA) against the Inception Report §4.3 (5.5).
+Claims that should be confirmed against the source before final lock: the four-phase implementation timeline (Core Platform 0–6 months, Pilot 6–12, Multi-agency 12–18, Optimisation 18–24+) and the cost frame benchmarked to Estonia's X-Road build-out and the ITU DPI Safeguards (5.1) — confirm the figures and the timeline, since cost claims are the most scrutinised by funders; and the Linkup federation topology as the build pack runs it (Central Server at PDGA, four Security Servers — PDGA as the owner, PNEA, PLR, PNIA — and a Test CA with OCSP and time-stamping; MoEYS/PEMIS retired) against the Inception Report §4.3, which still names the earlier four-member canon (5.4, 5.5).
 
 ### 5.2 Editorial tone calls
 
@@ -819,9 +842,13 @@ Three items travel with the folded videos. (1) The bus-monitoring play (5.8) run
 
 v0.3 aligns Topic 5 to the interoperability method behind KP2. 5.1 now uses the method's phase names (Foundation, Pilot and Validation, Expansion, Optimisation) and deliverables, states the honest calendar — the four build phases follow twelve to eighteen months of foundation work; the first cross-ministry once-only exchange lands in Phase 2; the first milestone is two to three years from programme start; national coverage four to six — and delivers the five plan artefacts (schedule, investment plan, procurement plan, workforce plan, risk register with success metrics). This replaces v0.1's 'first real exchange inside the first six months', which the Progressa demonstration achieves in a sandbox but a national programme does not; the KP2 intro storyboard is adjusted to match. 5.4 adds the conformance test as the gate before a member's first service; 5.6 the dual go-live approval; 5.8 the quarterly compliance review and reporting cadence; 5.10 the usual wave order of sectors. Confirm with ITU that the honest calendar is the framing to carry in the videos — it is the most-changed claim in v0.3.
 
-### 5.7 Corrections still pending from the 10 September script-vs-pack review
+### 5.7 Corrections from the 10 September script-vs-pack review (v0.4)
 
-v0.2 folded Topic 6 in and v0.3 aligns to the source method; neither yet carries the corrections listed in KP2_M5_Script_vs_Pack_Review_2026-09-10 §2 (the retired MoEYS/PEMIS server, the admission → validation → automated join mechanism in 5.4, OCSP/TSA and the explicit approval in 5.5, scripts/acceptance.sh 2.6.1–2.6.6 and field conformance in 5.6, the per-service SLA framing in 5.3, the development-track and message-log-retention points in 5.7). Those wait on the Tuesday-call decisions the review names (hosting; screencast under §3.i) and go into v0.3.
+v0.4 carries items 1–5 of KP2_M5_Script_vs_Pack_Review_2026-09-10 §2: MoEYS/PEMIS retired — the four Security Servers are PDGA as the owner plus PNEA, PLR and PNIA (5.4, 5.5); 5.4's mechanism is admission → validation → the join running itself, with the wrong-member-code lesson now caught by the validator; 5.5 adds OCSP/TSA and the explicit approval on the Central Server; 5.3's SLA belongs to a published service, so a consumer-only member signs none; 5.2's requirements travel in the join request. The hosting line now reads 'a single host — a laptop or one VM — in sandboxed containers', which is true of the demonstration as built and stays true whichever way the Tuesday hosting decision goes. Still pending: item 6, the development-track and message-log-retention points in 5.7. 5.4 and 5.5 keep their drawn slides in v0.4; their demo blocks follow once the 5.6 pilot is reviewed.
+
+### 5.8 Demo evidence as an element type (5.6 pilot)
+
+5.6 is rebuilt screen-led: seven of its eleven slides are demo evidence recorded from the running federation by the build pack's capture run, never redrawn, each carrying a caption strip and a provenance line (the X-Road version, the pack commit and the capture date). Two kinds sit inside the text-only rule as written — the text captures on slides 8 and 9 (the assembled application, the acceptance summary). The other two kinds are pixels: screen-only voice-over is allowed (§4.3) but these are not text-only slides (§3.i). The item for ITU is whether this element type is acceptable, decided on exactly these: five screen frames — the form before the call (slide 3), the form after it (slide 4), the layer view with what PNIA withholds (slide 5), the same request from two callers (slide 6), and the still of the permission clip (slide 7) — and one clip, the ~18-second withdrawal and restoration of PNEA's grant on the identity service (slide 7). The pilot video answers ITU's earlier question (5.3, item 3): a recorded screencast of a real call on the sandbox, with the permission break as the proof it is not a mock.
 
 ## 6. Annex — aggregate external-link list
 
