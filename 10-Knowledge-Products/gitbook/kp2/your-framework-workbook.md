@@ -44,7 +44,7 @@ flowchart LR
 
 ## Every artefact in KP2
 
-### Module 1 — Why interoperability, the four layers, and the foundation to start
+### Module 1 — Why interoperability and the four layers
 
 *The foundation.*
 
@@ -84,7 +84,7 @@ flowchart LR
 | **B18** | Four Working Group charters | [3.5](module-3/3-5.md) ✍️ | B15 | 3.6 |
 | **B19** | Change control, standards register (with conformance fields) and semantic-registry charter | [3.6](module-3/3-6.md) ✍️ | B16, B18 | 5.9 |
 
-### Module 4 — Architecture, technical standards and the Giga end-to-end case
+### Module 4 — Architecture and technical standards
 
 *The technical configuration.*
 
@@ -99,7 +99,7 @@ flowchart LR
 | **B26** | X-Road service description and wiring checklist | [4.7](module-4/4-7.md) ✍️ | B24, B6 | 5.4 |
 | **B27** | Data-protection envelope | [4.8](module-4/4-8.md) ✍️ | B5, B11 | 5.6 |
 
-### Module 5 — Implementation, onboarding, the Linkup demonstration — and running the framework
+### Module 5 — Implementation and onboarding
 
 *The runnable slice, then the framework in operation.*
 

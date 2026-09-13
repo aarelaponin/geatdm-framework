@@ -3,10 +3,10 @@ description: "Ten videos on standing the framework up and running it: the four-p
 icon: flag-checkered
 ---
 
-# Module 5 — Implementation, onboarding, the Linkup demonstration — and running the framework
+# Module 5 — Implementation and onboarding
 
 {% hint style="info" %}
-🎬 **Video in production:** *KP2 Module 5 — Implementation, onboarding, the Linkup demonstration — and running the framework* (~2 min).
+🎬 **Video in production:** *KP2 Module 5 — Implementation and onboarding* (~2 min).
 The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../../start-here/video-index.md).
 {% endhint %}
 

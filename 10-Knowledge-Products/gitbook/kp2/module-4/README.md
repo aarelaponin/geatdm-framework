@@ -3,10 +3,10 @@ description: "Eight videos on the technical layer: the four functional layers an
 icon: flag-checkered
 ---
 
-# Module 4 — Architecture, technical standards and the Giga end-to-end case
+# Module 4 — Architecture and technical standards
 
 {% hint style="info" %}
-🎬 **Video in production:** *KP2 Module 4 — Architecture, technical standards and the Giga end-to-end case* (~2 min).
+🎬 **Video in production:** *KP2 Module 4 — Architecture and technical standards* (~2 min).
 The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../../start-here/video-index.md).
 {% endhint %}
 

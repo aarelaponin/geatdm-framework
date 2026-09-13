@@ -9,11 +9,11 @@
  },
  {
   "ref": "kp2-module-1",
-  "title": "Module 1 — Why interoperability, the four layers, and the foundation to start",
+  "title": "Module 1 — Why interoperability and the four layers",
   "parent": "kp2",
   "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-1/README.md",
   "path": "kp2/module-1/README.md",
-  "gitbook_id": "XLpdJttKfhre2JtCAUOs"
+  "gitbook_id": "s8VR6w8qYTOF8jocZAO6"
  },
  {
   "ref": "kp2-module-2",
@@ -33,19 +33,19 @@
  },
  {
   "ref": "kp2-module-4",
-  "title": "Module 4 — Architecture, technical standards and the Giga end-to-end case",
+  "title": "Module 4 — Architecture and technical standards",
   "parent": "kp2",
   "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-4/README.md",
   "path": "kp2/module-4/README.md",
-  "gitbook_id": "eLYeZnpNImhiTONAxBYa"
+  "gitbook_id": "JqdCzMSvtLyApps5X71q"
  },
  {
   "ref": "kp2-module-5",
-  "title": "Module 5 — Implementation, onboarding, the Linkup demonstration — and running the framework",
+  "title": "Module 5 — Implementation and onboarding",
   "parent": "kp2",
   "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-5/README.md",
   "path": "kp2/module-5/README.md",
-  "gitbook_id": "CXaH8CnCXhjAWyC9b0Km"
+  "gitbook_id": "mubbjRwqV9FxzjgPbdf3"
  },
  {
   "ref": "kp2-build-pack",
@@ -381,7 +381,7 @@
   "parent": "kp2-build-pack",
   "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/build-pack/run.md",
   "path": "kp2/build-pack/run.md",
-  "gitbook_id": "MzhHaaDxGN7VH4KXOWXU"
+  "gitbook_id": "h11eXFvzMsL1yMQAf7iu"
  },
  {
   "ref": "kp2-build-pack-acceptance",

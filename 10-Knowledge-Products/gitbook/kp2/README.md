@@ -20,11 +20,11 @@ The play below does not depend on the video: the concept section carries what th
 
 | Module | Topic | Persona | Videos | Plays | Status |
 | --- | --- | --- | --- | --- | --- |
-| [1](module-1/README.md) | Why interoperability, the four layers, and the foundation to start | Strategist | 7 | 7 plays | Prompts live |
+| [1](module-1/README.md) | Why interoperability and the four layers | Strategist | 7 | 7 plays | Prompts live |
 | [2](module-2/README.md) | Legal framework — the Decree Drafting Kit | Strategist | 6 | 6 plays | Prompts live |
 | [3](module-3/README.md) | Governance model — three tiers with RACI | Strategist | 6 | 6 plays | Prompts live |
-| [4](module-4/README.md) | Architecture, technical standards and the Giga end-to-end case | Architect | 8 | 8 plays | Prompts live |
-| [5](module-5/README.md) | Implementation, onboarding, the Linkup demonstration — and running the framework | Architect / Strategist | 10 | 10 plays | Prompts live |
+| [4](module-4/README.md) | Architecture and technical standards | Architect | 8 | 8 plays | Prompts live |
+| [5](module-5/README.md) | Implementation and onboarding | Architect / Strategist | 10 | 10 plays | Prompts live |
 
 *Prompts live — concept and play on every page, worked example pending. Worked examples live — Progressa run and annotated. Videos live — embeds on every page.*
 
@@ -61,7 +61,7 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 <details>
 
-<summary><strong>Module 1 — Why interoperability, the four layers, and the foundation to start</strong> · ~31 minutes across 7 videos</summary>
+<summary><strong>Module 1 — Why interoperability and the four layers</strong> · ~31 minutes across 7 videos</summary>
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
@@ -110,7 +110,7 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 <details>
 
-<summary><strong>Module 4 — Architecture, technical standards and the Giga end-to-end case</strong> · ~40 minutes across 8 videos</summary>
+<summary><strong>Module 4 — Architecture and technical standards</strong> · ~40 minutes across 8 videos</summary>
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
@@ -128,7 +128,7 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 <details>
 
-<summary><strong>Module 5 — Implementation, onboarding, the Linkup demonstration — and running the framework</strong> · ~47 minutes across 10 videos</summary>
+<summary><strong>Module 5 — Implementation and onboarding</strong> · ~47 minutes across 10 videos</summary>
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
@@ -268,7 +268,7 @@ Step back to see why it worked, because that is the deeper lesson. At every step
 
 An interoperability framework is built, not bought — and once it exists, procurement is how it is enforced. It is built in deliberate, gated phases, on an honest calendar. And it ends in a real once-only exchange that a citizen actually feels — asked once, not five times. A country with no framework can walk this exact path: name the foundation, pass the decree, govern it, architect it, stand it up, and ask the citizen once.
 
-### Do this on your own country — Draft your country's no-framework-to-first-service storyboard
+### Your turn — Draft your country's no-framework-to-first-service storyboard
 
 {% hint style="info" %}
 **A play with no video.** This was the closing video of the v0.1 bundles (6.6); the storyboard above is what it said, and the prompt is the one thing from it a Strategist still needs — a storyboard of their own country for a minister or a funder.

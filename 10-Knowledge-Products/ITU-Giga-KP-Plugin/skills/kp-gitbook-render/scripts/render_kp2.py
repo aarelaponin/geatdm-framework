@@ -36,15 +36,15 @@ READ_ONCE = "about fifteen minutes"
 # Module metadata the build scripts do not carry as fields (title, blurb). Persona and runtime
 # are read from the scripts.
 MODULES = {
-    1: dict(title="Why interoperability, the four layers, and the foundation to start",
+    1: dict(title="Why interoperability and the four layers",
             blurb="Seven videos for the Strategist making the case: why interoperability is built rather than bought, the four layers it fails at, the once-only promise it exists for, and the three foundation artefacts — the Strategic Foundation Document, the Use-Case Catalogue and the stakeholder map — every later module reads."),
     2: dict(title="Legal framework — the Decree Drafting Kit",
             blurb="Six videos on the legal layer: why the bus needs a mandate, the five components of an interoperability decree, the Explanatory Memorandum, the Draft Articles and the Cover Note generated against published models, and the decree read as the legal configuration that authorises exactly the exchanges in your catalogue."),
     3: dict(title="Governance model — three tiers with RACI",
             blurb="Six videos on the organisational layer: naming the owner before the first member joins — and keeping the body that sets the rules apart from the body that runs the bus — the three tiers of governance, the RACI, member obligations, the four standing Technical Working Groups, and change control, conformance and the semantic registry that keep the framework current instead of frozen at launch."),
-    4: dict(title="Architecture, technical standards and the Giga end-to-end case",
+    4: dict(title="Architecture and technical standards",
             blurb="Eight videos on the technical layer: the four functional layers and three trust zones, the standards portfolio adopted rather than written, the semantic map and the OpenAPI contract generated for a real exchange, Giga's school data taken bronze-to-gold onto the bus, the X-Road wiring, and the data-protection envelope that makes an exchange lawful."),
-    5: dict(title="Implementation, onboarding, the Linkup demonstration — and running the framework",
+    5: dict(title="Implementation and onboarding",
             blurb="Ten videos on standing the framework up and running it: the four-phase plan on an honest calendar with the investment, procurement, workforce and risk plans beside it, Member Requirements and the SLA, registering a member, standing up the Linkup federation, the live once-only exchange that is the framework's acceptance check, what changes for production — and then watching the bus from its logs, keeping the decree, Governance Pack and standards portfolio from contradicting each other, and carrying the framework to the next sector."),
 }
 # Which module's videos close a persona's track (for the home-page audience table).
@@ -525,7 +525,7 @@ description: "{desc(s["message"])}"
 
 {s["concept"]}
 
-## Do this on your own sector — {p["title"]}
+## Your turn — {p["title"]}
 
 {tooltip(p)}
 
@@ -764,7 +764,7 @@ def storyboard_section():
 
 {H.STORYBOARD_CLOSE}
 
-### Do this on your own country — {p["title"]}
+### Your turn — {p["title"]}
 
 {{% hint style="info" %}}
 **A play with no video.** This was the closing video of the v0.1 bundles (6.6); the storyboard above is what it said, and the prompt is the one thing from it a Strategist still needs — a storyboard of their own country for a minister or a funder.

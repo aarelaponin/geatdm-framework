@@ -3,10 +3,10 @@ description: "Seven videos for the Strategist making the case: why interoperabil
 icon: flag-checkered
 ---
 
-# Module 1 — Why interoperability, the four layers, and the foundation to start
+# Module 1 — Why interoperability and the four layers
 
 {% hint style="info" %}
-🎬 **Video in production:** *KP2 Module 1 — Why interoperability, the four layers, and the foundation to start* (~2 min).
+🎬 **Video in production:** *KP2 Module 1 — Why interoperability and the four layers* (~2 min).
 The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../../start-here/video-index.md).
 {% endhint %}
 
