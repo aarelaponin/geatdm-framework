@@ -24,6 +24,9 @@ BANNED_PHRASES = [
     # podcast furniture
     "deep dive", "welcome to", "unpacking", "our sources", "the sources say",
     "here's where it gets", "here is where it gets", "buckle up",
+    # the brief's own stage direction read aloud — KP2 1.3 v0.5: "let me ask you the substantive
+    # question that a director general would ask"
+    "substantive question", "director general would ask", "director-general would ask",
     "let's get into it", "stick around",
     # reflective-outro tic
     "raises a fascinating question", "for you to consider", "think about",
@@ -96,6 +99,7 @@ CITIZEN_FRAMING = [
     r"\bfilling out your\b",
     r"\bthe next time you\b",
     r"\bwe(?:'ve| have) all been there\b",
+    r"\bas a citizen,? you\b",          # KP2 1.1 v0.1: "as a citizen, you hand over your ID"
 ]
 
 # The take must END on the sources line. A take that simply stops, or stops on a question,
@@ -220,7 +224,10 @@ NOT_A_NAME = {"THE", "A", "AN", "THIS", "THAT", "ITS", "OUR", "AND", "OR", "BUT"
               "FIRST", "SECOND", "THIRD", "EVEN", "EXACTLY", "PRECISELY", "LIKE", "JUST",
               # interjections start a clause mid-caption, so the sentence-start test misses them
               # ("…and the Oh framework" on a 5.5 roll)
-              "OH", "AH", "MM", "UM", "UH", "YES", "NO", "SURE", "WOW", "HMM", "YEAH"}
+              "OH", "AH", "MM", "UM", "UH", "YES", "NO", "SURE", "WOW", "HMM", "YEAH",
+              # common technical acronyms, not a broken name — "the shared digital bus and API
+              # standards" failed KP2 1.1's first roll, whose deck says "open interfaces"
+              "API", "APIS", "ISO", "EU", "ICT", "ID"}
 
 
 def framework_name_slips(text, deck_text):

@@ -167,6 +167,17 @@ def open_end(cues, terms=None):
     if cut is None:
         return None
 
+    # The marker's sentence can run on into the next cue — KP2 1.1's "Today we are looking at a
+    # stack of … white papers, / uh, IT architecture guidelines, and some public sector research"
+    # — and cutting after the marker cue opened the video on "uh, IT architecture guidelines".
+    # Same fix as _to_sentence_start, forwards.
+    # ponytail: capped at 3 cues, so a transcript with no punctuation cannot walk into content
+    marker = cut
+    for _ in range(3):
+        if cut >= len(cues) or cues[cut - 1]["text"].rstrip().endswith((".", "!", "?")):
+            break
+        cut += 1
+
     if terms is None:
         # Without the deck there is nothing to tell furniture from content, so keep the original
         # bound: never eat more than the first four cues. Six was tried and was wrong — on 1.3 it
@@ -179,7 +190,9 @@ def open_end(cues, terms=None):
     # Progressa — it is a demonstration country …" and 2.5's "module two, video 2.5", which are
     # content and the brief's required cold open. Modules 2-4 open with a 30 s teaser BEFORE the
     # self-introduction, so a four-cue cap gives up on them entirely; this keeps both cases right.
-    start = cut
+    # From the marker, not the sentence-extended cut: the run-on half carries subject words
+    # ("IT architecture guidelines") and would read as content.
+    start = marker
     while start > 0 and is_furniture(cues[start - 1]["text"], terms):
         start -= 1
     return cut if start == 0 else None

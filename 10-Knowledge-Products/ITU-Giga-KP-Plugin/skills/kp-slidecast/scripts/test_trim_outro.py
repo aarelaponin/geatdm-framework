@@ -23,6 +23,14 @@ def test_furniture_before_the_marker_is_cut():
     assert open_end(c, TERMS) == 4, open_end(c, TERMS)
 
 
+def test_a_show_open_sentence_running_into_the_next_cue_is_cut_whole():
+    # KP2 1.1 v0.1: the cut after the marker cue opened the video on "uh, IT architecture …"
+    c = cues("Welcome to this deep dive. Today we are looking at white papers,",
+             "uh, guidelines, and some research to solve a mystery.",
+             "The ministry runs three registries.")
+    assert open_end(c, TERMS) == 2, open_end(c, TERMS)
+
+
 def test_the_videos_own_opening_survives():
     # 4.1: content in the first cue, a marker after it. Cutting to the marker would eat it.
     c = cues("Meet Progressa. It is a demonstration country.",

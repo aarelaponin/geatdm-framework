@@ -376,6 +376,15 @@ TERM_ROWS = [
      "any other duration or count"),
 ]
 
+# Rows whose "say this" is KP1's own content — EA anchored to the reference architecture, the
+# roadmap's six months, "register" over "registry". Their triggers fire on KP2's words too, and
+# there they contradict the deck: KP2 3.6 says "registry" (ISO/IEC 11179), and KP2 names
+# Enterprise Architecture only as the companion course. Keyed on the KP, not on content, because
+# KP1's shipped briefs already mix "register" and "registry" (2.4, 2.5) and must regenerate
+# byte-identical.
+KP1_ONLY = {r"\blocalis", r"\bEnterprise Architecture\b|\bEA\b",
+            r"\bregisters\b|\b(?:the|a|one|national|base|authoritative) register\b", r"six months"}
+
 PROMPT = """# NotebookLM setup for KP{kp} · M{mod} · Video {sub}
 
 Deck `{deck}` · brief `{brief}`
@@ -530,7 +539,7 @@ def main():
             fixed.append((pat, say, no))
         rows = fixed
     shipped = [(pat, say, no) for pat, say, no in rows
-               if pat is None or re.search(pat, body, re.I)]
+               if pat is None or (re.search(pat, body, re.I) and (kp == "1" or pat not in KP1_ONLY))]
     if not names_it:
         left = [say for pat, say, no in shipped if pat is not None and "PAERA" in say]
         if left:
@@ -549,8 +558,8 @@ def main():
                   "on air — as a name; do not expand it unless the brief does, and if you "
                   "do, the only expansion is \"Public Administration Ecosystem Reference "
                   "Architecture\". ")
-                 + "\"register\" not \"registry\", \"building block\" — never \"module\" or "
-                   "\"component\". "
+                 + ("\"register\" not \"registry\", " if kp == "1" else "")
+                 + "\"building block\" — never \"module\" or \"component\". "
                  + ("Say \"Progressa\" as pro-GRESS-a — never \"Progressive\", never "
                     "\"Progresa\". " if re.search(r"\bProgressa\b", body, re.I) else "")
                  + "Invent no figures, dates, countries or examples.",
