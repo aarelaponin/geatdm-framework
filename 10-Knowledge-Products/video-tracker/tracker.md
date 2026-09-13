@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-13 16:46 (data v2)
+# KP video tracker — generated 2026-09-13 17:13 (data v2)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -133,14 +133,14 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 5.0 | Module 5 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 5.1 | Plan the build in four phases | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 5.2 | State what a member must have — the Member Requirements | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 5.3 | Make 'connected' mean 'dependable' — the SLA | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 5.4 | Register a member on X-Road | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 5.5 | Stand up the federation | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 5.6 | Run the once-only exchange, live | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 5.7 | From demonstration to production | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 5.8 | Watch the bus — monitoring and anomaly detection | en | `●○○○○○○○○○` | 1/10 | Script |  | was 6.2 |
-| 5.9 | Keep the documents honest — the consistency cross-check | en | `●○○○○○○○○○` | 1/10 | Script |  | was 6.3 |
-| 5.10 | Carry the framework to the next sector | en | `●○○○○○○○○○` | 1/10 | Script |  | was 6.4 |
+| 5.1 | Plan the build in four phases | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 5.2 | State what a member must have — the Member Requirements | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 5.3 | Make 'connected' mean 'dependable' — the SLA | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 5.4 | Register a member on X-Road | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | BLOCKER: M5 review §2 unsettled (join mechanism) — no audio until decided |
+| 5.5 | Stand up the federation | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | BLOCKER: M5 review §2 unsettled (MoEYS/PEMIS member and ITU-cloud hosting) — no audio until decided |
+| 5.6 | Run the once-only exchange, live | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | BLOCKER: M5 review §2 unsettled (acceptance steps) — no audio until decided |
+| 5.7 | From demonstration to production | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 5.8 | Watch the bus — monitoring and anomaly detection | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | was 6.2 |
+| 5.9 | Keep the documents honest — the consistency cross-check | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | was 6.3 |
+| 5.10 | Carry the framework to the next sector | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | was 6.4 |
 

@@ -1,0 +1,109 @@
+{
+  "kicker_prefix": "Government Interoperability Framework · Module 5",
+  "audience": "Chief or senior architect · integration lead · agency technical lead — and, for 5.9–5.10, the strategist",
+  "out_pattern": "KP2_M5_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "Stand it up, prove it",
+  "cover_subtitle_marker": "Ten standalone videos",
+  "videos": [
+    {
+      "code": "5.1",
+      "title": "Plan the build in four phases",
+      "mins": "~5",
+      "range": [
+        3,
+        10
+      ],
+      "message": "Foundation, Pilot, Expansion, Optimisation — four phases with decision gates, an honest calendar, and the four plans beside the schedule that a funder actually reads."
+    },
+    {
+      "code": "5.2",
+      "title": "State what a member must have — the Member Requirements",
+      "mins": "~4",
+      "range": [
+        11,
+        17
+      ],
+      "message": "The Member Requirements template tells an agency exactly what it must have before it can join — no surprises at go-live."
+    },
+    {
+      "code": "5.3",
+      "title": "Make 'connected' mean 'dependable' — the SLA",
+      "mins": "~4",
+      "range": [
+        18,
+        24
+      ],
+      "message": "A Service-Level Agreement turns 'connected' into 'dependable' — the template makes it a fill-in, not a negotiation from scratch."
+    },
+    {
+      "code": "5.4",
+      "title": "Register a member on X-Road",
+      "mins": "~5",
+      "range": [
+        25,
+        33
+      ],
+      "message": "Generate the subsystem registration and the access-control list — the configuration that admits one agency to the bus."
+    },
+    {
+      "code": "5.5",
+      "title": "Stand up the federation",
+      "mins": "~5",
+      "range": [
+        34,
+        40
+      ],
+      "message": "Central Server, four Security Servers, a Test CA — the Linkup federation, stood up from the run book."
+    },
+    {
+      "code": "5.6",
+      "title": "Run the once-only exchange, live",
+      "mins": "~5",
+      "range": [
+        41,
+        48
+      ],
+      "message": "PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real cross-server call, the data asked once."
+    },
+    {
+      "code": "5.7",
+      "title": "From demonstration to production",
+      "mins": "~5",
+      "range": [
+        49,
+        56
+      ],
+      "message": "What changes between the sandboxed Linkup demonstration and a production-grade federation a country would actually run — including migrating off and retiring the legacy point-to-point links."
+    },
+    {
+      "code": "5.8",
+      "title": "Watch the bus — monitoring and anomaly detection",
+      "mins": "~5",
+      "range": [
+        57,
+        63
+      ],
+      "message": "Point Claude at the real bus logs to spot a failing or unusual exchange before a citizen does."
+    },
+    {
+      "code": "5.9",
+      "title": "Keep the documents honest — the consistency cross-check",
+      "mins": "~5",
+      "range": [
+        64,
+        70
+      ],
+      "message": "Keep the decree, the Governance Pack and the standards portfolio saying the same thing — a cross-check that catches drift across the three."
+    },
+    {
+      "code": "5.10",
+      "title": "Carry the framework to the next sector",
+      "mins": "~4",
+      "range": [
+        71,
+        77
+      ],
+      "message": "The same four-layer framework stands up interoperability beyond education — the method is sector-portable, and the second sector is cheaper than the first."
+    }
+  ]
+}
