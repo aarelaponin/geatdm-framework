@@ -21,8 +21,15 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "kp-deck-builder" / "scripts"))
 from extract_deck import (Presentation, budget, is_practice, mmss,  # noqa: E402
                           notes_text, shape_text, vo_words)
+from deck_lib import DEMO_SHAPE, PROVENANCE_LEAD                       # noqa: E402
+
+ORDINALS = ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", "Ninth",
+            "Tenth", "Eleventh", "Twelfth"]
+NUMBER_WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+                "ten", "eleven", "twelve"]
 
 STEM_RE = re.compile(r"^(KP(\d+)_M(\d+)_(\d+\.\d+))_Deck_v0\.(\d+)\.pptx$")
 DEFAULT_SECONDS = 300      # Module 1 targeted 5:00 in every brief, whatever the video's nominal length
@@ -122,7 +129,15 @@ def load(deck):
         texts = shape_text(s)
         notes = notes_text(s)
         sub, stage = split_notes(notes)
-        slides.append({"n": i, "title": title_of(texts, i),
+        # A demo-evidence slide (deck_lib.demo_slide & co.) shows a recording or a capture. The
+        # hosts describe what its caption names from the VO; they never read the capture's lines,
+        # and the provenance line is furniture. A clip's CLIP: note is for the slidecast.
+        demo = any(sh.name == DEMO_SHAPE for sh in s.shapes)
+        if demo:
+            prov = next(j for j, t in enumerate(texts) if t.startswith(PROVENANCE_LEAD))
+            texts = [texts[0], texts[prov - 1]]
+            stage = re.sub(r"^CLIP:\s*\S+\s*", "", stage)
+        slides.append({"n": i, "title": title_of(texts, i), "demo": demo,
                        "texts": [t for t in texts if not is_practice(t)],
                        "practice": any(is_practice(t) for t in texts),
                        "vo_words": vo_words(notes), "substance": sub, "staging": stage})
@@ -133,9 +148,26 @@ def is_sources(s):
     return s["title"].strip().lower().startswith("sources")
 
 
-def segment(s, start, secs, first, last_content, sources):
+def demo_block(run):
+    """The instruction in front of a run of demo-evidence slides: numbered observations, kept in order.
+
+    The narration is a remix, so nothing on screen can be synchronised to words — but the hosts keep
+    a numbered sequence they were told to keep far better than a run of loosely related segments."""
+    a, b, n = run[0]["n"], run[-1]["n"], len(run)
+    return (f"## Demonstration block — slides {a} to {b}\n\n"
+            f"**Slides {a} to {b} are a recorded demonstration. Describe them as {NUMBER_WORDS[n]} "
+            f"numbered observations, in this order, one after the other. Do not skip, merge or "
+            f"reorder them, and describe nothing on screen that is not quoted here.**\n\n"
+            f"Host B opens each observation with its number — \"{ORDINALS[0]}\", \"{ORDINALS[1]}\", "
+            f"… \"{ORDINALS[n - 1]}\" — and describes it from the quoted words: the thing on screen "
+            f"first, then what it means. Host A asks no question inside the block.\n\n")
+
+
+def segment(s, start, secs, first, last_content, sources, observation=None):
     head = (f"### Slide {s['n']} — {s['title']} · {mmss(start)}–{mmss(start + secs)} "
             f"({secs} s · ~{len(s['substance'].split())} words of substance)\n")
+    if observation:
+        head += f"**Observation {observation}.** On screen: the recording named by the caption below.\n"
     if first:
         # The title card is now the section slide, and it carries the opener's VO in its notes,
         # so the cold open is a preamble to that substance rather than the whole segment.
@@ -427,7 +459,7 @@ fact, figure, country, institution or example that is not written in the brief, 
 out. When a segment's material is covered, move on to the next slide — do not fill the time with
 elaboration, a second example or a restatement. A short segment is correct.
 
-«ENUMERATION LINE — name the list this video must number aloud, or delete this paragraph.»
+{demoline}«ENUMERATION LINE — name the list this video must number aloud, or delete this paragraph.»
 
 Total runtime about {mins} minutes. Never exceed {ceilmins} minutes.
 
@@ -515,9 +547,14 @@ def main():
     alloc = budget([{"texts": s["texts"], "vo_words": s["vo_words"]} for s in slides], secs)
     last_content = max(i for i, s in enumerate(slides) if not is_sources(s))
 
+    run = [s for s in slides if s["demo"]]
+    if run and [s["n"] for s in run] != list(range(run[0]["n"], run[-1]["n"] + 1)):
+        sys.exit(f"{sub}: demo-evidence slides {[s['n'] for s in run]} are not one contiguous block")
     parts, clock = [], 0
     for i, (s, a) in enumerate(zip(slides, alloc)):
-        parts.append(segment(s, clock, a, i == 0, i == last_content, is_sources(s)))
+        seg = segment(s, clock, a, i == 0, i == last_content, is_sources(s),
+                      observation=(f"{run.index(s) + 1} of {len(run)}" if s["demo"] else None))
+        parts.append((demo_block(run) if run and s is run[0] else "") + seg)
         clock += a
 
     body = "\n".join(parts)
@@ -550,6 +587,13 @@ def main():
         mins=round(secs / 60), ceiling=mmss(secs + 60), ceilmins=round(secs / 60) + 1,
         lo=mmss(secs - 30), hi=mmss(secs + 30), segments=body, terms="\n".join(used) + "\n",
         brief=f"{stem}_AudioBrief_v0.{ver}.md",
+        demoline=(f"Slides {run[0]['n']} to {run[-1]['n']} are a recorded demonstration: describe "
+                  f"them as {NUMBER_WORDS[len(run)]} numbered observations in the brief's order — "
+                  f"\"{ORDINALS[0]}\", \"{ORDINALS[1]}\", … — skipping, merging and reordering "
+                  f"none, and describing nothing on screen that the brief does not quote. Inside those "
+                  f"slides Host A asks no question; Host B opens each observation with its "
+                  f"number.\n\n"
+                  if run else ""),
         # The Progressa clause is conditional for the same reason TERM_ROWS are filtered: naming
         # the demonstration country to a video that never uses it invites the hosts to bring it in.
         termline=("Say \"the reference architecture\" in words; never say the initialism "

@@ -74,6 +74,28 @@ def advisory_slides(prs):
     return out
 
 
+def demo_order(prs, slides, cues):
+    """Where the take reaches each demo-evidence slide, and whether it gets there in deck order.
+
+    A demonstration block is briefed as numbered observations in a fixed order (make_brief.py),
+    because cues are found afterwards and a reordered block cannot be cut against. Each demo slide
+    is placed at the cue carrying the most of its distinctive terms (earliest on a tie). Reported,
+    never a failure: one stray word can misplace a short slide — read the transcript first.
+    Returns [(slide_no, seconds or None)]."""
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "kp-deck-builder" / "scripts"))
+    from deck_lib import DEMO_SHAPE
+    demo = {i for i, sl in enumerate(prs.slides, 1) if any(sh.name == DEMO_SHAPE for sh in sl.shapes)}
+    words = [set(WORD.findall(c["text"].lower())) for c in cues]
+    placed = []
+    for n, _, terms in slides:
+        if n not in demo:
+            continue
+        hits = [len(w & terms) for w in words]
+        best = max(hits, default=0)
+        placed.append((n, cues[hits.index(best)]["start"] if best else None))
+    return placed
+
+
 def main():
     prs = Presentation(sys.argv[1])
     srt = Path(sys.argv[2]).read_text(encoding="utf-8-sig")
@@ -104,6 +126,16 @@ def main():
         if flag not in ("ok  ", "note"):
             print(f"         missing: {', '.join(sorted(terms - take)[:10])}")
     print(f"\n{thin} slide(s) thin or missing")
+
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from srt_drift_check import parse_srt
+    placed = demo_order(prs, slides, parse_srt(sys.argv[2]))
+    if placed:
+        times = [t for _, t in placed if t is not None]
+        in_order = len(times) == len(placed) and times == sorted(times)
+        print(f"\n=== demonstration block order (soft) — {'IN ORDER' if in_order else 'OUT OF ORDER'}")
+        for n, t in placed:
+            print(f"  slide {n:>2}  " + (f"{int(t) // 60}:{int(t) % 60:02d}" if t is not None else "not found"))
     return 1 if thin else 0
 
 

@@ -133,6 +133,13 @@ Writing §2 well is the whole job. Per slide:
 - End the last content slide on the **series handoff** — the sentence that points into the next
   subtopic. This is the single most-dropped element, and dropping it breaks the module's spine.
 
+**A recorded demonstration.** When the deck carries a run of demo-evidence slides
+(`deck_lib.demo_slide` / `terminal_slide` / `artefact_slide`), `make_brief.py` wraps that run in a
+*Demonstration block*: the slides become numbered observations ("First…", "Second…") the hosts must
+keep in order, skipping and merging none; Host A asks no question inside the block; each segment gives
+the hosts the slide's caption, never the capture's own lines or its provenance line. The prompt gets
+the same instruction in one sentence. The run must be contiguous — the script stops if it is not.
+
 Permit **at most one metaphor per video**, named explicitly, and say it may not be extended. The
 failed take stacked four (plumbing contractors, incompatible pipes, a server room, tangled
 wires) because nothing told it not to.
@@ -170,6 +177,11 @@ framing inversion, whether enumerated lists are numbered aloud, and where the pa
 to cut a slide against actually fall. Exits non-zero on any FAIL, so it can gate a build.
 
 It does not judge invented content, register, or whether the handoff landed — read for those.
+
+For a deck with a demonstration block, `coverage_check.py <deck> <take.srt>` also reports where
+the take reaches each demo slide (the cue carrying most of its distinctive terms) and whether those
+land **IN ORDER**. Soft — one stray word can misplace a short slide, so read the transcript before
+re-rolling on it. A block that comes back out of order is what cannot be cut against.
 
 **On two or more FAILs, regenerate rather than patch.** Re-rolls are cheap and converge once the
 notebook holds only the brief. **If the same failure survives three re-rolls, the fix belongs in
