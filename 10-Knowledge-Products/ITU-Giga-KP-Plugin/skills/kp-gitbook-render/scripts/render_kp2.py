@@ -1080,7 +1080,7 @@ def add(ref, title, path, md, parent=None):
     fn = os.path.join(ROOT, path)
     os.makedirs(os.path.dirname(fn), exist_ok=True)
     open(fn, "w").write(md)
-    pages.append(dict(ref=ref, title=title, parent=parent, file=fn, path=path))
+    pages.append(dict(ref=ref, title=title, parent=parent, path=path))  # no abs path: the manifest travels
 
 
 add("kp2", "Building a Government Interoperability Framework (GIF)", "kp2/README.md", render_home())

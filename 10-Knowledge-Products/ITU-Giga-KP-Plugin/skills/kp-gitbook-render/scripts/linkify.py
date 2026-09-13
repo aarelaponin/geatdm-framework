@@ -73,8 +73,7 @@ def url_of(page):
 
 def linkify(ref, manifest="pages.json"):
     page = BY_REF[(manifest, ref)]
-    # the manifest's "file" is an absolute path from wherever the render ran, which may be
-    # another machine; the path relative to the tree is the one that travels.
+    # every path in the manifest is relative to ROOT, so the manifest travels between machines.
     src = open(os.path.join(ROOT, page["path"])).read()
     here = os.path.dirname(page["path"])
     unresolved, unpublished, external = [], [], []

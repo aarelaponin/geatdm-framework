@@ -1269,7 +1269,7 @@ def add(ref, title, path, md, parent=None):
     fn = os.path.join(ROOT, path)
     os.makedirs(os.path.dirname(fn), exist_ok=True)
     open(fn, "w").write(md)
-    pages.append(dict(ref=ref, title=title, parent=parent, file=fn, path=path))
+    pages.append(dict(ref=ref, title=title, parent=parent, path=path))  # no abs path: the manifest travels
 
 # The GEA space's existing page is the KP1 home; everything else hangs off it.
 add("README", "Developing a Gov Enterprise Architecture (GEA)", "kp1/README.md", render_home())

@@ -3,7 +3,6 @@
   "ref": "kp2",
   "title": "Building a Government Interoperability Framework (GIF)",
   "parent": null,
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/README.md",
   "path": "kp2/README.md",
   "gitbook_id": "xDwobk0n8AMyHItpZVxv"
  },
@@ -11,7 +10,6 @@
   "ref": "kp2-module-1",
   "title": "Module 1 — Why interoperability and the four layers",
   "parent": "kp2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-1/README.md",
   "path": "kp2/module-1/README.md",
   "gitbook_id": "XLpdJttKfhre2JtCAUOs"
  },
@@ -19,7 +17,6 @@
   "ref": "kp2-module-2",
   "title": "Module 2 — Legal framework — the Decree Drafting Kit",
   "parent": "kp2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-2/README.md",
   "path": "kp2/module-2/README.md",
   "gitbook_id": "uPjDd1HTuqYe4x3Vcozw"
  },
@@ -27,7 +24,6 @@
   "ref": "kp2-module-3",
   "title": "Module 3 — Governance model — three tiers with RACI",
   "parent": "kp2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-3/README.md",
   "path": "kp2/module-3/README.md",
   "gitbook_id": "phhMDV0qXym4vt48V2KB"
  },
@@ -35,7 +31,6 @@
   "ref": "kp2-module-4",
   "title": "Module 4 — Architecture and technical standards",
   "parent": "kp2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-4/README.md",
   "path": "kp2/module-4/README.md",
   "gitbook_id": "eLYeZnpNImhiTONAxBYa"
  },
@@ -43,7 +38,6 @@
   "ref": "kp2-module-5",
   "title": "Module 5 — Implementation and onboarding",
   "parent": "kp2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-5/README.md",
   "path": "kp2/module-5/README.md",
   "gitbook_id": "CXaH8CnCXhjAWyC9b0Km"
  },
@@ -51,7 +45,6 @@
   "ref": "kp2-build-pack",
   "title": "The build pack",
   "parent": "kp2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/build-pack/README.md",
   "path": "kp2/build-pack/README.md",
   "gitbook_id": "0GAKvFQKMG8Ykg2YX3Ri"
  },
@@ -59,7 +52,6 @@
   "ref": "kp2-workbook",
   "title": "Your framework workbook",
   "parent": "kp2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/your-framework-workbook.md",
   "path": "kp2/your-framework-workbook.md",
   "gitbook_id": "927uxQTWQ4mJtOs8pt8m"
  },
@@ -67,7 +59,6 @@
   "ref": "kp2-play-0-supplement",
   "title": "Play 0 supplement for KP2",
   "parent": "kp2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/play-0-supplement.md",
   "path": "kp2/play-0-supplement.md",
   "gitbook_id": "tIktuoxooT7VaDEL5Bd8"
  },
@@ -75,7 +66,6 @@
   "ref": "kp2-1-1",
   "title": "1.1 Why interoperability can't be bought, only built",
   "parent": "kp2-module-1",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-1/1-1.md",
   "path": "kp2/module-1/1-1.md",
   "gitbook_id": "YlT70VSyOJp9mhmcO8u3"
  },
@@ -83,7 +73,6 @@
   "ref": "kp2-1-2",
   "title": "1.2 The four layers of interoperability",
   "parent": "kp2-module-1",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-1/1-2.md",
   "path": "kp2/module-1/1-2.md",
   "gitbook_id": "JEwnwuWllTnX0i8hbMOH"
  },
@@ -91,7 +80,6 @@
   "ref": "kp2-1-3",
   "title": "1.3 The once-only promise",
   "parent": "kp2-module-1",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-1/1-3.md",
   "path": "kp2/module-1/1-3.md",
   "gitbook_id": "qfdlTjnc7ShNg5bR4xd1"
  },
@@ -99,7 +87,6 @@
   "ref": "kp2-1-4",
   "title": "1.4 The Strategic Foundation Document",
   "parent": "kp2-module-1",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-1/1-4.md",
   "path": "kp2/module-1/1-4.md",
   "gitbook_id": "0AKB0d932EH1SeKj6FeD"
  },
@@ -107,7 +94,6 @@
   "ref": "kp2-1-5",
   "title": "1.5 The Use-Case Catalogue",
   "parent": "kp2-module-1",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-1/1-5.md",
   "path": "kp2/module-1/1-5.md",
   "gitbook_id": "Pcc6IgbnAJc3RyOs34T6"
  },
@@ -115,7 +101,6 @@
   "ref": "kp2-1-6",
   "title": "1.6 Mapping your stakeholders",
   "parent": "kp2-module-1",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-1/1-6.md",
   "path": "kp2/module-1/1-6.md",
   "gitbook_id": "yKSOABRbuZAUthEzT0DU"
  },
@@ -123,7 +108,6 @@
   "ref": "kp2-1-7",
   "title": "1.7 What the world already proved",
   "parent": "kp2-module-1",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-1/1-7.md",
   "path": "kp2/module-1/1-7.md",
   "gitbook_id": "yItNeRaCmiZkEpJ4fe5B"
  },
@@ -131,7 +115,6 @@
   "ref": "kp2-2-1",
   "title": "2.1 Why the platform needs a legal mandate",
   "parent": "kp2-module-2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-2/2-1.md",
   "path": "kp2/module-2/2-1.md",
   "gitbook_id": "sH0fN7jRp9fISRhDsPt9"
  },
@@ -139,7 +122,6 @@
   "ref": "kp2-2-2",
   "title": "2.2 Anatomy of an interoperability decree",
   "parent": "kp2-module-2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-2/2-2.md",
   "path": "kp2/module-2/2-2.md",
   "gitbook_id": "waiG9DirHerA8y7mNVZl"
  },
@@ -147,7 +129,6 @@
   "ref": "kp2-2-3",
   "title": "2.3 The Explanatory Memorandum and Preamble",
   "parent": "kp2-module-2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-2/2-3.md",
   "path": "kp2/module-2/2-3.md",
   "gitbook_id": "pV8oQcWLm5k1gDR6j7Rp"
  },
@@ -155,7 +136,6 @@
   "ref": "kp2-2-4",
   "title": "2.4 The Draft Articles Package",
   "parent": "kp2-module-2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-2/2-4.md",
   "path": "kp2/module-2/2-4.md",
   "gitbook_id": "tnw2drqN8kqWAV17rVr2"
  },
@@ -163,7 +143,6 @@
   "ref": "kp2-2-5",
   "title": "2.5 The Cover Note and Two-Track Regulatory Memo",
   "parent": "kp2-module-2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-2/2-5.md",
   "path": "kp2/module-2/2-5.md",
   "gitbook_id": "CGeggtr4qsylkWsCqH1h"
  },
@@ -171,7 +150,6 @@
   "ref": "kp2-2-6",
   "title": "2.6 The decree as configuration",
   "parent": "kp2-module-2",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-2/2-6.md",
   "path": "kp2/module-2/2-6.md",
   "gitbook_id": "3A8xDKJvXoecanKvj9cC"
  },
@@ -179,7 +157,6 @@
   "ref": "kp2-3-1",
   "title": "3.1 Why a bus needs an owner",
   "parent": "kp2-module-3",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-3/3-1.md",
   "path": "kp2/module-3/3-1.md",
   "gitbook_id": "p7Gzg8WJLb6hX0YtYtQR"
  },
@@ -187,7 +164,6 @@
   "ref": "kp2-3-2",
   "title": "3.2 The three tiers of governance",
   "parent": "kp2-module-3",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-3/3-2.md",
   "path": "kp2/module-3/3-2.md",
   "gitbook_id": "xFIqllwe5HGO4HNXLw50"
  },
@@ -195,7 +171,6 @@
   "ref": "kp2-3-3",
   "title": "3.3 The RACI matrix",
   "parent": "kp2-module-3",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-3/3-3.md",
   "path": "kp2/module-3/3-3.md",
   "gitbook_id": "x2t2NEraYCnU0625s3JT"
  },
@@ -203,7 +178,6 @@
   "ref": "kp2-3-4",
   "title": "3.4 Member obligations",
   "parent": "kp2-module-3",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-3/3-4.md",
   "path": "kp2/module-3/3-4.md",
   "gitbook_id": "UilpL68r4FBA3SOpmUQB"
  },
@@ -211,7 +185,6 @@
   "ref": "kp2-3-5",
   "title": "3.5 The four Technical Working Groups",
   "parent": "kp2-module-3",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-3/3-5.md",
   "path": "kp2/module-3/3-5.md",
   "gitbook_id": "7wWY9Z9HkBVAQABgZOYU"
  },
@@ -219,7 +192,6 @@
   "ref": "kp2-3-6",
   "title": "3.6 Governance as living configuration",
   "parent": "kp2-module-3",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-3/3-6.md",
   "path": "kp2/module-3/3-6.md",
   "gitbook_id": "A7hFe4v7qbQL7y4jgycA"
  },
@@ -227,7 +199,6 @@
   "ref": "kp2-4-1",
   "title": "4.1 Place every component — the four functional layers",
   "parent": "kp2-module-4",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-4/4-1.md",
   "path": "kp2/module-4/4-1.md",
   "gitbook_id": "YXfXw2sjRf5QE6oXWobg"
  },
@@ -235,7 +206,6 @@
   "ref": "kp2-4-2",
   "title": "4.2 Secure every call — the three trust zones",
   "parent": "kp2-module-4",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-4/4-2.md",
   "path": "kp2/module-4/4-2.md",
   "gitbook_id": "HWV30zldoYbjLeHMLpFM"
  },
@@ -243,7 +213,6 @@
   "ref": "kp2-4-3",
   "title": "4.3 Adopt the standards portfolio",
   "parent": "kp2-module-4",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-4/4-3.md",
   "path": "kp2/module-4/4-3.md",
   "gitbook_id": "bnBHMwRPwet2niUp9CzX"
  },
@@ -251,7 +220,6 @@
   "ref": "kp2-4-4",
   "title": "4.4 Generate the semantic map",
   "parent": "kp2-module-4",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-4/4-4.md",
   "path": "kp2/module-4/4-4.md",
   "gitbook_id": "yejQXvgnOThGLwhOx9Ci"
  },
@@ -259,7 +227,6 @@
   "ref": "kp2-4-5",
   "title": "4.5 Generate a service contract",
   "parent": "kp2-module-4",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-4/4-5.md",
   "path": "kp2/module-4/4-5.md",
   "gitbook_id": "WGmdIXYiK3bwGjw7ffha"
  },
@@ -267,7 +234,6 @@
   "ref": "kp2-4-6",
   "title": "4.6 Put a real data source on the bus — the Giga case",
   "parent": "kp2-module-4",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-4/4-6.md",
   "path": "kp2/module-4/4-6.md",
   "gitbook_id": "qMYMa4RIr435W9Log6GF"
  },
@@ -275,7 +241,6 @@
   "ref": "kp2-4-7",
   "title": "4.7 Wire a service onto the bus",
   "parent": "kp2-module-4",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-4/4-7.md",
   "path": "kp2/module-4/4-7.md",
   "gitbook_id": "PaOjEHfwy1QWzNTAGhfZ"
  },
@@ -283,7 +248,6 @@
   "ref": "kp2-4-8",
   "title": "4.8 Make the exchange lawful — the data-protection envelope",
   "parent": "kp2-module-4",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-4/4-8.md",
   "path": "kp2/module-4/4-8.md",
   "gitbook_id": "Ix33KemYwCeXiIJyicES"
  },
@@ -291,7 +255,6 @@
   "ref": "kp2-5-1",
   "title": "5.1 Plan the build in four phases",
   "parent": "kp2-module-5",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-5/5-1.md",
   "path": "kp2/module-5/5-1.md",
   "gitbook_id": "tJP5PWBxYZlkifeCrku2"
  },
@@ -299,7 +262,6 @@
   "ref": "kp2-5-2",
   "title": "5.2 State what a member must have — the Member Requirements",
   "parent": "kp2-module-5",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-5/5-2.md",
   "path": "kp2/module-5/5-2.md",
   "gitbook_id": "ea3kvT2VHjGOxTtfuapw"
  },
@@ -307,7 +269,6 @@
   "ref": "kp2-5-3",
   "title": "5.3 Make 'connected' mean 'dependable' — the SLA",
   "parent": "kp2-module-5",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-5/5-3.md",
   "path": "kp2/module-5/5-3.md",
   "gitbook_id": "6EWxrb24ViCfljm7nHV2"
  },
@@ -315,7 +276,6 @@
   "ref": "kp2-5-4",
   "title": "5.4 Register a member on X-Road",
   "parent": "kp2-module-5",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-5/5-4.md",
   "path": "kp2/module-5/5-4.md",
   "gitbook_id": "HAZpksksBGK9R0fwGR0j"
  },
@@ -323,7 +283,6 @@
   "ref": "kp2-5-5",
   "title": "5.5 Stand up the federation",
   "parent": "kp2-module-5",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-5/5-5.md",
   "path": "kp2/module-5/5-5.md",
   "gitbook_id": "EbPp5tneIpPjHOiKw1jl"
  },
@@ -331,7 +290,6 @@
   "ref": "kp2-5-6",
   "title": "5.6 Run the once-only exchange, live",
   "parent": "kp2-module-5",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-5/5-6.md",
   "path": "kp2/module-5/5-6.md",
   "gitbook_id": "3RlXcSsbeVfT7Lf59EWn"
  },
@@ -339,7 +297,6 @@
   "ref": "kp2-5-7",
   "title": "5.7 From demonstration to production",
   "parent": "kp2-module-5",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-5/5-7.md",
   "path": "kp2/module-5/5-7.md",
   "gitbook_id": "xAwNVVGfqfA8GWl3PsHm"
  },
@@ -347,7 +304,6 @@
   "ref": "kp2-5-8",
   "title": "5.8 Watch the bus — monitoring and anomaly detection",
   "parent": "kp2-module-5",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-5/5-8.md",
   "path": "kp2/module-5/5-8.md",
   "gitbook_id": "AOpE0BRINS3RILm0UjJY"
  },
@@ -355,7 +311,6 @@
   "ref": "kp2-5-9",
   "title": "5.9 Keep the documents honest — the consistency cross-check",
   "parent": "kp2-module-5",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-5/5-9.md",
   "path": "kp2/module-5/5-9.md",
   "gitbook_id": "jqOaKf2bHyr3zWYTsbi2"
  },
@@ -363,7 +318,6 @@
   "ref": "kp2-5-10",
   "title": "5.10 Carry the framework to the next sector",
   "parent": "kp2-module-5",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/module-5/5-10.md",
   "path": "kp2/module-5/5-10.md",
   "gitbook_id": "HGuedPI0IgIDJDVHsBI3"
  },
@@ -371,7 +325,6 @@
   "ref": "kp2-build-pack-readme",
   "title": "What the build pack is",
   "parent": "kp2-build-pack",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/build-pack/what-it-is.md",
   "path": "kp2/build-pack/what-it-is.md",
   "gitbook_id": "exzpkW3ZhJ85RKXICaYd"
  },
@@ -379,7 +332,6 @@
   "ref": "kp2-build-pack-run",
   "title": "Run it",
   "parent": "kp2-build-pack",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/build-pack/run.md",
   "path": "kp2/build-pack/run.md",
   "gitbook_id": "MzhHaaDxGN7VH4KXOWXU"
  },
@@ -387,7 +339,6 @@
   "ref": "kp2-build-pack-acceptance",
   "title": "Acceptance — the once-only proof",
   "parent": "kp2-build-pack",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/build-pack/acceptance.md",
   "path": "kp2/build-pack/acceptance.md",
   "gitbook_id": "KoBGT1EuLEtwvevDrKQC"
  },
@@ -395,7 +346,6 @@
   "ref": "kp2-build-pack-exercises",
   "title": "Exercises",
   "parent": "kp2-build-pack",
-  "file": "/Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/kp2/build-pack/exercises.md",
   "path": "kp2/build-pack/exercises.md",
   "gitbook_id": "0J906PNnPhfFzsLuxf6d"
  }
