@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-13 15:26 (data v2)
+# KP video tracker — generated 2026-09-13 15:42 (data v2)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -82,13 +82,13 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 1.0 | Module 1 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 1.1 | Why interoperability can't be bought, only built | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 1.2 | The four layers of interoperability | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 1.3 | The once-only promise | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 1.4 | The Strategic Foundation Document | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 1.5 | The Use-Case Catalogue | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 1.6 | Mapping your stakeholders | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-| 1.7 | What the world already proved | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 1.1 | Why interoperability can't be bought, only built | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 1.2 | The four layers of interoperability | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 1.3 | The once-only promise | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 1.4 | The Strategic Foundation Document | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 1.5 | The Use-Case Catalogue | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 1.6 | Mapping your stakeholders | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 1.7 | What the world already proved | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
 
 ### Module 2 — Legal framework — the Decree Drafting Kit (Strategist)
 

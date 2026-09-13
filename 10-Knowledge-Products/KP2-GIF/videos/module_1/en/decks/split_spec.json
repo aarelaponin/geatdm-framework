@@ -1,0 +1,79 @@
+{
+  "kicker_prefix": "KP2 · Government Interoperability Framework · Module 1",
+  "audience": "National interoperability authority · ministry CIO · development-partner lead",
+  "out_pattern": "KP2_M1_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "Why a Government",
+  "cover_subtitle_marker": "Seven standalone videos",
+  "videos": [
+    {
+      "code": "1.1",
+      "title": "Why interoperability can't be bought, only built",
+      "mins": "~5",
+      "range": [
+        3,
+        11
+      ],
+      "message": "Procurement rules can require interoperability. Only whole-of-government planning delivers it — and once the framework exists, procurement is how you enforce it."
+    },
+    {
+      "code": "1.2",
+      "title": "The four layers of interoperability",
+      "mins": "~5",
+      "range": [
+        12,
+        21
+      ],
+      "message": "Interoperability fails at whichever of the four layers — Technical, Semantic, Organisational, Legal — you skip. The framework makes you address all four on purpose."
+    },
+    {
+      "code": "1.3",
+      "title": "The once-only promise",
+      "mins": "~4",
+      "range": [
+        22,
+        29
+      ],
+      "message": "Once-only — the state never asks a citizen for the same data twice — is the outcome interoperability is for, and the test of whether it works."
+    },
+    {
+      "code": "1.4",
+      "title": "The Strategic Foundation Document",
+      "mins": "~4",
+      "range": [
+        30,
+        37
+      ],
+      "message": "Name the mandate, the scope and the principles once, in writing, before any wiring — it is what every later decision is checked against."
+    },
+    {
+      "code": "1.5",
+      "title": "The Use-Case Catalogue",
+      "mins": "~5",
+      "range": [
+        38,
+        45
+      ],
+      "message": "Turn your integration map into a ranked catalogue of exchanges worth building — and start with the one that removes the most counters for citizens."
+    },
+    {
+      "code": "1.6",
+      "title": "Mapping your stakeholders",
+      "mins": "~4",
+      "range": [
+        46,
+        53
+      ],
+      "message": "Sort the agencies into Champions, Early Adopters and Observers, and you know who to onboard first and who to convince."
+    },
+    {
+      "code": "1.7",
+      "title": "What the world already proved",
+      "mins": "~4",
+      "range": [
+        54,
+        61
+      ],
+      "message": "Estonia's X-Road and the EU's once-only systems show the pattern; the education semantic standards show the vocabularies you will reuse rather than invent."
+    }
+  ]
+}
