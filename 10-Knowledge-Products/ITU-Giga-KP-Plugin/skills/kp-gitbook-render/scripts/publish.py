@@ -11,8 +11,9 @@ Two passes, because a relative .md link resolves only inside one batch (see SKIL
   2. update every page with linkify's output — same-space links as /pages/<id>,
      other-space links as their published URL.
 
-Re-running is safe: a page whose title is already in the change request is updated,
-not inserted again. Merging stays a human's call — this script has no merge path.
+Re-running is safe: a page whose id the manifest already carries is updated, not
+inserted again — so a retitled page keeps its place instead of forking a duplicate.
+Merging stays a human's call — this script has no merge path.
 """
 import argparse, json, os, sys, time, urllib.error, urllib.request
 
@@ -46,20 +47,37 @@ def call(method, path, body=None, token=None):
 
 
 def tree_ids(space, cr, token):
-    """(title -> page id over the whole tree, id of the space's existing root page).
+    """(title -> page id, every id in the tree, id of the space's existing root page).
 
     The root is the tree's first top-level page, not "the only page there is": the change
     request may already hold pages from an earlier, interrupted run."""
     rev = call("GET", f"/spaces/{space}/change-requests/{cr}/content", token=token)
-    out = {}
+    out, ids = {}, set()
 
     def walk(pages):
         for p in pages:
             out[p["title"]] = p["id"]
+            ids.add(p["id"])
             walk(p.get("pages", []))
     top = rev.get("pages", [])
     walk(top)
-    return out, (top[0]["id"] if top else None)
+    return out, ids, (top[0]["id"] if top else None)
+
+
+def h1(md):
+    """GitBook titles a page from its first heading, not from the manifest."""
+    for line in md.splitlines():
+        if line.startswith("# "):
+            return line[2:].strip()
+    return None
+
+
+def find(p, md, known, ids):
+    """The page's id in the change request: by id first, then by either spelling of
+    the title. Matching on the title alone forks a duplicate the day a title changes."""
+    if p.get("gitbook_id") in ids:
+        return p["gitbook_id"]
+    return known.get(p["title"]) or known.get(h1(md))
 
 
 def batches(changes, docs):
@@ -110,19 +128,21 @@ def main():
     print(f"change request {cr}")
 
     # --- pass 1: every page exists, ids stamped back into the manifest -----------------
-    known, root_id = tree_ids(a.space, cr, token)
+    known, ids, root_id = tree_ids(a.space, cr, token)
+    body = {p["ref"]: open(os.path.join(linkify.ROOT, p["path"])).read() for p in pages}
     for lvl in sorted(set(depth.values())):
         changes, sizes = [], []
         for p in [q for q in pages if depth[q["ref"]] == lvl]:
-            md = open(os.path.join(linkify.ROOT, p["path"])).read()
-            parent = known.get(by_ref[p["parent"]]["title"]) if p.get("parent") else None
-            if p["title"] in known:
-                changes.append({"operation": "update_page", "page": known[p["title"]],
-                                "document": {"markdown": md}})
-            elif lvl == 0 and root_id:            # the space's existing root page
-                changes.append({"operation": "update_page", "page": root_id,
-                                "document": {"markdown": md}})
+            md = body[p["ref"]]
+            here = find(p, md, known, ids)
+            if here is None and lvl == 0 and root_id:
+                here = root_id                    # the space's existing root page
+            if here:
+                changes.append({"operation": "update_page", "page": here,
+                                "title": p["title"], "document": {"markdown": md}})
             else:
+                parent = find(by_ref[p["parent"]], body[p["parent"]], known, ids) \
+                    if p.get("parent") else None
                 c = {"operation": "insert_page", "title": p["title"],
                      "document": {"markdown": md}}
                 if parent:
@@ -130,13 +150,14 @@ def main():
                 changes.append(c)
             sizes.append(len(md))
         apply(a.space, cr, changes, sizes, token, f"depth {lvl}")
-        known, _ = tree_ids(a.space, cr, token)   # pick up the ids this level just created
+        known, ids, _ = tree_ids(a.space, cr, token)  # ids this level just created
 
-    missing = [p["title"] for p in pages if p["title"] not in known]
+    found = {p["ref"]: find(p, body[p["ref"]], known, ids) for p in pages}
+    missing = [p["title"] for p in pages if not found[p["ref"]]]
     if missing:
         sys.exit(f"{len(missing)} pages did not come back with an id: {missing[:3]}")
     for p in pages:
-        p["gitbook_id"] = known[p["title"]]
+        p["gitbook_id"] = found[p["ref"]]
     json.dump(pages, open(mpath, "w"), indent=1, ensure_ascii=False)
     print(f"{len(pages)} ids stamped into {a.manifest}")
 
