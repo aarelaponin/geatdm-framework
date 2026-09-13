@@ -126,6 +126,17 @@ def detect_pipeline(kp: dict, mod: dict, lang: str, code: str, manual: dict) -> 
         hints.append(f"cues {cv} lag take {av}")
     if acc and av and isinstance(acc, str) and acc != av:
         hints.append(f"accepted {acc} but newest take on disk is {av}")
+    # demo_takes: the capture run a screen-led video's deck was built from (demo/<pre>_Demo_v0.N/).
+    # A newer capture on disk means the deck shows stale evidence — rebuild it, like a stale deck.
+    dt_rec = manual.get("demo_takes")
+    if dt_rec:
+        runs = [d for d in glob.glob(str(base / "demo" / f"KP{n}_M{m}_Demo_v*")) if Path(d).is_dir()]
+        newest_run = max(runs, key=ver_of) if runs else None
+        if not newest_run:
+            hints.append(f"demo takes {dt_rec} recorded, but no demo/ capture on disk")
+        elif ver_of(newest_run) > ver_of(f"_{dt_rec}"):
+            v = ver_of(newest_run)
+            hints.append(f"deck built from demo takes {dt_rec}, newer capture v{v[0]}.{v[1]} on disk — rebuild the deck")
     out["_hints"] = hints
     return out
 

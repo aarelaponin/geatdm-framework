@@ -1,0 +1,252 @@
+1
+00:00:00,160 --> 00:00:07,740
+So dealing with government paperwork, it, uh, it often feels like you don't actually exist as a single human being.
+
+2
+00:00:07,800 --> 00:00:12,980
+You know? You're more like a dozen fragmented paper versions of yourself.
+
+3
+00:00:13,040 --> 00:00:15,480
+Oh, completely. It's incredibly disjointed.
+
+4
+00:00:15,520 --> 00:00:18,120
+Right. You go to the health department, they want proof of who you are.
+
+5
+00:00:18,180 --> 00:00:21,660
+You go to the tax office, and you need that exact same proof all over again.
+
+6
+00:00:21,740 --> 00:00:26,000
+Yeah, and the data is constantly duplicated and rekeyed into all these siloed systems.
+
+7
+00:00:26,100 --> 00:00:34,280
+Exactly. Which is why today we are doing a deep dive into a live recorded demonstration of what is called the reference architecture.
+
+8
+00:00:34,440 --> 00:00:34,720
+Yes.
+
+9
+00:00:35,420 --> 00:00:38,720
+It's a look at the once only principle in action, which is so exciting.
+
+10
+00:00:38,860 --> 00:00:48,480
+It is. Our mission today is to really understand how states can transition away from that fragmented mess into a seamless digital infrastructure.
+
+11
+00:00:48,520 --> 00:00:56,980
+So to start, instead of forcing citizens to bring stacks of paper proof to every single office, how does this architecture actually execute the once only principle?
+
+12
+00:00:57,010 --> 00:01:00,870
+Well, to understand it, we really have to look at a real world transaction.
+
+13
+00:01:01,110 --> 00:01:04,850
+So in this live scenario, imagine a learner applying for a credential.
+
+14
+00:01:04,980 --> 00:01:06,320
+Okay. Applying where? Exactly.
+
+15
+00:01:06,380 --> 00:01:09,270
+At PNEA, which is the examination authority.
+
+16
+00:01:09,280 --> 00:01:13,020
+In the past, they'd have to bring paper proof of identity, proof of enrollment, all of that.
+
+17
+00:01:13,640 --> 00:01:15,580
+But here they provide just one number.
+
+18
+00:01:15,920 --> 00:01:17,680
+Just one, like their national ID.
+
+19
+00:01:18,120 --> 00:01:27,660
+Exactly, just their national ID. And from that, over the system's integration bus, PNEA automatically fetches the applicant's identity from PNIA,
+
+20
+00:01:27,980 --> 00:01:35,280
+the identity authority. Okay. And at the exact same time, it fetches their enrollment data from PLR, the learner registry.
+
+21
+00:01:35,440 --> 00:01:41,000
+Wait, so from just that one single question being asked, the national ID, how much is actually filled out?
+
+22
+00:01:41,400 --> 00:01:43,180
+Nine blank rows are instantly filled.
+
+23
+00:01:43,380 --> 00:01:45,620
+Oh, wow. That is incredibly fast.
+
+24
+00:01:45,680 --> 00:01:48,240
+Yeah. It completely eliminates that duplication we were talking about.
+
+25
+00:01:48,360 --> 00:01:53,540
+But look, if we have this integration bus connecting everything, I mean, it sounds a bit like a digital free-for-all.
+
+26
+00:01:53,800 --> 00:01:54,260
+How do you mean?
+
+27
+00:01:54,740 --> 00:02:01,270
+Well, once an agency plugs into this bus, are they just given like an all access pass to vacuum up any personal data they want?
+
+28
+00:02:01,420 --> 00:02:05,820
+Oh, no, definitely not. The system enforces strict data minimization.
+
+29
+00:02:05,860 --> 00:02:09,020
+It uses access lists to prevent exactly that.
+
+30
+00:02:09,100 --> 00:02:10,880
+So it limits what they can actually pull.
+
+31
+00:02:10,920 --> 00:02:11,480
+Very strictly.
+
+32
+00:02:12,200 --> 00:02:16,530
+For example, PNIA sends five necessary fields to the examination authority,
+
+33
+00:02:17,360 --> 00:02:20,859
+but it explicitly withholds three other fields it holds.
+
+34
+00:02:20,900 --> 00:02:21,940
+Which ones does it withhold?
+
+35
+00:02:22,310 --> 00:02:23,070
+The mother's name,
+
+36
+00:02:23,860 --> 00:02:26,120
+the birth registration number, and the address.
+
+37
+00:02:26,340 --> 00:02:28,260
+Really? Even though it has them on file?
+
+38
+00:02:28,540 --> 00:02:30,700
+Yes, because this specific purpose,
+
+39
+00:02:31,420 --> 00:02:35,140
+getting a learner credential, doesn't need them, so they aren't shared.
+
+40
+00:02:35,160 --> 00:02:36,280
+That makes a lot of sense.
+
+41
+00:02:36,340 --> 00:02:40,720
+And on top of that, just being on the bus is not permission.
+
+42
+00:02:40,800 --> 00:02:48,310
+If PLR, the learner registry, tries to ask the identity authority the exact same question that the examination authority just asked,
+
+43
+00:02:48,740 --> 00:02:50,900
+PLR gets an access denied fault.
+
+44
+00:02:50,980 --> 00:02:52,960
+Wait, really? Just a flat out denial.
+
+45
+00:02:53,100 --> 00:02:57,320
+Yep, because they don't have the explicit permission for that specific data exchange.
+
+46
+00:02:57,800 --> 00:03:02,670
+Okay. But with such granular controls, I have to ask about what happens when things go wrong.
+
+47
+00:03:02,670 --> 00:03:03,840
+Right. The resilience aspect.
+
+48
+00:03:04,280 --> 00:03:12,890
+Yeah, because if these systems are so strictly siloed by access rules, does the entire application just crash if one single source goes down or loses permission?
+
+49
+00:03:12,980 --> 00:03:15,030
+Actually, no. It's incredibly resilient.
+
+50
+00:03:15,500 --> 00:03:19,540
+In the demonstration, an operator intentionally withdraws PNEA's permission.
+
+51
+00:03:19,660 --> 00:03:20,940
+Oh, to see what breaks.
+
+52
+00:03:21,020 --> 00:03:29,280
+Exactly. And when they do, the PNIA identity rows are denied, but the PLR enrollment rows still successfully fill in.
+
+53
+00:03:29,360 --> 00:03:31,660
+So one broken source doesn't ruin the whole form.
+
+54
+00:03:31,800 --> 00:03:33,510
+Exactly. And for auditing,
+
+55
+00:03:34,320 --> 00:03:39,400
+every single application is written to disk with each field strictly mapped to its source.
+
+56
+00:03:39,440 --> 00:03:42,040
+So you know exactly where every piece of data came from.
+
+57
+00:03:42,120 --> 00:03:47,829
+Yes. And before it goes live, the system actually passes six technical acceptance checks.
+
+58
+00:03:47,980 --> 00:03:50,300
+Including checking that the denial works.
+
+59
+00:03:50,360 --> 00:03:53,299
+Yes. Verifying the denial, checking field conformance, all of it.
+
+60
+00:03:53,700 --> 00:03:55,490
+It scored all green for go live approval.
+
+61
+00:03:55,680 --> 00:03:57,640
+That is just a massive technical triumph.
+
+62
+00:03:57,680 --> 00:04:03,640
+I mean, one field asked, nine fetched, purpose limited data sharing, and strictly enforced access lists.
+
+63
+00:04:03,650 --> 00:04:04,700
+It really changes the game.
+

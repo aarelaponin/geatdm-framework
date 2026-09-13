@@ -1,0 +1,2 @@
+# Slides that play a recorded clip — kp-slidecast slidecast.py 5th argument.
+8   ../demo/KP2_M5_Demo_v0.1/C6-break-restore.mp4

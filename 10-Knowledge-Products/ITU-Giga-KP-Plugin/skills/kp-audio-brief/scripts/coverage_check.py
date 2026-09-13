@@ -21,6 +21,9 @@ from pathlib import Path
 
 from pptx import Presentation
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "kp-deck-builder" / "scripts"))
+from deck_lib import DEMO_SHAPE, PROVENANCE_LEAD  # noqa: E402
+
 STOP = set("""the a an and or but if then that this these those of to in on for with as by at
 from is are was were be been being it its他 they them their you your our we us have has had do
 does did not no so than there here what which who whom whose when where why how all any each
@@ -45,11 +48,20 @@ def slide_terms(prs):
         notes = sl.notes_slide.notes_text_frame.text if sl.has_notes_slide else ""
         vo = " ".join(m.group(1) for line in notes.split("\n")
                       for m in [re.match(r"^VO(?:, slide \d+)?:\s*(.*)$", line.strip())] if m)
-        vis = " ".join(
-            "\n".join(l for l in sh.text_frame.text.splitlines()
-                      if l.strip() and not CHROME.match(l.strip()))
-            for sh in sl.shapes
-            if sh.has_text_frame and not sh.text_frame.text.startswith("Do this on"))
+        shapes = [sh for sh in sl.shapes
+                  if sh.has_text_frame and not sh.text_frame.text.startswith("Do this on")]
+        if any(sh.name == DEMO_SHAPE for sh in sl.shapes):
+            # Demo evidence: the capture's own lines (a JSON body, an acceptance summary) are on
+            # screen, never spoken, and would swamp the slide's vocabulary. Title and caption only
+            # — the caption strip exists to be found by.
+            texts = [sh.text_frame.text for sh in shapes if sh.text_frame.text.strip()]
+            prov = next(j for j, t in enumerate(texts) if t.startswith(PROVENANCE_LEAD))
+            vis = texts[0] + "\n" + texts[prov - 1]
+        else:
+            vis = " ".join(
+                "\n".join(l for l in sh.text_frame.text.splitlines()
+                          if l.strip() and not CHROME.match(l.strip()))
+                for sh in shapes)
         t = next((x.strip() for x in vis.splitlines() if x.strip()), f"slide {i}")
         per.append(set(WORD.findall((vo + " " + vis).lower())) - STOP)
         titles.append(t[:52])
@@ -82,8 +94,6 @@ def demo_order(prs, slides, cues):
     is placed at the cue carrying the most of its distinctive terms (earliest on a tie). Reported,
     never a failure: one stray word can misplace a short slide — read the transcript first.
     Returns [(slide_no, seconds or None)]."""
-    sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "kp-deck-builder" / "scripts"))
-    from deck_lib import DEMO_SHAPE
     demo = {i for i, sl in enumerate(prs.slides, 1) if any(sh.name == DEMO_SHAPE for sh in sl.shapes)}
     words = [set(WORD.findall(c["text"].lower())) for c in cues]
     placed = []

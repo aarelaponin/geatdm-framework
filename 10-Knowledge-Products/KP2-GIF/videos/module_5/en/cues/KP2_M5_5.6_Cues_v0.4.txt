@@ -1,0 +1,17 @@
+# Slide cue file — KP2 Module 5, Video 5.6 "Run the once-only exchange, live"
+# Deck:  KP2_M5_5.6_Deck_v0.2.pptx (12 slides; slides 4–10 demo evidence, slide 8 plays a clip — KP2_M5_5.6_Clips_v0.4.txt)
+# Audio: KP2_M5_5.6_Audio_v0.4.m4a (runs to 4:04.7; padded to 4:11 at render so Sources holds ~6 s)
+# Hand-authored from the SRT content beats (kp-slidecast Step 1); draft_cues.py bunched slides 3–6 and 7–9.
+
+0:00   # slide 1 — Title card
+0:07   # slide 2 — Hook: the moment the whole framework exists for
+0:57   # slide 3 — One call — identity from PNIA, enrolment from PLR ("to understand it … a real world transaction")
+1:09   # slide 4 — Before the bus: ten blank rows ("in the past … paper proof … just one number")
+1:35   # slide 5 — One question asked, nine rows filled ("nine blank rows are instantly filled")
+2:01   # slide 6 — What PNIA sends and what it withholds ("strict data minimization")
+2:36   # slide 7 — Same question, two callers ("just being on the bus is not permission")
+3:12   # slide 8 — One grant withdrawn (clip: "an operator intentionally withdraws PNEA's permission")
+3:33   # slide 9 — The application, with every field's source ("for auditing … written to disk")
+3:42   # slide 10 — Six acceptance checks, all green
+3:57   # slide 11 — In one sentence ("one field asked, nine fetched")
+4:05   # slide 12 — Sources

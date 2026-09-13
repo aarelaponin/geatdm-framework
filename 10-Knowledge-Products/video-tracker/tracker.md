@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-13 17:13 (data v2)
+# KP video tracker — generated 2026-09-13 19:45 (data v2)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -82,37 +82,37 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 1.0 | Module 1 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 1.1 | Why interoperability can't be bought, only built | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 1.2 | The four layers of interoperability | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 1.3 | The once-only promise | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 1.4 | The Strategic Foundation Document | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 1.5 | The Use-Case Catalogue | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 1.6 | Mapping your stakeholders | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 1.7 | What the world already proved | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 1.1 | Why interoperability can't be bought, only built | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.2, SRT v0.2 |  |
+| 1.2 | The four layers of interoperability | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4 |  |
+| 1.3 | The once-only promise | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.5, SRT v0.5 |  |
+| 1.4 | The Strategic Foundation Document | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.5, SRT v0.5 |  |
+| 1.5 | The Use-Case Catalogue | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 1.6 | Mapping your stakeholders | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 1.7 | What the world already proved | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
 
 ### Module 2 — Legal framework — the Decree Drafting Kit (Strategist)
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 2.0 | Module 2 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 2.1 | Why the platform needs a legal mandate | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 2.2 | Anatomy of an interoperability decree | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 2.3 | The Explanatory Memorandum and Preamble | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 2.4 | The Draft Articles Package | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 2.5 | The Cover Note and Two-Track Regulatory Memo | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 2.6 | The decree as configuration | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 2.1 | Why the platform needs a legal mandate | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 2.2 | Anatomy of an interoperability decree | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 2.3 | The Explanatory Memorandum and Preamble | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 2.4 | The Draft Articles Package | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 2.5 | The Cover Note and Two-Track Regulatory Memo | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 2.6 | The decree as configuration | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
 
 ### Module 3 — Governance model — three-tier with RACI (Strategist)
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 3.0 | Module 3 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 3.1 | Why a bus needs an owner | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 3.2 | The three tiers of governance | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 3.3 | The RACI matrix | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 3.4 | Member obligations | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 3.5 | The four Technical Working Groups | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 3.6 | Governance as living configuration | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 3.1 | Why a bus needs an owner | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 3.2 | The three tiers of governance | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 3.3 | The RACI matrix | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 3.4 | Member obligations | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 3.5 | The four Technical Working Groups | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 3.6 | Governance as living configuration | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
 
 ### Module 4 — Architecture + technical standards + Giga end-to-end case (Architect)
 
@@ -133,14 +133,14 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 5.0 | Module 5 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 5.1 | Plan the build in four phases | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 5.2 | State what a member must have — the Member Requirements | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 5.3 | Make 'connected' mean 'dependable' — the SLA | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 5.4 | Register a member on X-Road | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | BLOCKER: M5 review §2 unsettled (join mechanism) — no audio until decided |
-| 5.5 | Stand up the federation | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | BLOCKER: M5 review §2 unsettled (MoEYS/PEMIS member and ITU-cloud hosting) — no audio until decided |
-| 5.6 | Run the once-only exchange, live | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | BLOCKER: M5 review §2 unsettled (acceptance steps) — no audio until decided |
-| 5.7 | From demonstration to production | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 5.8 | Watch the bus — monitoring and anomaly detection | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | was 6.2 |
-| 5.9 | Keep the documents honest — the consistency cross-check | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | was 6.3 |
-| 5.10 | Carry the framework to the next sector | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | was 6.4 |
+| 5.1 | Plan the build in four phases | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 |  |
+| 5.2 | State what a member must have — the Member Requirements | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 |  |
+| 5.3 | Make 'connected' mean 'dependable' — the SLA | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 |  |
+| 5.4 | Register a member on X-Road | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 | BLOCKER: demo block (join beats J0–J4) waits on the 5.6 pilot review; v0.4 narration carries the join mechanism |
+| 5.5 | Stand up the federation | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 | BLOCKER: demo block (T1–T3) waits on the 5.6 pilot review and the hosting decision; v0.4 narration: PDGA + PNEA/PLR/PNIA, single-host line |
+| 5.6 | Run the once-only exchange, live | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.2, Deck v0.2, Brief v0.2, Take v0.4, SRT v0.4, Cues v0.4, MP4 v0.4 | screen-led pilot — KP2_M5_5.6_Pilot_Review_2026-09-13.md |
+| 5.7 | From demonstration to production | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 |  |
+| 5.8 | Watch the bus — monitoring and anomaly detection | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 | was 6.2 |
+| 5.9 | Keep the documents honest — the consistency cross-check | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 | was 6.3 |
+| 5.10 | Carry the framework to the next sector | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 | was 6.4 |
 

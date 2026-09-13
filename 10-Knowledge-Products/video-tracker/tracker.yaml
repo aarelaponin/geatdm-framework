@@ -135,7 +135,7 @@ kps:
     title: Government Interoperability Framework
     root: KP2-GIF
     note: >-
-      Five script bundles authored and gated (Modules 1–4 v0.2, Module 5 v0.3), aligned to 08-Interoperability
+      Five script bundles authored and gated (Modules 1–4 v0.2, Module 5 v0.4), aligned to 08-Interoperability
       12 Sep 2026. Module 6 retired 12 Sep — 6.2–6.4 are now 5.8–5.10; 6.1, 6.5 and 6.6 moved to the
       GitBook home page and the intro video. Video track started 13 Sep: Modules 1–5 scripts + decks v0.1.
     intro:
@@ -202,9 +202,9 @@ kps:
           - {code: "5.1", title: "Plan the build in four phases"}
           - {code: "5.2", title: "State what a member must have — the Member Requirements"}
           - {code: "5.3", title: "Make 'connected' mean 'dependable' — the SLA"}
-          - {code: "5.4", title: "Register a member on X-Road", en: {blocker: "M5 review §2 unsettled (join mechanism) — no audio until decided"}}
-          - {code: "5.5", title: "Stand up the federation", en: {blocker: "M5 review §2 unsettled (MoEYS/PEMIS member and ITU-cloud hosting) — no audio until decided"}}
-          - {code: "5.6", title: "Run the once-only exchange, live", en: {blocker: "M5 review §2 unsettled (acceptance steps) — no audio until decided"}}
+          - {code: "5.4", title: "Register a member on X-Road", en: {blocker: "demo block (join beats J0–J4) waits on the 5.6 pilot review", note: "v0.4 narration carries the join mechanism"}}
+          - {code: "5.5", title: "Stand up the federation", en: {blocker: "demo block (T1–T3) waits on the 5.6 pilot review and the hosting decision", note: "v0.4 narration: PDGA + PNEA/PLR/PNIA, single-host line"}}
+          - {code: "5.6", title: "Run the once-only exchange, live", en: {demo_takes: v0.1, note: "screen-led pilot — KP2_M5_5.6_Pilot_Review_2026-09-13.md"}}
           - {code: "5.7", title: "From demonstration to production"}
           - {code: "5.8", title: "Watch the bus — monitoring and anomaly detection", en: {note: "was 6.2"}}
           - {code: "5.9", title: "Keep the documents honest — the consistency cross-check", en: {note: "was 6.3"}}
