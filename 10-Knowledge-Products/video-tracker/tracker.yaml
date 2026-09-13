@@ -16,7 +16,7 @@
 #
 # Bump `version` when the manifest structure or the topic list changes (not for a status tick).
 
-version: 1
+version: 2
 languages: [en, fr]        # fr rows are hidden by default until something exists for them
 
 kps:
@@ -134,9 +134,12 @@ kps:
     number: 2
     title: Government Interoperability Framework
     root: KP2-GIF
-    note: All six script bundles authored and gated (v0.1). No video track started — videos/ does not exist yet.
+    note: >-
+      Five script bundles authored and gated (Modules 1–4 v0.2, Module 5 v0.3), aligned to 08-Interoperability
+      12 Sep 2026. Module 6 retired 12 Sep — 6.2–6.4 are now 5.8–5.10; 6.1, 6.5 and 6.6 moved to the
+      GitBook home page and the intro video. No video track started — videos/ does not exist yet.
     intro:
-      title: KP2 introduction — what the six modules cover (on camera)
+      title: KP2 introduction — what the five modules cover (on camera)
       path: videos/intro
     modules:
       - number: 1
@@ -203,18 +206,9 @@ kps:
           - {code: "5.5", title: "Stand up the federation"}
           - {code: "5.6", title: "Run the once-only exchange, live"}
           - {code: "5.7", title: "From demonstration to production"}
-      - number: 6
-        title: AI plays for GIF + dissemination
-        persona: Strategist
-        path: videos/module_6
-        intro: {title: Module 6 introduction (on camera)}
-        topics:
-          - {code: "6.1", title: "The GIF AI-play catalogue"}
-          - {code: "6.2", title: "Watch the bus — monitoring and anomaly detection"}
-          - {code: "6.3", title: "Keep the documents honest — the consistency cross-check"}
-          - {code: "6.4", title: "Carry the framework to the next sector"}
-          - {code: "6.5", title: "Disseminate to the four roles"}
-          - {code: "6.6", title: "From no framework to first service — the storyboard"}
+          - {code: "5.8", title: "Watch the bus — monitoring and anomaly detection", en: {note: "was 6.2"}}
+          - {code: "5.9", title: "Keep the documents honest — the consistency cross-check", en: {note: "was 6.3"}}
+          - {code: "5.10", title: "Carry the framework to the next sector", en: {note: "was 6.4"}}
 
   # KP3 (DPI) and KP4 are not tracked yet — uncomment and fill in when their content exists.
   # - id: KP3

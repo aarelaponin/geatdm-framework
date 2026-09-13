@@ -14,7 +14,7 @@ KP2 is the first **implementation** Knowledge Product. Where KP1 taught how to *
 | 4 | Architecture + technical standards + Giga end-to-end case | Architect | `build_kp2_module4_v02.js` | `KP2_Module4_Script_Bundle_v0.2.md` |
 | 5 | Implementation + member onboarding + the Linkup demo — and running the framework (5.8 bus monitoring, 5.9 document-consistency cross-check, 5.10 sector portability) | Architect (5.1–5.8), Strategist (5.9–5.10) | `build_kp2_module5_v03.js` | `KP2_Module5_Script_Bundle_v0.3.md` |
 
-**Module 6 was retired on 12 September 2026**, mirroring the KP1 decision of 3 September. Read against Modules 1–5 it split three ways: 6.1 (AI-play catalogue) and 6.6 (country storyboard) restated content already taught; 6.5 (four role-paths) is a navigation aid about the product, not framework content; 6.2, 6.3 and 6.4 were genuinely new and are now 5.8, 5.9 and 5.10 in Module 5 v0.2. The catalogue and the role-paths live on the KP2 GitBook home page (`../gitbook/kp2/README.md`); the storyboard is the KP2 intro video. The v0.1 Module 6 source and its markdown are kept in `_retired/` for reference and are not rendered or gated.
+**Module 6 was retired on 12 September 2026**, mirroring the KP1 decision of 3 September. Read against Modules 1–5 it split three ways: 6.1 (AI-play catalogue) and 6.6 (country storyboard) restated content already taught; 6.5 (four role-paths) is a navigation aid about the product, not framework content; 6.2, 6.3 and 6.4 were genuinely new and are now 5.8, 5.9 and 5.10 in Module 5 (v0.2, now v0.3). The catalogue and the role-paths live on the KP2 GitBook home page (`../gitbook/kp2/README.md`); the storyboard is the KP2 intro video. The v0.1 Module 6 source and its markdown are kept in `_retired/` for reference and are not rendered or gated.
 
 **Aligned to `08-Interoperability` on 12 September 2026** (Modules 1–4 → v0.2, Module 5 → v0.3): the source of knowledge is the Reference Model, the eight-step Method, the Toolkit, the Reference Architecture and the RA-to-RFP guide in `../../08-Interoperability/`; the chain is 08 → build script → GitBook → video. The review and the change list are in `KP2_08_Alignment_Review_2026-09-12.md`. The six major corrections: the Two-Track Regulatory Memo is the decree ↔ data-protection-law coordination (2.5); procurement is the framework's enforcement lever once the framework exists, with the reference architecture as the tender spec (1.1, 5.1); the honest calendar — foundation first, first cross-ministry exchange in the second build phase, national coverage over four to six years (5.1, intro storyboard); the regulator/operator split (3.1, 3.3, 5.6); the conformance regime (3.6, 4.3, 5.4); and the five plan artefacts of the implementation step (5.1).
 
@@ -46,14 +46,14 @@ build_kp2_moduleN_v0X.js   ← edit this (the source)
 ```bash
 KIT=../ITU-Giga-KP-Plugin/skills
 # Markdown (after any build-script edit)
-python3 $KIT/kp-build-render/scripts/bundle_to_md.py build_kp2_module1_v01.js
+python3 $KIT/kp-build-render/scripts/bundle_to_md.py build_kp2_module1_v02.js
 # GitBook companion pages (gitbook/kp2/) — from the build scripts + gitbook/play-map.json
 python3 $KIT/kp-gitbook-render/scripts/render_kp2.py && python3 $KIT/kp-gitbook-render/scripts/gitbook_qa.py
 # Word deliverable into the contract working folder
-SCRATCH=/tmp/kpdocx OUT_PATH=".../_02_Design/_KP02/KP2_Module1_Script_Bundle_v0.1.docx" \
-  bash $KIT/kp-build-render/scripts/build_render.sh build_kp2_module1_v01.js
+SCRATCH=/tmp/kpdocx OUT_PATH=".../_02_Design/_KP02/KP2_Module1_Script_Bundle_v0.2.docx" \
+  bash $KIT/kp-build-render/scripts/build_render.sh build_kp2_module1_v02.js
 # gates
-python3 $KIT/kp-bundle-qa/scripts/qa_bundle.py build_kp2_module1_v01.js        # video compliance
+python3 $KIT/kp-bundle-qa/scripts/qa_bundle.py build_kp2_module1_v02.js        # video compliance
 python3 $KIT/kp-solution-verify/scripts/check_pack.py KP2-build-pack           # build-pack completeness
 ```
 

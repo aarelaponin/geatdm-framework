@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-12 16:56 (data v1)
+# KP video tracker — generated 2026-09-13 15:26 (data v2)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -75,7 +75,7 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 ## KP2 — Government Interoperability Framework
 
-- **KP2.0 KP2 introduction — what the six modules cover (on camera)** [en] ○○○○ 0/4 — next: Script
+- **KP2.0 KP2 introduction — what the five modules cover (on camera)** [en] ○○○○ 0/4 — next: Script
 
 ### Module 1 — Why interoperability, the four layers, and the foundation to start (Strategist)
 
@@ -140,16 +140,7 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | 5.5 | Stand up the federation | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
 | 5.6 | Run the once-only exchange, live | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
 | 5.7 | From demonstration to production | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
-
-### Module 6 — AI plays for GIF + dissemination (Strategist)
-
-| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
-|---|---|---|---|---|---|---|---|
-| 6.0 | Module 6 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 6.1 | The GIF AI-play catalogue | en | `○○○○○○○○○○` | 0/10 | Bundle |  |  |
-| 6.2 | Watch the bus — monitoring and anomaly detection | en | `○○○○○○○○○○` | 0/10 | Bundle |  |  |
-| 6.3 | Keep the documents honest — the consistency cross-check | en | `○○○○○○○○○○` | 0/10 | Bundle |  |  |
-| 6.4 | Carry the framework to the next sector | en | `○○○○○○○○○○` | 0/10 | Bundle |  |  |
-| 6.5 | Disseminate to the four roles | en | `○○○○○○○○○○` | 0/10 | Bundle |  |  |
-| 6.6 | From no framework to first service — the storyboard | en | `○○○○○○○○○○` | 0/10 | Bundle |  |  |
+| 5.8 | Watch the bus — monitoring and anomaly detection | en | `●○○○○○○○○○` | 1/10 | Script |  | was 6.2 |
+| 5.9 | Keep the documents honest — the consistency cross-check | en | `●○○○○○○○○○` | 1/10 | Script |  | was 6.3 |
+| 5.10 | Carry the framework to the next sector | en | `●○○○○○○○○○` | 1/10 | Script |  | was 6.4 |
 
