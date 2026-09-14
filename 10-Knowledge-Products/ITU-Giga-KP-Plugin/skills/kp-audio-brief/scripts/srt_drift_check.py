@@ -127,7 +127,9 @@ REFLECTIVE_CLOSE = [
     # caught late: the closer is not always second-person. "leaves US with a final thought for
     # you to mull over" passed a gate built around "leaves YOU with" and "for you to consider".
     # Match the announcement of a closing thought, whoever it is addressed to.
-    r"\bfinal thought\b", r"\bmull over\b", r"\bleaves? (?:us|you) with\b",
+    # "wondering" since KP2 2.2 v0.8: the trim took the closing question and left its lead-in,
+    # "Which really leaves you wondering / if this clear division of labor… can unblock…".
+    r"\bfinal thought\b", r"\bmull over\b", r"\bleaves? (?:us|you) (?:with|wondering)\b",
     r"\bthought (?:for you|to (?:leave|take))\b", r"\bone (?:last|final) (?:thought|question)\b",
     r"\bbrings? up a\b.{0,20}\b(?:thought|question)\b",
     # 4.7 v0.16: "And consider this implication for your own government structures." — an
