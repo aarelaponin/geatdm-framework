@@ -1,0 +1,17 @@
+# Slide cue file — KP2 Module 2, Video 2.6 "The decree as configuration"
+# Deck:  KP2_M2_2.6_Deck_v0.1.pptx (7 slides)
+# Audio: KP2_M2_2.6_Audio_v0.6.m4a (runs to 4:52.1)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Opens "Mm-hmm. And, uh, why you cannot simply hand…" — the show-open cut is sentence-correct, but
+# the second host continues the first host's thought. ~15 s restaurant / health-inspector metaphor
+# on slide 3. The build-pack point and the recap both land in the last 13 s, so slide 5 gets 6 s,
+# slide 6 gets 4 s and the Sources card 2.5 s on the take's last words. Accepted at KP1's bar.
+
+0:00   # slide 1 — title card
+0:20   # slide 2 — The step most teams skip: read the decree back against the catalogue.
+1:43   # slide 3 — Two checks: no less, and no more
+3:19   # slide 4 — The decree says, in law, what the bus does, in software
+4:39   # slide 5 — In the build pack, the decree is the legal-layer configuration
+4:45.9 # slide 6 — In one sentence
+4:49.5 # slide 7 — Sources

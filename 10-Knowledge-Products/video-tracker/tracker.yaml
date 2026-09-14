@@ -151,36 +151,36 @@ kps:
         intro: {title: Module 1 introduction (on camera)}
         topics:
           - {code: "1.1", title: "Why interoperability can't be bought, only built", en: {blocker: "unresolved after 4 rolls — citizen-at-the-counter framing; likely from the deck's slide-2 hook, an author decision"}}
-          - {code: "1.2", title: "The four layers of interoperability", en: {note: "candidate v0.5 (4:33) — opening keeps \"let's unpack… deep dive\"; two metaphors"}}
+          - {code: "1.2", title: "The four layers of interoperability", en: {accepted: "v0.5", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:34). \"let's unpack… deep dive\" at 0:29; Sources 4 s"}}
           - {code: "1.3", title: "The once-only promise", en: {note: "unresolved after 6 rolls — banned phrases every try, \"our sources\" in 3; re-roll"}}
-          - {code: "1.4", title: "The Strategic Foundation Document", en: {note: "v0.5 (4:34) usable at KP1's bar only — weak opening and close"}}
-          - {code: "1.5", title: "The Use-Case Catalogue", en: {note: "re-roll — v0.4 addressed a \"corporate initiative\", \"chaotic\", \"this mess\""}}
-          - {code: "1.6", title: "Mapping your stakeholders", en: {note: "re-roll — v0.2 invented a Motor Vehicles example, ended on \"for you listening\""}}
-          - {code: "1.7", title: "What the world already proved", en: {note: "re-roll — v0.2 invented population and country examples"}}
+          - {code: "1.4", title: "The Strategic Foundation Document", en: {accepted: "v0.5", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:34). Constitution talk precedes the four questions, so slide 5 is off-beat; Sources 2.8 s"}}
+          - {code: "1.5", title: "The Use-Case Catalogue", en: {note: "unresolved after 6 rolls. v0.4 passed the checks KP1 shipped under (fails only the 14 Sep additions \"chaotic\", \"this mess\") — decide: accept v0.4 or fix the brief"}}
+          - {code: "1.6", title: "Mapping your stakeholders", en: {note: "unresolved after 4 rolls — runtime swings 3:03-5:44, banned phrases; fix the brief"}}
+          - {code: "1.7", title: "What the world already proved", en: {accepted: "v0.3", note: "accepted at KP1's bar 14 Sep (clean on re-roll 1); cued + assembled (5:14). LISTEN: SRT reads \"Progresse\" at 5:06"}}
       - number: 2
         title: Legal framework — the Decree Drafting Kit
         persona: Strategist
         path: videos/module_2
         intro: {title: Module 2 introduction (on camera)}
         topics:
-          - {code: "2.1", title: "Why the platform needs a legal mandate", en: {note: "candidate v0.2 (5:38) — recites the brief's word list at 3:50"}}
+          - {code: "2.1", title: "Why the platform needs a legal mandate", en: {accepted: "v0.2", note: "accepted at KP1's bar 14 Sep; cued + assembled (5:38). Recites the brief's word list at 3:50; no sources line, Sources card 8 s"}}
           - {code: "2.2", title: "Anatomy of an interoperability decree", en: {note: "re-roll — v0.6 called the decree's parts \"building blocks\" (prompt fixed 14 Sep)"}}
           - {code: "2.3", title: "The Explanatory Memorandum and Preamble", en: {note: "re-roll — v0.3 said \"KP two\" in the cold open (brief title fixed 14 Sep); otherwise the most faithful"}}
           - {code: "2.4", title: "The Draft Articles Package", en: {note: "unresolved after 3 rolls — two said \"KP2\" before the title fix; re-roll"}}
-          - {code: "2.5", title: "The Cover Note and Two-Track Regulatory Memo", en: {note: "v0.6 (4:50) usable at KP1's bar only — invented figures, mid-exchange opening"}}
-          - {code: "2.6", title: "The decree as configuration", en: {note: "candidate v0.6 (4:52) — opens mid-thought; restaurant metaphor"}}
+          - {code: "2.5", title: "The Cover Note and Two-Track Regulatory Memo", en: {accepted: "v0.6", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:50). Invented figures, mid-exchange opening; Sources 6.3 s"}}
+          - {code: "2.6", title: "The decree as configuration", en: {accepted: "v0.6", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:52). Opens mid-thought; last 13 s carry slides 5-7, Sources 2.5 s"}}
       - number: 3
         title: Governance model — three-tier with RACI
         persona: Strategist
         path: videos/module_3
         intro: {title: Module 3 introduction (on camera)}
         topics:
-          - {code: "3.1", title: "Why a bus needs an owner", en: {note: "candidate v0.4 (5:32) — listen for \"Progressé\"; \"deep dive\" at 0:24"}}
-          - {code: "3.2", title: "The three tiers of governance", en: {note: "candidate v0.2 (4:27), the strongest — only flaw is the first 30 s"}}
-          - {code: "3.3", title: "The RACI matrix", en: {note: "candidate v0.4 (4:58) — listen for \"RACI\" (SRT reads \"RCI\")"}}
+          - {code: "3.1", title: "Why a bus needs an owner", en: {accepted: "v0.4", note: "accepted at KP1's bar 14 Sep; cued + assembled (5:32). LISTEN: SRT reads \"Progressé\" at 3:07"}}
+          - {code: "3.2", title: "The three tiers of governance", en: {accepted: "v0.2", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:27). Untrimmed show-open on the title card; Sources 2.2 s"}}
+          - {code: "3.3", title: "The RACI matrix", en: {accepted: "v0.4", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:58). LISTEN: SRT reads \"RCI\" where v0.1 read RACI"}}
           - {code: "3.4", title: "Member obligations", en: {note: "re-roll — v0.4 does not number the eight obligations; invented examples"}}
-          - {code: "3.5", title: "The four Technical Working Groups", en: {note: "v0.6 (5:07) usable at KP1's bar only — says \"the brief\" five times"}}
-          - {code: "3.6", title: "Governance as living configuration", en: {note: "v0.6 (5:16) usable at KP1's bar only — \"$100 million\" opener, \"welcome in… deep dive\""}}
+          - {code: "3.5", title: "The four Technical Working Groups", en: {accepted: "v0.6", note: "accepted at KP1's bar 14 Sep; cued + assembled (5:07). Says \"the brief\" five times; Sources 4.3 s"}}
+          - {code: "3.6", title: "Governance as living configuration", en: {accepted: "v0.6", note: "accepted at KP1's bar 14 Sep; cued + assembled (5:16). No recap turn: recap and Sources share the last 6 s"}}
       - number: 4
         title: Architecture + technical standards + Giga end-to-end case
         persona: Architect

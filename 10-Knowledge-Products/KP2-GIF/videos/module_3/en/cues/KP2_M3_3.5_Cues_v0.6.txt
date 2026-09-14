@@ -1,0 +1,16 @@
+# Slide cue file — KP2 Module 3, Video 3.5 "The four Technical Working Groups"
+# Deck:  KP2_M3_3.5_Deck_v0.1.pptx (7 slides)
+# Audio: KP2_M3_3.5_Audio_v0.6.m4a (runs to 5:07.3)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted at KP1's bar: the take says "the brief" five times and invents a token-vs-certificate
+# example (1:19, on slide 2). It names the groups security, APIs, platform operations, then
+# semantics — the slide's order is security, semantics, APIs, platform operations. Sources 4.3 s.
+
+0:00   # slide 1 — title card
+0:12   # slide 2 — From two members to twenty, the technical work multiplies.
+1:47   # slide 3 — Four groups, each owning one technical dimension
+2:40   # slide 4 — Semantics is where business and IT meet on the hardest problem
+3:53   # slide 5 — Standing, not project — that is what stops the drift
+4:44   # slide 6 — In one sentence
+5:03   # slide 7 — Sources

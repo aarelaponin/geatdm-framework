@@ -1,0 +1,16 @@
+# Slide cue file — KP2 Module 2, Video 2.1 "Why the platform needs a legal mandate"
+# Deck:  KP2_M2_2.1_Deck_v0.1.pptx (7 slides)
+# Audio: KP2_M2_2.1_Audio_v0.2.m4a (runs to 5:38.5)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted at KP1's bar: invented "millions of dollars" opener; "central nervous system" and
+# train-ticket metaphors; the §3 word list recited as dialogue at 3:50 (on slide 3). The take has no
+# sources line — it ends on "whole of government framework", which the Sources card carries (8 s).
+
+0:00   # slide 1 — title card
+0:09   # slide 2 — A perfect bus with no mandate carries nothing.
+2:31   # slide 3 — A missing mandate shows up in one of three disguises
+4:08   # slide 4 — One instrument fixes all three
+5:07   # slide 5 — Write the lawful basis once — for the whole of government
+5:23   # slide 6 — In one sentence
+5:30.4 # slide 7 — Sources

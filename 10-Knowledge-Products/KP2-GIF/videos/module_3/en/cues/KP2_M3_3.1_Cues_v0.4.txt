@@ -1,0 +1,17 @@
+# Slide cue file — KP2 Module 3, Video 3.1 "Why a bus needs an owner"
+# Deck:  KP2_M3_3.1_Deck_v0.1.pptx (7 slides)
+# Audio: KP2_M3_3.1_Audio_v0.4.m4a (runs to 5:32.0)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# The title card holds the host-made cold open (a highway abandoned after twenty-four months);
+# slide 2 comes up on that turn. "today's deep dive" at 0:24 is residue, accepted at KP1's bar.
+# Slide 5 has no beat of its own: it is cued on "the member ministries wear a third hat", which
+# completes the governing/operating picture. Listen for "Progressé" (3:07) — the SRT spelling.
+
+0:00   # slide 1 — title card
+0:13   # slide 2 — Platforms rarely die technically. They decay in year two.
+1:50   # slide 3 — The owner is a standing operator, not a committee
+3:18   # slide 4 — Two hats, two heads — the regulator and the operator
+4:49   # slide 5 — Governing is not operating — you need both, kept distinct
+5:03   # slide 6 — In one sentence
+5:24.9 # slide 7 — Sources

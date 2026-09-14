@@ -1,0 +1,16 @@
+# Slide cue file — KP2 Module 2, Video 2.5 "The Cover Note and Two-Track Regulatory Memo"
+# Deck:  KP2_M2_2.5_Deck_v0.1.pptx (7 slides)
+# Audio: KP2_M2_2.5_Audio_v0.6.m4a (runs to 4:50.5)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted at KP1's bar: opens mid-exchange ("Yeah, the really crucial stuff…"); invents "fifty
+# million dollars", a "five hundred page" package and "frozen for two years"; "a really fascinating
+# briefing" as attribution. No sources line — the Sources card carries the closing sentence (6.3 s).
+
+0:00   # slide 1 — title card
+0:15   # slide 2 — A perfect package can still stall.
+1:31   # slide 3 — The Cover Note: what it is, what you ask, and by when
+2:32   # slide 4 — Two laws, one set of data — the memo shows where they meet
+4:07   # slide 5 — The memo turns the data-protection authority into a co-signer
+4:29   # slide 6 — In one sentence
+4:44.1 # slide 7 — Sources

@@ -1,0 +1,18 @@
+# Slide cue file — KP2 Module 1, Video 1.7 "What the world already proved"
+# Deck:  KP2_M1_1.7_Deck_v0.1.pptx (8 slides)
+# Audio: KP2_M1_1.7_Audio_v0.3.m4a (runs to 5:13.7)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Clean on the first re-roll, and the brief's cold open as written ("Module one, video one point
+# seven"). Accepted at KP1's bar: "I will number them aloud" (4:26) reads the brief's instruction; the
+# §3 word list recited. The sources line comes at 5:12.1, 1.6 s from the end, so the Sources card is
+# cued on the handoff sentence's second half (5:06.8) to give it 7 s. Listen for "Progresse" (5:06).
+
+0:00   # slide 1 — title card
+0:05   # slide 2 — You are not the first country to build this.
+1:09   # slide 3 — Estonia — two decades of X-Road show the pattern lasts
+2:12   # slide 4 — If once-only works across 27 countries, it can work across your ministries
+3:05   # slide 5 — Reuse the vocabulary — don't invent it
+4:11   # slide 6 — Different countries, different scale — the same four elements
+4:51   # slide 7 — In one sentence
+5:06.8 # slide 8 — Sources

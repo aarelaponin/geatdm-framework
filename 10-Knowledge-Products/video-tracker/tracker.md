@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-14 20:15 (data v2)
+# KP video tracker — generated 2026-09-14 21:02 (data v2)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -83,36 +83,36 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 |---|---|---|---|---|---|---|---|
 | 1.0 | Module 1 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 1.1 | Why interoperability can't be bought, only built | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.8, SRT v0.8 | BLOCKER: unresolved after 4 rolls — citizen-at-the-counter framing; likely from the deck's slide-2 hook, an author decision |
-| 1.2 | The four layers of interoperability | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.5, SRT v0.5 | candidate v0.5 (4:33) — opening keeps "let's unpack… deep dive"; two metaphors |
+| 1.2 | The four layers of interoperability | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 | accepted at KP1's bar 14 Sep; cued + assembled (4:34). "let's unpack… deep dive" at 0:29; Sources 4 s |
 | 1.3 | The once-only promise | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.11, SRT v0.11 | unresolved after 6 rolls — banned phrases every try, "our sources" in 3; re-roll |
-| 1.4 | The Strategic Foundation Document | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.5, SRT v0.5 | v0.5 (4:34) usable at KP1's bar only — weak opening and close |
-| 1.5 | The Use-Case Catalogue | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4 | re-roll — v0.4 addressed a "corporate initiative", "chaotic", "this mess" |
-| 1.6 | Mapping your stakeholders | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.2, SRT v0.2 | re-roll — v0.2 invented a Motor Vehicles example, ended on "for you listening" |
-| 1.7 | What the world already proved | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.2, SRT v0.2 | re-roll — v0.2 invented population and country examples |
+| 1.4 | The Strategic Foundation Document | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 | accepted at KP1's bar 14 Sep; cued + assembled (4:34). Constitution talk precedes the four questions, so slide 5 is off-beat; Sources 2.8 s |
+| 1.5 | The Use-Case Catalogue | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.9, SRT v0.9 | unresolved after 6 rolls. v0.4 passed the checks KP1 shipped under (fails only the 14 Sep additions "chaotic", "this mess") — decide: accept v0.4 or fix the brief |
+| 1.6 | Mapping your stakeholders | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.8, SRT v0.8 | unresolved after 4 rolls — runtime swings 3:03-5:44, banned phrases; fix the brief |
+| 1.7 | What the world already proved | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.3, SRT v0.3, Accepted v0.3, Cues v0.3, MP4 v0.3 | accepted at KP1's bar 14 Sep (clean on re-roll 1); cued + assembled (5:14). LISTEN: SRT reads "Progresse" at 5:06 |
 
 ### Module 2 — Legal framework — the Decree Drafting Kit (Strategist)
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 2.0 | Module 2 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 2.1 | Why the platform needs a legal mandate | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.2, SRT v0.2 | candidate v0.2 (5:38) — recites the brief's word list at 3:50 |
+| 2.1 | Why the platform needs a legal mandate | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 | accepted at KP1's bar 14 Sep; cued + assembled (5:38). Recites the brief's word list at 3:50; no sources line, Sources card 8 s |
 | 2.2 | Anatomy of an interoperability decree | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6 | re-roll — v0.6 called the decree's parts "building blocks" (prompt fixed 14 Sep) |
 | 2.3 | The Explanatory Memorandum and Preamble | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.5, SRT v0.5 | re-roll — v0.3 said "KP two" in the cold open (brief title fixed 14 Sep); otherwise the most faithful |
 | 2.4 | The Draft Articles Package | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4 | unresolved after 3 rolls — two said "KP2" before the title fix; re-roll |
-| 2.5 | The Cover Note and Two-Track Regulatory Memo | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6 | v0.6 (4:50) usable at KP1's bar only — invented figures, mid-exchange opening |
-| 2.6 | The decree as configuration | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6 | candidate v0.6 (4:52) — opens mid-thought; restaurant metaphor |
+| 2.5 | The Cover Note and Two-Track Regulatory Memo | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 14 Sep; cued + assembled (4:50). Invented figures, mid-exchange opening; Sources 6.3 s |
+| 2.6 | The decree as configuration | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 14 Sep; cued + assembled (4:52). Opens mid-thought; last 13 s carry slides 5-7, Sources 2.5 s |
 
 ### Module 3 — Governance model — three-tier with RACI (Strategist)
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 3.0 | Module 3 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 3.1 | Why a bus needs an owner | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4 | candidate v0.4 (5:32) — listen for "Progressé"; "deep dive" at 0:24 |
-| 3.2 | The three tiers of governance | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.2, SRT v0.2 | candidate v0.2 (4:27), the strongest — only flaw is the first 30 s |
-| 3.3 | The RACI matrix | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4 | candidate v0.4 (4:58) — listen for "RACI" (SRT reads "RCI") |
+| 3.1 | Why a bus needs an owner | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4, Accepted v0.4, Cues v0.4, MP4 v0.4 | accepted at KP1's bar 14 Sep; cued + assembled (5:32). LISTEN: SRT reads "Progressé" at 3:07 |
+| 3.2 | The three tiers of governance | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 | accepted at KP1's bar 14 Sep; cued + assembled (4:27). Untrimmed show-open on the title card; Sources 2.2 s |
+| 3.3 | The RACI matrix | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4, Accepted v0.4, Cues v0.4, MP4 v0.4 | accepted at KP1's bar 14 Sep; cued + assembled (4:58). LISTEN: SRT reads "RCI" where v0.1 read RACI |
 | 3.4 | Member obligations | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4 | re-roll — v0.4 does not number the eight obligations; invented examples |
-| 3.5 | The four Technical Working Groups | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6 | v0.6 (5:07) usable at KP1's bar only — says "the brief" five times |
-| 3.6 | Governance as living configuration | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6 | v0.6 (5:16) usable at KP1's bar only — "$100 million" opener, "welcome in… deep dive" |
+| 3.5 | The four Technical Working Groups | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 14 Sep; cued + assembled (5:07). Says "the brief" five times; Sources 4.3 s |
+| 3.6 | Governance as living configuration | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 14 Sep; cued + assembled (5:16). No recap turn: recap and Sources share the last 6 s |
 
 ### Module 4 — Architecture + technical standards + Giga end-to-end case (Architect)
 

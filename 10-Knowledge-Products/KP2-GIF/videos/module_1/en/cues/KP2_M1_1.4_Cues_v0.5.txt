@@ -1,0 +1,19 @@
+# Slide cue file — KP2 Module 1, Video 1.4 "The Strategic Foundation Document"
+# Deck:  KP2_M1_1.4_Deck_v0.1.pptx (8 slides)
+# Audio: KP2_M1_1.4_Audio_v0.5.m4a (runs to 4:33.9)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted at KP1's bar: opens mid-exchange and recites the §3 word list (0:00-0:37, on the title
+# card); ends "the ultimate shortcut", not on the recap. The take discusses the constitution and the
+# ten-minute on-ramp (slide 5) at 1:25-2:08, BEFORE the four questions and the principles — so that
+# stretch plays on slide 2 ("every meeting re-opens the same arguments"), and slide 5 sits on the
+# shared-highway line before "keep it short, keep it owned". Sources card 2.8 s.
+
+0:00   # slide 1 — title card
+0:37   # slide 2 — One short document, before a single system is connected.
+2:09   # slide 3 — Four questions every later decision is tested against
+2:51   # slide 4 — Name the principles, and they settle arguments before they start
+3:48   # slide 5 — Write it before the wiring, not after
+4:01   # slide 6 — Keep it short, keep it owned
+4:24.5 # slide 7 — In one sentence
+4:31   # slide 8 — Sources

@@ -1,0 +1,16 @@
+# Slide cue file — KP2 Module 3, Video 3.3 "The RACI matrix"
+# Deck:  KP2_M3_3.3_Deck_v0.1.pptx (7 slides)
+# Audio: KP2_M3_3.3_Audio_v0.4.m4a (runs to 4:58.5)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# The title card holds the opener and "today we're taking a deep dive" (0:17), accepted at KP1's
+# bar. Listen for "RACI": the SRT reads "RCI" all five times, while this subtopic's v0.1 SRT spelled
+# RACI correctly — the hosts may drop the A.
+
+0:00   # slide 1 — title card
+0:27   # slide 2 — The question that derails interoperability is "who decides?"
+1:25   # slide 3 — RACI names four roles — and exactly one is Accountable
+2:10   # slide 4 — Map only the decisions that recur and cause friction
+3:23   # slide 5 — Write one row once, and the next onboarding is a process
+4:31   # slide 6 — In one sentence
+4:52   # slide 7 — Sources

@@ -1,0 +1,21 @@
+# Slide cue file — KP2 Module 3, Video 3.2 "The three tiers of governance"
+# Deck:  KP2_M3_3.2_Deck_v0.1.pptx (10 slides)
+# Audio: KP2_M3_3.2_Audio_v0.2.m4a (runs to 4:27.2)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# The title card holds the untrimmed show-open ("Welcome to this deep dive… unpacking", 0:00-0:29),
+# accepted at KP1's bar. The take covers the Operating Authority (3:08) before escalation (3:18)
+# and says "business and IT decide in the same room" only at 3:59, after it — so slide 7 sits on the
+# operator turn for 10 s to keep the deck order. Sources card gets 2.2 s: the take ends on the
+# sources line with no closing silence.
+
+0:00   # slide 1 — title card
+0:30   # slide 2 — Governance fails in two opposite ways.
+1:45   # slide 3 — Three tiers, one operator — each with one job
+2:00   # slide 4 — The Strategic Council removes the obstacles no technician can
+2:35   # slide 5 — The Steering Committee is where the framework is steered
+2:57   # slide 6 — The Technical Working Groups decide what they can, and recommend the rest
+3:08   # slide 7 — The tiers are where business and IT decide together
+3:18   # slide 8 — Decide at the lowest tier that can — escalate only what it cannot
+4:05   # slide 9 — In one sentence
+4:25   # slide 10 — Sources

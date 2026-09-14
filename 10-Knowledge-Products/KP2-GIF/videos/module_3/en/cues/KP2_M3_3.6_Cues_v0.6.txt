@@ -1,0 +1,18 @@
+# Slide cue file — KP2 Module 3, Video 3.6 "Governance as living configuration"
+# Deck:  KP2_M3_3.6_Deck_v0.1.pptx (8 slides)
+# Audio: KP2_M3_3.6_Audio_v0.6.m4a (runs to 5:16.3)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted at KP1's bar: invented "$100 million" opener, "Welcome in today's deep dive" at 0:23 on
+# the title card. The take has no recap turn — it ends on the fourth Governance Pack check and one
+# closing sentence — so the recap slide and the Sources card share the last 6 s (3 s each). Change
+# control (2:21) is discussed after the portfolio owner, so it plays on slide 4, not slide 3.
+
+0:00   # slide 1 — title card
+0:40   # slide 2 — Governance is not a setup you finish at launch.
+0:58   # slide 3 — The live framework changes constantly
+1:54   # slide 4 — Name the standards-portfolio owner
+2:51   # slide 5 — Two more standing assets need an owner
+4:16   # slide 6 — The Governance Pack is done when these checks pass
+5:10   # slide 7 — In one sentence
+5:13   # slide 8 — Sources
