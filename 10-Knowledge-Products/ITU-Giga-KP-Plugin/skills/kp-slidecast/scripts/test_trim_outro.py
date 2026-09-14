@@ -31,6 +31,24 @@ def test_a_show_open_sentence_running_into_the_next_cue_is_cut_whole():
     assert open_end(c, TERMS) == 2, open_end(c, TERMS)
 
 
+def test_an_earlier_marker_is_used_when_the_last_one_reads_as_content():
+    # KP2 1.7 v0.2: the second marker's cue names the subject, so only the first can be cut.
+    c = cues("Welcome to today's deep dive.",
+             "You know that feeling when you type the same thing twice?",
+             "So on this deep dive, we are looking at how the ministry registry works.",
+             "The ministry runs three registries.")
+    assert open_end(c, TERMS) == 1, open_end(c, TERMS)
+
+
+def test_an_earlier_marker_sharing_its_cue_with_the_hook_is_not_used():
+    # KP2 1.4 v0.1: the hook runs on from the marker's cue; cutting there loses it.
+    c = cues("Welcome to the deep dive. So if you are an official in your ministry,",
+             "the urge to jump straight into the wiring is strong.",
+             "Oh, it is incredibly strong.",
+             "But today we are exploring the ministry registry step.")
+    assert open_end(c, TERMS) is None, open_end(c, TERMS)
+
+
 def test_the_videos_own_opening_survives():
     # 4.1: content in the first cue, a marker after it. Cutting to the marker would eat it.
     c = cues("Meet Progressa. It is a demonstration country.",
@@ -53,6 +71,16 @@ def test_an_announced_close_is_cut_from_the_announcement():
              "Before we wrap up, I want to leave you with a thought to mull over.",
              "Could you use this to align the registry architecture of another ministry",
              "before they even sit down to design a shared service?")
+    assert outro_start(c, TERMS) == 1, outro_start(c, TERMS)
+
+
+def test_the_earliest_turn_to_the_listener_is_the_cut():
+    # KP2 1.2 v0.3: "consider how" came two cues before the "ask yourself" the cut found first.
+    c = cues("Pull out one layer and the ministry exchange collapses at that missing layer.",
+             "So consider how this explains the data silos you experience every day in the",
+             "private sector. It's like moving your medical history between two clinics.",
+             "Next time that fails, ask yourself: are the wires broken?",
+             "Something for you to mull over.")
     assert outro_start(c, TERMS) == 1, outro_start(c, TERMS)
 
 

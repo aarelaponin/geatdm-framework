@@ -207,7 +207,7 @@ def segment(s, start, secs, first, last_content, sources, observation=None):
     return body
 
 
-BRIEF = """# AUDIO BRIEF — KP{kp} · Module {mod} · Video {sub}
+BRIEF = """# AUDIO BRIEF — {kpdot}Module {mod} · Video {sub}
 ## "{title}"
 
 **This document is the sole authority for the audio.** Everything the hosts say must come from
@@ -441,7 +441,7 @@ only thing in the notebook.
 ## Step 3 — Customization prompt
 
 ```
-Follow the source titled "AUDIO BRIEF — KP{kp} Module {mod} Video {sub}" exactly. It is the sole
+Follow the source titled "AUDIO BRIEF — {kpsp}Module {mod} Video {sub}" exactly. It is the sole
 authority for both what is said and what is not.
 
 This is a policy briefing between two senior advisers preparing a government minister —
@@ -485,7 +485,7 @@ metaphors.
 ## Step 4 — Fallback if the box truncates
 
 ```
-Follow the source "AUDIO BRIEF — KP{kp} Module {mod} Video {sub}" exactly, working through its
+Follow the source "AUDIO BRIEF — {kpsp}Module {mod} Video {sub}" exactly, working through its
 section 2 one segment per slide in order. Two senior policy advisers briefing a government
 minister, not a podcast. The listener is the official who runs these systems, never a citizen at
 a counter. Every sentence must be traceable to the brief — invent no facts, figures, countries or
@@ -583,6 +583,10 @@ def main():
             sys.exit(f"{sub}: a shipped term row still says PAERA: {left[0]!r}")
     used = [f"| {say} | {no} |" for pat, say, no in shipped]
     fields = dict(
+        # The titles the hosts can see carry no KP number outside KP1: KP2 2.3 and both 2.4 rolls
+        # read it into the cold open ("KP two, module two, video 2.3"). KP1 keeps it so its
+        # shipped briefs regenerate byte-identical.
+        kpdot=f"KP{kp} · " if kp == "1" else "", kpsp=f"KP{kp} " if kp == "1" else "",
         kp=kp, mod=mod, sub=sub, title=title, deck=deck.name, nslides=len(slides), secs=secs,
         mins=round(secs / 60), ceiling=mmss(secs + 60), ceilmins=round(secs / 60) + 1,
         lo=mmss(secs - 30), hi=mmss(secs + 30), segments=body, terms="\n".join(used) + "\n",
@@ -603,7 +607,12 @@ def main():
                   "do, the only expansion is \"Public Administration Ecosystem Reference "
                   "Architecture\". ")
                  + ("\"register\" not \"registry\", " if kp == "1" else "")
-                 + "\"building block\" — never \"module\" or \"component\". "
+                 # KP2 2.2 v0.6 turned the decree's "five parts" into "five distinct building
+                 # blocks" — KP2's building blocks are the national DPI ones, and 20 of the first 49
+                 # KP2 takes said the term while one brief used it. Conditional outside KP1, whose
+                 # shipped prompts all carry it.
+                 + ("\"building block\" — never \"module\" or \"component\". "
+                    if kp == "1" or re.search(r"building block", body, re.I) else "")
                  + ("Say \"Progressa\" as pro-GRESS-a — never \"Progressive\", never "
                     "\"Progresa\". " if re.search(r"\bProgressa\b", body, re.I) else "")
                  + "Invent no figures, dates, countries or examples.",

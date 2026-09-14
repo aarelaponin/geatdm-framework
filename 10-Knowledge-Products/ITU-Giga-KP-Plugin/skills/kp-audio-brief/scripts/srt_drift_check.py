@@ -22,12 +22,15 @@ from collections import Counter
 
 BANNED_PHRASES = [
     # podcast furniture
-    "deep dive", "welcome to", "unpacking", "our sources", "the sources say",
+    "deep dive", "welcome to", "unpacking", "unpack this", "our sources", "the sources say",
     "here's where it gets", "here is where it gets", "buckle up",
     # the brief's own stage direction read aloud — KP2 1.3 v0.5: "let me ask you the substantive
     # question that a director general would ask"
     "substantive question", "director general would ask", "director-general would ask",
     "let's get into it", "stick around",
+    # the brief's title read into the cold open — KP2 2.3 v0.3: "KP two, module two, video 2.3".
+    # Learners never hear a KP number.
+    "kp one", "kp two", "kp three", "kp1", "kp2", "kp3", "kp 1", "kp 2", "kp 3",
     # reflective-outro tic
     "raises a fascinating question", "for you to consider", "think about",
     "look around at", "keep that in mind",
@@ -37,6 +40,10 @@ BANNED_PHRASES = [
     # added 8 Sep: the brief's §3 substitution table bans these in its "never this" column, and
     # the gate did not check them — 4.5 swapped "nightmare" for "a mess" and passed.
     "a mess", "a disaster", "hopeless",
+    # 14 Sep, same gap: §3 bans "chaotic" beside "chaos", and the substring does not match it.
+    # KP2 1.5 v0.4 passed with "a chaotic scribble" and "untangle this mess". Shipped KP1 2.1
+    # v0.15 and 2.2 v0.19 would fail on these today; they are not re-opened.
+    "chaotic", "this mess",
     # the on-screen practice box, imported into the take (plan D5 — the box is never
     # narrated, and the "Your play" handoff it replaced is gone from the voice-over).
     # Deliberately NOT "your own sector" on its own: 4.1 uses it descriptively, and
@@ -126,6 +133,11 @@ REFLECTIVE_CLOSE = [
     # 4.7 v0.16: "And consider this implication for your own government structures." — an
     # announced closing thought with none of the words above in it.
     r"\bconsider\b.{0,40}\b(?:your own|for you)\b",
+    # KP2 1.2 v0.3: "consider how this explains the frustrating data silos you experience every
+    # day in the private sector" — two cues before the "ask yourself" the cut found first, so it
+    # and a private-clinic analogy stayed on air.
+    r"\bconsider how\b.{0,80}\byou\b",
+    r"\bfor you listening\b",          # KP2 1.6 v0.2: "the massive takeaway for you listening"
 ]
 
 REQUIRED_SIGNPOSTS = [
@@ -362,6 +374,10 @@ def main():
     for pat, fix in TERMINOLOGY:
         if pat in deck_vocab:
             continue        # the deck says it too — see --deck
+        # "register" over "registry" is KP1's house style. KP2's decks say both ("business
+        # register", "learner registry"), and 2.6 v0.6 failed on it alone.
+        if pat == r"\bregistr(y|ies)\b" and not re.match(r"KP1_", args.srt.rsplit("/", 1)[-1]):
+            continue
         if re.search(pat, full, re.I):
             fails.append(f"TERMINOLOGY — say {fix}")
 

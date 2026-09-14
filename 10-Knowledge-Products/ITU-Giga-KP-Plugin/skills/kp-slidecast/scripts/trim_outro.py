@@ -155,33 +155,34 @@ def is_furniture(text, terms):
     return not (words & terms)
 
 
-def open_end(cues, terms=None):
-    """Index of the first cue of real content, or None if the take opens clean."""
-    cut = None
-    for i, c in enumerate(cues):
-        if c["start"] > HEAD_WINDOW_S:
-            break
-        if any(re.search(p, c["text"].lower()) for p in SHOW_OPEN):
-            cut = i + 1
+def _to_sentence_end(cues, cut):
+    """Walk a head cut forward to a sentence boundary.
 
-    if cut is None:
-        return None
-
-    # The marker's sentence can run on into the next cue — KP2 1.1's "Today we are looking at a
-    # stack of … white papers, / uh, IT architecture guidelines, and some public sector research"
-    # — and cutting after the marker cue opened the video on "uh, IT architecture guidelines".
-    # Same fix as _to_sentence_start, forwards.
+    The marker's sentence can run on into the next cue — KP2 1.1's "Today we are looking at a
+    stack of … white papers, / uh, IT architecture guidelines, and some public sector research"
+    — and cutting after the marker cue opened the video on "uh, IT architecture guidelines".
+    Same fix as _to_sentence_start, forwards.
+    """
     # ponytail: capped at 3 cues, so a transcript with no punctuation cannot walk into content
-    marker = cut
     for _ in range(3):
         if cut >= len(cues) or cues[cut - 1]["text"].rstrip().endswith((".", "!", "?")):
             break
         cut += 1
+    return cut
+
+
+def open_end(cues, terms=None):
+    """Index of the first cue of real content, or None if the take opens clean."""
+    markers = [i + 1 for i, c in enumerate(cues)
+               if c["start"] <= HEAD_WINDOW_S and any(re.search(p, c["text"].lower()) for p in SHOW_OPEN)]
+    if not markers:
+        return None
 
     if terms is None:
         # Without the deck there is nothing to tell furniture from content, so keep the original
         # bound: never eat more than the first four cues. Six was tried and was wrong — on 1.3 it
         # cut 21.6 s and took the video's opening argument with it.
+        cut = _to_sentence_end(cues, markers[-1])
         return cut if cut <= 4 else None
 
     # With the deck, the bound is the content itself rather than a count. Walk back from the
@@ -190,12 +191,26 @@ def open_end(cues, terms=None):
     # Progressa — it is a demonstration country …" and 2.5's "module two, video 2.5", which are
     # content and the brief's required cold open. Modules 2-4 open with a 30 s teaser BEFORE the
     # self-introduction, so a four-cue cap gives up on them entirely; this keeps both cases right.
-    # From the marker, not the sentence-extended cut: the run-on half carries subject words
-    # ("IT architecture guidelines") and would read as content.
-    start = marker
-    while start > 0 and is_furniture(cues[start - 1]["text"], terms):
-        start -= 1
-    return cut if start == 0 else None
+    # The walk starts from the marker, not the sentence-extended cut: the run-on half carries
+    # subject words ("IT architecture guidelines") and would read as content.
+    #
+    # Latest marker first, then earlier ones. KP2 1.7 v0.2 opened "Welcome to today's deep dive."
+    # and said "So on this deep dive, we are looking at how massive organizations…" at 0:20; the
+    # second marker's cue reads as content, and trying only it left the first line on air.
+    # An earlier marker counts only when its cue ends the sentence by itself. On KP2 1.4 v0.1 the
+    # marker cue was "welcome to the Deep Dive. So if you are an official running digital
+    # programs in your ministry," — the hook shares the cue, and walking to its sentence end
+    # opened the video on "Oh, it's incredibly strong."
+    for marker in reversed(markers):
+        cut = _to_sentence_end(cues, marker)
+        if marker != markers[-1] and cut != marker:
+            continue
+        start = marker
+        while start > 0 and is_furniture(cues[start - 1]["text"], terms):
+            start -= 1
+        if start == 0:
+            return cut
+    return None
 
 
 def main():
