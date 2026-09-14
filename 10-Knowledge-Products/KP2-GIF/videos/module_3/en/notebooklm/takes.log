@@ -1,0 +1,16 @@
+ts	subtopic	brief	prompt	notebook_id	audio	duration_s	wall_s
+2026-09-14T08:07:11+00:00	3.1	KP2_M3_3.1_AudioBrief_v0.1.md	KP2_M3_3.1_NotebookLM_Prompt_v0.1.md	1c3e3b5f-a9cf-406d-90b0-464e68def736	KP2_M3_3.1_Audio_v0.1.m4a	321.6	273
+2026-09-14T08:12:46+00:00	3.1	KP2_M3_3.1_AudioBrief_v0.1.md	KP2_M3_3.1_NotebookLM_Prompt_v0.1.md	1c3e3b5f-a9cf-406d-90b0-464e68def736	KP2_M3_3.1_Audio_v0.3.m4a	345.7	274
+2026-09-14T08:17:43+00:00	3.2	KP2_M3_3.2_AudioBrief_v0.1.md	KP2_M3_3.2_NotebookLM_Prompt_v0.1.md	287f6688-c35c-4722-b2f0-a27e407b3d64	KP2_M3_3.2_Audio_v0.1.m4a	316.4	261
+2026-09-14T08:23:04+00:00	3.2	KP2_M3_3.2_AudioBrief_v0.1.md	KP2_M3_3.2_NotebookLM_Prompt_v0.1.md	287f6688-c35c-4722-b2f0-a27e407b3d64	KP2_M3_3.2_Audio_v0.2.m4a	267.2	272
+2026-09-14T08:27:45+00:00	3.3	KP2_M3_3.3_AudioBrief_v0.1.md	KP2_M3_3.3_NotebookLM_Prompt_v0.1.md	e429639d-65b0-4e70-ab05-0e619f90cd12	KP2_M3_3.3_Audio_v0.1.m4a	226.2	259
+2026-09-14T16:14:07+00:00	3.3	KP2_M3_3.3_AudioBrief_v0.1.md	KP2_M3_3.3_NotebookLM_Prompt_v0.1.md	e429639d-65b0-4e70-ab05-0e619f90cd12	KP2_M3_3.3_Audio_v0.2.m4a	173.0	27933
+2026-09-14T16:19:38+00:00	3.3	KP2_M3_3.3_AudioBrief_v0.1.md	KP2_M3_3.3_NotebookLM_Prompt_v0.1.md	e429639d-65b0-4e70-ab05-0e619f90cd12	KP2_M3_3.3_Audio_v0.3.m4a	311.0	285
+2026-09-14T16:24:56+00:00	3.4	KP2_M3_3.4_AudioBrief_v0.1.md	KP2_M3_3.4_NotebookLM_Prompt_v0.1.md	ed7ece46-ed47-4177-9853-dbb92f763507	KP2_M3_3.4_Audio_v0.1.m4a	349.5	286
+2026-09-14T16:30:25+00:00	3.4	KP2_M3_3.4_AudioBrief_v0.1.md	KP2_M3_3.4_NotebookLM_Prompt_v0.1.md	ed7ece46-ed47-4177-9853-dbb92f763507	KP2_M3_3.4_Audio_v0.3.m4a	334.2	264
+2026-09-14T16:35:33+00:00	3.5	KP2_M3_3.5_AudioBrief_v0.1.md	KP2_M3_3.5_NotebookLM_Prompt_v0.1.md	eb8e3640-1e98-4dd0-abc5-af3e83afffe3	KP2_M3_3.5_Audio_v0.1.m4a	205.8	275
+2026-09-14T16:41:14+00:00	3.5	KP2_M3_3.5_AudioBrief_v0.1.md	KP2_M3_3.5_NotebookLM_Prompt_v0.1.md	eb8e3640-1e98-4dd0-abc5-af3e83afffe3	KP2_M3_3.5_Audio_v0.3.m4a	372.7	286
+2026-09-14T16:47:12+00:00	3.5	KP2_M3_3.5_AudioBrief_v0.1.md	KP2_M3_3.5_NotebookLM_Prompt_v0.1.md	eb8e3640-1e98-4dd0-abc5-af3e83afffe3	KP2_M3_3.5_Audio_v0.5.m4a	323.1	286
+2026-09-14T16:52:08+00:00	3.6	KP2_M3_3.6_AudioBrief_v0.1.md	KP2_M3_3.6_NotebookLM_Prompt_v0.1.md	501e3996-74a9-4730-b500-f6ac8105b986	KP2_M3_3.6_Audio_v0.1.m4a	333.9	265
+2026-09-14T16:57:47+00:00	3.6	KP2_M3_3.6_AudioBrief_v0.1.md	KP2_M3_3.6_NotebookLM_Prompt_v0.1.md	501e3996-74a9-4730-b500-f6ac8105b986	KP2_M3_3.6_Audio_v0.3.m4a	415.1	276
+2026-09-14T17:03:10+00:00	3.6	KP2_M3_3.6_AudioBrief_v0.1.md	KP2_M3_3.6_NotebookLM_Prompt_v0.1.md	501e3996-74a9-4730-b500-f6ac8105b986	KP2_M3_3.6_Audio_v0.5.m4a	360.2	254
