@@ -4,7 +4,7 @@ One video per **topic** (subtopic `«module».«topic»`, e.g. `1.1`). Build per
 module: the module-wide artefacts exist only as an intermediate that gets split.
 
 Everything starts from the module's script bundle one level up
-(`KP1_Module1_Script_Bundle_v0.2.md`) and ends as an MP4. Eight steps. On the default path none
+(`KP1_Module1_Script_Bundle_v0.3.md`) and ends as an MP4. Eight steps. On the default path none
 of them need a browser; the NotebookLM fallback keeps two that no script can replace.
 
 **Bilingual: English and French.** Each module runs the full pipeline once per language, in
@@ -16,8 +16,8 @@ and empty, waiting on a French deck (see *Adding a language* below).
 
 ```
 KP1-GEA/
-├── KP1_Module1_Script_Bundle_v0.2.md      the source for everything below (English)
-├── build_kp1_module1_deck_v01.py          the deck's source of truth (English)
+├── KP1_Module1_Script_Bundle_v0.3.md      the source for everything below (English)
+├── build_kp1_module1_deck_v02.py          the deck's source of truth (English)
 └── videos/
     ├── voice-swap.md                       how the hosts get replaced       (4b)
     ├── voice-cast.md                       the two host voices, pinned
@@ -49,7 +49,7 @@ filename says which video — nothing says the same thing twice. Filenames are *
 `en/` and `fr/`**; only the path disambiguates. There is no `Topic«t»` anywhere: topic number
 always equals module number, so it only ever added a third place to get wrong.
 
-The module-wide artefacts drop the `«x.y»` — `en/decks/KP1_M1_Deck_v0.1.pptx` is the combined
+The module-wide artefacts drop the `«x.y»` — `en/decks/KP1_M1_Deck_v0.2.pptx` is the combined
 64-slide deck, `en/scripts/KP1_M1_Scripts_v0.1.md` the whole-module narration — which also keeps
 them out of any glob aimed at the per-topic files. `en/decks/split_spec.json` drives the split for
 that language's deck; a translated deck gets its own `fr/decks/split_spec.json` once one exists,
@@ -101,14 +101,14 @@ so edit the build script and regenerate rather than editing the two out of sync.
 
 ```bash
 cd 10-Knowledge-Products/KP1-GEA
-python build_kp1_module1_deck_v01.py                      # combined module deck, 64 slides — English, writes to videos/module_1/en/decks/
+python build_kp1_module1_deck_v02.py                      # combined module deck, 60 slides — English, writes to videos/module_1/en/decks/
 python ../ITU-Giga-KP-Plugin/skills/kp-deck-builder/scripts/split_module_deck.py \
-  videos/module_1/en/decks/KP1_M1_Deck_v0.1.pptx \
+  videos/module_1/en/decks/KP1_M1_Deck_v0.2.pptx \
   videos/module_1/en/decks/split_spec.json \
   videos/module_1/en/decks/
 ```
 
-`build_kp1_module1_deck_v01.py` defaults to `videos/module_1/en/decks/`, since it hard-codes the
+`build_kp1_module1_deck_v02.py` defaults to `videos/module_1/en/decks/`, since it hard-codes the
 English slide copy. Override with `OUT_PATH=...` to write anywhere else — that's also how a French
 build script (once it exists) should target `videos/module_1/fr/decks/`.
 
@@ -275,15 +275,15 @@ Deck → LibreOffice → PDF → PNGs, held per cue interval, narration muxed at
 a file-copy job — every stage after the deck depends on French content that doesn't exist yet:
 
 1. **Translate the deck.** The deck is the pipeline's single source of truth (Step 2), so French
-   starts there — either a French-language variant of `build_kp1_module1_deck_v01.py` (translated
+   starts there — either a French-language variant of `build_kp1_module1_deck_v02.py` (translated
    slide copy and speaker notes, same slide count so `split_spec.json` still lines up) or a
    translated `.pptx` produced some other way, saved to `videos/module_1/fr/decks/`.
 2. Once a French deck exists, Steps 1, 3–7 run exactly as documented above with `«lang»` = `fr` —
    the audio brief extractor, NotebookLM, the transcriber, the cue author and slidecast are all
    language-agnostic; they just need French inputs.
-3. The module-level script bundle (`KP1_Module1_Script_Bundle_v0.2.md`, one level up from
+3. The module-level script bundle (`KP1_Module1_Script_Bundle_v0.3.md`, one level up from
    `videos/`) is English-only today. A French bundle would need its own file (e.g.
-   `KP1_Module1_Script_Bundle_v0.2_FR.md`) if you want the scripts-only companion in Step 1 to
+   `KP1_Module1_Script_Bundle_v0.3_FR.md`) if you want the scripts-only companion in Step 1 to
    exist in French too — that's a translation task, not a restructuring one, and is out of scope
    of this folder move.
 

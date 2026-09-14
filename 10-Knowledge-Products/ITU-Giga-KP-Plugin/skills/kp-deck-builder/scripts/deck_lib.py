@@ -2,7 +2,7 @@
 """Helper library for building KP module video decks on the ITU template.
 
 Extracted from the worked, QA'd generator for KP1 Module 1
-(KP1-GEA/build_kp1_module1_deck_v01.py). Import these helpers when building a
+(KP1-GEA/build_kp1_module1_deck_v02.py). Import these helpers when building a
 new module's deck; the worked example remains the reference for composition.
 
 Usage sketch:

@@ -29,7 +29,7 @@ after review, per-video splitting worked out. This skill captures all of it so t
 is a composition job, not a rediscovery job.
 
 **The cardinal rule, same as the docx pipeline: the .pptx is never hand-edited.** The deck comes from
-a Python build script stored next to the module's bundle (e.g. `KP1-GEA/build_kp1_module1_deck_v01.py`).
+a Python build script stored next to the module's bundle (e.g. `KP1-GEA/build_kp1_module1_deck_v02.py`).
 Every fix — a wording change, a numbering correction, a new slide — goes to the build script; then
 re-render the combined deck and re-run the split. Hand-editing the .pptx guarantees the next build
 silently reverts it, and the split decks drift from the combined one.
@@ -40,7 +40,7 @@ silently reverts it, and the split decks drift from the combined one.
   voice-over, single messages, runtimes, sources, metadata.
 - `scripts/ITU_ppt_template.pptx` — the ITU video template, shipped with this skill. 13.333 × 7.5 in
   canvas. `deck_lib.open_template()` defaults to it; pass a path to use a different template.
-- The worked example: `KP1-GEA/build_kp1_module1_deck_v01.py` (combined deck) and
+- The worked example: `KP1-GEA/build_kp1_module1_deck_v02.py` (combined deck) and
   `KP1-GEA/videos/module_1/en/decks/split_spec.json` (split). Read them
   before building a new module. The build script is **content only** — it imports every helper,
   colour and layout index from `deck_lib.py`; copy that arrangement, never the helpers themselves.
@@ -49,7 +49,7 @@ silently reverts it, and the split decks drift from the combined one.
 
 Video output is bilingual (English + French — see the video track's `videos/README.md`), with a
 full sibling tree per language: `videos/module_<N>/en/` and `videos/module_<N>/fr/`. A build
-script produces **one language's** deck. `build_kp1_module1_deck_v01.py` is the English build —
+script produces **one language's** deck. `build_kp1_module1_deck_v02.py` is the English build —
 every slide string in it is hard-coded English prose, so it is not reusable as-is for French. A
 French deck needs its own build script (translated cover/agenda/section/content/climax/sources
 copy, same slide count so the split spec still lines up) writing to `videos/module_<N>/fr/decks/`.

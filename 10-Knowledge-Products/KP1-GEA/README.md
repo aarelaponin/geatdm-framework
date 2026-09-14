@@ -12,7 +12,7 @@ The versioned home of the FiscalAdmin OÜ — ITU/Giga **Knowledge Product 1** (
 | 4 | Progressa demonstration — applying the method end-to-end | Architect | 8 (4.1–4.8) | ~28 min | `build_kp1_module4_v02.js` | `KP1_Module4_Script_Bundle_v0.2.md` |
 | 5 | Cross-country evidence, cross-sector applicability and dissemination | Strategist | 6 (5.1–5.6) | ~23 min | `build_kp1_module5_v02.js` | `KP1_Module5_Script_Bundle_v0.2.md` |
 
-**35 videos, ~141 minutes of target runtime** (was 37 videos and ~190 minutes before the September 2026 tightening pass). The v0.1 / v0.2 build scripts and their `.md` are kept alongside the new ones as the pre-tightening record.
+**35 videos, ~141 minutes of target runtime** (was 37 videos and ~190 minutes before the September 2026 tightening pass). The pre-tightening build scripts, their `.md` and the v0.1 deck scripts are in `_retired/`.
 
 **All five KP1 modules are authored** (Modules 1 and 5 Strategist-facing; 2–4 Architect-facing). The original Module 5 (AI plays) was retired in September 2026: its plays duplicated the AI usage tips already carried in the other modules, and its ground rules and safeguards now live only in the GitBook companion as a standalone section. The cross-country capstone that was Module 6 was renumbered to Module 5 at the same time, subtopics and all (6.1–6.7 → 5.1–5.7). Each passes the `kp-bundle-qa` compliance gate and has had its PAERA citations verified against the source.
 
@@ -36,11 +36,11 @@ From this folder, using the kit scripts in `../ITU-Giga-KP-Plugin/skills/`:
 
 ```bash
 # Markdown (regenerate after any build-script edit)
-python3 ../ITU-Giga-KP-Plugin/skills/kp-build-render/scripts/bundle_to_md.py build_kp1_module3_v01.js
+python3 ../ITU-Giga-KP-Plugin/skills/kp-build-render/scripts/bundle_to_md.py build_kp1_module3_v02.js
 
 # Word deliverable into the contract working folder (OUT_PATH override)
-SCRATCH=/tmp/kpdocx OUT_PATH="/path/to/itu-knowledge/_02_Design/_KP01/KP1_Module3_Script_Bundle_v0.1.docx" \
-  bash ../ITU-Giga-KP-Plugin/skills/kp-build-render/scripts/build_render.sh build_kp1_module3_v01.js
+SCRATCH=/tmp/kpdocx OUT_PATH="/path/to/itu-knowledge/_02_Design/_KP01/KP1_Module3_Script_Bundle_v0.2.docx" \
+  bash ../ITU-Giga-KP-Plugin/skills/kp-build-render/scripts/build_render.sh build_kp1_module3_v02.js
 ```
 
 Before any module is shared with ITU, run the two gates: `kp-citation-verify` (PAERA fidelity) and `kp-bundle-qa` (ITU compliance). See the kit README.
@@ -58,17 +58,10 @@ narrated "Your play" handoff.
 
 **19,350 spoken words / 272 slides / 37 videos → 15,585 / 247 / 35** (−19% words, −9% slides).
 
-> **Status of everything downstream of the scripts.** Only the `.js` build scripts and
-> their `.md` renderings are tightened. The deck scripts (`build_kp1_moduleN_deck_v01.py`),
-> the per-video `.pptx` files, the split specs under `videos/`, and the eight published
-> Module 1 videos are all still v0.1 and are **known-stale against these scripts**. They
-> are regenerated from these scripts when production resumes (Phase B of the plan:
-> `vo_diff.py` and the deck practice-box helper first, then the deck scripts module by
-> module, then the Module 1 re-narration and YouTube swap). No take should be generated
-> for a module until `vo_diff.py` reports zero mismatches for it.
->
-> `videos/module_1/en/scripts/KP1_M1_1.0_IntroScript_v0.2.md` still says "over the next
-> eight short videos"; it is re-cut with the Module 1 videos, not before.
+> **Downstream of the scripts.** The deck scripts were rebuilt against these scripts as
+> `build_kp1_moduleN_deck_v02.py`, and the videos are produced from them — see
+> `KP1_M2-M4_Video_Status_2026-09-07.md` and `KP1_M5_Video_Status_2026-09-12.md`. The v0.1
+> deck scripts are in `_retired/`.
 
 ## Status
 

@@ -186,7 +186,7 @@ def load_module(n):
 def _attach_companion(subs):
     """5.3b is a play with no video (structure draft §6). Its prompt is the tip that sat on
     the pre-tightening 5.3, so it is read from the v01 script and hung on the v02 5.3 page."""
-    src = open(f"{KP1}/build_kp1_module5_v01.js").read()
+    src = open(f"{KP1}/_retired/build_kp1_module5_v01.js").read()
     body = src[src.index("const body = []"):]
     i = 0
     token = re.compile(r"(?<![A-Za-z0-9_])renderSubtopic\s*\(")
