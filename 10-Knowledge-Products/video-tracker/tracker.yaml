@@ -137,9 +137,9 @@ kps:
     note: >-
       Five script bundles authored and gated (Modules 1–4 v0.2, Module 5 v0.4), aligned to 08-Interoperability
       12 Sep 2026. Module 6 retired 12 Sep — 6.2–6.4 are now 5.8–5.10; 6.1, 6.5 and 6.6 moved to the
-      GitBook home page and the intro video. Video track started 13 Sep: Modules 1–5 scripts + decks v0.1. Modules 1–3: briefs v0.1
-      and a first pass of NotebookLM takes 13–14 Sep; none accepted yet — see
-      KP2_M1-M3_Video_Status_2026-09-13.md.
+      GitBook home page and the intro video. Video track started 13 Sep: Modules 1–5 scripts + decks v0.1. Modules 1–3: briefs v0.1,
+      takes 13–14 Sep, accepted at KP1's bar — 15 of 19 videos cued and assembled (Modules 2 and 3
+      complete); 1.1, 1.3, 1.5, 1.6 unresolved. See KP2_M1-M3_Video_Status_2026-09-13.md.
     intro:
       title: KP2 introduction — what the five modules cover (on camera)
       path: videos/intro
@@ -164,9 +164,9 @@ kps:
         intro: {title: Module 2 introduction (on camera)}
         topics:
           - {code: "2.1", title: "Why the platform needs a legal mandate", en: {accepted: "v0.2", note: "accepted at KP1's bar 14 Sep; cued + assembled (5:38). Recites the brief's word list at 3:50; no sources line, Sources card 8 s"}}
-          - {code: "2.2", title: "Anatomy of an interoperability decree", en: {note: "re-roll — v0.6 called the decree's parts \"building blocks\" (prompt fixed 14 Sep)"}}
-          - {code: "2.3", title: "The Explanatory Memorandum and Preamble", en: {note: "re-roll — v0.3 said \"KP two\" in the cold open (brief title fixed 14 Sep); otherwise the most faithful"}}
-          - {code: "2.4", title: "The Draft Articles Package", en: {note: "unresolved after 3 rolls — two said \"KP2\" before the title fix; re-roll"}}
+          - {code: "2.2", title: "Anatomy of an interoperability decree", en: {accepted: "v0.9", note: "accepted at KP1's bar 14 Sep — first roll on the fixed prompt, no \"building block\"; v0.7 re-trimmed after \"leaves you wondering\"; cued + assembled (5:18). Opens mid-exchange; Lego-brick metaphor"}}
+          - {code: "2.3", title: "The Explanatory Memorandum and Preamble", en: {accepted: "v0.10", note: "accepted at KP1's bar 14 Sep — settled on runtime at 2:26, the shortest KP video; also the most brief-faithful take. Cued + assembled"}}
+          - {code: "2.4", title: "The Draft Articles Package", en: {accepted: "v0.6", note: "accepted at KP1's bar 14 Sep — clean on the first roll after the title fix; cued + assembled (5:04). Invented opener, \"I'm your host\" at 0:19"}}
           - {code: "2.5", title: "The Cover Note and Two-Track Regulatory Memo", en: {accepted: "v0.6", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:50). Invented figures, mid-exchange opening; Sources 6.3 s"}}
           - {code: "2.6", title: "The decree as configuration", en: {accepted: "v0.6", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:52). Opens mid-thought; last 13 s carry slides 5-7, Sources 2.5 s"}}
       - number: 3
@@ -178,7 +178,7 @@ kps:
           - {code: "3.1", title: "Why a bus needs an owner", en: {accepted: "v0.4", note: "accepted at KP1's bar 14 Sep; cued + assembled (5:32). LISTEN: SRT reads \"Progressé\" at 3:07"}}
           - {code: "3.2", title: "The three tiers of governance", en: {accepted: "v0.2", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:27). Untrimmed show-open on the title card; Sources 2.2 s"}}
           - {code: "3.3", title: "The RACI matrix", en: {accepted: "v0.4", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:58). LISTEN: SRT reads \"RCI\" where v0.1 read RACI"}}
-          - {code: "3.4", title: "Member obligations", en: {note: "re-roll — v0.4 does not number the eight obligations; invented examples"}}
+          - {code: "3.4", title: "Member obligations", en: {accepted: "v0.10", note: "accepted at KP1's bar 14 Sep on re-roll try 3; cued + assembled (5:18). Obligations named but not numbered aloud; prenup and water-pipe metaphors"}}
           - {code: "3.5", title: "The four Technical Working Groups", en: {accepted: "v0.6", note: "accepted at KP1's bar 14 Sep; cued + assembled (5:07). Says \"the brief\" five times; Sources 4.3 s"}}
           - {code: "3.6", title: "Governance as living configuration", en: {accepted: "v0.6", note: "accepted at KP1's bar 14 Sep; cued + assembled (5:16). No recap turn: recap and Sources share the last 6 s"}}
       - number: 4

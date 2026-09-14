@@ -1,0 +1,18 @@
+# Slide cue file — KP2 Module 2, Video 2.2 "Anatomy of an interoperability decree"
+# Deck:  KP2_M2_2.2_Deck_v0.1.pptx (8 slides)
+# Audio: KP2_M2_2.2_Audio_v0.9.m4a (runs to 5:18.4) — v0.7 re-trimmed after "leaves you wondering"
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# The first take on the fixed prompt: "building block" is never said. Accepted at KP1's bar: opens
+# mid-exchange ("Yeah, pretty common everyday scenario."); "Lego bricks" throughout; "a fascinating
+# framework derived from legal drafting manuals" (0:30); "the sources suggest" (3:13). Slide 3 comes
+# up where the five parts are listed, slide 4 where the data-protection authority's reader is asked.
+
+0:00   # slide 1 — title card
+0:18   # slide 2 — Stop waiting on the Ministry of Justice. Brief it.
+1:34   # slide 3 — A decree is five parts, each with its own job
+2:36   # slide 4 — Each part has a different reader — so each is separate
+3:11   # slide 5 — Five parts, not one — for review and for production
+4:29   # slide 6 — You produce the kit. A lawyer makes the law
+5:04   # slide 7 — In one sentence
+5:12.6 # slide 8 — Sources

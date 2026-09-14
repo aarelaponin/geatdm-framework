@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-14 21:02 (data v2)
+# KP video tracker — generated 2026-09-14 21:46 (data v2)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -96,9 +96,9 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 |---|---|---|---|---|---|---|---|
 | 2.0 | Module 2 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 2.1 | Why the platform needs a legal mandate | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 | accepted at KP1's bar 14 Sep; cued + assembled (5:38). Recites the brief's word list at 3:50; no sources line, Sources card 8 s |
-| 2.2 | Anatomy of an interoperability decree | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6 | re-roll — v0.6 called the decree's parts "building blocks" (prompt fixed 14 Sep) |
-| 2.3 | The Explanatory Memorandum and Preamble | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.5, SRT v0.5 | re-roll — v0.3 said "KP two" in the cold open (brief title fixed 14 Sep); otherwise the most faithful |
-| 2.4 | The Draft Articles Package | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4 | unresolved after 3 rolls — two said "KP2" before the title fix; re-roll |
+| 2.2 | Anatomy of an interoperability decree | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.9, SRT v0.9, Accepted v0.9, Cues v0.9, MP4 v0.9 | accepted at KP1's bar 14 Sep — first roll on the fixed prompt, no "building block"; v0.7 re-trimmed after "leaves you wondering"; cued + assembled (5:18). Opens mid-exchange; Lego-brick metaphor |
+| 2.3 | The Explanatory Memorandum and Preamble | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.10, SRT v0.10, Accepted v0.10, Cues v0.10, MP4 v0.10 | accepted at KP1's bar 14 Sep — settled on runtime at 2:26, the shortest KP video; also the most brief-faithful take. Cued + assembled |
+| 2.4 | The Draft Articles Package | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 14 Sep — clean on the first roll after the title fix; cued + assembled (5:04). Invented opener, "I'm your host" at 0:19 |
 | 2.5 | The Cover Note and Two-Track Regulatory Memo | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 14 Sep; cued + assembled (4:50). Invented figures, mid-exchange opening; Sources 6.3 s |
 | 2.6 | The decree as configuration | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 14 Sep; cued + assembled (4:52). Opens mid-thought; last 13 s carry slides 5-7, Sources 2.5 s |
 
@@ -110,7 +110,7 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | 3.1 | Why a bus needs an owner | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4, Accepted v0.4, Cues v0.4, MP4 v0.4 | accepted at KP1's bar 14 Sep; cued + assembled (5:32). LISTEN: SRT reads "Progressé" at 3:07 |
 | 3.2 | The three tiers of governance | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 | accepted at KP1's bar 14 Sep; cued + assembled (4:27). Untrimmed show-open on the title card; Sources 2.2 s |
 | 3.3 | The RACI matrix | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4, Accepted v0.4, Cues v0.4, MP4 v0.4 | accepted at KP1's bar 14 Sep; cued + assembled (4:58). LISTEN: SRT reads "RCI" where v0.1 read RACI |
-| 3.4 | Member obligations | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4 | re-roll — v0.4 does not number the eight obligations; invented examples |
+| 3.4 | Member obligations | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.10, SRT v0.10, Accepted v0.10, Cues v0.10, MP4 v0.10 | accepted at KP1's bar 14 Sep on re-roll try 3; cued + assembled (5:18). Obligations named but not numbered aloud; prenup and water-pipe metaphors |
 | 3.5 | The four Technical Working Groups | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 14 Sep; cued + assembled (5:07). Says "the brief" five times; Sources 4.3 s |
 | 3.6 | Governance as living configuration | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 14 Sep; cued + assembled (5:16). No recap turn: recap and Sources share the last 6 s |
 

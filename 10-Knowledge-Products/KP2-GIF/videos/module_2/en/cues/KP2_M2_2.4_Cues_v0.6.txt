@@ -1,0 +1,18 @@
+# Slide cue file — KP2 Module 2, Video 2.4 "The Draft Articles Package"
+# Deck:  KP2_M2_2.4_Deck_v0.1.pptx (7 slides)
+# Audio: KP2_M2_2.4_Audio_v0.6.m4a (runs to 5:03.6)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Clean on the first roll after the brief title lost its KP number. Accepted at KP1's bar: invented
+# "millions of dollars… a judge shuts it down" opener and "Welcome to this deep dive. I'm your host"
+# (0:19) on the title card; the §3 word list recited (4:42). The take groups the articles as three
+# functions (participation, protection, teeth) rather than the slide's seven rows, then walks the
+# enforcement ladder in order. No sources line — the Sources card carries the closing sentence (8.7 s).
+
+0:00   # slide 1 — title card
+0:31   # slide 2 — The articles are where the legal layer becomes enforceable.
+1:13   # slide 3 — A sound decree carries a recognisable set of articles
+2:43   # slide 4 — Every article is drafted against a published law
+3:46   # slide 5 — The articles are where business and IT share one language
+4:48.5 # slide 6 — In one sentence
+4:54.9 # slide 7 — Sources

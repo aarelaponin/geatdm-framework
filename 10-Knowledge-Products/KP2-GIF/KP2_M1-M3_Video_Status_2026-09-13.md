@@ -6,21 +6,34 @@
 
 ## Verdict
 
-**The batch ran to the end of Module 3 on 14 Sep. Every video has takes, and none is accepted.**
-Nothing is cued or assembled. Every passing take was read in full; the table is that read.
+**14 Sep, later: KP2 ships to KP1's bar. 15 of 19 videos are accepted, cued and assembled;
+Modules 2 and 3 are complete.** The per-video table below is the first-pass read and is kept as the
+record. The current state is here and in the tracker.
 
-- **Candidates** (content right, flaws noted): 1.2 v0.5, 2.1 v0.2, 2.6 v0.6, 3.1 v0.4, **3.2 v0.2**
-  (the strongest), 3.3 v0.4 (pending a RACI listen).
-- **Candidates at KP1's bar only:** 1.4 v0.5, 2.5 v0.6, 3.5 v0.6, 3.6 v0.6.
-- **Re-roll:** 1.5, 1.6, 1.7, 2.2 (building-block prompt, since fixed), 2.3 ("KP two", since fixed),
-  3.4.
-- **Unresolved after three tries:** 1.1 (counter framing; the deck's slide-2 hook is the likely
-  source, which is the author's call), 1.3, 2.4 (KP-number leak, since fixed).
+| Module | Finished (take of record, runtime) | Open |
+|---|---|---|
+| 1 | 1.2 v0.5 (4:34) · 1.4 v0.5 (4:34) · 1.7 v0.3 (5:14) | 1.1, 1.3, 1.5, 1.6 unresolved |
+| 2 | 2.1 v0.2 (5:38) · 2.2 v0.9 (5:18) · 2.3 v0.10 (2:26) · 2.4 v0.6 (5:04) · 2.5 v0.6 (4:50) · 2.6 v0.6 (4:52) | — |
+| 3 | 3.1 v0.4 (5:32) · 3.2 v0.2 (4:27) · 3.3 v0.4 (4:58) · 3.4 v0.10 (5:18) · 3.5 v0.6 (5:07) · 3.6 v0.6 (5:16) | — |
 
-Module 2 got better once the prompt and title were fixed, and Module 3 better still. The
-failures that remain are invented specifics, stacked metaphors, "the brief" / "these sources" as
-attribution, and the show-open kept whenever it names the topic. A phrase list cannot catch that
-class; see **The bar question**.
+Every finished video printed "rendered N slides, N cues" with no warning, and every MP4's duration
+equals its m4a. A frame extracted one second after each cue shows the slide that cue promised, in
+order, with Sources last. The cues were written by hand from each transcript, and each cue file's
+header records its compromises (reordered beats, short Sources cards, 3.6's missing recap).
+
+**Open decisions**
+- **1.5**: unresolved after 6 rolls. v0.4 passed the checks KP1 shipped under and fails only the
+  14 Sep "chaotic" / "this mess" additions. Accept v0.4, or fix the brief.
+- **1.1, 1.3, 1.6**: brief problems. For 1.1, the counter framing likely comes from the deck's
+  slide-2 hook; 1.3 and 1.6 keep failing banned phrases and runtime.
+- **Listen**: "Progressé" (3.1), "Progresse" (1.7), and "RCI" for RACI (3.3).
+- **2.3 runs 2:26**, the shortest KP video. It is content-complete and the most faithful take.
+- **Every title card reads "KP2 · MODULE n · VIDEO n.n"**, from `section_slide(…)` in the deck build
+  scripts. That breaks the no-KP-numbers rule for what learners see. Fixing it means rebuilding the
+  decks and re-assembling from the same takes and cues.
+
+The re-rolls on 14 Sep ran on the fixed prompt and title. 2.2 no longer says "building block", 2.4 no
+longer says "KP2", and the closer "leaves you wondering" is caught (2.2 v0.8 was re-trimmed from v0.7).
 
 | Video | Brief | Takes | Audit | Read-through | Decision |
 |---|---|---|---|---|---|

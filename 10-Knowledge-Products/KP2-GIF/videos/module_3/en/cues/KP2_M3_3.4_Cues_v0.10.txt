@@ -1,0 +1,17 @@
+# Slide cue file — KP2 Module 3, Video 3.4 "Member obligations"
+# Deck:  KP2_M3_3.4_Deck_v0.1.pptx (7 slides)
+# Audio: KP2_M3_3.4_Audio_v0.10.m4a (runs to 5:17.9)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted at KP1's bar on the third re-roll try: invented laptop opener; "today, we are doing a deep
+# dive" (0:30) on slide 2; water-supply metaphor on slide 3; "the prenup of data sharing" (4:30).
+# The eight obligations are named across 1:15-2:46 but not numbered aloud. No sources line — the
+# Sources card carries the closing sentence (8 s).
+
+0:00   # slide 1 — title card
+0:13   # slide 2 — Joining the bus is not just plugging in a cable.
+1:05   # slide 3 — Eight obligations, the same for every member
+2:53   # slide 4 — The provider carries more weight than the consumer
+4:07   # slide 5 — A signed member agreement turns an assumption into a commitment
+4:59.9 # slide 6 — In one sentence
+5:09.9 # slide 7 — Sources

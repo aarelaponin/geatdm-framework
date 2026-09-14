@@ -1,0 +1,17 @@
+# Slide cue file — KP2 Module 2, Video 2.3 "The Explanatory Memorandum and Preamble"
+# Deck:  KP2_M2_2.3_Deck_v0.1.pptx (7 slides)
+# Audio: KP2_M2_2.3_Audio_v0.10.m4a (runs to 2:25.7)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Settled on runtime at 2:26, 155 s under target — the shortest KP video by nearly a minute (KP1
+# 4.8 is 3:28). It is also the most brief-faithful take of the batch: the cold open as written, both
+# lists numbered aloud, the handoff to the draft articles, the sources line. Accepted at KP1's bar.
+# The sources line lands 1.4 s from the end, so the Sources card is cued on the handoff (5.7 s).
+
+0:00   # slide 1 — title card
+0:14   # slide 2 — The first two parts are the ones a non-lawyer can lead on.
+0:36   # slide 3 — The Memorandum is the case, written for the minister
+1:09   # slide 4 — The Preamble: every cited authority is a [confirm]
+1:43   # slide 5 — Generate fast, confirm carefully
+2:14   # slide 6 — In one sentence
+2:20   # slide 7 — Sources
