@@ -9,7 +9,7 @@ description: >-
   numbering", "export just the scripts". Owns the non-obvious conventions: the ITU template's layout
   indices and baked footers, the module-scoped numbering rule (never "Video x of N"), the deck grammar
   (section slide = video title slide, big-sentence climax, sources slide per video), the educational
-  design rules (assertion headlines, VO in notes not on slides, retrieval moments, lumpy density) and
+  design rules and
   the AI-deck anti-pattern gate. Enforces the cardinal rule: decks are generated from a build script —
   fixes go to the script, then re-render and re-split.
 compatibility: >-

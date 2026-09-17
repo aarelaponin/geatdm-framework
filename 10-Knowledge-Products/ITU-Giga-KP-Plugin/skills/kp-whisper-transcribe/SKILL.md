@@ -7,11 +7,7 @@ description: >-
   video track, and this skill is what to use when the machine is offline, the ElevenLabs key is
   unavailable, or the take must not leave the machine. Use WHENEVER the task is "transcribe this
   audio offline", "get an SRT without uploading", "run whisper on <file>.m4a", or a fresh `.m4a`
-  lands in a module's `audio/` folder with no matching `.srt` and Scribe cannot be reached. Covers the install failure modes specific to this Mac: system Python (3.7) has no
-  `torch` wheel, Python 3.11 drags in a `numba`/`llvmlite` combo with no macOS wheel and falls
-  back to a `cmake` build that fails, and the model download dies with `CERTIFICATE_VERIFY_FAILED:
-  self signed certificate in certificate chain` because Python's cert store doesn't trust the
-  corporate proxy root that `curl`/macOS already trust. Run before `kp-audio-brief` Step 6, or
+  lands in a module's `audio/` folder with no matching `.srt` and Scribe cannot be reached. Run before `kp-audio-brief` Step 6, or
   any time an audio take needs a transcript and none exists.
 compatibility: macOS with Homebrew. Needs `ffmpeg` (`brew install ffmpeg`) and a Python 3.9/3.10
   venv — not the system Python. No GPU required (runs CPU/FP32).

@@ -11,10 +11,7 @@ description: >-
   WHENEVER the task is "generate the audio for 1.3", "make a narration take", "re-roll the
   audio", "the take is too long", "write the interview script for this subtopic", "change the
   narration voices", "what did the audio cost", or a subtopic has a deck and a script but no
-  take. This was the default Step 4 of the video track before it was parked; `kp-notebooklm-audio`
-  holds that slot now, and its Step 6 audit still runs afterwards either way. Runtime, terminology
-  and framing become properties of a text file you diff and re-roll, not of a generation you
-  audit after the fact. The API key lives in the macOS Keychain and never in the repo, on a
+  take. The API key lives in the macOS Keychain and never in the repo, on a
   command line or in shell history.
 compatibility: macOS. Needs `ffmpeg` (for `ffmpeg` and `ffprobe`), a Python ≥ 3.10 venv with
   `google-genai` and `truststore`, a Gemini API key in the Keychain, and network access. The

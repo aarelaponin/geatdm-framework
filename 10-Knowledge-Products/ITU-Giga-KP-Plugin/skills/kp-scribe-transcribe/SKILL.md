@@ -9,10 +9,7 @@ description: >-
   ElevenLabs credits are left". This is Step 5 of the video track, and it is unchanged by which
   path produced the take — the audio may arrive via `kp-notebooklm-audio` (the default, one
   command) or from a manual NotebookLM session, and both are steered by `kp-audio-brief`. The API key lives in the
-  macOS Keychain and never in the repo, on a command line or in shell history. Covers the two
-  failure modes specific to this Mac: the corporate proxy root that only the macOS keychain
-  trusts (httpx ≥ 0.28 ignores `SSL_CERT_FILE`, so `truststore` is the fix, not a cert bundle),
-  and the Keychain GUI prompt on first use from a new venv. Use `kp-whisper-transcribe` instead
+  macOS Keychain and never in the repo, on a command line or in shell history. Use `kp-whisper-transcribe` instead
   when the machine is offline, the key is unavailable, or the take must not leave the machine.
 compatibility: macOS. Needs `ffmpeg` (`brew install ffmpeg`) for `ffprobe`, a Python ≥ 3.10 venv
   (not the system Python 3.7), an ElevenLabs API key in the Keychain, and network access.

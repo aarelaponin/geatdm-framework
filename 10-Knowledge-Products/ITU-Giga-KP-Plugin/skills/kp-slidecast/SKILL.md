@@ -8,10 +8,11 @@ description: >-
   with the narration". Owns the non-obvious conventions: cue files live in the module's cues/ folder and
   videos in video/, named to match the audio version (a new audio v0.X always gets a new cue file
   — narration remixes shift every beat); cues are authored from the SRT content beats, not from the script
-  .md, because the narration is a conversational remix of the script, not a read of it — which stays true when
+  .md — which stays true when
   the audio arrives via `kp-notebooklm-audio` rather than a manual NotebookLM session; the last cue must land
   strictly before the audio ends; verification is ffprobe duration plus frames extracted at cue times, inspected.
-compatibility: Requires LibreOffice, ffmpeg and ffprobe — all preinstalled in the Cowork sandbox.
+compatibility: >-
+  Requires LibreOffice, ffmpeg and ffprobe — all preinstalled in the Cowork sandbox.
   LibreOffice is found as either `libreoffice` or `soffice` (the macOS cask only ever creates
   `soffice`). PDF-to-PNG uses `pdftoppm` when present and falls back to `pypdfium2`, which matters
   on Intel macOS where poppler cannot be installed at all — its `nss` dependency has no bottle for

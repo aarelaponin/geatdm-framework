@@ -8,7 +8,7 @@ description: >-
   too long", "the hosts went off script", "write a prompt for NotebookLM", "the audio doesn't
   follow the deck", "why does the voice-over sound like a podcast", "make an audio brief",
   "check this SRT against the deck", "the audio says PRA instead of PAERA". Owns the framing
-  lock (the listener is the official who runs these systems, never the citizen at the counter),
+  lock,
   the per-slide time budget derived from the deck, the prohibition list, and the house
   terminology the hosts mangle. Enforces the cardinal rule: NotebookLM is steered by its
   sources, not its prompt — so the brief is a source, and fixes go to the brief, never to the
