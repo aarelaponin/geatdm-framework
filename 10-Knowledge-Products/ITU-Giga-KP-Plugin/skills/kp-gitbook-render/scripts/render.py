@@ -10,6 +10,11 @@ for _n in (2, 3, 4, 5):
     _subs, _playlist = bundles.load_module(_n)
     _meta = dict(bundles.MODULES[_n], playlist=_playlist, intro_url=None)
     MODS[_n] = (_meta, _subs)
+def playlist_title(p):
+    """The bundles name playlists 'KP1 — Topic N: …'; learners never see 'KP1' or 'Topic'."""
+    return re.sub(r"^KP\d+ — Topic (\d+):", r"Module \1 —", p)
+
+
 ALL = {s["id"]: (n, s) for n, (_m, subs) in MODS.items() for s in subs}
 # Which modules are live on GitBook. Defaults to all (the repo renders the whole site); set
 # KP1_PUBLISHED to render a home page and video index that match a partial publish.
@@ -213,7 +218,7 @@ def feeds_text(p, mod=1):
             out.append(f'[{f} {t["play"]["title"]}]({page_path(f, mod)})')
         elif f in bundles.PLAY_MAP:                      # the 5.3b companion play
             out.append(f'{f} {bundles.PLAY_MAP[f]["play"]}')
-    return ", ".join(out) or "nothing further in KP1; this artefact is where the chain ends"
+    return ", ".join(out) or "nothing further in this course; this artefact is where the chain ends"
 
 
 def when_line(p):
@@ -469,7 +474,7 @@ def render_module_page(mod):
         f'{KIND_BADGE[s["play"]["kind"]][0]} {s["play"]["artefact"].split(" — ")[0]} | `{s["play"]["skill"]}` |'
         for s in subs)
     leaves = ", ".join(s["play"]["artefact"].split(" — ")[0] for s in subs)
-    intro_title = f'KP1 Module {mod} — {M["title"]}'
+    intro_title = f'Module {mod} — {M["title"]}'
     return f'''---
 description: "{desc(M["blurb"])}"
 icon: flag-checkered
@@ -602,19 +607,19 @@ def render_home():
     sn, ss = showcase()
     ssref = f'module-{sn}/{ss["id"].replace(".", "-")}.md'
     return f'''---
-description: "Companion site to the ITU/Giga Knowledge Product 1 video series — the concepts, the AI plays, and the worked example, in one place."
+description: "Companion site to the ITU/Giga *Developing a Gov Enterprise Architecture (GEA)* video series — the concepts, the AI plays, and the worked example, in one place."
 icon: house
 ---
 
 # Developing a Gov Enterprise Architecture (GEA)
 
-**ITU/Giga Knowledge Product 1** · {TOTAL_VIDEOS} videos in five modules · about {TOTAL_MIN} minutes of video · {TOTAL_PLAYS} AI plays · self-paced · free and open
+**ITU/Giga Knowledge Product** · {TOTAL_VIDEOS} videos in five modules · about {TOTAL_MIN} minutes of video · {TOTAL_PLAYS} AI plays · self-paced · free and open
 
-This is the companion to the **Knowledge Product 1** video series on building a national Enterprise Architecture anchored on PAERA, the Public Administration Ecosystem Reference Architecture published under GovStack. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
+This is the companion to the video series on building a national Enterprise Architecture anchored on PAERA, the Public Administration Ecosystem Reference Architecture published under GovStack. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
 
 You do not leave with a certificate. You leave with a briefing pack about your own country.
 
-{video_block(None, title="KP1 — Introduction to the knowledge product", runtime="~3 min", up="../")}
+{video_block(None, title="Introduction to the course", runtime="~3 min", up="../")}
 
 ## Outline
 
@@ -681,7 +686,7 @@ Time: each subtopic is a four-minute video plus a ten-to-fifteen-minute play. A 
 
 ## Where this sits
 
-KP1 is the first of four ITU/Giga Knowledge Products. KP2 covers the Government Interoperability Framework, KP3 the national DPI roadmap, KP4 building-block services. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md). The underlying method is GEATDM, the Generic EA Target Architecture Development Method; PAERA v1.0 is at [paera.govstack.global](https://paera.govstack.global).
+This course is the first of four ITU/Giga Knowledge Products. [Building a Government Interoperability Framework (GIF)](../kp2/README.md) is the second; a third on the national DPI roadmap and a fourth on building-block services are planned. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md). The underlying method is GEATDM, the Generic EA Target Architecture Development Method; PAERA v1.0 is at [paera.govstack.global](https://paera.govstack.global).
 
 {{% hint style="info" %}}
 **Use this site from your AI assistant.** Every page is also published as plain Markdown, and the site exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the site and ask it to *run play 1.1 with the following context* — the site becomes the tool's reference, not just yours.
@@ -726,17 +731,17 @@ This chapter holds everything that is true across all four Knowledge Products. R
 <tr><td><h3>🔍</h3></td><td><strong>Play 0 — Build your country context</strong></td><td>Seven research prompts that produce A0, the pack every other play asks you to paste.</td><td><a href="play-0.md">play-0</a></td></tr>
 <tr><td><h3>🚩</h3></td><td><strong>Progressa</strong></td><td>The fictional demonstration country used in every worked example, in every Knowledge Product.</td><td><a href="progressa.md">progressa</a></td></tr>
 <tr><td><h3>🎬</h3></td><td><strong>Video index</strong></td><td>Every video, its status and its link. The tracker while the series is in production.</td><td><a href="video-index.md">video-index</a></td></tr>
-<tr><td><h3>🏛️</h3></td><td><strong>KP1 — Government Enterprise Architecture</strong></td><td>Five modules on commissioning a national EA anchored on PAERA. {kp_status_line()}.</td><td><a href="../kp1/README.md">kp1</a></td></tr>
+<tr><td><h3>🏛️</h3></td><td><strong>Developing a Gov Enterprise Architecture (GEA)</strong></td><td>Five modules on commissioning a national EA anchored on PAERA. {kp_status_line()}.</td><td><a href="../kp1/README.md">kp1</a></td></tr>
 </tbody></table>
 
 ## The four Knowledge Products
 
 | | Knowledge Product | For | Status |
 | --- | --- | --- | --- |
-| **KP1** | [Government Enterprise Architecture](../kp1/README.md) | Strategist and Architect — commissioning and running a national EA | {kp_status_line()} |
-| **KP2** | Government Interoperability Framework | Strategist and Architect — the legal, organisational and technical configuration of exchange | In production |
-| **KP3** | National DPI roadmap | Strategist | Planned |
-| **KP4** | Building-block services | Architect | Planned |
+| 1 | [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) | Strategist and Architect — commissioning and running a national EA | {kp_status_line()} |
+| 2 | [Building a Government Interoperability Framework (GIF)](../kp2/README.md) | Strategist and Architect — the legal, organisational and technical configuration of exchange | In production |
+| 3 | National DPI roadmap | Strategist | Planned |
+| 4 | Building-block services | Architect | Planned |
 
 All four use [**Progressa**](progressa.md) as the single worked example, and all four point back to this chapter for the ground rules.
 """
@@ -796,7 +801,7 @@ Every play asks you to paste context — a landscape brief, a programme list, a 
 
 ## How the plays chain
 
-The plays are not a prompt library. In each module the outputs feed each other — the fragmentation diagnostic feeds the business case, the RACI feeds the Board terms of reference — and a learner who runs a whole module leaves with a set of artefacts about their own country. The chain is written out in each Knowledge Product's workbook: for KP1 it is [Your country workbook](../kp1/your-country-workbook.md). If you have no country to hand (a student, a donor analyst), run the plays on [**Progressa**](progressa.md), the fictional demonstration country used in every Knowledge Product; the worked examples show you what to expect.
+The plays are not a prompt library. In each module the outputs feed each other — the fragmentation diagnostic feeds the business case, the RACI feeds the Board terms of reference — and a learner who runs a whole module leaves with a set of artefacts about their own country. The chain is written out in each Knowledge Product's workbook: for *Developing a Gov Enterprise Architecture (GEA)* it is [Your country workbook](../kp1/your-country-workbook.md). If you have no country to hand (a student, a donor analyst), run the plays on [**Progressa**](progressa.md), the fictional demonstration country used in every Knowledge Product; the worked examples show you what to expect.
 
 {drop_self(FOOTER_CARDS, 'how-to-use-the-plays')}
 """
@@ -1025,9 +1030,9 @@ Every skill's output opens with the same header: the country, the date it was bu
 
 ## Play → skill
 
-Each play has exactly one primary skill. Play numbers repeat across Knowledge Products — KP1's 2.4 is not KP2's 2.4 — so the two are listed separately. The `gif-` skills are KP2's; the rest are shared. `cite-or-discard` runs *inside* most of the others; you do not call it directly.
+Each play has exactly one primary skill. Play numbers repeat across Knowledge Products — 2.4 in *Developing a Gov Enterprise Architecture (GEA)* is not 2.4 in *Building a Government Interoperability Framework (GIF)* — so the two are listed separately. The `gif-` skills belong to the interoperability course; the rest are shared. `cite-or-discard` runs *inside* most of the others; you do not call it directly.
 
-| Skill | KP1 plays | KP2 plays | What it adds |
+| Skill | GEA plays | GIF plays | What it adds |
 | --- | --- | --- | --- |
 {rows}
 
@@ -1101,7 +1106,7 @@ flowchart TD
     A7 --> PACK["Cabinet-briefing pack\\n→ Module 3"]
 ```
 
-## Every artefact in KP1
+## Every artefact in this course
 
 *The numbers follow the curriculum order in which the plays were first written, not module order: **A8** (comparator-country cards) is produced in Module 5, play 5.1.*
 
@@ -1119,9 +1124,9 @@ flowchart TD
 
 Bring items 1–7 as a single pack and make the four asks from [1.7](module-1/1-7.md) together, not in pieces.
 
-## Where the chain goes after KP1
+## Where the chain goes next
 
-Module 5 closes KP1 with the case for sustained commitment (A29 rev.2). In KP2 the chain continues into the build pack, where the play outputs become the inputs to the interoperability proving slice. Those pages are added as KP2 is published.
+Module 5 closes this course with the case for sustained commitment (A29 rev.2). In [Building a Government Interoperability Framework (GIF)](../kp2/README.md) the chain continues into the build pack, where the play outputs become the inputs to the interoperability proving slice.
 '''
 
 
@@ -1175,7 +1180,7 @@ icon: flag
 
 # Progressa — the demonstration country
 
-Progressa is fictional, on purpose. It is the single worked example across all four Knowledge Products: KP1's Module 4 runs the whole lifecycle on its education sector, the KP2 build pack proves an exchange between its bodies, and every play on this site has a Progressa worked example. If you have no country of your own to hand — a student, a donor analyst, a trainer — run the plays on Progressa with the sections below as your context pack. An assistant reading this site over its MCP endpoint can pull this page directly.
+Progressa is fictional, on purpose. It is the single worked example across all four Knowledge Products: Module 4 of [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) runs the whole lifecycle on its education sector, the build pack in [Building a Government Interoperability Framework (GIF)](../kp2/README.md) proves an exchange between its bodies, and every play on this site has a Progressa worked example. If you have no country of your own to hand — a student, a donor analyst, a trainer — run the plays on Progressa with the sections below as your context pack. An assistant reading this site over its MCP endpoint can pull this page directly.
 
 ## The sector in one paragraph
 
@@ -1215,7 +1220,7 @@ Population 16.8 million, median age 18.7; 8,200 schools, ~47,000 teachers; prima
 
 ## Where Progressa appears
 
-Module 1: worked example on every play page. Module 4: the five-phase lifecycle run end to end on this sector. GEATDM Education Sector Guide §5.2 (the learner journey) and §7 (the implementation path in four waves). KP2: the Linkup federation and the once-only exchange PNEA ← PNIA + PLR in the build pack.
+Module 1: worked example on every play page. Module 4: the five-phase lifecycle run end to end on this sector. GEATDM Education Sector Guide §5.2 (the learner journey) and §7 (the implementation path in four waves). *Building a Government Interoperability Framework (GIF)*: the Linkup federation and the once-only exchange PNEA ← PNIA + PLR in the build pack.
 '''
 
 def render_videos():
@@ -1234,7 +1239,7 @@ def render_videos():
             f'| # | Title | Runtime | Page | Status |\n| --- | --- | --- | --- | --- |\n'
             + row(f"M{n}", f'Module {n} — {M["title"]}', "~2 min",
                   f'[Module {n}](../kp1/module-{n}/README.md)', None) + "\n" + rows
-            + (f'\n\nPlaylist: *{M["playlist"]}* (pending).' if M.get("playlist") else ""))
+            + (f'\n\nPlaylist: *{playlist_title(M["playlist"])}* (pending).' if M.get("playlist") else ""))
     modblocks = "\n\n".join(blocks)
     return f"""---
 description: "Every video, its status and its link — the tracker while the series is in production."
@@ -1249,15 +1254,15 @@ Each subtopic page carries its video at the top. While a video is still in produ
 **The handoff convention.** Every video's recap slide carries an on-screen practice box, un-narrated: *Do this on your own sector. Run the prompt in the description on your own ministry — it gives you [the artefact]. Before the next video.* The YouTube description links the **play page**, never the raw prompt, so a prompt can be improved without touching the video. A pinned comment repeats the link as a backup.
 {{% endhint %}}
 
-## KP1 — Government Enterprise Architecture
+## Developing a Gov Enterprise Architecture (GEA)
 
 | | Title | Runtime | Page | Status |
 | --- | --- | --- | --- | --- |
-{row("Intro", "KP1 — Introduction to the knowledge product", "~3 min", "[KP1 home](../kp1/README.md)", MODULE["intro_url"])}
+{row("Intro", "Introduction to the course", "~3 min", "[Course home](../kp1/README.md)", MODULE["intro_url"])}
 
 {modblocks}
 
-KP2 is in production; its rows are added as each module's pages are published.
+*Building a Government Interoperability Framework (GIF)* is in production; its rows are added as each module's pages are published.
 
 ## When a video lands
 

@@ -6,7 +6,7 @@ icon: flag-checkered
 # Module 1 — Why a PAERA-anchored EA
 
 {% hint style="info" %}
-🎬 **Video in production:** *KP1 Module 1 — Why a PAERA-anchored EA* (~2 min).
+🎬 **Video in production:** *Module 1 — Why a PAERA-anchored EA* (~2 min).
 The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../../start-here/video-index.md).
 {% endhint %}
 

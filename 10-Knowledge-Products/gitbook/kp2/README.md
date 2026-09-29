@@ -1,18 +1,18 @@
 ---
-description: "Companion site to the ITU/Giga Knowledge Product 2 video series — the concepts, the AI plays, the worked example and the runnable build pack, in one place."
+description: "Companion site to the ITU/Giga *Building a Government Interoperability Framework (GIF)* video series — the concepts, the AI plays, the worked example and the runnable build pack, in one place."
 icon: house
 ---
 
 # Building a Government Interoperability Framework (GIF)
 
-**ITU/Giga Knowledge Product 2** · 43 videos in five modules · about 189 minutes of video · 38 AI plays · a runnable build pack · self-paced · free and open
+**ITU/Giga Knowledge Product** · 43 videos in five modules · about 187 minutes of video · 38 AI plays · a runnable build pack · self-paced · free and open
 
-This is the companion to the **Knowledge Product 2** video series on building a Government Interoperability Framework — the legal, organisational and technical configuration that lets public bodies exchange data so that a citizen is asked once. Where [KP1](../kp1/README.md) taught how to *plan* an Enterprise Architecture, KP2 teaches how to *build* the interoperability layer over that plan. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
+This is the companion to the video series on building a Government Interoperability Framework — the legal, organisational and technical configuration that lets public bodies exchange data so that a citizen is asked once. Where [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) taught how to *plan* an Enterprise Architecture, this course teaches how to *build* the interoperability layer over that plan. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
 
-KP2 ships two things. The videos and plays, which teach the build. And the [**build pack**](build-pack/README.md), which *is* the ready solution: a real once-only exchange running on an X-Road federation across Progressa's institutions — the decree, the Governance Pack, the semantic map and contracts, the member registrations, and the acceptance check that proves it. Run the plays and you leave with your own country's configuration; run the pack and you see the finished one.
+This course ships two things. The videos and plays, which teach the build. And the [**build pack**](build-pack/README.md), which *is* the ready solution: a real once-only exchange running on an X-Road federation across Progressa's institutions — the decree, the Governance Pack, the semantic map and contracts, the member registrations, and the acceptance check that proves it. Run the plays and you leave with your own country's configuration; run the pack and you see the finished one.
 
 {% hint style="info" %}
-🎬 **Video in production:** *KP2 — Introduction to the knowledge product: the storyboard* (~4 min).
+🎬 **Video in production:** *Introduction to the course: the storyboard* (~4 min).
 The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../start-here/video-index.md).
 {% endhint %}
 
@@ -49,7 +49,7 @@ This knowledge product covers the whole framework, but no single person does all
 | **Technical architect** | The chief or senior architect, integration lead, or agency technical lead building on the bus | [1.2](module-1/1-2.md), [4.1](module-4/4-1.md), [4.2](module-4/4-2.md), [4.3](module-4/4-3.md), [4.4](module-4/4-4.md), [4.5](module-4/4-5.md), [4.6](module-4/4-6.md), [4.7](module-4/4-7.md), [5.5](module-5/5-5.md), [5.6](module-5/5-6.md), [5.7](module-5/5-7.md), [5.8](module-5/5-8.md) | the semantic map, the service contracts and the X-Road service descriptions — the technical configuration — and the running federation | Design the layers, adopt the standards, generate the semantic map and contracts, stand the federation up, prove it and watch it. |
 | **Member-onboarding lead** | The Operating Authority's onboarding officer, or an agency's focal point for joining | [1.6](module-1/1-6.md), [3.4](module-3/3-4.md), [5.2](module-5/5-2.md), [5.3](module-5/5-3.md), [5.4](module-5/5-4.md) | the member registrations — Member Requirements, the SLA, and the subsystem + access-control list that admits an agency to the bus | Take an agency from 'wants to join' to 'admitted, registered and dependable'. |
 
-The value is reach. A knowledge product that asks every viewer to watch everything reaches few; one that says 'if you are the legal drafter, watch these videos and use these plays' reaches each role where they are. The role-paths are how KP2 gets used rather than just published — and how a country trains the actual, distributed team that builds its framework, each member learning their part. The role-paths map cleanly onto the build pack. The legal drafter's path ends at the decree configuration; the technical architect's at the semantic map and the service contracts; the onboarding lead's at the member registrations. Each role learns its part and produces its part of the runnable build pack. So dissemination is not just teaching — it is how the framework actually gets built, by a distributed team each contributing the artefact their role owns. The knowledge product and the build pack are two halves of the same thing: what to do, and what to produce.
+The value is reach. A knowledge product that asks every viewer to watch everything reaches few; one that says 'if you are the legal drafter, watch these videos and use these plays' reaches each role where they are. The role-paths are how this course gets used rather than just published — and how a country trains the actual, distributed team that builds its framework, each member learning their part. The role-paths map cleanly onto the build pack. The legal drafter's path ends at the decree configuration; the technical architect's at the semantic map and the service contracts; the onboarding lead's at the member registrations. Each role learns its part and produces its part of the runnable build pack. So dissemination is not just teaching — it is how the framework actually gets built, by a distributed team each contributing the artefact their role owns. The knowledge product and the build pack are two halves of the same thing: what to do, and what to produce.
 
 {% hint style="warning" %}
 **Coordinate across lanes.** Role-paths curate, they do not silo. Each path notes the cross-dependencies the role must coordinate on — the architect needs the legal drafter's decree; the onboarding lead needs the architect's contracts — so a team that learns in lanes still builds one coherent framework.
@@ -128,7 +128,7 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 <details>
 
-<summary><strong>Module 5 — Implementation and onboarding</strong> · ~47 minutes across 10 videos</summary>
+<summary><strong>Module 5 — Implementation and onboarding</strong> · ~45 minutes across 10 videos</summary>
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
@@ -138,7 +138,7 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 | [5.3](module-5/5-3.md) | Make 'connected' mean 'dependable' — the SLA | ~4 min | *in production* |
 | [5.4](module-5/5-4.md) | Register a member on X-Road | ~5 min | *in production* |
 | [5.5](module-5/5-5.md) | Stand up the federation | ~5 min | *in production* |
-| [5.6](module-5/5-6.md) | Run the once-only exchange, live | ~5 min | *in production* |
+| [5.6](module-5/5-6.md) | Run the once-only exchange, live | ~3 min | *in production* |
 | [5.7](module-5/5-7.md) | From demonstration to production | ~5 min | *in production* |
 | [5.8](module-5/5-8.md) | Watch the bus — monitoring and anomaly detection | ~5 min | *in production* |
 | [5.9](module-5/5-9.md) | Keep the documents honest — the consistency cross-check | ~5 min | *in production* |
@@ -152,7 +152,7 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 ## The AI-play catalogue
 
-Across KP2 you meet thirty-seven AI plays — named tools, each turning a slow specialist task into a fast, reviewed draft. They are worth reading as one catalogue, because they are not one-off tricks. They are a reusable toolkit your framework keeps and applies to every decree, every exchange, every service it builds. Three of them stand out: the decree drafter turns your Strategic Foundation Document into the components of a decree (2.3, 2.4); the semantic mapper turns two agencies' field lists into a shared semantic map (4.4); and the service-contract generator turns a service brief and that semantic map into a callable contract (4.5). Three slow specialist tasks — legal drafting, semantic reconciliation, interface design — each compressed from weeks into a reviewed afternoon.
+Across this course you meet thirty-seven AI plays — named tools, each turning a slow specialist task into a fast, reviewed draft. They are worth reading as one catalogue, because they are not one-off tricks. They are a reusable toolkit your framework keeps and applies to every decree, every exchange, every service it builds. Three of them stand out: the decree drafter turns your Strategic Foundation Document into the components of a decree (2.3, 2.4); the semantic mapper turns two agencies' field lists into a shared semantic map (4.4); and the service-contract generator turns a service brief and that semantic map into a callable contract (4.5). Three slow specialist tasks — legal drafting, semantic reconciliation, interface design — each compressed from weeks into a reviewed afternoon.
 
 Notice they share one pattern, and it is the pattern worth remembering. Each play generates from a published specification and a brief. Each output is confirmed against the source — the statute, the registry, the provider — before it is used. And a qualified human owns the result: the lawyer for the decree, the data owner for the semantic map, the architect for the contract. Generate fast, confirm carefully, a human always owns the result. That discipline is what makes AI a tool the framework can trust rather than a risk it runs.
 
@@ -311,15 +311,15 @@ File the output as **B38** in [your framework workbook](your-framework-workbook.
 
 ## Prerequisites
 
-**KP1 is the natural starting point but not a prerequisite.** Three KP1 artefacts hand off into KP2 — the Governance Board terms of reference (A7) into the Operating Authority (3.1), the sourcing matrix (A24) into the standards portfolio (4.3), and the country context pack (A0) into Module 1. If you have none of them, Module 1 and the [Play 0 supplement](play-0-supplement.md) build what KP2 needs on their own.
+**[Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) is the natural starting point but not a prerequisite.** Three of its artefacts hand off into this course — the Governance Board terms of reference (A7) into the Operating Authority (3.1), the sourcing matrix (A24) into the standards portfolio (4.3), and the country context pack (A0) into Module 1. If you have none of them, Module 1 and the [Play 0 supplement](play-0-supplement.md) build what this course needs on their own.
 
 **What you do need:**
 
 | | |
 | --- | --- |
 | **A real subject** | A sector, an exchange, or a pair of agencies you can describe in a few paragraphs. The plays act on your context, not on a case study. No subject to hand? Run everything on [Progressa](../start-here/progressa.md) instead. |
-| **Enough access to describe it** | You should be able to name your country's main registers, the bodies that hold them, the exchanges that exist today and the law they sit under — or spend an afternoon on [Play 0](../start-here/play-0.md) and its [KP2 supplement](play-0-supplement.md) building that picture from public sources. |
-| **An AI assistant** | Any general assistant — Claude, ChatGPT, Gemini. A free account is enough. Nothing to install; the [ea-plays kit](../start-here/ea-plays-kit.md) is optional and only sharpens some of the plays for Claude users. Eight of its skills are KP2's own, named `gif-*` in the **With the kit** line of each play; source at [github.com/alaponin/ea-plays-kit](https://github.com/alaponin/ea-plays-kit). |
+| **Enough access to describe it** | You should be able to name your country's main registers, the bodies that hold them, the exchanges that exist today and the law they sit under — or spend an afternoon on [Play 0](../start-here/play-0.md) and its [supplement](play-0-supplement.md) building that picture from public sources. |
+| **An AI assistant** | Any general assistant — Claude, ChatGPT, Gemini. A free account is enough. Nothing to install; the [ea-plays kit](../start-here/ea-plays-kit.md) is optional and only sharpens some of the plays for Claude users. Eight of its skills are this course's own, named `gif-*` in the **With the kit** line of each play; source at [github.com/alaponin/ea-plays-kit](https://github.com/alaponin/ea-plays-kit). |
 | **A machine, for the build pack only** | Modules 1–3 write no code. The build pack needs Docker and about 11 GiB of RAM; the [Run it](build-pack/run.md) page says exactly what. You can complete every play without running it. |
 | **About fifteen minutes, once** | The first three pages of [Start here](../start-here/README.md) cover how the plays work and the ground rules for using an assistant on government material. Read them before your first play. |
 
@@ -334,9 +334,9 @@ Time: each subtopic is a four-to-five-minute video plus a ten-to-twenty-five-min
 
 ## Where this sits
 
-KP2 is the second of four ITU/Giga Knowledge Products. [KP1](../kp1/README.md) covers the Government Enterprise Architecture, KP3 the national DPI roadmap, KP4 building-block services. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md).
+This course is the second of four ITU/Giga Knowledge Products. The first is [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md); a third on the national DPI roadmap and a fourth on building-block services are planned. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md).
 
-**What KP2 is the companion to.** Behind the videos sits a five-piece interoperability toolkit, each piece at a different altitude: a **Reference Model** (what a framework is — the four interoperability layers and the four functional layers), an eight-step **Method** (how to develop one; Modules 1–5 follow its steps), a **Toolkit** of fourteen templates (the artefacts the plays draft — the Strategic Foundation Document, the Use-Case Catalogue, the Decree Drafting Kit, the Governance Model, the standards catalogue, Member Requirements, the SLA, the onboarding workflow, the conformance test plan, the risk register, the success metrics), a **Reference Architecture** (the enforceable target design and its rules, on five layers — the four plus infrastructure — with governance and legal cross-cutting), and an **RA-to-RFP path** that turns the reference architecture plus a country's own enterprise architecture into an issuable tender. The videos teach the first three and point at the last two: a framework is planned first, and then procurement is how it is enforced. The four-layer interoperability model — Technical, Semantic, Organisational, Legal — is the EU European Interoperability Framework's and the NIIS X-Road documentation's; PAERA v1.0 ([paera.govstack.global](https://paera.govstack.global)) anchors the interoperability framing (§3.4.3), the Once-Only principle (§5.2), the legal layer (§3.2) and the governance setup (§3.1.3).
+**What this course is the companion to.** Behind the videos sits a five-piece interoperability toolkit, each piece at a different altitude: a **Reference Model** (what a framework is — the four interoperability layers and the four functional layers), an eight-step **Method** (how to develop one; Modules 1–5 follow its steps), a **Toolkit** of fourteen templates (the artefacts the plays draft — the Strategic Foundation Document, the Use-Case Catalogue, the Decree Drafting Kit, the Governance Model, the standards catalogue, Member Requirements, the SLA, the onboarding workflow, the conformance test plan, the risk register, the success metrics), a **Reference Architecture** (the enforceable target design and its rules, on five layers — the four plus infrastructure — with governance and legal cross-cutting), and an **RA-to-RFP path** that turns the reference architecture plus a country's own enterprise architecture into an issuable tender. The videos teach the first three and point at the last two: a framework is planned first, and then procurement is how it is enforced. The four-layer interoperability model — Technical, Semantic, Organisational, Legal — is the EU European Interoperability Framework's and the NIIS X-Road documentation's; PAERA v1.0 ([paera.govstack.global](https://paera.govstack.global)) anchors the interoperability framing (§3.4.3), the Once-Only principle (§5.2), the legal layer (§3.2) and the governance setup (§3.1.3).
 
 {% hint style="info" %}
 **Use this site from your AI assistant.** Every page is also published as plain Markdown, and the site exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the site and ask it to *run play 2.3 with the following context* — the site becomes the tool's reference, not just yours.

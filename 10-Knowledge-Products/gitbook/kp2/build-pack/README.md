@@ -1,11 +1,11 @@
 ---
-description: "The runnable companion to the KP2 videos — the configuration the modules generate, the prompts that generate it, the scripts that deploy it, and the acceptance checks that prove it."
+description: "The runnable companion to the videos — the configuration the modules generate, the prompts that generate it, the scripts that deploy it, and the acceptance checks that prove it."
 icon: toolbox
 ---
 
 # The build pack
 
-KP2 is an implementation Knowledge Product, and this is the half that runs. The build pack stands up a real once-only exchange on an X-Road federation across Progressa's institutions: the National Examination Authority (PNEA) issues a credential and pre-fills identity from the National ID Authority (PNIA) and enrolment from the Learner Registry (PLR) — a learner asked once, over a real cross-server call, with the unauthorised caller denied. It is the Progressa "example output" of Modules 4 and 5: where a play page's worked example would be a pasted draft, here it is a file in the pack.
+This is an implementation Knowledge Product, and this is the half that runs. The build pack stands up a real once-only exchange on an X-Road federation across Progressa's institutions: the National Examination Authority (PNEA) issues a credential and pre-fills identity from the National ID Authority (PNIA) and enrolment from the Learner Registry (PLR) — a learner asked once, over a real cross-server call, with the unauthorised caller denied. It is the Progressa "example output" of Modules 4 and 5: where a play page's worked example would be a pasted draft, here it is a file in the pack.
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
 <tr><td><strong>🧰 What the build pack is</strong></td><td>The manifest, the three configuration layers, the requirements, and what the pack proves.</td><td><a href="what-it-is.md">what-it-is</a></td></tr>

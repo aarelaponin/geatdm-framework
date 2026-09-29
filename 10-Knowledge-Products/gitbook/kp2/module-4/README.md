@@ -6,7 +6,7 @@ icon: flag-checkered
 # Module 4 — Architecture and technical standards
 
 {% hint style="info" %}
-🎬 **Video in production:** *KP2 Module 4 — Architecture and technical standards* (~2 min).
+🎬 **Video in production:** *Module 4 — Architecture and technical standards* (~2 min).
 The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../../start-here/video-index.md).
 {% endhint %}
 
@@ -37,7 +37,7 @@ Eight videos on the technical layer: the four functional layers and three trust 
 
 ```mermaid
 flowchart TD
-    A0["A0 Country context pack\n(Play 0 + KP2 supplement)"]
+    A0["A0 Country context pack\n(Play 0 + supplement)"]
     B20["B20 Component-to-layer map\n(4.1)"]
     B21["B21 Trust-zone trace\n(4.2)"]
     B22["B22 Standards portfolio\n(4.3)"]
@@ -74,7 +74,7 @@ flowchart TD
 The full chain, including where these artefacts come from and go next, is on [Your framework workbook](../your-framework-workbook.md).
 
 {% hint style="info" %}
-**Before you start.** Every play asks you to paste country context. Build it once with [Play 0](../../start-here/play-0.md) — that is **A0** — and add the three KP2 sections from the [Play 0 supplement](../play-0-supplement.md). No country to hand? Run them on [Progressa](../../start-here/progressa.md), the fictional demonstration country; for Modules 4 and 5 the [build pack](../build-pack/README.md) is Progressa's finished output.
+**Before you start.** Every play asks you to paste country context. Build it once with [Play 0](../../start-here/play-0.md) — that is **A0** — and add the three interoperability sections from the [Play 0 supplement](../play-0-supplement.md). No country to hand? Run them on [Progressa](../../start-here/progressa.md), the fictional demonstration country; for Modules 4 and 5 the [build pack](../build-pack/README.md) is Progressa's finished output.
 {% endhint %}
 
 {% hint style="info" %}

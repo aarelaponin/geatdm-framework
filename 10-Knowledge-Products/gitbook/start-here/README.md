@@ -21,16 +21,16 @@ This chapter holds everything that is true across all four Knowledge Products. R
 <tr><td><h3>🔍</h3></td><td><strong>Play 0 — Build your country context</strong></td><td>Seven research prompts that produce A0, the pack every other play asks you to paste.</td><td><a href="play-0.md">play-0</a></td></tr>
 <tr><td><h3>🚩</h3></td><td><strong>Progressa</strong></td><td>The fictional demonstration country used in every worked example, in every Knowledge Product.</td><td><a href="progressa.md">progressa</a></td></tr>
 <tr><td><h3>🎬</h3></td><td><strong>Video index</strong></td><td>Every video, its status and its link. The tracker while the series is in production.</td><td><a href="video-index.md">video-index</a></td></tr>
-<tr><td><h3>🏛️</h3></td><td><strong>KP1 — Government Enterprise Architecture</strong></td><td>Five modules on commissioning a national EA anchored on PAERA. Module 1 worked examples live; Modules 2–5 prompts live.</td><td><a href="../kp1/README.md">kp1</a></td></tr>
+<tr><td><h3>🏛️</h3></td><td><strong>Developing a Gov Enterprise Architecture (GEA)</strong></td><td>Five modules on commissioning a national EA anchored on PAERA. Module 1 worked examples live; Modules 2–5 prompts live.</td><td><a href="../kp1/README.md">kp1</a></td></tr>
 </tbody></table>
 
 ## The four Knowledge Products
 
 | | Knowledge Product | For | Status |
 | --- | --- | --- | --- |
-| **KP1** | [Government Enterprise Architecture](../kp1/README.md) | Strategist and Architect — commissioning and running a national EA | Module 1 worked examples live; Modules 2–5 prompts live |
-| **KP2** | Government Interoperability Framework | Strategist and Architect — the legal, organisational and technical configuration of exchange | In production |
-| **KP3** | National DPI roadmap | Strategist | Planned |
-| **KP4** | Building-block services | Architect | Planned |
+| 1 | [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) | Strategist and Architect — commissioning and running a national EA | Module 1 worked examples live; Modules 2–5 prompts live |
+| 2 | [Building a Government Interoperability Framework (GIF)](../kp2/README.md) | Strategist and Architect — the legal, organisational and technical configuration of exchange | In production |
+| 3 | National DPI roadmap | Strategist | Planned |
+| 4 | Building-block services | Architect | Planned |
 
 All four use [**Progressa**](progressa.md) as the single worked example, and all four point back to this chapter for the ground rules.

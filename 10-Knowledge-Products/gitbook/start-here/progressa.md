@@ -5,7 +5,7 @@ icon: flag
 
 # Progressa — the demonstration country
 
-Progressa is fictional, on purpose. It is the single worked example across all four Knowledge Products: KP1's Module 4 runs the whole lifecycle on its education sector, the KP2 build pack proves an exchange between its bodies, and every play on this site has a Progressa worked example. If you have no country of your own to hand — a student, a donor analyst, a trainer — run the plays on Progressa with the sections below as your context pack. An assistant reading this site over its MCP endpoint can pull this page directly.
+Progressa is fictional, on purpose. It is the single worked example across all four Knowledge Products: Module 4 of [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) runs the whole lifecycle on its education sector, the build pack in [Building a Government Interoperability Framework (GIF)](../kp2/README.md) proves an exchange between its bodies, and every play on this site has a Progressa worked example. If you have no country of your own to hand — a student, a donor analyst, a trainer — run the plays on Progressa with the sections below as your context pack. An assistant reading this site over its MCP endpoint can pull this page directly.
 
 ## The sector in one paragraph
 
@@ -82,4 +82,4 @@ Progressa has no e-transactions act and no access-to-information act.
 
 ## Where Progressa appears
 
-Module 1: worked example on every play page. Module 4: the five-phase lifecycle run end to end on this sector. GEATDM Education Sector Guide §5.2 (the learner journey) and §7 (the implementation path in four waves). KP2: the Linkup federation and the once-only exchange PNEA ← PNIA + PLR in the build pack.
+Module 1: worked example on every play page. Module 4: the five-phase lifecycle run end to end on this sector. GEATDM Education Sector Guide §5.2 (the learner journey) and §7 (the implementation path in four waves). *Building a Government Interoperability Framework (GIF)*: the Linkup federation and the once-only exchange PNEA ← PNIA + PLR in the build pack.

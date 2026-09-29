@@ -6,7 +6,7 @@ icon: flag-checkered
 # Module 5 — Evidence, rollout and the case
 
 {% hint style="info" %}
-🎬 **Video in production:** *KP1 Module 5 — Evidence, rollout and the case* (~2 min).
+🎬 **Video in production:** *Module 5 — Evidence, rollout and the case* (~2 min).
 The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../../start-here/video-index.md).
 {% endhint %}
 

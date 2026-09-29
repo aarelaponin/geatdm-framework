@@ -14,7 +14,7 @@ still true after the fold; the ownership of this text is now the site's.
 
 # ---- former 6.1: the one pattern every play shares ----
 CATALOGUE_INTRO = (
-    "Across KP2 you meet thirty-seven AI plays — named tools, each turning a slow specialist task into a "
+    "Across this course you meet thirty-seven AI plays — named tools, each turning a slow specialist task into a "
     "fast, reviewed draft. They are worth reading as one catalogue, because they are not one-off tricks. They "
     "are a reusable toolkit your framework keeps and applies to every decree, every exchange, every service it "
     "builds. Three of them stand out: the decree drafter turns your Strategic Foundation Document into the "
@@ -77,7 +77,7 @@ ROLE_PATHS = [
 ROLE_PATHS_REACH = (
     "The value is reach. A knowledge product that asks every viewer to watch everything reaches few; one that says "
     "'if you are the legal drafter, watch these videos and use these plays' reaches each role where they are. The "
-    "role-paths are how KP2 gets used rather than just published — and how a country trains the actual, distributed "
+    "role-paths are how this course gets used rather than just published — and how a country trains the actual, distributed "
     "team that builds its framework, each member learning their part."
 )
 ROLE_PATHS_MAP = (
