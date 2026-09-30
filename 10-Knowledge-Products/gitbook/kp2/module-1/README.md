@@ -28,7 +28,7 @@ Seven videos for the Strategist making the case: why interoperability is built r
 | [1.2](./1-2.md) | The four layers of interoperability | Interoperability fails at whichever of the four layers — Technical, Semantic, Organisational, Legal — you skip. The framework makes you address all four on purpose. | 🔍 B2 | `gif-four-layer-map` |
 | [1.3](./1-3.md) | The once-only promise | Once-only — the state never asks a citizen for the same data twice — is the outcome interoperability is for, and the test of whether it works. | 🔍 B3 | `country-context-pack` |
 | [1.4](./1-4.md) | The Strategic Foundation Document | Name the mandate, the scope and the principles once, in writing, before any wiring — it is what every later decision is checked against. | ✍️ B4 | `gif-foundation-drafter` |
-| [1.5](./1-5.md) | The Use-Case Catalogue | Turn your integration map into a ranked catalogue of exchanges worth building — and start with the one that removes the most counters for citizens. | ✍️ B5 | `country-context-pack` |
+| [1.5](./1-5.md) | The Use-Case Catalogue | Turn your integration map into a ranked catalogue of exchanges worth building — and start with the one that removes the most burden from citizens. | ✍️ B5 | `country-context-pack` |
 | [1.6](./1-6.md) | Mapping your stakeholders | Sort the agencies into Champions, Early Adopters and Observers, and you know who to onboard first and who to convince. | 🔍 B6 | `ea-institution-mapper` |
 | [1.7](./1-7.md) | What the world already proved | Estonia's X-Road and the EU's once-only systems show the pattern; the education semantic standards show the vocabularies you will reuse rather than invent. | 🔍 B7 | `ea-comparator-evidence` |
 

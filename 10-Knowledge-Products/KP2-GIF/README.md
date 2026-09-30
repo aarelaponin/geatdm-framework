@@ -1,6 +1,6 @@
 # KP2 — Government Interoperability Framework · video-script bundles + build pack
 
-The versioned home of the FiscalAdmin OÜ — ITU/Giga **Knowledge Product 2** (Government Interoperability Framework), produced under contract RFQ-S-GIGA-2026-022 / PO #334304 with the `itu-giga-kp` kit in `../ITU-Giga-KP-Plugin/`.
+The versioned home of the FiscalAdmin OÜ — ITU/Giga **Knowledge Product 2** (Government Interoperability Framework), produced under contract RFQ-S-GIGA-2026-022 / PO #334304 with the `itu-giga-kp` kit (the plugin `itu-giga-kp`, whose home is `plugins/itu-giga-kp/` in the claude-marketplace; programs here find it through `KP_KIT`).
 
 KP2 is the first **implementation** Knowledge Product. Where KP1 taught how to *plan* an Enterprise Architecture, KP2 teaches how to *build* the interoperability layer over that plan — and so it ships **two** things: the video-script bundles (which teach the build) and a runnable **build pack** (the ready solution — a real once-only exchange on the Linkup / X-Road federation across the Progressa institutions).
 
@@ -44,7 +44,8 @@ build_kp2_moduleN_v0X.js   ← edit this (the source)
 ## Regenerating
 
 ```bash
-KIT=../ITU-Giga-KP-Plugin/skills
+KIT="$KP_KIT"/skills          # KP_KIT: the plugins/itu-giga-kp folder of your claude-marketplace clone
+export KP_ROOT="$(cd .. && pwd)" # the render scripts find the products through KP_ROOT
 # Markdown (after any build-script edit)
 python3 $KIT/kp-build-render/scripts/bundle_to_md.py build_kp2_module1_v02.js
 # GitBook companion pages (gitbook/kp2/) — from the build scripts + gitbook/play-map.json

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Build the KP1 Module 4 (Topic 4) video deck on the ITU template.
 # Content only — every generic helper, branding constant and layout index comes from
-# ITU-Giga-KP-Plugin/skills/kp-deck-builder/scripts/deck_lib.py (which also ships the
+# $KP_KIT/skills/kp-deck-builder/scripts/deck_lib.py (which also ships the
 # template). Conventions and design rules: that skill's SKILL.md.
 # Generated .pptx is NEVER hand-edited — fix here, re-render, re-run the split
 # (kp-deck-builder/scripts/split_module_deck.py + the split spec next to the decks).
@@ -9,8 +9,10 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                '..', 'ITU-Giga-KP-Plugin', 'skills', 'kp-deck-builder', 'scripts'))
+KP_KIT = os.environ.get('KP_KIT') or os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'ITU-Giga-KP-Plugin')
+if not os.path.isdir(os.path.join(KP_KIT, 'skills', 'kp-deck-builder', 'scripts')):
+    sys.exit("Set KP_KIT to the itu-giga-kp folder of your claude-marketplace clone (plugins/itu-giga-kp).")
+sys.path.insert(0, os.path.join(KP_KIT, 'skills', 'kp-deck-builder', 'scripts'))
 from deck_lib import (
     GREY, INK, ITU_BLUE, ITU_BLUE_DARK, LIGHT, MIDGREY, WHITE,
     LAYOUT_THANKS, LAYOUT_WHITE,

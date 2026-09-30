@@ -83,7 +83,7 @@ audit, because 5b is what decides whether the take is worth re-voicing at all.
 sole source, same Deep Dive at Shorter length, same prompt text. `kp-notebooklm-audio` automates
 the clicking, waiting and renaming; the browser flow below stays documented as the fallback and
 still works. A third path, fully-scripted Gemini TTS, is **parked** — see
-`ITU-Giga-KP-Plugin/docs/plans/2026-08-29-kp-interview-tts.md` and its §7b.
+`$KP_KIT/docs/plans/2026-08-29-kp-interview-tts.md` (in the kit's home) and its §7b.
 
 ---
 
@@ -102,7 +102,7 @@ so edit the build script and regenerate rather than editing the two out of sync.
 ```bash
 cd 10-Knowledge-Products/KP1-GEA
 python build_kp1_module1_deck_v02.py                      # combined module deck, 60 slides — English, writes to videos/module_1/en/decks/
-python ../ITU-Giga-KP-Plugin/skills/kp-deck-builder/scripts/split_module_deck.py \
+python "$KP_KIT"/skills/kp-deck-builder/scripts/split_module_deck.py \
   videos/module_1/en/decks/KP1_M1_Deck_v0.2.pptx \
   videos/module_1/en/decks/split_spec.json \
   videos/module_1/en/decks/
@@ -129,7 +129,7 @@ synthesizes the whole take with the Gemini multi-speaker TTS API.
 
 ```bash
 KP=~/.venvs/kp/bin/python
-S=…/ITU-Giga-KP-Plugin/skills/kp-interview-tts/scripts
+S="$KP_KIT"/skills/kp-interview-tts/scripts
 
 python3 $S/tts_script_lint.py module_1/en/tts/KP1_M1_1.1_InterviewScript_v0.1.md   # free
 $KP    $S/tts_synthesize.py module_1/en/tts/KP1_M1_1.1_InterviewScript_v0.1.md     # ~$0.10
@@ -159,7 +159,7 @@ NotebookLM's spoken output follows its source language.
 
 ```bash
 NLM=~/.venvs/nlm/bin/python
-S=…/ITU-Giga-KP-Plugin/skills/kp-notebooklm-audio/scripts
+S="$KP_KIT"/skills/kp-notebooklm-audio/scripts
 
 $NLM $S/nlm_take.py module_1/en 1.1        # one take
 $NLM $S/nlm_take.py module_1/en --all      # the whole module, sequentially
@@ -317,5 +317,5 @@ change and decide, in writing, whether the back catalogue gets re-rendered.
 
 **The whole track runs on the kit's skills**, in order: `kp-deck-builder` → `kp-interview-tts`
 (or `kp-audio-brief` on the fallback path) → `kp-scribe-transcribe` → `kp-audio-brief` Step 6 →
-`kp-slidecast`. See `ITU-Giga-KP-Plugin/skills/itu-giga-kp-bundle` for
+`kp-slidecast`. See `$KP_KIT/skills/itu-giga-kp-bundle` (in the kit's home) for
 where this sits relative to the docx track.

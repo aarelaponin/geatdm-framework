@@ -1,6 +1,6 @@
 # Retired KP2 sources
 
-- `build_kp2_module6_v01.js` / `KP2_Module6_Script_Bundle_v0.1.md` — Module 6 (AI plays for GIF + dissemination), retired 12 September 2026. 6.2/6.3/6.4 became 5.8/5.9/5.10 in `../build_kp2_module5_v02.js`; 6.1/6.5/6.6 live on the KP2 GitBook home page (source: `ITU-Giga-KP-Plugin/skills/kp-gitbook-render/scripts/kp2_home.py`) and in the intro video.
+- `build_kp2_module6_v01.js` / `KP2_Module6_Script_Bundle_v0.1.md` — Module 6 (AI plays for GIF + dissemination), retired 12 September 2026. 6.2/6.3/6.4 became 5.8/5.9/5.10 in `../build_kp2_module5_v02.js`; 6.1/6.5/6.6 live on the KP2 GitBook home page (source: `$KP_KIT/skills/kp-gitbook-render/scripts/kp2_home.py`, in the kit's home) and in the intro video.
 - `build_kp2_module5_v01.js` / `KP2_Module5_Script_Bundle_v0.1.md` — Module 5 v0.1 (seven subtopics), superseded by v0.2.
 
 Not rendered, not gated. Kept for reference only.

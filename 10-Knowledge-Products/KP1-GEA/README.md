@@ -1,6 +1,6 @@
 # KP1 — Government Enterprise Architecture · video-script bundles
 
-The versioned home of the FiscalAdmin OÜ — ITU/Giga **Knowledge Product 1** (Government Enterprise Architecture) video-script bundles. These are the deliverable scripts produced under contract RFQ-S-GIGA-2026-022 / PO #334304, built with the `itu-giga-kp` kit in `../ITU-Giga-KP-Plugin/`.
+The versioned home of the FiscalAdmin OÜ — ITU/Giga **Knowledge Product 1** (Government Enterprise Architecture) video-script bundles. These are the deliverable scripts produced under contract RFQ-S-GIGA-2026-022 / PO #334304, built with the `itu-giga-kp` kit (the plugin `itu-giga-kp`, whose home is `plugins/itu-giga-kp/` in the claude-marketplace; programs here find it through `KP_KIT`).
 
 ## What's here
 
@@ -32,15 +32,15 @@ build_kp1_moduleN_v0X.js   ← edit this (the source)
 
 ## Regenerating
 
-From this folder, using the kit scripts in `../ITU-Giga-KP-Plugin/skills/`:
+From this folder, using the kit scripts in `$KP_KIT/skills/` (set `KP_KIT` to the `plugins/itu-giga-kp` folder of your claude-marketplace clone):
 
 ```bash
 # Markdown (regenerate after any build-script edit)
-python3 ../ITU-Giga-KP-Plugin/skills/kp-build-render/scripts/bundle_to_md.py build_kp1_module3_v02.js
+python3 "$KP_KIT"/skills/kp-build-render/scripts/bundle_to_md.py build_kp1_module3_v02.js
 
 # Word deliverable into the contract working folder (OUT_PATH override)
 SCRATCH=/tmp/kpdocx OUT_PATH="/path/to/itu-knowledge/_02_Design/_KP01/KP1_Module3_Script_Bundle_v0.2.docx" \
-  bash ../ITU-Giga-KP-Plugin/skills/kp-build-render/scripts/build_render.sh build_kp1_module3_v02.js
+  bash "$KP_KIT"/skills/kp-build-render/scripts/build_render.sh build_kp1_module3_v02.js
 ```
 
 Before any module is shared with ITU, run the two gates: `kp-citation-verify` (PAERA fidelity) and `kp-bundle-qa` (ITU compliance). See the kit README.
@@ -48,7 +48,7 @@ Before any module is shared with ITU, run the two gates: `kp-citation-verify` (P
 ## The September 2026 tightening pass
 
 All five build scripts were tightened in September 2026 against the plan in
-`../ITU-Giga-KP-Plugin/docs/plans/2026-09-03-kp1-tightening-implementation.md`:
+`$KP_KIT/docs/plans/2026-09-03-kp1-tightening-implementation.md` (in the kit's home):
 opener and recap word caps throughout, duplicated cross-module teaching replaced by
 one self-contained sentence, the former 1.8 retired into a two-slide close on 1.7,
 and the former 5.3 and 5.6 merged into one video with 5.7 renumbered 5.6. Every
