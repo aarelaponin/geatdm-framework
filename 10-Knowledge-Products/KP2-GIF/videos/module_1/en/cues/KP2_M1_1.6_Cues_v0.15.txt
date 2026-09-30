@@ -1,0 +1,20 @@
+# Slide cue file — KP2 Module 1, Video 1.6 "Mapping your stakeholders"
+# Deck:  KP2_M1_1.6_Deck_v0.1.pptx (8 slides)
+# Audio: KP2_M1_1.6_Audio_v0.15.m4a (runs to 3:50.1) — v0.12 with the show-open cut by hand (7.8 s:
+#        "Welcome to today's deep dive. Um, today our mission is exploring the reference architecture…")
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar: runtime 3:50 is the only gate failure (brief asks 4:30–5:30).
+# Faithful and in order — three tiers, provider/consumer asymmetry, the sequence, the signed Tier 1
+# commitment letter and one-day workshop, the governing body. Residue: the §3 vocabulary recited at
+# 0:09; "like the sources note" once (source attribution, not gated); "guinea pigs". No sources line;
+# Sources card 4 s on the last sentence.
+
+0:00   # slide 1 — title card
+0:05.2 # slide 2 — A bus with no members carries nothing.
+0:57.9 # slide 3 — Sort every agency into one of three tiers
+1:45.4 # slide 4 — Every exchange has two sides — with different incentives
+2:25.4 # slide 5 — The map tells you who to work first
+3:23.7 # slide 6 — A bus needs an owner
+3:34.9 # slide 7 — In one sentence
+3:46.0 # slide 8 — Sources

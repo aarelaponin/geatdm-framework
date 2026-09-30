@@ -1,0 +1,20 @@
+# Slide cue file — KP2 Module 1, Video 1.1 "Why interoperability can't be bought, only built"
+# Deck:  KP2_M1_1.1_Deck_v0.2.pptx (9 slides)
+# Audio: KP2_M1_1.1_Audio_v0.18.m4a (runs to 5:07.9) — v0.17 trimmed; brief v0.2 (the hook addresses the official)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar; passed the gate clean. Addressed to the official throughout ("in your
+# ministry", "your minister"). Residue: "So welcome to today's deep dive. We are unpacking…" at 0:27,
+# after the hook, so no head cut reaches it; road/driveway analogy; invented patient-ID example and
+# "the systems crash"; "classic technical debt". Ends on content ("…a plan out of thin air"). No
+# sources line; Sources card 4 s on the last sentence.
+
+0:00   # slide 1 — title card
+0:04.1 # slide 2 — The requirement is written down. The result is not there.
+0:44.1 # slide 3 — A rule can require behaviour. It cannot make it the cheapest choice
+1:40.9 # slide 4 — Every link is built from scratch — again
+2:19.3 # slide 5 — Only the whole-of-government view makes interoperability rational
+2:47.7 # slide 6 — A framework is four parts no contract clause can deliver
+3:55.4 # slide 7 — You will still buy — the framework changes what the tender says
+4:49.1 # slide 8 — In one sentence
+5:03.9 # slide 9 — Sources

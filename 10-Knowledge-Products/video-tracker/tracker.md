@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-14 21:46 (data v2)
+# KP video tracker — generated 2026-09-30 07:46 (data v2)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -82,12 +82,12 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 1.0 | Module 1 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 1.1 | Why interoperability can't be bought, only built | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.8, SRT v0.8 | BLOCKER: unresolved after 4 rolls — citizen-at-the-counter framing; likely from the deck's slide-2 hook, an author decision |
+| 1.1 | Why interoperability can't be bought, only built | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.18, SRT v0.18, Accepted v0.18, Cues v0.18, MP4 v0.18 | accepted at KP1's bar 30 Sep on brief v0.2 (the hook addresses the official) — gate clean, 3rd v0.2 round; cued + assembled (5:08). "welcome to today's deep dive" at 0:27; driveway analogy; Sources 4 s |
 | 1.2 | The four layers of interoperability | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 | accepted at KP1's bar 14 Sep; cued + assembled (4:34). "let's unpack… deep dive" at 0:29; Sources 4 s |
-| 1.3 | The once-only promise | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.11, SRT v0.11 | unresolved after 6 rolls — banned phrases every try, "our sources" in 3; re-roll |
+| 1.3 | The once-only promise | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.20, SRT v0.20, Accepted v0.20, Cues v0.20, MP4 v0.20 | accepted 30 Sep on brief v0.2 — most faithful Module 1 take; cued + assembled (4:29), ends on the sources line. Gate: "the Once-Only framework" once. LISTEN: "Progressia" |
 | 1.4 | The Strategic Foundation Document | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 | accepted at KP1's bar 14 Sep; cued + assembled (4:34). Constitution talk precedes the four questions, so slide 5 is off-beat; Sources 2.8 s |
-| 1.5 | The Use-Case Catalogue | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.9, SRT v0.9 | unresolved after 6 rolls. v0.4 passed the checks KP1 shipped under (fails only the 14 Sep additions "chaotic", "this mess") — decide: accept v0.4 or fix the brief |
-| 1.6 | Mapping your stakeholders | en | `●●●●●●○○○○` | 6/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.1, Take v0.8, SRT v0.8 | unresolved after 4 rolls — runtime swings 3:03-5:44, banned phrases; fix the brief |
+| 1.5 | The Use-Case Catalogue | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.15, SRT v0.15, Accepted v0.15, Cues v0.15, MP4 v0.15 | accepted at KP1's bar 30 Sep on brief v0.2 ("most burden", not "most counters"); cued + assembled (4:55). "broken" hit is the idiom "ground is even broken"; "deep dive" at 0:14; Sources 4 s |
+| 1.6 | Mapping your stakeholders | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.15, SRT v0.15, Accepted v0.15, Cues v0.15, MP4 v0.15 | accepted at KP1's bar 30 Sep — v0.12 with the show-open hand-cut (7.8 s); cued + assembled (3:50, short of the 4:30 floor). "like the sources note" once; Sources 4 s |
 | 1.7 | What the world already proved | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.3, SRT v0.3, Accepted v0.3, Cues v0.3, MP4 v0.3 | accepted at KP1's bar 14 Sep (clean on re-roll 1); cued + assembled (5:14). LISTEN: SRT reads "Progresse" at 5:06 |
 
 ### Module 2 — Legal framework — the Decree Drafting Kit (Strategist)

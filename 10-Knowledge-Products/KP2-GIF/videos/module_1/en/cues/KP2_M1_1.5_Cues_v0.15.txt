@@ -1,0 +1,19 @@
+# Slide cue file — KP2 Module 1, Video 1.5 "The Use-Case Catalogue"
+# Deck:  KP2_M1_1.5_Deck_v0.2.pptx (8 slides)
+# Audio: KP2_M1_1.5_Audio_v0.15.m4a (runs to 4:55.2) — v0.14 trimmed; brief v0.2 (official, not the citizen at a counter)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar. The gate's one hit, "broken", is "before ground is even broken" (idiom,
+# not the banned characterisation). Residue: "taking a deep dive into the use case catalog" at 0:14,
+# kept because the line names the topic; a house/plumbing metaphor at 0:55; "on you, the citizen" once;
+# "mathematically justified" invented. Slide 4's examination-authority example is not narrated; the
+# four-layer readiness talk carries it. No sources line; Sources card 4 s on the last sentence.
+
+0:00   # slide 1 — title card
+0:09.7 # slide 2 — A map of everything connecting to everything cannot be built.
+1:31.1 # slide 3 — One row per exchange keeps the conversation specific
+1:49.3 # slide 4 — As a catalogue entry, a map line becomes a decision
+2:34.9 # slide 5 — Rank on two axes — and build the high-high ones first
+3:44.3 # slide 6 — Start small and visible — not with twenty exchanges
+4:40.0 # slide 7 — In one sentence
+4:51.0 # slide 8 — Sources

@@ -1,0 +1,19 @@
+# Slide cue file — KP2 Module 1, Video 1.3 "The once-only promise"
+# Deck:  KP2_M1_1.3_Deck_v0.2.pptx (8 slides)
+# Audio: KP2_M1_1.3_Audio_v0.20.m4a (runs to 4:29.4) — untrimmed (opens and ends on content); brief v0.2
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar — the most brief-faithful Module 1 take. Cold open names the video
+# ("Module 1, Video 1.3: The Once-Only Promise"), the official is the listener throughout, every slide in
+# order, the four requirements numbered aloud, ends on the recap plus "Sources are in the video
+# description." Gate: TERMINOLOGY — "the Once-Only framework" once at 2:57. Also "Progressia" for
+# Progressa (LISTEN), and "just plumbing" / "just pipes".
+
+0:00   # slide 1 — title card
+0:18.4 # slide 2 — The state never asks a citizen for the same information twice.
+1:01.8 # slide 3 — Without once-only, the citizen carries the same proof three times
+1:38.1 # slide 4 — Once-only is not a feature you switch on
+2:47.4 # slide 5 — In Progressa, the learner is asked once
+3:24.5 # slide 6 — Once-only is the right north star
+4:07.2 # slide 7 — In one sentence
+4:27.6 # slide 8 — Sources

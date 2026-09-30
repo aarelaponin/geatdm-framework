@@ -139,7 +139,7 @@ kps:
       12 Sep 2026. Module 6 retired 12 Sep — 6.2–6.4 are now 5.8–5.10; 6.1, 6.5 and 6.6 moved to the
       GitBook home page and the intro video. Video track started 13 Sep: Modules 1–5 scripts + decks v0.1. Modules 1–3: briefs v0.1,
       takes 13–14 Sep, accepted at KP1's bar — 15 of 19 videos cued and assembled (Modules 2 and 3
-      complete); 1.1, 1.3, 1.5, 1.6 unresolved. See KP2_M1-M3_Video_Status_2026-09-13.md.
+      complete); 30 Sep: 1.1, 1.3, 1.5, 1.6 accepted on reworded briefs — all 19 Modules 1–3 videos cued and assembled. See KP2_M1-M3_Video_Status_2026-09-13.md.
     intro:
       title: KP2 introduction — what the five modules cover (on camera)
       path: videos/intro
@@ -150,12 +150,12 @@ kps:
         path: videos/module_1
         intro: {title: Module 1 introduction (on camera)}
         topics:
-          - {code: "1.1", title: "Why interoperability can't be bought, only built", en: {blocker: "unresolved after 4 rolls — citizen-at-the-counter framing; likely from the deck's slide-2 hook, an author decision"}}
+          - {code: "1.1", title: "Why interoperability can't be bought, only built", en: {accepted: "v0.18", note: "accepted at KP1's bar 30 Sep on brief v0.2 (the hook addresses the official) — gate clean, 3rd v0.2 round; cued + assembled (5:08). \"welcome to today's deep dive\" at 0:27; driveway analogy; Sources 4 s"}}
           - {code: "1.2", title: "The four layers of interoperability", en: {accepted: "v0.5", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:34). \"let's unpack… deep dive\" at 0:29; Sources 4 s"}}
-          - {code: "1.3", title: "The once-only promise", en: {note: "unresolved after 6 rolls — banned phrases every try, \"our sources\" in 3; re-roll"}}
+          - {code: "1.3", title: "The once-only promise", en: {accepted: "v0.20", note: "accepted 30 Sep on brief v0.2 — most faithful Module 1 take; cued + assembled (4:29), ends on the sources line. Gate: \"the Once-Only framework\" once. LISTEN: \"Progressia\""}}
           - {code: "1.4", title: "The Strategic Foundation Document", en: {accepted: "v0.5", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:34). Constitution talk precedes the four questions, so slide 5 is off-beat; Sources 2.8 s"}}
-          - {code: "1.5", title: "The Use-Case Catalogue", en: {note: "unresolved after 6 rolls. v0.4 passed the checks KP1 shipped under (fails only the 14 Sep additions \"chaotic\", \"this mess\") — decide: accept v0.4 or fix the brief"}}
-          - {code: "1.6", title: "Mapping your stakeholders", en: {note: "unresolved after 4 rolls — runtime swings 3:03-5:44, banned phrases; fix the brief"}}
+          - {code: "1.5", title: "The Use-Case Catalogue", en: {accepted: "v0.15", note: "accepted at KP1's bar 30 Sep on brief v0.2 (\"most burden\", not \"most counters\"); cued + assembled (4:55). \"broken\" hit is the idiom \"ground is even broken\"; \"deep dive\" at 0:14; Sources 4 s"}}
+          - {code: "1.6", title: "Mapping your stakeholders", en: {accepted: "v0.15", note: "accepted at KP1's bar 30 Sep — v0.12 with the show-open hand-cut (7.8 s); cued + assembled (3:50, short of the 4:30 floor). \"like the sources note\" once; Sources 4 s"}}
           - {code: "1.7", title: "What the world already proved", en: {accepted: "v0.3", note: "accepted at KP1's bar 14 Sep (clean on re-roll 1); cued + assembled (5:14). LISTEN: SRT reads \"Progresse\" at 5:06"}}
       - number: 2
         title: Legal framework — the Decree Drafting Kit
