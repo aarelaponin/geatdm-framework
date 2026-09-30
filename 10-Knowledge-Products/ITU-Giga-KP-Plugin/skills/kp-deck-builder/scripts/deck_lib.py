@@ -239,7 +239,8 @@ def section_slide(prs, kicker, code, name, message, runtime_line, note_text):
     """Blue-bg divider that doubles as the standalone video's title card (one card, not two —
     split_module_deck.py no longer prepends the cover). The opener's VO belongs on the
     hook_slide() that follows it; pass TITLE_CARD_NOTE here.
-    kicker e.g. 'KP1 · MODULE 1 · VIDEO 1.3' — module-scoped, never 'of N'."""
+    kicker e.g. 'MODULE 1 · VIDEO 1.3' — module-scoped, never 'of N', never a KP number
+    (learners never meet 'KP1'/'KP2')."""
     s = add_slide(prs, LAYOUT_BLUE)
     tb = box(s, 0.9, 0.9, 8, 0.5)
     set_text(tb.text_frame, [[(kicker, 12, True, GREY, False)]])

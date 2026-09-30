@@ -6,7 +6,7 @@ Usage:
     python split_module_deck.py <combined.pptx> <spec.json> [outdir] [--infer-ranges]
 
 --infer-ranges: derive each video's range from the deck itself — a video runs from its section
-slide (the 'KP1 · MODULE n · VIDEO n.x' kicker) to the slide before the next one (or before the
+slide (the 'MODULE n · VIDEO n.x' kicker) to the slide before the next one (or before the
 Thank-you slide) — and write the ranges back into spec.json before splitting. Use it after any
 rebuild that changes slide counts (the 2026-09 hook slide added one slide per video), instead of
 re-counting by hand.
@@ -39,7 +39,7 @@ import os
 from pptx import Presentation
 from pptx.oxml.ns import qn
 
-KICKER = re.compile(r'^KP\d+ · MODULE \d+ · VIDEO (\d+\.\d+)$')
+KICKER = re.compile(r'^(?:KP\d+ · )?MODULE \d+ · VIDEO (\d+\.\d+)$')   # KP prefix: pre-29 Sep decks
 
 
 def infer_ranges(prs):

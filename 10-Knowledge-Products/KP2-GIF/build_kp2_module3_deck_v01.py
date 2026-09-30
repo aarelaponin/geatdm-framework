@@ -72,7 +72,7 @@ HOOKS = {'3.1': ('Platforms rarely die technically. They decay in year two.',
 def section(code, name, message, note):
     # No runtime on the title card: the narration is generated per take and its length moves
     # with every re-roll.
-    s = section_slide(prs, 'KP2 · MODULE 3 · VIDEO %s' % code, code, name, message,
+    s = section_slide(prs, 'MODULE 3 · VIDEO %s' % code, code, name, message,
                       'standalone video · voice-over on text slides', TITLE_CARD_NOTE)
     head, lines = HOOKS[code]
     hook_slide(prs, head, lines, '%s · %s' % (code, name), note)
