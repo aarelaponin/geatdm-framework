@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-# Build the KP2 Module 1 (Topic 1) video deck on the ITU template — v0.1.
+# Build the KP2 Module 1 (Topic 1) video deck on the ITU template — v0.2.
+# v0.2 (29 Sep 2026): 1.1, 1.3 and 1.5 address the official, never the citizen at a counter
+#   or in a queue — the hosts copied that framing in every take. Only those four decks re-split.
 # Content follows KP2_Module1_Script_Bundle_v0.2 (build_kp2_module1_v02.js): seven videos,
 # 1.1 – 1.7, Strategist-facing. Every VO paragraph in the notes is a verbatim
 # scriptBeats[].text from the .js (vo_diff.py proves it); the recap slide of every video
@@ -51,12 +53,12 @@ def panels(prs, *a, **k):
 # the same opener narration the hook's note carries. Not a preview of the next slide's list.
 HOOKS = {'1.1': ('The requirement is written down. The result is not there.',
                  ['Every new contract already says: provide open interfaces.',
-                  'The citizen still gives her ID number on paper — to the health ministry, and '
-                  'again at her child\'s school.']),
+                  'Your health ministry still records the citizen\'s ID number on paper — and your '
+                  'school system records it again at enrolment.']),
          '1.2': ('Most failed exchanges had working wires.',
                  ['People assume the problem is technical. Sometimes it is.',
                   'More often the exchange fails at a layer nobody built.']),
-         '1.3': ('The state never asks you for the same information twice.',
+         '1.3': ('The state never asks a citizen for the same information twice.',
                  ['That is the outcome interoperability is for.',
                   'And it is the clearest test of whether your framework works.']),
          '1.4': ('One short document, before a single system is connected.',
@@ -77,7 +79,7 @@ HOOKS = {'1.1': ('The requirement is written down. The result is not there.',
 def section(code, name, message, note):
     # No runtime on the title card: the narration is generated per take and its length moves
     # with every re-roll (KP1 dropped it on 12 Sep 2026).
-    s = section_slide(prs, 'KP2 · MODULE 1 · VIDEO %s' % code, code, name, message,
+    s = section_slide(prs, 'MODULE 1 · VIDEO %s' % code, code, name, message,
                       'standalone video · voice-over on text slides', TITLE_CARD_NOTE)
     head, lines = HOOKS[code]
     hook_slide(prs, head, lines, '%s · %s' % (code, name), note)
@@ -159,8 +161,8 @@ section('1.1', 'Why interoperability can\'t be bought, only built',
         'delivers it — and once the framework exists, procurement is how you enforce it.',
         "VO: Your government has probably already required interoperability. Every new system "
         "contract says the supplier must provide open interfaces. The national digital strategy "
-        "says systems must connect. And yet the citizen still gives her ID number to the health "
-        "ministry on paper, and gives it again on paper when she enrols her child in school. The "
+        "says systems must connect. And yet your health ministry still records the citizen's ID "
+        "number on paper, and your school system records it again, on paper, at enrolment. The "
         "requirement is written down. The result is not there. The question this video answers is "
         "why — and what actually works instead.")
 
@@ -402,23 +404,23 @@ section('1.3', 'The once-only promise',
         'interoperability is for, and the test of whether it works.',
         "VO: It is easy to talk about interoperability in terms of buses and standards and lose "
         "sight of what it is for. So here is the outcome, in one sentence a citizen would recognise: "
-        "the state never asks you for the same information twice. Give your identity once, and every "
-        "service that is entitled to it can get it — with your consent and a lawful basis — without "
-        "asking you again. This is the once-only principle, and it is the single clearest test of "
+        "the state never asks a citizen for the same information twice. She gives her identity once, "
+        "and every service that is entitled to it can get it — with her consent and a lawful basis — "
+        "without asking her again. This is the once-only principle, and it is the single clearest test of "
         "whether your interoperability framework actually works.")
 
 # The module's emotional peak — the only full-colour punch block in the deck.
 block(prs, 'Without once-only, the citizen carries the same proof three times',
-      ['She proves her identity at the ID office. She proves it again at the school to enrol her '
-       'child. She proves it again at the clinic.',
-       'The same document, the same queue, three times — because the agencies cannot ask each '
+      ['Your identity office checks her identity. Your school checks it again at enrolment. Your '
+       'clinic checks it a third time.',
+       'The same document, three agencies, three times — because the agencies cannot ask each '
        'other.'],
       'The burden lands on the person with the least power to carry it.',
       T,
-      "VO: Picture a citizen's day without it. She proves her identity at the identity office. She "
-      "proves it again, on paper, when she enrols her child at school. She proves it a third time "
-      "at the clinic. Same document, same queue, three times — not because anyone wants to harass "
-      "her, but because each agency has no way to ask the agency that already holds the answer. "
+      "VO: Without it, your agencies ask the same citizen for the same proof three times. The "
+      "identity office checks her identity. The school checks it again, on paper, when her child "
+      "is enrolled. The clinic checks it a third time. Same document, three agencies, three times — "
+      "not because anyone wants to burden her, but because each agency has no way to ask the agency that already holds the answer. "
       "The burden is pushed onto the person with the least power to carry it.\n\n"
       "Production cue: the empathy beat and the module's one full-colour block. Hold it a beat "
       "longer.",
@@ -592,7 +594,7 @@ sources_slide(prs, T, [
 T = '1.5 · The Use-Case Catalogue'
 section('1.5', 'The Use-Case Catalogue',
         'Turn your integration map into a ranked catalogue of exchanges worth building — and start '
-        'with the one that removes the most counters for citizens.',
+        'with the one that removes the most burden from citizens.',
         "VO: If your country has already planned its Enterprise Architecture — the "
         "whole-of-government picture of which systems exist and how they should fit together — you "
         "already have a first-cut integration map: a picture of which government systems ought to "
@@ -646,7 +648,7 @@ panels(prs, 'As a catalogue entry, a map line becomes a decision',
 panels(prs, 'Rank on two axes — and build the high-high ones first',
        ('VALUE',
         ['How much citizen burden does this exchange remove?',
-         'Count the counters and the repeated forms.']),
+         'Count the repeated visits and the repeated forms.']),
        ('FEASIBILITY',
         ['How ready are the four layers?',
          'How willing is the agency that owns the data?']),
@@ -654,7 +656,7 @@ panels(prs, 'Rank on two axes — and build the high-high ones first',
        T,
        "VO: Rank on two axes. Value: how much citizen burden does this exchange remove? An exchange "
        "that lets thousands of parents stop carrying a document to enrol a child is worth more than "
-       "one that saves a few officials a query. Count the counters. And feasibility: how ready are "
+       "one that saves a few officials a query. Count the repeated visits. And feasibility: how ready are "
        "the four layers, and how willing is the agency that owns the data? An exchange where the "
        "provider agency is eager and the legal basis is close is more feasible than one where the "
        "data owner is reluctant. The first exchanges to build are the high-value, high-feasibility "
@@ -676,7 +678,7 @@ block(prs, 'Start small and visible — not with twenty exchanges',
 
 big_slide(prs,
           'The Use-Case Catalogue turns a map of everything into a ranked list of next things — '
-          'starting with the exchange that removes the most counters.',
+          'starting with the exchange that removes the most burden from citizens.',
           T,
           PRACTICE_NOTE + "\n\n"
           "VO: So the second foundation artefact, after the Strategic Foundation Document, is the "
@@ -920,7 +922,7 @@ for sl in prs.slides:
 
 OUT = os.environ.get('OUT_PATH') or os.path.join(
     os.path.dirname(os.path.abspath(__file__)),
-    'videos', 'module_1', 'en', 'decks', 'KP2_M1_Deck_v0.1.pptx')
+    'videos', 'module_1', 'en', 'decks', 'KP2_M1_Deck_v0.2.pptx')
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 prs.save(OUT)
 print('slides:', len(prs.slides._sldIdLst))

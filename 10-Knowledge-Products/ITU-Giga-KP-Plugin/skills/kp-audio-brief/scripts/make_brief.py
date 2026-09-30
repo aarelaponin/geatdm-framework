@@ -43,7 +43,7 @@ CHROME = re.compile(
     r"THE [A-Z ]+ THIS MODULE TEACHES|IN ONE SENTENCE|WHERE WE START)", re.I)
 
 VO_RE = re.compile(r"^\s*VO\b[^:]*:\s*", re.I)
-EYEBROW = re.compile(r"^KP\d+\s*·\s*MODULE\s*\d+\s*·\s*VIDEO\s*\d+\.\d+$", re.I)
+EYEBROW = re.compile(r"^(?:KP\d+\s*·\s*)?MODULE\s*\d+\s*·\s*VIDEO\s*\d+\.\d+$", re.I)
 
 
 def paragraphs(text):

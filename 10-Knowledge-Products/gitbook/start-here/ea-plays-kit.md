@@ -29,9 +29,9 @@ Every skill's output opens with the same header: the country, the date it was bu
 
 ## Play → skill
 
-Each play has exactly one primary skill. Play numbers repeat across Knowledge Products — KP1's 2.4 is not KP2's 2.4 — so the two are listed separately. The `gif-` skills are KP2's; the rest are shared. `cite-or-discard` runs *inside* most of the others; you do not call it directly.
+Each play has exactly one primary skill. Play numbers repeat across Knowledge Products — 2.4 in *Developing a Gov Enterprise Architecture (GEA)* is not 2.4 in *Building a Government Interoperability Framework (GIF)* — so the two are listed separately. The `gif-` skills belong to the interoperability course; the rest are shared. `cite-or-discard` runs *inside* most of the others; you do not call it directly.
 
-| Skill | KP1 plays | KP2 plays | What it adds |
+| Skill | GEA plays | GIF plays | What it adds |
 | --- | --- | --- | --- |
 | `country-context-pack` | Play 0, 1.1 | 1.1, 1.3, 1.5 | the seven-section A0 pack every other play consumes |
 | `cite-or-discard` | *inside the others* | *inside the others* | fetches each URL, grades the source by tier, and drops what does not survive |

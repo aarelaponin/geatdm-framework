@@ -45,7 +45,7 @@ Seven standalone subtopic videos. One Strategist persona throughout. Total runti
 | 1.2 | The four layers of interoperability | Interoperability fails at whichever of the four layers — Technical, Semantic, Organisational, Legal — you skip. The framework makes you address all four on purpose. | ~5 min |
 | 1.3 | The once-only promise | Once-only — the state never asks a citizen for the same data twice — is the outcome interoperability is for, and the test of whether it works. | ~4 min |
 | 1.4 | The Strategic Foundation Document | Name the mandate, the scope and the principles once, in writing, before any wiring — it is what every later decision is checked against. | ~4 min |
-| 1.5 | The Use-Case Catalogue | Turn your integration map into a ranked catalogue of exchanges worth building — and start with the one that removes the most counters for citizens. | ~5 min |
+| 1.5 | The Use-Case Catalogue | Turn your integration map into a ranked catalogue of exchanges worth building — and start with the one that removes the most burden from citizens. | ~5 min |
 | 1.6 | Mapping your stakeholders | Sort the agencies into Champions, Early Adopters and Observers, and you know who to onboard first and who to convince. | ~4 min |
 | 1.7 | What the world already proved | Estonia's X-Road and the EU's once-only systems show the pattern; the education semantic standards show the vocabularies you will reuse rather than invent. | ~4 min |
 
@@ -65,7 +65,7 @@ Seven standalone subtopic videos. One Strategist persona throughout. Total runti
 
 > _Slide 1 — Title: 'Why interoperability can't be bought, only built'. Voice-over begins._
 
-Your government has probably already required interoperability. Every new system contract says the supplier must provide open interfaces. The national digital strategy says systems must connect. And yet the citizen still gives her ID number to the health ministry on paper, and gives it again on paper when she enrols her child in school. The requirement is written down. The result is not there. The question this video answers is why — and what actually works instead.
+Your government has probably already required interoperability. Every new system contract says the supplier must provide open interfaces. The national digital strategy says systems must connect. And yet your health ministry still records the citizen's ID number on paper, and your school system records it again, on paper, at enrolment. The requirement is written down. The result is not there. The question this video answers is why — and what actually works instead.
 
 > _Slide 2 — Title: 'A rule can require behaviour. It cannot make it the cheapest choice.'. Body, two text rows: 'The contract says: provide open interfaces.' 'The project asks: what is the fastest way to ship on time and on budget?'_
 
@@ -126,7 +126,7 @@ Below is a description of how [country X] currently handles cross-agency data ex
 | --- | --- |
 | Working title | Why interoperability can't be bought, only built |
 | YouTube-optimised title | Why procurement rules don't make government systems talk to each other — and what does |
-| Description (60 words) | Your contracts already require open interfaces, yet citizens still repeat the same data at every counter. Why? Because a rule can require interoperability but cannot make it the cheapest choice for any single project. Only whole-of-government planning — a framework across four layers — delivers it. Five minutes for digital-government leaders. AI diagnostic prompt to map procured-versus-planned interoperability in the description. |
+| Description (60 words) | Your contracts already require open interfaces, yet your agencies still ask citizens for the same data twice. Why? Because a rule can require interoperability but cannot make it the cheapest choice for any single project. Only whole-of-government planning — a framework across four layers — delivers it. Five minutes for digital-government leaders. AI diagnostic prompt to map procured-versus-planned interoperability in the description. |
 | Tags | interoperability, government interoperability framework, GovStack, X-Road, EIF, whole-of-government, digital government, data exchange |
 | Playlist (YouTube) | KP2 — Topic 1: Why a Government Interoperability Framework |
 | ToR §4 coverage | §4.1 (methodology framing); §4.3 (AI integration — diagnostic prompt) |
@@ -234,11 +234,11 @@ Below is one cross-agency data exchange [country X] wants to enable [describe it
 
 > _Slide 1 — Title: 'The once-only promise'. Voice-over begins._
 
-It is easy to talk about interoperability in terms of buses and standards and lose sight of what it is for. So here is the outcome, in one sentence a citizen would recognise: the state never asks you for the same information twice. Give your identity once, and every service that is entitled to it can get it — with your consent and a lawful basis — without asking you again. This is the once-only principle, and it is the single clearest test of whether your interoperability framework actually works.
+It is easy to talk about interoperability in terms of buses and standards and lose sight of what it is for. So here is the outcome, in one sentence a citizen would recognise: the state never asks a citizen for the same information twice. She gives her identity once, and every service that is entitled to it can get it — with her consent and a lawful basis — without asking her again. This is the once-only principle, and it is the single clearest test of whether your interoperability framework actually works.
 
-> _Slide 2 — Title: 'The citizen's day, without once-only'. Body, single text block: 'She proves her identity at the ID office. She proves it again at the school to enrol her child. She proves it again at the clinic. The same document, the same queue, three times — because the agencies cannot ask each other.'_
+> _Slide 2 — Title: 'The citizen's day, without once-only'. Body, single text block: 'Your identity office checks her identity. Your school checks it again at enrolment. Your clinic checks it a third time. The same document, three agencies, three times — because the agencies cannot ask each other.'_
 
-Picture a citizen's day without it. She proves her identity at the identity office. She proves it again, on paper, when she enrols her child at school. She proves it a third time at the clinic. Same document, same queue, three times — not because anyone wants to harass her, but because each agency has no way to ask the agency that already holds the answer. The burden is pushed onto the person with the least power to carry it.
+Without it, your agencies ask the same citizen for the same proof three times. The identity office checks her identity. The school checks it again, on paper, when her child is enrolled. The clinic checks it a third time. Same document, three agencies, three times — not because anyone wants to burden her, but because each agency has no way to ask the agency that already holds the answer. The burden is pushed onto the person with the least power to carry it.
 
 > _Slide 3 — Title: 'What once-only actually requires'. Body, three text rows: 'A trusted source for each fact — one authoritative holder.' 'A lawful basis and the citizen's consent to share it.' 'A real-time way to fetch it at the moment of service.'_
 
@@ -382,7 +382,7 @@ Draft a Strategic Foundation Document for a Government Interoperability Framewor
 | Target runtime | ~5 min (≈600 spoken words) |
 | PAERA anchor | PAERA §3.4.3 (interoperability framing); EU EIF (interoperability agreements) |
 
-> **Single message —** _Turn your integration map into a ranked catalogue of exchanges worth building — and start with the one that removes the most counters for citizens._
+> **Single message —** _Turn your integration map into a ranked catalogue of exchanges worth building — and start with the one that removes the most burden from citizens._
 
 ### Script (voice-over over text-only slides)
 
@@ -398,15 +398,15 @@ The catalogue is a table, and each row is one concrete exchange. Each row names 
 
 Take a line from the integration map: the examination authority could use identity from the identity authority and enrolment from the learner registry. As a map line, it is just a possibility. As a catalogue entry, it becomes a decision: this exchange, enabling this credential service for learners, ready at the technical layer but not yet at the legal one, high citizen value, medium effort — therefore a strong candidate for the first wave. The map shows what is possible. The catalogue decides what is next.
 
-> _Slide 4 — Title: 'How to rank'. Body, two text rows: 'Value — how much citizen burden does this exchange remove? Count the counters and the repeated forms.' 'Feasibility — how ready are the four layers, and how willing is the data owner?'_
+> _Slide 4 — Title: 'How to rank'. Body, two text rows: 'Value — how much citizen burden does this exchange remove? Count the repeated visits and the repeated forms.' 'Feasibility — how ready are the four layers, and how willing is the data owner?'_
 
-Rank on two axes. Value: how much citizen burden does this exchange remove? An exchange that lets thousands of parents stop carrying a document to enrol a child is worth more than one that saves a few officials a query. Count the counters. And feasibility: how ready are the four layers, and how willing is the agency that owns the data? An exchange where the provider agency is eager and the legal basis is close is more feasible than one where the data owner is reluctant. The first exchanges to build are the high-value, high-feasibility ones — they prove the framework and build the appetite for the harder ones.
+Rank on two axes. Value: how much citizen burden does this exchange remove? An exchange that lets thousands of parents stop carrying a document to enrol a child is worth more than one that saves a few officials a query. Count the repeated visits. And feasibility: how ready are the four layers, and how willing is the agency that owns the data? An exchange where the provider agency is eager and the legal basis is close is more feasible than one where the data owner is reluctant. The first exchanges to build are the high-value, high-feasibility ones — they prove the framework and build the appetite for the harder ones.
 
 > _Slide 5 — Title: 'Why start small and visible'. Body, two text rows: 'One real once-only exchange, working, convinces more agencies than any strategy document.' 'The catalogue is the backlog — the rest wait their turn, in priority order.'_
 
 Resist the urge to launch with twenty exchanges. One real once-only exchange, working end-to-end, convinces more agencies to join than any strategy document ever will. The catalogue holds the rest as a prioritised backlog — nothing is forgotten, but the team works the list in order. This is also how you keep the framework funded: each delivered exchange is a visible win you can point to before asking for the next tranche, instead of a long silence followed by a big-bang launch that may slip.
 
-> _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The Use-Case Catalogue turns a map of everything into a ranked list of next things — starting with the exchange that removes the most counters.'_
+> _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The Use-Case Catalogue turns a map of everything into a ranked list of next things — starting with the exchange that removes the most burden from citizens.'_
 
 So the second foundation artefact, after the Strategic Foundation Document, is the Use-Case Catalogue. It turns your integration map from a picture of everything into a ranked list of next things. It keeps the framework specific, fundable and honest about priorities. And it gives the architects who design the exchanges a clear first target — the highest-value, most-feasible exchange — to design and build for real.
 
@@ -419,7 +419,7 @@ So the second foundation artefact, after the Strategic Foundation Document, is t
 | 1 | Title slide. Title: 'The Use-Case Catalogue'. | Standard ITU template. No images. |
 | 2 | Catalogue-row anatomy. Four text rows: provider/consumer, data/service, four-layer readiness, priority. | Defines the artefact structure. Text-only table-like layout. |
 | 3 | Map-to-catalogue slide. Three text rows using the Progressa example line. | Makes the transformation concrete with the bound institutions. |
-| 4 | Ranking slide. Two text rows: value (counters removed); feasibility (layer readiness + owner willingness). | The prioritisation method. Text-only. |
+| 4 | Ranking slide. Two text rows: value (repeated visits removed); feasibility (layer readiness + owner willingness). | The prioritisation method. Text-only. |
 | 5 | Start-small slide. Two text rows: one visible win convinces; the catalogue is the backlog. | The funding-and-momentum argument. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
 | 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the references. |
@@ -444,7 +444,7 @@ Below is [country X]'s integration map or list of desired cross-agency data exch
 | --- | --- |
 | Working title | The Use-Case Catalogue |
 | YouTube-optimised title | How to choose which government data exchange to build first |
-| Description (60 words) | An integration map shows everything that could connect — which is overwhelming. The Use-Case Catalogue turns it into a ranked list of specific exchanges, each naming the citizen service it enables and its readiness across the four layers. Start with the exchange that removes the most counters. Five minutes for digital-government leaders. AI prompt to build your catalogue in the description. |
+| Description (60 words) | An integration map shows everything that could connect — which is overwhelming. The Use-Case Catalogue turns it into a ranked list of specific exchanges, each naming the citizen service it enables and its readiness across the four layers. Start with the exchange that removes the most burden from citizens. Five minutes for digital-government leaders. AI prompt to build your catalogue in the description. |
 | Tags | use case catalogue, interoperability roadmap, data exchange, prioritisation, government interoperability framework, GovStack, digital government |
 | Playlist (YouTube) | KP2 — Topic 1: Why a Government Interoperability Framework |
 | ToR §4 coverage | §4.1 (methodology, step 2); §4.3 (AI integration — catalogue prompt) |

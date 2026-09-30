@@ -34,7 +34,7 @@ flowchart TD
     A7 --> PACK["Cabinet-briefing pack\n→ Module 3"]
 ```
 
-## Every artefact in KP1
+## Every artefact in this course
 
 *The numbers follow the curriculum order in which the plays were first written, not module order: **A8** (comparator-country cards) is produced in Module 5, play 5.1.*
 
@@ -111,6 +111,6 @@ flowchart TD
 
 Bring items 1–7 as a single pack and make the four asks from [1.7](module-1/1-7.md) together, not in pieces.
 
-## Where the chain goes after KP1
+## Where the chain goes next
 
-Module 5 closes KP1 with the case for sustained commitment (A29 rev.2). In KP2 the chain continues into the build pack, where the play outputs become the inputs to the interoperability proving slice. Those pages are added as KP2 is published.
+Module 5 closes this course with the case for sustained commitment (A29 rev.2). In [Building a Government Interoperability Framework (GIF)](../kp2/README.md) the chain continues into the build pack, where the play outputs become the inputs to the interoperability proving slice.

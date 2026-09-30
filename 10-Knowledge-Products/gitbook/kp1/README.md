@@ -1,18 +1,18 @@
 ---
-description: "Companion site to the ITU/Giga Knowledge Product 1 video series — the concepts, the AI plays, and the worked example, in one place."
+description: "Companion site to the ITU/Giga *Developing a Gov Enterprise Architecture (GEA)* video series — the concepts, the AI plays, and the worked example, in one place."
 icon: house
 ---
 
 # Developing a Gov Enterprise Architecture (GEA)
 
-**ITU/Giga Knowledge Product 1** · 41 videos in five modules · about 156 minutes of video · 36 AI plays · self-paced · free and open
+**ITU/Giga Knowledge Product** · 41 videos in five modules · about 156 minutes of video · 36 AI plays · self-paced · free and open
 
-This is the companion to the **Knowledge Product 1** video series on building a national Enterprise Architecture anchored on PAERA, the Public Administration Ecosystem Reference Architecture published under GovStack. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
+This is the companion to the video series on building a national Enterprise Architecture anchored on PAERA, the Public Administration Ecosystem Reference Architecture published under GovStack. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
 
 You do not leave with a certificate. You leave with a briefing pack about your own country.
 
 {% hint style="info" %}
-🎬 **Video in production:** *KP1 — Introduction to the knowledge product* (~3 min).
+🎬 **Video in production:** *Introduction to the course* (~3 min).
 The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../start-here/video-index.md).
 {% endhint %}
 
@@ -169,7 +169,7 @@ Time: each subtopic is a four-minute video plus a ten-to-fifteen-minute play. A 
 
 ## Where this sits
 
-KP1 is the first of four ITU/Giga Knowledge Products. KP2 covers the Government Interoperability Framework, KP3 the national DPI roadmap, KP4 building-block services. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md). The underlying method is GEATDM, the Generic EA Target Architecture Development Method; PAERA v1.0 is at [paera.govstack.global](https://paera.govstack.global).
+This course is the first of four ITU/Giga Knowledge Products. [Building a Government Interoperability Framework (GIF)](../kp2/README.md) is the second; a third on the national DPI roadmap and a fourth on building-block services are planned. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md). The underlying method is GEATDM, the Generic EA Target Architecture Development Method; PAERA v1.0 is at [paera.govstack.global](https://paera.govstack.global).
 
 {% hint style="info" %}
 **Use this site from your AI assistant.** Every page is also published as plain Markdown, and the site exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the site and ask it to *run play 1.1 with the following context* — the site becomes the tool's reference, not just yours.

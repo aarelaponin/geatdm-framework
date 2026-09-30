@@ -39,7 +39,7 @@ def deck_sections(path):
     for i, s in enumerate(prs.slides, 1):
         for sh in s.shapes:
             if sh.has_text_frame:
-                m = re.match(r'KP\d · MODULE \d · VIDEO (\d+\.\d+)$', sh.text_frame.text.strip())
+                m = re.match(r'(?:KP\d · )?MODULE \d · VIDEO (\d+\.\d+)$', sh.text_frame.text.strip())
                 if m: cur = m.group(1); secs[cur] = []
         if cur is None: continue
         if s.slide_layout.name.strip().startswith('2_Thank'): break

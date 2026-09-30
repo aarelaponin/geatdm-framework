@@ -92,15 +92,15 @@ def attempt(lang, sub, target, deck):
     """
     rc, out = run(NLM, SKILLS / "kp-notebooklm-audio/scripts/nlm_take.py", lang, sub)
     if rc != 0:
-        return rc, "take failed:\n" + out[-800:]
+        return rc, "take failed:\n" + out[-800:], None, ["take failed"]
     raw = newest(lang / "audio", f"*_{sub}_Audio_v0.*.m4a")
     rc, out = run(KP, SKILLS / "kp-scribe-transcribe/scripts/transcribe.py", raw)
     if rc != 0:
-        return 1, "transcribe failed:\n" + out[-800:]
+        return 1, "transcribe failed:\n" + out[-800:], None, ["transcribe failed"]
     rc, out = run("python3", SKILLS / "kp-slidecast/scripts/trim_outro.py",
                   raw.with_suffix(".srt"), "--deck", deck)
     if rc != 0:
-        return 1, "trim failed:\n" + out[-800:]
+        return 1, "trim failed:\n" + out[-800:], None, ["trim failed"]
     take = newest(lang / "audio", f"*_{sub}_Audio_v0.*.m4a")
     # --deck for the same reason trim_outro takes one: a house term the deck's own copy uses is
     # the deck's vocabulary, not drift. Without it the loop spends tries on "duplicate registries",

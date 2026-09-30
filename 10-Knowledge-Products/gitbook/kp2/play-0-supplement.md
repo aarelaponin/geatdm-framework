@@ -1,11 +1,11 @@
 ---
-description: "Three research prompts that extend the country context pack (A0) with what KP2 needs — how exchange works today, the integration map, and the data-protection law."
+description: "Three research prompts that extend the country context pack (A0) with what this course needs — how exchange works today, the integration map, and the data-protection law."
 icon: magnifying-glass-plus
 ---
 
-# Play 0 supplement for KP2
+# Play 0 supplement
 
-[Play 0](../start-here/play-0.md) builds the seven-section country context pack (**A0**) every play on this site asks you to paste. KP2 reads three things KP1's seven sections do not hold: how cross-agency exchange happens in your country today, the map of exchanges your sector depends on, and the data-protection law a decree must sit inside. These three prompts add sections **§8–§10** to A0. They extend it; they do not replace it. Same rules: public sources only, a URL and a data year on every claim, posts not names, and text in the chat rather than files.
+[Play 0](../start-here/play-0.md) builds the seven-section country context pack (**A0**) every play on this site asks you to paste. This course reads three things the seven sections do not hold: how cross-agency exchange happens in your country today, the map of exchanges your sector depends on, and the data-protection law a decree must sit inside. These three prompts add sections **§8–§10** to A0. They extend it; they do not replace it. Same rules: public sources only, a URL and a data year on every claim, posts not names, and text in the chat rather than files.
 
 {% hint style="warning" %}
 **Verify before you build on it.** These briefs are model research, not your findings. Open the sources on anything you will carry into a decree or a governance document — the legal section above all.

@@ -1,0 +1,240 @@
+1
+00:00:00,150 --> 00:00:05,150
+We're looking at why making complex systems talk to each other is, well, rarely just a tech issue.
+
+2
+00:00:05,830 --> 00:00:08,950
+Right. It's fundamentally a human agreement issue.
+
+3
+00:00:09,330 --> 00:00:14,530
+Exactly. Because when systems don't communicate, data becomes fragmented, siloed, and duplicated.
+
+4
+00:00:15,090 --> 00:00:21,550
+Information has to be constantly rekeyed, which leaves systems locked into one supplier and, you know, costly to change.
+
+5
+00:00:21,910 --> 00:00:24,610
+Yeah, and that's exactly why we need a solid strategy.
+
+6
+00:00:25,090 --> 00:00:30,910
+Right. So today we'll explore what might be the ultimate tool to fix this, the stakeholder map.
+
+7
+00:00:31,170 --> 00:00:36,450
+It really is the ultimate tool. I mean, interoperability is an agreement problem at its core.
+
+8
+00:00:37,230 --> 00:00:40,990
+Uh, like the sources note, "A bus with no members carries nothing."
+
+9
+00:00:41,190 --> 00:00:44,590
+Oh, I love that phrasing. Right. A bus with no members carries nothing.
+
+10
+00:00:44,690 --> 00:00:49,190
+Right. The stakeholder map is that third foundation artifact that, um,
+
+11
+00:00:50,030 --> 00:00:54,530
+it turns a good theoretical design into a reality that actually gets adopted.
+
+12
+00:00:55,050 --> 00:00:57,790
+But wait, that sounds like a massive undertaking.
+
+13
+00:00:57,890 --> 00:01:03,870
+I mean, how do you even know who to put on the bus first without wasting your scarce political capital?
+
+14
+00:01:04,590 --> 00:01:07,790
+Well, you have to sort your agencies into three distinct tiers.
+
+15
+00:01:08,350 --> 00:01:09,450
+Okay, so what's tier one?
+
+16
+00:01:10,050 --> 00:01:13,390
+First you have your champions. They feel the pain of the current system right now.
+
+17
+00:01:14,030 --> 00:01:16,950
+They want the exchange immediately, and they will go first.
+
+18
+00:01:17,670 --> 00:01:20,070
+Got it. So they're highly motivated. And the second tier?
+
+19
+00:01:20,850 --> 00:01:26,610
+Those are your early adopters. They're willing, but, uh, they need to see it actually work before committing their own staff to it.
+
+20
+00:01:27,410 --> 00:01:29,090
+Makes sense. They don't wanna be the guinea pigs.
+
+21
+00:01:29,490 --> 00:01:32,110
+Exactly. And then finally, you have the observers.
+
+22
+00:01:32,950 --> 00:01:36,190
+Let me guess. They are unconvinced and just watching from the sidelines?
+
+23
+00:01:36,710 --> 00:01:42,790
+Yep. Unconvinced, watching closely, and honestly, some are quietly hoping it fails so they don't have to change.
+
+24
+00:01:43,430 --> 00:01:45,330
+Oh, wow. Yeah, I can totally picture that.
+
+25
+00:01:45,430 --> 00:01:48,650
+But wait, let me push back for a second on the actual data exchange.
+
+26
+00:01:49,350 --> 00:01:51,030
+Every exchange involves two parties, right?
+
+27
+00:01:51,570 --> 00:01:57,890
+Correct. So why would the side giving the data bother to participate if it just creates extra work and liability for them?
+
+28
+00:01:58,470 --> 00:02:01,469
+Ah, and that is the exact twist that makes this unique.
+
+29
+00:02:02,290 --> 00:02:04,230
+Every exchange has a consumer-
+
+30
+00:02:04,710 --> 00:02:07,090
+The one who wants the data because it makes their service easier...
+
+31
+00:02:07,330 --> 00:02:09,550
+exactly, but it also has a provider,
+
+32
+00:02:10,250 --> 00:02:15,810
+and the provider carries the system load, the cost, and the risk of blame if the data's wrong.
+
+33
+00:02:16,670 --> 00:02:17,530
+Oh, I see.
+
+34
+00:02:18,210 --> 00:02:23,150
+So if a provider sees only cost and no benefit- Adoption stalls... completely.
+
+35
+00:02:23,450 --> 00:02:24,590
+Completely. Right.
+
+36
+00:02:25,370 --> 00:02:30,310
+So how do we logically sequence this rollout to guarantee success and, you know, build momentum?
+
+37
+00:02:30,850 --> 00:02:31,770
+You have to start small.
+
+38
+00:02:32,490 --> 00:02:35,890
+First, pair a champion consumer with a willing provider.
+
+39
+00:02:36,390 --> 00:02:36,890
+Just those two?
+
+40
+00:02:37,210 --> 00:02:37,770
+Just those two.
+
+41
+00:02:38,390 --> 00:02:43,550
+You use that initial working exchange to prove the once only principle to the early adopters.
+
+42
+00:02:44,030 --> 00:02:48,990
+And the once only principle, that's the idea that someone only has to give their info to the government one time, right?
+
+43
+00:02:49,290 --> 00:02:54,250
+Exactly. So you bring the observers along using hard evidence of a working exchange
+
+44
+00:02:55,030 --> 00:02:57,990
+rather than, you know, just arguing in strategy meetings.
+
+45
+00:02:58,490 --> 00:03:00,410
+Because evidence is much harder to ignore.
+
+46
+00:03:01,230 --> 00:03:01,410
+Right.
+
+47
+00:03:02,210 --> 00:03:03,630
+But here is a crucial step.
+
+48
+00:03:04,330 --> 00:03:06,690
+You have to lock in the champions in writing.
+
+49
+00:03:07,290 --> 00:03:10,370
+Wait, really? Like a formal signature. Yes.
+
+50
+00:03:10,830 --> 00:03:15,930
+You host a one-day workshop ending with a signed commitment letter and a named focal point.
+
+51
+00:03:16,810 --> 00:03:19,650
+Programs that skip the signature, they just stall quickly.
+
+52
+00:03:20,070 --> 00:03:22,090
+Wow, so you need that real accountability.
+
+53
+00:03:22,470 --> 00:03:23,050
+Absolutely.
+
+54
+00:03:23,690 --> 00:03:28,930
+And finally, you establish a governing body to own the framework, admit members, and resolve disputes.
+
+55
+00:03:29,610 --> 00:03:30,730
+Because without an owner...
+
+56
+00:03:31,570 --> 00:03:33,630
+The platform will decay in its second year.
+
+57
+00:03:33,890 --> 00:03:34,090
+Right.
+
+58
+00:03:34,930 --> 00:03:40,230
+So the big takeaway here is that stakeholder mapping deliberately solves the agreement problem.
+
+59
+00:03:40,770 --> 00:03:46,470
+It shows you exactly who to onboard first, who to convince with evidence, and where you need leadership to lean in.
+
+60
+00:03:46,830 --> 00:03:50,050
+It really is the blueprint for actually getting things done.
+

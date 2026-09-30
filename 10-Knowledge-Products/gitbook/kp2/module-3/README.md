@@ -6,7 +6,7 @@ icon: flag-checkered
 # Module 3 — Governance model — three tiers with RACI
 
 {% hint style="info" %}
-🎬 **Video in production:** *KP2 Module 3 — Governance model — three tiers with RACI* (~2 min).
+🎬 **Video in production:** *Module 3 — Governance model — three tiers with RACI* (~2 min).
 The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../../start-here/video-index.md).
 {% endhint %}
 
@@ -35,7 +35,7 @@ Six videos on the organisational layer: naming the owner before the first member
 
 ```mermaid
 flowchart TD
-    A0["A0 Country context pack\n(Play 0 + KP2 supplement)"]
+    A0["A0 Country context pack\n(Play 0 + supplement)"]
     B14["B14 Owner's mandate, regulator and operator split\n(3.1)"]
     B15["B15 Three-tier governance structure\n(3.2)"]
     B16["B16 Governance RACI\n(3.3)"]
@@ -63,7 +63,7 @@ flowchart TD
 The full chain, including where these artefacts come from and go next, is on [Your framework workbook](../your-framework-workbook.md).
 
 {% hint style="info" %}
-**Before you start.** Every play asks you to paste country context. Build it once with [Play 0](../../start-here/play-0.md) — that is **A0** — and add the three KP2 sections from the [Play 0 supplement](../play-0-supplement.md). No country to hand? Run them on [Progressa](../../start-here/progressa.md), the fictional demonstration country; for Modules 4 and 5 the [build pack](../build-pack/README.md) is Progressa's finished output.
+**Before you start.** Every play asks you to paste country context. Build it once with [Play 0](../../start-here/play-0.md) — that is **A0** — and add the three interoperability sections from the [Play 0 supplement](../play-0-supplement.md). No country to hand? Run them on [Progressa](../../start-here/progressa.md), the fictional demonstration country; for Modules 4 and 5 the [build pack](../build-pack/README.md) is Progressa's finished output.
 {% endhint %}
 
 {% hint style="info" %}

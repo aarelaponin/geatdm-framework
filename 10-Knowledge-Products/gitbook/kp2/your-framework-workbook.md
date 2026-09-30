@@ -1,11 +1,11 @@
 ---
-description: "The artefacts the KP2 plays produce, grouped by configuration layer — run the five modules and you hold your own framework's legal, organisational and technical configuration."
+description: "The artefacts the plays in this course produce, grouped by configuration layer — run the five modules and you hold your own framework's legal, organisational and technical configuration."
 icon: book-open
 ---
 
 # Your framework workbook
 
-Each play produces one artefact. Run them in order and the artefacts feed each other. KP2's artefacts are not briefing documents, as KP1's were; they are the **configuration of your framework** — the decree is the legal configuration, the Governance Pack the organisational, the semantic map and service contracts the technical — and Module 5 stands them up as one running solution. This page is the map. If you have no country to hand, use Progressa: the [build pack](build-pack/README.md) is Progressa's finished configuration, and the worked examples on each play page show what each artefact looks like.
+Each play produces one artefact. Run them in order and the artefacts feed each other. These artefacts are not briefing documents, as those of *Developing a Gov Enterprise Architecture (GEA)* were; they are the **configuration of your framework** — the decree is the legal configuration, the Governance Pack the organisational, the semantic map and service contracts the technical — and Module 5 stands them up as one running solution. This page is the map. If you have no country to hand, use Progressa: the [build pack](build-pack/README.md) is Progressa's finished configuration, and the worked examples on each play page show what each artefact looks like.
 
 {% hint style="info" %}
 Keep the artefacts in one folder, named as below. The **Consumes** and **Feeds** columns are the chain: every play names what it reads and what reads it, so you can start anywhere and see what you need first.
@@ -16,13 +16,13 @@ Keep the artefacts in one folder, named as below. The **Consumes** and **Feeds**
 | Artefact | What it is | Produced by | Feeds |
 | --- | --- | --- | --- |
 | **A0 §1–§7** | Country context pack — landscape brief, programme list, ministry context, roles register, characteristics, sector bodies, legal list | [Play 0](../start-here/play-0.md) 🔍 | the whole chain below |
-| **A0 §8–§10** | The KP2 supplement — the current exchange approach, the integration map, the data-protection law and DPA | [Play 0 supplement](play-0-supplement.md) 🔍 | 1.1, 1.2, 1.3, 1.5, 2.1, 4.8 |
+| **A0 §8–§10** | The Play 0 supplement — the current exchange approach, the integration map, the data-protection law and DPA | [Play 0 supplement](play-0-supplement.md) 🔍 | 1.1, 1.2, 1.3, 1.5, 2.1, 4.8 |
 
-## Hand-offs from KP1
+## Hand-offs from Developing a Gov Enterprise Architecture (GEA)
 
-If you ran KP1, three of its artefacts enter the chain here; if not, the plays named build the equivalent.
+If you ran [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md), three of its artefacts enter the chain here; if not, the plays named build the equivalent.
 
-| KP1 artefact | Enters KP2 at | If you do not have it |
+| GEA artefact | Enters this course at | If you do not have it |
 | --- | --- | --- |
 | **A0** country context pack | [1.1](module-1/1-1.md), [1.5](module-1/1-5.md), [1.6](module-1/1-6.md) | run [Play 0](../start-here/play-0.md) and the [supplement](play-0-supplement.md) |
 | **A7** Governance Board terms of reference | [3.1](module-3/3-1.md) — the Operating Authority | 3.1 drafts the mandate from A0 §6 |
@@ -39,10 +39,10 @@ flowchart LR
     O --> R
     T --> R
     R --> OPS["Module 5\nB35–B37 operate and extend"]
-    R --> SB["B38 the storyboard\n(KP2 home)"]
+    R --> SB["B38 the storyboard\n(course home)"]
 ```
 
-## Every artefact in KP2
+## Every artefact in this course
 
 ### Module 1 — Why interoperability and the four layers
 
@@ -120,7 +120,7 @@ flowchart LR
 
 | Artefact | What it is | Produced by | Consumes | Feeds |
 | --- | --- | --- | --- | --- |
-| **B38** | Country storyboard — a minister-ready narrative of your country's path to its first once-only service | [KP2 home](README.md#from-no-framework-to-first-service-the-storyboard) ✍️ | B5, B28 | — |
+| **B38** | Country storyboard — a minister-ready narrative of your country's path to its first once-only service | [Course home](README.md#from-no-framework-to-first-service-the-storyboard) ✍️ | B5, B28 | — |
 
 ## What the pack contains when you are done
 
@@ -131,6 +131,6 @@ flowchart LR
 5. **The runnable slice:** B28 the phased plan, the member artefacts B29–B31, B32 the run book, and B33 the once-only acceptance script that proves all four layers in one call.
 6. **The framework in operation:** B34 the production gap, B35 the bus watched from its logs, B36 the three documents kept honest, B37 the map to the next sector.
 
-## Where the chain goes after KP2
+## Where the chain goes next
 
-KP3 (the national DPI roadmap) reads the framework this workbook describes as one of the shared platforms a country sequences; KP4 (building-block services) puts services on the bus KP2 stood up. Those pages are added as each Knowledge Product is published.
+The planned course on the national DPI roadmap reads the framework this workbook describes as one of the shared platforms a country sequences; the one on building-block services puts services on the bus this course stood up. Those pages are added as each Knowledge Product is published.

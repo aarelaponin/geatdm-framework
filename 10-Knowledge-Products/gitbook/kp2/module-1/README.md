@@ -6,7 +6,7 @@ icon: flag-checkered
 # Module 1 — Why interoperability and the four layers
 
 {% hint style="info" %}
-🎬 **Video in production:** *KP2 Module 1 — Why interoperability and the four layers* (~2 min).
+🎬 **Video in production:** *Module 1 — Why interoperability and the four layers* (~2 min).
 The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../../start-here/video-index.md).
 {% endhint %}
 
@@ -36,7 +36,7 @@ Seven videos for the Strategist making the case: why interoperability is built r
 
 ```mermaid
 flowchart TD
-    A0["A0 Country context pack\n(Play 0 + KP2 supplement)"]
+    A0["A0 Country context pack\n(Play 0 + supplement)"]
     B1["B1 Procured-vs-planned diagnostic\n(1.1)"]
     B2["B2 Four-layer exchange map\n(1.2)"]
     B3["B3 Highest-value once-only exchange\n(1.3)"]
@@ -48,7 +48,7 @@ flowchart TD
     M3out["Module 3"]
     M4out["Module 4"]
     M5out["Module 5"]
-    HOME["The country storyboard\n(KP2 home)"]
+    HOME["The country storyboard\n(course home)"]
     A0 --> B1
     B1 --> B4
     A0 --> B2
@@ -74,7 +74,7 @@ flowchart TD
 The full chain, including where these artefacts come from and go next, is on [Your framework workbook](../your-framework-workbook.md).
 
 {% hint style="info" %}
-**Before you start.** Every play asks you to paste country context. Build it once with [Play 0](../../start-here/play-0.md) — that is **A0** — and add the three KP2 sections from the [Play 0 supplement](../play-0-supplement.md). No country to hand? Run them on [Progressa](../../start-here/progressa.md), the fictional demonstration country; for Modules 4 and 5 the [build pack](../build-pack/README.md) is Progressa's finished output.
+**Before you start.** Every play asks you to paste country context. Build it once with [Play 0](../../start-here/play-0.md) — that is **A0** — and add the three interoperability sections from the [Play 0 supplement](../play-0-supplement.md). No country to hand? Run them on [Progressa](../../start-here/progressa.md), the fictional demonstration country; for Modules 4 and 5 the [build pack](../build-pack/README.md) is Progressa's finished output.
 {% endhint %}
 
 {% hint style="info" %}

@@ -110,7 +110,7 @@ INTERNAL = [
     (r"standards portfolio \((?:Topic|Module) 4\)", "module-4/4-3.md"),
     (r"the four-phase plan \((?:Topic|Module) 5\)", "module-5/5-1.md"),
     (r"kp-solution-verify|build-pack acceptance check", "build-pack/acceptance.md"),
-    (r"Linkup federation", "build-pack/run.md"),
+    (r"Linkup (demonstration )?federation", "build-pack/run.md"),
     (r"(?:ToR|Terms of Reference) §4\.\d", "README.md"),
     (r"KP2 deliverables|deliverables of this knowledge product|KP2 method end-to-end|KP2 AI plays", "README.md"),
     (r"Knowledge Products and Video Materials Guide", "README.md"),
@@ -366,7 +366,7 @@ def expand_a0(ref):
 def source_of(p, up="../"):
     ref = p.get("input_ref", "")
     if "A0" in ref and any(x in ref for x in ("§8", "§9", "§10")):
-        return f"see [Play 0](../{up}start-here/play-0.md) and the [KP2 supplement]({up}play-0-supplement.md)"
+        return f"see [Play 0](../{up}start-here/play-0.md) and the [Play 0 supplement]({up}play-0-supplement.md)"
     if "A0" in ref:
         return f"see [Play 0](../{up}start-here/play-0.md)"
     return f"see [Your framework workbook]({up}your-framework-workbook.md)"
@@ -414,7 +414,7 @@ def feeds_text(p, mod):
             out.append(f'[the country storyboard]({page_path(f, mod)})')
         else:
             out.append(f'[{f} {ALL[f][1]["play"]["title"]}]({page_path(f, mod)})')
-    return ", ".join(out) or "nothing further in KP2; this artefact is where the chain ends"
+    return ", ".join(out) or "nothing further in this course; this artefact is where the chain ends"
 
 
 def derived_what_next(p):
@@ -440,7 +440,7 @@ def example_tabs(p, pack_note=""):
 {{% hint style="warning" %}}
 **Worked example pending.** The prompt above is final and runs today. The Progressa worked
 example, the annotated reading and the what-next notes are added when this module's examples
-are run (KP1 Module 1 shows the shape).
+are run (Module 1 of *Developing a Gov Enterprise Architecture (GEA)* shows the shape).
 {{% endhint %}}
 {pack_note}
 Run the play on [Progressa](../../start-here/progressa.md) yourself in the meantime: paste the
@@ -498,7 +498,7 @@ def pack_note(sid):
         return ""
     files = ", ".join(f"`{f}`" for f in PACK_FILES[sid])
     return (f'\n{{% hint style="info" %}}\n**In the build pack.** The Progressa version of this artefact is a real file, not a pasted draft: '
-            f'{files} in `KP2-build-pack/` — see [What the build pack is](../build-pack/README.md).\n{{% endhint %}}\n')
+            f'{files} — see [What the build pack is](../build-pack/README.md).\n{{% endhint %}}\n')
 
 
 def render_subtopic(s, mod):
@@ -518,7 +518,7 @@ description: "{desc(s["message"])}"
 | | |
 | --- | --- |
 | **Persona** | {s["persona"]} |
-| **Anchor** | {s["paera"]} |
+| **Anchor** | {s["paera"].replace("The KP2 deliverables", "This course's deliverables")} |
 | **Your play** | {emoji} {p["title"]} · *{kind}* · produces workbook artefact **{p["artefact"].split(" — ")[0]}** |{tor}
 
 ## The concept
@@ -589,9 +589,9 @@ def module_chain(subs, mod):
                 extra.append(f'    M{n}out["Module {n}"]')
                 edges.append(f'    {mermaid_id(a[0])} --> M{n}out')
             elif f == "home":
-                extra.append('    HOME["The country storyboard\\n(KP2 home)"]')
+                extra.append('    HOME["The country storyboard\\n(course home)"]')
                 edges.append(f'    {mermaid_id(a[0])} --> HOME')
-    head = ['    A0["A0 Country context pack\\n(Play 0 + KP2 supplement)"]'] if any("A0 -->" in e for e in edges) else []
+    head = ['    A0["A0 Country context pack\\n(Play 0 + supplement)"]'] if any("A0 -->" in e for e in edges) else []
     body = head + nodes + list(dict.fromkeys(extra)) + list(dict.fromkeys(edges))
     return "```mermaid\nflowchart TD\n" + "\n".join(body) + "\n```"
 
@@ -611,8 +611,8 @@ def m5_note(mod):
     if mod != 5:
         return ""
     return ('{% hint style="info" %}\n**Why ten videos.** 5.8–5.10 were Module 6 in the v0.1 bundles. Module 6 was retired on 12 September 2026 '
-            '(as KP1 retired its AI-plays module on 3 September): its catalogue, role-paths and storyboard repeated the earlier modules and now live on the '
-            '[KP2 home page](../README.md); its three genuinely new plays — watching the bus, cross-checking the framework\'s documents, carrying it to the next sector — '
+            '(as *Developing a Gov Enterprise Architecture (GEA)* retired its AI-plays module on 3 September): its catalogue, role-paths and storyboard repeated the earlier modules and now live on the '
+            '[course home page](../README.md); its three genuinely new plays — watching the bus, cross-checking the framework\'s documents, carrying it to the next sector — '
             'are the last three videos here. 5.9 and 5.10 return to the Strategist; every video states its persona and stands alone.\n{% endhint %}\n')
 
 
@@ -630,7 +630,7 @@ icon: flag-checkered
 
 # Module {mod} — {M["title"]}
 
-{video_block(None, title=f'KP2 Module {mod} — {M["title"]}', runtime="~2 min")}
+{video_block(None, title=f'Module {mod} — {M["title"]}', runtime="~2 min")}
 
 {module_status_hint(mod)}{m5_note(mod)}
 **Persona:** {M["persona"]}.
@@ -652,7 +652,7 @@ icon: flag-checkered
 The full chain, including where these artefacts come from and go next, is on [Your framework workbook](../your-framework-workbook.md).
 
 {{% hint style="info" %}}
-**Before you start.** Every play asks you to paste country context. Build it once with [Play 0](../../start-here/play-0.md) — that is **A0** — and add the three KP2 sections from the [Play 0 supplement](../play-0-supplement.md). No country to hand? Run them on [Progressa](../../start-here/progressa.md), the fictional demonstration country; for Modules 4 and 5 the [build pack](../build-pack/README.md) is Progressa's finished output.
+**Before you start.** Every play asks you to paste country context. Build it once with [Play 0](../../start-here/play-0.md) — that is **A0** — and add the three interoperability sections from the [Play 0 supplement](../play-0-supplement.md). No country to hand? Run them on [Progressa](../../start-here/progressa.md), the fictional demonstration country; for Modules 4 and 5 the [build pack](../build-pack/README.md) is Progressa's finished output.
 {{% endhint %}}
 
 {{% hint style="info" %}}
@@ -804,19 +804,19 @@ def render_home():
         f'{len(MODS[n][1])} | {len(MODS[n][1])} plays | ' + (f'{STATUS_LABEL[STATUS[n]]} |' if n in PUBLISHED else 'In production |')
         for n in sorted(MODS))
     return f'''---
-description: "Companion site to the ITU/Giga Knowledge Product 2 video series — the concepts, the AI plays, the worked example and the runnable build pack, in one place."
+description: "Companion site to the ITU/Giga *Building a Government Interoperability Framework (GIF)* video series — the concepts, the AI plays, the worked example and the runnable build pack, in one place."
 icon: house
 ---
 
 # Building a Government Interoperability Framework (GIF)
 
-**ITU/Giga Knowledge Product 2** · {TOTAL_VIDEOS} videos in five modules · about {TOTAL_MIN} minutes of video · {TOTAL_PLAYS} AI plays · a runnable build pack · self-paced · free and open
+**ITU/Giga Knowledge Product** · {TOTAL_VIDEOS} videos in five modules · about {TOTAL_MIN} minutes of video · {TOTAL_PLAYS} AI plays · a runnable build pack · self-paced · free and open
 
-This is the companion to the **Knowledge Product 2** video series on building a Government Interoperability Framework — the legal, organisational and technical configuration that lets public bodies exchange data so that a citizen is asked once. Where [KP1](../kp1/README.md) taught how to *plan* an Enterprise Architecture, KP2 teaches how to *build* the interoperability layer over that plan. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
+This is the companion to the video series on building a Government Interoperability Framework — the legal, organisational and technical configuration that lets public bodies exchange data so that a citizen is asked once. Where [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) taught how to *plan* an Enterprise Architecture, this course teaches how to *build* the interoperability layer over that plan. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
 
-KP2 ships two things. The videos and plays, which teach the build. And the [**build pack**](build-pack/README.md), which *is* the ready solution: a real once-only exchange running on an X-Road federation across Progressa's institutions — the decree, the Governance Pack, the semantic map and contracts, the member registrations, and the acceptance check that proves it. Run the plays and you leave with your own country's configuration; run the pack and you see the finished one.
+This course ships two things. The videos and plays, which teach the build. And the [**build pack**](build-pack/README.md), which *is* the ready solution: a real once-only exchange running on an X-Road federation across Progressa's institutions — the decree, the Governance Pack, the semantic map and contracts, the member registrations, and the acceptance check that proves it. Run the plays and you leave with your own country's configuration; run the pack and you see the finished one.
 
-{video_block(None, title="KP2 — Introduction to the knowledge product: the storyboard", runtime="~4 min", up="../")}
+{video_block(None, title="Introduction to the course: the storyboard", runtime="~4 min", up="../")}
 
 ## Outline
 
@@ -876,15 +876,15 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 ## Prerequisites
 
-**KP1 is the natural starting point but not a prerequisite.** Three KP1 artefacts hand off into KP2 — the Governance Board terms of reference (A7) into the Operating Authority (3.1), the sourcing matrix (A24) into the standards portfolio (4.3), and the country context pack (A0) into Module 1. If you have none of them, Module 1 and the [Play 0 supplement](play-0-supplement.md) build what KP2 needs on their own.
+**[Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) is the natural starting point but not a prerequisite.** Three of its artefacts hand off into this course — the Governance Board terms of reference (A7) into the Operating Authority (3.1), the sourcing matrix (A24) into the standards portfolio (4.3), and the country context pack (A0) into Module 1. If you have none of them, Module 1 and the [Play 0 supplement](play-0-supplement.md) build what this course needs on their own.
 
 **What you do need:**
 
 | | |
 | --- | --- |
 | **A real subject** | A sector, an exchange, or a pair of agencies you can describe in a few paragraphs. The plays act on your context, not on a case study. No subject to hand? Run everything on [Progressa](../start-here/progressa.md) instead. |
-| **Enough access to describe it** | You should be able to name your country's main registers, the bodies that hold them, the exchanges that exist today and the law they sit under — or spend an afternoon on [Play 0](../start-here/play-0.md) and its [KP2 supplement](play-0-supplement.md) building that picture from public sources. |
-| **An AI assistant** | Any general assistant — Claude, ChatGPT, Gemini. A free account is enough. Nothing to install; the [ea-plays kit](../start-here/ea-plays-kit.md) is optional and only sharpens some of the plays for Claude users. Eight of its skills are KP2's own, named `gif-*` in the **With the kit** line of each play; source at [github.com/alaponin/ea-plays-kit](https://github.com/alaponin/ea-plays-kit). |
+| **Enough access to describe it** | You should be able to name your country's main registers, the bodies that hold them, the exchanges that exist today and the law they sit under — or spend an afternoon on [Play 0](../start-here/play-0.md) and its [supplement](play-0-supplement.md) building that picture from public sources. |
+| **An AI assistant** | Any general assistant — Claude, ChatGPT, Gemini. A free account is enough. Nothing to install; the [ea-plays kit](../start-here/ea-plays-kit.md) is optional and only sharpens some of the plays for Claude users. Eight of its skills are this course's own, named `gif-*` in the **With the kit** line of each play; source at [github.com/alaponin/ea-plays-kit](https://github.com/alaponin/ea-plays-kit). |
 | **A machine, for the build pack only** | Modules 1–3 write no code. The build pack needs Docker and about 11 GiB of RAM; the [Run it](build-pack/run.md) page says exactly what. You can complete every play without running it. |
 | **{READ_ONCE.capitalize()}, once** | The first three pages of [Start here](../start-here/README.md) cover how the plays work and the ground rules for using an assistant on government material. Read them before your first play. |
 
@@ -899,9 +899,9 @@ Time: each subtopic is a four-to-five-minute video plus a ten-to-twenty-five-min
 
 ## Where this sits
 
-KP2 is the second of four ITU/Giga Knowledge Products. [KP1](../kp1/README.md) covers the Government Enterprise Architecture, KP3 the national DPI roadmap, KP4 building-block services. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md).
+This course is the second of four ITU/Giga Knowledge Products. The first is [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md); a third on the national DPI roadmap and a fourth on building-block services are planned. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md).
 
-**What KP2 is the companion to.** Behind the videos sits a five-piece interoperability toolkit, each piece at a different altitude: a **Reference Model** (what a framework is — the four interoperability layers and the four functional layers), an eight-step **Method** (how to develop one; Modules 1–5 follow its steps), a **Toolkit** of fourteen templates (the artefacts the plays draft — the Strategic Foundation Document, the Use-Case Catalogue, the Decree Drafting Kit, the Governance Model, the standards catalogue, Member Requirements, the SLA, the onboarding workflow, the conformance test plan, the risk register, the success metrics), a **Reference Architecture** (the enforceable target design and its rules, on five layers — the four plus infrastructure — with governance and legal cross-cutting), and an **RA-to-RFP path** that turns the reference architecture plus a country's own enterprise architecture into an issuable tender. The videos teach the first three and point at the last two: a framework is planned first, and then procurement is how it is enforced. The four-layer interoperability model — Technical, Semantic, Organisational, Legal — is the EU European Interoperability Framework's and the NIIS X-Road documentation's; PAERA v1.0 ([paera.govstack.global](https://paera.govstack.global)) anchors the interoperability framing (§3.4.3), the Once-Only principle (§5.2), the legal layer (§3.2) and the governance setup (§3.1.3).
+**What this course is the companion to.** Behind the videos sits a five-piece interoperability toolkit, each piece at a different altitude: a **Reference Model** (what a framework is — the four interoperability layers and the four functional layers), an eight-step **Method** (how to develop one; Modules 1–5 follow its steps), a **Toolkit** of fourteen templates (the artefacts the plays draft — the Strategic Foundation Document, the Use-Case Catalogue, the Decree Drafting Kit, the Governance Model, the standards catalogue, Member Requirements, the SLA, the onboarding workflow, the conformance test plan, the risk register, the success metrics), a **Reference Architecture** (the enforceable target design and its rules, on five layers — the four plus infrastructure — with governance and legal cross-cutting), and an **RA-to-RFP path** that turns the reference architecture plus a country's own enterprise architecture into an issuable tender. The videos teach the first three and point at the last two: a framework is planned first, and then procurement is how it is enforced. The four-layer interoperability model — Technical, Semantic, Organisational, Legal — is the EU European Interoperability Framework's and the NIIS X-Road documentation's; PAERA v1.0 ([paera.govstack.global](https://paera.govstack.global)) anchors the interoperability framing (§3.4.3), the Once-Only principle (§5.2), the legal layer (§3.2) and the governance setup (§3.1.3).
 
 {{% hint style="info" %}}
 **Use this site from your AI assistant.** Every page is also published as plain Markdown, and the site exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the site and ask it to *run play 2.3 with the following context* — the site becomes the tool's reference, not just yours.
@@ -925,13 +925,13 @@ def render_workbook():
         for n in sorted(MODS))
     sb = PLAY_MAP["home"]
     return f'''---
-description: "The artefacts the KP2 plays produce, grouped by configuration layer — run the five modules and you hold your own framework's legal, organisational and technical configuration."
+description: "The artefacts the plays in this course produce, grouped by configuration layer — run the five modules and you hold your own framework's legal, organisational and technical configuration."
 icon: book-open
 ---
 
 # Your framework workbook
 
-Each play produces one artefact. Run them in order and the artefacts feed each other. KP2's artefacts are not briefing documents, as KP1's were; they are the **configuration of your framework** — the decree is the legal configuration, the Governance Pack the organisational, the semantic map and service contracts the technical — and Module 5 stands them up as one running solution. This page is the map. If you have no country to hand, use Progressa: the [build pack](build-pack/README.md) is Progressa's finished configuration, and the worked examples on each play page show what each artefact looks like.
+Each play produces one artefact. Run them in order and the artefacts feed each other. These artefacts are not briefing documents, as those of *Developing a Gov Enterprise Architecture (GEA)* were; they are the **configuration of your framework** — the decree is the legal configuration, the Governance Pack the organisational, the semantic map and service contracts the technical — and Module 5 stands them up as one running solution. This page is the map. If you have no country to hand, use Progressa: the [build pack](build-pack/README.md) is Progressa's finished configuration, and the worked examples on each play page show what each artefact looks like.
 
 {{% hint style="info" %}}
 Keep the artefacts in one folder, named as below. The **Consumes** and **Feeds** columns are the chain: every play names what it reads and what reads it, so you can start anywhere and see what you need first.
@@ -942,13 +942,13 @@ Keep the artefacts in one folder, named as below. The **Consumes** and **Feeds**
 | Artefact | What it is | Produced by | Feeds |
 | --- | --- | --- | --- |
 | **A0 §1–§7** | Country context pack — landscape brief, programme list, ministry context, roles register, characteristics, sector bodies, legal list | [Play 0](../start-here/play-0.md) 🔍 | the whole chain below |
-| **A0 §8–§10** | The KP2 supplement — the current exchange approach, the integration map, the data-protection law and DPA | [Play 0 supplement](play-0-supplement.md) 🔍 | 1.1, 1.2, 1.3, 1.5, 2.1, 4.8 |
+| **A0 §8–§10** | The Play 0 supplement — the current exchange approach, the integration map, the data-protection law and DPA | [Play 0 supplement](play-0-supplement.md) 🔍 | 1.1, 1.2, 1.3, 1.5, 2.1, 4.8 |
 
-## Hand-offs from KP1
+## Hand-offs from Developing a Gov Enterprise Architecture (GEA)
 
-If you ran KP1, three of its artefacts enter the chain here; if not, the plays named build the equivalent.
+If you ran [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md), three of its artefacts enter the chain here; if not, the plays named build the equivalent.
 
-| KP1 artefact | Enters KP2 at | If you do not have it |
+| GEA artefact | Enters this course at | If you do not have it |
 | --- | --- | --- |
 | **A0** country context pack | [1.1](module-1/1-1.md), [1.5](module-1/1-5.md), [1.6](module-1/1-6.md) | run [Play 0](../start-here/play-0.md) and the [supplement](play-0-supplement.md) |
 | **A7** Governance Board terms of reference | [3.1](module-3/3-1.md) — the Operating Authority | 3.1 drafts the mandate from A0 §6 |
@@ -965,10 +965,10 @@ flowchart LR
     O --> R
     T --> R
     R --> OPS["Module 5\\nB35–B37 operate and extend"]
-    R --> SB["B38 the storyboard\\n(KP2 home)"]
+    R --> SB["B38 the storyboard\\n(course home)"]
 ```
 
-## Every artefact in KP2
+## Every artefact in this course
 
 {tables}
 
@@ -976,7 +976,7 @@ flowchart LR
 
 | Artefact | What it is | Produced by | Consumes | Feeds |
 | --- | --- | --- | --- | --- |
-| **{sb["artefact"].split(" — ")[0]}** | {sb["artefact"].split(" — ")[1]} — a minister-ready narrative of your country's path to its first once-only service | [KP2 home](README.md#from-no-framework-to-first-service-the-storyboard) ✍️ | {sb["consumes"]} | — |
+| **{sb["artefact"].split(" — ")[0]}** | {sb["artefact"].split(" — ")[1]} — a minister-ready narrative of your country's path to its first once-only service | [Course home](README.md#from-no-framework-to-first-service-the-storyboard) ✍️ | {sb["consumes"]} | — |
 
 ## What the pack contains when you are done
 
@@ -987,9 +987,9 @@ flowchart LR
 5. **The runnable slice:** B28 the phased plan, the member artefacts B29–B31, B32 the run book, and B33 the once-only acceptance script that proves all four layers in one call.
 6. **The framework in operation:** B34 the production gap, B35 the bus watched from its logs, B36 the three documents kept honest, B37 the map to the next sector.
 
-## Where the chain goes after KP2
+## Where the chain goes next
 
-KP3 (the national DPI roadmap) reads the framework this workbook describes as one of the shared platforms a country sequences; KP4 (building-block services) puts services on the bus KP2 stood up. Those pages are added as each Knowledge Product is published.
+The planned course on the national DPI roadmap reads the framework this workbook describes as one of the shared platforms a country sequences; the one on building-block services puts services on the bus this course stood up. Those pages are added as each Knowledge Product is published.
 '''
 
 
@@ -1010,13 +1010,13 @@ def render_supplement():
 
 **You get:** {x["output"]}''')
     return f'''---
-description: "Three research prompts that extend the country context pack (A0) with what KP2 needs — how exchange works today, the integration map, and the data-protection law."
+description: "Three research prompts that extend the country context pack (A0) with what this course needs — how exchange works today, the integration map, and the data-protection law."
 icon: magnifying-glass-plus
 ---
 
-# Play 0 supplement for KP2
+# Play 0 supplement
 
-[Play 0](../start-here/play-0.md) builds the seven-section country context pack (**A0**) every play on this site asks you to paste. KP2 reads three things KP1's seven sections do not hold: how cross-agency exchange happens in your country today, the map of exchanges your sector depends on, and the data-protection law a decree must sit inside. These three prompts add sections **§8–§10** to A0. They extend it; they do not replace it. Same rules: public sources only, a URL and a data year on every claim, posts not names, and text in the chat rather than files.
+[Play 0](../start-here/play-0.md) builds the seven-section country context pack (**A0**) every play on this site asks you to paste. This course reads three things the seven sections do not hold: how cross-agency exchange happens in your country today, the map of exchanges your sector depends on, and the data-protection law a decree must sit inside. These three prompts add sections **§8–§10** to A0. They extend it; they do not replace it. Same rules: public sources only, a URL and a data year on every claim, posts not names, and text in the chat rather than files.
 
 {{% hint style="warning" %}}
 **Verify before you build on it.** These briefs are model research, not your findings. Open the sources on anything you will carry into a decree or a governance document — the legal section above all.
@@ -1051,13 +1051,13 @@ icon: {icon}
 
 
 BUILD_PACK_INDEX = '''---
-description: "The runnable companion to the KP2 videos — the configuration the modules generate, the prompts that generate it, the scripts that deploy it, and the acceptance checks that prove it."
+description: "The runnable companion to the videos — the configuration the modules generate, the prompts that generate it, the scripts that deploy it, and the acceptance checks that prove it."
 icon: toolbox
 ---
 
 # The build pack
 
-KP2 is an implementation Knowledge Product, and this is the half that runs. The build pack stands up a real once-only exchange on an X-Road federation across Progressa's institutions: the National Examination Authority (PNEA) issues a credential and pre-fills identity from the National ID Authority (PNIA) and enrolment from the Learner Registry (PLR) — a learner asked once, over a real cross-server call, with the unauthorised caller denied. It is the Progressa "example output" of Modules 4 and 5: where a play page's worked example would be a pasted draft, here it is a file in the pack.
+This is an implementation Knowledge Product, and this is the half that runs. The build pack stands up a real once-only exchange on an X-Road federation across Progressa's institutions: the National Examination Authority (PNEA) issues a credential and pre-fills identity from the National ID Authority (PNIA) and enrolment from the Learner Registry (PLR) — a learner asked once, over a real cross-server call, with the unauthorised caller denied. It is the Progressa "example output" of Modules 4 and 5: where a play page's worked example would be a pasted draft, here it is a file in the pack.
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
 <tr><td><strong>🧰 What the build pack is</strong></td><td>The manifest, the three configuration layers, the requirements, and what the pack proves.</td><td><a href="what-it-is.md">what-it-is</a></td></tr>
@@ -1100,7 +1100,7 @@ add("kp2-build-pack-acceptance", "Acceptance — the once-only proof", "kp2/buil
 add("kp2-build-pack-exercises", "Exercises", "kp2/build-pack/exercises.md",
     pack_doc("exercises.md", "Exercises", "Break and restore the proof, join a member, detect contract drift, un-join, and watch the reproducibility proof.", "flask"), parent="kp2-build-pack")
 add("kp2-workbook", "Your framework workbook", "kp2/your-framework-workbook.md", render_workbook(), parent="kp2")
-add("kp2-play-0-supplement", "Play 0 supplement for KP2", "kp2/play-0-supplement.md", render_supplement(), parent="kp2")
+add("kp2-play-0-supplement", "Play 0 supplement", "kp2/play-0-supplement.md", render_supplement(), parent="kp2")
 
 # A render must not cost the manifest its page ids: publishing stamps gitbook_id, and
 # linkify needs it to resolve a same-space link. Carry it over by ref.

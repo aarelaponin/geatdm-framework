@@ -35,6 +35,11 @@ for f in pages:
         if bad in t:
             add(f, f"forbidden string {bad!r} ({why})")
 
+    # learners never meet "KP1"/"KP2" — name the course. Build-pack copies keep real paths and headers.
+    if "/build-pack/" not in f:
+        for m in re.finditer(r"\bKP ?\d\b", t):
+            add(f, f"says {m.group()!r} — name the course page instead")
+
     # links resolve on disk
     d = os.path.dirname(f)
     for m in LINK.finditer(t):

@@ -14,55 +14,6 @@
   "gitbook_id": "XLpdJttKfhre2JtCAUOs"
  },
  {
-  "ref": "kp2-module-2",
-  "title": "Module 2 — Legal framework — the Decree Drafting Kit",
-  "parent": "kp2",
-  "path": "kp2/module-2/README.md",
-  "gitbook_id": "uPjDd1HTuqYe4x3Vcozw"
- },
- {
-  "ref": "kp2-module-3",
-  "title": "Module 3 — Governance model — three tiers with RACI",
-  "parent": "kp2",
-  "path": "kp2/module-3/README.md",
-  "gitbook_id": "phhMDV0qXym4vt48V2KB"
- },
- {
-  "ref": "kp2-module-4",
-  "title": "Module 4 — Architecture and technical standards",
-  "parent": "kp2",
-  "path": "kp2/module-4/README.md",
-  "gitbook_id": "eLYeZnpNImhiTONAxBYa"
- },
- {
-  "ref": "kp2-module-5",
-  "title": "Module 5 — Implementation and onboarding",
-  "parent": "kp2",
-  "path": "kp2/module-5/README.md",
-  "gitbook_id": "CXaH8CnCXhjAWyC9b0Km"
- },
- {
-  "ref": "kp2-build-pack",
-  "title": "The build pack",
-  "parent": "kp2",
-  "path": "kp2/build-pack/README.md",
-  "gitbook_id": "0GAKvFQKMG8Ykg2YX3Ri"
- },
- {
-  "ref": "kp2-workbook",
-  "title": "Your framework workbook",
-  "parent": "kp2",
-  "path": "kp2/your-framework-workbook.md",
-  "gitbook_id": "927uxQTWQ4mJtOs8pt8m"
- },
- {
-  "ref": "kp2-play-0-supplement",
-  "title": "Play 0 supplement for KP2",
-  "parent": "kp2",
-  "path": "kp2/play-0-supplement.md",
-  "gitbook_id": "tIktuoxooT7VaDEL5Bd8"
- },
- {
   "ref": "kp2-1-1",
   "title": "1.1 Why interoperability can't be bought, only built",
   "parent": "kp2-module-1",
@@ -112,6 +63,13 @@
   "gitbook_id": "yItNeRaCmiZkEpJ4fe5B"
  },
  {
+  "ref": "kp2-module-2",
+  "title": "Module 2 — Legal framework — the Decree Drafting Kit",
+  "parent": "kp2",
+  "path": "kp2/module-2/README.md",
+  "gitbook_id": "uPjDd1HTuqYe4x3Vcozw"
+ },
+ {
   "ref": "kp2-2-1",
   "title": "2.1 Why the platform needs a legal mandate",
   "parent": "kp2-module-2",
@@ -154,6 +112,13 @@
   "gitbook_id": "3A8xDKJvXoecanKvj9cC"
  },
  {
+  "ref": "kp2-module-3",
+  "title": "Module 3 — Governance model — three tiers with RACI",
+  "parent": "kp2",
+  "path": "kp2/module-3/README.md",
+  "gitbook_id": "phhMDV0qXym4vt48V2KB"
+ },
+ {
   "ref": "kp2-3-1",
   "title": "3.1 Why a bus needs an owner",
   "parent": "kp2-module-3",
@@ -194,6 +159,13 @@
   "parent": "kp2-module-3",
   "path": "kp2/module-3/3-6.md",
   "gitbook_id": "A7hFe4v7qbQL7y4jgycA"
+ },
+ {
+  "ref": "kp2-module-4",
+  "title": "Module 4 — Architecture and technical standards",
+  "parent": "kp2",
+  "path": "kp2/module-4/README.md",
+  "gitbook_id": "eLYeZnpNImhiTONAxBYa"
  },
  {
   "ref": "kp2-4-1",
@@ -250,6 +222,13 @@
   "parent": "kp2-module-4",
   "path": "kp2/module-4/4-8.md",
   "gitbook_id": "Ix33KemYwCeXiIJyicES"
+ },
+ {
+  "ref": "kp2-module-5",
+  "title": "Module 5 — Implementation and onboarding",
+  "parent": "kp2",
+  "path": "kp2/module-5/README.md",
+  "gitbook_id": "CXaH8CnCXhjAWyC9b0Km"
  },
  {
   "ref": "kp2-5-1",
@@ -322,6 +301,13 @@
   "gitbook_id": "HGuedPI0IgIDJDVHsBI3"
  },
  {
+  "ref": "kp2-build-pack",
+  "title": "The build pack",
+  "parent": "kp2",
+  "path": "kp2/build-pack/README.md",
+  "gitbook_id": "0GAKvFQKMG8Ykg2YX3Ri"
+ },
+ {
   "ref": "kp2-build-pack-readme",
   "title": "What the build pack is",
   "parent": "kp2-build-pack",
@@ -348,5 +334,19 @@
   "parent": "kp2-build-pack",
   "path": "kp2/build-pack/exercises.md",
   "gitbook_id": "0J906PNnPhfFzsLuxf6d"
+ },
+ {
+  "ref": "kp2-workbook",
+  "title": "Your framework workbook",
+  "parent": "kp2",
+  "path": "kp2/your-framework-workbook.md",
+  "gitbook_id": "927uxQTWQ4mJtOs8pt8m"
+ },
+ {
+  "ref": "kp2-play-0-supplement",
+  "title": "Play 0 supplement",
+  "parent": "kp2",
+  "path": "kp2/play-0-supplement.md",
+  "gitbook_id": "tIktuoxooT7VaDEL5Bd8"
  }
 ]

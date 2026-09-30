@@ -80,7 +80,7 @@ HOOKS = {'4.1': ('Do not draw a new platform. Adopt a reference architecture.',
 def section(code, name, message, note):
     # No runtime on the title card: the narration is generated per take and its length moves
     # with every re-roll.
-    s = section_slide(prs, 'KP2 · MODULE 4 · VIDEO %s' % code, code, name, message,
+    s = section_slide(prs, 'MODULE 4 · VIDEO %s' % code, code, name, message,
                       'standalone video · voice-over on text slides', TITLE_CARD_NOTE)
     head, lines = HOOKS[code]
     hook_slide(prs, head, lines, '%s · %s' % (code, name), note)

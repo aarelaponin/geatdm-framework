@@ -115,7 +115,7 @@ HOOKS = {'5.1': ('You do not onboard a whole government at once.',
 def section(code, name, message, note, form='voice-over on text slides'):
     # No runtime on the title card: the narration is generated per take and its length moves
     # with every re-roll.
-    s = section_slide(prs, 'KP2 · MODULE 5 · VIDEO %s' % code, code, name, message,
+    s = section_slide(prs, 'MODULE 5 · VIDEO %s' % code, code, name, message,
                       'standalone video · ' + form, TITLE_CARD_NOTE)
     head, lines = HOOKS[code]
     hook_slide(prs, head, lines, '%s · %s' % (code, name), note)
