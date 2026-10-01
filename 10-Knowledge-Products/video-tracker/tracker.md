@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-09-30 07:46 (data v2)
+# KP video tracker — generated 2026-10-01 20:56 (data v2)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -119,28 +119,28 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 4.0 | Module 4 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 4.1 | Place every component — the four functional layers | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 4.2 | Secure every call — the three trust zones | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 4.3 | Adopt the standards portfolio | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 4.4 | Generate the semantic map | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 4.5 | Generate a service contract | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 4.6 | Put a real data source on the bus — the Giga case | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 4.7 | Wire a service onto the bus | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 4.8 | Make the exchange lawful — the data-protection envelope | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 4.1 | Place every component — the four functional layers | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.1, SRT v0.1, Accepted v0.1, Cues v0.1, MP4 v0.1 | accepted at KP1's bar 30 Sep — settled on runtime (3:43, under the floor); cued + assembled. Backchannel heavy; lock-in given as the reason for reuse; Sources line spoken |
+| 4.2 | Secure every call — the three trust zones | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 30 Sep — v0.5 with a 37.7 s show-open cut by hand; cued + assembled (3:56). The a mess / a message false positive fixed in srt_drift_check the same day |
+| 4.3 | Adopt the standards portfolio | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.15, SRT v0.15, Accepted v0.15, Cues v0.15, MP4 v0.15 | accepted at KP1's bar 30 Sep — v0.12 with a 21 s vocabulary-hook opener cut by hand; cued + assembled (3:44). Content right and in order, ends on the recap; slide 5 fuses credentials with sector reuse; Sources card silent |
+| 4.4 | Generate the semantic map | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.1, SRT v0.1, Accepted v0.1, Cues v0.1, MP4 v0.1 | accepted at KP1's bar 30 Sep — faithful and complete, settled on runtime (4:10); cued + assembled. The newer v0.2 on disk is a rejected try (6:49, banned phrases), not a candidate |
+| 4.5 | Generate a service contract | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.8, SRT v0.8, Accepted v0.8, Cues v0.8, MP4 v0.8 | accepted at KP1's bar 30 Sep on the 4:00 brief — v0.7 with a 2.7 s show-open cut by hand; cued + assembled (3:21). Faithful, recap complete; mild idioms; Sources card silent |
+| 4.6 | Put a real data source on the bus — the Giga case | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.13, SRT v0.13, Accepted v0.13, Cues v0.13, MP4 v0.13 | accepted at KP1's bar 30 Sep — gate clean, complete, ends on the sources line; cued + assembled (4:54). Silver "physically rejects" half-wrong; §3 vocabulary recited on slide 6. LISTEN: "pharma registry" at 3:43 |
+| 4.7 | Wire a service onto the bus | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.13, SRT v0.13, Accepted v0.13, Cues v0.13, MP4 v0.13 | accepted at KP1's bar 30 Sep on the 4:00 brief — v0.12 with a 24.4 s show-open cut by hand; cued + assembled (3:31). Slide 5 recast as lock-in; Sources card silent |
+| 4.8 | Make the exchange lawful — the data-protection envelope | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar (borderline) 30 Sep — gate clean; cued + assembled (4:36). Mid-take "deep dive" at 3:17, one highway metaphor, slides 4–5 thin; Sources card silent |
 
 ### Module 5 — Implementation + member onboarding + the Linkup demo (Architect)
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 5.0 | Module 5 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
-| 5.1 | Plan the build in four phases | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 |  |
-| 5.2 | State what a member must have — the Member Requirements | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 |  |
-| 5.3 | Make 'connected' mean 'dependable' — the SLA | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 |  |
-| 5.4 | Register a member on X-Road | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 | BLOCKER: demo block (join beats J0–J4) waits on the 5.6 pilot review; v0.4 narration carries the join mechanism |
-| 5.5 | Stand up the federation | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 | BLOCKER: demo block (T1–T3) waits on the 5.6 pilot review and the hosting decision; v0.4 narration: PDGA + PNEA/PLR/PNIA, single-host line |
-| 5.6 | Run the once-only exchange, live | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.2, Deck v0.2, Brief v0.2, Take v0.4, SRT v0.4, Cues v0.4, MP4 v0.4 | screen-led pilot — KP2_M5_5.6_Pilot_Review_2026-09-13.md |
-| 5.7 | From demonstration to production | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 |  |
-| 5.8 | Watch the bus — monitoring and anomaly detection | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 | was 6.2 |
-| 5.9 | Keep the documents honest — the consistency cross-check | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 | was 6.3 |
-| 5.10 | Carry the framework to the next sector | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 | was 6.4 |
+| 5.1 | Plan the build in four phases | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.1, SRT v0.1, Accepted v0.1, Cues v0.1, MP4 v0.1 | accepted at KP1's bar 30 Sep — gate clean; cued + assembled (5:07). Invented identity gloss on the trust anchor |
+| 5.2 | State what a member must have — the Member Requirements | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.3, Deck v0.3, Brief v0.3, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 30 Sep — v0.4 with a 54 s show-open cut by hand; cued + assembled (3:12). Reveal REQ-1 described faithfully; one mid-take rail metaphor; Sources card silent |
+| 5.3 | Make 'connected' mean 'dependable' — the SLA | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.3, Deck v0.3, Brief v0.3, Take v0.15, SRT v0.15, Accepted v0.15, Cues v0.15, MP4 v0.15 | accepted at KP1's bar 1 Oct — v0.10 with a 44 s show-open cut by hand; cued + assembled (4:13). In order, five numbers numbered, SLA reveal faithful, closes on the recap. Slide 4's per-service point never said; "the policy briefing" once; scattered idioms |
+| 5.4 | Admit a member to the bus | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.3, Deck v0.3, Brief v0.3, Take v0.12, SRT v0.12, Accepted v0.12, Cues v0.12, MP4 v0.12 | was "Register a member on X-Road" (retitled in deck v0.3). Accepted at KP1's bar 1 Oct — v0.11 with a 21 s show-open cut by hand; cued + assembled (3:41). Demo block whole: six observations in order, First–Sixth, none merged; clip J3 composited inside slide 8 (caption on screen). Slide 4 not narrated; badge metaphor; LISTEN: the minute reference |
+| 5.5 | Stand up the federation | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.3, Deck v0.3, Brief v0.3, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 30 Sep — v0.4 with a 31 s show-open cut by hand; cued + assembled (3:03). Demo block First–Fourth in order. T1 timings are the 22 Aug deploy (stale, captioned without "on this run"); slide 8 text small on a phone |
+| 5.6 | Run the once-only exchange, live | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.5, Deck v0.5, Brief v0.5, Take v0.23, SRT v0.23, Accepted v0.23, Cues v0.23, MP4 v0.23 | accepted by the author 1 Oct — the first take on the four-observation deck/brief v0.5 (seven observations failed 14 takes). First–Fourth in order, agencies named, recap; cued + assembled (3:30), clip composited on slide 6. KNOWN ERROR accepted: "refused by PNEA's access list" at 2:21 (PNIA's). Newer v0.25/v0.27 on disk are rejected tries (over the ceiling; v0.27 lost the ordinals and recap) |
+| 5.7 | From demonstration to production | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.4, Deck v0.4, Brief v0.4, Take v0.9, SRT v0.9, Accepted v0.9, Cues v0.9, MP4 v0.9 | accepted at KP1's bar 1 Oct — v0.7 with a 27 s show-open cut by hand; cued + assembled (4:25). Every roll took config-shape before legacy retirement and the P2 reveal before never-ship, so the 5.7 deck was reordered to match (deck v0.4, narration unchanged). §3 vocabulary as rationale for legacy retirement |
+| 5.8 | Watch the bus — monitoring and anomaly detection | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.2, Deck v0.2 | was 6.2. Not started: the Module 5 demo plan holds it until scripts/opmon-export.sh exists (a metadata-only operational-data export). Deck v0.2 exists — decide theory-only or wait for the export |
+| 5.9 | Keep the documents honest — the consistency cross-check | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 | accepted at KP1's bar 30 Sep — settled on runtime (3:22), strongest of three; cued + assembled. LISTEN: "RAQUI" for RACI at 1:23 |
+| 5.10 | Carry the framework to the next sector | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.3, Deck v0.3, Brief v0.3, Take v0.19, SRT v0.19, Accepted v0.19, Cues v0.19, MP4 v0.19 | was 6.4. Accepted at KP1's bar 1 Oct on brief v0.3 (the fraction wording replaced) — settled on runtime (4:15); cued + assembled. Clean: title, deck order, recap, no figures or metaphor. BDAT gloss invented. LISTEN: "progressive education data" at 0:27 |
 

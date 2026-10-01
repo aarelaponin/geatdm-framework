@@ -135,11 +135,18 @@ kps:
     title: Government Interoperability Framework
     root: KP2-GIF
     note: >-
-      Five script bundles authored and gated (Modules 1–4 v0.2, Module 5 v0.4), aligned to 08-Interoperability
+      Five script bundles authored and gated (Modules 1–4 v0.2, Module 5 v0.5), aligned to 08-Interoperability
       12 Sep 2026. Module 6 retired 12 Sep — 6.2–6.4 are now 5.8–5.10; 6.1, 6.5 and 6.6 moved to the
       GitBook home page and the intro video. Video track started 13 Sep: Modules 1–5 scripts + decks v0.1. Modules 1–3: briefs v0.1,
       takes 13–14 Sep, accepted at KP1's bar — 15 of 19 videos cued and assembled (Modules 2 and 3
       complete); 30 Sep: 1.1, 1.3, 1.5, 1.6 accepted on reworded briefs — all 19 Modules 1–3 videos cued and assembled. See KP2_M1-M3_Video_Status_2026-09-13.md.
+      30 Sep: Module 4 complete (8/8; 4.5 and 4.7 on 4:00 briefs). Module 5: script v0.5 / deck v0.3 (the
+      demo plan's WP0–WP5 — 5.4 retitled "Admit a member to the bus"; captures KP2_M5_Demo_v0.2 for 5.2–5.7);
+      5.1–5.7, 5.9, 5.10 accepted (5.6 on four observations, one known slip); 5.8 held for the opmon export.
+      1 Oct, per-video decks moved on where the takes demanded it: 5.6 v0.5 (four observations, agency-side
+      narration), 5.7 v0.4 (slides reordered to the hosts' order), 5.10 v0.3 (cost wording) — combined deck v0.3.
+      36 of 37 lesson videos cued and assembled; the six on-camera intros not started. Every take is read in
+      full against its brief before acceptance — the gate alone passed takes that read weak.
     intro:
       title: KP2 introduction — what the five modules cover (on camera)
       path: videos/intro
@@ -187,30 +194,30 @@ kps:
         path: videos/module_4
         intro: {title: Module 4 introduction (on camera)}
         topics:
-          - {code: "4.1", title: "Place every component — the four functional layers"}
-          - {code: "4.2", title: "Secure every call — the three trust zones"}
-          - {code: "4.3", title: "Adopt the standards portfolio"}
-          - {code: "4.4", title: "Generate the semantic map"}
-          - {code: "4.5", title: "Generate a service contract"}
-          - {code: "4.6", title: "Put a real data source on the bus — the Giga case"}
-          - {code: "4.7", title: "Wire a service onto the bus"}
-          - {code: "4.8", title: "Make the exchange lawful — the data-protection envelope"}
+          - {code: "4.1", title: "Place every component — the four functional layers", en: {accepted: "v0.1", note: "accepted at KP1's bar 30 Sep — settled on runtime (3:43, under the floor); cued + assembled. Backchannel heavy; lock-in given as the reason for reuse; Sources line spoken"}}
+          - {code: "4.2", title: "Secure every call — the three trust zones", en: {accepted: "v0.6", note: "accepted at KP1's bar 30 Sep — v0.5 with a 37.7 s show-open cut by hand; cued + assembled (3:56). The a mess / a message false positive fixed in srt_drift_check the same day"}}
+          - {code: "4.3", title: "Adopt the standards portfolio", en: {accepted: "v0.15", note: "accepted at KP1's bar 30 Sep — v0.12 with a 21 s vocabulary-hook opener cut by hand; cued + assembled (3:44). Content right and in order, ends on the recap; slide 5 fuses credentials with sector reuse; Sources card silent"}}
+          - {code: "4.4", title: "Generate the semantic map", en: {accepted: "v0.1", note: "accepted at KP1's bar 30 Sep — faithful and complete, settled on runtime (4:10); cued + assembled. The newer v0.2 on disk is a rejected try (6:49, banned phrases), not a candidate"}}
+          - {code: "4.5", title: "Generate a service contract", en: {accepted: "v0.8", note: "accepted at KP1's bar 30 Sep on the 4:00 brief — v0.7 with a 2.7 s show-open cut by hand; cued + assembled (3:21). Faithful, recap complete; mild idioms; Sources card silent"}}
+          - {code: "4.6", title: "Put a real data source on the bus — the Giga case", en: {accepted: "v0.13", note: "accepted at KP1's bar 30 Sep — gate clean, complete, ends on the sources line; cued + assembled (4:54). Silver \"physically rejects\" half-wrong; §3 vocabulary recited on slide 6. LISTEN: \"pharma registry\" at 3:43"}}
+          - {code: "4.7", title: "Wire a service onto the bus", en: {accepted: "v0.13", note: "accepted at KP1's bar 30 Sep on the 4:00 brief — v0.12 with a 24.4 s show-open cut by hand; cued + assembled (3:31). Slide 5 recast as lock-in; Sources card silent"}}
+          - {code: "4.8", title: "Make the exchange lawful — the data-protection envelope", en: {accepted: "v0.6", note: "accepted at KP1's bar (borderline) 30 Sep — gate clean; cued + assembled (4:36). Mid-take \"deep dive\" at 3:17, one highway metaphor, slides 4–5 thin; Sources card silent"}}
       - number: 5
         title: Implementation + member onboarding + the Linkup demo
         persona: Architect
         path: videos/module_5
         intro: {title: Module 5 introduction (on camera)}
         topics:
-          - {code: "5.1", title: "Plan the build in four phases"}
-          - {code: "5.2", title: "State what a member must have — the Member Requirements"}
-          - {code: "5.3", title: "Make 'connected' mean 'dependable' — the SLA"}
-          - {code: "5.4", title: "Register a member on X-Road", en: {blocker: "demo block (join beats J0–J4) waits on the 5.6 pilot review", note: "v0.4 narration carries the join mechanism"}}
-          - {code: "5.5", title: "Stand up the federation", en: {blocker: "demo block (T1–T3) waits on the 5.6 pilot review and the hosting decision", note: "v0.4 narration: PDGA + PNEA/PLR/PNIA, single-host line"}}
-          - {code: "5.6", title: "Run the once-only exchange, live", en: {demo_takes: v0.1, note: "screen-led pilot — KP2_M5_5.6_Pilot_Review_2026-09-13.md"}}
-          - {code: "5.7", title: "From demonstration to production"}
-          - {code: "5.8", title: "Watch the bus — monitoring and anomaly detection", en: {note: "was 6.2"}}
-          - {code: "5.9", title: "Keep the documents honest — the consistency cross-check", en: {note: "was 6.3"}}
-          - {code: "5.10", title: "Carry the framework to the next sector", en: {note: "was 6.4"}}
+          - {code: "5.1", title: "Plan the build in four phases", en: {accepted: "v0.1", note: "accepted at KP1's bar 30 Sep — gate clean; cued + assembled (5:07). Invented identity gloss on the trust anchor"}}
+          - {code: "5.2", title: "State what a member must have — the Member Requirements", en: {accepted: "v0.6", demo_takes: "v0.2", note: "accepted at KP1's bar 30 Sep — v0.4 with a 54 s show-open cut by hand; cued + assembled (3:12). Reveal REQ-1 described faithfully; one mid-take rail metaphor; Sources card silent"}}
+          - {code: "5.3", title: "Make 'connected' mean 'dependable' — the SLA", en: {accepted: "v0.15", demo_takes: "v0.2", note: "accepted at KP1's bar 1 Oct — v0.10 with a 44 s show-open cut by hand; cued + assembled (4:13). In order, five numbers numbered, SLA reveal faithful, closes on the recap. Slide 4's per-service point never said; \"the policy briefing\" once; scattered idioms"}}
+          - {code: "5.4", title: "Admit a member to the bus", en: {accepted: "v0.12", demo_takes: "v0.2", note: "was \"Register a member on X-Road\" (retitled in deck v0.3). Accepted at KP1's bar 1 Oct — v0.11 with a 21 s show-open cut by hand; cued + assembled (3:41). Demo block whole: six observations in order, First–Sixth, none merged; clip J3 composited inside slide 8 (caption on screen). Slide 4 not narrated; badge metaphor; LISTEN: the minute reference"}}
+          - {code: "5.5", title: "Stand up the federation", en: {accepted: "v0.6", demo_takes: "v0.2", note: "accepted at KP1's bar 30 Sep — v0.4 with a 31 s show-open cut by hand; cued + assembled (3:03). Demo block First–Fourth in order. T1 timings are the 22 Aug deploy (stale, captioned without \"on this run\"); slide 8 text small on a phone"}}
+          - {code: "5.6", title: "Run the once-only exchange, live", en: {accepted: "v0.23", demo_takes: "v0.2", note: "accepted by the author 1 Oct — the first take on the four-observation deck/brief v0.5 (seven observations failed 14 takes). First–Fourth in order, agencies named, recap; cued + assembled (3:30), clip composited on slide 6. KNOWN ERROR accepted: \"refused by PNEA's access list\" at 2:21 (PNIA's). Newer v0.25/v0.27 on disk are rejected tries (over the ceiling; v0.27 lost the ordinals and recap)"}}
+          - {code: "5.7", title: "From demonstration to production", en: {accepted: "v0.9", demo_takes: "v0.2", note: "accepted at KP1's bar 1 Oct — v0.7 with a 27 s show-open cut by hand; cued + assembled (4:25). Every roll took config-shape before legacy retirement and the P2 reveal before never-ship, so the 5.7 deck was reordered to match (deck v0.4, narration unchanged). §3 vocabulary as rationale for legacy retirement"}}
+          - {code: "5.8", title: "Watch the bus — monitoring and anomaly detection", en: {note: "was 6.2. Not started: the Module 5 demo plan holds it until scripts/opmon-export.sh exists (a metadata-only operational-data export). Deck v0.2 exists — decide theory-only or wait for the export"}}
+          - {code: "5.9", title: "Keep the documents honest — the consistency cross-check", en: {accepted: "v0.5", note: "accepted at KP1's bar 30 Sep — settled on runtime (3:22), strongest of three; cued + assembled. LISTEN: \"RAQUI\" for RACI at 1:23"}}
+          - {code: "5.10", title: "Carry the framework to the next sector", en: {accepted: "v0.19", note: "was 6.4. Accepted at KP1's bar 1 Oct on brief v0.3 (the fraction wording replaced) — settled on runtime (4:15); cued + assembled. Clean: title, deck order, recap, no figures or metaphor. BDAT gloss invented. LISTEN: \"progressive education data\" at 0:27"}}
 
   # KP3 (DPI) and KP4 are not tracked yet — uncomment and fill in when their content exists.
   # - id: KP3
