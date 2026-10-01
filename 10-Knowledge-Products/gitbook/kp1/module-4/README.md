@@ -6,11 +6,6 @@ icon: flag-checkered
 # Module 4 — Progressa end-to-end — the method on one sector
 
 {% hint style="info" %}
-🎬 **Video in production:** *Module 4 — Progressa end-to-end — the method on one sector* (~2 min).
-The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../../start-here/video-index.md).
-{% endhint %}
-
-{% hint style="info" %}
 **Worked examples for this module are pending** — every prompt on these pages runs today.
 {% endhint %}
 

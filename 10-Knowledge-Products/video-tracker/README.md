@@ -40,9 +40,10 @@ newest version per stage:
 | MP4 | `«lang»/video/…_Video_v*.mp4` (the top-level file, not `_pre_hook/`) |
 | **Published** | **`tracker.yaml`** — `published: https://youtu.be/…` (or `true`) |
 
-On-camera videos (each KP's intro, each module's `m.0`) do not go through the pipeline, so they get
-their own four stages: Script (`…_IntroScript_v*.md`) → Filmed (any `.mov` in `video/`) → Mastered
-(`…_«m».0_Video_v*.mp4`, i.e. cut and normalised to the series spec per `camera-intro.md`) →
+The on-camera video — one intro per KP; modules have no intro video of their own since 1 Oct 2026 —
+does not go through the pipeline, so it gets
+its own four stages: Script (`…_IntroScript_v*.md`) → Filmed (any `.mov` in `video/`) → Mastered
+(`…_0.0_Video_v*.mp4`, i.e. cut and normalised to the series spec per `camera-intro.md`) →
 Published (manual). `filmed:` / `mastered:` in the YAML override the detection when the file is
 somewhere else.
 

@@ -5,7 +5,7 @@ icon: house
 
 # Developing a Gov Enterprise Architecture (GEA)
 
-**ITU/Giga Knowledge Product** · 41 videos in five modules · about 156 minutes of video · 36 AI plays · self-paced · free and open
+**ITU/Giga Knowledge Product** · 36 videos in five modules · about 146 minutes of video · 36 AI plays · self-paced · free and open
 
 This is the companion to the video series on building a national Enterprise Architecture anchored on PAERA, the Public Administration Ecosystem Reference Architecture published under GovStack. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
 
@@ -51,7 +51,6 @@ This is not a course for developers. It covers what to commission, how to judge 
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [M1](module-1/README.md) | Module 1 intro | ~2 min | *in production* |
 | [1.1](module-1/1-1.md) | Why your country needs a national EA | ~4 min | *in production* |
 | [1.2](module-1/1-2.md) | What an EA actually is, in one breath | ~3 min | *in production* |
 | [1.3](module-1/1-3.md) | Why projects can't do this themselves | ~5 min | *in production* |
@@ -68,7 +67,6 @@ This is not a course for developers. It covers what to commission, how to judge 
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [M2](module-2/README.md) | Module 2 intro | ~2 min | *in production* |
 | [2.1](module-2/2-1.md) | Read any government in four layers | ~5 min | *in production* |
 | [2.2](module-2/2-2.md) | The shared vocabulary that makes re-use possible | ~5 min | *in production* |
 | [2.3](module-2/2-3.md) | Adopt your principles, don't draft them | ~4 min | *in production* |
@@ -85,7 +83,6 @@ This is not a course for developers. It covers what to commission, how to judge 
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [M3](module-3/README.md) | Module 3 intro | ~2 min | *in production* |
 | [3.1](module-3/3-1.md) | Set up the one place your architecture lives | ~4 min | *in production* |
 | [3.2](module-3/3-2.md) | Choose EA tooling without locking yourself in | ~4 min | *in production* |
 | [3.3](module-3/3-3.md) | Keep the repository true — the update discipline | ~4 min | *in production* |
@@ -102,7 +99,6 @@ This is not a course for developers. It covers what to commission, how to judge 
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [M4](module-4/README.md) | Module 4 intro | ~2 min | *in production* |
 | [4.1](module-4/4-1.md) | Meet Progressa — a real sector with a real fragmentation problem | ~3 min | *in production* |
 | [4.2](module-4/4-2.md) | Phase 1, Discover — map what the sector has today | ~4 min | *in production* |
 | [4.3](module-4/4-3.md) | Phase 2, Assess — find the gaps and rank them | ~3 min | *in production* |
@@ -120,7 +116,6 @@ This is not a course for developers. It covers what to commission, how to judge 
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [M5](module-5/README.md) | Module 5 intro | ~2 min | *in production* |
 | [5.1](module-5/5-1.md) | Is this proven, or just theory? — evidence from real programmes | ~4 min | *in production* |
 | [5.2](module-5/5-2.md) | What the evidence says works — and what quietly kills these programmes | ~3 min | *in production* |
 | [5.3](module-5/5-3.md) | Roll it out across sectors — and why the second is cheaper | ~5 min | *in production* |

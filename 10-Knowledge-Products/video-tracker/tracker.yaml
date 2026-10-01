@@ -10,9 +10,9 @@
 #   published: true | URL       on YouTube (a URL becomes a link)
 #   blocker:   "text"           shows red; the row lands under BLOCKED in "Next actions"
 #   note:      "text"           anything worth seeing next to the row
-# On-camera rows (KP intro, m.0 module intros) additionally accept:
+# The on-camera row (the KP intro; modules have no intro since 1 Oct 2026) additionally accepts:
 #   filmed:    true|false       overrides the .mov-on-disk detection
-#   mastered:  true|false       overrides the KP1_M1_1.0_Video_v*.mp4 detection
+#   mastered:  true|false       overrides the KP1_0.0_Video_v*.mp4 detection
 #
 # Bump `version` when the manifest structure or the topic list changes (not for a status tick).
 
@@ -27,7 +27,7 @@ kps:
     note: >-
       35 content videos after the Sep 2026 tightening pass. Module 1 videos were rebuilt 9 Sep with
       the hook slide; Modules 2–4 cued and assembled 10 Sep. Modules 1–4 are finished videos —
-      what remains is publication (YouTube metadata, the on-camera intros) and the French mirror.
+      what remains is publication (YouTube metadata, the on-camera KP intro) and the French mirror.
     intro:                              # KP-level on-camera introduction (introduces the five modules)
       title: KP1 introduction — what the five modules cover (on camera)
       path: videos/intro                # not created yet; scripts/ video/ under <path>/<lang>/
@@ -39,12 +39,6 @@ kps:
         title: Why a PAERA-anchored EA, and the lifecycle in one page
         persona: Strategist
         path: videos/module_1
-        intro:
-          title: Module 1 introduction (on camera, ~1:55)
-          en:
-            note: >-
-              Raw take M1_intro.mov (30 Aug) predates the tightening — IntroScript v0.2 still says
-              "eight short videos". Re-cut with the Module 1 videos; ITU §4.3 calibration item open.
         topics:
           - {code: "1.1", title: "Why your country needs a national EA", mins: ~4,
              en: {accepted: v0.13}, fr: {accepted: v0.2, note: 'French pilot — from the pre-tightening deck'}}
@@ -61,7 +55,6 @@ kps:
         title: EA principles, the metamodel and the BDAT layers
         persona: Architect
         path: videos/module_2
-        intro: {title: Module 2 introduction (on camera)}
         topics:
           - {code: "2.1", title: "Read any government in four layers", mins: ~5, en: {accepted: v0.15}}
           - {code: "2.2", title: "The shared vocabulary that makes re-use possible", mins: ~5, en: {accepted: v0.19}}
@@ -77,7 +70,6 @@ kps:
         title: EA repository, tooling and governance
         persona: Architect
         path: videos/module_3
-        intro: {title: Module 3 introduction (on camera)}
         topics:
           - {code: "3.1", title: "Set up the one place your architecture lives", mins: ~4,
              en: {accepted: v0.5, note: 'accepted by decision 9 Sep; "registry" check is a false positive'}}
@@ -95,7 +87,6 @@ kps:
         title: Progressa demonstration — applying the method end-to-end
         persona: Architect
         path: videos/module_4
-        intro: {title: Module 4 introduction (on camera)}
         topics:
           - {code: "4.1", title: "Meet Progressa — a real sector with a real fragmentation problem", mins: ~3, en: {accepted: v0.5}}
           - {code: "4.2", title: "Phase 1, Discover — map what the sector has today", mins: ~4, en: {accepted: v0.9}}
@@ -115,7 +106,6 @@ kps:
         title: Cross-country evidence, cross-sector applicability and dissemination
         persona: Strategist
         path: videos/module_5
-        intro: {title: Module 5 introduction (on camera)}
         topics:
           - {code: "5.1", title: "Is this proven, or just theory? — evidence from real programmes", mins: ~4,
              en: {accepted: v0.8, note: 'produced 12 Sep (5:00). Three pre-decision rolls said PEA, PAEA, PIERA'}}
@@ -145,7 +135,7 @@ kps:
       Module 5 complete (5.6 on four observations, one known slip; 5.8 theory-only per plan 2026-10-01).
       1 Oct, per-video decks moved on where the takes demanded it: 5.6 v0.5 (four observations, agency-side
       narration), 5.7 v0.4 (slides reordered to the hosts' order), 5.10 v0.3 (cost wording) — combined deck v0.3.
-      all 37 lesson videos cued and assembled; the six on-camera intros not started. Every take is read in
+      all 37 lesson videos cued and assembled; the on-camera KP intro not started. Every take is read in
       full against its brief before acceptance — the gate alone passed takes that read weak.
     intro:
       title: KP2 introduction — what the five modules cover (on camera)
@@ -155,7 +145,6 @@ kps:
         title: Why interoperability, the four layers, and the foundation to start
         persona: Strategist
         path: videos/module_1
-        intro: {title: Module 1 introduction (on camera)}
         topics:
           - {code: "1.1", title: "Why interoperability can't be bought, only built", en: {accepted: "v0.18", note: "accepted at KP1's bar 30 Sep on brief v0.2 (the hook addresses the official) — gate clean, 3rd v0.2 round; cued + assembled (5:08). \"welcome to today's deep dive\" at 0:27; driveway analogy; Sources 4 s"}}
           - {code: "1.2", title: "The four layers of interoperability", en: {accepted: "v0.5", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:34). \"let's unpack… deep dive\" at 0:29; Sources 4 s"}}
@@ -168,7 +157,6 @@ kps:
         title: Legal framework — the Decree Drafting Kit
         persona: Strategist
         path: videos/module_2
-        intro: {title: Module 2 introduction (on camera)}
         topics:
           - {code: "2.1", title: "Why the platform needs a legal mandate", en: {accepted: "v0.2", note: "accepted at KP1's bar 14 Sep; cued + assembled (5:38). Recites the brief's word list at 3:50; no sources line, Sources card 8 s"}}
           - {code: "2.2", title: "Anatomy of an interoperability decree", en: {accepted: "v0.9", note: "accepted at KP1's bar 14 Sep — first roll on the fixed prompt, no \"building block\"; v0.7 re-trimmed after \"leaves you wondering\"; cued + assembled (5:18). Opens mid-exchange; Lego-brick metaphor"}}
@@ -180,7 +168,6 @@ kps:
         title: Governance model — three-tier with RACI
         persona: Strategist
         path: videos/module_3
-        intro: {title: Module 3 introduction (on camera)}
         topics:
           - {code: "3.1", title: "Why a bus needs an owner", en: {accepted: "v0.4", note: "accepted at KP1's bar 14 Sep; cued + assembled (5:32). LISTEN: SRT reads \"Progressé\" at 3:07"}}
           - {code: "3.2", title: "The three tiers of governance", en: {accepted: "v0.2", note: "accepted at KP1's bar 14 Sep; cued + assembled (4:27). Untrimmed show-open on the title card; Sources 2.2 s"}}
@@ -192,7 +179,6 @@ kps:
         title: Architecture + technical standards + Giga end-to-end case
         persona: Architect
         path: videos/module_4
-        intro: {title: Module 4 introduction (on camera)}
         topics:
           - {code: "4.1", title: "Place every component — the four functional layers", en: {accepted: "v0.1", note: "accepted at KP1's bar 30 Sep — settled on runtime (3:43, under the floor); cued + assembled. Backchannel heavy; lock-in given as the reason for reuse; Sources line spoken"}}
           - {code: "4.2", title: "Secure every call — the three trust zones", en: {accepted: "v0.6", note: "accepted at KP1's bar 30 Sep — v0.5 with a 37.7 s show-open cut by hand; cued + assembled (3:56). The a mess / a message false positive fixed in srt_drift_check the same day"}}
@@ -206,7 +192,6 @@ kps:
         title: Implementation + member onboarding + the Linkup demo
         persona: Architect
         path: videos/module_5
-        intro: {title: Module 5 introduction (on camera)}
         topics:
           - {code: "5.1", title: "Plan the build in four phases", en: {accepted: "v0.1", note: "accepted at KP1's bar 30 Sep — gate clean; cued + assembled (5:07). Invented identity gloss on the trust anchor"}}
           - {code: "5.2", title: "State what a member must have — the Member Requirements", en: {accepted: "v0.6", demo_takes: "v0.2", note: "accepted at KP1's bar 30 Sep — v0.4 with a 54 s show-open cut by hand; cued + assembled (3:12). Reveal REQ-1 described faithfully; one mid-take rail metaphor; Sources card silent"}}
@@ -229,6 +214,5 @@ kps:
   #     - number: 1
   #       title: ...
   #       path: videos/module_1
-  #       intro: {title: Module 1 introduction (on camera)}
   #       topics:
   #         - {code: "1.1", title: "..."}

@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-10-01 21:35 (data v2)
+# KP video tracker — generated 2026-10-01 22:51 (data v2)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -10,7 +10,6 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 1.0 | Module 1 introduction (on camera, ~1:55) | en | `●●○○` | 2/4 | Mastered | Script v0.2, Filmed M1_intro.mov | Raw take M1_intro.mov (30 Aug) predates the tightening — IntroScript v0.2 still says "eight short videos". Re-cut with the Module 1 videos; ITU §4.3 calibration item open. |
 | 1.1 | Why your country needs a national EA | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.7, Take v0.13, SRT v0.13, Accepted v0.13, Cues v0.13, MP4 v0.13 |  |
 | 1.1 | Why your country needs a national EA | fr | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 | French pilot — from the pre-tightening deck |
 | 1.2 | What an EA actually is | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.7, Take v0.8, SRT v0.8, Accepted v0.8, Cues v0.8, MP4 v0.8 |  |
@@ -25,7 +24,6 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 2.0 | Module 2 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 2.1 | Read any government in four layers | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.15, SRT v0.15, Accepted v0.15, Cues v0.15, MP4 v0.15 |  |
 | 2.2 | The shared vocabulary that makes re-use possible | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.19, SRT v0.19, Accepted v0.19, Cues v0.19, MP4 v0.19 |  |
 | 2.3 | Adopt your principles, don't draft them | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 |  |
@@ -38,7 +36,6 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 3.0 | Module 3 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 3.1 | Set up the one place your architecture lives | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 | accepted by decision 9 Sep; "registry" check is a false positive |
 | 3.2 | Choose EA tooling without locking yourself in | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.7, SRT v0.7, Accepted v0.7, Cues v0.7, MP4 v0.7 | accepted by decision 9 Sep — ships "nightmare", "a mess", "hostage" on air; reversible by re-roll |
 | 3.3 | Keep the repository true — the update discipline | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | settled on runtime (−47s) |
@@ -51,7 +48,6 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 4.0 | Module 4 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 4.1 | Meet Progressa — a real sector with a real fragmentation problem | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 |  |
 | 4.2 | Phase 1, Discover — map what the sector has today | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.9, SRT v0.9, Accepted v0.9, Cues v0.9, MP4 v0.9 |  |
 | 4.3 | Phase 2, Assess — find the gaps and rank them | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.33, SRT v0.33, Accepted v0.33, Cues v0.33, MP4 v0.33 | unblocked 12 Sep — the narration says "the reference architecture", the slides keep PAERA. First of 17 takes with the name right. Cued + assembled (5:17) |
@@ -65,7 +61,6 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 5.0 | Module 5 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 5.1 | Is this proven, or just theory? — evidence from real programmes | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.8, SRT v0.8, Accepted v0.8, Cues v0.8, MP4 v0.8 | produced 12 Sep (5:00). Three pre-decision rolls said PEA, PAEA, PIERA |
 | 5.2 | What the evidence says works — and what quietly kills these programmes | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.3, SRT v0.3, Accepted v0.3, Cues v0.3, MP4 v0.3 | produced 12 Sep. Settled on runtime at 5:56, +56s and the longest of the 29 |
 | 5.3 | Roll it out across sectors — and why the second is cheaper | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 | produced 12 Sep (4:42), clean on try 1. Weak close — ends "It really makes you think." |
@@ -81,7 +76,6 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 1.0 | Module 1 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 1.1 | Why interoperability can't be bought, only built | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.18, SRT v0.18, Accepted v0.18, Cues v0.18, MP4 v0.18 | accepted at KP1's bar 30 Sep on brief v0.2 (the hook addresses the official) — gate clean, 3rd v0.2 round; cued + assembled (5:08). "welcome to today's deep dive" at 0:27; driveway analogy; Sources 4 s |
 | 1.2 | The four layers of interoperability | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 | accepted at KP1's bar 14 Sep; cued + assembled (4:34). "let's unpack… deep dive" at 0:29; Sources 4 s |
 | 1.3 | The once-only promise | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.20, SRT v0.20, Accepted v0.20, Cues v0.20, MP4 v0.20 | accepted 30 Sep on brief v0.2 — most faithful Module 1 take; cued + assembled (4:29), ends on the sources line. Gate: "the Once-Only framework" once. LISTEN: "Progressia" |
@@ -94,7 +88,6 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 2.0 | Module 2 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 2.1 | Why the platform needs a legal mandate | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 | accepted at KP1's bar 14 Sep; cued + assembled (5:38). Recites the brief's word list at 3:50; no sources line, Sources card 8 s |
 | 2.2 | Anatomy of an interoperability decree | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.9, SRT v0.9, Accepted v0.9, Cues v0.9, MP4 v0.9 | accepted at KP1's bar 14 Sep — first roll on the fixed prompt, no "building block"; v0.7 re-trimmed after "leaves you wondering"; cued + assembled (5:18). Opens mid-exchange; Lego-brick metaphor |
 | 2.3 | The Explanatory Memorandum and Preamble | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.10, SRT v0.10, Accepted v0.10, Cues v0.10, MP4 v0.10 | accepted at KP1's bar 14 Sep — settled on runtime at 2:26, the shortest KP video; also the most brief-faithful take. Cued + assembled |
@@ -106,7 +99,6 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 3.0 | Module 3 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 3.1 | Why a bus needs an owner | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4, Accepted v0.4, Cues v0.4, MP4 v0.4 | accepted at KP1's bar 14 Sep; cued + assembled (5:32). LISTEN: SRT reads "Progressé" at 3:07 |
 | 3.2 | The three tiers of governance | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.2, SRT v0.2, Accepted v0.2, Cues v0.2, MP4 v0.2 | accepted at KP1's bar 14 Sep; cued + assembled (4:27). Untrimmed show-open on the title card; Sources 2.2 s |
 | 3.3 | The RACI matrix | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.4, SRT v0.4, Accepted v0.4, Cues v0.4, MP4 v0.4 | accepted at KP1's bar 14 Sep; cued + assembled (4:58). LISTEN: SRT reads "RCI" where v0.1 read RACI |
@@ -118,7 +110,6 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 4.0 | Module 4 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 4.1 | Place every component — the four functional layers | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.1, SRT v0.1, Accepted v0.1, Cues v0.1, MP4 v0.1 | accepted at KP1's bar 30 Sep — settled on runtime (3:43, under the floor); cued + assembled. Backchannel heavy; lock-in given as the reason for reuse; Sources line spoken |
 | 4.2 | Secure every call — the three trust zones | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 30 Sep — v0.5 with a 37.7 s show-open cut by hand; cued + assembled (3:56). The a mess / a message false positive fixed in srt_drift_check the same day |
 | 4.3 | Adopt the standards portfolio | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.1, Deck v0.1, Brief v0.1, Take v0.15, SRT v0.15, Accepted v0.15, Cues v0.15, MP4 v0.15 | accepted at KP1's bar 30 Sep — v0.12 with a 21 s vocabulary-hook opener cut by hand; cued + assembled (3:44). Content right and in order, ends on the recap; slide 5 fuses credentials with sector reuse; Sources card silent |
@@ -132,7 +123,6 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 5.0 | Module 5 introduction (on camera) | en | `○○○○` | 0/4 | Script |  |  |
 | 5.1 | Plan the build in four phases | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.1, SRT v0.1, Accepted v0.1, Cues v0.1, MP4 v0.1 | accepted at KP1's bar 30 Sep — gate clean; cued + assembled (5:07). Invented identity gloss on the trust anchor |
 | 5.2 | State what a member must have — the Member Requirements | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.3, Deck v0.3, Brief v0.3, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 30 Sep — v0.4 with a 54 s show-open cut by hand; cued + assembled (3:12). Reveal REQ-1 described faithfully; one mid-take rail metaphor; Sources card silent |
 | 5.3 | Make 'connected' mean 'dependable' — the SLA | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.3, Deck v0.3, Brief v0.3, Take v0.15, SRT v0.15, Accepted v0.15, Cues v0.15, MP4 v0.15 | accepted at KP1's bar 1 Oct — v0.10 with a 44 s show-open cut by hand; cued + assembled (4:13). In order, five numbers numbered, SLA reveal faithful, closes on the recap. Slide 4's per-service point never said; "the policy briefing" once; scattered idioms |
@@ -140,7 +130,7 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 | 5.5 | Stand up the federation | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.3, Deck v0.3, Brief v0.3, Take v0.6, SRT v0.6, Accepted v0.6, Cues v0.6, MP4 v0.6 | accepted at KP1's bar 30 Sep — v0.4 with a 31 s show-open cut by hand; cued + assembled (3:03). Demo block First–Fourth in order. T1 timings are the 22 Aug deploy (stale, captioned without "on this run"); slide 8 text small on a phone |
 | 5.6 | Run the once-only exchange, live | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.5, Deck v0.5, Brief v0.5, Take v0.23, SRT v0.23, Accepted v0.23, Cues v0.23, MP4 v0.23 | accepted by the author 1 Oct — the first take on the four-observation deck/brief v0.5 (seven observations failed 14 takes). First–Fourth in order, agencies named, recap; cued + assembled (3:30), clip composited on slide 6. KNOWN ERROR accepted: "refused by PNEA's access list" at 2:21 (PNIA's). Newer v0.25/v0.27 on disk are rejected tries (over the ceiling; v0.27 lost the ordinals and recap) |
 | 5.7 | From demonstration to production | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.4, Deck v0.4, Brief v0.4, Take v0.9, SRT v0.9, Accepted v0.9, Cues v0.9, MP4 v0.9 | accepted at KP1's bar 1 Oct — v0.7 with a 27 s show-open cut by hand; cued + assembled (4:25). Every roll took config-shape before legacy retirement and the P2 reveal before never-ship, so the 5.7 deck was reordered to match (deck v0.4, narration unchanged). §3 vocabulary as rationale for legacy retirement |
-| 5.8 | Watch the bus — monitoring and anomaly detection | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.3, Deck v0.3, Brief v0.3, Take v0.5, SRT v0.5, Accepted v0.1, Cues v0.1, MP4 v0.1 | was 6.2. Theory-only (plan 2026-10-01-kp2-m5-5.8-theory-only; deck v0.3, 6 slides) — accepted at KP1's bar 1 Oct; cued + assembled (3:20, under the 3:30 floor). Message log cast as never the input, request-path warning present, Steering Committee only. The brief's "never say the logs" read aloud once; MP4 is v0.1 but newest take is v0.5 — re-cue/re-render or delete the stale take; cues v0.1 lag take v0.5; accepted v0.1 but newest take on disk is v0.5 |
+| 5.8 | Watch the bus — monitoring and anomaly detection | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.3, Deck v0.3, Brief v0.3, Take v0.1, SRT v0.1, Accepted v0.1, Cues v0.1, MP4 v0.1 | was 6.2. Theory-only (plan 2026-10-01-kp2-m5-5.8-theory-only; deck v0.3, 6 slides) — accepted at KP1's bar 1 Oct; cued + assembled (3:20, under the 3:30 floor). Message log cast as never the input, request-path warning present, Steering Committee only. The brief's "never say the logs" read aloud once |
 | 5.9 | Keep the documents honest — the consistency cross-check | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.2, Deck v0.2, Brief v0.2, Take v0.5, SRT v0.5, Accepted v0.5, Cues v0.5, MP4 v0.5 | accepted at KP1's bar 30 Sep — settled on runtime (3:22), strongest of three; cued + assembled. LISTEN: "RAQUI" for RACI at 1:23 |
 | 5.10 | Carry the framework to the next sector | en | `●●●●●●●●●○` | 9/10 | Published | Script v0.3, Deck v0.3, Brief v0.3, Take v0.19, SRT v0.19, Accepted v0.19, Cues v0.19, MP4 v0.19 | was 6.4. Accepted at KP1's bar 1 Oct on brief v0.3 (the fraction wording replaced) — settled on runtime (4:15); cued + assembled. Clean: title, deck order, recap, no figures or metaphor. BDAT gloss invented. LISTEN: "progressive education data" at 0:27 |
 

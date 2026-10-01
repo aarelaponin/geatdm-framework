@@ -21,7 +21,6 @@ Each subtopic page carries its video at the top. While a video is still in produ
 
 | # | Title | Runtime | Page | Status |
 | --- | --- | --- | --- | --- |
-| M1 | Module 1 — Why a PAERA-anchored EA | ~2 min | [Module 1](../kp1/module-1/README.md) | *in production* |
 | 1.1 | Why every digital-government programme rebuilds the same plumbing — and how to stop it | ~4 min | [1.1 Why your country needs a national EA](../kp1/module-1/1-1.md) | *in production* |
 | 1.2 | What is Enterprise Architecture, really? A 3-minute explanation for government leaders | ~3 min | [1.2 What an EA actually is, in one breath](../kp1/module-1/1-2.md) | *in production* |
 | 1.3 | Why digital procurement rules don't fix fragmentation — and what an EA actually does | ~5 min | [1.3 Why projects can't do this themselves](../kp1/module-1/1-3.md) | *in production* |
@@ -36,7 +35,6 @@ Playlist: *Module 1 — Why a PAERA-anchored EA* (pending).
 
 | # | Title | Runtime | Page | Status |
 | --- | --- | --- | --- | --- |
-| M2 | Module 2 — Principles, the metamodel and the BDAT layers | ~2 min | [Module 2](../kp1/module-2/README.md) | *in production* |
 | 2.1 | The four layers of Enterprise Architecture (BDAT), and the mistake first-time architects make in each | ~5 min | [2.1 Read any government in four layers](../kp1/module-2/2-1.md) | *in production* |
 | 2.2 | What is an EA metamodel — and why re-use is impossible without one | ~5 min | [2.2 The shared vocabulary that makes re-use possible](../kp1/module-2/2-2.md) | *in production* |
 | 2.3 | The 10 architectural principles every public-sector architect should adopt (not write from scratch) | ~4 min | [2.3 Adopt your principles, don't draft them](../kp1/module-2/2-3.md) | *in production* |
@@ -51,7 +49,6 @@ Playlist: *Module 2 — EA principles, the metamodel and the BDAT layers* (pendi
 
 | # | Title | Runtime | Page | Status |
 | --- | --- | --- | --- | --- |
-| M3 | Module 3 — EA repository, tooling and governance | ~2 min | [Module 3](../kp1/module-3/README.md) | *in production* |
 | 3.1 | What is an EA repository — and why your architecture needs one single source of truth | ~4 min | [3.1 Set up the one place your architecture lives](../kp1/module-3/3-1.md) | *in production* |
 | 3.2 | Choosing an Enterprise Architecture tool without creating new vendor lock-in | ~4 min | [3.2 Choose EA tooling without locking yourself in](../kp1/module-3/3-2.md) | *in production* |
 | 3.3 | Why EA repositories go stale — and the update discipline that keeps them true | ~4 min | [3.3 Keep the repository true — the update discipline](../kp1/module-3/3-3.md) | *in production* |
@@ -66,7 +63,6 @@ Playlist: *Module 3 — EA repository, tooling and governance* (pending).
 
 | # | Title | Runtime | Page | Status |
 | --- | --- | --- | --- | --- |
-| M4 | Module 4 — Progressa end-to-end — the method on one sector | ~2 min | [Module 4](../kp1/module-4/README.md) | *in production* |
 | 4.1 | An Enterprise Architecture worked example: an education sector's fragmentation problem | ~3 min | [4.1 Meet Progressa — a real sector with a real fragmentation problem](../kp1/module-4/4-1.md) | *in production* |
 | 4.2 | EA lifecycle Phase 1: how to run Discovery on a government sector | ~4 min | [4.2 Phase 1, Discover — map what the sector has today](../kp1/module-4/4-2.md) | *in production* |
 | 4.3 | EA lifecycle Phase 2: how to run an assessment and rank the gaps that matter | ~3 min | [4.3 Phase 2, Assess — find the gaps and rank them](../kp1/module-4/4-3.md) | *in production* |
@@ -82,7 +78,6 @@ Playlist: *Module 4 — Progressa demonstration, applying the method end-to-end*
 
 | # | Title | Runtime | Page | Status |
 | --- | --- | --- | --- | --- |
-| M5 | Module 5 — Evidence, rollout and the case | ~2 min | [Module 5](../kp1/module-5/README.md) | *in production* |
 | 5.1 | Is national Enterprise Architecture proven? What four real government programmes show | ~4 min | [5.1 Is this proven, or just theory? — evidence from real programmes](../kp1/module-5/5-1.md) | *in production* |
 | 5.2 | Why digital-government architecture programmes fail — and it's never the technology | ~3 min | [5.2 What the evidence says works — and what quietly kills these programmes](../kp1/module-5/5-2.md) | *in production* |
 | 5.3 | Scaling Enterprise Architecture across government sectors: the wave rollout | ~5 min | [5.3 Roll it out across sectors — and why the second is cheaper](../kp1/module-5/5-3.md) | *in production* |

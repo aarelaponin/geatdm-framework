@@ -5,7 +5,7 @@ icon: house
 
 # Building a Government Interoperability Framework (GIF)
 
-**ITU/Giga Knowledge Product** · 43 videos in five modules · about 186 minutes of video · 38 AI plays · a runnable build pack · self-paced · free and open
+**ITU/Giga Knowledge Product** · 38 videos in five modules · about 176 minutes of video · 38 AI plays · a runnable build pack · self-paced · free and open
 
 This is the companion to the video series on building a Government Interoperability Framework — the legal, organisational and technical configuration that lets public bodies exchange data so that a citizen is asked once. Where [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) taught how to *plan* an Enterprise Architecture, this course teaches how to *build* the interoperability layer over that plan. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
 
@@ -65,7 +65,6 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [M1](module-1/README.md) | Module 1 intro | ~2 min | *in production* |
 | [1.1](module-1/1-1.md) | Why interoperability can't be bought, only built | ~5 min | *in production* |
 | [1.2](module-1/1-2.md) | The four layers of interoperability | ~5 min | *in production* |
 | [1.3](module-1/1-3.md) | The once-only promise | ~4 min | *in production* |
@@ -82,7 +81,6 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [M2](module-2/README.md) | Module 2 intro | ~2 min | *in production* |
 | [2.1](module-2/2-1.md) | Why the platform needs a legal mandate | ~4 min | *in production* |
 | [2.2](module-2/2-2.md) | Anatomy of an interoperability decree | ~5 min | *in production* |
 | [2.3](module-2/2-3.md) | The Explanatory Memorandum and Preamble | ~5 min | *in production* |
@@ -98,7 +96,6 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [M3](module-3/README.md) | Module 3 intro | ~2 min | *in production* |
 | [3.1](module-3/3-1.md) | Why a bus needs an owner | ~5 min | *in production* |
 | [3.2](module-3/3-2.md) | The three tiers of governance | ~5 min | *in production* |
 | [3.3](module-3/3-3.md) | The RACI matrix | ~5 min | *in production* |
@@ -114,7 +111,6 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [M4](module-4/README.md) | Module 4 intro | ~2 min | *in production* |
 | [4.1](module-4/4-1.md) | Place every component — the four functional layers | ~5 min | *in production* |
 | [4.2](module-4/4-2.md) | Secure every call — the three trust zones | ~5 min | *in production* |
 | [4.3](module-4/4-3.md) | Adopt the standards portfolio | ~5 min | *in production* |
@@ -132,7 +128,6 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [M5](module-5/README.md) | Module 5 intro | ~2 min | *in production* |
 | [5.1](module-5/5-1.md) | Plan the build in four phases | ~5 min | *in production* |
 | [5.2](module-5/5-2.md) | State what a member must have — the Member Requirements | ~4 min | *in production* |
 | [5.3](module-5/5-3.md) | Make 'connected' mean 'dependable' — the SLA | ~4 min | *in production* |

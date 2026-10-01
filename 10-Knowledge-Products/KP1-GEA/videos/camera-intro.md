@@ -1,13 +1,14 @@
-# Camera intro — filming a 1.0 and folding it into the series
+# Camera intro — filming the KP intro and folding it into the series
 
-**A ninth artefact for a module: subtopic `«m».0`, an on-camera introduction, filmed by hand.**
+**One on-camera artefact per KP: the course introduction (`0.0`), filmed by hand.** Modules have no
+intro video of their own (decided 1 October 2026).
 It does not come out of the pipeline — no deck, no brief, no NotebookLM take, no cue file. It is
 one person, one camera, one to two minutes. Steps 1–7 in `README.md` do not apply; these do.
 
 The script is authored like any other subtopic — it lives in `«lang»/scripts/` as
-`KP«n»_M«m»_«m».0_IntroScript_v0.«v».md`, next to the eight it introduces.
+`KP«n»_IntroScript_v0.«v».md` in `videos/intro/«lang»/scripts/`, where the video tracker looks for it.
 
-> **Before you film**, read the compliance note in the script. An on-camera 1.0 is a deliberate
+> **Before you film**, read the compliance note in the script. An on-camera intro is a deliberate
 > exception to §4.3 *"no individuals on screen"* and belongs in §5.4 as a calibration item. If ITU
 > declines it, the same script becomes a screen-only voice-over and nothing else changes.
 
@@ -15,7 +16,7 @@ The script is authored like any other subtopic — it lives in `«lang»/scripts
 
 ## What "matching the series" means
 
-The intro has to be indistinguishable from 1.1–1.8 as a *file*, or the playlist plays unevenly and
+The intro has to be indistinguishable from the course's subtopic videos as a *file*, or the playlist plays unevenly and
 YouTube re-encodes it differently. Measured off `KP1_M1_1.1_Video_v0.7.mp4`:
 
 | Property | Series value | Where it comes from |
@@ -32,8 +33,8 @@ QuickTime will give you none of these by default. Step 4 fixes all of them in on
 > **A loudness note worth raising separately.** −24.9 LUFS is broadcast-quiet. YouTube normalises
 > loud uploads *down* to about −14 LUFS but never lifts quiet ones *up*, so the whole series plays
 > back noticeably softer than the videos on either side of it in a viewer's feed. That is a
-> series-wide call, not an intro call — match −24.9 for now so 1.0 does not stand out, and decide
-> separately whether to re-master all eight nearer −16.
+> series-wide call, not an intro call — match −24.9 for now so the intro does not stand out, and decide
+> separately whether to re-master the series nearer −16.
 
 ---
 
@@ -97,8 +98,8 @@ them in the edit; if they are not, you are filming again.
 5. **Record two seconds of silence** before your first word and after your last, every take. That
    silence is your room tone and your edit handles; without it every cut sounds abrupt.
 6. Hit record. Say it. Hit stop.
-7. **File → Save**, and put the takes somewhere out of the repo — `~/Movies/KP1-M1-1.0/` is fine.
-   Name them `take1.mov`, `take2.mov`. Raw takes do not belong in the module folder.
+7. **File → Save**, and put the takes somewhere out of the repo — `~/Movies/KP1-intro/` is fine.
+   Name them `take1.mov`, `take2.mov`. Raw takes do not belong in the repo.
 
 Do at least three takes even when the first feels right. It costs four minutes and it is the only
 insurance against noticing a stumble after you have already cut the video.
@@ -113,8 +114,8 @@ chain in step 4.
 One command. Set the three variables and run it from anywhere.
 
 ```bash
-TAKE=~/Movies/KP1-M1-1.0/take3.mov
-OUT="$HOME/mnt/10-Knowledge-Products/KP1-GEA/videos/module_1/en/video/KP1_M1_1.0_Video_v0.1.mp4"
+TAKE=~/Movies/KP1-intro/take3.mov
+OUT="$HOME/mnt/10-Knowledge-Products/KP1-GEA/videos/intro/en/video/KP1_0.0_Video_v0.1.mp4"
 IN_POINT=00:00:01.5      # first frame you want
 OUT_POINT=00:02:01.0     # last frame you want
 
@@ -135,8 +136,8 @@ lands.
 Then verify you actually match:
 
 ```bash
-cd "$HOME/mnt/10-Knowledge-Products/KP1-GEA/videos/module_1/en/video"
-for f in KP1_M1_1.0_Video_v0.1.mp4 KP1_M1_1.1_Video_v0.7.mp4; do
+cd "$HOME/mnt/10-Knowledge-Products/KP1-GEA/videos/intro/en/video"
+for f in KP1_0.0_Video_v0.1.mp4 ../../../module_1/en/video/KP1_M1_1.1_Video_v0.7.mp4; do
   echo "== $f"
   ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,sample_rate,channels \
     -of default=noprint_wrappers=1 "$f"
@@ -157,8 +158,8 @@ ffmpeg -loop 1 -t 3 -i endcard.png -f lavfi -t 3 -i anullsrc=r=44100:cl=stereo \
   -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 192k -shortest endcard.mp4
 
 # join, no re-encode — parameters already match
-printf "file '%s'\n" "$PWD/KP1_M1_1.0_Video_v0.1.mp4" "$PWD/endcard.mp4" > /tmp/join.txt
-ffmpeg -f concat -safe 0 -i /tmp/join.txt -c copy KP1_M1_1.0_Video_v0.2.mp4
+printf "file '%s'\n" "$PWD/KP1_0.0_Video_v0.1.mp4" "$PWD/endcard.mp4" > /tmp/join.txt
+ffmpeg -f concat -safe 0 -i /tmp/join.txt -c copy KP1_0.0_Video_v0.2.mp4
 ```
 
 If `-c copy` produces a glitch at the seam, drop it and re-encode with the same `libx264`/`aac`
@@ -169,7 +170,7 @@ flags as step 4.
 The intro gets an SRT like every other topic, into `«lang»/audio/`:
 
 ```bash
-KP1_M1_1.0_Audio_v0.1.srt
+KP1_0.0_Audio_v0.1.srt
 ```
 
 Run it through the same skill the series uses — `kp-scribe-transcribe` (ElevenLabs Scribe), or
@@ -179,29 +180,12 @@ uploading; "PAERA" and "Lapõnin" are exactly the words a transcriber gets wrong
 ## 7 — Where it lands
 
 ```
-videos/module_1/en/
-├── scripts/  KP1_M1_1.0_IntroScript_v0.2.md     the script (committed)
-├── audio/    KP1_M1_1.0_Audio_v0.1.srt          the captions (committed)
-└── video/    KP1_M1_1.0_Video_v0.1.mp4          the deliverable (gitignored)
+videos/intro/en/
+├── scripts/  KP1_IntroScript_v0.1.md            the script (committed)
+├── audio/    KP1_0.0_Audio_v0.1.srt             the captions (committed)
+└── video/    KP1_0.0_Video_v0.1.mp4             the deliverable (gitignored)
 ```
 
-Raw `.mov` takes stay outside the repo. Unlike every other `.mp4` here, **1.0 is not rebuildable
+Raw `.mov` takes stay outside the repo. Unlike every other `.mp4` here, **the intro is not rebuildable
 from source** — there is no deck and no cue file to re-render it from. Keep the chosen take
 archived somewhere you back up, and note where in `voice-cast.md`.
-
-## 8 — If you decide to prepend instead
-
-Not recommended — it breaks §3.i and adds a minute to every video — but if ITU asks for it, the
-files already match after step 4, so it is a concat per video:
-
-```bash
-cd "$HOME/mnt/10-Knowledge-Products/KP1-GEA/videos/module_1/en/video"
-for v in 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8; do
-  src=$(ls KP1_M1_${v}_Video_v*.mp4 | sort -V | tail -1)
-  printf "file '%s'\n" "$PWD/KP1_M1_1.0_Video_v0.1.mp4" "$PWD/$src" > /tmp/join_$v.txt
-  ffmpeg -f concat -safe 0 -i /tmp/join_$v.txt -c copy "with_intro_$src"
-done
-```
-
-Then every SRT needs its timings shifted by the intro's duration, which is the real cost of this
-option.

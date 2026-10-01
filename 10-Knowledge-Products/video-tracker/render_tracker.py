@@ -141,17 +141,12 @@ def detect_pipeline(kp: dict, mod: dict, lang: str, code: str, manual: dict) -> 
     return out
 
 
-def detect_camera(kp: dict, mod: dict | None, lang: str, manual: dict) -> dict:
+def detect_camera(kp: dict, lang: str, manual: dict) -> dict:
+    """The KP-level on-camera intro — the only camera video (module intros dropped 1 Oct 2026)."""
     n = kp["number"]
-    if mod is None:  # KP-level intro
-        base = ROOT / kp["root"] / kp.get("intro", {}).get("path", "videos/intro") / lang
-        pre = f"KP{n}_0.0"
-        script_glob = str(base / "scripts" / f"KP{n}_IntroScript_v*.md")
-    else:
-        m = mod["number"]
-        base = ROOT / kp["root"] / mod["path"] / lang
-        pre = f"KP{n}_M{m}_{m}.0"
-        script_glob = str(base / "scripts" / f"{pre}_IntroScript_v*.md")
+    base = ROOT / kp["root"] / kp.get("intro", {}).get("path", "videos/intro") / lang
+    pre = f"KP{n}_0.0"
+    script_glob = str(base / "scripts" / f"KP{n}_IntroScript_v*.md")
     out = {}
     v, f = latest(script_glob)
     out["script"] = {"done": v is not None, "label": v or "", "file": f}
@@ -187,18 +182,10 @@ def build(cfg: dict) -> dict:
                       "kind": "camera", "langs": {}}
         for lang in langs:
             man = (intro.get(lang) or {})
-            K["intro"]["langs"][lang] = {"stages": detect_camera(kp, None, lang, man), "manual": man}
+            K["intro"]["langs"][lang] = {"stages": detect_camera(kp, lang, man), "manual": man}
         for mod in kp["modules"]:
             M = {"number": mod["number"], "title": mod["title"], "persona": mod.get("persona", ""),
                  "path": mod["path"], "rows": []}
-            # module intro (camera)
-            mi = mod.get("intro") or {}
-            row = {"code": f"{mod['number']}.0", "title": mi.get("title", f"Module {mod['number']} introduction"),
-                   "kind": "camera", "retired": None, "langs": {}}
-            for lang in langs:
-                man = mi.get(lang) or {}
-                row["langs"][lang] = {"stages": detect_camera(kp, mod, lang, man), "manual": man}
-            M["rows"].append(row)
             for t in mod["topics"]:
                 row = {"code": str(t["code"]), "title": t["title"], "kind": "pipeline",
                        "retired": t.get("retired"), "mins": t.get("mins", ""), "langs": {}}
@@ -399,10 +386,7 @@ def render_html(model: dict) -> str:
             P.append(f'<h3>Module {M["number"]} — {esc(M["title"])}'
                      + (f'<span class="pill">{esc(M["persona"])}</span>' if M["persona"] else "")
                      + f'<span class="sub">{esc(M["path"])}/</span></h3>')
-            cam_rows = [r for r in M["rows"] if r["kind"] == "camera"]
-            pipe_rows = [r for r in M["rows"] if r["kind"] == "pipeline"]
-            P.append(table_html(cam_rows, langs, CAMERA_STAGES, next_up, K["id"], f"Module {M['number']}"))
-            P.append(table_html(pipe_rows, langs, PIPELINE_STAGES, next_up, K["id"], f"Module {M['number']}"))
+            P.append(table_html(M["rows"], langs, PIPELINE_STAGES, next_up, K["id"], f"Module {M['number']}"))
 
     # ---- next up
     P.append('<div class="next-up"><b>Next actions (EN)</b> — the first undone stage per video, grouped by what to run next.')
