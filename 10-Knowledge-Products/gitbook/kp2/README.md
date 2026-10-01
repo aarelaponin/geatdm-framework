@@ -5,7 +5,7 @@ icon: house
 
 # Building a Government Interoperability Framework (GIF)
 
-**ITU/Giga Knowledge Product** · 43 videos in five modules · about 187 minutes of video · 38 AI plays · a runnable build pack · self-paced · free and open
+**ITU/Giga Knowledge Product** · 43 videos in five modules · about 186 minutes of video · 38 AI plays · a runnable build pack · self-paced · free and open
 
 This is the companion to the video series on building a Government Interoperability Framework — the legal, organisational and technical configuration that lets public bodies exchange data so that a citizen is asked once. Where [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) taught how to *plan* an Enterprise Architecture, this course teaches how to *build* the interoperability layer over that plan. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
 
@@ -128,7 +128,7 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 <details>
 
-<summary><strong>Module 5 — Implementation and onboarding</strong> · ~45 minutes across 10 videos</summary>
+<summary><strong>Module 5 — Implementation and onboarding</strong> · ~44 minutes across 10 videos</summary>
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
@@ -136,11 +136,11 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 | [5.1](module-5/5-1.md) | Plan the build in four phases | ~5 min | *in production* |
 | [5.2](module-5/5-2.md) | State what a member must have — the Member Requirements | ~4 min | *in production* |
 | [5.3](module-5/5-3.md) | Make 'connected' mean 'dependable' — the SLA | ~4 min | *in production* |
-| [5.4](module-5/5-4.md) | Register a member on X-Road | ~5 min | *in production* |
+| [5.4](module-5/5-4.md) | Admit a member to the bus | ~5 min | *in production* |
 | [5.5](module-5/5-5.md) | Stand up the federation | ~5 min | *in production* |
 | [5.6](module-5/5-6.md) | Run the once-only exchange, live | ~3 min | *in production* |
 | [5.7](module-5/5-7.md) | From demonstration to production | ~5 min | *in production* |
-| [5.8](module-5/5-8.md) | Watch the bus — monitoring and anomaly detection | ~5 min | *in production* |
+| [5.8](module-5/5-8.md) | Watch the bus — monitoring and anomaly detection | ~4 min | *in production* |
 | [5.9](module-5/5-9.md) | Keep the documents honest — the consistency cross-check | ~5 min | *in production* |
 | [5.10](module-5/5-10.md) | Carry the framework to the next sector | ~4 min | *in production* |
 
@@ -238,7 +238,7 @@ The value to you as the Strategist is leverage. A small team, with these plays, 
 | [5.5](module-5/5-5.md) | ✍️ Draft the federation stand-up run book | B32 Federation stand-up run book | A run book is only reproducible if it has been run — execute it end to end in the sandbox and confirm all four members register, before treating it as the build-pack run book. |
 | [5.6](module-5/5-6.md) | ✍️ Script and verify the once-only exchange (the acceptance check) | B33 Once-only acceptance script | An acceptance check that only proves the happy path is half a check — include the negative case (an unauthorised member is denied) and confirm the data returned is the right learner's, not merely that data returned. |
 | [5.7](module-5/5-7.md) | 🔍 Build the demonstration-to-production gap checklist | B34 Demonstration-to-production gap checklist | The gap checklist is a planning aid, not a security sign-off — production hardening and audit must be done and independently reviewed, not merely listed. |
-| [5.8](module-5/5-8.md) | 🔍 Summarise bus health and flag anomalies from the logs | B35 Bus-health summary and anomaly list | Confirm the logs are stripped of citizen personal data before they go into the prompt — the play monitors the traffic, never the cargo. |
+| [5.8](module-5/5-8.md) | 🔍 Summarise bus health and flag anomalies from the monitoring data | B35 Bus-health summary and anomaly list | Take the input from operational monitoring, never the message log, which stores the messages themselves; and check request paths, since a lookup by ID number can carry the number in the URL. |
 | [5.9](module-5/5-9.md) | 🔍 Cross-check the decree, Governance Pack and standards portfolio for drift | B36 Document-consistency report | The cross-check finds drift; it must not resolve it — deciding whether the decree or the catalogue is correct is a legal and governance judgement a human owns. |
 | [5.10](module-5/5-10.md) | ✍️ Map your framework's sector-portable vs sector-specific parts for a new sector | B37 Sector-portability map | The 'reused unchanged' list is only true if the platform was built sector-neutrally — confirm that none of your education-sector specifics leaked into the bus, governance or standards before promising they carry over. |
 

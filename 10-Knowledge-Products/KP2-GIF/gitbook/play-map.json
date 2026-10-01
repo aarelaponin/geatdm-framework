@@ -314,7 +314,7 @@
   "artefact": "B35 — Bus-health summary and anomaly list",
   "kind": "diagnostic",
   "est": "~15 min",
-  "consumes": "B33",
+  "consumes": "your bus's operational monitoring data (metadata only, never the message log)",
   "skill": "gif-bus-monitor",
   "also": [
    "cite-or-discard"

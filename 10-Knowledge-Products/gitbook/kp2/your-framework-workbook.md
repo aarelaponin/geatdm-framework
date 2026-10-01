@@ -110,9 +110,9 @@ flowchart LR
 | **B30** | Service-Level Agreement template | [5.3](module-5/5-3.md) ✍️ | B17 | — |
 | **B31** | X-Road member registration | [5.4](module-5/5-4.md) ✍️ | B26, B29 | 5.5 |
 | **B32** | Federation stand-up run book | [5.5](module-5/5-5.md) ✍️ | B31 | 5.6, 5.7 |
-| **B33** | Once-only acceptance script | [5.6](module-5/5-6.md) ✍️ | B32, B27 | 5.8 |
+| **B33** | Once-only acceptance script | [5.6](module-5/5-6.md) ✍️ | B32, B27 | — |
 | **B34** | Demonstration-to-production gap checklist | [5.7](module-5/5-7.md) 🔍 | B32, B28 | — |
-| **B35** | Bus-health summary and anomaly list | [5.8](module-5/5-8.md) 🔍 | B33 | — |
+| **B35** | Bus-health summary and anomaly list | [5.8](module-5/5-8.md) 🔍 | your bus's operational monitoring data (metadata only, never the message log) | — |
 | **B36** | Document-consistency report | [5.9](module-5/5-9.md) 🔍 | B11, B19, B22 | — |
 | **B37** | Sector-portability map | [5.10](module-5/5-10.md) ✍️ | B28, B22, B23 | — |
 
