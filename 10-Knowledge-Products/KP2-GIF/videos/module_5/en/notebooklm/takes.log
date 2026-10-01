@@ -51,3 +51,6 @@ ts	subtopic	brief	prompt	notebook_id	audio	duration_s	wall_s
 2026-10-01T18:52:22+00:00	5.6	KP2_M5_5.6_AudioBrief_v0.5.md	KP2_M5_5.6_NotebookLM_Prompt_v0.5.md	f9a4ac9d-3953-4e1a-b38a-7a3090770644	KP2_M5_5.6_Audio_v0.23.m4a	210.0	323
 2026-10-01T19:02:02+00:00	5.6	KP2_M5_5.6_AudioBrief_v0.5.md	KP2_M5_5.6_NotebookLM_Prompt_v0.5.md	f9a4ac9d-3953-4e1a-b38a-7a3090770644	KP2_M5_5.6_Audio_v0.24.m4a	355.6	500
 2026-10-01T19:08:17+00:00	5.6	KP2_M5_5.6_AudioBrief_v0.5.md	KP2_M5_5.6_NotebookLM_Prompt_v0.5.md	f9a4ac9d-3953-4e1a-b38a-7a3090770644	KP2_M5_5.6_Audio_v0.26.m4a	348.8	314
+2026-10-01T20:21:07+00:00	5.8	KP2_M5_5.8_AudioBrief_v0.3.md	KP2_M5_5.8_NotebookLM_Prompt_v0.3.md	8f1fb83f-727d-46da-bdce-56f0f52d677e	KP2_M5_5.8_Audio_v0.1.m4a	199.7	250
+2026-10-01T20:26:37+00:00	5.8	KP2_M5_5.8_AudioBrief_v0.3.md	KP2_M5_5.8_NotebookLM_Prompt_v0.3.md	8f1fb83f-727d-46da-bdce-56f0f52d677e	KP2_M5_5.8_Audio_v0.2.m4a	389.6	283
+2026-10-01T20:32:38+00:00	5.8	KP2_M5_5.8_AudioBrief_v0.3.md	KP2_M5_5.8_NotebookLM_Prompt_v0.3.md	8f1fb83f-727d-46da-bdce-56f0f52d677e	KP2_M5_5.8_Audio_v0.4.m4a	366.1	302

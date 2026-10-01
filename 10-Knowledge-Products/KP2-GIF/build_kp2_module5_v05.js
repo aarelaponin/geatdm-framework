@@ -1,4 +1,6 @@
 // Build KP2 Module 5 — Video Script Bundle v0.5
+// v0.5 (1 Oct 2026, 5.8): theory-only — operational monitoring data, not bus logs; traffic vs cargo (message log);
+//   request-path warning; "Two loops" folded into one sentence; Linkup dropped from Sources. Plan 2026-10-01-kp2-m5-5.8-theory-only.
 // v0.5 (30 Sep 2026): the demo videos after the 5.6 pilot (plan 2026-09-13-kp2-m5-demo-videos-5.4-5.5, WP5). 5.4 is
 //   retitled 'Admit a member to the bus' and shows six observations recorded from a real join; 5.5 shows four text
 //   captures of the stood-up federation; 5.2, 5.3 and 5.7 gain one reveal each; 5.6's observations open on their
@@ -275,7 +277,7 @@ body.push(
     ["5.7", "From demonstration to production",
       "What changes between the sandboxed Linkup demonstration and a production-grade federation a country would actually run — including migrating off and retiring the legacy point-to-point links.", "~5 min"],
     ["5.8", "Watch the bus — monitoring and anomaly detection",
-      "Point Claude at the real bus logs to spot a failing or unusual exchange before a citizen does.", "~5 min"],
+      "Point Claude at the bus's operational monitoring data — never its message log — to spot a failing or unusual exchange early.", "~4 min"],
     ["5.9", "Keep the documents honest — the consistency cross-check",
       "Keep the decree, the Governance Pack and the standards portfolio saying the same thing — a cross-check that catches drift across the three.", "~5 min"],
     ["5.10", "Carry the framework to the next sector",
@@ -737,51 +739,46 @@ body.push(...renderSubtopic({
 body.push(...renderSubtopic({
   num: "3.8 Subtopic 5.8",
   title: "Watch the bus — monitoring and anomaly detection",
-  runtime: "~5 min",
-  words: 590,
+  runtime: "~4 min",
+  words: 450,
   persona: PERSONA_A,
-  paeraAnchor: "NIIS X-Road monitoring and operational logs; the Linkup federation; ITU DPI Safeguards",
-  singleMessage: "Point Claude at the real bus logs to spot a failing or unusual exchange before a citizen does.",
+  paeraAnchor: "NIIS X-Road operational monitoring and message log; ITU DPI Safeguards",
+  singleMessage: "Point Claude at the bus's operational monitoring data — never its message log — to spot a failing or unusual exchange early.",
   scriptBeats: [
-    { cue: "Slide 1 — Title: 'Watch the bus — monitoring and anomaly detection'. Voice-over begins." },
-    { text: "A production bus needs real monitoring and alerting, and this is what that monitoring is for. A running bus is not finished — it is operating, every day. Every call leaves a trace in the logs: success or failure, fast or slow, who called whom. Reading those logs by hand does not scale past a few services. The monitoring play points Claude at the real bus logs and turns them into something a Strategist can act on — a plain-language picture of the bus's health, and a flag when something looks wrong." },
-    { cue: "Slide 2 — Title: 'What the logs hold'. Body, four text rows: 'Which exchanges ran, and which failed — and how often.' 'Latency — whether calls are getting slower.' 'Unusual patterns — a spike, a new caller, an off-hours surge.' 'Compliance — which members still meet the binding standards, and which are drifting.' 'The metadata of exchanges, never their contents.'" },
-    { text: "The logs hold the operational truth. Which exchanges ran and which failed, and how often. Whether calls are getting slower — a sign of a service under strain. And unusual patterns — a sudden spike, an agency calling a service it never called before, a surge of activity at three in the morning. The play reads all of this and writes a plain-language health report, flagging the things that deserve a human's attention this week." },
-    { text: "The value is early warning. A failing service, caught in the logs, is fixed before a citizen standing at a counter is turned away. A creeping slowdown, spotted early, is addressed before it becomes an outage. The Operating Authority's team uses this to watch a growing federation without drowning in raw logs — the AI does the reading, the team does the acting. That is what lets a small operations team keep a hundred-service bus healthy. And the same reading serves a second, slower loop. Operational health is watched daily; member compliance is reviewed quarterly — which members still meet the binding standards, whose conformance has lapsed, what breaches occurred and what was done. That review goes to the Steering Committee each quarter, to the Council each year, and, where the country's transparency policy asks for it, to citizens twice a year. Monitoring that never reaches a governance table is a dashboard; monitoring that does is accountability." },
-    { cue: "Slide 3 — Title: 'Two safeguards that are not optional'. Body, two text rows: 'The AI flags; a human investigates — an anomaly is a question, not a verdict.' 'No citizen personal data in the prompt — monitor the metadata of exchanges, never their contents.'" },
-    { text: "Two safeguards matter here, and neither is optional. The AI flags; a human investigates — an anomaly is a question to look into, not a verdict to act on automatically. And, critically, the logs you feed the play must carry no citizen personal data. You monitor the metadata of exchanges — which service, success or failure, how fast — not the contents of what was exchanged. A monitoring tool that ingested citizen data would itself become a data-protection risk, the very thing the framework exists to prevent. Monitor the traffic, never the cargo." },
-    { cue: "Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The logs hold the bus's health — the play makes it legible, a human acts on the flags, and citizen data never enters the prompt.'" },
-    { text: "So monitoring is how a framework stays healthy as it grows from one exchange to hundreds. The bus tells you how it is doing, in its logs; the AI play makes that legible; the Operating Authority acts on the flags; and citizen data never enters the prompt. Monitoring is the difference between a federation someone is watching and one that fails silently until a citizen complains." },
-    { cue: "Slide 5 — Title: 'Sources'. Body: NIIS X-Road monitoring and operational logs; the Linkup federation (ITU cloud); ITU DPI Safeguards. Footer: 'Find the link in the description.'" }
+    { cue: "Slide 1 — Title: 'Watch the bus — monitoring and anomaly detection'. Then Slide 2 — hook: 'A running bus is not finished. It is operating, every day.' Voice-over begins." },
+    { text: "A running bus is not finished — it is operating, every day. Every call it carries leaves a record in the bus's operational monitoring data: which agency called which service, whether the call worked, and how long it took. Reading those records by hand does not scale past a few services. The monitoring play points Claude at that data and turns it into a plain-language picture of the bus's health, with a flag when something looks wrong." },
+    { cue: "Slide 3 — Title: 'What the monitoring data shows'. Body, three text rows: failures by service; latency; unusual patterns. Closing line: 'Read daily for health. Summarised each quarter for the Steering Committee.'" },
+    { text: "The data shows three things. Which exchanges failed, and how often. Whether calls are getting slower — a sign of a service under strain. And unusual patterns — a sudden spike, an agency calling a service it never called before, a surge of activity at three in the morning. The play writes a plain-language health report and flags what deserves a human's attention this week. That is early warning: a failing service is fixed before it becomes a complaint, and a slowdown is addressed before it becomes an outage. The same reading feeds a slower loop. Each quarter, the Operating Authority tells the Steering Committee which members show sustained failures that call for a conformance re-check. Monitoring that reaches a governance table is accountability; the rest is a dashboard." },
+    { cue: "Slide 4 — Title: 'Two safeguards that are not optional'. Two panels: 'The AI flags, a human investigates'; 'The traffic, never the cargo' — monitoring data in, never the message log. Closing line: 'Monitor the traffic, never the cargo.'" },
+    { text: "Two safeguards matter here, and neither is optional. First, the AI flags and a human investigates: an anomaly is a question to look into, not a verdict to act on automatically. Second, only the traffic goes into the prompt, never the cargo. Every server on the bus keeps two records. The operational monitoring data says which service was called, whether it worked, and how fast. The message log keeps the messages themselves — and the citizen data they carried. Only the first belongs anywhere near an AI. Even then, check the request addresses: when a service looks a person up by their ID number, that number can sit in the address itself. Remove it before the data leaves the server. Monitor the traffic, never the cargo." },
+    { cue: "Slide 5 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The monitoring data holds the bus's health — the AI makes it legible, a human acts on the flags, and the cargo never enters the prompt.'" },
+    { text: "So monitoring is how a framework stays healthy as it grows from one exchange to hundreds. The bus records how it is doing in its monitoring data; the AI play makes that legible; the Operating Authority acts on the flags; and the messages themselves never enter the prompt. Monitoring is the difference between a federation someone is watching and one that fails silently until a citizen complains." },
+    { cue: "Slide 6 — Title: 'Sources'. Body: NIIS X-Road operational monitoring (niis.org); NIIS X-Road message log (niis.org); ITU DPI Safeguards. Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
-    ["1", "Title slide. Title: 'Watch the bus — monitoring and anomaly detection'.",
-      "Standard ITU template. No images."],
-    ["2", "What-the-logs-hold slide. Five text rows: failures, latency, patterns, metadata-only.",
-      "What the play reads. Text-only."],
-    ["3", "Two-safeguards slide. Two text rows: AI flags / human investigates; no citizen data.",
-      "The non-negotiable safeguards. Text-only."],
-    ["4", "Single-sentence summary slide. One large text block (Arial Bold 28pt).",
-      "The take-home line."],
-    ["5", "Sources slide. Footer: 'Find the link in the description.'",
-      "Lets viewers verify the monitoring references."]
+    ["1", "Title slide. Title: 'Watch the bus — monitoring and anomaly detection'.", "Standard ITU template. No images."],
+    ["2", "Hook slide. Head: 'A running bus is not finished. It is operating, every day.' Two lines.", "Why monitoring. Text-only."],
+    ["3", "What-the-monitoring-data-shows slide. Three text rows and the quarterly closing line.", "What the play reads. Text-only."],
+    ["4", "Two-safeguards slide. Two panels: AI flags / human investigates; the traffic, never the cargo.", "The non-negotiable safeguards. Text-only."],
+    ["5", "Single-sentence summary slide. One large text block (Arial Bold 28pt) and the practice box.", "The take-home line."],
+    ["6", "Sources slide. Footer: 'Find the link in the description.'", "Lets viewers verify the monitoring references."]
   ],
   aiTip: {
-    title: "Summarise bus health and flag anomalies from the logs",
-    problem: "An Operating Authority needs a plain-language health summary and anomaly flags from the bus's operational logs — without putting any citizen data into the prompt. This prompt produces the monitoring play.",
-    prompt: "Below are operational logs from [country X]'s interoperability bus, containing ONLY exchange metadata — timestamp, calling subsystem, called service, success/failure, latency — and NO citizen personal data [paste the metadata logs]. Produce a health summary: (1) volume and success/failure rates by service; (2) any service with a rising failure rate or latency; (3) anomalies — unusual spikes, a caller that has not called this service before, off-hours surges — each flagged as a QUESTION for a human to investigate, not a conclusion; (4) the top 3 things the Operating Authority should look at this week; (5) a one-paragraph compliance note for the quarterly Steering Committee report — which members show sustained failure or unusual behaviour that warrants a conformance re-check. Do not infer anything about individual citizens; if the logs appear to contain personal data, stop and flag that as a data-protection issue. Output: the health summary plus the prioritised investigate list.",
-    io: "Input: exchange METADATA logs only (no citizen data). Output: a health summary plus a prioritised list of anomalies to investigate.",
-    safeguard: "Confirm the logs are stripped of citizen personal data before they go into the prompt — the play monitors the traffic, never the cargo. And treat every flagged anomaly as a question for a human, not an automated trigger; a false positive acted on automatically can cut off a legitimate exchange and the citizens who depend on it."
+    title: "Summarise bus health and flag anomalies from the monitoring data",
+    problem: "An Operating Authority needs a plain-language health summary and anomaly flags from the bus's operational monitoring data — without putting any citizen data into the prompt. This prompt produces the monitoring play.",
+    prompt: "Below is operational monitoring data from [country X]'s interoperability bus — exchange metadata only (timestamp, calling subsystem, called service, success/failure, latency), exported from the servers' operational monitoring, NOT from the message log, with any identifier inside a request path removed [paste the data]. Produce a health summary: (1) volume and success/failure rates by service; (2) any service with a rising failure rate or latency; (3) anomalies — unusual spikes, a caller that has not called this service before, off-hours surges — each flagged as a QUESTION for a human to investigate, not a conclusion; (4) the top 3 things the Operating Authority should look at this week; (5) a one-paragraph compliance note for the quarterly Steering Committee report — which members show sustained failure or unusual behaviour that warrants a conformance re-check. Do not infer anything about individual citizens; if the data appears to contain personal data — including an ID number inside a request path — stop and flag that as a data-protection issue. Output: the health summary plus the prioritised investigate list.",
+    io: "Input: operational monitoring data only — never the message log, request paths stripped of identifiers. Output: a health summary plus a prioritised list of anomalies to investigate.",
+    safeguard: "Take the input from operational monitoring, never the message log, which stores the messages themselves; and check request paths, since a lookup by ID number can carry the number in the URL. Confirm the data is stripped of citizen personal data before it goes into the prompt — the play monitors the traffic, never the cargo. And treat every flagged anomaly as a question for a human, not an automated trigger; a false positive acted on automatically can cut off a legitimate exchange and the citizens who depend on it."
   },
   metadataRows: [
     ["Working title",          "Bus monitoring and anomaly detection"],
-    ["YouTube-optimised title", "Spotting a failing government data exchange before a citizen does — with AI"],
-    ["Description (60 words)", "A running bus logs every call. Point Claude at the exchange metadata — never citizen data — and it turns raw logs into a plain-language health report and anomaly flags: a failing service, a creeping slowdown, an unusual caller. The AI flags; a human investigates. It keeps a growing federation healthy. Five minutes for the Operating Authority's team. AI monitoring prompt in the description."],
-    ["Tags",                    "bus monitoring, anomaly detection, observability, interoperability operations, X-Road logs, data protection, AI, GovStack, digital government"],
+    ["YouTube-optimised title", "Spotting a failing government data exchange early — with AI"],
+    ["Description (60 words)", "A running bus records every call. Point Claude at the exchange metadata — never citizen data — and it turns raw monitoring data into a plain-language health report and anomaly flags: a failing service, a creeping slowdown, an unusual caller. The AI flags; a human investigates. It keeps a growing federation healthy. Four minutes for the Operating Authority's team. AI monitoring prompt in the description."],
+    ["Tags",                    "bus monitoring, anomaly detection, observability, interoperability operations, X-Road operational monitoring, data protection, AI, GovStack, digital government"],
     ["Playlist (YouTube)",      "KP2 — Topic 5: Implementation, onboarding and the live demonstration"],
     ["ToR §4 coverage",         "§4.3 (AI integration — monitoring play); §4.1 (methodology, operations)"],
     ["PAERA citations",         "(monitoring cited to NIIS X-Road; data-protection guidance to ITU DPI Safeguards)"],
-    ["External-link list",      "NIIS X-Road monitoring and operational logs (niis.org); the Linkup federation (ITU cloud); ITU DPI Safeguards"]
+    ["External-link list",      "NIIS X-Road operational monitoring (niis.org); NIIS X-Road message log (niis.org); ITU DPI Safeguards"]
   ]
 }));
 
@@ -935,7 +932,7 @@ body.push(
   P("Topic 5 is where the build pack becomes runnable: the federation configuration, the member registrations (subsystem + access-control list, generated by bb-config-gen with a [confirm] on every X-Road identifier), the deploy/seed/acceptance scripts, and the once-only test call that kp-solution-verify runs as the acceptance check. This assumes the technical config from Topic 4 and the legal and organisational config from Topics 2–3. The Progressa membership (the four-server canon) and the schedule / Linkup cloud-access items carried from earlier topics still apply; see the KP2 Plan §7 and the KP2–4 Delivery Plan §6."),
 
   H3("5.5 Items carried from the retired Topic 6 (v0.2)"),
-  P("Three items travel with the folded videos. (1) The bus-monitoring play (5.8) runs against the real Linkup logs, with reproducible runs per the Inception Report — confirm the logs are available (action item A4) and, critically, that they carry no citizen personal data before any log goes into an AI prompt. (2) Sharp lines that deserve a deliberate keep / soften / cut decision: 'the second sector is cheaper than the first' (5.10); 'monitor the traffic, never the cargo' (5.8); 'consistency is a direction, not an automatic edit' (5.9). (3) Topic 5 now mixes personas — Architect for 5.1–5.8, Strategist for 5.9–5.10. Each video stands alone and states its persona, so the mix is visible only in the playlist; confirm with ITU that this is acceptable, or that 5.9–5.10 should be signposted as the Strategist's close of KP2. Two consequences of the retirement to confirm: ToR §4.4 (sector portability) is now claimed by 5.10 alone, and ToR §4.7 (dissemination outline) is delivered by the GitBook home page's four role-paths and the KP2 intro video's storyboard rather than by a subtopic video."),
+  P("Three items travel with the folded videos. (1) 5.8 is theory-only. The play runs on a country's own operational monitoring data, never its message log; the Linkup demonstration supplies no input to it. (2) Sharp lines that deserve a deliberate keep / soften / cut decision: 'the second sector is cheaper than the first' (5.10); 'monitor the traffic, never the cargo' (5.8); 'consistency is a direction, not an automatic edit' (5.9). (3) Topic 5 now mixes personas — Architect for 5.1–5.8, Strategist for 5.9–5.10. Each video stands alone and states its persona, so the mix is visible only in the playlist; confirm with ITU that this is acceptable, or that 5.9–5.10 should be signposted as the Strategist's close of KP2. Two consequences of the retirement to confirm: ToR §4.4 (sector portability) is now claimed by 5.10 alone, and ToR §4.7 (dissemination outline) is delivered by the GitBook home page's four role-paths and the KP2 intro video's storyboard rather than by a subtopic video."),
 
   H3("5.6 Alignment to the source method (v0.3)"),
   P("v0.3 aligns Topic 5 to the interoperability method behind KP2. 5.1 now uses the method's phase names (Foundation, Pilot and Validation, Expansion, Optimisation) and deliverables, states the honest calendar — the four build phases follow twelve to eighteen months of foundation work; the first cross-ministry once-only exchange lands in Phase 2; the first milestone is two to three years from programme start; national coverage four to six — and delivers the five plan artefacts (schedule, investment plan, procurement plan, workforce plan, risk register with success metrics). This replaces v0.1's 'first real exchange inside the first six months', which the Progressa demonstration achieves in a sandbox but a national programme does not; the KP2 intro storyboard is adjusted to match. 5.4 adds the conformance test as the gate before a member's first service; 5.6 the dual go-live approval; 5.8 the quarterly compliance review and reporting cadence; 5.10 the usual wave order of sectors. Confirm with ITU that the honest calendar is the framing to carry in the videos — it is the most-changed claim in v0.3."),
@@ -964,7 +961,7 @@ body.push(
     ["5.5", "NIIS X-Road federation — Central Server, Security Server, configuration and Test CA (niis.org); the Linkup demonstration federation."],
     ["5.6", "PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check."],
     ["5.7", "NIIS X-Road production and operations guidance; ITU DPI Safeguards."],
-    ["5.8", "NIIS X-Road monitoring and operational logs (niis.org); the Linkup federation (ITU cloud); ITU DPI Safeguards."],
+    ["5.8", "NIIS X-Road operational monitoring (niis.org); NIIS X-Road message log (niis.org); ITU DPI Safeguards."],
     ["5.9", "The deliverables of this knowledge product — the decree (Module 2), the Governance Pack (Module 3), the standards portfolio (Module 4); EU EIF."],
     ["5.10", "Terms of Reference §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3 (interoperability framing)."]
   ]),

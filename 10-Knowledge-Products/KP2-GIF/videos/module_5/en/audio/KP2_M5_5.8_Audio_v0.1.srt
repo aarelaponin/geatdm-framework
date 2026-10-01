@@ -1,0 +1,191 @@
+1
+00:00:00,100 --> 00:00:05,920
+Module five, video 5.8, watch the bus: monitoring and anomaly detection
+
+2
+00:00:06,580 --> 00:00:14,100
+Point Claude at the bus's operational monitoring data, never its message log, to spot a failing or unusual exchange early.
+
+3
+00:00:14,860 --> 00:00:15,460
+So, uh,
+
+4
+00:00:16,180 --> 00:00:18,760
+looking at this from a director general's perspective,
+
+5
+00:00:19,620 --> 00:00:23,380
+what exactly happens to the infrastructure after the bus is actually running?
+
+6
+00:00:24,680 --> 00:00:28,280
+Well, a running bus is-- I mean, it is not finished, right?
+
+7
+00:00:28,380 --> 00:00:33,460
+It operates every day. Right. And every single call leaves a record in the operational monitoring data.
+
+8
+00:00:33,920 --> 00:00:35,560
+Oh, like what kind of record?
+
+9
+00:00:36,100 --> 00:00:41,500
+Uh, things like which agency called, you know, if it actually worked, and how long the whole thing took.
+
+10
+00:00:42,180 --> 00:00:42,700
+Okay, got it.
+
+11
+00:00:43,360 --> 00:00:46,540
+But reading all of that by hand just, well, it does not scale at all.
+
+12
+00:00:47,000 --> 00:00:53,480
+So the AI play here is to turn this data into a plain language health picture, you know, and flag issues automatically.
+
+13
+00:00:54,340 --> 00:00:59,900
+That makes a lot of sense, but what exactly does this monitoring data reveal about the services in your program?
+
+14
+00:01:00,540 --> 00:01:02,260
+Yeah, so it basically shows three things.
+
+15
+00:01:02,860 --> 00:01:06,740
+Uh, number one is which exchanges failed and, you know, how often they failed.
+
+16
+00:01:06,960 --> 00:01:08,520
+Okay, so you are tracking the errors.
+
+17
+00:01:08,760 --> 00:01:16,200
+Exactly. Number two is latency. So if calls are getting slower, that usually indicates a service is, well, under strain.
+
+18
+00:01:16,660 --> 00:01:18,260
+Oh, right, like a bottleneck or something.
+
+19
+00:01:18,480 --> 00:01:21,620
+Yeah, precisely. And then number three is unusual patterns.
+
+20
+00:01:22,160 --> 00:01:23,240
+Like what kind of patterns?
+
+21
+00:01:24,000 --> 00:01:31,380
+I mean things like sudden spikes in traffic, uh, new callers out of nowhere, or surges at like three AM.
+
+22
+00:01:31,900 --> 00:01:34,160
+No. Yeah, you definitely wanna catch a three AM surge.
+
+23
+00:01:34,640 --> 00:01:36,760
+Right, because this provides early warnings.
+
+24
+00:01:36,780 --> 00:01:40,040
+Mm-hmm. So a failing service is fixed before it ever becomes a complaint.
+
+25
+00:01:40,460 --> 00:01:42,000
+That is huge for a ministry.
+
+26
+00:01:42,420 --> 00:01:45,720
+It really is. And there is also a quarterly loop.
+
+27
+00:01:46,060 --> 00:01:52,800
+The operating authority tells the steering committee which members show sustained failures, uh, requiring a conformance recheck.
+
+28
+00:01:53,480 --> 00:01:56,460
+Okay, so when you are implementing this oversight for your minister,
+
+29
+00:01:57,160 --> 00:02:00,320
+what are the actual rules or, you know, safeguards for this whole process?
+
+30
+00:02:00,880 --> 00:02:03,540
+Well, there are two non-optional safeguards you need to follow.
+
+31
+00:02:03,960 --> 00:02:07,140
+Number one, the AI flags, but a human investigates.
+
+32
+00:02:07,740 --> 00:02:10,199
+Oh, so it is not just fully automated action.
+
+33
+00:02:10,680 --> 00:02:14,340
+No, not at all. An anomaly is just a question to look into.
+
+34
+00:02:14,440 --> 00:02:17,040
+I mean, it is not a verdict to act on automatically.
+
+35
+00:02:17,260 --> 00:02:19,760
+That makes total sense. And the second safeguard?
+
+36
+00:02:20,800 --> 00:02:24,060
+Number two is monitor the traffic, never the cargo.
+
+37
+00:02:24,860 --> 00:02:26,200
+Wait, traffic versus cargo?
+
+38
+00:02:26,720 --> 00:02:30,620
+Yeah. You explicitly distinguish the two records within the reference architecture.
+
+39
+00:02:31,100 --> 00:02:34,860
+The operational monitoring data, which is the traffic, goes into the prompt.
+
+40
+00:02:35,080 --> 00:02:40,540
+Right. But the message log, which is the cargo containing the actual citizen data, well, that never goes in.
+
+41
+00:02:40,980 --> 00:02:43,680
+Oh, wow. Yeah, that is a critical distinction to make.
+
+42
+00:02:44,080 --> 00:02:48,880
+Exactly. You must check request addresses to remove ID numbers before data even leaves the server.
+
+43
+00:02:49,620 --> 00:02:55,560
+And, uh, a hard rule is never use the phrase the logs without specifying which record you mean.
+
+44
+00:02:56,040 --> 00:02:58,320
+So precision is really everything here.
+
+45
+00:02:58,660 --> 00:03:01,900
+It is. Monitoring keeps a framework healthy as it grows.
+
+46
+00:03:02,380 --> 00:03:11,140
+The bus records in its monitoring data, the AI play makes that legible, the operating authority acts on the flags, and the messages themselves never enter the prompt.
+
+47
+00:03:11,660 --> 00:03:17,040
+It is the difference between a federation someone is watching and one that fails silently until a citizen complains.
+
+48
+00:03:17,780 --> 00:03:19,600
+Sources are in the video description

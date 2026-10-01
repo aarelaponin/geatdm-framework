@@ -218,6 +218,8 @@ python3 $KIT/kp-slidecast/scripts/slidecast.py videos/module_5/en/decks/KP2_M5_5
 | ITU objects to the frames (calibration) | Tuesday | 5.5 is unaffected (text only); 5.4 falls back to text captures of the join record (`GET /requests/{id}` rendered) with the clip dropped — the lesson survives, the motion does not. |
 | 5.8 | — | Out of scope until `scripts/opmon-export.sh` exists (metadata-only export of `getSecurityServerOperationalData` with a no-NIN/no-name test); planned separately. |
 
+> Superseded 1 Oct 2026: 5.8 ships theory-only (`KP2-GIF/plans/2026-10-01-kp2-m5-5.8-theory-only.md`); the export is an optional GitBook item.
+
 ---
 
 ## 8. Done when

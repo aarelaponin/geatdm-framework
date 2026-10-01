@@ -76,6 +76,8 @@ Beat ids are the capture manifest's; "expected" is the assertion the capture mak
 | **5.9** | theory | — (document play; the artefact is the cross-check report the learner produces) | — | — |
 | **5.10** | theory | — | — | — |
 
+> Superseded 1 Oct 2026: 5.8 ships theory-only (`KP2-GIF/plans/2026-10-01-kp2-m5-5.8-theory-only.md`); the export is an optional GitBook item.
+
 Two notes on 5.6: keep the drawn `call_flow` slide *before* the block as the "what you are about to see" picture — the frames then map onto boxes the viewer has just seen; and the existing "Every layer" rows slide is *replaced* by frame `C4`, since the console's layer panes say the same thing with live values. 5.4's five-step `flow` slide stays and gains a sixth cell — **Admission** — between Approval and Registration, which is the thing the demo block then shows.
 
 ---
@@ -132,6 +134,8 @@ The same capture run produces the material for the "Run" pages with no extra wor
 ## 4. Gaps the plan exposes
 
 ### 4.1 5.8 has no artefact to point Claude at
+> Superseded 1 Oct 2026: 5.8 ships theory-only (`KP2-GIF/plans/2026-10-01-kp2-m5-5.8-theory-only.md`); the export is an optional GitBook item.
+
 The narration says "point Claude at the real bus logs". The pack has structured JSON logs and a `/metrics` endpoint for join-api and console (a surface, not monitoring — runbook "Observability"), and the X-Road operational-monitoring add-ons on every Security Server — but **no collector and no export**; `getSecurityServerOperationalData` was spiked and works (`docs/decisions/xroad-metrics-notes.md`). Add `scripts/opmon-export.sh` that calls it per server and writes `out/opmon-<date>.json`, **metadata only**, with a test asserting no `nin`/name field is present — which is 5.8's "monitor the traffic, never the cargo" safeguard made mechanical — and commit one sample so the GitBook play has an input. Without this, 5.8's play cannot be run by a learner.
 
 ### 4.2 5.4's "wrong member code" punch block

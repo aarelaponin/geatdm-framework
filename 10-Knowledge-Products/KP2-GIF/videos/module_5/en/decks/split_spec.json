@@ -78,20 +78,20 @@
     {
       "code": "5.8",
       "title": "Watch the bus — monitoring and anomaly detection",
-      "mins": "~5",
+      "mins": "~4",
       "range": [
         68,
-        74
+        73
       ],
-      "message": "Point Claude at the real bus logs to spot a failing or unusual exchange before a citizen does."
+      "message": "Point Claude at the bus's operational monitoring data — never its message log — to spot a failing or unusual exchange early."
     },
     {
       "code": "5.9",
       "title": "Keep the documents honest — the consistency cross-check",
       "mins": "~5",
       "range": [
-        75,
-        81
+        74,
+        80
       ],
       "message": "Keep the decree, the Governance Pack and the standards portfolio saying the same thing — a cross-check that catches drift across the three."
     },
@@ -100,8 +100,8 @@
       "title": "Carry the framework to the next sector",
       "mins": "~4",
       "range": [
-        82,
-        88
+        81,
+        87
       ],
       "message": "The same four-layer framework stands up interoperability beyond education — the method is sector-portable, and the second sector is cheaper than the first."
     }

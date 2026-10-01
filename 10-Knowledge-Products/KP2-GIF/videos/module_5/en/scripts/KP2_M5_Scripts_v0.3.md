@@ -306,9 +306,9 @@ So you close the implementation module by being honest about the gap between dem
 
 ---
 
-## 5.8 Watch the bus — monitoring and anomaly detection (~5 min)
+## 5.8 Watch the bus — monitoring and anomaly detection (~4 min)
 
-> *Point Claude at the real bus logs to spot a failing or unusual exchange before a citizen does.*
+> *Point Claude at the bus's operational monitoring data — never its message log — to spot a failing or unusual exchange early.*
 
 ### Slide — Title (5.8)
 
@@ -316,23 +316,19 @@ So you close the implementation module by being honest about the gap between dem
 
 ### Slide — A running bus is not finished. It is operating, every day.
 
-A production bus needs real monitoring and alerting, and this is what that monitoring is for. A running bus is not finished — it is operating, every day. Every call leaves a trace in the logs: success or failure, fast or slow, who called whom. Reading those logs by hand does not scale past a few services. The monitoring play points Claude at the real bus logs and turns them into something a Strategist can act on — a plain-language picture of the bus's health, and a flag when something looks wrong.
+A running bus is not finished — it is operating, every day. Every call it carries leaves a record in the bus's operational monitoring data: which agency called which service, whether the call worked, and how long it took. Reading those records by hand does not scale past a few services. The monitoring play points Claude at that data and turns it into a plain-language picture of the bus's health, with a flag when something looks wrong.
 
-### Slide — The logs hold the operational truth
+### Slide — What the monitoring data shows
 
-The logs hold the operational truth. Which exchanges ran and which failed, and how often. Whether calls are getting slower — a sign of a service under strain. And unusual patterns — a sudden spike, an agency calling a service it never called before, a surge of activity at three in the morning. The play reads all of this and writes a plain-language health report, flagging the things that deserve a human's attention this week.
-
-### Slide — Two loops: health every day, compliance every quarter
-
-The value is early warning. A failing service, caught in the logs, is fixed before a citizen standing at a counter is turned away. A creeping slowdown, spotted early, is addressed before it becomes an outage. The Operating Authority's team uses this to watch a growing federation without drowning in raw logs — the AI does the reading, the team does the acting. That is what lets a small operations team keep a hundred-service bus healthy. And the same reading serves a second, slower loop. Operational health is watched daily; member compliance is reviewed quarterly — which members still meet the binding standards, whose conformance has lapsed, what breaches occurred and what was done. That review goes to the Steering Committee each quarter, to the Council each year, and, where the country's transparency policy asks for it, to citizens twice a year. Monitoring that never reaches a governance table is a dashboard; monitoring that does is accountability.
+The data shows three things. Which exchanges failed, and how often. Whether calls are getting slower — a sign of a service under strain. And unusual patterns — a sudden spike, an agency calling a service it never called before, a surge of activity at three in the morning. The play writes a plain-language health report and flags what deserves a human's attention this week. That is early warning: a failing service is fixed before it becomes a complaint, and a slowdown is addressed before it becomes an outage. The same reading feeds a slower loop. Each quarter, the Operating Authority tells the Steering Committee which members show sustained failures that call for a conformance re-check. Monitoring that reaches a governance table is accountability; the rest is a dashboard.
 
 ### Slide — Two safeguards that are not optional
 
-Two safeguards matter here, and neither is optional. The AI flags; a human investigates — an anomaly is a question to look into, not a verdict to act on automatically. And, critically, the logs you feed the play must carry no citizen personal data. You monitor the metadata of exchanges — which service, success or failure, how fast — not the contents of what was exchanged. A monitoring tool that ingested citizen data would itself become a data-protection risk, the very thing the framework exists to prevent. Monitor the traffic, never the cargo.
+Two safeguards matter here, and neither is optional. First, the AI flags and a human investigates: an anomaly is a question to look into, not a verdict to act on automatically. Second, only the traffic goes into the prompt, never the cargo. Every server on the bus keeps two records. The operational monitoring data says which service was called, whether it worked, and how fast. The message log keeps the messages themselves — and the citizen data they carried. Only the first belongs anywhere near an AI. Even then, check the request addresses: when a service looks a person up by their ID number, that number can sit in the address itself. Remove it before the data leaves the server. Monitor the traffic, never the cargo.
 
 ### Slide — In one sentence
 
-So monitoring is how a framework stays healthy as it grows from one exchange to hundreds. The bus tells you how it is doing, in its logs; the AI play makes that legible; the Operating Authority acts on the flags; and citizen data never enters the prompt. Monitoring is the difference between a federation someone is watching and one that fails silently until a citizen complains.
+So monitoring is how a framework stays healthy as it grows from one exchange to hundreds. The bus records how it is doing in its monitoring data; the AI play makes that legible; the Operating Authority acts on the flags; and the messages themselves never enter the prompt. Monitoring is the difference between a federation someone is watching and one that fails silently until a citizen complains.
 
 ### Slide — Sources
 

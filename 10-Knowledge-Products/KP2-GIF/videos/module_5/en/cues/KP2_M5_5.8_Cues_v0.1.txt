@@ -1,0 +1,18 @@
+# Slide cue file — KP2 Module 5, Video 5.8
+# Deck:  KP2_M5_5.8_Deck_v0.3.pptx (6 slides)
+# Audio: KP2_M5_5.8_Audio_v0.1.m4a (runs to 3:19.7) — v0.1, no hand cut
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 1 Oct at KP1's bar — the first take on the theory-only deck/brief v0.3 (plan
+# 2026-10-01-kp2-m5-5.8-theory-only). Title read cold; slides in order, the three rows numbered, the
+# quarterly report to the Steering Committee only; the message log cast as the record that never
+# goes in; the request-path ID warning present; recap and sources line. Flaws: 3:20, under the 3:30
+# floor; "never use the phrase the logs" read aloud (2:50, the brief leaking); "accountability…
+# dashboard" line dropped.
+
+0:00.0 # slide 1 — title card
+0:14.9 # slide 2 — A running bus is not finished. It is operating, every day.
+0:54.3 # slide 3 — What the monitoring data shows
+1:53.5 # slide 4 — Two safeguards that are not optional
+2:58.7 # slide 5 — The monitoring data holds the bus's health — the AI makes it legible, a hum
+3:15.7 # slide 6 — Sources
