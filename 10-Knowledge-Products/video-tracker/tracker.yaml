@@ -142,10 +142,10 @@ kps:
       complete); 30 Sep: 1.1, 1.3, 1.5, 1.6 accepted on reworded briefs — all 19 Modules 1–3 videos cued and assembled. See KP2_M1-M3_Video_Status_2026-09-13.md.
       30 Sep: Module 4 complete (8/8; 4.5 and 4.7 on 4:00 briefs). Module 5: script v0.5 / deck v0.3 (the
       demo plan's WP0–WP5 — 5.4 retitled "Admit a member to the bus"; captures KP2_M5_Demo_v0.2 for 5.2–5.7);
-      5.1–5.7, 5.9, 5.10 accepted (5.6 on four observations, one known slip); 5.8 held for the opmon export.
+      Module 5 complete (5.6 on four observations, one known slip; 5.8 theory-only per plan 2026-10-01).
       1 Oct, per-video decks moved on where the takes demanded it: 5.6 v0.5 (four observations, agency-side
       narration), 5.7 v0.4 (slides reordered to the hosts' order), 5.10 v0.3 (cost wording) — combined deck v0.3.
-      36 of 37 lesson videos cued and assembled; the six on-camera intros not started. Every take is read in
+      all 37 lesson videos cued and assembled; the six on-camera intros not started. Every take is read in
       full against its brief before acceptance — the gate alone passed takes that read weak.
     intro:
       title: KP2 introduction — what the five modules cover (on camera)
@@ -215,7 +215,7 @@ kps:
           - {code: "5.5", title: "Stand up the federation", en: {accepted: "v0.6", demo_takes: "v0.2", note: "accepted at KP1's bar 30 Sep — v0.4 with a 31 s show-open cut by hand; cued + assembled (3:03). Demo block First–Fourth in order. T1 timings are the 22 Aug deploy (stale, captioned without \"on this run\"); slide 8 text small on a phone"}}
           - {code: "5.6", title: "Run the once-only exchange, live", en: {accepted: "v0.23", demo_takes: "v0.2", note: "accepted by the author 1 Oct — the first take on the four-observation deck/brief v0.5 (seven observations failed 14 takes). First–Fourth in order, agencies named, recap; cued + assembled (3:30), clip composited on slide 6. KNOWN ERROR accepted: \"refused by PNEA's access list\" at 2:21 (PNIA's). Newer v0.25/v0.27 on disk are rejected tries (over the ceiling; v0.27 lost the ordinals and recap)"}}
           - {code: "5.7", title: "From demonstration to production", en: {accepted: "v0.9", demo_takes: "v0.2", note: "accepted at KP1's bar 1 Oct — v0.7 with a 27 s show-open cut by hand; cued + assembled (4:25). Every roll took config-shape before legacy retirement and the P2 reveal before never-ship, so the 5.7 deck was reordered to match (deck v0.4, narration unchanged). §3 vocabulary as rationale for legacy retirement"}}
-          - {code: "5.8", title: "Watch the bus — monitoring and anomaly detection", en: {note: "was 6.2. Not started: the Module 5 demo plan holds it until scripts/opmon-export.sh exists (a metadata-only operational-data export). Deck v0.2 exists — decide theory-only or wait for the export"}}
+          - {code: "5.8", title: "Watch the bus — monitoring and anomaly detection", en: {accepted: "v0.1", note: "was 6.2. Theory-only (plan 2026-10-01-kp2-m5-5.8-theory-only; deck v0.3, 6 slides) — accepted at KP1's bar 1 Oct; cued + assembled (3:20, under the 3:30 floor). Message log cast as never the input, request-path warning present, Steering Committee only. The brief's \"never say the logs\" read aloud once"}}
           - {code: "5.9", title: "Keep the documents honest — the consistency cross-check", en: {accepted: "v0.5", note: "accepted at KP1's bar 30 Sep — settled on runtime (3:22), strongest of three; cued + assembled. LISTEN: \"RAQUI\" for RACI at 1:23"}}
           - {code: "5.10", title: "Carry the framework to the next sector", en: {accepted: "v0.19", note: "was 6.4. Accepted at KP1's bar 1 Oct on brief v0.3 (the fraction wording replaced) — settled on runtime (4:15); cued + assembled. Clean: title, deck order, recap, no figures or metaphor. BDAT gloss invented. LISTEN: \"progressive education data\" at 0:27"}}
 
