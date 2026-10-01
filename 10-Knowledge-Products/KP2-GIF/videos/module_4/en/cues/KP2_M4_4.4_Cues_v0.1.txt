@@ -1,0 +1,18 @@
+# Slide cue file — KP2 Module 4, Video 4.4
+# Deck:  KP2_M4_4.4_Deck_v0.1.pptx (8 slides)
+# Audio: KP2_M4_4.4_Audio_v0.1.m4a (runs to 4:09.8)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar — faithful and complete; 4:09 (under the 4:30 floor) is its only gate
+# defect. The five things numbered; OneRoster, CEDS, ISO/IEC 11179 and W3C VC named. Flaws: "highly
+# political" for "a little political"; interjections ("Ugh. Yikes."). Ends on the sources line.
+# Sources card 4 s on the last line.
+
+0:00.0 # slide 1 — title card
+0:11.4 # slide 2 — A working wire that carries misread data looks like success.
+0:51.6 # slide 3 — A semantic map sets out five things for one exchange
+1:41.3 # slide 4 — For education, much of the meaning is already published
+2:17.5 # slide 5 — Meaning is a business decision, written precisely enough for systems
+2:55.7 # slide 6 — Generate fast, confirm against the registries carefully
+3:42.5 # slide 7 — A semantic map is the shared meaning of an exchange — drafted by AI from th
+4:05.8 # slide 8 — Sources

@@ -1,0 +1,19 @@
+# Slide cue file — KP2 Module 4, Video 4.5 "Generate a service contract"
+# Deck:  KP2_M4_4.5_Deck_v0.1.pptx (8 slides)
+# Audio: KP2_M4_4.5_Audio_v0.8.m4a (runs to 3:21.1) — v0.7 with its first cue cut by hand (2.7 s:
+#        "Right. And we have a very clear mission today."); brief v0.1 at the 4:00 target
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar — faithful and in order, the five contract parts numbered, full recap;
+# no §3 vocabulary leak. 3:21 is under the 3:30 floor of the 4:00 brief (the module's thinnest script).
+# Flaws: mild idioms ("laying everything out on the table", "no wiggle room", "heavy lifting"); slide 6
+# drops "what the consumer's code calls and what the bus routes". No sources line; Sources card 4 s.
+
+0:00   # slide 1 — title card
+0:17.2 # slide 2 — You need a contract
+0:41.7 # slide 3 — An OpenAPI contract says exactly how to call a service
+1:19.2 # slide 4 — Generate, then confirm
+2:10.4 # slide 5 — One contract, two forms
+2:42.6 # slide 6 — Executable configuration
+2:57.7 # slide 7 — In one sentence
+3:17.1 # slide 8 — Sources

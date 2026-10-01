@@ -1,0 +1,204 @@
+1
+00:00:00,150 --> 00:00:05,630
+We are exploring how to take a short service brief and, well, turn it into an OpenAPI contract.
+
+2
+00:00:05,890 --> 00:00:08,390
+Yeah, and ultimately an XRoad service description.
+
+3
+00:00:08,870 --> 00:00:12,990
+Basically, we're talking about how you actually put a service on the bus in your ministry.
+
+4
+00:00:13,150 --> 00:00:16,550
+Exactly. It's about getting that service up and running on the architecture.
+
+5
+00:00:17,170 --> 00:00:22,649
+So let's start with the basics. Mm-hmm. Why exactly do you need a contract to put a service on the reference architecture's bus?
+
+6
+00:00:22,990 --> 00:00:28,210
+Well, the OpenAPI contract is this incredibly precise description of what the service offers.
+
+7
+00:00:28,690 --> 00:00:30,410
+Uh, it's what actually makes it callable.
+
+8
+00:00:30,710 --> 00:00:33,030
+Right. And you generate this from your brief, don't you?
+
+9
+00:00:33,250 --> 00:00:39,610
+You do. You generate it from the service brief, um, and the semantic map, and there are specific things it has to state.
+
+10
+00:00:39,870 --> 00:00:41,370
+I can run through them if you want.
+
+11
+00:00:41,690 --> 00:00:43,370
+Yeah, please do. What exactly goes into it?
+
+12
+00:00:43,750 --> 00:00:50,250
+Okay, so it has to state five things. Number one, the operations, like, uh, getting a learner's record, for example.
+
+13
+00:00:51,250 --> 00:00:51,650
+Okay, got it.
+
+14
+00:00:51,850 --> 00:00:52,790
+Number two, the inputs.
+
+15
+00:00:53,430 --> 00:00:56,990
+Number three, the outputs, which, you know, you take straight from that semantic map.
+
+16
+00:00:57,310 --> 00:01:01,310
+Makes sense. Number four, the errors, and finally, number five, the security.
+
+17
+00:01:02,030 --> 00:01:04,450
+Wow. Okay, so it's laying everything out on the table.
+
+18
+00:01:04,870 --> 00:01:11,530
+Exactly. The impact here is huge. I mean, a consumer reads this contract, and they know exactly how to call the service.
+
+19
+00:01:12,250 --> 00:01:14,530
+Without needing a whole string of alignment meetings, I bet.
+
+20
+00:01:14,810 --> 00:01:18,470
+Right. Without a single meeting. The contract does all the talking.
+
+21
+00:01:19,210 --> 00:01:25,250
+Which is great, but, uh, if an AI prompt drafts this OpenAPI document from our brief and the semantic map,
+
+22
+00:01:26,150 --> 00:01:29,370
+w- what is our core responsibility? Like, what are we actually doing?
+
+23
+00:01:29,910 --> 00:01:31,510
+Yeah, that's a really important question.
+
+24
+00:01:32,130 --> 00:01:35,750
+While the AI drafts the paths, you know, the request and response shapes,
+
+25
+00:01:36,410 --> 00:01:37,950
+the errors, and the security scheme.
+
+26
+00:01:38,450 --> 00:01:39,950
+It's doing a lot of the heavy lifting.
+
+27
+00:01:40,410 --> 00:01:43,730
+It is, but your core responsibility is human confirmation.
+
+28
+00:01:44,310 --> 00:01:50,870
+You must manually confirm every endpoint, field name, and type against what the provider system actually exposes.
+
+29
+00:01:51,490 --> 00:01:55,450
+Because the AI might just assume a field exists based on the brief.
+
+30
+00:01:55,710 --> 00:02:03,950
+Exactly. An OpenAPI document might look totally right, but if it names a field the provider does not return, well, it just fails at the first real call.
+
+31
+00:02:04,690 --> 00:02:07,870
+That's a pretty harsh key consequence. It fails immediately.
+
+32
+00:02:08,090 --> 00:02:09,530
+It does. There's no wiggle room.
+
+33
+00:02:10,310 --> 00:02:18,590
+So once we've manually confirmed all those fields, how do we bridge the gap between this, uh, human-readable OpenAPI document and what the bus actually uses?
+
+34
+00:02:19,050 --> 00:02:23,070
+Well, the thing to remember is they are the same contract in two forms.
+
+35
+00:02:23,390 --> 00:02:23,830
+Oh, okay.
+
+36
+00:02:24,950 --> 00:02:25,850
+Two forms of the same thing.
+
+37
+00:02:26,170 --> 00:02:26,310
+Right.
+
+38
+00:02:27,070 --> 00:02:35,490
+You generate the OpenAPI contract for humans and tools, but then you derive the XRoad service description for the bus to register and route a call.
+
+39
+00:02:36,070 --> 00:02:39,150
+Okay, so the bus relies entirely on that XRoad description.
+
+40
+00:02:39,470 --> 00:02:42,070
+Exactly. That is the crucial distinction here.
+
+41
+00:02:42,590 --> 00:02:46,750
+This is a buildpack artifact and an executable configuration.
+
+42
+00:02:46,810 --> 00:02:48,330
+I mean, it's not just a diagram.
+
+43
+00:02:48,850 --> 00:02:50,910
+Right. It's not just documentation sitting in a folder.
+
+44
+00:02:51,370 --> 00:02:54,690
+No, it represents real output where agreed meaning
+
+45
+00:02:55,370 --> 00:02:56,990
+actually meets a callable interface.
+
+46
+00:02:57,610 --> 00:02:59,530
+Which brings us to the final takeaway, really.
+
+47
+00:02:59,930 --> 00:03:01,670
+Yeah. If you remember one thing, it's this:
+
+48
+00:03:02,470 --> 00:03:05,970
+The service contract is where meaning becomes a callable interface.
+
+49
+00:03:06,770 --> 00:03:12,370
+By generating the OpenAPI document, confirming the fields, and deriving the XRoad description,
+
+50
+00:03:13,030 --> 00:03:19,410
+you create the executable configuration that puts a service on the bus completely ready for a real call.
+
+51
+00:03:20,090 --> 00:03:21,070
+That's perfectly stated.
+

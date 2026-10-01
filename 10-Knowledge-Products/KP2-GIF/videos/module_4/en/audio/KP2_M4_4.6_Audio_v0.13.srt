@@ -1,0 +1,243 @@
+1
+00:00:00,140 --> 00:00:05,000
+Module 4, Video 4.6: Put a Real Data Source on the Bus, the Giga Case
+
+2
+00:00:05,620 --> 00:00:12,180
+Right. So our objective here is taking Giga's real school data through a bronze, silver, and gold pipeline onto the bus,
+
+3
+00:00:12,880 --> 00:00:15,480
+uh, as a worked exchange you can copy for your sector.
+
+4
+00:00:16,320 --> 00:00:21,620
+So moving from a theoretical method into a live deployment, well, it usually reveals planning gaps.
+
+5
+00:00:22,220 --> 00:00:28,120
+How do we transition from a high-level theoretical method to a practical, actionable template for your ministry?
+
+6
+00:00:28,820 --> 00:00:31,320
+Well, we rely on an initiative called Giga.
+
+7
+00:00:31,660 --> 00:00:32,400
+Okay. Um,
+
+8
+00:00:33,040 --> 00:00:39,160
+Giga is a joint effort by the ITU and UNICEF, and they're mapping the world's schools and their connectivity.
+
+9
+00:00:39,600 --> 00:00:47,440
+Right. And because they publish open APIs alongside real live data, they provide a, you know, a complete concrete template.
+
+10
+00:00:47,980 --> 00:00:54,380
+We use this as our base model because it demonstrates every step of the reference architecture in practice, just ready to be copied.
+
+11
+00:00:55,140 --> 00:00:58,200
+Yeah, but simply having an API doesn't guarantee data usability.
+
+12
+00:00:58,760 --> 00:01:05,360
+If a ministry intends to build a pipeline, what precise published materials does Giga provide to actually structure that data?
+
+13
+00:01:05,660 --> 00:01:08,780
+Sure. So Giga supplies five specific components.
+
+14
+00:01:09,120 --> 00:01:09,380
+First,
+
+15
+00:01:10,040 --> 00:01:12,920
+uh, open APIs that you can actually call to retrieve the data.
+
+16
+00:01:13,240 --> 00:01:19,060
+Got it. Second is the school master schema, which dictates the required fields describing each school.
+
+17
+00:01:19,960 --> 00:01:25,540
+Third, the QoS, or quality of service schema, that standardizes how internet quality is reported.
+
+18
+00:01:26,040 --> 00:01:33,220
+Makes sense. Yep. Fourth, they provide GeoJSON, which is the standard format for expressing exactly where the school sits geographically.
+
+19
+00:01:33,500 --> 00:01:41,360
+Uh-huh. And finally, it uses ISO 3166-1 alpha three, which enforces three-letter country codes for indexing.
+
+20
+00:01:41,780 --> 00:01:46,820
+Okay. Those schemas define the target structure, but incoming data feeds inevitably contain errors.
+
+21
+00:01:46,980 --> 00:01:49,640
+It operates much like quarantine protocols at customs.
+
+22
+00:01:49,760 --> 00:01:54,280
+You cannot let goods enter the domestic supply chain until they've been inspected, cleared, and stamped.
+
+23
+00:01:54,740 --> 00:02:02,780
+So if a school was entered twice, pumping that unrefined source data directly into a national registry would corrupt downstream systems.
+
+24
+00:02:03,380 --> 00:02:08,220
+How does this raw data systematically transform into a registry other agencies can trust?
+
+25
+00:02:08,660 --> 00:02:12,520
+Right. It moves through a strict pipeline with three distinct stages.
+
+26
+00:02:12,800 --> 00:02:15,280
+So number one is bronze. Bronze, okay. Yeah.
+
+27
+00:02:15,320 --> 00:02:19,120
+This is the raw data exactly as received, kept entirely untouched.
+
+28
+00:02:19,660 --> 00:02:23,280
+We store this for audit purposes, ensuring a persistent record of the original input.
+
+29
+00:02:23,960 --> 00:02:25,200
+Then number two is silver.
+
+30
+00:02:25,600 --> 00:02:27,380
+And silver is where the cleaning happens.
+
+31
+00:02:27,500 --> 00:02:30,340
+Exactly. This is the cleaned and validated version.
+
+32
+00:02:30,760 --> 00:02:33,820
+It actively bounces the bronze data against a semantic map.
+
+33
+00:02:34,640 --> 00:02:42,460
+If the schema demands a three-letter ISO country code, um, and a record provides a four-letter string, the pipeline physically rejects it here.
+
+34
+00:02:43,200 --> 00:02:46,080
+Bad or duplicate records are flagged, forcing conformance.
+
+35
+00:02:46,660 --> 00:02:55,220
+I see. And then number three is gold. This is the published authoritative version containing only verified records that other services consume.
+
+36
+00:02:55,820 --> 00:03:02,620
+Right. So storing the bronze stage securely while exposing only the gold stage implies a highly controlled network environment.
+
+37
+00:03:03,200 --> 00:03:08,440
+How does this three-stage sequence integrate with the broader reference architecture to ensure secure data exchange?
+
+38
+00:03:08,960 --> 00:03:11,920
+So the flow is continuous but heavily compartmentalized.
+
+39
+00:03:12,560 --> 00:03:16,320
+Data lands as bronze, is cleaned to silver, and published as gold.
+
+40
+00:03:16,620 --> 00:03:21,200
+Okay. That gold layer service is then strictly described by an OpenAPI contract.
+
+41
+00:03:21,840 --> 00:03:25,520
+From there, it is registered as an X-Road service description.
+
+42
+00:03:25,800 --> 00:03:27,300
+Uh, X-Road acts as the tunnel.
+
+43
+00:03:27,620 --> 00:03:31,920
+Right. X-Road acts as a secure encrypted tunnel between government agencies.
+
+44
+00:03:32,600 --> 00:03:37,160
+The data is secured across three isolated trust zones, preventing unauthorized internal access,
+
+45
+00:03:37,880 --> 00:03:42,540
+and is made lawful by applying a data protection envelope to ensure privacy compliance.
+
+46
+00:03:42,920 --> 00:03:50,460
+Wow. Okay. And this exact integration template applies whether the source is schools, health facilities, or a pharma registry.
+
+47
+00:03:50,920 --> 00:03:58,040
+Well, if the template is identical across sectors, an official might ask why they shouldn't simply build this pipeline using their own program's data from day one.
+
+48
+00:03:58,380 --> 00:04:01,080
+Like, why invest time practicing on Giga's data?
+
+49
+00:04:01,560 --> 00:04:06,500
+Because building a pipeline directly on live data risks disrupting active systems.
+
+50
+00:04:07,260 --> 00:04:15,200
+Mistakes on the national registry lead to systems that are fragmented, siloed, duplicated, rekeyed, locked into one supplier, and
+
+51
+00:04:15,540 --> 00:04:16,380
+costly to change.
+
+52
+00:04:16,560 --> 00:04:17,360
+Yeah, that makes sense.
+
+53
+00:04:17,940 --> 00:04:18,120
+But
+
+54
+00:04:18,899 --> 00:04:22,760
+Giga is public, real, and fully standards aligned.
+
+55
+00:04:23,480 --> 00:04:28,520
+Practicing on Giga means any architectural mistake has zero consequences.
+
+56
+00:04:29,000 --> 00:04:36,380
+It provides a forgiving environment to run the pattern flawlessly, proving your infrastructure works before you touch a live national registry.
+
+57
+00:04:36,540 --> 00:04:36,780
+Right.
+
+58
+00:04:37,480 --> 00:04:40,060
+The Giga case is the method made concrete.
+
+59
+00:04:40,620 --> 00:04:44,920
+By learning this pipeline, bronze, silver, gold, contract, bus,
+
+60
+00:04:45,540 --> 00:04:51,840
+on public forgiving data, you gain a template to copy onto your own national registries with confidence.
+
+61
+00:04:52,640 --> 00:04:54,120
+Sources are in the video description.

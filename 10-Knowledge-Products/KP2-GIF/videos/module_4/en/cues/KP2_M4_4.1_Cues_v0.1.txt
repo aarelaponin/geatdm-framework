@@ -1,0 +1,20 @@
+# Slide cue file — KP2 Module 4, Video 4.1
+# Deck:  KP2_M4_4.1_Deck_v0.1.pptx (9 slides)
+# Audio: KP2_M4_4.1_Audio_v0.1.m4a (runs to 3:42.8)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar — the one take whose only defect is runtime (3:42, under the 4:30
+# floor). Title read cold; the four layers numbered. Flaws: heavy backchannel; slide 5 gives lock-in
+# as the reason for reuse (the §3 vocabulary as content); slide 7 says "your minister" where the
+# brief means the architect; "I'll number them aloud" (the brief leaking). Ends on the sources line.
+# Sources card 4 s on the last line.
+
+0:00.0 # slide 1 — title card
+0:14.7 # slide 2 — Do not draw a new platform. Adopt a reference architecture.
+0:43.2 # slide 3 — Four functional layers — every component has a home
+1:24.8 # slide 4 — The layers are a filing system for decisions
+2:00.7 # slide 5 — A shared reference architecture is re-use, seen from the architect's chair
+2:26.9 # slide 6 — Event distribution — defer it on purpose, never skip it
+3:02.9 # slide 7 — Place every component, and the sparse layers show what is missing
+3:27.5 # slide 8 — Adopt the four-layer reference architecture, place every component in its l
+3:38.8 # slide 9 — Sources

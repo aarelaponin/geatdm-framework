@@ -1,0 +1,228 @@
+1
+00:00:00,150 --> 00:00:02,850
+Okay, but let me ask the question your minister would probably ask.
+
+2
+00:00:03,350 --> 00:00:05,730
+If every government agency is unique,
+
+3
+00:00:06,370 --> 00:00:10,150
+uh, why can't each one just pick the technical standards that work best for them?
+
+4
+00:00:10,910 --> 00:00:18,030
+I mean, it might seem easier for one isolated team, but letting each agency pick its own standards breaks interoperability completely.
+
+5
+00:00:18,790 --> 00:00:21,650
+The solution is what we call a published standards portfolio.
+
+6
+00:00:22,030 --> 00:00:25,270
+Uh, think of it as a shared menu across the whole of government.
+
+7
+00:00:25,690 --> 00:00:27,950
+So you aren't inventing new tools from scratch every time.
+
+8
+00:00:28,110 --> 00:00:28,570
+Exactly.
+
+9
+00:00:29,750 --> 00:00:32,090
+You are selecting from this published menu.
+
+10
+00:00:32,790 --> 00:00:36,150
+There are four core technical needs, and we use four published tools to meet them.
+
+11
+00:00:36,970 --> 00:00:42,989
+Uh, number one is describing services. For this, we use REST with OpenAPI 3.x.
+
+12
+00:00:43,890 --> 00:00:48,290
+Right, which basically defines how one system can request information from another system.
+
+13
+00:00:48,550 --> 00:00:52,710
+You have got it. Then number two is proving identity and permissions,
+
+14
+00:00:53,410 --> 00:00:57,430
+and here the standards are OAuth 2.x and OpenID Connect.
+
+15
+00:00:58,150 --> 00:01:04,450
+Okay, so that is verifying exactly who you are and, you know, what data you are actually allowed to access.
+
+16
+00:01:04,910 --> 00:01:09,370
+Yes. And that brings us to number three, which is securing the connection itself.
+
+17
+00:01:09,970 --> 00:01:11,870
+This requires mutual TLS.
+
+18
+00:01:12,650 --> 00:01:15,770
+Wait, mutual meaning both ends prove their identity, right?
+
+19
+00:01:15,870 --> 00:01:17,370
+Not just the user logging in.
+
+20
+00:01:18,130 --> 00:01:18,570
+Spot on.
+
+21
+00:01:19,170 --> 00:01:23,730
+Both ends mathematically prove their identity to prevent any imposter from intercepting the data.
+
+22
+00:01:24,650 --> 00:01:26,950
+And finally, number four is the bus itself.
+
+23
+00:01:27,550 --> 00:01:29,370
+We use the XRoad message protocol.
+
+24
+00:01:30,150 --> 00:01:34,090
+Okay, so XRoad connects the systems. We have the connection secure.
+
+25
+00:01:34,670 --> 00:01:36,410
+But, I mean, connecting the systems is one thing.
+
+26
+00:01:36,550 --> 00:01:39,210
+How do they actually understand the data traveling through them?
+
+27
+00:01:39,730 --> 00:01:41,890
+Well, that is where semantic standards come in.
+
+28
+00:01:42,450 --> 00:01:51,530
+We use ISO/IEC 11179 for consistent data elements and JSON-LD, uh, so the meaning travels right alongside the data.
+
+29
+00:01:52,210 --> 00:01:54,790
+Plus, we use W3C verifiable credentials.
+
+30
+00:01:56,470 --> 00:02:01,850
+Let's pause on that last one. How do verifiable credentials actually work in practice for your program?
+
+31
+00:02:02,370 --> 00:02:06,630
+So using cryptography, a verifier can trust a digital credential immediately,
+
+32
+00:02:07,590 --> 00:02:10,650
+you know, without ever having to phone the original issuer to check if it is valid.
+
+33
+00:02:11,010 --> 00:02:17,690
+Oh, wow. So if the education sector issues a student credential now, the health sector can just instantly trust it later.
+
+34
+00:02:18,030 --> 00:02:21,310
+Precisely. The work done now is seamlessly reused.
+
+35
+00:02:22,070 --> 00:02:26,910
+But interoperability requires the discipline of everyone choosing those same published standards,
+
+36
+00:02:27,590 --> 00:02:30,550
+and only whole of government planning can impose that discipline.
+
+37
+00:02:31,070 --> 00:02:34,670
+You know, a simple procurement clause and a vendor contract just cannot do it.
+
+38
+00:02:34,910 --> 00:02:41,230
+Right. So this portfolio document, how do we actually document and enforce it across all these different sectors?
+
+39
+00:02:41,730 --> 00:02:45,390
+The portfolio document is strict, and it must contain four specific parts.
+
+40
+00:02:46,090 --> 00:02:49,610
+Uh, number one is the standard, its version, and its profile.
+
+41
+00:02:50,190 --> 00:02:56,690
+And you wanna keep that profile, like your local refinements, as thin as possible, right, so the next sector can adopt it easily?
+
+42
+00:02:57,070 --> 00:02:58,550
+Yes, exactly. Keep it thin.
+
+43
+00:02:59,210 --> 00:03:03,850
+Number two is when it binds and how long legacy systems have to comply.
+
+44
+00:03:04,490 --> 00:03:07,730
+Uh, typically, that is twelve to twenty-four months for a major version.
+
+45
+00:03:08,150 --> 00:03:08,690
+Makes sense.
+
+46
+00:03:09,630 --> 00:03:10,350
+Then number three
+
+47
+00:03:11,010 --> 00:03:12,890
+is how a member proves conformance.
+
+48
+00:03:13,510 --> 00:03:15,350
+They can't just promise they follow the rules.
+
+49
+00:03:15,890 --> 00:03:20,170
+They prove it via a self-assessment, a third-party check, or a test suite.
+
+50
+00:03:20,610 --> 00:03:22,310
+Because without a test, it's just a guess.
+
+51
+00:03:22,590 --> 00:03:22,790
+Right.
+
+52
+00:03:23,870 --> 00:03:25,710
+And finally, number four is who keeps it.
+
+53
+00:03:26,430 --> 00:03:29,910
+The portfolio is actively maintained by the API's working group.
+
+54
+00:03:30,610 --> 00:03:32,390
+Okay, so it is constantly managed.
+
+55
+00:03:32,670 --> 00:03:32,870
+Yes.
+
+56
+00:03:33,690 --> 00:03:41,290
+And the ultimate takeaway here is that writing down this agreed menu is what lets twenty separate agencies behave as one single framework
+
+57
+00:03:41,710 --> 00:03:43,770
+rather than twenty incompatible projects.
+

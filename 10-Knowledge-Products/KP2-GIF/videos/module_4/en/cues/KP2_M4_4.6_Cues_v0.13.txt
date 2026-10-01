@@ -1,0 +1,18 @@
+# Slide cue file — KP2 Module 4, Video 4.6
+# Deck:  KP2_M4_4.6_Deck_v0.1.pptx (8 slides)
+# Audio: KP2_M4_4.6_Audio_v0.13.m4a (runs to 4:54.3) — v0.13 untrimmed by hand
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar — gate clean; the first 4.6 take with the title read cold, a complete
+# slide 5 (bronze→silver→gold→contract→bus) and slides 6–7; ends on the sources line. Flaws: silver
+# "physically rejects" a record (contradicted by the next line, "flagged"); one customs simile; the
+# §3 vocabulary recited on slide 6; LISTEN: "pharma registry" for farmer registry at 3:43.
+
+0:00.0 # slide 1 — title card
+0:16.3 # slide 2 — Enough method. Here is a real source to copy.
+0:55.1 # slide 3 — Giga gives you real, published material to practise on
+1:41.8 # slide 4 — Real data reaches the bus in three stages
+2:55.8 # slide 5 — One real source carries every step of this module
+3:50.9 # slide 6 — Practise on Giga before you touch a live national registry
+4:37.5 # slide 7 — Bronze, silver, gold, contract, bus — the Giga case is the full method on o
+4:50.3 # slide 8 — Sources

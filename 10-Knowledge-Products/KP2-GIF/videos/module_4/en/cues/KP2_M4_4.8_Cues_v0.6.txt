@@ -1,0 +1,18 @@
+# Slide cue file — KP2 Module 4, Video 4.8 "Make the exchange lawful — the data-protection envelope"
+# Deck:  KP2_M4_4.8_Deck_v0.1.pptx (7 slides)
+# Audio: KP2_M4_4.8_Audio_v0.6.m4a (runs to 4:36.1) — v0.5 trimmed; brief v0.1
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar (borderline) — in order, the three envelope parts numbered, the quiet
+# rule (joining never grants access) covered well; far cleaner than v0.2 (no invented figures). Flaws:
+# the opener is a scenario hook carrying slide 2's substance (title card held 4 s); "deep dive…
+# unpacking" at 0:27 and "as you listen to this deep dive" at 3:17; one highway/on-ramp metaphor; slides
+# 4 and 5 thin (purpose = ACL, retention/logging, the three-layer mapping). Sources card silent.
+
+0:00   # slide 1 — title card
+0:04.0 # slide 2 — Perfectly wired, perfectly secured — and still not allowed
+1:01.2 # slide 3 — Three things make an exchange lawful, not merely possible
+1:57.5 # slide 4 — Data protection by design lives in the configuration
+3:07.7 # slide 5 — An exchange is ready only when all three layers line up
+4:12.9 # slide 6 — In one sentence
+4:32.1 # slide 7 — Sources

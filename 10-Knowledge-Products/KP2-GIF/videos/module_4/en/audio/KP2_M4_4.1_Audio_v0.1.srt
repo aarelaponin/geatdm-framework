@@ -1,0 +1,259 @@
+1
+00:00:00,280 --> 00:00:05,960
+Module four, video four point one. Place every component, the four functional layers
+
+2
+00:00:06,400 --> 00:00:06,580
+Right.
+
+3
+00:00:07,660 --> 00:00:13,940
+So, uh, the four functional layers basically give every component of the platform a definitive place.
+
+4
+00:00:14,720 --> 00:00:19,800
+So when planning this out, what is the, um, the very first move as an architect in your ministry?
+
+5
+00:00:20,580 --> 00:00:23,280
+Well, your first move is actually not to draw a new platform.
+
+6
+00:00:23,600 --> 00:00:27,300
+Right. It is, uh, to adopt a reference architecture.
+
+7
+00:00:28,300 --> 00:00:31,460
+By using the European framework and the X-Road experience,
+
+8
+00:00:32,060 --> 00:00:35,660
+your program can spend its scarce time on country-specific needs.
+
+9
+00:00:36,080 --> 00:00:38,800
+Instead of just re-deriving settled platforms.
+
+10
+00:00:39,100 --> 00:00:42,620
+Exactly. Instead of re-deriving settled interoperability platforms.
+
+11
+00:00:43,180 --> 00:00:45,900
+Okay, so what do these specific layers actually do?
+
+12
+00:00:46,400 --> 00:00:48,640
+Well, I'll, uh, I'll number them aloud in order.
+
+13
+00:00:49,000 --> 00:00:49,160
+Okay.
+
+14
+00:00:49,760 --> 00:00:51,420
+So one is service access.
+
+15
+00:00:52,040 --> 00:00:55,600
+This governs how a member system reaches the bus and calls a service.
+
+16
+00:00:56,060 --> 00:00:56,300
+Mm-hmm.
+
+17
+00:00:57,320 --> 00:00:58,840
+Two is event distribution.
+
+18
+00:00:59,240 --> 00:01:01,400
+Which dictates what exactly?
+
+19
+00:01:01,960 --> 00:01:04,720
+That dictates how messages and events move across the federation.
+
+20
+00:01:05,019 --> 00:01:05,459
+Oh, okay.
+
+21
+00:01:06,140 --> 00:01:09,120
+Then three is the trust and security infrastructure.
+
+22
+00:01:09,520 --> 00:01:11,080
+Oh, like certificates and things?
+
+23
+00:01:11,460 --> 00:01:14,340
+Right. Certificates, identities, and, uh, mutual encryption.
+
+24
+00:01:15,320 --> 00:01:17,680
+And finally, four is governance and administration.
+
+25
+00:01:18,220 --> 00:01:20,000
+Which covers the registries.
+
+26
+00:01:20,320 --> 00:01:24,280
+Yes. The registries of members and services and the platform monitoring.
+
+27
+00:01:24,780 --> 00:01:32,700
+So how does this structure settle practical questions like, um, where the service catalog or mutual encryption actually lives?
+
+28
+00:01:33,100 --> 00:01:35,260
+Well, the layers act as a filing system.
+
+29
+00:01:36,140 --> 00:01:36,620
+Ah, I see.
+
+30
+00:01:37,120 --> 00:01:39,560
+So the catalog is governance and administration.
+
+31
+00:01:40,160 --> 00:01:43,140
+Mutual encryption is trust and security infrastructure.
+
+32
+00:01:43,460 --> 00:01:43,620
+Right.
+
+33
+00:01:44,380 --> 00:01:48,900
+The reference architecture basically settles disagreements between architects by giving,
+
+34
+00:01:49,540 --> 00:01:52,380
+you know, every component and standard a definitive home.
+
+35
+00:01:52,900 --> 00:01:54,620
+Which stops things from becoming fragmented.
+
+36
+00:01:54,800 --> 00:02:00,240
+Exactly. It prevents systems from becoming fragmented, siloed, or duplicated across agencies.
+
+37
+00:02:00,720 --> 00:02:04,220
+So what is the deeper payoff for whole-of-government planning then?
+
+38
+00:02:04,700 --> 00:02:08,740
+A shared reference architecture is built once and reused by every sector.
+
+39
+00:02:09,479 --> 00:02:12,880
+Successive agencies plug into the exact same four-layer shape.
+
+40
+00:02:13,320 --> 00:02:14,580
+Instead of inventing their own.
+
+41
+00:02:14,800 --> 00:02:18,840
+Right. You are reusing a settled structure instead of paying to discover it,
+
+42
+00:02:19,480 --> 00:02:22,520
+because without it, you end up locked into one supplier.
+
+43
+00:02:23,060 --> 00:02:24,340
+And it becomes costly to change.
+
+44
+00:02:24,580 --> 00:02:26,240
+Yes. Highly costly to change.
+
+45
+00:02:26,900 --> 00:02:31,360
+Now, looking at those layers, which one do countries often drop by accident?
+
+46
+00:02:32,020 --> 00:02:34,080
+It is almost always event distribution.
+
+47
+00:02:34,620 --> 00:02:35,380
+Really? Why is that?
+
+48
+00:02:35,980 --> 00:02:39,220
+Well, request and response just asks a question and gets an answer.
+
+49
+00:02:39,700 --> 00:02:43,780
+But events tell everyone who cares, for example, that a birth was registered.
+
+50
+00:02:44,480 --> 00:02:46,360
+Oh, okay. That makes sense.
+
+51
+00:02:46,760 --> 00:02:49,640
+Right. And it is replayable if a subscriber is down.
+
+52
+00:02:50,120 --> 00:02:51,940
+It achieves once-only its scale,
+
+53
+00:02:52,580 --> 00:02:54,380
+so it must be planned for deliberately.
+
+54
+00:02:55,040 --> 00:02:56,400
+Right. Not discovered later on.
+
+55
+00:02:56,800 --> 00:03:02,460
+Exactly. Not discovered as a missing piece in year three when data is constantly being rekeyed.
+
+56
+00:03:02,860 --> 00:03:06,760
+That would be a huge setback. So how do you apply this architecture practically?
+
+57
+00:03:07,260 --> 00:03:11,840
+You use the exercise of placing every component you build or buy into its layer.
+
+58
+00:03:12,520 --> 00:03:14,260
+So literally categorizing things.
+
+59
+00:03:14,620 --> 00:03:20,480
+Right. Your security server, the central registry, your monitoring tool, your identity adapter.
+
+60
+00:03:21,280 --> 00:03:24,780
+The sparse layers show exactly what your minister has not yet planned for.
+
+61
+00:03:25,240 --> 00:03:27,100
+Right. It makes the gaps obvious.
+
+62
+00:03:27,460 --> 00:03:30,880
+Exactly. Architecture starts with a borrowed proven structure.
+
+63
+00:03:31,560 --> 00:03:35,020
+Place every component into the four functional layers and read off the gaps.
+
+64
+00:03:35,800 --> 00:03:40,360
+You reuse the world's experience and keep your effort for what only your country can decide.
+
+65
+00:03:41,180 --> 00:03:42,540
+Sources are in the video description.

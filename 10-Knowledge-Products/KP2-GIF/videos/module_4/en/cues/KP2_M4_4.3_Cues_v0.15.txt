@@ -1,0 +1,19 @@
+# Slide cue file — KP2 Module 4, Video 4.3
+# Deck:  KP2_M4_4.3_Deck_v0.1.pptx (8 slides)
+# Audio: KP2_M4_4.3_Audio_v0.15.m4a (runs to 3:43.8) — v0.12 with the show-open cut by hand (20.7 s)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar — the sixth round; settled on runtime. Complete and in order:
+# technical standards and portfolio parts numbered 1–4, the semantic standards in the brief's order,
+# ends on the recap message. Flaws: slide 5 fuses credentials with sector reuse; thin bullets
+# (versions recorded, none invented, reuse rather than invent, the wrong-version caution);
+# "mathematically prove". Sources card silent (falls inside the last recap line).
+
+0:00.0 # slide 1 — title card
+0:04.0 # slide 2 — Let each agency pick its own standards, and interoperability breaks.
+0:32.8 # slide 3 — Four needs, four published technical standards
+1:34.7 # slide 4 — The semantic standards are the published vocabularies for meaning
+2:11.1 # slide 5 — A standard chosen once is reused by every member and every sector
+2:35.0 # slide 6 — Your deliverable is the portfolio document
+3:33.7 # slide 7 — Select from the published menu, record the standard and its version, and ho
+3:39.8 # slide 8 — Sources

@@ -1,0 +1,19 @@
+# Slide cue file — KP2 Module 4, Video 4.7 "Wire a service onto the bus"
+# Deck:  KP2_M4_4.7_Deck_v0.1.pptx (8 slides)
+# Audio: KP2_M4_4.7_Audio_v0.13.m4a (runs to 3:31.0) — v0.12 with the show-open cut by hand (24.4 s: a
+#        hook recited from the §3 vocabulary, then "welcome to the deep dive"); brief v0.1 at the 4:00 target
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar — complete and in order, the three "wired" things numbered, the three
+# artefacts derived from the contract. Flaws: opens on "We are unpacking…" (kept — the line names the
+# topic); slide 5 recast as a lock-in argument ("locked into one supplier", "always costly to change");
+# backchannel ("That is so elegant"). Sources card silent.
+
+0:00   # slide 1 — title card
+0:04.0 # slide 2 — Meaning, contract, data
+0:35.7 # slide 3 — "Wired" means three concrete things
+1:21.9 # slide 4 — Three configuration artefacts
+2:03.8 # slide 5 — The Information Mediation pattern
+2:38.8 # slide 6 — One test call
+3:19.3 # slide 7 — In one sentence
+3:27.0 # slide 8 — Sources

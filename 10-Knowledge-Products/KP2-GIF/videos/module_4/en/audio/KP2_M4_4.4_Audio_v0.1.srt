@@ -1,0 +1,243 @@
+1
+00:00:00,260 --> 00:00:09,840
+Um, when we look at the reference architecture, uh, there's this focus on generating a semantic map, and establishing that meaning is actually the hardest part of the four
+
+2
+00:00:09,900 --> 00:00:11,020
+interoperability layers.
+
+3
+00:00:11,440 --> 00:00:15,440
+Yeah. Exactly. It's, um, it's slow, it's unglamorous,
+
+4
+00:00:16,120 --> 00:00:20,260
+and it is highly political, which is why projects often just skip it entirely.
+
+5
+00:00:20,360 --> 00:00:21,400
+Right, they just bypass it.
+
+6
+00:00:22,160 --> 00:00:26,780
+So what are the consequences in your ministry if this semantic layer is skipped?
+
+7
+00:00:27,020 --> 00:00:34,380
+Well, exchanges silently fail. I mean, a working wire that carries misread data is actually a much worse failure because,
+
+8
+00:00:34,820 --> 00:00:36,600
+you know, it looks exactly like success.
+
+9
+00:00:37,120 --> 00:00:39,740
+Oh, wow, right, because the connection technically worked.
+
+10
+00:00:40,080 --> 00:00:45,460
+Exactly. The, the only real solution is building a semantic map to make that meaning tractable.
+
+11
+00:00:46,140 --> 00:00:50,920
+And, uh, what's interesting now is that AI can actually draft the first version of that map.
+
+12
+00:00:51,580 --> 00:00:58,400
+Okay, so if we're building this map, what exactly does a semantic map set out for, uh, a single data exchange?
+
+13
+00:00:58,920 --> 00:01:01,460
+So it sets out five things in this order.
+
+14
+00:01:02,080 --> 00:01:05,780
+Number one, the entities. Like, are we talking about a learner or a school?
+
+15
+00:01:05,980 --> 00:01:06,900
+Right, the core subject.
+
+16
+00:01:07,180 --> 00:01:07,300
+Yeah.
+
+17
+00:01:07,920 --> 00:01:11,920
+Number two, their fields, so name, date of birth, enrollment status.
+
+18
+00:01:12,140 --> 00:01:20,100
+Got it. Number three, and this is often the tricky part, the code lists, because, you know, the allowed values really matter.
+
+19
+00:01:20,440 --> 00:01:23,700
+One agency's active is another agency's enrolled.
+
+20
+00:01:24,060 --> 00:01:26,560
+Ah, so they need to establish a shared vocabulary there.
+
+21
+00:01:27,060 --> 00:01:29,380
+Right. Then number four is the identifier.
+
+22
+00:01:29,680 --> 00:01:33,460
+That is the key linking the exact same learner across two different agencies.
+
+23
+00:01:34,160 --> 00:01:40,660
+And finally, number five is the mapping itself, which reconciles each agency's terms into one shared definition.
+
+24
+00:01:41,260 --> 00:01:46,340
+Okay, but doing all that mapping, um, does your program have to invent these definitions from scratch?
+
+25
+00:01:46,740 --> 00:01:48,160
+No. Thankfully, no.
+
+26
+00:01:48,780 --> 00:01:50,960
+I mean, much of the meaning is already published out there.
+
+27
+00:01:51,300 --> 00:01:52,600
+Wait, really? Like what?
+
+28
+00:01:53,060 --> 00:01:53,200
+Well,
+
+29
+00:01:53,900 --> 00:01:58,980
+you use one roster for enrollment data, uh, CEDS for common education vocabulary,
+
+30
+00:01:59,620 --> 00:02:04,980
+and ISO IEC 11179 to describe elements precisely.
+
+31
+00:02:05,720 --> 00:02:06,460
+Okay, that makes sense.
+
+32
+00:02:06,800 --> 00:02:13,260
+And for credentials, you'd use W3C verifiable credentials, so you definitely do not start from a blank page.
+
+33
+00:02:13,940 --> 00:02:16,940
+You just map your agency's fields onto these published standards.
+
+34
+00:02:17,540 --> 00:02:23,980
+That's a huge head start. But, um, is deciding what enrollment means a technical choice for the IT team?
+
+35
+00:02:24,920 --> 00:02:27,340
+No, it is absolutely not a technical choice.
+
+36
+00:02:27,520 --> 00:02:30,260
+It is a business decision made by the data owners.
+
+37
+00:02:30,580 --> 00:02:32,540
+Wait, the data owners, not IT.
+
+38
+00:02:33,300 --> 00:02:37,120
+Exactly. If systems become siloed or costly to change,
+
+39
+00:02:37,760 --> 00:02:40,460
+it's often because this wasn't agreed upon early on.
+
+40
+00:02:41,380 --> 00:02:46,520
+The semantic map acts as the shared language where data owners and IT architects agree just once.
+
+41
+00:02:47,420 --> 00:02:48,920
+Which avoids duplicated effort, right?
+
+42
+00:02:49,420 --> 00:02:54,880
+Yes. A- And it stops them from constantly rearguing definitions every single time they build something new.
+
+43
+00:02:55,720 --> 00:03:00,840
+So going back to the AI part, uh, how do we safely use AI to draft this mapping?
+
+44
+00:03:01,520 --> 00:03:05,440
+Well, you give Claude the published vocabulary and the two agencies' field lists.
+
+45
+00:03:06,180 --> 00:03:10,380
+It drafts the 90%, so the mappings, the translations, the identifiers.
+
+46
+00:03:10,880 --> 00:03:11,960
+Ooh, that saves a ton of time.
+
+47
+00:03:12,300 --> 00:03:16,760
+It does, but, um, however, that essential 10% is yours.
+
+48
+00:03:17,200 --> 00:03:21,380
+You must manually confirm every identifier and code value against real registries.
+
+49
+00:03:21,860 --> 00:03:23,580
+Because if the AI gets it wrong...
+
+50
+00:03:24,100 --> 00:03:28,060
+An invented mapping reads incredibly convincingly, but it's wrong,
+
+51
+00:03:28,740 --> 00:03:29,800
+and wrong here
+
+52
+00:03:30,420 --> 00:03:34,360
+means a learner's records are silently merged with someone else's.
+
+53
+00:03:34,380 --> 00:03:37,120
+Ugh. Yikes. Yeah. It's a huge issue.
+
+54
+00:03:38,140 --> 00:03:41,720
+So the rule is generate fast, confirm carefully.
+
+55
+00:03:42,500 --> 00:03:49,560
+You make the hardest layer tractable by building a semantic map, defining those entities, fields, code lists, the identifier,
+
+56
+00:03:49,980 --> 00:03:51,820
+and the mapping one exchange at a time.
+
+57
+00:03:52,760 --> 00:03:56,640
+It is the shared language, AI generated and human confirmed.
+
+58
+00:03:57,480 --> 00:04:00,900
+Getting it right ensures the exchange carries meaning, not just bytes.
+
+59
+00:04:01,660 --> 00:04:04,260
+That is the difference between interoperability that works
+
+60
+00:04:04,960 --> 00:04:07,400
+and interoperability that only appears to.
+
+61
+00:04:08,000 --> 00:04:09,480
+Sources are in the video description.
