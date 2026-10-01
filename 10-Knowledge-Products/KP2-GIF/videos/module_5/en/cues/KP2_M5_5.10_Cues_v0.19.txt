@@ -1,0 +1,19 @@
+# Slide cue file — KP2 Module 5, Video 5.10
+# Deck:  KP2_M5_5.10_Deck_v0.3.pptx (7 slides)
+# Audio: KP2_M5_5.10_Audio_v0.19.m4a (runs to 4:15.2) — v0.19, no hand cut
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 1 Oct at KP1's bar on brief v0.3 ("pays only for its own vocabularies and services") —
+# the 18th take; settled on runtime (4:15, under the 4:30 floor). Title read cold, deck order,
+# carry-overs numbered 1–5 and the two new items 1–2, recap and sources line; no invented figures,
+# no running metaphor, semantic layer correct. Flaws: the four layers glossed as BDAT (invented);
+# second wave not named; the §3 vocabulary once in a question. LISTEN: "progressive education data"
+# at 0:27 (Progressa?).
+
+0:00.0 # slide 1 — title card
+0:26.7 # slide 2 — The framework was built on education. It is not education-specific.
+1:04.1 # slide 3 — Two things are new per sector — the rest carries unchanged
+2:45.3 # slide 4 — A planned framework gets cheaper with every sector
+3:22.0 # slide 5 — The portability map is the next sector's business case
+3:58.9 # slide 6 — The framework is sector-portable — build the platform once, reuse it everyw
+4:11.2 # slide 7 — Sources

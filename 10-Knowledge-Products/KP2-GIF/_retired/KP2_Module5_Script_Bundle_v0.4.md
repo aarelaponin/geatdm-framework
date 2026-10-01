@@ -214,7 +214,7 @@ A member being connected is not the same as a member being dependable. A service
 
 > _Slide 2 — Title: 'What the SLA sets'. Body, five text rows: 'Availability — the uptime the provider commits to.' 'Response time — how fast a call returns.' 'Support hours — when there is someone to help.' 'Incident response — who to call, and how fast.' 'Change notice — how much warning before a change.'_
 
-The SLA sets the numbers a consumer can rely on. Availability — the uptime the provider commits to. Response time — how fast a call returns. Support hours — when there is someone to help. Incident response — who to call when the service fails, and how quickly they will respond. And change notice — how much warning a provider gives before changing the service, so consumers are not broken by a surprise. These are the numbers that turn a connection into a dependency a consumer can build a real citizen service on.
+The SLA sets the numbers a consumer can rely on. Availability — the uptime the provider commits to. Response time — how fast a call returns. Support hours — when there is someone to help. Incident response — who to call when the service fails, and how quickly they will respond. And change notice — how much warning a provider gives before changing the service, so no consumer is caught out by a surprise change. These are the numbers that turn a connection into a dependency a consumer can build a real citizen service on.
 
 > _Slide 3 — Title: 'The SLA makes the member obligations specific'. Body, single text block: 'The governance obligations said a member meets service levels. The SLA is where those service levels become specific numbers, agreed and signed. Without it, 'meets service levels' is a wish; with it, it is a commitment you can hold a member to.'_
 
@@ -449,9 +449,9 @@ The second tab reads the same exchange by layer. In the legal pane, PNIA sends f
 
 The third tab asks PNIA the identical question from two callers. PNEA is allowed. PLR, a member of the same bus, gets an access-denied fault from PNIA's access list. Being on the bus is not permission.
 
-> _Slide 7 — Title: 'One grant withdrawn, one source broken'. Demo evidence (clip, ~18 s, plays once then holds its last frame): PNEA's grant on the identity service is withdrawn; the form runs again; the PNIA rows turn to 'denied' while the PLR rows still fill; the grant is restored and the form fills whole. The slide's still is the denied moment. Caption strip: 'Grant withdrawn: the PNIA half fails, PLR still fills. Grant back: whole again.'_
+> _Slide 7 — Title: 'One grant withdrawn, one source cut off'. Demo evidence (clip, ~18 s, plays once then holds its last frame): PNEA's grant on the identity service is withdrawn; the form runs again; the PNIA rows turn to 'denied' while the PLR rows still fill; the grant is restored and the form fills whole. The slide's still is the denied moment. Caption strip: 'Grant withdrawn: the PNIA half fails, PLR still fills. Grant back: whole again.'_
 
-Now the operator withdraws PNEA's permission and runs the form again. Within seconds the PNIA rows are denied, while the PLR rows still fill: one grant withdrawn, one source broken. Restore it, and the form is whole.
+Now the operator withdraws PNEA's permission and runs the form again. Within seconds the PNIA rows are denied, while the PLR rows still fill: one grant withdrawn, one source cut off. Restore it, and the form is whole.
 
 > _Slide 8 — Title: 'The application, with every field's source'. Demo evidence (text capture): out/application-<nin>.json rendered one line per field — field, value, source; nin is the only line whose source is the citizen. Caption strip: 'The application on disk: where every field came from.'_
 

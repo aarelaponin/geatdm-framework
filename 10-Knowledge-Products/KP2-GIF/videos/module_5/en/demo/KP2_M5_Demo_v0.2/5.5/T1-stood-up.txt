@@ -1,0 +1,9 @@
+$ scripts/demo.sh
+step 0 -- scripts/preflight.sh (host dependencies, .env, clock, RAM)
+step 1 -- scripts/gen-secrets.sh (a real .env, mode 600)
+step 2 -- scripts/deploy.sh (the federation, from zero)
+step 3 -- scripts/seed.sh (Progressa demonstration data)
+step 4 -- scripts/acceptance.sh (the once-only exchange proves itself)
+
+$ cat out/deploy-timings.txt   # measured by scripts/deploy.sh
+containers healthy 100 s · Hurl run 290 s · total 390 s

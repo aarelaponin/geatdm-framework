@@ -1,0 +1,14 @@
+$ curl -X DELETE .../members/ptsb   # then, once RETIRED:
+$ scripts/acceptance.sh --summary --only 2.7.unjoin
+2.7.unjoin(PTSB)  PASS  PTSB is gone from the CS, from ss-plr and from the bus
+2.7.unjoin.catalogue(PTSB)  PASS  PTSB's services are gone from GET /catalogue, by derivation and not by a delete path
+2.7.unjoin.topology  PASS  hurl/topology.json is byte-identical to deployment/topology.json after the un-join
+
+$ ls onboarding/ptsb/
+00-gates.md
+01-admission.md
+02-requirements.md
+03-sla
+04-catalogue
+05-registration.md
+99-retirement.md

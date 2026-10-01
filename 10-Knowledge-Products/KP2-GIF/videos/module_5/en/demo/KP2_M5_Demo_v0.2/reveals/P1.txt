@@ -1,0 +1,6 @@
+$ docker compose run join-api   # deployment.yaml: posture: production, join_workflow.commit_gate: advisory
+RuntimeError: join-api: deployment.yaml posture: production implies 
+join_workflow.commit_gate = 'required', but it is set explicitly to 'advisory' without 
+naming 'commit_gate' in join_workflow.acknowledge_permissive. Either remove the 
+override (posture: production already implies 'required') or add it to 
+acknowledge_permissive to confirm this is deliberate.

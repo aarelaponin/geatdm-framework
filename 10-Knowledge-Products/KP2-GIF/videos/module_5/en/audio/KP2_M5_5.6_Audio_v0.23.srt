@@ -1,0 +1,199 @@
+1
+00:00:00,180 --> 00:00:08,580
+Um, if you oversee, you know, your ministry or your program, you're probably all too familiar with systems that are just fragmented, siloed, and,
+
+2
+00:00:09,320 --> 00:00:11,120
+well, locked into one supplier.
+
+3
+00:00:11,840 --> 00:00:17,960
+So today, this deep dive is looking at running the once-only exchange live within the reference architecture.
+
+4
+00:00:18,780 --> 00:00:23,080
+Yeah, exactly. And, I mean, this is really the moment the whole framework exists for.
+
+5
+00:00:23,260 --> 00:00:29,700
+It is about an authority asking the citizen exactly once, and then just fetching the rest directly from the source.
+
+6
+00:00:30,000 --> 00:00:33,820
+Right, which effectively eliminates all that duplicated rekeyed data.
+
+7
+00:00:34,500 --> 00:00:38,000
+Exactly. Data that's usually really costly to change.
+
+8
+00:00:38,080 --> 00:00:42,500
+So moving right to the live system, we can examine the specific data call.
+
+9
+00:00:43,040 --> 00:00:46,060
+So I guess a director general level question here would be:
+
+10
+00:00:46,880 --> 00:00:53,420
+how exactly does this live call actually eliminate that siloed, fragmented process of demanding traditional paper proof?
+
+11
+00:00:53,940 --> 00:00:58,920
+Well, we look at the baseline data call from an examination authority, uh, PNEA.
+
+12
+00:00:59,420 --> 00:01:02,080
+They receive a credential application from a learner.
+
+13
+00:01:02,580 --> 00:01:04,400
+Okay, and instead of demanding paper proof-
+
+14
+00:01:04,900 --> 00:01:12,620
+Right. Instead of PNEA demanding paper proof of identity and enrollment, it fetches the learner's identity straight from the identity authority, PNIA
+
+15
+00:01:12,980 --> 00:01:13,860
+And the enrollment data.
+
+16
+00:01:14,300 --> 00:01:17,760
+They get that from the Learner Registry, PLR, directly over the data bus.
+
+17
+00:01:18,060 --> 00:01:18,360
+Got it.
+
+18
+00:01:19,120 --> 00:01:24,180
+Which brings us to breaking down this live recording into four exact observations.
+
+19
+00:01:24,340 --> 00:01:30,500
+Right. First, we observe the form. It starts with ten blank rows and a requirement for two sets of paper proof.
+
+20
+00:01:30,880 --> 00:01:33,500
+But after the call, only one question is asked, right?
+
+21
+00:01:33,800 --> 00:01:37,100
+Yeah. One question, and then nine rows are just fetched and filled.
+
+22
+00:01:37,360 --> 00:01:40,300
+Five arrive from PNIA, and four from PLR.
+
+23
+00:01:41,040 --> 00:01:43,560
+And every single row is clearly labeled with its source.
+
+24
+00:01:44,060 --> 00:01:44,480
+Exactly.
+
+25
+00:01:45,500 --> 00:01:48,320
+Second, we observe data minimization at the legal layer.
+
+26
+00:01:48,640 --> 00:01:52,600
+So PNIA sends five fields, but it explicitly withholds three.
+
+27
+00:01:53,520 --> 00:01:56,620
+Right. The mother's name, the birth registration number, and the address.
+
+28
+00:01:57,000 --> 00:02:03,260
+But wait, why would an identity system intentionally withhold available data from an examination authority?
+
+29
+00:02:03,760 --> 00:02:07,200
+Simply because the specific purpose of issuing the credential doesn't need them.
+
+30
+00:02:07,740 --> 00:02:11,920
+The mechanism structurally ensures only strictly necessary data is transmitted.
+
+31
+00:02:12,360 --> 00:02:13,060
+Oh, I see.
+
+32
+00:02:13,800 --> 00:02:14,820
+What about access control?
+
+33
+00:02:15,340 --> 00:02:17,600
+Well, third, we observe permissions in action.
+
+34
+00:02:18,420 --> 00:02:20,620
+Just being on the data bus is not permission.
+
+35
+00:02:21,060 --> 00:02:27,520
+PNEA is allowed access to the identity data, but PLR is actually refused by PNEA's access list.
+
+36
+00:02:28,020 --> 00:02:32,440
+Oh, wow. So what happens if an operator withdraws PNEA's permission?
+
+37
+00:02:33,120 --> 00:02:38,140
+The identity rows are denied within seconds, while the enrollment rows just continue to fill normally.
+
+38
+00:02:38,800 --> 00:02:39,480
+That is fast.
+
+39
+00:02:40,280 --> 00:02:42,500
+And the fourth observation is the audit, right?
+
+40
+00:02:42,920 --> 00:02:52,520
+Yeah. Fourth, we observe the audit. The entire exchange is mathematically proven, because the assembled application is written to disk, recording one line per field alongside its
+
+41
+00:02:52,580 --> 00:02:53,520
+exact source.
+
+42
+00:02:54,240 --> 00:02:56,500
+And then the acceptance script runs its checks.
+
+43
+00:02:57,060 --> 00:03:02,180
+Exactly. It runs six structural checks against that record to ensure the strict rules of the exchange were enforced.
+
+44
+00:03:02,580 --> 00:03:12,360
+It verifies the call occurred, ensures it was the right learner, confirms data was asked only once, tests the denial mechanism, ensures a clean not found response, and checks field
+
+45
+00:03:12,440 --> 00:03:13,100
+conformance.
+
+46
+00:03:13,740 --> 00:03:16,020
+And all six pass as green.
+
+47
+00:03:16,560 --> 00:03:18,240
+So the exchange is shown, not explained.
+
+48
+00:03:18,540 --> 00:03:25,040
+One field asked, nine fetched, only what the purpose needs, a denial the access list enforces, six checks green.
+
+49
+00:03:25,680 --> 00:03:27,320
+That is the framework running.
+
+50
+00:03:28,000 --> 00:03:29,680
+Sources are in the video description.

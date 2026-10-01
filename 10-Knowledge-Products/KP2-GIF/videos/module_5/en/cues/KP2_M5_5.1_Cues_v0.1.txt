@@ -1,0 +1,19 @@
+# Slide cue file — KP2 Module 5, Video 5.1
+# Deck:  KP2_M5_5.1_Deck_v0.2.pptx (8 slides)
+# Audio: KP2_M5_5.1_Audio_v0.1.m4a (runs to 5:06.6)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar — gate clean. Title read cold; phases numbered 1–4, documents first
+# to fifth. Flaws: "establishing secure digital identity" glossed onto the trust anchor (invented);
+# "drawn directly from Estonia" narrows "Estonia and others"; §3 vocabulary as content; backchannel
+# and echo. Ends on the sources line.
+# Sources card 4 s on the last line.
+
+0:00.0 # slide 1 — title card
+0:35.0 # slide 2 — You do not onboard a whole government at once.
+1:14.2 # slide 3 — Four phases, a gate at each, on an honest calendar
+2:42.9 # slide 4 — Phase one builds the bus once — everything after reuses it
+3:12.0 # slide 5 — These build phases are not the enterprise-architecture lifecycle
+3:37.4 # slide 6 — The plan is five documents, not one schedule
+4:46.4 # slide 7 — Four phases after the foundation, a gate at each, an honest calendar, and t
+5:02.6 # slide 8 — Sources

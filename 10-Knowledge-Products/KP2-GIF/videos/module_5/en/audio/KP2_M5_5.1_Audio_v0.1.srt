@@ -1,0 +1,371 @@
+1
+00:00:00,320 --> 00:00:02,140
+Module 5, Video 5.1.
+
+2
+00:00:02,780 --> 00:00:04,160
+Plan the build in four phases.
+
+3
+00:00:05,100 --> 00:00:05,520
+Right. So
+
+4
+00:00:06,500 --> 00:00:08,100
+we established the baseline here by,
+
+5
+00:00:08,780 --> 00:00:11,500
+uh, planning this build across four distinct phases.
+
+6
+00:00:12,000 --> 00:00:16,000
+Which are foundation, pilot, expansion, and optimization, right?
+
+7
+00:00:16,260 --> 00:00:19,300
+Exactly. Foundation, pilot, expansion, and optimization.
+
+8
+00:00:19,780 --> 00:00:22,620
+And, you know, each phase features strict decision gates.
+
+9
+00:00:23,040 --> 00:00:24,060
+And an honest calendar.
+
+10
+00:00:24,360 --> 00:00:28,460
+Yep, an honest calendar, along with, uh, four distinct plans beside the schedule.
+
+11
+00:00:29,360 --> 00:00:34,120
+That's what a funder actually reads to ensure systems don't just remain siloed or duplicated.
+
+12
+00:00:35,000 --> 00:00:38,640
+So if I am a director general, right, looking at the sheer scale of this,
+
+13
+00:00:39,320 --> 00:00:40,340
+my immediate question is:
+
+14
+00:00:41,020 --> 00:00:43,740
+well, how much of the government can we actually integrate initially?
+
+15
+00:00:44,200 --> 00:00:46,860
+Right, without the architecture becoming too costly to change.
+
+16
+00:00:47,620 --> 00:00:49,860
+Exactly. Without it getting too costly to change.
+
+17
+00:00:50,120 --> 00:00:50,200
+Well,
+
+18
+00:00:50,820 --> 00:00:53,280
+you do not onboard a whole government at once.
+
+19
+00:00:54,080 --> 00:00:56,240
+You build the framework in those four phases.
+
+20
+00:00:56,800 --> 00:00:58,800
+Okay, so each delivering something real.
+
+21
+00:00:58,980 --> 00:01:03,560
+Yes, something real, and each ending with a decision gate before the next is even funded.
+
+22
+00:01:04,180 --> 00:01:07,220
+It's, uh, it's a pattern drawn directly from Estonia, actually.
+
+23
+00:01:07,360 --> 00:01:13,520
+Oh, wow. Yeah. By demanding a decision gate before moving forward, your program ensures the investment actually performs.
+
+24
+00:01:14,180 --> 00:01:18,140
+Let us look at the timeline because, I mean, your minister will definitely ask this on day one.
+
+25
+00:01:18,280 --> 00:01:24,340
+Oh, absolutely. How long does it actually take from the start of the build until we see the first citizen visible
+
+26
+00:01:24,960 --> 00:01:25,920
+once only exchange?
+
+27
+00:01:26,400 --> 00:01:29,160
+So first, the groundwork takes about twelve to eighteen months.
+
+28
+00:01:29,380 --> 00:01:29,980
+Just the groundwork.
+
+29
+00:01:30,120 --> 00:01:35,700
+Yeah. That establishes the decree, the governance, uh, the reference architecture, and the standards.
+
+30
+00:01:36,520 --> 00:01:38,200
+Then we begin the four build phases.
+
+31
+00:01:38,520 --> 00:01:39,420
+Okay. So phase one.
+
+32
+00:01:39,760 --> 00:01:42,520
+Phase one is foundation, covering months zero to six.
+
+33
+00:01:43,100 --> 00:01:45,680
+Here, the central platform and its trust anchor go live.
+
+34
+00:01:46,300 --> 00:01:48,480
+Establishing secure digital identity.
+
+35
+00:01:48,820 --> 00:01:50,760
+Right, and two pilot members connect.
+
+36
+00:01:51,740 --> 00:01:53,660
+Then phase two is pilot and validation.
+
+37
+00:01:54,040 --> 00:01:55,480
+Covering months seven and twelve?
+
+38
+00:01:55,720 --> 00:02:02,340
+Exactly, months seven to twelve. This brings five members on, and, uh, the first cross-ministry once only exchanges go live.
+
+39
+00:02:02,640 --> 00:02:04,860
+Okay, making progress. And phase three?
+
+40
+00:02:05,040 --> 00:02:08,860
+Phase three is expansion, so spanning months thirteen to eighteen.
+
+41
+00:02:09,479 --> 00:02:11,100
+The first wave sectors are covered here.
+
+42
+00:02:11,840 --> 00:02:14,000
+Expanding to, what, fifteen members?
+
+43
+00:02:14,280 --> 00:02:16,920
+Fifteen members, yeah, and twenty or more services.
+
+44
+00:02:17,920 --> 00:02:21,900
+Then phase four is optimization, covering months nineteen to twenty-four.
+
+45
+00:02:22,540 --> 00:02:24,420
+Which addresses performance, I assume?
+
+46
+00:02:24,720 --> 00:02:26,400
+Performance and the long tail, yeah.
+
+47
+00:02:27,040 --> 00:02:30,200
+So the first citizen visible exchange lands about a year in.
+
+48
+00:02:31,160 --> 00:02:34,320
+But national coverage is really a four to six-year program.
+
+49
+00:02:34,540 --> 00:02:36,340
+Right. It's a four to six-year program.
+
+50
+00:02:37,440 --> 00:02:39,560
+That's the number to tell your minister on day one.
+
+51
+00:02:40,500 --> 00:02:42,180
+That timeline is extensive.
+
+52
+00:02:42,860 --> 00:02:47,380
+So how does the specific phasing logic protect the funding logic of your program?
+
+53
+00:02:47,880 --> 00:02:53,400
+Well, phase one builds the shared bus once, and then every subsequent phase-
+
+54
+00:02:53,820 --> 00:02:54,540
+Just reuses it.
+
+55
+00:02:54,780 --> 00:03:00,280
+Exactly. Every subsequent phase and every agency that joins later reuses that initial investment.
+
+56
+00:03:00,780 --> 00:03:02,340
+So when funders see this logic?
+
+57
+00:03:02,660 --> 00:03:09,480
+They understand that you're paying for a national platform, right, rather than a fragmented project where data is constantly rekeyed.
+
+58
+00:03:09,880 --> 00:03:10,680
+Right. Right.
+
+59
+00:03:11,960 --> 00:03:13,640
+We need to clarify a distinction here, though.
+
+60
+00:03:14,180 --> 00:03:19,960
+How do these four build phases differ from the enterprise architecture life cycle we have already established?
+
+61
+00:03:20,440 --> 00:03:24,680
+Good question. So the five-phase life cycle designs the target architecture.
+
+62
+00:03:25,020 --> 00:03:25,200
+Okay.
+
+63
+00:03:25,840 --> 00:03:30,240
+The four build phases simply build the bus inside that life cycle's final phase.
+
+64
+00:03:31,120 --> 00:03:33,800
+Ah, so they are the execution of the final design step.
+
+65
+00:03:34,240 --> 00:03:36,160
+Precisely. They are the execution.
+
+66
+00:03:36,580 --> 00:03:36,740
+Okay.
+
+67
+00:03:37,420 --> 00:03:43,780
+So when we present this to the funder, what specific elements do they actually see in the plan to approve this execution?
+
+68
+00:03:44,240 --> 00:03:48,180
+They look for five precise documents. First is the phased schedule.
+
+69
+00:03:48,640 --> 00:03:50,500
+Detailing the outcomes and decision gates?
+
+70
+00:03:51,100 --> 00:03:51,940
+And risks, yeah.
+
+71
+00:03:52,800 --> 00:03:56,840
+Second is the investment plan. This details benchmarked capital and running costs.
+
+72
+00:03:57,320 --> 00:03:59,340
+Oh, and it includes the state's budget line, right?
+
+73
+00:03:59,960 --> 00:04:03,340
+Right. So platforms are funded to operate, not just to launch.
+
+74
+00:04:03,700 --> 00:04:04,120
+Makes sense.
+
+75
+00:04:04,980 --> 00:04:06,260
+Third is the procurement plan.
+
+76
+00:04:06,860 --> 00:04:10,060
+You define one lot per domain, bought as an accepted result.
+
+77
+00:04:10,560 --> 00:04:12,920
+Meaning you never use a single big bang contract?
+
+78
+00:04:13,400 --> 00:04:15,920
+Never, because that leaves you locked into one supplier.
+
+79
+00:04:16,100 --> 00:04:16,680
+You don't want that.
+
+80
+00:04:17,180 --> 00:04:19,040
+Right. And the fourth document?
+
+81
+00:04:19,560 --> 00:04:25,260
+Fourth is the workforce plan. This scales the operator from a starting team of eight to fifteen people.
+
+82
+00:04:25,580 --> 00:04:26,680
+Up to thirty to eighty.
+
+83
+00:04:27,000 --> 00:04:30,780
+Yeah, up to thirty to eighty, designating a technical focal point per member.
+
+84
+00:04:31,620 --> 00:04:32,820
+Okay, and the fifth.
+
+85
+00:04:33,360 --> 00:04:35,960
+Fifth is the risk register and success metrics.
+
+86
+00:04:36,680 --> 00:04:38,800
+Reviewing members, services, transactions.
+
+87
+00:04:39,120 --> 00:04:42,160
+Uptime, onboarding time, and satisfaction.
+
+88
+00:04:42,920 --> 00:04:45,800
+A cost frame a funder can check is one they can approve.
+
+89
+00:04:46,380 --> 00:04:47,380
+So to sum it all up.
+
+90
+00:04:48,060 --> 00:04:52,620
+You plan the build in four phases: foundation, pilot, expansion, optimization,
+
+91
+00:04:53,220 --> 00:05:00,960
+each with a, a gate and benchmarked cost on an honest calendar alongside investment, procurement, workforce, and risk plans.
+
+92
+00:05:01,620 --> 00:05:04,520
+That is what turns ambition into a fundable program.
+
+93
+00:05:05,120 --> 00:05:06,460
+Sources are in the video description.

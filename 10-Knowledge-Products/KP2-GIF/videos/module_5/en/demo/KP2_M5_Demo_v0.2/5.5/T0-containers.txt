@@ -1,0 +1,7 @@
+$ docker compose ps --format "{{.Name}}  {{.Health}}"
+cs        healthy
+ca        healthy
+ss-pdga   healthy
+ss-plr    healthy
+ss-pnea   healthy
+ss-pnia   healthy

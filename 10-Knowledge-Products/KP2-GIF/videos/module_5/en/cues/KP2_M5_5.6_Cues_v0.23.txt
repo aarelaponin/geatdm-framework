@@ -1,0 +1,21 @@
+# Slide cue file — KP2 Module 5, Video 5.6
+# Deck:  KP2_M5_5.6_Deck_v0.5.pptx (9 slides)
+# Audio: KP2_M5_5.6_Audio_v0.23.m4a (runs to 3:30.0) — v0.23, no hand cut
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 1 Oct by the author at KP1's bar — the first take on the four-observation deck/brief v0.5
+# (15 takes since the pilot failed on seven). Four observations in order, First–Fourth, agencies
+# named in full, no second-person framing, no metaphor, near-verbatim recap, sources line. KNOWN
+# ERROR, accepted: at 2:21 "PLR is refused by PNEA's access list" — it is PNIA's (the slide's
+# caption and frame show the right owner). Also: "this deep dive" at 0:12 (uncut: a cut would fall
+# under the 3:30 floor); Host A prompts inside the block. Clip C6 composited inside slide 6.
+
+0:00.0 # slide 1 — title card
+0:18.8 # slide 2 — The moment the whole framework exists for.
+0:38.1 # slide 3 — One call — identity from PNIA, enrolment from PLR
+1:19.1 # slide 4 — First: ten blank rows, then nine filled
+1:45.5 # slide 5 — Second: what PNIA sends — and what it withholds
+2:15.3 # slide 6 — Third: allowed, refused, then cut off
+2:40.3 # slide 7 — Fourth: on disk, and six checks green
+3:16.6 # slide 8 — One field asked, nine fetched, only what the purpose needs — and six accept
+3:26.0 # slide 9 — Sources

@@ -519,7 +519,7 @@ rows_block(prs, 'The SLA sets five numbers a consumer can rely on',
            "provider commits to. Response time — how fast a call returns. Support hours — when "
            "there is someone to help. Incident response — who to call when the service fails, "
            "and how quickly they will respond. And change notice — how much warning a provider "
-           "gives before changing the service, so consumers are not broken by a surprise. These "
+           "gives before changing the service, so no consumer is caught out by a surprise change. These "
            "are the numbers that turn a connection into a dependency a consumer can build a real "
            "citizen service on.",
            numbered=False)
@@ -833,10 +833,10 @@ demo_slide(prs, 'Same question, two callers, two answers', png, cap, T,
 
 still, cap = take('C6-break-restore', 'still')
 clip, _ = take('C6-break-restore')
-demo_slide(prs, 'One grant withdrawn, one source broken', still, cap, T,
+demo_slide(prs, 'One grant withdrawn, one source cut off', still, cap, T,
            "VO: Now the operator withdraws PNEA's permission and runs the form again. Within seconds "
            "the PNIA rows are denied, while the PLR rows still fill: one grant withdrawn, one source "
-           "broken. Restore it, and the form is whole.",
+           "cut off. Restore it, and the form is whole.",
            clip=clip)
 
 txt, cap = take('C7-application')

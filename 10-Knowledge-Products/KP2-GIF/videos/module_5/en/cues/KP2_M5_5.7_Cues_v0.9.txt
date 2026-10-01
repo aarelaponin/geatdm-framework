@@ -1,0 +1,22 @@
+# Slide cue file — KP2 Module 5, Video 5.7
+# Deck:  KP2_M5_5.7_Deck_v0.4.pptx (9 slides)
+# Audio: KP2_M5_5.7_Audio_v0.9.m4a (runs to 4:25.0) — v0.7 with the show-open cut by hand (26.6 s)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 1 Oct at KP1's bar — v0.7 with a 27 s show-open cut by hand. The hosts take 'shape does
+# not change' before 'retire the legacy links', and the P2 reveal before 'never ship', in every
+# roll, so the deck was reordered to their order (deck v0.4, narration unchanged). Seven production
+# differences covered (audit dropped); legacy steps numbered 1–4; P2 reveal faithful; the never-ship
+# card sits on "the exact blueprint for where your production roadmap begins"; recap with "never
+# ship" and the sources line. Flaw: the §3 vocabulary as rationale for legacy retirement (2:56–3:25
+# original).
+
+0:00.0 # slide 1 — title card
+0:04.0 # slide 2 — The demonstration proves the pattern. It is not production.
+0:28.7 # slide 3 — Production adds seven things around the same configuration
+1:41.2 # slide 4 — The shape of the configuration does not change
+2:25.0 # slide 5 — Retire the legacy links the bus replaces — agency by agency
+3:33.3 # slide 6 — The demonstration names its own gap
+4:03.4 # slide 7 — Never ship the demonstration as production
+4:11.2 # slide 8 — Production is the demonstration's pattern, hardened — separate hosts, a rea
+4:21.0 # slide 9 — Sources

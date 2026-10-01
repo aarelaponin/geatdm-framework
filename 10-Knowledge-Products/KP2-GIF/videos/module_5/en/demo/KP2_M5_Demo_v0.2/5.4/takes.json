@@ -1,0 +1,61 @@
+{
+  "video": "5.4",
+  "nin": "02831663233",
+  "xroad_version": "7.7.0",
+  "pack_commit": "a28b74cab353efed3bec3626630776527cbc25e4",
+  "pack_dirty": true,
+  "captured_at": "2026-09-30T18:14:35Z",
+  "request_id": "2zNu5ioIviU",
+  "beats": {
+    "J0-refused": {
+      "file": "J0-refused.png",
+      "kind": "frame",
+      "caption": "A member code with a space: refused before anything reaches the bus.",
+      "sha256": "2fe1adfccc8beea3996db3f11577cfd96538fb06adba0bd17ba56765c8885b29"
+    },
+    "J1-submitted": {
+      "file": "J1-submitted.png",
+      "kind": "frame",
+      "caption": "The request and the exact diff it would write — nothing written yet.",
+      "sha256": "c9a879456c90116519895f5c51abb1461dfb700dc61bc9a555dbfb9533375fc3"
+    },
+    "J2-no-minute": {
+      "file": "J2-no-minute.png",
+      "kind": "frame",
+      "caption": "Approve without a minute reference: refused. Admission is a committee decision.",
+      "sha256": "282ecb22710d8884b6a2b4c13f88ff6e284ddfc9375ba276b2e14a71da0fc1f5"
+    },
+    "J3-join": {
+      "file": "J3-join.mp4",
+      "kind": "clip",
+      "caption": "Minute RIHA-2026-001 recorded: the steps run themselves, then a real call proves the backend answers.",
+      "sha256": "d283613148da92ec5fd60f474672fb734f49e92424f6c61624a1f31de6ba1b67",
+      "still": "J3-join.png"
+    },
+    "J4-admission": {
+      "file": "J4-admission.txt",
+      "kind": "text",
+      "caption": "The admission record: which decision admitted PTSB, and when.",
+      "sha256": "e7d8360b0b45f1176ca791d252e853081fe2f07faddabcaf11e66ccb376f486c"
+    },
+    "J5-hosted": {
+      "file": "J5-hosted.txt",
+      "kind": "text",
+      "caption": "PTSB on the bus, hosted on PLR's server — origin: joined, never canonical.",
+      "sha256": "5d42564d24b1734ea7b4ec31774f0d22b6504b8e6f0ec2e6f4200135beb497c5"
+    },
+    "J6-proved": {
+      "file": "J6-proved.txt",
+      "kind": "text",
+      "caption": "Reachable by PNEA, refused to everyone else, exactly the contract's fields, listed on the bus.",
+      "sha256": "f7ee0e96ac9cf1a9baa2bf123cd931276cb076670f9e41c935a287b03f478cf4"
+    },
+    "J7-unjoin": {
+      "file": "J7-unjoin.txt",
+      "kind": "text",
+      "caption": "Un-join: the same gates walked backwards; the record of the membership is kept.",
+      "sha256": "f9dc011a9358cd4ec7e0ea88471211ba9f2b013b20fc9693c11e8e7deb8cfcc4",
+      "slide": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# Slide cue file — KP2 Module 5, Video 5.3
+# Deck:  KP2_M5_5.3_Deck_v0.3.pptx (8 slides)
+# Audio: KP2_M5_5.3_Audio_v0.15.m4a (runs to 4:12.5) — v0.10 with the show-open cut by hand (44.0 s)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 1 Oct at KP1's bar on brief v0.3 — v0.10 with a 44 s show-open cut by hand (dashboard
+# scenario, "unpack", "policy briefings"). In order; the five numbers numbered 1–5; SLA-1 reveal
+# faithful and in place; closes on the recap message. Flaws: slide 4's per-service point (one SLA
+# per published service, consumers sign none) never said — its slide is a short hold; "the policy
+# briefing" cited once at slide 6; scattered idioms ("a wish without teeth"); "a broken dependency"
+# (technical). Sources card silent.
+
+0:00.0 # slide 1 — title card
+0:04.0 # slide 2 — Connected is not the same as dependable.
+0:48.9 # slide 3 — The SLA sets five numbers a consumer can rely on
+2:20.8 # slide 4 — The SLA makes the member obligations specific
+2:29.9 # slide 5 — Set the numbers with the provider, not for them
+3:20.8 # slide 6 — One service's SLA, as signed
+3:55.5 # slide 7 — The SLA is the numbers that make a connection dependable — agreed with the 
+4:08.5 # slide 8 — Sources

@@ -1,0 +1,12 @@
+$ scripts/acceptance.sh --summary --only 2.x
+2.x.addons(ss-pdga)  PASS  operational + environmental monitoring add-ons RUNNING on ss-pdga
+2.x.addons(ss-pnea)  PASS  operational + environmental monitoring add-ons RUNNING on ss-pnea
+2.x.addons(ss-plr)  PASS  operational + environmental monitoring add-ons RUNNING on ss-plr
+2.x.addons(ss-pnia)  PASS  operational + environmental monitoring add-ons RUNNING on ss-pnia
+2.x(PLR:ENROLMENT)  PASS  client REGISTERED on ss-plr
+2.x(PNEA:EXAMS)  PASS  client REGISTERED on ss-pnea
+2.x(PNIA:IDENTITY)  PASS  client REGISTERED on ss-pnia
+2.x.acl(identity-api)  PASS  identity-api grants exactly PROGRESSA:GOV:PNEA:EXAMS
+2.x.acl(enrolment-api)  PASS  enrolment-api grants exactly PROGRESSA:GOV:PNEA:EXAMS
+2.x.catalogue(PROGRESSA/GOV/PLR/ENROLMENT/enrolment-api)  PASS  PROGRESSA/GOV/PLR/ENROLMENT/enrolment-api's catalogue entry exists and its SLA link resolves
+2.x.catalogue(PROGRESSA/GOV/PNIA/IDENTITY/identity-api)  PASS  PROGRESSA/GOV/PNIA/IDENTITY/identity-api's catalogue entry exists and its SLA link resolves

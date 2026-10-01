@@ -1,0 +1,37 @@
+{
+  "video": "5.5",
+  "nin": null,
+  "xroad_version": "7.7.0",
+  "pack_commit": "a28b74cab353efed3bec3626630776527cbc25e4",
+  "pack_dirty": true,
+  "captured_at": "2026-09-30T18:10:03Z",
+  "timings_stale": true,
+  "timings_deploy_start": "2026-08-22T20:52:02Z",
+  "beats": {
+    "T0-containers": {
+      "file": "T0-containers.txt",
+      "kind": "text",
+      "caption": "One Central Server, one Test CA, four Security Servers — all healthy.",
+      "sha256": "41beacbe87ff7487271bca279f6cbc197ec6b4e07b2fce5c9591e6b408b3cab9"
+    },
+    "T1-stood-up": {
+      "file": "T1-stood-up.txt",
+      "kind": "text",
+      "caption": "From zero to a running federation: measured, not estimated.",
+      "sha256": "c55bb5faab36f5177d59888e4dbb9536caebe179061562e4ac3f4f7f647bb248",
+      "measured": true
+    },
+    "T2-members": {
+      "file": "T2-members.txt",
+      "kind": "text",
+      "caption": "Three members, each behind its own Security Server.",
+      "sha256": "dbbc5ac1907a2c41438691fe0cb5d05f5dfc7817f3c4a351e69fd21149744c66"
+    },
+    "T3-registered": {
+      "file": "T3-registered.txt",
+      "kind": "text",
+      "caption": "Registered on the Central Server, grants exact, monitoring add-ons running — the federation is real.",
+      "sha256": "2ca8a28919d0ca61f13d1c39386ae666db9bf19a4caeaa8b0c9ce8766f0788a7"
+    }
+  }
+}

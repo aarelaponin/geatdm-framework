@@ -1,0 +1,18 @@
+# Slide cue file — KP2 Module 5, Video 5.2
+# Deck:  KP2_M5_5.2_Deck_v0.3.pptx (8 slides)
+# Audio: KP2_M5_5.2_Audio_v0.6.m4a (runs to 3:12.1) — v0.4 with the show-open cut by hand (54.3 s)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar — settled on runtime; complete and in order, the six requirements
+# numbered, the reveal faithful (the examination authority's record, all six items). Flaws: a mid-
+# take rail metaphor; the brief leaking ("I'll just number them aloud"); slide 5 drops the signed
+# agreement and named DPO; recap partial. Sources card silent.
+
+0:00.0 # slide 1 — title card
+0:04.0 # slide 2 — The fastest way to wreck an onboarding: find out on go-live day.
+0:14.2 # slide 3 — Six things a member must have before it joins
+1:58.4 # slide 4 — Readiness becomes a checklist, not a judgement
+2:34.9 # slide 5 — The Member Requirements are the front end of onboarding
+2:43.5 # slide 6 — One agency's answers, rendered into its record
+2:54.1 # slide 7 — A Member Requirements checklist makes readiness objective and checkable wee
+3:08.1 # slide 8 — Sources

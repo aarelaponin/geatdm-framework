@@ -1,0 +1,6 @@
+$ scripts/member.sh list
+KEY      ORIGIN     SERVER     UI              REST
+plr      canonical  ss-plr     127.0.0.1:3000   127.0.0.1:3080
+pnea     canonical  ss-pnea    127.0.0.1:2000   127.0.0.1:2080
+pnia     canonical  ss-pnia    127.0.0.1:5100   127.0.0.1:5180
+ptsb     joined     ss-plr     127.0.0.1:3000   127.0.0.1:3080

@@ -1,0 +1,59 @@
+{
+  "video": "5.6",
+  "nin": "02831663233",
+  "xroad_version": "7.7.0",
+  "pack_commit": "a28b74cab353efed3bec3626630776527cbc25e4",
+  "pack_dirty": true,
+  "captured_at": "2026-09-30T18:10:46Z",
+  "beats": {
+    "C1-before": {
+      "file": "C1-before.png",
+      "kind": "frame",
+      "caption": "Ten blank rows: without the bus, ten questions to answer.",
+      "sha256": "dc10f3cd3014f19c210acdf262594c84fa84ec6d5fd94aa258d9051de0bfe319"
+    },
+    "C2-after": {
+      "file": "C2-after.png",
+      "kind": "frame",
+      "caption": "Nine fields arrive the learner was never asked for.",
+      "sha256": "782b558bf30bdf4d5776413980a9fd7721cb2aad2677669b6379cbbfb58469d5"
+    },
+    "C3-receipts": {
+      "file": "C3-receipts.txt",
+      "kind": "text",
+      "caption": "Two calls, two receipts: status 200 from each provider.",
+      "sha256": "f519ede1b68a14e9611ffd9a6be0fc92d7302587306d67c36b66fca56a7083d1"
+    },
+    "C4-layers": {
+      "file": "C4-layers.png",
+      "kind": "frame",
+      "caption": "Legal, organisational, semantic, technical — read off the live response.",
+      "sha256": "c0faca85319c333a78058795fc82a96fde972a346dc1143881dcc2f0428e9281"
+    },
+    "C5-allowed-denied": {
+      "file": "C5-allowed-denied.png",
+      "kind": "frame",
+      "caption": "PNEA: allowed. PLR, asking the identical question: AccessDenied.",
+      "sha256": "9d6f2563c4d9c9c5b1c02712c0e46a5551f3b35d107d130d4cb2e9b9e17677a2"
+    },
+    "C6-break-restore": {
+      "file": "C6-break-restore.mp4",
+      "kind": "clip",
+      "caption": "Grant withdrawn: the PNIA half fails, PLR still fills. Grant back: whole again.",
+      "sha256": "4f47e677ac664fb0fc0f596b9f669f3e3dd4b18efd286670b6b2a807ea3d45a4",
+      "still": "C6-break-restore.png"
+    },
+    "C7-application": {
+      "file": "C7-application.txt",
+      "kind": "text",
+      "caption": "The application on disk: where every field came from.",
+      "sha256": "bc511a3ef014fa52296deec53001be25fbcb40223d0bbd639851a859d7b91d17"
+    },
+    "C8-acceptance": {
+      "file": "C8-acceptance.txt",
+      "kind": "text",
+      "caption": "Checks 2.6.1 to 2.6.6 green — the technical half of the go-live approval.",
+      "sha256": "c8fd8f661baac686d4473bda0eb75a4e90cc619a795947941d445a58d4d66f54"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# Slide cue file — KP2 Module 5, Video 5.5
+# Deck:  KP2_M5_5.5_Deck_v0.3.pptx (10 slides)
+# Audio: KP2_M5_5.5_Audio_v0.6.m4a (runs to 3:02.9) — v0.4 with the show-open cut by hand (31.2 s)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar — the demonstration block holds: First to Fourth, in order, nothing
+# skipped or described off screen. Short after the cut (under the 3:30 floor). Flaws: Host A prompts
+# each observation; slide 3 never names PDGA; the run book unnumbered and the single-host line
+# dropped; ends on a leaked tag ("locked into one supplier"). Sources card silent.
+
+0:00.0 # slide 1 — title card
+0:04.0 # slide 2 — Now the live platform the members connect to.
+0:17.3 # slide 3 — One registry, one gateway per member, one trust anchor
+1:15.5 # slide 4 — Bring it up from the run book, in order
+2:02.6 # slide 5 — First: six containers, all healthy
+2:13.9 # slide 6 — Second: from zero to running, measured
+2:27.4 # slide 7 — Third: three members, each behind its own server
+2:38.6 # slide 8 — Fourth: registered, grants exact, monitoring running
+2:49.0 # slide 9 — Central Server, Test CA, four Security Servers — stood up from the run book
+2:58.9 # slide 10 — Sources

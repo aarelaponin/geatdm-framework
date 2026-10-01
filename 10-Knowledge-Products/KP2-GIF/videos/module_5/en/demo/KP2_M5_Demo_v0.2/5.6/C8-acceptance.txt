@@ -1,0 +1,7 @@
+$ scripts/acceptance.sh --summary --only 2.6
+2.6.1  PASS  happy path — both cross-server calls resolve
+2.6.2  PASS  right learner — fields match the seeded record
+2.6.3  PASS  asked once — NIN is the only citizen field; bus pre-fills exactly the rest
+2.6.4  PASS  negative — PROGRESSA/GOV/PLR/ENROLMENT (via its own SS ss-plr) denied by the provider ACL
+2.6.5  PASS  negative — NIN absent from PLR yields a clean 404, not silence
+2.6.6  PASS  field conformance — both responses carry exactly the fields their contract declares (G5.9)

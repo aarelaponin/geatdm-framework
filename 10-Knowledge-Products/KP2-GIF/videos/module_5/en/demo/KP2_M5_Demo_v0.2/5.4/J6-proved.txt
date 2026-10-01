@@ -1,0 +1,7 @@
+$ scripts/acceptance.sh --summary --only 2.7
+2.7.1  PASS  join-api deploys and reports healthy
+2.7.2  PASS  spec-fetcher reachable from join-api, admin :4000 (cs) NOT reachable from spec-fetcher
+2.7.r1(PTSB.awards-api)  PASS  PROGRESSA/GOV/PNEA/EXAMS r1 call to awards-api reaches the backend (no X-Road fault)
+2.7.deny(PTSB.awards-api)  PASS  PROGRESSA/GOV/PNIA/IDENTITY (via its own SS ss-pnia) denied by the provider ACL
+2.7.fields(PTSB.awards-api)  PASS  PROGRESSA/GOV/PNEA/EXAMS r1 call to awards-api carries exactly its contract's declared fields (G5.9)
+2.7.catalogue(PTSB.awards-api)  PASS  PTSB's awards-api appears in GET /catalogue

@@ -1,0 +1,224 @@
+1
+00:00:00,150 --> 00:00:04,110
+Yeah. And this specific step is really the shift to reality for your program.
+
+2
+00:00:04,250 --> 00:00:09,530
+I mean, before this point, everything is just preparation, like drafting plans and service-level agreements.
+
+3
+00:00:10,010 --> 00:00:14,370
+Admitting a member is where those plans turn into actual automated configuration.
+
+4
+00:00:14,830 --> 00:00:16,230
+So it's no longer just on paper.
+
+5
+00:00:16,670 --> 00:00:20,730
+Exactly. And a key safeguard here is that nobody types this by hand.
+
+6
+00:00:21,150 --> 00:00:23,310
+I mean, that makes sense. You want to avoid human error.
+
+7
+00:00:23,770 --> 00:00:26,750
+But, uh, I have a question about how this actually works in practice.
+
+8
+00:00:27,430 --> 00:00:30,770
+Is being on the bus sort of like being in a secure government building?
+
+9
+00:00:31,130 --> 00:00:36,270
+Like, your badge gets you into the lobby, but you still need specific clearance to get into individual rooms?
+
+10
+00:00:36,690 --> 00:00:36,990
+That is--
+
+11
+00:00:37,610 --> 00:00:39,530
+Actually, that analogy perfectly captures it.
+
+12
+00:00:40,150 --> 00:00:44,710
+When the operator admits a member, the system generates two distinct configuration artifacts.
+
+13
+00:00:45,110 --> 00:00:46,350
+Okay, two artifacts.
+
+14
+00:00:46,490 --> 00:00:52,470
+Right. The first is the subsystem. That's your digital badge, uh, the member's registered identity on the bus.
+
+15
+00:00:52,970 --> 00:00:57,990
+It contains the member class, the member code, and the subsystem code, which dictate how a call is routed.
+
+16
+00:00:58,470 --> 00:00:59,170
+And the second one?
+
+17
+00:00:59,730 --> 00:01:01,990
+The second is the access control list.
+
+18
+00:01:02,750 --> 00:01:02,870
+Ah.
+
+19
+00:01:03,550 --> 00:01:05,210
+So that's the room-by-room clearance.
+
+20
+00:01:05,610 --> 00:01:14,210
+Precisely. It dictates specific permissions, explicitly listing which other members may call its services, and this is granted deliberately, you know, service by service.
+
+21
+00:01:15,330 --> 00:01:22,090
+So how does this strict gating actually prevent, say, rogue approvals from making the system completely costly to change?
+
+22
+00:01:22,690 --> 00:01:24,550
+Let's transition into the actual practice.
+
+23
+00:01:25,270 --> 00:01:29,170
+Well, we can see this in the six-step recorded demonstration of the repeatable process.
+
+24
+00:01:29,870 --> 00:01:35,350
+First, a request with a space in the member code is instantly refused by the validator before it even reaches the bus.
+
+25
+00:01:35,890 --> 00:01:36,230
+Oh, wow.
+
+26
+00:01:36,910 --> 00:01:38,010
+So a single space
+
+27
+00:01:38,630 --> 00:01:39,530
+just shuts it down.
+
+28
+00:01:39,930 --> 00:01:41,690
+Yes, syntax is critical.
+
+29
+00:01:42,710 --> 00:01:52,410
+Second, a corrected request from the Tertiary Scholarship Board, referred to as PTSB, previews the exact file diff it would write, though, uh, nothing is actually written yet.
+
+30
+00:01:53,130 --> 00:01:55,010
+It's just showing you what would happen.
+
+31
+00:01:55,590 --> 00:01:59,770
+Right. Third, the operator tries to approve it without a committee minute reference.
+
+32
+00:02:00,150 --> 00:02:03,830
+It is immediately refused. Admission is strictly a committee decision.
+
+33
+00:02:04,150 --> 00:02:06,290
+So there's no bypassing the human governance part.
+
+34
+00:02:06,510 --> 00:02:07,070
+Exactly.
+
+35
+00:02:07,750 --> 00:02:13,010
+Fourth, the operator enters the minute, RHI dash twenty twenty-six dash oh oh one.
+
+36
+00:02:13,650 --> 00:02:17,190
+The steps run themselves, and a real call proves the back-end answers.
+
+37
+00:02:17,450 --> 00:02:18,830
+It completely automates from there.
+
+38
+00:02:19,150 --> 00:02:19,550
+It does.
+
+39
+00:02:20,390 --> 00:02:25,790
+Fifth, an admission record is left behind detailing the request, the decision reference, and the timestamp.
+
+40
+00:02:26,090 --> 00:02:27,530
+So there's a permanent audit trail.
+
+41
+00:02:27,850 --> 00:02:27,990
+Yeah.
+
+42
+00:02:28,850 --> 00:02:30,050
+And sixth, the proof.
+
+43
+00:02:30,690 --> 00:02:40,250
+PTSB is hosted on the learner registry server, reachable by the Examination Authority, PNEA, refused to everyone else, and perfectly matches the contract's fields.
+
+44
+00:02:40,770 --> 00:02:43,950
+I mean, I can already hear IT directors pushing back on this, right?
+
+45
+00:02:44,970 --> 00:02:48,930
+Is all this just bureaucratic red tape that slows down innovation in your program?
+
+46
+00:02:49,510 --> 00:02:51,810
+Well, registration is actually not the final gate.
+
+47
+00:02:52,110 --> 00:02:59,730
+Conformance testing is strictly required before the first service goes live to ensure one member's data doesn't, uh, make the entire system costly to change.
+
+48
+00:03:00,310 --> 00:03:02,310
+Okay, but how proportional are these checks?
+
+49
+00:03:02,750 --> 00:03:10,930
+They are entirely risk-based. So it's a self-assessment for routine services or a third-party check for high-risk ones using the operator's test suite.
+
+50
+00:03:11,290 --> 00:03:12,710
+So it scales with the danger.
+
+51
+00:03:13,070 --> 00:03:15,210
+Right. And it's not a certificate for life.
+
+52
+00:03:15,270 --> 00:03:19,330
+It is retested every two years or whenever a binding standard changes.
+
+53
+00:03:19,730 --> 00:03:23,510
+This ensures no agency is locked into one supplier or falls out of step.
+
+54
+00:03:23,910 --> 00:03:30,050
+Got it. So really the core takeaway is that admitting a member is where onboarding becomes configuration.
+
+55
+00:03:30,530 --> 00:03:39,510
+It requires a validated request, an approval citing a committee decision, a join that proves itself with a real call, and a conformance test before going live.
+
+56
+00:03:39,910 --> 00:03:41,430
+Sources are in the video description.
+

@@ -1,4 +1,8 @@
-// Build KP2 Module 5 — Video Script Bundle v0.4
+// Build KP2 Module 5 — Video Script Bundle v0.5
+// v0.5 (30 Sep 2026): the demo videos after the 5.6 pilot (plan 2026-09-13-kp2-m5-demo-videos-5.4-5.5, WP5). 5.4 is
+//   retitled 'Admit a member to the bus' and shows six observations recorded from a real join; 5.5 shows four text
+//   captures of the stood-up federation; 5.2, 5.3 and 5.7 gain one reveal each; 5.6's observations open on their
+//   ordinal and read the cropped v0.2 frames; 5.6 says 'one source cut off' and 5.3 drops its 'citizen at the counter'.
 // v0.4 (13 Sep 2026): the 10 Sep script-vs-pack corrections (KP2_M5_Script_vs_Pack_Review_2026-09-10 §2 items 1–5):
 //   MoEYS/PEMIS retired — four Security Servers are PDGA (the owner) + PNEA, PLR, PNIA (5.4, 5.5); 5.4's mechanism is
 //   admission → validation → the join running itself; 5.5 adds OCSP/TSA and the explicit approval, and a hosting line
@@ -217,8 +221,8 @@ body.push(
   spacer(600),
   specTable([
     ["Document",            "Video script bundle for Topic 5 of KP2"],
-    ["Version",             "v0.4 — aligned to ITU Knowledge Products and Video Materials Guide; Topic 6 folded in; aligned to the source method; corrected against the build pack, with 5.6 rebuilt around recorded demo evidence (13 September 2026)"],
-    ["Date",                "13 September 2026 (v0.1: 27 June 2026; v0.2 and v0.3: 12 September 2026)"],
+    ["Version",             "v0.5 — aligned to ITU Knowledge Products and Video Materials Guide; Topic 6 folded in; aligned to the source method; corrected against the build pack; 5.4 and 5.5 carry recorded demo evidence and 5.2, 5.3 and 5.7 one reveal each (30 September 2026)"],
+    ["Date",                "30 September 2026 (v0.1: 27 June 2026; v0.2 and v0.3: 12 September 2026; v0.4: 13 September 2026)"],
     ["Contract reference",  "RFQ-S-GIGA-2026-022 / Purchase Order #334304 (signed 24 April 2026)"],
     ["Topic persona",       PERSONA_A + " (5.1–5.8); " + PERSONA_S + " (5.9–5.10)"],
     ["Subtopics",           "Ten subtopics (5.1 – 5.10), each shipped as one ~5-minute standalone video"],
@@ -228,7 +232,7 @@ body.push(
     ["For review by",       "ITU/Giga at Tuesday weekly call; FiscalAdmin team (Karin Kaup, Arne Lapõnin)"]
   ]),
   spacer(140),
-  P("This bundle is the v0.4 working draft of Topic 5 of KP2 — Government Interoperability Framework. Topic 5 is where the framework is stood up, proven, and then run. It takes the configuration the earlier topics produced — the decree, the Governance Pack, the semantic map and the service contracts — and turns it into a running solution: a phased implementation plan, the onboarding of real members, and a live once-only exchange on the Linkup federation. It produces the runnable proving slice of the build pack: the Linkup federation, the member registrations, and the cross-server call that is the framework's acceptance check. The ten videos walk the Architect through the four-phase implementation pattern, the Member Requirements, the Service-Level Agreement, registering a member on X-Road, standing up the federation, the live once-only exchange, and what changes from demonstration to production — and then, once the bus runs, through keeping it running: monitoring the bus from its logs, cross-checking the framework's three foundational documents for drift, and carrying the framework to the next sector. The last three were Topic 6 in v0.1; Topic 6 was retired on 12 September 2026 (its catalogue, role-paths and storyboard videos repeated the earlier topics and now live on the GitBook home page and in the KP2 intro video). The register stays plain English, eighth-grade level; technical terms are introduced in plain words on first use, and each subtopic leads with the capability the listener gains. The ten videos are numbered to ITU's convention (5.1 through 5.10), each reworked to stand alone. All slide specifications follow ITU's text-only branding. Each subtopic carries an AI usage tip with a copy-paste Claude prompt. External references use the convention 'Find the link in the description'."),
+  P("This bundle is the v0.5 working draft of Topic 5 of KP2 — Government Interoperability Framework. Topic 5 is where the framework is stood up, proven, and then run. It takes the configuration the earlier topics produced — the decree, the Governance Pack, the semantic map and the service contracts — and turns it into a running solution: a phased implementation plan, the onboarding of real members, and a live once-only exchange on the Linkup federation. It produces the runnable proving slice of the build pack: the Linkup federation, the member registrations, and the cross-server call that is the framework's acceptance check. The ten videos walk the Architect through the four-phase implementation pattern, the Member Requirements, the Service-Level Agreement, registering a member on X-Road, standing up the federation, the live once-only exchange, and what changes from demonstration to production — and then, once the bus runs, through keeping it running: monitoring the bus from its logs, cross-checking the framework's three foundational documents for drift, and carrying the framework to the next sector. The last three were Topic 6 in v0.1; Topic 6 was retired on 12 September 2026 (its catalogue, role-paths and storyboard videos repeated the earlier topics and now live on the GitBook home page and in the KP2 intro video). The register stays plain English, eighth-grade level; technical terms are introduced in plain words on first use, and each subtopic leads with the capability the listener gains. The ten videos are numbered to ITU's convention (5.1 through 5.10), each reworked to stand alone. All slide specifications follow ITU's text-only branding. Each subtopic carries an AI usage tip with a copy-paste Claude prompt. External references use the convention 'Find the link in the description'."),
   pageBreak()
 );
 
@@ -262,10 +266,10 @@ body.push(
       "The Member Requirements template tells an agency exactly what it must have before it can join — no surprises at go-live.", "~4 min"],
     ["5.3", "Make 'connected' mean 'dependable' — the SLA",
       "A Service-Level Agreement turns 'connected' into 'dependable' — the template makes it a fill-in, not a negotiation from scratch.", "~4 min"],
-    ["5.4", "Register a member on X-Road",
-      "The subsystem registration and the access-control list admit one agency to the bus — produced by an admitted, validated join, not typed by hand.", "~5 min"],
+    ["5.4", "Admit a member to the bus",
+      "An agency is admitted by a validated request and a recorded committee decision — then the join runs itself and proves itself with a real call.", "~5 min"],
     ["5.5", "Stand up the federation",
-      "Central Server, four Security Servers, a Test CA — the Linkup federation, stood up from the run book.", "~5 min"],
+      "Central Server, Test CA, four Security Servers — the Linkup federation, stood up from the run book and shown healthy, registered and granted exactly.", "~5 min"],
     ["5.6", "Run the once-only exchange, live",
       "PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real cross-server call, the data asked once.", "~3 min"],
     ["5.7", "From demonstration to production",
@@ -353,6 +357,8 @@ body.push(...renderSubtopic({
     { cue: "Slide 3 — Title: 'Readiness becomes a checklist, not a judgement'. Body, single text block: 'Instead of an architect deciding, agency by agency, whether someone seems ready, the agency works the list and either meets each item or does not. That objectivity lets you schedule onboarding with confidence — and protects the framework from a half-ready member that breaks things.'" },
     { text: "The template turns readiness from a judgement call into an objective checklist. Instead of an architect deciding, agency by agency, whether someone seems ready, the agency works through the list and either meets each item or does not. That objectivity is what lets you schedule onboarding with confidence, and it protects the framework from a member that joins half-ready and breaks the exchanges it touches. It also takes the awkwardness out of saying 'not yet' — the list says it for you." },
     { text: "And the checklist is not a separate form that gets filed and forgotten. In the build pack it is the front of the join request itself: the six answers travel in the request an applying agency submits, and they are checked before any operator can approve it. Two things sit beside it on purpose — the signed membership agreement and the named data-protection officer — and the pack says plainly where it does not hold them. An agency that passes the Member Requirements is an agency ready to be registered on the bus, which is the technical step that admits it." },
+    { cue: "Reveal slide — Title: 'One agency's answers, rendered into its record'. Demo evidence (artefact, beat REQ-1): onboarding/pnea/02-requirements.md — the six items and what PNEA stated. Caption strip: 'Six items, stated by the applicant, rendered into its record.'" },
+    { text: "Here is one such record, the examination authority's, rendered from its join request: each of the six items with what the agency stated, down to the named contact, its Head of IT." },
     { cue: "Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A Member Requirements checklist makes readiness objective and checkable weeks before go-live — so onboarding is scheduled, not gambled.'" },
     { text: "So before any agency is registered on the bus, it passes the Member Requirements: a security server, a registered identity, the standards adopted, clean data, a lawful basis, a named contact. The checklist makes readiness objective, lets you schedule onboarding instead of gambling on it, and is reused for every member that follows." },
     { cue: "Slide 5 — Title: 'Sources'. Body: NIIS X-Road member requirements and onboarding; EU EIF. Footer: 'Find the link in the description.'" }
@@ -364,6 +370,8 @@ body.push(...renderSubtopic({
       "The checklist. Plain text, readable on mobile. The same six answers are the front of the build pack's join request."],
     ["3", "Readiness-is-a-checklist slide. Single text block on objectivity.",
       "The value of the template. Text-only."],
+    ["R", "Demo evidence (artefact). PNEA's requirements record, rendered from its join request. Placed before the summary slide.",
+      "Beat REQ-1 (reveals). A markdown record rendered as text rows — inside the text-only rule."],
     ["4", "Single-sentence summary slide. One large text block (Arial Bold 28pt).",
       "The take-home line."],
     ["5", "Sources slide. Footer: 'Find the link in the description.'",
@@ -398,12 +406,14 @@ body.push(...renderSubtopic({
   singleMessage: "A Service-Level Agreement turns 'connected' into 'dependable' — the template makes it a fill-in, not a negotiation from scratch.",
   scriptBeats: [
     { cue: "Slide 1 — Title: 'Make 'connected' mean 'dependable' — the SLA'. Voice-over begins." },
-    { text: "A member being connected is not the same as a member being dependable. A service that is up most of the time, answers slowly, and has no one to call when it breaks is connected but useless to a consumer who needs the data at the moment a citizen is standing at the counter. The Service-Level Agreement is what turns connected into dependable — and a template turns writing one from a negotiation into a fill-in." },
+    { text: "A member being connected is not the same as a member being dependable. A service that is up most of the time, answers slowly, and has no one to call when it breaks is connected but useless to a consumer whose citizen service depends on it at the moment it runs. The Service-Level Agreement is what turns connected into dependable — and a template turns writing one from a negotiation into a fill-in." },
     { cue: "Slide 2 — Title: 'What the SLA sets'. Body, five text rows: 'Availability — the uptime the provider commits to.' 'Response time — how fast a call returns.' 'Support hours — when there is someone to help.' 'Incident response — who to call, and how fast.' 'Change notice — how much warning before a change.'" },
-    { text: "The SLA sets the numbers a consumer can rely on. Availability — the uptime the provider commits to. Response time — how fast a call returns. Support hours — when there is someone to help. Incident response — who to call when the service fails, and how quickly they will respond. And change notice — how much warning a provider gives before changing the service, so consumers are not broken by a surprise. These are the numbers that turn a connection into a dependency a consumer can build a real citizen service on." },
+    { text: "The SLA sets the numbers a consumer can rely on. Availability — the uptime the provider commits to. Response time — how fast a call returns. Support hours — when there is someone to help. Incident response — who to call when the service fails, and how quickly they will respond. And change notice — how much warning a provider gives before changing the service, so no consumer is caught out by a surprise change. These are the numbers that turn a connection into a dependency a consumer can build a real citizen service on." },
     { cue: "Slide 3 — Title: 'The SLA makes the member obligations specific'. Body, single text block: 'The governance obligations said a member meets service levels. The SLA is where those service levels become specific numbers, agreed and signed. Without it, 'meets service levels' is a wish; with it, it is a commitment you can hold a member to.'" },
     { text: "The SLA operationalises the member obligations from the governance module. Those obligations said, in principle, that a member meets service levels; the SLA is where the service levels become specific numbers, agreed and signed. Without the SLA, 'meets service levels' is a wish. With it, it is a commitment the Operating Authority can hold a member to — and a number a consumer can plan around. And the SLA belongs to a service, not to a member: every service a provider publishes carries its own, and a member that only consumes publishes nothing, so it signs none." },
     { text: "One rule of fairness, and it is the rule that actually gets SLAs signed: set the numbers with the provider, not for them. A target the provider cannot meet is a target the provider will quietly ignore, and an SLA everyone ignores is worse than none. Agree numbers the provider can genuinely hit — and raise them over time as the platform matures — and the SLA becomes real rather than decorative. The template then makes it fast: fill in the targets for each service, agree them with the provider, sign, and reuse the same template for every service on the bus." },
+    { cue: "Reveal slide — Title: 'One service's SLA, as signed'. Demo evidence (artefact, beat SLA-1): onboarding/plr/03-sla/enrolment-api.md — the five terms and their targets. Caption strip: 'Five terms, one record per published service.' (The record's 'Signed by' line sits below the table and is not on the slide.)" },
+    { text: "Here is one, signed for the learner registry's enrolment service: ninety-nine and a half per cent monthly availability, weekday support hours, the most serious incidents acknowledged within an hour and resolved within eight, and five business days' notice before a planned change." },
     { cue: "Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The SLA is the numbers that make a connection dependable — agreed with the provider, signed, and reused for every service.'" },
     { text: "So the Service-Level Agreement is what turns a connected member into a dependable one. Availability, response time, support, incident response, change notice — the numbers a consumer can rely on, made specific from the governance obligations, agreed with the provider so they are real, and captured in a template you reuse for every service. That is the difference between a bus that works in a demonstration and one a country can run citizen services on." },
     { cue: "Slide 5 — Title: 'Sources'. Body: NIIS X-Road service-level / SLA guidance; the member obligations (Module 3); EU EIF. Footer: 'Find the link in the description.'" }
@@ -415,6 +425,8 @@ body.push(...renderSubtopic({
       "The core list. Text-only."],
     ["3", "SLA-makes-obligations-specific slide. Single text block linking to the governance obligations.",
       "Ties the SLA to Module 3. Text-only."],
+    ["R", "Demo evidence (artefact). The signed SLA for PLR's enrolment-api. Placed before the summary slide.",
+      "Beat SLA-1 (reveals). Text rows — inside the text-only rule."],
     ["4", "Single-sentence summary slide. One large text block (Arial Bold 28pt).",
       "The take-home line."],
     ["5", "Sources slide. Footer: 'Find the link in the description.'",
@@ -430,7 +442,7 @@ body.push(...renderSubtopic({
   metadataRows: [
     ["Working title",          "The Service-Level Agreement"],
     ["YouTube-optimised title", "Connected isn't dependable: the SLA that makes a government data service reliable"],
-    ["Description (60 words)", "A connected service that's slow, often down, and has no one to call is useless when a citizen is at the counter. The Service-Level Agreement turns 'connected' into 'dependable': availability, response time, support, incident response, change notice. Set the numbers with the provider, sign, reuse. Four minutes for architects. AI SLA-template prompt in the description."],
+    ["Description (60 words)", "A connected service that's slow, often down, and has no one to call is useless to the citizen service built on it. The Service-Level Agreement turns 'connected' into 'dependable': availability, response time, support, incident response, change notice. Set the numbers with the provider, sign, reuse. Four minutes for architects. AI SLA-template prompt in the description."],
     ["Tags",                    "SLA, service level agreement, reliability, interoperability operations, X-Road, member obligations, GovStack, digital government"],
     ["Playlist (YouTube)",      "KP2 — Topic 5: Implementation, onboarding and the live demonstration"],
     ["ToR §4 coverage",         "§4.1 (methodology, operations); §4.3 (AI integration — SLA-template prompt)"],
@@ -440,43 +452,68 @@ body.push(...renderSubtopic({
 }));
 
 // ---------- 5.4 ----------
+// Hybrid (plan 2026-09-13-kp2-m5-demo-videos-5.4-5.5, WP5): slides 5–10 are recorded from one real join of PTSB,
+// hosted on PLR's Security Server, by the build pack's scripts/demo-capture.sh --video 5.4. Retitled from 'Register a
+// member on X-Road' (D1) — the video now shows admission → validation → the join running itself.
 body.push(...renderSubtopic({
   num: "3.4 Subtopic 5.4",
-  title: "Register a member on X-Road",
+  title: "Admit a member to the bus",
   runtime: "~5 min",
-  words: 640,
-  paeraAnchor: "NIIS X-Road member and subsystem registration; access-control list configuration",
-  singleMessage: "The subsystem registration and the access-control list admit one agency to the bus — produced by an admitted, validated join, not typed by hand.",
+  words: 450,
+  shape: "hybrid",
+  paeraAnchor: "NIIS X-Road member and subsystem registration; access-control list configuration; the Linkup demonstration federation",
+  singleMessage: "An agency is admitted by a validated request and a recorded committee decision — then the join runs itself and proves itself with a real call.",
   scriptBeats: [
-    { cue: "Slide 1 — Title: 'Register a member on X-Road'. Voice-over begins." },
-    { text: "Everything so far has been preparation — the phased plan, the Member Requirements, the Service-Level Agreement. Registering a member on X-Road is the technical step that actually admits an agency to the bus, and it produces real configuration: the subsystem registration and the access-control list. This is a build step, and nobody types it into the bus by hand: the agency applies, the operator admits it, and the registration runs itself." },
-    { cue: "Slide 2 — Title: 'Two configuration artefacts'. Body, two text rows: 'The subsystem — the member's registered identity on the bus: member class, member code, subsystem code.' 'The access-control list — which other members may call this member's services.'" },
-    { text: "Registering a member produces two configuration artefacts. The subsystem — the member's registered identity on the bus, made of its member class, member code and subsystem code, the identifiers the bus uses to route a call to it. And the access-control list — which other members are allowed to call this member's services, because being on the bus does not mean everyone may call everything; access is granted deliberately, service by service. Together, these two artefacts admit the agency and say exactly who may talk to it." },
-    { cue: "Slide 3 — Title: 'Admit, validate — then the join runs itself'. Body, two text rows: 'The agency submits a join request; a validator checks every identifier for legality and uniqueness, fetches the contract, and checks the access list.' 'The operator approves only with the admission decision's reference — then the registration runs over the admin interface and proves itself with a real call.' Punch: 'A wrong member code throws no error on the bus — so the validator refuses it before it gets there.'" },
-    { text: "In the build pack, the agency submits a join request carrying its details, its services and who may call them. A validator checks it before any person acts on it: every identifier is allocated at admission and checked for legality and uniqueness, the service contract is fetched and screened, the access list is sane. Only then can the operator approve — and only by citing the admission decision, so the technical join cannot run ahead of the governance one. After approval, the registration runs itself over the bus's admin interface and proves itself with a real call. This is where the discipline matters most: a wrong member code throws no error on the bus. It silently routes nowhere, or to the wrong agency. So the validator refuses it before it gets there." },
-    { text: "And this is the same registration shape for every member — fill the member's details into the same template, generate the same two artefacts. The onboarding workflow and the governance RACI wrap it into a repeatable process: the Member Requirements confirm the agency is ready, the RACI says which body approves, and this registration configuration admits it. You produce the executable configuration here; the workflow and the approvals from the earlier modules surround it. That reuse — one registration pattern applied to every member — is what lets the framework onboard its twentieth agency as cleanly as its second." },
-    { cue: "Slide 4 — Title: 'Then the member proves it conforms'. Body, three text rows: 'Registration admits the member; a conformance test is the gate before its first service goes live.' 'Self-assessment for the routine; a third-party check for high-risk services; a test suite the operator runs.' 'Re-tested every two years and on every standards change — a member that passed once is not a member that conforms now.'" },
-    { text: "Registration is not the last gate. Between a member's security server going up and its first service going live sits the conformance test: the member proves, against the standards portfolio, that its server, its certificates and its services do what the framework requires. For routine members that is a self-assessment against a published checklist; for high-risk services a third-party check; and where the operator has built one, a conformance test suite it runs itself. A member that fails fixes and re-tests until it passes. And it is not a certificate for life — members are re-tested on a cycle, typically every two years, and whenever a binding standard changes. This is the step programmes skip when they are in a hurry, and the step whose absence is discovered when one member's malformed data breaks everyone else's service." },
-    { cue: "Slide 5 — Title: 'It is config, not paperwork'. Body, single text block: 'The subsystem and access-control list go straight into the build pack, under the member's folder. They are part of the runnable proving slice — what the build pack's acceptance check deploys and tests. Registering a member is executable configuration that puts an agency on the bus.'" },
-    { text: "The configuration goes straight into the build pack, under the member's folder — it is part of the runnable proving slice, the thing the build pack's acceptance check deploys and tests. So registering a member is not paperwork that describes an intention. It is executable configuration that puts a real agency on the bus, ready to provide and consume services. The three Progressa members — PNEA, PLR and PNIA — are registered this way, beside PDGA, which owns the federation; together they are the participants a real exchange needs." },
-    { cue: "Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The subsystem registration and the access-control list admit a member — validated, approved, applied — and a conformance test is the gate before its first service goes live.'" },
-    { text: "So registering a member is where onboarding becomes configuration. The agency is admitted, its request validated, and the subsystem and access-control list are written and applied for it. Two artefacts, the same shape for every member, admitting one agency to the bus and naming who may call it. That is the technical core of onboarding — and the configuration the demonstration runs on." },
-    { cue: "Slide 7 — Title: 'Sources'. Body: NIIS X-Road member and subsystem registration; access-control list configuration. Footer: 'Find the link in the description.'" }
+    { cue: "Slide 1 — Title: 'Admit a member to the bus'. Voice-over begins." },
+    { text: "Everything so far has been preparation — the plan, the Member Requirements, the Service-Level Agreement. This step admits an agency to the bus. It produces real configuration, and nobody types that configuration by hand: the agency applies, the operator admits it, and the join runs itself." },
+    { cue: "Slide 3 — Title: 'Admission produces two configuration artefacts'. Two panels: 'The subsystem — who it is: member class, member code, subsystem code.' 'The access-control list — who may call it, service by service.'" },
+    { text: "Admitting a member produces two configuration artefacts. The subsystem is the member's identity on the bus — its member class, member code and subsystem code, the identifiers a call is routed by. The access-control list says which other members may call each of its services. Being on the bus does not mean everyone may call everything." },
+    { cue: "Slide 4 — Title: 'One pattern for every member, wrapped in a repeatable process'. Six-cell flow: Requirements → Approval → Admission (highlighted) → Registration → Conformance → First service." },
+    { text: "The same pattern admits every member, wrapped in a repeatable process. The Member Requirements confirm the agency is ready. The RACI names the body that approves. Admission records that decision. Registration writes the configuration. A conformance test is the gate, and then the first service goes live." },
+    { cue: "Slide 5 — Title: 'First: a member code with a space is refused'. Demo evidence (screen frame, beat J0-refused): the join card 'PT SB … REJECTED' with the key-derivation message. Caption strip: 'A member code with a space: refused before anything reaches the bus.'" },
+    { text: "First, a join request whose member code has a space in it. The validator refuses it before anything reaches the bus, and says which characters a member key may use." },
+    { cue: "Slide 6 — Title: 'Second: the request, and the diff it would write'. Demo evidence (screen frame, beat J1-submitted): PTSB SUBMITTED, the diff of configs/member-ptsb/ptsb.yaml and manifest.yaml. Caption strip: 'The request and the exact diff it would write — nothing written yet.'" },
+    { text: "Second, the corrected request from the tertiary scholarship board, PTSB. The screen shows the exact files the join would write — its member configuration and the federation manifest — and nothing is written yet." },
+    { cue: "Slide 7 — Title: 'Third: approve without a minute — refused'. Demo evidence (screen frame, beat J2-no-minute): 'Decision reference is required: admission is a Steering Committee decision'. Caption strip: 'Approve without a minute reference: refused. Admission is a committee decision.'" },
+    { text: "Third, the operator tries to approve it with the decision reference left empty. Refused: admission is a committee decision, and the join cannot run ahead of it." },
+    { cue: "Slide 8 — Title: 'Fourth: the join runs itself, then proves the backend answers'. Demo evidence (clip, ~20 s, one shot per join step, composited inside the slide; the still is the ACTIVE card): minute RIHA-2026-001 entered, approved, the steps tick to done, 'verified: true — a real r1 call reached the backend'. Caption strip: 'Minute RIHA-2026-001 recorded: the steps run themselves, then a real call proves the backend answers.'" },
+    { text: "Fourth, the operator enters the committee's minute reference and approves. The steps run themselves — the member and its server registered, its certificate, its service published, its access granted — and then a real call proves the backend answers." },
+    { cue: "Slide 9 — Title: 'Fifth: the admission record'. Demo evidence (text capture, beat J4-admission): onboarding/ptsb/01-admission.md — request id, decision reference RIHA-2026-001, approved at, approving role. Caption strip: 'The admission record: which decision admitted PTSB, and when.'" },
+    { text: "Fifth, the admission record the join leaves behind: the request, the decision reference that admitted it, and when." },
+    { cue: "Slide 10 — Title: 'Sixth: on the bus, hosted, and proved'. Demo evidence (two text captures on one panel, beats J5-hosted and J6-proved): scripts/member.sh list with the ptsb row 'joined, ss-plr'; scripts/acceptance.sh --summary --only 2.7 — r1, deny, fields, catalogue all PASS. Caption strip: 'Reachable by PNEA, refused to everyone else, exactly the contract's fields, listed on the bus.'" },
+    { text: "Sixth, the proof. The scholarship board is listed as a joined member, hosted on the learner registry's server. And the acceptance checks pass: the examination authority reaches its service, every other caller is refused, the response carries exactly the contract's fields, and the service is listed on the bus." },
+    { cue: "Slide 11 — Title: 'Conformance is the gate between registration and going live'. Body, three text rows: the gate against the standards portfolio; checked in proportion to the risk; re-tested every two years and on every binding change." },
+    { text: "Registration is not the last gate. Before its first service goes live, the member proves conformance against the standards portfolio: a self-assessment for routine services, a third-party check for high-risk ones, or the operator's own test suite. And it is re-tested every two years, and whenever a binding standard changes." },
+    { cue: "Slide 12 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'An agency is admitted by a validated request and a recorded decision — then the join runs itself, proves itself, and a conformance test gates its first service.'" },
+    { text: "So admitting a member is where onboarding becomes configuration: a validated request, an approval that cites the committee's decision, a join that runs itself and proves itself with a real call, and a conformance test before the first service goes live." },
+    { cue: "Slide 13 — Title: 'Sources'. Body: NIIS X-Road member and subsystem registration; access-control list configuration; the Linkup demonstration federation. Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
-    ["1", "Title slide. Title: 'Register a member on X-Road'.",
+    ["1", "Title card (section slide). Title: 'Admit a member to the bus'.",
       "Standard ITU template. No images."],
-    ["2", "Two-artefacts slide. Two text rows: the subsystem, the access-control list.",
-      "The config artefacts. Identifiers glossed in plain words. Text-only."],
-    ["3", "Admit-validate-join slide. Two text rows: the validated join request; approval citing the admission decision, then the automated registration. Punch line on the wrong member code.",
-      "The anti-invention safeguard, at its highest-stakes point — enforced by the validator, not by luck."],
-    ["4", "Conformance-gate slide. Three text rows: the gate, the three test approaches, re-certification.",
+    ["2", "Hook slide: 'Everything so far was preparation. This step admits an agency.'",
+      "Text-only."],
+    ["3", "Two-artefacts panels: the subsystem, the access-control list.",
+      "The config artefacts, glossed in plain words. Text-only."],
+    ["4", "Six-cell onboarding flow, Admission highlighted.",
+      "The repeatable process. Shapes and text only."],
+    ["5", "Demo evidence (screen frame, cropped to the join card). A member code with a space, refused.",
+      "Beat J0-refused. Pixels — the ITU calibration item in Section 5."],
+    ["6", "Demo evidence (screen frame). The submitted request and the diff it would write.",
+      "Beat J1-submitted. Calibration item."],
+    ["7", "Demo evidence (screen frame). Approve without a minute reference — refused.",
+      "Beat J2-no-minute. Calibration item."],
+    ["8", "Demo evidence (clip). The join steps ticking to ACTIVE, then 'verified: true'. Still = the ACTIVE card.",
+      "Beat J3-join, ~20 s, step-cut (one shot per step change), composited inside the slide so caption and provenance stay on screen. Calibration item."],
+    ["9", "Demo evidence (text capture). The admission record.",
+      "Beat J4-admission. Monospaced text — inside the text-only rule."],
+    ["10", "Demo evidence (two text captures on one panel). The member list and the 2.7 acceptance checks.",
+      "Beats J5-hosted and J6-proved. Text — inside the text-only rule."],
+    ["11", "Conformance-gate slide. Three text rows.",
       "The step between registration and first service. Text-only."],
-    ["5", "It-is-config slide. Single text block on the build pack and its acceptance check.",
-      "The build-pack connection — executable config, not paperwork."],
-    ["6", "Single-sentence summary slide. One large text block (Arial Bold 28pt).",
+    ["12", "Single-sentence summary slide and the practice box.",
       "The take-home line."],
-    ["7", "Sources slide. Footer: 'Find the link in the description.'",
+    ["13", "Sources slide. Footer: 'Find the link in the description.'",
       "Lets viewers verify the registration references."]
   ],
   aiTip: {
@@ -484,50 +521,69 @@ body.push(...renderSubtopic({
     problem: "An architect onboarding an agency needs the X-Road subsystem registration and the access-control list generated from the member's details and the access policy — the config that admits the member. This is the member-registration play for onboarding.",
     prompt: "Generate the X-Road member-registration configuration for an agency joining [country X]'s bus. Inputs: the member's details [paste: organisation name, the member class and any known member/subsystem codes], the services it will provide [from its service contracts], and the access policy [which other members may call which of its services]. Produce: (1) the SUBSYSTEM registration — member class, member code, subsystem code, and the service codes it exposes; (2) the ACCESS-CONTROL LIST — for each service, the consumer subsystems permitted to call it. CRITICAL: output every member code, subsystem code and service code as [confirm: verify against the live X-Road registry] — do not invent identifiers, because a wrong code silently routes nowhere or to the wrong agency. Also list, for an onboarding checklist: the certificate steps and the approval (per the governance RACI) that must happen alongside this config. Close with the onboarding checklist in the source method's order — application and signed obligations; certificate issuance; security server deployment; CONFORMANCE TEST against the standards portfolio (state the approach: self-assessment / third-party / test suite); first service registration; production go-live. Output: the subsystem registration, the access-control list, and the [confirm] / approval checklist.",
     io: "Input: the member's details, its services, and the access policy. Output: the subsystem registration and access-control list, with [confirm] placeholders, and an onboarding checklist that ends in the conformance test.",
-    safeguard: "Every X-Road identifier must be confirmed against the live registry before deployment — this is the single highest-stakes [confirm] in the framework, because a wrong code can route one citizen's data to a service that asked about another. Deploy to a sandbox first and verify the access-control list denies an unauthorised caller, not only that it permits the authorised one."
+    safeguard: "Every X-Road identifier must be confirmed against the live registry before deployment — this is the single highest-stakes [confirm] in the framework, because a wrong code can route one citizen's data to a service that asked about another. On a bus you operate, the validator refuses a bad identifier before it reaches the bus; the [confirm] is for a bus you are joining. Deploy to a sandbox first and verify the access-control list denies an unauthorised caller, not only that it permits the authorised one."
   },
   metadataRows: [
-    ["Working title",          "Register a member on X-Road"],
-    ["YouTube-optimised title", "Registering an agency on X-Road — the configuration that admits a member to the bus"],
-    ["Description (60 words)", "Registering a member on X-Road is the technical step that admits an agency: it produces two config artefacts — the subsystem (its identity on the bus) and the access-control list (who may call its services). Generate them with AI, but confirm every identifier against the live registry — a wrong code routes nowhere or to the wrong agency. Five minutes for architects. AI registration prompt in the description."],
-    ["Tags",                    "X-Road registration, subsystem, access control list, member onboarding, interoperability config, GovStack, AI, digital government"],
+    ["Working title",          "Admit a member to the bus"],
+    ["YouTube-optimised title", "Admitting an agency to an X-Road bus — validated, approved by decision, joined, proved"],
+    ["Description (60 words)", "Admitting an agency to the bus produces two configuration artefacts: the subsystem (its identity) and the access-control list (who may call it). Recorded from a real join: a bad member code refused, an approval refused without the committee's minute, then the join running itself and a real call proving it. Five minutes for architects. AI registration prompt in the description."],
+    ["Tags",                    "X-Road registration, member admission, subsystem, access control list, member onboarding, interoperability config, GovStack, digital government"],
     ["Playlist (YouTube)",      "KP2 — Topic 5: Implementation, onboarding and the live demonstration"],
-    ["ToR §4 coverage",         "§4.1 (methodology, onboarding); §4.3 (AI integration — bb-config-gen member registration); §4.5 (build-pack artefact)"],
+    ["ToR §4 coverage",         "§4.1 (methodology, onboarding); §4.3 (AI integration — member registration prompt); §4.5 (build-pack artefact); §4.6 (real-life demonstration)"],
     ["PAERA citations",         "(member/subsystem registration cited to NIIS X-Road)"],
-    ["External-link list",      "NIIS X-Road member and subsystem registration; access-control list configuration (niis.org)"]
+    ["External-link list",      "NIIS X-Road member and subsystem registration; access-control list configuration (niis.org); the Linkup demonstration federation"]
   ]
 }));
 
 // ---------- 5.5 ----------
+// Hybrid (plan WP5): slides 5–8 are text captures of the stood-up federation (scripts/demo-capture.sh --video 5.5).
 body.push(...renderSubtopic({
   num: "3.5 Subtopic 5.5",
   title: "Stand up the federation",
   runtime: "~5 min",
-  words: 560,
+  words: 360,
+  shape: "hybrid",
   paeraAnchor: "NIIS X-Road federation (Central Server, Security Server, Test CA); the Linkup demonstration federation",
-  singleMessage: "Central Server, four Security Servers, a Test CA — the Linkup federation, stood up from the run book.",
+  singleMessage: "Central Server, Test CA, four Security Servers — the Linkup federation, stood up from the run book and shown healthy, registered and granted exactly.",
   scriptBeats: [
     { cue: "Slide 1 — Title: 'Stand up the federation'. Voice-over begins." },
-    { text: "With members registered, you stand up the federation itself — the live platform they connect to. For our demonstration this is Linkup, an X-Road federation that runs on a single host in sandboxed containers. It has a small set of components, each with a clear job, and you bring it up from a run book, so that anyone with the build pack can reproduce the same federation rather than admire a one-off." },
-    { cue: "Slide 2 — Title: 'The components'. Body, three text rows: 'Central Server (at PDGA) — the registry of members and services; the heart every security server checks with.' 'Four Security Servers (PDGA, PNEA, PLR, PNIA) — the owner's and each member's gateway at the edge.' 'A Test CA — the trust anchor that issues the certificates.'" },
-    { text: "The federation has three kinds of component. The Central Server, operated by PDGA, is the registry of who is a member and what services exist — the heart that every security server checks with before it routes a call. The four Security Servers — one for PDGA, which owns the federation and runs its management services, and one each for the examination authority PNEA, the learner registry PLR, and the identity authority PNIA — are the gateways, the devices that carry the trust burden at each edge. And the Test CA, the certification authority that issues the certificates the security servers use to prove who they are. In production that is a real certification authority; in the demonstration, a test one." },
-    { cue: "Slide 3 — Title: 'Bring it up from the run book'. Body, single text block: 'Central Server first, then the Test CA with its OCSP and time-stamping services, then each Security Server registers, receives its certificate, and is approved explicitly on the Central Server. The run book makes it reproducible — anyone with the build pack stands up the same federation. For the demonstration, Linkup runs it all on a single host — a laptop or one VM — in sandboxed containers.'" },
-    { text: "Standing it up is a run-book exercise, deliberately. Each component is brought up in order — the Central Server first, then the Test CA with its certificate-status and time-stamping services, then each Security Server registers with the Central Server, receives its certificate, and waits for the Central Server to approve that registration explicitly — the technical footprint of the admission decision. The run book makes this reproducible: anyone with the build pack can stand up the same federation, which is exactly what makes the demonstration a template rather than a one-off. For the demonstration, Linkup runs all of this on a single host — a laptop or one VM — in sandboxed containers, sized for showing cross-agency calls, not for production volumes." },
-    { text: "When the federation is up, you have something concrete: four real security servers, registered with a central server, trusting a common certification authority, ready to carry a real call. The configuration that does this — the federation config and each member's registration — lives in the build pack, and the build pack's acceptance check is what confirms the federation actually stands up, not merely that the files exist. This is the moment the abstract becomes real: up to now this knowledge product has produced documents and configuration; standing up the federation turns that configuration into a running platform. The bus exists, the members are on it, and the only thing left is to make a real call across it." },
-    { cue: "Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Central Server, four Security Servers, a Test CA — stood up from the run book, the federation is real and ready to carry a call.'" },
-    { text: "So you stand up the federation from a run book: the Central Server at PDGA, four Security Servers for PDGA and the three Progressa members, the Test CA that anchors trust. Reproducible from the build pack, confirmed by its acceptance check. With the federation running, the framework has stopped being a design and become a platform — ready for the call that proves it." },
-    { cue: "Slide 5 — Title: 'Sources'. Body: NIIS X-Road federation — Central Server, Security Server, Test CA; the Linkup demonstration federation. Footer: 'Find the link in the description.'" }
+    { text: "With the members admitted, they need the platform they connect to: the federation. For the demonstration it is Linkup, an X-Road federation on a single host. It has a small set of components, each with one job, and it is brought up from a run book, so anyone with the build pack can reproduce it." },
+    { cue: "Slide 3 — Title: 'One registry, one gateway per member, one trust anchor'. Diagram: the Central Server (PDGA) and the Test CA above; four Security Servers — PDGA, PNEA, PLR, PNIA — below." },
+    { text: "The federation has three kinds of component. The Central Server, operated by PDGA, is the registry of members and services that every security server checks with. The four Security Servers — PDGA's, as the owner, and one each for PNEA, PLR and PNIA — are the gateways that carry the trust burden at each member's edge. And the Test CA issues the certificates they prove who they are with; in production, a real certification authority." },
+    { cue: "Slide 4 — Title: 'Bring it up from the run book, in order'. Body, five text rows: the Central Server; the Test CA with certificate status and time-stamping; the members on the registry, then the anchor; each Security Server, its certificate and its registration approved on the Central Server; the services and the grants. Closing line: the single-host hosting line." },
+    { text: "Standing it up is a run-book exercise, in order. The Central Server first. Then the Test CA, with its certificate-status and time-stamping services. Then the members on the registry, and the configuration anchor every server imports. Then each Security Server: its certificate, and its registration, approved explicitly on the Central Server — the technical footprint of the admission decision. Then the services, and the grants that say who may call them." },
+    { cue: "Slide 5 — Title: 'First: six containers, all healthy'. Demo evidence (text capture, beat T0-containers): docker compose ps — cs, ca, ss-pdga, ss-plr, ss-pnea, ss-pnia, all healthy." },
+    { text: "First, the containers: one Central Server, one Test CA, and four Security Servers, all reporting healthy." },
+    { cue: "Slide 6 — Title: 'Second: from zero to running, measured'. Demo evidence (text capture, beat T1-stood-up): the five steps of scripts/demo.sh and the deploy's own timings — containers healthy 100 s, Hurl run 290 s, total 390 s." },
+    { text: "Second, the run book itself: five steps, from checking the host to the exchange proving itself. The deploy times itself: on the recorded run, about a hundred seconds until the containers were healthy, and six and a half minutes in all, from zero to a running federation." },
+    { cue: "Slide 7 — Title: 'Third: three members, each behind its own server'. Demo evidence (text capture, beat T2-members): scripts/member.sh list — plr, pnea, pnia, each canonical on its own ss-*." },
+    { text: "Third, the members: the learner registry, the examination authority and the identity authority, each behind its own Security Server." },
+    { cue: "Slide 8 — Title: 'Fourth: registered, grants exact, monitoring running'. Demo evidence (text capture, beat T3-registered): scripts/acceptance.sh --summary --only 2.x — add-ons RUNNING on four servers, three clients REGISTERED, two ACLs granting exactly PNEA, two catalogue entries with SLA links." },
+    { text: "Fourth, the checks: each member's client registered on its own server, each service granting exactly the examination authority and no one else, each catalogue entry linking its service-level agreement, and the monitoring add-ons running on all four servers." },
+    { cue: "Slide 9 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Central Server, Test CA, four Security Servers — stood up from the run book, in order, and shown running, registered and granted exactly.'" },
+    { text: "So the federation is brought up from a run book, in order, and then shown to be real: every server healthy, every member registered, every grant exact. The bus exists, and it is ready to carry a real call." },
+    { cue: "Slide 10 — Title: 'Sources'. Body: NIIS X-Road federation — Central Server, Security Server, Test CA; the Linkup demonstration federation. Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
-    ["1", "Title slide. Title: 'Stand up the federation'.",
+    ["1", "Title card (section slide). Title: 'Stand up the federation'.",
       "Standard ITU template. No images."],
-    ["2", "Components slide. Three text rows: Central Server, Security Servers, Test CA.",
-      "The federation topology. Uses the bound Progressa institutions. Text-only."],
-    ["3", "Run-book slide. Single text block on the stand-up order and reproducibility.",
+    ["2", "Hook slide: 'Now the live platform the members connect to.'",
+      "Text-only."],
+    ["3", "Federation diagram: the Central Server and the Test CA; four Security Servers.",
+      "The 'before' picture. Uses the bound Progressa institutions. Shapes and text only."],
+    ["4", "Run-book rows: five steps in order; closing hosting line.",
       "The reproducible-from-the-build-pack point. Text-only."],
-    ["4", "Single-sentence summary slide. One large text block (Arial Bold 28pt).",
+    ["5", "Demo evidence (text capture). The containers, all healthy.",
+      "Beat T0-containers. Monospaced text — inside the text-only rule."],
+    ["6", "Demo evidence (text capture). The run book's steps and the deploy's own timings.",
+      "Beat T1-stood-up. Text. The timings are the deploy's measurement (takes.json records which deploy)."],
+    ["7", "Demo evidence (text capture). The members, each on its own server.",
+      "Beat T2-members. Text."],
+    ["8", "Demo evidence (text capture). Registered, grants exact, add-ons running.",
+      "Beat T3-registered. Text."],
+    ["9", "Single-sentence summary slide and the practice box.",
       "The take-home line."],
-    ["5", "Sources slide. Footer: 'Find the link in the description.'",
+    ["10", "Sources slide. Footer: 'Find the link in the description.'",
       "Lets viewers verify the federation references."]
   ],
   aiTip: {
@@ -563,26 +619,20 @@ body.push(...renderSubtopic({
   singleMessage: "PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real cross-server call, the data asked once.",
   scriptBeats: [
     { cue: "Slide 1 — Title: 'Run the once-only exchange, live'. Voice-over begins." },
-    { text: "This is the moment the whole framework exists for: a learner applies for a credential, gives one number, and the state fetches the rest. What you are about to see was recorded from the running federation, exactly as it ran." },
+    { text: "This is the exchange the whole framework exists for: the examination authority issues a credential and fetches the learner's identity and enrolment itself, asking the learner once. What follows was recorded from the running federation." },
     { cue: "Slide 2 — Title: 'One call — identity from PNIA, enrolment from PLR'. Diagram: the learner → PNEA → PNIA and PLR, over the bus. The picture of what the recording shows." },
-    { text: "Here is the call you are about to watch. A learner applies for a credential at PNEA, the examination authority. Without once-only, the learner brings paper proof of identity and of enrolment. With it, PNEA fetches the identity from PNIA and the enrolment from PLR, over the bus." },
-    { cue: "Slide 3 — Title: 'Before the bus: ten blank rows'. Demo evidence (screen frame): the application form before the call — ten rows, all blank, and the line 'Without the bus, this is ten questions.' Caption strip: 'Ten blank rows: without the bus, ten questions to answer.'" },
-    { text: "The form before the call: ten rows, all blank. Without the bus, that is ten questions the learner answers, and two sets of paper proof." },
-    { cue: "Slide 4 — Title: 'One question asked, nine rows filled'. Demo evidence (screen frame): the same form after the call — 'asked 1 · pre-filled 9 / 9', five rows labelled PNIA over the bus, four labelled PLR over the bus. Caption strip: 'Nine fields arrive the learner was never asked for.'" },
-    { text: "The same form once the learner gives the national ID. Nine rows fill in: five from PNIA, four from PLR, each labelled with its source. One question asked, nine fetched." },
-    { cue: "Slide 5 — Title: 'What PNIA sends — and what it withholds'. Demo evidence (screen frame): the console's layer view; the legal pane reads 'PNIA sends: given_name, family_name, date_of_birth, sex, region' and 'PNIA holds but withholds: mother_name, birth_registration_no, residence_address'. Caption strip: 'Legal, organisational, semantic, technical — read off the live response.'" },
-    { text: "The second tab reads the same exchange by layer. In the legal pane, PNIA sends five fields and names three it holds but withholds: a mother's name, a birth registration number, an address. The purpose does not need them." },
-    { cue: "Slide 6 — Title: 'Same question, two callers, two answers'. Demo evidence (screen frame): PNEA:EXAMS 'Allowed.'; PLR:ENROLMENT 'Denied.' with the fault Server.ServerProxy.AccessDenied. Caption strip: 'PNEA: allowed. PLR, asking the identical question: AccessDenied.'" },
-    { text: "The third tab asks PNIA the identical question from two callers. PNEA is allowed. PLR, a member of the same bus, gets an access-denied fault from PNIA's access list. Being on the bus is not permission." },
-    { cue: "Slide 7 — Title: 'One grant withdrawn, one source broken'. Demo evidence (clip, ~18 s, plays once then holds its last frame): PNEA's grant on the identity service is withdrawn; the form runs again; the PNIA rows turn to 'denied' while the PLR rows still fill; the grant is restored and the form fills whole. The slide's still is the denied moment. Caption strip: 'Grant withdrawn: the PNIA half fails, PLR still fills. Grant back: whole again.'" },
-    { text: "Now the operator withdraws PNEA's permission and runs the form again. Within seconds the PNIA rows are denied, while the PLR rows still fill: one grant withdrawn, one source broken. Restore it, and the form is whole." },
-    { cue: "Slide 8 — Title: 'The application, with every field's source'. Demo evidence (text capture): out/application-<nin>.json rendered one line per field — field, value, source; nin is the only line whose source is the citizen. Caption strip: 'The application on disk: where every field came from.'" },
-    { text: "The exchange is also written to disk as the assembled application: one line per field, each with its source. The national ID is the only line the citizen supplied." },
-    { cue: "Slide 9 — Title: 'Six acceptance checks, all green'. Demo evidence (text capture): scripts/acceptance.sh --summary --only 2.6 — lines 2.6.1 to 2.6.6, each PASS. Caption strip: 'Checks 2.6.1 to 2.6.6 green — the technical half of the go-live approval.'" },
-    { text: "Last, the acceptance script runs this exchange as six checks: the call, the right learner, asked once, the denial, a clean not-found, and field conformance. All six pass — the technical half of go-live approval." },
-    { cue: "Slide 10 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'One field asked, nine fetched, only what the purpose needs — and six acceptance checks green.'" },
+    { text: "This is the call on screen. The examination authority, PNEA, receives a learner's credential application. Without once-only, PNEA would ask the learner for paper proof of identity and of enrolment. With it, PNEA fetches the identity from the identity authority, PNIA, and the enrolment from the learner registry, PLR, over the bus." },
+    { cue: "Slide 3 — Title: 'First: ten blank rows, then nine filled'. Demo evidence (screen frame, C2): the form after the call — 'asked 1 · pre-filled 9 / 9', five rows labelled PNIA, four labelled PLR. The narration recalls the blank form (C1, not shown)." },
+    { text: "First, the form before and after the call. Before, ten rows, all blank: ten questions the learner answers, and two sets of paper proof. Once PNEA has the learner's national ID, nine rows fill in: five from the identity authority, PNIA, four from the learner registry, PLR, each labelled with its source. One question asked, nine fetched." },
+    { cue: "Slide 4 — Title: 'Second: what PNIA sends — and what it withholds'. Demo evidence (screen frame, C4): the legal pane — PNIA sends five fields, holds but withholds three." },
+    { text: "Second, the second tab reads the exchange by layer. In the legal pane, the identity authority, PNIA, sends five fields and names three it holds but withholds: a mother's name, a birth registration number, an address. The purpose does not need them." },
+    { cue: "Slide 5 — Title: 'Third: allowed, refused, then cut off'. Demo evidence (clip, C6, plays once then holds): the grant withdrawn and restored on the form. The two-caller refusal (C5, not shown) is in the caption and narration." },
+    { text: "Third, permission. Asked the identical question, the examination authority, PNEA, is allowed, and the learner registry, PLR, is refused by the identity authority's access list. Then the operator withdraws the examination authority's permission: within seconds the identity rows are denied while the enrolment rows still fill. Restore it, and the form is whole. Being on the bus is not permission." },
+    { cue: "Slide 6 — Title: 'Fourth: on disk, and six checks green'. Demo evidence (two text captures on one panel, C7 + C8): the assembled application, then acceptance 2.6.1–2.6.6 PASS." },
+    { text: "Fourth, the record and the proof. The exchange is written to disk as the assembled application, one line per field with its source; the national ID is the only line the citizen supplied. And the acceptance script runs the exchange as six checks: the call, the right learner, asked once, the denial, a clean not-found, and field conformance. All six pass: the technical half of go-live approval." },
+    { cue: "Slide 7 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'One field asked, nine fetched, only what the purpose needs — and six acceptance checks green.'" },
     { text: "So the exchange is shown, not explained: one field asked, nine fetched, only what the purpose needs, a denial the access list enforces, six checks green. That is the framework, running." },
-    { cue: "Slide 11 — Title: 'Sources'. Body: PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the Linkup demonstration federation. Footer: 'Find the link in the description.'" }
+    { cue: "Slide 8 — Title: 'Sources'. Body: PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the Linkup demonstration federation. Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
     ["1", "Title card (section slide). Title: 'Run the once-only exchange, live'.",
@@ -640,9 +690,11 @@ body.push(...renderSubtopic({
     { text: "The demonstration proves the pattern. It is not, and must not be mistaken for, a production system. The architect's last job in this module is to know exactly what changes between the demonstration and a production-grade federation, so the country plans and budgets for that gap rather than discovering it after go-live — which is the moment it is most expensive to discover." },
     { cue: "Slide 2 — Title: 'What changes for production'. Body, eight text rows: 'Separate hosts, not one VM.' 'A real certification authority, not a Test CA.' 'High availability and redundancy.' 'Real monitoring and alerting.' 'Capacity for real volumes.' '24/7 operational support.' 'Security hardening and audit.' 'Migrate and retire the legacy point-to-point links the bus replaces.'" },
     { text: "The differences are specific. The demonstration runs everything on one VM; production separates the components onto real, sized hosts. The demonstration uses a Test CA; production uses a real certification authority. Production adds high availability and redundancy, so a failed component does not stop the bus. It adds real monitoring and alerting, so problems are caught before citizens notice them. It is sized for real transaction volumes, not a handful of demonstration calls. It has round-the-clock operational support — the Operating Authority's standing team. And it is security-hardened and audited to the standard a national platform carrying citizen data must meet." },
-    { text: "There is one more production task, and it does not appear on the hardening list because it concerns the old world rather than the new: migrating each agency off the legacy point-to-point links the bus replaces, and retiring them. A new bus does not retire the old links by itself — left alone, you run both, which is worse than either. So per agency the pattern is parallel-run then cut over: stand up the new once-only exchange, run it beside the agency's existing point-to-point link until you have confirmed the two agree, then switch the consumers across and decommission the old link. Retiring those links is the step that actually ends the point-to-point sprawl Module 1 diagnosed — schedule it, agency by agency, in the multi-agency phase of the plan, with a migration-and-retirement step in each onboarding." },
     { cue: "Slide 3 — Title: 'The shape of the config does not change'. Body, single text block: 'The subsystem registrations, the service descriptions, the semantic map are the same. Production changes the scale, the resilience and the operations around them — not the design. So the demonstration genuinely de-risks the production build: you proved the pattern, and production is the same pattern, hardened.'" },
     { text: "Here is the reassuring part, and it is the point of building a demonstration at all: none of this changes the shape of the configuration. The subsystem registrations, the service descriptions, the semantic map — they are the same in production. Production changes the scale, the resilience and the operations around the configuration, not the design of it. So the demonstration genuinely de-risks the production build. You have proven the pattern works; production is the same pattern, hardened and operated. The later phases of your four-phase plan are exactly where that production build is funded and delivered, against the cost frame." },
+    { text: "There is one more production task, and it does not appear on the hardening list because it concerns the old world rather than the new: migrating each agency off the legacy point-to-point links the bus replaces, and retiring them. A new bus does not retire the old links by itself — left alone, you run both, which is worse than either. So per agency the pattern is parallel-run then cut over: stand up the new once-only exchange, run it beside the agency's existing point-to-point link until you have confirmed the two agree, then switch the consumers across and decommission the old link. Retiring those links is the step that actually ends the point-to-point sprawl Module 1 diagnosed — schedule it, agency by agency, in the multi-agency phase of the plan, with a migration-and-retirement step in each onboarding." },
+    { cue: "Reveal slide — Title: 'The demonstration names its own gap'. Demo evidence (artefact, beat P2): the Summary table of docs/path-conformance.md — implemented 41, simulated 6, named absence 24, out of scope 4, of 75 clauses. Caption strip: 'What this demonstration is honest about: 41 implemented, 6 simulated, 24 named absences, 4 out of scope.'" },
+    { text: "The demonstration is honest about its own gap. Its conformance record sorts seventy-five clauses: forty-one implemented, six simulated, twenty-four named as absent, and four out of scope. That list is where the production plan starts." },
     { text: "The one thing not to do is ship the demonstration as production. A sandboxed single-VM federation with a test certification authority is perfect for proving the pattern and wrong for carrying real citizen data at scale. Know the gap, plan it into the phased roadmap, budget it with the cost frame — and the move from demonstration to production becomes an engineering exercise the team can plan, not a surprise that derails go-live." },
     { cue: "Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Production is the demonstration's pattern, hardened — separate hosts, a real CA, high availability, monitoring, support. Plan the gap; do not ship the demo.'" },
     { text: "So you close the implementation module by being honest about the gap between demonstration and production. Separate hosts, a real certification authority, high availability, monitoring, capacity, support, hardening — the production differences are specific and plannable. The configuration's shape does not change, so the demonstration de-risks the build. Plan the gap into the roadmap, budget it with the cost frame, and never ship the demonstration as the production platform. That is how a proven pattern becomes a system a country runs." },
@@ -655,6 +707,8 @@ body.push(...renderSubtopic({
       "The gap, made specific. Plain text list, readable on mobile."],
     ["3", "Config-shape-unchanged slide. Single text block on de-risking.",
       "The reassuring synthesis — the demo de-risks the build. Text-only."],
+    ["R", "Demo evidence (artefact). The path-conformance summary. Placed before the summary slide.",
+      "Beat P2 (reveals). Text rows — inside the text-only rule."],
     ["4", "Single-sentence summary slide. One large text block (Arial Bold 28pt).",
       "The take-home line that closes the module."],
     ["5", "Sources slide. Footer: 'Find the link in the description.'",
@@ -796,12 +850,12 @@ body.push(...renderSubtopic({
   singleMessage: "The same four-layer framework stands up interoperability beyond education — the method is sector-portable, and the second sector is cheaper than the first.",
   scriptBeats: [
     { cue: "Slide 1 — Title: 'Carry the framework to the next sector'. Voice-over begins." },
-    { text: "Everything in this knowledge product was demonstrated on education — Progressa's schools, learners and credentials. But the framework is not education-specific, and now that it runs, the most important thing a Strategist can know is exactly which parts carry to the next sector unchanged and which parts are new. Get that split right, and the second sector costs a fraction of the first." },
+    { text: "Everything in this knowledge product was demonstrated on education — Progressa's schools, learners and credentials. But the framework is not education-specific, and now that it runs, the most important thing a Strategist can know is exactly which parts carry to the next sector unchanged and which parts are new. Get that split right, and the second sector pays only for its own vocabularies and services." },
     { cue: "Slide 2 — Title: 'What carries, and what is new'. Body, two columns. Left 'Carries unchanged': 'The four layers.' 'The decree pattern.' 'The governance — tiers, RACI, Operating Authority.' 'The standards portfolio.' 'The bus itself, already running.' Right 'New per sector': 'The semantic layer — the vocabularies.' 'The specific exchanges and services.'" },
     { text: "Split the framework in two. What carries unchanged to health, or agriculture, or social protection: the four-layer model, the decree pattern, the governance — the tiers, the RACI, the Operating Authority — the standards portfolio, and the bus itself, already built and running. What is genuinely new per sector: the semantic layer, because health speaks a different vocabulary than education, and the specific exchanges and services that sector needs. That — the vocabularies and the services — is the whole of the difference. And a word on order. This knowledge product demonstrated on education because the worked case was to hand; most countries sequence the framework the other way round. The first wave is usually tax, civil registration, the business register and health — high-volume, foundational reference data that every other sector reads — with education, justice, social protection and customs in the second wave. Whichever sector goes first pays for the platform; the rule that the next is cheaper holds either way." },
     { text: "And this is the re-use argument at the scale of the whole framework. The first sector pays to build the bus, the governance and the legal mandate; the second sector reuses all of it and pays only for its own semantics and services; the third reuses more still. This is exactly the whole-of-government planning logic from the very first module, now visible across sectors: build the shared platform once, and every sector after consumes it. The second sector is cheaper than the first, and the third cheaper than the second — and only a framework built deliberately, for the whole of government, makes that compounding possible. A set of separate sector projects never gets cheaper; a planned framework does." },
     { cue: "Slide 3 — Title: 'The portability map is the next sector's business case'. Body, single text block: 'For a new sector, list what is reused — most of it — and what is new. That map is the business case: here is the small, sector-specific part we build; here is the large platform we already have.'" },
-    { text: "Portability is built in on purpose, and it is not a footnote — it is the reason an interoperability framework is worth its cost. A platform that served only education would be hard to justify; a platform that serves education first and then every other sector at a fraction of the cost is the investment a strategist can defend for a decade. So when you take the next sector to your minister, bring the portability map: here is what we reuse, which is most of it, and here is the small, sector-specific part we build new. That map gets cheaper to make every time, and it is the business case for the next sector." },
+    { text: "Portability is built in on purpose, and it is not a footnote — it is the reason an interoperability framework is worth its cost. A platform that served only education would be hard to justify; a platform that serves education first and then every other sector, each paying only for its own vocabularies and services, is the investment a strategist can defend for a decade. So when you take the next sector to your minister, bring the portability map: here is what we reuse, which is most of it, and here is the small, sector-specific part we build new. That map gets cheaper to make every time, and it is the business case for the next sector." },
     { cue: "Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The framework is sector-portable — build the platform once, reuse it everywhere, and the next sector is cheaper than the last.'" },
     { text: "So the framework you built for education is sector-portable. Most of it — the bus, the governance, the legal mandate, the standards — carries unchanged; only the vocabularies and the services are new per sector. Build the platform once, reuse it everywhere, and let every sector after the first be cheaper than the one before. That compounding re-use is the framework's lasting value." },
     { cue: "Slide 5 — Title: 'Sources'. Body: Terms of Reference §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3. Footer: 'Find the link in the description.'" }
@@ -828,7 +882,7 @@ body.push(...renderSubtopic({
   metadataRows: [
     ["Working title",          "Sector portability"],
     ["YouTube-optimised title", "Why the second sector on an interoperability bus is far cheaper than the first"],
-    ["Description (60 words)", "The framework you built for education isn't education-specific. The four layers, the decree pattern, the governance, the standards and the bus all carry unchanged to the next sector; only the vocabularies and the services are new. So the second sector costs a fraction of the first — the re-use argument at framework scale. Four minutes for framework leaders. AI portability-map prompt in the description."],
+    ["Description (60 words)", "The framework you built for education isn't education-specific. The four layers, the decree pattern, the governance, the standards and the bus all carry unchanged to the next sector; only the vocabularies and the services are new. So the second sector pays only for its own vocabularies and services — the re-use argument at framework scale. Four minutes for framework leaders. AI portability-map prompt in the description."],
     ["Tags",                    "sector portability, reuse, interoperability framework, whole of government, business case, EIF, GovStack, digital government"],
     ["Playlist (YouTube)",      "KP2 — Topic 5: Implementation, onboarding and the live demonstration"],
     ["ToR §4 coverage",         "§4.4 (sector portability) — primary; §4.1 (methodology); §4.3 (AI integration — portability-map prompt)"],
@@ -892,6 +946,9 @@ body.push(
   H3("5.8 Demo evidence as an element type (5.6 pilot)"),
   P("5.6 is rebuilt screen-led: seven of its eleven slides are demo evidence recorded from the running federation by the build pack's capture run, never redrawn, each carrying a caption strip and a provenance line (the X-Road version, the pack commit and the capture date). Two kinds sit inside the text-only rule as written — the text captures on slides 8 and 9 (the assembled application, the acceptance summary). The other two kinds are pixels: screen-only voice-over is allowed (§4.3) but these are not text-only slides (§3.i). The item for ITU is whether this element type is acceptable, decided on exactly these: five screen frames — the form before the call (slide 3), the form after it (slide 4), the layer view with what PNIA withholds (slide 5), the same request from two callers (slide 6), and the still of the permission clip (slide 7) — and one clip, the ~18-second withdrawal and restoration of PNEA's grant on the identity service (slide 7). The pilot video answers ITU's earlier question (5.3, item 3): a recorded screencast of a real call on the sandbox, with the permission break as the proof it is not a mock."),
 
+  H3("5.9 The demo videos after the pilot (v0.5)"),
+  P("Four items for ITU. (1) 5.4 is retitled 'Admit a member to the bus' (was 'Register a member on X-Road'): the video now shows admission, validation and the join running itself, of which registration is one step; the number stays 5.4. (2) Demo evidence now also appears in 5.4 (three screen frames, one step-cut clip composited inside the slide, two text slides), 5.5 (four text captures) and one reveal each in 5.2, 5.3 and 5.7 (text rows) — the element type raised in 5.8 above, applied more widely; every frame is cropped to its card so it reads at phone width. (3) 5.5's timing slide shows the deploy's own measurement from the recorded run; the capture's takes.json records which deploy it came from. (4) The un-join (Exercise 4) is recorded too but is GitBook material, not a video slide."),
+
   pageBreak()
 );
 
@@ -903,8 +960,8 @@ body.push(
     ["5.1", "Estonia X-Road build-out (cost and timeline benchmark); ITU DPI Safeguards (investment guidance); NIIS X-Road implementation guidance."],
     ["5.2", "NIIS X-Road member requirements and onboarding (niis.org); EU EIF."],
     ["5.3", "NIIS X-Road service-level / SLA guidance; the member obligations (Module 3); EU EIF."],
-    ["5.4", "NIIS X-Road member and subsystem registration; access-control list configuration (niis.org)."],
-    ["5.5", "NIIS X-Road federation — Central Server, Security Server, configuration and Test CA (niis.org); the Linkup federation (ITU cloud)."],
+    ["5.4", "NIIS X-Road member and subsystem registration; access-control list configuration (niis.org); the Linkup demonstration federation."],
+    ["5.5", "NIIS X-Road federation — Central Server, Security Server, configuration and Test CA (niis.org); the Linkup demonstration federation."],
     ["5.6", "PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check."],
     ["5.7", "NIIS X-Road production and operations guidance; ITU DPI Safeguards."],
     ["5.8", "NIIS X-Road monitoring and operational logs (niis.org); the Linkup federation (ITU cloud); ITU DPI Safeguards."],
@@ -920,7 +977,7 @@ body.push(
 // ============================================================================
 const doc = new Document({
   creator: "FiscalAdmin OÜ",
-  title: "KP2 Module 5 — Video Script Bundle v0.4 (ITU-aligned)",
+  title: "KP2 Module 5 — Video Script Bundle v0.5 (ITU-aligned)",
   description: "Video script bundle for KP2 Topic 5 (Government Interoperability Framework), aligned to ITU's Knowledge Products and Video Materials Guide.",
   styles: {
     default: { document: { run: { font: ARIAL, size: 21 } } },
@@ -942,7 +999,7 @@ const doc = new Document({
       margin: { top: 1080, right: 1080, bottom: 1080, left: 1080 }
     } },
     headers: { default: new Header({ children: [new Paragraph({ alignment: AlignmentType.RIGHT,
-      children: [new TextRun({ text: "FiscalAdmin OÜ — ITU/Giga · KP2 Topic 5 Script Bundle v0.4 · 13 September 2026",
+      children: [new TextRun({ text: "FiscalAdmin OÜ — ITU/Giga · KP2 Topic 5 Script Bundle v0.5 · 30 September 2026",
         font: ARIAL, size: 16, color: COLOR_GREY_TXT })] })] }) },
     footers: { default: new Footer({ children: [new Paragraph({ alignment: AlignmentType.RIGHT,
       children: [
@@ -954,7 +1011,7 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then(buf => {
-  const out = process.env.OUT_PATH || path.join(__dirname, "KP2_Module5_Script_Bundle_v0.4.docx");
+  const out = process.env.OUT_PATH || path.join(__dirname, "KP2_Module5_Script_Bundle_v0.5.docx");
   fs.writeFileSync(out, buf);
   console.log("Wrote", out, "(" + buf.length + " bytes)");
 });

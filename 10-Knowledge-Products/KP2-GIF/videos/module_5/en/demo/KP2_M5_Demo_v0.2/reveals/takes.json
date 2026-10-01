@@ -1,0 +1,52 @@
+{
+  "video": "reveals",
+  "nin": null,
+  "xroad_version": "7.7.0",
+  "pack_commit": "a28b74cab353efed3bec3626630776527cbc25e4",
+  "pack_dirty": true,
+  "captured_at": "2026-09-30T18:09:31Z",
+  "beats": {
+    "REQ-1": {
+      "file": "REQ-1.md",
+      "kind": "artefact",
+      "caption": "Six items, stated by the applicant, rendered into its record.",
+      "sha256": "ec3ceb3dd26dda07ba4ca393fbd8a58e91df56edca627898856de8c9282b83fb",
+      "for": "5.2"
+    },
+    "REQ-2": {
+      "file": "REQ-2.txt",
+      "kind": "text",
+      "caption": "The same six travel in the join request — the front of onboarding.",
+      "sha256": "8e02e817552ef5ca17498dfe3688cf069d7d75628b4632f2799eb3370171c43f",
+      "for": "5.2"
+    },
+    "SLA-1": {
+      "file": "SLA-1.md",
+      "kind": "artefact",
+      "caption": "Five terms and a signatory, one record per published service.",
+      "sha256": "6c130d41378010a2bed75a1d7ecf5a4615549ad9c9b8a40c7fe04e8aaef0cdea",
+      "for": "5.3"
+    },
+    "SLA-2": {
+      "file": "SLA-2.png",
+      "kind": "frame",
+      "caption": "Reachable from the service, not only from the member.",
+      "sha256": "82e358ae21f1f5760122e6b6ed720f00526a12e0e51c67f572e71afb2d48221b",
+      "for": "5.3"
+    },
+    "P1": {
+      "file": "P1.txt",
+      "kind": "text",
+      "caption": "Production posture, permissive key, no acknowledgement: the API refuses to start.",
+      "sha256": "4e04c1db44dbe4c1e8170a0590a4d23651cccb688b11686dc286a57db6165fd8",
+      "for": "5.7"
+    },
+    "P2": {
+      "file": "P2.md",
+      "kind": "artefact",
+      "caption": "What this demonstration is honest about: 41 implemented, 6 simulated, 24 named absences, 4 out of scope.",
+      "sha256": "55d06c3b12b37023d5ba279942f3584922404259e84f0833860ed9b05dac3c87",
+      "for": "5.7"
+    }
+  }
+}

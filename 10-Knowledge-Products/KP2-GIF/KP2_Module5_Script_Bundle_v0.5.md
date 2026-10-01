@@ -1,0 +1,920 @@
+<!-- GENERATED from build_kp2_module5_v05.js by bundle_to_md.py — do not hand-edit; edit the build script and regenerate. -->
+
+# KP2 Module 5 — Video Script Bundle v0.5 (ITU-aligned)
+
+| Field | Value |
+| --- | --- |
+| Document | Video script bundle for Topic 5 of KP2 |
+| Version | v0.5 — aligned to ITU Knowledge Products and Video Materials Guide; Topic 6 folded in; aligned to the source method; corrected against the build pack; 5.4 and 5.5 carry recorded demo evidence and 5.2, 5.3 and 5.7 one reveal each (30 September 2026) |
+| Date | 30 September 2026 (v0.1: 27 June 2026; v0.2 and v0.3: 12 September 2026; v0.4: 13 September 2026) |
+| Contract reference | RFQ-S-GIGA-2026-022 / Purchase Order #334304 (signed 24 April 2026) |
+| Topic persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
+| Subtopics | Ten subtopics (5.1 – 5.10), each shipped as one ~5-minute standalone video |
+| Topic runtime | Approximately 47 minutes across ten standalone videos |
+| Build pack | KP2-GIF/KP2-build-pack — this topic stands up the runnable proving slice: the Linkup federation, the member registrations, and the live once-only exchange that is the build pack's acceptance check — then operates it (bus monitoring, the document-consistency cross-check) and points to the complete pack as the template a country reuses for its next sector |
+| Prepared by | FiscalAdmin OÜ — Aare Lapõnin (Engagement Lead) |
+| For review by | ITU/Giga at Tuesday weekly call; FiscalAdmin team (Karin Kaup, Arne Lapõnin) |
+
+This bundle is the v0.5 working draft of Topic 5 of KP2 — Government Interoperability Framework. Topic 5 is where the framework is stood up, proven, and then run. It takes the configuration the earlier topics produced — the decree, the Governance Pack, the semantic map and the service contracts — and turns it into a running solution: a phased implementation plan, the onboarding of real members, and a live once-only exchange on the Linkup federation. It produces the runnable proving slice of the build pack: the Linkup federation, the member registrations, and the cross-server call that is the framework's acceptance check. The ten videos walk the Architect through the four-phase implementation pattern, the Member Requirements, the Service-Level Agreement, registering a member on X-Road, standing up the federation, the live once-only exchange, and what changes from demonstration to production — and then, once the bus runs, through keeping it running: monitoring the bus from its logs, cross-checking the framework's three foundational documents for drift, and carrying the framework to the next sector. The last three were Topic 6 in v0.1; Topic 6 was retired on 12 September 2026 (its catalogue, role-paths and storyboard videos repeated the earlier topics and now live on the GitBook home page and in the KP2 intro video). The register stays plain English, eighth-grade level; technical terms are introduced in plain words on first use, and each subtopic leads with the capability the listener gains. The ten videos are numbered to ITU's convention (5.1 through 5.10), each reworked to stand alone. All slide specifications follow ITU's text-only branding. Each subtopic carries an AI usage tip with a copy-paste Claude prompt. External references use the convention 'Find the link in the description'.
+
+## 1. Document context
+
+### 1.1 What this document is
+
+This document collects the ten video scripts that make up Topic 5 of Knowledge Product 2 (Government Interoperability Framework), with on-screen slide specifications, per-subtopic metadata, AI usage tips and production notes. It is the v0.4 working draft, aligned to ITU's Knowledge Products and Video Materials Guide, submitted for team review and for discussion with ITU/Giga at the Tuesday weekly call.
+
+Topic 5 is the implementation and demonstration topic of KP2, and the second Architect-facing one. It presents the four-phase implementation pattern with its decision gates and cost frame, the member-onboarding artefacts (the Member Requirements and the Service-Level Agreement), the technical onboarding step of registering a member on X-Road, standing up the Linkup federation, and the live once-only exchange that proves the framework. It then turns from building to running: what changes from the sandboxed demonstration to a production-grade federation, how the Operating Authority watches the live bus from its logs, how the framework keeps its decree, Governance Pack and standards portfolio from contradicting each other, and which parts of the framework carry unchanged to the next sector. It stands up the runnable proving slice of the build pack — the framework running, not just described — and it is now the closing topic of KP2.
+
+Why ten videos and not seven. v0.1 had a Topic 6 ('AI plays for GIF + dissemination', six videos). Read against Topics 1–5 it split three ways: the AI-play catalogue (6.1) and the country storyboard (6.6) restated content already taught — the catalogue restated the plays of 2.3, 2.4, 4.4 and 4.5, and the storyboard restated Topics 1–5 against the four-phase plan of 5.1; the four role-paths (6.5) are a navigation aid about the knowledge product rather than framework content; and three plays were genuinely new and had no earlier home — bus monitoring, the document-consistency cross-check, and sector portability. The same reading led KP1 to retire its AI-plays module on 3 September 2026. Topic 6 is therefore retired: the three new plays are 5.8–5.10 here, the catalogue and the role-paths are the KP2 GitBook home page, and the storyboard is the KP2 intro video.
+
+### 1.2 KP2 is an implementation Knowledge Product
+
+KP2 ships two things. The first is this video bundle, which teaches the build. The second is a runnable build pack — the configuration, prompts, scripts and acceptance checks that stand up a real once-only exchange on the Linkup (X-Road 7.x) federation across the Progressa institutions. Topic 5 stands up the runnable build pack itself — the Linkup federation, the member registrations, and the live once-only exchange that proves the whole framework works. It is the proving slice: the legal config (the decree), the organisational config (the Governance Pack) and the technical config (the semantic map and service contracts) from the earlier topics all come together here and are demonstrated as one running solution. The structural backbone throughout is the four-layer interoperability model — Technical, Semantic, Organisational, Legal — drawn from the EU European Interoperability Framework and the NIIS X-Road documentation. The four-layer model is cited to those public references, not to PAERA; PAERA anchors the interoperability framing (§3.4.3), the relevant principles including Once-Only (§5.2), the legal layer (§3.2) and the governance setup (§3.1.3).
+
+### 1.3 How to read this document
+
+Section 2 gives Topic 5 at a glance — the ten subtopics with persona, runtime and single message. Section 3 contains the full script for each subtopic, with on-screen slide specification, AI usage tip and metadata. Section 4 collects the production notes that apply across all ten videos. Section 5 records the open calibration items raised during drafting. Section 6 is the aggregate external-link list for ITU's production pipeline.
+
+Within each script section, three rendering conventions are used: italic shaded blocks denote on-screen visual or production cues; regular paragraphs are the spoken voice-over; the slide specification, AI usage tip and metadata follow the script. A reader should be able to imagine the video from these layers without a separate storyboard.
+
+## 2. Topic 5 at a glance
+
+Ten standalone subtopic videos. Architect persona for 5.1–5.8; Strategist for 5.9–5.10. Total runtime approximately forty-seven minutes. Each video has a single message and a single learning outcome, and is discoverable individually via search; the playlist provides navigation but is not required to comprehend any single video.
+
+| # | Title | Single message | Runtime |
+| --- | --- | --- | --- |
+| 5.1 | Plan the build in four phases | Foundation, Pilot, Expansion, Optimisation — four phases with decision gates, an honest calendar, and the four plans beside the schedule that a funder actually reads. | ~5 min |
+| 5.2 | State what a member must have — the Member Requirements | The Member Requirements template tells an agency exactly what it must have before it can join — no surprises at go-live. | ~4 min |
+| 5.3 | Make 'connected' mean 'dependable' — the SLA | A Service-Level Agreement turns 'connected' into 'dependable' — the template makes it a fill-in, not a negotiation from scratch. | ~4 min |
+| 5.4 | Admit a member to the bus | An agency is admitted by a validated request and a recorded committee decision — then the join runs itself and proves itself with a real call. | ~5 min |
+| 5.5 | Stand up the federation | Central Server, Test CA, four Security Servers — the Linkup federation, stood up from the run book and shown healthy, registered and granted exactly. | ~5 min |
+| 5.6 | Run the once-only exchange, live | PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real cross-server call, the data asked once. | ~3 min |
+| 5.7 | From demonstration to production | What changes between the sandboxed Linkup demonstration and a production-grade federation a country would actually run — including migrating off and retiring the legacy point-to-point links. | ~5 min |
+| 5.8 | Watch the bus — monitoring and anomaly detection | Point Claude at the real bus logs to spot a failing or unusual exchange before a citizen does. | ~5 min |
+| 5.9 | Keep the documents honest — the consistency cross-check | Keep the decree, the Governance Pack and the standards portfolio saying the same thing — a cross-check that catches drift across the three. | ~5 min |
+| 5.10 | Carry the framework to the next sector | The same four-layer framework stands up interoperability beyond education — the method is sector-portable, and the second sector is cheaper than the first. | ~4 min |
+
+## 3. The scripts
+
+## 3.1 Subtopic 5.1 — Plan the build in four phases
+
+| Field | Value |
+| --- | --- |
+| Persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
+| Target runtime | ~5 min (≈640 spoken words) |
+| PAERA anchor | Estonia X-Road build-out (cost/timeline benchmark); ITU DPI Safeguards; NIIS X-Road implementation |
+
+> **Single message —** _Foundation, Pilot, Expansion, Optimisation — four phases with decision gates, an honest calendar, and the four plans beside the schedule that a funder actually reads._
+
+### Script (voice-over over text-only slides)
+
+> _Slide 1 — Title: 'Plan the build in four phases'. Voice-over begins._
+
+You do not onboard a whole government at once. You build the framework in four phases, each delivering something real, each with a decision gate before the next is funded — a pattern drawn from how Estonia and others actually built their buses.
+
+> _Slide 2 — Title: 'Four phases — after the foundation is laid'. Body, five text rows: 'Before month 0: the foundation, decree, governance, architecture and standards — a year to eighteen months of work.' 'Phase 1 — Foundation (months 0–6): the central platform and its trust anchor live; two pilot members; the first services.' 'Phase 2 — Pilot and Validation (7–12): the first cross-ministry once-only exchanges live; five members; conformance testing running.' 'Phase 3 — Expansion (13–18): the first-wave sectors covered; fifteen members; twenty-plus services.' 'Phase 4 — Optimisation (19–24): performance, the long tail, the next wave.'_
+
+First, the honest calendar. The four build phases start when the foundation is laid — the decree, the governance, the architecture and the standards portfolio — and that groundwork is itself a year to eighteen months of team effort, longer in calendar time because legislative and budget cycles do not hurry. Then the phases. Phase one, Foundation, months zero to six — the central platform and its trust anchor go live, two pilot members connect, the first services run. Phase two, Pilot and Validation, seven to twelve — the first real cross-ministry once-only exchanges go live, the first five members are on, conformance testing is operating. Phase three, Expansion, thirteen to eighteen — the first-wave sectors are covered: fifteen members, twenty or more services. Phase four, Optimisation, nineteen to twenty-four — performance, the long tail, the next wave of sectors. So the first citizen-visible once-only exchange lands about a year into the build, and the first real milestone — the platform running with a handful of member services — two to three years from the day the programme starts. National coverage is a four-to-six-year programme. Say that to your minister on day one; it is the number that keeps the programme funded when the launch enthusiasm fades. Each phase ends with a decision gate: a go or no-go where the funder and the Steering Committee confirm the phase actually delivered before the next is funded.
+
+The phasing protects the re-use logic: phase one builds the shared bus once, and every phase and every agency after it reuses that one investment. A funder who sees that is paying for a national platform, not a project.
+
+One caution, because the words collide: these four build phases are not the five-phase enterprise-architecture lifecycle that produced your plan. That lifecycle designs the target; this schedule builds the bus, inside its final phase.
+
+> _Slide 3 — Title: 'The plan is five documents, not one'. Body, five text rows: 'The phased schedule — outcomes and a go/no-go gate per phase.' 'The investment plan — capital and running costs over the years, benchmarked; the state's commitment to run what the donor built.' 'The procurement plan — one lot per domain, never one big-bang contract; the platform bought as a working, accepted result.' 'The workforce plan — the operator from a first team of eight to fifteen towards thirty to eighty; a focal point in every member.' 'The risk register and the success metrics — members, services, transactions, uptime, onboarding time, satisfaction.'_
+
+Second, the plan is five documents, not one schedule. The phased schedule — for each phase its outcomes, its gate, its risks. The investment plan — capital and running costs across the years, benchmarked against what comparable platforms cost, and with the state's own budget line for running whatever a donor built, because the commonest failure is a platform funded to launch and not to operate. The procurement plan — one lot per domain, sequenced across the phases, and never a single big-bang contract that hands the architecture to whichever vendor wins; the platform itself is bought as a working, accepted result, with acceptance tests and penalties, against the framework's rules as mandatory requirements. The workforce plan — the operator grows from a first team of eight to fifteen towards thirty to eighty at national scale, and every member needs a named technical focal point. And the risk register with the success metrics — members onboarded, services registered, transactions a quarter, uptime, how long onboarding takes, member satisfaction — reviewed at every gate. A cost frame a funder can check is a cost frame a funder can approve.
+
+> _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Four phases after the foundation, a gate at each, an honest calendar, and the four plans beside the schedule — that is a programme a funder can approve and that survives its second year.'_
+
+So you plan the build in four phases — Foundation, Pilot, Expansion, Optimisation — each with a gate and a benchmarked cost, on a calendar you have told the truth about, with the investment, procurement, workforce and risk plans beside the schedule. That is what turns an ambition into a fundable programme.
+
+> _Slide 5 — Title: 'Sources'. Body: Estonia X-Road build-out (cost/timeline benchmark); ITU DPI Safeguards; NIIS X-Road implementation. Footer: 'Find the link in the description.'_
+
+### On-screen slide specification
+
+| Slide | Element (text-only) | Notes |
+| --- | --- | --- |
+| 1 | Title slide. Title: 'Plan the build in four phases'. | Standard ITU template. Title Arial Bold 28pt; subtitle (KP2 / 5.1) Arial 18pt. Background #E5F5FB. No images. |
+| 2 | Four-phases slide. Five text rows: the foundation before month 0, then the four phases with their source-method deliverables. | The implementation spine. Plain text rows, no icons. |
+| 3 | Five-documents slide. Five text rows: schedule, investment plan, procurement plan, workforce plan, risk register + metrics. | The per-phase template. Text-only. |
+| 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
+| 5 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the cost benchmarks. |
+
+### AI usage tip — Draft your implementation plan — the phased schedule and the four plans beside it
+
+**What the prompt does:** An architect needs a phased implementation plan — outcomes, decision gates, risks and a benchmarked cost frame per phase — to take to a funder. This prompt drafts it.
+
+**Prompt template (copy-paste into Claude):**
+
+```text
+Draft the implementation plan for [country X]'s Government Interoperability Framework, assuming the foundation (decree, governance, architecture, standards) is in place at month 0. The phases are: Phase 1 Foundation (months 0–6: central platform and trust anchor live, 2 pilot members, first services), Phase 2 Pilot and Validation (7–12: first cross-ministry once-only exchanges, 5 members, conformance testing operating), Phase 3 Expansion (13–18: first-wave sectors, 15 members, 20+ services), Phase 4 Optimisation (19–24: performance, next wave). Use this context [paste: the first agencies and exchanges from your Use-Case Catalogue, any budget envelope, the funder, key constraints]. Produce five parts. (A) THE PHASED SCHEDULE — for each phase: outcomes; the go/no-go gate criteria; the top 3 risks with a mitigation each. (B) THE INVESTMENT PLAN — capital vs running cost by year, the main cost drivers benchmarked to comparable platforms (note where to verify against Estonia's X-Road experience and the ITU DPI Safeguards), and the state-budget line that takes over running costs from any donor-funded portion. (C) THE PROCUREMENT PLAN — the lots, one per domain, sequenced to the phases; flag that the platform is bought as a working, accepted result (acceptance tests, warranty, delay penalties) with the framework's rules as mandatory requirements, never as one big-bang contract. (D) THE WORKFORCE PLAN — the operator's staffing trajectory from a first team of 8–15 towards 30–80, and the technical focal point every member must name. (E) THE RISK REGISTER AND SUCCESS METRICS — the register (legal-cycle delay, sponsor change, vendor performance, member capacity, conformance failure, operator budget cut) and per-phase targets for members onboarded, services registered, transactions per quarter, uptime, onboarding cycle time and member satisfaction. CRITICAL: mark every specific cost or duration figure as [confirm: benchmark before quoting]. Output: the five parts plus a one-line funding ask per phase.
+```
+
+**Inputs and outputs:** Input: the first agencies/exchanges, any budget envelope and constraints. Output: the phased schedule plus the investment plan, procurement plan, workforce plan, and risk register with success metrics.
+
+**Safeguard:** Cost and duration figures are the most scrutinised and the easiest to get wrong — treat every number as [confirm] and benchmark it against documented comparable builds before putting it in front of a funder. A phased plan with invented costs loses credibility on the first challenged figure.
+
+### Metadata
+
+| Field | Value |
+| --- | --- |
+| Working title | Plan the build in four phases — and the four plans beside it |
+| YouTube-optimised title | The four-phase plan that gets an interoperability platform funded — and keeps it funded |
+| Description (60 words) | You do not onboard a whole government at once. Four build phases — Foundation, Pilot, Expansion, Optimisation — each with a go/no-go gate, on an honest calendar: the first once-only exchange about a year in, national coverage over four to six. And the plan is five documents: the schedule plus investment, procurement, workforce and risk plans. Five minutes for architects and programme leads. AI plan prompt in the description. |
+| Tags | implementation plan, investment plan, procurement plan, implementation plan, phased delivery, interoperability roadmap, cost frame, X-Road build, decision gates, GovStack, digital government |
+| Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
+| ToR §4 coverage | §4.1 (methodology, implementation); §4.3 (AI integration — phased-plan prompt) |
+| PAERA citations | (implementation pattern cited to NIIS X-Road and the Estonia build-out; cost guidance to ITU DPI Safeguards) |
+| External-link list | Estonia X-Road build-out; ITU DPI Safeguards; NIIS X-Road implementation guidance (niis.org) |
+
+## 3.2 Subtopic 5.2 — State what a member must have — the Member Requirements
+
+| Field | Value |
+| --- | --- |
+| Persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
+| Target runtime | ~4 min (≈480 spoken words) |
+| PAERA anchor | NIIS X-Road member requirements and onboarding; EU EIF |
+
+> **Single message —** _The Member Requirements template tells an agency exactly what it must have before it can join — no surprises at go-live._
+
+### Script (voice-over over text-only slides)
+
+> _Slide 1 — Title: 'State what a member must have — the Member Requirements'. Voice-over begins._
+
+The fastest way to wreck an onboarding schedule is to discover, on go-live day, that the joining agency is not actually ready — no security server, no adopted standards, no lawful basis. The Member Requirements template prevents that. It states, up front, exactly what an agency must have in place before it can join, so readiness is checked weeks ahead, not discovered at the deadline.
+
+> _Slide 2 — Title: 'What a member must have'. Body, six text rows: 'A security server — its gateway at the edge.' 'A registered identity on the bus — its subsystem.' 'The standards portfolio adopted.' 'Its data cleaned and conformed to the schema.' 'A lawful basis for its exchanges — from the decree.' 'A named technical contact who can fix things.'_
+
+The requirements are concrete. A security server — the gateway device at the agency's edge. A registered identity on the bus — its subsystem. The standards portfolio adopted, so its services speak the framework's language. Its data cleaned and conformed to the agreed schema, because a member with stale or malformed data poisons every exchange that uses it. A lawful basis for the exchanges it will take part in, drawn from the decree. And a named technical contact who can actually fix things when they break. Miss any one, and the agency is not ready, however willing it is.
+
+> _Slide 3 — Title: 'Readiness becomes a checklist, not a judgement'. Body, single text block: 'Instead of an architect deciding, agency by agency, whether someone seems ready, the agency works the list and either meets each item or does not. That objectivity lets you schedule onboarding with confidence — and protects the framework from a half-ready member that breaks things.'_
+
+The template turns readiness from a judgement call into an objective checklist. Instead of an architect deciding, agency by agency, whether someone seems ready, the agency works through the list and either meets each item or does not. That objectivity is what lets you schedule onboarding with confidence, and it protects the framework from a member that joins half-ready and breaks the exchanges it touches. It also takes the awkwardness out of saying 'not yet' — the list says it for you.
+
+And the checklist is not a separate form that gets filed and forgotten. In the build pack it is the front of the join request itself: the six answers travel in the request an applying agency submits, and they are checked before any operator can approve it. Two things sit beside it on purpose — the signed membership agreement and the named data-protection officer — and the pack says plainly where it does not hold them. An agency that passes the Member Requirements is an agency ready to be registered on the bus, which is the technical step that admits it.
+
+> _Reveal slide — Title: 'One agency's answers, rendered into its record'. Demo evidence (artefact, beat REQ-1): onboarding/pnea/02-requirements.md — the six items and what PNEA stated. Caption strip: 'Six items, stated by the applicant, rendered into its record.'_
+
+Here is one such record, the examination authority's, rendered from its join request: each of the six items with what the agency stated, down to the named contact, its Head of IT.
+
+> _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A Member Requirements checklist makes readiness objective and checkable weeks before go-live — so onboarding is scheduled, not gambled.'_
+
+So before any agency is registered on the bus, it passes the Member Requirements: a security server, a registered identity, the standards adopted, clean data, a lawful basis, a named contact. The checklist makes readiness objective, lets you schedule onboarding instead of gambling on it, and is reused for every member that follows.
+
+> _Slide 5 — Title: 'Sources'. Body: NIIS X-Road member requirements and onboarding; EU EIF. Footer: 'Find the link in the description.'_
+
+### On-screen slide specification
+
+| Slide | Element (text-only) | Notes |
+| --- | --- | --- |
+| 1 | Title slide. Title: 'State what a member must have — the Member Requirements'. | Standard ITU template. No images. |
+| 2 | What-a-member-must-have slide. Six text rows of requirements. | The checklist. Plain text, readable on mobile. The same six answers are the front of the build pack's join request. |
+| 3 | Readiness-is-a-checklist slide. Single text block on objectivity. | The value of the template. Text-only. |
+| R | Demo evidence (artefact). PNEA's requirements record, rendered from its join request. Placed before the summary slide. | Beat REQ-1 (reveals). A markdown record rendered as text rows — inside the text-only rule. |
+| 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
+| 5 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the member-onboarding references. |
+
+### AI usage tip — Draft the Member Requirements checklist
+
+**What the prompt does:** An architect needs a Member Requirements checklist an agency completes before joining the bus — objective, reusable, tied to the decree and the standards portfolio. This prompt drafts it.
+
+**Prompt template (copy-paste into Claude):**
+
+```text
+Draft a Member Requirements checklist for an agency joining [country X]'s interoperability bus. Cover, as objective yes/no items an agency can self-assess: (1) a security server deployed at the agency's edge; (2) a registered identity (subsystem) requested; (3) the framework's standards portfolio adopted by the agency's services; (4) the data it will provide cleaned and conformed to the agreed schema, with a named authoritative source and identifier; (5) a lawful basis for each exchange it will join, referencing the relevant decree article; (6) a named technical contact and an incident channel. For each item, state what 'met' looks like and what evidence confirms it. Add a final readiness verdict (Ready / Not yet, with the gaps). Output: the checklist as a table (requirement / met? / evidence) plus the verdict block.
+```
+
+**Inputs and outputs:** Input: the framework's standards portfolio and decree (referenced). Output: a reusable Member Requirements checklist with evidence and a readiness verdict.
+
+**Safeguard:** A self-assessed 'met' is a claim, not proof — require the evidence column to be filled and spot-check the highest-risk items (clean data, lawful basis) before scheduling go-live. An agency that ticks every box on paper but has not actually cleaned its data will still poison the exchanges it joins.
+
+### Metadata
+
+| Field | Value |
+| --- | --- |
+| Working title | The Member Requirements |
+| YouTube-optimised title | What an agency must have before it can join an interoperability bus |
+| Description (60 words) | Onboarding wrecks on go-live day when an agency turns out not to be ready. The Member Requirements template states up front what every member must have: a security server, a registered identity, the standards adopted, clean data, a lawful basis, a named contact. It makes readiness an objective checklist, checked weeks ahead. Four minutes for architects. AI checklist prompt in the description. |
+| Tags | member requirements, onboarding, interoperability, security server, member readiness, X-Road, GovStack, digital government |
+| Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
+| ToR §4 coverage | §4.1 (methodology, onboarding); §4.3 (AI integration — member-requirements prompt) |
+| PAERA citations | (member requirements cited to NIIS X-Road onboarding and EIF) |
+| External-link list | NIIS X-Road member requirements and onboarding (niis.org); EU EIF |
+
+## 3.3 Subtopic 5.3 — Make 'connected' mean 'dependable' — the SLA
+
+| Field | Value |
+| --- | --- |
+| Persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
+| Target runtime | ~4 min (≈480 spoken words) |
+| PAERA anchor | NIIS X-Road service-level / SLA guidance; the member obligations (Topic 3); EU EIF |
+
+> **Single message —** _A Service-Level Agreement turns 'connected' into 'dependable' — the template makes it a fill-in, not a negotiation from scratch._
+
+### Script (voice-over over text-only slides)
+
+> _Slide 1 — Title: 'Make 'connected' mean 'dependable' — the SLA'. Voice-over begins._
+
+A member being connected is not the same as a member being dependable. A service that is up most of the time, answers slowly, and has no one to call when it breaks is connected but useless to a consumer whose citizen service depends on it at the moment it runs. The Service-Level Agreement is what turns connected into dependable — and a template turns writing one from a negotiation into a fill-in.
+
+> _Slide 2 — Title: 'What the SLA sets'. Body, five text rows: 'Availability — the uptime the provider commits to.' 'Response time — how fast a call returns.' 'Support hours — when there is someone to help.' 'Incident response — who to call, and how fast.' 'Change notice — how much warning before a change.'_
+
+The SLA sets the numbers a consumer can rely on. Availability — the uptime the provider commits to. Response time — how fast a call returns. Support hours — when there is someone to help. Incident response — who to call when the service fails, and how quickly they will respond. And change notice — how much warning a provider gives before changing the service, so no consumer is caught out by a surprise change. These are the numbers that turn a connection into a dependency a consumer can build a real citizen service on.
+
+> _Slide 3 — Title: 'The SLA makes the member obligations specific'. Body, single text block: 'The governance obligations said a member meets service levels. The SLA is where those service levels become specific numbers, agreed and signed. Without it, 'meets service levels' is a wish; with it, it is a commitment you can hold a member to.'_
+
+The SLA operationalises the member obligations from the governance module. Those obligations said, in principle, that a member meets service levels; the SLA is where the service levels become specific numbers, agreed and signed. Without the SLA, 'meets service levels' is a wish. With it, it is a commitment the Operating Authority can hold a member to — and a number a consumer can plan around. And the SLA belongs to a service, not to a member: every service a provider publishes carries its own, and a member that only consumes publishes nothing, so it signs none.
+
+One rule of fairness, and it is the rule that actually gets SLAs signed: set the numbers with the provider, not for them. A target the provider cannot meet is a target the provider will quietly ignore, and an SLA everyone ignores is worse than none. Agree numbers the provider can genuinely hit — and raise them over time as the platform matures — and the SLA becomes real rather than decorative. The template then makes it fast: fill in the targets for each service, agree them with the provider, sign, and reuse the same template for every service on the bus.
+
+> _Reveal slide — Title: 'One service's SLA, as signed'. Demo evidence (artefact, beat SLA-1): onboarding/plr/03-sla/enrolment-api.md — the five terms and their targets. Caption strip: 'Five terms, one record per published service.' (The record's 'Signed by' line sits below the table and is not on the slide.)_
+
+Here is one, signed for the learner registry's enrolment service: ninety-nine and a half per cent monthly availability, weekday support hours, the most serious incidents acknowledged within an hour and resolved within eight, and five business days' notice before a planned change.
+
+> _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The SLA is the numbers that make a connection dependable — agreed with the provider, signed, and reused for every service.'_
+
+So the Service-Level Agreement is what turns a connected member into a dependable one. Availability, response time, support, incident response, change notice — the numbers a consumer can rely on, made specific from the governance obligations, agreed with the provider so they are real, and captured in a template you reuse for every service. That is the difference between a bus that works in a demonstration and one a country can run citizen services on.
+
+> _Slide 5 — Title: 'Sources'. Body: NIIS X-Road service-level / SLA guidance; the member obligations (Module 3); EU EIF. Footer: 'Find the link in the description.'_
+
+### On-screen slide specification
+
+| Slide | Element (text-only) | Notes |
+| --- | --- | --- |
+| 1 | Title slide. Title: 'Make 'connected' mean 'dependable' — the SLA'. | Standard ITU template. No images. |
+| 2 | What-the-SLA-sets slide. Five text rows of the SLA dimensions. | The core list. Text-only. |
+| 3 | SLA-makes-obligations-specific slide. Single text block linking to the governance obligations. | Ties the SLA to Module 3. Text-only. |
+| R | Demo evidence (artefact). The signed SLA for PLR's enrolment-api. Placed before the summary slide. | Beat SLA-1 (reveals). Text rows — inside the text-only rule. |
+| 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
+| 5 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the SLA references. |
+
+### AI usage tip — Draft the Service-Level Agreement template
+
+**What the prompt does:** An architect needs an SLA template that turns the governance obligations into specific, signable service-level numbers for each service on the bus. This prompt drafts it.
+
+**Prompt template (copy-paste into Claude):**
+
+```text
+Draft a Service-Level Agreement template for services on [country X]'s interoperability bus. Cover, as fields to set per service: (1) availability / uptime target; (2) response-time target; (3) support hours; (4) incident response — contact channel and response/resolution times by severity; (5) change-notice period; (6) the reporting that proves the levels are being met. For each field, suggest a sensible starting value for a demonstration/pilot phase and a separate, higher target for production, and note that the value must be agreed with the provider agency (mark as [confirm: agree with provider]). Reference the member obligations from the governance pack as the source of these commitments. Output: the SLA template (field / pilot value / production value / agreed-with-provider?) plus a short note on raising targets as the platform matures.
+```
+
+**Inputs and outputs:** Input: the governance member obligations (referenced). Output: an SLA template with pilot and production targets per service.
+
+**Safeguard:** An SLA target set without the provider's agreement will be ignored — every number must be confirmed as achievable with the provider agency before signing. Start with honest pilot-phase numbers and raise them as the platform matures; an over-ambitious SLA signed under pressure damages trust the first time it is breached.
+
+### Metadata
+
+| Field | Value |
+| --- | --- |
+| Working title | The Service-Level Agreement |
+| YouTube-optimised title | Connected isn't dependable: the SLA that makes a government data service reliable |
+| Description (60 words) | A connected service that's slow, often down, and has no one to call is useless to the citizen service built on it. The Service-Level Agreement turns 'connected' into 'dependable': availability, response time, support, incident response, change notice. Set the numbers with the provider, sign, reuse. Four minutes for architects. AI SLA-template prompt in the description. |
+| Tags | SLA, service level agreement, reliability, interoperability operations, X-Road, member obligations, GovStack, digital government |
+| Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
+| ToR §4 coverage | §4.1 (methodology, operations); §4.3 (AI integration — SLA-template prompt) |
+| PAERA citations | (SLA cited to NIIS X-Road guidance; obligations to the Topic-3 governance pack) |
+| External-link list | NIIS X-Road service-level guidance (niis.org); EU EIF |
+
+## 3.4 Subtopic 5.4 — Admit a member to the bus
+
+| Field | Value |
+| --- | --- |
+| Persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
+| Target runtime | ~5 min (≈450 spoken words) |
+| PAERA anchor | NIIS X-Road member and subsystem registration; access-control list configuration; the Linkup demonstration federation |
+
+> **Single message —** _An agency is admitted by a validated request and a recorded committee decision — then the join runs itself and proves itself with a real call._
+
+### Script (voice-over over text-only slides)
+
+> _Slide 1 — Title: 'Admit a member to the bus'. Voice-over begins._
+
+Everything so far has been preparation — the plan, the Member Requirements, the Service-Level Agreement. This step admits an agency to the bus. It produces real configuration, and nobody types that configuration by hand: the agency applies, the operator admits it, and the join runs itself.
+
+> _Slide 3 — Title: 'Admission produces two configuration artefacts'. Two panels: 'The subsystem — who it is: member class, member code, subsystem code.' 'The access-control list — who may call it, service by service.'_
+
+Admitting a member produces two configuration artefacts. The subsystem is the member's identity on the bus — its member class, member code and subsystem code, the identifiers a call is routed by. The access-control list says which other members may call each of its services. Being on the bus does not mean everyone may call everything.
+
+> _Slide 4 — Title: 'One pattern for every member, wrapped in a repeatable process'. Six-cell flow: Requirements → Approval → Admission (highlighted) → Registration → Conformance → First service._
+
+The same pattern admits every member, wrapped in a repeatable process. The Member Requirements confirm the agency is ready. The RACI names the body that approves. Admission records that decision. Registration writes the configuration. A conformance test is the gate, and then the first service goes live.
+
+> _Slide 5 — Title: 'First: a member code with a space is refused'. Demo evidence (screen frame, beat J0-refused): the join card 'PT SB … REJECTED' with the key-derivation message. Caption strip: 'A member code with a space: refused before anything reaches the bus.'_
+
+First, a join request whose member code has a space in it. The validator refuses it before anything reaches the bus, and says which characters a member key may use.
+
+> _Slide 6 — Title: 'Second: the request, and the diff it would write'. Demo evidence (screen frame, beat J1-submitted): PTSB SUBMITTED, the diff of configs/member-ptsb/ptsb.yaml and manifest.yaml. Caption strip: 'The request and the exact diff it would write — nothing written yet.'_
+
+Second, the corrected request from the tertiary scholarship board, PTSB. The screen shows the exact files the join would write — its member configuration and the federation manifest — and nothing is written yet.
+
+> _Slide 7 — Title: 'Third: approve without a minute — refused'. Demo evidence (screen frame, beat J2-no-minute): 'Decision reference is required: admission is a Steering Committee decision'. Caption strip: 'Approve without a minute reference: refused. Admission is a committee decision.'_
+
+Third, the operator tries to approve it with the decision reference left empty. Refused: admission is a committee decision, and the join cannot run ahead of it.
+
+> _Slide 8 — Title: 'Fourth: the join runs itself, then proves the backend answers'. Demo evidence (clip, ~20 s, one shot per join step, composited inside the slide; the still is the ACTIVE card): minute RIHA-2026-001 entered, approved, the steps tick to done, 'verified: true — a real r1 call reached the backend'. Caption strip: 'Minute RIHA-2026-001 recorded: the steps run themselves, then a real call proves the backend answers.'_
+
+Fourth, the operator enters the committee's minute reference and approves. The steps run themselves — the member and its server registered, its certificate, its service published, its access granted — and then a real call proves the backend answers.
+
+> _Slide 9 — Title: 'Fifth: the admission record'. Demo evidence (text capture, beat J4-admission): onboarding/ptsb/01-admission.md — request id, decision reference RIHA-2026-001, approved at, approving role. Caption strip: 'The admission record: which decision admitted PTSB, and when.'_
+
+Fifth, the admission record the join leaves behind: the request, the decision reference that admitted it, and when.
+
+> _Slide 10 — Title: 'Sixth: on the bus, hosted, and proved'. Demo evidence (two text captures on one panel, beats J5-hosted and J6-proved): scripts/member.sh list with the ptsb row 'joined, ss-plr'; scripts/acceptance.sh --summary --only 2.7 — r1, deny, fields, catalogue all PASS. Caption strip: 'Reachable by PNEA, refused to everyone else, exactly the contract's fields, listed on the bus.'_
+
+Sixth, the proof. The scholarship board is listed as a joined member, hosted on the learner registry's server. And the acceptance checks pass: the examination authority reaches its service, every other caller is refused, the response carries exactly the contract's fields, and the service is listed on the bus.
+
+> _Slide 11 — Title: 'Conformance is the gate between registration and going live'. Body, three text rows: the gate against the standards portfolio; checked in proportion to the risk; re-tested every two years and on every binding change._
+
+Registration is not the last gate. Before its first service goes live, the member proves conformance against the standards portfolio: a self-assessment for routine services, a third-party check for high-risk ones, or the operator's own test suite. And it is re-tested every two years, and whenever a binding standard changes.
+
+> _Slide 12 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'An agency is admitted by a validated request and a recorded decision — then the join runs itself, proves itself, and a conformance test gates its first service.'_
+
+So admitting a member is where onboarding becomes configuration: a validated request, an approval that cites the committee's decision, a join that runs itself and proves itself with a real call, and a conformance test before the first service goes live.
+
+> _Slide 13 — Title: 'Sources'. Body: NIIS X-Road member and subsystem registration; access-control list configuration; the Linkup demonstration federation. Footer: 'Find the link in the description.'_
+
+### On-screen slide specification
+
+| Slide | Element (text-only) | Notes |
+| --- | --- | --- |
+| 1 | Title card (section slide). Title: 'Admit a member to the bus'. | Standard ITU template. No images. |
+| 2 | Hook slide: 'Everything so far was preparation. This step admits an agency.' | Text-only. |
+| 3 | Two-artefacts panels: the subsystem, the access-control list. | The config artefacts, glossed in plain words. Text-only. |
+| 4 | Six-cell onboarding flow, Admission highlighted. | The repeatable process. Shapes and text only. |
+| 5 | Demo evidence (screen frame, cropped to the join card). A member code with a space, refused. | Beat J0-refused. Pixels — the ITU calibration item in Section 5. |
+| 6 | Demo evidence (screen frame). The submitted request and the diff it would write. | Beat J1-submitted. Calibration item. |
+| 7 | Demo evidence (screen frame). Approve without a minute reference — refused. | Beat J2-no-minute. Calibration item. |
+| 8 | Demo evidence (clip). The join steps ticking to ACTIVE, then 'verified: true'. Still = the ACTIVE card. | Beat J3-join, ~20 s, step-cut (one shot per step change), composited inside the slide so caption and provenance stay on screen. Calibration item. |
+| 9 | Demo evidence (text capture). The admission record. | Beat J4-admission. Monospaced text — inside the text-only rule. |
+| 10 | Demo evidence (two text captures on one panel). The member list and the 2.7 acceptance checks. | Beats J5-hosted and J6-proved. Text — inside the text-only rule. |
+| 11 | Conformance-gate slide. Three text rows. | The step between registration and first service. Text-only. |
+| 12 | Single-sentence summary slide and the practice box. | The take-home line. |
+| 13 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the registration references. |
+
+### AI usage tip — Generate the X-Road member registration (subsystem + ACL)
+
+**What the prompt does:** An architect onboarding an agency needs the X-Road subsystem registration and the access-control list generated from the member's details and the access policy — the config that admits the member. This is the member-registration play for onboarding.
+
+**Prompt template (copy-paste into Claude):**
+
+```text
+Generate the X-Road member-registration configuration for an agency joining [country X]'s bus. Inputs: the member's details [paste: organisation name, the member class and any known member/subsystem codes], the services it will provide [from its service contracts], and the access policy [which other members may call which of its services]. Produce: (1) the SUBSYSTEM registration — member class, member code, subsystem code, and the service codes it exposes; (2) the ACCESS-CONTROL LIST — for each service, the consumer subsystems permitted to call it. CRITICAL: output every member code, subsystem code and service code as [confirm: verify against the live X-Road registry] — do not invent identifiers, because a wrong code silently routes nowhere or to the wrong agency. Also list, for an onboarding checklist: the certificate steps and the approval (per the governance RACI) that must happen alongside this config. Close with the onboarding checklist in the source method's order — application and signed obligations; certificate issuance; security server deployment; CONFORMANCE TEST against the standards portfolio (state the approach: self-assessment / third-party / test suite); first service registration; production go-live. Output: the subsystem registration, the access-control list, and the [confirm] / approval checklist.
+```
+
+**Inputs and outputs:** Input: the member's details, its services, and the access policy. Output: the subsystem registration and access-control list, with [confirm] placeholders, and an onboarding checklist that ends in the conformance test.
+
+**Safeguard:** Every X-Road identifier must be confirmed against the live registry before deployment — this is the single highest-stakes [confirm] in the framework, because a wrong code can route one citizen's data to a service that asked about another. On a bus you operate, the validator refuses a bad identifier before it reaches the bus; the [confirm] is for a bus you are joining. Deploy to a sandbox first and verify the access-control list denies an unauthorised caller, not only that it permits the authorised one.
+
+### Metadata
+
+| Field | Value |
+| --- | --- |
+| Working title | Admit a member to the bus |
+| YouTube-optimised title | Admitting an agency to an X-Road bus — validated, approved by decision, joined, proved |
+| Description (60 words) | Admitting an agency to the bus produces two configuration artefacts: the subsystem (its identity) and the access-control list (who may call it). Recorded from a real join: a bad member code refused, an approval refused without the committee's minute, then the join running itself and a real call proving it. Five minutes for architects. AI registration prompt in the description. |
+| Tags | X-Road registration, member admission, subsystem, access control list, member onboarding, interoperability config, GovStack, digital government |
+| Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
+| ToR §4 coverage | §4.1 (methodology, onboarding); §4.3 (AI integration — member registration prompt); §4.5 (build-pack artefact); §4.6 (real-life demonstration) |
+| PAERA citations | (member/subsystem registration cited to NIIS X-Road) |
+| External-link list | NIIS X-Road member and subsystem registration; access-control list configuration (niis.org); the Linkup demonstration federation |
+
+## 3.5 Subtopic 5.5 — Stand up the federation
+
+| Field | Value |
+| --- | --- |
+| Persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
+| Target runtime | ~5 min (≈360 spoken words) |
+| PAERA anchor | NIIS X-Road federation (Central Server, Security Server, Test CA); the Linkup demonstration federation |
+
+> **Single message —** _Central Server, Test CA, four Security Servers — the Linkup federation, stood up from the run book and shown healthy, registered and granted exactly._
+
+### Script (voice-over over text-only slides)
+
+> _Slide 1 — Title: 'Stand up the federation'. Voice-over begins._
+
+With the members admitted, they need the platform they connect to: the federation. For the demonstration it is Linkup, an X-Road federation on a single host. It has a small set of components, each with one job, and it is brought up from a run book, so anyone with the build pack can reproduce it.
+
+> _Slide 3 — Title: 'One registry, one gateway per member, one trust anchor'. Diagram: the Central Server (PDGA) and the Test CA above; four Security Servers — PDGA, PNEA, PLR, PNIA — below._
+
+The federation has three kinds of component. The Central Server, operated by PDGA, is the registry of members and services that every security server checks with. The four Security Servers — PDGA's, as the owner, and one each for PNEA, PLR and PNIA — are the gateways that carry the trust burden at each member's edge. And the Test CA issues the certificates they prove who they are with; in production, a real certification authority.
+
+> _Slide 4 — Title: 'Bring it up from the run book, in order'. Body, five text rows: the Central Server; the Test CA with certificate status and time-stamping; the members on the registry, then the anchor; each Security Server, its certificate and its registration approved on the Central Server; the services and the grants. Closing line: the single-host hosting line._
+
+Standing it up is a run-book exercise, in order. The Central Server first. Then the Test CA, with its certificate-status and time-stamping services. Then the members on the registry, and the configuration anchor every server imports. Then each Security Server: its certificate, and its registration, approved explicitly on the Central Server — the technical footprint of the admission decision. Then the services, and the grants that say who may call them.
+
+> _Slide 5 — Title: 'First: six containers, all healthy'. Demo evidence (text capture, beat T0-containers): docker compose ps — cs, ca, ss-pdga, ss-plr, ss-pnea, ss-pnia, all healthy._
+
+First, the containers: one Central Server, one Test CA, and four Security Servers, all reporting healthy.
+
+> _Slide 6 — Title: 'Second: from zero to running, measured'. Demo evidence (text capture, beat T1-stood-up): the five steps of scripts/demo.sh and the deploy's own timings — containers healthy 100 s, Hurl run 290 s, total 390 s._
+
+Second, the run book itself: five steps, from checking the host to the exchange proving itself. The deploy times itself: on the recorded run, about a hundred seconds until the containers were healthy, and six and a half minutes in all, from zero to a running federation.
+
+> _Slide 7 — Title: 'Third: three members, each behind its own server'. Demo evidence (text capture, beat T2-members): scripts/member.sh list — plr, pnea, pnia, each canonical on its own ss-*._
+
+Third, the members: the learner registry, the examination authority and the identity authority, each behind its own Security Server.
+
+> _Slide 8 — Title: 'Fourth: registered, grants exact, monitoring running'. Demo evidence (text capture, beat T3-registered): scripts/acceptance.sh --summary --only 2.x — add-ons RUNNING on four servers, three clients REGISTERED, two ACLs granting exactly PNEA, two catalogue entries with SLA links._
+
+Fourth, the checks: each member's client registered on its own server, each service granting exactly the examination authority and no one else, each catalogue entry linking its service-level agreement, and the monitoring add-ons running on all four servers.
+
+> _Slide 9 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Central Server, Test CA, four Security Servers — stood up from the run book, in order, and shown running, registered and granted exactly.'_
+
+So the federation is brought up from a run book, in order, and then shown to be real: every server healthy, every member registered, every grant exact. The bus exists, and it is ready to carry a real call.
+
+> _Slide 10 — Title: 'Sources'. Body: NIIS X-Road federation — Central Server, Security Server, Test CA; the Linkup demonstration federation. Footer: 'Find the link in the description.'_
+
+### On-screen slide specification
+
+| Slide | Element (text-only) | Notes |
+| --- | --- | --- |
+| 1 | Title card (section slide). Title: 'Stand up the federation'. | Standard ITU template. No images. |
+| 2 | Hook slide: 'Now the live platform the members connect to.' | Text-only. |
+| 3 | Federation diagram: the Central Server and the Test CA; four Security Servers. | The 'before' picture. Uses the bound Progressa institutions. Shapes and text only. |
+| 4 | Run-book rows: five steps in order; closing hosting line. | The reproducible-from-the-build-pack point. Text-only. |
+| 5 | Demo evidence (text capture). The containers, all healthy. | Beat T0-containers. Monospaced text — inside the text-only rule. |
+| 6 | Demo evidence (text capture). The run book's steps and the deploy's own timings. | Beat T1-stood-up. Text. The timings are the deploy's measurement (takes.json records which deploy). |
+| 7 | Demo evidence (text capture). The members, each on its own server. | Beat T2-members. Text. |
+| 8 | Demo evidence (text capture). Registered, grants exact, add-ons running. | Beat T3-registered. Text. |
+| 9 | Single-sentence summary slide and the practice box. | The take-home line. |
+| 10 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the federation references. |
+
+### AI usage tip — Draft the federation stand-up run book
+
+**What the prompt does:** An architect needs a reproducible run book to stand up the X-Road federation — the Central Server, the Security Servers and the Test CA, in order — for the demonstration. This prompt drafts it.
+
+**Prompt template (copy-paste into Claude):**
+
+```text
+Draft a stand-up run book for an X-Road demonstration federation for [country X] / Progressa. The components are: a Central Server (operated by the digital-government authority), four Security Servers (one for that authority as the federation owner, one each at the three member agencies), and a Test CA with OCSP and time-stamping. Produce the run book as ordered, reproducible steps: (1) bring up the Central Server and its configuration; (2) bring up the Test CA, register it and its OCSP and time-stamping services as trust services, and publish the configuration anchor; (3) for each Security Server: install, import the anchor, register with the Central Server, obtain its certificates from the Test CA, and approve the registration explicitly on the Central Server; (4) a verification step confirming every member appears in the Central Server registry. Note which steps are demonstration-only (single VM, sandboxed containers, Test CA) and would differ in production. Mark every server identifier and address as [confirm: set per the actual environment]. Output: the ordered run book plus a 'differs in production' note per step.
+```
+
+**Inputs and outputs:** Input: the federation topology (Central Server, four Security Servers, Test CA). Output: an ordered, reproducible stand-up run book with production-difference notes.
+
+**Safeguard:** A run book is only reproducible if it has been run — execute it end to end in the sandbox and confirm all four members register, before treating it as the build-pack run book. Keep the demonstration-only steps (Test CA, single VM) clearly marked so no one mistakes the run book for a production deployment guide.
+
+### Metadata
+
+| Field | Value |
+| --- | --- |
+| Working title | Stand up the federation |
+| YouTube-optimised title | Standing up an X-Road federation: Central Server, Security Servers, and a CA |
+| Description (60 words) | With members registered, you stand up the federation: a Central Server (the registry of members and services), four Security Servers (each member's gateway), and a Test CA (the trust anchor). Bring it up from a reproducible run book so anyone with the build pack stands up the same federation. Five minutes for architects. AI run-book prompt in the description. |
+| Tags | X-Road federation, central server, security server, certification authority, Linkup, interoperability deployment, GovStack, digital government |
+| Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
+| ToR §4 coverage | §4.1 (methodology, deployment); §4.3 (AI integration — run-book prompt); §4.5 (build-pack — the federation) |
+| PAERA citations | (federation topology cited to NIIS X-Road) |
+| External-link list | NIIS X-Road federation — Central Server, Security Server, configuration and Test CA (niis.org); the Linkup demonstration federation |
+
+## 3.6 Subtopic 5.6 — Run the once-only exchange, live
+
+| Field | Value |
+| --- | --- |
+| Persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
+| Target runtime | ~3 min (≈350 spoken words) |
+| PAERA anchor | PAERA §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check |
+
+> **Single message —** _PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real cross-server call, the data asked once._
+
+### Script (voice-over over text-only slides)
+
+> _Slide 1 — Title: 'Run the once-only exchange, live'. Voice-over begins._
+
+This is the exchange the whole framework exists for: the examination authority issues a credential and fetches the learner's identity and enrolment itself, asking the learner once. What follows was recorded from the running federation.
+
+> _Slide 2 — Title: 'One call — identity from PNIA, enrolment from PLR'. Diagram: the learner → PNEA → PNIA and PLR, over the bus. The picture of what the recording shows._
+
+This is the call on screen. The examination authority, PNEA, receives a learner's credential application. Without once-only, PNEA would ask the learner for paper proof of identity and of enrolment. With it, PNEA fetches the identity from the identity authority, PNIA, and the enrolment from the learner registry, PLR, over the bus.
+
+> _Slide 3 — Title: 'First: ten blank rows, then nine filled'. Demo evidence (screen frame, C2): the form after the call — 'asked 1 · pre-filled 9 / 9', five rows labelled PNIA, four labelled PLR. The narration recalls the blank form (C1, not shown)._
+
+First, the form before and after the call. Before, ten rows, all blank: ten questions the learner answers, and two sets of paper proof. Once PNEA has the learner's national ID, nine rows fill in: five from the identity authority, PNIA, four from the learner registry, PLR, each labelled with its source. One question asked, nine fetched.
+
+> _Slide 4 — Title: 'Second: what PNIA sends — and what it withholds'. Demo evidence (screen frame, C4): the legal pane — PNIA sends five fields, holds but withholds three._
+
+Second, the second tab reads the exchange by layer. In the legal pane, the identity authority, PNIA, sends five fields and names three it holds but withholds: a mother's name, a birth registration number, an address. The purpose does not need them.
+
+> _Slide 5 — Title: 'Third: allowed, refused, then cut off'. Demo evidence (clip, C6, plays once then holds): the grant withdrawn and restored on the form. The two-caller refusal (C5, not shown) is in the caption and narration._
+
+Third, permission. Asked the identical question, the examination authority, PNEA, is allowed, and the learner registry, PLR, is refused by the identity authority's access list. Then the operator withdraws the examination authority's permission: within seconds the identity rows are denied while the enrolment rows still fill. Restore it, and the form is whole. Being on the bus is not permission.
+
+> _Slide 6 — Title: 'Fourth: on disk, and six checks green'. Demo evidence (two text captures on one panel, C7 + C8): the assembled application, then acceptance 2.6.1–2.6.6 PASS._
+
+Fourth, the record and the proof. The exchange is written to disk as the assembled application, one line per field with its source; the national ID is the only line the citizen supplied. And the acceptance script runs the exchange as six checks: the call, the right learner, asked once, the denial, a clean not-found, and field conformance. All six pass: the technical half of go-live approval.
+
+> _Slide 7 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'One field asked, nine fetched, only what the purpose needs — and six acceptance checks green.'_
+
+So the exchange is shown, not explained: one field asked, nine fetched, only what the purpose needs, a denial the access list enforces, six checks green. That is the framework, running.
+
+> _Slide 8 — Title: 'Sources'. Body: PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the Linkup demonstration federation. Footer: 'Find the link in the description.'_
+
+### On-screen slide specification
+
+| Slide | Element (text-only) | Notes |
+| --- | --- | --- |
+| 1 | Title card (section slide). Title: 'Run the once-only exchange, live'. | Standard ITU template. The silent cold open. No images. |
+| 2 | Call-flow diagram: the learner → PNEA → PNIA and PLR, over the bus. | The drawn 'before' picture: the recording's frames map onto its boxes. Shapes and text only. |
+| 3 | Demo evidence (screen frame). The form before the call: ten blank rows. Caption strip, provenance line. | Recorded from the running federation (beat C1-before). Pixels — the ITU calibration item in Section 5. |
+| 4 | Demo evidence (screen frame). The form after the call: asked 1, pre-filled 9 / 9, every row labelled with its source. | Beat C2-after. Calibration item. |
+| 5 | Demo evidence (screen frame). The layer view, legal pane: what PNIA sends and what it holds but withholds. | Beat C4-layers. Replaces v0.3's 'every layer' rows slide — the console says the same with live values. Calibration item. |
+| 6 | Demo evidence (screen frame). The same request from two callers: PNEA allowed, PLR AccessDenied. | Beat C5-allowed-denied. Calibration item. |
+| 7 | Demo evidence (clip). Withdraw PNEA's grant: the PNIA half fails, PLR still fills; restore. Still = the denied moment. | Beat C6-break-restore, ~18 s, plays once then holds its last frame. The one clip. Calibration item. |
+| 8 | Demo evidence (text capture). The assembled application, one line per field with its source. | Beat C7-application. Monospaced text on the grey panel — inside the text-only rule. |
+| 9 | Demo evidence (text capture). The acceptance summary, 2.6.1–2.6.6 PASS. Caption carries the go-live line. | Beat C8-acceptance. Text — inside the text-only rule. |
+| 10 | Single-sentence summary slide. One large text block (Arial Bold 28pt) and the practice box. | The take-home line that crowns the module. |
+| 11 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the once-only reference. |
+
+### AI usage tip — Script and verify the once-only exchange (the acceptance check)
+
+**What the prompt does:** An architect needs to script the once-only demonstration exchange and its acceptance check — the call, the expected result, and the proof that the learner is asked once. This prompt produces the acceptance script.
+
+**Prompt template (copy-paste into Claude):**
+
+```text
+Script the once-only acceptance check for [country X] / Progressa's interoperability demonstration. The scenario: a learner applies for a credential at the examination authority (PNEA), which pre-fills identity from the identity authority (PNIA) and enrolment from the learner registry (PLR) over the X-Road bus. Produce: (1) the GIVEN — the federation deployed, the four members registered, the service published, the demonstration data seeded; (2) the WHEN — the exact cross-server call(s) PNEA makes to PNIA and PLR; (3) the THEN — the expected result: identity and enrolment returned over the bus, the learner asked once, no paper re-entry; (4) the negative check — that a member NOT authorised by the access-control list cannot make the call. Map each step to the layer it exercises (technical/legal/organisational/semantic). Mark every identifier and endpoint as [confirm: against the live registry]. Output: the given/when/then acceptance script plus the negative check.
+```
+
+**Inputs and outputs:** Input: the Progressa once-only scenario and the federation. Output: a given/when/then acceptance script with a negative check, mapped to the four layers.
+
+**Safeguard:** An acceptance check that only proves the happy path is half a check — include the negative case (an unauthorised member is denied) and confirm the data returned is the right learner's, not merely that data returned. Run it against the sandbox federation, and treat a passing check as proof for this exchange only, not a guarantee for exchanges you have not tested.
+
+### Metadata
+
+| Field | Value |
+| --- | --- |
+| Working title | Run the once-only exchange, live |
+| YouTube-optimised title | The live once-only exchange: a government framework proven in one real call |
+| Description (60 words) | The moment the framework exists for: a real cross-server call where a learner applies for a credential and the examination authority pre-fills identity and enrolment over the bus — asked once, not on paper. Every layer (technical, legal, organisational, semantic) is in that one call, and an automated acceptance check confirms it. Five minutes for architects. AI acceptance-script prompt in the description. |
+| Tags | once-only, live demonstration, X-Road, cross-server call, acceptance test, interoperability proof, Progressa, GovStack, digital government |
+| Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
+| ToR §4 coverage | §4.6 (real-life demonstration) — primary; §4.1 (methodology); §4.3 (AI integration — acceptance-script prompt); §4.5 (build-pack acceptance) |
+| PAERA citations | §5.2 Principle #5 (Once-Only) |
+| External-link list | PAERA v1.0 §5.2 (Once-Only); NIIS X-Road; the build-pack acceptance check |
+
+## 3.7 Subtopic 5.7 — From demonstration to production
+
+| Field | Value |
+| --- | --- |
+| Persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
+| Target runtime | ~5 min (≈590 spoken words) |
+| PAERA anchor | NIIS X-Road production and operations guidance; ITU DPI Safeguards |
+
+> **Single message —** _What changes between the sandboxed Linkup demonstration and a production-grade federation a country would actually run._
+
+### Script (voice-over over text-only slides)
+
+> _Slide 1 — Title: 'From demonstration to production'. Voice-over begins._
+
+The demonstration proves the pattern. It is not, and must not be mistaken for, a production system. The architect's last job in this module is to know exactly what changes between the demonstration and a production-grade federation, so the country plans and budgets for that gap rather than discovering it after go-live — which is the moment it is most expensive to discover.
+
+> _Slide 2 — Title: 'What changes for production'. Body, eight text rows: 'Separate hosts, not one VM.' 'A real certification authority, not a Test CA.' 'High availability and redundancy.' 'Real monitoring and alerting.' 'Capacity for real volumes.' '24/7 operational support.' 'Security hardening and audit.' 'Migrate and retire the legacy point-to-point links the bus replaces.'_
+
+The differences are specific. The demonstration runs everything on one VM; production separates the components onto real, sized hosts. The demonstration uses a Test CA; production uses a real certification authority. Production adds high availability and redundancy, so a failed component does not stop the bus. It adds real monitoring and alerting, so problems are caught before citizens notice them. It is sized for real transaction volumes, not a handful of demonstration calls. It has round-the-clock operational support — the Operating Authority's standing team. And it is security-hardened and audited to the standard a national platform carrying citizen data must meet.
+
+> _Slide 3 — Title: 'The shape of the config does not change'. Body, single text block: 'The subsystem registrations, the service descriptions, the semantic map are the same. Production changes the scale, the resilience and the operations around them — not the design. So the demonstration genuinely de-risks the production build: you proved the pattern, and production is the same pattern, hardened.'_
+
+Here is the reassuring part, and it is the point of building a demonstration at all: none of this changes the shape of the configuration. The subsystem registrations, the service descriptions, the semantic map — they are the same in production. Production changes the scale, the resilience and the operations around the configuration, not the design of it. So the demonstration genuinely de-risks the production build. You have proven the pattern works; production is the same pattern, hardened and operated. The later phases of your four-phase plan are exactly where that production build is funded and delivered, against the cost frame.
+
+There is one more production task, and it does not appear on the hardening list because it concerns the old world rather than the new: migrating each agency off the legacy point-to-point links the bus replaces, and retiring them. A new bus does not retire the old links by itself — left alone, you run both, which is worse than either. So per agency the pattern is parallel-run then cut over: stand up the new once-only exchange, run it beside the agency's existing point-to-point link until you have confirmed the two agree, then switch the consumers across and decommission the old link. Retiring those links is the step that actually ends the point-to-point sprawl Module 1 diagnosed — schedule it, agency by agency, in the multi-agency phase of the plan, with a migration-and-retirement step in each onboarding.
+
+> _Reveal slide — Title: 'The demonstration names its own gap'. Demo evidence (artefact, beat P2): the Summary table of docs/path-conformance.md — implemented 41, simulated 6, named absence 24, out of scope 4, of 75 clauses. Caption strip: 'What this demonstration is honest about: 41 implemented, 6 simulated, 24 named absences, 4 out of scope.'_
+
+The demonstration is honest about its own gap. Its conformance record sorts seventy-five clauses: forty-one implemented, six simulated, twenty-four named as absent, and four out of scope. That list is where the production plan starts.
+
+The one thing not to do is ship the demonstration as production. A sandboxed single-VM federation with a test certification authority is perfect for proving the pattern and wrong for carrying real citizen data at scale. Know the gap, plan it into the phased roadmap, budget it with the cost frame — and the move from demonstration to production becomes an engineering exercise the team can plan, not a surprise that derails go-live.
+
+> _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Production is the demonstration's pattern, hardened — separate hosts, a real CA, high availability, monitoring, support. Plan the gap; do not ship the demo.'_
+
+So you close the implementation module by being honest about the gap between demonstration and production. Separate hosts, a real certification authority, high availability, monitoring, capacity, support, hardening — the production differences are specific and plannable. The configuration's shape does not change, so the demonstration de-risks the build. Plan the gap into the roadmap, budget it with the cost frame, and never ship the demonstration as the production platform. That is how a proven pattern becomes a system a country runs.
+
+> _Slide 5 — Title: 'Sources'. Body: NIIS X-Road production and operations guidance; ITU DPI Safeguards. Footer: 'Find the link in the description.'_
+
+### On-screen slide specification
+
+| Slide | Element (text-only) | Notes |
+| --- | --- | --- |
+| 1 | Title slide. Title: 'From demonstration to production'. | Standard ITU template. No images. |
+| 2 | What-changes slide. Eight text rows of production differences (incl. migrating off and retiring the legacy point-to-point links). | The gap, made specific. Plain text list, readable on mobile. |
+| 3 | Config-shape-unchanged slide. Single text block on de-risking. | The reassuring synthesis — the demo de-risks the build. Text-only. |
+| R | Demo evidence (artefact). The path-conformance summary. Placed before the summary slide. | Beat P2 (reveals). Text rows — inside the text-only rule. |
+| 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line that closes the module. |
+| 5 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the production-guidance references. |
+
+### AI usage tip — Build the demonstration-to-production gap checklist
+
+**What the prompt does:** An architect needs a checklist of what must change to take the demonstration federation to production, sized and sequenced into the phased plan. This prompt produces it.
+
+**Prompt template (copy-paste into Claude):**
+
+```text
+Build a demonstration-to-production gap checklist for [country X]'s X-Road federation. The demonstration runs on a single VM with sandboxed containers and a Test CA; production must carry real citizen data at scale. For each area, state what the demonstration has, what production requires, and roughly when in the four-phase plan it should be delivered: (1) hosting — single VM vs separate sized hosts; (2) certification authority — Test CA vs real CA; (3) availability — single instance vs high availability and redundancy; (4) monitoring and alerting; (5) capacity for expected transaction volumes; (6) operational support hours; (7) security hardening and audit. For each, note that the configuration shape (subsystem registrations, service descriptions) does NOT change — only scale, resilience and operations do. Mark cost-bearing items for the cost frame. Output: a gap checklist (area / demo / production / phase / cost-bearing?) plus a one-line 'do not ship the demo as production' caution.
+```
+
+**Inputs and outputs:** Input: the demonstration federation. Output: a demonstration-to-production gap checklist mapped to the phased plan and cost frame.
+
+**Safeguard:** The gap checklist is a planning aid, not a security sign-off — production hardening and audit must be done and independently reviewed, not merely listed. Never let the existence of a working demonstration become pressure to put the sandboxed federation into production; the gap items exist precisely because the demo is unsafe at scale.
+
+### Metadata
+
+| Field | Value |
+| --- | --- |
+| Working title | From demonstration to production |
+| YouTube-optimised title | What changes from an interoperability demo to a production-grade federation |
+| Description (60 words) | The demonstration proves the pattern — it isn't a production system. Production means separate hosts, a real CA, high availability, monitoring, capacity, 24/7 support and hardening. But the configuration's shape doesn't change, so the demo de-risks the build. Plan the gap into the roadmap; never ship the demo as production. Four minutes for architects. AI gap-checklist prompt in the description. |
+| Tags | production readiness, X-Road production, high availability, operations, demo to production, interoperability, GovStack, digital government |
+| Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
+| ToR §4 coverage | §4.1 (methodology, production); §4.3 (AI integration — gap-checklist prompt) |
+| PAERA citations | (production guidance cited to NIIS X-Road and ITU DPI Safeguards) |
+| External-link list | NIIS X-Road production and operations guidance (niis.org); ITU DPI Safeguards |
+
+## 3.8 Subtopic 5.8 — Watch the bus — monitoring and anomaly detection
+
+| Field | Value |
+| --- | --- |
+| Persona | A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus |
+| Target runtime | ~5 min (≈590 spoken words) |
+| PAERA anchor | NIIS X-Road monitoring and operational logs; the Linkup federation; ITU DPI Safeguards |
+
+> **Single message —** _Point Claude at the real bus logs to spot a failing or unusual exchange before a citizen does._
+
+### Script (voice-over over text-only slides)
+
+> _Slide 1 — Title: 'Watch the bus — monitoring and anomaly detection'. Voice-over begins._
+
+A production bus needs real monitoring and alerting, and this is what that monitoring is for. A running bus is not finished — it is operating, every day. Every call leaves a trace in the logs: success or failure, fast or slow, who called whom. Reading those logs by hand does not scale past a few services. The monitoring play points Claude at the real bus logs and turns them into something a Strategist can act on — a plain-language picture of the bus's health, and a flag when something looks wrong.
+
+> _Slide 2 — Title: 'What the logs hold'. Body, four text rows: 'Which exchanges ran, and which failed — and how often.' 'Latency — whether calls are getting slower.' 'Unusual patterns — a spike, a new caller, an off-hours surge.' 'Compliance — which members still meet the binding standards, and which are drifting.' 'The metadata of exchanges, never their contents.'_
+
+The logs hold the operational truth. Which exchanges ran and which failed, and how often. Whether calls are getting slower — a sign of a service under strain. And unusual patterns — a sudden spike, an agency calling a service it never called before, a surge of activity at three in the morning. The play reads all of this and writes a plain-language health report, flagging the things that deserve a human's attention this week.
+
+The value is early warning. A failing service, caught in the logs, is fixed before a citizen standing at a counter is turned away. A creeping slowdown, spotted early, is addressed before it becomes an outage. The Operating Authority's team uses this to watch a growing federation without drowning in raw logs — the AI does the reading, the team does the acting. That is what lets a small operations team keep a hundred-service bus healthy. And the same reading serves a second, slower loop. Operational health is watched daily; member compliance is reviewed quarterly — which members still meet the binding standards, whose conformance has lapsed, what breaches occurred and what was done. That review goes to the Steering Committee each quarter, to the Council each year, and, where the country's transparency policy asks for it, to citizens twice a year. Monitoring that never reaches a governance table is a dashboard; monitoring that does is accountability.
+
+> _Slide 3 — Title: 'Two safeguards that are not optional'. Body, two text rows: 'The AI flags; a human investigates — an anomaly is a question, not a verdict.' 'No citizen personal data in the prompt — monitor the metadata of exchanges, never their contents.'_
+
+Two safeguards matter here, and neither is optional. The AI flags; a human investigates — an anomaly is a question to look into, not a verdict to act on automatically. And, critically, the logs you feed the play must carry no citizen personal data. You monitor the metadata of exchanges — which service, success or failure, how fast — not the contents of what was exchanged. A monitoring tool that ingested citizen data would itself become a data-protection risk, the very thing the framework exists to prevent. Monitor the traffic, never the cargo.
+
+> _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The logs hold the bus's health — the play makes it legible, a human acts on the flags, and citizen data never enters the prompt.'_
+
+So monitoring is how a framework stays healthy as it grows from one exchange to hundreds. The bus tells you how it is doing, in its logs; the AI play makes that legible; the Operating Authority acts on the flags; and citizen data never enters the prompt. Monitoring is the difference between a federation someone is watching and one that fails silently until a citizen complains.
+
+> _Slide 5 — Title: 'Sources'. Body: NIIS X-Road monitoring and operational logs; the Linkup federation (ITU cloud); ITU DPI Safeguards. Footer: 'Find the link in the description.'_
+
+### On-screen slide specification
+
+| Slide | Element (text-only) | Notes |
+| --- | --- | --- |
+| 1 | Title slide. Title: 'Watch the bus — monitoring and anomaly detection'. | Standard ITU template. No images. |
+| 2 | What-the-logs-hold slide. Five text rows: failures, latency, patterns, metadata-only. | What the play reads. Text-only. |
+| 3 | Two-safeguards slide. Two text rows: AI flags / human investigates; no citizen data. | The non-negotiable safeguards. Text-only. |
+| 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
+| 5 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the monitoring references. |
+
+### AI usage tip — Summarise bus health and flag anomalies from the logs
+
+**What the prompt does:** An Operating Authority needs a plain-language health summary and anomaly flags from the bus's operational logs — without putting any citizen data into the prompt. This prompt produces the monitoring play.
+
+**Prompt template (copy-paste into Claude):**
+
+```text
+Below are operational logs from [country X]'s interoperability bus, containing ONLY exchange metadata — timestamp, calling subsystem, called service, success/failure, latency — and NO citizen personal data [paste the metadata logs]. Produce a health summary: (1) volume and success/failure rates by service; (2) any service with a rising failure rate or latency; (3) anomalies — unusual spikes, a caller that has not called this service before, off-hours surges — each flagged as a QUESTION for a human to investigate, not a conclusion; (4) the top 3 things the Operating Authority should look at this week; (5) a one-paragraph compliance note for the quarterly Steering Committee report — which members show sustained failure or unusual behaviour that warrants a conformance re-check. Do not infer anything about individual citizens; if the logs appear to contain personal data, stop and flag that as a data-protection issue. Output: the health summary plus the prioritised investigate list.
+```
+
+**Inputs and outputs:** Input: exchange METADATA logs only (no citizen data). Output: a health summary plus a prioritised list of anomalies to investigate.
+
+**Safeguard:** Confirm the logs are stripped of citizen personal data before they go into the prompt — the play monitors the traffic, never the cargo. And treat every flagged anomaly as a question for a human, not an automated trigger; a false positive acted on automatically can cut off a legitimate exchange and the citizens who depend on it.
+
+### Metadata
+
+| Field | Value |
+| --- | --- |
+| Working title | Bus monitoring and anomaly detection |
+| YouTube-optimised title | Spotting a failing government data exchange before a citizen does — with AI |
+| Description (60 words) | A running bus logs every call. Point Claude at the exchange metadata — never citizen data — and it turns raw logs into a plain-language health report and anomaly flags: a failing service, a creeping slowdown, an unusual caller. The AI flags; a human investigates. It keeps a growing federation healthy. Five minutes for the Operating Authority's team. AI monitoring prompt in the description. |
+| Tags | bus monitoring, anomaly detection, observability, interoperability operations, X-Road logs, data protection, AI, GovStack, digital government |
+| Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
+| ToR §4 coverage | §4.3 (AI integration — monitoring play); §4.1 (methodology, operations) |
+| PAERA citations | (monitoring cited to NIIS X-Road; data-protection guidance to ITU DPI Safeguards) |
+| External-link list | NIIS X-Road monitoring and operational logs (niis.org); the Linkup federation (ITU cloud); ITU DPI Safeguards |
+
+## 3.9 Subtopic 5.9 — Keep the documents honest — the consistency cross-check
+
+| Field | Value |
+| --- | --- |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
+| Target runtime | ~5 min (≈520 spoken words) |
+| PAERA anchor | The KP2 deliverables — the decree, the Governance Pack, the standards portfolio; EU EIF |
+
+> **Single message —** _Keep the decree, the Governance Pack and the standards portfolio saying the same thing — a cross-check that catches drift across the three._
+
+### Script (voice-over over text-only slides)
+
+> _Slide 1 — Title: 'Keep the documents honest — the consistency cross-check'. Voice-over begins._
+
+A mature framework produces three big documents that must agree with each other: the decree, which is the legal layer; the Governance Pack, which is the organisational layer; and the standards portfolio, which is the technical layer. The trouble is that, separately maintained, they drift apart over time — a standard updated in the portfolio but not reflected in the decree, a role the Governance Pack renames but the decree still names the old way. The consistency cross-check reads the three for contradictions before a reviewer or a member finds them for you.
+
+> _Slide 2 — Title: 'What drifts'. Body, four text rows: 'A standard adopted in the catalogue but not authorised by the decree.' 'A role in the RACI the Governance Pack no longer names.' 'An exchange the decree authorises that no service implements — or the reverse.' 'The same term meaning different things in the three documents.'_
+
+Drift is specific and predictable. The standards portfolio adopts a new version, but the decree still references the old one. The RACI names a body the Governance Pack no longer describes. The decree authorises an exchange that no service in the catalogue implements, or a service exists that the decree never authorised. And the same term — 'member', 'service', 'authority' — is used to mean slightly different things in the three documents. Each of these is a contradiction that quietly undermines the framework's credibility the moment someone notices it.
+
+The play reads all three documents and reports the contradictions — where they disagree, and on what. It is the document analogue of the bus monitoring in the previous video: instead of watching the live traffic, it watches the documents for inconsistency. The value is catching drift before a Ministry of Justice reviewer, a joining member, or an auditor catches it for you — because a framework whose own three foundational documents contradict each other loses trust faster than almost anything else can cost it.
+
+> _Slide 3 — Title: 'The safeguard'. Body, single text block: 'The AI flags the contradiction; a human decides which document is right and fixes it. Deciding whether the catalogue or the decree is correct has legal and governance consequences — the play finds the drift, a person resolves it. Consistency is a direction, not an automatic edit.'_
+
+The safeguard is the same shape as always. The AI flags the contradiction; a human decides which of the three documents is correct and fixes it. The play does not edit the decree on its own, because deciding whether the catalogue or the decree is right is a judgement with legal and governance consequences. The play finds the drift; a person resolves it. Run it whenever any of the three documents changes, and the framework's documents stay honest with each other as it evolves.
+
+> _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Cross-check the decree, the Governance Pack and the standards portfolio — the AI finds the drift, a human resolves which document is right.'_
+
+So the consistency cross-check keeps the framework's three foundational documents telling the same story. The AI reads the decree, the Governance Pack and the standards portfolio together and flags where they have drifted apart; a human decides which is right and fixes it. Run it on every change, and you catch the contradictions yourself, before the reviewer, the member or the auditor does.
+
+> _Slide 5 — Title: 'Sources'. Body: the deliverables of this knowledge product — the decree (Module 2), the Governance Pack (Module 3), the standards portfolio (Module 4); EU EIF. Footer: 'Find the link in the description.'_
+
+### On-screen slide specification
+
+| Slide | Element (text-only) | Notes |
+| --- | --- | --- |
+| 1 | Title slide. Title: 'Keep the documents honest — the consistency cross-check'. | Standard ITU template. No images. |
+| 2 | What-drifts slide. Four text rows of contradiction types. | The predictable drifts. Text-only. |
+| 3 | Safeguard slide. Single text block: AI flags, human resolves. | The consistent safeguard pattern. Text-only. |
+| 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
+| 5 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the references. |
+
+### AI usage tip — Cross-check the decree, Governance Pack and standards portfolio for drift
+
+**What the prompt does:** A framework lead needs to find contradictions across the three foundational documents before a reviewer does. This prompt runs the document-consistency cross-check.
+
+**Prompt template (copy-paste into Claude):**
+
+```text
+Below are three foundational documents of [country X]'s Government Interoperability Framework: (A) the decree (legal); (B) the Governance Pack (organisational); (C) the standards portfolio (technical) [paste the three, or their key sections]. Cross-check them for contradictions and report: (1) standards in the catalogue not authorised or referenced by the decree, or referenced at a different version; (2) roles/bodies in the RACI or decree that the Governance Pack does not describe (or the reverse); (3) exchanges the decree authorises that no catalogued service implements, or services with no decree authorisation; (4) key terms ('member', 'service', 'authority', etc.) used inconsistently across the three. For each finding: the contradiction, where it appears in each document, and a QUESTION for a human ('which is correct?') — do NOT decide which document is right. Output: a contradiction table (finding / document A / document B / question) ordered by how damaging it would be if a reviewer found it.
+```
+
+**Inputs and outputs:** Input: the decree, Governance Pack and standards portfolio. Output: a contradiction table with a human question for each, ordered by risk.
+
+**Safeguard:** The cross-check finds drift; it must not resolve it — deciding whether the decree or the catalogue is correct is a legal and governance judgement a human owns. Run the check after every change to any of the three documents, and treat a clean result as 'no contradictions found in what was provided', not a guarantee the documents are complete.
+
+### Metadata
+
+| Field | Value |
+| --- | --- |
+| Working title | The document-consistency cross-check |
+| YouTube-optimised title | Keeping a framework's decree, governance and standards from contradicting each other |
+| Description (60 words) | A framework's three foundational documents — the decree, the Governance Pack, the standards portfolio — drift apart when maintained separately. An AI cross-check reads all three and flags the contradictions: a standard the decree doesn't authorise, a role governance no longer names, a term used three ways. The AI finds the drift; a human resolves it. Five minutes for framework leaders. AI cross-check prompt in the description. |
+| Tags | document consistency, governance, decree, standards portfolio, framework integrity, AI cross-check, GovStack, digital government |
+| Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
+| ToR §4 coverage | §4.3 (AI integration — consistency cross-check); §4.1 (methodology, framework integrity) |
+| PAERA citations | (cross-check operates over the KP2 deliverables and EIF) |
+| External-link list | The deliverables of this knowledge product — the decree (Module 2), the Governance Pack (Module 3), the standards portfolio (Module 4); EU EIF |
+
+## 3.10 Subtopic 5.10 — Carry the framework to the next sector
+
+| Field | Value |
+| --- | --- |
+| Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
+| Target runtime | ~4 min (≈540 spoken words) |
+| PAERA anchor | ToR §4.4 (sector portability); EU EIF four-layer model; PAERA §3.4.3 |
+
+> **Single message —** _The same four-layer framework stands up interoperability beyond education — the method is sector-portable, and the second sector is cheaper than the first._
+
+### Script (voice-over over text-only slides)
+
+> _Slide 1 — Title: 'Carry the framework to the next sector'. Voice-over begins._
+
+Everything in this knowledge product was demonstrated on education — Progressa's schools, learners and credentials. But the framework is not education-specific, and now that it runs, the most important thing a Strategist can know is exactly which parts carry to the next sector unchanged and which parts are new. Get that split right, and the second sector pays only for its own vocabularies and services.
+
+> _Slide 2 — Title: 'What carries, and what is new'. Body, two columns. Left 'Carries unchanged': 'The four layers.' 'The decree pattern.' 'The governance — tiers, RACI, Operating Authority.' 'The standards portfolio.' 'The bus itself, already running.' Right 'New per sector': 'The semantic layer — the vocabularies.' 'The specific exchanges and services.'_
+
+Split the framework in two. What carries unchanged to health, or agriculture, or social protection: the four-layer model, the decree pattern, the governance — the tiers, the RACI, the Operating Authority — the standards portfolio, and the bus itself, already built and running. What is genuinely new per sector: the semantic layer, because health speaks a different vocabulary than education, and the specific exchanges and services that sector needs. That — the vocabularies and the services — is the whole of the difference. And a word on order. This knowledge product demonstrated on education because the worked case was to hand; most countries sequence the framework the other way round. The first wave is usually tax, civil registration, the business register and health — high-volume, foundational reference data that every other sector reads — with education, justice, social protection and customs in the second wave. Whichever sector goes first pays for the platform; the rule that the next is cheaper holds either way.
+
+And this is the re-use argument at the scale of the whole framework. The first sector pays to build the bus, the governance and the legal mandate; the second sector reuses all of it and pays only for its own semantics and services; the third reuses more still. This is exactly the whole-of-government planning logic from the very first module, now visible across sectors: build the shared platform once, and every sector after consumes it. The second sector is cheaper than the first, and the third cheaper than the second — and only a framework built deliberately, for the whole of government, makes that compounding possible. A set of separate sector projects never gets cheaper; a planned framework does.
+
+> _Slide 3 — Title: 'The portability map is the next sector's business case'. Body, single text block: 'For a new sector, list what is reused — most of it — and what is new. That map is the business case: here is the small, sector-specific part we build; here is the large platform we already have.'_
+
+Portability is built in on purpose, and it is not a footnote — it is the reason an interoperability framework is worth its cost. A platform that served only education would be hard to justify; a platform that serves education first and then every other sector, each paying only for its own vocabularies and services, is the investment a strategist can defend for a decade. So when you take the next sector to your minister, bring the portability map: here is what we reuse, which is most of it, and here is the small, sector-specific part we build new. That map gets cheaper to make every time, and it is the business case for the next sector.
+
+> _Slide 4 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The framework is sector-portable — build the platform once, reuse it everywhere, and the next sector is cheaper than the last.'_
+
+So the framework you built for education is sector-portable. Most of it — the bus, the governance, the legal mandate, the standards — carries unchanged; only the vocabularies and the services are new per sector. Build the platform once, reuse it everywhere, and let every sector after the first be cheaper than the one before. That compounding re-use is the framework's lasting value.
+
+> _Slide 5 — Title: 'Sources'. Body: Terms of Reference §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3. Footer: 'Find the link in the description.'_
+
+### On-screen slide specification
+
+| Slide | Element (text-only) | Notes |
+| --- | --- | --- |
+| 1 | Title slide. Title: 'Carry the framework to the next sector'. | Standard ITU template. No images. |
+| 2 | Carries-vs-new slide. Two-column text: what reuses, what is new per sector. | The portability split. Text columns, no icons. |
+| 3 | Portability-map slide. Single text block on the map as the next sector's business case. | Carries the re-use / whole-of-government argument. Text-only. |
+| 4 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The take-home line. |
+| 5 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the portability references. |
+
+### AI usage tip — Map your framework's sector-portable vs sector-specific parts for a new sector
+
+**What the prompt does:** A Strategist taking the framework to a new sector needs a portability map — what is reused versus what is new — as the business case for that sector. This prompt produces it.
+
+**Prompt template (copy-paste into Claude):**
+
+```text
+I built a Government Interoperability Framework for [country X] in the education sector and want to extend it to [new sector — e.g. health]. Produce a sector-portability map. (1) REUSED UNCHANGED — list what carries over without change: the four-layer model, the decree pattern, the governance (tiers, RACI, Operating Authority), the standards portfolio, the bus and federation. For each, a one-line note on why it carries. (2) NEW FOR THIS SECTOR — list what must be built: the semantic layer (the sector's vocabularies and code lists — name the likely published standards for [new sector]), and the specific exchanges/services this sector needs. (3) THE BUSINESS CASE — a short statement a minister can read: here is the large platform we reuse, here is the small sector-specific part we build, and therefore this sector costs far less than the first. Then (4) place [new sector] in the usual sequencing — first wave (tax, civil registration, business register, health: foundational, high-volume) or second wave (education, justice, social protection, customs) — and say why. Output: the two lists, the wave placement, and the business-case statement.
+```
+
+**Inputs and outputs:** Input: the new sector. Output: a sector-portability map (reused / new) plus a minister-ready business case.
+
+**Safeguard:** The 'reused unchanged' list is only true if the platform was built sector-neutrally — confirm that none of your education-sector specifics leaked into the bus, governance or standards before promising they carry over. And validate the new sector's vocabularies with that sector's data owners; assuming health maps like education is exactly the semantic error this framework exists to prevent.
+
+### Metadata
+
+| Field | Value |
+| --- | --- |
+| Working title | Sector portability |
+| YouTube-optimised title | Why the second sector on an interoperability bus is far cheaper than the first |
+| Description (60 words) | The framework you built for education isn't education-specific. The four layers, the decree pattern, the governance, the standards and the bus all carry unchanged to the next sector; only the vocabularies and the services are new. So the second sector pays only for its own vocabularies and services — the re-use argument at framework scale. Four minutes for framework leaders. AI portability-map prompt in the description. |
+| Tags | sector portability, reuse, interoperability framework, whole of government, business case, EIF, GovStack, digital government |
+| Playlist (YouTube) | KP2 — Topic 5: Implementation, onboarding and the live demonstration |
+| ToR §4 coverage | §4.4 (sector portability) — primary; §4.1 (methodology); §4.3 (AI integration — portability-map prompt) |
+| PAERA citations | §3.4.3 Interoperability framing (the four-layer model cited to EIF) |
+| External-link list | Terms of Reference §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3 |
+
+## 4. Production notes
+
+### 4.1 Design standard — the split-screen usability test
+
+The bar for every video in Topic 5 is the split-screen test set at the kick-off call: a practitioner watching the video on one half of the screen must be able to follow along and act on the other half. For the videos in Topic 5, 'act' means produce the corresponding implementation artefact — a four-phase plan with gates and a cost frame, a Member Requirements checklist, a Service-Level Agreement, an X-Road member registration (subsystem + access-control list), a federation run book, the once-only test call, a demonstration-to-production gap checklist, a bus-health summary from the logs, a document-consistency report, or a sector-portability map. Each subtopic's AI usage tip operationalises this: the member-registration prompt is an instance of bb-config-gen, and the artefacts go straight into the runnable build pack, ready to deploy and verify on the stack with kp-solution-verify.
+
+### 4.2 Slide branding
+
+Every slide follows the ITU template per the Knowledge Products and Video Materials Guide §3.i: Title text Arial Bold 28pt; Body text Arial 18pt; Background colour #E5F5FB. Text only — no images. Diagrams and text boxes are permitted only where strictly necessary; where used, all labels remain plain text. No country emblems, no agency logos. The recurring single-sentence summary slide that closes each subtopic uses 28pt body type so the line is screenshot-friendly for the listener's own briefings.
+
+### 4.3 No individuals on screen
+
+Per the Guide §3 Note, no individuals appear in any video. Two options are open: an AI-avatar narrator generated by ITU's production pipeline, or computer-screen-only voice-over with no narrator visible. The choice is ITU's; the scripts are agnostic to it. No human narrator is shown in any video.
+
+### 4.4 Voice and tone
+
+Direct address ('your country', 'your agencies', 'your architects'). Plain language at approximately an eighth-grade English level, held even though the Architect audience is more technical. The last two videos (5.9, 5.10) return to the Strategist register, leading with what the framework's leadership can do rather than how the technical work is done. Examples are drawn from African public-sector reality — the duplicate registry found at assessment, the orphan system no one owns, the citizen filling the same form at five counters. Technical terms — security server, subsystem, access-control list, Central Server, Test CA, federation — are introduced in plain words on first use, because the Architect needs them to work; headlines stay capability-led, never concept-led. Honest framing throughout: interoperability is a sustained build, not a procurement.
+
+### 4.5 External-link list and 'Find the link in the description'
+
+Every subtopic includes an external-link list in its metadata, and every script references external materials with the convention 'Find the link in the description' rather than reading URLs aloud. ITU's production pipeline compiles the per-video list into the YouTube description. The aggregate list across the ten subtopics is in Section 6.
+
+### 4.6 GitBook companion and the build pack
+
+Each subtopic ships with the video script, slide specification, AI usage tip and metadata. The GitBook companion content — written, in-depth implementation guidance — is produced as a parallel deliverable mirroring the same subtopic numbering. For KP2, the GitBook companion links each subtopic to the runnable build pack (KP2-GIF/KP2-build-pack): Topic 5 stands up the proving slice — the federation configuration, the member registrations (subsystem + access-control list) generated by bb-config-gen, the deploy/seed/acceptance scripts, and the once-only test call that is the build pack's acceptance check, run by kp-solution-verify. The legal, organisational and technical configuration from the earlier topics is deployed and demonstrated here as one running solution. Videos 5.8–5.10 then point at the pack as a running and reusable thing: the monitoring play reads the federation's exchange metadata, the cross-check reads the decree, the Governance Pack and the standards portfolio the pack carries as its three configuration layers (the pack's per-member gate register and path-conformance record are the same discipline applied to the running slice), and the portability map treats the whole pack as the template a country reuses for its own framework and its next sector. The former Topic 6 material that is not a play — the AI-play catalogue, the four role-paths and the country storyboard — is carried by the GitBook home page and the KP2 intro video.
+
+## 5. Open calibration items
+
+The v0.1 drafting (and the v0.2 fold) raised the editorial and structural decisions below. These are forwarded for ITU's discussion at the Tuesday weekly call.
+
+### 5.1 Cost-frame and topology claims to verify
+
+Claims that should be confirmed against the source before final lock: the four-phase implementation timeline (Core Platform 0–6 months, Pilot 6–12, Multi-agency 12–18, Optimisation 18–24+) and the cost frame benchmarked to Estonia's X-Road build-out and the ITU DPI Safeguards (5.1) — confirm the figures and the timeline, since cost claims are the most scrutinised by funders; and the Linkup federation topology as the build pack runs it (Central Server at PDGA, four Security Servers — PDGA as the owner, PNEA, PLR, PNIA — and a Test CA with OCSP and time-stamping; MoEYS/PEMIS retired) against the Inception Report §4.3, which still names the earlier four-member canon (5.4, 5.5).
+
+### 5.2 Editorial tone calls
+
+Sharp lines that deserve a deliberate keep / soften / cut decision: 'the demonstration proves the pattern, not the production system' (5.7); 'the once-only call resolving is the whole framework's acceptance' (5.6); 'do not ship the demonstration as production' (5.7).
+
+### 5.3 The live-demonstration realities
+
+Three items to settle with ITU. (1) The once-only worked flow — PNEA pre-filling identity from PNIA and enrolment from PLR — should be confirmed as the single most compelling once-only story before the demonstration is built (alternative: an MoEYS/PEMIS service pre-filling from PNIA). (2) The demonstration depends on the full Linkup federation being live on ITU cloud (Inception Report action item A4); without it, 5.5 and 5.6 are scripted against a federation that does not yet exist. (3) Whether 5.6 is shown as a genuinely live call or a recorded screencast of one — either way the scripts reference real endpoints and a real cross-server call, never a mock, per the Inception Report commitment.
+
+### 5.4 The runnable build pack and the handoff
+
+Topic 5 is where the build pack becomes runnable: the federation configuration, the member registrations (subsystem + access-control list, generated by bb-config-gen with a [confirm] on every X-Road identifier), the deploy/seed/acceptance scripts, and the once-only test call that kp-solution-verify runs as the acceptance check. This assumes the technical config from Topic 4 and the legal and organisational config from Topics 2–3. The Progressa membership (the four-server canon) and the schedule / Linkup cloud-access items carried from earlier topics still apply; see the KP2 Plan §7 and the KP2–4 Delivery Plan §6.
+
+### 5.5 Items carried from the retired Topic 6 (v0.2)
+
+Three items travel with the folded videos. (1) The bus-monitoring play (5.8) runs against the real Linkup logs, with reproducible runs per the Inception Report — confirm the logs are available (action item A4) and, critically, that they carry no citizen personal data before any log goes into an AI prompt. (2) Sharp lines that deserve a deliberate keep / soften / cut decision: 'the second sector is cheaper than the first' (5.10); 'monitor the traffic, never the cargo' (5.8); 'consistency is a direction, not an automatic edit' (5.9). (3) Topic 5 now mixes personas — Architect for 5.1–5.8, Strategist for 5.9–5.10. Each video stands alone and states its persona, so the mix is visible only in the playlist; confirm with ITU that this is acceptable, or that 5.9–5.10 should be signposted as the Strategist's close of KP2. Two consequences of the retirement to confirm: ToR §4.4 (sector portability) is now claimed by 5.10 alone, and ToR §4.7 (dissemination outline) is delivered by the GitBook home page's four role-paths and the KP2 intro video's storyboard rather than by a subtopic video.
+
+### 5.6 Alignment to the source method (v0.3)
+
+v0.3 aligns Topic 5 to the interoperability method behind KP2. 5.1 now uses the method's phase names (Foundation, Pilot and Validation, Expansion, Optimisation) and deliverables, states the honest calendar — the four build phases follow twelve to eighteen months of foundation work; the first cross-ministry once-only exchange lands in Phase 2; the first milestone is two to three years from programme start; national coverage four to six — and delivers the five plan artefacts (schedule, investment plan, procurement plan, workforce plan, risk register with success metrics). This replaces v0.1's 'first real exchange inside the first six months', which the Progressa demonstration achieves in a sandbox but a national programme does not; the KP2 intro storyboard is adjusted to match. 5.4 adds the conformance test as the gate before a member's first service; 5.6 the dual go-live approval; 5.8 the quarterly compliance review and reporting cadence; 5.10 the usual wave order of sectors. Confirm with ITU that the honest calendar is the framing to carry in the videos — it is the most-changed claim in v0.3.
+
+### 5.7 Corrections from the 10 September script-vs-pack review (v0.4)
+
+v0.4 carries items 1–5 of KP2_M5_Script_vs_Pack_Review_2026-09-10 §2: MoEYS/PEMIS retired — the four Security Servers are PDGA as the owner plus PNEA, PLR and PNIA (5.4, 5.5); 5.4's mechanism is admission → validation → the join running itself, with the wrong-member-code lesson now caught by the validator; 5.5 adds OCSP/TSA and the explicit approval on the Central Server; 5.3's SLA belongs to a published service, so a consumer-only member signs none; 5.2's requirements travel in the join request. The hosting line now reads 'a single host — a laptop or one VM — in sandboxed containers', which is true of the demonstration as built and stays true whichever way the Tuesday hosting decision goes. Still pending: item 6, the development-track and message-log-retention points in 5.7. 5.4 and 5.5 keep their drawn slides in v0.4; their demo blocks follow once the 5.6 pilot is reviewed.
+
+### 5.8 Demo evidence as an element type (5.6 pilot)
+
+5.6 is rebuilt screen-led: seven of its eleven slides are demo evidence recorded from the running federation by the build pack's capture run, never redrawn, each carrying a caption strip and a provenance line (the X-Road version, the pack commit and the capture date). Two kinds sit inside the text-only rule as written — the text captures on slides 8 and 9 (the assembled application, the acceptance summary). The other two kinds are pixels: screen-only voice-over is allowed (§4.3) but these are not text-only slides (§3.i). The item for ITU is whether this element type is acceptable, decided on exactly these: five screen frames — the form before the call (slide 3), the form after it (slide 4), the layer view with what PNIA withholds (slide 5), the same request from two callers (slide 6), and the still of the permission clip (slide 7) — and one clip, the ~18-second withdrawal and restoration of PNEA's grant on the identity service (slide 7). The pilot video answers ITU's earlier question (5.3, item 3): a recorded screencast of a real call on the sandbox, with the permission break as the proof it is not a mock.
+
+### 5.9 The demo videos after the pilot (v0.5)
+
+Four items for ITU. (1) 5.4 is retitled 'Admit a member to the bus' (was 'Register a member on X-Road'): the video now shows admission, validation and the join running itself, of which registration is one step; the number stays 5.4. (2) Demo evidence now also appears in 5.4 (three screen frames, one step-cut clip composited inside the slide, two text slides), 5.5 (four text captures) and one reveal each in 5.2, 5.3 and 5.7 (text rows) — the element type raised in 5.8 above, applied more widely; every frame is cropped to its card so it reads at phone width. (3) 5.5's timing slide shows the deploy's own measurement from the recorded run; the capture's takes.json records which deploy it came from. (4) The un-join (Exercise 4) is recorded too but is GitBook material, not a video slide.
+
+## 6. Annex — aggregate external-link list
+
+Compiled across the ten subtopics for ITU's video production pipeline. To be split per subtopic and inserted into the corresponding YouTube descriptions.
+
+| Subtopic | Sources referenced |
+| --- | --- |
+| 5.1 | Estonia X-Road build-out (cost and timeline benchmark); ITU DPI Safeguards (investment guidance); NIIS X-Road implementation guidance. |
+| 5.2 | NIIS X-Road member requirements and onboarding (niis.org); EU EIF. |
+| 5.3 | NIIS X-Road service-level / SLA guidance; the member obligations (Module 3); EU EIF. |
+| 5.4 | NIIS X-Road member and subsystem registration; access-control list configuration (niis.org); the Linkup demonstration federation. |
+| 5.5 | NIIS X-Road federation — Central Server, Security Server, configuration and Test CA (niis.org); the Linkup demonstration federation. |
+| 5.6 | PAERA v1.0 §5.2 Principle #5 (Once-Only); NIIS X-Road; the build-pack acceptance check. |
+| 5.7 | NIIS X-Road production and operations guidance; ITU DPI Safeguards. |
+| 5.8 | NIIS X-Road monitoring and operational logs (niis.org); the Linkup federation (ITU cloud); ITU DPI Safeguards. |
+| 5.9 | The deliverables of this knowledge product — the decree (Module 2), the Governance Pack (Module 3), the standards portfolio (Module 4); EU EIF. |
+| 5.10 | Terms of Reference §4.4 (sector portability); the EU EIF four-layer model; PAERA v1.0 §3.4.3 (interoperability framing). |
+
+All references are publicly accessible and verifiable. The Tuesday review may add or refine items based on ITU's preferred citation style for the YouTube channel.

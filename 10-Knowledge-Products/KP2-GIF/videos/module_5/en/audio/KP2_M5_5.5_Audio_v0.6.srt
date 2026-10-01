@@ -1,0 +1,232 @@
+1
+00:00:00,150 --> 00:00:03,390
+We are trying to connect massive government data sets in your ministry, right?
+
+2
+00:00:03,610 --> 00:00:08,690
+Mm-hmm. But this environment relies on a surprisingly small set of single purpose components.
+
+3
+00:00:08,930 --> 00:00:09,930
+Why is that necessary?
+
+4
+00:00:10,790 --> 00:00:16,650
+Well, what's fascinating here is that strictly limiting each component's function actually isolates the risk.
+
+5
+00:00:17,310 --> 00:00:20,570
+It establishes trust through three core components.
+
+6
+00:00:21,170 --> 00:00:22,130
+Okay, what is the first one?
+
+7
+00:00:22,970 --> 00:00:26,890
+First is the central server. So this is operated by the federation owner.
+
+8
+00:00:27,190 --> 00:00:28,870
+Right, like the master registry.
+
+9
+00:00:29,350 --> 00:00:31,650
+Exactly. The registry of members and services.
+
+10
+00:00:32,490 --> 00:00:34,890
+Every single other server has to check with it.
+
+11
+00:00:35,770 --> 00:00:40,070
+Then second, you have the Test CA, or Test Certificate Authority.
+
+12
+00:00:40,890 --> 00:00:42,710
+And that acts as the trust anchor, right?
+
+13
+00:00:42,830 --> 00:00:43,790
+Issuing the certificates.
+
+14
+00:00:44,270 --> 00:00:46,770
+Yeah, because trust requires a synchronized timeline.
+
+15
+00:00:47,710 --> 00:00:50,910
+A tamper-proof clock basically stamping every interaction.
+
+16
+00:00:51,790 --> 00:00:53,990
+Ah, so you can prove exactly when a request was made.
+
+17
+00:00:54,350 --> 00:00:54,750
+You got it.
+
+18
+00:00:55,570 --> 00:00:58,050
+And finally, there are the security servers.
+
+19
+00:00:58,610 --> 00:01:02,690
+These are the dedicated gateways that really carry the trust burden at each edge.
+
+20
+00:01:03,490 --> 00:01:09,050
+Meaning the federation owner gets one, and then members like the identity authority or the learner registry, they get their own.
+
+21
+00:01:09,410 --> 00:01:11,890
+Yes, exactly. The examination authority too.
+
+22
+00:01:12,430 --> 00:01:14,430
+They each sit behind their own dedicated gateway.
+
+23
+00:01:15,490 --> 00:01:18,710
+Wait, so you cannot just power everything on simultaneously, right?
+
+24
+00:01:18,770 --> 00:01:22,350
+It requires a pretty strict sequential recipe to actually establish that trust.
+
+25
+00:01:22,410 --> 00:01:22,510
+So
+
+26
+00:01:23,170 --> 00:01:24,910
+what is that exact sequence?
+
+27
+00:01:25,210 --> 00:01:26,330
+It is very strict.
+
+28
+00:01:27,030 --> 00:01:29,630
+Standing it up is a measured runbook exercise.
+
+29
+00:01:30,310 --> 00:01:32,430
+You have to do it explicitly in this order.
+
+30
+00:01:32,710 --> 00:01:33,470
+Okay, lay it out for me.
+
+31
+00:01:34,170 --> 00:01:36,170
+So you start with the central server. Got it.
+
+32
+00:01:36,690 --> 00:01:37,890
+Then the Test CA,
+
+33
+00:01:38,749 --> 00:01:39,910
+then the members on the registry,
+
+34
+00:01:40,610 --> 00:01:41,150
+then the anchor.
+
+35
+00:01:41,910 --> 00:01:43,170
+Right, so the foundations are set.
+
+36
+00:01:43,570 --> 00:01:43,970
+Exactly.
+
+37
+00:01:44,650 --> 00:01:46,030
+Then each security server,
+
+38
+00:01:46,790 --> 00:01:49,930
+and its certificate and registration have to be approved on the central server.
+
+39
+00:01:50,270 --> 00:01:53,170
+Makes sense. And then finally, the services and the grants.
+
+40
+00:01:53,630 --> 00:01:58,350
+So when you actually run this build pack from zero, what are the tangible results we see on screen?
+
+41
+00:01:59,230 --> 00:02:02,830
+We can break the live deployment down into four distinct observations.
+
+42
+00:02:03,070 --> 00:02:03,990
+Okay, what is the first?
+
+43
+00:02:04,610 --> 00:02:07,710
+First, you will see six containers are all healthy.
+
+44
+00:02:08,130 --> 00:02:12,370
+That is one central server, one Test CA, and four security servers.
+
+45
+00:02:12,910 --> 00:02:15,190
+Wow, okay. And the second observation.
+
+46
+00:02:15,910 --> 00:02:18,890
+Second, you see that the deployment is incredibly measured.
+
+47
+00:02:19,310 --> 00:02:24,590
+It takes about a hundred seconds until healthy, and six and a half minutes from zero to a running federation.
+
+48
+00:02:25,210 --> 00:02:28,410
+Six and a half minutes. Right. That is fast.
+
+49
+00:02:28,630 --> 00:02:28,790
+Right.
+
+50
+00:02:29,410 --> 00:02:33,050
+Third, you see three members securely behind their own security servers.
+
+51
+00:02:33,450 --> 00:02:37,650
+That is the learner registry, the examination authority, and the identity authority.
+
+52
+00:02:38,130 --> 00:02:40,050
+Nice. And the fourth observation.
+
+53
+00:02:40,550 --> 00:02:48,270
+Fourth, everything is exact. Clients are registered, grants explicitly allow only the right authorities, and monitoring is running.
+
+54
+00:02:48,970 --> 00:02:49,790
+So what does this all mean?
+
+55
+00:02:50,650 --> 00:02:55,230
+It means the bus exists. It is ready to carry real calls between your ministry's departments.
+
+56
+00:02:55,610 --> 00:02:57,950
+Yeah. Preventing your systems from becoming
+
+57
+00:02:58,670 --> 00:03:01,970
+locked into one supplier or, you know, costly to change.
+
+58
+00:03:02,410 --> 00:03:02,890
+Exactly.
+

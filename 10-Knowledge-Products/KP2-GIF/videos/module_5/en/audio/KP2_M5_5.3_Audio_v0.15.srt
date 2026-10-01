@@ -1,0 +1,264 @@
+1
+00:00:00,150 --> 00:00:03,910
+My instinct is to view the connection itself as the finish line.
+
+2
+00:00:04,430 --> 00:00:09,890
+Like, if you've successfully linked the APIs, and data is actively flowing across your program,
+
+3
+00:00:10,610 --> 00:00:13,550
+isn't the problem technically solved? Well, no.
+
+4
+00:00:13,750 --> 00:00:13,770
+Mm-hmm.
+
+5
+00:00:13,770 --> 00:00:19,810
+Because, um, being functional under ideal conditions is not the same as being dependable under stress.
+
+6
+00:00:20,030 --> 00:00:21,250
+Right. That makes sense.
+
+7
+00:00:21,690 --> 00:00:29,070
+In a governance framework, just stating that a digital service provider meets service levels is, uh, essentially just a wish.
+
+8
+00:00:29,250 --> 00:00:30,170
+A wish without teeth.
+
+9
+00:00:30,550 --> 00:00:36,330
+Exactly. Without an SLA, the operating authority, the body governing the infrastructure, has no teeth at all.
+
+10
+00:00:36,670 --> 00:00:41,030
+The SLA is the mechanism that turns that wish into an enforceable commitment.
+
+11
+00:00:41,510 --> 00:00:46,970
+Which prevents your systems from becoming, you know, fragmented or siloed when things inevitably go wrong.
+
+12
+00:00:47,190 --> 00:00:48,350
+Yes, exactly.
+
+13
+00:00:48,970 --> 00:00:54,590
+So if a general commitment is just a wish, what are the actual levers the operating authority can pull?
+
+14
+00:00:54,950 --> 00:00:58,210
+I mean, what are the tangible metrics you can actually plan around?
+
+15
+00:00:58,750 --> 00:01:01,510
+Well, it boils down to five distinct operational levers.
+
+16
+00:01:01,750 --> 00:01:04,850
+Number one is availability, and number two is response time.
+
+17
+00:01:05,390 --> 00:01:08,970
+Okay, so availability, that's just, um, whether the server's on, right?
+
+18
+00:01:09,410 --> 00:01:12,810
+Not exactly. It's a strict committed uptime percentage.
+
+19
+00:01:13,290 --> 00:01:13,650
+Oh, wow.
+
+20
+00:01:14,370 --> 00:01:17,030
+So if I demand ninety-nine point nine percent availability,
+
+21
+00:01:17,730 --> 00:01:20,549
+you have to completely change your engineering to hit that.
+
+22
+00:01:21,210 --> 00:01:26,570
+You hit the nail on the head. The target dictates the engineering, and that ties directly into response time.
+
+23
+00:01:26,950 --> 00:01:32,150
+Because if a system is technically up, but it takes two full minutes to return a data query...
+
+24
+00:01:32,590 --> 00:01:36,270
+It will stall your minister's objectives just as effectively as a total outage.
+
+25
+00:01:36,470 --> 00:01:37,130
+Right. Yeah.
+
+26
+00:01:38,310 --> 00:01:40,470
+Okay, so that covers the performance side.
+
+27
+00:01:40,770 --> 00:01:45,390
+But what about the operational side? When the system does fail, how do these metrics protect you?
+
+28
+00:01:46,090 --> 00:01:47,850
+That's where the final three levers come in.
+
+29
+00:01:48,190 --> 00:01:51,210
+Number three, support hours. Number four, incident response.
+
+30
+00:01:51,650 --> 00:01:53,190
+And number five, change notice.
+
+31
+00:01:54,170 --> 00:01:55,210
+Okay. Support hours.
+
+32
+00:01:55,830 --> 00:01:59,230
+That dictates exactly when a human is at the desk to help.
+
+33
+00:01:59,530 --> 00:01:59,850
+Yes.
+
+34
+00:02:00,530 --> 00:02:02,790
+And incident response is your escalation protocol.
+
+35
+00:02:02,850 --> 00:02:07,670
+Like, who do you call upon a failure, and what is their mandatory acknowledgment speed?
+
+36
+00:02:07,970 --> 00:02:08,290
+Got it.
+
+37
+00:02:09,050 --> 00:02:12,230
+And change notice feels like the sleeper hit of the five.
+
+38
+00:02:12,850 --> 00:02:16,250
+I assume that's the warning time before a provider pushes a software update?
+
+39
+00:02:16,570 --> 00:02:19,730
+Exactly. So you aren't caught off guard and left with a broken dependency.
+
+40
+00:02:20,030 --> 00:02:20,190
+Right.
+
+41
+00:02:20,810 --> 00:02:26,090
+So those five numbers working together transform a mere technical connection into a true dependency
+
+42
+00:02:26,770 --> 00:02:28,630
+you can actually build a citizen service on.
+
+43
+00:02:28,850 --> 00:02:29,210
+They do.
+
+44
+00:02:29,950 --> 00:02:32,710
+But, I mean, let's look at the psychology of this for a second.
+
+45
+00:02:33,550 --> 00:02:39,510
+If we just hand these rigid targets to a provider saying they must resolve critical incidents in eight hours,
+
+46
+00:02:40,310 --> 00:02:43,750
+wouldn't they just quietly ignore targets they know they can't realistically hit?
+
+47
+00:02:44,250 --> 00:02:50,550
+Oh, absolutely. Setting numbers for a provider rather than with them practically guarantees failure.
+
+48
+00:02:51,170 --> 00:02:52,910
+Right, which creates a false sense...
+
+49
+00:02:53,290 --> 00:02:54,930
+A false sense of security. Exactly.
+
+50
+00:02:55,550 --> 00:03:00,270
+You're operating under the assumption you have a safety net, but that net isn't tied to anything.
+
+51
+00:03:00,830 --> 00:03:05,430
+An SLA that everyone quietly ignores is actually far worse than having no SLA at all.
+
+52
+00:03:06,290 --> 00:03:07,790
+So you have to co-create the numbers.
+
+53
+00:03:08,490 --> 00:03:11,850
+But aren't you just letting the provider set the bar artificially low then?
+
+54
+00:03:12,510 --> 00:03:20,170
+There is a tension there, for sure. But you establish realistic baselines together and then raise those expectations as the platform matures.
+
+55
+00:03:20,810 --> 00:03:25,530
+The policy briefing highlights a specific demonstration of a learner registry as the ideal standard here.
+
+56
+00:03:26,430 --> 00:03:32,490
+To give some context, a learner registry would be a centralized database for student educational records, so
+
+57
+00:03:33,210 --> 00:03:33,970
+very high stakes,
+
+58
+00:03:34,570 --> 00:03:35,530
+heavy daily traffic.
+
+59
+00:03:35,850 --> 00:03:36,410
+Exactly.
+
+60
+00:03:37,110 --> 00:03:39,650
+And in their signed SLA, they didn't just guess at numbers.
+
+61
+00:03:39,930 --> 00:03:44,170
+They mutually agreed to, uh, ninety-nine point five percent monthly availability.
+
+62
+00:03:44,330 --> 00:03:54,330
+Wow. Okay. Yeah. Strict weekday support hours, a one-hour incident acknowledgment time, resolution within eight hours, and a mandatory five business days notice before any plan
+
+63
+00:03:54,390 --> 00:03:54,770
+changes.
+
+64
+00:03:55,510 --> 00:04:02,410
+So those five mutually agreed upon levers are the exact difference between a platform that merely works in a controlled demo
+
+65
+00:04:03,090 --> 00:04:04,830
+and one you can actually trust.
+
+66
+00:04:05,450 --> 00:04:12,510
+They are. It takes high level governance obligations, forces them into engineered realities, and captures them in a template you can reuse.
+

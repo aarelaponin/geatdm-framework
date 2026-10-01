@@ -1,0 +1,10 @@
+POST /requests   # exercises.md §2, the member_requirements block
+{
+  "member_requirements": {
+    "has_security_server": true,
+    "has_registered_identity": true,
+    "standards_portfolio_adopted": true,
+    "data_conformant": true,
+    "technical_contact": "Head of IT, PTSB"
+  }
+}

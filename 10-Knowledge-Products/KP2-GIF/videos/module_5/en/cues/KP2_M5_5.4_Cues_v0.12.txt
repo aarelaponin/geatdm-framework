@@ -1,0 +1,25 @@
+# Slide cue file — KP2 Module 5, Video 5.4
+# Deck:  KP2_M5_5.4_Deck_v0.3.pptx (13 slides)
+# Audio: KP2_M5_5.4_Audio_v0.12.m4a (runs to 3:41.4) — v0.11 with the show-open cut by hand (20.7 s)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 1 Oct at KP1's bar — the 11th take on brief v0.3, the first with the demonstration block
+# whole: six observations, in order, each opened First…Sixth, none merged, all faithful (J6 drops
+# "listed on the bus"). Flaws: slide 4 (the six-cell flow) not narrated — held over a 15 s
+# transition; a badge/building metaphor on slide 3; slide 11 merges the third-party check with the
+# operator's suite and gives a lock-in rationale. LISTEN: the minute reference "RHI dash twenty
+# twenty-six" for RIHA-2026-001. Clip J3 composited inside slide 8.
+
+0:00.0 # slide 1 — title card
+0:04.0 # slide 2 — Everything so far was preparation. This step admits an agency.
+0:23.8 # slide 3 — Admission produces two configuration artefacts
+1:15.3 # slide 4 — One pattern for every member, wrapped in a repeatable process
+1:29.9 # slide 5 — First: a member code with a space is refused
+1:42.7 # slide 6 — Second: the request, and the diff it would write
+1:55.6 # slide 7 — Third: approve without a minute — refused
+2:07.8 # slide 8 — Fourth: the join runs itself, then proves the backend answers
+2:20.4 # slide 9 — Fifth: the admission record
+2:28.9 # slide 10 — Sixth: on the bus, hosted, and proved
+2:40.8 # slide 11 — Conformance is the gate between registration and going live
+3:23.9 # slide 12 — An agency is admitted by a validated request and a recorded decision — then
+3:37.4 # slide 13 — Sources

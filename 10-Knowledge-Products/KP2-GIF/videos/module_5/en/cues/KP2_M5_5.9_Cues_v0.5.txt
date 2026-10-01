@@ -1,0 +1,18 @@
+# Slide cue file — KP2 Module 5, Video 5.9 "Keep the documents honest — the consistency cross-check"
+# Deck:  KP2_M5_5.9_Deck_v0.2.pptx (7 slides)
+# Audio: KP2_M5_5.9_Audio_v0.5.m4a (runs to 3:22.3) — untrimmed; brief v0.2
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Accepted 30 Sep at KP1's bar — settled on runtime (3:22, under the 4:30 floor); the strongest of
+# three takes. Title read cold, all slides in order, the four drifts numbered, ends on the sources
+# line. Flaws: "our core mission here" at 0:07; the §3 vocabulary recited as content at 2:04; "ghost
+# committee", "waiting to blow up"; slide 5 drops "a direction, not an automatic edit".
+# LISTEN: the SRT reads "RAQUI" for RACI at 1:23.
+
+0:00   # slide 1 — title card
+0:17.0 # slide 2 — Three documents that must agree — and, left alone, drift apart
+0:58.3 # slide 3 — Drift is specific and predictable
+2:12.4 # slide 4 — Read the three together — before a reviewer does
+2:39.6 # slide 5 — The AI finds the drift — a person decides which is right
+3:07.4 # slide 6 — In one sentence
+3:18.3 # slide 7 — Sources

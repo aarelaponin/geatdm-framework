@@ -1,0 +1,20 @@
+GET https://ss-pnea:8443/r1/PROGRESSA/GOV/PNIA/IDENTITY/identity-api/persons/02831663233
+  -> 200  application/json
+  {
+    "nin": "02831663233",
+    "given_name": "Bakary",
+    "family_name": "Faal",
+    "date_of_birth": "2009-04-12",
+    "sex": "M",
+    "region": "Upper River"
+  }
+
+GET https://ss-pnea:8443/r1/PROGRESSA/GOV/PLR/ENROLMENT/enrolment-api/enrolments/02831663233
+  -> 200  application/json
+  {
+    "nin": "02831663233",
+    "school": "Basse Senior Secondary School",
+    "level": "Senior Secondary",
+    "enrolment_year": "2024",
+    "status": "active"
+  }
