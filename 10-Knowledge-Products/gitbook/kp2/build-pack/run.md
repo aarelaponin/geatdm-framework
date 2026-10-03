@@ -6,7 +6,7 @@ icon: play
 # Run it — the run book
 
 {% hint style="info" %}
-**Copied from the build pack.** This page is [`runbook.md`](https://github.com/alaponin/gif-linkup-demo/blob/main/runbook.md) in the [gif-linkup-demo](https://github.com/alaponin/gif-linkup-demo) repository as it stands, with a header; the repository is the source and this page is regenerated from it. Paths in backticks are relative to the repository root.
+**Copied from the build pack.** This page is `runbook.md` in the [gif-linkup-demo](https://github.com/alaponin/gif-linkup-demo) repository as it stands, with a header; the repository is the source and this page is regenerated from it. Paths in backticks are relative to the repository root.
 {% endhint %}
 
 
