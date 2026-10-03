@@ -1,0 +1,169 @@
+# specimen, not yet run
+#
+# The service description of Progressa's learner registration, written in the terms of the
+# GovStack Registration Building Block specification, default edition (site label "23Q4",
+# version history to 1.0), https://specs.govstack.global/registration.
+#
+# This is a specimen for KP3 Module 2, subtopics 2.3 to 2.6. It is not the build. It has not been
+# imported into any product and no check has been run on it. The specification defines no format
+# for a service description (REG §6.3.2.10, REG §8.3), so this file uses the specification's own
+# terms; the build rewrites it in the format of the product it chooses, names that product and
+# format below, and replaces this specimen with the file as built once its checks have passed.
+# Configurations covered: R1, R2, R3, R4, R5, R6, R7, R8, R9, R10 (KP3 outline v0.3, section 5).
+
+status: specimen, not yet run
+implements:
+  specification: GovStack Registration Building Block
+  edition: default edition, site label 23Q4, version history to 1.0
+product: not chosen — the build names it (outline v0.3, section 5, "the product and the format of the descriptions")
+format: not chosen — the build names it; this specimen is written in the specification's terms only
+
+# R1 — the service and its one registration (REG §6.3.1.1, REG §6.3.1.3, REG §7.2.1, REG §7.2.2)
+service:
+  name: Progressa learner registration
+  registrations: [learner-registration]
+
+institutions:
+  - id: PLR
+    name: Progressa Learner Registry
+    note: >-
+      A member of Linkup since KP2, with one enrolment service. KP3 sets up the authoritative
+      learner register behind it; that register is the one this service writes to (R8).
+
+registrations:
+  - id: learner-registration
+    name: Learner registration
+    entity_in_charge: PLR
+
+    # R2 — subjects and determinants (REG §6.3.1.4, REG §6.3.1.10, REG §7.2.12)
+    subjects:
+      option: mandatory for specific subjects
+      determinant: school-age-learner
+    determinants:
+      - id: school-age-learner
+        rule: the learner is aged three or older and is entering a Progressa school
+      - id: transfers-from-another-school
+        rule: the learner transfers from another school
+        source_field: transfers_from_another_school
+
+    # R3 — data, documents and result (REG §6.3.1.5, REG §6.3.1.6, REG §6.3.1.8,
+    #      REG §7.2.8, REG §7.2.9, REG §7.2.10)
+    data:
+      - { name: given_names, type: text, required: true }
+      - { name: family_name, type: text, required: true }
+      - { name: date_of_birth, type: date, required: true }
+      - { name: school, type: catalogue, required: true, catalogue: progressa-schools }
+      - { name: grade, type: number, required: true }
+      - { name: transfers_from_another_school, type: selector, required: true, values: [yes, no] }
+      - name: pnia_service_identifier
+        type: text
+        required: true
+        filled_by: the sign-in action of R6, from the claim "sub" PNIA releases to this service
+        note: the identifier PNIA gives to this one service; never the national number
+    documents:
+      - name: transfer letter from the previous school
+        option: has to be uploaded
+        determinant: transfers-from-another-school
+    fees: none — learner registration carries no fee (REG §6.3.1.7 is not used)
+    result:
+      name: registration confirmation
+      carries: the learner's register number, given by the learner register
+      template: a confirmation document filled from the service's fields (REG §6.3.1.11)
+
+# R4 — the applicant's screens in order (REG §6.1.2, REG §6.3.2.1, REG §6.3.2.2, REG §7.2.3)
+application_file:
+  screens:
+    - { name: guide, active: true }
+    - name: applicant form
+      active: true
+      fields: [given_names, family_name, date_of_birth, school, grade, transfers_from_another_school, pnia_service_identifier]
+      actions: [pnia-sign-in]
+    - { name: documents, active: true }
+    - { name: payment, active: false, reason: no fee }
+    - { name: send, active: true }
+
+# R5 — field rules and the completeness control (REG §6.3.3.1, REG §6.3.3.3)
+controls:
+  field_rules:
+    - field: date_of_birth
+      rule: older than age 3 on the first day of the school year
+      message: "The learner must be at least three years old on the first day of the school year."
+    - field: grade
+      rule: number, min 1, max 13
+      message: "Choose a grade between 1 and 13."
+    - field: transfer letter from the previous school
+      rule: file type pdf or jpg; size at most 5 MB
+      message: "Upload the transfer letter as a PDF or JPG file of 5 MB or less."
+  completeness:
+    on: send
+    rule: every required field filled and every required document uploaded
+    message: "The application cannot be sent. Missing: {the list of missing items}."
+
+# R6 — the check against the identity authority, built the published way, with the person present
+#      (REG §6.3.3.2, REG §6.3.2.7; GovStack Identity specification, Version 2.0, ID §9.1.1, ID §7.2.1)
+actions:
+  - id: pnia-sign-in
+    trigger: the button "Sign in with PNIA" on the applicant form
+    kind: sign-in through PNIA's OpenID Connect interface, with the person present
+    claims_requested: [sub, name]
+    on_response:
+      store: { sub: pnia_service_identifier }
+      compare:
+        typed: [given_names, family_name]
+        released: name
+        on_mismatch: "refuse, with the message: The name does not match the name held by PNIA."
+    never_requested: the national identification number
+    note: >-
+      The server-to-server form of this check rests on an interface the Identity specification
+      requires (ID 6.2-r2) but does not publish (ID §8). PNIA's one service on Linkup is a read of
+      a person by national number, a Progressa contract from KP2 that only the examination
+      authority may call. It is not used here; if the build can offer only that read, the
+      configuration file says so and names it as Progressa's own contract.
+
+# R7 — the processing roles and their order (REG §6.2.3, REG §6.3.2.3, REG §6.3.2.4, REG §7.2.5, REG §7.2.6)
+processing:
+  roles:
+    - id: file-check
+      name: Check of the file as sent
+      kind: automated
+      institution: PLR
+      position: 1
+      statuses: { approved: registrar, rejected: end, send_back: applicant }
+    - id: registrar
+      name: Registrar of PLR
+      kind: human
+      institution: PLR
+      position: 2
+      decisions: [approve, reject, send back for correction]
+      statuses: { approved: register-write, rejected: end, send_back: applicant }
+    - id: register-write
+      name: Write to the learner register and issue the confirmation
+      kind: automated
+      institution: PLR
+      position: 3
+      actions: [write-learner-record, issue-confirmation]
+      statuses: { approved: end }
+
+  # R8 — the write to the learner register on final approval, as an action of an automated role
+  #      (REG §4.2, REG §6.3.2.7; Digital Registries, Version 3.0-alpha, DRS-33, DR §8.1).
+  #      The Registration specification publishes no sequence and no data for this write
+  #      (REG §9.2.2): it is the team's own joining of two published contracts.
+  #      The field mapping is in write-mapping.yaml.
+  register_write:
+    action: write-learner-record
+    runs_after: the registrar's approval, and never before it
+    call: "the learner register's create-or-update operation (DR §8.1: POST /data/{registryName}/{versionNumber}/updateOrCreate)"
+    through: an Information Mediator or secure API gateway (REG §5.1.4); in Progressa, Linkup
+    mapping: write-mapping.yaml
+    on_refusal: the file stays with the register-write role and is not closed
+
+# R9 — the statistics of applications processed (REG §8.3, "Statistics")
+statistics:
+  read_through: GET /data/statistics
+  by: [operator, registration, service, date]
+
+# R10 — the service as an exportable description (REG §6.3.2.10, REG §6.3.1.2, REG §6.3.2.9)
+export:
+  holds: [user interfaces, screens, fields, process flow, service settings]
+  not_exported: settings that belong to one installation, made in each installation
+  preview_before_publishing: [each screen, the full service, the full service in a test installation]

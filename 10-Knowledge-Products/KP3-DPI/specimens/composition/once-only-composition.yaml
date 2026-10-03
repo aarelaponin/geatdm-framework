@@ -1,0 +1,166 @@
+# specimen, not yet run
+#
+# The composition of Progressa's first proof on the data exchange layer (KP3 Module 5; configurations
+# X1, X2, X3, X5, X6 and X7), written in the terms of:
+#   - GovStack Information Mediator Building Block specification, version 1.1.1 — the data elements of
+#     section 7.2 (Member, Application, Service) and the requirements of sections 6.2, 6.3,
+#     6.5 (Logging Services), 6.6, 8.1 and 8.6.2;
+#   - NIIS X-Road, release 7.7.0 — Security Server User Guide (UG-SS) sections 6.1.2, 7, 11, 14.2 and 15;
+#   - GovStack Digital Registries specification, "Version 3.0-alpha; June 2026" — DRS-33 and sections 8.1 and 8.2;
+#   - GovStack Payments specification, "Version 3.0; December 2025" — section 5.1.14.
+#
+# Nothing in this file has been applied to any installation, and none of its checks has run. The data
+# exchange federation it describes, Linkup, does not run on the date of writing (1 October 2026).
+# When the build exists, the file as built replaces this one; the build pack's manifest names its path
+# as KP3-build-pack/configs/_compose/3.5-once-only.yaml. Every value marked [confirm: ...] is the
+# build's choice and is not invented here. The request and response bodies of every operation named
+# below are defined in the publishers' OpenAPI files, which the build pins at a named commit before
+# any field name is relied on.
+#
+# What this file does not do: it does not define the steps of the registration or map identity fields
+# into a registration record. Both are outside the Information Mediator, by its section 4 (Out-of-scope
+# requirements), and are held by the registration service, in once-only-sequence.yaml (X4).
+
+specimen:
+  status: "specimen, not yet run"
+  module: "KP3 Module 5 — Join the blocks and prove the foundation"
+  subtopics: ["5.1", "5.2", "5.5"]
+  implements:
+    - "GovStack Information Mediator Building Block 1.1.1"
+    - "NIIS X-Road 7.7.0"
+
+# ---------------------------------------------------------------------------------------------
+# The federation as KP2 left it. Not changed by KP3. Identifiers as KP2's build pack gives them
+# (KP2-GIF/KP2-build-pack/manifest.yaml, "identifiers").
+# ---------------------------------------------------------------------------------------------
+federation:
+  name: Linkup
+  instance: PROGRESSA
+  owner: PROGRESSA/GOV/PDGA            # operates the federation and sets its technical rules
+  members_since_kp2:
+    - id: PROGRESSA/GOV/PNEA:EXAMS     # the examination authority; the caller of both services below
+    - id: PROGRESSA/GOV/PLR:ENROLMENT  # the learner registry
+      services:
+        - code: enrolment-api          # one enrolment service, a read
+          allowed: [PROGRESSA/GOV/PNEA/EXAMS]
+    - id: PROGRESSA/GOV/PNIA:IDENTITY  # the identity authority
+      services:
+        - code: identity-api           # a read of a person by national number: a Progressa contract from KP2,
+          allowed: [PROGRESSA/GOV/PNEA/EXAMS]  # not the published Identity interface
+  not_a_member: [MoEYS]                # the ministry of education
+
+# ---------------------------------------------------------------------------------------------
+# X1 — the registration service as a member, with a registered application
+# Information Mediator 1.1.1: section 6.2 (registering a member and an application, which the
+# administrator verifies and accepts); section 7.2.1 (Member: class, code); section 7.2.2
+# (Application: code, connection_type). Check X1: section 8.2.1 (listClients).
+# ---------------------------------------------------------------------------------------------
+X1:
+  member:
+    class: GOV
+    code: "[confirm: member code of the body in charge of the learner registration service]"
+  application:
+    code: "[confirm: application code of the learner registration service]"
+    connection_type: https
+  security_server: "[confirm: the registration service's own security server]"
+
+# ---------------------------------------------------------------------------------------------
+# X2 — a write service on the learner register, registered with its OpenAPI contract
+# Information Mediator 1.1.1: section 6.2 (a service is registered with an OpenAPI 3.0 description);
+# section 7.2.3 (Service: code, description_url, service_url, ACL). Digital Registries 3.0-alpha:
+# DRS-33 (create, read, update, delete, and create or update, through Open API services);
+# section 8.1 (the create-or-update operation); section 8.2 (the exists operation).
+# X-Road 7.7.0, UG-SS section 6.1.2: a REST service added from an OpenAPI 3 description starts disabled.
+# Check X2: Information Mediator section 8.2.2 (listMethods, getOpenApi), then a write and DR "exists".
+# ---------------------------------------------------------------------------------------------
+X2:
+  provider: "PROGRESSA/GOV/PLR:[confirm: the application of the learner register set up in Module 3]"
+  service:
+    code: "[confirm: service code of the register's write service]"
+    description_url: "[confirm: address of the register's OpenAPI description, from the publisher's contract file pinned at a named commit]"
+    service_url: "[confirm: address of the register's service behind PLR's security server]"
+    ACL: see X3
+  operations:
+    write: "POST /data/{registryName}/{versionNumber}/updateOrCreate"   # Digital Registries 3.0-alpha, section 8.1
+    confirm: "POST /data/{registryName}/{versionNumber}/exists"         # Digital Registries 3.0-alpha, section 8.2
+  enabled_after: "the grant of X3 is set"                               # UG-SS 6.1.2: added in disabled state
+
+# ---------------------------------------------------------------------------------------------
+# X3 — the grants of access to the registration service
+# Information Mediator 1.1.1: section 6.2 (the provider decides whether a consumer may access its
+# service); section 8.6.2 (the allow list). X-Road 7.7.0: UG-SS section 7 (access rights at service
+# or endpoint level). Check X3: the call with the grant is answered; the same call from a member
+# without a grant is refused (on Linkup, the fault Server.ServerProxy.AccessDenied).
+# ---------------------------------------------------------------------------------------------
+X3:
+  grants:
+    - on: "the register's write service (X2)"
+      allowed: ["the registration service (X1)"]
+      level: "[confirm: service level or endpoint level]"
+    - on: PROGRESSA/GOV/PNIA/IDENTITY/identity-api
+      allowed: ["the registration service (X1)"]
+      only_if: >-
+        the build shows a pre-fill from server to server. That read by national number is a Progressa
+        contract from KP2, beyond the published Identity interface, and is named as such wherever it is
+        shown. The published way to check a person is PNIA's sign-in through OpenID Connect, with the
+        person present, which does not pass through the data exchange layer.
+      used: "[confirm: yes or no, stated by the build]"
+
+# ---------------------------------------------------------------------------------------------
+# X5 — each call made through the caller's own security server
+# Information Mediator 1.1.1: section 6.3 (a request goes over HTTPS to the local security server);
+# section 8.1 (the path begins /r1/{instanceId}/{memberClass}/{member}/{application}/{service}/);
+# section 9.1 (the call is synchronous, signed, time-stamped and logged).
+# Check X5: the message-log records of check X4 show each request made to the caller's own server.
+# ---------------------------------------------------------------------------------------------
+X5:
+  path_form: "/r1/{instanceId}/{memberClass}/{member}/{application}/{service}/{path}"
+  write_call:
+    sent_to: "the registration service's own security server (X1)"
+    path: "/r1/PROGRESSA/GOV/PLR/[confirm: application]/[confirm: service]/data/{registryName}/{versionNumber}/updateOrCreate"
+  confirm_call:
+    sent_to: "the registration service's own security server (X1)"
+    path: "/r1/PROGRESSA/GOV/PLR/[confirm: application]/[confirm: service]/data/{registryName}/{versionNumber}/exists"
+
+# ---------------------------------------------------------------------------------------------
+# X6 — full message logging, and access to monitoring for whoever reads the evidence
+# Information Mediator 1.1.1: section 6.5 (Logging Services): a signed, time-stamped message log is
+# required; section 6.6 (operational monitoring carries no payload; a regular client sees only its
+# own records). X-Road 7.7.0: UG-SS section 11 (full logging can be used as evidence; metadata logging
+# cannot), 11.1.2 (message-body-logging), 14.2 (the traffic view depends on the operational monitoring
+# add-on), 15 (operational monitoring). Check X6: a message-log query shows a signed, time-stamped
+# record of each request and response of check X4.
+# ---------------------------------------------------------------------------------------------
+X6:
+  message_log:
+    setting: full logging
+    parameter: "message-body-logging = true"
+    on_security_servers:
+      - "the registration service's own security server (X1)"
+      - SS-PLR                                     # PLR's security server, as KP2's build pack names it
+      - "SS-PNIA, only if the grant on identity-api in X3 is used"
+  operational_monitoring:
+    addon: installed                               # without it there is no traffic view
+    readers:
+      - "PDGA, as owner of the federation: [confirm: owner of the security server or central monitoring client]"
+      - "[confirm: the auditor or other reader of the evidence, and the access granted]"
+
+# ---------------------------------------------------------------------------------------------
+# X7 — the Payments block as a member, publishing its own interface
+# Payments 3.0, section 5.1.14 (the block consumes and publishes its APIs as the Information Mediator
+# describes); Information Mediator 1.1.1, section 6.2. Supplied by Module 4 (configuration P7).
+# Check X7: listMethods for the block's member lists its published operations, and no operation of a
+# payment system in the market is listed as the block's.
+# ---------------------------------------------------------------------------------------------
+X7:
+  member:
+    class: GOV
+    code: "[confirm: member code of the body that runs the Payments block]"
+  application:
+    code: "[confirm: application code of the Payments block]"
+  publishes: "the Payments block's own interface, as configured in Module 4 (P7)"
+  behind_the_block: >-
+    the payer bank (configuration P6), through which the payment systems in the market are reached,
+    PayPro among them. They are reached by the block and are not registered on the data exchange layer.
+
+# Consent (CN1) and Messaging (MS1) are cited in subtopic 5.6 and are not built.

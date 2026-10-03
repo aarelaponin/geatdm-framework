@@ -7,13 +7,11 @@
 | Document | Video script bundle for Topic 2 of KP3 |
 | Version | v0.1 — aligned to ITU Knowledge Products and Video Materials Guide |
 | Date | 28 June 2026 |
-| Contract reference | RFQ-S-GIGA-2026-022 / Purchase Order #334304 (signed 24 April 2026) |
 | Topic persona | A (Architect) — DPI solution architect or ministry technical lead who configures, generates and stands up the building blocks |
 | Subtopics | Six subtopics (2.1 – 2.6), each shipped as one ~5-minute standalone video |
 | Topic runtime | Approximately 27 minutes across six standalone videos |
 | Build pack | KP3-DPI/KP3-build-pack — Topic 2 stands up the registration block (configs/registration/) |
-| Prepared by | FiscalAdmin OÜ — Aare Lapõnin (Engagement Lead) |
-| For review by | ITU/Giga at Tuesday weekly call; FiscalAdmin team (Karin Kaup, Arne Lapõnin) |
+| Prepared by | FiscalAdmin OÜ |
 
 This bundle is the v0.1 working draft of Topic 2 of KP3 — Education DPI Roadmap. Topic 1 framed the foundation and set the build order; Topic 2 is the first build module, where the work becomes hands-on. It stands up the Registration building block — the front door that captures a learner once, validates the record, and writes it to the registry — built to the published GovStack Registration specification and generated as configuration with Claude. The persona shifts from Strategist to Architect: the listener is the solution architect or technical lead who will configure and stand up the block, not only make the case for it. The register stays plain English, eighth-grade level; the public-sector outcome leads each subtopic. The six videos are numbered to ITU's topic/subtopic convention (2.1 through 2.6), each reworked to stand alone. All slide specifications follow ITU's text-only branding. Each subtopic carries an AI usage tip with a copy-paste Claude prompt that produces a real piece of the block's configuration. External references use the convention 'Find the link in the description'.
 

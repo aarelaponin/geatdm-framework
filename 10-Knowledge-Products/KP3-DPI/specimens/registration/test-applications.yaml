@@ -1,0 +1,50 @@
+# specimen, not yet run
+#
+# The test applications of KP3 Module 2, subtopic 2.4 (configurations R5 and R6), and the two
+# applications of the determinant check (configuration R2), for Progressa's learner registration,
+# progressa-learner-registration.service.yaml beside this file. Built for Progressa; every value
+# is invented for Progressa and taken from no country's records. No application has been sent to
+# any installation and no check has been run. The names below are those of an enrolled test person
+# that the build creates (configuration I7); they are placeholders until it exists.
+#
+# Sources: GovStack Registration specification, default edition, REG §6.3.3.1, REG §6.3.3.2,
+# REG §6.3.3.3, REG §6.3.2.7; GovStack Identity specification, Version 2.0, ID §9.1.1, ID §7.2.1.
+
+status: specimen, not yet run
+service: Progressa learner registration
+school_year_starts: 2026-09-01
+
+applications:
+  - id: A1
+    shows: rule on a field (REG §6.3.3.1)
+    data: { given_names: Test, family_name: Learner-One, date_of_birth: 2024-03-14, school: PS-0001, grade: 1, transfers_from_another_school: "no" }
+    expected: refused on date_of_birth — the learner would be two years old on 2026-09-01
+    message: "The learner must be at least three years old on the first day of the school year."
+
+  - id: A2
+    shows: comparison with the identity authority's record, with the person present (REG §6.3.3.2; ID §9.1.1, ID §7.2.1)
+    sign_in: the enrolled test person signs in with PNIA and approves sharing the claims sub and name
+    released_name: "{the enrolled test person's name, as PNIA releases it}"
+    data: { given_names: "{a given name that differs from the released name}", family_name: "{the released family name}", date_of_birth: 2015-06-02, school: PS-0001, grade: 5, transfers_from_another_school: "no" }
+    expected: refused on the name; the claim sub is held as pnia_service_identifier; no national number is requested or held
+    message: "The name does not match the name held by PNIA."
+
+  - id: A3
+    shows: completeness on sending (REG §6.3.3.3)
+    data: { given_names: Test, family_name: Learner-Three, date_of_birth: 2016-11-20, school: PS-0002, grade: 4, transfers_from_another_school: "yes" }
+    documents_uploaded: []
+    expected: sending blocked; the missing transfer letter is named on the send screen
+    message: "The application cannot be sent. Missing: transfer letter from the previous school."
+
+  - id: A4
+    shows: a correct application, which every check lets through
+    sign_in: the enrolled test person signs in with PNIA and approves sharing the claims sub and name
+    data: { given_names: "{the released given name}", family_name: "{the released family name}", date_of_birth: 2015-06-02, school: PS-0001, grade: 5, transfers_from_another_school: "no" }
+    expected: sent; one task appears for the first processing role (used again in subtopic 2.5)
+
+determinant_check:
+  shows: the determinant changes the required documents (REG §6.3.1.4, REG §6.3.1.10; check R2)
+  pair:
+    - { transfers_from_another_school: "yes", required_documents: [transfer letter from the previous school] }
+    - { transfers_from_another_school: "no", required_documents: [] }
+  expected: the two applications are asked for different documents

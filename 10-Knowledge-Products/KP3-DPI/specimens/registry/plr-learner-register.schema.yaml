@@ -1,0 +1,170 @@
+# specimen, not yet run
+#
+# The learner register of Progressa — schema specimen
+#
+# What this file is. A specimen of the schema file that sets up Progressa's learner register, written in the terms
+# of the GovStack Digital Registries Building Block specification, "Version 3.0-alpha; June 2026"
+# (https://specs.govstack.global/registries). It is written for Progressa, the fictional country of KP3; every
+# value in it is invented for Progressa and taken from no country.
+#
+# What it is not. It is not the build. No register has been created from it and no check has run on it. When the
+# build of the configurations sets the register up on the product it chooses, this file is replaced by the file as
+# built, which names that product and its format, and the checks named below are run on it.
+#
+# Configurations it shows (KP3 outline version 0.3, section 5): RG1 the register; RG2 its schema; RG3 the link from
+# each learner to a school; RG4 publication and versions; RG5 access rules; RG6 the audit log and the record of
+# personal-data use; RG8 the list of the register's services; RG12 the schema as an exportable file; RG13 deletion
+# that keeps the logical record. Taught in KP3 subtopics 3.3 and 3.7.
+#
+# Cited by requirement number and short title, because the edition is an early release whose numbers may change.
+
+specimen:
+  status: specimen, not yet run
+  implements: GovStack Digital Registries Building Block specification, Version 3.0-alpha; June 2026
+  product: to be named by the build            # stated in the file as built (outline, section 5, third setting)
+  format: >-
+    YAML in the terms of the specification (DRS-10 schema export, DRS-11 schema import); replaced by the
+    product's own export format, named here, when the product is chosen
+
+# RG1 — the register (DRS-1 Create Registries; DRS-28 create a registry through the API; DR §8.2 POST /database/modify)
+register:
+  name: Progressa Learner Register
+  short_code: plr-learners
+  metadata:
+    domain: education
+    owner_department: PLR, the Progressa Learner Registry
+    retention_policy: as the education act sets it; to be confirmed by the owner
+    classification: Restricted                    # Open / Restricted / Confidential (DRS-1)
+  lifecycle_state: Draft                          # Draft -> Published -> Archived (DRS-1)
+  storage_profile: row store                      # DRS-1, item 6
+
+# RG2 — the schema (DRS-3 Database Schema; DRS-17 field properties)
+# The key. The register keys on a learner number of its own. The national identity number is never a field: the
+# identity block keeps it secret (Identity 2.0, ID §4.1.1, ID 6.1-r11). Beside the learner number the register
+# stores the identifier the identity authority PNIA gives to the service when the learner or the parent signs in
+# with the person present (ID §4.1.2). It is not required, because a young child may have none yet.
+databases:
+  - name: learners
+    key: learner_number
+    fields:
+      - name: learner_number
+        type: Text
+        properties: { required: true, unique: true, read_only: true }
+        trigger: { on: create, action: create ID, prefix: "PLR-" }      # DRS-17 triggers
+      - name: pnia_service_identifier
+        type: Text
+        description: the identifier PNIA gives to the service for this person; never the national number
+        properties: { required: false, unique: true, personal_data: true }
+        marks: { personal_data_id: true }          # DRS-14 PersonalDataID mark — OPTIONAL in the edition; no check depends on it
+      - name: given_name
+        type: Text
+        properties: { required: true, max: 100, personal_data: true }
+        marks: { personal_data: true }             # DRS-13 personal-data mark — OPTIONAL in the edition
+      - name: family_name
+        type: Text
+        properties: { required: true, max: 100, personal_data: true }
+        marks: { personal_data: true }
+      - name: date_of_birth
+        type: Date
+        properties: { required: true, min: "1996-01-01", max: "2023-12-31", personal_data: true }
+        marks: { personal_data: true }
+      - name: sex
+        type: List of Values
+        values: [female, male]
+        properties: { required: true }
+      - name: school_code
+        type: Text
+        properties: { required: true }
+        link: { database: schools, field: school_code, kind: Foreign key, on_delete: Restrict delete }   # RG3
+      - name: grade
+        type: Number
+        properties: { required: true, min: 1, max: 12 }
+      - name: enrolment_date
+        type: Date
+        properties: { required: true }
+      - name: status
+        type: List of Values
+        values: [enrolled, transferred, left, completed]
+        properties: { required: true }
+      - name: guardian_pnia_service_identifier
+        type: Text
+        description: the identifier PNIA gives to the service for the parent or guardian, for delegated access (DRS-6)
+        properties: { required: false, personal_data: true }
+
+  # RG3 — the school each learner belongs to (DRS-2 Multiple Databases: a second database in the same instance,
+  # linked by foreign key; reference integrity rule: Restrict delete). Its records come from the ministry of
+  # education MoEYS, which owns the school data.
+  - name: schools
+    key: school_code
+    fields:
+      - name: school_code
+        type: Text
+        properties: { required: true, unique: true }
+      - name: school_name
+        type: Text
+        properties: { required: true }
+      - name: region
+        type: List of Values
+        values: [to be set from Progressa's list of regions]
+        properties: { required: true }
+
+# RG4 — publication and versions (DRS-4 Publishing and Versioning; DRS-30 publish through the API).
+# Each publication creates a new version of the schema and of the generated services; earlier versions stay
+# readable at GET /data/{registryName}/{versionNumber}.
+publication:
+  publish_on_approval_by: the register's owner
+  versioning: every publication is a new version; old versions remain available (DRS-4)
+
+# RG5 — access rules (DRS-6 Authorization and Access Control). C create, R read, U update, D delete.
+access:
+  - client: Progressa learner registration service      # the Registration block of KP3 module 2
+    databases: { learners: [C, R, U] }
+    fields: all
+  - client: any other client service
+    databases: { learners: [R] }
+    fields: [learner_number, school_code, grade, status]   # data minimisation: only the fields a reader needs
+  - client: parent or guardian, signed in
+    kind: delegated access
+    databases: { learners: [R] }
+    condition: guardian_pnia_service_identifier equals the signed-in person's identifier
+  - client: the register's analysts
+    databases: { learners: [R], schools: [C, R, U] }
+  - client: Anonymous
+    databases: {}                                  # no access
+
+# RG6 — the audit log and the record of personal-data use (DRS-7 Logging and Auditing; DRS-8 Personal Data usage;
+# DRS-35 the usage report as an API; DRS-37 each data owner sees who read their data; DR §8.2
+# GET /data/mypersonalDataUsage). The reader's location and device are optional in DRS-8; no check depends on them.
+logging:
+  schema_changes: true
+  data_processing: [create, read, update, delete]
+  personal_data_reads: true
+  personal_data_usage_report: { input: pnia_service_identifier, visible_to: [the data owner, the register's analysts] }
+
+# RG8 — the list of the register's services (DRS-34: every service and version, with a description and an example of
+# each field). The services are generated on each publication (DRS-5, DRS-31) and described in OpenAPI.
+service_list:
+  published_with: field descriptions and example values for every field
+  not_published_as_operations: [bulk operations, archive, event subscription]   # DRS-5 lists them; DR §8 has no operation
+
+# RG13 — deletion keeps the logical record (DR §5.2, govstack-bb-registries-cfr-data#req-7; DRS-21 data log view)
+deletion:
+  mode: soft
+  keeps: the logical record and its change log, unless the law mandates hard deletion
+
+# RG12 — the schema as an exportable file (DRS-10 export to JSON or YAML; DRS-11 import from JSON or YAML)
+export:
+  formats: [YAML, JSON]
+
+# The checks that will prove this file once it is built (specification analysis for the build, section 4.3):
+#   RG1  GET /databases lists the register; GET /database/{id} returns its schema, metadata and the state Published.
+#   RG2  A record without a required field is refused; a second record with the same learner number is refused;
+#        the check names the create operation it uses.
+#   RG3  A learner naming a school that does not exist is refused, as the rule Restrict delete with a foreign key sets.
+#   RG4  After a schema change and a new publication, both versions answer GET /data/{registryName}/{versionNumber}.
+#   RG5  An update from a read-only client is refused; the same update from the registration service succeeds.
+#   RG6  After one read of a learner's record, GET /data/mypersonalDataUsage shows the read, the reader and the time.
+#   RG8  The service list shows the register's services with field descriptions and examples.
+#   RG12 The exported schema, imported into a clean installation, gives a register whose GET /database/{id} equals this one's.
+#   RG13 After a deletion, the change log still shows the record's values and the deletion.
+# None of these has run.

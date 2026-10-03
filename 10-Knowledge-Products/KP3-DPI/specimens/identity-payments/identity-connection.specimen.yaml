@@ -1,0 +1,87 @@
+# specimen, not yet run
+#
+# The identity connection of Progressa's learner registration service to the identity block, written in the
+# terms of the GovStack Identity Building Block specification, "Version 2.0; December 2025",
+# https://specs.govstack.global/identity.
+#
+# This is a specimen for KP3 Module 4, subtopic 4.3, and the storyboard of its demonstration segment. It is not
+# the build. No client has been registered, no person enrolled and no check run. The specification names the
+# calls, the tokens, the scopes and the claims; the fields of the request bodies are defined in the publisher's
+# contract file, Identity-Provider.yaml, which the build fixes at a named commit before any configuration
+# depends on a field name. Every such field is marked [confirm]. Every address and value is a test value,
+# invented for Progressa, and marked [test].
+# Configurations covered: I1, I2, I3, I4, I5, I6, I7 (KP3 outline v0.3, section 5).
+
+status: specimen, not yet run
+implements:
+  specification: GovStack Identity Building Block specification
+  edition: "Version 2.0; December 2025"
+  interface: OpenID Connect, the verification interface of the published minimal set (ID §8, ID §8.1)
+  contract_file: "Identity-Provider.yaml, GovStack bb-identity repository [confirm: the commit the build fixes]"
+
+# The identity interface of the demonstration — a setting the build states (outline v0.3, section 5).
+# The published interface is taught from the specification. If the build offers only the read of a person by
+# national number that KP2 left, this line says so, and the demonstration shows that read under its own name,
+# as a contract of Progressa's beyond the published set; it is never presented as the GovStack interface.
+identity_interface_of_the_demonstration: "[the build states: the published OpenID Connect interface in PNIA's name, or KP2's read by national number only]"
+
+provider:
+  authority: PNIA                                              # Progressa National Identity Authority
+  issuer: "https://id.pnia.progressa.test"                     # [test] the iss of every token (ID §7.2.3)
+
+I1_client_registration:                                        # ID §8.1.1, ID §9.1.1, ID 6.8-r2
+  call: POST /client-mgmt/oidc-client
+  client_name: Progressa learner registration
+  owner: MoEYS                                                 # Progressa's ministry of education
+  redirect_addresses:
+    - "https://registration.moeys.progressa.test/sign-in/return"   # [test]
+  signing_key: >-
+    the service's public key, given to the block at registration [confirm: field name]; the private key stays
+    with the service and is named here only by its location: the key store of the registration service
+  returns: the client identifier, which must appear as the aud of every ID token the service accepts (check I3)
+
+I2_published_addresses:                                        # ID §8.1.1
+  configuration: "https://id.pnia.progressa.test/.well-known/openid-configuration"   # [test]
+  keys: "https://id.pnia.progressa.test/.well-known/jwks.json"                       # [test]
+
+I3_flow:                                                       # ID §9.1.1, ID §9.1.2
+  registration_form: with user claims          # the form needs attributes of the applicant (I4)
+  proof_of_the_person_only: without user claims, scope "openid"   # the lean flow; used by check I3
+  where_the_person_signs_in: >-
+    on the identity block's own screens; the browser carries the person there and back. Only the token call
+    and the user-information call pass from server to server (ID §9.1.1)
+
+I4_scopes_and_claims:                                          # ID §7.2.1, ID §7.2.2, ID 6.8-r8
+  scopes: [openid, profile]
+  claims_needed:
+    - claim: name
+      form_field: the applicant's full name
+    - claim: birthdate
+      form_field: the applicant's date of birth
+  not_requested: [address, email, phone]       # no field of the form needs them
+  note: >-
+    The profile scope covers more claims than these two. The person approves on the block's consent page what is
+    shared (ID §9.1.1), and the service uses only the two claims above [confirm: whether the provider lets a
+    client request single claims by name].
+
+I5_accepted_authentication:                                    # ID §7.2.3, ID §6.2
+  accepted_acr_values:                          # the country chooses which methods it offers (ID §6.2)
+    - "idbb:acr:generated-code"                 # OTP or TOTP
+    - "idbb:acr:biometrics-generated-code"      # biometrics and a one-time code
+    - "idbb:acr:linked-wallet-static-code"      # wallet and PIN or password
+  refused: any other value, including "idbb:acr:static-code" alone (PIN or password only)
+  list_set_by: "[the build states the methods PNIA offers; the service accepts only from those]"
+
+I6_identifier_kept:                                            # ID §4.1.1, ID §4.1.2, ID §7.2.1, ID 6.1-r11
+  kept: the sub of the ID token — the identifier the block gives to this service for this person
+  stored_in: >-
+    the learner register that KP3 sets up behind PLR, in the field pnia_service_identifier beside the
+    register's own learner_number (configuration RG2, specimens/registry/plr-learner-register.schema.yaml)
+  national_number: never requested, never received, never stored — it stays secret inside the block
+  register_mark: DRS-14, the mark for the data owner's identifier, is optional in Digital Registries 3.0-alpha, so the register's schema states it
+
+I7_test_person:                                                # ID §8.2, ID §9.2.1
+  call: PUT /enrollment, with the flag that finalises the enrolment in one step
+  person: "Test Person One"                     # [test] marked as a test person; never a real person
+  date_of_birth: "1988-03-15"                   # [test] an adult applicant, a parent applying for a learner
+  credential: a test credential for the one-time code method   # [test] named by its location in the test set-up, never copied here

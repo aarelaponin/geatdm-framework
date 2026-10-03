@@ -1,0 +1,74 @@
+# specimen, not yet run
+#
+# The payment connection of a Progressa scholarship test programme to the government's Payments block, written
+# in the terms of the GovStack Payments Building Block specification, "Version 3.0; December 2025",
+# https://specs.govstack.global/payments.
+#
+# This is a specimen for KP3 Module 4, subtopics 4.4 and 4.5, and the storyboard of the demonstration segment of
+# 4.5. It is not the build. No source has been configured, no beneficiary registered, no batch submitted and no
+# check run. The specification gives the fields of onboarding (PAY §7.1.1) and of the bulk payment (PAY §7.2.1);
+# the request bodies of the calls are defined in the contract files the specification links, which the build
+# fixes at a named commit before any configuration depends on a field name. Every field whose exact name lives
+# only in a contract file is marked [confirm]. Every account, code and amount is a test value, invented for
+# Progressa, and marked [test].
+# Configurations covered: P1, P2, P3, P4, P5, P6, P7 (KP3 outline v0.3, section 5).
+
+status: specimen, not yet run
+implements:
+  specification: GovStack Payments Building Block specification
+  edition: "Version 3.0; December 2025"
+  use_case: government-to-person bulk payment (PAY §9.1)
+
+P1_accepted_source:                                            # PAY §9.1.1
+  source: the Progressa learner registration service on the Registration block (MoEYS)
+  source_building_block_id: "MOEYS-REGISTRATION-TEST"         # [test] [confirm: field name in the contract file]
+  rule: the block validates the call's parameters and accepts it only from a source configured here
+
+P2_programme:                                                  # PAY §9.1.1, PAY §4.16, PAY §5.4
+  name: Progressa scholarship test programme
+  payer: MoEYS
+  payment_account: "the programme's test account at the payer bank"   # [test] named by the build
+  currency: "XTS"   # [test] the ISO 4217 code reserved for testing; the build sets the code of Progressa's currency
+  rule: each currency is processed on its own, without conversion; a beneficiary is paid only into an account in this currency
+
+P3_beneficiary_onboarding:                                     # PAY §8.1.2, PAY §7.1.1, PAY §9.1.1, PAY 6.3-r1
+  call: POST /identityAccountMapper/beneficiary
+  requestID: "REQ000000001"                    # [test] globally unique, String (12)
+  beneficiaries:
+    - payeeIdentity: "PLR-TEST-000001"         # [test] the functional identifier: the learner's number in the learner register, never the national number
+      paymentModality: "00"                    # 00 bank account (01 mobile money, 02 voucher, 03 digital wallet, 04 proxy)
+      bankingInstitutionCode: "TESTBANK001"    # [test] the beneficiary's bank
+      financialAddress: "TEST-ACCOUNT-0001"    # [test] the destination account
+  callback: "https://registration.moeys.progressa.test/payments/callback"   # [test] POST /callback, the answer of the account mapper
+  rule: the same functional identifier sent again by the same source is not registered twice
+  kept_out_of_the_register: the beneficiary's payment details stay in the account mapper, not in the learner register (PAY §4.3)
+
+P4_bulk_payment:                                               # PAY §8.1.4, PAY §7.2.1, PAY 6.4-r3
+  call: POST /batchtransactions
+  least_a_request_contains:                    # PAY 6.4-r3
+    payer_identifier: MoEYS scholarship test programme       # [test]
+    payee_identifier: "PLR-TEST-000001"                       # [test] the functional identifier of P3
+    amount: 1.00                                              # [test]
+    currency: "XTS"                                           # [test]
+    policy: "[confirm: the policy identifier of the programme, as the contract file names it]"
+    source_transaction_id: "MOEYS-TX-000001"                  # [test]
+  block_assigns: an instruction identifier to each payment of the batch (PAY §7.2.1, instructionID)
+  batch_size: one payment
+
+P5_status_route:                                               # PAY §8.1.4, PAY 6.11-r2
+  pushed_status_address: "https://registration.moeys.progressa.test/payments/status"   # [test] the callback for BulkPayment_StatusPush
+  single_payment_status_check: POST /api/v1/batch               # Payment_Status_Check, for one beneficiary
+  statuses: [success, failed, in progress]
+
+P6_payer_bank:                                                 # PAY §9.1.3, PAY §6.5, PAY §2, PAY §5.1.11
+  payer_bank: "[the build names the payer bank: the bank that holds the programme's account]"
+  executes: the payer bank executes the batch through the payment systems in the market
+  payment_system_behind_the_payer_bank: PayPro, Progressa's payment provider, one of the payment systems in the market
+  rule: the calling service calls no PayPro operation; the Payments block reaches PayPro only through the payer bank
+
+P7_transport_and_security:                                     # PAY §5.1.14, PAY §5.3.1, PAY 6.14-r6
+  publication: the Payments block's interface is published through the Information Mediator
+  transport: HTTPS for every call
+  authorisation: an authorisation token in the header of every request, verified by the block's gateway
+  messages: the messages about a payment are authenticated
+  caller_access_point: the caller's own security server on Linkup   # the Payments block as a member is configuration X7, module 5

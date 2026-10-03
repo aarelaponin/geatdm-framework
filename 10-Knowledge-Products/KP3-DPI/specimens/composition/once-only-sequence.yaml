@@ -1,0 +1,96 @@
+# specimen, not yet run
+#
+# The once-only sequence of Progressa's learner registration, as actions of the registration service
+# (KP3 Module 5, subtopics 5.2 and 5.3; configuration X4), written in the terms of:
+#   - GovStack Registration Building Block specification, default edition (site label "23Q4") —
+#     section 6.3.2 (the screen and flow builder pre-fills or captures data) and section 6.3.2.7
+#     (actions triggered by an event, which pull data from an external source through the Information
+#     Mediator or send data to one; a BOT role activates a data action);
+#   - GovStack Identity Building Block specification, "Version 2.0; December 2025" — section 9.1.1
+#     (verification with user claims: the person signs in on the block's own screens and approves the
+#     claims shared) and section 7.2.1 (the end-user claims; "sub" holds the identifier made for this
+#     relying party); requirement 6.3-r1 (a query of attributes is required, but section 8 publishes
+#     no interface for it);
+#   - GovStack Information Mediator 1.1.1 — section 4 (Out-of-scope requirements): defining the steps
+#     of a transaction, and mapping identity fields into a registration record, are outside the
+#     mediator) and section 9.1 (a mediated call is synchronous, signed, time-stamped and logged);
+#   - GovStack Digital Registries, "Version 3.0-alpha; June 2026" — sections 8.1 and 8.2.
+#
+# Nothing in this file has been applied to any installation, and its check (X4) has not run.
+# In the build, this sequence is not a separate file: it extends the registration service description
+# of Module 2, which already holds the write on approval (configuration R8), so that the sequence of
+# the service is kept in one place. Every value marked [confirm: ...] is the build's choice.
+
+specimen:
+  status: "specimen, not yet run"
+  module: "KP3 Module 5 — Join the blocks and prove the foundation"
+  subtopics: ["5.2", "5.3"]
+  extends: "the registration service description of Module 2 (see ../registration/)"
+  uses: ["R8 (the write on final approval)", "I1 (the service registered as a client of PNIA's sign-in)", "the learner register of Module 3 (RG1, RG2)", "X2, X3 and X5 (once-only-composition.yaml)"]
+
+service: Progressa learner registration                     # R1
+description_format: "[confirm: the product and format the build uses; the Registration specification requires import and export of a service description but does not define its format]"
+
+holds_the_sequence: the registration service                # not the data exchange layer
+
+sequence:
+  - step: 1
+    name: sign in
+    event: the applicant chooses to sign in with the national identity
+    action: send the browser to PNIA's sign-in, as a registered client (OpenID Connect, with user claims)
+    claims_requested: [name, birthdate]                     # kept to what the form needs (I4)
+    crosses_data_exchange_layer: no
+  - step: 2
+    name: pre-fill from the released claims
+    event: the browser returns to the service with the authorisation code
+    action: obtain the tokens and read the user information; place the approved claims into the form
+    fills:
+      learner_name: name
+      date_of_birth: birthdate
+    keeps_identifier: sub      # the identifier PNIA gives this service; never the national number
+    crosses_data_exchange_layer: no
+  - step: 3
+    name: the parent completes the form
+    typed_by_hand: [school, grade, parent_contact_number]   # what PNIA does not hold; nothing filled in step 2 is typed again
+  - step: 4
+    name: submit and check
+    event: the applicant submits once
+    action: the automated checks of Module 2 (R5)
+  - step: 5
+    name: the registrar decides
+    role: human registrar (R7)
+    outcome: approve or reject
+  - step: 6
+    name: write the record
+    event: final approval
+    role: automated (BOT) role
+    action: call the learner register's write service through the caller's own security server (X5)
+    operation: "POST /data/{registryName}/{versionNumber}/updateOrCreate"
+    crosses_data_exchange_layer: yes                        # carried, access checked, signed, time-stamped, logged
+  - step: 7
+    name: confirm the record exists
+    action: call the register's exists operation through the caller's own security server
+    operation: "POST /data/{registryName}/{versionNumber}/exists"
+    pass: "the answer is true"
+    crosses_data_exchange_layer: yes
+
+# The named alternative. The Identity specification requires a query of a person's attributes from
+# server to server (6.3-r1) but publishes no interface for it. PNIA's one service on Linkup is a read of
+# a person by national number, a Progressa contract from KP2. A build that offers no OpenID Connect
+# provider may show a server-to-server pre-fill against that contract, and then names it as such.
+named_alternative:
+  name: "PNIA read of a person by national number — a Progressa contract from KP2, not the published Identity interface"
+  service: PROGRESSA/GOV/PNIA/IDENTITY/identity-api
+  needs: "the grant on identity-api in X3"
+  used: "[confirm: yes or no, stated by the build]"
+  rule: "even then, the register does not key on the national number"
+
+check_X4:
+  status: not yet run
+  passes_when:
+    - the test person signs in on PNIA's own sign-in page
+    - only the approved claims arrive, and they fill the form
+    - the identifier stored is the one PNIA gives this service, not the national number
+    - no field is typed twice
+    - the registrar approves
+    - the register's exists operation returns true for the record

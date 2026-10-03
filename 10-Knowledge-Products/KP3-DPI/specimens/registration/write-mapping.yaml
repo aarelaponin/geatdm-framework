@@ -1,0 +1,42 @@
+# specimen, not yet run
+#
+# The mapping of the write from Progressa's learner registration to the learner register on final
+# approval (KP3 Module 2, subtopic 2.5; configuration R8). The Registration specification publishes
+# no sequence and no data for this write (REG §9.2.2); it is the team's own joining of two
+# published contracts: the Registration block's action (REG §4.2, REG §6.3.2.7) and the register's
+# create-or-update operation (Digital Registries, Version 3.0-alpha, DRS-33, DR §8.1).
+#
+# The register's field names are placeholders: the register's schema is configuration RG2 of
+# module 3, which is not built, and the owner of the register confirms this mapping before it is
+# configured. Nothing here has been run.
+
+status: specimen, not yet run
+from: Progressa learner registration (progressa-learner-registration.service.yaml)
+to: the learner register that KP3 sets up behind PLR (configurations RG1 and RG2)
+operation: "POST /data/{registryName}/{versionNumber}/updateOrCreate (DR §8.1)"
+through: an Information Mediator or secure API gateway (REG §5.1.4); in Progressa, Linkup
+when: after the registrar's approval only; a rejected or returned file writes nothing
+
+key:
+  register_key: the register's own learner number, given by the register (setting "the key of the learner register", outline v0.3, section 5)
+  national_number: not mapped, not sent, not held
+
+fields:
+  - { form: given_names,             register: "{RG2 field for given names}" }
+  - { form: family_name,             register: "{RG2 field for family name}" }
+  - { form: date_of_birth,           register: "{RG2 field for date of birth}" }
+  - { form: school,                  register: "{RG2 field linking the learner to a school}" }
+  - { form: grade,                   register: "{RG2 field for grade}" }
+  - { form: pnia_service_identifier, register: "{RG2 field for the identifier PNIA gives this service}", note: kept beside the register's own number }
+  - { form: transfers_from_another_school, register: NOT WRITTEN, reason: it decides the documents asked for and is not part of the learner's record }
+
+test_sequence:
+  approved:
+    - send application A4 (test-applications.yaml)
+    - the registrar of PLR approves it
+    - the register-write role calls the create-or-update operation
+    - "read the register for the learner: the record is found, keyed on the register's own number, with no national number in it"
+  rejected:
+    - send a second correct application
+    - the registrar of PLR rejects it
+    - "read the register for that learner: no record is found"

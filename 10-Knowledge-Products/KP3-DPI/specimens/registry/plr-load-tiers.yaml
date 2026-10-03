@@ -1,0 +1,120 @@
+# specimen, not yet run
+#
+# The load of Progressa's learner register through five tiers — tier layout specimen
+#
+# What this file is. A specimen of the tier layout by which learner records from schools reach Progressa's learner
+# register. The tiers follow the data flow UNICEF Giga publishes for its School Master Data: repository giga-dagster,
+# docs/dataflow.md, at commit 46b72af67066363a29d3d933dcdc619489bd0be5
+# (https://github.com/unicef/giga-dagster/blob/46b72af67066363a29d3d933dcdc619489bd0be5/docs/dataflow.md).
+# Giga's records are schools; applying the flow to learners is KP3's own adaptation. No code of Giga's is copied:
+# the repository carries no licence. Every value here is invented for Progressa and taken from no country.
+#
+# What it is not. It is not the build. No load has run through these tiers and no check has run. When the build of
+# the configurations sets the load up, this file is replaced by the file as built, and the checks named below are
+# run on it.
+#
+# Configurations it shows (KP3 outline version 0.3, section 5): RG9 the tiered load; RG10 the data-quality checks at
+# bronze; RG7 the load of the gold tier's records into the register; RG11 the reconciliation of each load, which is
+# the team's own practice because no published source describes it. Taught in KP3 subtopics 3.2, 3.4 and 3.6.
+
+specimen:
+  status: specimen, not yet run
+  follows: UNICEF Giga, giga-dagster, docs/dataflow.md, commit 46b72af67066363a29d3d933dcdc619489bd0be5
+  destination: the learner register of plr-learner-register.schema.yaml (GovStack Digital Registries, Version 3.0-alpha; June 2026)
+  where_the_tiers_live: >-
+    to be stated by the build: either linked databases beside the register in one installation, moved by
+    scheduled, rule-based automation (Digital Registries DRS-2 Multiple Databases; DRS-19 automation between
+    databases), or a data platform in front of the register
+  giga_code_copied: none
+
+# RG9 — the five tiers
+tiers:
+  - tier: raw
+    holds: each file as the school sent it, unchanged, with its column mapping filled in by the sender
+    giga: "All new data coming from the Ingestion Portal starts out as `raw`"
+  - tier: bronze
+    does:
+      - apply the column mapping
+      - add missing columns that may be empty; drop extra columns
+      - run the data-quality checks (RG10, below)
+      - split the rows into a passed table and a failed table; keep the reason beside every failed row
+      - send the data-quality report to the person who uploaded the file
+    giga:
+      - "Data quality checks are performed."
+      - "The data quality report is generated and emailed to the uploader."
+  - tier: staging
+    does:
+      - an officer of the learner registry reviews the passed rows and approves or rejects each row
+    approver_role: PLR registry officer                # a person's act; no program replaces it
+    giga: "a human-in-the-loop review process"
+  - tier: silver
+    does:
+      - merge the approved rows
+    giga: "`approved` rows are merged into the `silver` tier."
+  - tier: gold
+    does:
+      - merge silver into gold
+      - split gold into a master table (the learner records to be written to the register) and a reference table
+        (the school list and the code lists the learner records point to)
+    giga: "`silver` is merged into `gold`, which is then split into `master` and `reference`"
+
+# RG10 — the data-quality checks at bronze (Digital Registries DR §4.1: validation rules, deduplication and data
+# quality controls; DRS-17 field properties: required, unique, min, max). Limits are set by the register's owner.
+checks:
+  - name: duplicate learner
+    field: learner_number
+    rule: unique within the file and against the register
+    critical: true
+    message: "This learner appears more than once. Keep one row and send the file again."
+  - name: missing required value
+    fields: [given_name, family_name, date_of_birth, sex, school_code, grade, enrolment_date, status]
+    rule: present
+    critical: true
+    message: "A required value is empty. Fill in the field named and send the row again."
+  - name: allowed values
+    fields: { sex: [female, male], status: [enrolled, transferred, left, completed] }
+    rule: one of the listed values
+    critical: true
+    message: "This value is not one of the allowed values. Choose one from the list."
+  - name: age for the grade
+    fields: [date_of_birth, grade]
+    rule: age on 1 January of the school year between grade + 4 and grade + 8 years   # owner to confirm
+    critical: true
+    message: "The date of birth does not fit the grade. Check both and correct the one that is wrong."
+  - name: date format
+    fields: [date_of_birth, enrolment_date]
+    rule: a valid date written as YYYY-MM-DD
+    critical: true
+    message: "The date is not written as year-month-day. Write it as, for example, 2015-03-21."
+  - name: school exists
+    field: school_code
+    rule: present in the schools database of the register
+    critical: true
+    message: "This school code is not in the list of schools. Check the code with the district office."
+
+# The seeded faulty rows the checks of 3.4 use (invented for Progressa)
+seeded_faulty_rows:
+  - { case: duplicate, learner_number: PLR-000412, note: the same learner number on two rows }
+  - { case: missing required value, field: date_of_birth, value: "" }
+  - { case: value outside its range, date_of_birth: "2022-05-10", grade: 6, note: age three in grade six }
+
+# RG7 — the load of the gold tier's master records into the register
+load_to_register:
+  operation: import (DRS-24) or the update of entries (DR §8.1, PUT /data/{registryName}/{versionNumber}/updateEntries); the build names the one it uses
+  confirm: a sample of loaded records answers true to POST /data/{registryName}/{versionNumber}/exists (DR §8.2)
+
+# RG11 — the reconciliation of each load: the team's own practice, built on what the specification publishes
+# (DRS-7 change log with values before and after; DRS-21 data log view; DRS-26 statistical queries)
+reconciliation:
+  line_one: rows received in raw = rows passed at bronze + rows failed at bronze
+  line_two: rows approved at staging = records the register added + records the register changed, as its change log shows
+  also: the change in the register's record count = records added
+  on_imbalance: stop the next load until the difference is found and its cause is written down
+
+# The checks that will prove this file once it is built (specification analysis for the build, section 4.3):
+#   RG9  A seeded load passes through the five tiers; rows failing a critical check stop at bronze in the failed table;
+#        only rows approved at staging reach silver; gold holds the master records.
+#   RG10 A duplicate, a missing mandatory value and a value outside its range each land among the failed rows with the reason stated.
+#   RG7  POST …/exists returns true for a sample of loaded records, and the register's record count equals the gold tier's.
+#   RG11 Both lines of the reconciliation balance.
+# None of these has run.

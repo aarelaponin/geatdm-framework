@@ -1,0 +1,191 @@
+' spec_style.puml — the shared style of the KP3 specification figures F6 to F12.
+' Included by every figure that spec_figures.py draws with PlantUML.
+' Colours follow the visual vocabulary of the Knowledge Products:
+'   navy       #1F3864  headings and the names of things
+'   mid blue   #2E75B6  emphasis: the arrows that carry a call or a record
+'   blue       #1565C0  technical content: the building blocks and their services
+'   purple     #5E35B1  people: the learner, the registrar
+'   slate      #37474F  the foundation: the data exchange layer
+'   grey text  #595959  secondary text, notes and captions
+'   grey bg    #F2F2F2  note and table backgrounds
+'   light blue #DEEBF7  the ground of what KP3 adds (the light fill paired with mid blue)
+' Green (#2E7D32) is kept for the AI toolkit and is not used in these figures.
+
+!$NAVY = "#1F3864"
+!$ACCENT = "#2E75B6"
+!$BLOCK = "#1565C0"
+!$PEOPLE = "#5E35B1"
+!$FOUNDATION = "#37474F"
+!$GREYTEXT = "#595959"
+!$GREYBG = "#F2F2F2"
+!$ADDEDBG = "#DEEBF7"
+
+skinparam dpi 300
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam defaultFontSize 11
+skinparam defaultFontColor $NAVY
+skinparam roundCorner 8
+skinparam wrapWidth 300
+skinparam maxMessageSize 260
+skinparam nodesep 40
+skinparam ranksep 50
+
+skinparam TitleFontName Arial
+skinparam TitleFontSize 15
+skinparam TitleFontStyle bold
+skinparam TitleFontColor $NAVY
+
+skinparam CaptionFontName Arial
+skinparam CaptionFontSize 10
+skinparam CaptionFontColor $GREYTEXT
+
+skinparam ArrowColor $ACCENT
+skinparam ArrowFontColor $NAVY
+skinparam ArrowFontSize 10
+skinparam ArrowThickness 1.3
+
+skinparam NoteBackgroundColor $GREYBG
+skinparam NoteBorderColor $GREYTEXT
+skinparam NoteFontColor $GREYTEXT
+skinparam NoteFontSize 10
+
+' Building blocks, services and components
+skinparam ComponentBackgroundColor #FFFFFF
+skinparam ComponentBorderColor $BLOCK
+skinparam ComponentBorderThickness 1.6
+skinparam ComponentFontColor $NAVY
+skinparam ComponentStereotypeFontColor $GREYTEXT
+skinparam RectangleBackgroundColor #FFFFFF
+skinparam RectangleBorderColor $BLOCK
+skinparam RectangleBorderThickness 1.6
+skinparam RectangleFontColor $NAVY
+skinparam RectangleStereotypeFontColor $GREYTEXT
+skinparam DatabaseBackgroundColor #FFFFFF
+skinparam DatabaseBorderColor $BLOCK
+skinparam DatabaseFontColor $NAVY
+skinparam FrameBorderColor $NAVY
+skinparam FrameFontColor $NAVY
+skinparam PackageBorderColor $GREYTEXT
+skinparam PackageFontColor $NAVY
+skinparam PackageBackgroundColor #FFFFFF
+
+' People
+skinparam ActorBorderColor $PEOPLE
+skinparam ActorBackgroundColor #FFFFFF
+skinparam ActorFontColor $PEOPLE
+
+' Sequence diagrams
+skinparam SequenceParticipantBorderColor $BLOCK
+skinparam SequenceParticipantBackgroundColor #FFFFFF
+skinparam SequenceParticipantFontColor $NAVY
+skinparam SequenceParticipantBorderThickness 1.6
+skinparam SequenceActorBorderColor $PEOPLE
+skinparam SequenceActorFontColor $PEOPLE
+skinparam SequenceLifeLineBorderColor $GREYTEXT
+skinparam SequenceGroupBorderColor $GREYTEXT
+skinparam SequenceGroupHeaderFontColor $NAVY
+skinparam SequenceGroupBackgroundColor $GREYBG
+skinparam SequenceBoxBorderColor $FOUNDATION
+skinparam SequenceBoxBackgroundColor $GREYBG
+skinparam SequenceBoxFontColor $FOUNDATION
+skinparam SequenceDividerBackgroundColor $GREYBG
+skinparam SequenceDividerBorderColor $GREYTEXT
+skinparam SequenceDividerFontColor $NAVY
+skinparam SequenceMessageAlign left
+
+' Activity diagrams
+skinparam ActivityBackgroundColor #FFFFFF
+skinparam ActivityBorderColor $BLOCK
+skinparam ActivityBorderThickness 1.4
+skinparam ActivityFontColor $NAVY
+skinparam ActivityDiamondBackgroundColor $GREYBG
+skinparam ActivityDiamondBorderColor $NAVY
+skinparam ActivityDiamondFontColor $NAVY
+skinparam ActivityStartColor $NAVY
+skinparam ActivityEndColor $NAVY
+skinparam ActivityBarColor $NAVY
+skinparam SwimlaneBorderColor $GREYTEXT
+skinparam SwimlaneTitleFontColor $NAVY
+skinparam SwimlaneTitleFontStyle bold
+skinparam PartitionBorderColor $GREYTEXT
+skinparam PartitionFontColor $NAVY
+
+' Data models
+skinparam ClassBackgroundColor #FFFFFF
+skinparam ClassBorderColor $BLOCK
+skinparam ClassBorderThickness 1.6
+skinparam ClassFontColor $NAVY
+skinparam ClassFontStyle bold
+skinparam ClassAttributeFontColor $NAVY
+skinparam ClassAttributeFontSize 10
+skinparam ClassStereotypeFontColor $GREYTEXT
+skinparam ClassStereotypeFontSize 10
+skinparam ClassHeaderBackgroundColor $GREYBG
+skinparam CircledCharacterFontColor #FFFFFF
+skinparam IconPrivateColor $GREYTEXT
+skinparam IconPublicColor $BLOCK
+skinparam stereotypeCBackgroundColor $BLOCK
+skinparam stereotypeEBackgroundColor $BLOCK
+hide circle
+skinparam classAttributeIconSize 0
+
+' The data exchange layer, drawn as the foundation
+skinparam rectangle<<exchange>> {
+  BackgroundColor $GREYBG
+  BorderColor $FOUNDATION
+  BorderThickness 2.2
+  FontColor $FOUNDATION
+  StereotypeFontColor $FOUNDATION
+}
+' Something present but not built or not part of the proof
+skinparam rectangle<<outside>> {
+  BackgroundColor #FFFFFF
+  BorderColor $GREYTEXT
+  BorderStyle dashed
+  FontColor $GREYTEXT
+  StereotypeFontColor $GREYTEXT
+}
+skinparam component<<outside>> {
+  BackgroundColor #FFFFFF
+  BorderColor $GREYTEXT
+  BorderStyle dashed
+  FontColor $GREYTEXT
+  StereotypeFontColor $GREYTEXT
+}
+skinparam rectangle<<added>> {
+  BackgroundColor $ADDEDBG
+  BorderColor $ACCENT
+  BorderThickness 3.2
+  FontColor $NAVY
+  StereotypeFontColor $ACCENT
+}
+skinparam component<<added>> {
+  BackgroundColor $ADDEDBG
+  BorderColor $ACCENT
+  BorderThickness 3.2
+  FontColor $NAVY
+  StereotypeFontColor $ACCENT
+}
+' A member of the exchange as it stands before KP3: drawn alike whether or not it holds a service
+skinparam rectangle<<member>> {
+  BackgroundColor #FFFFFF
+  BorderColor $BLOCK
+  BorderThickness 1.6
+  FontColor $NAVY
+  StereotypeFontColor $GREYTEXT
+}
+skinparam rectangle<<person>> {
+  BackgroundColor #FFFFFF
+  BorderColor $PEOPLE
+  FontColor $PEOPLE
+  StereotypeFontColor $PEOPLE
+}
+
+' The stereotypes above only choose a style; they are not shown on the picture
+hide <<added>> stereotype
+hide <<outside>> stereotype
+hide <<exchange>> stereotype
+hide <<person>> stereotype
+hide <<member>> stereotype

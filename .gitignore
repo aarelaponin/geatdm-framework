@@ -43,3 +43,6 @@ __pycache__/
 
 # Deck QA contact sheets — regenerate from the .pptx via kp-deck-builder
 **/decks/_qa*/
+
+# KP3 figure images drawn beside their programs — build output; the guide's copies in gitbook/kp3/figures/ are the committed ones
+10-Knowledge-Products/KP3-DPI/figures/*.png
