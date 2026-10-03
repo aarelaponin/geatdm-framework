@@ -18,17 +18,17 @@ KP2 is the first **implementation** Knowledge Product. Where KP1 taught how to *
 
 **Aligned to `08-Interoperability` on 12 September 2026** (Modules 1–4 → v0.2, Module 5 → v0.3): the source of knowledge is the Reference Model, the eight-step Method, the Toolkit, the Reference Architecture and the RA-to-RFP guide in `../../08-Interoperability/`; the chain is 08 → build script → GitBook → video. The review and the change list are in `KP2_08_Alignment_Review_2026-09-12.md`. The six major corrections: the Two-Track Regulatory Memo is the decree ↔ data-protection-law coordination (2.5); procurement is the framework's enforcement lever once the framework exists, with the reference architecture as the tender spec (1.1, 5.1); the honest calendar — foundation first, first cross-ministry exchange in the second build phase, national coverage over four to six years (5.1, intro storyboard); the regulator/operator split (3.1, 3.3, 5.6); the conformance regime (3.6, 4.3, 5.4); and the five plan artefacts of the implementation step (5.1).
 
-**All five KP2 modules are authored and gated** (0 hard failures on `kp-bundle-qa`; PAERA/EIF citations verified). Modules 1–3 are Strategist-facing (why + the four layers; the decree; governance); Modules 4–5 are Architect-facing (architecture / standards / semantic map / contracts via `gif-semantic-map` and `gif-openapi-gen`, and standing up the runnable proving slice — the Linkup federation, the member registrations, and the live once-only exchange PNEA←PNIA+PLR that is the build pack's acceptance check via `kp-solution-verify` — with 5.9–5.10 returning to the Strategist to close KP2). Standards-version and cost-frame claims are carried as calibration items for source confirmation. The build pack (`KP2-build-pack/`) is scaffolded; its configs are generated during the Module 4–5 build with `bb-config-gen` and proven with `kp-solution-verify`.
+**All five KP2 modules are authored and gated** (0 hard failures on `kp-bundle-qa`; PAERA/EIF citations verified). Modules 1–3 are Strategist-facing (why + the four layers; the decree; governance); Modules 4–5 are Architect-facing (architecture / standards / semantic map / contracts via `gif-semantic-map` and `gif-openapi-gen`, and standing up the runnable proving slice — the Linkup federation, the member registrations, and the live once-only exchange PNEA←PNIA+PLR that is the build pack's acceptance check via `kp-solution-verify` — with 5.9–5.10 returning to the Strategist to close KP2). Standards-version and cost-frame claims are carried as calibration items for source confirmation. The build pack lives in its own repository, [gif-linkup-demo](https://github.com/alaponin/gif-linkup-demo); its configs are generated during the Module 4–5 build with `bb-config-gen` and proven with `kp-solution-verify`.
 
 ## The two deliverable sides
 
 ```
 KP2 module
 ├── video bundle   (build_kp2_moduleN_v0X.js  →  .docx / .md)   ← teaches the build
-└── build pack     (KP2-build-pack/)                            ← IS the ready solution
+└── build pack     (github.com/alaponin/gif-linkup-demo)        ← IS the ready solution
 ```
 
-`KP2-build-pack/` holds the runnable Progressa interoperability slice: `manifest.yaml` (module → BB → config → prompt → acceptance), `configs/` (the X-Road member + bus configuration), `prompts/` (the generating prompts), `scripts/` (deploy / seed / acceptance), `acceptance/` (the once-only proof) and `runbook.md`. See `kp-build-pack` and `kp-solution-verify` in the kit.
+The build pack — its own repository, [gif-linkup-demo](https://github.com/alaponin/gif-linkup-demo), moved out of this folder on 3 October 2026 with its history — holds the runnable Progressa interoperability slice: `manifest.yaml` (module → BB → config → prompt → acceptance), `configs/` (the X-Road member + bus configuration), `prompts/` (the generating prompts), `scripts/` (deploy / seed / acceptance), `acceptance/` (the once-only proof) and `runbook.md`. See `kp-build-pack` and `kp-solution-verify` in the kit.
 
 ## The source-of-truth rule
 
@@ -55,7 +55,7 @@ SCRATCH=/tmp/kpdocx OUT_PATH=".../_02_Design/_KP02/KP2_Module1_Script_Bundle_v0.
   bash $KIT/kp-build-render/scripts/build_render.sh build_kp2_module1_v02.js
 # gates
 python3 $KIT/kp-bundle-qa/scripts/qa_bundle.py build_kp2_module1_v02.js        # video compliance
-python3 $KIT/kp-solution-verify/scripts/check_pack.py KP2-build-pack           # build-pack completeness
+python3 $KIT/kp-solution-verify/scripts/check_pack.py ../../gif-linkup-demo  # build-pack completeness (a clone beside this repo)
 ```
 
 Before any module is shared with ITU, run the gates: `kp-citation-verify` (PAERA/EIF/spec fidelity), `kp-bundle-qa` (ITU compliance) and, for the build pack, `kp-solution-verify` (does it run).

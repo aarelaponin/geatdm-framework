@@ -17,3 +17,7 @@ This is an implementation Knowledge Product, and this is the half that runs. The
 {% hint style="info" %}
 **Which plays it belongs to.** [4.4](../module-4/4-4.md) the semantic map · [4.5](../module-4/4-5.md) the contract · [4.7](../module-4/4-7.md) the wiring · [5.2](../module-5/5-2.md)–[5.4](../module-5/5-4.md) the member artefacts · [5.5](../module-5/5-5.md) the stand-up · [5.6](../module-5/5-6.md) the once-only exchange · [5.7](../module-5/5-7.md) the production gap · [5.8](../module-5/5-8.md) watching the bus · [5.9](../module-5/5-9.md) the gate register as the document cross-check made mechanical. Each of those pages says which pack file is its Progressa output.
 {% endhint %}
+
+{% hint style="success" %}
+**Get it.** The pack is its own public repository: [github.com/alaponin/gif-linkup-demo](https://github.com/alaponin/gif-linkup-demo). Clone it — `git clone https://github.com/alaponin/gif-linkup-demo` — rather than downloading a zip: the join demo needs the checkout's `.git`. Then start at [Run it](run.md).
+{% endhint %}

@@ -6,7 +6,7 @@ icon: flask
 # Exercises
 
 {% hint style="info" %}
-**Copied from the build pack.** This page is `KP2-build-pack/exercises.md` as it stands in the pack, with a header; the pack is the source and this page is regenerated from it. Paths in backticks are relative to `KP2-build-pack/`.
+**Copied from the build pack.** This page is [`exercises.md`](https://github.com/alaponin/gif-linkup-demo/blob/main/exercises.md) in the [gif-linkup-demo](https://github.com/alaponin/gif-linkup-demo) repository as it stands, with a header; the repository is the source and this page is regenerated from it. Paths in backticks are relative to the repository root.
 {% endhint %}
 
 
@@ -201,7 +201,7 @@ edit is live with no restart:
 ```
 scripts/join.sh up      # acceptance.sh stops join-api when it finishes
 docker compose exec join-api \
-  bash /repo/10-Knowledge-Products/KP2-GIF/KP2-build-pack/scripts/member.sh drift ptsb
+  bash /repo/scripts/member.sh drift ptsb
 ```
 
 (The mock's *field filtering* is a different thing: that is read once at
@@ -237,9 +237,9 @@ publishing the old one is half a job:
 
 ```
 docker compose exec join-api \
-  bash /repo/10-Knowledge-Products/KP2-GIF/KP2-build-pack/scripts/member.sh refresh ptsb
+  bash /repo/scripts/member.sh refresh ptsb
 docker compose exec join-api \
-  bash /repo/10-Knowledge-Products/KP2-GIF/KP2-build-pack/scripts/member.sh drift ptsb
+  bash /repo/scripts/member.sh drift ptsb
 ```
 
 - `refresh` makes X-Road re-read the description (it reloads on explicit

@@ -13,7 +13,6 @@ Built and proven with the `itu-giga-kp` kit: `bb-config-gen` fills the configs,
 `kp-solution-verify` proves the pack runs. Scope: Education only, public anchors only.
 
 KP2's modules and config files are named by capability (`register-member`,
-`once-only-exchange`, ...), not by curriculum number — see
-`10-Knowledge-Products/KP2-GIF/KP2-build-pack/docs/onboarding-alignment-design.md`
-§1.3 for the naming convention and why this pack's own numeric scaffolding is
-untouched for now.
+`once-only-exchange`, ...), not by curriculum number (the KP2 build pack now
+lives in its own repository, [gif-linkup-demo](https://github.com/alaponin/gif-linkup-demo));
+this pack's own numeric scaffolding is untouched for now.
