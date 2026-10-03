@@ -205,13 +205,11 @@ body.push(
     ["Document",            "Video script bundle for Topic 1 of KP3"],
     ["Version",             "v0.1 — aligned to ITU Knowledge Products and Video Materials Guide"],
     ["Date",                "28 June 2026"],
-    ["Contract reference",  "RFQ-S-GIGA-2026-022 / Purchase Order #334304 (signed 24 April 2026)"],
     ["Topic persona",       PERSONA_S],
     ["Subtopics",           "Six subtopics (1.1 – 1.6), each shipped as one ~5-minute standalone video"],
     ["Topic runtime",       "Approximately 27 minutes across six standalone videos"],
     ["Build pack",          "KP3-DPI/KP3-build-pack — the runnable Progressa DPI foundation this topic frames"],
-    ["Prepared by",         "FiscalAdmin OÜ — Aare Lapõnin (Engagement Lead)"],
-    ["For review by",       "ITU/Giga at Tuesday weekly call; FiscalAdmin team (Karin Kaup, Arne Lapõnin)"]
+    ["Prepared by",         "FiscalAdmin OÜ"]
   ]),
   spacer(140),
   P("This bundle is the v0.1 working draft of Topic 1 of KP3 — Education DPI Roadmap — the second implementation Knowledge Product. KP1 taught a country how to plan an Enterprise Architecture; KP2 taught how to build the interoperability bus over that plan. KP3 puts the shared building blocks on that bus: the registration block, the master-data registry, the identity block and the payment rail — the foundation every citizen service reuses. Topic 1 is the Strategist-facing frame: what makes infrastructure foundational, the five domains that map it, how to read your own maturity in an afternoon, the costly difference between a foundational block and a sectoral app, the order to build in, and the shortlist of blocks the rest of this knowledge product stands up. The register is plain English, eighth-grade level; technical terms sit in the body, not the headline; each subtopic leads with the public-sector outcome the listener can carry out of the video. The six videos are numbered to ITU's topic/subtopic convention (1.1 through 1.6), each reworked to stand alone. All slide specifications follow ITU's text-only branding. Each subtopic carries an AI usage tip with a copy-paste Claude prompt. External references use the convention 'Find the link in the description'."),
@@ -648,7 +646,7 @@ body.push(
   P("Sharp lines that deserve a deliberate keep / soften / cut decision: 'roads, not destinations' (1.1); 'an expensive application with a grand name' (1.4); 'argue the priorities, not the physics' (1.5). Each is doing real teaching work; all are defensible at the chosen level of generality."),
 
   H3("5.3 Structural calls — the build-first re-weighting"),
-  P("KP3 in the Inception Report §7 is framed as an assessment-and-roadmap method (five-domain maturity, gap analysis, wave roadmap, investment, governance) with the Progressa build appearing as a worked example. This bundle re-weights KP3 toward the actionable build: Topic 1 is the lean method frame, and Topics 2–5 stand up the four foundational blocks (registration, registry, identity, payment), with the questionnaires shipped as a reusable assessment toolkit in the build pack rather than taught as a standalone module. This is a sharpening of the IR's intent — a runnable DPI foundation — but a visible change of emphasis. Confirm with ITU. See the KP3 Plan (_02_Design/_KP03/KP3_Plan_v0.1.md) §7."),
+  P("KP3 in the Inception Report §7 is framed as an assessment-and-roadmap method (five-domain maturity, gap analysis, wave roadmap, investment, governance) with the Progressa build appearing as a worked example. This bundle re-weights KP3 toward the actionable build: Topic 1 is the lean method frame, and Topics 2–5 stand up the four foundational blocks (registration, registry, identity, payment), with the questionnaires shipped as a reusable assessment toolkit in the build pack rather than taught as a standalone module. This is a sharpening of the IR's intent — a runnable DPI foundation — but a visible change of emphasis. Confirm with ITU. See the KP3 Plan, version 0.1, §7."),
 
   H3("5.4 Dependencies and Progressa canon"),
   P("(1) The deep registry block is proposed as the Progressa Learner Registry (PLR), built on the Giga School Master Data (bronze/silver/gold) pattern; confirm versus standing up the school master-data registry itself as the deep build. (2) The payment block (PayPro) is new in KP3 — it was not one of the four KP2 Linkup Security Servers; confirm it joins the federation as a reachable endpoint for the demonstration. (3) KP3 reuses the live Linkup federation from KP2 (Inception Report action item A4); no new federation stand-up. The schedule for taking KP3 to full depth should be settled in the re-phasing discussion with ITU (see the KP2–4 Delivery Plan §6)."),
