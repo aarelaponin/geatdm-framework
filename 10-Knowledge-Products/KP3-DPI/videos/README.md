@@ -114,6 +114,16 @@ written:
 
 Kept for the next session that picks up the KP3 video track. Newest first; add to it, do not rewrite it.
 
+**5 October 2026 (later) — both kit bugs fixed (itu-giga-kp 1.3.3).**
+
+- `--from` no longer skips 1.10: `take_until_pass.py` and `nlm_take.py` now compare subtopic codes as
+  numbers, (1, 10), and run 1.10 after 1.9.
+- `slidecast.py` keeps the whole narration. The cause was the output option `-r 30`, which on ffmpeg
+  9.0.1 stopped the stills short of the last cue window; `-shortest` then cut the audio to match. It now
+  uses the `fps=30` filter and `-t` alone. **The workaround is no longer needed:** cue windows of any
+  length are fine. Still compare the MP4 with the m4a, as the skill says. KP3 1.3, rebuilt on its
+  original cue file, now matches its audio exactly.
+
 **5 October 2026 — 44 of 45; what the last fixes taught.**
 
 - **The script fix worked where brief fixes had not.** 1.8 covered its registers slide on the first take
