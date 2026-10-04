@@ -114,7 +114,7 @@ written:
 
 Kept for the next session that picks up the KP3 video track. Newest first; add to it, do not rewrite it.
 
-**5 October 2026 (later) — both kit bugs fixed (itu-giga-kp 1.3.3).**
+**5 October 2026 (later) — both kit bugs fixed (itu-giga-kp 1.4.2).**
 
 - `--from` no longer skips 1.10: `take_until_pass.py` and `nlm_take.py` now compare subtopic codes as
   numbers, (1, 10), and run 1.10 after 1.9.
