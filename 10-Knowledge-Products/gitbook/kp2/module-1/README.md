@@ -5,9 +5,6 @@ icon: flag-checkered
 
 # Module 1 — Why interoperability and the four layers
 
-{% hint style="info" %}
-**Worked examples for this module are pending** — every prompt on these pages runs today.
-{% endhint %}
 
 **Persona:** S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead.
 

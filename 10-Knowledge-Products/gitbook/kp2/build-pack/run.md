@@ -6,7 +6,7 @@ icon: play
 # Run it — the run book
 
 {% hint style="info" %}
-**Copied from the build pack.** This page is `runbook.md` in the [gif-linkup-demo](https://github.com/alaponin/gif-linkup-demo) repository as it stands, with a header; the repository is the source and this page is regenerated from it. Paths in backticks are relative to the repository root.
+**Copied from the build pack.** This page is [`runbook.md`](https://github.com/alaponin/gif-linkup-demo/blob/main/runbook.md) in the [gif-linkup-demo](https://github.com/alaponin/gif-linkup-demo) repository as it stands, with a header; the repository is the source and this page is regenerated from it. Paths in backticks are relative to the repository root.
 {% endhint %}
 
 
@@ -102,7 +102,7 @@ doing at each one. It refuses if a federation is already deployed.
    see `hurl/README.md` to run or retarget them, and `docs/decisions/xroad-770-notes.md` for
    what reading the reference corrected.
 3. **Seed** — `scripts/seed.sh`
-   Regenerates the Progressa demonstration data (Gambia-grounded, Progressa-named)
+   Regenerates the Progressa demonstration data (invented names, provinces and schools)
    and restarts the mock providers with it.
 4. **Prove** — `scripts/acceptance.sh`
    Runs `acceptance/federation-core.md` … `once-only-exchange.md` in order; exits non-zero on first failure.
@@ -1337,6 +1337,6 @@ images are pinned to it. `Docker/xrd-dev-stack` does not exist before 7.5.0 and 
 gone on `develop` — read the reference at the tag you deploy.
 
 > Reproducible: every step is a script in `scripts/` or a scenario in `hurl/`, and
-> every one of them is generated from `configs/` by bb-config-gen or
+> every one of them is generated from `configs/` by the prompts in `prompts/` or
 > `hurl/generate.py`. Do not hand-edit a config in `configs/`, a scenario in
 > `hurl/scenarios/`, or `hurl/vars.env` — regenerate them.

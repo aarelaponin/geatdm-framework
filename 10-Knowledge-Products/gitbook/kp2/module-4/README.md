@@ -5,9 +5,6 @@ icon: flag-checkered
 
 # Module 4 — Architecture and technical standards
 
-{% hint style="info" %}
-**Worked examples for this module are pending** — every prompt on these pages runs today.
-{% endhint %}
 
 **Persona:** A (Architect) — chief or senior architect, integration lead, or agency technical lead building on the interoperability bus.
 

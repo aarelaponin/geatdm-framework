@@ -408,7 +408,7 @@ First, the containers: one Central Server, one Test CA, and four Security Server
 
 > _Slide 6 — Title: 'Second: from zero to running, measured'. Demo evidence (text capture, beat T1-stood-up): the five steps of scripts/demo.sh and the deploy's own timings — containers healthy 100 s, Hurl run 290 s, total 390 s._
 
-Second, the run book itself: five steps, from checking the host to the exchange proving itself. The deploy times itself: on the recorded run, about a hundred seconds until the containers were healthy, and six and a half minutes in all, from zero to a running federation.
+Second, the run book itself: five steps, from checking the host to the exchange proving itself. The deploy times itself: on the recorded run, about two and a half minutes until the containers were healthy, and about nine minutes in all, from zero to a running federation.
 
 > _Slide 7 — Title: 'Third: three members, each behind its own server'. Demo evidence (text capture, beat T2-members): scripts/member.sh list — plr, pnea, pnia, each canonical on its own ss-*._
 
@@ -771,7 +771,7 @@ Below are three foundational documents of [country X]'s Government Interoperabil
 | --- | --- |
 | Persona | S (Strategist) — national interoperability authority, ministry CIO, Ministry of Justice sponsor, or development-partner lead |
 | Target runtime | ~4 min (≈540 spoken words) |
-| PAERA anchor | ToR §4.4 (sector portability); EU EIF four-layer model; PAERA §3.4.3 |
+| PAERA anchor | EU EIF four-layer model; PAERA §3.4.3 |
 
 > **Single message —** _The same four-layer framework stands up interoperability beyond education — the method is sector-portable, and the second sector is cheaper than the first._
 

@@ -6,9 +6,6 @@ icon: flag-checkered
 # Module 5 — Implementation and onboarding
 
 {% hint style="info" %}
-**Worked examples for this module are pending** — every prompt on these pages runs today.
-{% endhint %}
-{% hint style="info" %}
 **Why ten videos.** 5.8–5.10 were Module 6 in the v0.1 bundles. Module 6 was retired on 12 September 2026 (as *Developing a Gov Enterprise Architecture (GEA)* retired its AI-plays module on 3 September): its catalogue, role-paths and storyboard repeated the earlier modules and now live on the [course home page](../README.md); its three genuinely new plays — watching the bus, cross-checking the framework's documents, carrying it to the next sector — are the last three videos here. 5.9 and 5.10 return to the Strategist; every video states its persona and stands alone.
 {% endhint %}
 

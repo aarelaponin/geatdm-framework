@@ -20,11 +20,11 @@ The play below does not depend on the video: the concept section carries what th
 
 | Module | Topic | Persona | Videos | Plays | Status |
 | --- | --- | --- | --- | --- | --- |
-| [1](module-1/README.md) | Why interoperability and the four layers | Strategist | 7 | 7 plays | Prompts live |
-| [2](module-2/README.md) | Legal framework — the Decree Drafting Kit | Strategist | 6 | 6 plays | Prompts live |
-| [3](module-3/README.md) | Governance model — three tiers with RACI | Strategist | 6 | 6 plays | Prompts live |
-| [4](module-4/README.md) | Architecture and technical standards | Architect | 8 | 8 plays | Prompts live |
-| [5](module-5/README.md) | Implementation and onboarding | Architect / Strategist | 10 | 10 plays | Prompts live |
+| [1](module-1/README.md) | Why interoperability and the four layers | Strategist | 7 | 7 plays | Worked examples live |
+| [2](module-2/README.md) | Legal framework — the Decree Drafting Kit | Strategist | 6 | 6 plays | Worked examples live |
+| [3](module-3/README.md) | Governance model — three tiers with RACI | Strategist | 6 | 6 plays | Worked examples live |
+| [4](module-4/README.md) | Architecture and technical standards | Architect | 8 | 8 plays | Worked examples live |
+| [5](module-5/README.md) | Implementation and onboarding | Architect / Strategist | 10 | 10 plays | Worked examples live |
 
 *Prompts live — concept and play on every page, worked example pending. Worked examples live — Progressa run and annotated. Videos live — embeds on every page.*
 

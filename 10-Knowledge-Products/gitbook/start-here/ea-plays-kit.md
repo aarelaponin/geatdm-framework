@@ -37,7 +37,7 @@ Each play has exactly one primary skill. Play numbers repeat across Knowledge Pr
 | `cite-or-discard` | *inside the others* | *inside the others* | fetches each URL, grades the source by tier, and drops what does not survive |
 | `ea-institution-mapper` | 1.2, 2.4, 4.1 | 1.6, 3.1, 3.2 | bodies, legal mandates, systems, posts, PAERA classification |
 | `ea-cost-case` | 1.3, 5.4 | — | the re-use case — assumptions first, benchmarks named, tables not charts |
-| `ea-legal-context` | 1.4 | 2.1, 4.8 | the national legal register, so a ToR cites statutes that exist |
+| `ea-legal-context` | 1.4 | 2.1, 4.8 | the national legal register, so a draft cites statutes that exist |
 | `paera-reference-check` | 1.5, 2.2, 2.3 | *inside 1.7, 4.3* | checks against PAERA as published, not the video's simplification |
 | `ea-governance-drafter` | 1.6, 1.7, 3.1, 3.3–3.7, 5.2 | 3.3–3.6, 5.2, 5.3 | ToR, RACI, repository policy, gate checklist, scorecard, risk register |
 | `bdat-assessor` | 2.1, 2.5, 2.6 | — | the four-layer read and the metamodel conformance check |
