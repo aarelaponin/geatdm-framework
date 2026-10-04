@@ -104,11 +104,11 @@ Yes, by domain, which just means the sector.
 
 27
 00:01:53,830 --> 00:01:58,990
-And to visualize this, the reference architecture uses a fictional country called Progresara.
+And to visualize this, the reference architecture uses a fictional country called Progressa.
 
 28
 00:01:59,710 --> 00:02:03,490
-Okay, so in this fictional Progresara, where's the bulk of the money going?
+Okay, so in this fictional Progressa, where's the bulk of the money going?
 
 29
 00:02:04,050 --> 00:02:07,250
@@ -168,7 +168,7 @@ Oh, incredibly slow. A solid business case has to precede a budget application, 
 
 43
 00:03:11,390 --> 00:03:14,630
-Wait, let me do the math on that for our fictional Progresa.
+Wait, let me do the math on that for our fictional Progressa.
 
 44
 00:03:15,290 --> 00:03:23,170
@@ -200,7 +200,7 @@ Sheet four values returns over a ten-year horizon.
 
 51
 00:03:47,310 --> 00:03:49,910
-For Progresa, the returns are estimated at
+For Progressa, the returns are estimated at
 
 52
 00:03:50,590 --> 00:03:53,470

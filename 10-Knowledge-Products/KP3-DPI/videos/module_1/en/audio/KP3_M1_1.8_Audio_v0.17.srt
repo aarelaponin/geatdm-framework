@@ -232,11 +232,11 @@ Okay, let's look at how this plays out in practice.
 
 59
 00:03:48,620 --> 00:03:50,620
-Uh, let's take a fictional country, Progresa.
+Uh, let's take a fictional country, Progressa.
 
 60
 00:03:50,740 --> 00:03:55,420
-Right, Progresa. When Progresa rolls out a new digital initiative, they split the architecture.
+Right, Progressa. When Progressa rolls out a new digital initiative, they split the architecture.
 
 61
 00:03:55,840 --> 00:03:58,740
@@ -248,7 +248,7 @@ At the core layer, they fund a unified national identity and the payments buildi
 
 63
 00:04:05,480 --> 00:04:10,080
-Which means the education sector in Progresa only has to fund their specific learner register.
+Which means the education sector in Progressa only has to fund their specific learner register.
 
 64
 00:04:10,580 --> 00:04:13,320

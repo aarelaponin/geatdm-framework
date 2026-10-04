@@ -200,7 +200,7 @@ Okay, let's look at a practical example then.
 
 51
 00:03:50,820 --> 00:03:53,460
-We frequently look at the fictional country of Progresa.
+We frequently look at the fictional country of Progressa.
 
 52
 00:03:54,080 --> 00:03:59,360
@@ -208,7 +208,7 @@ Their identity authority has an active service, but, um, is it actually using th
 
 53
 00:03:59,900 --> 00:04:03,040
-Well, no. Progresa is not using the published block.
+Well, no. Progressa is not using the published block.
 
 54
 00:04:03,600 --> 00:04:07,500

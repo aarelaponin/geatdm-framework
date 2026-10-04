@@ -100,11 +100,11 @@ Well, each gap in that centralized register must explicitly reference the findin
 
 26
 00:01:44,270 --> 00:01:46,570
-Take the fictional country of Progresa, for example.
+Take the fictional country of Progressa, for example.
 
 27
 00:01:46,710 --> 00:01:49,190
-Progresa. Yeah. Right. Fictional place, but a great example.
+Progressa. Yeah. Right. Fictional place, but a great example.
 
 28
 00:01:49,690 --> 00:01:53,930
@@ -232,7 +232,7 @@ Dependencies. Yeah. Whatever other systems depend on, well, that has to be built
 
 59
 00:03:46,010 --> 00:03:50,610
-When you apply this matrix to Progresa, the strategic patterns just become undeniable.
+When you apply this matrix to Progressa, the strategic patterns just become undeniable.
 
 60
 00:03:50,950 --> 00:03:55,970
@@ -264,7 +264,7 @@ Wait, what is it?
 
 67
 00:04:20,770 --> 00:04:23,290
-Progresa has no authoritative learner record.
+Progressa has no authoritative learner record.
 
 68
 00:04:23,510 --> 00:04:30,110

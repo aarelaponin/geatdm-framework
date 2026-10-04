@@ -192,7 +192,7 @@ I mean, let's trace a real payment path from start to finish.
 
 49
 00:03:54,830 --> 00:04:01,010
-Sure. We can trace the flow in Progresa, which is, uh, the fictional demonstration country used in the reference architecture.
+Sure. We can trace the flow in Progressa, which is, uh, the fictional demonstration country used in the reference architecture.
 
 50
 00:04:01,690 --> 00:04:03,530

@@ -172,11 +172,11 @@ Yeah, exactly. It is a routing system that retrieves only the requested fact dir
 
 44
 00:02:47,420 --> 00:02:51,780
-So how does this exchange operate in the demonstration country, um, Progressia?
+So how does this exchange operate in the demonstration country, um, Progressa?
 
 45
 00:02:52,560 --> 00:02:57,620
-Well, in Progressia, consider a learner applying for a credential at the National Examination Authority.
+Well, in Progressa, consider a learner applying for a credential at the National Examination Authority.
 
 46
 00:02:57,880 --> 00:03:06,040

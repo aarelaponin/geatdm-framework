@@ -120,11 +120,11 @@ So what do these failures actually look like in practice?
 
 31
 00:02:17,600 --> 00:02:21,180
-Let's use, uh, Progressia, the fictional country from the examples.
+Let's use, uh, Progressa, the fictional country from the examples.
 
 32
 00:02:21,760 --> 00:02:25,920
-Sure. So Progressia catches three faulty school rows at the bronze tier.
+Sure. So Progressa catches three faulty school rows at the bronze tier.
 
 33
 00:02:26,560 --> 00:02:30,740

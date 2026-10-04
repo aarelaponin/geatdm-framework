@@ -96,11 +96,11 @@ Mechanically, though, how does the system hand that off without creating a massi
 
 25
 00:01:48,520 --> 00:01:52,400
-Well, let's look at Progresa, which is, uh, the fictional country used as a model in these examples.
+Well, let's look at Progressa, which is, uh, the fictional country used as a model in these examples.
 
 26
 00:01:52,620 --> 00:01:56,900
-Right. Progresa. Yeah. They structure this workflow as a strict chain of roles.
+Right. Progressa. Yeah. They structure this workflow as a strict chain of roles.
 
 27
 00:01:57,280 --> 00:02:00,300
@@ -168,7 +168,7 @@ Because when the registrar hits approve, the system sends the form data to a reg
 
 43
 00:02:57,260 --> 00:02:59,780
-Right. And in Progresa, that mediator is called Linkup.
+Right. And in Progressa, that mediator is called Linkup.
 
 44
 00:03:00,240 --> 00:03:00,820

@@ -136,7 +136,7 @@ So let's apply this balance of foundations and visible results to a concrete mod
 
 35
 00:02:58,640 --> 00:03:04,520
-Let's look at Progresa, which is the fictional country from our examples, just to see how a ministry actually sequences this.
+Let's look at Progressa, which is the fictional country from our examples, just to see how a ministry actually sequences this.
 
 36
 00:03:04,600 --> 00:03:04,760
@@ -144,7 +144,7 @@ Sure.
 
 37
 00:03:05,540 --> 00:03:08,340
-So Progresa follows four steps. Step one,
+So Progressa follows four steps. Step one,
 
 38
 00:03:09,000 --> 00:03:14,760

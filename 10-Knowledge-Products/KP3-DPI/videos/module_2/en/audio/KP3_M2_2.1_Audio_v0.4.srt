@@ -172,7 +172,7 @@ Let's ground this in reality, though. How do those three capabilities actually i
 
 44
 00:02:59,310 --> 00:03:02,090
-Let's use a fictional country, Progresa, as our model.
+Let's use a fictional country, Progressa, as our model.
 
 45
 00:03:02,610 --> 00:03:03,270
@@ -180,7 +180,7 @@ Okay, sounds good.
 
 46
 00:03:03,770 --> 00:03:07,750
-All right. So suppose Progresa is digitizing its learner registration.
+All right. So suppose Progressa is digitizing its learner registration.
 
 47
 00:03:08,370 --> 00:03:12,050

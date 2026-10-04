@@ -148,7 +148,7 @@ If you do it holistically, you build it once, and every sector calls it.
 
 38
 00:02:51,020 --> 00:02:55,100
-Let's ground this with Progessa. It's, uh, it's a fictional country we use as a model.
+Let's ground this with Progressa. It's, uh, it's a fictional country we use as a model.
 
 39
 00:02:55,620 --> 00:03:03,380
@@ -156,7 +156,7 @@ They actually built the digital pipes connecting their learner registry to a dat
 
 40
 00:03:03,980 --> 00:03:06,420
-Right, because Progessa missed the fundamentals.
+Right, because Progressa missed the fundamentals.
 
 41
 00:03:06,980 --> 00:03:15,280
@@ -164,7 +164,7 @@ Their registry has no legal basis in the Education Act, no link to a national id
 
 42
 00:03:15,800 --> 00:03:19,380
-It sounds like Progessa built the digital pipes but ignored the data quality.
+It sounds like Progressa built the digital pipes but ignored the data quality.
 
 43
 00:03:20,060 --> 00:03:26,540

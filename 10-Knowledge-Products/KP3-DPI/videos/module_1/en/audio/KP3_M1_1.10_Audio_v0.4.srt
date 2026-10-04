@@ -180,15 +180,15 @@ Definitely. But what does this actually look like in practice?
 
 46
 00:03:14,960 --> 00:03:18,680
-The GovStack model uses a fictional country called Progresa to demonstrate this, right?
+The GovStack model uses a fictional country called Progressa to demonstrate this, right?
 
 47
 00:03:19,020 --> 00:03:21,480
-Right. Progresa is a fictional example country.
+Right. Progressa is a fictional example country.
 
 48
 00:03:22,080 --> 00:03:26,600
-In Progresa, they fully reuse the existing identity block and the data exchange layer.
+In Progressa, they fully reuse the existing identity block and the data exchange layer.
 
 49
 00:03:26,940 --> 00:03:31,660

@@ -168,11 +168,11 @@ Okay. So what does it look like when a country actually answers one of these dat
 
 43
 00:02:54,560 --> 00:02:59,080
-Well, the framework uses this fictional country of Progresa as an example.
+Well, the framework uses this fictional country of Progressa as an example.
 
 44
 00:02:59,320 --> 00:03:07,560
-Okay, Progresa. Yeah. So when they were asked if there is one authoritative record for each student, which is question D2.2, by the way,
+Okay, Progressa. Yeah. So when they were asked if there is one authoritative record for each student, which is question D2.2, by the way,
 
 45
 00:03:08,540 --> 00:03:10,480
@@ -200,7 +200,7 @@ Oh my gosh, that is a huge disconnect.
 
 51
 00:03:26,060 --> 00:03:33,100
-It gets worse. Progresa's main school information system, PMIS, actually held no individual learner records at all.
+It gets worse. Progressa's main school information system, PMIS, actually held no individual learner records at all.
 
 52
 00:03:33,560 --> 00:03:36,160

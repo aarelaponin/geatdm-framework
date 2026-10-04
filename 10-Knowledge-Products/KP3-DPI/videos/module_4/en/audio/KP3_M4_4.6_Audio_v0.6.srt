@@ -108,11 +108,11 @@ So if the structural reality is that ministries are incentivized to build in iso
 
 28
 00:01:58,240 --> 00:02:01,960
-We can look at a demonstration country that figured this out, actually: Progessa.
+We can look at a demonstration country that figured this out, actually: Progressa.
 
 29
 00:02:02,560 --> 00:02:08,720
-Okay, so if a service in Progessa, like a scholarship payment, tried to build this alone, what would that actually look like for them?
+Okay, so if a service in Progressa, like a scholarship payment, tried to build this alone, what would that actually look like for them?
 
 30
 00:02:09,639 --> 00:02:11,580
@@ -128,7 +128,7 @@ Oh, wow. Yeah. And it has to capture every learner's account details and maintai
 
 33
 00:02:26,240 --> 00:02:28,940
-But instead, Progessa uses the payments block.
+But instead, Progressa uses the payments block.
 
 34
 00:02:29,340 --> 00:02:34,220

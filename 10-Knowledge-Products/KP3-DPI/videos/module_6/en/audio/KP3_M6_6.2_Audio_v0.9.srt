@@ -140,11 +140,11 @@ Sure. So
 
 36
 00:02:24,520 --> 00:02:28,260
-let's break down the example they use of a fictional country called Progessa.
+let's break down the example they use of a fictional country called Progressa.
 
 37
 00:02:28,340 --> 00:02:32,460
-Progessa, right. And they organize their tech funding into distinct waves.
+Progressa, right. And they organize their tech funding into distinct waves.
 
 38
 00:02:32,740 --> 00:02:35,480
@@ -176,7 +176,7 @@ So high dependency, low cost. It pushes it straight to the front of the line.
 
 45
 00:03:01,960 --> 00:03:06,640
-But then in wave two, Progessa includes a learner register, and that's priced way higher, right?
+But then in wave two, Progressa includes a learner register, and that's priced way higher, right?
 
 46
 00:03:07,020 --> 00:03:10,280
@@ -208,7 +208,7 @@ So by paying that steep cost once,
 
 53
 00:03:31,540 --> 00:03:35,820
-Progessa avoids building four totally separate databases that can't even communicate.
+Progressa avoids building four totally separate databases that can't even communicate.
 
 54
 00:03:36,420 --> 00:03:39,060
@@ -256,7 +256,7 @@ somewhere between $4 and $11 per registered person.
 
 65
 00:04:23,860 --> 00:04:31,460
-Okay. So doing the math for Progessa's 11 and a half million students, a bespoke system just for the education ministry would be
+Okay. So doing the math for Progressa's 11 and a half million students, a bespoke system just for the education ministry would be
 
 66
 00:04:32,220 --> 00:04:32,600
@@ -276,7 +276,7 @@ Exactly.
 
 70
 00:04:42,760 --> 00:04:48,440
-But because Progessa uses a shared architecture, the education ministry doesn't build its own identity system.
+But because Progressa uses a shared architecture, the education ministry doesn't build its own identity system.
 
 71
 00:04:48,920 --> 00:04:52,600

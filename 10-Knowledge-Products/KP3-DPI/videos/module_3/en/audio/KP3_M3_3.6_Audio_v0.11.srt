@@ -220,7 +220,7 @@ Okay. To see this in action, let's look at a simulation.
 
 56
 00:03:43,500 --> 00:03:50,400
-Uh, experts often use this fictional model country called Progresia to test these exact GovStack rules, right?
+Uh, experts often use this fictional model country called Progressa to test these exact GovStack rules, right?
 
 57
 00:03:50,960 --> 00:03:51,220
@@ -228,7 +228,7 @@ Yes.
 
 58
 00:03:52,260 --> 00:03:58,100
-So in a successful run for Progresia, you see one data load of learners reconciled on a single sheet.
+So in a successful run for Progressa, you see one data load of learners reconciled on a single sheet.
 
 59
 00:03:58,520 --> 00:04:07,400

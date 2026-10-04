@@ -216,7 +216,7 @@ Okay, so when a government is forced to look in the mirror using this strict mat
 
 55
 00:03:28,740 --> 00:03:31,780
-what actually happens? Let's look at the Progresa simulation.
+what actually happens? Let's look at the Progressa simulation.
 
 56
 00:03:32,200 --> 00:03:33,040
@@ -224,7 +224,7 @@ That's a great example.
 
 57
 00:03:33,520 --> 00:03:37,520
-And we should note explicitly, Progresa is an entirely fictional country.
+And we should note explicitly, Progressa is an entirely fictional country.
 
 58
 00:03:37,900 --> 00:03:39,520
@@ -276,7 +276,7 @@ What really stands out to me is how this strict verification catches blind spots
 
 70
 00:04:32,860 --> 00:04:40,140
-Like Progresa's original unverified desk draft had their interoperability score at a two point three, but the real score was lower.
+Like Progressa's original unverified desk draft had their interoperability score at a two point three, but the real score was lower.
 
 71
 00:04:40,620 --> 00:04:48,740
@@ -284,7 +284,7 @@ It was, yeah. When assessors actually went looking for verified evidence, they d
 
 72
 00:04:48,900 --> 00:04:51,280
-LinkUp being Progresa's national data exchange.
+LinkUp being Progressa's national data exchange.
 
 73
 00:04:51,700 --> 00:04:56,340

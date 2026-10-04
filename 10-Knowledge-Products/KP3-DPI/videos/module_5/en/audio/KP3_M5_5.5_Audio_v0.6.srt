@@ -276,7 +276,7 @@ Oh, wow. Yeah. If you skip the add-on, you are flying totally blind.
 
 70
 00:03:52,930 --> 00:03:56,510
-Okay, let's look at a concrete example. Let's take the fictional country of Progessa
+Okay, let's look at a concrete example. Let's take the fictional country of Progressa
 
 71
 00:03:57,150 --> 00:03:59,350
@@ -284,15 +284,15 @@ as a sandbox to see how this plays out in real life.
 
 72
 00:03:59,570 --> 00:04:01,590
-Progessa is a great example for this.
+Progressa is a great example for this.
 
 73
 00:04:01,870 --> 00:04:08,890
-Right. So if Progessa runs a major data exchange, like a student registration run, how do these three tools actually work together?
+Right. So if Progressa runs a major data exchange, like a student registration run, how do these three tools actually work together?
 
 74
 00:04:09,370 --> 00:04:13,750
-Well, in Progessa's architecture, no member sees another member's records by default.
+Well, in Progressa's architecture, no member sees another member's records by default.
 
 75
 00:04:13,910 --> 00:04:14,269

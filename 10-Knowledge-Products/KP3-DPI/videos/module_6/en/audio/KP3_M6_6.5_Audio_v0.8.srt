@@ -240,7 +240,7 @@ Let us see this in action.
 
 61
 00:04:17,380 --> 00:04:19,860
-Take a fictional country, so let us call it Progresa.
+Take a fictional country, so let us call it Progressa.
 
 62
 00:04:20,500 --> 00:04:22,580
@@ -248,7 +248,7 @@ How do they mix and match these paths?
 
 63
 00:04:23,160 --> 00:04:30,620
-In Progresia, they purchase a product for their registration service, but they configure it entirely in-house using their own analysts.
+In Progressa, they purchase a product for their registration service, but they configure it entirely in-house using their own analysts.
 
 64
 00:04:31,240 --> 00:04:36,120

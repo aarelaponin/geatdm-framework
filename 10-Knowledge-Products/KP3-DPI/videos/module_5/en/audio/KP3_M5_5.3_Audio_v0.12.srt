@@ -56,11 +56,11 @@ Right. So the registration service actually sends the learner to the identity au
 
 15
 00:01:06,900 --> 00:01:11,240
-Let's look at Progessa, which is a fictional country, by the way, that we use for these examples.
+Let's look at Progressa, which is a fictional country, by the way, that we use for these examples.
 
 16
 00:01:11,320 --> 00:01:12,240
-Oh, sure. Progessa.
+Oh, sure. Progressa.
 
 17
 00:01:12,380 --> 00:01:16,520
@@ -172,11 +172,11 @@ So,
 
 44
 00:02:48,460 --> 00:02:51,000
-for example, back in Progessa, our fictional country,
+for example, back in Progressa, our fictional country,
 
 45
 00:02:51,800 --> 00:02:56,700
-PNIA's read service on linkup is actually a custom contract of Progessa's own.
+PNIA's read service on linkup is actually a custom contract of Progressa's own.
 
 46
 00:02:56,940 --> 00:03:02,240
