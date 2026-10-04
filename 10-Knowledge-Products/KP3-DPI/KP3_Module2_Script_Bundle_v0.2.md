@@ -26,7 +26,7 @@ This document collects the six video scripts of Module 2 of Knowledge Product 3,
 
 Module 2 is written for the Architect: the ministry's technical lead or solution architect who sets up the service and judges the products offered for it. It is taught from one public source, the GovStack Registration Building Block specification in the site's default edition, with the Identity specification (Version 2.0, December 2025) for the check of a person and the Digital Registries specification (Version 3.0-alpha, June 2026) for the write to the register. Subtopic 2.1 also cites PAERA, Annex 1, section A1.2.5. The worked examples are built for Progressa: the learner registry PLR, the national identity authority PNIA and Linkup, the data exchange that KP2 set up.
 
-Three statements hold throughout. PLR has been a member of Linkup since KP2, with one enrolment service; KP3 sets up the authoritative learner register behind it, and that register is where the registration service writes. A service checks a person through PNIA's sign-in with OpenID Connect, with the person present, and keeps the identifier PNIA gives to that service, never the national number. And the registration service is a description in the format of the product that carries it, because the specification publishes no interface for creating or changing a service.
+Three statements hold throughout. PLR is already a member of Linkup, with one enrolment service; This course sets up the authoritative learner register behind it, and that register is where the registration service writes. A service checks a person through PNIA's sign-in with OpenID Connect, with the person present, and keeps the identifier PNIA gives to that service, never the national number. And the registration service is a description in the format of the product that carries it, because the specification publishes no interface for creating or changing a service.
 
 The ten configurations of the module, R1 to R10, are built by a colleague as a separate piece of work, which has not started. Until each is built and its check has passed, subtopics 2.3 to 2.6 show the configuration as a specimen, a file written for Progressa in the specification's terms and marked 'specimen, not yet run', and each demonstration segment exists as a storyboard. The scripts say what each check runs and what counts as a pass; they do not say that anything runs.
 
@@ -56,7 +56,7 @@ Six standalone videos, all in the Architect register. Total runtime approximatel
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — the ministry's technical lead or solution architect who sets up the registration service and judges the products offered for it |
-| Target runtime | ~5 min (≈464 spoken words) |
+| Target runtime | ~5 min (≈465 spoken words) |
 | PAERA anchor | PAERA v1.0, Annex 1, A1.2.5 (State Registries); GovStack Registration specification, default edition: REG §2, REG §4.1 to REG §4.4 |
 
 > **Single message —** _A registration block takes an application, lets an officer decide and, on approval, writes to a register and gives the applicant proof, and built once it serves every ministry that registers people or things._
@@ -77,7 +77,7 @@ The block has three capabilities. The first is online registration. The applican
 
 > _Slide 4 — Title: 'Progressa's learner registration, in three parts'. Body, three text rows: 'The parent or the learner applies online.' 'The registrar of PLR decides in the back office.' 'The analyst configures the service; the record itself is kept in the learner register.'_
 
-Here is Progressa's learner registration seen through those three parts. A parent, or a learner old enough, applies online. The registrar of PLR, the Progressa Learner Registry, decides in the back office. An analyst in the ministry configures the service. On screen the parent meets the guide, the form, the documents and the send button, and later the decision and the confirmation. One thing the block does not do is keep the record for the long term. The specification leaves storage to the Digital Registries block. The registration block's job is to connect to it and write there.
+Here is Progressa's learner registration seen through those three parts. A parent, or a learner old enough, applies online. The registrar of PLR, the Progressa Learner Registry, decides in the back office. An analyst in the ministry configures the service. In the service, the parent meets the guide, the form, the documents and the send button, and later the decision and the confirmation. One thing the block does not do is keep the record for the long term. The specification leaves storage to the Digital Registries block. The registration block's job is to connect to it and write there.
 
 > _Slide 5 — Title: 'Built once, used by every ministry'. Body, two text rows: 'Digitising a state registry needs two building blocks: Registration and Digital Registry.' 'Each new registration is a new service set up on the same block — not new software.'_
 
@@ -135,7 +135,7 @@ Below is the description of a registration procedure as it works today in [count
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — the ministry's technical lead or solution architect who sets up the registration service and judges the products offered for it |
-| Target runtime | ~5 min (≈464 spoken words) |
+| Target runtime | ~5 min (≈447 spoken words) |
 | PAERA anchor | GovStack Registration specification, default edition: REG §6.1, REG §6.2, REG §6.3, REG §7.2, REG §8.1 to REG §8.3; GovStack testing; GovStack Architecture specification, edition 2.1.0, section 5.5.4 |
 
 > **Single message —** _Ask every vendor to show the product against the published specification, requirement by requirement, and check whether GovStack lists it and at which compliance level._
@@ -156,7 +156,7 @@ Turn that list into the vendor's homework. For every requirement, the vendor ans
 
 > _Slide 4 — Title: 'What GovStack itself offers'. Body, three text rows: 'A self-assessment form for requirements, and automated tests of the interfaces.' 'A listing at Level 1 or Level 2 — on the GovStack website.' 'The level and a link to the full report are shown in the listing.'_
 
-Now what GovStack itself offers. Its testing application has a self-assessment form, where a software provider assesses the product against the functional requirements, and a set of automated tests of the interfaces. GovStack's website grades software at Level 1 or Level 2, depending on how many requirements are met. Its team checks a submission for completeness and plausibility, which is a review of what the provider sent, not a test of your installation. Accepted software is listed on the website with its level and a link to the full report. Be careful with thresholds, too. The website lists software from Level 1. The Architecture specification, section 5.5.4, asks for every required requirement to be met before a product appears on GovMarket. When you quote a threshold, name its source.
+Now what GovStack itself offers. Its testing application has a self-assessment form, where a software provider assesses the product against the functional requirements, and a set of automated tests of the interfaces. GovStack's website grades software at Level 1 or Level 2, depending on how many requirements are met. Its team checks a submission for completeness and plausibility, which is a review of what the provider sent, not a test of your installation. Accepted software is listed on the website with its level and a link to the full report. Be careful with thresholds, too: the website and the Architecture specification set different ones. When you quote a threshold, name its source.
 
 > _Slide 5 — Title: 'Progressa's self-assessment sheet'. Body, a plain-text table of three rows: '6.2.3 Make decisions about an application — REQUIRED — met by configuration — evidence: the registrar's screen with approve, reject and send back.' '6.3.2.10 Import/Export of service descriptions — REQUIRED — met — evidence: an exported file imported into a second installation.' '6.1.7 Pay fees for application — REQUIRED — met — not used, as learner registration carries no fee.'_
 
@@ -214,7 +214,7 @@ Below are the functional requirements of the GovStack Registration Building Bloc
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — the ministry's technical lead or solution architect who sets up the registration service and judges the products offered for it |
-| Target runtime | ~5 min (≈460 spoken words) |
+| Target runtime | ~5 min (≈455 spoken words) |
 | PAERA anchor | GovStack Registration specification, default edition: REG §6.3.1.1, REG §6.3.1.3 to REG §6.3.1.6, REG §6.3.1.8, REG §6.3.1.10, REG §6.3.2.1, REG §6.3.2.2, REG §6.3.2.10, REG §8.3 |
 
 > **Single message —** _Describe your registration in the specification's terms, and an AI assistant drafts the service description that sets the block up, which you then import, test and correct._
@@ -237,9 +237,9 @@ Here is Progressa's learner registration written that way. There is one registra
 
 From that brief the assistant drafts the service description. Be clear about what this file is. The specification requires that a full service description can be exported and imported, with its screens, fields, process flow and settings. But it publishes no operation for creating or changing a service, and it does not define the file's format. The format is the product's own. So the description names the product and the format it is written in, and every assumption the assistant made is marked for someone to confirm. Give the assistant the format as the product documents it, with an exported example if you have one, so that it does not invent one.
 
-> _Slide 5 — Title: 'Import, test, correct'. Body, three text rows: 'Import the draft into a test installation.' 'The block lists the service, with its screens in order.' 'Confirm or correct every marked assumption.' Footer: 'Progressa's description is a specimen, not yet run.'_
+> _Slide 5 — Title: 'Import, test, correct'. Body, three text rows: 'Import the draft into a test installation.' 'The block lists the service, with its screens in order.' 'Confirm or correct every marked assumption.' Footer: 'Progressa's description is a worked example.'_
 
-Then the draft goes into a test installation. The check is simple to state. The block lists the service, and its screens come back in the order the brief gave. Then send one test application down each path the brief describes, one learner who transfers and one who does not; the two must be asked for different documents. Each marked assumption is confirmed by the registry's office or corrected. Progressa's description exists today as a specimen, not yet run; it will be imported when the product is chosen.
+Then the draft goes into a test installation. The check is simple to state. The block lists the service, and its screens come back in the order the brief gave. Then send one test application down each path the brief describes, one learner who transfers and one who does not; the two must be asked for different documents. Each marked assumption is confirmed by the registry's office or corrected. Progressa's description is a worked example, ready to import once the product is chosen.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Describe your registration in the specification's terms, and an AI assistant drafts the service description that sets the block up, which you then import, test and correct.' Below it, the on-screen practice box (not narrated)._
 
@@ -305,7 +305,7 @@ This storyboard stands in the place of the demonstration segment until it can be
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — the ministry's technical lead or solution architect who sets up the registration service and judges the products offered for it |
-| Target runtime | ~5 min (≈452 spoken words) |
+| Target runtime | ~5 min (≈451 spoken words) |
 | PAERA anchor | GovStack Registration specification, default edition: REG §6.3.3.1 to REG §6.3.3.3, REG §6.3.2.7; GovStack Identity specification, Version 2.0: ID §9.1.1, ID §7.2.1, ID 6.2-r2, ID §8 |
 
 > **Single message —** _Three kinds of check stop a bad application before it reaches the officer: rules on each field, a comparison with the identity authority's record, and a test of completeness on sending._
@@ -324,11 +324,11 @@ The first kind is a rule on each field. The specification lets the analyst set t
 
 The second kind compares the application with an outside source. The specification's own example is a name and an identifier matched against a civil registry. For a person, the published way runs through the identity block's sign-in, OpenID Connect. The person signs in with PNIA, Progressa's identity authority, and approves what may be shared. PNIA releases the name, and an identifier made for this one service. The form's action compares the typed name with the released one, at the moment of applying, while the person is there. Progressa's second failing application has a name that differs, and it is refused. The service keeps PNIA's identifier for it, never the national number.
 
-> _Slide 4 — Title: 'What is not published'. Body, two text rows: 'A check from server to server, by a known identifier, is required of the block — but no interface for it is published.' 'PNIA's one service on Linkup reads a person by national number: a Progressa contract from KP2, not a GovStack interface.'_
+> _Slide 4 — Title: 'What is not published'. Body, two text rows: 'A check from server to server, by a known identifier, is required of the block — but no interface for it is published.' 'PNIA's one service on Linkup reads a person by national number: a Progressa contract, not a GovStack interface.'_
 
-Be precise about one gap. The Identity specification requires a way to verify a person from a known identifier, but its published set of interfaces has none for it. Progressa has one service of that kind: PNIA's read of a person by national number on Linkup, a contract of Progressa's from KP2 that only the examination authority may call. Wherever it appears, it is named as Progressa's own contract, not as a GovStack interface.
+Be precise about one gap. The Identity specification requires a way to verify a person from a known identifier, but its published set of interfaces has none for it. Progressa has one service of that kind: PNIA's read of a person by national number on Linkup, a contract of Progressa's own that only the examination authority may call. Wherever it appears, it is named as Progressa's own contract, not as a GovStack interface.
 
-> _Slide 5 — Title: 'Check three: complete before sending'. Body, two text rows: 'Every required field filled, every required document uploaded — or no sending, with a clear message.' 'Progressa: a transferring learner without the transfer letter cannot send.' Footer: 'Storyboard — not yet run.'_
+> _Slide 5 — Title: 'Check three: complete before sending'. Body, two text rows: 'Every required field filled, every required document uploaded — or no sending, with a clear message.' 'Progressa: a transferring learner without the transfer letter cannot send.' Footer: 'Walkthrough: what a good run shows.'_
 
 The third kind runs when the applicant presses send. Every required field must be filled and every required document uploaded, or the file cannot be sent, and the screen says what is missing. Write those messages with the registry's office, because a parent who cannot understand the message comes to the counter instead. Progressa's third application is a transferring learner without the transfer letter. It stops at the send screen. All three kinds of check act before a person sees the file, so the registrar's attention goes to judgement, not to typing errors.
 
@@ -395,7 +395,7 @@ This storyboard stands in the place of the demonstration segment until it can be
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — the ministry's technical lead or solution architect who sets up the registration service and judges the products offered for it |
-| Target runtime | ~5 min (≈453 spoken words) |
+| Target runtime | ~5 min (≈452 spoken words) |
 | PAERA anchor | GovStack Registration specification, default edition: REG §6.2.3, REG §6.3.2.3, REG §6.3.2.4, REG §8.2, REG §4.2, REG §6.3.2.7, REG §5.1.4, REG §9.2.2; GovStack Digital Registries specification, Version 3.0-alpha: DRS-33 (records processed through OpenAPI services), DR §8.1 |
 
 > **Single message —** _A registrar approves, rejects or sends back each application, and only on approval does the block write the record to the register, in a sequence the specifications leave you to define and test._
@@ -418,9 +418,9 @@ Progressa's flow has three roles. An automated role takes the file as sent and c
 
 Now the write. On approval, the specification says, the system sends the information to a registry, using an action that sends form data to another service. Its traffic must pass through an Information Mediator or a secure gateway; in Progressa that is Linkup. The register accepts the record through its create-or-update operation. But neither specification publishes the order of calls or the data between the two blocks. Joining them is your team's own work. Write it down as a short agreement between the two owners: which call is made, with which fields, at which moment, and what happens when the register refuses. Then test both outcomes: an approval that writes, and a refusal that leaves the file waiting.
 
-> _Slide 5 — Title: 'Where the record lands'. Body, two text rows: 'PLR: a member of Linkup since KP2, with one enrolment service.' 'KP3 sets up the authoritative learner register behind it — the register this service writes to.' Footer: 'Storyboard — not yet run.'_
+> _Slide 5 — Title: 'Where the record lands'. Body, two text rows: 'PLR: already a member of Linkup, with one enrolment service.' 'This course sets up the authoritative learner register behind it — the register this service writes to.' Footer: 'Walkthrough: what a good run shows.'_
 
-Where does the record land? PLR, the Progressa Learner Registry, has been a member of Linkup since KP2, with one enrolment service. KP3 sets up the authoritative learner register behind it, and that register is what this service writes to. The record carries the identifier PNIA gave the service, never the national number. And the order matters to a minister as much as to an architect: a record written before a decision is a record nobody answers for.
+Where does the record land? PLR, the Progressa Learner Registry, is already a member of Linkup, with one enrolment service. This course sets up the authoritative learner register behind it, and that register is what this service writes to. The record carries the identifier PNIA gave the service, never the national number. And the order matters to a minister as much as to an architect: a record written before a decision is a record nobody answers for.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A registrar approves, rejects or sends back each application, and only on approval does the block write the record to the register, in a sequence the specifications leave you to define and test.' Below it, the on-screen practice box (not narrated)._
 
@@ -509,7 +509,7 @@ Then the description itself. The specification requires that the full service ca
 
 Two more things make the description worth keeping. Several registrations can be combined in one service, and a document that two of them need is asked for only once; one registration's result can even be another's input. And the block keeps statistics: the number of applications processed, by operator, registration, service and date. That count is how the owner of a service shows it is used. This is where planning for the whole government pays: each service kept as a description is re-use waiting to happen.
 
-> _Slide 5 — Title: 'Progressa's service, moved'. Body, three text rows: 'Exported from the first installation.' 'Imported into a clean installation, and compared screen by screen.' 'The number of applications processed read from the block's statistics.' Footer: 'Storyboard — not yet run.'_
+> _Slide 5 — Title: 'Progressa's service, moved'. Body, three text rows: 'Exported from the first installation.' 'Imported into a clean installation, and compared screen by screen.' 'The number of applications processed read from the block's statistics.' Footer: 'Walkthrough: what a good run shows.'_
 
 For Progressa, the learner registration is exported, imported into a clean installation and compared with the original, screen by screen. The comparison is the check. If the copy's screens equal the original's, the file carried everything that matters. If not, the difference is either a setting that belongs to one installation or a gap in the product's export, and you need to know which. The number of applications processed is read from the block's own statistics. When a second ministry needs a registration, it begins from this file.
 
@@ -592,7 +592,7 @@ Direct address ('your ministry', 'your registry'), plain English at about the ei
 
 ### 4.5 The demonstration segments, and what is not claimed
 
-Subtopics 2.3, 2.4, 2.5 and 2.6 each carry a demonstration segment, a screen recording with voice-over, in the place of their fifth slide. None can be recorded yet: the configurations R1 to R10 are the colleague's build, which has not started, and the data exchange federation of KP2 runs nowhere today. Until a segment can be recorded, its storyboard stands in its place, and the slide shows its steps as text marked 'Storyboard — not yet run'. The voice-over says what each check runs and what counts as a pass, never that it has run. When a check has passed on the built service, the specimen it rests on is replaced by the file as built, the segment is recorded from the storyboard, and the script gains one sentence stating the result and its date.
+Subtopics 2.3, 2.4, 2.5 and 2.6 each carry a demonstration segment, a screen recording with voice-over, in the place of their fifth slide. None can be recorded yet: the configurations R1 to R10 are the colleague's build, which has not started, and the data exchange federation of KP2 runs nowhere today. Until a segment can be recorded, its storyboard stands in its place, and the slide shows its steps as text marked 'What a good run shows'. The voice-over says what each check runs and what counts as a pass, never that it has run. When a check has passed on the built service, the specimen it rests on is replaced by the file as built, the segment is recorded from the storyboard, and the script gains one sentence stating the result and its date.
 
 ### 4.6 The specimens
 

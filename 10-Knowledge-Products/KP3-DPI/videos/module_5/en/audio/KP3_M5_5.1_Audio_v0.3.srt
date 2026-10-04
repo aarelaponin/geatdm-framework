@@ -1,0 +1,235 @@
+1
+00:00:00,120 --> 00:00:04,980
+Module 5, Video 5.1. What must be in place before the blocks can call each other?
+
+2
+00:00:06,240 --> 00:00:09,760
+Right. So before one block can actually call another across ministries,
+
+3
+00:00:10,480 --> 00:00:13,920
+uh, each really must be a member of the data exchange layer,
+
+4
+00:00:14,620 --> 00:00:19,480
+and each service registered with its contract and, you know, access granted to the caller.
+
+5
+00:00:20,140 --> 00:00:27,360
+Exactly. When we evaluate the reference architecture in your ministry, we often encounter, well, assumptions about interoperability.
+
+6
+00:00:27,820 --> 00:00:33,680
+So if your minister is told the new registration service will, uh, reuse identity in the learner register,
+
+7
+00:00:34,300 --> 00:00:35,460
+what is your job to check?
+
+8
+00:00:36,160 --> 00:00:42,980
+Well, your job is to check whether those calls can happen at all, because across ministries, it is never just an automatic process.
+
+9
+00:00:43,420 --> 00:00:44,440
+Right. It takes some setup.
+
+10
+00:00:44,800 --> 00:00:49,980
+Yeah, exactly. Three distinct elements must be in place first, and, you know, each one has an owner.
+
+11
+00:00:50,480 --> 00:00:52,500
+And those controls are pretty central to the infrastructure.
+
+12
+00:00:52,680 --> 00:00:58,500
+So to understand how that governs your program, what are the three things the information mediator specification asks for?
+
+13
+00:00:58,980 --> 00:01:04,200
+Okay, so number one, a member, meaning an organization is admitted to the data exchange layer.
+
+14
+00:01:04,519 --> 00:01:06,940
+Right. Number two, a registered service.
+
+15
+00:01:07,580 --> 00:01:09,160
+Which means publishing the contract.
+
+16
+00:01:09,540 --> 00:01:13,020
+Yeah, the provider publishes its contract, an OpenAPI description.
+
+17
+00:01:13,440 --> 00:01:16,660
+It outlines exactly what data it requires and what it returns.
+
+18
+00:01:17,240 --> 00:01:20,560
+So callers can program precisely to those technical boundaries.
+
+19
+00:01:20,860 --> 00:01:23,260
+Exactly. And number three, a grant.
+
+20
+00:01:24,000 --> 00:01:26,380
+The owner of the service explicitly allows the caller.
+
+21
+00:01:27,220 --> 00:01:31,400
+XRoad, which is the software behind Progress' exchange, works exactly this way.
+
+22
+00:01:31,940 --> 00:01:33,120
+It relies on all three then.
+
+23
+00:01:33,740 --> 00:01:37,160
+Yep. It needs all three components to physically permit a transaction.
+
+24
+00:01:37,880 --> 00:01:41,460
+That level of strict control really defines the architecture, but, uh,
+
+25
+00:01:42,200 --> 00:01:46,480
+does the specification impose a rule that every call must go through the exchange?
+
+26
+00:01:47,100 --> 00:01:53,640
+Uh, well, it is strongly recommended across the internet, but it's not actually required between blocks on a single platform.
+
+27
+00:01:54,040 --> 00:01:54,680
+Okay, got it.
+
+28
+00:01:55,340 --> 00:02:03,340
+Progressive makes the choice to use the exchange, though, because its blocks belong to different authorities, and each must control who reads its data.
+
+29
+00:02:04,100 --> 00:02:08,900
+Makes sense, because without that controlled communication, data just becomes, like, duplicated, right?
+
+30
+00:02:09,300 --> 00:02:12,880
+Yeah, duplicated, rekeyed, and incredibly costly to change.
+
+31
+00:02:13,740 --> 00:02:16,060
+So let us apply that to the current state of the platform.
+
+32
+00:02:16,640 --> 00:02:20,340
+Who exactly are the members on Progress' exchange linkup today?
+
+33
+00:02:20,780 --> 00:02:24,980
+Well, the Digital Government Authority, PDGA, owns and operates it,
+
+34
+00:02:25,600 --> 00:02:27,620
+and PNEA acts as the caller.
+
+35
+00:02:28,260 --> 00:02:37,500
+Right. Then the Learner Registry, PLR, publishes one enrollment service, and the Identity Authority, PNIA, publishes one identity read service.
+
+36
+00:02:37,980 --> 00:02:40,560
+And currently, only PNEA may call either of those.
+
+37
+00:02:40,880 --> 00:02:44,980
+Exactly. And the Ministry of Education, MOISE, is not a member at all.
+
+38
+00:02:45,520 --> 00:02:51,020
+Okay, so since MOISE isn't a member right now, what four things does this course add to the configuration?
+
+39
+00:02:51,580 --> 00:02:56,480
+Number one, a member for the registration service with its application registered on the exchange.
+
+40
+00:02:57,520 --> 00:03:02,500
+Number two, a write service on the learner register registered with its OpenAPI contract.
+
+41
+00:03:03,220 --> 00:03:06,360
+And that step two contract dictates how the data's formatted, right?
+
+42
+00:03:07,020 --> 00:03:07,740
+Yeah, precisely.
+
+43
+00:03:08,380 --> 00:03:12,560
+Then number three, grants, letting the registration service call that write service,
+
+44
+00:03:13,220 --> 00:03:14,560
+and the identity service as well.
+
+45
+00:03:15,300 --> 00:03:16,580
+Got it. And the fourth?
+
+46
+00:03:17,020 --> 00:03:20,860
+Number four, the payments block joins as a member, publishing its own interface.
+
+47
+00:03:21,260 --> 00:03:24,060
+That interaction raises a critical point for the reference architecture.
+
+48
+00:03:24,680 --> 00:03:29,040
+How does the system prove that simply being on the exchange is not permission?
+
+49
+00:03:29,560 --> 00:03:33,740
+Well, the registration and write services are listed on the network, sure.
+
+50
+00:03:34,580 --> 00:03:39,360
+But if a member without a specific grant makes the call, the exchange just intercepts it.
+
+51
+00:03:39,480 --> 00:03:40,540
+Like at the network layer?
+
+52
+00:03:40,900 --> 00:03:41,120
+Yeah.
+
+53
+00:03:41,980 --> 00:03:45,220
+It refuses the request entirely within access denied fault.
+
+54
+00:03:45,480 --> 00:03:46,860
+So it's extremely strict.
+
+55
+00:03:47,160 --> 00:03:47,840
+It has to be.
+
+56
+00:03:48,480 --> 00:03:51,940
+Before any plan says that two blocks will talk, check three things:
+
+57
+00:03:52,580 --> 00:03:56,360
+membership, a registered contract, and a grant from the owner.
+
+58
+00:03:57,020 --> 00:03:59,100
+If one is missing, the call fails.
+
+59
+00:03:59,620 --> 00:04:00,980
+Sources are in the video description.

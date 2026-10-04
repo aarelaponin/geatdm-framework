@@ -1,0 +1,16 @@
+# Slide cue file — KP3 Module 1, Video 1.4 "Start at the desk: a first assessment from public sources, with AI"
+# Deck:  KP3_M1_1.4_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M1_1.4_Audio_v0.1.m4a (runs to 3:33.5)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Clean take: no invented facts, PAERA not spoken; "MoEYS" said as "MOE"; SRT spells "Progresa" (check pronunciation).
+# Sources card pulled forward to 3:28 (over "a draft to verify, not a verdict") for a 5.5 s tail; the take says "Sources" only at 3:31.
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — hook: an assessment usually starts by asking officials for documents
+0:52   # slide 3 — the question bank (62 questions, DAT-Q03)
+1:29   # slide 4 — the workflow, in five stages
+1:56   # slide 5 — Progressa's desk run
+2:55   # slide 6 — demonstration: what a good run shows
+3:22   # slide 7 — in one sentence
+3:28   # slide 8 — Sources

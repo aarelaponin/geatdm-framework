@@ -1,0 +1,280 @@
+1
+00:00:00,200 --> 00:00:07,760
+So welcome to today's deep dive into the reference architecture, specifically looking at the once only registration principle.
+
+2
+00:00:08,060 --> 00:00:11,780
+Thanks for having me. Yeah, um, this is a really crucial topic to unpack today.
+
+3
+00:00:12,280 --> 00:00:16,980
+It really is, especially for you listening, uh, the official running these systems in your ministry,
+
+4
+00:00:17,640 --> 00:00:19,480
+because the mission here is pretty simple, right?
+
+5
+00:00:19,820 --> 00:00:24,360
+It's to ensure a parent never has to carry the exact same birth details to a school,
+
+6
+00:00:25,000 --> 00:00:27,120
+and then to a district office, and then a ministry.
+
+7
+00:00:27,860 --> 00:00:29,300
+Exactly. I mean, they shouldn't have to.
+
+8
+00:00:29,400 --> 00:00:32,520
+The state should ask once and just reuse what it already holds.
+
+9
+00:00:32,960 --> 00:00:41,580
+Right. But how do we actually prove our foundation can do this without all that data becoming siloed or, you know, fragmented or constantly rekeyed?
+
+10
+00:00:41,760 --> 00:00:44,660
+Well, to avoid that, you need four specific blocks working together.
+
+11
+00:00:45,180 --> 00:00:50,400
+Uh, you need identity, registration, the learner register, and the data exchange layer.
+
+12
+00:00:50,980 --> 00:00:58,180
+Okay, four blocks. So when a learner begins step one, um, how does the system limit data exposure, so we aren't just
+
+13
+00:00:58,620 --> 00:01:00,460
+duplicating excessive records everywhere?
+
+14
+00:01:00,840 --> 00:01:06,340
+Right. So the registration service actually sends the learner to the identity authority's own sign-in page.
+
+15
+00:01:06,900 --> 00:01:11,240
+Let's look at Progessa, which is a fictional country, by the way, that we use for these examples.
+
+16
+00:01:11,320 --> 00:01:12,240
+Oh, sure. Progessa.
+
+17
+00:01:12,380 --> 00:01:16,520
+Yeah. So they go to PNIA, which is the identity authority,
+
+18
+00:01:17,120 --> 00:01:20,000
+and the learner approves sharing only their name and date of birth.
+
+19
+00:01:20,380 --> 00:01:21,760
+Wait, only those two facts?
+
+20
+00:01:22,060 --> 00:01:29,780
+Just those two, and crucially, the service receives those facts alongside an identifier made specifically for this one single service.
+
+21
+00:01:29,840 --> 00:01:32,540
+I mean, it never, ever keeps the national number.
+
+22
+00:01:33,340 --> 00:01:40,180
+Oh, wow. Okay. So moving to step two, how does the architecture actually prevent information from being duplicated there?
+
+23
+00:01:40,600 --> 00:01:42,740
+Well, it's simple. The form basically fills itself.
+
+24
+00:01:43,220 --> 00:01:46,200
+The name and date of birth are just pulled directly from PNIA.
+
+25
+00:01:46,560 --> 00:01:46,920
+Nice.
+
+26
+00:01:47,560 --> 00:01:53,740
+So the parent types only what PNIA does not hold, things like the school, the grade, uh, and a contact number.
+
+27
+00:01:54,380 --> 00:01:56,280
+So absolutely nothing is typed twice.
+
+28
+00:01:56,520 --> 00:01:58,300
+Exactly. Nothing typed twice.
+
+29
+00:01:58,820 --> 00:02:00,480
+Okay, so then moving into step three,
+
+30
+00:02:01,360 --> 00:02:04,260
+what is the exact sequence when the learner finally submits?
+
+31
+00:02:04,860 --> 00:02:11,620
+So the learner submits once, then automated checks run in the background, and a human registrar actually approves it.
+
+32
+00:02:11,960 --> 00:02:19,740
+Got it. After that, the service writes the record to the learner register through the data exchange, and the register confirms that it exists.
+
+33
+00:02:20,300 --> 00:02:21,320
+Now, I have to ask,
+
+34
+00:02:22,020 --> 00:02:25,720
+is there a technical limit within the published identity block we should watch out for?
+
+35
+00:02:26,060 --> 00:02:29,180
+Because obviously, we don't want our systems to be costly to change.
+
+36
+00:02:29,920 --> 00:02:31,540
+Uh, yes, there is.
+
+37
+00:02:32,180 --> 00:02:36,360
+The specification requires a query of a person's facts from server to server, but,
+
+38
+00:02:37,500 --> 00:02:40,080
+well, it publishes no interface for that query.
+
+39
+00:02:40,840 --> 00:02:41,800
+Wait, really?
+
+40
+00:02:42,580 --> 00:02:43,520
+No interface at all?
+
+41
+00:02:44,180 --> 00:02:45,980
+No published standard interface. No.
+
+42
+00:02:46,640 --> 00:02:46,700
+Oh.
+
+43
+00:02:47,700 --> 00:02:47,840
+So,
+
+44
+00:02:48,460 --> 00:02:51,000
+for example, back in Progessa, our fictional country,
+
+45
+00:02:51,800 --> 00:02:56,700
+PNIA's read service on linkup is actually a custom contract of Progessa's own.
+
+46
+00:02:56,940 --> 00:03:02,240
+Ah, I see. Which means if you decide to change providers later, you run the risk of being locked in
+
+47
+00:03:02,920 --> 00:03:05,320
+to one supplier. Exactly. Right.
+
+48
+00:03:05,640 --> 00:03:06,460
+That's the main hurdle.
+
+49
+00:03:06,800 --> 00:03:06,940
+Right.
+
+50
+00:03:08,080 --> 00:03:08,180
+Well,
+
+51
+00:03:09,020 --> 00:03:11,520
+let's track this entire run just to pull it all together.
+
+52
+00:03:12,360 --> 00:03:14,620
+Can we number aloud the nine steps from beginning to end?
+
+53
+00:03:15,220 --> 00:03:17,400
+Yeah, let's go through them. So step one,
+
+54
+00:03:18,060 --> 00:03:22,040
+sign in with the national identity on PNIA's own sign-in page.
+
+55
+00:03:22,540 --> 00:03:22,900
+Step two,
+
+56
+00:03:23,580 --> 00:03:26,800
+sign in as the enrolled test person. Okay, tracking.
+
+57
+00:03:27,320 --> 00:03:30,560
+Then step three, approve the name and the date of birth only.
+
+58
+00:03:31,020 --> 00:03:35,340
+And step four, back on the form, those two facts are filled from PNIA.
+
+59
+00:03:35,860 --> 00:03:36,940
+Right. The autofill kicks in.
+
+60
+00:03:37,400 --> 00:03:41,460
+Yep. Step five, type the school, the grade, and a contact number.
+
+61
+00:03:42,260 --> 00:03:45,520
+Step six, submit once, and the automated checks run.
+
+62
+00:03:46,100 --> 00:03:47,560
+And then we get to the human step, right?
+
+63
+00:03:47,800 --> 00:03:48,180
+Exactly.
+
+64
+00:03:49,040 --> 00:03:52,200
+Step seven, the registrar opens the application and approves it.
+
+65
+00:03:52,820 --> 00:03:56,700
+Step eight, the record is written to the learner register through the exchange.
+
+66
+00:03:57,200 --> 00:04:00,560
+And finally, step nine, the register confirms that the record exists.
+
+67
+00:04:01,140 --> 00:04:01,480
+Perfect.
+
+68
+00:04:02,520 --> 00:04:08,600
+So just to recap, sign in, approve, fill, submit, decide, write.
+
+69
+00:04:09,240 --> 00:04:13,280
+One run, nothing typed twice, and four blocks working as one foundation.
+
+70
+00:04:13,840 --> 00:04:15,100
+I really love that breakdown.
+

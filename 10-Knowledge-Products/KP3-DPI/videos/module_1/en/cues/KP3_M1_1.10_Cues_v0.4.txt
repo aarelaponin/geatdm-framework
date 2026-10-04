@@ -1,0 +1,21 @@
+# Slide cue file — KP3 Module 1, Video 1.10 "The first proof for education: one service on four blocks"
+# Deck:  KP3_M1_1.10_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M1_1.10_Audio_v0.4.m4a (runs to 4:34.1)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Verdict: USABLE. Education builds Registration and the learner register (2:22); Progressa's payments "set up and
+# joined to the data exchange" (3:32); register brought forward from phase three (3:49) — all match the deck.
+# Flaws: invented opener + "deep dive" framing; at 2:28 "reuses the country's existing blocks for identity and payments"
+# (slide 4 says Payments is set up beside the service — corrected at 3:32); "GovStack's second phase" (PAERA's) and
+# "the GovStack model uses a fictional country called Progresa" (it is the course's); "universal translator" metaphor;
+# "think about your own professional world" outro; no sources line — Sources card rides the close (7.1 s).
+# Listen for "Progresa".
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: A roadmap that promises everything proves nothing for years
+0:46   # slide 3 — Why one priority service
+2:11   # slide 4 — One service, four blocks, on the data exchange layer
+3:15   # slide 5 — Progressa's shortlist
+3:43   # slide 6 — Brought forward on purpose
+4:11   # slide 7 — In one sentence
+4:27   # slide 8 — Sources

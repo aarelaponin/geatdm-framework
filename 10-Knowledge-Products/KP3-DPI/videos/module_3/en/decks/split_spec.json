@@ -1,0 +1,79 @@
+{
+  "kicker_prefix": "Education DPI Roadmap · Module 3",
+  "audience": "The team that configures the register: the head of the ministry's ICT unit, the registry architect, the data lead or the integration lead",
+  "out_pattern": "KP3_M3_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "The Registry block",
+  "cover_subtitle_marker": "Seven standalone vid",
+  "videos": [
+    {
+      "code": "3.1",
+      "title": "What a register is for: one authoritative record",
+      "mins": "~5",
+      "range": [
+        3,
+        11
+      ],
+      "message": "A register gives every service one authoritative record of each learner, held as a service with rules on who may read and change it, and filled through a disciplined load."
+    },
+    {
+      "code": "3.2",
+      "title": "Five tiers between a messy file and a trusted record",
+      "mins": "~5",
+      "range": [
+        12,
+        19
+      ],
+      "message": "Data reaches the register through five tiers, raw, bronze, staging, silver and gold, with quality checks at bronze and a person's approval before silver."
+    },
+    {
+      "code": "3.3",
+      "title": "Generating the register's schema",
+      "mins": "~5",
+      "range": [
+        20,
+        27
+      ],
+      "message": "The register is set up from one schema file, with its fields, rules, links and key, which an AI assistant drafts from the law and the form and the owner corrects and publishes."
+    },
+    {
+      "code": "3.4",
+      "title": "Quality checks that stop a bad row",
+      "mins": "~5",
+      "range": [
+        28,
+        35
+      ],
+      "message": "Every row is checked at the bronze tier, and a row that fails is set aside with its reason, so that the people who sent the data know what to correct."
+    },
+    {
+      "code": "3.5",
+      "title": "A published pattern, followed in the open",
+      "mins": "~5",
+      "range": [
+        36,
+        43
+      ],
+      "message": "Giga's School Master Data shows the pattern at work for schools, and you may follow it for learners if you say what you took and changed and copy no unlicensed code."
+    },
+    {
+      "code": "3.6",
+      "title": "Account for every load",
+      "mins": "~5",
+      "range": [
+        44,
+        51
+      ],
+      "message": "After every load, show that the rows received equal the rows passed plus the rows set aside, and that the rows approved equal the records the register added or changed."
+    },
+    {
+      "code": "3.7",
+      "title": "The register as a service others can use",
+      "mins": "~5",
+      "range": [
+        52,
+        60
+      ],
+      "message": "Other services reach the register only through its published interface, each seeing no more than its role allows, and every learner or parent can see who read their record."
+    }
+  ]
+}

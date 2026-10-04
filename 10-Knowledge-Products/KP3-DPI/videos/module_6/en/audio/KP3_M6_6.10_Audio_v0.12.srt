@@ -1,0 +1,296 @@
+1
+00:00:00,160 --> 00:00:00,280
+So
+
+2
+00:00:00,920 --> 00:00:06,160
+imagine your ministry just rolled out a, a, a flawless digital infrastructure for education.
+
+3
+00:00:06,780 --> 00:00:08,860
+Okay, sounds like a dream for any program director.
+
+4
+00:00:09,040 --> 00:00:09,160
+Right.
+
+5
+00:00:09,780 --> 00:00:10,980
+The system is running beautifully,
+
+6
+00:00:11,760 --> 00:00:14,880
+but then your minister calls you in and says, "Great job.
+
+7
+00:00:15,700 --> 00:00:18,780
+Now take that exact same blueprint and apply it to health,
+
+8
+00:00:19,600 --> 00:00:22,220
+or maybe agriculture or social protection."
+
+9
+00:00:22,900 --> 00:00:25,500
+Yeah, that is a, well, a very common scenario.
+
+10
+00:00:25,920 --> 00:00:26,700
+And honestly,
+
+11
+00:00:27,300 --> 00:00:34,600
+if I'm a busy minister, my first instinct is just to, you know, copy-paste the whole education app, slap a health logo on it, and call it a day.
+
+12
+00:00:35,320 --> 00:00:40,260
+But taking a successful digital roadmap and forcing it onto a completely different field,
+
+13
+00:00:41,140 --> 00:00:42,240
+it's not that simple, is it?
+
+14
+00:00:42,800 --> 00:00:48,200
+No, it's definitely not. And that instinct to just copy-paste, um, that's exactly where ministries get trapped.
+
+15
+00:00:48,700 --> 00:00:57,820
+What we really need to figure out is, uh, which parts of a digital roadmap are actually universal across your programs and which parts have to be completely rebuilt from scratch.
+
+16
+00:00:58,260 --> 00:01:02,680
+Right, because if I'm trying to adapt an education blueprint for a ministry of health,
+
+17
+00:01:03,460 --> 00:01:05,420
+some things absolutely have to stay the same.
+
+18
+00:01:06,200 --> 00:01:07,700
+So what actually transfers over?
+
+19
+00:01:08,140 --> 00:01:14,020
+Well, the crucial thing to understand is that the core method transfers perfectly, not the specific software, but the method.
+
+20
+00:01:14,600 --> 00:01:17,840
+Specifically, um, three foundational things stay exactly the same.
+
+21
+00:01:18,340 --> 00:01:19,960
+First, you keep the five domains.
+
+22
+00:01:20,360 --> 00:01:20,920
+And those are?
+
+23
+00:01:21,440 --> 00:01:27,040
+That's your governance and law, access, digital data, interoperability, and digital identity.
+
+24
+00:01:27,500 --> 00:01:28,120
+Okay, got it.
+
+25
+00:01:28,820 --> 00:01:33,800
+Second, the nine steps of the assessment process, from framing all the way to adopting the roadmap.
+
+26
+00:01:34,060 --> 00:01:35,000
+Those stay identical.
+
+27
+00:01:35,860 --> 00:01:38,640
+And third, your foundational building blocks remain in place.
+
+28
+00:01:39,020 --> 00:01:41,540
+Wait, hold on. The foundational building blocks stay?
+
+29
+00:01:42,500 --> 00:01:49,620
+Why does that work? Because managing student grades seems, I mean, fundamentally different from tracking hospital beds or
+
+30
+00:01:50,000 --> 00:01:50,660
+crop yields.
+
+31
+00:01:51,260 --> 00:01:56,860
+It is different, but let's look at the United Nations Development Program's framework for, uh, digital public infrastructure.
+
+32
+00:01:57,340 --> 00:02:04,480
+They put three universal things at the absolute core: digital identity, digital payments, and consent-based data sharing.
+
+33
+00:02:04,860 --> 00:02:05,700
+Oh, I see.
+
+34
+00:02:06,140 --> 00:02:15,200
+Think about it. Whether you're a patient paying a clinic or, you know, a student proving your enrollment, the underlying mechanisms of proving who you are and handling a transaction,
+
+35
+00:02:15,640 --> 00:02:21,580
+they are identical. The new sector just builds its specific applications on top of that existing universal core.
+
+36
+00:02:22,180 --> 00:02:25,160
+That makes total sense. Uh, it's kind of like a city grid.
+
+37
+00:02:25,700 --> 00:02:30,420
+The, uh, the roads and the plumbing, like the identity and payments, they stay exactly the same.
+
+38
+00:02:31,000 --> 00:02:34,900
+But the buildings you put on top, like a school versus a hospital, those change.
+
+39
+00:02:35,280 --> 00:02:35,800
+Precisely.
+
+40
+00:02:36,420 --> 00:02:43,760
+You do not want to pay to rebuild your underlying infrastructure every single time a new department in your ministry digitizes.
+
+41
+00:02:44,320 --> 00:02:49,400
+But here's where I get tripped up. A hospital obviously doesn't operate anything like a school, so
+
+42
+00:02:50,080 --> 00:02:52,000
+where does this blueprint actually diverge?
+
+43
+00:02:52,240 --> 00:02:53,760
+Like, if the core is the same,
+
+44
+00:02:54,380 --> 00:02:55,520
+what am I paying to build?
+
+45
+00:02:55,940 --> 00:02:59,580
+You're paying to build the sector-specific register and its services.
+
+46
+00:02:59,820 --> 00:03:07,660
+Okay. In education, your whole system revolves around a learner register, but in health, you need a register of providers and medical facilities.
+
+47
+00:03:08,100 --> 00:03:11,560
+Or if it's social protection, you're building a social insurance register.
+
+48
+00:03:12,100 --> 00:03:15,200
+You have to assess those specific needs completely afresh.
+
+49
+00:03:15,680 --> 00:03:21,500
+Okay, but if I'm swapping out the core data being tracked, how does the underlying architecture handle that?
+
+50
+00:03:22,100 --> 00:03:27,980
+Well, the reference architecture dictates that digitizing any state registry requires two specific building blocks:
+
+51
+00:03:28,620 --> 00:03:31,060
+registration and a digital registry. Right.
+
+52
+00:03:31,260 --> 00:03:35,320
+So whatever your new sector is recording, it uses those exact same two blocks.
+
+53
+00:03:35,680 --> 00:03:38,580
+Your new health sector doesn't invent a new way to register people.
+
+54
+00:03:39,040 --> 00:03:42,520
+It just pays to connect its specific data to those foundational blocks.
+
+55
+00:03:43,100 --> 00:03:46,860
+I see. It's basically plug and play at the, uh, registry level.
+
+56
+00:03:47,280 --> 00:03:49,480
+But what if a ministry just ignores this?
+
+57
+00:03:49,740 --> 00:03:55,040
+Like, what is the actual danger if they just copy the whole thing wholesale and skip the fresh assessment?
+
+58
+00:03:55,740 --> 00:04:00,480
+That is the ultimate trap. You have to carry over the method, not the results.
+
+59
+00:04:00,960 --> 00:04:09,820
+If you don't assess the new sector afresh, your systems end up fragmented, siloed, duplicated, rekeyed, locked into one supplier, or, you know, just
+
+60
+00:04:10,240 --> 00:04:11,700
+incredibly costly to change.
+
+61
+00:04:12,040 --> 00:04:16,760
+Because the pain points of a hospital are never going to perfectly mirror the pain points of a classroom.
+
+62
+00:04:17,040 --> 00:04:20,200
+Exactly. To see why this matters, let's look at Progressa.
+
+63
+00:04:20,560 --> 00:04:25,480
+And just to be clear, Progressa is a completely fictional country used in these architectural examples.
+
+64
+00:04:25,860 --> 00:04:27,360
+Right, just a model for us to look at.
+
+65
+00:04:27,540 --> 00:04:27,740
+Yes.
+
+66
+00:04:28,420 --> 00:04:34,340
+So when Progressa ran their education assessment, they found that a missing learner record was holding back three different domains.
+
+67
+00:04:34,800 --> 00:04:37,600
+So fixing that learner register became priority number one.
+
+68
+00:04:38,080 --> 00:04:45,360
+But if the health ministry ran its own fresh assessment using those same nine steps, they might uncover a totally different bottleneck.
+
+69
+00:04:45,820 --> 00:04:49,500
+Like maybe their biggest issue is securing a link to the National Identity Authority.
+
+70
+00:04:50,260 --> 00:04:54,520
+Spot on. You can't fix a health identity problem with an education record solution.
+
+71
+00:04:54,980 --> 00:04:58,520
+So to summarize the golden rule for anyone managing these programs,
+
+72
+00:04:59,420 --> 00:05:03,400
+keep the five domains, keep the nine-step method, and keep the foundational blocks.
+
+73
+00:05:03,980 --> 00:05:09,440
+But you absolutely must rebuild the sector's register and services based on a brand-new assessment.
+
+74
+00:05:09,900 --> 00:05:10,680
+That's it exactly.
+

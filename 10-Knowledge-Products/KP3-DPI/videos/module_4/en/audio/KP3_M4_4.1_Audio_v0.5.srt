@@ -1,0 +1,175 @@
+1
+00:00:00,200 --> 00:00:09,460
+So if you are a director general listening to this, uh, or a senior government official preparing your minister, this deep dive is a policy briefing designed specifically for you.
+
+2
+00:00:09,980 --> 00:00:15,560
+We are looking at why foundational digital identity systems, well, why they must be built just once.
+
+3
+00:00:15,860 --> 00:00:16,020
+Right.
+
+4
+00:00:16,760 --> 00:00:20,100
+And that really is the core premise here, the golden rule, if you will.
+
+5
+00:00:20,600 --> 00:00:24,540
+I mean, an identity system is just incredibly costly to build and run.
+
+6
+00:00:25,140 --> 00:00:27,740
+A country should build it once for every service to use.
+
+7
+00:00:28,160 --> 00:00:31,880
+Because if your ministry builds its own, uh, it pays those costs a second time.
+
+8
+00:00:32,220 --> 00:00:35,640
+Exactly. But, I mean, it is a really common temptation, right?
+
+9
+00:00:35,680 --> 00:00:42,540
+Like a sector, say a ministry of education wanting to know its learners, uh, they are tempted to issue their own ID.
+
+10
+00:00:43,080 --> 00:00:51,100
+But what does that actually entail? Like, why shouldn't a specific ministry treat an identity system like an ordinary registration screen?
+
+11
+00:00:51,720 --> 00:00:55,000
+Well, the GovStack identity specification is actually very clear on this.
+
+12
+00:00:55,980 --> 00:00:59,680
+A foundational identity is the base for every digital interaction.
+
+13
+00:00:59,860 --> 00:01:07,440
+It is not just a form. Right. Because it is highly valuable, it attracts attackers, so it demands the absolute highest security.
+
+14
+00:01:08,380 --> 00:01:10,400
+Enrolling people well requires time,
+
+15
+00:01:11,020 --> 00:01:13,860
+uh, verifying documents, and heavily trained staff.
+
+16
+00:01:14,540 --> 00:01:16,080
+Making it a full national task.
+
+17
+00:01:16,400 --> 00:01:20,200
+Yes, a national task, not just a side project for one ministry.
+
+18
+00:01:20,580 --> 00:01:27,580
+Okay, so if a ministry attempts this alone, the finance ministry really needs to know the exact financial burden being duplicated.
+
+19
+00:01:28,340 --> 00:01:32,280
+What specific cost categories will a ministry duplicate if they decide to go it alone?
+
+20
+00:01:33,080 --> 00:01:35,620
+So based on a twenty eighteen World Bank study,
+
+21
+00:01:36,320 --> 00:01:39,600
+we know over ninety percent of startup costs fall into six categories.
+
+22
+00:01:39,700 --> 00:01:41,500
+Oh, wow, ninety percent. Which ones?
+
+23
+00:01:42,260 --> 00:01:44,720
+Human resources, the identity credential,
+
+24
+00:01:45,400 --> 00:01:46,820
+central IT infrastructure,
+
+25
+00:01:47,460 --> 00:01:52,200
+physical establishments, enrollment IT, and information campaigns.
+
+26
+00:01:52,980 --> 00:01:55,340
+And what about when it is actually running?
+
+27
+00:01:56,020 --> 00:02:00,360
+Once running, human resources swallow over eighty percent of the annual cost.
+
+28
+00:02:00,860 --> 00:02:02,460
+Over eighty percent just on staff.
+
+29
+00:02:02,880 --> 00:02:10,780
+Yes. Furthermore, the physical credential, you know, the card itself, ranges from three percent to over forty percent of the total cost.
+
+30
+00:02:11,400 --> 00:02:16,400
+And procurement methods can swing overall cost by twenty-five percent to over a hundred percent.
+
+31
+00:02:17,180 --> 00:02:22,880
+So to make these abstract costs concrete, let's look at how this plays out in the demonstration country of Progresa.
+
+32
+00:02:23,720 --> 00:02:27,080
+If Progresa's Ministry of Education ran its own learner identity,
+
+33
+00:02:27,780 --> 00:02:31,340
+which specific burdens would they carry compared to using the national system?
+
+34
+00:02:31,780 --> 00:02:39,100
+Well, if the education ministry built it, they would duplicate staff, printed cards, central systems, offices, kits, and campaigns.
+
+35
+00:02:39,880 --> 00:02:43,080
+Things become duplicated, siloed, and costly to change.
+
+36
+00:02:43,960 --> 00:02:47,460
+But by using the National Identity Authority, PNIA, instead...
+
+37
+00:02:48,340 --> 00:02:51,420
+The ministry carries only the work of connecting its service and testing it.
+
+38
+00:02:52,140 --> 00:02:54,320
+The reference architecture expects exactly this.
+
+39
+00:02:54,920 --> 00:03:01,440
+It expects reusing the existing system behind a services façade, so applicants simply sign in with their foundational identity.
+
+40
+00:03:02,160 --> 00:03:07,880
+So you avoid having systems fragmented or data rekeyed or being locked into one supplier.
+
+41
+00:03:08,600 --> 00:03:11,240
+Identity costs a great deal to build and more to run.
+
+42
+00:03:11,920 --> 00:03:13,300
+A country pays that cost once.
+
+43
+00:03:13,980 --> 00:03:16,180
+A ministry that builds its own pays it again.
+
+44
+00:03:17,040 --> 00:03:18,520
+Sources are in the video description.

@@ -1,0 +1,16 @@
+# Slide cue file — KP3 Module 3, Video 3.3 "Generating the register's schema"
+# Deck:  KP3_M3_3.3_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M3_3.3_Audio_v0.4.m4a (runs to 4:30.9)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# No sources line and no closing beat after the recap: Sources card cues mid-wrap-up (5.9 s) so slide 7 gets only 9 s.
+# "Master blueprint" metaphor; "3.0-alpha" read as "three-point-oh-dot-alpha"; host says "reference architecture" for the schema.
+
+0:00   # slide 1 — title card
+0:06   # slide 2 — Hook: A register is set up from one file
+0:51   # slide 3 — What the schema file holds
+1:54   # slide 4 — The key is not the national number
+2:42   # slide 5 — Drafted by AI, decided by the owner
+3:32   # slide 6 — What the walkthrough will show
+4:16   # slide 7 — In one sentence
+4:25   # slide 8 — Sources

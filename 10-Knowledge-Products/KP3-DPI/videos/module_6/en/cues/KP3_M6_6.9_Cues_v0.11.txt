@@ -1,0 +1,21 @@
+# Slide cue file — KP3 Module 6, Video 6.9 "The AI plays, step by step"
+# Deck:  KP3_M6_6.9_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M6_6.9_Audio_v0.11.m4a (runs to 4:40.6)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# The hook's line ("draft the paperwork… cannot decide anything") comes at 0:49, after the play definition, so
+# slide 2 holds to 0:56 and slide 3 cues on the four phases. No sources line — Sources card rides the closing
+# sentence "Trust is earned… no decision is ever handed over" (6.6 s).
+# Flaws: opens "Welcome to this briefing" (framing, not the brief named — listen); "the reference architecture
+# demonstrates this… using Progressa" and "uses an interoperability domain" (loose attribution: Progressa is the
+# course's fictional country, said fictional on air); "one Basic, five Opportunistic" unsaid; workshop role unsaid.
+# Listen for "GovStack" (SRT "gov stack").
+
+0:00   # slide 1 — title card
+0:09   # slide 2 — Hook: an AI assistant can draft, not decide
+0:56   # slide 3 — A play for each step
+1:46   # slide 4 — What the assistant drafts, what a person checks
+2:41   # slide 5 — Trust a play only after a known result
+3:16   # slide 6 — The scorer, on a domain whose result is known
+4:23   # slide 7 — In one sentence
+4:34   # slide 8 — Sources

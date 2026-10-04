@@ -1,0 +1,17 @@
+# Slide cue file — KP3 Module 3, Video 3.2 "Five tiers between a messy file and a trusted record"
+# Deck:  KP3_M3_3.2_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M3_3.2_Audio_v0.6.m4a (runs to 5:11.9)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Take walks raw→gold in one pass; slide 4 cues on "deliberate approval… a program cannot replace", so silver/gold
+# play over it (the raw-is-its-own-tier half was said at 1:46 under slide 3). No sources line: Sources card rides the
+# closing sentence (5.9 s). Embellishments: "PDFs / photos of handwritten notes", gold split "makes queries fast".
+
+0:00   # slide 1 — title card
+0:09   # slide 2 — Hook: Every term, schools send lists of learners
+1:07   # slide 3 — Five tiers
+3:02   # slide 4 — Two things to get right
+3:42   # slide 5 — Where the tiers live
+4:00   # slide 6 — What the walkthrough will show
+4:57   # slide 7 — In one sentence
+5:06   # slide 8 — Sources

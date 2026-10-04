@@ -1,0 +1,20 @@
+# Slide cue file — KP3 Module 6, Video 6.5 "Sourcing each block without lock-in"
+# Deck:  KP3_M6_6.5_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M6_6.5_Audio_v0.8.m4a (runs to 5:19.8)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Take opens on the hook itself (wrong-cheque-on-a-Tuesday framing), names the topic at 0:32; slide 2 holds 0:12–0:47.
+# Slide 6 covers only the registration and identity rows. No sources line; Sources card rides the restated hook
+# line (6.8 s).
+# FLAWS: "let us call it Progresa" / "In Progresia" (mispronounced, framed as made up on the spot); the four contract
+# checks credited to the UN Safeguards Framework ("the framework requires") — the deck gives them as the course's
+# advice; invented licence "grace period"; plug/socket, keys, house metaphors.
+
+0:00   # slide 1 — title card
+0:12   # slide 2 — Hook: Lock-in is rarely one bad decision
+0:47   # slide 3 — Three options for each block
+1:31   # slide 4 — Learn in the sandbox; ask for the evidence
+2:31   # slide 5 — Where lock-in comes from
+4:15   # slide 6 — Progressa's sourcing table (illustrative)
+4:58   # slide 7 — In one sentence
+5:13   # slide 8 — Sources

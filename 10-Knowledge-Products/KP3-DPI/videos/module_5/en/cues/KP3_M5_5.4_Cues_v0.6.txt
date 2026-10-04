@@ -1,0 +1,18 @@
+# Slide cue file — KP3 Module 5, Video 5.4 "The acceptance checks: from "set up" to "proven""
+# Deck:  KP3_M5_5.4_Deck_v0.1.pptx (9 slides)
+# Audio: KP3_M5_5.4_Audio_v0.6.m4a (runs to 5:13.8)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Invented "millions of taxpayer dollars wasted every year" opener; no cold open naming the video; medical-device
+# metaphor; "automated and tamper-proof" overstates "nobody edits a result by hand". X1/X3/X4 examples (slide 4 VO) are
+# spoken over the sheet (slide 6). No sources line; Sources card cued at 5:08 inside the closing sentence (~6 s tail).
+
+0:00   # slide 1 — title card
+0:13   # slide 2 — Hook: a vendor says the platform is GovStack compliant at Level 2
+1:16   # slide 3 — What GovStack itself offers
+2:14   # slide 4 — One check for each configuration
+2:50   # slide 5 — Set up is not proven
+3:08   # slide 6 — Progressa's sheet of checks
+4:27   # slide 7 — Running the checks
+4:51   # slide 8 — In one sentence
+5:08   # slide 9 — Sources

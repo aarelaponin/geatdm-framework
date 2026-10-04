@@ -1,0 +1,16 @@
+# Slide cue file — KP3 Module 2, Video 2.6 "The whole service as a description you can move"
+# Deck:  KP3_M2_2.6_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M2_2.6_Audio_v0.4.m4a (runs to 3:23.2)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Take starts mid-conversation ("Exactly. And you know…") — no title read, generic silo/lock-in talk instead of the hook; hosts read the pronunciation note aloud ("that is pronounced Progressa, by the way").
+# Statistics come only on slide 6; publish-to-another-installation and the no-published-operation caution are dropped. No Sources line: Sources at 3:18 (5.2 s tail).
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — hook: the second ministry should not start from a blank screen
+0:55   # slide 3 — test before anyone uses it
+1:39   # slide 4 — export, import, publish
+2:01   # slide 5 — combine, and count
+2:24   # slide 6 — Progressa's service, moved
+3:07   # slide 7 — in one sentence
+3:18   # slide 8 — Sources

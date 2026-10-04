@@ -1,0 +1,69 @@
+{
+  "kicker_prefix": "Education DPI Roadmap · Module 2",
+  "audience": "The ministry's technical lead or solution architect who sets up the registration service and judges the products offered for it",
+  "out_pattern": "KP3_M2_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "The Registration block",
+  "cover_subtitle_marker": "Six standalone videos",
+  "videos": [
+    {
+      "code": "2.1",
+      "title": "What the Registration block does",
+      "mins": "~5",
+      "range": [
+        3,
+        10
+      ],
+      "message": "A registration block takes an application, lets an officer decide and, on approval, writes to a register and gives the applicant proof, and built once it serves every ministry that registers people or things."
+    },
+    {
+      "code": "2.2",
+      "title": "The published specification, and how to judge a product against it",
+      "mins": "~5",
+      "range": [
+        11,
+        18
+      ],
+      "message": "Ask every vendor to show the product against the published specification, requirement by requirement, and check whether GovStack lists it and at which compliance level."
+    },
+    {
+      "code": "2.3",
+      "title": "Generating the registration service",
+      "mins": "~5",
+      "range": [
+        19,
+        26
+      ],
+      "message": "Describe your registration in the specification's terms, and an AI assistant drafts the service description that sets the block up, which you then import, test and correct."
+    },
+    {
+      "code": "2.4",
+      "title": "Checks before the officer decides",
+      "mins": "~5",
+      "range": [
+        27,
+        34
+      ],
+      "message": "Three kinds of check stop a bad application before it reaches the officer: rules on each field, a comparison with the identity authority's record, and a test of completeness on sending."
+    },
+    {
+      "code": "2.5",
+      "title": "The officer decides, and the record is written",
+      "mins": "~5",
+      "range": [
+        35,
+        42
+      ],
+      "message": "A registrar approves, rejects or sends back each application, and only on approval does the block write the record to the register, in a sequence the specifications leave you to define and test."
+    },
+    {
+      "code": "2.6",
+      "title": "The whole service as a description you can move",
+      "mins": "~5",
+      "range": [
+        43,
+        50
+      ],
+      "message": "The whole service is a description you can test, publish, export and import elsewhere, so a second ministry starts from yours and not from nothing."
+    }
+  ]
+}

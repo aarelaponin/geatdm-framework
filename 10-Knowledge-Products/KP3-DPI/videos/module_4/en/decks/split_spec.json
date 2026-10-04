@@ -1,0 +1,69 @@
+{
+  "kicker_prefix": "Education DPI Roadmap · Module 4",
+  "audience": "The ministry's technical lead or solution architect who connects its services to the identity block and the Payments block instead of building either again",
+  "out_pattern": "KP3_M4_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "Identity and payments",
+  "cover_subtitle_marker": "Six standalone video",
+  "videos": [
+    {
+      "code": "4.1",
+      "title": "Why identity is built once",
+      "mins": "~5",
+      "range": [
+        3,
+        11
+      ],
+      "message": "An identity system is costly to build and to run, so a country builds it once and every service uses it, and a ministry that builds its own pays those costs a second time."
+    },
+    {
+      "code": "4.2",
+      "title": "The published Identity block, and what the identity authority offers today",
+      "mins": "~5",
+      "range": [
+        12,
+        20
+      ],
+      "message": "The published Identity block verifies who a person is, releases only what that person approves and issues no learner identity, so check what your identity authority really offers before you plan on it."
+    },
+    {
+      "code": "4.3",
+      "title": "Generating the identity connection",
+      "mins": "~5",
+      "range": [
+        21,
+        29
+      ],
+      "message": "A service connects to the identity block as its registered client, asks only for what it needs, and keeps the identifier the block gives to that service, never the national number."
+    },
+    {
+      "code": "4.4",
+      "title": "The Payments block and the payment systems behind it",
+      "mins": "~5",
+      "range": [
+        30,
+        38
+      ],
+      "message": "The Payments block is not a new payment system: it connects government programmes to the payment systems your country already has, so every programme pays through one shared connection."
+    },
+    {
+      "code": "4.5",
+      "title": "Generating the payment connection",
+      "mins": "~5",
+      "range": [
+        39,
+        47
+      ],
+      "message": "To pay through the block you configure the sender, the programme, the beneficiary, the payment and the route for its status, and the proof is one test payment whose status comes back."
+    },
+    {
+      "code": "4.6",
+      "title": "Reuse is the return on planning",
+      "mins": "~5",
+      "range": [
+        48,
+        55
+      ],
+      "message": "Learner registration reuses the identity block and the scholarship payment reuses the Payments block, a saving visible only to someone who plans for the whole government, because inside one project building your own looks quicker."
+    }
+  ]
+}

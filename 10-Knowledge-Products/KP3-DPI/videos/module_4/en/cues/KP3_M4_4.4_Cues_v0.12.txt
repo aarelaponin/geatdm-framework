@@ -1,0 +1,20 @@
+# Slide cue file — KP3 Module 4, Video 4.4 "The Payments block and the payment systems behind it"
+# Deck:  KP3_M4_4.4_Deck_v0.1.pptx (9 slides)
+# Audio: KP3_M4_4.4_Audio_v0.12.m4a (runs to 5:51.2)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws: opens "two really solid sources for this topic"; invented travel-adapter and post-office/police metaphors;
+# slide 4 covers only the account mapper and gateway (vouchers, reconciliation, logs, audit trail unsaid);
+# Progressa called "the fictional demonstration country used in the reference architecture" (fictional, but loose
+# attribution); "for you today" podcast close and adapter callback; no sources line — Sources card rides the
+# adapter callback (6.2 s). Listen for "Progressa" (SRT spells "Progresa" — must not sound like Mexico's PROGRESA).
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: a ministry offered a payment system of its own
+1:21   # slide 3 — Not a new payment scheme
+1:37   # slide 4 — What is inside the block
+2:30   # slide 5 — What stays outside the block
+3:44   # slide 6 — Progressa: the path of a payment
+4:35   # slide 7 — Pix, Brazil (67% in 15 months)
+5:27   # slide 8 — In one sentence
+5:45   # slide 9 — Sources

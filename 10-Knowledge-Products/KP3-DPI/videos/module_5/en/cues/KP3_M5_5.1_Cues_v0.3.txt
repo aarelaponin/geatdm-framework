@@ -1,0 +1,17 @@
+# Slide cue file — KP3 Module 5, Video 5.1 "What must be in place before the blocks can call each other"
+# Deck:  KP3_M5_5.1_Deck_v0.1.pptx (9 slides)
+# Audio: KP3_M5_5.1_Audio_v0.3.m4a (runs to 4:01.3)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Opener reads the one-sentence message first (0:06–0:20), so slide 1 holds to 0:20. "Progressa" said as
+# "Progress'" (1:27, 2:16) and "Progressive" (1:55). Sources line lands at 3:59; card cued at 3:57 on the recap's last clause (~4 s tail).
+
+0:00   # slide 1 — title card
+0:20   # slide 2 — Hook: a minister is told the new registration service will reuse identity and the learner register
+0:52   # slide 3 — Three things, in this order (member, registered service, grant)
+1:37   # slide 4 — Is the exchange required at all?
+2:13   # slide 5 — Progressa's members today
+2:45   # slide 6 — What this course adds
+3:21   # slide 7 — A call without a grant is refused
+3:48   # slide 8 — In one sentence
+3:57   # slide 9 — Sources

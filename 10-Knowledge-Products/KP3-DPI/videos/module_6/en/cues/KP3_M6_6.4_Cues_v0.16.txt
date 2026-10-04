@@ -1,0 +1,22 @@
+# Slide cue file — KP3 Module 6, Video 6.4 "The investment case your finance ministry can read"
+# Deck:  KP3_M6_6.4_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M6_6.4_Audio_v0.16.m4a (runs to 4:37.4)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Take opens mid-analogy ("cabinets, the plumbing") with no host naming the video; title card holds 6 s, hook slide
+# from "when governments try to fund…" through "does not fund a vision" (0:31) to the first sheet (0:45).
+# 1:19 "the high estimate is generally about half again as large as the low one" follows the World Bank 25%–100%+
+# swing as a general remark; Progressa is not introduced until 1:53, so no percentage is put on Progressa's range
+# (flaw: generic claim not on the deck). Progressa's USD 7.6–11.7 million range (and 2.5–3.8 first horizon) is NEVER
+# spoken; sheet-3 funder figures also omitted. "Progresara"/"Progresa" — listen for it; always called fictional.
+# "The reference architecture uses a fictional country" — loose attribution. No sources line: Sources card rides
+# the last line of the recap (6.4 s); recap slide holds 4 s.
+
+0:00   # slide 1 — title card
+0:06   # slide 2 — Hook: A finance ministry does not fund a vision
+0:45   # slide 3 — Sheet 1: by wave and component
+1:42   # slide 4 — Sheets 2 and 3: by domain, and by who pays
+2:56   # slide 5 — The budget cycle
+3:41   # slide 6 — Sheet 4: the returns
+4:27   # slide 7 — In one sentence
+4:31   # slide 8 — Sources

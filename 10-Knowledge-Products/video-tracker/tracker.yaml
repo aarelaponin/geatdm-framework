@@ -16,7 +16,7 @@
 #
 # Bump `version` when the manifest structure or the topic list changes (not for a status tick).
 
-version: 2
+version: 3
 languages: [en, fr]        # fr rows are hidden by default until something exists for them
 
 kps:
@@ -204,15 +204,154 @@ kps:
           - {code: "5.9", title: "Keep the documents honest — the consistency cross-check", en: {accepted: "v0.5", note: "accepted at KP1's bar 30 Sep — settled on runtime (3:22), strongest of three; cued + assembled. LISTEN: \"RAQUI\" for RACI at 1:23"}}
           - {code: "5.10", title: "Carry the framework to the next sector", en: {accepted: "v0.19", note: "was 6.4. Accepted at KP1's bar 1 Oct on brief v0.3 (the fraction wording replaced) — settled on runtime (4:15); cued + assembled. Clean: title, deck order, recap, no figures or metaphor. BDAT gloss invented. LISTEN: \"progressive education data\" at 0:27"}}
 
-  # KP3 (DPI) and KP4 are not tracked yet — uncomment and fill in when their content exists.
-  # - id: KP3
-  #   number: 3
-  #   title: Digital Public Infrastructure
-  #   root: KP3-DPI
-  #   intro: {title: KP3 introduction (on camera), path: videos/intro}
-  #   modules:
-  #     - number: 1
-  #       title: ...
-  #       path: videos/module_1
-  #       topics:
-  #         - {code: "1.1", title: "..."}
+  - id: KP3
+    number: 3
+    title: Education DPI Roadmap
+    root: KP3-DPI
+    note: >-
+      Six script bundles authored (Modules 1–2 v0.2, Modules 3–6 v0.1), 45 videos. Video track started
+      3 Oct 2026: scripts + decks v0.1 for all six modules — Modules 1–2 from the v0.2 bundles, Modules 3–6
+      from the v0.1 bundles after the review's Tier 1 edits (vo_diff clean, qa_bundle 0 hard failures).
+      Modules 3–6 decks share kp3_deck_common.py (tables ≥15 pt, scaled rows). Tier 2 condense not yet
+      decided for M1–M2. Demonstration segments are walkthrough stand-ins (text slide, footer 'Walkthrough:
+      what a good run shows.') until the configurations are built and the segment is recorded.
+      3 Oct: audio briefs + prompts v0.1 for all 45 (make_brief.py; enumeration lines filled by hand).
+      4–5 Oct: all 45 English videos have a candidate take, hand-written cue file and MP4 (duration
+      checked, a frame after every cue looked at), each read against the author's bar — KP2's, plus no
+      KP acronym. Each topic's note names the candidate take and its flaws; LISTEN items are marked.
+      Next: the author listens and sets accepted:. KP3-DPI/videos/README.md "Production log" has the
+      learnings.
+    intro:
+      title: KP3 introduction — what the six modules cover (on camera)
+      path: videos/intro
+      en:
+        note: Script not started.
+
+    modules:
+      - number: 1
+        title: Where your country stands, and what to build first
+        persona: Strategist
+        path: videos/module_1
+        topics:
+          - {code: "1.1", title: "What makes infrastructure foundational", mins: ~5,
+             en: {note: "candidate v0.10 (3:41, settled) — cued + assembled 4 Oct; PEMIS said 'PMIS'; title card holds 26 s"}}
+          - {code: "1.2", title: "The five domains, as a map", mins: ~5,
+             en: {note: "candidate v0.8 (4:33) — cued + assembled 4 Oct; five-domain map credited to GovStack (the course's own); invented openers/analogies"}}
+          - {code: "1.3", title: "The roadmap method in nine steps: who does what", mins: ~5,
+             en: {note: "candidate v0.11 (4:45) — cued + assembled 4 Oct; invented 'billion dollars' opener; claims about step 8's sheets; no recap (recap slide 1 s)"}}
+          - {code: "1.4", title: "Start at the desk: a first assessment from public sources, with AI", mins: ~5,
+             en: {note: "demonstration segment storyboarded (slide 5), not yet run; candidate v0.1 (3:33) — cued + assembled 4 Oct; clean; 'MoEYS' said 'MOE'"}}
+          - {code: "1.5", title: "Ask the people who run the systems: the five questionnaires", mins: ~5,
+             en: {note: "candidate v0.5 (4:12) — cued + assembled 4 Oct; invented pencil/press-release opener, tax-audit metaphor, podcast outro; PEMIS said 'PMIS'"}}
+          - {code: "1.6", title: "Verify before you score", mins: ~5,
+             en: {note: "candidate v0.9 (4:14, settled) — cued + assembled 4 Oct; templates credited to 'the reference architecture'; one of three Progressa points; no recap"}}
+          - {code: "1.7", title: "Score each domain: five stages and one table", mins: ~5,
+             en: {note: "demonstration segment storyboarded (slide 5), not yet run; candidate v0.8 (5:12) — cued + assembled 4 Oct; numbers now check (0.5, 1.3, 2.3→2.1); rule 4 never said; listen for Progressa"}}
+          - {code: "1.8", title: "Foundational blocks and the sector's own", mins: ~5,
+             en: {note: "candidate v0.17 (4:28) — cued + assembled 4 Oct; first take on the reworded script; slide 4 covered (legal data registries dropped); identity split still credited to 'the reference architecture'; Progressa slide thin. Guide page not yet re-rendered"}}
+          - {code: "1.9", title: "What comes first: the order of building", mins: ~5,
+             en: {note: "candidate v0.8 (4:01, settled) — cued + assembled 4 Oct; invented Estonia 'gold standard'; last line points at the practice box"}}
+          - {code: "1.10", title: "The first proof for education: one service on four blocks", mins: ~5,
+             en: {note: "candidate v0.4 (4:34) — cued + assembled 4 Oct; 'reuses' payments at 2:28, corrected at 3:32; 'GovStack's second phase'; podcast outro"}}
+
+      - number: 2
+        title: The Registration block
+        persona: Architect
+        path: videos/module_2
+        topics:
+          - {code: "2.1", title: "What the Registration block does", mins: ~5,
+             en: {note: "candidate v0.4 (5:44) — cued + assembled 4 Oct; two-blocks rule on slide 6 never stated; ends mid-thought; listen for Progressa"}}
+          - {code: "2.2", title: "The published specification, and how to judge a product against it", mins: ~5,
+             en: {note: "candidate v0.4 (3:44, settled) — cued + assembled 4 Oct; no recap; specification called 'the reference architecture'"}}
+          - {code: "2.3", title: "Generating the registration service", mins: ~5,
+             en: {note: "walkthrough storyboarded on a specimen (slide 5), not yet run; candidate v0.2 (4:42) — cued + assembled 4 Oct; export/import credited to 'the reference architecture'; 'the brief' said aloud"}}
+          - {code: "2.4", title: "Checks before the officer decides", mins: ~5,
+             en: {note: "walkthrough storyboarded on a specimen (slide 5), not yet run; candidate v0.3 (5:12) — cued + assembled 4 Oct; checks credited to 'the reference architecture'; refused-mismatch case dropped"}}
+          - {code: "2.5", title: "The officer decides, and the record is written", mins: ~5,
+             en: {note: "walkthrough storyboarded on a specimen (slide 5), not yet run; candidate v0.8 (4:39, borderline) — cued + assembled 4 Oct; PLR expanded 'personal learner record', PNIA 'National Identity Agency'"}}
+          - {code: "2.6", title: "The whole service as a description you can move", mins: ~5,
+             en: {note: "walkthrough storyboarded on a specimen (slide 5), not yet run; candidate v0.4 (3:23, settled) — cued + assembled 4 Oct; opens mid-conversation; reads the pronunciation note aloud (KP2 5.8 precedent)"}}
+
+      - number: 3
+        title: The Registry block
+        persona: Architect
+        path: videos/module_3
+        topics:
+          - {code: "3.1", title: "What a register is for: one authoritative record", mins: ~5,
+             en: {note: "candidate v0.14 (4:06, brief v0.4) — cued + assembled 4 Oct; Giga and the spec kept apart; early-release caveat dropped; ends on a dangling line; listen for Progressa"}}
+          - {code: "3.2", title: "Five tiers between a messy file and a trusted record", mins: ~5,
+             en: {note: "walkthrough stand-in (slide 5) until the configuration is built and the segment recorded; candidate v0.6 (5:11) — cued + assembled 4 Oct; embellishments only"}}
+          - {code: "3.3", title: "Generating the register's schema", mins: ~5,
+             en: {note: "walkthrough stand-in (slide 5) until the configuration is built and the segment recorded; candidate v0.4 (4:30) — cued + assembled 4 Oct; 'master blueprint' metaphor; schema called 'the reference architecture'"}}
+          - {code: "3.4", title: "Quality checks that stop a bad row", mins: ~5,
+             en: {note: "walkthrough stand-in (slide 5) until the configuration is built and the segment recorded; candidate v0.10 (5:23, brief v0.3) — cued + assembled 4 Oct; raw/bronze now right; says Giga uses the Digital Registries spec (loose attribution, author's bar); listen for Progressa"}}
+          - {code: "3.5", title: "A published pattern, followed in the open", mins: ~5,
+             en: {note: "candidate v0.5 (5:35) — cued + assembled 4 Oct; invented gold-table/staging details; no recap"}}
+          - {code: "3.6", title: "Account for every load", mins: ~5,
+             en: {note: "walkthrough stand-in (slide 5) until the configuration is built and the segment recorded; candidate v0.11 (5:10) — cued + assembled 4 Oct; walkthrough before the hard rule; ends mid-sentence; listen for Progressa"}}
+          - {code: "3.7", title: "The register as a service others can use", mins: ~5,
+             en: {note: "walkthrough stand-in (slide 6) until the configuration is built and the segment recorded; candidate v0.6 (5:51, settled) — cued + assembled 4 Oct; 'from the material'; rule credited to 'the reference architecture'; listen for Progressa"}}
+
+      - number: 4
+        title: Identity and payments
+        persona: Architect
+        path: videos/module_4
+        topics:
+          - {code: "4.1", title: "Why identity is built once", mins: ~5,
+             en: {note: "candidate v0.5 (3:18, settled) — cued + assembled 4 Oct; faithful"}}
+          - {code: "4.2", title: "The published Identity block, and what the identity authority offers today", mins: ~5,
+             en: {note: "candidate v0.8 (5:04) — cued + assembled 4 Oct; block credited to 'the reference architecture'; identifier called a 'token'; 4 of 6 services named"}}
+          - {code: "4.3", title: "Generating the identity connection", mins: ~5,
+             en: {note: "walkthrough stand-in (slide 6) until the configuration is built and the segment recorded; candidate v0.9 (5:43) — cued + assembled 4 Oct; wrap-up now right; recap slide 4.5 s; 'pairwise pseudonymous' added"}}
+          - {code: "4.4", title: "The Payments block and the payment systems behind it", mins: ~5,
+             en: {note: "candidate v0.12 (5:51, settled) — cued + assembled 4 Oct; 'two really solid sources'; slide 4 half covered; listen for Progressa (not PROGRESA)"}}
+          - {code: "4.5", title: "Generating the payment connection", mins: ~5,
+             en: {note: "walkthrough stand-in (slide 6) until the configuration is built and the segment recorded; candidate v0.2 (4:24) — cued + assembled 4 Oct; invented currency-conversion line"}}
+          - {code: "4.6", title: "Reuse is the return on planning", mins: ~5,
+             en: {note: "candidate v0.6 (4:43) — cued + assembled 4 Oct; 'Progessa'; funding-timeline point under the hook slide"}}
+
+      - number: 5
+        title: Join the blocks and prove the foundation
+        persona: Architect
+        path: videos/module_5
+        topics:
+          - {code: "5.1", title: "What must be in place before the blocks can call each other", mins: ~5,
+             en: {note: "walkthrough stand-in (slide 6) until the configuration is built and the segment recorded; candidate v0.3 (4:01, settled) — cued + assembled 4 Oct; Progressa said 'Progressive'"}}
+          - {code: "5.2", title: "Who puts the steps in order: contracts, and the block that calls them", mins: ~5,
+             en: {note: "candidate v0.7 (4:04, settled) — cued + assembled 4 Oct; recap squeezed into the last 8 s; loose 'reference architecture'"}}
+          - {code: "5.3", title: "The once-only registration, from beginning to end", mins: ~5,
+             en: {note: "walkthrough stand-in (slide 7) until the configuration is built and the segment recorded; candidate v0.12 (4:15, brief v0.4, last try) — cued + assembled 4 Oct; identifier, form-fill and no brief named all right; recap runs under Sources; listen for Progressa"}}
+          - {code: "5.4", title: "The acceptance checks: from 'set up' to 'proven'", mins: ~5,
+             en: {note: "walkthrough stand-in (slide 6) until the configuration is built and the segment recorded; candidate v0.6 (5:13) — cued + assembled 4 Oct; invented 'millions of taxpayer dollars' opener"}}
+          - {code: "5.5", title: "Reading the evidence of a call", mins: ~5,
+             en: {note: "walkthrough stand-in (slide 5) until the configuration is built and the segment recorded; candidate v0.6 (5:26) — cued + assembled 4 Oct; 'you need all three records' overstates; recap and settings out of order; listen for Progressa"}}
+          - {code: "5.6", title: "What the next services can now use", mins: ~5,
+             en: {note: "candidate v0.8 (5:24) — cued + assembled 4 Oct; hook holds 2 min; one-page list before consent; warning credited to 'the blueprint'"}}
+
+      - number: 6
+        title: From a proven foundation to a national roadmap
+        persona: Strategist
+        path: videos/module_6
+        topics:
+          - {code: "6.1", title: "From findings to priorities: the gap register", mins: ~5,
+             en: {note: "candidate v0.9 (5:39) — cued + assembled 4 Oct; numbers match the deck; UNDP playbook 'draws from the reference architecture' (wrong); listen for Progressa"}}
+          - {code: "6.2", title: "What to fund first: cost against reuse", mins: ~5,
+             en: {note: "candidate v0.9 (5:24) — cued + assembled 4 Oct; 'the research' named; illustrative figures not called illustrative; listen for Progressa"}}
+          - {code: "6.3", title: "The roadmap over time: horizons, waves and tracks", mins: ~5,
+             en: {note: "candidate v0.8 (5:47, settled) — cued + assembled 4 Oct; waves 1 and 2 never described; no recap; listen for Progressa"}}
+          - {code: "6.4", title: "The investment case your finance ministry can read", mins: ~5,
+             en: {note: "candidate v0.16 (4:37, brief v0.5) — cued + assembled 4 Oct; no percentage on Progressa's range (the range itself is never spoken); opens mid-analogy; recap slide 4 s; listen for Progressa"}}
+          - {code: "6.5", title: "Sourcing each block without lock-in", mins: ~5,
+             en: {note: "candidate v0.8 (5:19) — cued + assembled 4 Oct; contract checks credited to the UN Safeguards Framework; listen for Progressa"}}
+          - {code: "6.6", title: "Governance that keeps shared blocks shared", mins: ~5,
+             en: {note: "candidate v0.9 (5:48, settled) — cued + assembled 4 Oct; 'the research' named; invented Pix/consent details"}}
+          - {code: "6.7", title: "Validate, revise, adopt", mins: ~5,
+             en: {note: "candidate v0.6 (5:28) — cued + assembled 4 Oct; month-6 timeline blurred; score change credited to 'the reference architecture'; listen for Progressa"}}
+          - {code: "6.8", title: "Keep the foundation healthy and safe", mins: ~5,
+             en: {note: "candidate v0.2 (4:45) — cued + assembled 4 Oct; podcast framing; bridge/bouncer metaphors"}}
+          - {code: "6.9", title: "The AI plays, step by step", mins: ~5,
+             en: {note: "walkthrough stand-in (slide 5) until the scorer run is recorded — needs only the toolkit, no build; candidate v0.11 (4:40) — cued + assembled 4 Oct; 'one Basic, five Opportunistic' never said; loose attribution"}}
+          - {code: "6.10", title: "Carry the method to another sector", mins: ~5,
+             en: {note: "candidate v0.12 (5:11, borderline) — cued + assembled 4 Oct; slide 5 table only partly covered; 'UN Development Program framework' for the compendium"}}
+
+  # KP4 is not tracked yet — copy the KP3 block above when its content exists.

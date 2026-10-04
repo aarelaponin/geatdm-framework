@@ -1,0 +1,16 @@
+# Slide cue file — KP3 Module 3, Video 3.5 "A published pattern, followed in the open"
+# Deck:  KP3_M3_3.5_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M3_3.5_Audio_v0.5.m4a (runs to 5:35.9)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# No one-sentence recap and no sources line: slide 7 rides the "next vendor / not locked in" close, Sources the last line (5.9 s).
+# Invented: gold reference table "holds current internet speed"; staging "resolves conflicting district uploads". Metaphors: black box, holding tank, driver's seat.
+
+0:00   # slide 1 — title card
+0:06   # slide 2 — Hook: A vendor tells you their data platform is unique
+0:48   # slide 3 — What Giga publishes
+2:51   # slide 4 — What the learner register takes, and what it changes
+3:49   # slide 5 — Follow the pattern, not the code
+4:57   # slide 6 — Why this helps you
+5:22   # slide 7 — In one sentence
+5:30   # slide 8 — Sources

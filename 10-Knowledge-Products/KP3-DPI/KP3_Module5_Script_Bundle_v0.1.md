@@ -35,7 +35,7 @@ The seven configurations of this module, X1 to X7, belong to a build that a coll
 | PDGA | Progressa Digital Government Authority. It owns and operates Linkup, the data exchange federation, and sets its technical rules. |
 | PNEA | Progressa National Examination Authority. A member of Linkup since KP2; in KP2's configuration, the one member allowed to call the identity and enrolment services. KP3 builds nothing on it. |
 | PLR | Progressa Learner Registry. A member of Linkup since KP2, publishing one enrolment service that only PNEA may call. KP3 sets up the authoritative learner register behind it (module 3); module 5 adds its write service. |
-| PNIA | Progressa National Identity Authority. A member of Linkup since KP2. Its one service on Linkup is a read of a person by national number, a Progressa contract from KP2, which only PNEA may call. An education service checks a person through PNIA's sign-in with OpenID Connect, with the person present. |
+| PNIA | Progressa National Identity Authority. A member of Linkup since KP2. Its one service on Linkup is a read of a person by national number, a contract of Progressa's own, which only PNEA may call. An education service checks a person through PNIA's sign-in with OpenID Connect, with the person present. |
 | MoEYS | Progressa's ministry of education. It is not a member of Linkup. |
 | The Payments block and PayPro | The government's Payments block, which module 4 configures and which joins Linkup as a member in module 5. PayPro is Progressa's payment provider, one of the payment systems in the market, reached through the block's payer bank. |
 | Linkup | The X-Road federation that KP2 set up, release 7.7.0: the data exchange layer, which GovStack calls the Information Mediator. |
@@ -64,7 +64,7 @@ Six standalone subtopic videos. One Architect persona throughout. Total runtime 
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — DPI solution architect, integration lead or ministry technical lead who joins the blocks on the data exchange layer and proves them |
-| Target runtime | ~4 min (≈466 spoken words) |
+| Target runtime | ~4 min (≈443 spoken words) |
 | PAERA anchor | Information Mediator 1.1.1 §6.2 and §7.2 (members, applications, services); X-Road 7.7.0 ARC-G section 1.2 and UG-SS sections 6.1.2 and 7 |
 
 > **Single message —** _Before one block can call another across ministries, each must be a member of the data exchange layer, each service registered with its contract, and access granted to the caller._
@@ -83,17 +83,17 @@ The first is membership. An organisation asks to join the data exchange layer, a
 
 One choice comes before the three. The specification strongly recommends the data exchange layer for any exchange across the internet. It does not require it between blocks that sit together on one platform. So sending every call through the exchange is a choice the specification allows, not a rule it imposes. Progressa makes that choice because its blocks belong to different authorities, and each authority must control who reads its data.
 
-> _Slide 4 — Title: 'Progressa's members since KP2'. Body, a plain-text table of four rows: 'PDGA — owns and operates the exchange.' 'PNEA, the examination authority — the caller.' 'PLR, the learner registry — one enrolment service; only PNEA may call it.' 'PNIA, the identity authority — one service, a read of a person by national number; only PNEA may call it.' Footer line: 'Not a member: MoEYS, the ministry of education.'_
+> _Slide 4 — Title: 'Progressa's members today'. Body, a plain-text table of four rows: 'PDGA — owns and operates the exchange.' 'PNEA, the examination authority — the caller.' 'PLR, the learner registry — one enrolment service; only PNEA may call it.' 'PNIA, the identity authority — one service, a read of a person by national number; only PNEA may call it.' Footer line: 'Not a member: MoEYS, the ministry of education.'_
 
-Progressa already has an exchange, called Linkup, from KP2. The digital government authority, PDGA, owns and operates it. The examination authority, PNEA, is the caller. The learner registry, PLR, publishes one enrolment service, and only PNEA may call it. The identity authority, PNIA, publishes one service, a read of a person by national number. That is a Progressa contract from KP2, and only PNEA may call it. The ministry of education, MoEYS, is not a member.
+Progressa already has an exchange, called Linkup. The digital government authority, PDGA, owns and operates it. The examination authority, PNEA, is the caller. The learner registry, PLR, publishes one enrolment service, and only PNEA may call it. The identity authority, PNIA, publishes one service, a read of a person by national number. That is a contract of Progressa's own, and only PNEA may call it. The ministry of education, MoEYS, is not a member.
 
-> _Slide 5 — Title: 'What KP3 adds'. Body, four text rows: 'A member for the registration service, with its application registered.' 'A write service on the learner register, registered with its contract.' 'Grants: the registration service may call the write service.' 'The Payments block as a member, publishing its own interface.'_
+> _Slide 5 — Title: 'What this course adds'. Body, four text rows: 'A member for the registration service, with its application registered.' 'A write service on the learner register, registered with its contract.' 'Grants: the registration service may call the write service.' 'The Payments block as a member, publishing its own interface.'_
 
-KP3 adds four things. The registration service gets a member of its own, with its application registered. The learner register gets a write service, registered with its contract, because PLR's one service from KP2 is a read. Grants let the registration service call that write service, and PNIA's service too if the build uses it. And the Payments block joins as a member, publishing its own interface. PayPro stays behind the block's payer bank, as one of the payment systems in the market.
+This course adds four things. The registration service gets a member of its own, with its application registered. The learner register gets a write service, registered with its contract, because PLR's one service today is a read. Grants let the registration service call that write service, and PNIA's service too if the build uses it. And the Payments block joins as a member, publishing its own interface. PayPro stays behind the block's payer bank, as one of the payment systems in the market.
 
 > _Slide 6 — Title: 'A call without a grant is refused'. Demonstration segment, storyboard until recorded (section 4.8): the list of members and services, then the same call made with a grant and without one. Text-only stand-in until the recording exists: 'Listed: the registration service. Listed: the write service and its contract. With a grant: answered. Without a grant: access denied.'_
 
-The check is easy to read. The list of members shows the registration service. The list of services shows the register's write service and its contract. Then a member without a grant makes the same call, and the exchange refuses it with an access-denied fault. Being on the exchange is not permission. Until the build runs, this is a storyboard: the steps and what counts as a pass, written before anything is recorded.
+The check is easy to read. The list of members shows the registration service. The list of services shows the register's write service and its contract. Then a member without a grant makes the same call, and the exchange refuses it with an access-denied fault. Being on the exchange is not permission.
 
 > _Slide 7 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Before one block can call another across ministries, each must be a member of the data exchange layer, each service registered with its contract, and access granted to the caller.'_
 
@@ -108,8 +108,8 @@ Before any plan says that two blocks will talk, check three things: membership, 
 | 1 | Title slide. Title: 'What must be in place before the blocks can call each other'. | Standard ITU template. Title Arial Bold 28pt; subtitle (KP3 / 5.1) Arial 18pt. Background #E5F5FB. No images. |
 | 2 | Three numbered text rows: member, registered service, grant. | The core payload. The order matters and is kept on screen. |
 | 3 | Two text rows: recommended across the internet; not required between blocks on one platform. | States the choice the specification leaves open. Text-only. |
-| 4 | Plain-text table of Progressa's four members since KP2, with a footer line naming MoEYS as not a member. | Progressa's names as the outline gives them. No logos, no emblems. |
-| 5 | Four text rows: what KP3 adds (X1, X2, X3, X7). | The configuration codes may appear in small type at the end of each row. |
+| 4 | Plain-text table of Progressa's four members today, with a footer line naming MoEYS as not a member. | Progressa's names as the outline gives them. No logos, no emblems. |
+| 5 | Four text rows: what this course adds (X1, X2, X3, X7). | The configuration codes may appear in small type at the end of each row. |
 | 6 | Demonstration segment (storyboard until recorded). Text-only stand-in of four short lines. | Replaced by the recording of the 5.1 walkthrough when X1, X2, X3 and X7 are built and the federation runs again. Until then, nothing on this slide claims a run. |
 | 7 | Single-sentence summary slide. One large text block (Arial Bold 28pt) and the practice box. | The single message, word for word. |
 | 8 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the references. |
@@ -232,7 +232,7 @@ Below are the steps of a public service in [country X] as its owner describes th
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — DPI solution architect, integration lead or ministry technical lead who joins the blocks on the data exchange layer and proves them |
-| Target runtime | ~4 min (≈467 spoken words) |
+| Target runtime | ~4 min (≈465 spoken words) |
 | PAERA anchor | PAERA v1.0 §5.2, Principle #5 (Once-Only); Registration §6.3.2 and §6.3.2.7; Identity §9.1.1 |
 
 > **Single message —** _A learner signs in, the form fills with the facts the learner agrees to release, the registrar approves and the record is in the register: one run that proves four blocks work as one foundation._
@@ -259,13 +259,13 @@ Next, the form fills. The Registration specification lets a screen pull data fro
 
 The learner submits once. The automated checks run, and the application reaches the registrar, a person who decides. On approval, an automated role in the registration service calls the learner register's write service through the exchange. That call is synchronous, signed, time-stamped and logged. Last, the service asks the register whether the record exists, and the register confirms it. Four blocks, one run.
 
-> _Slide 6 — Title: 'What the published Identity block does not offer'. Body, three text rows: 'A query of a person's facts from server to server: required, but no interface is published.' 'PNIA's present service on Linkup: a read by national number, a Progressa contract from KP2.' 'A build that uses it names it as such.'_
+> _Slide 6 — Title: 'What the published Identity block does not offer'. Body, three text rows: 'A query of a person's facts from server to server: required, but no interface is published.' 'PNIA's present service on Linkup: a read by national number, a contract of Progressa's own.' 'A build that uses it names it as such.'_
 
-One limit must be said plainly. The Identity specification requires the block to answer a query for a person's facts from server to server, but it publishes no interface for that query. What it publishes is the sign-in with the person present. PNIA's present service on Linkup, a read of a person by national number, is a Progressa contract from KP2. If a build shows a pre-fill from server to server, it shows that contract under its own name.
+One limit must be said plainly. The Identity specification requires the block to answer a query for a person's facts from server to server, but it publishes no interface for that query. What it publishes is the sign-in with the person present. PNIA's present service on Linkup, a read of a person by national number, is a contract of Progressa's own. If a build shows a pre-fill from server to server, it shows that contract under its own name.
 
-> _Slide 7 — Title: 'The run, step by step'. Demonstration segment, storyboard until recorded (section 4.9): the principal walkthrough of KP3, from the sign-in to the register's confirmation. Text-only stand-in until the recording exists: the nine steps of the storyboard, one line each, with the line 'Not yet run' at the foot._
+> _Slide 7 — Title: 'The run, step by step'. Demonstration segment, storyboard until recorded (section 4.9): the principal walkthrough of KP3, from the sign-in to the register's confirmation. Text-only stand-in until the recording exists: the nine steps of the storyboard, one line each, under the footer 'Walkthrough: what a good run shows.'._
 
-This run is the principal demonstration of KP3. Until the build exists and the run is recorded, a storyboard stands in its place: each step, what the viewer sees, and what counts as a pass. A pass is recorded only from a run that took place, with its date. If only part is built, the recording stops there and the storyboard continues.
+This run is the principal demonstration of the course. The walkthrough follows it step by step: what the viewer sees at each step, and what counts as a pass. Nine steps lead from the sign-in on PNIA's own page to the register's answer that the record exists. A pass counts only from a run that took place, with its date.
 
 > _Slide 8 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A learner signs in, the form fills with the facts the learner agrees to release, the registrar approves and the record is in the register: one run that proves four blocks work as one foundation.'_
 
@@ -283,7 +283,7 @@ Sign in, approve, fill, submit, decide, write. One run, nothing typed twice, and
 | 4 | Two columns of text: what PNIA filled and what the parent typed, with a footer line. | The worked example of the outline: which facts came from the identity block and which the parent typed. |
 | 5 | Five text rows: submit, checks, the registrar's decision, the write, the confirmation. | The drawn sequence is figure F12 of the written guide. |
 | 6 | Three text rows: the query the Identity specification requires but does not publish, and PNIA's Progressa contract. | Keeps the published interface and Progressa's own contract apart, by name. |
-| 7 | Demonstration segment (storyboard until recorded). Text-only stand-in: the nine storyboard steps, one line each, and 'Not yet run'. | Replaced by the recording of the 5.3 walkthrough when X4 and everything it uses is built and the federation runs again. If only a part is built, the recording runs as far as that part and the stand-in continues. |
+| 7 | Demonstration segment (storyboard until recorded). Text-only stand-in: the nine storyboard steps, one line each, and the footer 'Walkthrough: what a good run shows.' | Replaced by the recording of the 5.3 walkthrough when X4 and everything it uses is built and the federation runs again. If only a part is built, the recording runs as far as that part and the stand-in continues. |
 | 8 | Single-sentence summary slide. One large text block (Arial Bold 28pt) and the practice box. | The single message, word for word. |
 | 9 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the references. |
 
@@ -321,7 +321,7 @@ Below is the configuration of a registration service in [country X] that pre-fil
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — DPI solution architect, integration lead or ministry technical lead who joins the blocks on the data exchange layer and proves them |
-| Target runtime | ~4 min (≈413 spoken words) |
+| Target runtime | ~4 min (≈395 spoken words) |
 | PAERA anchor | GovStack testing (self-assessment and automated interface tests); GovStack Architecture 2.1.0, section 6.4; the published interfaces of the Information Mediator, Identity and Digital Registries specifications |
 
 > **Single message —** _Every configuration has a check that someone can run and read, and a block is called proven only when its checks have run and passed._
@@ -338,19 +338,19 @@ GovStack's own testing offers two things. A software provider can assess its pro
 
 > _Slide 3 — Title: 'One check for each configuration'. Body, three text rows: 'What is run, against which published interface.' 'What counts as a pass.' 'The result, and the date of the last run.'_
 
-KP3 follows the same idea, configuration by configuration. Every configuration has one check with the same name. The check says what is run, against which published interface, and what counts as a pass. For the exchange, check X1 lists the members and finds the registration service. Check X3 makes a call with a grant, which is answered, and the same call without one, which is refused. Check X4 is the whole run, from the sign-in to the register.
+This course follows the same idea, configuration by configuration. Every configuration has one check with the same name. The check says what is run, against which published interface, and what counts as a pass. For the exchange, check X1 lists the members and finds the registration service. Check X3 makes a call with a grant, which is answered, and the same call without one, which is refused. Check X4 is the whole run, from the sign-in to the register.
 
-> _Slide 4 — Title: 'Set up is not proven'. Body, three text rows: 'Set up: the configuration exists.' 'Proven: every check has run and passed, with a date.' 'Until then: a specimen, not yet run.'_
+> _Slide 4 — Title: 'Set up is not proven'. Body, three text rows: 'Set up: the configuration exists.' 'Proven: every check has run and passed, with a date.' 'Until then: set up, not yet proven.'_
 
-Keep two words apart. A configuration that exists is set up. A block is proven only when every one of its checks has run and passed, and the result is written down with its date. Until then, the configuration is shown as a specimen: a file written in the specification's own terms and marked 'specimen, not yet run'. That is where Progressa's build stands on the date of this script.
+Keep two words apart. A configuration that exists is set up. A block is proven only when every one of its checks has run and passed, and the result is written down with its date. Until then, the configuration is set up, and no more than that.
 
 > _Slide 5 — Title: 'Progressa's sheet of checks'. Body, a plain-text table with four columns (configuration; what is run; what counts as a pass; last run) and seven rows, X1 to X7. The last column reads 'not yet run' in every row._
 
-Here is Progressa's sheet of checks for the exchange. Each row names a configuration, what is run, what counts as a pass, and the result and date of the last run. Today the last column reads 'not yet run' in every row. That is not a weakness to hide. It is the honest state, and it tells the minister exactly what lies between a design and a proof.
+Here is Progressa's sheet of checks for the exchange. Each row names a configuration, what is run, what counts as a pass, and the result and date of the last run. Before the first run, the last column reads 'not yet run' in every row. That is not a weakness to hide. It is the honest state, and it tells the minister exactly what lies between a design and a proof.
 
 > _Slide 6 — Title: 'Running the checks'. Demonstration segment, storyboard until recorded (section 4.10): the checks run one after another, and the sheet filled with their results. Text-only stand-in until the recording exists: the sheet of slide 5, unchanged._
 
-When the build exists, the checks are run one after another, and the sheet fills with results and dates. A failed check stays on the sheet with its output until it passes, and nobody edits a result by hand. That is what the recording will show, and nothing less.
+When the build is ready, the checks are run one after another, and the sheet fills with results and dates. A failed check stays on the sheet with its output until it passes, and nobody edits a result by hand. That is what a good run shows, and nothing less.
 
 > _Slide 7 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Every configuration has a check that someone can run and read, and a block is called proven only when its checks have run and passed.'_
 
@@ -405,7 +405,7 @@ Below is the output of an acceptance check that failed in [country X]'s build of
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — DPI solution architect, integration lead or ministry technical lead who joins the blocks on the data exchange layer and proves them |
-| Target runtime | ~4 min (≈411 spoken words) |
+| Target runtime | ~4 min (≈392 spoken words) |
 | PAERA anchor | X-Road 7.7.0 UG-SS sections 11, 14.2 and 15, and PR-OPMON section 2; Information Mediator 1.1.1 §6.5 (Logging Services) and §6.6 |
 
 > **Single message —** _Three records can show that a call took place, the message log, operational monitoring and the traffic view, but each only under settings you must choose before the first call._
@@ -430,7 +430,7 @@ The third record is the traffic view on the security server's diagnostics page. 
 
 > _Slide 5 — Title: 'Progressa: one run, three readers'. Body, a plain-text table of three rows: 'The owner of the learner register — its own message log; the monitoring records of calls to its service.' 'The registration service — its own message log; the monitoring records of its own calls.' 'PDGA, the operator — the traffic view, and the records its role allows.' Demonstration segment, storyboard until recorded (section 4.11): the three records of the run of 5.3, as each party sees them._
 
-Take Progressa's registration run. The owner of the learner register sees, in its own message log, the request to write the record and its own answer. The registration service sees the same exchange from its side. PDGA, as operator, reads the traffic view and the records its role allows. No member sees another member's records by default. Each reader proves only what its own records show. Until the build runs, this is a storyboard: the records each reader would see, written before anything is recorded.
+Take Progressa's registration run. The owner of the learner register sees, in its own message log, the request to write the record and its own answer. The registration service sees the same exchange from its side. PDGA, as operator, reads the traffic view and the records its role allows. No member sees another member's records by default. Each reader proves only what its own records show.
 
 > _Slide 6 — Title: 'Choose before the first call'. Body, three text rows: 'Full message logging on every security server that takes part.' 'Access to monitoring for whoever must read the evidence.' 'The monitoring add-on, so that the traffic view exists.'_
 
@@ -654,7 +654,7 @@ The data exchange federation of KP2 was never set up on ITU's cloud and does not
 
 ### 5.2 The identity connection shown in 5.3
 
-The published Identity specification offers the sign-in with the person present, through OpenID Connect; it requires but does not publish a query of a person's facts from server to server. PNIA's present service on Linkup is a read of a person by national number, a Progressa contract from KP2. If the build offers only that contract, the run of 5.3 shows it under its own name, and the grant in X3 on PNIA's service is added only for that purpose. The choice is the build's and is stated in its configuration file.
+The published Identity specification offers the sign-in with the person present, through OpenID Connect; it requires but does not publish a query of a person's facts from server to server. PNIA's present service on Linkup is a read of a person by national number, a contract of Progressa's own. If the build offers only that contract, the run of 5.3 shows it under its own name, and the grant in X3 on PNIA's service is added only for that purpose. The choice is the build's and is stated in its configuration file.
 
 ### 5.3 Editorial tone calls
 

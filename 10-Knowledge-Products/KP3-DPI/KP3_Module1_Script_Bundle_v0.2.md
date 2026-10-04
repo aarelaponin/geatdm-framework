@@ -5,7 +5,7 @@
 | Field | Value |
 | --- | --- |
 | Document | Video script bundle for Module 1 of KP3 |
-| Version | v0.2 — written afresh on the KP3 outline and content plan, version 0.3 (1 October 2026) |
+| Version | v0.2 — written afresh on the KP3 outline and content plan, version 0.3 (1 October 2026); 4 October 2026: 1.8's registers slide reworded so its narration does not hang on the name PAERA (nine takes skipped it) |
 | Date | 2 October 2026 |
 | Module persona | S (Strategist) — the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first |
 | Subtopics | Ten subtopics (1.1 – 1.10), each shipped as one ~5-minute standalone video |
@@ -25,7 +25,7 @@ This document collects the ten video scripts of Module 1 of Knowledge Product 3,
 
 ### 1.2 What Module 1 teaches, and what it does not claim
 
-Module 1 is written for the Strategist: the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first. It teaches the first five of the method's nine steps — the frame, the automatic assessment, the questionnaires, the verification and the scoring — and the reasoning from the scored result to one priority service. The sequence of nine steps is the team's own, drawn from its multi-country implementation experience; each subtopic names the public sources it rests on: PAERA, the GovStack Public Administration Ecosystem Reference Architecture, version 1.0; UNDP's description of digital public infrastructure and its Digital Development Compass; the UNDP DPI Playbook; and, as benchmarks, a World Bank report for the G20, a Bulletin of the Bank for International Settlements and the official record of e-Estonia. Subtopics 1.8 and 1.10 cite the GovStack building block specifications, each by its edition.
+Module 1 is written for the Strategist: the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first. It teaches the first five of the method's nine steps — the frame, the automatic assessment, the questionnaires, the verification and the scoring — and the reasoning from the scored result to one priority service. The sequence of nine steps is this course's own, drawn from its authors' implementation experience in several countries; each subtopic names the public sources it rests on: PAERA, the GovStack Public Administration Ecosystem Reference Architecture, version 1.0; UNDP's description of digital public infrastructure and its Digital Development Compass; the UNDP DPI Playbook; and, as benchmarks, a World Bank report for the G20, a Bulletin of the Bank for International Settlements and the official record of e-Estonia. Subtopics 1.8 and 1.10 cite the GovStack building block specifications, each by its edition.
 
 The worked examples are built for Progressa, the fictional country of the Knowledge Products, and are derived from no country's results. Where a script quotes Progressa's assessment, it quotes the worked examples E1 to E5 as they stand, and every instrument it shows is the one in the assessment toolkit. Three statements hold throughout. PLR, the Progressa Learner Registry, is a member of Linkup, the data exchange, and serves enrolment records for some learners to the examination authority alone; it is not yet the authoritative learner register, which the build sets up behind it. An education service checks a person through the identity authority's sign-in, with the person present, and keeps the identifier the authority gives it, never the national number; the authority's one service on Linkup is a read of a person by national number that only the examination authority may call. And learners' records are loaded into the register through Giga's five tiers, which this module does not teach and does not contradict.
 
@@ -61,7 +61,7 @@ Ten standalone videos, all in the Strategist register. Total runtime about fifty
 | Field | Value |
 | --- | --- |
 | Persona | S (Strategist) — the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first |
-| Target runtime | ~5 min (≈547 spoken words) |
+| Target runtime | ~5 min (≈541 spoken words) |
 | PAERA anchor | UNDP, Digital public infrastructure (web page); UNDP Compendium (2023), pages 3 and 4; PAERA v1.0 §2.6 and §3.3.1; as benchmarks, World Bank G20 report (2023), page 2, and BIS Bulletin No 52 (2022), page 5 |
 
 > **Single message —** _Before you fund anything called "DPI", test it against four marks: it serves the whole society, many services can connect to it, it is built on open standards, and clear rules govern it._
@@ -84,9 +84,9 @@ From that description the compendium draws four characteristics. Turn them into 
 
 Why does the test matter? See what shared systems did. A World Bank report for the G20 looks at India. There, the share of adults with a transaction account rose from about one in four in 2008 to over 80 percent. The report estimates that without such infrastructure the same change could have taken up to 47 years. The report adds that other policies mattered as well. In Brazil, by the end of February 2022, 67 percent of adults had used Pix, the central bank's payment system, 15 months after its launch. Procurement rules can require interoperability, but they cannot deliver it. A project pays only for its own users. Only whole-of-government planning sees the total: the first ministry pays, and every ministry after it re-uses what was built.
 
-> _Slide 5 — Title: 'Progressa's systems against the four marks'. Body, a five-row text table — System | Result | Reason: 'National identity (PNIA) | Foundational, with gaps | 78 per cent of adults covered; no identity number below the age of issue; no education service uses its sign-in.' 'Payments | Not yet in place for government | PayPro runs a fast-payment system; no Payments block is a member of Linkup.' 'Linkup, the data exchange | Foundational, still a pilot | Built for many bodies to connect; the ministry of education is not yet a member.' 'Learner registry (PLR) | The sector's own, not yet authoritative | Records for some learners only, served to the examination authority alone.' 'PEMIS, the ministry's school information system | A sector application | Holds totals, not learners; shares data by file export.' Footer: 'Progressa is a fictional country. The screen is illustrative.'_
+> _Slide 5 — Title: 'Progressa's systems against the four marks'. Body, a five-row text table — System | Result | Reason: 'National identity (PNIA) | Foundational, with gaps | 78 per cent of adults covered; no identity number below the age of issue; no education service uses its sign-in.' 'Payments | Not yet in place for government | PayPro runs a fast-payment system; no government payments service is joined to Linkup.' 'Linkup, the data exchange | Foundational, still a pilot | Built for many bodies to connect; the ministry of education is not yet a member.' 'Learner registry (PLR) | The sector's own, not yet authoritative | Records for some learners only, served to the examination authority alone.' 'PEMIS, the ministry's school information system | A sector application | Holds totals, not learners; shares data by file export.' Footer: 'Progressa is a fictional country. The screen is illustrative.'_
 
-Now apply the four marks to Progressa, the fictional country of these examples. Its national identity, run by PNIA, the identity authority, covers 78 per cent of adults. Children below the age of issue have no identity number, and no education service uses its sign-in yet. Foundational, with gaps. PayPro, the payment provider, runs a fast-payment system. But no Payments block, the shared service through which government programmes pay, is a member of Linkup, the national data exchange. So no education programme can pay through one. Linkup is built for many bodies to connect, but it is still a pilot, and the ministry of education is not a member. PLR, the learner registry, holds records for some learners only. It belongs to education and is not yet the authoritative register. PEMIS, the ministry's school information system, holds totals, not learners. It is a sector application.
+Now apply the four marks to Progressa, the fictional country of these examples. Its national identity, run by PNIA, the identity authority, covers 78 per cent of adults. Children below the age of issue have no identity number, and no education service uses its sign-in yet. Foundational, with gaps. PayPro, the payment provider, runs a fast-payment system, but no payments service for government is joined to Linkup, the national data exchange, yet. So no education programme can pay through it. Linkup is built for many bodies to connect, but it is still a pilot, and the ministry of education is not a member. PLR, the learner registry, holds records for some learners only. It belongs to education and is not yet the authoritative register. PEMIS, the ministry's school information system, holds totals, not learners. It is a sector application.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Before you fund anything called "DPI", test it against four marks: it serves the whole society, many services can connect to it, it is built on open standards, and clear rules govern it.' Below it, the on-screen practice box (not narrated)._
 
@@ -140,8 +140,8 @@ Below is a list of systems in [country X], each with a short description: who ru
 | Field | Value |
 | --- | --- |
 | Persona | S (Strategist) — the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first |
-| Target runtime | ~5 min (≈473 spoken words) |
-| PAERA anchor | PAERA v1.0 §3.3.1 (the foundation framework and the four pillars), with §2.5, §3.1 and §3.4.1 to §3.4.4; §2.3 (the role of enterprise architecture). Reading the foundation as a fifth domain is the team's own reading of PAERA. |
+| Target runtime | ~5 min (≈463 spoken words) |
+| PAERA anchor | PAERA v1.0 §3.3.1 (the foundation framework and the four pillars), with §2.5, §3.1 and §3.4.1 to §3.4.4; §2.3 (the role of enterprise architecture). Reading the foundation as a fifth domain is this course's own reading of PAERA. |
 
 > **Single message —** _One page with five domains, a foundation of governance, policy and law carrying access, digital data, interoperability and digital identity, shows your minister what the country has and what it lacks._
 
@@ -153,19 +153,19 @@ Ask a ministry what the country has for digital government, and you often get a 
 
 > _Slide 2 — Title: 'PAERA's picture of the infrastructure'. Body, three rows of plain text boxes: top row 'Services — for example, registering a learner, paying a scholarship'; middle row, four boxes 'Access', 'Digital Data', 'Interoperability', 'Digital Identity'; bottom row, one box across the width 'Foundation: governance and policy, with the legal framework'._
 
-PAERA, the GovStack reference architecture, gives the picture. Its section 3.3.1 says that a country's digital governance infrastructure has two parts. The first is a foundation framework of governance, policy and legal components. The second is four pillars: Access, Digital Data, Interoperability and Digital Identity. Services, such as registering a learner or paying a scholarship, stand on the pillars. Section 2.5 explains why the pillars come early. They are the technical conditions that services need, and a country should address them before it pursues wide and ambitious plans.
+PAERA, the GovStack reference architecture, gives the picture. It says that a country's digital governance infrastructure has two parts. The first is a foundation framework of governance, policy and legal components. The second is four pillars: Access, Digital Data, Interoperability and Digital Identity. Services, such as registering a learner or paying a scholarship, stand on the pillars. PAERA also explains why the pillars come early. They are the technical conditions that services need, and a country should address them before it pursues wide and ambitious plans.
 
 > _Slide 3 — Title: 'Five domains, with their codes'. Body, five text rows: 'GOV — governance and policy, with the legal framework.' 'ACC — Access.' 'DAT — Digital Data.' 'INT — Interoperability.' 'IDN — Digital Identity.'_
 
-The method reads the foundation as a fifth domain beside the four pillars. That reading is the team's own. Its reason is practical: a pillar without a law, a budget and a body that decides is not yet infrastructure. So there are five domains, each with a short code. GOV is governance and policy, with the legal framework. ACC is access: connections, devices, skills, and help for people who need it. DAT is digital data, with the state registers. INT is interoperability, the exchange of data between systems. IDN is digital identity. PAERA's sections 3.1 and 3.4.1 to 3.4.4 describe what each one holds.
+The method reads the foundation as a fifth domain beside the four pillars. That reading is this course's own. Its reason is practical: a pillar without a law, a budget and a body that decides is not yet infrastructure. So there are five domains, each with a short code. GOV is governance and policy, with the legal framework. ACC is access: connections, devices, skills, and help for people who need it. DAT is digital data, with the state registers. INT is interoperability, the exchange of data between systems. IDN is digital identity.
 
 > _Slide 4 — Title: 'Progressa's frame page'. Body, a five-row text table — Domain | Who answers for Progressa: 'GOV | The ministry's planning directorate, with PDGA for the national rules.' 'ACC | The ministry's ICT unit, with the district education offices.' 'DAT | The ministry's statistics unit, which runs PEMIS, with PNEA, the examination authority.' 'INT | PDGA, which operates Linkup, with the ministry's ICT unit.' 'IDN | PNIA, the national identity authority, with the ministry's ICT unit.' Footer: 'Progressa is a fictional country. Worked example E1.'_
 
-Here is the map for Progressa, the fictional country of these examples. It is the first output of the assessment: one page that fixes its scope. For each domain it names the body that answers. For digital data, that is the statistics unit of the ministry of education, which runs PEMIS, its school information system, with PNEA, the examination authority. For interoperability, it is PDGA, the digital government authority, which operates Linkup, the national data exchange. The page also records what is there and what is not. Linkup runs as a pilot. PLR, the learner registry, holds records for some learners only, and is not yet the authoritative learner register.
+Here is the map for Progressa, the fictional country of these examples. It is step one of the method, and the first output of the assessment: one page that fixes its scope. For each domain it names the body that answers. For digital data, that is the statistics unit of the ministry of education, which runs PEMIS, its school information system, with PNEA, the examination authority. For interoperability, it is PDGA, the digital government authority, which operates Linkup, the national data exchange. The page also records what is there and what is not. Linkup runs as a pilot. PLR, the learner registry, holds records for some learners only, and is not yet the authoritative learner register.
 
 > _Slide 5 — Title: 'One page both sides can read'. Body, two text rows: 'The minister reads the gaps in law, money and ownership.' 'The architect reads the gaps in systems and data.'_
 
-Why one page? PAERA's section 2.3 describes enterprise architecture as documents that look at an organisation from business and IT together. Their purpose is to close the gap in communication between the two. The five-domain map does the same for a country's infrastructure. It gives the policy side and the technical side one shared language. The minister reads the gaps in law, money and ownership. The architect reads the gaps in systems and data. When they decide what comes first, both point to the same part of the same page. A list of projects cannot do this, because it shows only what someone chose to fund.
+Why one page? PAERA describes enterprise architecture as documents that look at an organisation from business and IT together. Their purpose is to close the gap in communication between the two. The five-domain map does the same for a country's infrastructure. It gives the policy side and the technical side one shared language. The minister reads the gaps in law, money and ownership. The architect reads the gaps in systems and data. When they decide what comes first, both point to the same part of the same page. A list of projects cannot do this, because it shows only what someone chose to fund.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'One page with five domains, a foundation of governance, policy and law carrying access, digital data, interoperability and digital identity, shows your minister what the country has and what it lacks.' Below it, the on-screen practice box (not narrated)._
 
@@ -219,8 +219,8 @@ Below is a list of the systems, laws and public bodies that bear on digital publ
 | Field | Value |
 | --- | --- |
 | Persona | S (Strategist) — the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first |
-| Target runtime | ~5 min (≈479 spoken words) |
-| PAERA anchor | PAERA v1.0 §5.3 (the nine questions of a national assessment; no scale), §5.4 (the eight steps of an organisational assessment) and §3.1.3 (the seven indicators of low maturity); UNDP, The DPI Approach: A Playbook (2023), page 23. The sequence of nine steps is the team's own. |
+| Target runtime | ~5 min (≈485 spoken words) |
+| PAERA anchor | PAERA v1.0 §5.3 (the nine questions of a national assessment; no scale), §5.4 (the eight steps of an organisational assessment) and §3.1.3 (the seven indicators of low maturity); UNDP, The DPI Approach: A Playbook (2023), page 23. The sequence of nine steps is this course's own. |
 
 > **Single message —** _A roadmap is produced in nine steps, and for each step you can say who acts, what goes in, what comes out, who decides and how the result is checked._
 
@@ -240,11 +240,11 @@ The first five steps find out where the country stands. Step one frames the work
 
 > _Slide 4 — Title: 'Steps 6 to 9: from the result to an adopted roadmap'. Body, a four-row text table — Step | What comes out | Who decides: '6. Gaps and priorities | The gap register, ranked | A workshop of the bodies on the frame page' '7. Roadmap | The roadmap over time, with its dependencies | Dates stay proposals until the budget and the owners of the work confirm them' '8. Investment breakdown | The investment case in four sheets | What is funded first, cost against reuse' '9. Validation and revision | Every comment answered; the revised documents | The adopting authority adopts the roadmap'_
 
-The last four steps turn the result into a roadmap. Step six turns findings into gaps and ranks them, and a workshop of the bodies concerned decides the order. Step seven writes the roadmap over time. Its dates stay proposals until the budget and the owners of the work confirm them. Step eight costs the roadmap in four sheets that a finance ministry can read. Step nine sends everything back to the bodies for comment, answers every comment in writing, and revises. In Progressa, the ministry of education and PDGA adopt the roadmap, with the cabinet where the budget requires it.
+The last four steps turn the result into a roadmap. Step six turns findings into gaps and ranks them, and a workshop of the bodies concerned decides the order. Step seven writes the roadmap over time. Its dates stay proposals until the budget and the owners of the work confirm them. Step eight costs the roadmap in four sheets that a finance ministry can read. Step nine sends everything back to the bodies for comment, answers every comment in writing, and revises. In Progressa, the ministry of education and PDGA adopt the roadmap, with the cabinet where the budget requires it. Module 6 takes these four steps in full.
 
-> _Slide 5 — Title: 'Where the nine steps come from'. Body, three text rows: 'PAERA 5.3 — the nine questions a national assessment must answer; no scale.' 'PAERA 5.4 — eight steps for assessing one organisation, from criteria to continuous improvement.' 'UNDP Playbook, page 23 — six steps from national priorities to a roadmap.' Footer: 'The sequence of nine steps is the team's own.'_
+> _Slide 5 — Title: 'Where the nine steps come from'. Body, three text rows: 'PAERA 5.3 — the nine questions a national assessment must answer; no scale.' 'PAERA 5.4 — eight steps for assessing one organisation, from criteria to continuous improvement.' 'UNDP Playbook, page 23 — six steps from national priorities to a roadmap.' Footer: 'The sequence of nine steps is this course's own.'_
 
-Where do the nine steps come from? No public source gives them in this form. PAERA's section 5.3 lists nine questions that a national assessment must answer, and gives no scale. Its section 5.4 gives eight steps for assessing one organisation, from setting the criteria to continuous improvement. Its section 3.1.3 lists seven signs of low maturity, such as a lack of digital data. UNDP's playbook gives six steps that lead from national priorities to a roadmap. The sequence of nine steps is the team's own, drawn from its multi-country implementation experience.
+Where do the nine steps come from? No public source gives them in this form. PAERA lists nine questions that a national assessment must answer, and gives no scale. It gives eight steps for assessing one organisation, from setting the criteria to continuous improvement. It also lists seven signs of low maturity, such as a lack of digital data. UNDP's playbook gives six steps that lead from national priorities to a roadmap. The sequence of nine steps is this course's own, drawn from its authors' implementation experience in several countries.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A roadmap is produced in nine steps, and for each step you can say who acts, what goes in, what comes out, who decides and how the result is checked.' Below it, the on-screen practice box (not narrated)._
 
@@ -260,7 +260,7 @@ Nine steps, and for each one five answers: who acts, what goes in, what comes ou
 | 2 | Five-questions slide. Five text rows and one line on the tool or template. | The frame every step is described in. Text-only. |
 | 3 | Steps 1 to 5. A five-row text table: step, what comes out, tool or template. | The worked example, the method table filled for Progressa, first half. The written guide carries figure F3, the nine steps with their roles and outputs, and the full table of the nine steps on its reference pages. |
 | 4 | Steps 6 to 9. A four-row text table: step, what comes out, who decides. | The method table, second half. Plain text table. |
-| 5 | Sources-of-the-method slide. Three text rows and a footer saying the sequence is the team's own. | The honest statement of what is published and what is the team's. Text-only. |
+| 5 | Sources-of-the-method slide. Three text rows and a footer saying the sequence is this course's own. | The honest statement of what is published and what is the team's. Text-only. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt) with the single message, and the practice box. | The take-home line. The practice box is on screen and not narrated. |
 | 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify PAERA and the UNDP playbook. |
 
@@ -298,8 +298,8 @@ Below is the list of institutions that bear on digital public infrastructure for
 | Field | Value |
 | --- | --- |
 | Persona | S (Strategist) — the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first |
-| Target runtime | ~5 min (≈498 spoken words) |
-| PAERA anchor | PAERA v1.0 §5.3 (the subjects of a national assessment, and its remark that GovStack has a tool for a quick assessment) and §3.1.3 (the seven indicators of low maturity). The question bank and the workflow that runs it are the team's own instruments. |
+| Target runtime | ~5 min (≈486 spoken words) |
+| PAERA anchor | PAERA v1.0 §5.3 (the subjects of a national assessment, and its remark that GovStack has a tool for a quick assessment) and §3.1.3 (the seven indicators of low maturity). The question bank and the workflow that runs it are this course's own instruments. |
 
 > **Single message —** _An AI-assisted review of what your country has already published gives you first findings and gaps before you ask anyone a question, each tied to its source, and it is a draft to verify, not a verdict._
 
@@ -311,7 +311,7 @@ An assessment usually starts by asking officials for documents, and then waiting
 
 > _Slide 2 — Title: 'The question bank'. Body, three text rows: '62 questions, arranged by the five domains and their 26 sub-components.' 'Each question: its code, the sub-component it informs, the evidence that answers it, what a good answer looks like.' 'Example — DAT-Q03: Is there an authoritative register of learners, and which body keeps it?'_
 
-The desk review runs on a question bank. The bank in the assessment toolkit holds 62 questions, arranged by the five domains and their 26 parts, called sub-components. Each question has a code. It names the part it informs, the documents that answer it, and what a good answer looks like. Take question DAT-Q03: is there an authoritative register of learners, and which body keeps it? A good answer is one register, kept by a named body under law, linked to the national identity. PAERA, the GovStack reference architecture, lists in its section 5.3 the subjects such an assessment must cover. It also says that GovStack has a tool for a quick assessment, which it does not name.
+The desk review runs on a question bank. The bank in the assessment toolkit holds 62 questions, arranged by the five domains and their 26 parts, called sub-components. Each question has a code. It names the part it informs, the documents that answer it, and what a good answer looks like. Take question DAT-Q03: is there an authoritative register of learners, and which body keeps it? A good answer is one register, kept by a named body under law, linked to the national identity. PAERA, the GovStack reference architecture, lists the subjects such an assessment must cover. It also says that GovStack has a tool for a quick assessment, which it does not name.
 
 > _Slide 3 — Title: 'The workflow, in five stages'. Body, five text rows: '1. Collect practice — evidence notes, each with its source and date.' '2. Draft findings — one draft result per question, with a provisional stage and a confidence between 0 and 1.' '3. Draft the gap analysis — the desk gaps.' '4. Make the report — one chapter per domain.' '5. Clean and sort — the sorted list of desk gaps.' Footer: 'A person reads the output of each stage before the next stage runs.'_
 
@@ -319,17 +319,17 @@ The assistant works in five stages. It collects what the public sources say, eac
 
 > _Slide 4 — Title: 'Progressa's desk run'. Body, four text rows: 'AF-DAT-01 — PLR holds enrolment records for some learners; enrolment is counted from school returns. Basic; confidence 0.8.' 'AF-INT-01 — Linkup runs as a pilot; PNEA, PLR and PNIA are among its members; MoEYS is not. Systematic; confidence 0.7.' 'AF-DAT-02 — the yearbook appears to report learner-level data for secondary schools. Systematic; confidence 0.4.' 'Desk gaps — DG-03: PLR not yet the authoritative learner register. DG-05: MoEYS not a member of Linkup.' Footer: 'Every desk result is unverified. Worked example E2, illustrative.'_
 
-Here is the run on the public record of Progressa, the fictional country of these examples. It read six sources, from the education statistics yearbook to the data protection act. Desk result AF-DAT-01 says that PLR, the learner registry, holds enrolment records for some learners. Enrolment is still counted from school returns. Provisional stage Basic, confidence 0.8. AF-INT-01 says that Linkup, the national data exchange, runs as a pilot, and that MoEYS, the ministry of education, is not a member: confidence 0.7. AF-DAT-02 suggests learner-level data for secondary schools, with a confidence of only 0.4. The run ends with desk gaps, such as DG-03: PLR not yet the authoritative learner register. It also reads the record against the seven signs of low maturity in PAERA's section 3.1.3. Lack of digital data: yes, for learners.
+Here is the run on the public record of Progressa, the fictional country of these examples. It read six sources, from the education statistics yearbook to the data protection act. Desk result AF-DAT-01 says that PLR, the learner registry, holds enrolment records for some learners. Enrolment is still counted from school returns. Provisional stage Basic, confidence 0.8. AF-INT-01 says that Linkup, the national data exchange, runs as a pilot, and that MoEYS, the ministry of education, is not a member: confidence 0.7. AF-DAT-02 suggests learner-level data for secondary schools, with a confidence of only 0.4. The run ends with desk gaps, such as DG-03: PLR not yet the authoritative learner register. It also reads the record against PAERA's seven signs of low maturity. Lack of digital data: yes, for learners.
 
-> _Slide 5 — Demonstration segment: the desk assessment run on Progressa's public record. Until the segment is recorded, the slide shows the steps of its storyboard as text, marked 'Storyboard — not yet run'._
+> _Slide 5 — Demonstration segment: the desk assessment run on Progressa's public record. Until the segment is recorded, the slide shows the steps of its storyboard as text, marked 'What a good run shows'._
 
-The demonstration follows one domain, digital data, through the five stages, from the question bank to the sorted desk gaps. It has not been recorded yet. It passes when every draft result names its question and its source, carries a provisional stage and a confidence, and is marked unverified. Nothing in it counts as a finding. The point with the lowest confidence goes to the officials first. In Progressa, that point, AF-DAT-02, turned out to be wrong when the officials showed their system.
+The demonstration follows one domain, digital data, through the five stages, from the question bank to the sorted desk gaps. A good run passes when every draft result names its question and its source, carries a provisional stage and a confidence, and is marked unverified. Nothing in it counts as a finding. The point with the lowest confidence goes to the officials first. In Progressa, that point, AF-DAT-02, turned out to be wrong when the officials showed their system.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'An AI-assisted review of what your country has already published gives you first findings and gaps before you ask anyone a question, each tied to its source, and it is a draft to verify, not a verdict.' Below it, the on-screen practice box (not narrated)._
 
 Read what the country has published, with AI, before you ask anyone. You get first findings and gaps, each tied to its source: a draft to verify, not a verdict.
 
-> _Slide 7 — Title: 'Sources'. Body: PAERA v1.0, sections 3.1.3 and 5.3. The question bank and the workflow that runs it are the team's own instruments, in the assessment toolkit. Footer: 'Find the link in the description.'_
+> _Slide 7 — Title: 'Sources'. Body: PAERA v1.0, sections 3.1.3 and 5.3. The question bank and the workflow that runs it are this course's own instruments, in the assessment toolkit. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -339,9 +339,9 @@ Read what the country has published, with AI, before you ask anyone. You get fir
 | 2 | Question-bank slide. Three text rows: the size of the bank, the parts of a question, one example question. | The team's blank instrument, from the assessment toolkit. Text-only. |
 | 3 | Workflow slide. Five numbered text rows and a footer on the person who reads each stage. | The stages as the worked example names them. Text-only. |
 | 4 | Progressa's desk run. Four text rows: three desk results and two desk gaps, and a footer marking them unverified. | The worked example of method step 2, built for Progressa and marked illustrative. Text-only. |
-| 5 | Demonstration segment: the desk assessment run on Progressa's public record. | Until the segment is recorded, the slide shows the storyboard's steps as text, marked 'Storyboard — not yet run'. The walkthrough needs only the question bank of the assessment toolkit; see the storyboard below. |
+| 5 | Demonstration segment: the desk assessment run on Progressa's public record. | Until the segment is recorded, the slide shows the storyboard's steps as text, marked 'What a good run shows'. The walkthrough needs only the question bank of the assessment toolkit; see the storyboard below. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt) with the single message, and the practice box. | The take-home line. The practice box is on screen and not narrated. |
-| 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify PAERA's sections; names the toolkit as the team's own. |
+| 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify PAERA's sections; names the toolkit as this course's own. |
 
 **On-screen practice box (recap slide, not narrated):** **Do this on your own sector. Run a desk assessment from the question bank and your country's public sources.** The prompt in the companion material gives you a table of draft findings, each with its source, a provisional stage, a confidence and the mark UNVERIFIED. Before the next video.
 
@@ -389,8 +389,8 @@ This storyboard stands in the place of the demonstration segment until it can be
 | Field | Value |
 | --- | --- |
 | Persona | S (Strategist) — the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first |
-| Target runtime | ~5 min (≈465 spoken words) |
-| PAERA anchor | PAERA v1.0 §5.3 (its nine questions are the subjects of the five questionnaires) and §5.4, step 2 (surveys and questionnaires, interviews and document review as assessment tools). The questionnaires and their two guides are the team's own. |
+| Target runtime | ~5 min (≈459 spoken words) |
+| PAERA anchor | PAERA v1.0 §5.3 (its nine questions are the subjects of the five questionnaires) and §5.4, step 2 (surveys and questionnaires, interviews and document review as assessment tools). The questionnaires and their two guides are this course's own. |
 
 > **Single message —** _Five questionnaires, one for each domain, put the same questions to the people who run the systems and ask for evidence with every answer._
 
@@ -402,7 +402,7 @@ The public record tells you what a country says about its systems. The people wh
 
 > _Slide 2 — Title: 'One questionnaire for each domain'. Body, five text rows: 'Q-GOV — governance and policy, with the legal framework.' 'Q-ACC — access.' 'Q-DAT — digital data.' 'Q-INT — interoperability.' 'Q-IDN — digital identity.' Below them: '93 questions in all, grouped by the same 26 sub-components as the question bank.'_
 
-There are five questionnaires, one for each domain. PAERA, the GovStack reference architecture, lists in its section 5.3 nine questions that a national assessment must answer. Each questionnaire expands one or more of them. The digital data questionnaire, for example, expands PAERA's question on the status of the national infrastructure for managing digital data. Together the five ask 93 questions. They cover the same 26 parts, or sub-components, as the desk review of the public record, so every answer can be set beside the desk result for the same part. PAERA's section 5.4 names questionnaires, interviews and document review as tools of an assessment.
+There are five questionnaires, one for each domain. PAERA, the GovStack reference architecture, lists nine questions that a national assessment must answer. Each questionnaire expands one or more of them. The digital data questionnaire, for example, expands PAERA's question on the status of the national infrastructure for managing digital data. Together the five ask 93 questions. They cover the same 26 parts, or sub-components, as the desk review of the public record, so every answer can be set beside the desk result for the same part. PAERA names questionnaires, interviews and document review as tools of an assessment.
 
 > _Slide 3 — Title: 'How a question asks for evidence'. Body, four text rows: 'D2.2 Is there one authoritative record of each learner?' 'Describe — where a learner's identity and enrolment are recorded today.' 'Indicate — whether the record is on paper, in a spreadsheet or in a system.' 'Provide — a blank copy of the form or screen used.'_
 
@@ -420,7 +420,7 @@ Here is how Progressa, the fictional country of these examples, answered that qu
 
 Five questionnaires, one for each domain, put the questions to the people who run the systems. Every answer names its evidence, or says plainly that none exists.
 
-> _Slide 7 — Title: 'Sources'. Body: PAERA v1.0, sections 5.3 and 5.4. The questionnaires and their guides are the team's own instruments, in the assessment toolkit. Footer: 'Find the link in the description.'_
+> _Slide 7 — Title: 'Sources'. Body: PAERA v1.0, sections 5.3 and 5.4. The questionnaires and their guides are this course's own instruments, in the assessment toolkit. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -432,7 +432,7 @@ Five questionnaires, one for each domain, put the questions to the people who ru
 | 4 | Two-guides slide. Two text rows and a footer. | What the respondent and the facilitator each receive. Text-only. |
 | 5 | Progressa slide. Three text rows and a footer naming the documents. | The worked example of method step 3, an extract filled in for Progressa and marked illustrative. Text-only. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt) with the single message, and the practice box. | The take-home line. The practice box is on screen and not narrated. |
-| 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify PAERA's sections; names the questionnaires as the team's own. |
+| 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify PAERA's sections; names the questionnaires as this course's own. |
 
 **On-screen practice box (recap slide, not narrated):** **Do this on your own sector. Read a filled questionnaire against its evidence.** The prompt in the companion material gives you a table with one row per question — what the evidence supports, what is stated without evidence, the question to ask next. Before the next video.
 
@@ -468,8 +468,8 @@ Below is a completed questionnaire for the [domain] domain from [the responding 
 | Field | Value |
 | --- | --- |
 | Persona | S (Strategist) — the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first |
-| Target runtime | ~5 min (≈484 spoken words) |
-| PAERA anchor | PAERA v1.0 §5.4, steps 2 to 4 (document review, interviews and focus groups; conducting the assessment; analysing its results). The order of the verification activities, the ranking of evidence and the comparison of sources are the team's own. |
+| Target runtime | ~5 min (≈487 spoken words) |
+| PAERA anchor | PAERA v1.0 §5.4, steps 2 to 4 (document review, interviews and focus groups; conducting the assessment; analysing its results). The order of the verification activities, the ranking of evidence and the comparison of sources are this course's own. |
 
 > **Single message —** _An answer becomes a finding only when it has been checked against documents, in interviews and workshops, and in a validation session with the people who gave it._
 
@@ -481,7 +481,7 @@ A questionnaire answer is what a body says about itself. A desk result is what t
 
 > _Slide 2 — Title: 'Six activities, in order'. Body, six text rows: '1. Receive the signed questionnaires.' '2. Review every document they name, against the desk results.' '3. Clarification interviews on each disputed point.' '4. Technical workshops: see the systems working.' '5. Synthesis: a verified position for every point.' '6. Final validation with every body.'_
 
-Verification runs in six activities, in order. The facilitator receives the signed questionnaires. The facilitator then reads every document they name, and compares it with the desk results. Each disputed point goes to the person who owns it, in a clarification interview. In technical workshops the team sees the systems working: a screen, a report, a log. The facilitator then writes a verified position for every point. Last, a validation workshop with all the bodies closes what is still disputed. PAERA, the GovStack reference architecture, names the same tools in its section 5.4, document review, interviews and focus groups, followed by the conduct of the assessment and the analysis of its results.
+Verification runs in six activities, in order. The facilitator receives the signed questionnaires. The facilitator then reads every document they name, and compares it with the desk results. Each disputed point goes to the person who owns it, in a clarification interview. In technical workshops the team sees the systems working: a screen, a report, a log. The facilitator then writes a verified position for every point. Last, a validation workshop with all the bodies closes what is still disputed. PAERA, the GovStack reference architecture, names the same tools: document review, interviews and focus groups, followed by the conduct of the assessment and the analysis of its results.
 
 > _Slide 3 — Title: 'The evidence ladder'. Body, five text rows: '1 — A system seen working.' '2 — An official document in force.' '3 — Official statistics.' '4 — An internal report.' '5 — A statement in an interview.' Below them: 'When sources disagree, the higher level wins. A verified position needs one source at level 1, or two independent sources at levels 2 or 3.'_
 
@@ -493,25 +493,25 @@ Four blank templates carry the work. The map of the bodies involved says who tak
 
 > _Slide 5 — Title: 'Three points Progressa's team verified'. Body, three text rows: 'AF-DAT-02 — corrected: PEMIS holds totals by district, grade and sex; PEMIS shown in session V-01 (level 1).' 'AF-INT-01 — verified: MoEYS is not a member of Linkup and runs no service on it; member list exported by PDGA in session V-02 (level 1).' 'AF-IDN-02 — verified: only PNEA reads persons from PNIA, through the read by national number; no education service is a client of PNIA's sign-in; shown in session V-03 (level 1).' Footer: 'Worked example E4, illustrative.'_
 
-Here is how it worked in Progressa, the fictional country of these examples. Four sessions were held in week eight. The desk review had suggested that PEMIS, the ministry's school information system, held learner-level data. In session V-01 the team saw PEMIS working: it holds totals by district, grade and sex. The point was corrected. In session V-02, PDGA, which operates Linkup, the data exchange, exported its member list: MoEYS, the ministry of education, is not a member. Verified. In session V-03, PNIA, the identity authority, showed its service log. Only PNEA, the examination authority, reads persons from PNIA, by national number. No education service uses PNIA's sign-in. Verified. All three were settled at the first level: a system seen working.
+Here is how it worked in Progressa, the fictional country of these examples. Sessions were held in week eight. Here are three of the points they settled. The desk review had suggested that PEMIS, the ministry's school information system, held learner-level data. In session V-01 the team saw PEMIS working: it holds totals by district, grade and sex. The point was corrected. In session V-02, PDGA, which operates Linkup, the data exchange, exported its member list: MoEYS, the ministry of education, is not a member. Verified. In session V-03, PNIA, the identity authority, showed its service log. Only PNEA, the examination authority, reads persons from PNIA, by national number. No education service uses PNIA's sign-in. Verified. All three were settled at the first level: a system seen working.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'An answer becomes a finding only when it has been checked against documents, in interviews and workshops, and in a validation session with the people who gave it.' Below it, the on-screen practice box (not narrated)._
 
 An answer becomes a finding only after it is checked: in documents, in interviews and workshops, and in a validation session with the people who gave it.
 
-> _Slide 7 — Title: 'Sources'. Body: PAERA v1.0, section 5.4, steps 2 to 4. The verification templates and the evidence ladder are the team's own instruments, in the assessment toolkit. Footer: 'Find the link in the description.'_
+> _Slide 7 — Title: 'Sources'. Body: PAERA v1.0, section 5.4, steps 2 to 4. The verification templates and the evidence ladder are this course's own instruments, in the assessment toolkit. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
 | Slide | Element (text-only) | Notes |
 | --- | --- | --- |
 | 1 | Title slide. Title: 'Verify before you score'. | Standard ITU template. Title Arial Bold 28pt; subtitle (KP3 / 1.6) Arial 18pt. Background #E5F5FB. No images. |
-| 2 | Six-activities slide. Six numbered text rows. | The order of verification, which is the team's own. Text-only. |
-| 3 | Evidence-ladder slide. Five numbered text rows and the rule beneath them. | The ranking of evidence, the team's own. Text-only. |
+| 2 | Six-activities slide. Six numbered text rows. | The order of verification, which is this course's own. Text-only. |
+| 3 | Evidence-ladder slide. Five numbered text rows and the rule beneath them. | The ranking of evidence, this course's own. Text-only. |
 | 4 | Four-templates slide. Four text rows, each a template and what it holds. | The team's blank instruments, from the assessment toolkit, under the names the toolkit gives them. Text-only. |
 | 5 | Progressa slide. Three text rows, each a desk result, its verified position and its evidence. | The worked example of method step 4, built for Progressa and marked illustrative. Text-only. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt) with the single message, and the practice box. | The take-home line. The practice box is on screen and not narrated. |
-| 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify PAERA's section; names the templates as the team's own. |
+| 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify PAERA's section; names the templates as this course's own. |
 
 **On-screen practice box (recap slide, not narrated):** **Do this on your own sector. Set two disagreeing sources side by side and draft the clarification question.** The prompt in the companion material gives you a two-column comparison of the sources with their levels, the evidence that would settle the point, and the question for the clarification interview. Before the next video.
 
@@ -547,8 +547,8 @@ Below are two sources that disagree about the same fact in [country X]: source A
 | Field | Value |
 | --- | --- |
 | Persona | S (Strategist) — the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first |
-| Target runtime | ~5 min (≈481 spoken words) |
-| PAERA anchor | UNDP, Digital Development Compass — Methodology (the five stages Basic, Opportunistic, Systematic, Differentiating and Transformational; scores rescaled between 0 and 5 with no zero scores; a row for digital public infrastructure with data exchange, identification and payments); PAERA v1.0 §3.3.1 (the domains), §5.3 (which gives no scale), and §5.1 with §5.4 (the five maturity levels of one organisation, a different measure). The criteria for each domain, and the way the Compass is laid over the five domains, are the team's own. |
+| Target runtime | ~5 min (≈428 spoken words) |
+| PAERA anchor | UNDP, Digital Development Compass — Methodology (the five stages Basic, Opportunistic, Systematic, Differentiating and Transformational; scores rescaled between 0 and 5 with no zero scores; a row for digital public infrastructure with data exchange, identification and payments); PAERA v1.0 §3.3.1 (the domains), §5.3 (which gives no scale), and §5.1 with §5.4 (the five maturity levels of one organisation, a different measure). The criteria for each domain, and the way the Compass is laid over the five domains, are this course's own. |
 
 > **Single message —** _Score each domain on five published stages against written criteria, so that two assessors reach the same result and the whole picture fits on one table._
 
@@ -558,27 +558,27 @@ Below are two sources that disagree about the same fact in [country X]: source A
 
 Two assessors who read the same evidence should reach the same score. If they do not, the score is an opinion, and a minister can set it aside. Written criteria on a published scale prevent that.
 
-> _Slide 2 — Title: 'Five published stages'. Body, five text rows: 'Basic — 0 to 1.' 'Opportunistic — 1 to 2.' 'Systematic — 2 to 3.' 'Differentiating — 3 to 4.' 'Transformational — 4 to 5.' Below them: 'UNDP Digital Development Compass: all scores rescaled between 0 and 5, with no zero scores; a row for digital public infrastructure with data exchange, identification and payments.'_
+> _Slide 2 — Title: 'Five published stages'. Body, five text rows: 'Basic — 0 to 1.' 'Opportunistic — 1 to 2.' 'Systematic — 2 to 3.' 'Differentiating — 3 to 4.' 'Transformational — 4 to 5.' Below them: 'UNDP Digital Development Compass: all scores rescaled between 0 and 5, with no zero scores.'_
 
-The scale is the one UNDP publishes in its Digital Development Compass. It has five stages, under these names: Basic, Opportunistic, Systematic, Differentiating and Transformational. The Compass rescales all scores between zero and five, with no zero scores, so that each stage takes one unit of that range. It also has a row for digital public infrastructure, with three parts: data exchange, identification and payments. The domains you score are those of PAERA, the GovStack reference architecture, in its section 3.3.1. PAERA's section 5.3 gives the questions of a national assessment, but no scale. The five levels of its section 5.1, which its section 5.4 applies, measure one organisation. That is a different thing, so those levels are kept apart.
+The scale is the one UNDP publishes in its Digital Development Compass. It has five stages, under these names: Basic, Opportunistic, Systematic, Differentiating and Transformational. The Compass rescales all scores between zero and five, with no zero scores, so that each stage takes one unit of that range. The domains you score are those of PAERA, the GovStack reference architecture, which gives no scale of its own for a national assessment.
 
 > _Slide 3 — Title: 'The scoring rule'. Body, four text rows: '1. Each sub-component has written criteria at Basic, Systematic and Transformational.' '2. Each sub-component is placed at one stage, from verified positions only.' '3. Each stage scores the middle of its unit: 0.5, 1.5, 2.5, 3.5, 4.5.' '4. A domain's score is the mean of its sub-components; its stage is the unit the score falls in.'_
 
-The rule that lays the Compass over the five domains is the team's own, and it has four parts. Each of the 26 sub-components has written criteria at three levels: Basic, Systematic and Transformational. Meeting part of the Systematic criterion places a sub-component at Opportunistic; part of the Transformational one, at Differentiating. Only verified positions are scored. Each stage scores the middle of its unit, from 0.5 for Basic to 4.5 for Transformational. A domain's score is the mean of its sub-components, to one decimal place, and its stage is the unit the score falls in.
+The rule that lays the Compass over the five domains is this course's own, and it has four parts. Each of the 26 sub-components has written criteria at three levels: Basic, Systematic and Transformational. Meeting part of the Systematic criterion places a sub-component at Opportunistic; part of the Transformational one, at Differentiating. Only verified positions are scored. Each stage scores the middle of its unit, from 0.5 for Basic to 4.5 for Transformational. A domain's score is the mean of its sub-components, to one decimal place, and its stage is the unit the score falls in.
 
 > _Slide 4 — Title: 'Progressa's maturity table'. Body, a five-row text table — Domain | Score | Stage: 'GOV | 1.9 | Opportunistic' 'ACC | 1.3 | Opportunistic' 'DAT | 1.3 | Opportunistic' 'INT | 2.1 | Systematic' 'IDN | 2.3 | Systematic'. Footer: 'Illustrative. Worked example E5.'_
 
 Here is the result for Progressa, the fictional country of these examples, on one table. Governance, 1.9, Opportunistic. Access, 1.3, Opportunistic. Digital data, 1.3, Opportunistic. Interoperability, 2.1, Systematic. Digital identity, 2.3, Systematic. Each row also names a main strength and a development priority. For digital data, the strength is a working national identity register, and the priority is to make PLR, the learner registry, the authoritative learner register. The digital data score is the mean of six sub-components. Five sit at Opportunistic and one, data quality and master data, at Basic. That gives 1.3.
 
-> _Slide 5 — Demonstration segment: the scoring prompt applied to one domain of Progressa, digital data. Until the segment is recorded, the slide shows the steps of its storyboard as text, marked 'Storyboard — not yet run'._
+> _Slide 5 — Demonstration segment: the scoring prompt applied to one domain of Progressa, digital data. Until the segment is recorded, the slide shows the steps of its storyboard as text, marked 'What a good run shows'._
 
-The demonstration applies the scoring prompt to Progressa's digital data domain. It has not been recorded yet. The prompt proposes a stage for each sub-component, and quotes the evidence for each criterion. The assessor confirms or changes each stage in a written record. It passes when every stage rests on quoted, verified evidence and the arithmetic gives 1.3. One correction shows why the rule matters. Progressa's draft placed interoperability at 2.3, from an unverified desk result. But a session had already verified that the ministry of education is not a member of Linkup, the data exchange. Once that was pointed out, the score fell to 2.1. Its stage stayed Systematic.
+The demonstration applies the scoring prompt to Progressa's digital data domain. The prompt proposes a stage for each sub-component, and quotes the evidence for each criterion. The assessor confirms or changes each stage in a written record. A good run passes when every stage rests on quoted, verified evidence and the arithmetic gives 1.3. One correction shows why the rule matters. Progressa's draft placed interoperability at 2.3, from an unverified desk result. But a session had already verified that the ministry of education is not a member of Linkup, the data exchange. Once that was pointed out, the score fell to 2.1. Its stage stayed Systematic.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Score each domain on five published stages against written criteria, so that two assessors reach the same result and the whole picture fits on one table.' Below it, the on-screen practice box (not narrated)._
 
 Score every domain on five published stages against written criteria. Two assessors then reach the same result, and the whole picture fits on one table.
 
-> _Slide 7 — Title: 'Sources'. Body: UNDP, Digital Development Compass — Methodology (web page); PAERA v1.0, sections 3.3.1, 5.1, 5.3 and 5.4. The criteria and the scoring rule are the team's own, in the assessment toolkit. Footer: 'Find the link in the description.'_
+> _Slide 7 — Title: 'Sources'. Body: UNDP, Digital Development Compass — Methodology (web page); PAERA v1.0, sections 3.3.1, 5.1, 5.3 and 5.4. The criteria and the scoring rule are this course's own, in the assessment toolkit. Footer: 'Find the link in the description.'_
 
 ### On-screen slide specification
 
@@ -588,9 +588,9 @@ Score every domain on five published stages against written criteria. Two assess
 | 2 | Five-stages slide. Five text rows with their score ranges, and one line on the Compass. | The published scale under its own names. Text-only. |
 | 3 | Scoring-rule slide. Four numbered text rows. | The team's rule, from the scoring criteria of the assessment toolkit. Text-only. |
 | 4 | Progressa's maturity table. A five-row text table: domain, score, stage. | The worked example of method step 5, built for Progressa and marked illustrative. The written guide carries figure F4, the maturity table of Progressa's five domains, marked illustrative. On the slide it is a plain text table. |
-| 5 | Demonstration segment: the scoring prompt applied to one domain of Progressa. | Until the segment is recorded, the slide shows the storyboard's steps as text, marked 'Storyboard — not yet run'. The walkthrough needs only the scoring criteria of the assessment toolkit; see the storyboard below. |
+| 5 | Demonstration segment: the scoring prompt applied to one domain of Progressa. | Until the segment is recorded, the slide shows the storyboard's steps as text, marked 'What a good run shows'. The walkthrough needs only the scoring criteria of the assessment toolkit; see the storyboard below. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt) with the single message, and the practice box. | The take-home line. The practice box is on screen and not narrated. |
-| 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the Compass and PAERA; names the criteria as the team's own. |
+| 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the Compass and PAERA; names the criteria as this course's own. |
 
 **On-screen practice box (recap slide, not narrated):** **Do this on your own sector. Propose a stage for each sub-component with the scoring prompt.** The prompt in the companion material gives you a proposed stage and score for every sub-component, each criterion quoted against the evidence. Before the next video.
 
@@ -638,7 +638,7 @@ This storyboard stands in the place of the demonstration segment until it can be
 | Field | Value |
 | --- | --- |
 | Persona | S (Strategist) — the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first |
-| Target runtime | ~5 min (≈462 spoken words) |
+| Target runtime | ~5 min (≈450 spoken words) |
 | PAERA anchor | UNDP Compendium (2023), page 4, Exhibit 2 (its three layers); PAERA v1.0 §3.3.3 (digital ID, payments and legal data registries as basic national infrastructure), Annex 1, A1.2.5 (Registration and Digital Registry for a state registry) and Annex 3 (an Education Register among the main state registries); GovStack Identity Building Block specification, Version 2.0 (December 2025): ID §2 and ID §3 |
 
 > **Single message —** _Identity, payments and data exchange are foundations for every sector, while a learner register and its registration service belong to education and stand on them, and each must be funded as what it is._
@@ -647,15 +647,15 @@ This storyboard stands in the place of the demonstration segment until it can be
 
 > _Slide 1 — Title: 'Foundational blocks and the sector's own'. Voice-over begins._
 
-When a ministry asks for money for a system, the first question is whose system it is. Is it shared by every sector, or does it belong to one? Get that wrong, and the budget pays for the same thing twice.
+Once the country is scored, the money requests come. The first question for each is whose system it is. Is it shared by every sector, or does it belong to one? Get that wrong, and the budget pays for the same thing twice.
 
 > _Slide 2 — Title: 'Three layers'. Body, three text rows: 'Sector applications — digital education, digital health, and others.' 'Core DPI — digital identity, digital payments, consent-based data sharing, others emerging.' 'Governance foundations — leadership, institutions, policy, law, engagement, technical expertise.'_
 
 UNDP's compendium on digital public infrastructure draws three layers. At the bottom are the governance foundations: leadership, accountable institutions, policy, law, engagement with users, and technical expertise. In the middle is the core of the infrastructure: digital identity, digital payments and data sharing based on consent, with others emerging. On top are the sector applications, and digital education is one of them, beside digital health and others. So in UNDP's picture, education's own systems stand on the core. They are not part of it.
 
-> _Slide 3 — Title: 'Where PAERA places the registers'. Body, three text rows: 'Basic national infrastructure: digital ID, payments, legal data registries — PAERA 3.3.3.' 'A state registry needs two building blocks: Registration and Digital Registry — PAERA Annex 1, A1.2.5.' 'The main state registries include an Education Register — PAERA Annex 3.'_
+> _Slide 3 — Title: 'Where the registers sit'. Body, three text rows: 'Basic national infrastructure: digital ID, payments, legal data registries.' 'A state registry needs two building blocks: Registration and Digital Registry.' 'The main state registries include an Education Register.'_
 
-PAERA, the GovStack reference architecture, adds the registers. Its section 3.3.3 names digital ID, payments and legal data registries as basic national infrastructure. Its Annex 3 lists the main state registries a country should have, and an Education Register is one of them. Its Annex 1 says that digitalising a state registry needs two building blocks: Registration and a Digital Registry. So a learner register is a state register, but it belongs to education, and so does the registration service that writes to it.
+The registers come next. Digital ID, payments and legal data registries count as basic national infrastructure. A country should have a set of main state registries, and an Education Register is one of them. Digitalising a state registry needs two building blocks: Registration and a Digital Registry. So a learner register is a state register, but it belongs to education, and so does the registration service that writes to it.
 
 > _Slide 4 — Title: 'Identity is foundational; a learner's identity is not'. Body, two text rows: 'The Identity block covers foundational identity: proof of identity for a wide variety of public and private services.' 'A functional identity, for one purpose or one sector such as education, is outside its scope.'_
 
@@ -677,7 +677,7 @@ Identity, payments and data exchange serve every sector. The learner register an
 | --- | --- | --- |
 | 1 | Title slide. Title: 'Foundational blocks and the sector's own'. | Standard ITU template. Title Arial Bold 28pt; subtitle (KP3 / 1.8) Arial 18pt. Background #E5F5FB. No images. |
 | 2 | Three-layers slide. Three text rows, top to bottom: sector applications, core, governance foundations. | UNDP's three layers in plain words. Text-only. |
-| 3 | Registers slide. Three text rows, each with its PAERA section. | Where PAERA places registers and the two blocks a registry needs. Text-only. |
+| 3 | Registers slide. Three text rows, each with its PAERA section. | Where the registers sit, and the two blocks a registry needs. Text-only. |
 | 4 | Identity slide. Two text rows: foundational identity in scope, functional identity out of scope. | The line drawn by the published Identity specification. Text-only. |
 | 5 | Progressa slide. A three-row text table: layer, Progressa's systems, how each is funded. | The worked example, built for Progressa and marked illustrative. Plain text table. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt) with the single message, and the practice box. | The take-home line. The practice box is on screen and not narrated. |
@@ -717,7 +717,7 @@ Below is a proposal for a new system in [country X] [paste the proposal: what th
 | Field | Value |
 | --- | --- |
 | Persona | S (Strategist) — the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first |
-| Target runtime | ~5 min (≈460 spoken words) |
+| Target runtime | ~5 min (≈458 spoken words) |
 | PAERA anchor | PAERA v1.0 §5.7.1 to §5.7.5 (four phases, the blocks of each, every prerequisite before a service opens, the limit on the third phase) and §3.3.3 (the two-tier approach); e-Estonia, 'e-Estonia story' and 'Frequently asked questions — Story of e-Estonia', cited for what the shared blocks became once they existed |
 
 > **Single message —** _Build identity and payments first, bring in data exchange and registration with the first priority services, digitalise the registers next, and show one visible result early so that support holds._
@@ -734,7 +734,7 @@ PAERA, the GovStack reference architecture, gives an order in four phases. In th
 
 > _Slide 3 — Title: 'Two rules for the order'. Body, two text rows: 'Every prerequisite is in place before a service opens to the public.' 'Citizens and businesses see a positive result in every phase.' Below them: 'PAERA 3.3.3: target the foundational elements, and show early results.'_
 
-PAERA adds two rules. Every internal prerequisite must be in place before a service opens to the public. And citizens and businesses should always see a positive result. Its section 3.3.3 explains why both matter. Nobody wants to fund a digital identity while no service uses it, and no ministry can build personal services without one. The answer is to do two things at once. Put the foundational elements in place, and show early results that political leaders and the public can see. A service that opens before its foundations are ready fails in public, and the whole plan loses support.
+PAERA adds two rules. Every internal prerequisite must be in place before a service opens to the public. And citizens and businesses should always see a positive result. PAERA explains why both matter. Nobody wants to fund a digital identity while no service uses it, and no ministry can build personal services without one. The answer is to do two things at once. Put the foundational elements in place, and show early results that political leaders and the public can see. A service that opens before its foundations are ready fails in public, and the whole plan loses support.
 
 > _Slide 4 — Title: 'What Estonia's shared blocks became'. Body, three text rows: '2000 — the tax board's e-services.' '2001 — X-Road, the data exchange layer.' '2002 — the electronic identity and the digital signature.' Below them: 'The first services came before the shared blocks; once the blocks existed, they became part of the foundation.'_
 
@@ -796,7 +796,7 @@ Below is the list of services and shared blocks that [country X] plans to build 
 | Field | Value |
 | --- | --- |
 | Persona | S (Strategist) — the public-sector middle manager who commissions the assessment, defends its result to the minister and plans what to build first |
-| Target runtime | ~5 min (≈467 spoken words) |
+| Target runtime | ~5 min (≈451 spoken words) |
 | PAERA anchor | PAERA v1.0 §5.7.3 (rapid implementation of high-priority use cases), §5.7.4 (all main state registers in the third phase) and Annex 1, A1.2.5; the GovStack specifications of the blocks the service uses, each by its edition: Registration (the site's default edition), Digital Registries (Version 3.0-alpha; June 2026), Identity (Version 2.0; December 2025), Payments (Version 3.0; December 2025) and Information Mediator (1.1.1); Consent (1.3.0) and Messaging (site label messaging-23Q4.1), cited where the service touches consent and notification and not built. Bringing the learner register forward is KP3's own choice. |
 
 > **Single message —** _The first proof for education is one service that registers a learner once: the sector's own registration service and learner register, using the country's identity and payment blocks through the data exchange layer._
@@ -809,7 +809,7 @@ A roadmap that promises everything proves nothing for years. Pick one service th
 
 > _Slide 2 — Title: 'Why one priority service'. Body, two text rows: 'PAERA 5.7.3: high-priority services, prototyped quickly and rolled out in a few months.' 'PAERA Annex 1: a state registry needs two building blocks, Registration and Digital Registry.'_
 
-PAERA, the GovStack reference architecture, starts its second phase, in section 5.7.3, with high-priority services. Each is prototyped quickly, and then a local system integrator rolls it out in a few months. That gives the government its first practical experience of building fast on shared blocks. A learner registration is such a service. Families meet it when a child starts school, and every later education service needs its record. PAERA's Annex 1 says what it takes: digitalising a state registry needs two building blocks, Registration and a Digital Registry. One registers the learner; the other keeps the record.
+PAERA, the GovStack reference architecture, starts its second phase with high-priority services. Each is prototyped quickly, and then a local system integrator rolls it out in a few months. That gives the government its first practical experience of building fast on shared blocks. A learner registration is such a service. Families meet it when a child starts school, and every later education service needs its record. It needs two building blocks, Registration and a Digital Registry: one registers the learner; the other keeps the record.
 
 > _Slide 3 — Title: 'One service, four blocks, on the data exchange layer'. Body, plain text boxes in three rows: top, 'Learner registration service'; middle, 'Registration (education's own)' and 'Learner register (education's own)'; lower, 'Identity (the country's)' and 'Payments (the country's)'; along the bottom, 'Data exchange layer'._
 
@@ -819,9 +819,9 @@ Here is the first proof. The registration service and the learner register are e
 
 Here is the shortlist for Progressa, the fictional country of these examples, on one table. For each block it names the owner, the published specification with its edition, and whether the block is reused or built. Registration and the learner register are built for education. The register is set up behind PLR, the learner registry. PLR is a member of Linkup, the data exchange, but is not yet the authoritative register. Identity is reused: the service signs people in through PNIA, the identity authority. Linkup, operated by PDGA, the digital government authority, is reused, and the ministry joins it. The Payments block is set up and joined to Linkup, and it reaches PayPro, the payment provider, through its payer bank. Consent and messaging are cited where the service touches them, and neither is built.
 
-> _Slide 5 — Title: 'Brought forward on purpose'. Body, two text rows: 'PAERA 5.7.4 digitalises all main state registries in its third phase.' 'This proof brings one register forward, the one its priority service needs. That choice is this knowledge product's own.'_
+> _Slide 5 — Title: 'Brought forward on purpose'. Body, two text rows: 'PAERA 5.7.4 digitalises all main state registries in its third phase.' 'This proof brings one register forward, the one its priority service needs. That choice is this course's own.'_
 
-One choice must be stated openly. PAERA's section 5.7.4 digitalises all main state registries in its third phase. This proof brings one register forward, the learner register, because its priority service cannot work without it. That choice is this knowledge product's own, not PAERA's. Present the proof to your minister as what it is: one priority service, proven on the country's foundation. It is not the first phase of the national plan, and it does not replace the plan.
+One choice must be stated openly. PAERA digitalises all main state registries in its third phase. This proof brings one register forward, the learner register, because its priority service cannot work without it. That choice is this course's own, not PAERA's. Present the proof to your minister as what it is: one priority service, proven on the country's foundation. It is not the first phase of the national plan, and it does not replace the plan.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The first proof for education is one service that registers a learner once: the sector's own registration service and learner register, using the country's identity and payment blocks through the data exchange layer.' Below it, the on-screen practice box (not narrated)._
 
@@ -894,7 +894,7 @@ Direct address ('your ministry', 'your minister'), plain English at about the ei
 
 ### 4.6 The demonstration segments, and what is not claimed
 
-Subtopics 1.4 and 1.7 each carry a demonstration segment, a screen recording with voice-over, in the place of their fifth slide. Neither has been recorded. Both need only the assessment toolkit: the question bank for 1.4, the scoring criteria with the scoring prompt for 1.7. Until a segment is recorded, its storyboard stands in its place, and the slide shows its steps as text marked 'Storyboard — not yet run'. The voice-over says what the walkthrough shows and what counts as a pass, never that it has run. When a segment is recorded, the script gains one sentence stating the result and its date.
+Subtopics 1.4 and 1.7 each carry a demonstration segment, a screen recording with voice-over, in the place of their fifth slide. Neither has been recorded. Both need only the assessment toolkit: the question bank for 1.4, the scoring criteria with the scoring prompt for 1.7. Until a segment is recorded, its storyboard stands in its place, and the slide shows its steps as text marked 'What a good run shows'. The voice-over says what the walkthrough shows and what counts as a pass, never that it has run. When a segment is recorded, the script gains one sentence stating the result and its date.
 
 ### 4.7 The worked examples and the toolkit
 

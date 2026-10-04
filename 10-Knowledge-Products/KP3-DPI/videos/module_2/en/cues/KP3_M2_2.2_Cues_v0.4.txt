@@ -1,0 +1,16 @@
+# Slide cue file — KP3 Module 2, Video 2.2 "The published specification, and how to judge a product against it"
+# Deck:  KP3_M2_2.2_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M2_2.2_Audio_v0.4.m4a (runs to 3:44.8)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Take has no in-one-sentence recap and no Sources line: slide 7 sits over the closing line (3:36) and Sources from 3:39 (5.8 s tail).
+# Edition 23Q4 called "the reference architecture" rather than the Registration specification; threshold caveat and import/export Progressa row dropped.
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — hook: "GovStack compliant" tells you very little
+0:46   # slide 3 — what the specification contains (23Q4, 42 / 12 / 13)
+1:46   # slide 4 — requirement by requirement
+2:24   # slide 5 — what GovStack itself offers
+3:03   # slide 6 — Progressa's self-assessment sheet
+3:36   # slide 7 — in one sentence
+3:39   # slide 8 — Sources

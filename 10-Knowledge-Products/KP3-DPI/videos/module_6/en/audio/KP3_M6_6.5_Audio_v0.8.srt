@@ -1,0 +1,288 @@
+1
+00:00:00,360 --> 00:00:06,140
+You know, we usually imagine being locked into a piece of software as, uh, one massive catastrophic decision.
+
+2
+00:00:06,480 --> 00:00:12,340
+Like someone in your ministry signed the wrong multi-million dollar check on a Tuesday, and suddenly your systems are trapped forever.
+
+3
+00:00:12,800 --> 00:00:13,260
+Yeah, well,
+
+4
+00:00:13,920 --> 00:00:15,020
+it really is not like that.
+
+5
+00:00:15,660 --> 00:00:18,660
+The reality of vendor lock-in is actually much quieter.
+
+6
+00:00:19,320 --> 00:00:20,880
+It is, um, a trap
+
+7
+00:00:21,580 --> 00:00:28,080
+written clause by clause into contracts that nobody bothers to read until the exact day your program wants to leave.
+
+8
+00:00:28,500 --> 00:00:31,940
+Right. And suddenly, leaving becomes incredibly costly to change.
+
+9
+00:00:32,560 --> 00:00:35,560
+Welcome to this deep dive into sourcing digital building blocks.
+
+10
+00:00:36,080 --> 00:00:43,820
+Today, our mission is to explore how you can maintain flexibility and control over your systems by strategically choosing who builds them, and crucially,
+
+11
+00:00:44,180 --> 00:00:46,540
+uh, how you write the exit strategy for your minister.
+
+12
+00:00:47,200 --> 00:00:52,280
+To start, the reference architecture outlines three distinct paths for sourcing the blocks of your system.
+
+13
+00:00:53,140 --> 00:00:59,080
+First, you have the in-house path, which is reserved for what your own teams can realistically create and keep running.
+
+14
+00:00:59,400 --> 00:01:01,140
+Which makes sense for manageable components.
+
+15
+00:01:01,500 --> 00:01:07,040
+Exactly. But you pair that with outsourcing for the heavy lifting your team simply cannot do.
+
+16
+00:01:07,420 --> 00:01:10,780
+You know, things like complex cybersecurity or cloud services.
+
+17
+00:01:11,380 --> 00:01:15,360
+And you have to manage that outsourced work with a strict risk management framework, I assume.
+
+18
+00:01:15,700 --> 00:01:16,020
+You do.
+
+19
+00:01:16,660 --> 00:01:18,920
+And then the third path is partnerships,
+
+20
+00:01:19,560 --> 00:01:24,580
+which involves teaming up with technology firms or universities, or initiatives like GovStack.
+
+21
+00:01:25,420 --> 00:01:30,360
+Combining these three paths prevents your ministry from being entirely dependent on a single channel.
+
+22
+00:01:31,420 --> 00:01:38,460
+Wait, so if the whole point is avoiding the heavy lifting and minimizing risk, why not just grab an off-the-shelf pre-tested solution?
+
+23
+00:01:38,940 --> 00:01:44,840
+Doesn't a platform like the GovStack Sandbox bypass this headache instantly and give you a production ready system?
+
+24
+00:01:45,740 --> 00:01:50,380
+Well, it seems like it should, but the Sandbox is strictly a demonstration and learning tool.
+
+25
+00:01:51,400 --> 00:01:54,420
+Building digital public infrastructure is never plug and play.
+
+26
+00:01:55,120 --> 00:01:57,360
+Even when a product shows GovStack testing,
+
+27
+00:01:58,040 --> 00:02:00,320
+it only provides a compliance level of one or two.
+
+28
+00:02:01,260 --> 00:02:03,220
+Meaning what practically for a government official?
+
+29
+00:02:04,060 --> 00:02:07,780
+Meaning the vendor completed a self-assessment and some basic interface tests.
+
+30
+00:02:08,460 --> 00:02:17,700
+It verifies that their software plug fits the socket, but it guarantees absolutely nothing about how that system will perform under the stress of your specific live environment.
+
+31
+00:02:18,520 --> 00:02:21,500
+So a product listing is evidence and not a promise.
+
+32
+00:02:21,740 --> 00:02:23,900
+You still have to test everything in your own installation.
+
+33
+00:02:24,580 --> 00:02:30,940
+Right. Because if you do not, the systems become fragmented, siloed, duplicated, or rekeyed,
+
+34
+00:02:31,720 --> 00:02:34,460
+and the financial consequences are staggering.
+
+35
+00:02:35,060 --> 00:02:42,080
+A two thousand and eighteen World Bank finding showed that for identity systems, procurement choices can swing the overall cost by twenty-five percent
+
+36
+00:02:42,420 --> 00:02:44,020
+to over one hundred percent.
+
+37
+00:02:44,620 --> 00:02:49,340
+Wow. How does a cost swing of over one hundred percent actually happen mechanically?
+
+38
+00:02:49,840 --> 00:02:53,720
+Well, it happens when you lose leverage and become locked into one supplier.
+
+39
+00:02:54,380 --> 00:03:01,720
+If a vendor owns the underlying code and the proprietary data formats, every time your program wants to add a new feature, that vendor can charge
+
+40
+00:03:02,040 --> 00:03:07,140
+massive fees. Because nobody else can touch the system, you have to pay whatever they ask.
+
+41
+00:03:07,880 --> 00:03:16,620
+Which is exactly why the twenty twenty-four UN Universal DPI Safeguards Framework points to vendor lock-in as a primary cause of unsustainability and long-term costs.
+
+42
+00:03:17,300 --> 00:03:19,880
+So how do we actually disarm the trap in the contract?
+
+43
+00:03:20,500 --> 00:03:24,280
+The framework requires four non-negotiable checks in every agreement.
+
+44
+00:03:24,720 --> 00:03:27,080
+First, you must mandate named open standards.
+
+45
+00:03:27,580 --> 00:03:32,100
+This ensures your data is written in a universal language and not a proprietary vendor code.
+
+46
+00:03:32,760 --> 00:03:34,140
+Right. So you are not tied down.
+
+47
+00:03:34,560 --> 00:03:35,080
+Exactly.
+
+48
+00:03:36,000 --> 00:03:39,240
+Second, you guarantee the export of all data and configuration.
+
+49
+00:03:39,800 --> 00:03:44,160
+If you leave, you need the legal right to take your blueprint and your information with you.
+
+50
+00:03:44,780 --> 00:03:46,940
+Leaving the vendor with an empty shell, essentially.
+
+51
+00:03:47,160 --> 00:03:47,420
+Yes.
+
+52
+00:03:48,180 --> 00:03:50,940
+And the third check is mandatory help with leaving.
+
+53
+00:03:51,560 --> 00:03:57,200
+The old vendor has to be contractually bound to hand over the keys and assist the new vendor during the transition.
+
+54
+00:03:57,740 --> 00:03:58,760
+That is crucial.
+
+55
+00:03:59,480 --> 00:04:00,220
+And the fourth check.
+
+56
+00:04:00,960 --> 00:04:02,760
+The fourth check acts as your safety net.
+
+57
+00:04:03,280 --> 00:04:05,620
+License terms that outlive the contract itself.
+
+58
+00:04:06,260 --> 00:04:11,180
+If a dispute happens and the contract terminates, the software does not just instantly shut off.
+
+59
+00:04:11,740 --> 00:04:14,920
+You get a legal grace period to keep the system running while you migrate.
+
+60
+00:04:15,540 --> 00:04:16,760
+Let us see this in action.
+
+61
+00:04:17,380 --> 00:04:19,860
+Take a fictional country, so let us call it Progresa.
+
+62
+00:04:20,500 --> 00:04:22,580
+How do they mix and match these paths?
+
+63
+00:04:23,160 --> 00:04:30,620
+In Progresia, they purchase a product for their registration service, but they configure it entirely in-house using their own analysts.
+
+64
+00:04:31,240 --> 00:04:36,120
+The contract explicitly guarantees that the service description is exportable at any time.
+
+65
+00:04:37,000 --> 00:04:41,620
+So they buy the tool, but they maintain total control over the setup and the exit strategy.
+
+66
+00:04:42,080 --> 00:04:45,340
+Yes. And for their identity services, they take a different route.
+
+67
+00:04:45,960 --> 00:04:51,240
+They do not buy anything. It is handled purely through a partnership agreement using the identity authority sign-in.
+
+68
+00:04:52,340 --> 00:04:58,100
+Every digital block has a specific deliberate sourcing choice and a customized exit clause.
+
+69
+00:04:58,800 --> 00:05:04,840
+So if your minister is drafting one of these contracts tomorrow, the main takeaway is to deliberately decide who builds each block,
+
+70
+00:05:05,500 --> 00:05:11,220
+but retain control by writing open standards and clear terms for leaving into every single agreement.
+
+71
+00:05:12,000 --> 00:05:14,360
+You just have to keep the keys to your own infrastructure.
+
+72
+00:05:15,140 --> 00:05:19,360
+Sourcing decides who builds the house, but the contract decides if you can ever leave it.
+

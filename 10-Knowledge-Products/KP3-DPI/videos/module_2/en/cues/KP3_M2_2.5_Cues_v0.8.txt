@@ -1,0 +1,20 @@
+# Slide cue file — KP3 Module 2, Video 2.5 "The officer decides, and the record is written"
+# Deck:  KP3_M2_2.5_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M2_2.5_Audio_v0.8.m4a (runs to 4:39.5)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Verdict: USABLE (no hard blocker; borderline — see first flaw). Flaws: PLR expanded as "the personal learner
+# record" (2:10; deck: Progressa Learner Registry) and PNIA as "the National Identity Agency" (4:08); "neither the
+# registry nor the mediator" publishes the order (deck: neither specification), and the gap called "completely
+# intentional" (invented); invented "glitch" opener, "welcome to a deep dive"; no title read; hook merged into the
+# decision slide (cue at "three specific choices"); slide 6 skips "PLR already a member of Linkup"; "data safety"
+# aside; ends on "the reference architecture"; no Sources line. Listen for "Progressa" (SRT: "Progresa").
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — hook: software can check an application, not take responsibility
+1:22   # slide 3 — the decision: approve, reject, send back
+1:48   # slide 4 — Progressa's flow
+2:43   # slide 5 — the write, and what nobody publishes
+3:50   # slide 6 — where the record lands
+4:23   # slide 7 — in one sentence
+4:33   # slide 8 — Sources

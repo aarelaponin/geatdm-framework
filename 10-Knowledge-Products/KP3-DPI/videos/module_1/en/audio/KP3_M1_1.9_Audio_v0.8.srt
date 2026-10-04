@@ -1,0 +1,200 @@
+1
+00:00:00,120 --> 00:00:08,760
+Welcome to this deep dive. Today's mission is, uh, extracting the facts on the optimal sequence for building digital government infrastructure, you know, based on the reference architecture.
+
+2
+00:00:09,540 --> 00:00:14,320
+Right. Because if you run these systems in your ministry, you know exactly how this actually plays out in reality.
+
+3
+00:00:14,960 --> 00:00:20,400
+Funding often just comes in pieces, like a donor here, a, a separate budget line over there.
+
+4
+00:00:21,060 --> 00:00:29,720
+Yeah, and when those pieces arrive in an order that nobody actually chose, your systems end up fragmented, they become siloed, incredibly costly to change.
+
+5
+00:00:30,140 --> 00:00:33,480
+And citizens' data just ends up being duplicated and rekeyed everywhere.
+
+6
+00:00:33,640 --> 00:00:34,140
+Exactly.
+
+7
+00:00:34,820 --> 00:00:43,800
+So we are exploring how to fix that sequence today, because if money arrives totally randomly, how do we enforce a logical build sequence without,
+
+8
+00:00:44,260 --> 00:00:46,380
+well, locking into one supplier?
+
+9
+00:00:47,060 --> 00:00:52,940
+To prevent that whole fragmented reality, you need a specific phased sequence to organize those budget pieces.
+
+10
+00:00:53,560 --> 00:00:58,000
+You follow the reference architecture's four phases, and we should number them just to be clear.
+
+11
+00:00:58,120 --> 00:00:59,040
+Okay, lay them out for us.
+
+12
+00:00:59,360 --> 00:01:05,260
+So phase one is inception. This is where you set up the core: identity, payment, and low-code platforms.
+
+13
+00:01:05,580 --> 00:01:07,540
+Right, which makes sense, but what's next?
+
+14
+00:01:07,920 --> 00:01:15,440
+Phase two is high priority use cases. So you deploy the information mediator, your registration blocks, and those very first services.
+
+15
+00:01:15,900 --> 00:01:25,040
+Okay, wait. I wanna pause on the information mediator for a second, because instead of a giant mega database, it acts kind of like a universal translator at the UN, right?
+
+16
+00:01:25,360 --> 00:01:33,560
+Yep, that's a good way to look at it. It lets different databases securely talk to each other, which leads right into phase three, initial transformation.
+
+17
+00:01:34,260 --> 00:01:37,420
+Over two to three years, you're digitalizing the main state registries.
+
+18
+00:01:38,000 --> 00:01:39,040
+Okay, and phase four?
+
+19
+00:01:39,960 --> 00:01:44,500
+Phase four is the mass scale transformation of every single government service.
+
+20
+00:01:44,860 --> 00:01:48,640
+So each phase puts in place the exact building blocks the next one needs.
+
+21
+00:01:49,240 --> 00:01:57,960
+I mean, logically, that makes sense, but let me push back on the political reality of this, because nobody wants to fund a digital identity if no service actually uses it yet.
+
+22
+00:01:58,480 --> 00:02:05,300
+Doesn't strict adherence to this whole foundation's first idea risk, well, failing in public and losing all your support?
+
+23
+00:02:05,580 --> 00:02:08,979
+It does, which is exactly why the architecture has two rules.
+
+24
+00:02:09,440 --> 00:02:12,100
+Rule one, internal prerequisites must be ready.
+
+25
+00:02:12,620 --> 00:02:16,740
+But rule two, citizens actually have to see early positive results.
+
+26
+00:02:17,300 --> 00:02:26,880
+So how do governments balance that? Because if we look at Estonia's official record, and they're sort of the gold standard for this, it contradicts the strict foundation's first model, doesn't it?
+
+27
+00:02:26,980 --> 00:02:27,880
+Yeah, it really does.
+
+28
+00:02:28,200 --> 00:02:37,220
+Like, they launched online tax returns in two thousand, but their data exchange layer, X-Road, wasn't until two thousand and one, and their electronic identity was two thousand and two.
+
+29
+00:02:37,440 --> 00:02:40,500
+Right. So the first services came before the shared blocks.
+
+30
+00:02:41,160 --> 00:02:44,820
+But once those blocks existed, they became the ultimate foundation.
+
+31
+00:02:45,520 --> 00:02:49,540
+Uh, Estonia secured all that political support early on with the visible tax service,
+
+32
+00:02:50,240 --> 00:02:52,120
+and then they just retrofitted it.
+
+33
+00:02:52,640 --> 00:02:53,220
+Oh, wow. Okay.
+
+34
+00:02:53,840 --> 00:02:58,240
+So let's apply this balance of foundations and visible results to a concrete model.
+
+35
+00:02:58,640 --> 00:03:04,520
+Let's look at Progresa, which is the fictional country from our examples, just to see how a ministry actually sequences this.
+
+36
+00:03:04,600 --> 00:03:04,760
+Sure.
+
+37
+00:03:05,540 --> 00:03:08,340
+So Progresa follows four steps. Step one,
+
+38
+00:03:09,000 --> 00:03:14,760
+connect to existing systems. Uh, they already have PNIA for identity and PayPro for payments.
+
+39
+00:03:15,460 --> 00:03:17,260
+So you don't rebuild them, you just connect.
+
+40
+00:03:17,420 --> 00:03:17,920
+Exactly.
+
+41
+00:03:18,560 --> 00:03:22,900
+Step two, bring the Ministry of Education onto the linkup data exchange.
+
+42
+00:03:23,200 --> 00:03:25,400
+So a parent registers a child just once.
+
+43
+00:03:26,160 --> 00:03:28,940
+Because the background systems are finally talking to each other.
+
+44
+00:03:29,600 --> 00:03:31,280
+Right. Which brings us to step three,
+
+45
+00:03:31,960 --> 00:03:34,500
+expand the learner register to every district.
+
+46
+00:03:35,100 --> 00:03:40,880
+And then finally, step four, allow parents and learners to actually log in and see their own records.
+
+47
+00:03:41,720 --> 00:03:48,940
+That is a remarkably clear sequence. Build identity and payments first, bring in the data exchange and registration with priority services,
+
+48
+00:03:49,600 --> 00:03:54,860
+digitalize the registers next, and show one visible result early so that your support actually holds.
+
+49
+00:03:55,240 --> 00:03:58,260
+Exactly. That is how you get it done without the silos.
+
+50
+00:03:59,140 --> 00:04:01,420
+So look at your ministry's upcoming budget lines.
+

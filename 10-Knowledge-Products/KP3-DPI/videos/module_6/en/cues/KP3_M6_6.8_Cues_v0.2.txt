@@ -1,0 +1,17 @@
+# Slide cue file — KP3 Module 6, Video 6.8 "Keep the foundation healthy and safe"
+# Deck:  KP3_M6_6.8_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M6_6.8_Audio_v0.2.m4a (runs to 4:45.0)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Podcast framing instead of a cold open ("Welcome to the Deep Dive" / "Thanks for having me"); bridge and bouncer metaphors;
+# "every single day" checks (deck: every load); "Progressa" said "progressive" (1:06). Recap is short (4:34); Sources cued at
+# 4:39 inside its last sentence to give the card ~6 s.
+
+0:00   # slide 1 — title card
+0:12   # slide 2 — Hook: launch day starts the work
+0:43   # slide 3 — Indicators in three tiers
+1:43   # slide 4 — Every load checked, every payment traced
+3:21   # slide 5 — A yearly review against the safeguards
+4:16   # slide 6 — Progressa's first yearly review (illustrative)
+4:34   # slide 7 — In one sentence
+4:39   # slide 8 — Sources

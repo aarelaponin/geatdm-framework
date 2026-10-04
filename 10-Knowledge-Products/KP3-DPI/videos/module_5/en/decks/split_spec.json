@@ -1,0 +1,69 @@
+{
+  "kicker_prefix": "Education DPI Roadmap · Module 5",
+  "audience": "The DPI solution architect, integration lead or ministry technical lead who joins the blocks on the data exchange layer and proves them",
+  "out_pattern": "KP3_M5_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "Join the blocks and prove the foundation",
+  "cover_subtitle_marker": "Six standalone video",
+  "videos": [
+    {
+      "code": "5.1",
+      "title": "What must be in place before the blocks can call each other",
+      "mins": "~5",
+      "range": [
+        3,
+        11
+      ],
+      "message": "Before one block can call another across ministries, each must be a member of the data exchange layer, each service registered with its contract, and access granted to the caller."
+    },
+    {
+      "code": "5.2",
+      "title": "Who puts the steps in order: contracts, and the block that calls them",
+      "mins": "~5",
+      "range": [
+        12,
+        20
+      ],
+      "message": "The data exchange layer carries each call and enforces who may make it, but the registration service puts the steps in order, so know which block holds the sequence before you approve an integration plan."
+    },
+    {
+      "code": "5.3",
+      "title": "The once-only registration, from beginning to end",
+      "mins": "~5",
+      "range": [
+        21,
+        30
+      ],
+      "message": "A learner signs in, the form fills with the facts the learner agrees to release, the registrar approves and the record is in the register: one run that proves four blocks work as one foundation."
+    },
+    {
+      "code": "5.4",
+      "title": "The acceptance checks: from \"set up\" to \"proven\"",
+      "mins": "~5",
+      "range": [
+        31,
+        39
+      ],
+      "message": "Every configuration has a check that someone can run and read, and a block is called proven only when its checks have run and passed."
+    },
+    {
+      "code": "5.5",
+      "title": "Reading the evidence of a call",
+      "mins": "~5",
+      "range": [
+        40,
+        48
+      ],
+      "message": "Three records can show that a call took place, the message log, operational monitoring and the traffic view, but each only under settings you must choose before the first call."
+    },
+    {
+      "code": "5.6",
+      "title": "What the next services can now use",
+      "mins": "~5",
+      "range": [
+        49,
+        57
+      ],
+      "message": "Identity, the learner register and payments are now services with published contracts that the next education services can use without building them again, with consent and notification still to add."
+    }
+  ]
+}

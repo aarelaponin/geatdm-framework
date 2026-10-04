@@ -1,0 +1,21 @@
+# Slide cue file — KP3 Module 4, Video 4.2 "The published Identity block, and what the identity authority offers today"
+# Deck:  KP3_M4_4.2_Deck_v0.1.pptx (9 slides)
+# Audio: KP3_M4_4.2_Audio_v0.8.m4a (runs to 5:04.1)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# VERDICT: USABLE.
+# Slide 4 cues on the services/actors list (only four of the six services named, no count spoken); the per-service
+# identifier (slide 5 content) is explained at 3:20-3:44 under slide 6. Sources 6.1 s, rides the closing advice.
+# Flaws: block credited to "the reference architecture" (0:00); water-tower and bouncer/wristband analogies; the
+# pairwise identifier is called "a token" ("service-specific token identifier"); invented consequences for PNIA's
+# contract — "locked into one supplier", "highly siloed, duplicated"; no sources line. Listen for "Progresa".
+
+0:00   # slide 1 — title card
+0:07   # slide 2 — Hook: what does the identity authority actually offer today?
+1:11   # slide 3 — Foundational, not functional
+1:44   # slide 4 — What the block offers, and to whom
+2:12   # slide 5 — The national number stays inside
+2:55   # slide 6 — How the published block verifies
+3:48   # slide 7 — Progressa: what PNIA offers today, beside the published block
+4:39   # slide 8 — In one sentence
+4:58   # slide 9 — Sources

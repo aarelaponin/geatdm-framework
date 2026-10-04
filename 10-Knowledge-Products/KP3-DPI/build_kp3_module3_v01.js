@@ -5,7 +5,7 @@
 // The register is taught from the GovStack Digital Registries specification, "Version 3.0-alpha; June 2026", an early
 //   release; the load is taught from UNICEF Giga's published data flow (giga-dagster, docs/dataflow.md, at commit
 //   46b72af67066363a29d3d933dcdc619489bd0be5). Applying Giga's school flow to learners is KP3's own adaptation, and the
-//   reconciliation of a load is the team's own practice: no published source describes it.
+//   reconciliation of a load is this course's own practice: no published source describes it.
 // Nothing of the build runs. The configurations are shown as specimens (specimens/registry/, each marked
 //   "specimen, not yet run"); every demonstration segment is a storyboard on the specimen.
 // ITU compliance: subtopic numbering, standalone videos (no intros/outros), text-only slides, no individuals on screen,
@@ -229,7 +229,7 @@ body.push(
   P("This document collects the seven video scripts that make up Module 3 of Knowledge Product 3, Education DPI Roadmap, with their on-screen slide specifications, their AI usage tips and their metadata, and a storyboard for each of the five demonstration segments. Each script is written from its subtopic in the KP3 outline and content plan: the single message, the sources, the worked example, the AI usage tip and the configurations it carries are the outline's."),
 
   H3("1.2 What Module 3 teaches"),
-  P("Module 3 teaches the team that configures the service to set up a register from a schema file, to load it through checked tiers, to account for every load, and to open it to other services under rules. In Progressa, the learner registry PLR has been a member of the data exchange layer, Linkup, since the interoperability work of KP2, with one enrolment service. It is not yet the authoritative learner register the country needs. Module 3 sets up the register behind PLR. The register is taught from the GovStack Digital Registries specification in its edition 'Version 3.0-alpha; June 2026', which is an early release whose numbers may change, so every requirement is cited by its number and its short title together. The load is taught from the five tiers of Giga's published data flow — raw, bronze, staging, silver and gold — with the quality checks at bronze and a person's approval before silver. Applying a flow built for schools to learners is KP3's own adaptation, and the reconciliation of each load is presented as the team's own practice, because no published source describes it."),
+  P("Module 3 teaches the team that configures the service to set up a register from a schema file, to load it through checked tiers, to account for every load, and to open it to other services under rules. In Progressa, the learner registry PLR has been a member of the data exchange layer, Linkup, since the interoperability work of KP2, with one enrolment service. It is not yet the authoritative learner register the country needs. Module 3 sets up the register behind PLR. The register is taught from the GovStack Digital Registries specification in its edition 'Version 3.0-alpha; June 2026', which is an early release whose numbers may change, so every requirement is cited by its number and its short title together. The load is taught from the five tiers of Giga's published data flow — raw, bronze, staging, silver and gold — with the quality checks at bronze and a person's approval before silver. Applying a flow built for schools to learners is KP3's own adaptation, and the reconciliation of each load is presented as this course's own practice, because no published source describes it."),
 
   H3("1.3 What runs, and what does not"),
   P("Nothing of the build runs today. The thirteen configurations of the learner register, RG1 to RG13, are built as a separate piece of work. Until each is built and its check has passed, it is shown as a specimen: a file written for Progressa in the terms of the specification, marked 'specimen, not yet run'. The scripts say what each configuration contains, what its check runs and what counts as a pass; they do not say that anything has run. Each demonstration segment exists as a storyboard, which is what the recording will follow. When a check passes on the built configuration, the specimen is replaced by the file as built, the segment is recorded, and the script gains one sentence that states the result and its date."),
@@ -274,7 +274,7 @@ body.push(...renderSubtopic({
   num: "3.1 Subtopic 3.1",
   title: "What a register is for: one authoritative record",
   runtime: "~4 min",
-  words: 466,
+  words: 462,
   paeraAnchor: "Digital Registries 3.0-alpha, DR §2 and DR §10.5.8; PAERA v1.0 Annex 1, A1.2.5, Annex 3 and §3.4.2",
   singleMessage: "A register gives every service one authoritative record of each learner, held as a service with rules on who may read and change it, and filled through a disciplined load.",
   scriptBeats: [
@@ -287,7 +287,7 @@ body.push(...renderSubtopic({
     { cue: "Slide 4 — Title: 'Two building blocks'. Body, two text boxes side by side: 'Registration — a person applies, an officer decides' and 'Digital Registry — keeps the record and serves it to others'. Footer line: 'Built once, called by many services.'" },
     { text: "PAERA also says that putting a state registry online needs two building blocks. Registration is where a person applies and an officer decides. The Digital Registry keeps the record and serves it to others. That is why a register is built once and called by many services. Procurement rules can make each contract cheaper, but only whole-of-government planning makes re-use possible." },
     { cue: "Slide 5 — Title: 'Progressa today'. Body, four text rows: 'PLR: a member of the data exchange layer, with one enrolment service.' 'No basis in the education act.' 'No record for every learner. No quality rules. No link to the national identity.' 'This module sets up the register behind PLR.'" },
-    { text: "Take Progressa, the fictional country of this course. Its learner registry, PLR, has been a member of the data exchange layer since the interoperability work. It publishes one enrolment service, which only the examination authority may call. It is not yet the authoritative register the country needs. The education act gives it no basis. It does not hold one record for every learner. It has no quality rules and no link to the national identity. This module sets up the register behind PLR." },
+    { text: "Take Progressa, the fictional country of this course. Its learner registry, PLR, is already a member of the data exchange layer. It publishes one enrolment service, which only the examination authority may call. It is not yet the authoritative register the country needs. The education act gives it no basis. It does not hold one record for every learner. It has no quality rules and no link to the national identity. This module sets up the register behind PLR." },
     { cue: "Slide 6 — Title: 'Filled through a disciplined load'. Body, one line: 'Messy file → checked → approved by a person → written to the register.' Note at the foot: 'Digital Registries specification, version 3.0-alpha: an early release.'" },
     { text: "One more part matters. A register is only as good as the data that reaches it. Records arrive from schools in messy files. They are checked, approved by a person, and only then written to the register. UNICEF Giga publishes such a flow for its school data, and says it applies ideas from master data management to produce a single source of truth. The edition of the Digital Registries specification used here is an early release, version 3.0-alpha, and its numbers may change." },
     { cue: "Slide 7 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'One authoritative record of each learner, held as a service with rules, and filled through a disciplined load.' The on-screen practice box sits below it." },
@@ -337,7 +337,7 @@ body.push(...renderSubtopic({
   num: "3.2 Subtopic 3.2",
   title: "Five tiers between a messy file and a trusted record",
   runtime: "~4 min",
-  words: 400,
+  words: 383,
   paeraAnchor: "UNICEF Giga data flow (giga-dagster, docs/dataflow.md); Databricks, medallion architecture; Digital Registries 3.0-alpha, DRS-2 and DRS-19",
   singleMessage: "Data reaches the register through five tiers, raw, bronze, staging, silver and gold, with quality checks at bronze and a person's approval before silver.",
   scriptBeats: [
@@ -349,8 +349,8 @@ body.push(...renderSubtopic({
     { text: "Two things in this flow are easy to get wrong. First, raw is a tier of its own, and the checks run at bronze. The file is kept as it came, so you can always show what a school sent. Second, a person approves the rows before they reach silver. That approval is an act of responsibility. A program can prepare it, but it cannot replace it." },
     { cue: "Slide 4 — Title: 'Where the tiers live'. Body, three text rows: 'A common pattern: layers that improve data step by step.' 'GovStack: linked databases and scheduled, rule-based automation.' 'Schools to learners: this course's own adaptation.'" },
     { text: "Giga says its tiers were inspired by a common data pattern, which Databricks describes as layers that improve the structure and quality of data step by step. The GovStack Digital Registries specification does not describe tiers. It does let you keep several linked databases in one installation, and run scheduled, rule-based automation that moves records between them. So the tiers can be held as linked databases beside the register, or in a data platform in front of it. Applying Giga's school flow to learners is this course's own adaptation." },
-    { cue: "Slide 5 — Title: 'What the walkthrough will show'. Body, four text rows: 'A seeded file of learners, with faulty rows, enters raw.' 'Faulty rows stop at bronze, in the failed table.' 'An officer approves the passed rows at staging.' 'Only approved rows reach silver; gold holds the master records.' Footer: 'Storyboard on the specimen. Not yet run.'" },
-    { text: "Here is what the walkthrough of this subtopic will show, once the load is built. A seeded file of Progressa learners, with some faulty rows in it, enters raw. At bronze, the faulty rows go to the failed table. At staging, an officer of the learner registry approves the passed rows. The count of rows is read at every tier. The check passes when only approved rows reach silver and gold holds the master records. Until then, the tier layout is a specimen, and nothing here has run." },
+    { cue: "Slide 5 — Title: 'What the walkthrough will show'. Body, four text rows: 'A seeded file of learners, with faulty rows, enters raw.' 'Faulty rows stop at bronze, in the failed table.' 'An officer approves the passed rows at staging.' 'Only approved rows reach silver; gold holds the master records.' Footer: 'Walkthrough: what a good run shows.'" },
+    { text: "Here is what a good run of this walkthrough shows. A seeded file of Progressa learners, with some faulty rows in it, enters raw. At bronze, the faulty rows go to the failed table. At staging, an officer of the learner registry approves the passed rows. The count of rows is read at every tier. A good run passes when only approved rows reach silver and gold holds the master records." },
     { cue: "Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Raw, bronze, staging, silver, gold: checks at bronze, a person's approval before silver.' The on-screen practice box sits below it." },
     { text: "Raw, bronze, staging, silver, gold: checks at bronze, a person's approval before silver, and only then a record the register can trust." },
     { cue: "Slide 7 — Title: 'Sources'. Body: UNICEF Giga, giga-dagster, docs/dataflow.md; Databricks, 'What is Medallion Architecture?'; GovStack Digital Registries specification, version 3.0-alpha, DRS-2 and DRS-19. Footer: 'Find the link in the description.'" }
@@ -364,7 +364,7 @@ body.push(...renderSubtopic({
       "The two errors the module corrects. Text only."],
     ["4", "Where the tiers live. Three text rows.",
       "The adaptation is named as the course's own."],
-    ["5", "What the walkthrough will show. Four text rows and the footer 'Storyboard on the specimen. Not yet run.'",
+    ["5", "What the walkthrough will show. Four text rows and the footer 'Walkthrough: what a good run shows.'",
       "Replaced by the recorded segment once check RG9 passes. Until then, text only."],
     ["6", "Single-sentence summary slide, with the on-screen practice box.",
       "The take-home line. The practice box is shown, not narrated."],
@@ -411,7 +411,7 @@ body.push(...renderSubtopic({
   num: "3.3 Subtopic 3.3",
   title: "Generating the register's schema",
   runtime: "~4 min",
-  words: 437,
+  words: 418,
   paeraAnchor: "Digital Registries 3.0-alpha, DRS-1, DRS-2, DRS-3, DRS-4, DRS-10, DRS-11, DRS-13, DRS-14, DRS-17, DRS-28, DRS-30 and DR §8.2; Identity 2.0, ID §4.1.1, ID §4.1.2 and ID 6.1-r11",
   singleMessage: "The register is set up from one schema file, with its fields, rules, links and key, which an AI assistant drafts from the law and the form and the owner corrects and publishes.",
   scriptBeats: [
@@ -423,8 +423,8 @@ body.push(...renderSubtopic({
     { text: "One choice needs the owner's decision: the key. It is tempting to key the register on the national identity number. Do not. The GovStack Identity specification keeps that number secret inside the identity block. A service that checks a person signs the person in, with the person present, and receives an identifier made for that service alone. So Progressa's register keeps a learner number of its own, and stores beside it the identifier that the identity authority, PNIA, gives to the service. It never stores the national number." },
     { cue: "Slide 4 — Title: 'Drafted by AI, decided by the owner'. Body, three text rows: 'Inputs: the education act, the registration form, the services that will read the register.' 'Every rule traced to the line it came from.' 'The owner decides the key and the personal-data fields, corrects and publishes.'" },
     { text: "An AI assistant drafts this file well, because its inputs are written down: the education act, the registration form, and the list of services that will read the register. The prompt asks it to trace every rule to the line it came from. The owner then decides the key and the fields that hold personal data. The marks for personal data are optional in the specification, so no check depends on them. The owner corrects the draft and publishes it. The file states the edition of the specification it implements: version 3.0-alpha, an early release." },
-    { cue: "Slide 5 — Title: 'What the walkthrough will show'. Body, four text rows: 'The schema drafted, and the register created from it.' 'The register listed and read back: schema, metadata, state published.' 'A record without a required field: refused.' 'A second record with the same learner number: refused.' Footer: 'Storyboard on the specimen. Not yet run.'" },
-    { text: "The walkthrough of this subtopic shows the schema drafted, and the register created from it through the published interface. The check lists the registers and reads this one back: its schema, its metadata and the state published. A record without a required field must be refused, and so must a second record with the same learner number. Until the register is built, the schema is a specimen written for Progressa, and none of this has run." },
+    { cue: "Slide 5 — Title: 'What the walkthrough will show'. Body, four text rows: 'The schema drafted, and the register created from it.' 'The register listed and read back: schema, metadata, state published.' 'A record without a required field: refused.' 'A second record with the same learner number: refused.' Footer: 'Walkthrough: what a good run shows.'" },
+    { text: "The walkthrough of this subtopic shows the schema drafted, and the register created from it through the published interface. The check lists the registers and reads this one back: its schema, its metadata and the state published. A record without a required field must be refused, and so must a second record with the same learner number." },
     { cue: "Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'One schema file: drafted by AI from the law and the form, corrected and published by the owner.' The on-screen practice box sits below it." },
     { text: "One schema file, drafted by AI from the law and the form, corrected and published by the owner, and keyed on the register's own number." },
     { cue: "Slide 7 — Title: 'Sources'. Body: GovStack Digital Registries specification, version 3.0-alpha (DRS-1, DRS-2, DRS-3, DRS-4, DRS-10, DRS-11, DRS-13, DRS-14, DRS-17, DRS-28, DRS-30, section 8.2); GovStack Identity specification, version 2.0 (sections 4.1.1 and 4.1.2, requirement 11 of section 6.1). Footer: 'Find the link in the description.'" }
@@ -438,7 +438,7 @@ body.push(...renderSubtopic({
       "The one decision the owner must take. Text only."],
     ["4", "Drafted by AI, decided by the owner. Three text rows.",
       "Who does what: the assistant drafts, the owner decides."],
-    ["5", "What the walkthrough will show. Four text rows and the footer 'Storyboard on the specimen. Not yet run.'",
+    ["5", "What the walkthrough will show. Four text rows and the footer 'Walkthrough: what a good run shows.'",
       "Replaced by the recorded segment once checks RG1 to RG4 and RG12 pass. Until then, text only."],
     ["6", "Single-sentence summary slide, with the on-screen practice box.",
       "The take-home line. The practice box is shown, not narrated."],
@@ -487,7 +487,7 @@ body.push(...renderSubtopic({
   num: "3.4 Subtopic 3.4",
   title: "Quality checks that stop a bad row",
   runtime: "~4 min",
-  words: 379,
+  words: 364,
   paeraAnchor: "UNICEF Giga data flow (giga-dagster, docs/dataflow.md, the bronze tier); Digital Registries 3.0-alpha, DR §4.1 and DRS-17",
   singleMessage: "Every row is checked at the bronze tier, and a row that fails is set aside with its reason, so that the people who sent the data know what to correct.",
   scriptBeats: [
@@ -499,8 +499,8 @@ body.push(...renderSubtopic({
     { text: "Look at three faulty rows from a Progressa school. In the first, the same learner appears twice, with the same learner number. In the second, the date of birth is empty, and it is required. In the third, the date of birth says the child is three years old and in grade six. Each row goes to the failed table with its reason in plain words. Who sets the limits, such as the range of ages for each grade? The register's owner, not the programmer. A range is a policy choice." },
     { cue: "Slide 4 — Title: 'The sender is told'. Body, three text rows: 'A failed row is kept, with its reason.' 'A report goes to the person who sent the file.' 'The share of failed rows, term by term.'" },
     { text: "A failed row is not thrown away, and it is not a secret. In Giga's flow, a data-quality report is generated and emailed to the person who uploaded the file. Do the same. The head teacher gets a short list: which rows failed, and what to correct. The next file comes back cleaner. Over a few terms, the schools learn the rules, and the share of failed rows falls. That share is worth reporting to your director every term." },
-    { cue: "Slide 5 — Title: 'What the walkthrough will show'. Body, three text rows: 'A seeded load with three faulty rows.' 'Each lands among the failed rows, with its reason.' 'No faulty row reaches staging.' Footer: 'Storyboard on the specimen. Not yet run.'" },
-    { text: "The walkthrough of this subtopic shows a seeded load that contains three faulty rows: a duplicate, a missing required value and a value outside its range. The check passes when each of the three lands among the failed rows with its reason stated, and no faulty row reaches staging. Until the checks are built, they are written as a specimen, and nothing here has run." },
+    { cue: "Slide 5 — Title: 'What the walkthrough will show'. Body, three text rows: 'A seeded load with three faulty rows.' 'Each lands among the failed rows, with its reason.' 'No faulty row reaches staging.' Footer: 'Walkthrough: what a good run shows.'" },
+    { text: "The walkthrough of this subtopic shows a seeded load that contains three faulty rows: a duplicate, a missing required value and a value outside its range. A good run passes when each of the three lands among the failed rows with its reason stated, and no faulty row reaches staging." },
     { cue: "Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Check every row at bronze; set each failing row aside with its reason.' The on-screen practice box sits below it." },
     { text: "Check every row at bronze, set each failing row aside with its reason, and send the school the list of what to correct." },
     { cue: "Slide 7 — Title: 'Sources'. Body: UNICEF Giga, giga-dagster, docs/dataflow.md (the bronze tier); GovStack Digital Registries specification, version 3.0-alpha (section 4.1; DRS-17). Footer: 'Find the link in the description.'" }
@@ -514,7 +514,7 @@ body.push(...renderSubtopic({
       "Invented values for Progressa. Text only."],
     ["4", "The sender is told. Three text rows.",
       "The feedback loop to the school."],
-    ["5", "What the walkthrough will show. Three text rows and the footer 'Storyboard on the specimen. Not yet run.'",
+    ["5", "What the walkthrough will show. Three text rows and the footer 'Walkthrough: what a good run shows.'",
       "Replaced by the recorded segment once check RG10 passes. Until then, text only."],
     ["6", "Single-sentence summary slide, with the on-screen practice box.",
       "The take-home line. The practice box is shown, not narrated."],
@@ -619,8 +619,8 @@ body.push(...renderSubtopic({
   num: "3.6 Subtopic 3.6",
   title: "Account for every load",
   runtime: "~3 min",
-  words: 351,
-  paeraAnchor: "Digital Registries 3.0-alpha, DRS-7, DRS-21, DRS-24, DRS-26, DR §8.1 and DR §8.2; the reconciliation itself is the team's own practice",
+  words: 337,
+  paeraAnchor: "Digital Registries 3.0-alpha, DRS-7, DRS-21, DRS-24, DRS-26, DR §8.1 and DR §8.2; the reconciliation itself is this course's own practice",
   singleMessage: "After every load, show that the rows received equal the rows passed plus the rows set aside, and that the rows approved equal the records the register added or changed.",
   scriptBeats: [
     { cue: "Slide 1 — Title: 'Account for every load'. Voice-over begins." },
@@ -629,13 +629,13 @@ body.push(...renderSubtopic({
     { text: "The first line is about the checks. The rows received must equal the rows that passed plus the rows set aside at bronze. If they do not, rows were lost or counted twice inside the load. The second line is about the register. The rows approved at staging must equal the records the register added plus the records it changed. If they do not, the load did not write what the officer approved." },
     { cue: "Slide 3 — Title: 'Where the numbers come from'. Body, four text rows: 'The change log: every change, with the value before and after.' 'Import, and the update of entries.' 'Statistical queries: how many records.' 'An operation that says whether a record exists.'" },
     { text: "The numbers come from things the GovStack Digital Registries specification already requires. The register logs every change, and shows the value before and after. It can import data and update entries. It answers statistical queries, such as how many records it holds, and it has an operation that says whether a given record exists. So the reconciliation needs no new system. Count the tiers, read the log, and read the record count before and after." },
-    { cue: "Slide 4 — Title: 'An honest note, and a hard rule'. Body, two text rows: 'No published source describes this check. It is the team's own practice.' 'A line that does not balance stops the next load.'" },
+    { cue: "Slide 4 — Title: 'An honest note, and a hard rule'. Body, two text rows: 'No published source describes this check. It is this course's own practice.' 'A line that does not balance stops the next load.'" },
     { text: "Be clear with your readers on one point. No published source describes this reconciliation, neither the GovStack specification nor Giga's flow. It is the practice of the team that wrote this course, built on what the specification does publish. Present it to your auditors that way; it is simple enough for them to check. And keep one hard rule. A line that does not balance stops the next load until someone finds where the rows went and writes down the cause." },
-    { cue: "Slide 5 — Title: 'What the walkthrough will show'. Body, three text rows: 'One load on one sheet: received, passed, set aside, approved, added, changed.' 'The record count before and after.' 'A sample of records confirmed to exist.' Footer: 'Storyboard on the specimen. Not yet run.'" },
-    { text: "The walkthrough of this subtopic shows one load of Progressa learners reconciled on a single sheet: rows received, passed, set aside, approved, added and changed, and the register's record count before and after. The check passes when both lines balance and a sample of the loaded records is confirmed to exist in the register. Until the load is built, the sheet is a storyboard, and nothing here has run." },
+    { cue: "Slide 5 — Title: 'What the walkthrough will show'. Body, three text rows: 'One load on one sheet: received, passed, set aside, approved, added, changed.' 'The record count before and after.' 'A sample of records confirmed to exist.' Footer: 'Walkthrough: what a good run shows.'" },
+    { text: "The walkthrough of this subtopic shows one load of Progressa learners reconciled on a single sheet: rows received, passed, set aside, approved, added and changed, and the register's record count before and after. A good run passes when both lines balance and a sample of the loaded records is confirmed to exist in the register." },
     { cue: "Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Received = passed + set aside. Approved = added + changed. After every load.' The on-screen practice box sits below it." },
     { text: "Received equals passed plus set aside; approved equals added plus changed. Show both lines after every load." },
-    { cue: "Slide 7 — Title: 'Sources'. Body: GovStack Digital Registries specification, version 3.0-alpha (DRS-7, DRS-21, DRS-24, DRS-26; sections 8.1 and 8.2). The reconciliation is the team's own practice. Footer: 'Find the link in the description.'" }
+    { cue: "Slide 7 — Title: 'Sources'. Body: GovStack Digital Registries specification, version 3.0-alpha (DRS-7, DRS-21, DRS-24, DRS-26; sections 8.1 and 8.2). The reconciliation is this course's own practice. Footer: 'Find the link in the description.'" }
   ],
   slideSpecRows: [
     ["1", "Title slide. Title: 'Account for every load'.",
@@ -645,8 +645,8 @@ body.push(...renderSubtopic({
     ["3", "Where the numbers come from. Four text rows.",
       "Each row is a requirement or an operation of the specification."],
     ["4", "An honest note, and a hard rule. Two text rows.",
-      "Says plainly that the practice is the team's own."],
-    ["5", "What the walkthrough will show. Three text rows and the footer 'Storyboard on the specimen. Not yet run.'",
+      "Says plainly that the practice is this course's own."],
+    ["5", "What the walkthrough will show. Three text rows and the footer 'Walkthrough: what a good run shows.'",
       "Replaced by the recorded segment once checks RG7 and RG11 pass. Until then, text only."],
     ["6", "Single-sentence summary slide, with the on-screen practice box.",
       "The take-home line. The practice box is shown, not narrated."],
@@ -664,7 +664,7 @@ body.push(...renderSubtopic({
   metadataRows: [
     ["Working title",          "Account for every load"],
     ["YouTube-optimised title", "Did every learner reach the register? Two lines of arithmetic after every load"],
-    ["Description (60 words)", "After every load into a learner register, show two lines: rows received equal rows passed plus rows set aside, and rows approved equal records added or changed. The numbers come from the register's own logs and counts. Four minutes for education ICT teams; the practice is the team's own, built on the GovStack specification. An AI prompt for the reconciliation note is in the description."],
+    ["Description (60 words)", "After every load into a learner register, show two lines: rows received equal rows passed plus rows set aside, and rows approved equal records added or changed. The numbers come from the register's own logs and counts. Four minutes for education ICT teams; the practice is this course's own, built on the GovStack specification. An AI prompt for the reconciliation note is in the description."],
     ["Tags",                    "reconciliation, data load, audit, learner register, digital registries, GovStack, data quality, education data"],
     ["Playlist (YouTube)",      "KP3 — Module 3: The Registry block"],
     ["ToR §4 coverage",         "Terms of reference §4.1 (method step with its validation); §4.4 (demonstration in the education sector) — contract rows 6 and 9"],
@@ -693,7 +693,7 @@ body.push(...renderSubtopic({
   num: "3.7 Subtopic 3.7",
   title: "The register as a service others can use",
   runtime: "~4 min",
-  words: 430,
+  words: 416,
   paeraAnchor: "Digital Registries 3.0-alpha, DR §4.2, DR §5.2, DR §8, DR §9.2.1, DRS-5, DRS-6, DRS-8, DRS-21, DRS-33, DRS-34, DRS-35 and DRS-37; Information Mediator 1.1.1, IM §6.2 and IM §6.3; OpenAPI",
   singleMessage: "Other services reach the register only through its published interface, each seeing no more than its role allows, and every learner or parent can see who read their record.",
   scriptBeats: [
@@ -707,8 +707,8 @@ body.push(...renderSubtopic({
     { text: "Inside the register, access is decided per service, per record and per field. A rule can rest on a role, an attribute, a policy or consent, and the specification names delegated access for a guardian or a parent. In Progressa, the registration service may create and update learner records. Every other service may only read, and only the fields it needs. A table of access rules gives the business side and IT one shared language, so a decision about a child's data means the same thing in both rooms." },
     { cue: "Slide 5 — Title: 'Who read my child's record?'. Body, three text rows: 'Every read of personal data is logged.' 'Every data owner may see who read their data.' 'Deleting a record keeps the logical record.'" },
     { text: "The register logs every read of personal data: which record, which field, who read it and when. Every data owner has the right to see who looked at their personal data, and the register offers an interface for that report. For a learner who is a child, the parent sees it. Few features build more trust. And deleting a record keeps the logical record, so the history stays." },
-    { cue: "Slide 6 — Title: 'What the walkthrough will show'. Body, three text rows: 'An update from a read-only service: refused.' 'The same update from the registration service: accepted.' 'The parent's report: one read, the reader, the time.' Footer: 'Storyboard on the specimen. Not yet run.'" },
-    { text: "The walkthrough of this subtopic shows an update sent by a service that may only read, and refused. The same update sent by the registration service is accepted. Then the parent's report shows the one read of the learner's record, who read it and when. The check passes on all three. Until the access rules are built, they are a specimen, and nothing here has run." },
+    { cue: "Slide 6 — Title: 'What the walkthrough will show'. Body, three text rows: 'An update from a read-only service: refused.' 'The same update from the registration service: accepted.' 'The parent's report: one read, the reader, the time.' Footer: 'Walkthrough: what a good run shows.'" },
+    { text: "The walkthrough of this subtopic shows an update sent by a service that may only read, and refused. The same update sent by the registration service is accepted. Then the parent's report shows the one read of the learner's record, who read it and when. A good run passes on all three." },
     { cue: "Slide 7 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'One interface; each service sees only what its role allows; every parent can see who read the record.' The on-screen practice box sits below it." },
     { text: "One interface, each service seeing only what its role allows, and every parent able to see who read their child's record." },
     { cue: "Slide 8 — Title: 'Sources'. Body: GovStack Digital Registries specification, version 3.0-alpha (sections 4.2, 5.2, 8 and 9.2.1; DRS-5, DRS-6, DRS-8, DRS-21, DRS-33, DRS-34, DRS-35, DRS-37); GovStack Information Mediator specification, version 1.1.1 (sections 6.2 and 6.3); OpenAPI Specification 3.0.3. Footer: 'Find the link in the description.'" }
@@ -724,7 +724,7 @@ body.push(...renderSubtopic({
       "Carries the shared-language argument."],
     ["5", "Who read my child's record? Three text rows.",
       "The trust point for parents."],
-    ["6", "What the walkthrough will show. Three text rows and the footer 'Storyboard on the specimen. Not yet run.'",
+    ["6", "What the walkthrough will show. Three text rows and the footer 'Walkthrough: what a good run shows.'",
       "Replaced by the recorded segment once checks RG5 and RG6 pass. Until then, text only."],
     ["7", "Single-sentence summary slide, with the on-screen practice box.",
       "The take-home line. The practice box is shown, not narrated."],

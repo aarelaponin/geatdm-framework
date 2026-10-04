@@ -1,0 +1,22 @@
+# Slide cue file — KP3 Module 3, Video 3.7 "The register as a service others can use"
+# Deck:  KP3_M3_3.7_Deck_v0.1.pptx (9 slides)
+# Audio: KP3_M3_3.7_Audio_v0.6.m4a (runs to 5:51.8)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# No cold open naming the video: invented opener ("12 different government offices…", "Today on the Deep Dive");
+# slide 2 cues at the mission line, hook content at 0:29. Take merges slide 6 into slide 7: the read log is said
+# under slide 6 (4:23) but the parent's report and "deleting keeps the logical record" come inside the walkthrough
+# (5:07–5:22, under slide 7). No sources line; Sources card rides the closing remark (6.8 s).
+# FLAWS: "Progresia from the material" (mispronounced; source named on air); "that's where the reference
+# architecture comes in" for the rule the deck credits to the Digital Registries specification; invented reason
+# for unpublished bulk operations (security); bouncer / bank-teller metaphors.
+
+0:00   # slide 1 — title card
+0:16   # slide 2 — Hook: Once the register holds good records, every office will want them
+1:04   # slide 3 — Only through the published interface
+2:28   # slide 4 — Through the data exchange layer
+3:19   # slide 5 — No more than the role allows
+4:14   # slide 6 — Who read my child's record?
+4:32   # slide 7 — What the walkthrough will show
+5:27   # slide 8 — In one sentence
+5:45   # slide 9 — Sources

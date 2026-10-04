@@ -1,0 +1,300 @@
+1
+00:00:00,260 --> 00:00:05,780
+Welcome to the Deep Dive. Today, we're, uh, we're looking into the hidden life cycle of massive digital systems.
+
+2
+00:00:05,820 --> 00:00:08,720
+I mean, things like national registries and payment networks.
+
+3
+00:00:09,180 --> 00:00:10,040
+Yeah. Thanks for having me.
+
+4
+00:00:10,320 --> 00:00:11,300
+It's a huge topic.
+
+5
+00:00:11,560 --> 00:00:12,140
+It really is.
+
+6
+00:00:12,460 --> 00:00:20,680
+And our mission today is to figure out what it actually takes to keep these foundational systems safe, you know, long after the ribbon-cutting ceremony, because launch day is really just the
+
+7
+00:00:20,700 --> 00:00:21,020
+beginning.
+
+8
+00:00:21,280 --> 00:00:24,220
+Oh, absolutely. It's, uh, it's the classic illusion.
+
+9
+00:00:24,800 --> 00:00:27,120
+People treat launch day as the finish line.
+
+10
+00:00:27,580 --> 00:00:32,040
+Right. Like building a massive suspension bridge and then just, well, never checking the cables again.
+
+11
+00:00:32,240 --> 00:00:40,440
+Exactly. Without a strict reference architecture and, you know, real constant upkeep, a national register just quickly fills up with errors or
+
+12
+00:00:40,740 --> 00:00:43,020
+digital payments end up going to the wrong people.
+
+13
+00:00:43,460 --> 00:00:48,560
+So how do you actually prevent that? How do you monitor a massive national database without drowning in the noise?
+
+14
+00:00:49,160 --> 00:00:49,280
+Well,
+
+15
+00:00:49,900 --> 00:00:51,320
+you break it down into three tiers,
+
+16
+00:00:52,120 --> 00:00:54,580
+basically tracking information across different timeframes.
+
+17
+00:00:55,380 --> 00:00:58,340
+So first, you have operational indicators, which you track monthly.
+
+18
+00:00:58,820 --> 00:01:05,519
+Okay. Monthly. Yeah. So for example, let's say you're running your program, like the, uh, the progressive register.
+
+19
+00:01:06,000 --> 00:01:08,280
+It's a large scale database tracking student enrollment.
+
+20
+00:01:08,720 --> 00:01:08,800
+Right.
+
+21
+00:01:09,400 --> 00:01:11,860
+Each month, you look at the raw number of learners added
+
+22
+00:01:12,500 --> 00:01:15,220
+and how many of those records actually passed your quality gates.
+
+23
+00:01:15,940 --> 00:01:16,260
+Got it.
+
+24
+00:01:17,120 --> 00:01:23,440
+Then you zoom out quarterly for program indicators, you know, checking if components are on schedule, budget versus plan, that sort of thing.
+
+25
+00:01:24,060 --> 00:01:24,980
+And the third tier?
+
+26
+00:01:25,880 --> 00:01:30,000
+Yearly outcome indicators, just checking your domain stages against your actual targets.
+
+27
+00:01:30,560 --> 00:01:40,520
+Wait. Hold on, though. I mean, everyone loves a launch party, but if operational data is only checked monthly, aren't we risking, like, a whole month's worth of fragmented data slipping through?
+
+28
+00:01:40,920 --> 00:01:42,340
+H-how do you catch errors in real time?
+
+29
+00:01:43,400 --> 00:01:48,160
+That is a great catch. Mm. And it's exactly why those monthly overviews are just the macro view.
+
+30
+00:01:48,800 --> 00:01:51,500
+You need granular daily checks on every single data load.
+
+31
+00:01:51,820 --> 00:01:53,020
+Oh, so it's happening every day?
+
+32
+00:01:53,440 --> 00:01:54,000
+Every single day.
+
+33
+00:01:54,660 --> 00:01:58,840
+Before a row of data is allowed into the registry, it hits an automated quality check.
+
+34
+00:01:59,540 --> 00:02:01,460
+If it fails, it's set aside immediately.
+
+35
+00:02:02,100 --> 00:02:05,480
+Okay, so it's like a bouncer at the door of the database checking IDs.
+
+36
+00:02:06,000 --> 00:02:10,020
+Yeah, exactly like a bouncer. And they record the specific reason it failed, too.
+
+37
+00:02:11,039 --> 00:02:15,120
+The rules under the digital registry specification are incredibly strict.
+
+38
+00:02:15,700 --> 00:02:20,720
+Like, every single read and change must be permanently logged and, uh, visible to an analyst.
+
+39
+00:02:21,000 --> 00:02:22,440
+Wait, even just reading the data?
+
+40
+00:02:22,980 --> 00:02:26,300
+Yep. Just viewing it is logged. And deletions are handled differently, too.
+
+41
+00:02:26,700 --> 00:02:32,460
+If you delete a record, you don't actually erase the file unless a specific law demands a hard deletion.
+
+42
+00:02:33,060 --> 00:02:34,720
+It keeps the logical record intact.
+
+43
+00:02:35,260 --> 00:02:40,940
+Wait, wait. Let me pause on that because that completely flips our standard understanding of deleting files, right?
+
+44
+00:02:41,260 --> 00:02:41,940
+Like on a laptop.
+
+45
+00:02:42,140 --> 00:02:43,100
+Yeah. It really does.
+
+46
+00:02:44,140 --> 00:02:49,720
+By keeping the, quote-unquote, "deleted" record, you're actually building the ultimate transparency tool.
+
+47
+00:02:50,080 --> 00:02:52,520
+A bad actor can't just quietly erase their tracks.
+
+48
+00:02:52,940 --> 00:02:53,400
+Exactly.
+
+49
+00:02:54,480 --> 00:02:57,100
+And you see that same logic in the payment specification.
+
+50
+00:02:57,520 --> 00:03:01,700
+Oh, really? Yeah. Every financial transaction requires an uneditable audit trail.
+
+51
+00:03:02,420 --> 00:03:05,280
+It needs a full chain of identifiers from start to finish.
+
+52
+00:03:05,820 --> 00:03:13,600
+Okay, so logging data in real time stops, you know, silent corruption, but logs won't save you if the agency running the system goes broke
+
+53
+00:03:13,980 --> 00:03:16,180
+or if they get stuck with a bad software vendor.
+
+54
+00:03:16,760 --> 00:03:17,020
+Right.
+
+55
+00:03:17,820 --> 00:03:20,400
+Who's policing the bigger picture? Yeah, exactly.
+
+56
+00:03:21,260 --> 00:03:23,720
+Well, that brings us back out to the global safeguards.
+
+57
+00:03:24,460 --> 00:03:31,140
+To ensure institutional safety, systems have to undergo a yearly review against the universal DPI safeguards framework.
+
+58
+00:03:31,460 --> 00:03:35,740
+Just to jump in real quick, DPI, we're talking about digital public infrastructure, right?
+
+59
+00:03:36,160 --> 00:03:37,100
+Yes, exactly.
+
+60
+00:03:37,720 --> 00:03:40,180
+The UN released this framework in twenty twenty-four.
+
+61
+00:03:40,400 --> 00:03:47,700
+It has eighteen principles and thirteen risks covering safety, inclusion, and structural vulnerabilities.
+
+62
+00:03:47,920 --> 00:03:49,640
+Okay. And you hit on it earlier.
+
+63
+00:03:50,280 --> 00:03:56,940
+One of the biggest risks isn't hackers, it's unsustainability, things like high running costs or vendor lock-in.
+
+64
+00:03:57,580 --> 00:04:03,700
+It's fascinating that vendor lock-in is classified right alongside safety as a massive structural risk.
+
+65
+00:04:04,280 --> 00:04:09,380
+It proves that being locked to one supplier isn't just a budget headache, it's a systemic vulnerability.
+
+66
+00:04:10,340 --> 00:04:12,560
+Because it makes the system too costly to change.
+
+67
+00:04:13,080 --> 00:04:14,840
+If you can't adapt, you're in trouble.
+
+68
+00:04:16,380 --> 00:04:20,180
+If you look at the illustrative twenty twenty-seven review for the Progresa register,
+
+69
+00:04:20,800 --> 00:04:21,980
+it shows this in action.
+
+70
+00:04:22,700 --> 00:04:23,460
+What are they looking for?
+
+71
+00:04:24,040 --> 00:04:30,440
+They're drafting legal amendments, making sure a joint board meets monthly, securing a named data steward.
+
+72
+00:04:30,660 --> 00:04:34,260
+Wow. Okay. And confirming there's an actual budget line for all of this.
+
+73
+00:04:34,560 --> 00:04:39,520
+So keeping a digital foundation safe really means you have to read indicators across months, quarters, and years.
+
+74
+00:04:39,580 --> 00:04:43,380
+You're checking every data load and doing these global safeguard reviews annually.
+
+75
+00:04:43,980 --> 00:04:44,600
+Yeah, you have to.
+

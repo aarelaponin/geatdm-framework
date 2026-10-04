@@ -1,0 +1,24 @@
+# Slide cue file — KP3 Module 5, Video 5.6 "What the next services can now use"
+# Deck:  KP3_M5_5.6_Deck_v0.1.pptx (9 slides)
+# Audio: KP3_M5_5.6_Audio_v0.8.m4a (runs to 5:24.6)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# VERDICT: USABLE.
+# Order: the take argues "building your own looks quicker" (slide 5 first half) at 1:29-2:03, inside the hook, so slide 2
+# holds 2 minutes; and it does the one-page list (slide 7, 3:25) BEFORE consent/notification (slide 6, 3:46). Deck order
+# kept: slide 5 holds over the one-page list; slide 7 gets a short window over "even with consent and messaging still
+# under construction" (mismatch). Sources 6.6 s, rides the closing banter.
+# Flaws: generator/wall-outlet opener; "the exchange dynamically generates" the one-page list (deck: generate it FROM
+# the exchange's list); invented "API gateway ... routes the encrypted request"; procurement point turned into
+# "managers financially incentivized to build disposable databases"; consent warning credited to "the blueprint"
+# (it is the Consent specification's); "can't opt out of a tax database" aside; no sources line.
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: Another team in the ministry wants to pay scholarships
+2:08   # slide 3 — On the exchange, with published contracts
+2:52   # slide 4 — A scholarship, block by block
+3:14   # slide 5 — Who sees the saving
+3:46   # slide 6 — Still to add: consent and notification
+5:00   # slide 7 — One page for the next team
+5:06   # slide 8 — In one sentence
+5:18   # slide 9 — Sources

@@ -1,0 +1,18 @@
+# Slide cue file — KP3 Module 4, Video 4.1 "Why identity is built once"
+# Deck:  KP3_M4_4.1_Deck_v0.1.pptx (9 slides)
+# Audio: KP3_M4_4.1_Audio_v0.5.m4a (runs to 3:18.9)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Take states the one-sentence premise first (0:16) and reaches the hook only at 0:32; slide 2 cues at 0:09 anyway.
+# "Sources are in the description" comes at 3:17 (1.9 s left): Sources card cues at 3:13 over the last summary line (5.9 s),
+# so slide 8 runs from 3:02. SRT spells the country "Progresa" (likely mispronounced). "Golden rule" framing.
+
+0:00   # slide 1 — title card
+0:09   # slide 2 — Hook: a ministry tempted to issue an identity of its own
+0:43   # slide 3 — Not an ordinary registration system
+1:20   # slide 4 — What identity systems cost: the World Bank's study
+2:02   # slide 5 — Two findings for a ministry tempted to go alone
+2:17   # slide 6 — Progressa: a learner identity of its own, or PNIA's service
+2:52   # slide 7 — Reuse what exists
+3:02   # slide 8 — In one sentence
+3:13   # slide 9 — Sources

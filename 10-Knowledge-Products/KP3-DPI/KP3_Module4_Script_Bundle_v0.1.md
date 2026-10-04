@@ -56,7 +56,7 @@ Six standalone videos, all in the Architect register. Total runtime approximatel
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — the ministry's technical lead or solution architect who connects its services to the identity block and the Payments block instead of building either again |
-| Target runtime | ~5 min (≈455 spoken words) |
+| Target runtime | ~5 min (≈454 spoken words) |
 | PAERA anchor | GovStack Identity specification, Version 2.0 (December 2025): ID §2.3.1, ID §2.4; GovStack Registration specification, default edition: REG §9.1.3; World Bank, Understanding Cost Drivers of Identification Systems (2018), pages 3, 5 and 7 |
 
 > **Single message —** _An identity system is costly to build and to run, so a country builds it once and every service uses it, and a ministry that builds its own pays those costs a second time._
@@ -153,7 +153,7 @@ Built for Progressa (rule B). The six categories are those of the World Bank's s
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — the ministry's technical lead or solution architect who connects its services to the identity block and the Payments block instead of building either again |
-| Target runtime | ~5 min (≈470 spoken words) |
+| Target runtime | ~5 min (≈465 spoken words) |
 | PAERA anchor | GovStack Identity specification, Version 2.0 (December 2025): ID §2, ID §3, ID §2.2, ID §4, ID §4.1, ID §4.1.1, ID §4.1.2, ID §5.1.2, ID §6, ID §8, ID §8.1, ID §9.1.1 |
 
 > **Single message —** _The published Identity block verifies who a person is, releases only what that person approves and issues no learner identity, so check what your identity authority really offers before you plan on it._
@@ -180,9 +180,9 @@ Two rules shape every connection. When a person is enrolled, the block creates a
 
 The published interfaces are a minimal set, and verification among them is OpenID Connect, a common standard for signing in. In the published flow the person's browser is taken to the block's own screens. The person signs in there and approves what may be shared, and the block releases only that. Only the calls for the token and for the person's information pass from server to server. The specification names the Information Mediator for building blocks that talk to one another, not for the person's own sign-in.
 
-> _Slide 6 — Title: 'Progressa: what PNIA offers today, beside the published block'. Plain-text table, two columns — 'PNIA's present service on Linkup' · 'The published Identity block'. Rows: 'A read of a person by national number' / 'A sign-in through OpenID Connect'; 'No person present' / 'The person present, approving what is shared'; 'Keyed on the national number' / 'Each service receives its own identifier'; 'Only the examination authority may call it' / 'Any registered client'; 'A Progressa contract from KP2' / 'The published minimal set'._
+> _Slide 6 — Title: 'Progressa: what PNIA offers today, beside the published block'. Plain-text table, two columns — 'PNIA's present service on Linkup' · 'The published Identity block'. Rows: 'A read of a person by national number' / 'A sign-in through OpenID Connect'; 'No person present' / 'The person present, approving what is shared'; 'Keyed on the national number' / 'Each service receives its own identifier'; 'Only the examination authority may call it' / 'Any registered client'; 'A contract of Progressa's own' / 'The published minimal set'._
 
-Now Progressa. On Linkup, PNIA offers one service today: a read of a person by national number, which only the examination authority may call. It is a contract of Progressa's own, set up in KP2. It works server to server, with no person present, and it is keyed on the national number. The published block asks the person to sign in, and gives each service its own identifier. The specification's requirements also ask for a query of a person's attributes, but its published interfaces include none. So PNIA's read is useful, and it is Progressa's own, not the published block.
+Now Progressa. On Linkup, PNIA offers one service today: a read of a person by national number, which only the examination authority may call. It is a contract of Progressa's own. It works server to server, with no person present, and it is keyed on the national number. The published block asks the person to sign in, and gives each service its own identifier. The specification's requirements also ask for a query of a person's attributes, but its published interfaces include none. So PNIA's read is useful, and it is Progressa's own, not the published block.
 
 > _Slide 7 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The published Identity block verifies who a person is, releases only what that person approves and issues no learner identity, so check what your identity authority really offers before you plan on it.' Below it, the on-screen practice box (not narrated)._
 
@@ -262,7 +262,7 @@ Each sign-in comes back with an ID token, a signed record of who signed in, for 
 
 > _Slide 5 — Title: 'Keep the identifier the block gives you'. Body, three text rows: 'The token's subject: an identifier made for this service and this person.' 'Never the national number, which stays secret inside the block.' 'Progressa: the learner register keeps a learner number of its own, with PNIA's identifier beside it.'_
 
-Now the rule that protects every learner. The token's subject is an identifier the block made for this service and this person. Keep that identifier, never the national number, which the specification says must stay secret inside the block. In Progressa, the learner register that KP3 sets up behind PLR keeps a learner number of its own and stores PNIA's identifier beside it. The Digital Registries specification makes the mark for the owner's identifier optional, so the register's design must state it rather than assume it.
+Now the rule that protects every learner. The token's subject is an identifier the block made for this service and this person. Keep that identifier, never the national number, which the specification says must stay secret inside the block. In Progressa, the learner register this course sets up behind PLR keeps a learner number of its own and stores PNIA's identifier beside it. The Digital Registries specification makes the mark for the owner's identifier optional, so the register's design must state it rather than assume it.
 
 > _Slide 6 — Title: 'The check: one sign-in, verified'. Demonstration segment: recorded on the built connection once checks I1 to I7 have passed; until then the storyboard of this subtopic stands in its place. Text rows on the slide: 'A test person signs in.' 'The token's signature is verified against the published keys.' 'Two services, two identifiers.'_
 
@@ -337,7 +337,7 @@ What it needs: configurations I1 to I7, on an identity provider that offers the 
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — the ministry's technical lead or solution architect who connects its services to the identity block and the Payments block instead of building either again |
-| Target runtime | ~4 min (≈445 spoken words) |
+| Target runtime | ~4 min (≈444 spoken words) |
 | PAERA anchor | GovStack Payments specification, Version 3.0 (December 2025): PAY §2, PAY §4, PAY §5.1.1, PAY §5.1.4, PAY §5.1.11, PAY §5.1.12, PAY §6.5, PAY §6.17, PAY §9.1.3; BIS Bulletin No 52 (2022), pages 3 and 5 |
 
 > **Single message —** _The Payments block is not a new payment system: it connects government programmes to the payment systems your country already has, so every programme pays through one shared connection._
@@ -520,7 +520,7 @@ What it needs: configurations P1 to P7, on an installation of the Payments block
 | Field | Value |
 | --- | --- |
 | Persona | A (Architect) — the ministry's technical lead or solution architect who connects its services to the identity block and the Payments block instead of building either again |
-| Target runtime | ~4 min (≈390 spoken words) |
+| Target runtime | ~4 min (≈387 spoken words) |
 | PAERA anchor | PAERA v1.0, sections 3.3.3 (Building Infrastructure) and 5.2 (Principles: #2 Whole of Government, #5 Once-Only); GovStack Identity specification, Version 2.0: ID §2.4, ID §4.1.2; GovStack Payments specification, Version 3.0: PAY §2, PAY §4, PAY §4.3, PAY 6.3-r1, PAY §9.2.1, PAY §9.2.2; GovStack Registration specification, default edition: REG §6.3.1.9 |
 
 > **Single message —** _Learner registration reuses the identity block and the scholarship payment reuses the Payments block, a saving visible only to someone who plans for the whole government, because inside one project building your own looks quicker._

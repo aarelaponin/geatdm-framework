@@ -1,0 +1,16 @@
+# Slide cue file — KP3 Module 2, Video 2.4 "Checks before the officer decides"
+# Deck:  KP3_M2_2.4_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M2_2.4_Audio_v0.3.m4a (runs to 5:12.0)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Checks attributed to "the reference architecture" (they are the Registration spec's); PNIA match called "an outside civil registry"; invented "mass cross-referencing / catastrophic data breach" gloss; name-mismatch refusal dropped.
+# No title read, no Sources line: Sources at 5:06 over the last recap sentence for a 6 s tail.
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — hook: a registrar's time is the scarcest thing
+1:12   # slide 3 — check one: rules on each field
+2:25   # slide 4 — check two: the identity record, with the person present
+3:23   # slide 5 — what is not published
+3:59   # slide 6 — check three: complete before sending
+4:48   # slide 7 — in one sentence
+5:06   # slide 8 — Sources

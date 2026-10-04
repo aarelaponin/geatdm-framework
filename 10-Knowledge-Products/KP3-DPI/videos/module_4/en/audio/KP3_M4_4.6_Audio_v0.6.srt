@@ -1,0 +1,256 @@
+1
+00:00:00,380 --> 00:00:02,620
+So, um, imagine sitting in your ministry, right?
+
+2
+00:00:02,920 --> 00:00:08,240
+Looking at your program, and you're answering to your minister about, say, a new national scholarship launch.
+
+3
+00:00:08,600 --> 00:00:10,960
+Right. And your deadline is in, what, six months.
+
+4
+00:00:11,380 --> 00:00:17,680
+Exactly. So the fastest way to get it done is, well, you build your own custom identity check and your own payment links.
+
+5
+00:00:18,320 --> 00:00:22,160
+Which is unfortunately how you fall into the most expensive trap in government IT.
+
+6
+00:00:22,520 --> 00:00:30,880
+Yeah. So today on this deep dive, we're unpacking a concept that really should be the cornerstone of your next build, which is that reuse is the return on planning.
+
+7
+00:00:31,360 --> 00:00:38,800
+Yeah. We're exploring why agencies build redundant tech systems, and, uh, how utilizing shared blocks fundamentally solves this problem.
+
+8
+00:00:39,480 --> 00:00:43,740
+Because the root cause of this trap is actually how government funding timelines operate.
+
+9
+00:00:43,900 --> 00:00:48,160
+Right. Projects are funded to deliver their own specific service on a specific date.
+
+10
+00:00:48,620 --> 00:00:52,060
+And that rigid timeline directly incentivizes isolated builds.
+
+11
+00:00:52,180 --> 00:00:55,120
+You know, you need to hit your deadline, so you just build a silo.
+
+12
+00:00:55,600 --> 00:00:59,840
+Yeah. And as a result, the systems you end up with are fragmented.
+
+13
+00:00:59,880 --> 00:01:05,220
+They become siloed, duplicated, and, um, incredibly costly to change.
+
+14
+00:01:05,940 --> 00:01:09,720
+With the same data rekeyed into systems that are completely locked into one supplier.
+
+15
+00:01:09,900 --> 00:01:12,540
+Exactly. But wait, I wanna push back on that for a second.
+
+16
+00:01:13,020 --> 00:01:15,040
+If I'm running the scholarship service,
+
+17
+00:01:15,700 --> 00:01:20,560
+why would I risk my tight deadline relying on some external system I don't even control?
+
+18
+00:01:21,080 --> 00:01:27,320
+Well- I mean, if it's so clearly more expensive for the whole government to build custom systems, why does the saving go unclaimed so often?
+
+19
+00:01:28,360 --> 00:01:31,620
+Because that saving doesn't exist on your individual ledger.
+
+20
+00:01:32,260 --> 00:01:32,340
+It,
+
+21
+00:01:33,640 --> 00:01:33,780
+um,
+
+22
+00:01:34,720 --> 00:01:36,980
+it really comes down to structural reality.
+
+23
+00:01:37,620 --> 00:01:37,840
+Right.
+
+24
+00:01:38,500 --> 00:01:44,560
+The first ministry pays to build a shared block, and then the second, third, and fourth reuse it.
+
+25
+00:01:44,840 --> 00:01:45,260
+Oh, I see.
+
+26
+00:01:45,660 --> 00:01:51,180
+So that financial sum, the actual saving, only exists at the level of the whole government.
+
+27
+00:01:51,900 --> 00:01:57,540
+So if the structural reality is that ministries are incentivized to build in isolation, how do we actually break that cycle?
+
+28
+00:01:58,240 --> 00:02:01,960
+We can look at a demonstration country that figured this out, actually: Progessa.
+
+29
+00:02:02,560 --> 00:02:08,720
+Okay, so if a service in Progessa, like a scholarship payment, tried to build this alone, what would that actually look like for them?
+
+30
+00:02:09,639 --> 00:02:11,580
+The administrative burden would be massive.
+
+31
+00:02:12,200 --> 00:02:19,360
+Alone, the scholarship service needs to build and, uh, maintain links to every single bank and mobile money provider in the country.
+
+32
+00:02:19,540 --> 00:02:25,840
+Oh, wow. Yeah. And it has to capture every learner's account details and maintain them securely in its own register.
+
+33
+00:02:26,240 --> 00:02:28,940
+But instead, Progessa uses the payments block.
+
+34
+00:02:29,340 --> 00:02:34,220
+Exactly. By reusing the payments block, one central account mapper routes the money.
+
+35
+00:02:34,700 --> 00:02:38,700
+So it keeps those sensitive payment details completely out of the scholarship register.
+
+36
+00:02:38,880 --> 00:02:39,020
+Right.
+
+37
+00:02:39,640 --> 00:02:44,700
+The complexity is handled once. And it's the exact same story for learner registration.
+
+38
+00:02:45,380 --> 00:02:48,120
+Because they reuse the identity block for a single sign-in.
+
+39
+00:02:48,540 --> 00:02:58,240
+Yeah. So the registration service entirely bypasses the need to build its own credentials, manage its own cybersecurity, or, you know, hire its own password reset support
+
+40
+00:02:58,300 --> 00:02:58,620
+staff.
+
+41
+00:02:59,100 --> 00:03:02,860
+And these blocks are highly adaptable to specific sectors like education.
+
+42
+00:03:03,120 --> 00:03:08,980
+Oh, absolutely. You can use that same payment block for paying school fees or redeeming school-only vouchers.
+
+43
+00:03:09,360 --> 00:03:12,440
+Or combining several registrations into one single service.
+
+44
+00:03:12,520 --> 00:03:12,700
+Right.
+
+45
+00:03:13,420 --> 00:03:17,220
+But to make this work, planners really rely on two core concepts.
+
+46
+00:03:17,940 --> 00:03:21,160
+Which are the reference architecture and the once only principle.
+
+47
+00:03:21,380 --> 00:03:24,180
+Yeah. So how do those actually function mechanically?
+
+48
+00:03:24,800 --> 00:03:30,500
+Well, the once only principle dictates that citizens should only have to provide their information to the government one time.
+
+49
+00:03:31,000 --> 00:03:31,420
+Makes sense.
+
+50
+00:03:32,120 --> 00:03:40,220
+And to achieve that, planners use the reference architecture, which asks them to actively identify shared services and data right from the start.
+
+51
+00:03:40,880 --> 00:03:49,380
+That makes perfect sense in theory, but I mean in the reality of government, you have policymakers and engineers speaking two completely different languages.
+
+52
+00:03:49,460 --> 00:03:49,940
+Right, they do.
+
+53
+00:03:50,400 --> 00:03:54,480
+So how do you actually get the business side and IT to agree on the structure?
+
+54
+00:03:55,080 --> 00:03:57,140
+With a surprisingly simple tool, actually.
+
+55
+00:03:58,140 --> 00:04:02,160
+They use a table, mapping which specific services reuse which block.
+
+56
+00:04:02,660 --> 00:04:03,760
+Oh, just a simple table.
+
+57
+00:04:03,960 --> 00:04:04,080
+Yeah.
+
+58
+00:04:04,720 --> 00:04:09,740
+It gives both the policy side and the technology side one shared language for that decision.
+
+59
+00:04:10,340 --> 00:04:14,300
+Which bridges the gap between the abstract architecture and concrete administration.
+
+60
+00:04:14,480 --> 00:04:23,120
+Exactly. So the core takeaway today for anyone running these systems is this: two services reusing two blocks creates a very real saving.
+
+61
+00:04:23,500 --> 00:04:25,880
+But you have to elevate your perspective.
+
+62
+00:04:25,940 --> 00:04:32,720
+Right. That return on planning is only visible to someone who plans for the whole government, rather than looking strictly at their own isolated mandate.
+
+63
+00:04:32,940 --> 00:04:39,600
+Because we so often treat these issues as technological hurdles, when in reality, they're organizational challenges.
+
+64
+00:04:40,120 --> 00:04:42,900
+The technology for shared blocks has existed for years.
+

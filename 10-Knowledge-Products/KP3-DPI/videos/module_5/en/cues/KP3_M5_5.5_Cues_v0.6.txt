@@ -1,0 +1,21 @@
+# Slide cue file — KP3 Module 5, Video 5.5 "Reading the evidence of a call"
+# Deck:  KP3_M5_5.5_Deck_v0.1.pptx (9 slides)
+# Audio: KP3_M5_5.5_Audio_v0.6.m4a (runs to 5:26.6)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# VERDICT: USABLE.
+# Close runs recap (5:04) before the three settings (5:12); deck order kept: slide 7 cues at "what does this all mean
+# for you" and carries both, slide 8 cues mid-list at "...enabled before day one". Sources 6.6 s, over "choose them late".
+# Flaws: "you need all three records" to prove a call (deck: each record can show it, under its settings —
+# overstatement); invented "siloed by design / no God's-eye view" passage; camera, envelope and phone-bill analogies;
+# operational monitoring "strictly about access control"; no sources line. Listen for "Progessa".
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: An auditor asks you to prove ...
+0:49   # slide 3 — Record 1: the message log
+2:33   # slide 4 — Record 2: operational monitoring
+3:20   # slide 5 — Record 3: the traffic view
+3:52   # slide 6 — Progressa: one run, three readers
+5:02   # slide 7 — Choose before the first call
+5:14   # slide 8 — In one sentence
+5:20   # slide 9 — Sources

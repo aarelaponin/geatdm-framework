@@ -1,0 +1,248 @@
+1
+00:00:00,150 --> 00:00:01,370
+Right. They want the specifics.
+
+2
+00:00:01,490 --> 00:00:05,690
+Exactly. They want the exact cost of the cabinets, uh, the plumbing, the timeline.
+
+3
+00:00:06,290 --> 00:00:09,930
+But when governments try to fund massive digital public systems, they often just
+
+4
+00:00:10,550 --> 00:00:13,570
+walk into the finance ministry with this grand vision and-
+
+5
+00:00:13,790 --> 00:00:14,790
+And they expect a blank check.
+
+6
+00:00:14,930 --> 00:00:15,050
+Yeah.
+
+7
+00:00:15,730 --> 00:00:21,450
+So today's mission is figuring out how to translate that vision into a rock solid investment case they'll actually fund.
+
+8
+00:00:22,070 --> 00:00:30,270
+We're looking at some heavy hitting sources today like a twenty eighteen World Bank finding, UN financing requirements, and, um, a UNDP playbook.
+
+9
+00:00:30,690 --> 00:00:30,970
+Because,
+
+10
+00:00:31,650 --> 00:00:34,110
+you know, a finance ministry does not fund a vision.
+
+11
+00:00:34,430 --> 00:00:39,290
+It funds specific budget lines that it can actually read, check, and, uh, slot into a budget year.
+
+12
+00:00:39,650 --> 00:00:45,430
+So instead of just handing over a massive confusing roadmap, you have to break it down into these specific sheets.
+
+13
+00:00:45,670 --> 00:00:49,750
+Exactly. And the first sheet breaks the cost down by wave and component.
+
+14
+00:00:50,150 --> 00:00:59,270
+Which sounds a bit like corporate jargon, but I mean, it basically just means separating the timeline into phases or waves and listing the actual tech pieces, the
+
+15
+00:00:59,610 --> 00:01:01,090
+components that you need for each.
+
+16
+00:01:01,330 --> 00:01:05,850
+Right. And for every single component, you have to provide a low and a high cost estimate.
+
+17
+00:01:06,250 --> 00:01:08,990
+And the high estimate isn't just a safety buffer, right?
+
+18
+00:01:09,130 --> 00:01:12,130
+I mean, looking at the World Bank data from twenty eighteen, it's wild.
+
+19
+00:01:12,510 --> 00:01:18,830
+Just changing your procurement strategy can swing the overall cost by twenty-five percent to, like, over a hundred percent.
+
+20
+00:01:19,230 --> 00:01:27,310
+Yeah. The high estimate is generally about half again as large as the low one, and it really comes down to whether you get locked in to one supplier.
+
+21
+00:01:27,770 --> 00:01:30,550
+Oh, right, like buying a proprietary system.
+
+22
+00:01:30,870 --> 00:01:37,190
+Exactly. If they buy an all-in-one system from a single company, it is incredibly costly to change later.
+
+23
+00:01:37,670 --> 00:01:38,370
+But if they use, say,
+
+24
+00:01:38,990 --> 00:01:42,390
+competitive bidding for modular components, the costs go way down.
+
+25
+00:01:42,770 --> 00:01:49,690
+That makes total sense. So sheet two, once they see the components, they wanna know where the money is actually going, like by domain.
+
+26
+00:01:50,250 --> 00:01:53,190
+Yes, by domain, which just means the sector.
+
+27
+00:01:53,830 --> 00:01:58,990
+And to visualize this, the reference architecture uses a fictional country called Progresara.
+
+28
+00:01:59,710 --> 00:02:03,490
+Okay, so in this fictional Progresara, where's the bulk of the money going?
+
+29
+00:02:04,050 --> 00:02:07,250
+Well, the digital data sector takes the largest share of the budget,
+
+30
+00:02:07,890 --> 00:02:11,690
+um, because they're rolling out a new registry to all twenty-four of their districts.
+
+31
+00:02:12,250 --> 00:02:15,090
+Wow. Okay. And what about the smallest share?
+
+32
+00:02:16,130 --> 00:02:23,910
+The identity sector actually takes the smallest share, and that's because they are reusing their existing identity authority instead of building a whole new one.
+
+33
+00:02:24,190 --> 00:02:24,770
+Oh, that's smart.
+
+34
+00:02:25,390 --> 00:02:32,010
+So now we know what they are buying, but sheet three gets into, um, who is actually writing the checks and when.
+
+35
+00:02:32,410 --> 00:02:32,650
+Right.
+
+36
+00:02:33,770 --> 00:02:39,950
+And the UN's twenty twenty-four guidelines require financing for these systems to be diversified and sustainable.
+
+37
+00:02:40,590 --> 00:02:43,230
+The UNDP points to four main instruments for this.
+
+38
+00:02:43,810 --> 00:02:47,690
+Which are public budgets, grants, private capital, and debt, right?
+
+39
+00:02:48,290 --> 00:02:48,710
+Spot on.
+
+40
+00:02:49,550 --> 00:02:56,290
+Usually, you see a mix. So development partners might fund the start of the project with a grant, but the government's budget has to take over eventually.
+
+41
+00:02:56,570 --> 00:03:01,790
+And this is where the timeline trap comes in because the budget cycle is, you know, it's slow.
+
+42
+00:03:02,110 --> 00:03:10,970
+Oh, incredibly slow. A solid business case has to precede a budget application, and that application can take two to three years to actually yield funds.
+
+43
+00:03:11,390 --> 00:03:14,630
+Wait, let me do the math on that for our fictional Progresa.
+
+44
+00:03:15,290 --> 00:03:23,170
+If donor money covers the start, the government has to ask for their, say, twenty twenty-nine recurrent budget line in twenty twenty-seven.
+
+45
+00:03:23,610 --> 00:03:31,650
+Yes, exactly. You have to secure that state budget commitment years before the donor money even runs out or the whole project just stalls.
+
+46
+00:03:32,330 --> 00:03:33,930
+That is a tough sell.
+
+47
+00:03:34,410 --> 00:03:38,170
+I mean, asking a finance minister to commit millions years in advance.
+
+48
+00:03:39,050 --> 00:03:41,470
+The ROI on sheet four better be airtight.
+
+49
+00:03:41,890 --> 00:03:42,770
+It has to be.
+
+50
+00:03:43,410 --> 00:03:46,790
+Sheet four values returns over a ten-year horizon.
+
+51
+00:03:47,310 --> 00:03:49,910
+For Progresa, the returns are estimated at
+
+52
+00:03:50,590 --> 00:03:53,470
+point nine to two point six times the cost.
+
+53
+00:03:53,970 --> 00:03:58,650
+So that's generating something like eleven to nineteen point five million dollars.
+
+54
+00:03:58,690 --> 00:03:59,510
+That's huge.
+
+55
+00:03:59,690 --> 00:04:02,610
+It really is. And it comes from things like, um,
+
+56
+00:04:03,230 --> 00:04:12,190
+removing enrollment paperwork, ensuring scholarships reach the correct learners, and eliminating all those manual spreadsheet exchanges between fragmented departments.
+
+57
+00:04:12,450 --> 00:04:14,350
+Right. No more rekeying data.
+
+58
+00:04:14,970 --> 00:04:19,710
+And the secret sauce to all of this, the real aha moment, is reuse.
+
+59
+00:04:20,230 --> 00:04:25,110
+Exactly. Later services don't have to pay to build a new register or do a new identity check.
+
+60
+00:04:25,610 --> 00:04:26,830
+The foundation is already there.
+
+61
+00:04:27,310 --> 00:04:30,670
+Okay, so to recap, you need four sheets to win over the finance ministry:
+
+62
+00:04:31,310 --> 00:04:36,990
+cost by wave and component, cost by domain, the source of funds, and the expected returns.
+

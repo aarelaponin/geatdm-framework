@@ -1,0 +1,243 @@
+1
+00:00:00,260 --> 00:00:09,380
+Well, imagine a government, you know, loudly claiming they have this state-of-the-art digital school system, but then you actually walk into a primary school classroom, and the teacher is still, uh,
+
+2
+00:00:09,540 --> 00:00:11,840
+tallying attendance with a pencil on a scrap of paper.
+
+3
+00:00:12,460 --> 00:00:16,260
+Yeah, it is a very comforting picture they paint in those press releases.
+
+4
+00:00:16,820 --> 00:00:19,740
+I mean, we all want to believe the official PR reflects reality,
+
+5
+00:00:20,500 --> 00:00:22,900
+but you really can't just read the reports.
+
+6
+00:00:23,140 --> 00:00:29,800
+Right. You have to ask the operators in writing and actually demand the documents behind every single answer.
+
+7
+00:00:30,240 --> 00:00:32,680
+Which brings us to our mission for today's deep dive.
+
+8
+00:00:33,220 --> 00:00:39,760
+We are looking at a specific toolkit, so this framework of five questionnaires used to assess a nation's true digital footprint.
+
+9
+00:00:40,100 --> 00:00:46,740
+Exactly. And we will unpack how this framework cuts through all that noise by demanding undeniable evidence.
+
+10
+00:00:47,300 --> 00:00:51,420
+And we'll look at a practical example of how it maps a country's actual capabilities.
+
+11
+00:00:51,980 --> 00:00:59,020
+But, um, I have to ask, how do you even begin to map an entire country's digital footprint without just getting completely overwhelmed by the scale of it?
+
+12
+00:00:59,560 --> 00:01:02,540
+Well, it helps that the framework is built on the reference architecture.
+
+13
+00:01:02,980 --> 00:01:06,620
+So it basically breaks the landscape down into five specific domains.
+
+14
+00:01:07,040 --> 00:01:10,700
+Which are? You've got governance and policy, which they call QGOV;
+
+15
+00:01:11,640 --> 00:01:13,720
+access, or QACC;
+
+16
+00:01:14,560 --> 00:01:16,740
+digital data, so QDAT;
+
+17
+00:01:17,440 --> 00:01:19,460
+interoperability, QINT;
+
+18
+00:01:20,200 --> 00:01:23,080
+and finally, digital identity or QIDN.
+
+19
+00:01:23,740 --> 00:01:25,820
+Oh, okay. So they have codes for each of them.
+
+20
+00:01:26,240 --> 00:01:31,100
+Yeah. And together, these contain ninety-three questions that are grouped by twenty-six subcomponents.
+
+21
+00:01:31,340 --> 00:01:33,160
+Wow, that is incredibly specific.
+
+22
+00:01:33,440 --> 00:01:41,500
+It is. And this structure actually mirrors a desk review of the public record, so the on-the-ground reality can be set right beside the official claims.
+
+23
+00:01:42,520 --> 00:01:51,220
+Asking ninety-three questions sounds great, honestly, but how do you stop government units from just, you know, giving overly optimistic answers and claiming all their systems are perfectly
+
+24
+00:01:51,260 --> 00:01:51,780
+integrated?
+
+25
+00:01:52,120 --> 00:01:53,480
+By demanding the receipts.
+
+26
+00:01:53,740 --> 00:01:55,300
+Ha. Right, like a tax audit.
+
+27
+00:01:55,760 --> 00:01:56,840
+Exactly like that.
+
+28
+00:01:57,520 --> 00:02:00,140
+The questionnaires don't ask respondents to just score themselves.
+
+29
+00:02:00,340 --> 00:02:05,700
+Instead, every question asks for three things: describe, indicate, and provide.
+
+30
+00:02:06,100 --> 00:02:09,979
+Describe, indicate, provide. Okay. Break that down for me.
+
+31
+00:02:10,500 --> 00:02:12,260
+First, they describe the current situation.
+
+32
+00:02:12,820 --> 00:02:13,000
+Then?
+
+33
+00:02:13,720 --> 00:02:19,320
+They indicate the format, like is it on paper, is it a spreadsheet or an actual database system?
+
+34
+00:02:19,660 --> 00:02:19,940
+Got it.
+
+35
+00:02:20,640 --> 00:02:21,220
+And provide?
+
+36
+00:02:21,780 --> 00:02:25,260
+They have to provide a blank copy of the form or the screen they actually use.
+
+37
+00:02:25,820 --> 00:02:28,100
+Oh, wow. So they can't just say, uh, "We have a database."
+
+38
+00:02:28,420 --> 00:02:37,400
+Right. An answer with documentary evidence counts for way more, and crucially, just admitting, "We do not have this," is considered a highly useful answer.
+
+39
+00:02:38,020 --> 00:02:40,800
+I bet. Uh, how long does that whole process usually take?
+
+40
+00:02:41,440 --> 00:02:46,100
+The process is supported by two guides, one for the respondent and one for the facilitator,
+
+41
+00:02:46,740 --> 00:02:48,960
+and it typically takes about thirteen working days.
+
+42
+00:02:49,480 --> 00:02:53,760
+Okay. So what does it look like when a country actually answers one of these data questions?
+
+43
+00:02:54,560 --> 00:02:59,080
+Well, the framework uses this fictional country of Progresa as an example.
+
+44
+00:02:59,320 --> 00:03:07,560
+Okay, Progresa. Yeah. So when they were asked if there is one authoritative record for each student, which is question D2.2, by the way,
+
+45
+00:03:08,540 --> 00:03:10,480
+the reality was highly fragmented.
+
+46
+00:03:10,660 --> 00:03:11,740
+Wait, really? What did they find?
+
+47
+00:03:12,420 --> 00:03:15,160
+The learner registry only served the exam authority.
+
+48
+00:03:15,780 --> 00:03:18,600
+Primary schools just kept class registers on paper.
+
+49
+00:03:18,960 --> 00:03:23,220
+Just paper. Yeah, and they only sent totals by grade and sex once a year.
+
+50
+00:03:23,820 --> 00:03:25,740
+Oh my gosh, that is a huge disconnect.
+
+51
+00:03:26,060 --> 00:03:33,100
+It gets worse. Progresa's main school information system, PMIS, actually held no individual learner records at all.
+
+52
+00:03:33,560 --> 00:03:36,160
+Wow. How did they definitively prove that though?
+
+53
+00:03:36,700 --> 00:03:43,540
+The evidence they provided to prove this was their blank annual school return form and the PMIS data dictionary.
+
+54
+00:03:44,040 --> 00:03:47,220
+Ah, because the blank form wouldn't have a spot for individual names.
+
+55
+00:03:47,280 --> 00:03:47,980
+The proof is right there.
+
+56
+00:03:48,380 --> 00:03:48,820
+Exactly.
+
+57
+00:03:49,440 --> 00:03:51,980
+True digital assessment means ignoring the PR,
+
+58
+00:03:52,700 --> 00:03:55,220
+asking the people who actually run the systems,
+
+59
+00:03:55,840 --> 00:03:59,200
+and requiring strict documentary proof for every single answer.
+
+60
+00:03:59,580 --> 00:04:06,620
+That is fascinating. If you applied this rigorous describe, indicate, provide framework to the workflows in your own organization today,
+
+61
+00:04:07,100 --> 00:04:11,860
+you have to wonder how many of your daily processes would actually have the documentation to back them up.

@@ -27,6 +27,7 @@ priorities, order, investment, sourcing, governance, adoption and upkeep.
 | Example configurations for modules 2 to 5, written for Progressa in the terms of the published specifications, each marked "specimen, not yet run" | `specimens/` | Written by hand |
 | The build pack: the configurations that set up the four building blocks for Progressa, the instructions that generate them, the scripts that deploy them and the checks that prove them | `KP3-build-pack/` | Laid out by a program; its configurations are added when they are built, which has not yet happened |
 | The page for the person who records the videos | `videos/README.md` | Written by hand |
+| The video track: the deck build scripts (`build_kp3_moduleN_deck_v0X.py`, modules 1 and 2) and, under `videos/module_N/en/`, the scripts-only companions and the decks they generate | `videos/` | The build scripts are written by hand; the decks, their per-video splits and the companions are generated from them and never hand-edited (see `videos/README.md`) |
 | Earlier versions of modules 1 and 2 (version 0.1 of 28 June 2026), kept for reference; they are neither published nor checked | `_retired/` | — |
 
 The course guide, the pages a learner reads, is in the folder `../gitbook/kp3/`. It is generated from the

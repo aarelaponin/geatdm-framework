@@ -1,0 +1,16 @@
+# Slide cue file — KP3 Module 1, Video 1.5 "Ask the people who run the systems: the five questionnaires"
+# Deck:  KP3_M1_1.5_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M1_1.5_Audio_v0.5.m4a (runs to 4:12.1)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# No cold-open title read: take opens on an invented "pencil on a scrap of paper / press releases" image, so slide 2 holds from 0:08.
+# Podcast outro ("if you applied this to your own organization…") instead of a Sources line — Sources from 4:04 (8 s tail; a 13 s Sources window made the build drop the last 3 s of audio); "PEMIS" said as "PMIS"; SRT spells "Progresa".
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — hook: the public record vs the people who run the systems
+0:59   # slide 3 — one questionnaire for each domain (Q-GOV … Q-IDN, 93 questions)
+1:57   # slide 4 — how a question asks for evidence (describe, indicate, provide)
+2:41   # slide 5 — two guides with every questionnaire
+2:49   # slide 6 — Progressa's answer on learner records
+3:49   # slide 7 — in one sentence
+4:04   # slide 8 — Sources

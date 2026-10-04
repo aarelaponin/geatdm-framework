@@ -1,0 +1,27 @@
+# Slide cue file — KP3 Module 5, Video 5.3 "The once-only registration, from beginning to end"
+# Deck:  KP3_M5_5.3_Deck_v0.1.pptx (10 slides)
+# Audio: KP3_M5_5.3_Audio_v0.12.m4a (runs to 4:15.4)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Cold open (0:00–0:07.8) names "the once only registration principle"; slide 2 holds the hook (parent, birth details,
+# ask once and reuse) until the four blocks are named at 0:41.8 — slide 3 cues there (the PAERA quotation is not read;
+# PAERA is never spoken, only "the reference architecture"). Steps one/two/three are announced aloud (0:51, 1:33, 1:59),
+# the limit question at 2:20, the nine-step run at 3:08, the recap at 4:02.5.
+# COMPROMISE: no sources line and the recap runs to 4:13.3, so Sources cues at 4:09 on "One run, nothing typed twice…"
+# (second half of the recap rides the Sources card) to give it 6.4 s; slide 9 gets 7 s.
+# Rejection checks (all clear): identifier "made specifically for this one single service", "never, ever keeps the national
+# number" — not temporary/single-use; the brief is not named; form fill is "pulled directly from PNIA" after approval, no
+# background connection, no read by national number (that read appears only under slide 7, as Progressa's own contract).
+# Flaws: "Progessa" — listen for it (called fictional twice, no PROGRESA confusion); invented lock-in/"costly to change"
+# framing on slide 7 and the deck's "a build names it as such" not said; invented outro "I really love that breakdown".
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: A parent should not carry the same birth details…
+0:41   # slide 3 — Once-only, as PAERA states it (four blocks)
+0:51   # slide 4 — Step 1: sign in and approve
+1:33   # slide 5 — Step 2: the form fills itself
+1:59   # slide 6 — Step 3: submit, decide, write
+2:20   # slide 7 — What the published Identity block does not offer
+3:08   # slide 8 — The run, step by step
+4:02   # slide 9 — In one sentence
+4:09   # slide 10 — Sources

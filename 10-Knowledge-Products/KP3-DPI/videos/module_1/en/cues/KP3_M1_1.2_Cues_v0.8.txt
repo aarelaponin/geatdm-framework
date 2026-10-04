@@ -1,0 +1,21 @@
+# Slide cue file — KP3 Module 1, Video 1.2 "The five domains, as a map"
+# Deck:  KP3_M1_1.2_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M1_1.2_Audio_v0.8.m4a (runs to 4:33.1)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# BLOCKING: five-domain map credited to the GovStack architecture (0:57 "forces a government to map ... five
+# domains", 2:09 "the blueprint shows a fifth domain") — the deck says reading the foundation as a fifth domain
+# is this course's own. Sources named on air (0:11 "pulling from a stack of structural blueprints and case studies").
+# Other flaws: "Welcome to the Deep Dive" podcast opener, no title read, no Sources line; invented birth-certificate
+# opener and train-station analogy; "haven't passed the legislative mandate" for PLR is invented; domain codes
+# (slide 4) never spoken; SRT spells "Progresa"; closes on "a powerful shift in strategy" rather than the recap line.
+# Sources at 4:27 (6.1 s tail) — slide 7 gets only 5 s.
+
+0:00   # slide 1 — title card
+0:18   # slide 2 — hook: a list of projects hides what is missing
+1:07   # slide 3 — PAERA's picture of the infrastructure (services, four pillars)
+2:04   # slide 4 — five domains (foundation as fifth domain)
+2:29   # slide 5 — Progressa's frame page
+3:20   # slide 6 — one page both sides can read
+4:22   # slide 7 — in one sentence
+4:27   # slide 8 — Sources

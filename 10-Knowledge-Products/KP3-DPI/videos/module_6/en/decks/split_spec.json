@@ -1,0 +1,109 @@
+{
+  "kicker_prefix": "Education DPI Roadmap · Module 6",
+  "audience": "The head of a ministry's digital unit or the programme lead who ranks what to fund, sets it in order over the years, and prepares the case for the minister, the finance ministry and the development partners",
+  "out_pattern": "KP3_M6_{code}_Deck_v0.1.pptx",
+  "cover_title_marker": "From a proven foundation to a national roadmap",
+  "cover_subtitle_marker": "Ten standalone video",
+  "videos": [
+    {
+      "code": "6.1",
+      "title": "From findings to priorities: the gap register",
+      "mins": "~5",
+      "range": [
+        3,
+        10
+      ],
+      "message": "Gather every gap into one register and rank each by impact, urgency, feasibility and what depends on it, so the list you take to your minister is short and ordered."
+    },
+    {
+      "code": "6.2",
+      "title": "What to fund first: cost against reuse",
+      "mins": "~5",
+      "range": [
+        11,
+        18
+      ],
+      "message": "A shared block is paid for once and used by many, so judge each investment by its cost against the number of services that will use it, a sum only the whole government can do."
+    },
+    {
+      "code": "6.3",
+      "title": "The roadmap over time: horizons, waves and tracks",
+      "mins": "~5",
+      "range": [
+        19,
+        26
+      ],
+      "message": "A roadmap sets the years ahead in horizons and the first horizon in waves, each wave with a governance track, a track for each domain and one visible service that shows the result."
+    },
+    {
+      "code": "6.4",
+      "title": "The investment case your finance ministry can read",
+      "mins": "~5",
+      "range": [
+        27,
+        34
+      ],
+      "message": "Set out the roadmap's cost the way a finance ministry reads it: by wave and component with a low and a high estimate, by domain, by source of funds, and with the returns expected."
+    },
+    {
+      "code": "6.5",
+      "title": "Sourcing each block without lock-in",
+      "mins": "~5",
+      "range": [
+        35,
+        42
+      ],
+      "message": "For each block decide what your own teams build, what you outsource and what you do with a partner, and write open standards and the terms for leaving into every contract."
+    },
+    {
+      "code": "6.6",
+      "title": "Governance that keeps shared blocks shared",
+      "mins": "~5",
+      "range": [
+        43,
+        50
+      ],
+      "message": "Shared blocks stay shared when it is written down who decides money and policy, who coordinates the programme, and who runs each block and sets its technical rules."
+    },
+    {
+      "code": "6.7",
+      "title": "Validate, revise, adopt",
+      "mins": "~5",
+      "range": [
+        51,
+        58
+      ],
+      "message": "A roadmap becomes the government's own only when the people it binds have commented, every comment has a written answer, and an authority has adopted it."
+    },
+    {
+      "code": "6.8",
+      "title": "Keep the foundation healthy and safe",
+      "mins": "~5",
+      "range": [
+        59,
+        66
+      ],
+      "message": "After launch, indicators read every month, quarter and year, quality checks and reconciliation on every load, and a regular review against the published safeguards keep the foundation trusted and safe."
+    },
+    {
+      "code": "6.9",
+      "title": "The AI plays, step by step",
+      "mins": "~5",
+      "range": [
+        67,
+        74
+      ],
+      "message": "At every step of the method and of the build there is a task an AI assistant can draft and a check only a person can make, and no decision is handed over."
+    },
+    {
+      "code": "6.10",
+      "title": "Carry the method to another sector",
+      "mins": "~5",
+      "range": [
+        75,
+        82
+      ],
+      "message": "Change the sector's register and services and keep the five domains, the nine steps and the foundational blocks, and the same method produces a roadmap for health, agriculture or social protection."
+    }
+  ]
+}

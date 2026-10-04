@@ -1,0 +1,272 @@
+1
+00:00:00,180 --> 00:00:07,360
+Uh, imagine you're sitting in your ministry, and your minister just approved $50 million for a massive new digital education program.
+
+2
+00:00:07,660 --> 00:00:08,860
+Right, which is a huge win.
+
+3
+00:00:09,120 --> 00:00:09,860
+Yeah. Exactly.
+
+4
+00:00:10,460 --> 00:00:19,000
+But, uh, the ink is barely dry on the budget, and before a single line of code is written, there is this massive question you have to ask, and it has nothing to do with servers or tech.
+
+5
+00:00:19,580 --> 00:00:21,220
+Oh, it's entirely about ownership.
+
+6
+00:00:21,500 --> 00:00:27,280
+Right. Is this new system gonna be shared by every department, or is your program keeping it entirely to itself?
+
+7
+00:00:28,120 --> 00:00:32,820
+So welcome to today's deep dive into digital public infrastructure, or DPI.
+
+8
+00:00:33,100 --> 00:00:39,420
+Our mission today is to figure out how governments can build these massive systems without paying for the exact same foundation twice.
+
+9
+00:00:39,940 --> 00:00:44,880
+Because if you get that ownership question wrong, your ministry ends up with fragmented siloed data.
+
+10
+00:00:45,160 --> 00:00:50,720
+Yeah, and you end up getting locked into one supplier, which makes everything incredibly costly to change down the line.
+
+11
+00:00:51,000 --> 00:00:53,960
+Exactly. You just end up re-keying the same data over and over.
+
+12
+00:00:54,620 --> 00:01:01,080
+So to stop that waste, we really have to look at the underlying reference architecture of how modern government tech is stacked.
+
+13
+00:01:01,460 --> 00:01:06,740
+So let's visualize that stack. In the reference architecture, it's mapped out into three distinct layers.
+
+14
+00:01:06,860 --> 00:01:08,780
+Uh, think of it kind of like building a city.
+
+15
+00:01:09,360 --> 00:01:11,900
+At the very bottom, you have the governance foundations.
+
+16
+00:01:12,460 --> 00:01:13,500
+Right, the laws.
+
+17
+00:01:13,800 --> 00:01:20,760
+Yeah, exactly. It's not tech at all. It's the leadership, the data protection policies, uh, the legal frameworks that make the whole system trustworthy.
+
+18
+00:01:21,400 --> 00:01:25,780
+And once those laws are in place, you move up to the middle layer, which is the core DPI.
+
+19
+00:01:26,660 --> 00:01:31,120
+If we stick to your city metaphor, this is basically the municipal water and power grid.
+
+20
+00:01:31,580 --> 00:01:37,420
+So we're talking about things like a national digital identity system, uh, digital payment rails, and data sharing.
+
+21
+00:01:37,960 --> 00:01:38,420
+Precisely.
+
+22
+00:01:39,100 --> 00:01:41,880
+You build that grid once, and it serves the entire country.
+
+23
+00:01:42,540 --> 00:01:45,400
+Which brings us to the top layer, uh, the sector applications.
+
+24
+00:01:45,700 --> 00:01:51,040
+So this is where digital education, digital health, these are the schools and hospitals built inside the city.
+
+25
+00:01:51,380 --> 00:01:51,460
+Yeah.
+
+26
+00:01:52,360 --> 00:01:55,760
+But, I mean, here is a question a director general would definitely ask.
+
+27
+00:01:56,040 --> 00:02:00,920
+If a school system sits on top of the core, doesn't that mean it's actually part of the core grid?
+
+28
+00:02:01,640 --> 00:02:03,360
+That is where the duplication happens.
+
+29
+00:02:03,980 --> 00:02:06,960
+The education program uses the core, but it doesn't build it.
+
+30
+00:02:07,640 --> 00:02:12,680
+Your sector systems stand firmly on top of the core DPI, but they are entirely separate from it.
+
+31
+00:02:13,180 --> 00:02:19,580
+Oh, so the government funds the core once, and then education just uses its own budget for its specific tools.
+
+32
+00:02:19,900 --> 00:02:20,300
+Exactly.
+
+33
+00:02:21,040 --> 00:02:25,440
+So let's apply that to data registries because obviously every ministry collects data.
+
+34
+00:02:26,000 --> 00:02:30,160
+Right. And the reference architecture is very clear on how registries fit into this.
+
+35
+00:02:31,060 --> 00:02:32,620
+There are three main facts you need to know.
+
+36
+00:02:33,200 --> 00:02:33,280
+Uh,
+
+37
+00:02:34,440 --> 00:02:35,120
+I'll just number them.
+
+38
+00:02:35,560 --> 00:02:35,880
+Go for it.
+
+39
+00:02:36,360 --> 00:02:36,800
+Number one,
+
+40
+00:02:37,760 --> 00:02:40,780
+digital ID and payments are basic national infrastructure.
+
+41
+00:02:41,360 --> 00:02:46,720
+Okay. Number two, an education register is one of the main state registries that a country should have.
+
+42
+00:02:47,600 --> 00:02:48,280
+And number three,
+
+43
+00:02:48,920 --> 00:02:52,000
+a state registry needs two specific building blocks to work:
+
+44
+00:02:53,080 --> 00:02:54,000
+a registration block
+
+45
+00:02:54,740 --> 00:02:56,180
+and a digital registry block.
+
+46
+00:02:57,020 --> 00:02:58,480
+Okay, wait, let me push back on that a bit.
+
+47
+00:02:59,200 --> 00:03:06,300
+If education needs an identity system to track students, why shouldn't they just build their own functional identity system?
+
+48
+00:03:06,720 --> 00:03:12,040
+But- Like, if they have the budget for an education register, why plug into the national grid at all?
+
+49
+00:03:12,560 --> 00:03:15,220
+Because if they build it themselves, it's completely duplicated effort.
+
+50
+00:03:16,080 --> 00:03:19,220
+The reference architecture dictates a single foundational identity.
+
+51
+00:03:19,740 --> 00:03:22,080
+That core identity simply proves who you are.
+
+52
+00:03:22,820 --> 00:03:23,700
+I am Jane Doe.
+
+53
+00:03:24,360 --> 00:03:28,320
+Right. A functional identity proves a role, like, "I am a fourth grade student."
+
+54
+00:03:29,160 --> 00:03:34,900
+If the foundational ID already exists, your ministry building a brand-new system to prove her identity again is...
+
+55
+00:03:35,260 --> 00:03:36,280
+Well, it's totally redundant.
+
+56
+00:03:37,200 --> 00:03:42,500
+So they just need to verify against the national ID and attach the student data to their own register.
+
+57
+00:03:42,920 --> 00:03:46,240
+Exactly. Education does not build an identity system.
+
+58
+00:03:46,480 --> 00:03:48,420
+Okay, let's look at how this plays out in practice.
+
+59
+00:03:48,620 --> 00:03:50,620
+Uh, let's take a fictional country, Progresa.
+
+60
+00:03:50,740 --> 00:03:55,420
+Right, Progresa. When Progresa rolls out a new digital initiative, they split the architecture.
+
+61
+00:03:55,840 --> 00:03:58,740
+At the governance layer, they enforce their data protection laws.
+
+62
+00:03:59,320 --> 00:04:05,000
+At the core layer, they fund a unified national identity and the payments building block.
+
+63
+00:04:05,480 --> 00:04:10,080
+Which means the education sector in Progresa only has to fund their specific learner register.
+
+64
+00:04:10,580 --> 00:04:13,320
+They aren't spending education dollars on identity verification.
+
+65
+00:04:13,660 --> 00:04:14,700
+Because it's already there.
+
+66
+00:04:14,900 --> 00:04:19,140
+Right. Identity, payments, and data exchange are the core serving every sector.
+
+67
+00:04:19,820 --> 00:04:23,740
+Sector-specific systems, like a learner register, simply plug into them.
+
+68
+00:04:24,260 --> 00:04:28,500
+Fund each layer exactly as what it is, and you avoid duplicating your infrastructure.
+

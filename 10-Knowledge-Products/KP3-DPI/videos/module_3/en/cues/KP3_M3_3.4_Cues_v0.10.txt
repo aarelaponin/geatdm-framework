@@ -1,0 +1,22 @@
+# Slide cue file — KP3 Module 3, Video 3.4 "Quality checks that stop a bad row"
+# Deck:  KP3_M3_3.4_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M3_3.4_Audio_v0.10.m4a (runs to 5:23.2)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Verdict: REJECT (borderline). Raw/bronze now right: "raw data is never checked. It just lands. The checks only run at
+# the bronze tier" (1:20). Blocker: at 1:55 "And they [Giga] use the GovStack digital registry specification for that" —
+# the deck keeps the passed/failed split as Giga's and the field rules as the spec's; Giga using the spec is the claim
+# 3.1 v0.11 was rejected for. Downgrade to a flaw if the author reads it as loose attribution.
+# Flaws: "deep dive" opener, "nightmare"; raw/bronze rule credited to "the reference architecture" (it is Giga's flow);
+# "staging… final waiting room before production" embellished; stakes/healthcare close ("think about the stakes");
+# no sources line — Sources card rides the close (7.2 s). Slide 3 cues on the "why not check at the gate" beat.
+# Listen for "Progressia".
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: A head teacher sends the term's list of learners
+1:03   # slide 3 — Checked at bronze
+2:13   # slide 4 — Three faulty rows
+3:19   # slide 5 — The sender is told
+3:44   # slide 6 — What the walkthrough will show
+4:22   # slide 7 — In one sentence
+5:16   # slide 8 — Sources

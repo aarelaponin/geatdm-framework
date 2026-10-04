@@ -1,0 +1,240 @@
+1
+00:00:00,180 --> 00:00:05,680
+Imagine betting like millions of taxpayer dollars on a massive organizational software system,
+
+2
+00:00:06,520 --> 00:00:09,980
+only to realize later that, um, nobody actually checked if it works.
+
+3
+00:00:10,600 --> 00:00:16,239
+Yeah. That is how you end up with work that's completely fragmented and, you know, locked into one supplier.
+
+4
+00:00:16,640 --> 00:00:25,060
+Exactly. Welcome to the Deep Dive. Today, we're unpacking the rigorous methodology of how these massive government systems are audited and verified.
+
+5
+00:00:25,680 --> 00:00:29,920
+Because whether you're evaluating a tech stack or managing a sprawling project,
+
+6
+00:00:30,560 --> 00:00:34,460
+a questionnaire answer is, well, it's just what a body says about itself.
+
+7
+00:00:34,820 --> 00:00:39,000
+Right. It's a claim. And a desk result is just what the public record suggests.
+
+8
+00:00:39,060 --> 00:00:45,980
+Yeah. Neither of those is a verified finding yet, and honestly, they can be easily overturned by the first official who disagrees.
+
+9
+00:00:46,560 --> 00:00:53,940
+So understanding how to turn those loose claims into bulletproof findings is essential if you want to avoid siloed or duplicated work.
+
+10
+00:00:54,400 --> 00:00:58,620
+It really is. And that transformation from a claim to a verified finding,
+
+11
+00:00:59,260 --> 00:01:02,100
+it requires a highly structured sequence of activities.
+
+12
+00:01:02,440 --> 00:01:04,879
+It's not just, you know, double-checking a spreadsheet.
+
+13
+00:01:05,360 --> 00:01:07,300
+So what does that sequence actually look like?
+
+14
+00:01:07,660 --> 00:01:10,260
+Well, there are six specific activities in order.
+
+15
+00:01:10,780 --> 00:01:12,720
+First, you receive the signed questionnaires.
+
+16
+00:01:13,220 --> 00:01:17,420
+Then two, you review every single document they name against the desk results.
+
+17
+00:01:18,080 --> 00:01:20,960
+Okay, so you're basically doing a side-by-side comparison.
+
+18
+00:01:21,540 --> 00:01:26,180
+Exactly. Then step three is clarification interviews on each disputed point.
+
+19
+00:01:26,760 --> 00:01:32,680
+After that comes four, the technical workshops where you actually see the systems working, like on a screen or a log.
+
+20
+00:01:32,940 --> 00:01:34,980
+Oh, wow. So you're right in there.
+
+21
+00:01:35,560 --> 00:01:39,840
+Yeah. Then five is synthesis, which means writing a verified position for every point.
+
+22
+00:01:40,380 --> 00:01:45,840
+And finally, six, you hold a final validation workshop with all the bodies to close out any disputed points.
+
+23
+00:01:46,500 --> 00:01:47,200
+Okay, but,
+
+24
+00:01:47,940 --> 00:01:48,880
+and this is a big but,
+
+25
+00:01:49,600 --> 00:01:53,500
+when sources or officials inevitably disagree during this process,
+
+26
+00:01:54,320 --> 00:01:58,280
+how do you settle the debate, like without it just becoming a battle of opinions?
+
+27
+00:01:59,060 --> 00:02:00,900
+That is where the evidence ladder comes in.
+
+28
+00:02:01,240 --> 00:02:08,000
+It's a strict rule. When sources disagree, the higher level always wins, and, um, there are five rungs to this ladder.
+
+29
+00:02:08,520 --> 00:02:09,620
+Okay. Walk me through them.
+
+30
+00:02:10,020 --> 00:02:10,080
+Yep.
+
+31
+00:02:10,740 --> 00:02:13,860
+So at the bottom, rung five is a statement in an interview.
+
+32
+00:02:14,160 --> 00:02:16,380
+Above that, rung four is an internal report.
+
+33
+00:02:16,860 --> 00:02:19,080
+Rung three is official statistics.
+
+34
+00:02:19,360 --> 00:02:20,260
+Okay. Makes sense.
+
+35
+00:02:21,000 --> 00:02:21,560
+And the top two?
+
+36
+00:02:22,460 --> 00:02:27,020
+Rung two is an official document in force, like a law or an approved budget.
+
+37
+00:02:27,460 --> 00:02:31,880
+And the ultimate authority, rung one, is a system actually seen working.
+
+38
+00:02:32,320 --> 00:02:35,900
+Wait, so an interview is the absolute weakest form of evidence?
+
+39
+00:02:36,380 --> 00:02:40,660
+Yeah, it is. Because to reach the verification standard, you need either
+
+40
+00:02:41,300 --> 00:02:47,740
+one source at level one, the system seen working, or two independent sources at levels two or three.
+
+41
+00:02:48,160 --> 00:02:51,340
+So if you just have two officials contradicting each other in interviews?
+
+42
+00:02:52,020 --> 00:02:54,040
+Then that point is still disputed, exactly.
+
+43
+00:02:54,640 --> 00:02:58,860
+And the reference architecture actually names four specific templates to carry this work.
+
+44
+00:02:59,300 --> 00:03:07,300
+You've got the map of bodies involved, the session plan, the reconciled response table, and the final validation workshop agenda.
+
+45
+00:03:07,880 --> 00:03:10,780
+Okay, I think I get the framework, but let's see this in action.
+
+46
+00:03:11,360 --> 00:03:12,100
+How does this play out,
+
+47
+00:03:12,760 --> 00:03:13,800
+you know, in a practical setting?
+
+48
+00:03:14,300 --> 00:03:21,020
+Let's look at Progessa. And just to be clear, Progessa is a fictional country, um, used for these exact models.
+
+49
+00:03:21,380 --> 00:03:26,620
+But during their audit, the team was evaluating the ministry's school information system called PEMIS.
+
+50
+00:03:26,860 --> 00:03:33,420
+Right. So a desk review suggested that PEMIS held learner level data, which means individual student records.
+
+51
+00:03:33,460 --> 00:03:35,440
+Which obviously would be super useful to have.
+
+52
+00:03:35,600 --> 00:03:42,180
+Definitely. But during session V dash zero one, a technical workshop, the team asked to see the system working.
+
+53
+00:03:42,320 --> 00:03:43,500
+That's level one evidence.
+
+54
+00:03:44,140 --> 00:03:49,260
+And, uh, they found out it only held totals by district, grade, and sex.
+
+55
+00:03:49,520 --> 00:03:52,920
+Oh, wow. So it didn't have individual student data at all?
+
+56
+00:03:53,060 --> 00:03:53,400
+Not at all.
+
+57
+00:03:54,280 --> 00:03:58,420
+And because level one evidence overrides a desk review, the point was instantly corrected.
+
+58
+00:03:58,980 --> 00:04:04,440
+It's like reading a car's sales brochure versus, you know, actually looking under the hood to see the engine.
+
+59
+00:04:05,060 --> 00:04:08,180
+The brochure is the desk review, but seeing the engine run is level one.
+
+60
+00:04:08,280 --> 00:04:14,540
+I mean, exactly. It saves you from making decisions based on data that is totally siloed or costly to change down the line.
+

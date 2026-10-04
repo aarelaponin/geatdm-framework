@@ -1,0 +1,284 @@
+1
+00:00:00,140 --> 00:00:05,540
+Um, so millions of taxpayer dollars are wasted every single year on, you know,
+
+2
+00:00:06,200 --> 00:00:11,660
+government digital systems, systems that look perfect on paper but just completely fail in the wild.
+
+3
+00:00:11,900 --> 00:00:13,660
+Oh, absolutely. It happens all the time.
+
+4
+00:00:13,860 --> 00:00:23,500
+Right. So say you are running these digital systems in your ministry, and a vendor proudly tells your steering committee, "Hey, our platform is GovStack compliant at level two."
+
+5
+00:00:23,900 --> 00:00:25,760
+I mean, you probably feel a wave of relief, right?
+
+6
+00:00:26,040 --> 00:00:28,440
+Yeah, because it sounds like engineering precision.
+
+7
+00:00:28,780 --> 00:00:33,700
+Exactly. But does that actually mean the system works for your specific program?
+
+8
+00:00:34,140 --> 00:00:37,580
+Well, that is the ultimate question for any digital infrastructure project.
+
+9
+00:00:37,720 --> 00:00:45,680
+Right. So today's deep dive is all about exploring that critical difference between a system being merely, you know, set up and one that is
+
+10
+00:00:46,180 --> 00:00:51,460
+undeniably proven, and we are using GovStack testing, and the reference architecture as our guide.
+
+11
+00:00:51,840 --> 00:01:00,740
+Right, because we naturally gravitate toward categories like level two because they feel comforting, they feel final, but compliance is really just a baseline,
+
+12
+00:01:01,080 --> 00:01:02,400
+not a guarantee of integration.
+
+13
+00:01:02,800 --> 00:01:06,460
+Wait, so if a vendor confidently puts a level two badge on the table,
+
+14
+00:01:07,180 --> 00:01:09,580
+I would assume that means the product is fully ready to go.
+
+15
+00:01:10,020 --> 00:01:11,860
+Are you telling me that badge isn't enough?
+
+16
+00:01:12,520 --> 00:01:16,220
+Well, it is a generic metric, not a specific one for your deployment.
+
+17
+00:01:16,900 --> 00:01:19,840
+GovStack testing evaluates a product in two main ways.
+
+18
+00:01:19,980 --> 00:01:20,820
+Okay. What are they?
+
+19
+00:01:21,160 --> 00:01:25,360
+First, the software provider conducts a self-assessment against functional requirements.
+
+20
+00:01:25,920 --> 00:01:30,200
+And second, automated tests are run against the product's published interfaces.
+
+21
+00:01:30,800 --> 00:01:34,140
+Basically, the digital doors and windows it uses to communicate.
+
+22
+00:01:34,420 --> 00:01:39,880
+Exactly. Passing these grants level one for partial compliance or level two for full compliance.
+
+23
+00:01:40,320 --> 00:01:44,580
+But this strictly evaluates the product in a vacuum, like isolated in a lab.
+
+24
+00:01:45,240 --> 00:01:53,480
+So it proves the software functions on its own, but the reference architecture requires external interfaces to actually talk to each other in the real world.
+
+25
+00:01:53,920 --> 00:01:54,340
+Exactly.
+
+26
+00:01:55,040 --> 00:02:00,100
+So that level two badge does not tell me how my specific country configured those connections.
+
+27
+00:02:00,660 --> 00:02:10,220
+That is the core issue. Connecting different interfaces across government departments is notoriously difficult because legacy systems are often fragmented, siloed, and
+
+28
+00:02:10,240 --> 00:02:10,820
+duplicated.
+
+29
+00:02:11,480 --> 00:02:14,280
+Right. They are just completely isolated from one another.
+
+30
+00:02:14,700 --> 00:02:21,900
+Yeah. So to prove a system actually works in this environment, you need one specific transparent check for every single configuration.
+
+31
+00:02:22,280 --> 00:02:24,360
+Okay, and what does that check actually look like?
+
+32
+00:02:24,900 --> 00:02:32,560
+It must define exactly what is being run, the published interface it tests, what counts as a pass, the exact result, and the date it was executed.
+
+33
+00:02:33,100 --> 00:02:36,040
+Right. So it, it's like buying a certified top-tier medical device.
+
+34
+00:02:36,660 --> 00:02:40,440
+The device itself might be level two compliant in a sterile testing facility.
+
+35
+00:02:40,520 --> 00:02:43,080
+Yeah, exactly. But if you just set it down in the room,
+
+36
+00:02:43,720 --> 00:02:44,880
+it is only set up.
+
+37
+00:02:45,460 --> 00:02:49,800
+It's not proven until you physically connect it, run the tests, and record the results with a timestamp.
+
+38
+00:02:50,080 --> 00:02:53,620
+Okay, so we are drawing a hard line between setup and proven here.
+
+39
+00:02:53,900 --> 00:02:54,920
+A very hard line.
+
+40
+00:02:55,520 --> 00:02:58,580
+If a configuration simply exists, it is only set up.
+
+41
+00:02:59,020 --> 00:03:06,080
+A digital building block is only truly proven when every single automated check has been run, passed, and recorded with its date.
+
+42
+00:03:06,580 --> 00:03:08,320
+Until you see that, you just have a setup.
+
+43
+00:03:08,720 --> 00:03:16,120
+I mean, this sounds logical in theory, but when a minister looks at an actual deployment blueprint, like the Progressa exchange,
+
+44
+00:03:17,000 --> 00:03:19,380
+they often just see a spreadsheet full of blank cells.
+
+45
+00:03:20,060 --> 00:03:21,640
+Progressa is a great example.
+
+46
+00:03:22,080 --> 00:03:26,400
+Right. And before the first run, every row simply says, "Not yet run."
+
+47
+00:03:27,040 --> 00:03:31,020
+I mean, why wouldn't seeing all those unchecked boxes make a project manager panic?
+
+48
+00:03:31,560 --> 00:03:35,960
+Well, it shouldn't, because it represents the honest gap between a design and a working proof.
+
+49
+00:03:36,340 --> 00:03:39,160
+It maps exactly what hurdles the system still needs to clear.
+
+50
+00:03:39,700 --> 00:03:47,180
+Right. Take check X.1, for example, which verifies if the system can accurately list members in the registration service, or check X.3,
+
+51
+00:03:47,500 --> 00:03:49,460
+which evaluates how the system handles permissions.
+
+52
+00:03:49,900 --> 00:03:52,880
+And X.3 isn't just testing if the system is turned on, right.
+
+53
+00:03:53,040 --> 00:03:53,260
+It is
+
+54
+00:03:53,880 --> 00:04:02,040
+actively firing a request with a proper grant to see if it is answered, and then firing a request without proper permissions to ensure it gets refused.
+
+55
+00:04:02,560 --> 00:04:07,660
+Yes, exactly. It proves the security mechanism actively rejects bad requests in real time.
+
+56
+00:04:07,920 --> 00:04:10,540
+Oh, wow. Which is obviously vital for data security.
+
+57
+00:04:11,440 --> 00:04:18,320
+Then you have check X.4, which tests the entire once-only sequence from sign-in all the way to the register confirming the record.
+
+58
+00:04:18,959 --> 00:04:26,140
+Ah, the once-only sequence. That's the ultimate goal for users, where they don't have to enter the same data five different times for five different departments.
+
+59
+00:04:26,480 --> 00:04:27,020
+Precisely.
+
+60
+00:04:27,760 --> 00:04:31,720
+So when the build is actually ready, the automated checks are run consecutively.
+
+61
+00:04:32,160 --> 00:04:34,580
+And the sheet fills up with results and dates.
+
+62
+00:04:34,960 --> 00:04:40,960
+Right. And if a check fails, it stays highly visible on the sheet until the developers fix the issue and it passes.
+
+63
+00:04:41,380 --> 00:04:46,200
+But most importantly, absolutely no results are ever edited by hand.
+
+64
+00:04:46,860 --> 00:04:50,280
+Wow. So it is entirely automated and tamper-proof.
+
+65
+00:04:50,600 --> 00:04:51,100
+Completely.
+
+66
+00:04:51,880 --> 00:04:54,440
+So if you are the one sitting across from that vendor,
+
+67
+00:04:55,040 --> 00:05:01,120
+the only defense you have against an unfinished system is demanding that timestamped sheet of past tests.
+
+68
+00:05:01,680 --> 00:05:03,940
+The data really just has to speak for itself.
+
+69
+00:05:04,400 --> 00:05:04,580
+Right.
+
+70
+00:05:05,520 --> 00:05:09,960
+Never settle for just a compliance level or a system that is merely set up.
+
+71
+00:05:10,500 --> 00:05:13,320
+Demand that it is proven. Exactly.
+

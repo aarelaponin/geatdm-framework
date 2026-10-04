@@ -1,0 +1,22 @@
+# Slide cue file — KP3 Module 3, Video 3.6 "Account for every load"
+# Deck:  KP3_M3_3.6_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M3_3.6_Audio_v0.11.m4a (runs to 5:10.4)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# VERDICT: USABLE.
+# Order: take does the walkthrough (3:39) BEFORE the hard rule / honest note (4:27-4:50). Deck order kept: slide 4
+# holds over the walkthrough (record counts and "confirmed to exist" match its queries); slide 5 cues at the hard rule;
+# slide 6 gets a short window over "auditors can verify it" (mismatch). Sources 6.4 s, over "show both lines".
+# Flaws: cold open is an invented 10,000-records/"good feeling" scene; bouncer and factory-line analogies;
+# "experts often use this fictional model country ... to test GovStack rules" (invented claim); honest note drops
+# Giga and calls the check "an independent best practice" rather than the course's own; no sources line; the take
+# is cut mid-thought at the end ("It really makes you wonder, though."). Listen for "Progresia".
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: did every learner the schools sent reach the register?
+0:44   # slide 3 — Two lines
+3:00   # slide 4 — Where the numbers come from
+4:27   # slide 5 — An honest note, and a hard rule
+4:50   # slide 6 — What the walkthrough will show
+4:58   # slide 7 — In one sentence
+5:04   # slide 8 — Sources

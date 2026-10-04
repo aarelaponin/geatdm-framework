@@ -1,0 +1,20 @@
+# Slide cue file — KP3 Module 6, Video 6.2 "What to fund first: cost against reuse"
+# Deck:  KP3_M6_6.2_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M6_6.2_Audio_v0.9.m4a (runs to 5:24.6)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Invented opener ("Welcome to the Deep Dive") and shared-house/kitchen analogy before the hook (0:51); slide 2
+# holds through all of it. Slide 3's identity chicken-and-egg question is never asked; only "paying multiple times"
+# is covered. Recap is a single closing sentence (5:19), so the Sources card rides it (5.6 s) after a short slide 7.
+# FLAWS: "Progessa" throughout (mispronounced); "the policy papers we're diving into", "the research outlines this
+# priority matrix" (source named on air; deck says the method is the course's own); invented Ministry of Health
+# example; "11 and a half million students" (deck: people of school age); figures never called illustrative.
+
+0:00   # slide 1 — title card
+0:14   # slide 2 — Hook: Every ministry asks for money for its own system
+1:09   # slide 3 — Who pays first?
+1:58   # slide 4 — Cost against reuse
+2:23   # slide 5 — Progressa's table (illustrative)
+3:59   # slide 6 — Reuse, priced (illustrative)
+5:12   # slide 7 — In one sentence
+5:19   # slide 8 — Sources

@@ -1,0 +1,324 @@
+1
+00:00:00,260 --> 00:00:07,340
+So when your ministry deploys new digital services, uh, the traditional approach of just building dedicated authentication systems from scratch,
+
+2
+00:00:08,000 --> 00:00:15,040
+well, it leaves government infrastructure fragmented, siloed, duplicated, rekeyed, locked into one supplier, and honestly,
+
+3
+00:00:15,380 --> 00:00:16,379
+costly to change.
+
+4
+00:00:16,920 --> 00:00:19,320
+Yeah, costly is definitely the operative word there.
+
+5
+00:00:19,660 --> 00:00:20,620
+It really adds up.
+
+6
+00:00:21,600 --> 00:00:22,040
+Exactly.
+
+7
+00:00:22,680 --> 00:00:28,220
+So today's deep dive examines the reference architecture for securely generating digital identity connections instead.
+
+8
+00:00:28,740 --> 00:00:36,580
+We are basically unpacking how digital services in your program can verify exactly who a citizen is, uh, by asking for very little
+
+9
+00:00:36,980 --> 00:00:39,260
+and keeping core national data entirely secret.
+
+10
+00:00:39,940 --> 00:00:45,360
+So to start us off, why shouldn't a registration service simply build its own identity database from scratch?
+
+11
+00:00:45,900 --> 00:00:50,620
+Right. Well, because the service really only needs a connection to a central identity block.
+
+12
+00:00:51,120 --> 00:00:56,000
+I mean, instead of building a whole independent infrastructure, the service just registers once as a client.
+
+13
+00:00:56,460 --> 00:00:58,420
+Just once. Yep, just the once.
+
+14
+00:00:59,080 --> 00:01:04,400
+During this registration, it provides its name, its return addresses for routing the citizen after sign-in,
+
+15
+00:01:05,099 --> 00:01:06,540
+and, uh, a public signing key.
+
+16
+00:01:07,180 --> 00:01:11,840
+In return, the identity block publishes its own configuration and token signing keys,
+
+17
+00:01:12,460 --> 00:01:15,240
+and then issues the service a unique client identifier.
+
+18
+00:01:15,640 --> 00:01:25,520
+Okay, so if a local service connects directly to a central identity block that holds, you know, comprehensive citizen records, I mean, the immediate operational concern for you is
+
+19
+00:01:25,560 --> 00:01:34,720
+data minimization. How does the architecture actually physically restrict a registration service from pulling more citizen data than it strictly requires?
+
+20
+00:01:35,180 --> 00:01:38,540
+Well, the restriction is enforced through two distinct protocol flows.
+
+21
+00:01:38,820 --> 00:01:40,980
+So first, you have the with claims flow.
+
+22
+00:01:41,480 --> 00:01:44,240
+This occurs when the system actually requires demographic data.
+
+23
+00:01:44,620 --> 00:01:46,080
+Right, like an address or a phone number.
+
+24
+00:01:46,440 --> 00:01:55,540
+Exactly. And in that case, the citizen reviews a consent screen detailing exactly which attributes the service requests, and they explicitly approve the transfer.
+
+25
+00:01:56,220 --> 00:02:03,020
+But alternatively, there's the without claims flow, and this uses the specific protocol scope OpenID.
+
+26
+00:02:03,580 --> 00:02:04,800
+OpenID. Okay, got it.
+
+27
+00:02:04,840 --> 00:02:04,940
+Yeah.
+
+28
+00:02:05,640 --> 00:02:10,900
+Including that scope signals the identity block to return only cryptographic proof of authentication.
+
+29
+00:02:11,160 --> 00:02:13,980
+It completely blocks any demographic data transfer.
+
+30
+00:02:14,580 --> 00:02:18,600
+And because no external data is shared, well, no consent page is triggered.
+
+31
+00:02:19,080 --> 00:02:21,040
+Oh, wow. So it's entirely seamless for the user.
+
+32
+00:02:21,520 --> 00:02:26,200
+It really is. The architectural rule dictates asking only for what the form requires.
+
+33
+00:02:26,840 --> 00:02:32,120
+So if a registration strictly needs a name and date of birth, it must never request an address.
+
+34
+00:02:32,800 --> 00:02:42,700
+Makes sense. But if the without claims flow intentionally hides the underlying data from your ministry, how does the receiving service mathematically trust the security of the
+
+35
+00:02:42,740 --> 00:02:44,180
+citizen's authentication event?
+
+36
+00:02:44,600 --> 00:02:45,100
+Good question.
+
+37
+00:02:45,800 --> 00:02:47,900
+Trust is established through an ID token.
+
+38
+00:02:48,440 --> 00:02:56,760
+This is, uh, a cryptographically signed data structure detailing, you know, who signed in, at what time, and for which registered client.
+
+39
+00:02:57,720 --> 00:02:58,180
+Crucially,
+
+40
+00:02:58,820 --> 00:03:01,640
+this token contains an authentication context value.
+
+41
+00:03:02,300 --> 00:03:05,980
+An authentication context value. What exactly does that prove?
+
+42
+00:03:06,600 --> 00:03:09,440
+It mathematically proves the exact credential method used.
+
+43
+00:03:09,740 --> 00:03:13,940
+So that could be a PIN, a password, a one-time code, or biometrics.
+
+44
+00:03:14,620 --> 00:03:17,940
+The receiving service predefines its acceptable security threshold.
+
+45
+00:03:18,780 --> 00:03:22,300
+So if it wants biometrics but only gets a password, it knows?
+
+46
+00:03:22,800 --> 00:03:29,680
+Precisely. If the token's authentication context does not meet that predefined threshold, the service rejects the token entirely.
+
+47
+00:03:30,500 --> 00:03:37,080
+And then once the ID token is validated, a separate access token is used to retrieve any explicitly approved data claims.
+
+48
+00:03:37,580 --> 00:03:40,500
+Right. So that sequence isolates the authentication event.
+
+49
+00:03:40,860 --> 00:03:45,100
+But we must address the ultimate privacy safeguard regarding the citizen's core identity.
+
+50
+00:03:45,600 --> 00:03:54,280
+The central block authenticates the user, but the reference architecture mandates that the citizen's actual national number is never exposed to the connecting service.
+
+51
+00:03:54,580 --> 00:03:54,820
+Never.
+
+52
+00:03:55,740 --> 00:04:00,740
+The ID token achieves this by delivering a pairwise pseudonymous identifier.
+
+53
+00:04:01,140 --> 00:04:03,920
+A pairwise pseudonymous identifier. Yeah.
+
+54
+00:04:03,980 --> 00:04:05,440
+That's a bit of a mouthful.
+
+55
+00:04:05,580 --> 00:04:06,260
+It is, yeah.
+
+56
+00:04:07,040 --> 00:04:14,760
+But basically, it's just a unique alphanumeric string generated cryptographically for that specific service and that specific person.
+
+57
+00:04:15,720 --> 00:04:19,800
+The service stores this isolated identifier to recognize returning users,
+
+58
+00:04:20,420 --> 00:04:24,760
+but the actual national number remains permanently locked inside the identity block.
+
+59
+00:04:25,340 --> 00:04:27,680
+Okay, can you give us an example of how that looks in practice?
+
+60
+00:04:28,060 --> 00:04:28,240
+Sure.
+
+61
+00:04:28,980 --> 00:04:31,280
+Let's look at the fictional country of Progressa.
+
+62
+00:04:31,860 --> 00:04:33,880
+We use Progressa to demonstrate this architecture.
+
+63
+00:04:34,740 --> 00:04:41,840
+There, the National Learner Register maintains its own local learner numbers side by side with the identity block's unique identifier.
+
+64
+00:04:42,580 --> 00:04:45,260
+The core national ID is never actually transmitted.
+
+65
+00:04:46,040 --> 00:04:51,180
+So administrators building these systems need to prove that this separation functions correctly in production.
+
+66
+00:04:51,880 --> 00:04:54,940
+How is that isolation mathematically verified before deployment?
+
+67
+00:04:55,400 --> 00:04:58,440
+Well, the architecture requires a strict verification check,
+
+68
+00:04:59,080 --> 00:04:59,960
+and it has three parts.
+
+69
+00:05:00,620 --> 00:05:01,140
+Number one,
+
+70
+00:05:01,820 --> 00:05:06,260
+an enrolled test person signs in directly on the identity block's own screen.
+
+71
+00:05:06,800 --> 00:05:07,960
+Okay, that's step one.
+
+72
+00:05:08,260 --> 00:05:16,860
+Right. Number two, the resulting token's digital signature is verified against the block's published cryptographic keys to ensure it cannot be forged.
+
+73
+00:05:17,400 --> 00:05:18,060
+Makes perfect sense.
+
+74
+00:05:18,280 --> 00:05:19,000
+And number three,
+
+75
+00:05:19,680 --> 00:05:24,860
+two different services must receive two completely different identifiers for the exact same test person.
+
+76
+00:05:25,300 --> 00:05:27,680
+Ah, so that proves they are mathematically distinct.
+
+77
+00:05:28,020 --> 00:05:32,720
+Exactly. It prevents different ministries from colluding to track citizens across services.
+
+78
+00:05:33,640 --> 00:05:34,820
+The absolute rule is this:
+
+79
+00:05:35,500 --> 00:05:36,160
+register once,
+
+80
+00:05:36,800 --> 00:05:37,500
+ask for little,
+
+81
+00:05:38,160 --> 00:05:42,880
+keep the specific identifier the block gives you, and ensure the national number never leaves the block.
+

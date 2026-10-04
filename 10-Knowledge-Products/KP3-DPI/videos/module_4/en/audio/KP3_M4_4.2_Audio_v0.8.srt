@@ -1,0 +1,264 @@
+1
+00:00:00,140 --> 00:00:06,640
+Welcome to, uh, today's deep dive. So today, we are unpacking the published identity building block within the reference architecture.
+
+2
+00:00:07,480 --> 00:00:13,420
+And, I mean, if you run a ministry program, you might assume your national identity authority just offers everything you need out of the box, right?
+
+3
+00:00:13,760 --> 00:00:15,940
+Right. Exactly. But, um,
+
+4
+00:00:16,720 --> 00:00:22,780
+assuming instead of checking can lead to fragmented, duplicated systems that are incredibly costly to change.
+
+5
+00:00:23,260 --> 00:00:24,800
+So our mission today is to break down
+
+6
+00:00:25,420 --> 00:00:33,200
+exactly what this foundational building block actually offers, how it protects data, and, well, why reality often differs from the specification.
+
+7
+00:00:34,160 --> 00:00:38,040
+Yeah, because, you know, when you build a new house, you expect the municipal plumbing to just work.
+
+8
+00:00:38,300 --> 00:00:46,180
+You turn the tap, water flows. You definitely don't expect to have to build a custom water tower for the bathroom and then, like, a, a completely separate one for the kitchen.
+
+9
+00:00:46,400 --> 00:00:46,920
+No, of course not.
+
+10
+00:00:47,800 --> 00:00:52,700
+But in government IT, it is surprisingly easy to accidentally build those custom water towers.
+
+11
+00:00:52,880 --> 00:00:53,100
+Yeah.
+
+12
+00:00:53,800 --> 00:00:54,680
+So to start us off,
+
+13
+00:00:55,480 --> 00:01:01,620
+what exactly does this building block cover, and, uh, why doesn't it issue things like student or healthcare IDs?
+
+14
+00:01:02,180 --> 00:01:08,040
+Well, the gap between what is written in the specification and what a national authority actually runs today
+
+15
+00:01:08,780 --> 00:01:10,600
+is, um, it's pretty significant.
+
+16
+00:01:11,300 --> 00:01:18,200
+If we look at the architecture, there is a very strict boundary drawn between foundational identity and functional identity.
+
+17
+00:01:18,660 --> 00:01:20,040
+Okay, so what's the difference there?
+
+18
+00:01:20,640 --> 00:01:25,140
+So foundational identity is simply the proof of who a person broadly is.
+
+19
+00:01:25,800 --> 00:01:28,320
+It serves a wide range of public and private services.
+
+20
+00:01:29,160 --> 00:01:33,700
+Functional identity, on the other hand, is proof used for one specific purpose or sector.
+
+21
+00:01:34,460 --> 00:01:42,620
+Oh, I see. So if I am running an education program, I might expect this central identity block to issue a functional identity, like a,
+
+22
+00:01:42,960 --> 00:01:44,000
+a learner number or something.
+
+23
+00:01:44,240 --> 00:01:52,000
+Exactly. But based on that boundary, the block only handles foundational proof, so it offers specific services like enrollment,
+
+24
+00:01:52,520 --> 00:01:58,760
+identity verification, queries, and credential management to administrators, partners, users, and subscribers.
+
+25
+00:01:59,100 --> 00:02:02,320
+Right. But it issues absolutely no learner identity.
+
+26
+00:02:02,900 --> 00:02:07,860
+The specification explicitly names sectors like education as functional domains outside its scope.
+
+27
+00:02:08,500 --> 00:02:11,880
+Its only job is to verify the person behind the screen.
+
+28
+00:02:12,260 --> 00:02:21,520
+Wait, hold on. If a registered partner, like the education ministry, uses this to verify someone, aren't they just broadcasting the citizen's national ID number everywhere?
+
+29
+00:02:21,740 --> 00:02:24,240
+I mean, that seems like a massive privacy vulnerability.
+
+30
+00:02:24,800 --> 00:02:30,540
+It absolutely would be, and that is exactly why the core security mechanism is designed to prevent that.
+
+31
+00:02:31,140 --> 00:02:35,320
+The unique national identity number stays entirely secret inside the building block.
+
+32
+00:02:35,580 --> 00:02:38,560
+Oh, really? So it's essentially like a bouncer at a club.
+
+33
+00:02:39,120 --> 00:02:45,620
+The bouncer checks my driver's license to verify who I am, but they don't hand my home address or my license number over to the bartender.
+
+34
+00:02:46,200 --> 00:02:48,560
+Right. Yeah. That is a perfect way to look at it.
+
+35
+00:02:49,040 --> 00:02:52,000
+They just give the bartender a thumbs up or, like, a generic wristband.
+
+36
+00:02:52,660 --> 00:02:54,840
+So how does that translate technically here?
+
+37
+00:02:55,540 --> 00:03:00,560
+Well, the published interfaces rely on OpenID Connect, which is a common standard for signing in.
+
+38
+00:03:01,260 --> 00:03:07,280
+When a citizen interacts with your ministry service, their browser is taken directly to the identity block's own screens.
+
+39
+00:03:07,920 --> 00:03:10,060
+Okay, so the citizen is directly in the loop there.
+
+40
+00:03:10,640 --> 00:03:15,700
+Yes, exactly. The person signs in there and actively approves what data may be shared.
+
+41
+00:03:16,320 --> 00:03:19,600
+In return, the block releases only that approved data.
+
+42
+00:03:20,280 --> 00:03:23,400
+And instead of the national ID number, the ministry gets the wristband.
+
+43
+00:03:23,940 --> 00:03:26,480
+Right. We call that wristband a token.
+
+44
+00:03:27,240 --> 00:03:31,440
+Each relying service receives a completely different service-specific token identifier.
+
+45
+00:03:31,880 --> 00:03:33,560
+Oh, wow, so they don't even get the same token.
+
+46
+00:03:34,060 --> 00:03:34,200
+Nope.
+
+47
+00:03:35,060 --> 00:03:38,740
+It is the same identifier every time that person signs into your specific service,
+
+48
+00:03:39,500 --> 00:03:44,160
+but it is completely different from the token the health ministry receives for that same person.
+
+49
+00:03:44,640 --> 00:03:47,760
+So no single ministry ever holds the central national number.
+
+50
+00:03:48,320 --> 00:03:50,260
+Okay, let's look at a practical example then.
+
+51
+00:03:50,820 --> 00:03:53,460
+We frequently look at the fictional country of Progresa.
+
+52
+00:03:54,080 --> 00:03:59,360
+Their identity authority has an active service, but, um, is it actually using this published block?
+
+53
+00:03:59,900 --> 00:04:03,040
+Well, no. Progresa is not using the published block.
+
+54
+00:04:03,600 --> 00:04:07,500
+They currently offer just one service, which is a legacy contract of their own design.
+
+55
+00:04:08,080 --> 00:04:11,760
+Ah, so they're completely bypassing that bouncer and wristband consent model.
+
+56
+00:04:12,360 --> 00:04:19,200
+Exactly. Their examination authority performs a direct server-to-server read keyed exactly on the citizen's national number.
+
+57
+00:04:19,839 --> 00:04:23,440
+Wow. So the citizen is not present to approve the sharing of their data at all.
+
+58
+00:04:23,860 --> 00:04:28,040
+No, they aren't. And while that direct read functions for their exams today,
+
+59
+00:04:28,700 --> 00:04:30,600
+it leaves them locked into one supplier.
+
+60
+00:04:31,320 --> 00:04:38,780
+Their architecture remains highly siloed, duplicated, and completely misses the published block's user-centric OpenID standard.
+
+61
+00:04:39,520 --> 00:04:43,200
+So I mean, the key takeaway for anyone running a ministry program is pretty clear.
+
+62
+00:04:43,840 --> 00:04:50,500
+The published identity block verifies the person and releases only what they, you know, actually approve through those specific tokens.
+
+63
+00:04:50,840 --> 00:04:52,980
+It issues no functional identity.
+
+64
+00:04:53,340 --> 00:05:00,620
+Yeah, absolutely. You must verify what your authority actually runs today before you build a service on it, just
+
+65
+00:05:01,080 --> 00:05:02,960
+to avoid paying for duplicated effort.
+
+66
+00:05:03,260 --> 00:05:03,520
+Right.
+

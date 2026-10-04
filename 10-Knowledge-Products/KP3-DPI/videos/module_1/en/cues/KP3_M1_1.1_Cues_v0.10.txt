@@ -1,0 +1,18 @@
+# Slide cue file — KP3 Module 1, Video 1.1 "What makes infrastructure foundational"
+# Deck:  KP3_M1_1.1_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M1_1.1_Audio_v0.10.m4a (runs to 3:41.3)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws: SRT spells "Progresa" (one s) at 2:48 — check pronunciation by ear. "PMIS" for PEMIS (3:13).
+# Governance-at-the-foundation credited to "the reference architecture" (1:53) — matches the deck (PAERA).
+# Title card holds through the read of the single message (0:00–0:26); hook arrives at 0:26.
+# Sources pulled forward to 3:35, during the recap's last line, to keep the tail at 6.3 s (Sources line is at 3:39).
+
+0:00   # slide 1 — title card
+0:26   # slide 2 — hook: donors and vendors all speak of DPI
+0:49   # slide 3 — what DPI means
+1:31   # slide 4 — four marks
+2:02   # slide 5 — what shared infrastructure has done (India, Brazil)
+2:48   # slide 6 — Progressa's systems against the four marks
+3:26   # slide 7 — in one sentence
+3:35   # slide 8 — Sources

@@ -1,0 +1,304 @@
+1
+00:00:00,320 --> 00:00:05,860
+If a vendor walks into your ministry today and, uh, pitches a one hundred percent unique data platform,
+
+2
+00:00:06,620 --> 00:00:07,800
+you should probably just show them the door.
+
+3
+00:00:08,420 --> 00:00:15,680
+Yeah, definitely. Because in government tech, unique usually just means you'll end up, you know, locked in to one supplier.
+
+4
+00:00:16,180 --> 00:00:18,960
+Right. And it becomes incredibly costly to change later on.
+
+5
+00:00:19,680 --> 00:00:24,680
+So today's deep dive is about an alternative that donors and auditors will actually trust rather than, like,
+
+6
+00:00:25,360 --> 00:00:26,940
+relying on some black box system.
+
+7
+00:00:27,300 --> 00:00:37,160
+Exactly. And the most defensible alternative you can offer your minister is a published pattern followed in the open where every architectural choice is written down.
+
+8
+00:00:37,740 --> 00:00:46,060
+So our mission today is exploring how taking the reference architecture from UNICEF Giga's School Master Data can actually help you build a robust learner register
+
+9
+00:00:46,560 --> 00:00:48,080
+without, you know, reinventing the wheel.
+
+10
+00:00:48,500 --> 00:00:52,540
+Right. And we hear the phrase "single source of truth" a lot,
+
+11
+00:00:53,340 --> 00:00:59,240
+but Giga's architecture actually stops your program's data from becoming fragmented, siloed, or duplicated.
+
+12
+00:00:59,680 --> 00:01:04,860
+But how exactly does it do that? I mean, how does it physically stop the duplication across different departments?
+
+13
+00:01:05,400 --> 00:01:08,560
+Well, it passes the data through a very specific five-tier system.
+
+14
+00:01:09,060 --> 00:01:15,440
+It's, uh, inspired by the medallion pattern, so you have raw, bronze, staging, silver, and gold.
+
+15
+00:01:16,180 --> 00:01:21,340
+Okay, so that's a lot of tiers. The raw tier is just, what, the untouched data coming in?
+
+16
+00:01:21,760 --> 00:01:24,520
+Yeah, exactly. The raw tier is all the unfiltered data.
+
+17
+00:01:24,860 --> 00:01:30,000
+Then the bronze tier acts as this first automated filter that catches basic formatting errors.
+
+18
+00:01:30,580 --> 00:01:32,220
+Oh, got it. So it's like an initial sweep.
+
+19
+00:01:32,700 --> 00:01:36,900
+But, I mean, you can't rely entirely on an algorithm for a national database.
+
+20
+00:01:37,420 --> 00:01:38,040
+You really can't.
+
+21
+00:01:38,700 --> 00:01:45,340
+If two separate districts upload conflicting data about the exact same student, an automated filter might just guess incorrectly.
+
+22
+00:01:45,720 --> 00:01:47,240
+Right, which would be disastrous.
+
+23
+00:01:47,820 --> 00:01:51,220
+Exactly. Which is why the data then moves to the staging tier.
+
+24
+00:01:51,940 --> 00:01:57,260
+Staging acts as this holding tank where a human being actually reviews the flagged information.
+
+25
+00:01:57,740 --> 00:02:01,800
+Oh, wow. So a person physically resolves those conflicts before it moves on.
+
+26
+00:02:02,300 --> 00:02:10,120
+Yep, exactly. And once that's done, it moves to the silver tier, where records are matched and consolidated, leaving us with the gold tier.
+
+27
+00:02:10,880 --> 00:02:12,300
+Okay, the gold tier,
+
+28
+00:02:12,960 --> 00:02:15,520
+the final pristine data. But wait,
+
+29
+00:02:16,220 --> 00:02:21,880
+I read that Giga actually splits that gold tier into two separate tables: a master table and a reference table.
+
+30
+00:02:22,020 --> 00:02:22,680
+They do, yeah.
+
+31
+00:02:23,120 --> 00:02:26,880
+Why complicate it at the very end? Like, why not just keep it in one big clean database?
+
+32
+00:02:27,320 --> 00:02:31,760
+Because by splitting it, you separate the core identities from the descriptive attributes.
+
+33
+00:02:32,380 --> 00:02:36,920
+Uh, the master table holds the unchanging identifier, like a school's permanent ID.
+
+34
+00:02:37,440 --> 00:02:41,560
+Oh, I see. And the reference table holds the stuff that changes, like current internet speed or whatever.
+
+35
+00:02:41,680 --> 00:02:42,140
+Precisely.
+
+36
+00:02:42,760 --> 00:02:48,260
+That structural split is what forces all departments to reference the exact same core identity,
+
+37
+00:02:48,860 --> 00:02:50,720
+which prevents those data silos we mentioned.
+
+38
+00:02:51,120 --> 00:02:52,680
+Okay, but I have to push back a little here.
+
+39
+00:02:53,240 --> 00:02:58,060
+A school is a static building. A learner is a human being constantly moving between districts.
+
+40
+00:02:58,500 --> 00:02:59,820
+Right. It's a very different subject.
+
+41
+00:03:00,180 --> 00:03:08,720
+Yeah. So if this pattern is built for static buildings, doesn't the whole architecture break if you apply it to a dynamic learner register, like in a program like Progressa?
+
+42
+00:03:09,320 --> 00:03:13,060
+No, it doesn't break at all, actually. You just swap out the core subject.
+
+43
+00:03:13,500 --> 00:03:18,700
+You keep the five tiers, the bronze checks, the human review and staging, and that gold split.
+
+44
+00:03:19,040 --> 00:03:24,500
+Okay, so the structure stays exactly the same, but instead of buildings, you're processing dynamic learner profiles.
+
+45
+00:03:24,940 --> 00:03:30,280
+Exactly. But because learners are dynamic, you do have to change the final destination.
+
+46
+00:03:30,660 --> 00:03:35,000
+Instead of a static gold table, the data feeds directly into a register.
+
+47
+00:03:35,840 --> 00:03:38,080
+And a register is an act of service, right?
+
+48
+00:03:38,120 --> 00:03:39,600
+Not just a file sitting on a server.
+
+49
+00:03:40,320 --> 00:03:48,700
+Right. It acts as a dynamic gatekeeper. It has very specific rules about who is allowed to read or write data about a student at any given moment.
+
+50
+00:03:49,360 --> 00:03:55,620
+Okay, that makes sense. But wait, if this act of service is perfectly mapped out in Giga's public repositories,
+
+51
+00:03:56,320 --> 00:03:58,580
+I'm a bit confused on one thing. What's that?
+
+52
+00:03:58,900 --> 00:04:04,000
+Why would I spend my ministry's budget to write the code from scratch if it's just sitting there publicly on GitHub?
+
+53
+00:04:04,060 --> 00:04:05,140
+I mean, why not just copy it?
+
+54
+00:04:05,820 --> 00:04:10,960
+Ah, so there is a massive catch there regarding open patterns versus open source code.
+
+55
+00:04:11,900 --> 00:04:15,960
+Neither of Giga's public repositories actually carries a software license.
+
+56
+00:04:16,640 --> 00:04:17,399
+Wait, really?
+
+57
+00:04:18,040 --> 00:04:18,440
+None at all?
+
+58
+00:04:19,040 --> 00:04:19,279
+None.
+
+59
+00:04:20,000 --> 00:04:25,560
+And in the software world, having no license means you have absolutely no legal permission to copy the code,
+
+60
+00:04:26,160 --> 00:04:28,280
+even if you can read every single line of it online.
+
+61
+00:04:28,900 --> 00:04:29,620
+Oh, wow.
+
+62
+00:04:30,400 --> 00:04:35,520
+So I can see the structural architecture, uh, the blueprint,
+
+63
+00:04:36,300 --> 00:04:39,020
+but I still have to build it myself. I can't just lift their code.
+
+64
+00:04:39,660 --> 00:04:41,260
+That is the perfect way to look at it, yeah.
+
+65
+00:04:41,940 --> 00:04:47,000
+You follow the reference architecture, and you explicitly cite the Giga pattern in your design documents.
+
+66
+00:04:47,880 --> 00:04:50,420
+But my internal team has to write its own code,
+
+67
+00:04:51,040 --> 00:04:56,940
+so when an auditor or a donor reviews the system, they see exactly where the blueprint came from?
+
+68
+00:04:57,600 --> 00:05:04,660
+Exactly. Which keeps you completely legally in the clear, and it helps immensely in the room where the money is decided.
+
+69
+00:05:05,640 --> 00:05:12,660
+Because a globally published pattern is vastly easier to defend than some mysterious architecture a vendor invented yesterday.
+
+70
+00:05:13,040 --> 00:05:13,220
+Right.
+
+71
+00:05:13,820 --> 00:05:14,320
+Absolutely.
+
+72
+00:05:15,160 --> 00:05:21,420
+And writing down these architectural choices ensures they survive a change of team or the end of a donor project.
+
+73
+00:05:22,320 --> 00:05:25,120
+Meaning your ministry isn't locked into one supplier.
+
+74
+00:05:25,560 --> 00:05:30,180
+The next vendor can just come in, read the documentation, and follow the exact same blueprint.
+
+75
+00:05:30,560 --> 00:05:30,620
+Yep.
+
+76
+00:05:31,500 --> 00:05:35,560
+It fundamentally changes the power dynamic, putting your ministry back in the driver's seat.
+

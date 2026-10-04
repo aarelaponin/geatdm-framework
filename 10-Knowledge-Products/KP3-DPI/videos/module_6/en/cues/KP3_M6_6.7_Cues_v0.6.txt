@@ -1,0 +1,22 @@
+# Slide cue file — KP3 Module 6, Video 6.7 "Validate, revise, adopt"
+# Deck:  KP3_M6_6.7_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M6_6.7_Audio_v0.6.m4a (runs to 5:28.1)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# VERDICT: USABLE.
+# Sources 7.1 s, over "it truly becomes the government's own".
+# Flaws: timeline blur — response matrix given as "months four and five" (month 5 is the validation workshop) and the
+# four-phase revision as "month six ... the final polish" (deck: month 6 is adoption; the revision comes before the
+# month-5 workshop); "first horizon, meaning phase one" (horizon conflated with phase); score change credited to
+# "the reference architecture notes"; domain 2.3 → 2.1 and unchanged stage not mentioned; "drafting assistants"
+# (deck: an assistant); New Year's resolution opener, receipts and A-to-C analogies; no sources line.
+# Listen for "Progresa".
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: A roadmap written by a team, however good, binds no one
+0:57   # slide 3 — Six months from draft to adoption
+2:05   # slide 4 — Every comment answered
+3:23   # slide 5 — A comment that changed a score
+4:27   # slide 6 — The revision, in four phases
+5:11   # slide 7 — In one sentence
+5:21   # slide 8 — Sources

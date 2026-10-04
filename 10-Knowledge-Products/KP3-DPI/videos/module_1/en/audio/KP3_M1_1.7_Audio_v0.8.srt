@@ -1,0 +1,308 @@
+1
+00:00:00,160 --> 00:00:06,480
+So if you manage digital systems for a government ministry, you, uh, you definitely know the consequences of poor design.
+
+2
+00:00:06,840 --> 00:00:08,340
+Oh, absolutely. It's a headache.
+
+3
+00:00:08,820 --> 00:00:11,760
+Yeah. Because without a clear overview, systems just quickly become,
+
+4
+00:00:12,540 --> 00:00:12,720
+well,
+
+5
+00:00:13,340 --> 00:00:18,180
+fragmented or siloed or duplicated, or you end up locked in to one supplier.
+
+6
+00:00:18,540 --> 00:00:21,960
+Right. And when that happens, they become incredibly costly to change.
+
+7
+00:00:22,160 --> 00:00:22,640
+Exactly.
+
+8
+00:00:23,300 --> 00:00:26,540
+So for today's deep dive, we're looking at a solution to that exact problem.
+
+9
+00:00:27,060 --> 00:00:32,299
+We're unpacking how massive institutions can objectively evaluate their infrastructure.
+
+10
+00:00:32,740 --> 00:00:34,980
+And we're doing that using two specific tools.
+
+11
+00:00:35,420 --> 00:00:41,500
+First, the UNDP Digital Development Compass, which is, uh, essentially a standardized grading scale.
+
+12
+00:00:41,780 --> 00:00:49,480
+Right. And then GovStack's reference architecture, which acts as the blueprint for what good digital government actually looks like.
+
+13
+00:00:49,700 --> 00:00:54,600
+Perfect. But before we get into the mechanics of that, I have a core problem with this.
+
+14
+00:00:54,760 --> 00:00:55,340
+Okay. What's that?
+
+15
+00:00:56,000 --> 00:00:58,020
+Why do we need rigid,
+
+16
+00:00:58,700 --> 00:01:01,620
+published, written criteria to grade these systems?
+
+17
+00:01:01,680 --> 00:01:08,860
+I mean, doesn't forcing a messy real-world government into a strict mathematical rubric strip away all the nuance?
+
+18
+00:01:09,300 --> 00:01:10,080
+You would think so, yeah.
+
+19
+00:01:10,600 --> 00:01:14,620
+Like, why can't we just trust our senior engineers to assess the systems based on their own experience?
+
+20
+00:01:14,940 --> 00:01:19,000
+Well, because experience usually translates to subjective interpretation.
+
+21
+00:01:19,460 --> 00:01:25,620
+I mean, if two assessors look at the exact same database and reach different conclusions, their score isn't a fact.
+
+22
+00:01:26,240 --> 00:01:27,760
+Right. It's just an opinion.
+
+23
+00:01:28,100 --> 00:01:35,880
+Exactly. It's merely an opinion. And in government, an opinion can simply be set aside by a minister who, you know, maybe doesn't like the result.
+
+24
+00:01:36,420 --> 00:01:37,760
+Ah, so they just ignore it.
+
+25
+00:01:38,060 --> 00:01:38,460
+Pretty much.
+
+26
+00:01:39,100 --> 00:01:43,880
+So written criteria on a published scale, that forces an objective truth.
+
+27
+00:01:44,220 --> 00:01:49,620
+It mathematically removes optimism and ensures everyone is looking at the exact same reality.
+
+28
+00:01:50,240 --> 00:01:54,280
+Okay, so by removing that human optimism, how does the actual scale function?
+
+29
+00:01:54,340 --> 00:01:56,620
+Like, how do we calculate that objective truth?
+
+30
+00:01:57,140 --> 00:02:01,440
+So it relies on five published stages. You have basic, which is zero to one.
+
+31
+00:02:01,880 --> 00:02:04,160
+Okay. Then opportunistic, that's one to two.
+
+32
+00:02:04,980 --> 00:02:08,220
+Systematic is two to three. Differentiating is three to four.
+
+33
+00:02:08,520 --> 00:02:11,220
+And finally, transformational, which is four to five.
+
+34
+00:02:12,040 --> 00:02:18,840
+But wait, if an assessor is evaluating a massive domain, how do they definitively score a one point five versus, say, a one point seven?
+
+35
+00:02:19,220 --> 00:02:20,720
+Yeah, that's the tricky part.
+
+36
+00:02:21,240 --> 00:02:25,420
+It-- Because it feels like we're just inviting subjective decimals right back into the process.
+
+37
+00:02:25,920 --> 00:02:31,680
+Well, they prevent that by using a strict four-part scoring rule that completely eliminates subjective decimals.
+
+38
+00:02:32,360 --> 00:02:33,660
+Okay, so what's rule number one?
+
+39
+00:02:34,220 --> 00:02:37,920
+First, subcomponents have written criteria at three specific levels.
+
+40
+00:02:38,200 --> 00:02:41,540
+So that's basic, systematic, and transformational.
+
+41
+00:02:42,320 --> 00:02:47,660
+If you only partially meet the criteria for a higher stage, the math automatically drops you to the lower tier.
+
+42
+00:02:48,240 --> 00:02:49,560
+Got it. And the second part?
+
+43
+00:02:50,360 --> 00:02:53,660
+Second, assessors are only allowed to score verified positions.
+
+44
+00:02:54,100 --> 00:02:55,460
+Meaning you need hard proof.
+
+45
+00:02:55,700 --> 00:02:59,560
+Precisely. You can't just take a vendor's word that a system is, like, transformational.
+
+46
+00:02:59,840 --> 00:03:00,040
+Got it.
+
+47
+00:03:00,720 --> 00:03:04,660
+Third, every single stage is pegged exactly to the middle of its unit.
+
+48
+00:03:04,780 --> 00:03:09,140
+So basic is always zero point five. Opportunistic is one point five.
+
+49
+00:03:09,600 --> 00:03:11,400
+Systematic is two point five, and so on.
+
+50
+00:03:11,780 --> 00:03:13,660
+You will never see a one point seven.
+
+51
+00:03:14,120 --> 00:03:16,120
+Oh, wow. So it's totally locked in.
+
+52
+00:03:16,460 --> 00:03:16,840
+Exactly.
+
+53
+00:03:17,460 --> 00:03:23,220
+And fourth, a domain's final score is just the mean average of its subcomponents calculated to one decimal place.
+
+54
+00:03:23,700 --> 00:03:27,980
+Okay, so when a government is forced to look in the mirror using this strict math,
+
+55
+00:03:28,740 --> 00:03:31,780
+what actually happens? Let's look at the Progresa simulation.
+
+56
+00:03:32,200 --> 00:03:33,040
+That's a great example.
+
+57
+00:03:33,520 --> 00:03:37,520
+And we should note explicitly, Progresa is an entirely fictional country.
+
+58
+00:03:37,900 --> 00:03:39,520
+It's just used to model this framework.
+
+59
+00:03:40,280 --> 00:03:42,060
+How did this objective scoring play out for them?
+
+60
+00:03:42,600 --> 00:03:47,320
+Beautifully, actually. Because the whole picture of their digital infrastructure fits on one table.
+
+61
+00:03:47,840 --> 00:03:48,680
+Wow, just one table.
+
+62
+00:03:49,140 --> 00:03:56,320
+Yeah. For example, their digital data domain sits at a one point three, which places it squarely in the opportunistic stage.
+
+63
+00:03:56,800 --> 00:04:00,800
+And that one point three is just the direct mathematical average we just discussed.
+
+64
+00:04:01,160 --> 00:04:09,460
+Yes. They had five subcomponents that scored one point five, and one basic component regarding data quality that scored zero point five.
+
+65
+00:04:09,960 --> 00:04:11,860
+Okay, and the mean gives you exactly one point three.
+
+66
+00:04:12,300 --> 00:04:19,140
+Exactly. And because this is mapped against the reference architecture, the government can identify a clear, actionable priority.
+
+67
+00:04:19,660 --> 00:04:21,079
+Which was what in their case?
+
+68
+00:04:21,620 --> 00:04:28,260
+Making the PLR, you know, their central learner registry, making that the authoritative register for educational data.
+
+69
+00:04:28,820 --> 00:04:32,680
+What really stands out to me is how this strict verification catches blind spots.
+
+70
+00:04:32,860 --> 00:04:40,140
+Like Progresa's original unverified desk draft had their interoperability score at a two point three, but the real score was lower.
+
+71
+00:04:40,620 --> 00:04:48,740
+It was, yeah. When assessors actually went looking for verified evidence, they discovered the Ministry of Education wasn't actually plugged into LinkUp.
+
+72
+00:04:48,900 --> 00:04:51,280
+LinkUp being Progresa's national data exchange.
+
+73
+00:04:51,700 --> 00:04:56,340
+Right. And because of that verified fact, the score dropped to two point one.
+
+74
+00:04:57,040 --> 00:05:01,100
+The data reflected the actual reality, not just the intended design.
+
+75
+00:05:01,220 --> 00:05:03,740
+Which perfectly illustrates the elegance of this framework.
+
+76
+00:05:04,220 --> 00:05:10,200
+By bringing a massive, complex domain down to a single verified table, you completely eliminate the guesswork.
+
+77
+00:05:10,660 --> 00:05:12,200
+You really do. It's all right there.
+

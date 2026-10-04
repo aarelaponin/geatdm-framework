@@ -1,0 +1,17 @@
+# Slide cue file — KP3 Module 4, Video 4.5 "Generating the payment connection"
+# Deck:  KP3_M4_4.5_Deck_v0.1.pptx (9 slides)
+# Audio: KP3_M4_4.5_Audio_v0.2.m4a (runs to 4:24.4)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# No sources line: Sources card cues over the last line of the recap (5.4 s). Invented: currencies "processed independently,
+# zero conversion, exchange rates would make it costly to change". "Front door locked" metaphor.
+
+0:00   # slide 1 — title card
+0:07   # slide 2 — Hook: once the block is installed, a service still cannot pay anyone
+0:35   # slide 3 — The sender and the programme
+1:35   # slide 4 — The beneficiary
+2:27   # slide 5 — The payment
+2:54   # slide 6 — The route for status, and the security around it
+3:41   # slide 7 — The check: one test payment, and its status
+4:07   # slide 8 — In one sentence
+4:19   # slide 9 — Sources

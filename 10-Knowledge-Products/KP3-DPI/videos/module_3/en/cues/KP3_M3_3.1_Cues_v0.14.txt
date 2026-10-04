@@ -1,0 +1,21 @@
+# Slide cue file — KP3 Module 3, Video 3.1 "What a register is for: one authoritative record"
+# Deck:  KP3_M3_3.1_Deck_v0.1.pptx (9 slides)
+# Audio: KP3_M3_3.1_Audio_v0.14.m4a (runs to 4:06.4)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Invented "Director General" opener; the hook's count-the-lists lines come late (0:46), so the hook slide holds
+# 0:09–0:56 and slide 3 cues on "one donor is funding a school census". Spec 3.0-alpha named once at 0:33 on its own;
+# Giga named once at 3:48 ("very similar to how UNICEF Giga ensures a single source of truth") — kept separate, the
+# flow is never placed in the spec. The 3.0-alpha "early release" caveat is not said. Embellishments: "staging area /
+# quarantine", "officer or automated system applies MDM rules", "vault … fifty times". "Progessa" — listen for it.
+# Dangling close: "Director General, consider this final point." then audio ends; Sources card rides it (6.4 s).
+
+0:00   # slide 1 — title card
+0:09   # slide 2 — Hook: Count the lists of learners your country keeps today
+0:56   # slide 3 — Many lists, no answer
+1:41   # slide 4 — A register is a service
+2:08   # slide 5 — Two building blocks
+2:51   # slide 6 — Progressa today
+3:20   # slide 7 — Filled through a disciplined load
+3:53   # slide 8 — In one sentence
+4:00   # slide 9 — Sources

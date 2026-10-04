@@ -1,0 +1,18 @@
+# Slide cue file — KP3 Module 4, Video 4.6 "Reuse is the return on planning"
+# Deck:  KP3_M4_4.6_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M4_4.6_Audio_v0.6.m4a (runs to 4:43.2)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Take discusses slide 6's funding-timeline point ("first ministry pays, second… reuse") at 0:39–1:51, before slides 3–5;
+# deck order kept, so it plays under the hook slide; slide 6 cues on "reference architecture and the once-only principle".
+# SRT spells the country "Progessa" (mispronounced). PAERA never named (said as "the reference architecture"). Invented colour:
+# "six-month deadline", "password reset support staff", "technology has existed for years" (closing, under Sources, 11 s).
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: building your own looks quicker inside one project
+1:51   # slide 3 — Two services, two shared blocks
+2:02   # slide 4 — What each would have built alone
+2:59   # slide 5 — Education is already in the specifications
+3:13   # slide 6 — Why only planning sees the saving
+4:14   # slide 7 — In one sentence
+4:32   # slide 8 — Sources

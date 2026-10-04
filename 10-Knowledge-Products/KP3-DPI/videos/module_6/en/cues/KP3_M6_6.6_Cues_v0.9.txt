@@ -1,0 +1,21 @@
+# Slide cue file — KP3 Module 6, Video 6.6 "Governance that keeps shared blocks shared"
+# Deck:  KP3_M6_6.6_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M6_6.6_Audio_v0.9.m4a (runs to 5:48.9)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# No cold open naming the video: water-treatment-plant analogy, then "a deep dive into the playbook" (0:28) and the
+# hook (0:45); slide 2 holds through all of it. No sources line; Sources card rides the closing remark (6.9 s).
+# FLAWS: "the proposed solution in the research", "the sources also illustrate…" (source named on air); three
+# layers credited to the research (deck: the course's own synthesis); invented: Pix "works perfectly because of
+# absolute statutory authority", "cryptographic link between parent's ID and child's record", Safeguards Framework
+# "mandates privacy as technical constraints", consent revocation "instantly severs the data flow"; roads-and-
+# bridges metaphor; Progressa's 3:37–3:58 slide gets only two owners named.
+
+0:00   # slide 1 — title card
+0:12   # slide 2 — Hook: A shared block stays shared only while someone has the power to keep it shared
+1:14   # slide 3 — Three layers
+2:40   # slide 4 — Roles divided: two published examples
+3:37   # slide 5 — Progressa's governance on one page (illustrative)
+3:58   # slide 6 — Who decides for the learner
+5:32   # slide 7 — In one sentence
+5:42   # slide 8 — Sources

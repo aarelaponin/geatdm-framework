@@ -1,0 +1,18 @@
+# Slide cue file — KP3 Module 2, Video 2.1 "What the Registration block does"
+# Deck:  KP3_M2_2.1_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M2_2.1_Audio_v0.4.m4a (runs to 5:44.0)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Verdict: USABLE (no hard blocker). Flaws: no title read; hook paraphrased into a "built from scratch" opener;
+# "drag and drop tools" embellishment; storage aside credited to "the reference architecture map"; PAERA's
+# two-blocks rule (slide 6) not stated — reuse argued instead; take ends mid-thought ("Which brings us to the core
+# challenge for anyone listening...") with no Sources line. Listen for "Progressa" (SRT: "Progresa").
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — hook: every ministry registers something
+0:37   # slide 3 — what registration means
+1:52   # slide 4 — three capabilities
+2:52   # slide 5 — Progressa's learner registration, in three parts (incl. storage aside)
+4:18   # slide 6 — built once, used by every ministry
+5:27   # slide 7 — in one sentence
+5:38   # slide 8 — Sources

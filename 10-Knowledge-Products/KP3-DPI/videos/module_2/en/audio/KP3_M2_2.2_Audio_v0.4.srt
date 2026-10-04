@@ -1,0 +1,184 @@
+1
+00:00:00,150 --> 00:00:07,710
+Uh, today we are looking at evaluating vendor claims of software being, you know, GovStack compliant for government digital systems.
+
+2
+00:00:08,270 --> 00:00:14,409
+Right. Because just hearing a vendor say their product is GovStack compliant, well, that tells you very little on its own.
+
+3
+00:00:14,670 --> 00:00:19,210
+Exactly. So our mission today is helping officials who run ministry programs
+
+4
+00:00:19,850 --> 00:00:26,550
+move past those initial vendor claims, uh, to demand hard, verifiable evidence for their digital infrastructure.
+
+5
+00:00:27,090 --> 00:00:34,330
+Yeah. True evaluation requires actually taking that product and checking it against the published specifications, requirement by requirement.
+
+6
+00:00:34,990 --> 00:00:40,250
+So if you are a director general trying to avoid fragmented or duplicated systems in your ministry,
+
+7
+00:00:41,110 --> 00:00:46,350
+how do we ensure every single vendor bidding on a tender is answering to the exact same standard?
+
+8
+00:00:46,850 --> 00:00:52,050
+Well, it starts by naming the exact default edition of the reference architecture in your tenders and your questionnaires.
+
+9
+00:00:52,230 --> 00:00:54,070
+Ooh, like a specific version number.
+
+10
+00:00:54,590 --> 00:00:56,690
+Right, such as edition twenty-three Q four.
+
+11
+00:00:56,950 --> 00:01:02,509
+By writing that exact edition into your documents, uh, you ensure all answers refer to the very same text.
+
+12
+00:01:02,870 --> 00:01:04,790
+Okay, so they all have the exact same baseline.
+
+13
+00:01:05,170 --> 00:01:07,210
+What does that specification actually consist of?
+
+14
+00:01:07,630 --> 00:01:16,110
+It is quite concrete. There are forty-two functional requirements which are strictly divided among the applicant, the operator, and the system analyst.
+
+15
+00:01:16,490 --> 00:01:19,770
+That makes sense, keeping those user roles completely distinct.
+
+16
+00:01:20,250 --> 00:01:27,630
+Exactly. And it also includes twelve data structures, you know, things like the service, the registration, and the role, plus thirteen published operations.
+
+17
+00:01:28,050 --> 00:01:29,950
+Are all of those mandatory for the vendor?
+
+18
+00:01:30,730 --> 00:01:34,310
+Well, each requirement is strictly marked as either required or recommended.
+
+19
+00:01:34,650 --> 00:01:37,570
+Okay, but a list of forty-two requirements is great on paper.
+
+20
+00:01:38,350 --> 00:01:45,390
+How do we prevent vendors from just saying yes to everything, leading to a system where your program ends up locked in to one supplier?
+
+21
+00:01:46,010 --> 00:01:48,330
+That is where the mandatory response format comes in.
+
+22
+00:01:48,830 --> 00:01:56,710
+Vendors cannot just say yes. They must answer if a requirement is met as delivered, met by configuration, or not met.
+
+23
+00:01:57,110 --> 00:01:58,750
+Wait, met by configuration.
+
+24
+00:01:59,570 --> 00:02:03,490
+Doesn't that just mean they have to build it from scratch, and it becomes costly to change later?
+
+25
+00:02:03,970 --> 00:02:08,310
+You would think so, but crucially, every single answer requires verifiable evidence.
+
+26
+00:02:08,690 --> 00:02:10,490
+Oh, they actually have to prove it up front.
+
+27
+00:02:10,850 --> 00:02:15,330
+Yes, exactly. Your team demands to see a screen, a test record, or a document.
+
+28
+00:02:15,710 --> 00:02:24,190
+They also must specify exactly which of the thirteen operations they offer and, uh, prove how they handle importing and exporting service descriptions.
+
+29
+00:02:24,590 --> 00:02:28,350
+So if I am forcing a vendor to do all this granular homework,
+
+30
+00:02:29,170 --> 00:02:34,870
+does GovStack actually grade it? I mean, do they test your ministry's specific installation to make sure it runs?
+
+31
+00:02:35,510 --> 00:02:37,870
+No, and that is a very common misconception.
+
+32
+00:02:38,270 --> 00:02:43,790
+GovStack itself provides a self-assessment form for the software provider alongside automated tests.
+
+33
+00:02:44,230 --> 00:02:47,290
+Oh, so it is self-reported but run through their tests.
+
+34
+00:02:47,790 --> 00:02:51,570
+Right. GovStack's team checks that submission for completeness and plausibility.
+
+35
+00:02:52,030 --> 00:03:00,290
+They ultimately list products at level one or level two compliance, but, uh, this is just a review of what the provider submitted, not a test of your local installation.
+
+36
+00:03:00,690 --> 00:03:02,990
+That clarifies things quite a bit. Mm-hmm.
+
+37
+00:03:03,270 --> 00:03:06,410
+I know we have the demonstration country Progressa as an example here.
+
+38
+00:03:06,870 --> 00:03:09,610
+Yeah. Progressa shows exactly how this works in practice.
+
+39
+00:03:10,070 --> 00:03:15,850
+So for a requirement like making decisions, the vendor answered that it was met by configuration.
+
+40
+00:03:16,070 --> 00:03:17,430
+And they provided the evidence for that.
+
+41
+00:03:17,710 --> 00:03:24,290
+Exactly, via a screenshot of the actual registrar screen showing the specific buttons to approve or reject.
+
+42
+00:03:24,910 --> 00:03:27,390
+What about features that a program just does not use?
+
+43
+00:03:28,110 --> 00:03:29,930
+Well, take the requirement for paying fees.
+
+44
+00:03:30,490 --> 00:03:36,410
+In the case of Progressa, this was marked as met but not used simply because learner registration carries no fee.
+
+45
+00:03:36,970 --> 00:03:37,410
+Oh, I see.
+
+46
+00:03:38,050 --> 00:03:44,430
+So it forces the vendor to map out the reality of the software, avoiding any rekeyed or siloed data down the line.
+

@@ -1,0 +1,21 @@
+# Slide cue file — KP3 Module 6, Video 6.1 "From findings to priorities: the gap register"
+# Deck:  KP3_M6_6.1_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M6_6.1_Audio_v0.9.m4a (runs to 5:39.7)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Slide 6 (patterns) gets only one of its three patterns ("the law and the budget must come before the build",
+# 4:57); slide 5's dependency talk runs up to it. No sources line — Sources card rides "you have the objective data
+# right there / Right on the desk" (6.7 s).
+# Flaws: invented minister-across-the-desk opener, map/vehicle metaphor, "political shield… tell a politician no"
+# close; misattribution — "UNDP's playbook… which draws from the reference architecture"; dependencies framed as
+# a tiebreaker (three scored criteria + dependencies, consistent with the deck's max of 9); PAERA's
+# foundations-plus-quick-wins pairing unsaid. Listen for "Progressa" (SRT spells "Progresa").
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: many findings, five domain reports
+0:43   # slide 3 — From finding to gap
+2:24   # slide 4 — Four criteria, three bands
+3:46   # slide 5 — Progressa's first band
+4:57   # slide 6 — Patterns across domains
+5:26   # slide 7 — In one sentence
+5:33   # slide 8 — Sources

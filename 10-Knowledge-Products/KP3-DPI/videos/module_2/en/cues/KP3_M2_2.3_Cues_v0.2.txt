@@ -1,0 +1,16 @@
+# Slide cue file — KP3 Module 2, Video 2.3 "Generating the registration service"
+# Deck:  KP3_M2_2.3_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M2_2.3_Audio_v0.2.m4a (runs to 4:42.6)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Export/import requirement attributed to "the reference architecture" (it is the Registration specification); hosts cite "the source"/"the brief" aloud; "register number" heard as "registrar number".
+# No title read, no Sources line: Sources pulled to 4:37 over the closing "avoiding siloed systems" for a 5.6 s tail.
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — hook: registration written in a law, a circular and a paper form
+1:30   # slide 3 — the specification's terms
+2:28   # slide 4 — Progressa's learner registration, in those terms
+3:11   # slide 5 — what the file is
+3:48   # slide 6 — import, test, correct
+4:26   # slide 7 — in one sentence
+4:37   # slide 8 — Sources

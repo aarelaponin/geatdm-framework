@@ -25,7 +25,7 @@ This document collects the ten video scripts of Module 6 of Knowledge Product 3,
 
 ### 1.2 What Module 6 teaches, and what it does not claim
 
-Module 6 is written for the Strategist: the head of a ministry's digital unit or the programme lead who has to rank what to fund, set it in order over the years, cost it, choose how each block is sourced, set up its governance, have it adopted and keep it healthy. It teaches the last four of the method's nine steps — gap consolidation and prioritisation, the roadmap, the investment breakdown, and validation and revision — and with them the prioritisation of investments, the sequencing of implementation and the governance structures that section 3.3 of the terms of reference asks for. Nothing is built in this module. It is taught from public sources: PAERA, the GovStack reference architecture; UNDP's playbook on the DPI approach and its compendium on the potential of DPI; the United Nations' Universal DPI Safeguards Framework, with ITU's course on it; the World Bank's study of the cost drivers of identification systems and its ID4D practitioner's guide; Bulletin No 52 of the Bank for International Settlements; and four GovStack specifications where a subtopic names them. Where a part of the content has no public source, the script says that it is the team's own practice.
+Module 6 is written for the Strategist: the head of a ministry's digital unit or the programme lead who has to rank what to fund, set it in order over the years, cost it, choose how each block is sourced, set up its governance, have it adopted and keep it healthy. It teaches the last four of the method's nine steps — gap consolidation and prioritisation, the roadmap, the investment breakdown, and validation and revision — and with them the prioritisation of investments, the sequencing of implementation and the governance structures that section 3.3 of the terms of reference asks for. Nothing is built in this module. It is taught from public sources: PAERA, the GovStack reference architecture; UNDP's playbook on the DPI approach and its compendium on the potential of DPI; the United Nations' Universal DPI Safeguards Framework, with ITU's course on it; the World Bank's study of the cost drivers of identification systems and its ID4D practitioner's guide; Bulletin No 52 of the Bank for International Settlements; and four GovStack specifications where a subtopic names them. Where a part of the content has no public source, the script says that it is this course's own practice.
 
 The worked examples are Progressa's, and every figure in them is invented and marked illustrative. Subtopics 6.1, 6.3, 6.4 and 6.7 quote the worked examples of method steps 6 to 9 — the gap register (E6), the roadmap (E7), the investment case (E8) and the validation round (E9), with the domain report and maturity table (E5) for the findings — as those files stand after the two reconciling rounds of 1 October 2026. Every name, figure, band and identifier quoted is the one those files carry. The examples of subtopics 6.2, 6.5, 6.6, 6.8, 6.9 and 6.10, and the agenda of the validation workshop in 6.7, are written in this bundle for Progressa: they quote only identifiers and figures that the reconciled examples carry, and everything else in them is built for this example.
 
@@ -62,7 +62,7 @@ Ten standalone videos, all in the Strategist register. Total runtime approximate
 | --- | --- |
 | Persona | S (Strategist) — the head of a ministry's digital unit or the programme lead who ranks what to fund, sets it in order over the years, and prepares the case for the minister, the finance ministry and the development partners |
 | Target runtime | ~5 min (≈453 spoken words) |
-| PAERA anchor | PAERA v1.0, section 5.4, step 5, and section 3.3.3; UNDP, The DPI Approach: A Playbook, 2023, page 23. The four criteria and the form of the register are the team's own |
+| PAERA anchor | PAERA v1.0, section 5.4, step 5, and section 3.3.3; UNDP, The DPI Approach: A Playbook, 2023, page 23. The four criteria and the form of the register are this course's own |
 
 > **Single message —** _Gather every gap into one register and rank each by impact, urgency, feasibility and what depends on it, so the list you take to your minister is short and ordered._
 
@@ -78,7 +78,7 @@ Start by turning each finding into a gap. A finding says what exists today. A ga
 
 > _Slide 3 — Title: 'Four criteria, three bands'. Body, five text rows: 'Impact — on service delivery, efficiency and strategic goals: 1 to 3.' 'Urgency — is something planned waiting for it: 1 to 3.' 'Feasibility — can existing bodies, law and budget close it: 1 to 3.' 'Dependencies — what others depend on comes first.' 'Score 8 or 9: first band. 6 or 7: second. 5 or less: third.'_
 
-Rank each gap on four criteria. Impact asks how much the gap holds back service delivery, efficiency and the government's goals, the three things by which PAERA's assessment procedure ranks its recommendations. Urgency asks whether something already planned is waiting for it. Feasibility asks whether existing bodies, law and budget can close it, or whether it needs new law. Rate each of these three from 1 to 3 and add them. A score of 8 or 9 is the first band, 6 or 7 the second, 5 or less the third. The fourth criterion, dependencies, sets the order inside a band: what others depend on comes first. The criteria are the team's own practice.
+Rank each gap on four criteria. Impact asks how much the gap holds back service delivery, efficiency and the government's goals, the three things by which PAERA's assessment procedure ranks its recommendations. Urgency asks whether something already planned is waiting for it. Feasibility asks whether existing bodies, law and budget can close it, or whether it needs new law. Rate each of these three from 1 to 3 and add them. A score of 8 or 9 is the first band, 6 or 7 the second, 5 or less the third. The fourth criterion, dependencies, sets the order inside a band: what others depend on comes first. The criteria are this course's own practice.
 
 > _Slide 4 — Title: 'Progressa's first band (illustrative)'. Body, a plain-text table of four rows: 'G-02 — no joint body to decide education's shared infrastructure — score 8 — quick win.' 'G-06 — no common school identifier — score 8 — quick win.' 'G-08 — MoEYS is not on the national exchange — score 8 — quick win.' 'G-05 — no authoritative learner record — score 8 — depends on G-01, G-06 and G-11.'_
 
@@ -167,8 +167,8 @@ The development priorities of each domain, as E6 gives them, shortened. Governan
 | Field | Value |
 | --- | --- |
 | Persona | S (Strategist) — the head of a ministry's digital unit or the programme lead who ranks what to fund, sets it in order over the years, and prepares the case for the minister, the finance ministry and the development partners |
-| Target runtime | ~5 min (≈472 spoken words) |
-| PAERA anchor | PAERA v1.0, sections 3.3.3 and 4.5 ('Budget'); World Bank, ID4D Practitioner's Guide, version 1.0, 2019, page 48; World Bank, Understanding Cost Drivers of Identification Systems, 2018, page 1. The step that weighs cost against reuse is the team's own |
+| Target runtime | ~5 min (≈471 spoken words) |
+| PAERA anchor | PAERA v1.0, sections 3.3.3 and 4.5 ('Budget'); World Bank, ID4D Practitioner's Guide, version 1.0, 2019, page 48; World Bank, Understanding Cost Drivers of Identification Systems, 2018, page 1. The step that weighs cost against reuse is this course's own |
 
 > **Single message —** _A shared block is paid for once and used by many, so judge each investment by its cost against the number of services that will use it, a sum only the whole government can do._
 
@@ -184,7 +184,7 @@ PAERA names the problem plainly. Why would anyone invest in digital identity whe
 
 > _Slide 3 — Title: 'Cost against reuse'. Body, four text rows: 'Each candidate block: a low and a high cost.' 'Beside it: the services that will use it, and the blocks that depend on it.' 'Fund first what others depend on and many services use.' 'A dedicated budget for platforms used across government.'_
 
-The method is simple to state. List each candidate block with its cost, from a low to a high estimate. Beside it, list the services in your plans that will use it, and the blocks that depend on it. A block that others depend on and many services use is funded first, even when it costs more. PAERA recommends dedicated budgets for platforms used across government, and the World Bank's guide for identity systems asks for a complete cost-benefit analysis of the options. No public source gives a method that weighs cost against reuse, so this step is the team's own, drawn from its implementation experience in several countries.
+The method is simple to state. List each candidate block with its cost, from a low to a high estimate. Beside it, list the services in your plans that will use it, and the blocks that depend on it. A block that others depend on and many services use is funded first, even when it costs more. PAERA recommends dedicated budgets for platforms used across government, and the World Bank's guide for identity systems asks for a complete cost-benefit analysis of the options. No public source gives a method that weighs cost against reuse, so this step is this course's own, drawn from implementation experience in several countries.
 
 > _Slide 4 — Title: 'Progressa's table (illustrative)'. Body, a plain-text table of four rows: 'MoEYS on the exchange (C-04) — USD 80 to 120 thousand — four components depend on it — wave 1.' 'The learner register PLR (C-06) — USD 600 to 900 thousand — used by registration, statistics, scholarships and examinations — wave 2.' 'The connection to PNIA's sign-in (C-07) — USD 150 to 220 thousand — used by registration and each later education service — wave 2.' 'The Payments block on the exchange (C-11) — USD 120 to 180 thousand — used by the scholarship pilot — wave 4.'_
 
@@ -206,7 +206,7 @@ A shared block is paid for once and used by many. Count the services that will u
 | --- | --- | --- |
 | 1 | Title slide. Title: 'What to fund first: cost against reuse'. | Standard ITU template. Title Arial Bold 28pt; subtitle (KP3 / 6.2) Arial 18pt. Background #E5F5FB. No images. |
 | 2 | Who-pays-first slide. Four text rows: the two questions, PAERA's two-tier answer, funding what many agencies reuse. | Carries the planning-enables-re-use argument. Text-only. |
-| 3 | Method slide. Four text rows: cost range, services and dependants, the rule of order, a dedicated budget. | The method is the team's own; the slide says so in the voice-over. Text-only. |
+| 3 | Method slide. Four text rows: cost range, services and dependants, the rule of order, a dedicated budget. | The method is this course's own; the slide says so in the voice-over. Text-only. |
 | 4 | Progressa slide. A plain-text table of four rows: block, cost range, use, wave. | The worked example, built for Progressa from the illustrative lines of E8 and the components of E7. Text-only. |
 | 5 | Reuse slide. Three text rows: the connection, the cost of building identity, the warning on the rate. | Every figure marked illustrative or given with its source. Text-only. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt) with the single message, and the practice box. | The take-home line. The practice box is on screen and not narrated. |
@@ -243,7 +243,7 @@ Below is the inventory of the services [country X] plans to deliver over the nex
 
 ### Worked example — 6.2: Progressa's table of cost against reuse (illustrative)
 
-Written in this bundle for Progressa. Each cost range is the illustrative line of the investment case E8, in thousands of US dollars; each use and each dependency is the roadmap's, E7, in its component register and its table of dependencies. No value is derived from any country's figures. No public source gives a method that weighs cost against reuse; the way the table reads reuse is the team's own, drawn from its implementation experience in several countries.
+Written in this bundle for Progressa. Each cost range is the illustrative line of the investment case E8, in thousands of US dollars; each use and each dependency is the roadmap's, E7, in its component register and its table of dependencies. No value is derived from any country's figures. No public source gives a method that weighs cost against reuse; the way the table reads reuse is this course's own, drawn from implementation experience in several countries.
 
 | Candidate block | Cost, USD thousand (E8) | Services in the roadmap that use it (E7) | Components that depend on it (E7, Part 5) | Funded in (E7) |
 | --- | --- | --- | --- | --- |
@@ -260,7 +260,7 @@ Read this way, the order of funding is the roadmap's own: the block that four ot
 | --- | --- |
 | Persona | S (Strategist) — the head of a ministry's digital unit or the programme lead who ranks what to fund, sets it in order over the years, and prepares the case for the minister, the finance ministry and the development partners |
 | Target runtime | ~5 min (≈459 spoken words) |
-| PAERA anchor | PAERA v1.0, sections 5.7.1 to 5.7.5 and section 2.3; UNDP, The DPI Approach: A Playbook, 2023, page 23; Universal DPI Safeguards Framework, United Nations, 2024, page 6 (the five stages of the life cycle). The form of the roadmap is the team's own |
+| PAERA anchor | PAERA v1.0, sections 5.7.1 to 5.7.5 and section 2.3; UNDP, The DPI Approach: A Playbook, 2023, page 23; Universal DPI Safeguards Framework, United Nations, 2024, page 6 (the five stages of the life cycle). The form of the roadmap is this course's own |
 
 > **Single message —** _A roadmap sets the years ahead in horizons and the first horizon in waves, each wave with a governance track, a track for each domain and one visible service that shows the result._
 
@@ -298,7 +298,7 @@ Horizons for the years ahead, waves for the first horizon. Each wave opens with 
 | --- | --- | --- |
 | 1 | Title slide. Title: 'The roadmap over time: horizons, waves and tracks'. | Standard ITU template. Title Arial Bold 28pt; subtitle (KP3 / 6.3) Arial 18pt. Background #E5F5FB. No images. |
 | 2 | Horizons slide. Three text rows for the horizons and one for the waves. | Figure F13 (the roadmap over time: horizons and waves) belongs to the written guide and is not on the slide. Text-only. |
-| 3 | Wave slide. Four text rows: governance track, domain tracks, beacon, wave summary. | The form of the roadmap is the team's own. Text-only. |
+| 3 | Wave slide. Four text rows: governance track, domain tracks, beacon, wave summary. | The form of the roadmap is this course's own. Text-only. |
 | 4 | Progressa slide. Four text rows, one for each wave of the first horizon. | The worked example E7, built for Progressa; every date illustrative. Text-only. |
 | 5 | Critical-path slide. Three text rows: the chain of components, the law, the rule of order. | Figure F14 (the matrix of dependencies) belongs to the written guide. Carries the shared-picture argument. Text-only. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt) with the single message, and the practice box. | The take-home line. The practice box is on screen and not narrated. |
@@ -368,7 +368,7 @@ The matrix of dependencies, as E7 sets it out in Part 5: each component, and the
 | --- | --- |
 | Persona | S (Strategist) — the head of a ministry's digital unit or the programme lead who ranks what to fund, sets it in order over the years, and prepares the case for the minister, the finance ministry and the development partners |
 | Target runtime | ~5 min (≈458 spoken words) |
-| PAERA anchor | Universal DPI Safeguards Framework, United Nations, 2024, principle O8, page 25; UNDP, The DPI Approach: A Playbook, 2023, page 44; PAERA v1.0, section 4.5 ('Budget'); World Bank, Understanding Cost Drivers of Identification Systems, 2018, pages 7 and 9. The four sheets are the team's own form |
+| PAERA anchor | Universal DPI Safeguards Framework, United Nations, 2024, principle O8, page 25; UNDP, The DPI Approach: A Playbook, 2023, page 44; PAERA v1.0, section 4.5 ('Budget'); World Bank, Understanding Cost Drivers of Identification Systems, 2018, pages 7 and 9. The four sheets are this course's own form |
 
 > **Single message —** _Set out the roadmap's cost the way a finance ministry reads it: by wave and component with a low and a high estimate, by domain, by source of funds, and with the returns expected._
 
@@ -535,7 +535,7 @@ Below is a draft tender or contract for [the block or service] in [country X]: [
 
 ### Worked example — 6.5: Progressa's sourcing table (illustrative)
 
-Written in this bundle for Progressa; the components are those of the roadmap E7. The options are PAERA's three; the four checks against lock-in are the team's own practice.
+Written in this bundle for Progressa; the components are those of the roadmap E7. The options are PAERA's three; the four checks against lock-in are this course's own practice.
 
 | Block | Option chosen | Reason | Clause that guards against lock-in |
 | --- | --- | --- | --- |
@@ -550,7 +550,7 @@ Written in this bundle for Progressa; the components are those of the roadmap E7
 | --- | --- |
 | Persona | S (Strategist) — the head of a ministry's digital unit or the programme lead who ranks what to fund, sets it in order over the years, and prepares the case for the minister, the finance ministry and the development partners |
 | Target runtime | ~5 min (≈465 spoken words) |
-| PAERA anchor | PAERA v1.0, sections 3.1.1 and 3.1.2; UNDP, The DPI Approach: A Playbook, 2023, pages 34 to 41; Universal DPI Safeguards Framework, United Nations, 2024, principle O7, page 25, and table 3.1, page 36; BIS Bulletin No 52, 2022, page 5; GovStack Digital Registries specification, Version 3.0-alpha, DRS-6; GovStack Consent specification, version 1.3.0, section 2, 'What Consent Is'. The three layers are the team's own synthesis |
+| PAERA anchor | PAERA v1.0, sections 3.1.1 and 3.1.2; UNDP, The DPI Approach: A Playbook, 2023, pages 34 to 41; Universal DPI Safeguards Framework, United Nations, 2024, principle O7, page 25, and table 3.1, page 36; BIS Bulletin No 52, 2022, page 5; GovStack Digital Registries specification, Version 3.0-alpha, DRS-6; GovStack Consent specification, version 1.3.0, section 2, 'What Consent Is'. The three layers are this course's own synthesis |
 
 > **Single message —** _Shared blocks stay shared when it is written down who decides money and policy, who coordinates the programme, and who runs each block and sets its technical rules._
 
@@ -562,7 +562,7 @@ A shared block stays shared only while someone has the power to keep it shared. 
 
 > _Slide 2 — Title: 'Three layers'. Body, four text rows: 'Political authority — decides money and policy.' 'Programme authority — coordinates the programme across ministries.' 'Technical authority — runs each block and sets its technical rules.' 'The three layers are the team's synthesis of public sources.' Design note: figure F16 of the written guide draws the governance structure on one page; the slide stays text-only._
 
-Write governance down in three layers. The political layer decides money and policy. The programme layer coordinates the work across ministries. The technical layer runs each block and sets its technical rules. No public source names these three layers; they are the team's own way of putting together what the sources say. PAERA asks for political leadership shown in words and in budgets, and a dedicated agency with a coordinating role. It describes a committee of key ministers that decides funding and advises the cabinet, and a digital officer in each ministry.
+Write governance down in three layers. The political layer decides money and policy. The programme layer coordinates the work across ministries. The technical layer runs each block and sets its technical rules. No public source names these three layers; they are this course's own way of putting together what the sources say. PAERA asks for political leadership shown in words and in budgets, and a dedicated agency with a coordinating role. It describes a committee of key ministers that decides funding and advises the cabinet, and a digital officer in each ministry.
 
 > _Slide 3 — Title: 'Roles divided: two published examples'. Body, two text rows: 'Estonia's data exchange: a ministry advocates policy; the Information System Authority registers members and supervises security; the Nordic Institute for Interoperability Solutions runs it day to day; the Data Protection Inspectorate supervises data protection (UNDP, 2023).' 'Brazil's Pix: the central bank both operates the system and sets its rules (BIS, 2022).'_
 
@@ -640,7 +640,7 @@ Written in this bundle for Progressa. The joint board is component C-01 of the r
 | --- | --- |
 | Persona | S (Strategist) — the head of a ministry's digital unit or the programme lead who ranks what to fund, sets it in order over the years, and prepares the case for the minister, the finance ministry and the development partners |
 | Target runtime | ~5 min (≈452 spoken words) |
-| PAERA anchor | PAERA v1.0, section 5.4, steps 6 to 8; UNDP, The DPI Approach: A Playbook, 2023, page 23. The validation and revision cycle and the steps to adoption are the team's own |
+| PAERA anchor | PAERA v1.0, section 5.4, steps 6 to 8; UNDP, The DPI Approach: A Playbook, 2023, page 23. The validation and revision cycle and the steps to adoption are this course's own |
 
 > **Single message —** _A roadmap becomes the government's own only when the people it binds have commented, every comment has a written answer, and an authority has adopted it._
 
@@ -652,7 +652,7 @@ A roadmap written by a team, however good, binds no one. It becomes the governme
 
 > _Slide 2 — Title: 'Six months from draft to adoption'. Body, six text rows: 'Month 1 — consultation with each body.' 'Month 2 — reconcile the initiatives under way; set the priorities.' 'Month 3 — drafting.' 'Month 4 — written comments from every body.' 'Month 5 — a high-level validation workshop.' 'Month 6 — adoption.'_
 
-Plan the path to adoption from the start. In Progressa's example, the team consults each body in the first month. In the second it holds two workshops: one reconciles the initiatives already under way, and one sets the priorities on the gap register. The third month is a drafting sprint. In the fourth, each body comments in writing. In the fifth, a high-level workshop validates the revised text. In the sixth, the ministry of education and the digital government authority adopt it, and the cabinet does where the budget requires. These steps are the team's own practice.
+Plan the path to adoption from the start. In Progressa's example, the team consults each body in the first month. In the second it holds two workshops: one reconciles the initiatives already under way, and one sets the priorities on the gap register. The third month is a drafting sprint. In the fourth, each body comments in writing. In the fifth, a high-level workshop validates the revised text. In the sixth, the ministry of education and the digital government authority adopt it, and the cabinet does where the budget requires. These steps are this course's own practice.
 
 > _Slide 3 — Title: 'Every comment answered'. Body, three text rows: 'Response matrix: comment, from whom, what it refers to, response, decision, change made.' 'Decisions: accepted, accepted in part, not accepted.' 'Commenters named by role, never by name.'_
 
@@ -677,7 +677,7 @@ Every body comments, every comment gets a written answer, and an authority adopt
 | Slide | Element (text-only) | Notes |
 | --- | --- | --- |
 | 1 | Title slide. Title: 'Validate, revise, adopt'. | Standard ITU template. Title Arial Bold 28pt; subtitle (KP3 / 6.7) Arial 18pt. Background #E5F5FB. No images. |
-| 2 | Six-months slide. Six text rows, one for each month. | The development plan of the worked example E7; the steps are the team's own. Text-only. |
+| 2 | Six-months slide. Six text rows, one for each month. | The development plan of the worked example E7; the steps are this course's own. Text-only. |
 | 3 | Response-matrix slide. Three text rows: the columns, the decisions, the rule on names. | The worked example E9. Text-only. |
 | 4 | Score slide. Three text rows: the comment, the breach of the rule, the change. | Comment CM-02 of E9; every value illustrative. Text-only. |
 | 5 | Revision slide. Four text rows, one for each phase. | The four phases of E9, with PAERA's last three steps in the voice-over. Text-only. |
@@ -740,7 +740,7 @@ The agenda is the team's blank instrument for the high-level validation workshop
 | --- | --- |
 | Persona | S (Strategist) — the head of a ministry's digital unit or the programme lead who ranks what to fund, sets it in order over the years, and prepares the case for the minister, the finance ministry and the development partners |
 | Target runtime | ~5 min (≈452 spoken words) |
-| PAERA anchor | Universal DPI Safeguards Framework, United Nations, 2024, pages 6, 15 and 43 and the framework's web page; ITU Academy course 'Accelerating digital public infrastructure with safeguards'; GovStack Digital Registries specification, Version 3.0-alpha, section 5.2, DRS-7 and DRS-21; GovStack Payments specification, Version 3.0, sections 6.8 and 6.12; PAERA v1.0, section 5.4, steps 7 and 8. The three tiers of indicators are the team's own form |
+| PAERA anchor | Universal DPI Safeguards Framework, United Nations, 2024, pages 6, 15 and 43 and the framework's web page; ITU Academy course 'Accelerating digital public infrastructure with safeguards'; GovStack Digital Registries specification, Version 3.0-alpha, section 5.2, DRS-7 and DRS-21; GovStack Payments specification, Version 3.0, sections 6.8 and 6.12; PAERA v1.0, section 5.4, steps 7 and 8. The three tiers of indicators are this course's own form |
 
 > **Single message —** _After launch, indicators read every month, quarter and year, quality checks and reconciliation on every load, and a regular review against the published safeguards keep the foundation trusted and safe._
 
@@ -752,7 +752,7 @@ Launch day starts the work; it does not end it. A register nobody checks fills w
 
 > _Slide 2 — Title: 'Indicators in three tiers'. Body, three text rows: 'Every month, operational — learners in PLR; records passing the quality gates; calls on Linkup by MoEYS.' 'Every quarter, programme — components on schedule; budget used against plan; board decisions taken.' 'Every year, outcome — the stage of each domain against its target.'_
 
-Read indicators in three tiers. Operational indicators are read every month: in Progressa, the number of learners in the register, the share of records passing the quality gates, and the ministry's calls on the exchange. Programme indicators are read every quarter: components on schedule, budget used against plan, and decisions the board has taken. Outcome indicators are read every year: the stage of each domain against its target. The three tiers are the team's own form. PAERA's procedure asks for the same rhythm: monitor progress against the metrics, and revisit the assessment, perhaps once a year.
+Read indicators in three tiers. Operational indicators are read every month: in Progressa, the number of learners in the register, the share of records passing the quality gates, and the ministry's calls on the exchange. Programme indicators are read every quarter: components on schedule, budget used against plan, and decisions the board has taken. Outcome indicators are read every year: the stage of each domain against its target. The three tiers are this course's own form. PAERA's procedure asks for the same rhythm: monitor progress against the metrics, and revisit the assessment, perhaps once a year.
 
 > _Slide 3 — Title: 'Every load checked, every payment traced'. Body, four text rows: 'Quality checks on every load; a row that fails is set aside with its reason.' 'Every change and every read of the register logged, and visible to its analyst (DRS-7, DRS-21).' 'A deletion keeps the logical record unless the law requires hard deletion (Digital Registries, section 5.2).' 'A chain of identifiers for every payment, and an audit trail no user can edit (Payments, sections 6.8 and 6.12).'_
 
@@ -777,7 +777,7 @@ Read indicators by month, quarter and year, check every load, and review against
 | Slide | Element (text-only) | Notes |
 | --- | --- | --- |
 | 1 | Title slide. Title: 'Keep the foundation healthy and safe'. | Standard ITU template. Title Arial Bold 28pt; subtitle (KP3 / 6.8) Arial 18pt. Background #E5F5FB. No images. |
-| 2 | Indicators slide. Three text rows, one for each tier. | The tiers of the worked example E7, Part 8; the form is the team's own. Text-only. |
+| 2 | Indicators slide. Three text rows, one for each tier. | The tiers of the worked example E7, Part 8; the form is this course's own. Text-only. |
 | 3 | Checks slide. Four text rows: quality checks, logs, deletion, payments. | Each requirement with its specification. The checks and the reconciliation of the register run on a schedule. Text-only. |
 | 4 | Safeguards slide. Four text rows: principles and risks, unsustainability, the pathways, ITU's part. | The framework named by its own title; ITU's part named as the course and the consultative group. Text-only. |
 | 5 | Progressa slide. Five text rows, one for each pathway. | The worked example, built for Progressa; every entry illustrative. Text-only. |
@@ -836,8 +836,8 @@ Written in this bundle for Progressa. The indicators are those of the roadmap E7
 | Field | Value |
 | --- | --- |
 | Persona | S (Strategist) — the head of a ministry's digital unit or the programme lead who ranks what to fund, sets it in order over the years, and prepares the case for the minister, the finance ministry and the development partners |
-| Target runtime | ~5 min (≈461 spoken words) |
-| PAERA anchor | PAERA v1.0, section 5.3 (its mention of a tool for a quick assessment). The plays are the team's own; each is the AI usage tip of the subtopic that teaches its step |
+| Target runtime | ~5 min (≈454 spoken words) |
+| PAERA anchor | PAERA v1.0, section 5.3 (its mention of a tool for a quick assessment). The plays are this course's own; each is the AI usage tip of the subtopic that teaches its step |
 
 > **Single message —** _At every step of the method and of the build there is a task an AI assistant can draft and a check only a person can make, and no decision is handed over._
 
@@ -853,15 +853,15 @@ A play is one task at one step, with a fixed input, a fixed output and a safegua
 
 > _Slide 3 — Title: 'What the assistant drafts, what a person checks'. Body, four text rows: 'The assistant drafts; a person decides.' 'Every claim quotes its evidence.' 'A missing answer is reported, never filled in.' 'No personal data in a prompt; test persons in the build.'_
 
-Every play follows the same rules. The assistant drafts and a person decides: the assessor confirms the stage, the workshop sets the priorities, the lawyer reads the contract. Every claim the assistant makes quotes its evidence, so that the person can check it quickly. An answer that is missing is reported as missing, never filled in. And no one's personal data goes into a prompt: the plays work on descriptions of systems and bodies, and the build uses test persons only. These rules are the team's own practice.
+Every play follows the same rules. The assistant drafts and a person decides: the assessor confirms the stage, the workshop sets the priorities, the lawyer reads the contract. Every claim the assistant makes quotes its evidence, so that the person can check it quickly. An answer that is missing is reported as missing, never filled in. And no one's personal data goes into a prompt: the plays work on descriptions of systems and bodies, and the build uses test persons only. These rules are this course's own practice.
 
 > _Slide 4 — Title: 'Trust a play only after a known result'. Body, four text rows: 'Run the play where the answer is already known.' 'Compare its output with the known answer.' 'Any difference: find the cause before the play is used.' 'Then run it on new evidence.'_
 
 Before you trust a play, run it where the answer is already known. Take the scorer. Progressa's Digital Data domain was scored and then validated: one sub-component at Basic, five at Opportunistic, and a domain score of 1.3. Give the scorer the same criteria and the same verified answers, without the result, and compare its proposal with the validated table. If they match, the play has reproduced a known result. If they differ, find the cause in the criteria, the evidence or the prompt, before anyone uses the play on new evidence. A play that passes on one domain is tested on a second before it is used on all five.
 
-> _Slide 5 — Demonstration segment, in the place of the slide: the scorer run from beginning to end on a domain whose result is known. Until the segment is recorded, the slide shows its six steps as text, marked 'Storyboard — not yet run'; see the storyboard below._
+> _Slide 5 — Demonstration segment, in the place of the slide: the scorer run from beginning to end on a domain whose result is known. Until the segment is recorded, the slide shows its six steps as text, under the footer 'Walkthrough: what a good run shows.'; see the storyboard below._
 
-The demonstration runs that test step by step. The known result is set aside before the run. The criteria and the verified answers go in, and one desk result that was never verified is marked as such. The scorer proposes a stage for each sub-component with its evidence, and lists the unverified result as not used. The pass is simple: the six stages and the score match the validated table. A second run uses Interoperability, where a draft once scored membership from a desk result, and the scorer must leave that result out. The run has not yet been recorded.
+The demonstration runs that test step by step. The known result is set aside before the run. The criteria and the verified answers go in, and one desk result that was never verified is marked as such. The scorer proposes a stage for each sub-component with its evidence, and lists the unverified result as not used. The pass is simple: the six stages and the score match the validated table. A second run uses Interoperability, where a draft once scored membership from a desk result, and the scorer must leave that result out.
 
 > _Slide 6 — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'At every step of the method and of the build there is a task an AI assistant can draft and a check only a person can make, and no decision is handed over.' Below it, the on-screen practice box (not narrated)._
 
@@ -875,9 +875,9 @@ At each step the assistant drafts and a person checks. No decision is handed ove
 | --- | --- | --- |
 | 1 | Title slide. Title: 'The AI plays, step by step'. | Standard ITU template. Title Arial Bold 28pt; subtitle (KP3 / 6.9) Arial 18pt. Background #E5F5FB. No images. |
 | 2 | Catalogue slide. Four text rows: the plays of the assessment, the planning, the governance and the build. | The catalogue in four groups; the full catalogue is the worked example below. Text-only. |
-| 3 | Rules slide. Four text rows: who decides, quoted evidence, missing answers, personal data. | The rules every play follows; the team's own. Text-only. |
+| 3 | Rules slide. Four text rows: who decides, quoted evidence, missing answers, personal data. | The rules every play follows; this course's own. Text-only. |
 | 4 | Known-result slide. Four text rows: run, compare, find the cause, then use. | The test of trust, with Progressa's validated scores (E5); every value illustrative. Text-only. |
-| 5 | Demonstration segment: the scorer from beginning to end. Until recorded, six text rows marked 'Storyboard — not yet run'. | Needs only the scoring criteria of the assessment toolkit; the storyboard below stands in its place until the segment is recorded. |
+| 5 | Demonstration segment: the scorer from beginning to end. Until recorded, six text rows under the footer 'Walkthrough: what a good run shows.'. | Needs only the scoring criteria of the assessment toolkit; the storyboard below stands in its place until the segment is recorded. |
 | 6 | Single-sentence summary slide. One large text block (Arial Bold 28pt) with the single message, and the practice box. | The take-home line. The practice box is on screen and not narrated. |
 | 7 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify PAERA section 5.3. |
 
@@ -1058,7 +1058,7 @@ Direct address, plain English at about the eighth-grade level, short sentences. 
 
 ### 4.5 What the scripts claim, and what they do not
 
-Every figure about Progressa is invented and is said to be illustrative, on the slide and in the voice-over. Every public figure is given with its source and year: the World Bank's procurement finding and the rate of building identity that it cites (6.2, 6.4, 6.5). Nothing is built in this module. The demonstration segment of 6.9 says what the test runs and what counts as a pass, and that the run has not yet been recorded; until it is, its storyboard stands in its place and the slide shows the steps as text marked 'Storyboard — not yet run'.
+Every figure about Progressa is invented and is said to be illustrative, on the slide and in the voice-over. Every public figure is given with its source and year: the World Bank's procurement finding and the rate of building identity that it cites (6.2, 6.4, 6.5). Nothing is built in this module. The demonstration segment of 6.9 says what the test runs and what counts as a pass, and that the run has not yet been recorded; until it is, its storyboard stands in its place and the slide shows the steps as text under the footer 'Walkthrough: what a good run shows.'.
 
 ### 4.6 The worked examples, and where they live
 

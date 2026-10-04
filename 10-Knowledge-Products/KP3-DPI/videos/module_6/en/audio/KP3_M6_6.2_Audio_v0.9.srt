@@ -1,0 +1,320 @@
+1
+00:00:00,260 --> 00:00:06,740
+Welcome to the Deep Dive. Today, we're looking at, uh, a massive challenge in government digital infrastructure.
+
+2
+00:00:07,240 --> 00:00:14,120
+Yeah. Specifically, how they decide what systems to fund first using, well, what's called the cost against reuse method.
+
+3
+00:00:14,940 --> 00:00:21,960
+Right. So to frame this for you, imagine you live in a massive shared house, and like every single roommate demands their own private,
+
+4
+00:00:22,460 --> 00:00:23,480
+super expensive kitchen.
+
+5
+00:00:23,820 --> 00:00:25,260
+Which would be totally ridiculous.
+
+6
+00:00:25,540 --> 00:00:26,340
+Completely absurd, right?
+
+7
+00:00:27,120 --> 00:00:31,240
+Instead of pooling their cash for one fantastic shared kitchen, they all build their own.
+
+8
+00:00:32,020 --> 00:00:38,260
+But based on the policy papers we're diving into today, this exact scenario is playing out on a massive scale inside government tech.
+
+9
+00:00:38,600 --> 00:00:42,640
+It really is. It's, uh, one of the most costly habits in the public sector.
+
+10
+00:00:43,340 --> 00:00:51,120
+So our mission today is to break down why building shared digital foundations saves millions, even when they have a really steep upfront cost.
+
+11
+00:00:51,680 --> 00:00:53,560
+Yeah. So let's get into the silo problem.
+
+12
+00:00:53,620 --> 00:00:53,720
+Like,
+
+13
+00:00:54,320 --> 00:00:58,000
+say a specific ministry, uh, the Ministry of Health, needs a new portal.
+
+14
+00:00:58,600 --> 00:01:00,320
+They just ask the finance department for the money.
+
+15
+00:01:01,080 --> 00:01:04,280
+And in isolation, you know, that request looks totally reasonable.
+
+16
+00:01:04,819 --> 00:01:07,140
+Right. Because if I'm the Minister of Health, I want it done fast.
+
+17
+00:01:07,320 --> 00:01:08,620
+I have patients to serve today.
+
+18
+00:01:09,360 --> 00:01:11,960
+Why is building my own custom tool actually a bad thing?
+
+19
+00:01:12,520 --> 00:01:18,280
+Well, that urgency is exactly why governments end up with these, you know, fragmented, duplicated tools.
+
+20
+00:01:18,920 --> 00:01:21,720
+You have to look at it through the lens of a reference architecture.
+
+21
+00:01:22,200 --> 00:01:23,400
+A reference architecture.
+
+22
+00:01:24,020 --> 00:01:28,280
+Yeah. It's essentially a master blueprint for how all government technology connects.
+
+23
+00:01:28,880 --> 00:01:34,300
+When you build alone across the whole government, you're paying multiple times for the exact same capability.
+
+24
+00:01:34,780 --> 00:01:37,860
+Like a user login system or a, a payment processing.
+
+25
+00:01:38,260 --> 00:01:38,820
+Exactly.
+
+26
+00:01:39,460 --> 00:01:44,620
+Finance ministries rarely ask how many total services a single system will actually serve.
+
+27
+00:01:45,100 --> 00:01:47,600
+They just end up funding 10 isolated kitchens.
+
+28
+00:01:48,240 --> 00:01:53,180
+So to fix this, governments need to pivot to funding foundational platforms first.
+
+29
+00:01:53,240 --> 00:01:58,060
+But how does a finance minister actually do that without, you know, just playing favorites?
+
+30
+00:01:58,620 --> 00:02:01,360
+So the research outlines this priority matrix.
+
+31
+00:02:01,740 --> 00:02:06,940
+You basically take every candidate tech block, list its low and high cost estimate, and then-
+
+32
+00:02:07,240 --> 00:02:09,440
+Wait, you map out the cost for everything first?
+
+33
+00:02:09,820 --> 00:02:17,340
+Right. But crucially, beside that cost, you list every single service that will use it and every other block that depends on it to function.
+
+34
+00:02:17,960 --> 00:02:22,640
+Okay, that sounds great in theory, but I, I wanna know what the math actually looks like in practice.
+
+35
+00:02:23,100 --> 00:02:23,820
+Sure. So
+
+36
+00:02:24,520 --> 00:02:28,260
+let's break down the example they use of a fictional country called Progessa.
+
+37
+00:02:28,340 --> 00:02:32,460
+Progessa, right. And they organize their tech funding into distinct waves.
+
+38
+00:02:32,740 --> 00:02:35,480
+Yeah. Wave one is a perfect illustration.
+
+39
+00:02:35,680 --> 00:02:40,960
+They prioritize the national exchange component, which is basically the central nervous system for government data.
+
+40
+00:02:41,440 --> 00:02:46,700
+Because without it, the different ministries literally can't securely exchange information at all.
+
+41
+00:02:46,800 --> 00:02:47,260
+Exactly.
+
+42
+00:02:47,860 --> 00:02:53,380
+And it's relatively cheap, uh, estimated at, like, $80,000 to $120,000.
+
+43
+00:02:54,040 --> 00:02:57,480
+But four other major components depend entirely on it.
+
+44
+00:02:57,760 --> 00:03:01,520
+So high dependency, low cost. It pushes it straight to the front of the line.
+
+45
+00:03:01,960 --> 00:03:06,640
+But then in wave two, Progessa includes a learner register, and that's priced way higher, right?
+
+46
+00:03:07,020 --> 00:03:10,280
+Oh, yeah. Between $600,000 and $900,000.
+
+47
+00:03:10,380 --> 00:03:13,700
+Which, I mean, if I'm holding the purse strings, I'm balking at that number.
+
+48
+00:03:14,020 --> 00:03:17,860
+You definitely would, until you look at that reuse column in the matrix.
+
+49
+00:03:18,600 --> 00:03:22,320
+That one single learner register serves four major services.
+
+50
+00:03:22,760 --> 00:03:26,860
+Okay. School registration, national statistics, scholarships, and exams, right?
+
+51
+00:03:27,540 --> 00:03:27,900
+Spot on.
+
+52
+00:03:28,720 --> 00:03:30,840
+So by paying that steep cost once,
+
+53
+00:03:31,540 --> 00:03:35,820
+Progessa avoids building four totally separate databases that can't even communicate.
+
+54
+00:03:36,420 --> 00:03:39,060
+That massive reuse completely justifies the price tag.
+
+55
+00:03:39,780 --> 00:03:44,160
+And I guess that same logic explains why they pushed their payments block all the way back to wave four?
+
+56
+00:03:44,500 --> 00:03:50,040
+Exactly. The payments block was estimated pretty low, only 120 to $180,000.
+
+57
+00:03:50,680 --> 00:03:53,360
+But it only served one single scholarship pilot.
+
+58
+00:03:53,780 --> 00:03:56,980
+Right. So low reuse drops it to the back of the line.
+
+59
+00:03:57,480 --> 00:03:59,080
+The numbers just dictate the priority.
+
+60
+00:03:59,600 --> 00:04:08,720
+Makes total sense. But can we actually quantify the overall financial savings here, like the actual capital a government saves by reusing a block versus building from scratch?
+
+61
+00:04:09,080 --> 00:04:13,340
+Oh, absolutely. The digital identity example gives a staggering baseline.
+
+62
+00:04:13,860 --> 00:04:19,040
+There's World Bank data estimating that building a foundational identity system in a low-income country costs,
+
+63
+00:04:19,760 --> 00:04:19,779
+uh,
+
+64
+00:04:20,380 --> 00:04:23,600
+somewhere between $4 and $11 per registered person.
+
+65
+00:04:23,860 --> 00:04:31,460
+Okay. So doing the math for Progessa's 11 and a half million students, a bespoke system just for the education ministry would be
+
+66
+00:04:32,220 --> 00:04:32,600
+massive.
+
+67
+00:04:32,700 --> 00:04:37,300
+We're talking a staggering $46 million to over $126 million.
+
+68
+00:04:38,340 --> 00:04:41,620
+That is just an impossible budget item for one single department.
+
+69
+00:04:41,720 --> 00:04:42,140
+Exactly.
+
+70
+00:04:42,760 --> 00:04:48,440
+But because Progessa uses a shared architecture, the education ministry doesn't build its own identity system.
+
+71
+00:04:48,920 --> 00:04:52,600
+They simply connect to the existing national identity authority sign-in process.
+
+72
+00:04:53,040 --> 00:04:54,820
+And what does that integration actually cost them?
+
+73
+00:04:55,220 --> 00:04:58,540
+Only around 150,000 to $220,000.
+
+74
+00:04:58,900 --> 00:05:03,320
+Oh, wow. From over 100 million down to a fraction of a million.
+
+75
+00:05:03,740 --> 00:05:05,900
+It's a massive order of magnitude saving.
+
+76
+00:05:06,240 --> 00:05:06,500
+It is.
+
+77
+00:05:07,100 --> 00:05:11,920
+You completely bypass gathering physical documents, verifying citizens, building secure servers.
+
+78
+00:05:12,500 --> 00:05:15,120
+Just by routing a connection to the platform that already does it.
+
+79
+00:05:15,180 --> 00:05:19,020
+Exactly. That is the raw power of the cost against reuse model.
+
+80
+00:05:19,420 --> 00:05:24,320
+A shared digital block is paid for once, maintained once, and used by everyone.
+

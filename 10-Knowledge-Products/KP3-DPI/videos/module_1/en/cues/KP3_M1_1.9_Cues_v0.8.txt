@@ -1,0 +1,18 @@
+# Slide cue file — KP3 Module 1, Video 1.9 "What comes first: the order of building"
+# Deck:  KP3_M1_1.9_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M1_1.9_Audio_v0.8.m4a (runs to 4:01.7)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws: "Welcome to this deep dive" opener, no title read, no Sources line; Information Mediator as "a universal
+# translator at the UN" (1:15); Estonia called "the gold standard" and said to have "retrofitted it" (2:50, not in
+# the deck); closes pointing at the practice box ("look at your ministry's upcoming budget lines", 3:59).
+# SRT spells "Progresa". Sources at 3:55, after the recap (6.7 s tail).
+
+0:00   # slide 1 — title card
+0:09   # slide 2 — hook: money comes in pieces
+0:47   # slide 3 — PAERA's four phases
+1:49   # slide 4 — two rules for the order
+2:17   # slide 5 — what Estonia's shared blocks became
+2:53   # slide 6 — Progressa's order of building
+3:41   # slide 7 — in one sentence
+3:55   # slide 8 — Sources

@@ -1,0 +1,19 @@
+# Slide cue file — KP3 Module 1, Video 1.6 "Verify before you score"
+# Deck:  KP3_M1_1.6_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M1_1.6_Audio_v0.9.m4a (runs to 4:14.8)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Verdict: USABLE (no hard blocker). Flaws: invented "millions of taxpayer dollars" opener, "Welcome to the Deep Dive";
+# no title read; the four templates credited to "the reference architecture" (deck: this course's own instruments);
+# ladder read bottom-up (fine); Progressa slide covers only AF-DAT-02 (PEMIS) — the Linkup and PNIA points are
+# skipped; car-brochure analogy; recap never spoken, no Sources line. Listen for "Progressa" (SRT: "Progessa").
+# Compromise: recap (slide 7) gets ~4 s over the closing analogy so Sources gets 5.8 s.
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — hook: a questionnaire answer is what a body says about itself (through 1:05)
+1:05   # slide 3 — six activities, in order
+1:49   # slide 4 — the evidence ladder (when sources disagree)
+2:54   # slide 5 — four templates
+3:14   # slide 6 — three points Progressa's team verified (PEMIS only)
+4:05   # slide 7 — in one sentence (not narrated)
+4:09   # slide 8 — Sources

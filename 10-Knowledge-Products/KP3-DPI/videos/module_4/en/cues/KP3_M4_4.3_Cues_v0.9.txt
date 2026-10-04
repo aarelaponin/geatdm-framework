@@ -1,0 +1,21 @@
+# Slide cue file — KP3 Module 4, Video 4.3 "Generating the identity connection"
+# Deck:  KP3_M4_4.3_Deck_v0.1.pptx (9 slides)
+# Audio: KP3_M4_4.3_Audio_v0.9.m4a (runs to 5:43.1)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Verdict: USABLE. Wrap-up now "keep the specific identifier the block gives you, and ensure the national number never
+# leaves the block" (5:35) — matches slide 8.
+# Flaws: invented "deep dive" opener; national-number rule credited to "the reference architecture" (it is the Identity
+# spec); "mathematically" overused; "pairwise pseudonymous identifier" and "prevents ministries colluding" added; "or a
+# combination" of sign-in methods omitted; "National Learner Register" for the register behind PLR; no sources line.
+# Closing is tight: slide 8 gets the 4.5 s recap, Sources rides the last sentence (6.1 s).
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: A registration service… does not need an identity system of its own
+0:51   # slide 3 — Register the service as a client
+1:15   # slide 4 — Choose the flow, and ask for little
+2:32   # slide 5 — How the person signed in, and the tokens
+3:40   # slide 6 — Keep the identifier the block gives you
+4:46   # slide 7 — The check: one sign-in, verified
+5:32.5 # slide 8 — In one sentence
+5:37   # slide 9 — Sources

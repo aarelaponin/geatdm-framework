@@ -1,0 +1,26 @@
+# Slide cue file — KP3 Module 1, Video 1.8 "Foundational blocks and the sector's own"
+# Deck:  KP3_M1_1.8_Deck_v0.1.pptx (8 slides; slide 4 = "Where the registers sit")
+# Audio: KP3_M1_1.8_Audio_v0.17.m4a (runs to 4:28.5)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# VERDICT: USABLE. Slide 4 IS covered now (2:21–2:57): "digital ID and payments are basic national infrastructure",
+# "an education register is one of the main state registries", "a registration block and a digital registry block".
+# FLAW (slide 5): the foundational/functional split is credited to "the reference architecture" ("dictates a single
+# foundational identity", 3:16), NOT to the GovStack Identity specification; education is not named as an
+# out-of-scope functional sector; functional identity glossed as "proves a role" rather than one purpose/one sector.
+# Other flaws: no cold open / title read (slide 1 holds only the first line); invented "$50 million" programme
+# opener and city/water-grid metaphor; slide 3's three layers credited to "the reference architecture", not UNDP's
+# compendium; slide 4 omits "legal data registries" and the learner-register-belongs-to-education line (it lands
+# later, 3:37 "attach the student data to their own register"); slide 6 Progressa is thin — no education act,
+# PDGA, Linkup, PayPro, PEMIS or registration service, and "only has to fund their specific learner register"
+# understates education's layer; no sources line — Sources card rides the recap's last line "Fund each layer…"
+# (6.0 s tail). Listen for "Progressa" (SRT spells "Progresa"; called fictional, not confused with Mexico).
+
+0:00     # slide 1 — title card (no cold open; holds through "$50 million" line)
+0:07     # slide 2 — Hook: whose system is it? (opener through "reference architecture of how … stacked")
+1:01     # slide 3 — Three layers
+2:21     # slide 4 — Where the registers sit ("let's apply that to data registries")
+2:57     # slide 5 — Identity is foundational; a learner's identity is not ("let me push back")
+3:46     # slide 6 — Progressa, sorted into the three layers
+4:14.5   # slide 7 — In one sentence
+4:22.5   # slide 8 — Sources

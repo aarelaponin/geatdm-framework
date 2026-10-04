@@ -1,0 +1,20 @@
+# Slide cue file — KP3 Module 5, Video 5.2 "Who puts the steps in order: contracts, and the block that calls them"
+# Deck:  KP3_M5_5.2_Deck_v0.1.pptx (9 slides)
+# Audio: KP3_M5_5.2_Audio_v0.7.m4a (runs to 4:04.4)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Short take: the one-sentence recap arrives at 3:56 and the audio stops 8 s later. Slide 8 holds 4 s ("by keeping
+# these rules separate"), Sources rides the recap line itself (5.4 s). No sources line.
+# Flaws: podcast framing ("I am your host / I am the expert"), invented "millions invested" opener; "the reference
+# architecture" named loosely; X-Road's own statement and the field-mapping half of slide 4 only briefly said;
+# exchange's "own security server" said as "a security gateway".
+
+0:00   # slide 1 — title card
+0:09   # slide 2 — Hook: a vendor's plan says the exchange runs the registration
+1:15   # slide 3 — What the exchange does
+1:39   # slide 4 — What the exchange does not do
+1:58   # slide 5 — Who holds the sequence
+2:20   # slide 6 — Why go through the exchange at all
+2:49   # slide 7 — Progressa: the registration as one sequence
+3:55   # slide 8 — In one sentence
+3:59   # slide 9 — Sources

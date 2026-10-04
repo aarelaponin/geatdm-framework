@@ -1,0 +1,21 @@
+# Slide cue file — KP3 Module 6, Video 6.10 "Carry the method to another sector"
+# Deck:  KP3_M6_6.10_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M6_6.10_Audio_v0.12.m4a (runs to 5:11.2)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Slide 5 (carry-over table) is never walked row by row; it cues on its foundational-blocks row ("your new health
+# sector doesn't invent a new way to register… just pays to connect", 3:35 — "the connections only"). The
+# worked-examples row (keep the form, rebuild every value) is never said. No sources line — Sources card rides the
+# summary's tail and "That's it exactly" (6.2 s).
+# Flaws: invented minister-rollout opener, "copy-paste with a health logo", city-grid metaphor, "think about it";
+# wrong framework name — "the United Nations Development Program's framework" for the UNDP compendium; "the
+# reference architecture dictates" (PAERA unnamed, fine). Not used: v0.10 (judged only if v0.12 were a reject).
+
+0:00   # slide 1 — title card
+0:09   # slide 2 — Hook: education is the first sector, not the only one
+1:08   # slide 3 — What stays
+2:44   # slide 4 — What changes
+3:35   # slide 5 — The carry-over table
+3:47   # slide 6 — Carry the method, not the results
+4:54   # slide 7 — In one sentence
+5:05   # slide 8 — Sources

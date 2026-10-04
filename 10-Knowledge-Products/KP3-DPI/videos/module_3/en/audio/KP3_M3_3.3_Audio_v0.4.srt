@@ -1,0 +1,268 @@
+1
+00:00:00,320 --> 00:00:05,780
+Welcome to, uh, the Deep Dive. Today, we're looking at how modern digital registries are built, because
+
+2
+00:00:06,620 --> 00:00:11,840
+usually the default assumption is that government systems will inevitably become fragmented, siloed,
+
+3
+00:00:12,480 --> 00:00:14,400
+and just incredibly costly to change.
+
+4
+00:00:15,180 --> 00:00:22,920
+Right. And citizens end up having their data rekeyed, you know, five different times just because the systems are totally locked into one supplier, or they just can't
+
+5
+00:00:23,440 --> 00:00:24,460
+talk to each other safely.
+
+6
+00:00:24,940 --> 00:00:30,860
+Exactly. So in this Deep Dive, we are uncovering the architectural blueprint of secure digital services,
+
+7
+00:00:31,780 --> 00:00:38,200
+basically learning how you can translate a legal act directly into strict database rules, uh, without compromising anyone's privacy.
+
+8
+00:00:38,900 --> 00:00:42,900
+Yeah. And the mechanism that prevents all that duplicated effort comes down to one central hub.
+
+9
+00:00:43,140 --> 00:00:44,360
+It's called the schema file.
+
+10
+00:00:45,240 --> 00:00:47,900
+Okay, so if a digital system is, say, a building,
+
+11
+00:00:48,540 --> 00:00:51,280
+this schema file is the master blueprint.
+
+12
+00:00:51,980 --> 00:00:56,020
+What exactly goes into this single file to stop data from being constantly rekeyed?
+
+13
+00:00:56,920 --> 00:01:03,320
+Well, it's dictated by the digital registry specification, and this single JSON or YAML file basically contains everything.
+
+14
+00:01:03,540 --> 00:01:05,099
+I mean, it defines all the metadata.
+
+15
+00:01:05,740 --> 00:01:07,640
+M- metadata like what specifically?
+
+16
+00:01:08,240 --> 00:01:13,220
+Uh, things like the name, the unique short code, the owning body, and the retention policy.
+
+17
+00:01:13,840 --> 00:01:18,660
+It also covers the classification and the life cycle state, you know, tracking it from draft, published, to archived.
+
+18
+00:01:19,220 --> 00:01:21,340
+Okay, so it tracks the whole life cycle.
+
+19
+00:01:22,140 --> 00:01:24,140
+Does it also establish the actual data fields?
+
+20
+00:01:25,060 --> 00:01:30,040
+It does. It sets up fields like text, date, and lists with very precise rules.
+
+21
+00:01:30,400 --> 00:01:35,340
+It dictates if a field is required, if it must be unique, or sets a minimum and maximum.
+
+22
+00:01:36,020 --> 00:01:36,600
+Oh, I see.
+
+23
+00:01:37,260 --> 00:01:42,040
+And what about linking different databases together, like linking a learner to a specific school?
+
+24
+00:01:42,900 --> 00:01:48,320
+Yes, it creates those links too, and it includes the rules for what happens if, for example, that school is deleted.
+
+25
+00:01:48,880 --> 00:01:52,640
+Plus, every time this schema file is published, a new version is created.
+
+26
+00:01:53,260 --> 00:01:53,480
+Right.
+
+27
+00:01:54,260 --> 00:01:56,080
+Now, with all those structural links,
+
+28
+00:01:56,880 --> 00:02:02,140
+I m- it must be incredibly tempting to just key the entire register on a national identity number.
+
+29
+00:02:03,020 --> 00:02:03,940
+Why is that a bad idea?
+
+30
+00:02:04,980 --> 00:02:05,080
+Oh,
+
+31
+00:02:05,680 --> 00:02:08,440
+you must never store the national identity number.
+
+32
+00:02:09,199 --> 00:02:09,479
+Really?
+
+33
+00:02:10,240 --> 00:02:10,720
+Never? Never.
+
+34
+00:02:11,400 --> 00:02:15,080
+The GovStack identity specification explicitly keeps that number secret.
+
+35
+00:02:15,620 --> 00:02:22,660
+Instead, an identity authority, the PNIA, issues an identifier that is made exclusively for that specific service.
+
+36
+00:02:23,500 --> 00:02:25,360
+Okay, can you give an example of how that works?
+
+37
+00:02:26,140 --> 00:02:33,780
+Sure. Take Progressa. In the Progressa system, the register keeps its own unique learner number right alongside that service specific identifier.
+
+38
+00:02:34,140 --> 00:02:36,160
+It entirely avoids using the national ID.
+
+39
+00:02:36,660 --> 00:02:37,680
+That is so smart.
+
+40
+00:02:38,600 --> 00:02:41,600
+It isolates the privacy risk, but practically speaking,
+
+41
+00:02:42,340 --> 00:02:45,200
+writing this incredibly complex schema file sounds
+
+42
+00:02:45,900 --> 00:02:46,960
+really prone to error.
+
+43
+00:02:47,740 --> 00:02:50,980
+How is the reference architecture actually put together without mistakes?
+
+44
+00:02:51,700 --> 00:02:56,300
+This is the wild part. An AI assistant actually drafts the file using written inputs.
+
+45
+00:02:56,760 --> 00:03:00,980
+Wait, an AI writes the database rules just from text documents?
+
+46
+00:03:01,520 --> 00:03:06,860
+Yep. You give it the Education Act, the registration forms, and the list of services reading the register.
+
+47
+00:03:07,700 --> 00:03:13,340
+Impressively, the AI traces every single rule it writes back to the exact line it came from.
+
+48
+00:03:13,840 --> 00:03:18,020
+Oh, wow. That's powerful. But I'm assuming a human has to review that, right?
+
+49
+00:03:18,680 --> 00:03:21,980
+Definitely. The human owner always makes the final decisions.
+
+50
+00:03:22,320 --> 00:03:28,580
+They pick the key, and they mark the personal data fields, which, by the way, are optional in specification version three-point-oh-dot-alpha.
+
+51
+00:03:29,160 --> 00:03:32,660
+So the owner corrects the draft and then officially publishes it.
+
+52
+00:03:32,980 --> 00:03:38,820
+Exactly. Okay. So to make sure it actually works in the real world, there's a validation walkthrough, right?
+
+53
+00:03:39,200 --> 00:03:41,780
+Four specific steps to prove it won't become siloed.
+
+54
+00:03:42,040 --> 00:03:46,240
+Right. Step one, the schema is drafted, and the register is created right from it.
+
+55
+00:03:46,580 --> 00:03:47,500
+Got it. Step two?
+
+56
+00:03:48,120 --> 00:03:50,280
+Step two, the register is listed and read back.
+
+57
+00:03:50,460 --> 00:03:54,380
+This verifies its schema, its metadata, and confirms its published state.
+
+58
+00:03:54,760 --> 00:03:57,800
+Okay, so it's live and verified. What happens in step three?
+
+59
+00:03:58,300 --> 00:04:03,480
+Step three tests the rules. A record missing a required field is submitted, and it's instantly refused.
+
+60
+00:04:03,980 --> 00:04:06,880
+Because the AI drafted that strict rule based on the law.
+
+61
+00:04:07,140 --> 00:04:09,080
+That makes perfect sense. And step four?
+
+62
+00:04:09,580 --> 00:04:14,160
+Step four, a second record submitted with the exact same learner number is refused.
+
+63
+00:04:14,800 --> 00:04:16,200
+Validating the uniqueness rule.
+
+64
+00:04:16,880 --> 00:04:19,680
+So it all really comes down to one schema file
+
+65
+00:04:20,320 --> 00:04:25,540
+drafted by AI from the law, corrected by the owner, and keyed securely on its own number.
+
+66
+00:04:26,000 --> 00:04:29,060
+Yep. It completely prevents all the fragmented systems we used to see.
+
+67
+00:04:29,920 --> 00:04:30,460
+It's brilliant.
+

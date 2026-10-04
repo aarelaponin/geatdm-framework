@@ -1,0 +1,21 @@
+# Slide cue file — KP3 Module 6, Video 6.3 "The roadmap over time: horizons, waves and tracks"
+# Deck:  KP3_M6_6.3_Deck_v0.1.pptx (8 slides)
+# Audio: KP3_M6_6.3_Audio_v0.8.m4a (runs to 5:47.9)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# VERDICT: USABLE (settled take).
+# Life-cycle stages and wave summary (slide 4 content) come at 4:19-4:41, under slide 5. Waves 1 and 2 are never
+# described (only the beacons of waves 3 and 4). No recap sentence: slide 7 rides the "translation layer" close.
+# Sources 6.9 s, rides the last sentence.
+# Flaws: invented idle-scholarship-system cold open; driving-at-night and pipes/water analogies; "UNDP playbook uses
+# this exact scoping" (loose); off-sector "health data repository" example; "think of this entire reference
+# architecture as a translation layer" (loose attribution); no sources line. Listen for "Progressia" (5:06).
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: A ranked list is not yet a plan
+1:08   # slide 3 — Horizons, then waves
+2:54   # slide 4 — Inside each wave
+3:45   # slide 5 — Progressa's first horizon (illustrative)
+4:55   # slide 6 — The critical path
+5:24   # slide 7 — In one sentence
+5:41   # slide 8 — Sources
