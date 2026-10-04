@@ -164,7 +164,7 @@ Time: each subtopic is a four-minute video plus a ten-to-fifteen-minute play. A 
 
 ## Where this sits
 
-This course is the first of four ITU/Giga Knowledge Products. [Building a Government Interoperability Framework (GIF)](../kp2/README.md) is the second; a third on the national DPI roadmap and a fourth on building-block services are planned. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md). The underlying method is GEATDM, the Generic EA Target Architecture Development Method; PAERA v1.0 is at [paera.govstack.global](https://paera.govstack.global).
+This course is the first of four ITU/Giga Knowledge Products. [Building a Government Interoperability Framework (GIF)](../kp2/README.md) is the second and [Education Digital Public Infrastructure (DPI) Roadmap](../kp3/README.md) the third; a fourth, on building-block services, is planned. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md). The underlying method is GEATDM, the Generic EA Target Architecture Development Method; PAERA v1.0 is at [paera.govstack.global](https://paera.govstack.global).
 
 {% hint style="info" %}
 **Use this site from your AI assistant.** Every page is also published as plain Markdown, and the site exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the site and ask it to *run play 1.1 with the following context* — the site becomes the tool's reference, not just yours.

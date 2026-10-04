@@ -5,7 +5,7 @@ icon: house
 
 # Education Digital Public Infrastructure (DPI) Roadmap
 
-**ITU/Giga Knowledge Product** · 45 videos in six modules · an AI usage tip on every page · nine worked examples · an assessment toolkit · self-paced · free and open
+**ITU/Giga Knowledge Product** · 45 videos in six modules · about 217 minutes of video · an AI usage tip on every page · nine worked examples · an assessment toolkit · self-paced · free and open
 
 This guide teaches a government team how to produce a national roadmap for digital public infrastructure, and it shows the first step of such a roadmap working in the education sector. Digital public infrastructure, DPI for short, is the set of shared digital systems that many services of a country stand on: digital identity, digital payments and the exchange of data between public bodies, with others emerging.
 
@@ -15,31 +15,22 @@ The guide has six modules and 45 subtopics. Each subtopic is one short video wit
 
 *F1. The structure of the guide: its modules and the two ways through them.*
 
-## Who it is for
+## Outline
 
-The guide is written for the public-sector middle manager who has to make the case to the minister, judge a vendor's offer and answer a donor: the director of a digital agency, the head of a sector's ICT unit, the officer who prepares the minister's brief. Modules 1 and 6 speak to the person who plans the work and makes the case for it, the Strategist. Modules 2 to 5 go one level deeper, into configuration, for the team that sets the service up, the Architect. In both, the listener is the person who builds the case upward, not the minister.
-
-## Two ways through
-
-| Way | Modules | What it gives |
-| --- | --- | --- |
-| **The method alone** | [1](module-1/README.md), [6](module-6/README.md) | A team that wants the roadmap method follows modules 1 and 6: the nine steps, from a desk assessment of what the country has to a roadmap that an authority adopts. |
-| **The build** | [2](module-2/README.md), [3](module-3/README.md), [4](module-4/README.md), [5](module-5/README.md) | A team that wants the build follows modules 2 to 5: one registration service and one learner register, connected to identity and payments through the data exchange layer, and proved by checks. |
-
-The order of the modules follows the order in which a country that starts from little would work. It first assesses where it stands and picks one priority service. It then builds that service on the foundational blocks and proves it. With that proof it writes the full roadmap, with its costs and its governance, and has it adopted.
-
-## The modules
-
-| Module | Topic | Written for | Videos | Status |
-| --- | --- | --- | --- | --- |
-| [1](module-1/README.md) | Where your country stands, and what to build first | Strategist | 10 | Prompts live |
-| [2](module-2/README.md) | The Registration block | Architect | 6 | Prompts live |
-| [3](module-3/README.md) | The Registry block | Architect | 7 | Prompts live |
-| [4](module-4/README.md) | Identity and payments | Architect | 6 | Prompts live |
-| [5](module-5/README.md) | Join the blocks and prove the foundation | Architect | 6 | Prompts live |
-| [6](module-6/README.md) | From a proven foundation to a national roadmap | Strategist | 10 | Prompts live |
+| Module | Topic | Persona | Videos | AI tips | Status |
+| --- | --- | --- | --- | --- | --- |
+| [1](module-1/README.md) | Where your country stands, and what to build first | Strategist | 10 | 10 tips | Prompts live |
+| [2](module-2/README.md) | The Registration block | Architect | 6 | 6 tips | Prompts live |
+| [3](module-3/README.md) | The Registry block | Architect | 7 | 7 tips | Prompts live |
+| [4](module-4/README.md) | Identity and payments | Architect | 6 | 6 tips | Prompts live |
+| [5](module-5/README.md) | Join the blocks and prove the foundation | Architect | 6 | 6 tips | Prompts live |
+| [6](module-6/README.md) | From a proven foundation to a national roadmap | Strategist | 10 | 10 tips | Prompts live |
 
 *Prompts live — every page of the module is written, with its prompt. In production — the module's pages are added as its scripts are written.*
+
+{% hint style="success" %}
+**How the course works.** **Watch** the video → **Read** its page, the video written out in full → **Prompt** with its AI usage tip on your own country → **Compare** your draft with the worked example for Progressa. The nine [worked examples](examples/README.md), E1 to E9, follow the nine steps of the method and link to one another: findings, gaps, roadmap components, investment lines and comments, so that any budget line can be followed back to the evidence behind it. Work through them in order and you have the shape of your own country's roadmap, step by step.
+{% endhint %}
 
 | Module | What you can do afterwards | What is built |
 | --- | --- | --- |
@@ -49,6 +40,24 @@ The order of the modules follows the order in which a country that starts from l
 | 4 | Connect a service to the identity block and to the Payments block instead of building either again | Configurations I1 to I7 and P1 to P7 |
 | 5 | Say what must be in place before blocks can call each other, name the block that holds the sequence, run the once-only registration and read its evidence | Configurations X1 to X7 |
 | 6 | Rank the gaps, decide what to fund first, write the roadmap over time and its investment case, choose how to source each block, set up its governance, have it adopted and keep it healthy | Nothing is built. The module uses the worked examples. |
+
+## Audience — and the path for your role
+
+| Persona | Who that is in practice | Modules | What you leave with |
+| --- | --- | --- | --- |
+| **Strategist** | Director of a digital agency, head of a sector's ICT unit, or the officer who prepares the minister's brief: the person who plans the work and makes the case for it | [1](module-1/README.md), [6](module-6/README.md) | The case and the plan: an assessment of the country's DPI read on one maturity table, the foundational blocks told apart from the sector's own, the first service chosen; then the ranked gaps, what to fund first, the roadmap over time with its investment case, its sourcing and its governance, and the route to its adoption and upkeep. |
+| **Architect** | The technical lead of a sector ICT unit or a digital agency: the team that sets the service up | [2](module-2/README.md), [3](module-3/README.md), [4](module-4/README.md), [5](module-5/README.md) | The build: a registration service and a learner register set up from descriptions, connected to identity and payments through the data exchange layer instead of building either again, and one once-only registration run from beginning to end and read from its evidence. |
+
+In both, the listener is the person who builds the case upward, not the minister. A Strategist who follows only modules 1 and 6 gets the whole method; an Architect who follows only 2 to 5 gets the whole build.
+
+### Two ways through
+
+| Way | Modules | What it gives |
+| --- | --- | --- |
+| **The method alone** | [1](module-1/README.md), [6](module-6/README.md) | A team that wants the roadmap method follows modules 1 and 6: the nine steps, from a desk assessment of what the country has to a roadmap that an authority adopts. |
+| **The build** | [2](module-2/README.md), [3](module-3/README.md), [4](module-4/README.md), [5](module-5/README.md) | A team that wants the build follows modules 2 to 5: one registration service and one learner register, connected to identity and payments through the data exchange layer, and proved by checks. |
+
+The order of the modules follows the order in which a country that starts from little would work. It first assesses where it stands and picks one priority service. It then builds that service on the foundational blocks and proves it. With that proof it writes the full roadmap, with its costs and its governance, and has it adopted.
 
 ## All videos
 
@@ -163,6 +172,29 @@ Every worked example is built for Progressa. Its values are invented for Progres
 
 Before your first prompt, read [Working with AI](../start-here/working-with-ai.md) and [How to use the plays](../start-here/how-to-use-the-plays.md): they hold the ground rules for using an assistant on government material, and they apply to every course on this site.
 
+## Prerequisites
+
+**[Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) and [Building a Government Interoperability Framework (GIF)](../kp2/README.md) come before this course, but neither is a prerequisite.** Modules 1 and 6 stand on their own. Modules 2 to 5 assume a data exchange layer is already running, the one the interoperability course sets up; on Progressa it is Linkup, already in place, so you can follow them without having taken that course.
+
+**What you do need:**
+
+| | |
+| --- | --- |
+| **A real subject** | A country, or a sector within one, whose digital public infrastructure you are asked to assess or plan. The AI usage tips act on your context, not on a case study. No subject to hand? Follow everything on [Progressa](../start-here/progressa.md) instead. |
+| **Enough access to describe it** | The desk assessment starts from the country's public record alone ([1.4](module-1/1-4.md)). The five questionnaires need the time of the people who run its systems ([1.5](module-1/1-5.md)). |
+| **An AI assistant** | Any general assistant — Claude, ChatGPT, Gemini. A free account is enough. Nothing to install. |
+| **Nothing to run** | No code is written. Modules 2 to 5 show each configuration as a specimen until it has been built and checked; [the guide to the build pack](build-pack.md) says which. |
+| **About fifteen minutes, once** | The first pages of [Start here](../start-here/README.md) cover how to work with the prompts and the ground rules for using an assistant on government material. Read them before your first prompt. |
+
+Time: each subtopic is a video of about five minutes, its page, and an AI usage tip of ten to fifteen minutes. A module is an afternoon. The whole course is roughly two working days spread over as long as you like.
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
+<tr><td><h3>🛡️</h3></td><td><strong>Working with AI</strong></td><td>What an assistant is good for, the four ways it misleads you, and the safeguards. Read once; applies to all four Knowledge Products.</td><td><a href="../start-here/working-with-ai.md">working-with-ai</a></td></tr>
+<tr><td><h3>🏁</h3></td><td><strong>Module 1 — Where your country stands, and what to build first</strong></td><td>10 videos for the Strategist: the five domains, the nine steps, the assessment and its scoring, and the first proof chosen.</td><td><a href="module-1/README.md">module-1</a></td></tr>
+<tr><td><h3>📒</h3></td><td><strong>The worked examples</strong></td><td>E1 to E9, one for each step of the method, built for Progressa and linked to one another: the shape of the roadmap you will write.</td><td><a href="examples/README.md">examples</a></td></tr>
+<tr><td><h3>🧰</h3></td><td><strong>The assessment toolkit</strong></td><td>The question bank, the five questionnaires with their guides, the scoring criteria and the templates for verification.</td><td><a href="toolkit/README.md">toolkit</a></td></tr>
+</tbody></table>
+
 ## Reference pages
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
@@ -177,6 +209,8 @@ Before your first prompt, read [Working with AI](../start-here/working-with-ai.m
 
 ## Where this sits
 
+This course is the third of four ITU/Giga Knowledge Products, after [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) and [Building a Government Interoperability Framework (GIF)](../kp2/README.md); a fourth, on building-block services, is planned.
+
 | Part | What it takes | What it gives |
 | --- | --- | --- |
 | [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) and [Building a Government Interoperability Framework (GIF)](../kp2/README.md), before this course | — | The enterprise architecture and its target state; the data exchange layer and the rules of interoperability |
@@ -186,3 +220,7 @@ Before your first prompt, read [Working with AI](../start-here/working-with-ai.m
 | The course after this one | The blocks this course has proven | Further education services built over them |
 
 All the courses on this site use [Progressa](../start-here/progressa.md) as the one worked example and share one set of [ground rules](../start-here/working-with-ai.md).
+
+{% hint style="info" %}
+**Use this site from your AI assistant.** Every page is also published as plain Markdown, and the site exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the site and ask it to *run the AI usage tip of 1.4 with the following context* — the site becomes the tool's reference, not just yours.
+{% endhint %}
