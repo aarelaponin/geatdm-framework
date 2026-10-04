@@ -35,20 +35,20 @@ SEP = " · "
 # descriptions"): the modules are drawn as rows across the page, not as three narrow columns.
 def f1():
     fig, ax = s.new_figure("F1_structure", height=9.3)
-    s.title(ax, "The structure of KP3: its modules and the two ways through them")
+    s.title(ax, "The structure of the DPI Roadmap: its modules and the two ways through them")
 
     # KP1 and KP2, each line of the outline's row in a box of its own
     s.rect(ax, 0.25, 7.45, 9.5, 1.35, edge=s.GREY_TEXT, lw=1.4)
-    s.text(ax, 0.45, 8.56, "KP1 and KP2, before KP3", size=s.HEADING, bold=True,
+    s.text(ax, 0.45, 8.56, "GEA and GIF, before the DPI Roadmap", size=s.HEADING, bold=True,
            color=s.GREY_TEXT, container=(0.25, 7.45, 9.5, 1.35))
     s.box(ax, 0.45, 7.98, 9.1, 0.38, role="neutral", fill=s.WHITE, align="left",
-          body="The enterprise architecture and its target state (KP1);")
+          body="The enterprise architecture and its target state (GEA);")
     s.box(ax, 0.45, 7.55, 9.1, 0.38, role="neutral", fill=s.WHITE, align="left",
-          body="the data exchange layer and the rules of interoperability (KP2)")
+          body="the data exchange layer and the rules of interoperability (GIF)")
     s.arrow(ax, (5.0, 7.45), (5.0, 7.2))
 
     s.rect(ax, 0.25, 1.4, 9.5, 5.8, edge=s.NAVY, fill=s.WHITE, lw=1.6)
-    s.text(ax, 0.45, 6.95, "KP3", size=s.TITLE, bold=True, color=s.NAVY)
+    s.text(ax, 0.45, 6.95, "DPI Roadmap", size=s.TITLE, bold=True, color=s.NAVY)
 
     mods = (("Module 1", "Where your country stands, and what to build first", 5.75),
             ("Module 6", "From a proven foundation to a national roadmap", 2.05))
@@ -82,7 +82,7 @@ def f1():
         s.text(ax, 1.55, y, words, size=s.SMALL, color=s.NAVY)
 
     s.arrow(ax, (5.0, 1.4), (5.0, 1.15))
-    s.box(ax, 0.25, 0.25, 9.5, 0.9, title="KP4, after KP3",
+    s.box(ax, 0.25, 0.25, 9.5, 0.9, title="Building Block Approach, after the DPI Roadmap",
           body="Further education services built over them", role="neutral")
     return fig
 

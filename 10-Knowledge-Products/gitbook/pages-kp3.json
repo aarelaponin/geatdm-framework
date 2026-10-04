@@ -3,456 +3,532 @@
   "ref": "kp3",
   "title": "Education Digital Public Infrastructure (DPI) Roadmap",
   "parent": null,
-  "path": "kp3/README.md"
+  "path": "kp3/README.md",
+  "gitbook_id": "lMjLsJNYLyyKhSw6l04f"
  },
  {
   "ref": "kp3-module-1",
   "title": "Module 1 — Where your country stands, and what to build first",
   "parent": "kp3",
-  "path": "kp3/module-1/README.md"
- },
- {
-  "ref": "kp3-1-1",
-  "title": "1.1 What makes infrastructure foundational",
-  "parent": "kp3-module-1",
-  "path": "kp3/module-1/1-1.md"
- },
- {
-  "ref": "kp3-1-2",
-  "title": "1.2 The five domains, as a map",
-  "parent": "kp3-module-1",
-  "path": "kp3/module-1/1-2.md"
- },
- {
-  "ref": "kp3-1-3",
-  "title": "1.3 The roadmap method in nine steps: who does what",
-  "parent": "kp3-module-1",
-  "path": "kp3/module-1/1-3.md"
- },
- {
-  "ref": "kp3-1-4",
-  "title": "1.4 Start at the desk: a first assessment from public sources, with AI",
-  "parent": "kp3-module-1",
-  "path": "kp3/module-1/1-4.md"
- },
- {
-  "ref": "kp3-1-5",
-  "title": "1.5 Ask the people who run the systems: the five questionnaires",
-  "parent": "kp3-module-1",
-  "path": "kp3/module-1/1-5.md"
- },
- {
-  "ref": "kp3-1-6",
-  "title": "1.6 Verify before you score",
-  "parent": "kp3-module-1",
-  "path": "kp3/module-1/1-6.md"
- },
- {
-  "ref": "kp3-1-7",
-  "title": "1.7 Score each domain: five stages and one table",
-  "parent": "kp3-module-1",
-  "path": "kp3/module-1/1-7.md"
- },
- {
-  "ref": "kp3-1-8",
-  "title": "1.8 Foundational blocks and the sector's own",
-  "parent": "kp3-module-1",
-  "path": "kp3/module-1/1-8.md"
- },
- {
-  "ref": "kp3-1-9",
-  "title": "1.9 What comes first: the order of building",
-  "parent": "kp3-module-1",
-  "path": "kp3/module-1/1-9.md"
- },
- {
-  "ref": "kp3-1-10",
-  "title": "1.10 The first proof for education: one service on four blocks",
-  "parent": "kp3-module-1",
-  "path": "kp3/module-1/1-10.md"
+  "path": "kp3/module-1/README.md",
+  "gitbook_id": "1c4NqcktG6UIzPukmeYo"
  },
  {
   "ref": "kp3-module-2",
   "title": "Module 2 — The Registration block",
   "parent": "kp3",
-  "path": "kp3/module-2/README.md"
- },
- {
-  "ref": "kp3-2-1",
-  "title": "2.1 What the Registration block does",
-  "parent": "kp3-module-2",
-  "path": "kp3/module-2/2-1.md"
- },
- {
-  "ref": "kp3-2-2",
-  "title": "2.2 The published specification, and how to judge a product against it",
-  "parent": "kp3-module-2",
-  "path": "kp3/module-2/2-2.md"
- },
- {
-  "ref": "kp3-2-3",
-  "title": "2.3 Generating the registration service",
-  "parent": "kp3-module-2",
-  "path": "kp3/module-2/2-3.md"
- },
- {
-  "ref": "kp3-2-4",
-  "title": "2.4 Checks before the officer decides",
-  "parent": "kp3-module-2",
-  "path": "kp3/module-2/2-4.md"
- },
- {
-  "ref": "kp3-2-5",
-  "title": "2.5 The officer decides, and the record is written",
-  "parent": "kp3-module-2",
-  "path": "kp3/module-2/2-5.md"
- },
- {
-  "ref": "kp3-2-6",
-  "title": "2.6 The whole service as a description you can move",
-  "parent": "kp3-module-2",
-  "path": "kp3/module-2/2-6.md"
+  "path": "kp3/module-2/README.md",
+  "gitbook_id": "rTlIf4BrSmXfAZeOYlUZ"
  },
  {
   "ref": "kp3-module-3",
   "title": "Module 3 — The Registry block",
   "parent": "kp3",
-  "path": "kp3/module-3/README.md"
- },
- {
-  "ref": "kp3-3-1",
-  "title": "3.1 What a register is for: one authoritative record",
-  "parent": "kp3-module-3",
-  "path": "kp3/module-3/3-1.md"
- },
- {
-  "ref": "kp3-3-2",
-  "title": "3.2 Five tiers between a messy file and a trusted record",
-  "parent": "kp3-module-3",
-  "path": "kp3/module-3/3-2.md"
- },
- {
-  "ref": "kp3-3-3",
-  "title": "3.3 Generating the register's schema",
-  "parent": "kp3-module-3",
-  "path": "kp3/module-3/3-3.md"
- },
- {
-  "ref": "kp3-3-4",
-  "title": "3.4 Quality checks that stop a bad row",
-  "parent": "kp3-module-3",
-  "path": "kp3/module-3/3-4.md"
- },
- {
-  "ref": "kp3-3-5",
-  "title": "3.5 A published pattern, followed in the open",
-  "parent": "kp3-module-3",
-  "path": "kp3/module-3/3-5.md"
- },
- {
-  "ref": "kp3-3-6",
-  "title": "3.6 Account for every load",
-  "parent": "kp3-module-3",
-  "path": "kp3/module-3/3-6.md"
- },
- {
-  "ref": "kp3-3-7",
-  "title": "3.7 The register as a service others can use",
-  "parent": "kp3-module-3",
-  "path": "kp3/module-3/3-7.md"
+  "path": "kp3/module-3/README.md",
+  "gitbook_id": "22Gjky3pfTqbBlC0FzC0"
  },
  {
   "ref": "kp3-module-4",
   "title": "Module 4 — Identity and payments",
   "parent": "kp3",
-  "path": "kp3/module-4/README.md"
- },
- {
-  "ref": "kp3-4-1",
-  "title": "4.1 Why identity is built once",
-  "parent": "kp3-module-4",
-  "path": "kp3/module-4/4-1.md"
- },
- {
-  "ref": "kp3-4-2",
-  "title": "4.2 The published Identity block, and what the identity authority offers today",
-  "parent": "kp3-module-4",
-  "path": "kp3/module-4/4-2.md"
- },
- {
-  "ref": "kp3-4-3",
-  "title": "4.3 Generating the identity connection",
-  "parent": "kp3-module-4",
-  "path": "kp3/module-4/4-3.md"
- },
- {
-  "ref": "kp3-4-4",
-  "title": "4.4 The Payments block and the payment systems behind it",
-  "parent": "kp3-module-4",
-  "path": "kp3/module-4/4-4.md"
- },
- {
-  "ref": "kp3-4-5",
-  "title": "4.5 Generating the payment connection",
-  "parent": "kp3-module-4",
-  "path": "kp3/module-4/4-5.md"
- },
- {
-  "ref": "kp3-4-6",
-  "title": "4.6 Reuse is the return on planning",
-  "parent": "kp3-module-4",
-  "path": "kp3/module-4/4-6.md"
+  "path": "kp3/module-4/README.md",
+  "gitbook_id": "pBtEkuli1XZ2rSEramSN"
  },
  {
   "ref": "kp3-module-5",
   "title": "Module 5 — Join the blocks and prove the foundation",
   "parent": "kp3",
-  "path": "kp3/module-5/README.md"
- },
- {
-  "ref": "kp3-5-1",
-  "title": "5.1 What must be in place before the blocks can call each other",
-  "parent": "kp3-module-5",
-  "path": "kp3/module-5/5-1.md"
- },
- {
-  "ref": "kp3-5-2",
-  "title": "5.2 Who puts the steps in order: contracts, and the block that calls them",
-  "parent": "kp3-module-5",
-  "path": "kp3/module-5/5-2.md"
- },
- {
-  "ref": "kp3-5-3",
-  "title": "5.3 The once-only registration, from beginning to end",
-  "parent": "kp3-module-5",
-  "path": "kp3/module-5/5-3.md"
- },
- {
-  "ref": "kp3-5-4",
-  "title": "5.4 The acceptance checks: from \"set up\" to \"proven\"",
-  "parent": "kp3-module-5",
-  "path": "kp3/module-5/5-4.md"
- },
- {
-  "ref": "kp3-5-5",
-  "title": "5.5 Reading the evidence of a call",
-  "parent": "kp3-module-5",
-  "path": "kp3/module-5/5-5.md"
- },
- {
-  "ref": "kp3-5-6",
-  "title": "5.6 What the next services can now use",
-  "parent": "kp3-module-5",
-  "path": "kp3/module-5/5-6.md"
+  "path": "kp3/module-5/README.md",
+  "gitbook_id": "OnYxssG14Y4jO46ddSMI"
  },
  {
   "ref": "kp3-module-6",
   "title": "Module 6 — From a proven foundation to a national roadmap",
   "parent": "kp3",
-  "path": "kp3/module-6/README.md"
- },
- {
-  "ref": "kp3-6-1",
-  "title": "6.1 From findings to priorities: the gap register",
-  "parent": "kp3-module-6",
-  "path": "kp3/module-6/6-1.md"
- },
- {
-  "ref": "kp3-6-2",
-  "title": "6.2 What to fund first: cost against reuse",
-  "parent": "kp3-module-6",
-  "path": "kp3/module-6/6-2.md"
- },
- {
-  "ref": "kp3-6-3",
-  "title": "6.3 The roadmap over time: horizons, waves and tracks",
-  "parent": "kp3-module-6",
-  "path": "kp3/module-6/6-3.md"
- },
- {
-  "ref": "kp3-6-4",
-  "title": "6.4 The investment case your finance ministry can read",
-  "parent": "kp3-module-6",
-  "path": "kp3/module-6/6-4.md"
- },
- {
-  "ref": "kp3-6-5",
-  "title": "6.5 Sourcing each block without lock-in",
-  "parent": "kp3-module-6",
-  "path": "kp3/module-6/6-5.md"
- },
- {
-  "ref": "kp3-6-6",
-  "title": "6.6 Governance that keeps shared blocks shared",
-  "parent": "kp3-module-6",
-  "path": "kp3/module-6/6-6.md"
- },
- {
-  "ref": "kp3-6-7",
-  "title": "6.7 Validate, revise, adopt",
-  "parent": "kp3-module-6",
-  "path": "kp3/module-6/6-7.md"
- },
- {
-  "ref": "kp3-6-8",
-  "title": "6.8 Keep the foundation healthy and safe",
-  "parent": "kp3-module-6",
-  "path": "kp3/module-6/6-8.md"
- },
- {
-  "ref": "kp3-6-9",
-  "title": "6.9 The AI plays, step by step",
-  "parent": "kp3-module-6",
-  "path": "kp3/module-6/6-9.md"
- },
- {
-  "ref": "kp3-6-10",
-  "title": "6.10 Carry the method to another sector",
-  "parent": "kp3-module-6",
-  "path": "kp3/module-6/6-10.md"
+  "path": "kp3/module-6/README.md",
+  "gitbook_id": "B64fAQoEuEyYNWg61UsU"
  },
  {
   "ref": "kp3-nine-steps",
   "title": "The nine steps",
   "parent": "kp3",
-  "path": "kp3/nine-steps.md"
+  "path": "kp3/nine-steps.md",
+  "gitbook_id": "7lscOQ2HS3YEEHFgDUh0"
  },
  {
   "ref": "kp3-toolkit",
   "title": "The assessment toolkit",
   "parent": "kp3",
-  "path": "kp3/toolkit/README.md"
- },
- {
-  "ref": "kp3-toolkit-question-bank",
-  "title": "The question bank",
-  "parent": "kp3-toolkit",
-  "path": "kp3/toolkit/question-bank.md"
- },
- {
-  "ref": "kp3-toolkit-questionnaires-q-acc",
-  "title": "Q-ACC — The Access questionnaire, with its guide for the respondent and its guide for the facilitator",
-  "parent": "kp3-toolkit",
-  "path": "kp3/toolkit/questionnaires/Q-ACC.md"
- },
- {
-  "ref": "kp3-toolkit-questionnaires-q-dat",
-  "title": "Q-DAT — The Digital Data questionnaire, with its guide for the respondent and its guide for the facilitator",
-  "parent": "kp3-toolkit",
-  "path": "kp3/toolkit/questionnaires/Q-DAT.md"
- },
- {
-  "ref": "kp3-toolkit-questionnaires-q-gov",
-  "title": "Q-GOV — The Governance and Policy questionnaire, with its guide for the respondent and its guide for the facilitator",
-  "parent": "kp3-toolkit",
-  "path": "kp3/toolkit/questionnaires/Q-GOV.md"
- },
- {
-  "ref": "kp3-toolkit-questionnaires-q-idn",
-  "title": "Q-IDN — The Digital Identity questionnaire, with its guide for the respondent and its guide for the facilitator",
-  "parent": "kp3-toolkit",
-  "path": "kp3/toolkit/questionnaires/Q-IDN.md"
- },
- {
-  "ref": "kp3-toolkit-questionnaires-q-int",
-  "title": "Q-INT — The Interoperability questionnaire, with its guide for the respondent and its guide for the facilitator",
-  "parent": "kp3-toolkit",
-  "path": "kp3/toolkit/questionnaires/Q-INT.md"
- },
- {
-  "ref": "kp3-toolkit-scoring-criteria",
-  "title": "The scoring criteria",
-  "parent": "kp3-toolkit",
-  "path": "kp3/toolkit/scoring-criteria.md"
- },
- {
-  "ref": "kp3-toolkit-verification-templates",
-  "title": "The templates for verification",
-  "parent": "kp3-toolkit",
-  "path": "kp3/toolkit/verification-templates.md"
+  "path": "kp3/toolkit/README.md",
+  "gitbook_id": "hkryGksziXk0RqwAOZdR"
  },
  {
   "ref": "kp3-examples",
   "title": "The worked examples",
   "parent": "kp3",
-  "path": "kp3/examples/README.md"
- },
- {
-  "ref": "kp3-example-e1",
-  "title": "E1 — The five-domain frame, set for Progressa's education sector",
-  "parent": "kp3-examples",
-  "path": "kp3/examples/E1_five-domain-frame.md"
- },
- {
-  "ref": "kp3-example-e2",
-  "title": "E2 — The automatic desk assessment: the question bank and a run for Progressa",
-  "parent": "kp3-examples",
-  "path": "kp3/examples/E2_automatic-desk-assessment.md"
- },
- {
-  "ref": "kp3-example-e3",
-  "title": "E3 — The Digital Data questionnaire: the blank instrument and a completed extract for Progressa",
-  "parent": "kp3-examples",
-  "path": "kp3/examples/E3_domain-questionnaire.md"
- },
- {
-  "ref": "kp3-example-e4",
-  "title": "E4 — Verification: the blank templates, and how Progressa's team used them",
-  "parent": "kp3-examples",
-  "path": "kp3/examples/E4_verification-templates.md"
- },
- {
-  "ref": "kp3-example-e5",
-  "title": "E5 — The Digital Data domain report and Progressa's maturity table",
-  "parent": "kp3-examples",
-  "path": "kp3/examples/E5_domain-report-and-maturity-table.md"
- },
- {
-  "ref": "kp3-example-e6",
-  "title": "E6 — The gap register and its priorities, for Progressa",
-  "parent": "kp3-examples",
-  "path": "kp3/examples/E6_gap-register.md"
- },
- {
-  "ref": "kp3-example-e7",
-  "title": "E7 — Progressa's education DPI roadmap: the shape of the document, with the first horizon in full",
-  "parent": "kp3-examples",
-  "path": "kp3/examples/E7_roadmap.md"
- },
- {
-  "ref": "kp3-example-e8",
-  "title": "E8 — The investment case for Progressa's roadmap, in four sheets",
-  "parent": "kp3-examples",
-  "path": "kp3/examples/E8_investment-case.md"
- },
- {
-  "ref": "kp3-example-e9",
-  "title": "E9 — Validation and revision: Progressa's response matrix and the AI prompts that run the revision",
-  "parent": "kp3-examples",
-  "path": "kp3/examples/E9_validation-response-matrix.md"
+  "path": "kp3/examples/README.md",
+  "gitbook_id": "vtHfJNyM6fHIbcSMlnJp"
  },
  {
   "ref": "kp3-build-pack",
   "title": "The guide to the build pack",
   "parent": "kp3",
-  "path": "kp3/build-pack.md"
+  "path": "kp3/build-pack.md",
+  "gitbook_id": "40SYGArPkzRt20sttSUE"
  },
  {
   "ref": "kp3-frameworks",
   "title": "Frameworks and standards",
   "parent": "kp3",
-  "path": "kp3/frameworks-and-standards.md"
+  "path": "kp3/frameworks-and-standards.md",
+  "gitbook_id": "a4Ewsxb4ZEHjnvL66vTB"
  },
  {
   "ref": "kp3-glossary",
   "title": "Glossary",
   "parent": "kp3",
-  "path": "kp3/glossary.md"
+  "path": "kp3/glossary.md",
+  "gitbook_id": "L9du39dm7GW8TJgAho5X"
  },
  {
   "ref": "kp3-figures",
   "title": "Figures",
   "parent": "kp3",
-  "path": "kp3/figures.md"
+  "path": "kp3/figures.md",
+  "gitbook_id": "ktJBIZcP4DhYpwmByEuG"
+ },
+ {
+  "ref": "kp3-1-1",
+  "title": "1.1 What makes infrastructure foundational",
+  "parent": "kp3-module-1",
+  "path": "kp3/module-1/1-1.md",
+  "gitbook_id": "aSD6zV5M0sykhJlSvDca"
+ },
+ {
+  "ref": "kp3-1-2",
+  "title": "1.2 The five domains, as a map",
+  "parent": "kp3-module-1",
+  "path": "kp3/module-1/1-2.md",
+  "gitbook_id": "jKpSFphbA7ZmgvQyHUKS"
+ },
+ {
+  "ref": "kp3-1-3",
+  "title": "1.3 The roadmap method in nine steps: who does what",
+  "parent": "kp3-module-1",
+  "path": "kp3/module-1/1-3.md",
+  "gitbook_id": "5tggu9DHLig4xPb9Wvk8"
+ },
+ {
+  "ref": "kp3-1-4",
+  "title": "1.4 Start at the desk: a first assessment from public sources, with AI",
+  "parent": "kp3-module-1",
+  "path": "kp3/module-1/1-4.md",
+  "gitbook_id": "TIIlZC002xU3U0YM93le"
+ },
+ {
+  "ref": "kp3-1-5",
+  "title": "1.5 Ask the people who run the systems: the five questionnaires",
+  "parent": "kp3-module-1",
+  "path": "kp3/module-1/1-5.md",
+  "gitbook_id": "k94Bxjgocbr0G4LYQV9D"
+ },
+ {
+  "ref": "kp3-1-6",
+  "title": "1.6 Verify before you score",
+  "parent": "kp3-module-1",
+  "path": "kp3/module-1/1-6.md",
+  "gitbook_id": "4InXXwSCskK0lUDeMYY2"
+ },
+ {
+  "ref": "kp3-1-7",
+  "title": "1.7 Score each domain: five stages and one table",
+  "parent": "kp3-module-1",
+  "path": "kp3/module-1/1-7.md",
+  "gitbook_id": "q5SOLDdlGMCdxs1NUeRu"
+ },
+ {
+  "ref": "kp3-1-8",
+  "title": "1.8 Foundational blocks and the sector's own",
+  "parent": "kp3-module-1",
+  "path": "kp3/module-1/1-8.md",
+  "gitbook_id": "y32ACZauv7SVp0BFvgff"
+ },
+ {
+  "ref": "kp3-1-9",
+  "title": "1.9 What comes first: the order of building",
+  "parent": "kp3-module-1",
+  "path": "kp3/module-1/1-9.md",
+  "gitbook_id": "QLmAAc5f2ILgz95afGuM"
+ },
+ {
+  "ref": "kp3-1-10",
+  "title": "1.10 The first proof for education: one service on four blocks",
+  "parent": "kp3-module-1",
+  "path": "kp3/module-1/1-10.md",
+  "gitbook_id": "kw1cdCLZFUsNGpjlevMR"
+ },
+ {
+  "ref": "kp3-2-1",
+  "title": "2.1 What the Registration block does",
+  "parent": "kp3-module-2",
+  "path": "kp3/module-2/2-1.md",
+  "gitbook_id": "LRkO0lHWz9oqQzCtJC0q"
+ },
+ {
+  "ref": "kp3-2-2",
+  "title": "2.2 The published specification, and how to judge a product against it",
+  "parent": "kp3-module-2",
+  "path": "kp3/module-2/2-2.md",
+  "gitbook_id": "SpaztAuG1fHJzRFL2dsa"
+ },
+ {
+  "ref": "kp3-2-3",
+  "title": "2.3 Generating the registration service",
+  "parent": "kp3-module-2",
+  "path": "kp3/module-2/2-3.md",
+  "gitbook_id": "lSSoY8RLoq465ChFNO2B"
+ },
+ {
+  "ref": "kp3-2-4",
+  "title": "2.4 Checks before the officer decides",
+  "parent": "kp3-module-2",
+  "path": "kp3/module-2/2-4.md",
+  "gitbook_id": "nyMQZP8sZ7QLRXLTJf5A"
+ },
+ {
+  "ref": "kp3-2-5",
+  "title": "2.5 The officer decides, and the record is written",
+  "parent": "kp3-module-2",
+  "path": "kp3/module-2/2-5.md",
+  "gitbook_id": "j9Ciqbi4cW8U9c1Ug0La"
+ },
+ {
+  "ref": "kp3-2-6",
+  "title": "2.6 The whole service as a description you can move",
+  "parent": "kp3-module-2",
+  "path": "kp3/module-2/2-6.md",
+  "gitbook_id": "9zKwReks9C3YQxscw1s2"
+ },
+ {
+  "ref": "kp3-3-1",
+  "title": "3.1 What a register is for: one authoritative record",
+  "parent": "kp3-module-3",
+  "path": "kp3/module-3/3-1.md",
+  "gitbook_id": "RFjsRB3ImmWjNHtk3Djk"
+ },
+ {
+  "ref": "kp3-3-2",
+  "title": "3.2 Five tiers between a messy file and a trusted record",
+  "parent": "kp3-module-3",
+  "path": "kp3/module-3/3-2.md",
+  "gitbook_id": "QQeLfSf5ywg3GvDDQv7D"
+ },
+ {
+  "ref": "kp3-3-3",
+  "title": "3.3 Generating the register's schema",
+  "parent": "kp3-module-3",
+  "path": "kp3/module-3/3-3.md",
+  "gitbook_id": "F6I6Hakl1xw9j4B4l5YU"
+ },
+ {
+  "ref": "kp3-3-4",
+  "title": "3.4 Quality checks that stop a bad row",
+  "parent": "kp3-module-3",
+  "path": "kp3/module-3/3-4.md",
+  "gitbook_id": "R0R88Qf4ST2Patgst0y3"
+ },
+ {
+  "ref": "kp3-3-5",
+  "title": "3.5 A published pattern, followed in the open",
+  "parent": "kp3-module-3",
+  "path": "kp3/module-3/3-5.md",
+  "gitbook_id": "j0bua3lYDj7FbcWRwJGd"
+ },
+ {
+  "ref": "kp3-3-6",
+  "title": "3.6 Account for every load",
+  "parent": "kp3-module-3",
+  "path": "kp3/module-3/3-6.md",
+  "gitbook_id": "XzCql5k0cUCSNn2PmVxU"
+ },
+ {
+  "ref": "kp3-3-7",
+  "title": "3.7 The register as a service others can use",
+  "parent": "kp3-module-3",
+  "path": "kp3/module-3/3-7.md",
+  "gitbook_id": "LZRBzcBAXamLLXGcdxmG"
+ },
+ {
+  "ref": "kp3-4-1",
+  "title": "4.1 Why identity is built once",
+  "parent": "kp3-module-4",
+  "path": "kp3/module-4/4-1.md",
+  "gitbook_id": "V52UUy1OL9vKtySR7Vu0"
+ },
+ {
+  "ref": "kp3-4-2",
+  "title": "4.2 The published Identity block, and what the identity authority offers today",
+  "parent": "kp3-module-4",
+  "path": "kp3/module-4/4-2.md",
+  "gitbook_id": "apjuna8MFM51wAJaS9BJ"
+ },
+ {
+  "ref": "kp3-4-3",
+  "title": "4.3 Generating the identity connection",
+  "parent": "kp3-module-4",
+  "path": "kp3/module-4/4-3.md",
+  "gitbook_id": "qydQTMXHZ4809DAqZiIB"
+ },
+ {
+  "ref": "kp3-4-4",
+  "title": "4.4 The Payments block and the payment systems behind it",
+  "parent": "kp3-module-4",
+  "path": "kp3/module-4/4-4.md",
+  "gitbook_id": "fFgHdZY6tNIhaLWczxrG"
+ },
+ {
+  "ref": "kp3-4-5",
+  "title": "4.5 Generating the payment connection",
+  "parent": "kp3-module-4",
+  "path": "kp3/module-4/4-5.md",
+  "gitbook_id": "y2kaA48cWqzypqWMyeG0"
+ },
+ {
+  "ref": "kp3-4-6",
+  "title": "4.6 Reuse is the return on planning",
+  "parent": "kp3-module-4",
+  "path": "kp3/module-4/4-6.md",
+  "gitbook_id": "VqiYUhRmQPoVPYPH63Le"
+ },
+ {
+  "ref": "kp3-5-1",
+  "title": "5.1 What must be in place before the blocks can call each other",
+  "parent": "kp3-module-5",
+  "path": "kp3/module-5/5-1.md",
+  "gitbook_id": "G0cKJoVkGQPhQUrt2HRK"
+ },
+ {
+  "ref": "kp3-5-2",
+  "title": "5.2 Who puts the steps in order: contracts, and the block that calls them",
+  "parent": "kp3-module-5",
+  "path": "kp3/module-5/5-2.md",
+  "gitbook_id": "3ak6PeUiaK868CNE5ZU0"
+ },
+ {
+  "ref": "kp3-5-3",
+  "title": "5.3 The once-only registration, from beginning to end",
+  "parent": "kp3-module-5",
+  "path": "kp3/module-5/5-3.md",
+  "gitbook_id": "gHWJIWqYgYbsxjQlb1tL"
+ },
+ {
+  "ref": "kp3-5-4",
+  "title": "5.4 The acceptance checks: from \"set up\" to \"proven\"",
+  "parent": "kp3-module-5",
+  "path": "kp3/module-5/5-4.md",
+  "gitbook_id": "EwcTqv0shY42OASGGMEt"
+ },
+ {
+  "ref": "kp3-5-5",
+  "title": "5.5 Reading the evidence of a call",
+  "parent": "kp3-module-5",
+  "path": "kp3/module-5/5-5.md",
+  "gitbook_id": "WqIxgm4lKYboaQJU3Iyk"
+ },
+ {
+  "ref": "kp3-5-6",
+  "title": "5.6 What the next services can now use",
+  "parent": "kp3-module-5",
+  "path": "kp3/module-5/5-6.md",
+  "gitbook_id": "Bk3FLJtJU601PJn8bOQ9"
+ },
+ {
+  "ref": "kp3-6-1",
+  "title": "6.1 From findings to priorities: the gap register",
+  "parent": "kp3-module-6",
+  "path": "kp3/module-6/6-1.md",
+  "gitbook_id": "EofbJbMZ8SVSjclG2S5p"
+ },
+ {
+  "ref": "kp3-6-2",
+  "title": "6.2 What to fund first: cost against reuse",
+  "parent": "kp3-module-6",
+  "path": "kp3/module-6/6-2.md",
+  "gitbook_id": "GSU7A6DiUpOOa0y6dC3X"
+ },
+ {
+  "ref": "kp3-6-3",
+  "title": "6.3 The roadmap over time: horizons, waves and tracks",
+  "parent": "kp3-module-6",
+  "path": "kp3/module-6/6-3.md",
+  "gitbook_id": "KLzlrFRvKR3Deco7NLRR"
+ },
+ {
+  "ref": "kp3-6-4",
+  "title": "6.4 The investment case your finance ministry can read",
+  "parent": "kp3-module-6",
+  "path": "kp3/module-6/6-4.md",
+  "gitbook_id": "4SYVrJV5CeyDI3bhsRaN"
+ },
+ {
+  "ref": "kp3-6-5",
+  "title": "6.5 Sourcing each block without lock-in",
+  "parent": "kp3-module-6",
+  "path": "kp3/module-6/6-5.md",
+  "gitbook_id": "u8kcnt0xZ0fNwZ4DNW3l"
+ },
+ {
+  "ref": "kp3-6-6",
+  "title": "6.6 Governance that keeps shared blocks shared",
+  "parent": "kp3-module-6",
+  "path": "kp3/module-6/6-6.md",
+  "gitbook_id": "uG3jmheAx1RFFAh3xEtv"
+ },
+ {
+  "ref": "kp3-6-7",
+  "title": "6.7 Validate, revise, adopt",
+  "parent": "kp3-module-6",
+  "path": "kp3/module-6/6-7.md",
+  "gitbook_id": "pxe9gSWbOXjBmeoZxZoV"
+ },
+ {
+  "ref": "kp3-6-8",
+  "title": "6.8 Keep the foundation healthy and safe",
+  "parent": "kp3-module-6",
+  "path": "kp3/module-6/6-8.md",
+  "gitbook_id": "CDRA4uhbADBWmWtR4TsE"
+ },
+ {
+  "ref": "kp3-6-9",
+  "title": "6.9 The AI plays, step by step",
+  "parent": "kp3-module-6",
+  "path": "kp3/module-6/6-9.md",
+  "gitbook_id": "k43FoWkPxZ0KtZnMapgO"
+ },
+ {
+  "ref": "kp3-6-10",
+  "title": "6.10 Carry the method to another sector",
+  "parent": "kp3-module-6",
+  "path": "kp3/module-6/6-10.md",
+  "gitbook_id": "PS0zBrnPZv79xsPUK1qr"
+ },
+ {
+  "ref": "kp3-toolkit-question-bank",
+  "title": "The question bank",
+  "parent": "kp3-toolkit",
+  "path": "kp3/toolkit/question-bank.md",
+  "gitbook_id": "FHdAzG73s0VCQXvceksj"
+ },
+ {
+  "ref": "kp3-toolkit-questionnaires-q-acc",
+  "title": "Q-ACC — The Access questionnaire, with its guide for the respondent and its guide for the facilitator",
+  "parent": "kp3-toolkit",
+  "path": "kp3/toolkit/questionnaires/Q-ACC.md",
+  "gitbook_id": "zA0TAy4M56u3eRNkSniI"
+ },
+ {
+  "ref": "kp3-toolkit-questionnaires-q-dat",
+  "title": "Q-DAT — The Digital Data questionnaire, with its guide for the respondent and its guide for the facilitator",
+  "parent": "kp3-toolkit",
+  "path": "kp3/toolkit/questionnaires/Q-DAT.md",
+  "gitbook_id": "3efHZ5u24zOCKTDcl74s"
+ },
+ {
+  "ref": "kp3-toolkit-questionnaires-q-gov",
+  "title": "Q-GOV — The Governance and Policy questionnaire, with its guide for the respondent and its guide for the facilitator",
+  "parent": "kp3-toolkit",
+  "path": "kp3/toolkit/questionnaires/Q-GOV.md",
+  "gitbook_id": "zDp30bAfkVF3Y41QyWft"
+ },
+ {
+  "ref": "kp3-toolkit-questionnaires-q-idn",
+  "title": "Q-IDN — The Digital Identity questionnaire, with its guide for the respondent and its guide for the facilitator",
+  "parent": "kp3-toolkit",
+  "path": "kp3/toolkit/questionnaires/Q-IDN.md",
+  "gitbook_id": "oziA9w818VwtNJprMGK6"
+ },
+ {
+  "ref": "kp3-toolkit-questionnaires-q-int",
+  "title": "Q-INT — The Interoperability questionnaire, with its guide for the respondent and its guide for the facilitator",
+  "parent": "kp3-toolkit",
+  "path": "kp3/toolkit/questionnaires/Q-INT.md",
+  "gitbook_id": "ZJ1cE0QbzCocW0H4FbXo"
+ },
+ {
+  "ref": "kp3-toolkit-scoring-criteria",
+  "title": "The scoring criteria",
+  "parent": "kp3-toolkit",
+  "path": "kp3/toolkit/scoring-criteria.md",
+  "gitbook_id": "VV83rslBqdPqt4Y314E9"
+ },
+ {
+  "ref": "kp3-toolkit-verification-templates",
+  "title": "The templates for verification",
+  "parent": "kp3-toolkit",
+  "path": "kp3/toolkit/verification-templates.md",
+  "gitbook_id": "uhi38ctf6SI7Vkac6B84"
+ },
+ {
+  "ref": "kp3-example-e1",
+  "title": "E1 — The five-domain frame, set for Progressa's education sector",
+  "parent": "kp3-examples",
+  "path": "kp3/examples/E1_five-domain-frame.md",
+  "gitbook_id": "gb6nGzATaP1vBRLeHoLg"
+ },
+ {
+  "ref": "kp3-example-e2",
+  "title": "E2 — The automatic desk assessment: the question bank and a run for Progressa",
+  "parent": "kp3-examples",
+  "path": "kp3/examples/E2_automatic-desk-assessment.md",
+  "gitbook_id": "kPjQ3jDJlSPClhjlmaH5"
+ },
+ {
+  "ref": "kp3-example-e3",
+  "title": "E3 — The Digital Data questionnaire: the blank instrument and a completed extract for Progressa",
+  "parent": "kp3-examples",
+  "path": "kp3/examples/E3_domain-questionnaire.md",
+  "gitbook_id": "kPbfOyTOc71iPmx7Mnua"
+ },
+ {
+  "ref": "kp3-example-e4",
+  "title": "E4 — Verification: the blank templates, and how Progressa's team used them",
+  "parent": "kp3-examples",
+  "path": "kp3/examples/E4_verification-templates.md",
+  "gitbook_id": "BX9CyUnkS17FqkVLIIqe"
+ },
+ {
+  "ref": "kp3-example-e5",
+  "title": "E5 — The Digital Data domain report and Progressa's maturity table",
+  "parent": "kp3-examples",
+  "path": "kp3/examples/E5_domain-report-and-maturity-table.md",
+  "gitbook_id": "auj6OnSuxEco1k3IrPpM"
+ },
+ {
+  "ref": "kp3-example-e6",
+  "title": "E6 — The gap register and its priorities, for Progressa",
+  "parent": "kp3-examples",
+  "path": "kp3/examples/E6_gap-register.md",
+  "gitbook_id": "YiuyPICwbxaT6XwcuaO3"
+ },
+ {
+  "ref": "kp3-example-e7",
+  "title": "E7 — Progressa's education DPI roadmap: the shape of the document, with the first horizon in full",
+  "parent": "kp3-examples",
+  "path": "kp3/examples/E7_roadmap.md",
+  "gitbook_id": "9eVUtdqtKS0TA1jCLS1k"
+ },
+ {
+  "ref": "kp3-example-e8",
+  "title": "E8 — The investment case for Progressa's roadmap, in four sheets",
+  "parent": "kp3-examples",
+  "path": "kp3/examples/E8_investment-case.md",
+  "gitbook_id": "CDPGfcVf3jhbaCBUUM8h"
+ },
+ {
+  "ref": "kp3-example-e9",
+  "title": "E9 — Validation and revision: Progressa's response matrix and the AI prompts that run the revision",
+  "parent": "kp3-examples",
+  "path": "kp3/examples/E9_validation-response-matrix.md",
+  "gitbook_id": "niIgBtxU4cYBCTnAL6PV"
  }
 ]

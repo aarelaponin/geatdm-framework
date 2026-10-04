@@ -63,7 +63,7 @@ SPEC_MARK = ("From the specification: drawn from the published GovStack specific
              "before anything is built,\\nand corrected when the configuration is built. "
              "Progressa is a fictional country.")
 GIGA_MARK = ("Source: UNICEF Giga, repository giga-dagster, docs/dataflow.md, at commit "
-             "46b72af.\\nDrawn as Giga publishes it, for school data; KP3 applies the pattern "
+             "46b72af.\\nDrawn as Giga publishes it, for school data; the DPI Roadmap applies the pattern "
              "to learners\\nas its own adaptation. Not drawn from a GovStack specification.")
 
 
@@ -99,25 +99,25 @@ def f6():
         'rectangle "%s: the %s\\n(the %s), %s %s" <<exchange>> as XL {' % (
             n("Linkup"), n("data exchange layer", "outline"), n("Information Mediator"),
             n("X-Road"), n("release 7.7.0", "outline")),
-        '  rectangle "%s\\nowner of the federation\\n<size:10>member since KP2</size>" <<member>> as PDGA'
+        '  rectangle "%s\\nowner of the federation\\n<size:10>member since GIF</size>" <<member>> as PDGA'
         % n("PDGA", "outline"),
-        '  rectangle "%s\\n<size:10>member since KP2;\\nKP3 builds nothing on it</size>" <<outside>> as PNEA'
+        '  rectangle "%s\\n<size:10>member since GIF;\\nthe DPI Roadmap builds nothing on it</size>" <<outside>> as PNEA'
         % n("PNEA", "outline"),
-        '  rectangle "%s\\n<size:10>the %s;\\nmember since KP2</size>" <<member>> as PNIA {' % (
+        '  rectangle "%s\\n<size:10>the %s;\\nmember since GIF</size>" <<member>> as PNIA {' % (
             n("PNIA"), n("identity block")),
         '    component "%s" as IDS' % n("identity service"),
         "  }",
-        '  rectangle "%s\\n<size:10>the learner register,\\non the %s block;\\nmember since KP2</size>" <<member>> as PLR {'
+        '  rectangle "%s\\n<size:10>the learner register,\\non the %s block;\\nmember since GIF</size>" <<member>> as PLR {'
         % (n("PLR"), n("Digital Registries")),
         '    component "%s\\n<size:10>its %s\\noperation (%s)</size>" <<added>> as WS' % (
             n("write service"), n("create-or-update"), n("X2")),
         "  }",
-        '  rectangle "%s\\n<size:10>added by KP3 (%s)</size>" <<added>> as RM {' % (
+        '  rectangle "%s\\n<size:10>added by the DPI Roadmap (%s)</size>" <<added>> as RM {' % (
             n("Registration member"), n("X1")),
         '    component "%s\\n<size:10>on the %s</size>" as RS' % (
             n("registration service"), n("Registration block")),
         "  }",
-        '  rectangle "%s member\\n<size:10>added by KP3 (%s)</size>" <<added>> as PM {' % (
+        '  rectangle "%s member\\n<size:10>added by the DPI Roadmap (%s)</size>" <<added>> as PM {' % (
             n("Payments block"), n("X7")),
         '    component "the %s\'s\\nown interface" as PBI' % n("Payments block"),
         "  }",
@@ -134,10 +134,10 @@ def f6():
         'note bottom of XL',
         "  Each call goes through the caller's own %s (%s)." % (
             n("security server"), n("X5")),
-        "  Thin blue border: in place before KP3.",
+        "  Thin blue border: in place before the DPI Roadmap.",
         "  Thick blue border on a light blue ground:",
-        "  added by KP3, with what it holds.",
-        "  Dashed grey border: in place, but not built on in KP3.",
+        "  added by the DPI Roadmap, with what it holds.",
+        "  Dashed grey border: in place, but not built on in the DPI Roadmap.",
         "  Slate border on a grey ground: the data exchange layer.",
         "end note",
         "@enduml",
