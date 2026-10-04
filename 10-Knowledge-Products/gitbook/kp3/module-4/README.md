@@ -25,5 +25,5 @@ icon: flag-checkered
 | [4.6](4-6.md) | Reuse is the return on planning | Core | — | Learner registration reuses the identity block and the scholarship payment reuses the Payments block, a saving visible only to someone who plans for the whole government, because inside one project building your own looks quicker. |
 
 {% hint style="info" %}
-The reference pages hold what every module uses: [the nine steps](../nine-steps.md), [the assessment toolkit](../toolkit/README.md), [the worked examples](../examples/README.md), [the guide to the build pack](../build-pack.md), [the frameworks and standards](../frameworks-and-standards.md), [the glossary](../glossary.md) and [the figures](../figures.md).
+The reference pages hold what every module uses: [the nine steps](../nine-steps.md), [the assessment toolkit](../toolkit/README.md), [the worked examples](../examples/README.md), [the build plan](../build-pack.md), [the frameworks and standards](../frameworks-and-standards.md), [the glossary](../glossary.md) and [the figures](../figures.md).
 {% endhint %}

@@ -1,11 +1,11 @@
 ---
-description: "Modules 2 to 5 build one education service on four shared blocks. What is built is listed here: what must be in place around the configurations."
+description: "No build pack has been released yet. This page lists what the build will contain and how modules 2 to 5 teach it until then."
 icon: toolbox
 ---
 
-# The guide to the build pack
+# The build plan
 
-Modules 2 to 5 build one education service on four shared blocks. What is built is listed here: what must be in place around the configurations, every configuration with the subtopic that teaches it and the published specification it follows, and the demonstrations that will be recorded once the configurations exist. The build is a separate piece of work from the writing of this guide.
+No build pack has been released yet. This page lists what the build will contain and how modules 2 to 5 teach it until then. Modules 2 to 5 build one education service on four shared blocks. What the build will set up is listed here: what must be in place around the configurations, every configuration with the subtopic that teaches it and the published specification it follows, and the demonstrations that will be recorded once the configurations exist. The build is a separate piece of work from the writing of this guide.
 
 {% hint style="warning" %}
 **Until a check has passed.** One rule holds for every build subtopic. Its script and its slides are written from the published specification named in its sources. They say what the configuration contains, what its check runs and what counts as a pass; those statements are true whether or not anything has been built. The configuration is shown as a specimen, a file written for Progressa in the specification's terms and marked "specimen, not yet run". The demonstration segment exists as a storyboard. When the check has passed on the built configuration, the specimen is replaced by the file as built, the segment is recorded, and the script gains a sentence that states the result and its date. Before that, no script, slide or page says that anything runs.

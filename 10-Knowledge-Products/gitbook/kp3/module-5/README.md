@@ -25,5 +25,5 @@ icon: flag-checkered
 | [5.6](5-6.md) | What the next services can now use | Core | — | Identity, the learner register and payments are now services with published contracts that the next education services can use without building them again, with consent and notification still to add. |
 
 {% hint style="info" %}
-The reference pages hold what every module uses: [the nine steps](../nine-steps.md), [the assessment toolkit](../toolkit/README.md), [the worked examples](../examples/README.md), [the guide to the build pack](../build-pack.md), [the frameworks and standards](../frameworks-and-standards.md), [the glossary](../glossary.md) and [the figures](../figures.md).
+The reference pages hold what every module uses: [the nine steps](../nine-steps.md), [the assessment toolkit](../toolkit/README.md), [the worked examples](../examples/README.md), [the build plan](../build-pack.md), [the frameworks and standards](../frameworks-and-standards.md), [the glossary](../glossary.md) and [the figures](../figures.md).
 {% endhint %}

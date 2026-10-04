@@ -26,5 +26,5 @@ icon: flag-checkered
 | [3.7](3-7.md) | The register as a service others can use | Core | Yes | Other services reach the register only through its published interface, each seeing no more than its role allows, and every learner or parent can see who read their record. |
 
 {% hint style="info" %}
-The reference pages hold what every module uses: [the nine steps](../nine-steps.md), [the assessment toolkit](../toolkit/README.md), [the worked examples](../examples/README.md), [the guide to the build pack](../build-pack.md), [the frameworks and standards](../frameworks-and-standards.md), [the glossary](../glossary.md) and [the figures](../figures.md).
+The reference pages hold what every module uses: [the nine steps](../nine-steps.md), [the assessment toolkit](../toolkit/README.md), [the worked examples](../examples/README.md), [the build plan](../build-pack.md), [the frameworks and standards](../frameworks-and-standards.md), [the glossary](../glossary.md) and [the figures](../figures.md).
 {% endhint %}

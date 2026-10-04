@@ -29,5 +29,5 @@ icon: flag-checkered
 | [6.10](6-10.md) | Carry the method to another sector | Core | — | Change the sector's register and services and keep the five domains, the nine steps and the foundational blocks, and the same method produces a roadmap for health, agriculture or social protection. |
 
 {% hint style="info" %}
-The reference pages hold what every module uses: [the nine steps](../nine-steps.md), [the assessment toolkit](../toolkit/README.md), [the worked examples](../examples/README.md), [the guide to the build pack](../build-pack.md), [the frameworks and standards](../frameworks-and-standards.md), [the glossary](../glossary.md) and [the figures](../figures.md).
+The reference pages hold what every module uses: [the nine steps](../nine-steps.md), [the assessment toolkit](../toolkit/README.md), [the worked examples](../examples/README.md), [the build plan](../build-pack.md), [the frameworks and standards](../frameworks-and-standards.md), [the glossary](../glossary.md) and [the figures](../figures.md).
 {% endhint %}

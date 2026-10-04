@@ -29,5 +29,5 @@ icon: flag-checkered
 | [1.10](1-10.md) | The first proof for education: one service on four blocks | Core | — | The first proof for education is one service that registers a learner once: the sector's own registration service and learner register, using the country's identity and payment blocks through the data exchange layer. |
 
 {% hint style="info" %}
-The reference pages hold what every module uses: [the nine steps](../nine-steps.md), [the assessment toolkit](../toolkit/README.md), [the worked examples](../examples/README.md), [the guide to the build pack](../build-pack.md), [the frameworks and standards](../frameworks-and-standards.md), [the glossary](../glossary.md) and [the figures](../figures.md).
+The reference pages hold what every module uses: [the nine steps](../nine-steps.md), [the assessment toolkit](../toolkit/README.md), [the worked examples](../examples/README.md), [the build plan](../build-pack.md), [the frameworks and standards](../frameworks-and-standards.md), [the glossary](../glossary.md) and [the figures](../figures.md).
 {% endhint %}

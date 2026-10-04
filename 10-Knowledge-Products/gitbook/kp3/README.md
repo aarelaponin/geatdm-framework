@@ -183,7 +183,7 @@ Before your first prompt, read [Working with AI](../start-here/working-with-ai.m
 | **A real subject** | A country, or a sector within one, whose digital public infrastructure you are asked to assess or plan. The AI usage tips act on your context, not on a case study. No subject to hand? Follow everything on [Progressa](../start-here/progressa.md) instead. |
 | **Enough access to describe it** | The desk assessment starts from the country's public record alone ([1.4](module-1/1-4.md)). The five questionnaires need the time of the people who run its systems ([1.5](module-1/1-5.md)). |
 | **An AI assistant** | Any general assistant — Claude, ChatGPT, Gemini. A free account is enough. Nothing to install. |
-| **Nothing to run** | No code is written. Modules 2 to 5 show each configuration as a specimen until it has been built and checked; [the guide to the build pack](build-pack.md) says which. |
+| **Nothing to run** | No code is written. Modules 2 to 5 show each configuration as a specimen until it has been built and checked; [the build plan](build-pack.md) says which. |
 | **About fifteen minutes, once** | The first pages of [Start here](../start-here/README.md) cover how to work with the prompts and the ground rules for using an assistant on government material. Read them before your first prompt. |
 
 Time: each subtopic is a video of about five minutes, its page, and an AI usage tip of ten to fifteen minutes. A module is an afternoon. The whole course is roughly two working days spread over as long as you like.
@@ -201,7 +201,7 @@ Time: each subtopic is a video of about five minutes, its page, and an AI usage 
 <tr><td><strong>The nine steps</strong></td><td>Each step of the method with its roles, inputs, outputs, tools or templates, decision point and validation.</td><td><a href="nine-steps.md">nine-steps</a></td></tr>
 <tr><td><strong>The assessment toolkit</strong></td><td>The question bank, the five questionnaires with their guides, the scoring criteria and the templates for verification.</td><td><a href="toolkit/README.md">toolkit</a></td></tr>
 <tr><td><strong>The worked examples</strong></td><td>One example for each of the nine steps, built for Progressa and linked to one another.</td><td><a href="examples/README.md">examples</a></td></tr>
-<tr><td><strong>The guide to the build pack</strong></td><td>Every configuration of modules 2 to 5, its check, and how it is taught until it is built.</td><td><a href="build-pack.md">build-pack</a></td></tr>
+<tr><td><strong>The build plan</strong></td><td>What the build will contain: every configuration of modules 2 to 5, its check, and how it is taught until it is built.</td><td><a href="build-pack.md">build-pack</a></td></tr>
 <tr><td><strong>Frameworks and standards</strong></td><td>The public frameworks and standards this guide cites, in five kinds, each with its address.</td><td><a href="frameworks-and-standards.md">frameworks-and-standards</a></td></tr>
 <tr><td><strong>Glossary</strong></td><td>The terms this guide uses, and the names used for Progressa.</td><td><a href="glossary.md">glossary</a></td></tr>
 <tr><td><strong>Figures</strong></td><td>The sixteen figures of the guide.</td><td><a href="figures.md">figures</a></td></tr>

@@ -7,15 +7,15 @@ icon: book
 
 | Term | What it means here | Where it is taught |
 | --- | --- | --- |
-| **Acceptance check** | The check that proves a configuration works. Each configuration has one of the same name, which says what the check runs and what counts as a pass. Nothing is said to run until its check has passed and the run is recorded. | [5.4](module-5/5-4.md); the guide to the build pack |
+| **Acceptance check** | The check that proves a configuration works. Each configuration has one of the same name, which says what the check runs and what counts as a pass. Nothing is said to run until its check has passed and the run is recorded. | [5.4](module-5/5-4.md); the build plan |
 | **Adopting authority** | The authority that adopts the roadmap, so that it becomes the government's own. | [6.7](module-6/6-7.md) |
 | **AI usage tip** | The prompt each subtopic carries, in four parts: the problem it solves, the prompt, its inputs and outputs, and a safeguard. The assistant drafts; a person decides. | every subtopic; [6.9](module-6/6-9.md) |
 | **Architect register** | The way modules 2 to 5 are written: for the team that configures the service, one level deeper into configuration than the Strategist register. | the opening |
 | **Beacon project** | The roadmap's name for a service that shows the foundation working, so that support holds. | [6.3](module-6/6-3.md) |
 | **Building block** | A shared, reusable piece of digital infrastructure with a published specification, such as Registration, Digital Registries, Identity or Payments. GovStack publishes the specifications. | [1.8](module-1/1-8.md), [1.10](module-1/1-10.md) |
-| **Configuration** | One thing the build sets up, named by its block: R for Registration, RG for Digital Registries, I for Identity, P for Payments, X for the composition on the data exchange layer. | the guide to the build pack |
+| **Configuration** | One thing the build sets up, named by its block: R for Registration, RG for Digital Registries, I for Identity, P for Payments, X for the composition on the data exchange layer. | the build plan |
 | **Core and supplementary** | A core video is one without which the method cannot be followed from assessment to roadmap, or the build from its first configuration to its proof. A supplementary video deepens a core one and can be left out without losing the thread. | the opening |
-| **Demonstration segment** | A recording of the screen with a voice-over, inside the video of its subtopic. Until it can be recorded, its storyboard stands in its place. | the guide to the build pack |
+| **Demonstration segment** | A recording of the screen with a voice-over, inside the video of its subtopic. Until it can be recorded, its storyboard stands in its place. | the build plan |
 | **Desk assessment** | A first reading of what the country has already published, run with an AI assistant against the question bank. Its results are claims to verify, not findings. | [1.4](module-1/1-4.md) |
 | **Digital public infrastructure (DPI)** | Foundational digital systems that serve the whole society. UNDP gives four marks: it serves the whole society, many services can connect to it, it is built on open standards, and clear rules govern it. Its three recognised categories are digital identity, digital payments and consent-based data sharing, with others emerging. | [1.1](module-1/1-1.md) |
 | **Domain report** | The report of one domain after scoring: the stage of each sub-component with the evidence for it, the domain's stage, a key strength and a development priority. | [1.7](module-1/1-7.md) |
@@ -34,8 +34,8 @@ icon: book
 | **Question bank** | Every question of the assessment, arranged by domain and sub-component, each with the evidence that answers it. | [1.4](module-1/1-4.md); the assessment toolkit |
 | **Response matrix** | The table in which every comment on the draft assessment and roadmap has its written answer and the decision on it. | [6.7](module-6/6-7.md) |
 | **Sectoral block** | A block that belongs to one sector and stands on the foundational blocks, such as a learner register and its registration service in education. | [1.8](module-1/1-8.md) |
-| **Specimen** | A configuration file written for Progressa in a specification's terms and marked "specimen, not yet run". It is replaced by the file as built when its check has passed. | the guide to the build pack |
-| **Storyboard** | The steps of a demonstration in order, with what the viewer sees at each step and what counts as a pass. The recording follows it when the recording is made. | the guide to the build pack |
+| **Specimen** | A configuration file written for Progressa in a specification's terms and marked "specimen, not yet run". It is replaced by the file as built when its check has passed. | the build plan |
+| **Storyboard** | The steps of a demonstration in order, with what the viewer sees at each step and what counts as a pass. The recording follows it when the recording is made. | the build plan |
 | **Strategist register** | The way modules 1 and 6 are written: for the person who plans the work and makes the case to the minister. | the opening |
 | **Sub-component** | A part of a domain that is scored on its own, such as state registers within Digital Data. Each has a code, such as D2. | [1.7](module-1/1-7.md); the assessment toolkit |
 | **Tiers of a load** | The five tiers through which a register is loaded, raw, bronze, staging, silver and gold, following Giga's published data flow, with quality checks that set a faulty row aside with its reason. | [3.2](module-3/3-2.md), [3.4](module-3/3-4.md) |

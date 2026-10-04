@@ -50,7 +50,7 @@ A roadmap is produced in nine steps, and for each step you can say who acts, wha
 | 8. Investment breakdown | [6.4](module-6/6-4.md) The investment case your finance ministry can read | [E8](examples/E8_investment-case.md) |
 | 9. Validation and revision | [6.7](module-6/6-7.md) Validate, revise, adopt | [E9](examples/E9_validation-response-matrix.md) |
 
-The steps of the build, in modules 2 to 5, are taught in the same way: each configuration has an acceptance check of the same name, which says what the check runs and what counts as a pass. They are listed in the guide to the build pack. See [the guide to the build pack](build-pack.md).
+The steps of the build, in modules 2 to 5, are taught in the same way: each configuration has an acceptance check of the same name, which says what the check runs and what counts as a pass. They are listed in the build plan. See [the build plan](build-pack.md).
 
 ## Sources
 
