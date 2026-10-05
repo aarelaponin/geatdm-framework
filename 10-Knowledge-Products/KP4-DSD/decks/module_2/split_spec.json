@@ -1,0 +1,73 @@
+{
+  "kicker_prefix": "KP4 · Designing Digital Government Services · Module 2",
+  "audience": "The public-sector manager who commissions a service, judges the offer and accepts the result",
+  "out_pattern": "KP4_M2_{code}_Deck_v0.1.pptx",
+  "videos": [
+    {
+      "code": "2.1",
+      "title": "One catalogue of the sector's services, and the blocks they share",
+      "mins": "~5",
+      "range": [
+        3,
+        11
+      ],
+      "message": "List every service the sector's bodies owe once, with what each rests on, before you specify any one of them.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "2.2",
+      "title": "Write down what was asked before anyone designs",
+      "mins": "~5",
+      "range": [
+        12,
+        20
+      ],
+      "message": "One entry for each separate thing asked, in the customer's words, with where it was said.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "2.3",
+      "title": "The records the service keeps, and whose each one is",
+      "mins": "~5",
+      "range": [
+        21,
+        29
+      ],
+      "message": "For every fact: we keep it, we take it from another body, or we must not hold it.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "2.4",
+      "title": "Every goal named, and each tied to what was asked",
+      "mins": "~5",
+      "range": [
+        30,
+        38
+      ],
+      "message": "A service is broken into the goals people have in it; every goal serves an entry and every entry is served by a goal.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "2.5",
+      "title": "What every goal may use, and may not invent",
+      "mins": "~5",
+      "range": [
+        39,
+        47
+      ],
+      "message": "States, settings and code lists are written once and shared; a goal that needs something missing raises a question.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "2.6",
+      "title": "What the service is built on, and what crosses its boundary",
+      "mins": "~5",
+      "range": [
+        48,
+        56
+      ],
+      "message": "One document names the platform, the shared blocks it uses and every flow that crosses to another body.",
+      "bundle_slides": 8
+    }
+  ]
+}

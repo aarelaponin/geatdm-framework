@@ -1,0 +1,84 @@
+{
+  "kicker_prefix": "Designing Digital Government Services · Module 6",
+  "audience": "Director who owns a service · head of a ministry ICT unit · programme lead",
+  "out_pattern": "KP4_M6_{code}_Deck_v0.1.pptx",
+  "videos": [
+    {
+      "code": "6.1",
+      "title": "What to require from a supplier",
+      "mins": "~5",
+      "range": [
+        3,
+        9
+      ],
+      "message": "The twelve documents are deliverables you name in the contract, each accepted by a named person.",
+      "bundle_slides": 6
+    },
+    {
+      "code": "6.2",
+      "title": "When something changes, correct the document that owns the fact",
+      "mins": "~5",
+      "range": [
+        10,
+        16
+      ],
+      "message": "A change goes up to its source and everything below is produced again.",
+      "bundle_slides": 6
+    },
+    {
+      "code": "6.3",
+      "title": "Read where the work stands from the work",
+      "mins": "~5",
+      "range": [
+        17,
+        23
+      ],
+      "message": "Progress is a report the programs produce from the documents, never a figure someone remembers.",
+      "bundle_slides": 6
+    },
+    {
+      "code": "6.4",
+      "title": "The AI assistant at every step, and the person who rules",
+      "mins": "~5",
+      "range": [
+        24,
+        30
+      ],
+      "message": "The assistant drafts each document; a person rules on every proposal and every gap keeps its name.",
+      "bundle_slides": 6
+    },
+    {
+      "code": "6.5",
+      "title": "The next service on the same foundation",
+      "mins": "~5",
+      "range": [
+        31,
+        38
+      ],
+      "message": "The second service, a digital credential, reuses what the first one built and proved.",
+      "bundle_slides": 7
+    },
+    {
+      "code": "6.6",
+      "title": "Carry the method to another sector",
+      "mins": "~5",
+      "range": [
+        39,
+        45
+      ],
+      "message": "The method holds no sector's content; another sector brings its own catalogue and its own records.",
+      "bundle_slides": 6
+    },
+    {
+      "code": "6.7",
+      "title": "Before you rely on it: what the method does not claim",
+      "mins": "~5",
+      "range": [
+        46,
+        52
+      ],
+      "message": "The method states its own limits, and a manager reads them before relying on it.",
+      "bundle_slides": 6
+    }
+  ]
+}

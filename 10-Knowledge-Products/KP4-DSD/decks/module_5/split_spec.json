@@ -1,0 +1,84 @@
+{
+  "kicker_prefix": "Designing Digital Government Services · Module 5",
+  "audience": "Head of a sectoral ICT unit · project lead who accepts the documents",
+  "out_pattern": "KP4_M5_{code}_Deck_v0.1.pptx",
+  "videos": [
+    {
+      "code": "5.1",
+      "title": "From one file to a running application",
+      "mins": "~5",
+      "range": [
+        3,
+        12
+      ],
+      "message": "The kit turns the model into the platform's forms, lists, menus and workflow, and installs them.",
+      "bundle_slides": 9
+    },
+    {
+      "code": "5.2",
+      "title": "Nothing generated is edited by hand",
+      "mins": "~5",
+      "range": [
+        13,
+        22
+      ],
+      "message": "A correction goes into the description and the application is generated again; a program shows any hand edit.",
+      "bundle_slides": 9
+    },
+    {
+      "code": "5.3",
+      "title": "The platform's traps, caught before deployment",
+      "mins": "~5",
+      "range": [
+        23,
+        31
+      ],
+      "message": "What is known to fail on the platform is checked before anything is installed.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "5.4",
+      "title": "Identity and registries: use the block, do not rebuild it",
+      "mins": "~5",
+      "range": [
+        32,
+        41
+      ],
+      "message": "The service takes a person's identity and an institution's record from the body that keeps them.",
+      "bundle_slides": 9
+    },
+    {
+      "code": "5.5",
+      "title": "The service's contract with the registration block, and its data interface",
+      "mins": "~5",
+      "range": [
+        42,
+        50
+      ],
+      "message": "The contract another system reads is produced from the description, not written beside it.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "5.6",
+      "title": "Payments and information mediation as named crossings",
+      "mins": "~5",
+      "range": [
+        51,
+        59
+      ],
+      "message": "A payment or a call across the data exchange is a crossing the architecture names, not a block the service rebuilds.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "5.7",
+      "title": "Proof on the running system: a task a person finishes",
+      "mins": "~5",
+      "range": [
+        60,
+        68
+      ],
+      "message": "The last check is a person finishing a real task on the running service, and the record that they did.",
+      "bundle_slides": 8
+    }
+  ]
+}

@@ -1,0 +1,644 @@
+[
+ {
+  "ref": "kp4",
+  "title": "Designing Digital Government Services using a Building Block Approach",
+  "parent": null,
+  "path": "kp4/README.md"
+ },
+ {
+  "ref": "kp4-module-1",
+  "title": "Module 1 — Why digital services go wrong, and the method that prevents it",
+  "parent": "kp4",
+  "path": "kp4/module-1/README.md"
+ },
+ {
+  "ref": "kp4-1-1",
+  "title": "1.1 Where an agreed service gets lost",
+  "parent": "kp4-module-1",
+  "path": "kp4/module-1/1-1.md"
+ },
+ {
+  "ref": "kp4-1-2",
+  "title": "1.2 Three rules you can hold a supplier to",
+  "parent": "kp4-module-1",
+  "path": "kp4/module-1/1-2.md"
+ },
+ {
+  "ref": "kp4-1-3",
+  "title": "1.3 A question with a name on it is part of the specification",
+  "parent": "kp4-module-1",
+  "path": "kp4/module-1/1-3.md"
+ },
+ {
+  "ref": "kp4-1-4",
+  "title": "1.4 Twelve documents from the request to the running service",
+  "parent": "kp4-module-1",
+  "path": "kp4/module-1/1-4.md"
+ },
+ {
+  "ref": "kp4-1-5",
+  "title": "1.5 Who writes, who checks, who accepts",
+  "parent": "kp4-module-1",
+  "path": "kp4/module-1/1-5.md"
+ },
+ {
+  "ref": "kp4-module-1-self-check",
+  "title": "Self-check — Module 1",
+  "parent": "kp4-module-1",
+  "path": "kp4/module-1/self-check.md"
+ },
+ {
+  "ref": "kp4-module-2",
+  "title": "Module 2 — Break the service down before you design it",
+  "parent": "kp4",
+  "path": "kp4/module-2/README.md"
+ },
+ {
+  "ref": "kp4-2-1",
+  "title": "2.1 One catalogue of the sector's services, and the blocks they share",
+  "parent": "kp4-module-2",
+  "path": "kp4/module-2/2-1.md"
+ },
+ {
+  "ref": "kp4-2-2",
+  "title": "2.2 Write down what was asked before anyone designs",
+  "parent": "kp4-module-2",
+  "path": "kp4/module-2/2-2.md"
+ },
+ {
+  "ref": "kp4-2-3",
+  "title": "2.3 The records the service keeps, and whose each one is",
+  "parent": "kp4-module-2",
+  "path": "kp4/module-2/2-3.md"
+ },
+ {
+  "ref": "kp4-2-4",
+  "title": "2.4 Every goal named, and each tied to what was asked",
+  "parent": "kp4-module-2",
+  "path": "kp4/module-2/2-4.md"
+ },
+ {
+  "ref": "kp4-2-5",
+  "title": "2.5 What every goal may use, and may not invent",
+  "parent": "kp4-module-2",
+  "path": "kp4/module-2/2-5.md"
+ },
+ {
+  "ref": "kp4-2-6",
+  "title": "2.6 What the service is built on, and what crosses its boundary",
+  "parent": "kp4-module-2",
+  "path": "kp4/module-2/2-6.md"
+ },
+ {
+  "ref": "kp4-module-2-self-check",
+  "title": "Self-check — Module 2",
+  "parent": "kp4-module-2",
+  "path": "kp4/module-2/self-check.md"
+ },
+ {
+  "ref": "kp4-module-3",
+  "title": "Module 3 — Design one service as a story your officials can check",
+  "parent": "kp4",
+  "path": "kp4/module-3/README.md"
+ },
+ {
+  "ref": "kp4-3-1",
+  "title": "3.1 One goal, written as a story a builder can follow",
+  "parent": "kp4-module-3",
+  "path": "kp4/module-3/3-1.md"
+ },
+ {
+  "ref": "kp4-3-2",
+  "title": "3.2 Every way it can go wrong, written down",
+  "parent": "kp4-module-3",
+  "path": "kp4/module-3/3-2.md"
+ },
+ {
+  "ref": "kp4-3-3",
+  "title": "3.3 Screens worked out from the story, every value with its source",
+  "parent": "kp4-module-3",
+  "path": "kp4/module-3/3-3.md"
+ },
+ {
+  "ref": "kp4-3-4",
+  "title": "3.4 Screens officers can use",
+  "parent": "kp4-module-3",
+  "path": "kp4/module-3/3-4.md"
+ },
+ {
+  "ref": "kp4-3-5",
+  "title": "3.5 The walk-through your officials click",
+  "parent": "kp4-module-3",
+  "path": "kp4/module-3/3-5.md"
+ },
+ {
+  "ref": "kp4-3-6",
+  "title": "3.6 The review: three people, every open line given a name",
+  "parent": "kp4-module-3",
+  "path": "kp4/module-3/3-6.md"
+ },
+ {
+  "ref": "kp4-module-3-self-check",
+  "title": "Self-check — Module 3",
+  "parent": "kp4-module-3",
+  "path": "kp4/module-3/self-check.md"
+ },
+ {
+  "ref": "kp4-module-4",
+  "title": "Module 4 — Settle the whole application once, then describe it for the machine",
+  "parent": "kp4",
+  "path": "kp4/module-4/README.md"
+ },
+ {
+  "ref": "kp4-4-1",
+  "title": "4.1 Four questions decided once for every screen",
+  "parent": "kp4-module-4",
+  "path": "kp4/module-4/4-1.md"
+ },
+ {
+  "ref": "kp4-4-2",
+  "title": "4.2 No list longer than nine: choose by category",
+  "parent": "kp4-module-4",
+  "path": "kp4/module-4/4-2.md"
+ },
+ {
+  "ref": "kp4-4-3",
+  "title": "4.3 The service workflow: states, moves and who may make each",
+  "parent": "kp4-module-4",
+  "path": "kp4/module-4/4-3.md"
+ },
+ {
+  "ref": "kp4-4-4",
+  "title": "4.4 One file a program reads: the application model",
+  "parent": "kp4-module-4",
+  "path": "kp4/module-4/4-4.md"
+ },
+ {
+  "ref": "kp4-4-5",
+  "title": "4.5 Reviewing the model: what it assumed, and what it could not express",
+  "parent": "kp4-module-4",
+  "path": "kp4/module-4/4-5.md"
+ },
+ {
+  "ref": "kp4-4-6",
+  "title": "4.6 Refused, not worked around",
+  "parent": "kp4-module-4",
+  "path": "kp4/module-4/4-6.md"
+ },
+ {
+  "ref": "kp4-module-4-self-check",
+  "title": "Self-check — Module 4",
+  "parent": "kp4-module-4",
+  "path": "kp4/module-4/self-check.md"
+ },
+ {
+  "ref": "kp4-module-5",
+  "title": "Module 5 — Generate the service on a low-code platform and connect the blocks",
+  "parent": "kp4",
+  "path": "kp4/module-5/README.md"
+ },
+ {
+  "ref": "kp4-5-1",
+  "title": "5.1 From one file to a running application",
+  "parent": "kp4-module-5",
+  "path": "kp4/module-5/5-1.md"
+ },
+ {
+  "ref": "kp4-5-2",
+  "title": "5.2 Nothing generated is edited by hand",
+  "parent": "kp4-module-5",
+  "path": "kp4/module-5/5-2.md"
+ },
+ {
+  "ref": "kp4-5-3",
+  "title": "5.3 The platform's traps, caught before deployment",
+  "parent": "kp4-module-5",
+  "path": "kp4/module-5/5-3.md"
+ },
+ {
+  "ref": "kp4-5-4",
+  "title": "5.4 Identity and registries: use the block, do not rebuild it",
+  "parent": "kp4-module-5",
+  "path": "kp4/module-5/5-4.md"
+ },
+ {
+  "ref": "kp4-5-5",
+  "title": "5.5 The service's contract with the registration block, and its data interface",
+  "parent": "kp4-module-5",
+  "path": "kp4/module-5/5-5.md"
+ },
+ {
+  "ref": "kp4-5-6",
+  "title": "5.6 Payments and information mediation as named crossings",
+  "parent": "kp4-module-5",
+  "path": "kp4/module-5/5-6.md"
+ },
+ {
+  "ref": "kp4-5-7",
+  "title": "5.7 Proof on the running system: a task a person finishes",
+  "parent": "kp4-module-5",
+  "path": "kp4/module-5/5-7.md"
+ },
+ {
+  "ref": "kp4-module-5-self-check",
+  "title": "Self-check — Module 5",
+  "parent": "kp4-module-5",
+  "path": "kp4/module-5/self-check.md"
+ },
+ {
+  "ref": "kp4-module-6",
+  "title": "Module 6 — Run the method in your administration",
+  "parent": "kp4",
+  "path": "kp4/module-6/README.md"
+ },
+ {
+  "ref": "kp4-6-1",
+  "title": "6.1 What to require from a supplier",
+  "parent": "kp4-module-6",
+  "path": "kp4/module-6/6-1.md"
+ },
+ {
+  "ref": "kp4-6-2",
+  "title": "6.2 When something changes, correct the document that owns the fact",
+  "parent": "kp4-module-6",
+  "path": "kp4/module-6/6-2.md"
+ },
+ {
+  "ref": "kp4-6-3",
+  "title": "6.3 Read where the work stands from the work",
+  "parent": "kp4-module-6",
+  "path": "kp4/module-6/6-3.md"
+ },
+ {
+  "ref": "kp4-6-4",
+  "title": "6.4 The AI assistant at every step, and the person who rules",
+  "parent": "kp4-module-6",
+  "path": "kp4/module-6/6-4.md"
+ },
+ {
+  "ref": "kp4-6-5",
+  "title": "6.5 The next service on the same foundation",
+  "parent": "kp4-module-6",
+  "path": "kp4/module-6/6-5.md"
+ },
+ {
+  "ref": "kp4-6-6",
+  "title": "6.6 Carry the method to another sector",
+  "parent": "kp4-module-6",
+  "path": "kp4/module-6/6-6.md"
+ },
+ {
+  "ref": "kp4-6-7",
+  "title": "6.7 Before you rely on it: what the method does not claim",
+  "parent": "kp4-module-6",
+  "path": "kp4/module-6/6-7.md"
+ },
+ {
+  "ref": "kp4-module-6-self-check",
+  "title": "Self-check — Module 6",
+  "parent": "kp4-module-6",
+  "path": "kp4/module-6/self-check.md"
+ },
+ {
+  "ref": "kp4-twelve-documents",
+  "title": "The twelve documents",
+  "parent": "kp4",
+  "path": "kp4/twelve-documents.md"
+ },
+ {
+  "ref": "kp4-toolkit",
+  "title": "The blank instruments",
+  "parent": "kp4",
+  "path": "kp4/toolkit/README.md"
+ },
+ {
+  "ref": "kp4-toolkit-00_catalogue-of-services",
+  "title": "The catalogue of the sector's services",
+  "parent": "kp4-toolkit",
+  "path": "kp4/toolkit/00_catalogue-of-services.md"
+ },
+ {
+  "ref": "kp4-toolkit-02_register-of-requirements",
+  "title": "The register of requirements",
+  "parent": "kp4-toolkit",
+  "path": "kp4/toolkit/02_register-of-requirements.md"
+ },
+ {
+  "ref": "kp4-toolkit-03_entity-model",
+  "title": "The entity model, with its glossary and its business rules",
+  "parent": "kp4-toolkit",
+  "path": "kp4/toolkit/03_entity-model.md"
+ },
+ {
+  "ref": "kp4-toolkit-04_use-case-model",
+  "title": "The use case model",
+  "parent": "kp4-toolkit",
+  "path": "kp4/toolkit/04_use-case-model.md"
+ },
+ {
+  "ref": "kp4-toolkit-05_software-architecture",
+  "title": "The software architecture",
+  "parent": "kp4-toolkit",
+  "path": "kp4/toolkit/05_software-architecture.md"
+ },
+ {
+  "ref": "kp4-toolkit-06_shared-groundwork",
+  "title": "The shared groundwork: states, events, code lists and settings",
+  "parent": "kp4-toolkit",
+  "path": "kp4/toolkit/06_shared-groundwork.md"
+ },
+ {
+  "ref": "kp4-toolkit-07_use-case-in-full",
+  "title": "One use case, written out in full",
+  "parent": "kp4-toolkit",
+  "path": "kp4/toolkit/07_use-case-in-full.md"
+ },
+ {
+  "ref": "kp4-toolkit-08_screens-of-a-use-case",
+  "title": "The screens of a use case",
+  "parent": "kp4-toolkit",
+  "path": "kp4/toolkit/08_screens-of-a-use-case.md"
+ },
+ {
+  "ref": "kp4-toolkit-10_interaction-design",
+  "title": "The interaction design",
+  "parent": "kp4-toolkit",
+  "path": "kp4/toolkit/10_interaction-design.md"
+ },
+ {
+  "ref": "kp4-toolkit-11_application-model-review",
+  "title": "The review of the application model",
+  "parent": "kp4-toolkit",
+  "path": "kp4/toolkit/11_application-model-review.md"
+ },
+ {
+  "ref": "kp4-toolkit-a_deliverables-annex",
+  "title": "The deliverables annex of the terms of reference for a supplier",
+  "parent": "kp4-toolkit",
+  "path": "kp4/toolkit/A_deliverables-annex.md"
+ },
+ {
+  "ref": "kp4-examples",
+  "title": "The worked examples",
+  "parent": "kp4",
+  "path": "kp4/examples/README.md"
+ },
+ {
+  "ref": "kp4-example-e0",
+  "title": "E0 — Progressa's higher-education services: the fact sheet for this course",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E0_progressa-fact-sheet.md"
+ },
+ {
+  "ref": "kp4-example-e1-1",
+  "title": "E1.1 — One institution, two counters: where Progressa's service was lost",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E1-1_where-an-agreed-service-gets-lost.md"
+ },
+ {
+  "ref": "kp4-example-e1-2",
+  "title": "E1.2 — A supplier's proposal for PHEQA, read against the three rules",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E1-2_three-rules-you-can-hold-a-supplier-to.md"
+ },
+ {
+  "ref": "kp4-example-e1-3",
+  "title": "E1.3 — The appeal period: a guess, and a named question",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E1-3_a-question-with-a-name-on-it.md"
+ },
+ {
+  "ref": "kp4-example-e1-4",
+  "title": "E1.4 — The twelve documents, filled for PHEQA's registration of institutions",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E1-4_twelve-documents-from-request-to-running-service.md"
+ },
+ {
+  "ref": "kp4-example-e1-5",
+  "title": "E1.5 — Who writes, checks and accepts each document of PHEQA's registration project",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E1-5_who-writes-who-checks-who-accepts.md"
+ },
+ {
+  "ref": "kp4-example-e2-1",
+  "title": "E2.1 — Progressa's catalogue of higher-education services, and the blocks they rest on",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E2-1_one-catalogue-of-the-sectors-services.md"
+ },
+ {
+  "ref": "kp4-example-e2-2",
+  "title": "E2.2 — Five entries of PHEQA's register of requirements",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E2-2_write-down-what-was-asked.md"
+ },
+ {
+  "ref": "kp4-example-e2-3",
+  "title": "E2.3 — PHEQA's records, and the three answers for every fact",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E2-3_the-records-and-whose-each-one-is.md"
+ },
+ {
+  "ref": "kp4-example-e2-4",
+  "title": "E2.4 — The goals of PHEQA's and MoEYS's applications, checked in both directions",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E2-4_every-goal-named-and-tied-to-what-was-asked.md"
+ },
+ {
+  "ref": "kp4-example-e2-5",
+  "title": "E2.5 — PHEQA's shared groundwork: a setting, a code list and the licence's states",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E2-5_what-every-goal-may-use.md"
+ },
+ {
+  "ref": "kp4-example-e2-6",
+  "title": "E2.6 — The architecture of Progressa's two applications, on one page",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E2-6_what-the-service-is-built-on.md"
+ },
+ {
+  "ref": "kp4-example-e3-1",
+  "title": "E3.1 — \"Apply for a provisional licence\": the main story",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E3-1_one-goal-written-as-a-story.md"
+ },
+ {
+  "ref": "kp4-example-e3-2",
+  "title": "E3.2 — The failures of \"apply for a provisional licence\", each with its own ending",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E3-2_every-way-it-can-go-wrong.md"
+ },
+ {
+  "ref": "kp4-example-e3-3",
+  "title": "E3.3 — The screens of \"apply for a provisional licence\", every value with its source",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E3-3_screens-every-value-with-its-source.md"
+ },
+ {
+  "ref": "kp4-example-e3-4",
+  "title": "E3.4 — An inspector's screen at PHEQA, before and after five rules",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E3-4_screens-officers-can-use.md"
+ },
+ {
+  "ref": "kp4-example-e3-5",
+  "title": "E3.5 — The walk-through of \"apply for a provisional licence\"",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E3-5_the-walk-through-your-officials-click.md"
+ },
+ {
+  "ref": "kp4-example-e3-6",
+  "title": "E3.6 — The review of the provisional-licence screens at PHEQA",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E3-6_the-review-three-people.md"
+ },
+ {
+  "ref": "kp4-example-e4-1",
+  "title": "E4.1 — Four questions decided once for every screen",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E4-1_four-questions-decided-once-for-every-screen.md"
+ },
+ {
+  "ref": "kp4-example-e4-2",
+  "title": "E4.2 — No list longer than nine: choose by category",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E4-2_no-list-longer-than-nine-choose-by-category.md"
+ },
+ {
+  "ref": "kp4-example-e4-3",
+  "title": "E4.3 — The service workflow: states, moves and who may make each",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E4-3_the-service-workflow-states-moves-and-who-may-make-each.md"
+ },
+ {
+  "ref": "kp4-example-e4-4",
+  "title": "E4.4 — One file a program reads: the application model",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E4-4_one-file-a-program-reads-the-application-model.md"
+ },
+ {
+  "ref": "kp4-example-e4-5",
+  "title": "E4.5 — Reviewing the model: what it assumed, and what it could not express",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E4-5_reviewing-the-model-what-it-assumed-and-what-it-could-not-express.md"
+ },
+ {
+  "ref": "kp4-example-e4-6",
+  "title": "E4.6 — Refused, not worked around",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E4-6_refused-not-worked-around.md"
+ },
+ {
+  "ref": "kp4-example-e5-1",
+  "title": "E5.1 — From one file to a running application",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E5-1_from-one-file-to-a-running-application.md"
+ },
+ {
+  "ref": "kp4-example-e5-2",
+  "title": "E5.2 — Nothing generated is edited by hand",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E5-2_nothing-generated-is-edited-by-hand.md"
+ },
+ {
+  "ref": "kp4-example-e5-3",
+  "title": "E5.3 — The platform's traps, caught before deployment",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E5-3_the-platforms-traps-caught-before-deployment.md"
+ },
+ {
+  "ref": "kp4-example-e5-4",
+  "title": "E5.4 — Identity and registries: use the block, do not rebuild it",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E5-4_identity-and-registries-use-the-block-do-not-rebuild-it.md"
+ },
+ {
+  "ref": "kp4-example-e5-5",
+  "title": "E5.5 — The service's contract with the registration block, and its data interface",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E5-5_the-services-contract-with-the-registration-block-and-its-data-interface.md"
+ },
+ {
+  "ref": "kp4-example-e5-6",
+  "title": "E5.6 — Payments and information mediation as named crossings",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E5-6_payments-and-information-mediation-as-named-crossings.md"
+ },
+ {
+  "ref": "kp4-example-e5-7",
+  "title": "E5.7 — Proof on the running system: a task a person finishes",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E5-7_proof-on-the-running-system-a-task-a-person-finishes.md"
+ },
+ {
+  "ref": "kp4-example-e6-1",
+  "title": "E6.1 — The deliverables annex of MoEYS's terms of reference (illustrative)",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E6-1_what-to-require-from-a-supplier.md"
+ },
+ {
+  "ref": "kp4-example-e6-2",
+  "title": "E6.2 — A change of an institution's name, followed through both bodies (illustrative)",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E6-2_when-something-changes-correct-the-document-that-owns-the-fact.md"
+ },
+ {
+  "ref": "kp4-example-e6-3",
+  "title": "E6.3 — MoEYS's trace report and the minister's status (illustrative)",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E6-3_read-where-the-work-stands-from-the-work.md"
+ },
+ {
+  "ref": "kp4-example-e6-4",
+  "title": "E6.4 — MoEYS's rules of use for an AI assistant, on one page (illustrative)",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E6-4_the-ai-assistant-at-every-step-and-the-person-who-rules.md"
+ },
+ {
+  "ref": "kp4-example-e6-5",
+  "title": "E6.5 — PDCA's credential as a catalogue row, and its reuse list (illustrative)",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E6-5_the-next-service-on-the-same-foundation.md"
+ },
+ {
+  "ref": "kp4-example-e6-6",
+  "title": "E6.6 — What another sector brings, and what stays the same (the team's blank instrument)",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E6-6_carry-the-method-to-another-sector.md"
+ },
+ {
+  "ref": "kp4-example-e6-7",
+  "title": "E6.7 — The risk paragraph of MoEYS's briefing note (illustrative)",
+  "parent": "kp4-examples",
+  "path": "kp4/examples/E6-7_before-you-rely-on-it-what-the-method-does-not-claim.md"
+ },
+ {
+  "ref": "kp4-frameworks",
+  "title": "Frameworks and standards",
+  "parent": "kp4",
+  "path": "kp4/frameworks-and-standards.md"
+ },
+ {
+  "ref": "kp4-public-sources",
+  "title": "The public sources",
+  "parent": "kp4",
+  "path": "kp4/public-sources.md"
+ },
+ {
+  "ref": "kp4-standings",
+  "title": "The standings of the method's standards",
+  "parent": "kp4",
+  "path": "kp4/standings.md"
+ },
+ {
+  "ref": "kp4-glossary",
+  "title": "Glossary",
+  "parent": "kp4",
+  "path": "kp4/glossary.md"
+ },
+ {
+  "ref": "kp4-figures",
+  "title": "Figures",
+  "parent": "kp4",
+  "path": "kp4/figures.md"
+ }
+]

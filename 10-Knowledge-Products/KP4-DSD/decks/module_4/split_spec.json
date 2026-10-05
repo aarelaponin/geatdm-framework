@@ -1,0 +1,73 @@
+{
+  "kicker_prefix": "Designing Digital Government Services · Module 4",
+  "audience": "Head of a ministry ICT unit · service owner's project lead · counterpart to the supplier",
+  "out_pattern": "KP4_M4_{code}_Deck_v0.1.pptx",
+  "videos": [
+    {
+      "code": "4.1",
+      "title": "Four questions decided once for every screen",
+      "mins": "~5",
+      "range": [
+        3,
+        11
+      ],
+      "message": "How officers pick, find, move and act is settled for the whole application in one document you accept.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "4.2",
+      "title": "No list longer than nine: choose by category",
+      "mins": "~5",
+      "range": [
+        12,
+        20
+      ],
+      "message": "A long list is divided into categories, and the officer picks the category first.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "4.3",
+      "title": "The service workflow: states, moves and who may make each",
+      "mins": "~5",
+      "range": [
+        21,
+        29
+      ],
+      "message": "Every state a case can be in, every move between states, and who may make each move, written once.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "4.4",
+      "title": "One file a program reads: the application model",
+      "mins": "~5",
+      "range": [
+        30,
+        38
+      ],
+      "message": "Everything agreed is carried into one file, from which the application is generated.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "4.5",
+      "title": "Reviewing the model: what it assumed, and what it could not express",
+      "mins": "~5",
+      "range": [
+        39,
+        47
+      ],
+      "message": "Every assumption and every loss is named for a person to rule on.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "4.6",
+      "title": "Refused, not worked around",
+      "mins": "~5",
+      "range": [
+        48,
+        56
+      ],
+      "message": "A program refuses a description that contradicts what you accepted, and nobody switches the check off.",
+      "bundle_slides": 8
+    }
+  ]
+}

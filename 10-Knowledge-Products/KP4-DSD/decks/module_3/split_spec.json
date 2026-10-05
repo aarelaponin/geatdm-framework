@@ -1,0 +1,73 @@
+{
+  "kicker_prefix": "KP4 · Designing Digital Government Services · Module 3",
+  "audience": "The head of a sectoral ICT unit, or the project lead, who accepts the design",
+  "out_pattern": "KP4_M3_{code}_Deck_v0.1.pptx",
+  "videos": [
+    {
+      "code": "3.1",
+      "title": "One goal, written as a story a builder can follow",
+      "mins": "~5",
+      "range": [
+        3,
+        12
+      ],
+      "message": "The builder must not have to work anything out or ask anybody anything.",
+      "bundle_slides": 9
+    },
+    {
+      "code": "3.2",
+      "title": "Every way it can go wrong, written down",
+      "mins": "~5",
+      "range": [
+        13,
+        21
+      ],
+      "message": "A story is finished only when every failure has its own ending.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "3.3",
+      "title": "Screens worked out from the story, every value with its source",
+      "mins": "~5",
+      "range": [
+        22,
+        31
+      ],
+      "message": "Each screen serves a step; each value on it says where it comes from.",
+      "bundle_slides": 9
+    },
+    {
+      "code": "3.4",
+      "title": "Screens officers can use",
+      "mins": "~5",
+      "range": [
+        32,
+        39
+      ],
+      "message": "An officer never types what the system already knows, and never chooses from an endless list.",
+      "bundle_slides": 7
+    },
+    {
+      "code": "3.5",
+      "title": "The walk-through your officials click",
+      "mins": "~5",
+      "range": [
+        40,
+        48
+      ],
+      "message": "The walk-through is produced from the written screens, never drawn by hand, and every page shows its version.",
+      "bundle_slides": 8
+    },
+    {
+      "code": "3.6",
+      "title": "The review: three people, every open line given a name",
+      "mins": "~5",
+      "range": [
+        49,
+        57
+      ],
+      "message": "The owner, the builder and the person who will live with the result agree the screens; nothing leaves the room unowned.",
+      "bundle_slides": 8
+    }
+  ]
+}
