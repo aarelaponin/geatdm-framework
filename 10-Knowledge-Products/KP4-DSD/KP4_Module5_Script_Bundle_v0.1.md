@@ -92,7 +92,7 @@ Your supplier reports that the ministry's new application is built. Before you a
 
 In the SDD method, specification-driven development, each document a person writes is accepted before the next one begins. The last of them is the application model: one file, written for a program to read. It carries every record, screen, list, menu and step of the workflow, each taken from documents your officials have already accepted. Before anything is built, a program checks the file, and refuses it if it contradicts what was accepted.
 
-> _Slide 3 — Title: 'What the kit makes from it'. Body, four text rows: 'Forms: the screens where an officer enters or reads a record.' 'Lists: the worklists and registers an officer chooses from.' 'Menus: what each role sees after signing in, in categories.' 'The workflow: the steps of a goal and who may take each.'_
+> _Slide 3 — Title: 'What the kit makes from it'. Body, four text rows: 'Forms: the screens where an officer enters or reads a record.' 'Lists: the worklists and registers an officer chooses from.' 'Menus: what each role sees after signing in, in categories.' 'The workflow: the steps of a goal and who may take each.' Figure F12, slide variant (figures/slides/F12_one-file-to-running-application.png), stands on the slide in place of the rows._
 
 The kit is the method's set of programs, which the supplier runs. From the file it makes the four things a low-code platform is built from. Forms are the screens where an officer enters or reads a record. Lists are the worklists and registers. Menus are what each role sees after signing in, grouped in categories. The workflow is the order of steps, and who may take each one. The platform's own documentation has a builder for each of them, and the kit fills those builders from the file instead of by hand.
 
@@ -124,7 +124,7 @@ One accepted file, read by a program, becomes the forms, lists, menus and workfl
 | --- | --- | --- |
 | 1 | Title slide. Title: 'From one file to a running application'. | Standard ITU template. Title Arial Bold 28pt; subtitle (KP4 / 5.1) Arial 18pt. Background #E5F5FB. No images. |
 | 2 | Three text rows: the application model, written last, checked by a program. | Names the model by what it is for; no file format is shown. |
-| 3 | Four text rows: forms, lists, menus, the workflow. | The core payload. The drawn version is figure F12 of the written guide; the slide stays text-only. |
+| 3 | Figure F12 (slide variant) in place of four text rows: forms, lists, menus, the workflow. | Figure F12, its slide variant (figures/slides/F12_one-file-to-running-application.png, drawn by the figure's own program in slide mode): the application model admitted by the check and generated into the platform's forms, lists, menus and workflow; boxes, arrows and words only, no imagery and no person on screen. The rows are its text equivalent. Calibration item: a drawn figure under ITU's text-only rule. |
 | 4 | Three text rows: packed, installed, moved from a test server to the live one. | Text-only list. |
 | 5 | Four text rows: MoEYS's application, its forms, its lists and its menu in five categories. | Progressa's names as the fact sheet gives them. No logos, no emblems. |
 | 6 | Four text rows: the acceptance questions. | Each row is a question the manager can ask on the running application. |
@@ -181,7 +181,7 @@ The evening before the minister's demonstration, someone notices a wrong label o
 
 A hand edit creates two versions of the truth. The accepted description says one thing, and the platform now shows another. When the application is next generated from the description, one of two things happens. Either the edit is overwritten and the wrong label comes back. Or someone protects the edit by not generating again, and from then on nobody can say what the application is built from.
 
-> _Slide 3 — Title: 'Correct up, generate down'. Body, three numbered text rows: '1. Find the document that owns the fact.' '2. Correct it there, and have the correction accepted.' '3. Generate the application again.'_
+> _Slide 3 — Title: 'Correct up, generate down'. Body, three numbered text rows: '1. Find the document that owns the fact.' '2. Correct it there, and have the correction accepted.' '3. Generate the application again.' Figure F13, slide variant (figures/slides/F13_correct-up-generate-down.png), stands on the slide beside the rows._
 
 The SDD method has one rule for this: nothing generated is edited by hand. A correction goes into the description that owns the fact, is accepted there, and the application is generated again. A label belongs to the screens of its goal, so it is corrected in those screens, carried into the model, and generated. It takes a little longer than a change on the platform. In exchange, the description and the platform never disagree.
 
@@ -213,7 +213,7 @@ Correct the accepted document, not the platform, and generate the application ag
 | --- | --- | --- |
 | 1 | Title slide. Title: 'Nothing generated is edited by hand'. | Standard ITU template. No images. |
 | 2 | Three text rows: two versions of the truth. | Text-only list. |
-| 3 | Three numbered text rows: find the owning document, correct it, generate again. | The core payload. The drawn version is figure F13 of the written guide, 'Correct up, generate down'; the slide stays text-only. |
+| 3 | Figure F13 (slide variant) beside three numbered text rows: find the owning document, correct it, generate again. | Figure F13, its slide variant (figures/slides/F13_correct-up-generate-down.png, drawn by the figure's own program in slide mode), on the left of the slide, with the three rows beside it: the twelve documents in a column, the change going up to the document that owns the fact and everything below produced again; boxes, arrows and words only, no imagery and no person on screen. The rows are its text equivalent. Calibration item: a drawn figure under ITU's text-only rule. |
 | 4 | Three text rows: in step, out of date, edited by hand. | The three marks of the read-back, in the program's own order. |
 | 5 | Four text rows: Progressa's label on MoEYS's form. | Progressa's names as the fact sheet gives them. |
 | 6 | Demonstration segment (storyboard until recorded). Text-only stand-in of four short lines. | Replaced by the recording of the 5.2 walkthrough when an application is generated. Until then, nothing on this slide claims a run. |
@@ -362,7 +362,7 @@ What the application keeps matters as much. The token carries an identifier that
 
 An institution's record works the same way. The GovStack Digital Registries specification requires a register to let other systems search, read, create and update its records through open interfaces, and to authorise which systems and users may do so. Progressa's design authorises only PHEQA's application to write the register of institutions. Every other service reads the record when it needs it, and keeps no copy.
 
-> _Slide 5 — Title: 'Progressa: one sign-in, one register, no copies'. Body, four text rows: 'An officer of MoEYS signs in through PNIA.' 'MoEYS's application keeps PNIA's identifier for her, not her national number.' 'Harbourview University College, INS-00217, is read from PHEQA's register when a case is opened.' 'Beside it, a design with its own table of institutions: two copies, drifting apart.'_
+> _Slide 5 — Title: 'Progressa: one sign-in, one register, no copies'. Body, four text rows: 'An officer of MoEYS signs in through PNIA.' 'MoEYS's application keeps PNIA's identifier for her, not her national number.' 'Harbourview University College, INS-00217, is read from PHEQA's register when a case is opened.' 'Beside it, a design with its own table of institutions: two copies, drifting apart.' Figure F7, slide variant (figures/slides/F7_architecture.png), stands on the slide in place of the rows._
 
 In Progressa, an officer of MoEYS signs in through PNIA, and MoEYS's application keeps the identifier PNIA gives it, not her national number. When she opens a case, the application reads Harbourview University College from PHEQA's register of institutions. Now picture the other design, with its own table of institutions inside MoEYS's application. One week PHEQA writes the college's new name into the register. MoEYS's copy keeps the old one, and the next week the minister signs a decision under a name the college no longer has.
 
@@ -388,7 +388,7 @@ Take who someone is from the identity block, and what an institution is from its
 | 2 | Three text rows: the steps of the identity sign-in. | In the order the Identity specification gives them; no technical names of the messages. |
 | 3 | Three text rows: the identifier the block gives each service; never the national number. | The core payload for identity. |
 | 4 | Three text rows: open interfaces in the specification; one writer in Progressa's design; no copies. | The core payload for registries. |
-| 5 | Four text rows: Progressa's sign-in, register and the drifting copy. | Progressa's names as the fact sheet gives them. The drawn version of the two applications and their crossings is figure F7 of the written guide; the slide stays text-only. |
+| 5 | Figure F7 (slide variant) in place of four text rows: Progressa's sign-in, register and the drifting copy. | Figure F7, its slide variant (figures/slides/F7_architecture.png, drawn by the figure's own program in slide mode): PHEQA's and MoEYS's applications on one page, the sign-in from PNIA above them, PHEQA's register of institutions, MoEYS keeping no copy, and the fee and the read across Linkup as crossings; boxes, arrows and words only, no imagery and no person on screen. The rows are its text equivalent. Calibration item: a drawn figure under ITU's text-only rule. |
 | 6 | Two contrasting text rows: a block used, a copy kept. | Text boxes side by side are allowed; labels in plain text only. |
 | 7 | Demonstration segment (storyboard until recorded). Text-only stand-in of four short lines. | Replaced by the recording of the 5.4 walkthrough when both applications are generated. Until then, nothing on this slide claims a run. |
 | 8 | Single-sentence summary slide. One large text block (Arial Bold 28pt) and the practice box. | The single message, word for word. |
@@ -451,7 +451,7 @@ In the SDD method, nobody writes the contract beside the application. The accept
 
 The same holds for a registration service and the GovStack Registration block. Its specification publishes the operations of applying online: the services and forms on offer, and sending an application with its documents. It publishes operations for processing: the applications and the officers' tasks. For managing and designing services and workflows, it says no interface is specified yet. So the service's contract with the block is produced from the description, in the block's published terms.
 
-> _Slide 5 — Title: 'Progressa: PHEQA's register, as MoEYS reads it'. Body, four text rows: 'MoEYS may ask: one institution, by its register number, such as INS-00217.' 'MoEYS may ask: the list of registered institutions.' 'MoEYS cannot ask: applications, inspections, fees, or anything the register does not publish.' 'Every call goes through Linkup.'_
+> _Slide 5 — Title: 'Progressa: PHEQA's register, as MoEYS reads it'. Body, four text rows: 'MoEYS may ask: one institution, by its register number, such as INS-00217.' 'MoEYS may ask: the list of registered institutions.' 'MoEYS cannot ask: applications, inspections, fees, or anything the register does not publish.' 'Every call goes through Linkup.' Figure F14, slide variant (figures/slides/F14_data-interface.png), stands on the slide in place of the rows._
 
 Read as a list, the contract of PHEQA's register is short. MoEYS may ask for one institution by its register number, such as INS-00217, and receive its name, its kind, its licence and its standing. MoEYS may ask for the list of registered institutions. It cannot ask for applications, inspections, fees, or anything else the register does not publish. Every call goes through Linkup. The manager reads this list; the builder's program reads the same contract as a file. One document gives the business side and IT one shared language.
 
@@ -473,7 +473,7 @@ A contract produced from the accepted documents cannot drift from them. Read it 
 | 2 | Three text rows: what a contract says, and the standard it is written in. | The name of the standard is shown; no file is shown. |
 | 3 | Three text rows: produced from the description, produced again on change. | The core payload. |
 | 4 | Four text rows: the Registration block's published operations, and what it does not yet specify. | Plain words for each group of operations; no technical names. |
-| 5 | Four text rows: what MoEYS may and may not ask of PHEQA's register. | Progressa's names as the fact sheet gives them. The drawn version is figure F14 of the written guide; the slide stays text-only. |
+| 5 | Figure F14 (slide variant) in place of four text rows: what MoEYS may and may not ask of PHEQA's register. | Figure F14, its slide variant (figures/slides/F14_data-interface.png, drawn by the figure's own program in slide mode): MoEYS's application, Linkup and PHEQA's application as three columns, the two calls and their answers as arrows between them, and the contract under them, what MoEYS can ask for and what it cannot; boxes, arrows and words only, no imagery and no person on screen. The rows are its text equivalent. Calibration item: a drawn figure under ITU's text-only rule. |
 | 6 | Demonstration segment (storyboard until recorded). Text-only stand-in of three short lines. | Replaced by the recording of the 5.5 walkthrough when both applications are generated. Until then, nothing on this slide claims a run. |
 | 7 | Single-sentence summary slide. One large text block (Arial Bold 28pt) and the practice box. | The single message, word for word. |
 | 8 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the references. |
@@ -535,7 +535,7 @@ Take the fee first. The registration service does not build its own payment scre
 
 The block may not be ready on the first day. Then the service does what many services do today: the applicant pays into the authority's bank account, and the finance officer records the evidence of the payment against the application: who paid, how much, and when. That is honest, and it works. The architecture still names it as a crossing, one still to move to the Payments block, so that the move is planned and budgeted, and not forgotten.
 
-> _Slide 5 — Title: 'Progressa: the crossings of PHEQA's registration service'. Body, four text rows: 'The application fee: out to the Payments block; the confirmation back.' 'An institution's record: out to MoEYS when MoEYS asks, through Linkup.' 'Who signs in: in from PNIA, through its sign-in.' 'Of the same kind: a graduate's credential, issued by PDCA into the learner's digital wallet.'_
+> _Slide 5 — Title: 'Progressa: the crossings of PHEQA's registration service'. Body, four text rows: 'The application fee: out to the Payments block; the confirmation back.' 'An institution's record: out to MoEYS when MoEYS asks, through Linkup.' 'Who signs in: in from PNIA, through its sign-in.' 'Of the same kind: a graduate's credential, issued by PDCA into the learner's digital wallet.' Figure F7, slide variant (figures/slides/F7_architecture.png), stands on the slide in place of the rows._
 
 Here is the table for PHEQA's registration service. The application fee goes out to the Payments block, and the confirmation comes back. An institution's record goes out to MoEYS when MoEYS asks for it, through Linkup, which PDGA operates. Who signs in comes in from PNIA. And one more crossing of the same kind lies ahead: a graduate's credential, issued by PDCA into the learner's digital wallet. Each row names a body that must agree to it.
 
@@ -557,7 +557,7 @@ Name every crossing, the body on the other side and the block it goes through. N
 | 2 | Four text rows: the columns of the crossing table. | The core payload. |
 | 3 | Three text rows: the payment request and its confirmation. | The fields of the request in the order the Payments specification gives them. |
 | 4 | Three text rows: the officer's recording of a payment, named as a crossing still to move. | Shown beside the published way, not instead of it. |
-| 5 | Four text rows: the crossing table of PHEQA's registration service. | Progressa's names as the fact sheet gives them. The drawn version is figure F7 of the written guide; the slide stays text-only. |
+| 5 | Figure F7 (slide variant) in place of four text rows: the crossing table of PHEQA's registration service. | Figure F7, its slide variant (figures/slides/F7_architecture.png, drawn by the figure's own program in slide mode): the crossings of PHEQA's registration service drawn as arrows, the fee to the Payments block, the record to MoEYS across Linkup, the sign-in from PNIA; the credential crossing of the same kind is spoken, not drawn; boxes, arrows and words only, no imagery and no person on screen. The rows are its text equivalent. Calibration item: a drawn figure under ITU's text-only rule. |
 | 6 | Four text rows: who confirms each row. | Text-only list. |
 | 7 | Single-sentence summary slide. One large text block (Arial Bold 28pt) and the practice box. | The single message, word for word. |
 | 8 | Sources slide. Footer: 'Find the link in the description.' | Lets viewers verify the references. |

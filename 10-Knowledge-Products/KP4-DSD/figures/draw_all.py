@@ -26,8 +26,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # the figures the decks carry; each is drawn with its type raised by SLIDE_BUMP points, then by
 # one point less, down to the guide's sizes, and the largest that passes kp4_style's fit check
 # is kept (a tightly laid-out figure keeps the guide's sizes and is only cropped)
-SLIDE_FIGURES = ("F2_three-places", "F3_twelve-documents", "F5_sector-catalogue",
-                 "F7_architecture", "F8_story-and-failures", "F9_screen-sources")
+SLIDE_FIGURES = ("F2_three-places", "F3_twelve-documents", "F4_who-writes-checks-accepts",
+                 "F5_sector-catalogue", "F7_architecture", "F8_story-and-failures",
+                 "F9_screen-sources", "F10_four-questions", "F11_licence-workflow",
+                 "F12_one-file-to-running-application", "F13_correct-up-generate-down",
+                 "F14_data-interface")
 SLIDE_BUMP = 2
 
 

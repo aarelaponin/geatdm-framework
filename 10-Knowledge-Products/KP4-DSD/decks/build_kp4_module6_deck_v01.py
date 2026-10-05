@@ -18,10 +18,12 @@
 # Override paths with KP_KIT=, TEMPLATE= and OUT_DIR= env vars.
 import json
 import os
+import re
 import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+KP4 = os.path.dirname(HERE)
 KP_KIT = os.environ.get('KP_KIT') or os.path.normpath(os.path.join(
     HERE, '..', '..', '..', '..', '..', 'claude-marketplace', 'plugins', 'itu-giga-kp'))
 SCRIPTS = os.path.join(KP_KIT, 'skills', 'kp-deck-builder', 'scripts')
@@ -34,6 +36,7 @@ from deck_lib import (
     add_slide, big_slide, box, delete_template_slides, edit_agenda, edit_cover, footer, notes,
     open_template, rows_slide, section_slide, set_text, sources_slide, title)
 from pptx.util import Pt
+from kp4_deck_common import figure_slide  # noqa: E402  (the figure slides)
 
 prs = open_template(os.environ.get('TEMPLATE'))
 
@@ -159,6 +162,19 @@ def sources(items, tag, link):
     return s
 
 
+def figure(code, n, png, mode, head, items, tag, note, closing=None, numbered=False):
+    """A slide whose cue ends "Figure Fn, slide variant (figures/slides/<png>), stands on the
+    slide <mode> the rows": the figure's slide variant in place of the rows (or, for a tall
+    figure, beside them). Same arguments as rows() after the figure's own, so the rows stay here
+    as the figure's text equivalent, as the bundle keeps them. Drawn by kp4_deck_common.figure_slide."""
+    if numbered:
+        items = [(re.sub(r'^\d+\.\s*', '', h), sub) for h, sub in items]
+    s = {'n': n, 'head': head, 'footer': closing,
+         'figure': (png.split('_')[0], os.path.join(KP4, 'figures', 'slides', png), mode),
+         'rows': [h if not sub else h + ' — ' + sub for h, sub in items]}
+    return figure_slide(prs, {'code': code}, s, tag, note)
+
+
 # ---------------------------------------------------------------- COVER (edit slide 1)
 edit_cover(prs, **{'title_text': 'Run the method in your administration',
  'kicker': 'Designing Digital Government Services · Module 6',
@@ -213,7 +229,8 @@ section("6.1",
         "begins.\n\nRetrieval prompt — ask before playing on: how many deliverables should the "
         "contract name? Answer on the next slide.")
 
-rows("Twelve deliverables, not one system",
+figure("6.1", 2, "F3_twelve-documents.png", "in place of",
+     "Twelve deliverables, not one system",
      [("1", "Your own documents, handed over and kept as received."),
       ("2 to 8", "What was asked, the records, the goals, the architecture, the shared lists, each "
        "goal as a story, its screens."),
@@ -292,7 +309,8 @@ section("6.2",
         "change the screen, or the running system, where the problem was seen. That fix is "
         "the one that brings the problem back later.")
 
-rows("Up to the owner, then down again",
+figure("6.2", 2, "F13_correct-up-generate-down.png", "beside",
+     "Up to the owner, then down again",
      [("Find the document that owns the fact.", ''),
       ("Correct the fact there, and nowhere else.", ''),
       ("Produce everything below it again.", '')],
@@ -448,7 +466,8 @@ section("6.4",
         "speed is real. The question for a manager is who decides what the draft says, and "
         "what happens to everything the assistant did not know.")
 
-rows("The assistant drafts; a person rules",
+figure("6.4", 2, "F4_who-writes-checks-accepts.png", "in place of",
+     "The assistant drafts; a person rules",
      [("The assistant proposes each entry, step or line.", ''),
       ("A named person accepts, amends or sets aside each proposal.", ''),
       ("Only what the person accepted stands.", '')],
@@ -524,7 +543,8 @@ section("6.5",
         "request is already on the table: graduates want proof of their degree that an "
         "employer can trust.")
 
-rows("Planning enables re-use",
+figure("6.5", 2, "F5_sector-catalogue.png", "in place of",
+     "Planning enables re-use",
      [("A block paid for once can carry many services.", ''),
       ("Inside one project, building your own looks faster.", ''),
       ("Only someone who plans for the whole sector sees the sum.", '')],
@@ -769,9 +789,17 @@ for sl in prs.slides:
             assert sh.top + sh.height <= pb.top or sh.top >= pb.top + pb.height, \
                 'shape overlaps the practice box: %r' % sh.text_frame.text[:60]
 
-OUT_DIR = os.environ.get('OUT_DIR') or os.path.join(HERE, 'module_%s' % MODULE)
-DECKS = OUT_DIR
+# Output goes to the production tree the video track and the tracker read (see ../videos/README.md),
+# as kp4_deck_common does for Modules 1 to 3; OUT_DIR= overrides (the scripts then go to OUT_DIR/scripts).
+if os.environ.get('OUT_DIR'):
+    DECKS = os.environ['OUT_DIR']
+    SCRIPTS_DIR = os.path.join(DECKS, 'scripts')
+else:
+    LANG_DIR = os.path.join(KP4, 'videos', 'module_%s' % MODULE, 'en')
+    DECKS = os.path.join(LANG_DIR, 'decks')
+    SCRIPTS_DIR = os.path.join(LANG_DIR, 'scripts')
 os.makedirs(DECKS, exist_ok=True)
+os.makedirs(SCRIPTS_DIR, exist_ok=True)
 OUT = os.path.join(DECKS, 'KP4_M%s_Deck_v0.1.pptx' % MODULE)
 prs.save(OUT)
 print('slides:', len(prs.slides._sldIdLst))
@@ -790,5 +818,12 @@ with open(SPEC, 'w', encoding='utf-8') as f:
 subprocess.run([sys.executable, os.path.join(SCRIPTS, 'split_module_deck.py'), OUT, SPEC, DECKS,
                 '--infer-ranges'], check=True)
 subprocess.run([sys.executable, os.path.join(SCRIPTS, 'scripts_from_deck.py'), OUT, SPEC,
-                os.path.join(OUT_DIR, 'scripts'), '--kp', 'KP4', '--module', MODULE,
+                SCRIPTS_DIR, '--kp', 'KP4', '--module', MODULE,
                 '--prefix', 'KP4_M%s' % MODULE, '--version', 'v0.1'], check=True)
+# Prove the speaker notes narrate the bundle word for word (the kit's vo_diff.py). Its result is printed,
+# not enforced: a 'NARRATED' flag means a voice-over paragraph of the bundle itself says 'Find the link in
+# the description' (4.3 slide 3, 4.4 slide 4 and 5.2 slide 7, as of 5 Oct 2026), which is the author's call.
+r = subprocess.run([sys.executable, os.path.join(SCRIPTS, 'vo_diff.py'),
+                    os.path.join(KP4, 'build_kp4_module%s_v01.js' % MODULE), OUT])
+if r.returncode:
+    print('vo_diff reported problems (see the table above): check the mismatch and NARRATED columns.')

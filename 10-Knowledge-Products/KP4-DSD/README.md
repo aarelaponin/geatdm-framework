@@ -87,9 +87,9 @@ modules 3, 4 and 5.
 | The same module as readable text | `KP4_ModuleN_Script_Bundle_v0.1.md` | Generated from the script file beside it; never edited by hand |
 | The worked examples, one per subtopic, all set in Progressa and linked to one another, with the fact sheet every example uses (`E0_progressa-fact-sheet.md`) | `examples/` (`E1-1_…` to `E6-7_…`) | Those of modules 1 to 3, and the fact sheet, are written by hand. Those of modules 4 to 6 are carried by their module's script and are written into this folder from it as the script carries them; never edited by hand |
 | The blank instruments: one blank for each document of the twelve that a person writes, one for the sector's catalogue of services, and the deliverables annex for a supplier's terms of reference | `toolkit/` | Written out by the program that renders the course guide, from its own text; never edited by hand |
-| The fourteen figures of the course guide, each drawn by its own program, with the style they share and the check of their labels; and the slide variants of the six that also stand on a video slide (F2, F3, F5, F7, F8, F9) | `figures/` (`F1_structure.png` to `F14_data-interface.png`, each beside its `.py`); `figures/slides/` | Drawn by `figures/draw_all.py` and `figures/draw_all.py --slides`; never edited by hand |
-| The slide decks of the 37 videos on ITU's template, with the voice-over in the speaker notes: one deck per video, one combined deck per module, and the scripts-only companion of each | Modules 1 to 3, which are on the video track: `videos/module_N/en/decks/` (`KP4_MN_<video>_Deck_v0.1.pptx`, `KP4_MN_Deck_v0.1.pptx`) and `videos/module_N/en/scripts/`. Modules 4 to 6, not yet on the track: `decks/module_4/` to `decks/module_6/`, with `scripts/` inside. All built by `decks/build_kp4_moduleN_deck_v01.py` | Generated from the module's script file by the program; never edited by hand |
-| The video track of Modules 1 to 3: one folder per module and per language with the stage folders of the production pipeline (scripts, decks, audio briefs, takes, cues, video), and the page for the person who records the videos | `videos/module_1/` to `videos/module_3/`, `videos/README.md` | The stage folders are filled by the production kit, stage by stage; the page is written by hand |
+| The fourteen figures of the course guide, each drawn by its own program, with the style they share and the check of their labels; and the slide variants of the twelve that also stand on a video slide (F2 to F5, F7 to F14) | `figures/` (`F1_structure.png` to `F14_data-interface.png`, each beside its `.py`); `figures/slides/` | Drawn by `figures/draw_all.py` and `figures/draw_all.py --slides`; never edited by hand |
+| The slide decks of the 37 videos on ITU's template, with the voice-over in the speaker notes: one deck per video, one combined deck per module, and the scripts-only companion of each. Eighteen slides carry the slide variant of a figure (`figures/slides/`) in place of, or beside, their rows, as their cue says | `videos/module_N/en/decks/` (`KP4_MN_<video>_Deck_v0.1.pptx`, `KP4_MN_Deck_v0.1.pptx`) and `videos/module_N/en/scripts/`, built by `decks/build_kp4_moduleN_deck_v01.py` with `decks/kp4_deck_common.py` | Generated from the module's script file by the program; never edited by hand |
+| The video track: one folder per module and per language with the stage folders of the production pipeline (scripts, decks, audio briefs, takes, cues, video), and the page for the person who records the videos | `videos/module_1/` to `videos/module_6/`, `videos/README.md` | The stage folders are filled by the production kit, stage by stage; the page is written by hand |
 
 The course guide, the pages a learner reads, is in the folder `../gitbook/kp4/`: an opening page, one page
 for each module, for each of the 37 subtopics and for each module's self-check, and the reference pages (the
@@ -136,9 +136,8 @@ this folder:
     python3 "$KP_KIT"/skills/kp-gitbook-render/scripts/gitbook_qa.py
     # the check of one module against ITU's guide for knowledge products
     python3 "$KP_KIT"/skills/kp-bundle-qa/scripts/qa_bundle.py build_kp4_module2_v01.js
-    # the slide decks, after a module's script file has changed (modules 1 to 3 write to videos/module_N/en/,
-    # modules 4 to 6 to decks/module_N/); each run also splits the deck, writes the scripts-only companions
-    # and proves the notes narrate the bundle (vo_diff.py)
+    # the slide decks, after a module's script file has changed (they write to videos/module_N/en/); each run
+    # also splits the deck, writes the scripts-only companions and proves the notes narrate the bundle (vo_diff.py)
     (cd decks && for n in 1 2 3; do python3 build_kp4_module${n}_deck_v01.py || break; done)
     (cd decks && for n in 4 5 6; do python3 build_kp4_module${n}_deck_v01.py || break; done)
 

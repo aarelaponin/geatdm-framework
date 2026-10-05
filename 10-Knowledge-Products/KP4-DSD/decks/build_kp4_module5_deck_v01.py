@@ -18,10 +18,12 @@
 # Override paths with KP_KIT=, TEMPLATE= and OUT_DIR= env vars.
 import json
 import os
+import re
 import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+KP4 = os.path.dirname(HERE)
 KP_KIT = os.environ.get('KP_KIT') or os.path.normpath(os.path.join(
     HERE, '..', '..', '..', '..', '..', 'claude-marketplace', 'plugins', 'itu-giga-kp'))
 SCRIPTS = os.path.join(KP_KIT, 'skills', 'kp-deck-builder', 'scripts')
@@ -34,6 +36,7 @@ from deck_lib import (
     add_slide, big_slide, box, delete_template_slides, edit_agenda, edit_cover, footer, notes,
     open_template, rows_slide, section_slide, set_text, sources_slide, title)
 from pptx.util import Pt
+from kp4_deck_common import figure_slide  # noqa: E402  (the figure slides)
 
 prs = open_template(os.environ.get('TEMPLATE'))
 
@@ -157,6 +160,19 @@ def sources(items, tag, link):
     return s
 
 
+def figure(code, n, png, mode, head, items, tag, note, closing=None, numbered=False):
+    """A slide whose cue ends "Figure Fn, slide variant (figures/slides/<png>), stands on the
+    slide <mode> the rows": the figure's slide variant in place of the rows (or, for a tall
+    figure, beside them). Same arguments as rows() after the figure's own, so the rows stay here
+    as the figure's text equivalent, as the bundle keeps them. Drawn by kp4_deck_common.figure_slide."""
+    if numbered:
+        items = [(re.sub(r'^\d+\.\s*', '', h), sub) for h, sub in items]
+    s = {'n': n, 'head': head, 'footer': closing,
+         'figure': (png.split('_')[0], os.path.join(KP4, 'figures', 'slides', png), mode),
+         'rows': [h if not sub else h + ' — ' + sub for h, sub in items]}
+    return figure_slide(prs, {'code': code}, s, tag, note)
+
+
 # ---------------------------------------------------------------- COVER (edit slide 1)
 edit_cover(prs, **{'title_text': 'Generate the service on a\nlow-code platform and\nconnect the blocks',
  'kicker': 'Designing Digital Government Services · Module 5',
@@ -221,7 +237,8 @@ rows("One file, read by a program",
      "Before anything is built, a program checks the file, and refuses it if it contradicts "
      "what was accepted.")
 
-rows("What the kit makes from it",
+figure("5.1", 3, "F12_one-file-to-running-application.png", "in place of",
+     "What the kit makes from it",
      [("Forms", "the screens where an officer enters or reads a record."),
       ("Lists", "the worklists and registers an officer chooses from."),
       ("Menus", "what each role sees after signing in, in categories."),
@@ -328,7 +345,8 @@ rows("Two versions of the truth",
      "before playing on: the label on the form is wrong; where does the correction go? "
      "Answer on the next slide.")
 
-rows("Correct up, generate down",
+figure("5.2", 3, "F13_correct-up-generate-down.png", "beside",
+     "Correct up, generate down",
      [("Find the document that owns the fact.", ''),
       ("Correct it there, and have the correction accepted.", ''),
       ("Generate the application again.", '')],
@@ -540,7 +558,8 @@ rows("What an institution is: the register",
      "so. Progressa's design authorises only PHEQA's application to write the register of "
      "institutions. Every other service reads the record when it needs it, and keeps no copy.")
 
-rows("Progressa: one sign-in, one register, no copies",
+figure("5.4", 5, "F7_architecture.png", "in place of",
+     "Progressa: one sign-in, one register, no copies",
      [("An officer of MoEYS signs in through PNIA.", ''),
       ("MoEYS's application keeps PNIA's identifier for her, not her national number.", ''),
       ("Harbourview University College, INS-00217, is read from PHEQA's register when a case "
@@ -650,7 +669,8 @@ rows("The contract with the registration block",
      "contract with the block is produced from the description, in the block's published "
      "terms.")
 
-rows("Progressa: PHEQA's register, as MoEYS reads it",
+figure("5.5", 5, "F14_data-interface.png", "in place of",
+     "Progressa: PHEQA's register, as MoEYS reads it",
      [("MoEYS may ask", "one institution, by its register number, such as INS-00217."),
       ("MoEYS may ask", "the list of registered institutions."),
       ("MoEYS cannot ask", "applications, inspections, fees, or anything the register does not publish."),
@@ -745,7 +765,8 @@ rows("When the block is not yet there",
      "crossing, one still to move to the Payments block, so that the move is planned and "
      "budgeted, and not forgotten.")
 
-rows("Progressa: the crossings of PHEQA's registration service",
+figure("5.6", 5, "F7_architecture.png", "in place of",
+     "Progressa: the crossings of PHEQA's registration service",
      [("The application fee", "out to the Payments block; the confirmation back."),
       ("An institution's record", "out to MoEYS when MoEYS asks, through Linkup."),
       ("Who signs in", "in from PNIA, through its sign-in."),
@@ -902,9 +923,17 @@ for sl in prs.slides:
             assert sh.top + sh.height <= pb.top or sh.top >= pb.top + pb.height, \
                 'shape overlaps the practice box: %r' % sh.text_frame.text[:60]
 
-OUT_DIR = os.environ.get('OUT_DIR') or os.path.join(HERE, 'module_%s' % MODULE)
-DECKS = OUT_DIR
+# Output goes to the production tree the video track and the tracker read (see ../videos/README.md),
+# as kp4_deck_common does for Modules 1 to 3; OUT_DIR= overrides (the scripts then go to OUT_DIR/scripts).
+if os.environ.get('OUT_DIR'):
+    DECKS = os.environ['OUT_DIR']
+    SCRIPTS_DIR = os.path.join(DECKS, 'scripts')
+else:
+    LANG_DIR = os.path.join(KP4, 'videos', 'module_%s' % MODULE, 'en')
+    DECKS = os.path.join(LANG_DIR, 'decks')
+    SCRIPTS_DIR = os.path.join(LANG_DIR, 'scripts')
 os.makedirs(DECKS, exist_ok=True)
+os.makedirs(SCRIPTS_DIR, exist_ok=True)
 OUT = os.path.join(DECKS, 'KP4_M%s_Deck_v0.1.pptx' % MODULE)
 prs.save(OUT)
 print('slides:', len(prs.slides._sldIdLst))
@@ -923,5 +952,12 @@ with open(SPEC, 'w', encoding='utf-8') as f:
 subprocess.run([sys.executable, os.path.join(SCRIPTS, 'split_module_deck.py'), OUT, SPEC, DECKS,
                 '--infer-ranges'], check=True)
 subprocess.run([sys.executable, os.path.join(SCRIPTS, 'scripts_from_deck.py'), OUT, SPEC,
-                os.path.join(OUT_DIR, 'scripts'), '--kp', 'KP4', '--module', MODULE,
+                SCRIPTS_DIR, '--kp', 'KP4', '--module', MODULE,
                 '--prefix', 'KP4_M%s' % MODULE, '--version', 'v0.1'], check=True)
+# Prove the speaker notes narrate the bundle word for word (the kit's vo_diff.py). Its result is printed,
+# not enforced: a 'NARRATED' flag means a voice-over paragraph of the bundle itself says 'Find the link in
+# the description' (4.3 slide 3, 4.4 slide 4 and 5.2 slide 7, as of 5 Oct 2026), which is the author's call.
+r = subprocess.run([sys.executable, os.path.join(SCRIPTS, 'vo_diff.py'),
+                    os.path.join(KP4, 'build_kp4_module%s_v01.js' % MODULE), OUT])
+if r.returncode:
+    print('vo_diff reported problems (see the table above): check the mismatch and NARRATED columns.')

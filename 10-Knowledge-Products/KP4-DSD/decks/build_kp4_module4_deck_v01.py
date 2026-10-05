@@ -18,10 +18,12 @@
 # Override paths with KP_KIT=, TEMPLATE= and OUT_DIR= env vars.
 import json
 import os
+import re
 import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+KP4 = os.path.dirname(HERE)
 KP_KIT = os.environ.get('KP_KIT') or os.path.normpath(os.path.join(
     HERE, '..', '..', '..', '..', '..', 'claude-marketplace', 'plugins', 'itu-giga-kp'))
 SCRIPTS = os.path.join(KP_KIT, 'skills', 'kp-deck-builder', 'scripts')
@@ -34,6 +36,7 @@ from deck_lib import (
     add_slide, big_slide, box, delete_template_slides, edit_agenda, edit_cover, footer, notes,
     open_template, rows_slide, section_slide, set_text, sources_slide, title)
 from pptx.util import Pt
+from kp4_deck_common import figure_slide  # noqa: E402  (the figure slides)
 
 prs = open_template(os.environ.get('TEMPLATE'))
 
@@ -151,6 +154,19 @@ def sources(items, tag, link):
     return s
 
 
+def figure(code, n, png, mode, head, items, tag, note, closing=None, numbered=False):
+    """A slide whose cue ends "Figure Fn, slide variant (figures/slides/<png>), stands on the
+    slide <mode> the rows": the figure's slide variant in place of the rows (or, for a tall
+    figure, beside them). Same arguments as rows() after the figure's own, so the rows stay here
+    as the figure's text equivalent, as the bundle keeps them. Drawn by kp4_deck_common.figure_slide."""
+    if numbered:
+        items = [(re.sub(r'^\d+\.\s*', '', h), sub) for h, sub in items]
+    s = {'n': n, 'head': head, 'footer': closing,
+         'figure': (png.split('_')[0], os.path.join(KP4, 'figures', 'slides', png), mode),
+         'rows': [h if not sub else h + ' — ' + sub for h, sub in items]}
+    return figure_slide(prs, {'code': code}, s, tag, note)
+
+
 # ---------------------------------------------------------------- COVER (edit slide 1)
 edit_cover(prs, **{'title_text': 'Settle the whole application once,\nthen describe it for the machine',
  'kicker': 'Designing Digital Government Services · Module 4',
@@ -202,7 +218,8 @@ section("4.1",
         "questions are still open, because each crosses many screens. If you do not settle "
         "them in one document, the program that builds the application settles them for you.")
 
-rows("Four questions no single goal can answer",
+figure("4.1", 2, "F10_four-questions.png", "in place of",
+     "Four questions no single goal can answer",
      [("Pick", "how an officer chooses a value from a list."),
       ("Find", "how she finds one record among many."),
       ("Move", "how a case goes from one state to the next, and who may move it."),
@@ -335,8 +352,7 @@ rows("Who decides the categories",
 rows("Progressa: the matters PHEQA advises on",
      [("Licences", "8 matters, such as a provisional licence for a university."),
       ("Suspension and cancellation", "7 matters, such as suspending a full licence."),
-      ("Other matters", "5 matters, such as a change of an institution's name.' Footer line: '20 matters, 3 "
-       "categories, no step longer than 8.")],
+      ("Other matters", "5 matters, such as a change of an institution's name.")],
      T,
      "VO: Here is the one long list in the application of MoEYS, Progressa's ministry of "
      "education. PHEQA, the quality authority, advises the minister on twenty kinds of "
@@ -344,7 +360,8 @@ rows("Progressa: the matters PHEQA advises on",
      "name. Twenty is too many for one step. So the list has three categories: licences, "
      "with eight matters; suspension and cancellation, with seven; and other matters, with "
      "five. No category holds more than nine, and each name is one the officers of MoEYS "
-     "already use.")
+     "already use.",
+     closing="20 matters, 3 categories, no step longer than 8.")
 
 rows("Two steps on the screen",
      [("Step 1", "on the list of PHEQA's advice that waits for the minister, the officer picks the "
@@ -398,8 +415,7 @@ rows("Three things, written once",
 rows("What the published specifications say",
      [("A process", "linked activities, each a step done by a person or a machine."),
       ("A workflow block runs the process", "started by another system, by a click, or by the passage of time."),
-      ("An officer decides on an application", "approve, reject, or send back for correction.' Footer: 'GovStack Workflow and "
-       "Registration specifications.")],
+      ("An officer decides on an application", "approve, reject, or send back for correction.")],
      T,
      "VO: The GovStack specifications give the same picture. The Workflow specification "
      "describes a process as a set of linked activities, each a step done by a person or by "
@@ -407,7 +423,8 @@ rows("What the published specifications say",
      "another system, by a person's click, or by the passage of time. The Registration "
      "specification gives an officer three decisions on an application: approve it, reject "
      "it, or send it back for correction. Its interface lets officers list the tasks that "
-     "wait for them and complete each one. Find the link in the description.")
+     "wait for them and complete each one. Find the link in the description.",
+     closing="GovStack Workflow and Registration specifications.")
 
 rows("PHEQA: the states of a licence",
      [("Granted", "the institution may operate."),
@@ -421,7 +438,8 @@ rows("PHEQA: the states of a licence",
      "in the groundwork every goal shares, and every goal that touches a licence reads them "
      "from there.")
 
-rows("The moves, and who may make each",
+figure("4.3", 5, "F11_licence-workflow.png", "in place of",
+     "The moves, and who may make each",
      [("None → granted", "the minister decides to grant; the registration officer records it."),
       ("Granted → suspended or cancelled; suspended → cancelled: the minister decides; the "
        "registration officer records it.", ''),
@@ -488,7 +506,8 @@ rows("What a low-code platform is made of",
      "list. Processes are the steps of the work. The platform's own documentation describes "
      "a builder for each of the four. Find the link in the description.")
 
-rows("One file instead of a thousand clicks",
+figure("4.4", 3, "F12_one-file-to-running-application.png", "in place of",
+     "One file instead of a thousand clicks",
      [("The usual way", "a builder clicks each part together, working from the documents."),
       ("The method's way", "one file, the application model, holds everything agreed."),
       ("A program generates the forms, lists, menus and processes from it.", ''),
@@ -609,15 +628,15 @@ rows("The cards the owner reads",
 rows("MoEYS: two cards",
      [("Assumption", "a change of name takes effect on the day the minister approves it. Ruling: yes."),
       ("Loss", "the notice to the institution cannot be sent by the platform; it is kept as a task "
-       "for an officer. Ruling: yes.' Footer line: 'Ruled by the Director of Higher "
-       "Education, with her name and the date.")],
+       "for an officer. Ruling: yes.")],
      T,
      "VO: Here are two cards from the review of the file of MoEYS, Progressa's ministry of "
      "education. The first is an assumption: a change of name takes effect on the day the "
      "minister approves it, because the goal's story did not say. The second is a loss: the "
      "story asks that the institution is told, and the platform cannot send that notice by "
      "itself, so it is kept as a task for an officer. The Director of Higher Education rules "
-     "yes on both, and her rulings are recorded.")
+     "yes on both, and her rulings are recorded.",
+     closing="Ruled by the Director of Higher Education, with her name and the date.")
 
 rows("When the answer is no",
      [("'No' to an assumption → the goal's story is corrected.", ''),
@@ -758,9 +777,17 @@ for sl in prs.slides:
             assert sh.top + sh.height <= pb.top or sh.top >= pb.top + pb.height, \
                 'shape overlaps the practice box: %r' % sh.text_frame.text[:60]
 
-OUT_DIR = os.environ.get('OUT_DIR') or os.path.join(HERE, 'module_%s' % MODULE)
-DECKS = OUT_DIR
+# Output goes to the production tree the video track and the tracker read (see ../videos/README.md),
+# as kp4_deck_common does for Modules 1 to 3; OUT_DIR= overrides (the scripts then go to OUT_DIR/scripts).
+if os.environ.get('OUT_DIR'):
+    DECKS = os.environ['OUT_DIR']
+    SCRIPTS_DIR = os.path.join(DECKS, 'scripts')
+else:
+    LANG_DIR = os.path.join(KP4, 'videos', 'module_%s' % MODULE, 'en')
+    DECKS = os.path.join(LANG_DIR, 'decks')
+    SCRIPTS_DIR = os.path.join(LANG_DIR, 'scripts')
 os.makedirs(DECKS, exist_ok=True)
+os.makedirs(SCRIPTS_DIR, exist_ok=True)
 OUT = os.path.join(DECKS, 'KP4_M%s_Deck_v0.1.pptx' % MODULE)
 prs.save(OUT)
 print('slides:', len(prs.slides._sldIdLst))
@@ -779,5 +806,12 @@ with open(SPEC, 'w', encoding='utf-8') as f:
 subprocess.run([sys.executable, os.path.join(SCRIPTS, 'split_module_deck.py'), OUT, SPEC, DECKS,
                 '--infer-ranges'], check=True)
 subprocess.run([sys.executable, os.path.join(SCRIPTS, 'scripts_from_deck.py'), OUT, SPEC,
-                os.path.join(OUT_DIR, 'scripts'), '--kp', 'KP4', '--module', MODULE,
+                SCRIPTS_DIR, '--kp', 'KP4', '--module', MODULE,
                 '--prefix', 'KP4_M%s' % MODULE, '--version', 'v0.1'], check=True)
+# Prove the speaker notes narrate the bundle word for word (the kit's vo_diff.py). Its result is printed,
+# not enforced: a 'NARRATED' flag means a voice-over paragraph of the bundle itself says 'Find the link in
+# the description' (4.3 slide 3, 4.4 slide 4 and 5.2 slide 7, as of 5 Oct 2026), which is the author's call.
+r = subprocess.run([sys.executable, os.path.join(SCRIPTS, 'vo_diff.py'),
+                    os.path.join(KP4, 'build_kp4_module%s_v01.js' % MODULE), OUT])
+if r.returncode:
+    print('vo_diff reported problems (see the table above): check the mismatch and NARRATED columns.')

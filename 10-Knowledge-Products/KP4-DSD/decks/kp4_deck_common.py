@@ -35,8 +35,9 @@ if not os.path.isdir(SCRIPTS):
 sys.path.insert(0, SCRIPTS)
 from deck_lib import (  # noqa: E402
     TITLE_CARD_NOTE, INK, GREY, ITU_BLUE_DARK, LAYOUT_THANKS, LAYOUT_WHITE,
-    add_slide, big_slide, box, delete_template_slides, edit_agenda, edit_cover, footer, hook_slide,
-    notes, open_template, rows_block, section_slide, set_text, sources_slide, title, two_panel)
+    add_slide, big_slide, box, delete_template_slides, edit_agenda, edit_cover, footer, hline,
+    hook_slide, notes, open_template, rows_block, section_slide, set_text, sources_slide, title,
+    two_panel)
 
 # The practice box is the video's only call to action and is never narrated (plan D5).
 PRACTICE_NOTE = ('PRACTICE BOX (on-screen only — never read it, never paraphrase it, never point '
@@ -44,7 +45,7 @@ PRACTICE_NOTE = ('PRACTICE BOX (on-screen only — never read it, never paraphra
 NUMBERS = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7,
            'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11, 'twelve': 12}
 FIGURE = re.compile(r'\s*Figure (F\d+), slide variant \((figures/slides/[^)]+)\), stands on the slide '
-                    r'in place of the rows\.\s*$')
+                    r'(in place of|beside) the rows\.\s*$')   # beside: a tall figure (F13) left, the rows right
 FIGURE_SHAPE = 'kp4-figure'
 FIGURE_AREA = (0.52, 1.4, 12.3, 5.55)   # x, y, w, h under the title; shorter when a footer line follows
 STR = r'"((?:[^"\\]|\\.)*)"'
@@ -67,7 +68,7 @@ def parse_cue(cue):
     figure = None
     f = FIGURE.search(rest)
     if f:
-        figure = (f.group(1), os.path.join(KP4, f.group(2)))
+        figure = (f.group(1), os.path.join(KP4, f.group(2)), f.group(3))
         rest = rest[:f.start()]
     footer = None
     if 'Footer line:' in rest:
@@ -147,24 +148,44 @@ def vo_note(slide, spec_note):
 
 def figure_slide(prs, v, s, tag, note):
     """The slide variant of a guide figure under the slide's title, aspect kept, centred in
-    FIGURE_AREA (shortened when the cue has a footer line, which then sits under it)."""
+    FIGURE_AREA (shortened when the cue has a footer line, which then sits under it). In the
+    'beside' mode (a tall figure, F13, that would scale too small on its own) the figure takes
+    the left 6.3 in and the cue's rows stand beside it, drawn as rows_slide draws them."""
     from PIL import Image
-    from pptx.util import Inches
-    code, png = s['figure']
+    from pptx.util import Inches, Pt
+    code, png, mode = s['figure']
+    beside = mode == 'beside'
     assert os.path.exists(png), '%s slide %d: %s missing; run figures/draw_all.py --slides' % (
         v['code'], s['n'], os.path.relpath(png, KP4))
     with Image.open(png) as im:
         pw, ph = im.size
     ax, ay, aw, ah = FIGURE_AREA
+    if beside:
+        aw = 6.3
     if s['footer']:
         ah -= 0.6
     k = min(aw / pw, ah / ph)
     w, h = pw * k, ph * k
     sl = add_slide(prs, LAYOUT_WHITE)
-    title(sl, s['head'])
-    pic = sl.shapes.add_picture(png, Inches(ax + (aw - w) / 2), Inches(ay + (ah - h) / 2),
-                                Inches(w), Inches(h))
+    title(sl, s['head'], size=28 if len(s['head']) <= 52 else 24)
+    pic = sl.shapes.add_picture(png, Inches(ax if beside else ax + (aw - w) / 2),
+                                Inches(ay + (ah - h) / 2), Inches(w), Inches(h))
     pic.name = '%s %s' % (FIGURE_SHAPE, code)
+    if beside:
+        rows = [split_row(re.sub(r'^\d+\.\s*', '', r)) for r in s['rows']]
+        rx = ax + aw + 0.5
+        rw = 13.333 - rx - 0.6
+        n = len(rows)
+        rh = (ah - 0.4) / n
+        for i, (head, sub) in enumerate(rows):
+            y = ay + 0.2 + i * rh
+            tb = box(sl, rx, y, rw, rh - 0.05)
+            paras = [[(head, 19, True, INK, False)]]
+            if sub:
+                paras.append([(sub, 15.5, False, GREY, False)])
+            set_text(tb.text_frame, paras, space_after=Pt(3))
+            if i < n - 1:
+                hline(sl, rx - 0.04, y + rh - 0.045, rw)
     if s['footer']:
         tb = box(sl, 0.72, ay + ah + 0.12, 11.9, 0.5)
         set_text(tb.text_frame, [[(s['footer'], 15.5, True, ITU_BLUE_DARK, False)]])
