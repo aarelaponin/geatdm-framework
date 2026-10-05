@@ -50,8 +50,9 @@ The steps of production, from script to finished video, are the ones KP1 and KP2
    deck is its specification plus one opening slide, so **a slide's number in the deck is its row number
    in the bundle's "On-screen slide specification" plus one**. The specification gives one row per slide,
    with its text and its layout on ITU's template (title Arial Bold 28 pt, body Arial 18 pt, background
-   `#E5F5FB`, text only, no images, no person on screen). The slides are generated from the bundle; never
-   edit a deck by hand.
+   `#E5F5FB`, text only, no person on screen). Six slides carry a drawn figure instead of their rows (see
+   "The figures" below); their cue says so. The slides are generated from the bundle; never edit a deck by
+   hand.
 4. **The demonstration, where the video has one.** Its storyboard: a table of the steps the recording
    shows, what the viewer sees at each and what counts as a pass. Where the storyboard is in each bundle
    is given in the module tables below.
@@ -62,10 +63,20 @@ The steps of production, from script to finished video, are the ones KP1 and KP2
 
 **The figures.** The fourteen figures are in `../figures/` (`F1_structure.png` to `F14_data-interface.png`),
 each drawn by the program beside it, and the guide carries copies in `../../gitbook/kp4/figures/`, listed
-with the subtopics that use them on `../../gitbook/kp4/figures.md`. **The figures belong to the written
-guide, not to the slides**: the slides are text only, as ITU's guide asks, and where a slide shows the same
-idea, its specification says which figure the guide carries for it. F1, the structure of the course
-(`F1_structure.png`), belongs to the guide's opening page and to no single video.
+with the subtopics that use them on `../../gitbook/kp4/figures.md`. The figures are drawn for the written
+guide. **Six of them also stand on a slide**, since 5 October 2026, in a slide variant drawn by the same
+program (`../figures/slides/`, made by `python3 ../figures/draw_all.py --slides`: no figure title, cropped
+to the drawing, type two points larger where the layout allows): F2 on 1.1 "Each loss, placed", F3 on
+1.4 "Twelve documents, in a fixed order" (one slide for all twelve, in place of the two six-row slides),
+F5 on 2.1 "Progressa's higher-education services", F7 on 2.6 "Progressa: two applications on one page",
+F8 on 3.2 "Progressa: five failures, five endings", F9 on 3.3 "Where each value comes from". Each is
+boxes, arrows and words, no imagery and no person, drawn in the figures' own style; the cue that places it
+ends "Figure Fn, slide variant (...), stands on the slide in place of the rows", and the rows stay in the
+bundle as the figure's text equivalent. **Calibration item for ITU:** a drawn figure of this kind under the
+guide's text-only rule, declared in each of the six slide specifications. Every other slide stays text
+only, and where it shows the same idea as a figure, its specification says which figure the guide carries.
+F1, the structure of the course (`F1_structure.png`), belongs to the guide's opening page and to no single
+video.
 
 **The written guide.** The pages a learner reads, one per subtopic, are in `../../gitbook/kp4/`
 (`module-1/` to `module-6/`). They are generated from the same build scripts, so a guide page and a
@@ -100,8 +111,9 @@ per video, `vo_diff` at zero mismatches (44, 57 and 58 slides).
 ## Module by module
 
 Each table lists the module's videos in order. "Figures" names the figures of the written guide that
-belong to the video; the slides stay text only. "Demonstration" says whether the video holds a recorded
-segment and where its storyboard is.
+belong to the video; **on the slide** marks the six whose slide variant is on a slide of the video, the
+rest stay in the guide. "Demonstration" says whether the video holds a recorded segment and where its
+storyboard is.
 
 ### Module 1 — Why digital services go wrong, and the method that prevents it
 
@@ -110,10 +122,10 @@ Slide decks: `module_1/en/decks/`; scripts: `module_1/en/scripts/`.
 
 | Video | Class | Figures | AI usage tip | Demonstration |
 |---|---|---|---|---|
-| 1.1 Where an agreed service gets lost | Core | F2 `F2_three-places.png` | Place each problem of a past project at one of the three places | None |
+| 1.1 Where an agreed service gets lost | Core | F2 `F2_three-places.png`, **on the slide** (slide 5) | Place each problem of a past project at one of the three places | None |
 | 1.2 Three rules you can hold a supplier to | Core | — | Test a supplier's proposal against the three rules | None |
 | 1.3 A question with a name on it is part of the specification | Core | — | Find the guessed answers in a draft specification | None |
-| 1.4 Twelve documents from the request to the running service | Core | F3 `F3_twelve-documents.png` | Map your project's documents onto the twelve | None |
+| 1.4 Twelve documents from the request to the running service | Core | F3 `F3_twelve-documents.png`, **on the slide** (slide 3) | Map your project's documents onto the twelve | None |
 | 1.5 Who writes, who checks, who accepts | Core | F4 `F4_who-writes-checks-accepts.png` | Draft who writes, checks and accepts each document | None |
 
 ### Module 2 — Break the service down before you design it
@@ -123,12 +135,12 @@ Slide decks: `module_2/en/decks/`; scripts: `module_2/en/scripts/`.
 
 | Video | Class | Figures | AI usage tip | Demonstration |
 |---|---|---|---|---|
-| 2.1 One catalogue of the sector's services, and the blocks they share | Core | F5 `F5_sector-catalogue.png` | Draft the sector's catalogue of services from its mandate | None |
+| 2.1 One catalogue of the sector's services, and the blocks they share | Core | F5 `F5_sector-catalogue.png`, **on the slide** (slide 3) | Draft the sector's catalogue of services from its mandate | None |
 | 2.2 Write down what was asked before anyone designs | Core | — | Split an official text into entries of the register | None |
 | 2.3 The records the service keeps, and whose each one is | Core | F6 `F6_records-and-keepers.png` | Read the records back as plain sentences | None |
 | 2.4 Every goal named, and each tied to what was asked | Core | — | Check the goals against the register in both directions | None |
 | 2.5 What every goal may use, and may not invent | Core | F11 `F11_licence-workflow.png` (named on slide 5 of the deck as the guide's drawing of the licence's states; it belongs to 4.3) | Find the figures a design invented | None |
-| 2.6 What the service is built on, and what crosses its boundary | Core | F7 `F7_architecture.png` | List every crossing of the service's boundary | None |
+| 2.6 What the service is built on, and what crosses its boundary | Core | F7 `F7_architecture.png`, **on the slide** (slide 3) | List every crossing of the service's boundary | None |
 
 ### Module 3 — Design one service as a story your officials can check
 
@@ -138,8 +150,8 @@ Slide decks: `module_3/en/decks/`; scripts: `module_3/en/scripts/`.
 | Video | Class | Figures | AI usage tip | Demonstration |
 |---|---|---|---|---|
 | 3.1 One goal, written as a story a builder can follow | Core | F8 `F8_story-and-failures.png` | Draft the main story of one goal from what was asked | None |
-| 3.2 Every way it can go wrong, written down | Core | F8 `F8_story-and-failures.png` | Propose the failures of each step, for the official to decide | None |
-| 3.3 Screens worked out from the story, every value with its source | Core | F9 `F9_screen-sources.png` | List the screens of a story and the source of every value | None |
+| 3.2 Every way it can go wrong, written down | Core | F8 `F8_story-and-failures.png`, **on the slide** (slide 4) | Propose the failures of each step, for the official to decide | None |
+| 3.3 Screens worked out from the story, every value with its source | Core | F9 `F9_screen-sources.png`, **on the slide** (slide 5) | List the screens of a story and the source of every value | None |
 | 3.4 Screens officers can use | Supplementary | — | Review an officer's screen against five rules | None |
 | 3.5 The walk-through your officials click | Core | — | Write the questions to ask while clicking a walk-through | **Yes, and it can be recorded now.** Storyboard in the bundle's section 4.8, "Storyboard for 3.5". It needs only the walk-through pages of the goal, in Progressa's names |
 | 3.6 The review: three people, every open line given a name | Core | — | Turn review notes into open lines with owners and dates | None |
@@ -226,6 +238,31 @@ complete without them, with its stand-in slide, and is re-cut when the recording
 ## Production log — what works and what does not
 
 Kept for the next session that picks up the KP4 video track. Newest first; add to it, do not rewrite it.
+
+**5 October 2026, later — six figures put on slides (Modules 1 to 3).**
+
+- Review of the v0.1 decks against the scripts and from the learner's seat filed at
+  `../KP4_M1-M3_Deck_v0.1_Review_2026-10-05.md`. Its first finding, the twelve documents numbered 1–6
+  twice in 1.4, and the decision to put figures on slides led to this change.
+- `figures/kp4_style.py` gained a slide mode (`KP4_SLIDE=1`: title and MARK not drawn, cropped, type sizes
+  raised through `set_bump`; `new_figure` takes a `width`); `draw_all.py --slides` draws F2, F3, F5, F7,
+  F8 and F9 into `figures/slides/`, each at the largest type raise that passes the fit check (all six at
+  +2 pt). F3 and F8 have a `draw_slide()` of their own (F3: two columns of six, 1–12, under four
+  headings; F8: the same drawing on the wider canvas); F5 widens its columns; F7 moves "low-code
+  platform" under the application's name in slide mode. Type-size defaults in `kp4_style` are now read
+  when a call is made, not when the module loads, so `set_bump` reaches them.
+- The sandbox the figures are drawn in has no Arial; `kp4_style` now falls back to Liberation Sans
+  (Arial's metrics) before DejaVu Sans. With DejaVu, F7's own fit check fails even for the guide figure.
+- Bundles: the six cues end with the figure sentence; their spec rows say "Figure Fn (slide variant) in
+  place of …" and carry the calibration note. 1.4's slides 3 and 4 are one slide, "Twelve documents, in
+  a fixed order", with both voice-over paragraphs; the later slides of 1.4 renumbered (its deck is six
+  slides, the module 43). `kp4_deck_common.py` reads the figure sentence (`FIGURE`), and `figure_slide`
+  places the PNG under the title (`FIGURE_AREA`, shortened when a footer line follows); shape name
+  `kp4-figure Fn`. `vo_diff` at zero mismatches for all three modules after the rebuild (43, 57, 58).
+- Not done, from the same review: the nine "plain-text table" cues still render as semicolon rows (the
+  builder has no column path yet), the two-row slides, the source-less Sources slides, and the four
+  condensations of the scripts. `check_labels.py` checks the guide figures' labels only; the slide
+  variants' group headings on F3 are 1.4's words, not checked.
 
 **5 October 2026 — the track opened for Modules 1 to 3.**
 

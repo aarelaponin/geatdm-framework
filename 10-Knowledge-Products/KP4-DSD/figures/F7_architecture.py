@@ -25,8 +25,10 @@ def app(ax, x, title):
     s.rect(ax, x, 2.75, 4.05, 2.2, edge=s.SPINE, lw=1.6)
     s.text(ax, x + 0.2, 4.68, title, size=s.HEADING, bold=True, color=s.SPINE,
            container=(x, 2.75, 4.05, 2.2))
-    s.text(ax, x + 3.85, 4.68, "low-code platform", size=s.SMALL, color=s.GREY_TEXT,
-           ha="right", container=(x, 2.75, 4.05, 2.2))
+    # on the slide the platform's name sits under the title: beside it, the two touch
+    px, py, ha = (x + 0.2, 4.4, "left") if s.SLIDE else (x + 3.85, 4.68, "right")
+    s.text(ax, px, py, "low-code platform", size=s.SMALL, color=s.GREY_TEXT,
+           ha=ha, container=(x, 2.75, 4.05, 2.2))
 
 
 def draw():

@@ -138,11 +138,9 @@ When a supplier says the design is finished, you need to know what that means. T
 
 Every one of the twelve documents has five things written against it. Who writes it. What goes in: the earlier documents it is made from. What comes out. The person who accepts it before the next one is begun. And how it is checked: by a program, against an earlier document, or by a person with a checklist. The order is fixed because some documents exist to measure others, and a measure written after the thing it measures is not a measure.
 
-### Slide — Before any design: six documents
+### Slide — Twelve documents, in a fixed order
 
 The first six are written before anything is designed. First, the customer's own documents: the law, the mandate and the requests, kept as received and never edited. Second, the register of what was asked, one entry for each separate thing. Third, the records the service keeps, and whose each fact is. Fourth, every goal people have in the service, each tied to what was asked. Fifth, the architecture: what the service is built on, and what crosses its boundary. Sixth, the states, settings and code lists every goal shares; a code list is a fixed list of choices, such as the kinds of institution. Before all six, a catalogue of the sector's services is written once for the whole sector; it is not one of the twelve.
-
-### Slide — One goal at a time, then the whole application
 
 The next three are written for each goal in turn: the goal as a story with every way it can fail, the screens worked out from that story, and a walk-through that officials can click. Then come two documents for the whole application: the interaction design, which settles once how officers pick, find, move and act, and the application model, the one file a program reads. The twelfth is the working application. Nobody writes it. A program generates it from the model, and nobody edits it by hand.
 

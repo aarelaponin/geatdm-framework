@@ -42,18 +42,18 @@
       "mins": "~5",
       "range": [
         28,
-        35
+        34
       ],
       "message": "Each document has a writer, an input, an output, a person who accepts it and a check, in a fixed order.",
-      "bundle_slides": 7
+      "bundle_slides": 6
     },
     {
       "code": "1.5",
       "title": "Who writes, who checks, who accepts",
       "mins": "~5",
       "range": [
-        36,
-        43
+        35,
+        42
       ],
       "message": "The AI assistant may draft; a named person accepts, amends or sets aside each proposal, and only what was accepted stands.",
       "bundle_slides": 7

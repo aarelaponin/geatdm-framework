@@ -13,8 +13,12 @@
 # ../videos/module_{N}/en/decks/ (the combined deck, split_spec.json, the per-video decks) and
 # ../videos/module_{N}/en/scripts/ (the scripts-only companions). Override with OUT_DIR= (the
 # scripts then go to OUT_DIR/scripts, the layout the 4 Oct 2026 build used under decks/module_N/).
-# The figures of KP4 (figures/F1..F14) are made for the written guide; every bundle of modules 1
-# to 3 says the slides stay text-only and places no figure on a slide, so none is placed here.
+# The figures of KP4 (figures/F1..F14) are drawn for the written guide. Six of them also have a
+# slide variant (figures/slides/, drawn by `figures/draw_all.py --slides`: same program, no
+# title, cropped, larger type). A cue that ends "Figure Fn, slide variant (figures/slides/...),
+# stands on the slide in place of the rows." gets that PNG on the slide (figure_slide) instead
+# of its rows; the rows stay in the bundle as the figure's text equivalent. Nothing else carries
+# a picture. The build fails if the PNG is missing: draw the slide figures first.
 import json
 import os
 import re
@@ -30,15 +34,19 @@ if not os.path.isdir(SCRIPTS):
     sys.exit('Set KP_KIT to the itu-giga-kp folder of your claude-marketplace clone (plugins/itu-giga-kp).')
 sys.path.insert(0, SCRIPTS)
 from deck_lib import (  # noqa: E402
-    TITLE_CARD_NOTE, INK, GREY, ITU_BLUE_DARK, LAYOUT_THANKS,
-    add_slide, big_slide, box, delete_template_slides, edit_agenda, edit_cover, hook_slide,
-    notes, open_template, rows_block, section_slide, set_text, sources_slide, two_panel)
+    TITLE_CARD_NOTE, INK, GREY, ITU_BLUE_DARK, LAYOUT_THANKS, LAYOUT_WHITE,
+    add_slide, big_slide, box, delete_template_slides, edit_agenda, edit_cover, footer, hook_slide,
+    notes, open_template, rows_block, section_slide, set_text, sources_slide, title, two_panel)
 
 # The practice box is the video's only call to action and is never narrated (plan D5).
 PRACTICE_NOTE = ('PRACTICE BOX (on-screen only — never read it, never paraphrase it, never point '
                  'at it). It replaces the narrated handoff: this video ends on the recap.')
 NUMBERS = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7,
-           'eight': 8, 'nine': 9, 'ten': 10}
+           'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11, 'twelve': 12}
+FIGURE = re.compile(r'\s*Figure (F\d+), slide variant \((figures/slides/[^)]+)\), stands on the slide '
+                    r'in place of the rows\.\s*$')
+FIGURE_SHAPE = 'kp4-figure'
+FIGURE_AREA = (0.52, 1.4, 12.3, 5.55)   # x, y, w, h under the title; shorter when a footer line follows
 STR = r'"((?:[^"\\]|\\.)*)"'
 
 
@@ -56,11 +64,16 @@ def parse_cue(cue):
     m = re.match(r"Slide (\d+) — Title: '(.+?)'(?![A-Za-z])\.?\s*(.*)$", cue, re.S)
     assert m, 'unreadable cue: %r' % cue[:80]
     n, head, rest = int(m.group(1)), m.group(2), m.group(3)
+    figure = None
+    f = FIGURE.search(rest)
+    if f:
+        figure = (f.group(1), os.path.join(KP4, f.group(2)))
+        rest = rest[:f.start()]
     footer = None
     if 'Footer line:' in rest:
         rest, f = rest.split('Footer line:', 1)
         footer = quotes(f)[0]
-    c = dict(n=n, head=head, rest=rest, footer=footer, cue=cue)
+    c = dict(n=n, head=head, rest=rest, footer=footer, cue=cue, figure=figure)
     if head == 'Sources':
         body = rest.split('Body:', 1)[1].split(' Footer:')[0].strip()
         c['link'] = 'Footer:' in rest
@@ -132,6 +145,34 @@ def vo_note(slide, spec_note):
     return '\n\n'.join(paras)
 
 
+def figure_slide(prs, v, s, tag, note):
+    """The slide variant of a guide figure under the slide's title, aspect kept, centred in
+    FIGURE_AREA (shortened when the cue has a footer line, which then sits under it)."""
+    from PIL import Image
+    from pptx.util import Inches
+    code, png = s['figure']
+    assert os.path.exists(png), '%s slide %d: %s missing; run figures/draw_all.py --slides' % (
+        v['code'], s['n'], os.path.relpath(png, KP4))
+    with Image.open(png) as im:
+        pw, ph = im.size
+    ax, ay, aw, ah = FIGURE_AREA
+    if s['footer']:
+        ah -= 0.6
+    k = min(aw / pw, ah / ph)
+    w, h = pw * k, ph * k
+    sl = add_slide(prs, LAYOUT_WHITE)
+    title(sl, s['head'])
+    pic = sl.shapes.add_picture(png, Inches(ax + (aw - w) / 2), Inches(ay + (ah - h) / 2),
+                                Inches(w), Inches(h))
+    pic.name = '%s %s' % (FIGURE_SHAPE, code)
+    if s['footer']:
+        tb = box(sl, 0.72, ay + ah + 0.12, 11.9, 0.5)
+        set_text(tb.text_frame, [[(s['footer'], 15.5, True, ITU_BLUE_DARK, False)]])
+    footer(sl, tag)
+    notes(sl, note)
+    return sl
+
+
 def default_slide(prs, v, s, tag, note):
     """A content slide from its cue: rows (numbered where the cue says so), a table's columns as
     headline and line, two contrasting rows as two panels, the footer line as the closing line."""
@@ -195,6 +236,8 @@ def build_module(mod, hooks, cover, agenda, overrides=None, quoted=None):
                             sh._element.getparent().remove(sh._element)
                     notes(sl, 'Sources slide, held ~5 seconds at the end of the video. This video cites no '
                               'outside source; no narration.')
+            elif s['figure']:
+                figure_slide(prs, v, s, tag, note)
             elif (v['code'], s['n']) in overrides:
                 overrides[(v['code'], s['n'])](prs, v, s, tag, note)
             else:

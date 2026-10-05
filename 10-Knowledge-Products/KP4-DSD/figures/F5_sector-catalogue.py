@@ -48,11 +48,11 @@ def mark(ax, cx, cy, kind):
                             zorder=4))
 
 
-def draw():
-    fig, ax = s.new_figure(NAME, height=7.75)
+def draw(width=s.CANVAS_W, height=7.75):
+    fig, ax = s.new_figure(NAME, height=height, width=width)
     s.title(ax, "The sector's catalogue: many services resting on the same blocks")
 
-    head_top, head_h = 7.2, 0.95
+    head_top, head_h = height - 0.55, 0.95
     y_head = head_top - head_h
     s.text(ax, X_SERVICE + 0.08, y_head + 0.2, "Service", size=s.BODY, bold=True,
            color=s.GREY_TEXT)
@@ -96,6 +96,14 @@ def draw():
            color=s.NAVY)
     s.text(ax, 0.25, 0.25, s.MARK, size=s.SMALL, color=s.GREY_TEXT)
     return fig
+
+
+def draw_slide():
+    """The same table on the slide's canvas (draw_all.py --slides, KP4_SLIDE=1): wider columns
+    for the larger type."""
+    global W_SERVICE, X_OWED, W_OWED, X_BLOCK, W_BLOCK
+    W_SERVICE, X_OWED, W_OWED, X_BLOCK, W_BLOCK = 3.6, 3.95, 2.55, 6.7, 1.15
+    return draw(width=s.SLIDE_W, height=7.3)
 
 
 if __name__ == "__main__":

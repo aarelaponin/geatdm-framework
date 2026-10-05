@@ -64,6 +64,8 @@ The public names
     dashed=True draws the border dashed; both leave the default drawing unchanged when omitted.
 """
 
+import os
+
 import matplotlib
 
 matplotlib.use("Agg")
@@ -115,10 +117,38 @@ MIN_PT = 12              # 12 pt x 0.65 = 7.8 pt at a 6.5-inch column
 LINE = 1.25              # line spacing, in multiples of the font size
 PAD = 0.10               # inches kept clear between a text and its box edge
 
+# --- Slide mode: the same figure drawn for a video slide ---------------------------------------
+# KP4_SLIDE=1 in the environment turns it on. The drawing programs are unchanged; in slide mode
+# the figure's own title and the fact sheet's MARK are not drawn (the slide carries a title and
+# a footer of its own), the PNG is cropped to what was drawn, every type size is raised by
+# KP4_SLIDE_BUMP points (default 2), and the file goes to slides/<name>.png beside the figures.
+# A program that needs another layout for the slide (F3, F8) draws it in its own draw_slide()
+# and may ask new_figure() for a wider canvas (width=SLIDE_W). The slide the deck builder
+# offers a figure is 12.6 x 6.2 inches under its title; a figure wider than tall fills it.
+SLIDE = os.environ.get("KP4_SLIDE") == "1"
+SLIDE_BUMP = int(os.environ.get("KP4_SLIDE_BUMP", "2")) if SLIDE else 0
+SLIDE_W, SLIDE_H = 12.6, 6.2
+SLIDE_DIR = "slides"
+_BASE = dict(TITLE=TITLE, HEADING=HEADING, BODY=BODY, SMALL=SMALL, MIN_PT=MIN_PT)
+
+
+def set_bump(points):
+    """Raise every type size by `points` over the guide's sizes (slide mode; 0 restores them).
+    draw_all.py --slides sets it per figure: a tightly laid-out figure keeps the guide's sizes."""
+    global TITLE, HEADING, BODY, SMALL, MIN_PT, SLIDE_BUMP
+    SLIDE_BUMP = points
+    TITLE, HEADING, BODY, SMALL, MIN_PT = (_BASE[k] + points for k in
+                                           ("TITLE", "HEADING", "BODY", "SMALL", "MIN_PT"))
+
+
+set_bump(SLIDE_BUMP)
+
 FONT = "Arial"
 _available = {f.name for f in font_manager.fontManager.ttflist}
 if FONT not in _available:
-    FONT = "DejaVu Sans"
+    # Liberation Sans has Arial's metrics glyph for glyph (it is what LibreOffice substitutes
+    # for Arial when it renders the decks), so a figure checked with it fits the same way.
+    FONT = "Liberation Sans" if "Liberation Sans" in _available else "DejaVu Sans"
 plt.rcParams["font.family"] = FONT
 plt.rcParams["svg.fonttype"] = "none"
 
@@ -128,11 +158,11 @@ _TEXTS = {}              # figure name -> [(Text, container box in inches or Non
 _current = {"name": None}
 
 
-def new_figure(name, height):
-    """Start a figure 10 inches wide and `height` inches high; returns (fig, ax)."""
-    fig = plt.figure(figsize=(CANVAS_W, height), dpi=DPI)
+def new_figure(name, height, width=CANVAS_W):
+    """Start a figure `width` (10) inches wide and `height` inches high; returns (fig, ax)."""
+    fig = plt.figure(figsize=(width, height), dpi=DPI)
     ax = fig.add_axes([0, 0, 1, 1])
-    ax.set_xlim(0, CANVAS_W)
+    ax.set_xlim(0, width)
     ax.set_ylim(0, height)
     ax.axis("off")
     fig.patch.set_facecolor(WHITE)
@@ -154,17 +184,24 @@ def line_height(size):
     return size * LINE / 72.0
 
 
-def text(ax, x, y, s, size=BODY, color=NAVY, bold=False, ha="left", va="center",
+def text(ax, x, y, s, size=None, color=NAVY, bold=False, ha="left", va="center",
          container=None, rotation=0):
-    """Draw one text and record it. `container` is (x, y, w, h) when it must stay inside a box."""
+    """Draw one text and record it. `container` is (x, y, w, h) when it must stay inside a box.
+    size defaults to BODY as it stands when the call is made (set_bump may have raised it)."""
+    size = BODY if size is None else size
+    if SLIDE and s == MARK:
+        return _Hidden()   # the slide's footer says it is Progressa; nothing is drawn
     t = ax.text(x, y, s, fontsize=size, color=color, ha=ha, va=va,
                 fontweight="bold" if bold else "normal", linespacing=LINE,
                 rotation=rotation, family=FONT)
     return _record(t, container)
 
 
-def title(ax, s, y=None, size=TITLE):
-    """The figure's title, left-aligned at the top."""
+def title(ax, s, y=None, size=None):
+    """The figure's title, left-aligned at the top. Not drawn in slide mode."""
+    if SLIDE:
+        return _Hidden()
+    size = TITLE if size is None else size
     h = ax.get_ylim()[1]
     y = h - 0.32 if y is None else y
     return text(ax, 0.25, y, s, size=size, color=NAVY, bold=True, ha="left", va="center")
@@ -181,13 +218,15 @@ def rect(ax, x, y, w, h, edge=NAVY, fill=None, lw=1.4, radius=0.08, dashed=False
 
 
 def box(ax, x, y, w, h, title=None, body=None, role="heading", solid=False, align="center",
-        title_size=HEADING, body_size=BODY, lw=1.4, radius=0.08, z=2, fill=None, dashed=False):
+        title_size=None, body_size=None, lw=1.4, radius=0.08, z=2, fill=None, dashed=False):
     """A box with an optional bold title and body, stacked and centred vertically.
 
     role is one of the names in ROLE, or a colour. solid=True fills the box with the dark
     colour and writes white text; fill= gives another fill; dashed=True dashes the border.
     Lines are broken where the caller puts a newline; nothing is wrapped automatically.
     """
+    title_size = HEADING if title_size is None else title_size
+    body_size = BODY if body_size is None else body_size
     dark = ROLE.get(role, role)
     if fill is None:
         fill = dark if solid else FILL.get(dark, WHITE)
@@ -269,14 +308,32 @@ def check_fit(fig):
 
 
 def save(fig, path):
-    """Check the fit, then write the PNG without a time stamp. Refuses a figure that does not fit."""
+    """Check the fit, then write the PNG without a time stamp. Refuses a figure that does not fit.
+    In slide mode the file goes to slides/<name>.png beside `path`, cropped to what was drawn."""
     problems = check_fit(fig)
     if problems:
         plt.close(fig)
         raise ValueError("figure does not fit:\n  " + "\n  ".join(problems))
-    fig.savefig(path, dpi=DPI, facecolor=WHITE, metadata={"Software": None})
+    if SLIDE:
+        folder = os.path.join(os.path.dirname(os.path.abspath(path)), SLIDE_DIR)
+        os.makedirs(folder, exist_ok=True)
+        path = os.path.join(folder, os.path.basename(path))
+        fig.savefig(path, dpi=DPI, facecolor=WHITE, metadata={"Software": None},
+                    bbox_inches="tight", pad_inches=0.08)
+    else:
+        fig.savefig(path, dpi=DPI, facecolor=WHITE, metadata={"Software": None})
     plt.close(fig)
     return path
+
+
+class _Hidden:
+    """What title() and the MARK return in slide mode: accepts the calls a drawn text would."""
+
+    def set_zorder(self, z):
+        return self
+
+    def get_text(self):
+        return ""
 
 
 # --- Helpers added for KP4 ---------------------------------------------------------------------
@@ -285,14 +342,16 @@ from matplotlib.patches import Circle  # noqa: E402
 from matplotlib.textpath import TextPath  # noqa: E402
 
 
-def width_of(s, size=BODY, bold=False):
+def width_of(s, size=None, bold=False):
     """The width of one line of text, in inches."""
+    size = BODY if size is None else size
     prop = FontProperties(family=FONT, weight="bold" if bold else "normal")
     return TextPath((0, 0), s, size=size, prop=prop).get_extents().width / 72.0
 
 
-def wrap(s, width, size=BODY, bold=False):
+def wrap(s, width, size=None, bold=False):
     """Break s into lines no wider than `width` inches, at spaces; returns the text with newlines."""
+    size = BODY if size is None else size
     lines, cur = [], ""
     for word in s.split():
         trial = word if not cur else cur + " " + word
