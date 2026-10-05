@@ -241,9 +241,8 @@ Kept for the next session that picks up the KP4 video track. Newest first; add t
 
 **5 October 2026, later — six figures put on slides (Modules 1 to 3).**
 
-- Review of the v0.1 decks against the scripts and from the learner's seat filed at
-  `../KP4_M1-M3_Deck_v0.1_Review_2026-10-05.md`. Its first finding, the twelve documents numbered 1–6
-  twice in 1.4, and the decision to put figures on slides led to this change.
+- A review of the v0.1 decks against the scripts and from the learner's seat found the twelve documents
+  numbered 1–6 twice in 1.4; that, and the decision to put figures on slides, led to this change.
 - `figures/kp4_style.py` gained a slide mode (`KP4_SLIDE=1`: title and MARK not drawn, cropped, type sizes
   raised through `set_bump`; `new_figure` takes a `width`); `draw_all.py --slides` draws F2, F3, F5, F7,
   F8 and F9 into `figures/slides/`, each at the largest type raise that passes the fit check (all six at
@@ -259,7 +258,7 @@ Kept for the next session that picks up the KP4 video track. Newest first; add t
   slides, the module 43). `kp4_deck_common.py` reads the figure sentence (`FIGURE`), and `figure_slide`
   places the PNG under the title (`FIGURE_AREA`, shortened when a footer line follows); shape name
   `kp4-figure Fn`. `vo_diff` at zero mismatches for all three modules after the rebuild (43, 57, 58).
-- Not done, from the same review: the nine "plain-text table" cues still render as semicolon rows (the
+- Not done, from the same review (kept here; the review itself was a working note, not filed): the nine "plain-text table" cues still render as semicolon rows (the
   builder has no column path yet), the two-row slides, the source-less Sources slides, and the four
   condensations of the scripts. `check_labels.py` checks the guide figures' labels only; the slide
   variants' group headings on F3 are 1.4's words, not checked.
