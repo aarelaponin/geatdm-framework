@@ -1,0 +1,21 @@
+# Slide cue file — KP4 Module 1, Video 1.2 "Three rules you can hold a supplier to"
+# Deck:  KP4_M1_1.2_Deck_v0.1.pptx (9 slides)
+# Audio: KP4_M1_1.2_Audio_v0.4.m4a (runs to 4:26.7)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: no cold open naming the video; opens on the hook ("imagine this ... glossy IT supplier
+# proposal"), then "welcome to today's deep dive ... unpacking" show-open. Rule 1 is never called "rule one"
+# (rules two and three are). "Letting a student write their own exam" metaphor on slide 5. "A fictional country,
+# but a very real world scenario". PNIA said as "the National Identity Authority". No sources line: the Sources
+# card cues over the last two short lines ("Keep the control in your ministry's hands." / "Always."), 5.7 s.
+# SRT spells the country "Progresa" (listen for Progressa).
+
+0:00   # slide 1 — title card
+0:05   # slide 2 — Hook: a long, confident proposal lands on your desk
+0:46   # slide 3 — Rule 1: review a story, not a list
+1:38   # slide 4 — A story is the shared picture (the reference architecture)
+1:58   # slide 5 — Rule 2: measure against a list the design did not write
+2:44   # slide 6 — Rule 3: end one check on the running system
+3:12   # slide 7 — A proposal for PHEQA, read against the rules
+4:10   # slide 8 — In one sentence
+4:21   # slide 9 — Sources

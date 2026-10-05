@@ -1,0 +1,24 @@
+# Slide cue file — KP4 Module 2, Video 2.2 "Write down what was asked before anyone designs"
+# Deck:  KP4_M2_2.2_Deck_v0.1.pptx (9 slides)
+# Audio: KP4_M2_2.2_Audio_v0.7.m4a (runs to 5:36.7; brief v0.3; trimmed from raw v0.6)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: the scripted title line is not said; the take opens on an invented "$10 million and six
+# months of developer time", then "today's deep dive" and invented causes ("suppliers might deliberately allow
+# scope creep to bill more hours"). Compiler metaphor ("a legal and psychological compiler"). Slide 4 says the
+# entries but not their articles. Slide 6: the second gap (does the public register show the name of the person
+# who runs an institution) is told as a developer leaving names out, and its owner (the Registrar of PHEQA) and
+# the date (30 October 2026) are not given; the first gap's owner is "a specific director at the ministry".
+# Slide 7: the Registrar reading entries against articles, and "pick three at random", are not said.
+# Recap paraphrased at 5:09; the take ends "Which leaves a fascinating question to consider." (under the Sources
+# card); no sources line — Sources card cues at 5:27 (9.7 s). SRT spells the country "Progresa": listen for Progressa.
+
+0:00   # slide 1 — title card
+0:04   # slide 2 — Hook: "It was never asked for." "It was."
+0:55   # slide 3 — The register of what was asked
+1:44   # slide 4 — Five entries from Progressa's regulations (numbered)
+2:48   # slide 5 — One thing per entry, and how to tell it is met (two habits numbered)
+3:30   # slide 6 — What the text does not say
+4:21   # slide 7 — Who drafts, and who rules
+5:09   # slide 8 — In one sentence
+5:27   # slide 9 — Sources

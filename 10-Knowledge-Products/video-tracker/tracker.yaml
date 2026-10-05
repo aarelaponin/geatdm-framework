@@ -368,7 +368,12 @@ kps:
       recorded now from the Progressa pages; until then its stand-in slide holds. 5 Oct: audio briefs + prompts
       v0.1 for the 17 videos of Modules 1–3 (make_brief.py, KP3's lessons applied up front: PAERA never spoken,
       the three rules, terminology rows for PHEQA/PNIA/MoEYS/PDGA/SDD); takes running, three lanes, one per
-      module. KP4-DSD/videos/README.md "Production log" has the learnings.
+      module. 5 Oct (evening): all 17 English videos of Modules 1–3 have a candidate take, hand-written cue
+      file and MP4 (duration checked, a frame after every cue looked at; no KP acronym, PAERA or 'the
+      brief' in any candidate transcript), each read against the author's bar — KP2's, plus no KP acronym.
+      Each topic's note names the candidate and its flaws. Next: the author listens and sets accepted:
+      (3.4's slide-6 reading and the 1.4 figure labels are open questions). KP4-DSD/videos/README.md
+      "Production log" has the learnings.
     intro:
       title: KP4 introduction — what the six modules cover (on camera)
       path: videos/intro
@@ -381,36 +386,52 @@ kps:
         persona: Strategist
         path: videos/module_1
         topics:
-          - {code: "1.1", title: "Where an agreed service gets lost", mins: ~5}
-          - {code: "1.2", title: "Three rules you can hold a supplier to", mins: ~5}
-          - {code: "1.3", title: "A question with a name on it is part of the specification", mins: ~5}
-          - {code: "1.4", title: "Twelve documents from the request to the running service", mins: ~5}
-          - {code: "1.5", title: "Who writes, who checks, who accepts", mins: ~5}
+          - {code: "1.1", title: "Where an agreed service gets lost", mins: ~5,
+             en: {note: "candidate v0.6 (5:04) — cued + assembled 5 Oct 2026; invented minister-announcement opener + deep dive/unpack show-open; SDD and Progressa loosely attributed to 'the reference architecture'; plumbing/house metaphor; 'SSD' once; slide 5 without dates, INS number or the registrar's words; 'legally allowed' added on slide 6; listen for Progressa"}}
+          - {code: "1.2", title: "Three rules you can hold a supplier to", mins: ~5,
+             en: {note: "candidate v0.4 (4:27) — cued + assembled 5 Oct 2026; invented hook opener + deep dive/unpacking show-open; rule 1 never named 'rule one'; student-writes-own-exam metaphor; 'a fictional country, but a very real world scenario'; PNIA as 'the National Identity Authority'; no sources line; listen for Progressa"}}
+          - {code: "1.3", title: "A question with a name on it is part of the specification", mins: ~5,
+             en: {note: "candidate v0.6 (5:07) — cued + assembled 5 Oct 2026, brief v0.3 (4 tries); cold open names the video number but not the title, then deep dive/unpacking show-open; hook only paraphrased; slide 5 drops the 15 November date; vocabulary list read aloud as a consequence of the guess; recap drops 'and a date'; invented closing line about legacy systems; backchannel; listen for Progressa"}}
+          - {code: "1.4", title: "Twelve documents from the request to the running service", mins: ~5,
+             en: {note: "candidate v0.5 (3:20) — cued + assembled 5 Oct 2026; short but complete; 'I'll number the 12 for you' aside; slide 6 drops 'two documents written by nobody'; reads the brief's vocabulary list aloud; backchannel; listen for Progressa (SRT 'Progressia')"}}
+          - {code: "1.5", title: "Who writes, who checks, who accepts", mins: ~5,
+             en: {note: "candidate v0.3 (3:28) — cued + assembled 5 Oct 2026; short but complete; slide 5 names the roles but not who holds them in PHEQA's project; 'guest figure' in the SRT for 'guessed figure' (listen); backchannel; listen for Progressa"}}
 
       - number: 2
         title: Break the service down before you design it
         persona: Strategist
         path: videos/module_2
         topics:
-          - {code: "2.1", title: "One catalogue of the sector's services, and the blocks they share", mins: ~5}
-          - {code: "2.2", title: "Write down what was asked before anyone designs", mins: ~5}
-          - {code: "2.3", title: "The records the service keeps, and whose each one is", mins: ~5}
-          - {code: "2.4", title: "Every goal named, and each tied to what was asked", mins: ~5}
-          - {code: "2.5", title: "What every goal may use, and may not invent", mins: ~5}
-          - {code: "2.6", title: "What the service is built on, and what crosses its boundary", mins: ~5}
+          - {code: "2.1", title: "One catalogue of the sector's services, and the blocks they share", mins: ~5,
+             en: {note: "candidate v0.4 (3:49) — cued + assembled 2026-10-05; 'deep dive' show-open; invented 40 s opener (supplier lock-in) before the hook; slide 4 names bodies and 'seven services' but not the services; slide 5 reads only PNIA's column, register column skipped; no sources line; listen for Progressa; MoEYS may be said as a word"}}
+          - {code: "2.2", title: "Write down what was asked before anyone designs", mins: ~5,
+             en: {note: "candidate v0.7 (5:37) — cued + assembled 2026-10-05; brief v0.3; scripted title line not said, invented opener ('$10 million and six months', suppliers billing scope creep); 'deep dive'; compiler metaphor; slide 6 second gap told as a developer error, its owner and the date not given; slide 7's Registrar check not said; ends 'a fascinating question to consider' under the Sources card; no sources line; listen for Progressa"}}
+          - {code: "2.3", title: "The records the service keeps, and whose each one is", mins: ~5,
+             en: {note: "candidate v0.4 (5:01) — cued + assembled 2026-10-05; brief v0.2; 'welcome back to the Deep Dive' show-open after the hook; invented 'isn't this a stretch' exchange; PHEQA never named ('the quality authority'), PNIA as 'the national identity system'; invented gloss of GovStack ('the global initiative for standard digital government services'); passport/address-book metaphor; Registrar not named in the read-back; no sources line; listen for Progressa"}}
+          - {code: "2.4", title: "Every goal named, and each tied to what was asked", mins: ~5,
+             en: {note: "candidate v0.7 (3:37) — cued + assembled 2026-10-05; brief v0.3; short but every slide covered in order; backchannel and filler throughout; slide 7 owners and date not given as questions; sources line present; listen for Progressa"}}
+          - {code: "2.5", title: "What every goal may use, and may not invent", mins: ~5,
+             en: {note: "candidate v0.4 (3:38) — cued + assembled 2026-10-05; trimmed show-open leaves a dangling 'Right. Because…' open, no cold open; old fee said as 'a thousand dollars'; finance officer's question and answer not given; ends turning to the listener (slide 7's advice); no sources line; filler/backchannel; listen for Progressa"}}
+          - {code: "2.6", title: "What the service is built on, and what crosses its boundary", mins: ~5,
+             en: {note: "candidate v0.8 (3:10) — cued + assembled 2026-10-05; brief v0.2; short, segments brief; slide 6 thin (Registration and Information Mediator specifications not named); 'locked into one supplier' added on slide 7; PDGA once heard as 'PGA'; filler/backchannel; sources line present; listen for Progressa; MoEYS may be said as a word"}}
 
       - number: 3
         title: Design one service as a story your officials can check
         persona: Architect
         path: videos/module_3
         topics:
-          - {code: "3.1", title: "One goal, written as a story a builder can follow", mins: ~5}
-          - {code: "3.2", title: "Every way it can go wrong, written down", mins: ~5}
-          - {code: "3.3", title: "Screens worked out from the story, every value with its source", mins: ~5}
-          - {code: "3.4", title: "Screens officers can use (supplementary)", mins: ~5}
+          - {code: "3.1", title: "One goal, written as a story a builder can follow", mins: ~5,
+             en: {note: "candidate v0.1 (3:27) — cued + assembled 5 Oct 2026; short (3:27 vs 5:00); PHEQA said 'Pahekwa'; listen for Progressa (SRT 'Progressia'); filler and backchannel throughout; slide 5's four register entries not named; sources line with 2 s left. v0.3 (slide 3 skipped, 'the reference architecture' misattributed, 'think about') and v0.5 (slide 7 skipped, Progressa 'used in the reference architecture', no sources line) rejected"}}
+          - {code: "3.2", title: "Every way it can go wrong, written down", mins: ~5,
+             en: {note: "candidate v0.7 (3:32) — cued + assembled 5 Oct 2026; brief v0.4 (4th counted try); short (3:32 vs 5:00); 'welcome to today's deep dive' after the title line; 'think about'; fire-escapes metaphor; the head of the registration desk's fee decision not told; 'count the endings' not said; the single message of slide 8 never spoken (ends 'it always comes back to human judgment'); no sources line; filler and backchannel. Rejected: v0.2 (slide 4 skipped; source framed as GovStack spec), v0.4 (source named 'system architecture notes and government service blueprints'), v0.5 (slides 3/4 swapped; 'drafts too costly' contradicts the deck)"}}
+          - {code: "3.3", title: "Screens worked out from the story, every value with its source", mins: ~5,
+             en: {note: "candidate v0.6 (5:05) — cued + assembled 5 Oct 2026; brief v0.2; 'deep dive' show-open and invented puzzle-pieces opener, no cold open; 'firewall' metaphor; PHEQA never named; the specification 'describes this exact workflow' (deck: much the same order); slide 8's four lists not named; no sources line; filler; listen for Progressa (SRT 'Progresa'/'Progresia'). v0.2 (6:30; 'our sources', 'case study', Registrar's answer invented) and v0.4 (source named, four sources credited to GovStack, slide 7 skipped) rejected on brief v0.1"}}
+          - {code: "3.4", title: "Screens officers can use (supplementary)", mins: ~5,
+             en: {note: "candidate v0.2 (5:14) — cued + assembled 5 Oct 2026; invented opener ('costing taxpayers millions of dollars'), no cold open, 'deep dive'; restaurant/kitchen metaphor; the five rules not stated together on slide 3 — given while walking the before/after screens; slide 6 misreads 'cannot be accepted' as 'the screen freezes' and officers kept from their paperwork; invented 'ten years from now, an auditor ... AI hallucination'; 'thousands of times a week' (deck: many times a day); slide 7 gets one sentence; filler; listen for Progressa (SRT 'Progresa'). v0.4 (brief v0.2, 3:47) rejected: 'we actually saw real world feedback on this in the research'"}}
           - {code: "3.5", title: "The walk-through your officials click", mins: ~5,
-             en: {note: "walkthrough segment storyboarded (slide 8 of its deck), recordable now from the Progressa pages of 'apply for a provisional licence'; stand-in holds until it is recorded"}}
-          - {code: "3.6", title: "The review: three people, every open line given a name", mins: ~5}
+             en: {note: "walkthrough segment storyboarded (slide 8 of its deck), recordable now from the Progressa pages of 'apply for a provisional licence'; stand-in holds until it is recorded; candidate v0.6 (4:16) — cued + assembled 5 Oct 2026; no cold open (starts on 'Yeah. And we're specifically focusing...'); slide 4's drawing/hand-correction point pulled ahead of slide 3; storyboard slide 8 framed as what the recording will show (nothing claimed to have run); slide 8's pass criteria not spoken; reflective outro after the single message ('Consider how... shifts the balance of power'); invented hook framing; filler and backchannel; listen for Progressa (SRT 'Progresa'). v0.2 ('our sources', 'found in these sources', 5:52) and v0.4 (slides 6/7 reversed, 3:47) rejected"}}
+          - {code: "3.6", title: "The review: three people, every open line given a name", mins: ~5,
+             en: {note: "candidate v0.3 (4:32) — cued + assembled 5 Oct 2026; reads enumeration instructions aloud ('we number the seats allowed', 'we number the five lines'); PHEQA garbled as 'the registration desk review, what they call PHEQA'; 'think about it in your ministry' early (not an outro); invented asides; filler and backchannel; sources line with 1.7 s left; listen for Progressa (SRT 'Progessa'). v0.2 rejected (slide 6 never covered; three seats credited to the reference architecture; kitchen analogy; 'think about' outro)"}}
 
       - number: 4
         title: Settle the whole application once, then describe it for the machine

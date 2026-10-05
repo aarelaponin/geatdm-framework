@@ -1,0 +1,208 @@
+1
+00:00:00,360 --> 00:00:05,780
+Welcome to today's deep dive. We are analyzing the mechanics of digital public infrastructure.
+
+2
+00:00:06,300 --> 00:00:12,200
+Uh, specifically, we're looking at how government sectors can avoid building fragmented, siloed systems.
+
+3
+00:00:12,700 --> 00:00:17,320
+Right. Because nobody in your ministry wants to end up locked into one supplier or
+
+4
+00:00:18,020 --> 00:00:21,220
+dealing with platforms that are just incredibly costly to change.
+
+5
+00:00:21,600 --> 00:00:22,880
+Exactly. So
+
+6
+00:00:23,480 --> 00:00:33,420
+our mission today is to give you a clear understanding of why creating a shared catalog of services is your ultimate defense against duplicated technology projects that simply refuse to
+
+7
+00:00:33,440 --> 00:00:33,940
+work together.
+
+8
+00:00:34,440 --> 00:00:39,620
+Because without that defense, you just end up with data constantly having to be rekeyed across departments.
+
+9
+00:00:39,900 --> 00:00:41,860
+Yeah, that is a huge drain on resources.
+
+10
+00:00:42,640 --> 00:00:48,780
+So let's say a donor comes to your program, and they offer to fund a brand-new digital licensing system for a quality authority.
+
+11
+00:00:49,200 --> 00:00:52,480
+I mean, the instinct is to just take the money immediately, right?
+
+12
+00:00:53,540 --> 00:00:58,100
+Why must you pause and ask that donor for one page before saying yes?
+
+13
+00:00:58,840 --> 00:01:03,080
+Well, you pause because that single page is the sector's catalog of services.
+
+14
+00:01:03,880 --> 00:01:05,300
+It's written once for the whole sector,
+
+15
+00:01:05,920 --> 00:01:08,500
+and it lists every single service owed to the public.
+
+16
+00:01:08,980 --> 00:01:12,620
+Okay, so it's a comprehensive list, but what actually goes on it?
+
+17
+00:01:13,180 --> 00:01:18,160
+Right. So every row in this catalog has to explicitly number and define four things.
+
+18
+00:01:18,800 --> 00:01:22,380
+Uh, number one, the service. Number two, the body that owes it.
+
+19
+00:01:22,840 --> 00:01:24,560
+Number three, how it runs today.
+
+20
+00:01:25,180 --> 00:01:28,220
+And number four, the shared blocks it cannot run without.
+
+21
+00:01:28,740 --> 00:01:33,480
+Wait, so by looking at number four, you're identifying those shared dependencies right up front.
+
+22
+00:01:33,900 --> 00:01:34,360
+Precisely.
+
+23
+00:01:35,120 --> 00:01:38,780
+To see why that matters, let's look at a fictional country called Progressa.
+
+24
+00:01:39,100 --> 00:01:43,420
+Okay, Progressa. Yes. Specifically, let's look at their higher education sector.
+
+25
+00:01:44,120 --> 00:01:50,840
+Right. So in Progressa, you have several different bodies, uh, like PHEQA, the quality authority.
+
+26
+00:01:51,180 --> 00:01:52,820
+Then there's MoEYS, the ministry,
+
+27
+00:01:53,420 --> 00:01:58,480
+and PDCA for credentials. And collectively, they owe the public seven distinct services.
+
+28
+00:01:58,960 --> 00:02:02,700
+And right now, those services probably just run on paper or spreadsheets.
+
+29
+00:02:03,500 --> 00:02:08,340
+So when Progressa decides to digitize, you have to run the true infrastructure test.
+
+30
+00:02:09,039 --> 00:02:12,040
+You do that by reading down one column of that catalog.
+
+31
+00:02:12,680 --> 00:02:14,020
+Reading down the column.
+
+32
+00:02:15,000 --> 00:02:16,360
+So what does that actually show you?
+
+33
+00:02:16,980 --> 00:02:20,740
+Well, let's say you read down the column for a national identity sign-in system.
+
+34
+00:02:21,360 --> 00:02:26,300
+You quickly realize that six out of those seven higher education services rest entirely on it.
+
+35
+00:02:26,880 --> 00:02:29,420
+Oh, wow, six out of seven. So almost everything needs it.
+
+36
+00:02:29,640 --> 00:02:36,040
+Yeah, exactly. Which brings us to a key rule: a block with only one service in its column is just a project's tool.
+
+37
+00:02:36,380 --> 00:02:41,540
+Right. But a block with many services resting on it, well, that is the sector's infrastructure.
+
+38
+00:02:42,300 --> 00:02:49,540
+I hear what you're saying about infrastructure, but practically speaking, isn't it inherently faster for a single project in your ministry to just
+
+39
+00:02:50,300 --> 00:02:54,880
+build its own independent list of institutions rather than waiting to agree on a shared one?
+
+40
+00:02:55,300 --> 00:02:59,120
+I mean, yes, it is faster inside one isolated project.
+
+41
+00:02:59,860 --> 00:03:05,500
+But across the broader sector, it means your government ends up paying to build and host seven different lists.
+
+42
+00:03:05,960 --> 00:03:07,300
+Ah, right. So it's duplicated.
+
+43
+00:03:07,560 --> 00:03:10,000
+Exactly. And you spend years trying to make them agree.
+
+44
+00:03:11,000 --> 00:03:16,920
+Which brings us to how the United Nations Development Program defines digital public infrastructure, or DPI.
+
+45
+00:03:17,380 --> 00:03:21,600
+Right. They define DPI as foundational societal scale systems.
+
+46
+00:03:21,920 --> 00:03:26,680
+Yeah. We're talking about things like digital identity, payments, and consent-based data sharing.
+
+47
+00:03:27,240 --> 00:03:31,360
+And there is a really important warning about this in the reference architecture from GovStack, isn't there?
+
+48
+00:03:31,700 --> 00:03:32,160
+There is.
+
+49
+00:03:32,920 --> 00:03:37,180
+The reference architecture states very clearly that DPI is not neutral.
+
+50
+00:03:37,500 --> 00:03:40,020
+It actively shapes what can be built on top of it.
+
+51
+00:03:40,600 --> 00:03:44,520
+So before you approve the very first digital project, you need to ask for the catalog.
+
+52
+00:03:45,000 --> 00:03:48,660
+Look down the columns to identify what must be funded for the whole sector.
+

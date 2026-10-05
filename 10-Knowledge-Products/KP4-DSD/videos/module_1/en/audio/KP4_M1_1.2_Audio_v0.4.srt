@@ -1,0 +1,248 @@
+1
+00:00:00,140 --> 00:00:06,260
+So, um, imagine this, a massive, like glossy IT supplier proposal just lands on your desk.
+
+2
+00:00:06,460 --> 00:00:08,580
+Right. I mean, that happens all the time.
+
+3
+00:00:09,020 --> 00:00:15,840
+Yeah, and you oversee a major digital program in your ministry, and this proposal is promising a flawless, unified service.
+
+4
+00:00:16,180 --> 00:00:19,580
+But the real question is, um, before you sign that contract,
+
+5
+00:00:20,240 --> 00:00:21,240
+how do you actually know
+
+6
+00:00:21,920 --> 00:00:22,820
+what you are buying?
+
+7
+00:00:23,300 --> 00:00:30,860
+Exactly. Welcome to today's deep dive. We are unpacking exactly how to evaluate these complex IT supplier proposals.
+
+8
+00:00:31,320 --> 00:00:36,540
+Because if you get this wrong, you do not just get a bad system, you end up with systems that are,
+
+9
+00:00:37,140 --> 00:00:39,240
+well, fragmented, siloed,
+
+10
+00:00:39,840 --> 00:00:42,960
+duplicated, or just incredibly costly to change.
+
+11
+00:00:43,340 --> 00:00:45,920
+Or locked into one supplier forever, right?
+
+12
+00:00:46,080 --> 00:00:49,740
+Exactly. So let us start at the beginning of the project, the design phase.
+
+13
+00:00:50,160 --> 00:00:53,920
+The standard move for a supplier is to hand you an exhaustive list for approval, right?
+
+14
+00:00:54,360 --> 00:00:59,120
+Yeah, like a list of maybe eighty decisions or, you know, a massive data dictionary.
+
+15
+00:00:59,400 --> 00:01:01,220
+Which looks completely exhaustive.
+
+16
+00:01:01,520 --> 00:01:04,680
+It does look exhaustive, but relying on a list is dangerous.
+
+17
+00:01:05,420 --> 00:01:10,540
+It is entirely impossible to review effectively because you simply cannot see what is missing.
+
+18
+00:01:10,920 --> 00:01:18,440
+Wait, but if a one hundred and forty field data dictionary is like perfectly comprehensive, why is it so dangerous for an official to rely on it instead of a story?
+
+19
+00:01:19,020 --> 00:01:21,900
+Well, because a list does not reveal the hidden dead ends.
+
+20
+00:01:22,460 --> 00:01:23,560
+What do you mean by dead ends?
+
+21
+00:01:24,180 --> 00:01:26,760
+Uh, like a step in the process with no response
+
+22
+00:01:27,420 --> 00:01:31,080
+or a person who just, um, disappears from the workflow altogether.
+
+23
+00:01:31,940 --> 00:01:37,220
+A story, however, going step by step with the actual screens, it reveals all of that.
+
+24
+00:01:38,020 --> 00:01:41,240
+Right. So it bridges the gap between the business side and the IT side.
+
+25
+00:01:41,580 --> 00:01:45,360
+Exactly. And this is exactly what the reference architecture describes.
+
+26
+00:01:46,160 --> 00:01:51,080
+It points out that enterprise architecture documents are meant to close that exact communication gap.
+
+27
+00:01:51,800 --> 00:01:53,820
+So both sides can actually plan together.
+
+28
+00:01:54,320 --> 00:01:57,700
+Yes. A story with its screens does that job perfectly.
+
+29
+00:01:58,400 --> 00:02:04,740
+Okay, so we have a shared story. That brings us to rule two, which is measuring the design against a list the design did not write.
+
+30
+00:02:05,600 --> 00:02:07,580
+Right. Once you have that shared story,
+
+31
+00:02:08,259 --> 00:02:11,900
+you have to ensure the proposed design actually covers everything your program needs.
+
+32
+00:02:12,300 --> 00:02:17,820
+Which sounds obvious, but grading a system based on its own design is kinda like letting a student write their own exam.
+
+33
+00:02:18,180 --> 00:02:21,160
+Yeah, I mean, of course, they are going to score one hundred percent.
+
+34
+00:02:21,320 --> 00:02:30,960
+Exactly. If the list of what must be covered is drawn up from the design itself, it will always look complete, even if it is missing half of what your minister actually
+
+35
+00:02:31,000 --> 00:02:31,340
+needs.
+
+36
+00:02:31,880 --> 00:02:33,760
+So the defense here is independence.
+
+37
+00:02:34,080 --> 00:02:40,620
+Yes. The list of what was asked for must be written in the customer's own words before any design even exists.
+
+38
+00:02:41,040 --> 00:02:44,040
+Okay, so we have a shared story, an independent checklist.
+
+39
+00:02:44,440 --> 00:02:45,980
+Now we move to the implementation phase.
+
+40
+00:02:46,820 --> 00:02:48,560
+But there is still one major blind spot here.
+
+41
+00:02:49,260 --> 00:02:52,860
+Rule three is you must end at least one check on the running system.
+
+42
+00:02:53,600 --> 00:02:56,320
+Because documents can agree with each other perfectly, right?
+
+43
+00:02:56,560 --> 00:02:57,320
+Oh, absolutely. Okay.
+
+44
+00:02:57,460 --> 00:03:01,680
+They can align perfectly and still describe a system that does not actually work.
+
+45
+00:03:02,200 --> 00:03:04,800
+So the paper reality does not match the digital reality.
+
+46
+00:03:05,200 --> 00:03:12,040
+Exactly. The final check has to involve a real person finishing a real task on the actual system the service will run on.
+
+47
+00:03:12,500 --> 00:03:16,780
+Let us look at how this plays out in Progressa, which just to be clear, is a fictional country.
+
+48
+00:03:17,260 --> 00:03:20,620
+Right. A fictional country, but a very real world scenario.
+
+49
+00:03:21,420 --> 00:03:28,720
+Their higher education quality authority, um, known as PHEQA, received a proposal with three major shortfalls.
+
+50
+00:03:29,360 --> 00:03:35,340
+And they fixed them using these rules. So first, instead of signing a data dictionary of one hundred and forty fields, what did they do?
+
+51
+00:03:36,300 --> 00:03:42,520
+Well, PHEQA refused the list. They accepted stories and a clickable walkthrough instead.
+
+52
+00:03:43,000 --> 00:03:43,300
+Nice.
+
+53
+00:03:44,220 --> 00:03:46,740
+And second, instead of requirements written from the design?
+
+54
+00:03:47,380 --> 00:03:52,040
+They accepted a register of what PHEQA asked for before any design existed.
+
+55
+00:03:52,320 --> 00:03:54,160
+And finally, the testing phase.
+
+56
+00:03:54,680 --> 00:04:04,480
+Right. Instead of testing on the supplier's test server, acceptance ended when a real PHEQA officer finished a real task on PHEQA's own installation.
+
+57
+00:04:04,920 --> 00:04:07,120
+Signed in through the National Identity Authority, right.
+
+58
+00:04:07,600 --> 00:04:10,340
+Exactly. They closed every single loophole.
+
+59
+00:04:10,740 --> 00:04:18,860
+So before you sign that proposal on your desk, pinpoint exactly what your officials approve, what the design is measured against, and where testing ends.
+
+60
+00:04:19,200 --> 00:04:23,060
+And if any of these belong to the supplier, you know, write the clause to change it.
+
+61
+00:04:23,640 --> 00:04:25,460
+Keep the control in your ministry's hands.
+
+62
+00:04:26,000 --> 00:04:26,280
+Always.
+

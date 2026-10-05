@@ -1,0 +1,308 @@
+1
+00:00:00,140 --> 00:00:03,260
+Welcome to today's deep dive. Um, I want you to imagine
+
+2
+00:00:03,880 --> 00:00:06,560
+dumping a thousand blank puzzle pieces onto a table.
+
+3
+00:00:07,240 --> 00:00:09,700
+You can see every single cardboard fragment, but,
+
+4
+00:00:10,540 --> 00:00:13,860
+uh, without a picture to guide you, they explain absolutely nothing.
+
+5
+00:00:14,240 --> 00:00:15,620
+Right. It's just a meaningless pile.
+
+6
+00:00:16,000 --> 00:00:22,260
+Exactly. And that is exactly what a digital service looks like when it's built from just a disconnected list of data fields.
+
+7
+00:00:22,840 --> 00:00:26,220
+So today, we are exploring a fundamental shift for your ministry,
+
+8
+00:00:26,860 --> 00:00:31,280
+moving away from that list and designing screens organically based on a story.
+
+9
+00:00:31,680 --> 00:00:38,940
+Because, um, when digital systems lack that story, the resulting services are fragmented, siloed, and duplicated.
+
+10
+00:00:39,580 --> 00:00:42,620
+Yeah. And then users just have to keep entering the same things over and over.
+
+11
+00:00:42,860 --> 00:00:50,460
+Precisely. Data is rekeyed by users, systems become locked into one supplier, and ultimately, they are costly to change.
+
+12
+00:00:51,060 --> 00:00:56,340
+By working a screen out from a story instead, you dictate exactly where every single value comes from.
+
+13
+00:00:57,060 --> 00:00:59,580
+So if the goal is to map these screens to a story,
+
+14
+00:01:00,220 --> 00:01:05,500
+how does a system builder actually decide when a specific step in a user's journey warrants its own screen?
+
+15
+00:01:06,140 --> 00:01:09,660
+I mean, it seems like it'd be easy to just keep adding pages endlessly.
+
+16
+00:01:10,000 --> 00:01:15,160
+Well, you prevent that by walking the story step by step and applying three strict rules for screen creation.
+
+17
+00:01:15,620 --> 00:01:21,420
+Rule number one: a step where the person asks, states, gives, or confirms something gets a screen.
+
+18
+00:01:21,680 --> 00:01:23,460
+Okay, that makes sense. What's the second one?
+
+19
+00:01:23,960 --> 00:01:30,540
+Rule number two: a step that is wholly the system's gets a screen only if the person must read something before going on.
+
+20
+00:01:30,920 --> 00:01:34,300
+Wait, so if they don't explicitly need to read anything from the system...
+
+21
+00:01:34,780 --> 00:01:37,280
+Then no screen, which leads right into rule number three:
+
+22
+00:01:37,940 --> 00:01:41,600
+two steps share a screen when nothing the system does stands between them.
+
+23
+00:01:42,140 --> 00:01:43,340
+I hear those three rules, but,
+
+24
+00:01:43,980 --> 00:01:48,940
+you know, in the real world, government agencies always want to collect extra data just in case they need it later.
+
+25
+00:01:49,640 --> 00:01:53,120
+How do you realistically stop that data bloat once the screen is justified?
+
+26
+00:01:53,580 --> 00:01:56,640
+Uh, you put up a strict firewall around what goes on the screen itself.
+
+27
+00:01:57,020 --> 00:02:01,680
+There are four definitive sources for any value, and a data point must fall into one of them.
+
+28
+00:02:02,140 --> 00:02:04,340
+Source one: it is taken from another body.
+
+29
+00:02:04,820 --> 00:02:06,340
+Right, like an external database.
+
+30
+00:02:06,760 --> 00:02:07,140
+Exactly.
+
+31
+00:02:07,780 --> 00:02:11,920
+Source two: it is chosen from a shared list kept once for the whole service.
+
+32
+00:02:12,440 --> 00:02:13,340
+Okay, and the third?
+
+33
+00:02:13,960 --> 00:02:18,380
+Source three: it is read from a record or a setting the authority already keeps.
+
+34
+00:02:19,140 --> 00:02:25,900
+And source four: it is entered right there, typed by the person, but accompanied by a strict reason why no other place has it.
+
+35
+00:02:26,400 --> 00:02:33,100
+If those four sources are the only valid ways to collect data, how does a ministry actually build a screen without breaking those rules?
+
+36
+00:02:33,800 --> 00:02:34,240
+Let's, um,
+
+37
+00:02:35,460 --> 00:02:37,220
+ground this in a concrete demonstration.
+
+38
+00:02:37,760 --> 00:02:40,780
+Sure. We can look at the fictional country of Progressa.
+
+39
+00:02:40,980 --> 00:02:41,560
+Progressa.
+
+40
+00:02:42,500 --> 00:02:46,560
+Their higher education authority has a goal for users to apply for a provisional license.
+
+41
+00:02:47,160 --> 00:02:48,960
+That journey has exactly five screens.
+
+42
+00:02:49,700 --> 00:02:52,000
+Only five for a whole license application?
+
+43
+00:02:52,240 --> 00:02:52,860
+Just five.
+
+44
+00:02:53,700 --> 00:02:59,560
+Screen one asks to apply. Screen two shows the authority's standards and asks for the kind of institution.
+
+45
+00:03:00,200 --> 00:03:03,980
+Screen three takes the particulars and also handles two potential failures.
+
+46
+00:03:04,520 --> 00:03:05,480
+Oh, like errors.
+
+47
+00:03:05,760 --> 00:03:08,460
+Right, like a document left out or a name already held.
+
+48
+00:03:08,920 --> 00:03:11,540
+Then screen four confirms the details and takes the fee.
+
+49
+00:03:12,000 --> 00:03:15,300
+And finally, screen five shows the application has been received.
+
+50
+00:03:15,980 --> 00:03:21,800
+The mapping between those five screens and your four rules for data sources is, like, incredibly precise.
+
+51
+00:03:22,580 --> 00:03:27,560
+The applicant's name isn't typed in. It is taken directly from the national identity sign-in.
+
+52
+00:03:27,860 --> 00:03:28,680
+Which is source one.
+
+53
+00:03:29,120 --> 00:03:29,320
+Right.
+
+54
+00:03:30,060 --> 00:03:32,640
+And the kind of institution is chosen from a shared list.
+
+55
+00:03:32,980 --> 00:03:33,600
+That's source two.
+
+56
+00:03:34,200 --> 00:03:37,760
+The application fee is read directly from an internal finance setting.
+
+57
+00:03:38,220 --> 00:03:42,940
+Source three. And the only thing entered directly by the user is the proposed name of the institution,
+
+58
+00:03:43,620 --> 00:03:46,500
+because literally no other body holds that information yet.
+
+59
+00:03:46,860 --> 00:03:50,060
+Yes, source four. And this aligns perfectly with the builder's perspective.
+
+60
+00:03:50,320 --> 00:03:53,940
+The GovStack registration specification describes this exact workflow.
+
+61
+00:03:54,100 --> 00:04:00,900
+Oh, really? Yeah. An analyst creates a guide, the applicant's form, the document upload, the payment, and a send screen.
+
+62
+00:04:01,600 --> 00:04:07,480
+Every field has a type and a rule for whether it must be filled, and those shared lists are reusable across all services.
+
+63
+00:04:07,980 --> 00:04:10,420
+So this brings up a critical quality control check.
+
+64
+00:04:10,980 --> 00:04:16,100
+When Progressa's education authority was drafting that third screen, the one taking the particulars,
+
+65
+00:04:16,740 --> 00:04:20,140
+they initially included a field asking for the applicant's phone number.
+
+66
+00:04:20,720 --> 00:04:23,220
+And that is exactly where the framework proves its value.
+
+67
+00:04:23,660 --> 00:04:26,500
+When the builder checked that field against the story, it failed.
+
+68
+00:04:26,920 --> 00:04:28,420
+Because it didn't fit the sources.
+
+69
+00:04:28,820 --> 00:04:34,900
+Right. No shared list named a phone number, and the national identity sign-in system does not release phone numbers.
+
+70
+00:04:35,440 --> 00:04:37,060
+That meant the user would have to type it in.
+
+71
+00:04:37,460 --> 00:04:39,880
+But source four requires a strict reason.
+
+72
+00:04:40,220 --> 00:04:46,240
+Precisely. It prompted a necessary question to the registrar: "Why are we actually asking for this?
+
+73
+00:04:46,460 --> 00:04:49,020
+Does the authority truly need to telephone an applicant?"
+
+74
+00:04:49,460 --> 00:04:53,320
+And because the field lacked a valid story source, it was struck out immediately.
+
+75
+00:04:53,680 --> 00:04:59,000
+That is the ultimate test. Point at any value on any screen and ask where it comes from.
+
+76
+00:04:59,320 --> 00:05:01,680
+It must answer with one of those four sources.
+
+77
+00:05:02,280 --> 00:05:04,520
+Anything else is a question for the story's owner.
+

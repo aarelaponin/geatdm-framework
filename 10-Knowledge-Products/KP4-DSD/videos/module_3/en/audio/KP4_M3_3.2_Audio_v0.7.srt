@@ -1,0 +1,216 @@
+1
+00:00:00,140 --> 00:00:02,260
+Module 3, Video 3.2,
+
+2
+00:00:03,140 --> 00:00:04,980
+every way it can go wrong written down.
+
+3
+00:00:05,880 --> 00:00:14,020
+Uh, welcome to today's deep dive. So if you manage digital services in your ministry, you have to think about what happens when a system experiences a bad day, right?
+
+4
+00:00:14,160 --> 00:00:18,780
+Like a sign-in not answering, a missing document, or a payment that just never arrives.
+
+5
+00:00:19,140 --> 00:00:27,440
+Yeah, exactly. And if nobody actually writes down the plan for those specific failures, uh, the system builder is forced to make those decisions all alone,
+
+6
+00:00:27,900 --> 00:00:30,180
+and usually, you know, all under a tight deadline.
+
+7
+00:00:30,880 --> 00:00:39,180
+Which is definitely not what you want. I mean, it's, it's kinda like an architect forgetting to draw the fire escapes on a blueprint and just leaving the construction crew to guess where to put them.
+
+8
+00:00:39,700 --> 00:00:46,380
+That's a great way to put it. We really require a rigorous way to map out every single system failure to prevent builders from guessing.
+
+9
+00:00:47,180 --> 00:00:51,120
+So what exactly must be recorded to properly map these failures across your program?
+
+10
+00:00:51,780 --> 00:00:53,760
+Oh, there are four things written for each failure.
+
+11
+00:00:54,280 --> 00:00:55,920
+Number one, the step it leaves.
+
+12
+00:00:56,600 --> 00:00:58,460
+Number two, what the system notices.
+
+13
+00:00:58,620 --> 00:00:59,720
+Okay, what it notices.
+
+14
+00:01:00,100 --> 00:01:04,239
+Number three, what the system does. And finally, number four, how the story ends.
+
+15
+00:01:04,560 --> 00:01:06,660
+How the story ends. I like that phrasing.
+
+16
+00:01:07,020 --> 00:01:09,540
+And what are the valid outcomes for that final step?
+
+17
+00:01:10,380 --> 00:01:12,680
+There are only three endings to these failure stories.
+
+18
+00:01:13,360 --> 00:01:14,640
+Number one, the goal fails.
+
+19
+00:01:15,280 --> 00:01:17,080
+Number two, the goal still succeeds.
+
+20
+00:01:17,680 --> 00:01:19,720
+Or number three, back to a named step.
+
+21
+00:01:20,260 --> 00:01:28,320
+Got it. So how does the GovStack registration specification approach this, like the vital checks required before an application can actually be sent?
+
+22
+00:01:28,980 --> 00:01:32,380
+Right. So the specification mandates three specific checks.
+
+23
+00:01:33,220 --> 00:01:35,240
+The first is rules on each field.
+
+24
+00:01:35,840 --> 00:01:39,060
+Uh-huh. The second is a field checked against another body's records.
+
+25
+00:01:39,900 --> 00:01:43,280
+And the third is the test that everything required is there.
+
+26
+00:01:44,120 --> 00:01:47,480
+Okay. So let's look at how these failures are mapped in practice.
+
+27
+00:01:47,960 --> 00:01:51,580
+In the fictional country of these examples, Progressa, how does this play out?
+
+28
+00:01:52,360 --> 00:01:56,060
+We can examine the five failures mapped for their application process.
+
+29
+00:01:56,620 --> 00:01:59,580
+Number one, uh, PNIA does not answer its sign-in.
+
+30
+00:02:00,360 --> 00:02:02,700
+In this case, the applicant is told nothing has started.
+
+31
+00:02:02,840 --> 00:02:03,720
+Right. Clean break.
+
+32
+00:02:04,500 --> 00:02:05,140
+What's the second one?
+
+33
+00:02:06,040 --> 00:02:07,920
+Number two is the evidence of funding left out.
+
+34
+00:02:08,240 --> 00:02:11,820
+So here, the system names the missing file but keeps everything else.
+
+35
+00:02:12,480 --> 00:02:14,420
+Oh, that's helpful. They don't lose their progress.
+
+36
+00:02:14,680 --> 00:02:15,700
+Exactly. Excellent.
+
+37
+00:02:16,000 --> 00:02:19,640
+Number three, the name already held. The system just shows the current holder.
+
+38
+00:02:20,780 --> 00:02:24,160
+Number four, the fee not confirmed. The application is halted.
+
+39
+00:02:24,560 --> 00:02:31,560
+Halted entirely. Yeah. Okay. Yep. And then number five, the applicant who leaves and returns, they find nothing kept.
+
+40
+00:02:32,780 --> 00:02:37,860
+Wait, really? On that fifth scenario, they find absolutely nothing kept upon returning?
+
+41
+00:02:38,620 --> 00:02:42,580
+Was that just because it was, you know, too costly to build a save draft feature?
+
+42
+00:02:42,800 --> 00:02:47,120
+You'd think so, but no. Really? It was a deliberate policy decision by the registrar.
+
+43
+00:02:47,280 --> 00:02:49,760
+Oh, wow. Yeah. She decided no drafts in the first version.
+
+44
+00:02:50,400 --> 00:02:50,540
+So
+
+45
+00:02:51,160 --> 00:02:58,120
+she owns that open question and accepts the cost that falls on the applicant, which is that an applicant who stops simply loses what they typed.
+
+46
+00:02:58,940 --> 00:03:00,440
+That makes sense when you put it that way.
+
+47
+00:03:00,480 --> 00:03:07,760
+It's a choice. But if an official like the registrar does not make these determinations for your minister, who decides the ending?
+
+48
+00:03:08,180 --> 00:03:12,820
+Well, if the builder decides the outcome of a failure, the wrong person made the choice.
+
+49
+00:03:13,520 --> 00:03:15,180
+Officials must make these decisions.
+
+50
+00:03:16,000 --> 00:03:18,120
+I mean, can't we just use tools to figure this out now?
+
+51
+00:03:19,200 --> 00:03:19,840
+Up to a point.
+
+52
+00:03:20,740 --> 00:03:24,620
+While an AI assistant can suggest an initial step-by-step list of failures,
+
+53
+00:03:25,360 --> 00:03:28,480
+human walkthroughs and reviews are always required to find the rest.
+
+54
+00:03:28,980 --> 00:03:31,080
+Right. So it always comes back to human judgment.
+

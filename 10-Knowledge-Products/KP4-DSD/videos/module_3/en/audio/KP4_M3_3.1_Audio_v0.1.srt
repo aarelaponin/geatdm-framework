@@ -1,0 +1,207 @@
+1
+00:00:00,160 --> 00:00:02,560
+Module 3, Video 3.1. Um,
+
+2
+00:00:03,160 --> 00:00:05,720
+one goal written as a story a builder can follow
+
+3
+00:00:06,040 --> 00:00:13,140
+Right. So the core premise is absolute. The builder must not have to work anything out or ask anybody anything.
+
+4
+00:00:13,740 --> 00:00:19,400
+So, you know, when preparing these specifications for your minister, what actually happens when the documents leave details out?
+
+5
+00:00:19,800 --> 00:00:22,680
+Well, your supplier's builder builds what the documents say,
+
+6
+00:00:23,300 --> 00:00:25,240
+um, and then they basically guess the rest.
+
+7
+00:00:25,640 --> 00:00:27,520
+Which obviously changes things.
+
+8
+00:00:27,680 --> 00:00:32,100
+Exactly. A guess made late under deadline changes the agreed service,
+
+9
+00:00:32,759 --> 00:00:35,060
+which is why every goal must be written as a story.
+
+10
+00:00:35,500 --> 00:00:40,480
+Okay, so to ensure the builder makes zero assumptions, how are a goal and its story defined?
+
+11
+00:00:40,920 --> 00:00:43,420
+Well, a goal is just one thing a person wants to get done.
+
+12
+00:00:43,640 --> 00:00:51,920
+Right. And the story details who acts and what happens step by step in plain words, so the official who runs the service can verify it.
+
+13
+00:00:52,680 --> 00:00:56,840
+What exactly must a written goal hold so the official can actually verify the work?
+
+14
+00:00:57,360 --> 00:00:59,820
+It holds five things in order. One,
+
+15
+00:01:00,540 --> 00:01:02,800
+uh, who has the goal and who else takes part.
+
+16
+00:01:03,040 --> 00:01:06,700
+Okay. Two, what starts it and what must already be true.
+
+17
+00:01:07,540 --> 00:01:10,480
+Three, what the authority guarantees whatever happens.
+
+18
+00:01:10,860 --> 00:01:14,380
+Got it. Four, the main steps on the path where nothing goes wrong.
+
+19
+00:01:14,860 --> 00:01:18,140
+And five, the entries of the register of requirements it serves.
+
+20
+00:01:18,860 --> 00:01:26,060
+So how does this structure apply in a working model using Progressa, and explicitly noting, of course, that Progressa is a fictional country?
+
+21
+00:01:26,460 --> 00:01:30,220
+Right, fictional country. So we look at PHEQA's provisional license goal.
+
+22
+00:01:31,520 --> 00:01:34,260
+Um, the applicant intends to run a private institution.
+
+23
+00:01:34,380 --> 00:01:39,240
+Okay. PNIA identifies them, and the payments block takes the fee.
+
+24
+00:01:39,620 --> 00:01:41,840
+Right. It starts when standards are in force,
+
+25
+00:01:42,480 --> 00:01:45,900
+uh, guaranteeing no application is recorded unless confirmed and paid.
+
+26
+00:01:46,640 --> 00:01:50,200
+So what is the main story outlining the path where nothing goes wrong?
+
+27
+00:01:51,080 --> 00:01:52,340
+The main story has nine steps.
+
+28
+00:01:53,120 --> 00:01:54,820
+One, sign in through PNIA.
+
+29
+00:01:55,580 --> 00:02:00,240
+Two, ask to apply. Okay. Three, system shows PHEQA standards.
+
+30
+00:02:01,000 --> 00:02:02,920
+Four, state the kind of institution.
+
+31
+00:02:03,780 --> 00:02:06,020
+Five, system asks for particulars.
+
+32
+00:02:06,840 --> 00:02:07,520
+Tracking so far.
+
+33
+00:02:08,039 --> 00:02:10,860
+Six, give proposed name, particulars and funding evidence.
+
+34
+00:02:11,920 --> 00:02:14,720
+Seven, system checks every particular and unique name.
+
+35
+00:02:15,060 --> 00:02:15,260
+Right.
+
+36
+00:02:15,900 --> 00:02:17,140
+Eight, confirm and pay the fee.
+
+37
+00:02:18,000 --> 00:02:21,160
+Nine, system records the application and shows the date received.
+
+38
+00:02:21,800 --> 00:02:21,900
+Now,
+
+39
+00:02:22,560 --> 00:02:28,340
+while the GovStack registration specification provides the general picture, what does it leave to your ministry to figure out?
+
+40
+00:02:29,340 --> 00:02:36,780
+It provides the general picture, yeah. But your story fills in which particulars against which register, uh, at which fee,
+
+41
+00:02:37,240 --> 00:02:38,280
+and with what guarantee.
+
+42
+00:02:39,020 --> 00:02:45,140
+And before your program accepts a story from an analyst to pass to a builder, what must be done to avoid any assumptions?
+
+43
+00:02:45,900 --> 00:02:48,380
+You must read it aloud to the official who runs the counter.
+
+44
+00:02:48,840 --> 00:02:53,680
+At each step, ask, "Who does this, and where does what they see come from?"
+
+45
+00:02:54,500 --> 00:02:55,460
+That makes a lot of sense.
+
+46
+00:02:55,780 --> 00:02:55,920
+Yeah.
+
+47
+00:02:56,960 --> 00:03:01,020
+In one example, an AI drafted a tenth step generating an email.
+
+48
+00:03:01,820 --> 00:03:11,580
+Wait, really? Yes. But since no requirement asked for it, and the authority holds no trusted address, the analyst struck it out and wrote a question for the registrar instead.
+
+49
+00:03:12,160 --> 00:03:15,220
+That makes total sense to verify every single step like that.
+
+50
+00:03:15,920 --> 00:03:21,960
+Read the story as the builder would. Wherever the builder would have to guess or ask, the story's not finished.
+
+51
+00:03:22,500 --> 00:03:24,520
+Send it back with the question written down.
+
+52
+00:03:25,260 --> 00:03:26,640
+Sources are in the video description.

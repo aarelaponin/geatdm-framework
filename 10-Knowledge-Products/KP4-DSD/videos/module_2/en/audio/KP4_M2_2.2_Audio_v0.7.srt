@@ -1,0 +1,300 @@
+1
+00:00:00,200 --> 00:00:02,240
+Imagine burning, uh, $10 million
+
+2
+00:00:02,960 --> 00:00:09,220
+and six months of developer time only to realize the vendor built a feature your ministry never even authorized.
+
+3
+00:00:09,840 --> 00:00:14,800
+Yeah. Or worse, the vendor claims a critical function was just never asked for.
+
+4
+00:00:15,100 --> 00:00:19,040
+Right. And your team, well, they can't point to the exact document that proves it was.
+
+5
+00:00:19,500 --> 00:00:20,340
+It's a huge problem.
+
+6
+00:00:20,940 --> 00:00:29,280
+So today's deep dive explores how large scale projects can avoid becoming fragmented, siloed, or, you know, incredibly costly to change down the line
+
+7
+00:00:29,880 --> 00:00:32,299
+by fixing how we track initial requests.
+
+8
+00:00:32,720 --> 00:00:37,740
+And that exact scenario happens because of how human memory and organizational momentum work.
+
+9
+00:00:38,660 --> 00:00:41,420
+Months into a project, memories just degrade.
+
+10
+00:00:41,680 --> 00:00:49,060
+Oh, absolutely. And suppliers might deliberately allow scope creep to bill more hours, or developers simply misinterpret vague legal phrasing.
+
+11
+00:00:49,420 --> 00:00:54,620
+Right. Which means without a definitive anchor, you just end up with duplicated effort and rekeyed data.
+
+12
+00:00:55,420 --> 00:01:03,840
+Exactly. And the mechanism to prevent this is called a register of what was asked, a document created before a single line of code is written.
+
+13
+00:01:04,080 --> 00:01:13,620
+Before any design begins at all. Yes. So instead of a loose collection of emails and, uh, meeting notes, this register captures every separate request using the
+
+14
+00:01:13,680 --> 00:01:16,440
+customer's exact words in quotation marks.
+
+15
+00:01:16,840 --> 00:01:18,540
+And it cites the precise source.
+
+16
+00:01:18,840 --> 00:01:21,680
+Right. It makes me think of, like, a software compiler.
+
+17
+00:01:21,980 --> 00:01:25,400
+If a programmer writes a code script with a single unassigned variable...
+
+18
+00:01:26,000 --> 00:01:27,400
+The whole program refuses to run.
+
+19
+00:01:27,800 --> 00:01:34,900
+Exactly, until a human debugs it. This register acts like a legal and psychological compiler for project management.
+
+20
+00:01:35,540 --> 00:01:37,960
+That is a highly accurate way to look at it.
+
+21
+00:01:38,580 --> 00:01:44,240
+It forces an upfront debug of the requirements, binding the supplier to your precise needs.
+
+22
+00:01:44,920 --> 00:01:49,500
+Okay, so to see how this works mechanically, we can look at the fictional country of Progressa.
+
+23
+00:01:50,040 --> 00:01:54,940
+Right. Progressa and its Higher Education Quality Authority, PHEQA.
+
+24
+00:01:55,540 --> 00:02:01,820
+The regulations contain some pretty complex, dense text that needs to be translated into actionable system requirements.
+
+25
+00:02:02,420 --> 00:02:07,140
+But having a hyper-specific list doesn't automatically solve the execution problem, does it?
+
+26
+00:02:07,500 --> 00:02:09,160
+Well, no. It takes discipline.
+
+27
+00:02:09,720 --> 00:02:16,700
+Because if I'm reading their regulations, I'm seeing mandates like, uh, number one, apply through PHEQA self-service.
+
+28
+00:02:17,000 --> 00:02:19,080
+Right. Number two, inspect before recommending.
+
+29
+00:02:19,440 --> 00:02:21,800
+Number three, the minister decides the license.
+
+30
+00:02:22,280 --> 00:02:25,260
+Number four, the register of institutions is open to the public.
+
+31
+00:02:25,640 --> 00:02:28,780
+And number five, a person aggrieved may ask for a review.
+
+32
+00:02:29,340 --> 00:02:32,140
+So all five of those entries are legally binding.
+
+33
+00:02:32,920 --> 00:02:38,740
+Yeah, but if the developers don't understand the legal phrasing of, say, rule number four, they're still gonna build it wrong.
+
+34
+00:02:39,140 --> 00:02:39,660
+Precisely.
+
+35
+00:02:40,380 --> 00:02:45,080
+A developer might build a public register, but leave out the names of the institution owners.
+
+36
+00:02:45,480 --> 00:02:48,020
+Just because the legal text didn't explicitly mention it.
+
+37
+00:02:48,640 --> 00:02:53,440
+Exactly. That is why creating the register requires two non-negotiable habits.
+
+38
+00:02:54,160 --> 00:02:56,500
+Habit one is one thing per entry.
+
+39
+00:02:57,300 --> 00:03:00,640
+So if a single sentence of regulation contains three separate mandates-
+
+40
+00:03:01,100 --> 00:03:02,700
+You split it into three distinct entries.
+
+41
+00:03:03,120 --> 00:03:03,480
+You have to.
+
+42
+00:03:04,340 --> 00:03:09,800
+And habit two is to write out in plain words exactly what evidence will show the requirement is met.
+
+43
+00:03:10,080 --> 00:03:13,640
+Okay, so for that second rule, the inspect before recommending one,
+
+44
+00:03:14,260 --> 00:03:23,660
+the plain words translating that for the system build would be something like, um, "No recommendation can be sent to the minister for an application with no recorded inspection."
+
+45
+00:03:24,140 --> 00:03:27,520
+Perfect. It takes the ambiguity completely out of the equation.
+
+46
+00:03:27,920 --> 00:03:30,520
+It establishes a specific behavioral outcome.
+
+47
+00:03:30,820 --> 00:03:32,540
+Exactly. But this process,
+
+48
+00:03:33,500 --> 00:03:39,000
+it inevitably exposes flaws in the original text, like you mentioned rule number five earlier.
+
+49
+00:03:39,500 --> 00:03:42,100
+Right. A person aggrieved may ask for a review.
+
+50
+00:03:42,580 --> 00:03:48,340
+That's a perfect example of a gap. Yes. The rule says they can ask for a review, but it gives absolutely no time limit.
+
+51
+00:03:48,880 --> 00:03:52,280
+And when faced with that gap, the ironclad rule is to never guess.
+
+52
+00:03:52,740 --> 00:03:57,320
+Never guess, because a guessed deadline might make the register look complete.
+
+53
+00:03:57,820 --> 00:04:01,880
+But building a system around a wrong guess will make it costly to change later.
+
+54
+00:04:02,460 --> 00:04:05,340
+Instead, every gap is flagged as a question.
+
+55
+00:04:05,840 --> 00:04:08,200
+And assigned to a specific owner with a hard deadline.
+
+56
+00:04:08,640 --> 00:04:09,060
+Exactly.
+
+57
+00:04:09,740 --> 00:04:18,240
+If the regulation is silent on how many days a review takes, that question gets assigned to a definitive authority, like a specific director at the ministry.
+
+58
+00:04:18,480 --> 00:04:20,760
+They have to decide before design starts.
+
+59
+00:04:21,040 --> 00:04:27,800
+Yes, exactly. Honestly, though, looking at these massive text dumps and the tedious nature of splitting sentences and finding gaps,
+
+60
+00:04:28,440 --> 00:04:31,720
+this seems like the perfect job to just hand off to an AI.
+
+61
+00:04:32,320 --> 00:04:35,820
+I mean, an AI assistant is incredibly useful for the heavy lifting.
+
+62
+00:04:36,460 --> 00:04:38,620
+Let a large language model parse the regulations.
+
+63
+00:04:38,980 --> 00:04:40,600
+Just generate the entire register?
+
+64
+00:04:41,060 --> 00:04:47,880
+Well, it can do that first pass, taking hundreds of pages of legal text and splitting them into isolated entries in minutes.
+
+65
+00:04:48,300 --> 00:04:51,200
+Right. But the AI is strictly proposing.
+
+66
+00:04:51,760 --> 00:04:54,960
+A human analyst has to physically rule on every single entry.
+
+67
+00:04:55,420 --> 00:04:58,920
+Accepting it, amending it, or setting it aside with a documented reason.
+
+68
+00:04:59,340 --> 00:05:04,660
+Crucially, yes. And if an entry has no verifiable source attached, it gets struck out immediately.
+
+69
+00:05:05,000 --> 00:05:09,260
+Wow. That's a really rigorous standard. But I can see how it forces accountability.
+
+70
+00:05:09,680 --> 00:05:16,900
+It does. By demanding one thing per entry using exact words, citing exact sources, and assigning clear owners to resolve gaps,
+
+71
+00:05:17,240 --> 00:05:21,400
+you prevent being locked into one supplier who holds all the institutional knowledge.
+
+72
+00:05:21,820 --> 00:05:26,880
+That upfront discipline is literally the only way to maintain control over a massive build.
+
+73
+00:05:27,360 --> 00:05:29,480
+It removes the interpretation from the supplier.
+
+74
+00:05:30,000 --> 00:05:32,960
+And keeps the authority exactly where it belongs, with the customer.
+
+75
+00:05:33,380 --> 00:05:36,340
+Absolutely. Which leaves a fascinating question to consider.
+

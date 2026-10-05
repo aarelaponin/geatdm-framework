@@ -1,0 +1,199 @@
+1
+00:00:00,300 --> 00:00:02,540
+Module 2, Video 2.6:
+
+2
+00:00:03,260 --> 00:00:06,200
+What the service is built on and what crosses its boundary.
+
+3
+00:00:06,720 --> 00:00:11,940
+One document names the platform, the shared blocks it uses, and every flow that crosses to another body.
+
+4
+00:00:12,400 --> 00:00:18,080
+So if a new service in your program is gonna read another body's register, uh, has that body actually agreed to that?
+
+5
+00:00:18,680 --> 00:00:18,840
+Well,
+
+6
+00:00:19,440 --> 00:00:22,200
+a promise made on someone else's behalf, um,
+
+7
+00:00:23,200 --> 00:00:26,840
+it can completely stall a project at the border between two offices.
+
+8
+00:00:27,040 --> 00:00:27,940
+Yeah, that makes sense.
+
+9
+00:00:28,400 --> 00:00:29,520
+But one page prevents it.
+
+10
+00:00:30,100 --> 00:00:34,500
+What exactly is on this single page that, you know, a manager can read to prevent those delays?
+
+11
+00:00:35,120 --> 00:00:38,000
+It's the software architecture written by the solution architect.
+
+12
+00:00:38,240 --> 00:00:40,520
+Uh, it names three specific things. Okay.
+
+13
+00:00:40,840 --> 00:00:42,440
+One, the platform it runs on.
+
+14
+00:00:43,100 --> 00:00:47,920
+Two, the shared blocks it uses, and three, every flow that crosses to another body.
+
+15
+00:00:48,560 --> 00:00:52,740
+So how does this architecture look in practice, like for the fictional country of Progressa?
+
+16
+00:00:53,380 --> 00:00:56,580
+Right. So Progressa relies on two applications for this process.
+
+17
+00:00:57,180 --> 00:01:02,120
+PHEQA, the quality authority, runs on one low-code platform installation.
+
+18
+00:01:02,500 --> 00:01:05,099
+And they're the ones writing the institution register, right?
+
+19
+00:01:05,400 --> 00:01:14,160
+Exactly. They write the register. Now, MoEYS, uh, the ministry, they run on a second installation for the minister's decisions, but they keep no register copy.
+
+20
+00:01:14,500 --> 00:01:16,220
+Oh, wow. No local copy at all?
+
+21
+00:01:16,660 --> 00:01:16,900
+None.
+
+22
+00:01:17,600 --> 00:01:21,960
+But both of them use, um, PNIA sign-in, and any exchanges pass through Linkup.
+
+23
+00:01:22,520 --> 00:01:23,860
+Which is operated by PDGA.
+
+24
+00:01:24,080 --> 00:01:24,300
+Right.
+
+25
+00:01:25,020 --> 00:01:27,080
+And, uh, fees go straight through the payments block.
+
+26
+00:01:27,680 --> 00:01:34,380
+Okay. So how does the table of crossings manage all these exchanges, especially since the ministry keeps no copy of the register?
+
+27
+00:01:34,940 --> 00:01:39,460
+Well, if PHEQA's register cannot be reached, the ministry's officer just waits.
+
+28
+00:01:39,760 --> 00:01:41,120
+There's no old copy to fall back on.
+
+29
+00:01:41,720 --> 00:01:44,720
+Meaning data is never, uh, duplicated or rekeyed?
+
+30
+00:01:45,080 --> 00:01:45,620
+Precisely.
+
+31
+00:01:46,820 --> 00:01:50,940
+So from PHEQA's perspective, um, there are six crossings that orchestrate this.
+
+32
+00:01:51,520 --> 00:01:54,580
+One, who is signing in from PNIA. Got it.
+
+33
+00:01:55,120 --> 00:01:58,160
+Two, an institution's entry going out to the ministry.
+
+34
+00:01:58,920 --> 00:02:02,480
+Three, PHEQA's recommendation out to the minister.
+
+35
+00:02:03,040 --> 00:02:06,460
+Okay. Four, the minister's decision on a license, in.
+
+36
+00:02:07,300 --> 00:02:10,600
+Five, the minister's approval of a new name, in.
+
+37
+00:02:11,340 --> 00:02:15,700
+And six, uh, the fee request out to the payments block, and its confirmation, in.
+
+38
+00:02:16,360 --> 00:02:21,460
+So what does GovStack's published architecture specification say about this specific setup?
+
+39
+00:02:21,900 --> 00:02:24,780
+It specifies a loosely coupled building block approach.
+
+40
+00:02:25,140 --> 00:02:27,400
+Traffic passes through an information mediator.
+
+41
+00:02:27,640 --> 00:02:29,300
+Which in Progressa would be Linkup.
+
+42
+00:02:29,600 --> 00:02:32,220
+Right, exactly, or through a secure API gateway.
+
+43
+00:02:32,820 --> 00:02:38,800
+So how is agreement actually finalized across these boundaries, you know, to protect your minister from system failures?
+
+44
+00:02:39,460 --> 00:02:45,140
+Before PHEQA's ICT head accepts the page, the body on the other side of each crossing has to confirm its row.
+
+45
+00:02:45,380 --> 00:02:45,580
+So
+
+46
+00:02:46,260 --> 00:02:50,880
+MoEYS, PNIA, the payments block operator, and PDGA.
+
+47
+00:02:51,440 --> 00:02:52,460
+They all have to agree.
+
+48
+00:02:52,700 --> 00:03:01,000
+Right. Because if rules aren't shared, um, every connection just becomes a custom project, and that's costly to change and leaves the system locked into one supplier.
+
+49
+00:03:01,440 --> 00:03:07,480
+Right. Count the crossings. For each one, ask who is on the other side, and whether they have seen and confirmed their row.
+
+50
+00:03:07,920 --> 00:03:09,540
+Sources are in the video description.

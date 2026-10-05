@@ -1,0 +1,25 @@
+# Slide cue file — KP4 Module 3, Video 3.5 "The walk-through your officials click"
+# Deck:  KP4_M3_3.5_Deck_v0.1.pptx (9 slides; no Sources card)
+# Audio: KP4_M3_3.5_Audio_v0.6.m4a (runs to 4:15.7)
+# Approximate — derived by matching SRT content beats to slide content. Cued by hand.
+#
+# Flaws of the take: no cold open — the trimmed take starts on "Yeah. And we're specifically focusing on why
+# government officials, meaning you ..."; title card holds 8 s over it. Invented framing in the hook (locked in to one
+# supplier, "saves a lot of time ... for your minister"); "shared picture" named early (0:35).
+# Slide 4's point (a drawing shows what the designer hoped; a page corrected by hand) is pulled forward to 0:44,
+# before slide 3's web pages; slide 4 cued at the stamp (1:31). "It's basically a fantasy at that point".
+# Slide 8 is framed correctly — "the walkthrough recording will show seven steps", numbered aloud, ending "which is
+# not yet recorded"; nothing is said to have run. Pass criteria of slide 8 not spoken.
+# Reflective outro after the single message ("Consider how simply shifting the physical control of the mouse ...
+# shifts the balance of power"). Filler and backchannel ("um", "you know", "Wait, really?", "Got it", "Simple enough").
+# SRT spells the country "Progresa" (listen for Progressa). No sources line (deck has no Sources card).
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: officials judge a service by clicking through it
+1:07   # slide 3 — What the walk-through is
+1:31   # slide 4 — Never by hand, and a version on every page
+1:41   # slide 5 — Progressa: the pages of one goal
+2:20   # slide 6 — What clicking found
+2:56   # slide 7 — One shared picture
+3:11   # slide 8 — The walk-through, clicked (storyboard stand-in, "Not yet recorded")
+3:49   # slide 9 — In one sentence

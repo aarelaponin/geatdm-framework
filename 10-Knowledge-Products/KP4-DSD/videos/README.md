@@ -10,7 +10,9 @@ The slide decks of all 37 videos are produced. **Status, 5 October 2026:** the v
 Modules 1 to 3, the modules in which no video waits for the education demonstration application. Their
 per-topic files are here, in the same layout as KP2's (`../../KP2-GIF/videos/`) and KP3's, one folder per
 module and one per language, with the stage folders inside it; steps 1 and 2 of the track (the
-scripts-only companions and the decks, v0.1) are done, the later stages are scaffolded and empty. The
+scripts-only companions and the decks, v0.1) are done. **5 October 2026, evening:** all 17 English videos of
+Modules 1 to 3 have a candidate take, cue file and MP4, each read against the author's bar (KP2's, plus no KP
+acronym); they await the author's listen before `accepted:` is set in the tracker. See the production log. The
 tracker at `../../video-tracker/` reads this folder. Modules 4 to 6, each of which holds at least one
 video that waits for the application (4.6; 5.1, 5.2, 5.4, 5.5, 5.7; 6.2), are not on the track yet:
 their decks, built 4 October, stay in `../decks/module_4/` to `../decks/module_6/` until their turn.
@@ -238,6 +240,55 @@ complete without them, with its stand-in slide, and is re-cut when the recording
 ## Production log — what works and what does not
 
 Kept for the next session that picks up the KP4 video track. Newest first; add to it, do not rewrite it.
+
+**5 October 2026, night — all 17 videos of Modules 1 to 3 have a candidate.**
+
+- Three lanes (one agent per module, one generation in flight each) shared a live findings file and read it
+  before each re-roll; three fixes found by one lane were taken up by the others the same hour. Tries used
+  per video: 1 to 5 of 6 (Module 1 between 2 and 4). Every MP4 matches its m4a; a frame after every cue was
+  looked at; no candidate transcript says a KP acronym, PAERA or "the brief".
+- **The never-say-PAERA lines seed the phrase they replace.** The §4 row "say 'the reference architecture'
+  in words", KP3's "attribute only as §2 does" rule and the prompt line put the phrase in front of the hosts
+  in videos whose §2 never cites it (14 of 17), and they credited the SDD method, the register's rules and
+  Progressa to it (1.1, 1.3, 2.2, 2.3). **Fix:** for a video whose §2 has no "reference architecture", the
+  three lines say instead that the video cites no reference architecture, GovStack or PAERA and that the
+  method is stated plainly, credited to nobody. It held in every later take. **Make this `make_brief.py`'s
+  default** for a §2 without the phrase (kit change, not yet made).
+- **A new catch-all in Module 3: "the GovStack Registration specification".** The hosts credited the method
+  and Progressa to it, then skipped the one slide that is about it (3.2 slide 4, 3.3 slide 7). Fix: that
+  slide "must be covered, the only segment that speaks of the specification", plus a §3 line "the
+  specification is not the source of this video". 3.3 came right on the first take.
+- **Naming the source was Module 2's main blocker** ("your notes and research", "from the brief",
+  "a policy briefing featuring Progressa"), always in an improvised opener or segue. The prompt's own
+  "This is a policy briefing…" sentence fed it. Fix: drop that sentence, and add "never say what the hosts
+  are reading or drawing on (notes, documents, research, briefing)". Source-naming stopped in every later take.
+- **A "must be covered" line can pull its slide ahead of the one before** (3.2, Module 1). Pair it with an
+  order line ("slide 3 before slide 4").
+- **A scripted cold open is a coin flip** — followed in about half the takes (Modules 2 and 3). But the takes
+  that did open by naming the video were the most faithful in all three modules.
+- **The hosts invent what §2 leaves open:** an answer the Registrar has not given ("a flat no", 3.3), whose
+  cost a decision carries (3.2), "60 days" and "millions of dollars" (1.3), "SDD = software design
+  description" and a health-agency expansion of PHEQA (1.4) despite the §4 rows. A one-line §2/§3 fix
+  worked each time.
+- **PHEQA said "Pahekwa" fails the automatic gate as a PAERA error.** It is a mispronunciation, a flaw at
+  the author's bar; read such takes anyway. PHEQA is often dropped for "the quality authority", which the
+  brief allows.
+- **Read every try.** The runner's settled take for 1.5 skipped slide 6; a later try was right. Clean takes
+  run short (3:10–3:40 in Module 2): coverage, not runtime, decides.
+- The silent "no audio artifact" throttle came back (five failures across 2.2, 2.3, 2.4 and Module 1) while
+  `notebooklm list` worked; not counted as tries. Two lane agents were stopped by API 529 overloads and
+  resumed; nothing was lost, since every verdict was written to a file as it was reached.
+- **Captions:** the 17 candidate SRTs had 50 misspelt names, corrected in place as KP3's were (`kp4_srt_fix.py`):
+  Progressa (Progresa, Progessa, Progresia, Progressia), MoEYS (MOES, MOEYS), PHEQA ("Pahekwa", 3.1), SDD
+  ("SSD", 1.1), PDGA ("PGA", 2.6) and "guessed figure" ("guest figure", 1.5). Only the names changed; the
+  timings and the cue structure did not. What the hosts actually said still needs a listen.
+- slidecast needs `~/.venvs/kp/bin/python` (the system python3 has no pypdfium2).
+- Open for the author: **3.4** reads slide 6's "cannot be accepted" as "the screen freezes" (counted as a flaw;
+  brief v0.2 fixes it and four tries remain); **1.4's slide-4 figure (F3)** labels two documents "the register
+  of requirements" and "the use case model" where the narration says "the register of what was asked" and
+  "the goal as a story".
+- The fix scripts are in the session scratchpad (`m1_nora.py`, `m2_noref.py`, `m2_nosrc.py`, `m3_fix.py`,
+  `m3_coldopen.py`, `kp4_notes.py`); each brief's versions sit beside one another in `notebooklm/`.
 
 **5 October 2026, evening — briefs v0.1 for Modules 1 to 3, with KP3's lessons built in.**
 

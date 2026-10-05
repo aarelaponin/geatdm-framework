@@ -1,0 +1,20 @@
+# Slide cue file — KP4 Module 1, Video 1.5 "Who writes, who checks, who accepts"
+# Deck:  KP4_M1_1.5_Deck_v0.1.pptx (8 slides; no Sources card — the subtopic cites no source)
+# Audio: KP4_M1_1.5_Audio_v0.3.m4a (runs to 3:28.5)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:28 against 5:00), content complete. Slide 5 names the three roles but not who
+# holds them in PHEQA's project (no analyst, second analyst or Registrar; only the head of the registration
+# desk). "Guest figure" in the SRT for "guessed figure" (listen). Backchannel ("Right", "Okay", "Makes sense").
+# SRT spells the country "Progresa" (listen for Progressa). Cold open names the video; ends on the recap.
+# Note: the runner "settled" on v0.2, which never covers slide 6 (rejected, blocker) and coins an
+# "anti-guessing mandate"; v0.3 is the candidate.
+
+0:00   # slide 1 — title card
+0:17   # slide 2 — Hook: if a machine wrote it, who is answerable for it?
+0:41   # slide 3 — The assistant proposes; a person rules
+1:08   # slide 4 — Where the source is silent, the assistant must say so
+1:35   # slide 5 — Three roles for every document
+2:05   # slide 6 — Where the assistant writes, in PHEQA's project
+2:40   # slide 7 — Three checks on the table
+3:20   # slide 8 — In one sentence

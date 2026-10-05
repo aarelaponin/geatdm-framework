@@ -1,0 +1,300 @@
+1
+00:00:00,240 --> 00:00:03,220
+So, um, picture this universal administrative problem.
+
+2
+00:00:03,520 --> 00:00:08,300
+A school changes its name, right? But weeks later, other government offices are still using the old one.
+
+3
+00:00:08,640 --> 00:00:09,740
+Yeah. Which is super common.
+
+4
+00:00:09,920 --> 00:00:16,620
+Right. And why does it happen? Because each office kept its own duplicated copy, which just leads to completely fragmented and siloed data.
+
+5
+00:00:16,860 --> 00:00:19,280
+Exactly. Well, welcome back to the Deep Dive.
+
+6
+00:00:19,520 --> 00:00:28,920
+Today, we're unpacking how to solve this data duplication for good, for you, the officials running these systems, and we're using the fictional country of Progressa as our guide here.
+
+7
+00:00:29,420 --> 00:00:37,080
+Yes. Progressa gives us a great model for exactly how organizations should handle the records they keep, and the key here is, well,
+
+8
+00:00:37,720 --> 00:00:43,080
+you can stop this duplication before a software developer even draws the first screen of a new system.
+
+9
+00:00:43,400 --> 00:00:47,740
+Wait, you're saying we can stop government data duplication before writing a single line of code?
+
+10
+00:00:48,160 --> 00:00:50,840
+Yeah, yeah. Because that sounds, I mean,
+
+11
+00:00:51,740 --> 00:00:57,800
+a bit of a stretch. Usually these data silos are deeply entrenched IT problems, not something you just fix on a whiteboard.
+
+12
+00:00:58,080 --> 00:01:01,520
+It sounds counterintuitive, I know, but it actually starts with language.
+
+13
+00:01:02,160 --> 00:01:06,480
+We have to strictly define the records your service keeps at an atomic level.
+
+14
+00:01:06,780 --> 00:01:07,580
+Okay, like what?
+
+15
+00:01:07,880 --> 00:01:11,000
+Take Progressa's quality authority, which handles licensing.
+
+16
+00:01:11,580 --> 00:01:15,480
+They track four very specific things. Number one, an institution.
+
+17
+00:01:16,120 --> 00:01:17,700
+Number two, an application.
+
+18
+00:01:18,360 --> 00:01:21,360
+Number three, a license. And number four, a decision.
+
+19
+00:01:21,860 --> 00:01:30,300
+Oh, so you have to define a license down to its barest elements, like, um, one permission granted to one institution on one day.
+
+20
+00:01:30,760 --> 00:01:36,580
+Precisely. If you leave it vague, two different software developers will build two different databases.
+
+21
+00:01:37,260 --> 00:01:42,040
+And then, boom, you have duplicated data again, which is really costly to change later.
+
+22
+00:01:42,680 --> 00:01:45,120
+Right. That is the exact mechanism of failure.
+
+23
+00:01:45,820 --> 00:01:49,400
+If two officials define a record differently, that's not an IT problem.
+
+24
+00:01:49,900 --> 00:01:53,420
+It's a business question that the person running the service has to resolve immediately.
+
+25
+00:01:54,140 --> 00:01:54,500
+Got it.
+
+26
+00:01:55,220 --> 00:01:57,820
+So once everyone actually agrees on the definitions,
+
+27
+00:01:58,680 --> 00:02:01,020
+how do we stop the duplication at a system level?
+
+28
+00:02:01,500 --> 00:02:05,920
+By ensuring that for every single fact in the system, we apply one of three answers.
+
+29
+00:02:06,360 --> 00:02:10,460
+Number one, we keep it. Number two, we take it from another body.
+
+30
+00:02:10,880 --> 00:02:13,260
+Or number three, we must not hold it at all.
+
+31
+00:02:14,020 --> 00:02:14,920
+Okay, let's ground that.
+
+32
+00:02:15,600 --> 00:02:22,240
+Think about how Progressa handles data. When a school applies for a license, the quality authority obviously keeps the school's name.
+
+33
+00:02:22,620 --> 00:02:25,540
+That's fact number one. They keep the institution's name.
+
+34
+00:02:25,980 --> 00:02:27,080
+Yes, exactly.
+
+35
+00:02:28,020 --> 00:02:30,880
+But then look at fact number two, the applicant's identity.
+
+36
+00:02:32,380 --> 00:02:33,080
+They don't keep that.
+
+37
+00:02:33,500 --> 00:02:34,300
+They never copy it.
+
+38
+00:02:35,160 --> 00:02:42,300
+The applicant's identity is checked against the national identity system, so the quality authority takes it from another body, keeping an identifier
+
+39
+00:02:42,800 --> 00:02:44,560
+but never the actual national ID number.
+
+40
+00:02:45,120 --> 00:02:45,600
+Oh, I see.
+
+41
+00:02:46,280 --> 00:02:50,580
+So the identity system handles who you are, the quality authority handles what you do.
+
+42
+00:02:52,040 --> 00:02:54,000
+So what about fact number three? Where does,
+
+43
+00:02:54,680 --> 00:02:58,920
+say, the Ministry of Education fit in with the institution's record at the ministry?
+
+44
+00:02:59,660 --> 00:03:04,400
+The ministry simply reads the institution's record from the quality authority's register in real time.
+
+45
+00:03:05,180 --> 00:03:06,460
+They don't have their own file on it.
+
+46
+00:03:06,860 --> 00:03:08,760
+Nope. They only keep the register number.
+
+47
+00:03:09,480 --> 00:03:13,040
+Because a ministry with no local copy cannot possibly drift out of step.
+
+48
+00:03:14,320 --> 00:03:16,460
+Yeah, that makes so much more sense. It's less like, um,
+
+49
+00:03:17,180 --> 00:03:22,220
+syncing a digital address book where you might end up with rekeyed data and more like checking a passport.
+
+50
+00:03:22,940 --> 00:03:24,060
+The data stays with the source.
+
+51
+00:03:24,820 --> 00:03:25,260
+Exactly.
+
+52
+00:03:25,940 --> 00:03:29,120
+And this approach aligns perfectly with the GovStack specifications.
+
+53
+00:03:29,700 --> 00:03:32,800
+Right, the global initiative for standard digital government services.
+
+54
+00:03:33,100 --> 00:03:33,220
+Yeah.
+
+55
+00:03:33,940 --> 00:03:40,840
+The GovStack digital registry specification states that a register is a trusted, authoritative, single source of truth.
+
+56
+00:03:41,140 --> 00:03:44,740
+And other services just check that a record exists or read a value from it.
+
+57
+00:03:45,160 --> 00:03:45,440
+Correct.
+
+58
+00:03:46,100 --> 00:03:52,080
+And then the GovStack identity specification states that the person signs in and approves exactly which facts are shared.
+
+59
+00:03:52,480 --> 00:04:01,900
+Knowing those standards is great, but, um, how do you actually guarantee a software supplier codes it this way so you aren't locked into one supplier with a system that doesn't talk to anything else?
+
+60
+00:04:02,520 --> 00:04:04,360
+You do it through a process called a read back.
+
+61
+00:04:04,940 --> 00:04:12,680
+Before accepting the system design, the software supplier literally reads the records in plain sentences aloud to the official who runs the service.
+
+62
+00:04:13,140 --> 00:04:15,340
+Wait, they literally read it out loud to the official?
+
+63
+00:04:15,600 --> 00:04:16,060
+Yes, they do.
+
+64
+00:04:16,500 --> 00:04:20,500
+That sounds so low tech, but I guess it forces everyone to speak the exact same language.
+
+65
+00:04:20,839 --> 00:04:21,180
+It does.
+
+66
+00:04:22,019 --> 00:04:29,440
+If the supplier reads something fundamentally wrong, like, say, an institution may hold one license of each kind, the official stops them.
+
+67
+00:04:30,020 --> 00:04:37,840
+Because in reality, an institution whose provisional license was canceled might need to apply again, so they fix the logic before coding begins.
+
+68
+00:04:38,140 --> 00:04:41,380
+Precisely. Because if a fact has no clear owner,
+
+69
+00:04:42,080 --> 00:04:45,120
+it will simply be kept by whoever builds the first screen that needs it.
+
+70
+00:04:45,580 --> 00:04:45,820
+Wow.
+
+71
+00:04:46,740 --> 00:04:48,180
+Which is why for every single fact,
+
+72
+00:04:48,840 --> 00:04:51,340
+you must ask which of those three answers it has.
+
+73
+00:04:51,800 --> 00:04:56,840
+And if you don't ask, you end up with the exact fragmented siloed data we started with.
+
+74
+00:04:57,680 --> 00:04:59,740
+It really changes how you look at building systems.
+
+75
+00:05:00,140 --> 00:05:01,140
+It definitely does.
+

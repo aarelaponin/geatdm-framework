@@ -1,0 +1,22 @@
+# Slide cue file — KP4 Module 1, Video 1.1 "Where an agreed service gets lost"
+# Deck:  KP4_M1_1.1_Deck_v0.1.pptx (8 slides; no Sources card — the subtopic cites no source)
+# Audio: KP4_M1_1.1_Audio_v0.6.m4a (runs to 5:03.8)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: no cold open naming the video; invented opener (a minister announcing a service,
+# "handshakes", "press releases"), then "deep dive" / "let's unpack this" show-open. Loose attribution:
+# "the reference architecture gives us ... specification driven development" and "the reference architecture
+# uses a fictional country called Progresa" (both belong to the method / the course). Plumbing/house metaphor
+# on slide 4; "two PM on a Tuesday". "SSD failures" once (for SDD). Slide 5 drops the dates and the INS number,
+# and the registrar's words; adds "legally allowed" on slide 6. Backchannel ("Right", "Precisely").
+# SRT spells the country "Progresa" (listen for Progressa); MoEYS as "MoES".
+# Ends on the recap's message (4:58) with no sources line (none needed: no Sources card).
+
+0:00   # slide 1 — title card
+0:06   # slide 2 — Hook: the service that arrives is not the one they agreed
+0:44   # slide 3 — Between what was agreed and what runs
+2:05   # slide 4 — Three places a service gets lost
+3:02   # slide 5 — One institution, two counters (Progressa)
+3:59   # slide 6 — Each loss, placed (Figure F2)
+4:36   # slide 7 — None of the three is a programming error
+4:58   # slide 8 — In one sentence

@@ -1,0 +1,23 @@
+# Slide cue file — KP4 Module 3, Video 3.2 "Every way it can go wrong, written down"
+# Deck:  KP4_M3_3.2_Deck_v0.1.pptx (9 slides)
+# Audio: KP4_M3_3.2_Audio_v0.7.m4a (runs to 3:31.7) — take on brief v0.4
+# Approximate — derived by matching SRT content beats to slide content. Cued by hand.
+#
+# Flaws of the take: short (3:32 against 5:00). Opens on the scripted title line, then "welcome to today's deep dive"
+# and "you have to think about what happens when a system experiences a bad day". Architect/fire-escapes metaphor.
+# Slides 3 to 7 covered in order (four things, three endings, the specification's three checks, five failures, all
+# numbered aloud). Slide 6: the Registrar's no-drafts decision and its cost told right; the head of the registration
+# desk's fee decision (and the "third state") not told. Slide 7: "count the endings" not said. The single message of
+# slide 8 is never spoken — the take ends on "So it always comes back to human judgment"; slide 8 and the Sources
+# card are cued over the last lines of slide 7 (AI list) so the Sources card gets ~6 s. No sources line.
+# Filler and backchannel ("uh", "you know", "Okay", "Yep", "Wait, really?", "Excellent").
+
+0:00   # slide 1 — title card
+0:08   # slide 2 — Hook: a service is judged on its bad days
+0:47   # slide 3 — Each failure, written down
+1:20   # slide 4 — Kinds of failure the Registration specification names
+1:44   # slide 5 — Progressa: five failures, five endings (Figure F8, slide variant, stands on the slide in place of the rows)
+2:32   # slide 6 — Two endings were decisions
+3:00   # slide 7 — Before you accept a story
+3:20   # slide 8 — In one sentence
+3:26   # slide 9 — Sources

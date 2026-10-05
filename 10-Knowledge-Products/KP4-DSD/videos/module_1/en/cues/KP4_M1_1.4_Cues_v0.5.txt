@@ -1,0 +1,21 @@
+# Slide cue file — KP4 Module 1, Video 1.4 "Twelve documents from the request to the running service"
+# Deck:  KP4_M1_1.4_Deck_v0.1.pptx (7 slides; no Sources card — the subtopic cites no source)
+# Audio: KP4_M1_1.4_Audio_v0.5.m4a (runs to 3:20.0)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:20 against 5:00) — the content is complete but brisk. Host B says "I'll number
+# the 12 for you" (production aside). Slide 6 drops "two documents written by nobody"; slide 5 is an extract
+# with no supplier's analyst. Reads the brief's whole vocabulary list aloud ("fragmented, siloed, duplicated,
+# rekeyed, locked into one supplier, and costly to change"). Backchannel ("Right", "Exactly", "Got it").
+# SRT spells the country "Progressia" (listen for Progressa). Cold open names the video; ends on the recap.
+# Takes: v0.1/v0.2 (try 1) ran on the brief before the reference-architecture lines were taken out (it said
+# "the reference architecture using Progresa"); v0.4 (try 2) rejected: SDD expanded as "software design
+# description", PHEQA as "a public health and environmental quality agency".
+
+0:00   # slide 1 — title card
+0:16   # slide 2 — Hook: "The design is finished." What does that mean?
+0:29   # slide 3 — Five things written against every document
+0:51   # slide 4 — Twelve documents, in a fixed order (Figure F3)
+1:58   # slide 5 — Filled for PHEQA's registration of institutions
+2:37   # slide 6 — Nine points where PHEQA says yes
+3:09   # slide 7 — In one sentence

@@ -1,0 +1,24 @@
+# Slide cue file — KP4 Module 3, Video 3.3 "Screens worked out from the story, every value with its source"
+# Deck:  KP4_M3_3.3_Deck_v0.1.pptx (10 slides)
+# Audio: KP4_M3_3.3_Audio_v0.6.m4a (runs to 5:05.0) — take on brief v0.2
+# Approximate — derived by matching SRT content beats to slide content. Cued by hand.
+#
+# Flaws of the take: "Welcome to today's deep dive" show-open and an invented opener (a thousand blank puzzle
+# pieces); no cold open naming the video; title card holds 7 s. Invented hook additions (locked in to one supplier,
+# re-keyed). "A strict firewall" metaphor; "the framework proves its value". PHEQA never named ("their higher
+# education authority"). Slide 7: the specification "describes this exact workflow" (deck: much the same order).
+# Slide 8's four lists are not named; the phone-number question to the Registrar is told correctly (no answer invented).
+# No sources line: Sources card cued at 4:59 over the last line of the single message (6 s).
+# Filler ("um", "uh", "like"). SRT spells the country "Progresa" / "Progresia" (listen for Progressa).
+# All slides covered in order; the three rules, four sources and five screens numbered aloud.
+
+0:00   # slide 1 — title card
+0:07   # slide 2 — Hook: a screen built from a list of fields explains nothing
+0:57   # slide 3 — Walk the story, not the list of records
+1:42   # slide 4 — Every value has one of four sources
+2:33   # slide 5 — Progressa: five screens
+3:15   # slide 6 — Where each value comes from (Figure F9, slide variant, stands on the slide in place of the rows)
+3:46   # slide 7 — The published picture of screens and fields
+4:07   # slide 8 — The check against the story
+4:53   # slide 9 — In one sentence
+4:59   # slide 10 — Sources

@@ -1,0 +1,299 @@
+1
+00:00:00,160 --> 00:00:04,620
+So, um, today we are focusing on module one, video one point three.
+
+2
+00:00:04,940 --> 00:00:10,680
+And, you know, usually when you review a project draft in your ministry, you wanna see every single blank filled in.
+
+3
+00:00:11,200 --> 00:00:17,280
+But, uh, we're exploring why a blank space is actually much safer than a number that just looks certain.
+
+4
+00:00:18,120 --> 00:00:18,820
+Right. Yeah.
+
+5
+00:00:19,800 --> 00:00:22,580
+So in this deep dive, we're unpacking the SDD method.
+
+6
+00:00:22,620 --> 00:00:25,160
+That's, um, specification-driven development.
+
+7
+00:00:26,100 --> 00:00:35,860
+Yeah, and the mission here is to really see why guessing answers just to keep a program moving is a massive liability, and you know exactly how you can spot these hidden guesses in your own
+
+8
+00:00:35,900 --> 00:00:37,980
+documents before the system becomes,
+
+9
+00:00:38,840 --> 00:00:40,120
+well, costly to change.
+
+10
+00:00:41,300 --> 00:00:45,940
+Yeah. To really grasp the SDD method, I mean, we have to start with the philosophy.
+
+11
+00:00:46,240 --> 00:00:49,760
+The written document must be the absolute source of truth for the builder.
+
+12
+00:00:49,960 --> 00:00:52,980
+Like, if it isn't in the spec, it just, uh, it doesn't get built.
+
+13
+00:00:53,940 --> 00:00:54,140
+Right.
+
+14
+00:00:55,260 --> 00:00:58,400
+So let's test that logic with the Progressa scenario.
+
+15
+00:00:58,580 --> 00:01:01,160
+Progressa is a fictional country, um, just to be clear.
+
+16
+00:01:01,380 --> 00:01:09,180
+Right. Yeah. Entirely fictional. Yeah. So imagine you're evaluating a system for their Higher Education Quality Authority, PHEQA.
+
+17
+00:01:10,140 --> 00:01:12,780
+They need a portal for institutions to appeal decisions.
+
+18
+00:01:13,420 --> 00:01:19,640
+Uh-huh. The regulations guarantee an appeal right, but they actually, um, they leave out the specific time limit.
+
+19
+00:01:20,360 --> 00:01:22,960
+Yeah, which, you know, happens all the time in government programs.
+
+20
+00:01:23,320 --> 00:01:29,780
+Exactly. So the analyst needs a number just to draw the software screens, and they just guess thirty days.
+
+21
+00:01:30,140 --> 00:01:35,180
+So what is the actual fallout for the ministry when a portal like this goes live with a guessed number?
+
+22
+00:01:35,860 --> 00:01:40,480
+Well, the fallout is immediate and, uh, worse, it is completely invisible.
+
+23
+00:01:41,080 --> 00:01:45,120
+Because if the true legal appeal period is actually longer than thirty days,
+
+24
+00:01:45,820 --> 00:01:46,500
+the system will just
+
+25
+00:01:47,180 --> 00:01:49,920
+unlawfully reject valid legal appeals on day thirty-one.
+
+26
+00:01:50,620 --> 00:01:52,660
+Wow, just automatically locking them out.
+
+27
+00:01:52,940 --> 00:01:56,440
+Right. The core issue isn't merely that the guess was wrong.
+
+28
+00:01:57,180 --> 00:01:59,000
+It is that once a guess is written down,
+
+29
+00:01:59,620 --> 00:02:02,000
+nobody can distinguish it from a verified fact.
+
+30
+00:02:02,680 --> 00:02:09,440
+Right, because a blank space is, you know, highly visible to reviewers, but a guess gets built into the system as absolute truth.
+
+31
+00:02:09,940 --> 00:02:14,740
+Exactly. The system just becomes fragmented, siloed, duplicated,
+
+32
+00:02:15,420 --> 00:02:17,560
+and maybe even rekeyed across departments.
+
+33
+00:02:18,200 --> 00:02:20,200
+Oh, man, and locked into one supplier.
+
+34
+00:02:20,580 --> 00:02:23,680
+Precisely. It becomes incredibly costly to change.
+
+35
+00:02:24,420 --> 00:02:30,700
+Okay, but if I'm managing this project, and I hand my minister a specification document full of literal blank spaces,
+
+36
+00:02:31,420 --> 00:02:32,800
+they're gonna think I haven't done my job.
+
+37
+00:02:33,400 --> 00:02:35,200
+Yeah. I mean, it feels counterintuitive.
+
+38
+00:02:35,700 --> 00:02:41,460
+Right. Like, how do you justify leaving gaps without looking lazy while still keeping the project moving?
+
+39
+00:02:42,120 --> 00:02:47,480
+Well, you have to flip the process. You have to make what you don't know the main feature of the document.
+
+40
+00:02:48,240 --> 00:02:50,860
+Okay, so that's the SDD method in action.
+
+41
+00:02:51,480 --> 00:02:58,900
+Yes, exactly. Instead of sneaking in a guessed thirty days, the document has to explicitly state that the appeal period is
+
+42
+00:02:59,400 --> 00:03:02,320
+to be confirmed by the registrar of PHEQA.
+
+43
+00:03:03,200 --> 00:03:06,560
+Okay, so you transform a hidden flaw into a managed task.
+
+44
+00:03:06,880 --> 00:03:11,380
+You literally name the gap and count it, like, um, open question seven of nine.
+
+45
+00:03:11,960 --> 00:03:12,180
+Right.
+
+46
+00:03:12,940 --> 00:03:19,440
+That way, the builders can build the entire rest of the portal and just simply leave that one specific setting blank for the registrar.
+
+47
+00:03:20,100 --> 00:03:23,180
+Got it. So if I am the leader reviewing these drafts,
+
+48
+00:03:23,820 --> 00:03:26,580
+I need a way to catch these guesses before they reach the builders.
+
+49
+00:03:27,180 --> 00:03:30,060
+You do. And there is a specific manager's test.
+
+50
+00:03:30,460 --> 00:03:34,180
+It is three critical questions you have to ask before you sign off on anything.
+
+51
+00:03:34,780 --> 00:03:35,340
+Okay, what are they?
+
+52
+00:03:35,780 --> 00:03:36,160
+Number one:
+
+53
+00:03:36,860 --> 00:03:42,320
+Can someone build from this document alone without asking anything apart from the named open questions?
+
+54
+00:03:43,060 --> 00:03:45,760
+That definitely forces the writer to be entirely self-contained.
+
+55
+00:03:46,280 --> 00:03:46,840
+What's number two?
+
+56
+00:03:47,200 --> 00:03:53,640
+Number two: Was a review held with the document owner, the builder, and the official who will actually live with the result?
+
+57
+00:03:53,980 --> 00:03:56,160
+That's crucial. It breaks down the silos.
+
+58
+00:03:56,200 --> 00:04:02,020
+It forces the analyst who wrote the rule to sit face to face with the developer and the official who will use it.
+
+59
+00:04:02,440 --> 00:04:04,320
+Precisely. And number three:
+
+60
+00:04:05,120 --> 00:04:08,660
+Is every remaining gap named, owned, and counted?
+
+61
+00:04:09,300 --> 00:04:10,840
+Okay, so three questions first.
+
+62
+00:04:11,500 --> 00:04:17,060
+Now, when I am looking at a draft in my ministry, what is the exact mechanism for spotting a failure?
+
+63
+00:04:17,300 --> 00:04:18,779
+What is the red flag I should look for?
+
+64
+00:04:19,300 --> 00:04:25,360
+You scan the document specifically for figures, periods, roles, and rules with no source beside them.
+
+65
+00:04:25,860 --> 00:04:27,000
+So no citation at all.
+
+66
+00:04:27,340 --> 00:04:27,540
+Right.
+
+67
+00:04:28,400 --> 00:04:33,920
+Whenever you spot a number on its own, like thirty days, you always ask, "Where did this come from?"
+
+68
+00:04:34,360 --> 00:04:35,160
+Right. Where did it come from?
+
+69
+00:04:35,560 --> 00:04:40,720
+An honest answer is either a documented source or a specific person's name who owns the decision.
+
+70
+00:04:41,440 --> 00:04:44,880
+So if a draft lands on my desk with zero open questions,
+
+71
+00:04:45,680 --> 00:04:49,980
+that's not a success. That's a warning sign that someone just answered the hard questions alone.
+
+72
+00:04:50,460 --> 00:04:51,000
+Exactly.
+
+73
+00:04:51,740 --> 00:04:54,620
+A question with an owner belongs in a document you sign.
+
+74
+00:04:55,200 --> 00:04:58,960
+A guessed answer never does, even if that guess happens to be right.
+
+75
+00:04:59,800 --> 00:05:07,000
+Many of the foundational facts embedded in legacy systems today are actually just historical guesses that nobody ever bothered to question.

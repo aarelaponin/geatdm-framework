@@ -1,0 +1,21 @@
+# Slide cue file — KP4 Module 2, Video 2.4 "Every goal named, and each tied to what was asked"
+# Deck:  KP4_M2_2.4_Deck_v0.1.pptx (9 slides)
+# Audio: KP4_M2_2.4_Audio_v0.7.m4a (runs to 3:36.6; brief v0.3; not trimmed — the raw take ends on the sources line)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:37 against 5:00) — segments brief but every slide covered, in order. Backchannel
+# and filler throughout ("Right", "Exactly", "Got it", "Wow, okay", "um"). Slide 7: the owners and the date
+# (6 November 2026) are not given as questions; the fee is found "in a regulation schedule" (article 7 not
+# named). "Oh, like a matrix." The recap is said by the host who asked, then "Sources are in the video
+# description." at 3:35 — Sources card cues at 3:31 over the second recap sentence (5.6 s).
+# SRT spells the country "Progessa": listen for Progressa.
+
+0:00   # slide 1 — title card
+0:16   # slide 2 — Hook: "The design is complete." Complete against what?
+0:37   # slide 3 — A goal, not a function
+1:08   # slide 4 — Progressa's goals (five of PHEQA's, four of the ministry's, numbered)
+2:07   # slide 5 — The check in both directions
+2:30   # slide 6 — Progressa: one empty column, one empty row
+3:00   # slide 7 — Each finding becomes a question
+3:25   # slide 8 — In one sentence
+3:31   # slide 9 — Sources

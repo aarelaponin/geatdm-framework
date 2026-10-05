@@ -1,0 +1,23 @@
+# Slide cue file — KP4 Module 2, Video 2.6 "What the service is built on, and what crosses its boundary"
+# Deck:  KP4_M2_2.6_Deck_v0.1.pptx (9 slides; slide 4 carries figure F7, slide variant)
+# Audio: KP4_M2_2.6_Audio_v0.8.m4a (runs to 3:09.7; brief v0.2; not trimmed — the raw take ends on the sources line)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:10 against 5:00), segments brief. The "ministry's officer waits" point comes
+# before the six crossings are numbered (deck: after them) — same slide 5, so the cue is unaffected. Slide 6 is
+# thin: GovStack's Architecture specification gives "loosely coupled", but "developed, maintained and replaced
+# independently", the Registration specification and the Information Mediator specification are not named.
+# Slide 7 adds "locked into one supplier" (not in the deck). PDGA heard once as "PGA" (listen). Filler/backchannel
+# ("Oh, wow", "Got it", "um"). Recap at 3:01, then "Sources are in the video description." at 3:07 — Sources card
+# cues at 3:05 (4.7 s). SRT spells the country "Progresa" and the ministry "MOEYS": listen for Progressa and
+# for MoEYS said as a word.
+
+0:00   # slide 1 — title card (cold open as scripted: title + single message)
+0:12   # slide 2 — Hook: has the other body agreed?
+0:30   # slide 3 — One page: what the service is built on (three things numbered)
+0:48   # slide 4 — Progressa: two applications on one page (figure F7)
+1:27   # slide 5 — The table of crossings (six numbered)
+2:16   # slide 6 — What the published architecture says
+2:32   # slide 7 — Every row agreed by the other side
+3:00   # slide 8 — In one sentence
+3:05   # slide 9 — Sources

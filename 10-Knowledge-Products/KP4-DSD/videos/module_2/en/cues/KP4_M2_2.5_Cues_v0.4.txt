@@ -1,0 +1,23 @@
+# Slide cue file — KP4 Module 2, Video 2.5 "What every goal may use, and may not invent"
+# Deck:  KP4_M2_2.5_Deck_v0.1.pptx (9 slides)
+# Audio: KP4_M2_2.5_Audio_v0.4.m4a (runs to 3:37.9; trimmed from raw v0.3)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: the trim removed a "Welcome to today's deep dive" show-open, so the take opens on a dangling
+# "Right. Because, you know, imagine you're in your ministry…" — no cold open, straight into the hook; title card
+# held 4 s. Slide 6's old fee is said as "a thousand dollars" (deck: 1,000, no currency; the real fee is in
+# Progressa's currency) and framed as a hypothetical rather than the first draft of the goal. Slide 7 gives
+# "ask, do not invent" but not the question to the finance officer or her answer (one amount for every kind).
+# Recap said at 3:21; the take then turns to the listener ("the next time you review a draft in your own program,
+# look closely at the figures…" — slide 7's own advice). No sources line: Sources card cues at 3:29 (8.9 s).
+# Backchannel/filler ("Ooh, that's rough", "Wow. Okay."). SRT spells the country "Progresia": listen for Progressa.
+
+0:00   # slide 1 — title card
+0:04   # slide 2 — Hook: a new fee is announced; changing it costs weeks
+0:37   # slide 3 — Written once, read by every goal (states, settings, code lists numbered)
+1:32   # slide 4 — A setting with an owner: the application fee
+2:03   # slide 5 — A code list and a set of states (both numbered)
+2:31   # slide 6 — A goal that invented a fee
+3:14   # slide 7 — Ask, do not invent
+3:21   # slide 8 — In one sentence
+3:29   # slide 9 — Sources

@@ -1,0 +1,22 @@
+# Slide cue file — KP4 Module 2, Video 2.1 "One catalogue of the sector's services, and the blocks they share"
+# Deck:  KP4_M2_2.1_Deck_v0.1.pptx (9 slides; slide 4 carries figure F5, slide variant)
+# Audio: KP4_M2_2.1_Audio_v0.4.m4a (runs to 3:48.9)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: "Welcome to today's deep dive" show-open; invented 40 s opener (fragmentation, being
+# "locked into one supplier", "your ultimate defense") before the donor hook arrives at 0:42. Slide 4 names the
+# three bodies and "seven distinct services" but not the services themselves. Slide 5 reads only PNIA's column
+# (as "a national identity sign-in system"); the register-of-institutions column is skipped. Slide 7 gives
+# UNDP's compendium line, not the "fragmented to shared needs governance and funding" line. No sources line:
+# Sources card cues at 3:45 over the last recap sentence (3.9 s). Filler/backchannel ("Oh, wow", "Precisely").
+# SRT spells the country "Progresa" and the ministry "MOES": listen for Progressa and for MoEYS said as a word.
+
+0:00   # slide 1 — title card
+0:12   # slide 2 — Hook: before you say yes to one system, ask for one page
+0:58   # slide 3 — One catalogue, written once for the sector (four things numbered)
+1:35   # slide 4 — Progressa's higher-education services (figure F5)
+2:03   # slide 5 — Read down one column
+2:42   # slide 6 — Why only the sector sees it
+3:11   # slide 7 — What the published sources say
+3:39   # slide 8 — In one sentence
+3:45   # slide 9 — Sources

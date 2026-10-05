@@ -1,0 +1,335 @@
+1
+00:00:00,120 --> 00:00:03,000
+Uh, module three, video 3.6, the review.
+
+2
+00:00:03,740 --> 00:00:06,420
+Three people, every open line given a name.
+
+3
+00:00:06,900 --> 00:00:16,120
+Right. And, uh, the core of it is that the owner, the builder, and the person who will live with the result agree on the screens, so absolutely nothing leaves the room unowned.
+
+4
+00:00:16,460 --> 00:00:19,920
+Which is so crucial, right? Yeah. I mean, think about it in your ministry.
+
+5
+00:00:20,500 --> 00:00:24,900
+Why does a review that ends with, uh, "We will look into it," decide nothing for your ministry?
+
+6
+00:00:25,220 --> 00:00:28,420
+Well, because the review you convene ends with a strict record.
+
+7
+00:00:28,620 --> 00:00:33,720
+Right. You need every open question, uh, the person who owns it, and the exact date it is due.
+
+8
+00:00:34,020 --> 00:00:35,520
+Yeah, without that, things just drift.
+
+9
+00:00:36,360 --> 00:00:39,260
+So who exactly sits in the three seats at this review?
+
+10
+00:00:39,700 --> 00:00:42,240
+Let's, um, let's use the example from Progressa.
+
+11
+00:00:42,600 --> 00:00:43,720
+Ah, right, Progressa,
+
+12
+00:00:44,520 --> 00:00:47,160
+which is a fictional country, just to clarify for everyone.
+
+13
+00:00:47,380 --> 00:00:48,420
+Yes, purely fictional.
+
+14
+00:00:49,100 --> 00:00:54,240
+But in their example, looking at the, uh, registration desk review, what they call PHEQA,
+
+15
+00:00:55,060 --> 00:00:57,180
+we number the seats allowed to ensure everyone is there.
+
+16
+00:00:57,680 --> 00:00:58,760
+Okay, so seat one?
+
+17
+00:00:59,540 --> 00:01:00,860
+Seat one is the owner,
+
+18
+00:01:01,480 --> 00:01:04,120
+and the owner answers for what the documents actually say.
+
+19
+00:01:04,780 --> 00:01:05,120
+Got it.
+
+20
+00:01:05,800 --> 00:01:06,360
+And seat two?
+
+21
+00:01:07,160 --> 00:01:10,240
+Two is the builder. The builder says whether, um,
+
+22
+00:01:10,840 --> 00:01:13,660
+whether he can build it without asking anybody anything.
+
+23
+00:01:14,080 --> 00:01:15,900
+Wow, without asking anything at all.
+
+24
+00:01:16,300 --> 00:01:18,060
+Exactly. It has to be that clear.
+
+25
+00:01:18,700 --> 00:01:21,720
+And then three is the person who will live with the result.
+
+26
+00:01:22,440 --> 00:01:26,180
+She says whether the screens are actually her work as she does it.
+
+27
+00:01:26,920 --> 00:01:30,940
+Okay, so applied to the PHEQA example, who-
+
+28
+00:01:31,240 --> 00:01:33,040
+Who are those specific people? Yeah, exactly.
+
+29
+00:01:33,840 --> 00:01:35,880
+Right. So at PHEQA,
+
+30
+00:01:36,920 --> 00:01:42,520
+those three are the supplier's analyst, the supplier's builder, and the head of the registration desk.
+
+31
+00:01:43,180 --> 00:01:43,520
+Okay.
+
+32
+00:01:44,140 --> 00:01:45,880
+And what about the person running the meeting?
+
+33
+00:01:46,520 --> 00:01:47,120
+The convener.
+
+34
+00:01:47,980 --> 00:01:50,020
+They just accept the record. They take no seat.
+
+35
+00:01:50,540 --> 00:01:51,200
+Ah, okay.
+
+36
+00:01:52,120 --> 00:01:56,500
+So, um, what are the four questions the convener opens with before the walkthrough even begins?
+
+37
+00:01:57,260 --> 00:01:58,960
+Well, the convener numbers them aloud.
+
+38
+00:01:59,600 --> 00:02:00,040
+Number one,
+
+39
+00:02:00,700 --> 00:02:04,540
+does every screen serve a step or a failure, and is everyone served?
+
+40
+00:02:05,220 --> 00:02:05,400
+Right.
+
+41
+00:02:06,080 --> 00:02:08,759
+Two, does every value say where it comes from?
+
+42
+00:02:09,160 --> 00:02:11,520
+Mm-hmm, essential for clean data in your program.
+
+43
+00:02:11,620 --> 00:02:12,040
+Definitely.
+
+44
+00:02:12,660 --> 00:02:12,900
+Three,
+
+45
+00:02:13,660 --> 00:02:17,480
+could the builder build each screen without asking anybody anything?
+
+46
+00:02:17,940 --> 00:02:19,360
+There's that strict builder rule again.
+
+47
+00:02:19,660 --> 00:02:24,480
+Yep. And four, would the person who will use it recognize it as her work?
+
+48
+00:02:25,140 --> 00:02:27,020
+Okay, and once those four questions are out there...
+
+49
+00:02:27,540 --> 00:02:31,500
+Then the person from the desk clicks through the walkthrough, literally page by page.
+
+50
+00:02:32,400 --> 00:02:36,960
+Okay, so going back to Progressa. In Progressa, the fictional country of these examples,
+
+51
+00:02:37,620 --> 00:02:41,860
+what were the five open lines recorded during PHEQA's one-hour review?
+
+52
+00:02:42,320 --> 00:02:46,120
+Well, we number the five lines, and we state the owner and the date for each one.
+
+53
+00:02:47,060 --> 00:02:47,780
+Okay, let's hear them.
+
+54
+00:02:48,260 --> 00:02:55,360
+One, show the fee on S2 as well as S4. That one is owned by the supplier's analyst, due 26 November.
+
+55
+00:02:55,940 --> 00:02:57,020
+Got it, S2 and S4.
+
+56
+00:02:57,780 --> 00:02:57,960
+Two,
+
+57
+00:02:58,740 --> 00:03:01,760
+is a name held by a canceled institution still held?
+
+58
+00:03:02,660 --> 00:03:05,160
+Owned by the registrar, due 3 December. Right.
+
+59
+00:03:05,900 --> 00:03:06,140
+Three,
+
+60
+00:03:06,840 --> 00:03:08,960
+the governing board, one member to align.
+
+61
+00:03:09,860 --> 00:03:12,160
+Owned by the supplier's analyst, due 26 November.
+
+62
+00:03:12,620 --> 00:03:12,880
+Mm-hmm.
+
+63
+00:03:13,620 --> 00:03:13,860
+Four,
+
+64
+00:03:14,640 --> 00:03:18,020
+what may the screen say when PNIA does not answer?
+
+65
+00:03:18,840 --> 00:03:22,200
+That one is owned by the head of the ICT unit, due 3rd December.
+
+66
+00:03:23,020 --> 00:03:23,980
+Okay, and the last one.
+
+67
+00:03:24,420 --> 00:03:27,620
+Five, is a printed confirmation asked for anywhere?
+
+68
+00:03:28,160 --> 00:03:30,300
+Owned by the registrar, due 26 November.
+
+69
+00:03:30,660 --> 00:03:36,980
+So after the meeting, how is each answer actually written into the document that owns the fact, you know, before the screens are accepted?
+
+70
+00:03:37,280 --> 00:03:39,640
+Well, the owner changes the screens, first off.
+
+71
+00:03:40,000 --> 00:03:41,480
+Then the walkthrough is produced again.
+
+72
+00:03:41,720 --> 00:03:42,920
+Ah, an iterative process.
+
+73
+00:03:43,220 --> 00:03:48,020
+Right, and the answers go into shared lists, the architecture or the register of requirements.
+
+74
+00:03:48,460 --> 00:03:49,740
+And when are they finally accepted?
+
+75
+00:03:50,040 --> 00:03:54,560
+Screens are accepted when every line is closed or, um, allowed to stay open with its owner.
+
+76
+00:03:55,120 --> 00:04:01,760
+Okay, so looking at the broader picture, how does the reference architecture for public administration treat this review as a stage gate?
+
+77
+00:04:02,140 --> 00:04:07,060
+Well, it recommends robust project governance frameworks and stage gate models with agile iterations.
+
+78
+00:04:07,280 --> 00:04:09,900
+Right. The review is that gate for one goal.
+
+79
+00:04:10,340 --> 00:04:14,680
+A record with no open lines usually means the review was not held or nobody spoke.
+
+80
+00:04:14,840 --> 00:04:15,840
+Which is a huge red flag.
+
+81
+00:04:16,100 --> 00:04:21,200
+Exactly. It risks systems becoming duplicated, siloed, and ultimately costly to change.
+
+82
+00:04:22,160 --> 00:04:25,240
+Seat the owner, the builder, and the person who will use the service.
+
+83
+00:04:26,040 --> 00:04:29,640
+End with every open line written down, each with a name and a date.
+
+84
+00:04:30,100 --> 00:04:31,520
+Sources are in the video description.

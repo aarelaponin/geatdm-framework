@@ -1,0 +1,15 @@
+ts	subtopic	brief	prompt	notebook_id	audio	duration_s	wall_s
+2026-10-05T10:58:51+00:00	1.1	KP4_M1_1.1_AudioBrief_v0.1.md	KP4_M1_1.1_NotebookLM_Prompt_v0.1.md	9374c3fc-6050-42f8-b710-5f15f6211a36	KP4_M1_1.1_Audio_v0.1.m4a	246.6	283
+2026-10-05T11:04:53+00:00	1.1	KP4_M1_1.1_AudioBrief_v0.1.md	KP4_M1_1.1_NotebookLM_Prompt_v0.1.md	9374c3fc-6050-42f8-b710-5f15f6211a36	KP4_M1_1.1_Audio_v0.3.m4a	362.8	306
+2026-10-05T11:11:22+00:00	1.1	KP4_M1_1.1_AudioBrief_v0.1.md	KP4_M1_1.1_NotebookLM_Prompt_v0.1.md	9374c3fc-6050-42f8-b710-5f15f6211a36	KP4_M1_1.1_Audio_v0.5.m4a	315.1	306
+2026-10-05T11:16:36+00:00	1.2	KP4_M1_1.2_AudioBrief_v0.1.md	KP4_M1_1.2_NotebookLM_Prompt_v0.1.md	1190af4a-adf1-4d9c-b454-6b21db4993bb	KP4_M1_1.2_Audio_v0.1.m4a	391.3	285
+2026-10-05T11:22:26+00:00	1.2	KP4_M1_1.2_AudioBrief_v0.1.md	KP4_M1_1.2_NotebookLM_Prompt_v0.1.md	1190af4a-adf1-4d9c-b454-6b21db4993bb	KP4_M1_1.2_Audio_v0.3.m4a	294.4	274
+2026-10-05T11:27:27+00:00	1.3	KP4_M1_1.3_AudioBrief_v0.1.md	KP4_M1_1.3_NotebookLM_Prompt_v0.1.md	772245d5-379c-44c6-849a-1be2c8c70d9b	KP4_M1_1.3_Audio_v0.1.m4a	161.5	273
+2026-10-05T11:36:39+00:00	1.3	KP4_M1_1.3_AudioBrief_v0.1.md	KP4_M1_1.3_NotebookLM_Prompt_v0.1.md	772245d5-379c-44c6-849a-1be2c8c70d9b	KP4_M1_1.3_Audio_v0.2.m4a	273.2	262
+2026-10-05T11:41:56+00:00	1.4	KP4_M1_1.4_AudioBrief_v0.1.md	KP4_M1_1.4_NotebookLM_Prompt_v0.1.md	6cd76b5e-d068-40cf-8c73-9043d63eba74	KP4_M1_1.4_Audio_v0.1.m4a	296.2	288
+2026-10-05T11:47:47+00:00	1.4	KP4_M1_1.4_AudioBrief_v0.1.md	KP4_M1_1.4_NotebookLM_Prompt_v0.1.md	6cd76b5e-d068-40cf-8c73-9043d63eba74	KP4_M1_1.4_Audio_v0.3.m4a	362.8	285
+2026-10-05T11:54:20+00:00	1.4	KP4_M1_1.4_AudioBrief_v0.1.md	KP4_M1_1.4_NotebookLM_Prompt_v0.1.md	6cd76b5e-d068-40cf-8c73-9043d63eba74	KP4_M1_1.4_Audio_v0.5.m4a	200.0	317
+2026-10-05T11:59:38+00:00	1.5	KP4_M1_1.5_AudioBrief_v0.1.md	KP4_M1_1.5_NotebookLM_Prompt_v0.1.md	246d1620-c629-44f4-9fe7-b28f80838711	KP4_M1_1.5_Audio_v0.1.m4a	231.9	274
+2026-10-05T12:11:52+00:00	1.5	KP4_M1_1.5_AudioBrief_v0.1.md	KP4_M1_1.5_NotebookLM_Prompt_v0.1.md	246d1620-c629-44f4-9fe7-b28f80838711	KP4_M1_1.5_Audio_v0.3.m4a	208.5	317
+2026-10-05T12:18:38+00:00	1.3	KP4_M1_1.3_AudioBrief_v0.2.md	KP4_M1_1.3_NotebookLM_Prompt_v0.2.md	772245d5-379c-44c6-849a-1be2c8c70d9b	KP4_M1_1.3_Audio_v0.4.m4a	292.5	275
+2026-10-05T12:25:59+00:00	1.3	KP4_M1_1.3_AudioBrief_v0.3.md	KP4_M1_1.3_NotebookLM_Prompt_v0.3.md	772245d5-379c-44c6-849a-1be2c8c70d9b	KP4_M1_1.3_Audio_v0.6.m4a	307.2	329

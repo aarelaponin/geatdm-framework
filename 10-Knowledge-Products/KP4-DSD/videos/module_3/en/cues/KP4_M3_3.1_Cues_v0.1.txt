@@ -1,0 +1,22 @@
+# Slide cue file — KP4 Module 3, Video 3.1 "One goal, written as a story a builder can follow"
+# Deck:  KP4_M3_3.1_Deck_v0.1.pptx (10 slides)
+# Audio: KP4_M3_3.1_Audio_v0.1.m4a (runs to 3:27.0)
+# Approximate — derived by matching SRT content beats to slide content. Cued by hand.
+#
+# Flaws of the take: short (3:27 against 5:00); every slide covered in order, both lists numbered aloud.
+# PHEQA said "Pahekwa" twice (mispronounced); SRT spells the country "Progressia" (listen for Progressa).
+# Filler and backchannel throughout ("um", "you know", "basically", "Right", "Okay", "Got it", "Tracking so far",
+# "Wait, really?"). Slide 5 thin: the four register entries it serves are not named. Slide 8 tells the read-aloud
+# test before the AI's tenth step; "the official who runs the counter" (slide wording). "Sources are in the video
+# description" at 3:25 (2 s left): Sources card cued at 3:21 over the last summary line.
+
+0:00   # slide 1 — title card
+0:13   # slide 2 — Hook: the builder builds what the documents say, and guesses the rest
+0:35   # slide 3 — A goal, and its story
+0:52   # slide 4 — What a written goal holds
+1:18   # slide 5 — Progressa: apply for a provisional licence
+1:46   # slide 6 — The main story, in nine steps
+2:21   # slide 7 — What the published picture leaves to you
+2:39   # slide 8 — Before you accept a story
+3:15   # slide 9 — In one sentence
+3:21   # slide 10 — Sources

@@ -1,0 +1,24 @@
+# Slide cue file — KP4 Module 3, Video 3.6 "The review: three people, every open line given a name"
+# Deck:  KP4_M3_3.6_Deck_v0.1.pptx (9 slides)
+# Audio: KP4_M3_3.6_Audio_v0.3.m4a (runs to 4:31.7)
+# Approximate — derived by matching SRT content beats to slide content. Cued by hand.
+#
+# Flaws of the take: every slide covered in order, all three lists numbered aloud, sources line present.
+# Reads enumeration instructions aloud ("we number the seats allowed to ensure everyone is there", "the convener numbers
+# them aloud", "we number the five lines, and we state the owner and the date for each one"). Calls PHEQA "the
+# registration desk review, what they call PHEQA" (garbled). "think about it in your ministry" at 0:17 (not an outro).
+# Invented asides ("Mm-hmm, essential for clean data in your program", "It risks systems becoming duplicated, siloed").
+# Filler and backchannel ("uh", "um", "Wow", "Got it", "Mm-hmm"). SRT spells the country "Progessa" (listen for
+# Progressa). The reference architecture is credited only on slide 7, as §2 does; PAERA not spoken.
+# "Sources are in the video description" at 4:30 (1.7 s left): Sources card cued at 4:26 over the last line of the
+# single message, so slide 8 runs from 4:16.
+
+0:00   # slide 1 — title card
+0:16   # slide 2 — Hook: "We will look into it" decides nothing
+0:36   # slide 3 — Three seats
+1:52   # slide 4 — Four questions every review of screens puts
+2:32   # slide 5 — Progressa: one hour, five open lines
+3:30   # slide 6 — After the room
+3:55   # slide 7 — Working together, through a gate
+4:16   # slide 8 — In one sentence
+4:26   # slide 9 — Sources

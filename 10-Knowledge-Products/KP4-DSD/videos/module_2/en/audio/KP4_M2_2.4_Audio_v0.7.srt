@@ -1,0 +1,223 @@
+1
+00:00:00,180 --> 00:00:04,600
+Module two, video 2.4. Every goal named and each tied to what was asked
+
+2
+00:00:05,220 --> 00:00:10,860
+Right. And the foundational premise here is that, um, a service is broken into the goals people have in it.
+
+3
+00:00:11,120 --> 00:00:15,480
+Yeah. So every goal serves an entry, you know, and every entry is served by a goal.
+
+4
+00:00:16,300 --> 00:00:24,040
+Okay, so when a vendor shows your ministry this long list of screens and says, "Well, the design is complete," complete against what exactly?
+
+5
+00:00:24,340 --> 00:00:28,520
+Exactly. I mean, a long list of screens doesn't actually answer that question at all.
+
+6
+00:00:28,620 --> 00:00:30,840
+Right. Counting interfaces doesn't tell you anything.
+
+7
+00:00:31,500 --> 00:00:36,920
+But, um, one table answers it in both directions, and honestly, a manager can read it without any technical training.
+
+8
+00:00:37,580 --> 00:00:42,040
+So how do we start breaking the service down into goals that actually read like the work of real people?
+
+9
+00:00:42,400 --> 00:00:47,540
+Well, we start by defining a goal is something, um, something one person wants to get done in one sitting.
+
+10
+00:00:47,800 --> 00:00:48,660
+In one sitting.
+
+11
+00:00:48,940 --> 00:00:51,520
+Right, and it has to leave a visible result.
+
+12
+00:00:51,960 --> 00:00:52,720
+So for example,
+
+13
+00:00:53,660 --> 00:00:56,440
+apply for a provisional license. That is a goal.
+
+14
+00:00:56,920 --> 00:01:06,280
+Makes sense. But something like maintain institution data is not a goal because, I mean, nobody sits down to do it, and nobody can really say when it's finished.
+
+15
+00:01:06,720 --> 00:01:07,380
+Right. It's too vague.
+
+16
+00:01:08,000 --> 00:01:13,860
+So what do these goals actually look like in the two applications for Progressa, uh, the fictional country of these examples?
+
+17
+00:01:14,400 --> 00:01:20,520
+We can really see the specificity if we look at the five goals for the quality authority PHEQA.
+
+18
+00:01:21,160 --> 00:01:25,100
+Okay. So one, the applicant applies for a provisional license.
+
+19
+00:01:25,560 --> 00:01:29,200
+Right. Two, the finance officer records the application fee.
+
+20
+00:01:30,080 --> 00:01:33,200
+Um, three, the inspector records an inspection visit.
+
+21
+00:01:33,580 --> 00:01:35,780
+Got it, so very specific actions.
+
+22
+00:01:36,300 --> 00:01:36,680
+Exactly.
+
+23
+00:01:37,420 --> 00:01:41,260
+Then four, the registration officer recommends a decision to the minister.
+
+24
+00:01:42,080 --> 00:01:46,840
+And finally, five, the institution appeals against a decision of PHEQA.
+
+25
+00:01:47,500 --> 00:01:49,580
+Okay, and what about the ministry's application?
+
+26
+00:01:50,060 --> 00:01:52,260
+Right, so there are four goals for the ministry.
+
+27
+00:01:52,960 --> 00:01:55,080
+One, the minister decides on a license.
+
+28
+00:01:55,760 --> 00:01:58,200
+Two, approves a change of an institution's name.
+
+29
+00:01:58,800 --> 00:02:02,260
+Okay. Three, publishes the list of registered institutions in the Gazette.
+
+30
+00:02:03,000 --> 00:02:07,060
+And four, reviews a decision of PHEQA at a person's request.
+
+31
+00:02:07,860 --> 00:02:13,560
+Okay, so to measure completeness, how do we actually tie these goals to the register of what was asked?
+
+32
+00:02:14,280 --> 00:02:18,220
+Well, you just put the goals across the top and the registers entries down the side.
+
+33
+00:02:18,780 --> 00:02:19,540
+Oh, like a matrix.
+
+34
+00:02:19,880 --> 00:02:20,780
+Yeah, exactly.
+
+35
+00:02:21,540 --> 00:02:24,300
+Every column needs a mark because each goal serves an entry.
+
+36
+00:02:25,080 --> 00:02:29,520
+And, um, every row needs a mark because each entry is served by a goal.
+
+37
+00:02:30,080 --> 00:02:35,680
+So when reading the table in both directions like that, what did Progressa find regarding empty columns and rows?
+
+38
+00:02:36,180 --> 00:02:37,540
+They actually found one of each.
+
+39
+00:02:38,300 --> 00:02:42,120
+So the record the application fee goal had an empty column.
+
+40
+00:02:42,400 --> 00:02:43,640
+Meaning nobody asked for a fee?
+
+41
+00:02:44,220 --> 00:02:47,140
+Right, which means the supplier is building something that nobody asked for.
+
+42
+00:02:47,620 --> 00:02:52,540
+Wow, okay. Yeah, and then the register is open to the public entry, that had an empty row.
+
+43
+00:02:53,180 --> 00:02:54,860
+No goal let the public look.
+
+44
+00:02:55,580 --> 00:02:59,040
+So something they explicitly asked for just wasn't gonna be built?
+
+45
+00:02:59,520 --> 00:02:59,940
+Exactly.
+
+46
+00:03:00,620 --> 00:03:03,480
+So how were these findings resolved by the people who run the service?
+
+47
+00:03:03,680 --> 00:03:04,340
+Yeah. What did they do?
+
+48
+00:03:04,820 --> 00:03:08,640
+Well, each finding basically became a question with an owner and a date.
+
+49
+00:03:09,180 --> 00:03:12,720
+So the finance officer, uh, found the fee in a regulation schedule.
+
+50
+00:03:13,200 --> 00:03:14,380
+Oh, making it a new entry.
+
+51
+00:03:14,820 --> 00:03:18,940
+Right. And then the registrar added a goal for the public to look up an institution.
+
+52
+00:03:19,680 --> 00:03:24,480
+This completely prevented the supplier from just, you know, guessing the law or guessing public needs.
+
+53
+00:03:25,060 --> 00:03:26,400
+That's incredibly practical.
+
+54
+00:03:27,720 --> 00:03:30,340
+Ask for the table with goals across and entries down.
+
+55
+00:03:30,840 --> 00:03:34,520
+Before you accept the list of goals, look for an empty column and an empty row.
+
+56
+00:03:35,080 --> 00:03:36,380
+Sources are in the video description.

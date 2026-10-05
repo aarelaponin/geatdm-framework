@@ -1,0 +1,23 @@
+# Slide cue file — KP4 Module 2, Video 2.3 "The records the service keeps, and whose each one is"
+# Deck:  KP4_M2_2.3_Deck_v0.1.pptx (9 slides)
+# Audio: KP4_M2_2.3_Audio_v0.4.m4a (runs to 5:01.4; brief v0.2)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: opens straight on the hook ("picture this universal administrative problem"; "a school" for
+# an institution), then "welcome back to the Deep Dive" at 0:16 and an invented "isn't this a stretch / entrenched
+# IT problem" exchange before slide 3. PHEQA is never said by name ("the quality authority"); PNIA is "the national
+# identity system". GovStack glossed as "the global initiative for standard digital government services"
+# (invented gloss). Passport and address-book metaphor; "boom". Slide 7's read-back: the Registrar and the
+# head of the registration desk are not named ("the official"); "the records were changed" becomes "they fix the
+# logic before coding begins". Recap given at 4:38; no sources line — Sources card cues at 4:51 (10 s).
+# SRT spells the country "Progresa": listen for Progressa.
+
+0:00   # slide 1 — title card
+0:03   # slide 2 — Hook: an institution changes its name; other offices keep the old one
+0:58   # slide 3 — Each record, defined in a single sentence (four records numbered)
+1:55   # slide 4 — Three answers for every fact (numbered)
+2:14   # slide 5 — Three facts, three answers (numbered)
+3:25   # slide 6 — What the published blocks say (Digital Registries, Identity)
+3:52   # slide 7 — The read-back
+4:38   # slide 8 — In one sentence
+4:51   # slide 9 — Sources
