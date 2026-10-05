@@ -9,9 +9,9 @@ icon: flag-checkered
 
 **What it teaches.** Generation on the platform; no hand edits; the platform's traps; identity and registries; the registration contract and the data interface; payments and information mediation; the proof on the running system.
 
-**What you can do afterwards.** Read what the kit generates, why nothing is edited by hand, and how the service uses identity, registries, payments and information mediation.
+**What you can do afterwards.** Read what is generated, why nothing is edited by hand, and how the service uses identity, registries, payments and information mediation.
 
-**What it uses of the worked example.** The two applications as they will be generated on two Joget instances, with the ministry reading the register across the data interface.
+**What it uses of the worked example.** The two applications as they will be generated on the low-code platform, with the ministry reading the register across the data interface.
 
 ## Subtopics
 
