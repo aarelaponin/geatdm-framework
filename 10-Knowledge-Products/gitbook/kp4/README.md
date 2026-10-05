@@ -5,21 +5,52 @@ icon: house
 
 # Designing Digital Government Services using a Building Block Approach
 
-**ITU/Giga Knowledge Product** · 37 videos in six modules · an AI usage tip on every page · worked examples for Progressa · blank instruments · a self-check for each module · self-paced · free and open
+**ITU/Giga Knowledge Product** · 37 videos in six modules · about 185 minutes of video · an AI usage tip on every page · 38 worked examples · ten blank instruments and a deliverables annex · self-paced · free and open
 
-This guide teaches a government team to design a digital public service on shared building blocks and have it built on a low-code platform. It uses specification-driven development, SDD for short: a method in which every document a person writes is accepted before the next is begun, and the last is turned into the running service by a program.
+This guide teaches a government team to design a digital public service on shared building blocks and have it built on a low-code platform. It uses specification-driven development, SDD for short: a method in which every document a person writes is accepted before the next is begun, and the last is turned into the running service by a program, never by hand. The shared building blocks are the digital systems that many services of a country stand on: digital identity, registries, payments and the exchange of data between public bodies.
 
-The guide has six modules and 37 subtopics. Each subtopic is one short video with a written page and an AI usage tip. Module 1 explains why digital services go wrong and what the method puts in the way. Modules 2 to 5 break a service down, design one goal of it, settle the whole application and generate it on the platform. Module 6 runs the method in an administration. Every example is an education service recast in Progressa, a fictional country: its structure is kept, and every name and value is invented.
+The guide has six modules and 37 subtopics. Each subtopic is one short video with a written page and an AI usage tip. Module 1 explains why digital services go wrong and what the method puts in the way. Modules 2 to 5 break a service down, design one goal of it, settle the whole application and generate it on the platform. Module 6 runs the method in an administration. Every example is set in Progressa, a fictional country: its quality authority for higher education and its ministry of education commission two applications so that a private institution gives its particulars to the state once.
 
 ![F1. The structure of this course: its modules and the two ways through them](figures/F1_structure.png)
 
 *F1. The structure of this course: its modules and the two ways through them.*
 
-## Who it is for
+## Outline
 
-The guide is written for the public-sector middle manager in education who commissions a service, judges a supplier's offer and convenes the review. It is not written for the developers who build the service: the documents of the method are written by staff, a supplier or an AI assistant, and the manager learns what each document is for, what to see in it before accepting it, and where the manager's own decision lies. Modules 1, 2 and 6 speak to the manager who commissions the service, the Strategist. Modules 3, 4 and 5 go one level deeper, for the team that has the service specified and built, the Architect, and they still assume no knowledge of data models, version control, configuration files or the command line.
+| Module | Topic | Persona | Videos | AI tips | Status |
+| --- | --- | --- | --- | --- | --- |
+| [1](module-1/README.md) | Why digital services go wrong, and the method that prevents it | Strategist | 5 | 5 tips | Prompts live |
+| [2](module-2/README.md) | Break the service down before you design it | Strategist | 6 | 6 tips | Prompts live |
+| [3](module-3/README.md) | Design one service as a story your officials can check | Architect | 6 | 6 tips | Prompts live |
+| [4](module-4/README.md) | Settle the whole application once, then describe it for the machine | Architect | 6 | 6 tips | Prompts live |
+| [5](module-5/README.md) | Generate the service on a low-code platform and connect the blocks | Architect | 7 | 7 tips | Prompts live |
+| [6](module-6/README.md) | Run the method in your administration | Strategist | 7 | 7 tips | Prompts live |
 
-## Two ways through
+*Prompts live — every page of the module is written, with its prompt. In production — the module's pages are added as its scripts are written.*
+
+{% hint style="success" %}
+**How the course works.** **Watch** the video → **Read** its page, the video written out in full → **Prompt** with its AI usage tip on your own service → **Compare** your draft with the worked example for Progressa. The [worked examples](examples/README.md) follow the [twelve documents](twelve-documents.md) of the method in order and link to one another, from the catalogue of the sector's services to the running application, so that any screen can be followed back to the request behind it. Each document a person writes has a [blank instrument](toolkit/README.md) to copy and fill in.
+{% endhint %}
+
+| Module | What you can do afterwards | What of the worked example it uses |
+| --- | --- | --- |
+| 1 | Explain to the minister why an agreed service gets lost on the way and what the twelve documents of the method put in its way | The story of an institution that registered at the quality authority and filled in the same particulars again at the ministry |
+| 2 | Commission the documents that are written before any design: the catalogue, the register, the records, the goals, the shared registers, the architecture | Filled extracts of the documents written before design, one for each subtopic |
+| 3 | Have one goal written as a story with its screens, and run the review at which officials agree it | One goal written in full, the application for a provisional licence, with its screens and walk-through |
+| 4 | Accept the interaction design, including the service workflow, and have the application model reviewed | The interaction design and the application model of the two applications |
+| 5 | Read what is generated, why nothing is edited by hand, and how the service uses identity, registries, payments and information mediation | The two applications as they will be generated on the low-code platform, with the ministry reading the register across the data interface |
+| 6 | Require the documents from a supplier, handle change, read progress from the work, use the AI assistant safely, and carry the method to the next service and another sector | A change of an institution's name, the trace report, and the digital credential as the next service |
+
+## Audience — and the path for your role
+
+| Persona | Who that is in practice | Modules | What you leave with |
+| --- | --- | --- | --- |
+| **Strategist** | The public-sector middle manager in education who commissions the service, judges the supplier's offer, convenes the review and answers to the minister and the donor | [1](module-1/README.md), [2](module-2/README.md), [6](module-6/README.md) | The method and the documents to ask for: the three places a service gets lost and the three rules to hold a supplier to, the twelve documents and who accepts each, the documents written before any design, and the way to run the method as the administration's own way of commissioning services. |
+| **Architect** | The head of a sectoral ICT unit, or the project lead, who has a service specified and built by a supplier, convenes its reviews and accepts its documents | [3](module-3/README.md), [4](module-4/README.md), [5](module-5/README.md) | The service specified and built: one goal written as a story with its screens and agreed at the review, the whole application settled and described for the machine, and the service generated on the low-code platform, connected to the shared blocks and proved on the running system. |
+
+Neither persona writes the documents of the method: staff, a supplier or an AI assistant does. The guide teaches what each document is for, what to see in it before accepting it, and where the manager's own decision lies. Modules 3, 4 and 5 go one level deeper than the others and still assume no knowledge of data models, version control, configuration files or the command line.
+
+### Two ways through
 
 | Way | Modules | What it gives |
 | --- | --- | --- |
@@ -27,28 +58,6 @@ The guide is written for the public-sector middle manager in education who commi
 | **The service specified and built** | [3](module-3/README.md), [4](module-4/README.md), [5](module-5/README.md) | A team that has a service specified and built follows modules 3, 4 and 5: one goal designed as a story, the whole application settled and described for the machine, and the service generated and connected to the shared blocks. |
 
 The order of the modules follows the order in which an administration meets the method. It first learns why services go wrong, then breaks a service down, designs one goal of it, settles the whole application, has it generated and connected, and finally runs the method as its own way of commissioning services.
-
-## The modules
-
-| Module | Topic | Written for | Videos | Status |
-| --- | --- | --- | --- | --- |
-| [1](module-1/README.md) | Why digital services go wrong, and the method that prevents it | Strategist | 5 | Prompts live |
-| [2](module-2/README.md) | Break the service down before you design it | Strategist | 6 | Prompts live |
-| [3](module-3/README.md) | Design one service as a story your officials can check | Architect | 6 | Prompts live |
-| [4](module-4/README.md) | Settle the whole application once, then describe it for the machine | Architect | 6 | Prompts live |
-| [5](module-5/README.md) | Generate the service on a low-code platform and connect the blocks | Architect | 7 | Prompts live |
-| [6](module-6/README.md) | Run the method in your administration | Strategist | 7 | Prompts live |
-
-*Prompts live — every page of the module is written, with its prompt. In production — the module's pages are added as its scripts are written.*
-
-| Module | What you can do afterwards | What of the worked example it uses |
-| --- | --- | --- |
-| 1 | Explain to the minister why an agreed service gets lost on the way and what the twelve documents of the method put in its way | The story of an institution that registered at the quality authority and filled in the same particulars again at the ministry. |
-| 2 | Commission the documents that are written before any design: the catalogue, the register, the records, the goals, the shared registers, the architecture | Filled extracts of the documents written before design, one for each subtopic. |
-| 3 | Have one goal written as a story with its screens, and run the review at which officials agree it | One goal written in full, the application for a provisional licence, with its screens and walk-through. |
-| 4 | Accept the interaction design, including the service workflow, and have the application model reviewed | The interaction design and the application model of the two applications. |
-| 5 | Read what the kit generates, why nothing is edited by hand, and how the service uses identity, registries, payments and information mediation | The two applications as they will be generated on two Joget instances, with the ministry reading the register across the data interface. |
-| 6 | Require the documents from a supplier, handle change, read progress from the work, use the AI assistant safely, and carry the method to the next service and another sector | A change of an institution's name, the trace report, and the digital credential as the next service. |
 
 ## All videos
 
@@ -159,6 +168,29 @@ Each module ends with a self-check: four questions on what a manager decides, ea
 
 Before your first prompt, read [Working with AI](../start-here/working-with-ai.md) and [How to use the plays](../start-here/how-to-use-the-plays.md): they hold the ground rules for using an assistant on government material, and they apply to every course on this site.
 
+## Prerequisites
+
+[**Developing a Gov Enterprise Architecture (GEA)**](../kp1/README.md), [**Building a Government Interoperability Framework (GIF)**](../kp2/README.md) **and** [**Education Digital Public Infrastructure (DPI) Roadmap**](../kp3/README.md) **come before this course, but none is a prerequisite.** Modules 1, 2 and 6 stand on their own. Module 5 connects the service to identity, registries, payments and the data exchange as blocks already in place; on Progressa they are, so you can follow it without having taken those courses.
+
+**What you do need:**
+
+| | |
+| --- | --- |
+| **A real service** | A public service, in education or another sector, that your administration is about to commission or has commissioned. The AI usage tips act on your service, not on a case study. No service to hand? Follow everything on [Progressa](../start-here/progressa.md) instead. |
+| **The customer's own documents** | The mandate, the forms, the decrees and the notes of the people who run the service today. The register of requirements is drawn from them ([2.2](module-2/2-2.md)). |
+| **An AI assistant** | Any general assistant — Claude, ChatGPT, Gemini. A free account is enough. Nothing to install. |
+| **Nothing to run** | No code is written. The demonstrations that need the generated application are shown as storyboards until it has been generated and checked. |
+| **About fifteen minutes, once** | The first pages of [Start here](../start-here/README.md) cover how to work with the prompts and the ground rules for using an assistant on government material. Read them before your first prompt. |
+
+Time: each subtopic is a video of about five minutes, its page, and an AI usage tip of ten to fifteen minutes. A module is an afternoon. The whole course is roughly two working days spread over as long as you like.
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
+<tr><td><h3>🛡️</h3></td><td><strong>Working with AI</strong></td><td>What an assistant is good for, the four ways it misleads you, and the safeguards. Read once; applies to every course on this site.</td><td><a href="../start-here/working-with-ai.md">working-with-ai</a></td></tr>
+<tr><td><h3>🏁</h3></td><td><strong>Module 1 — Why digital services go wrong, and the method that prevents it</strong></td><td>5 videos for the Strategist: the three places a service gets lost, the three rules, the twelve documents and who accepts each.</td><td><a href="module-1/README.md">module-1</a></td></tr>
+<tr><td><h3>📒</h3></td><td><strong>The worked examples</strong></td><td>One for each subtopic, built for Progressa and linked to one another: the shape of the documents you will commission.</td><td><a href="examples/README.md">examples/README</a></td></tr>
+<tr><td><h3>🧰</h3></td><td><strong>The blank instruments</strong></td><td>A blank to copy and fill in for each document a person writes, with the questions to ask before accepting it.</td><td><a href="toolkit/README.md">toolkit/README</a></td></tr>
+</tbody></table>
+
 ## Reference pages
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
@@ -184,3 +216,7 @@ Before your first prompt, read [Working with AI](../start-here/working-with-ai.m
 | Module 6 | The proved service | The supplier's deliverables, the handling of change, progress read from the work, the rules for the AI assistant, the next service and another sector |
 
 All the courses on this site use [Progressa](../start-here/progressa.md) as the one worked example and share one set of [ground rules](../start-here/working-with-ai.md).
+
+{% hint style="info" %}
+**Use this site from your AI assistant.** Every page is also published as plain Markdown, and the site exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the site and ask it to *run the AI usage tip of 2.2 with the following context* — the site becomes the tool's reference, not just yours.
+{% endhint %}
