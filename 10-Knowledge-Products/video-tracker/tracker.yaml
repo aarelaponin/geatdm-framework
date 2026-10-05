@@ -365,8 +365,10 @@ kps:
       KP4-DSD/videos/module_N/en/ (rebuilt there from the bundles, contact sheets looked at). Modules 4–6 stay
       off the track until the application is generated (4.6, 5.1, 5.2, 5.4, 5.5, 5.7 and 6.2 hold a segment that
       shows it); their decks are under KP4-DSD/decks/module_N/ and are not read here. The 3.5 walkthrough can be
-      recorded now from the Progressa pages; until then its stand-in slide holds. Next for Modules 1–3: audio
-      briefs + prompts (step 3), then takes. KP4-DSD/videos/README.md "Production log" has the learnings.
+      recorded now from the Progressa pages; until then its stand-in slide holds. 5 Oct: audio briefs + prompts
+      v0.1 for the 17 videos of Modules 1–3 (make_brief.py, KP3's lessons applied up front: PAERA never spoken,
+      the three rules, terminology rows for PHEQA/PNIA/MoEYS/PDGA/SDD); takes running, three lanes, one per
+      module. KP4-DSD/videos/README.md "Production log" has the learnings.
     intro:
       title: KP4 introduction — what the six modules cover (on camera)
       path: videos/intro

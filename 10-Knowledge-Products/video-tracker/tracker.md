@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-10-05 09:15 (data v4)
+# KP video tracker — generated 2026-10-05 13:51 (data v4)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -221,33 +221,33 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 1.1 | Where an agreed service gets lost | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 1.2 | Three rules you can hold a supplier to | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 1.3 | A question with a name on it is part of the specification | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 1.4 | Twelve documents from the request to the running service | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 1.5 | Who writes, who checks, who accepts | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 1.1 | Where an agreed service gets lost | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 1.2 | Three rules you can hold a supplier to | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 1.3 | A question with a name on it is part of the specification | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 1.4 | Twelve documents from the request to the running service | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 1.5 | Who writes, who checks, who accepts | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
 
 ### Module 2 — Break the service down before you design it (Strategist)
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 2.1 | One catalogue of the sector's services, and the blocks they share | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 2.2 | Write down what was asked before anyone designs | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 2.3 | The records the service keeps, and whose each one is | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 2.4 | Every goal named, and each tied to what was asked | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 2.5 | What every goal may use, and may not invent | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 2.6 | What the service is built on, and what crosses its boundary | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 2.1 | One catalogue of the sector's services, and the blocks they share | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 2.2 | Write down what was asked before anyone designs | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 2.3 | The records the service keeps, and whose each one is | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 2.4 | Every goal named, and each tied to what was asked | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 2.5 | What every goal may use, and may not invent | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 2.6 | What the service is built on, and what crosses its boundary | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
 
 ### Module 3 — Design one service as a story your officials can check (Architect)
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 3.1 | One goal, written as a story a builder can follow | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 3.2 | Every way it can go wrong, written down | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 3.3 | Screens worked out from the story, every value with its source | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 3.4 | Screens officers can use (supplementary) | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
-| 3.5 | The walk-through your officials click | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | walkthrough segment storyboarded (slide 8 of its deck), recordable now from the Progressa pages of 'apply for a provisional licence'; stand-in holds until it is recorded |
-| 3.6 | The review: three people, every open line given a name | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 3.1 | One goal, written as a story a builder can follow | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 3.2 | Every way it can go wrong, written down | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 3.3 | Screens worked out from the story, every value with its source | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 3.4 | Screens officers can use (supplementary) | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
+| 3.5 | The walk-through your officials click | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 | walkthrough segment storyboarded (slide 8 of its deck), recordable now from the Progressa pages of 'apply for a provisional licence'; stand-in holds until it is recorded |
+| 3.6 | The review: three people, every open line given a name | en | `●●●●○○○○○○` | 4/10 | Take | Script v0.1, Deck v0.1, Brief v0.1 |  |
 
 ### Module 4 — Settle the whole application once, then describe it for the machine (Architect)
 

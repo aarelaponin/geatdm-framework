@@ -239,6 +239,25 @@ complete without them, with its stand-in slide, and is re-cut when the recording
 
 Kept for the next session that picks up the KP4 video track. Newest first; add to it, do not rewrite it.
 
+**5 October 2026, evening — briefs v0.1 for Modules 1 to 3, with KP3's lessons built in.**
+
+- `make_brief.py` drafted all 17 briefs and prompts from the per-video decks; `brief_deck_check.py` reports
+  no drift. Before any take, a script (`kp4_rules.py`, session scratchpad) applied what KP3 learned the hard
+  way, in v0.1 itself rather than as later versions:
+  1. **PAERA is never spoken.** 1.2, 2.1 and 3.6 name it in their narration; their §2 says "GovStack's
+     reference architecture" / "the reference architecture", and the §4 row and prompt line are KP2's
+     "never say the initialism". The section citations went too (3.6's quoted bullets and staging line),
+     not translated into words. Slides, decks and scripts still name PAERA.
+  2. **KP3's three rules** in §3 and the prompt: never name the brief or any source; Progressa is
+     fictional, never real, a case study or a programme, and its pronunciation is never discussed;
+     "the reference architecture" only where §2 says it.
+  3. **Terminology rows for KP4's names**, added only where §2 uses them: PHEQA, PNIA and PDGA said as
+     letters, SDD as letters ("specification-driven development"), MoEYS as "the ministry". PHEQA occurs
+     over a hundred times across the 17 briefs, so its pronunciation is the one to listen for.
+- The enumeration-line placeholder is filled per video by each module's lane before its first take.
+- Takes run as three lanes, one per module, one generation in flight each (the author's KP3 decision).
+  Lanes share their findings in a live file and read it before each re-roll; this log gets the result.
+
 **5 October 2026, later — six figures put on slides (Modules 1 to 3).**
 
 - A review of the v0.1 decks against the scripts and from the learner's seat found the twelve documents
