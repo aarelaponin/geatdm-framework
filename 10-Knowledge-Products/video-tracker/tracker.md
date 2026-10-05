@@ -1,4 +1,4 @@
-# KP video tracker — generated 2026-10-04 09:06 (data v3)
+# KP video tracker — generated 2026-10-05 09:15 (data v4)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
@@ -142,33 +142,33 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 1.1 | What makes infrastructure foundational | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.12, SRT v0.12, Cues v0.10, MP4 v0.10 | candidate v0.10 (3:41, settled) — cued + assembled 4 Oct; PEMIS said 'PMIS'; title card holds 26 s; MP4 is v0.10 but newest take is v0.12 — re-cue/re-render or delete the stale take; cues v0.10 lag take v0.12 |
+| 1.1 | What makes infrastructure foundational | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.10, SRT v0.10, Cues v0.10, MP4 v0.10 | candidate v0.10 (3:41, settled) — cued + assembled 4 Oct; PEMIS said 'PMIS'; title card holds 26 s |
 | 1.2 | The five domains, as a map | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.8, SRT v0.8, Cues v0.8, MP4 v0.8 | candidate v0.8 (4:33) — cued + assembled 4 Oct; five-domain map credited to GovStack (the course's own); invented openers/analogies |
 | 1.3 | The roadmap method in nine steps: who does what | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.4, Take v0.11, SRT v0.11, Cues v0.11, MP4 v0.11 | candidate v0.11 (4:45) — cued + assembled 4 Oct; invented 'billion dollars' opener; claims about step 8's sheets; no recap (recap slide 1 s) |
-| 1.4 | Start at the desk: a first assessment from public sources, with AI | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.3, SRT v0.3, Cues v0.1, MP4 v0.1 | demonstration segment storyboarded (slide 5), not yet run; candidate v0.1 (3:33) — cued + assembled 4 Oct; clean; 'MoEYS' said 'MOE'; MP4 is v0.1 but newest take is v0.3 — re-cue/re-render or delete the stale take; cues v0.1 lag take v0.3 |
+| 1.4 | Start at the desk: a first assessment from public sources, with AI | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.1, SRT v0.1, Cues v0.1, MP4 v0.1 | demonstration segment storyboarded (slide 5), not yet run; candidate v0.1 (3:33) — cued + assembled 4 Oct; clean; 'MoEYS' said 'MOE' |
 | 1.5 | Ask the people who run the systems: the five questionnaires | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.5, SRT v0.5, Cues v0.5, MP4 v0.5 | candidate v0.5 (4:12) — cued + assembled 4 Oct; invented pencil/press-release opener, tax-audit metaphor, podcast outro; PEMIS said 'PMIS' |
 | 1.6 | Verify before you score | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.9, SRT v0.9, Cues v0.9, MP4 v0.9 | candidate v0.9 (4:14, settled) — cued + assembled 4 Oct; templates credited to 'the reference architecture'; one of three Progressa points; no recap |
 | 1.7 | Score each domain: five stages and one table | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.8, SRT v0.8, Cues v0.8, MP4 v0.8 | demonstration segment storyboarded (slide 5), not yet run; candidate v0.8 (5:12) — cued + assembled 4 Oct; numbers now check (0.5, 1.3, 2.3→2.1); rule 4 never said; listen for Progressa |
 | 1.8 | Foundational blocks and the sector's own | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.5, Take v0.17, SRT v0.17, Cues v0.17, MP4 v0.17 | candidate v0.17 (4:28) — cued + assembled 4 Oct; first take on the reworded script; slide 4 covered (legal data registries dropped); identity split still credited to 'the reference architecture'; Progressa slide thin. Guide page not yet re-rendered |
-| 1.9 | What comes first: the order of building | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.4, Take v0.11, SRT v0.11, Cues v0.8, MP4 v0.8 | candidate v0.8 (4:01, settled) — cued + assembled 4 Oct; invented Estonia 'gold standard'; last line points at the practice box; MP4 is v0.8 but newest take is v0.11 — re-cue/re-render or delete the stale take; cues v0.8 lag take v0.11 |
-| 1.10 | The first proof for education: one service on four blocks | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.4, Take v0.5, SRT v0.5, Cues v0.4, MP4 v0.4 | candidate v0.4 (4:34) — cued + assembled 4 Oct; 'reuses' payments at 2:28, corrected at 3:32; 'GovStack's second phase'; podcast outro; MP4 is v0.4 but newest take is v0.5 — re-cue/re-render or delete the stale take; cues v0.4 lag take v0.5 |
+| 1.9 | What comes first: the order of building | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.4, Take v0.8, SRT v0.8, Cues v0.8, MP4 v0.8 | candidate v0.8 (4:01, settled) — cued + assembled 4 Oct; invented Estonia 'gold standard'; last line points at the practice box |
+| 1.10 | The first proof for education: one service on four blocks | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.4, Take v0.4, SRT v0.4, Cues v0.4, MP4 v0.4 | candidate v0.4 (4:34) — cued + assembled 4 Oct; 'reuses' payments at 2:28, corrected at 3:32; 'GovStack's second phase'; podcast outro |
 
 ### Module 2 — The Registration block (Architect)
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
 | 2.1 | What the Registration block does | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.4, SRT v0.4, Cues v0.4, MP4 v0.4 | candidate v0.4 (5:44) — cued + assembled 4 Oct; two-blocks rule on slide 6 never stated; ends mid-thought; listen for Progressa |
-| 2.2 | The published specification, and how to judge a product against it | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.6, SRT v0.6, Cues v0.4, MP4 v0.4 | candidate v0.4 (3:44, settled) — cued + assembled 4 Oct; no recap; specification called 'the reference architecture'; MP4 is v0.4 but newest take is v0.6 — re-cue/re-render or delete the stale take; cues v0.4 lag take v0.6 |
+| 2.2 | The published specification, and how to judge a product against it | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.4, SRT v0.4, Cues v0.4, MP4 v0.4 | candidate v0.4 (3:44, settled) — cued + assembled 4 Oct; no recap; specification called 'the reference architecture' |
 | 2.3 | Generating the registration service | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.2, SRT v0.2, Cues v0.2, MP4 v0.2 | walkthrough storyboarded on a specimen (slide 5), not yet run; candidate v0.2 (4:42) — cued + assembled 4 Oct; export/import credited to 'the reference architecture'; 'the brief' said aloud |
-| 2.4 | Checks before the officer decides | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.5, SRT v0.5, Cues v0.3, MP4 v0.3 | walkthrough storyboarded on a specimen (slide 5), not yet run; candidate v0.3 (5:12) — cued + assembled 4 Oct; checks credited to 'the reference architecture'; refused-mismatch case dropped; MP4 is v0.3 but newest take is v0.5 — re-cue/re-render or delete the stale take; cues v0.3 lag take v0.5 |
+| 2.4 | Checks before the officer decides | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.3, SRT v0.3, Cues v0.3, MP4 v0.3 | walkthrough storyboarded on a specimen (slide 5), not yet run; candidate v0.3 (5:12) — cued + assembled 4 Oct; checks credited to 'the reference architecture'; refused-mismatch case dropped |
 | 2.5 | The officer decides, and the record is written | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.8, SRT v0.8, Cues v0.8, MP4 v0.8 | walkthrough storyboarded on a specimen (slide 5), not yet run; candidate v0.8 (4:39, borderline) — cued + assembled 4 Oct; PLR expanded 'personal learner record', PNIA 'National Identity Agency' |
-| 2.6 | The whole service as a description you can move | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.12, SRT v0.12, Cues v0.4, MP4 v0.4 | walkthrough storyboarded on a specimen (slide 5), not yet run; candidate v0.4 (3:23, settled) — cued + assembled 4 Oct; opens mid-conversation; reads the pronunciation note aloud (KP2 5.8 precedent); MP4 is v0.4 but newest take is v0.12 — re-cue/re-render or delete the stale take; cues v0.4 lag take v0.12 |
+| 2.6 | The whole service as a description you can move | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.4, SRT v0.4, Cues v0.4, MP4 v0.4 | walkthrough storyboarded on a specimen (slide 5), not yet run; candidate v0.4 (3:23, settled) — cued + assembled 4 Oct; opens mid-conversation; reads the pronunciation note aloud (KP2 5.8 precedent) |
 
 ### Module 3 — The Registry block (Architect)
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 3.1 | What a register is for: one authoritative record | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.4, Take v0.15, SRT v0.15, Cues v0.14, MP4 v0.14 | candidate v0.14 (4:06, brief v0.4) — cued + assembled 4 Oct; Giga and the spec kept apart; early-release caveat dropped; ends on a dangling line; listen for Progressa; MP4 is v0.14 but newest take is v0.15 — re-cue/re-render or delete the stale take; cues v0.14 lag take v0.15 |
+| 3.1 | What a register is for: one authoritative record | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.4, Take v0.14, SRT v0.14, Cues v0.14, MP4 v0.14 | candidate v0.14 (4:06, brief v0.4) — cued + assembled 4 Oct; Giga and the spec kept apart; early-release caveat dropped; ends on a dangling line; listen for Progressa |
 | 3.2 | Five tiers between a messy file and a trusted record | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.6, SRT v0.6, Cues v0.6, MP4 v0.6 | walkthrough stand-in (slide 5) until the configuration is built and the segment recorded; candidate v0.6 (5:11) — cued + assembled 4 Oct; embellishments only |
 | 3.3 | Generating the register's schema | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.4, SRT v0.4, Cues v0.4, MP4 v0.4 | walkthrough stand-in (slide 5) until the configuration is built and the segment recorded; candidate v0.4 (4:30) — cued + assembled 4 Oct; 'master blueprint' metaphor; schema called 'the reference architecture' |
 | 3.4 | Quality checks that stop a bad row | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.10, SRT v0.10, Cues v0.10, MP4 v0.10 | walkthrough stand-in (slide 5) until the configuration is built and the segment recorded; candidate v0.10 (5:23, brief v0.3) — cued + assembled 4 Oct; raw/bronze now right; says Giga uses the Digital Registries spec (loose attribution, author's bar); listen for Progressa |
@@ -191,8 +191,8 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 | # | Topic | Lang | Flow | Done | Next | Latest | Notes |
 |---|---|---|---|---|---|---|---|
-| 5.1 | What must be in place before the blocks can call each other | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.4, SRT v0.4, Cues v0.3, MP4 v0.3 | walkthrough stand-in (slide 6) until the configuration is built and the segment recorded; candidate v0.3 (4:01, settled) — cued + assembled 4 Oct; Progressa said 'Progressive'; MP4 is v0.3 but newest take is v0.4 — re-cue/re-render or delete the stale take; cues v0.3 lag take v0.4 |
-| 5.2 | Who puts the steps in order: contracts, and the block that calls them | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.9, SRT v0.9, Cues v0.7, MP4 v0.7 | candidate v0.7 (4:04, settled) — cued + assembled 4 Oct; recap squeezed into the last 8 s; loose 'reference architecture'; MP4 is v0.7 but newest take is v0.9 — re-cue/re-render or delete the stale take; cues v0.7 lag take v0.9 |
+| 5.1 | What must be in place before the blocks can call each other | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.3, SRT v0.3, Cues v0.3, MP4 v0.3 | walkthrough stand-in (slide 6) until the configuration is built and the segment recorded; candidate v0.3 (4:01, settled) — cued + assembled 4 Oct; Progressa said 'Progressive' |
+| 5.2 | Who puts the steps in order: contracts, and the block that calls them | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.7, SRT v0.7, Cues v0.7, MP4 v0.7 | candidate v0.7 (4:04, settled) — cued + assembled 4 Oct; recap squeezed into the last 8 s; loose 'reference architecture' |
 | 5.3 | The once-only registration, from beginning to end | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.4, Take v0.12, SRT v0.12, Cues v0.12, MP4 v0.12 | walkthrough stand-in (slide 7) until the configuration is built and the segment recorded; candidate v0.12 (4:15, brief v0.4, last try) — cued + assembled 4 Oct; identifier, form-fill and no brief named all right; recap runs under Sources; listen for Progressa |
 | 5.4 | The acceptance checks: from 'set up' to 'proven' | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.6, SRT v0.6, Cues v0.6, MP4 v0.6 | walkthrough stand-in (slide 6) until the configuration is built and the segment recorded; candidate v0.6 (5:13) — cued + assembled 4 Oct; invented 'millions of taxpayer dollars' opener |
 | 5.5 | Reading the evidence of a call | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.2, Take v0.6, SRT v0.6, Cues v0.6, MP4 v0.6 | walkthrough stand-in (slide 5) until the configuration is built and the segment recorded; candidate v0.6 (5:26) — cued + assembled 4 Oct; 'you need all three records' overstates; recap and settings out of order; listen for Progressa |
@@ -204,12 +204,83 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 |---|---|---|---|---|---|---|---|
 | 6.1 | From findings to priorities: the gap register | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.9, SRT v0.9, Cues v0.9, MP4 v0.9 | candidate v0.9 (5:39) — cued + assembled 4 Oct; numbers match the deck; UNDP playbook 'draws from the reference architecture' (wrong); listen for Progressa |
 | 6.2 | What to fund first: cost against reuse | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.9, SRT v0.9, Cues v0.9, MP4 v0.9 | candidate v0.9 (5:24) — cued + assembled 4 Oct; 'the research' named; illustrative figures not called illustrative; listen for Progressa |
-| 6.3 | The roadmap over time: horizons, waves and tracks | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.12, SRT v0.12, Cues v0.8, MP4 v0.8 | candidate v0.8 (5:47, settled) — cued + assembled 4 Oct; waves 1 and 2 never described; no recap; listen for Progressa; MP4 is v0.8 but newest take is v0.12 — re-cue/re-render or delete the stale take; cues v0.8 lag take v0.12 |
+| 6.3 | The roadmap over time: horizons, waves and tracks | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.8, SRT v0.8, Cues v0.8, MP4 v0.8 | candidate v0.8 (5:47, settled) — cued + assembled 4 Oct; waves 1 and 2 never described; no recap; listen for Progressa |
 | 6.4 | The investment case your finance ministry can read | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.5, Take v0.16, SRT v0.16, Cues v0.16, MP4 v0.16 | candidate v0.16 (4:37, brief v0.5) — cued + assembled 4 Oct; no percentage on Progressa's range (the range itself is never spoken); opens mid-analogy; recap slide 4 s; listen for Progressa |
 | 6.5 | Sourcing each block without lock-in | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.4, Take v0.8, SRT v0.8, Cues v0.8, MP4 v0.8 | candidate v0.8 (5:19) — cued + assembled 4 Oct; contract checks credited to the UN Safeguards Framework; listen for Progressa |
-| 6.6 | Governance that keeps shared blocks shared | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.11, SRT v0.11, Cues v0.9, MP4 v0.9 | candidate v0.9 (5:48, settled) — cued + assembled 4 Oct; 'the research' named; invented Pix/consent details; MP4 is v0.9 but newest take is v0.11 — re-cue/re-render or delete the stale take; cues v0.9 lag take v0.11 |
+| 6.6 | Governance that keeps shared blocks shared | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.9, SRT v0.9, Cues v0.9, MP4 v0.9 | candidate v0.9 (5:48, settled) — cued + assembled 4 Oct; 'the research' named; invented Pix/consent details |
 | 6.7 | Validate, revise, adopt | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.6, SRT v0.6, Cues v0.6, MP4 v0.6 | candidate v0.6 (5:28) — cued + assembled 4 Oct; month-6 timeline blurred; score change credited to 'the reference architecture'; listen for Progressa |
 | 6.8 | Keep the foundation healthy and safe | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.2, SRT v0.2, Cues v0.2, MP4 v0.2 | candidate v0.2 (4:45) — cued + assembled 4 Oct; podcast framing; bridge/bouncer metaphors |
 | 6.9 | The AI plays, step by step | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.3, Take v0.11, SRT v0.11, Cues v0.11, MP4 v0.11 | walkthrough stand-in (slide 5) until the scorer run is recorded — needs only the toolkit, no build; candidate v0.11 (4:40) — cued + assembled 4 Oct; 'one Basic, five Opportunistic' never said; loose attribution |
 | 6.10 | Carry the method to another sector | en | `●●●●●●○●●○` | 8/10 | Accepted | Script v0.1, Deck v0.1, Brief v0.4, Take v0.12, SRT v0.12, Cues v0.12, MP4 v0.12 | candidate v0.12 (5:11, borderline) — cued + assembled 4 Oct; slide 5 table only partly covered; 'UN Development Program framework' for the compendium |
+
+## KP4 — Designing Digital Government Services using a Building Block Approach
+
+- **KP4.0 KP4 introduction — what the six modules cover (on camera)** [en] ○○○○ 0/4 — next: Script
+
+### Module 1 — Why digital services go wrong, and the method that prevents it (Strategist)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 1.1 | Where an agreed service gets lost | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 1.2 | Three rules you can hold a supplier to | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 1.3 | A question with a name on it is part of the specification | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 1.4 | Twelve documents from the request to the running service | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 1.5 | Who writes, who checks, who accepts | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+
+### Module 2 — Break the service down before you design it (Strategist)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 2.1 | One catalogue of the sector's services, and the blocks they share | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 2.2 | Write down what was asked before anyone designs | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 2.3 | The records the service keeps, and whose each one is | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 2.4 | Every goal named, and each tied to what was asked | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 2.5 | What every goal may use, and may not invent | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 2.6 | What the service is built on, and what crosses its boundary | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+
+### Module 3 — Design one service as a story your officials can check (Architect)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 3.1 | One goal, written as a story a builder can follow | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 3.2 | Every way it can go wrong, written down | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 3.3 | Screens worked out from the story, every value with its source | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 3.4 | Screens officers can use (supplementary) | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+| 3.5 | The walk-through your officials click | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 | walkthrough segment storyboarded (slide 8 of its deck), recordable now from the Progressa pages of 'apply for a provisional licence'; stand-in holds until it is recorded |
+| 3.6 | The review: three people, every open line given a name | en | `●●●○○○○○○○` | 3/10 | Brief | Script v0.1, Deck v0.1 |  |
+
+### Module 4 — Settle the whole application once, then describe it for the machine (Architect)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 4.1 | Four questions decided once for every screen | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.2 | No list longer than nine: choose by category | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.3 | The service workflow: states, moves and who may make each | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.4 | One file a program reads: the application model | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.5 | Reviewing the model: what it assumed, and what it could not express | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 4.6 | Refused, not worked around | en | `●○○○○○○○○○` | 1/10 | Script |  | demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); not on the video track yet |
+
+### Module 5 — Generate the service on a low-code platform and connect the blocks (Architect)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 5.1 | From one file to a running application | en | `●○○○○○○○○○` | 1/10 | Script |  | principal demonstration of KP4 — demonstration segment waits for the education application (storyboard stand-in, slide 8 of its deck); not on the video track yet |
+| 5.2 | Nothing generated is edited by hand | en | `●○○○○○○○○○` | 1/10 | Script |  | demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); not on the video track yet |
+| 5.3 | The platform's traps, caught before deployment | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 5.4 | Identity and registries: use the block, do not rebuild it | en | `●○○○○○○○○○` | 1/10 | Script |  | demonstration segment waits for the education application (storyboard stand-in, slide 8 of its deck); not on the video track yet |
+| 5.5 | The service's contract with the registration block, and its data interface | en | `●○○○○○○○○○` | 1/10 | Script |  | demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); not on the video track yet — the data interface itself was tried with a test application, so recordable as soon as both applications are generated |
+| 5.6 | Payments and information mediation as named crossings (supplementary) | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 5.7 | Proof on the running system: a task a person finishes | en | `●○○○○○○○○○` | 1/10 | Script |  | demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); not on the video track yet |
+
+### Module 6 — Run the method in your administration (Strategist)
+
+| # | Topic | Lang | Flow | Done | Next | Latest | Notes |
+|---|---|---|---|---|---|---|---|
+| 6.1 | What to require from a supplier | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 6.2 | When something changes, correct the document that owns the fact | en | `●○○○○○○○○○` | 1/10 | Script |  | demonstration segment waits for the education application (storyboard stand-in, slide 6 of its deck); not on the video track yet |
+| 6.3 | Read where the work stands from the work | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 6.4 | The AI assistant at every step, and the person who rules | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 6.5 | The next service on the same foundation | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 6.6 | Carry the method to another sector | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
+| 6.7 | Before you rely on it: what the method does not claim (supplementary) | en | `●○○○○○○○○○` | 1/10 | Script |  |  |
 

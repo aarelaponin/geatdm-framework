@@ -5,7 +5,7 @@
 # and every VO paragraph are read from the .js at build time by kp4_deck_common.py, so the notes
 # narrate the bundle verbatim (vo_diff.py proves it, run at the end of every build). This file holds
 # only what a person writes: the cover, the agenda and the opener (hook) slide of each video.
-# One run writes, under module_1/: the combined deck with the voice-over in the speaker notes, the
+# One run writes, under ../videos/module_1/en/ (decks/ and scripts/): the combined deck with the voice-over in the speaker notes, the
 # split spec, the per-video decks (each opening on its title card) and the scripts-only companion.
 # Generated .pptx is NEVER hand-edited — fix here or in the bundle, then run this again.
 # Conventions and design rules: the kit's kp-deck-builder SKILL.md. Override paths with KP_KIT=,

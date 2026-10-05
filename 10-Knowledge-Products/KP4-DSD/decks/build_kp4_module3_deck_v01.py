@@ -8,7 +8,7 @@
 # (hook) slide of each video, and the three slides whose cue is not a plain list of rows (3.5's stamp
 # line over six pages, 3.5's storyboard stand-in read from the bundle's section 4.8, and 3.6's two
 # quotations from PAERA with their source).
-# One run writes, under module_3/: the combined deck with the voice-over in the speaker notes, the
+# One run writes, under ../videos/module_3/en/ (decks/ and scripts/): the combined deck with the voice-over in the speaker notes, the
 # split spec, the per-video decks (each opening on its title card) and the scripts-only companion.
 # Generated .pptx is NEVER hand-edited — fix here or in the bundle, then run this again.
 # Conventions and design rules: the kit's kp-deck-builder SKILL.md. Override paths with KP_KIT=,

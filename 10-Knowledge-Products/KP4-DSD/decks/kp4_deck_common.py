@@ -9,6 +9,10 @@
 # So a change to a bundle is taken in by running the program again; nothing is copied by hand.
 # Every helper, colour and layout index comes from the kit's deck_lib.py; nothing here redraws one.
 # Generated .pptx files are NEVER hand-edited — change the bundle or the program, then rebuild.
+# Output goes to the production tree the video track and the tracker read, as KP3's builder does:
+# ../videos/module_{N}/en/decks/ (the combined deck, split_spec.json, the per-video decks) and
+# ../videos/module_{N}/en/scripts/ (the scripts-only companions). Override with OUT_DIR= (the
+# scripts then go to OUT_DIR/scripts, the layout the 4 Oct 2026 build used under decks/module_N/).
 # The figures of KP4 (figures/F1..F14) are made for the written guide; every bundle of modules 1
 # to 3 says the slides stay text-only and places no figure on a slide, so none is placed here.
 import json
@@ -218,8 +222,15 @@ def build_module(mod, hooks, cover, agenda, overrides=None, quoted=None):
                 assert sh.top + sh.height <= pb.top or sh.top >= pb.top + pb.height, \
                     'shape overlaps the practice box: %r' % sh.text_frame.text[:60]
 
-    out_dir = os.environ.get('OUT_DIR') or os.path.join(HERE, 'module_%d' % mod)
+    if os.environ.get('OUT_DIR'):
+        out_dir = os.environ['OUT_DIR']
+        scripts_dir = os.path.join(out_dir, 'scripts')
+    else:   # the video track's stage folders, one per language (see ../videos/README.md)
+        lang_dir = os.path.join(KP4, 'videos', 'module_%d' % mod, 'en')
+        out_dir = os.path.join(lang_dir, 'decks')
+        scripts_dir = os.path.join(lang_dir, 'scripts')
     os.makedirs(out_dir, exist_ok=True)
+    os.makedirs(scripts_dir, exist_ok=True)
     deck = os.path.join(out_dir, 'KP4_M%d_Deck_v0.1.pptx' % mod)
     prs.save(deck)
     print('slides:', len(prs.slides._sldIdLst))
@@ -234,7 +245,7 @@ def build_module(mod, hooks, cover, agenda, overrides=None, quoted=None):
               open(spec_path, 'w', encoding='utf-8'), indent=2, ensure_ascii=False)
     run = lambda *a: subprocess.run([sys.executable] + list(a), check=True)
     run(os.path.join(SCRIPTS, 'split_module_deck.py'), deck, spec_path, out_dir, '--infer-ranges')
-    run(os.path.join(SCRIPTS, 'scripts_from_deck.py'), deck, spec_path, os.path.join(out_dir, 'scripts'),
+    run(os.path.join(SCRIPTS, 'scripts_from_deck.py'), deck, spec_path, scripts_dir,
         '--kp', 'KP4', '--module', str(mod), '--prefix', 'KP4_M%d' % mod, '--version', 'v0.1')
     run(os.path.join(SCRIPTS, 'vo_diff.py'), js_path, deck)
     return deck

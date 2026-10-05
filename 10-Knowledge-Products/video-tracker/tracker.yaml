@@ -16,7 +16,7 @@
 #
 # Bump `version` when the manifest structure or the topic list changes (not for a status tick).
 
-version: 3
+version: 4
 languages: [en, fr]        # fr rows are hidden by default until something exists for them
 
 kps:
@@ -354,4 +354,105 @@ kps:
           - {code: "6.10", title: "Carry the method to another sector", mins: ~5,
              en: {note: "candidate v0.12 (5:11, borderline) — cued + assembled 4 Oct; slide 5 table only partly covered; 'UN Development Program framework' for the compendium"}}
 
-  # KP4 is not tracked yet — copy the KP3 block above when its content exists.
+  - id: KP4
+    number: 4
+    title: Designing Digital Government Services using a Building Block Approach
+    root: KP4-DSD
+    note: >-
+      Six script bundles authored (all v0.1), 37 videos; worked examples, toolkit and 14 figures done. Decks v0.1 for
+      all six modules built 4 Oct 2026 (vo_diff clean). Video track opened 5 Oct 2026 for Modules 1–3 only — the
+      modules in which no video waits for the education demonstration application: scripts + decks v0.1 in
+      KP4-DSD/videos/module_N/en/ (rebuilt there from the bundles, contact sheets looked at). Modules 4–6 stay
+      off the track until the application is generated (4.6, 5.1, 5.2, 5.4, 5.5, 5.7 and 6.2 hold a segment that
+      shows it); their decks are under KP4-DSD/decks/module_N/ and are not read here. The 3.5 walkthrough can be
+      recorded now from the Progressa pages; until then its stand-in slide holds. Next for Modules 1–3: audio
+      briefs + prompts (step 3), then takes. KP4-DSD/videos/README.md "Production log" has the learnings.
+    intro:
+      title: KP4 introduction — what the six modules cover (on camera)
+      path: videos/intro
+      en:
+        note: Script not started.
+
+    modules:
+      - number: 1
+        title: Why digital services go wrong, and the method that prevents it
+        persona: Strategist
+        path: videos/module_1
+        topics:
+          - {code: "1.1", title: "Where an agreed service gets lost", mins: ~5}
+          - {code: "1.2", title: "Three rules you can hold a supplier to", mins: ~5}
+          - {code: "1.3", title: "A question with a name on it is part of the specification", mins: ~5}
+          - {code: "1.4", title: "Twelve documents from the request to the running service", mins: ~5}
+          - {code: "1.5", title: "Who writes, who checks, who accepts", mins: ~5}
+
+      - number: 2
+        title: Break the service down before you design it
+        persona: Strategist
+        path: videos/module_2
+        topics:
+          - {code: "2.1", title: "One catalogue of the sector's services, and the blocks they share", mins: ~5}
+          - {code: "2.2", title: "Write down what was asked before anyone designs", mins: ~5}
+          - {code: "2.3", title: "The records the service keeps, and whose each one is", mins: ~5}
+          - {code: "2.4", title: "Every goal named, and each tied to what was asked", mins: ~5}
+          - {code: "2.5", title: "What every goal may use, and may not invent", mins: ~5}
+          - {code: "2.6", title: "What the service is built on, and what crosses its boundary", mins: ~5}
+
+      - number: 3
+        title: Design one service as a story your officials can check
+        persona: Architect
+        path: videos/module_3
+        topics:
+          - {code: "3.1", title: "One goal, written as a story a builder can follow", mins: ~5}
+          - {code: "3.2", title: "Every way it can go wrong, written down", mins: ~5}
+          - {code: "3.3", title: "Screens worked out from the story, every value with its source", mins: ~5}
+          - {code: "3.4", title: "Screens officers can use (supplementary)", mins: ~5}
+          - {code: "3.5", title: "The walk-through your officials click", mins: ~5,
+             en: {note: "walkthrough segment storyboarded (slide 8 of its deck), recordable now from the Progressa pages of 'apply for a provisional licence'; stand-in holds until it is recorded"}}
+          - {code: "3.6", title: "The review: three people, every open line given a name", mins: ~5}
+
+      - number: 4
+        title: Settle the whole application once, then describe it for the machine
+        persona: Architect
+        path: videos/module_4
+        topics:
+          - {code: "4.1", title: "Four questions decided once for every screen", mins: ~5}
+          - {code: "4.2", title: "No list longer than nine: choose by category", mins: ~5}
+          - {code: "4.3", title: "The service workflow: states, moves and who may make each", mins: ~5}
+          - {code: "4.4", title: "One file a program reads: the application model", mins: ~5}
+          - {code: "4.5", title: "Reviewing the model: what it assumed, and what it could not express", mins: ~5}
+          - {code: "4.6", title: "Refused, not worked around", mins: ~5,
+             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); not on the video track yet"}}
+
+      - number: 5
+        title: Generate the service on a low-code platform and connect the blocks
+        persona: Architect
+        path: videos/module_5
+        topics:
+          - {code: "5.1", title: "From one file to a running application", mins: ~5,
+             en: {note: "principal demonstration of KP4 — demonstration segment waits for the education application (storyboard stand-in, slide 8 of its deck); not on the video track yet"}}
+          - {code: "5.2", title: "Nothing generated is edited by hand", mins: ~5,
+             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); not on the video track yet"}}
+          - {code: "5.3", title: "The platform's traps, caught before deployment", mins: ~5}
+          - {code: "5.4", title: "Identity and registries: use the block, do not rebuild it", mins: ~5,
+             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 8 of its deck); not on the video track yet"}}
+          - {code: "5.5", title: "The service's contract with the registration block, and its data interface", mins: ~5,
+             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); not on the video track yet — the data interface itself was tried with a test application, so recordable as soon as both applications are generated"}}
+          - {code: "5.6", title: "Payments and information mediation as named crossings (supplementary)", mins: ~5}
+          - {code: "5.7", title: "Proof on the running system: a task a person finishes", mins: ~5,
+             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); not on the video track yet"}}
+
+      - number: 6
+        title: Run the method in your administration
+        persona: Strategist
+        path: videos/module_6
+        topics:
+          - {code: "6.1", title: "What to require from a supplier", mins: ~5}
+          - {code: "6.2", title: "When something changes, correct the document that owns the fact", mins: ~5,
+             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 6 of its deck); not on the video track yet"}}
+          - {code: "6.3", title: "Read where the work stands from the work", mins: ~5}
+          - {code: "6.4", title: "The AI assistant at every step, and the person who rules", mins: ~5}
+          - {code: "6.5", title: "The next service on the same foundation", mins: ~5}
+          - {code: "6.6", title: "Carry the method to another sector", mins: ~5}
+          - {code: "6.7", title: "Before you rely on it: what the method does not claim (supplementary)", mins: ~5}
+
+  # Add a KP: copy the KP4 block above (modules, topics, notes); bump `version` when the topic list changes.

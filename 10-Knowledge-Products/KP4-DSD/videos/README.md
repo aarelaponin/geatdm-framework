@@ -6,22 +6,31 @@ what each video carries, which figures go with it and which AI usage tip it ends
 plainly which demonstration segments cannot be recorded yet, and what stands in for each until they can.
 KP4 has 37 videos: one per subtopic, each about five minutes long and standalone, in six modules.
 
-The slide decks of all 37 videos are produced and are in `../decks/`, one folder per module
-(`../decks/module_1/` to `../decks/module_6/`). Each module folder holds the video decks, one file per
-video (`KP4_M1_1.1_Deck_v0.1.pptx`), the combined deck of the module with the voice-over in the speaker
-notes (`KP4_M1_Deck_v0.1.pptx`), and, in `scripts/` beside them, the scripts-only companion of each video
-and of the module (`KP4_M1_1.1_Scripts_v0.1.md`). The other stages are not produced yet. When production
-reaches them, their files go here in the same layout as KP2's (`../../KP2-GIF/videos/`) and KP3's, one
-folder per module and one per language, with the stage folders inside it:
+The slide decks of all 37 videos are produced. **Status, 5 October 2026:** the video track is open for
+Modules 1 to 3, the modules in which no video waits for the education demonstration application. Their
+per-topic files are here, in the same layout as KP2's (`../../KP2-GIF/videos/`) and KP3's, one folder per
+module and one per language, with the stage folders inside it; steps 1 and 2 of the track (the
+scripts-only companions and the decks, v0.1) are done, the later stages are scaffolded and empty. The
+tracker at `../../video-tracker/` reads this folder. Modules 4 to 6, each of which holds at least one
+video that waits for the application (4.6; 5.1, 5.2, 5.4, 5.5, 5.7; 6.2), are not on the track yet:
+their decks, built 4 October, stay in `../decks/module_4/` to `../decks/module_6/` until their turn.
 
 ```
 KP4-DSD/videos/
 └── module_1/
     └── en/
+        ├── scripts/      KP4_M1_1.1_Scripts_v0.1.md        the narration of one video
+        ├── decks/        KP4_M1_1.1_Deck_v0.1.pptx         its slides on the ITU template
         ├── notebooklm/   KP4_M1_1.1_AudioBrief_v0.1.md     the audio brief and its prompt
         ├── audio/        KP4_M1_1.1_Audio_v0.1.m4a / .srt  the take and its transcript
-        └── cues/         KP4_M1_1.1_Cues_v0.1.txt          when each slide appears
+        ├── cues/         KP4_M1_1.1_Cues_v0.1.txt          when each slide appears
+        └── video/        KP4_M1_1.1_Video_v0.1.mp4         the deliverable (not kept in git)
 ```
+
+Each module's `decks/` holds the video decks, one file per video (`KP4_M1_1.1_Deck_v0.1.pptx`), the
+combined deck of the module with the voice-over in the speaker notes (`KP4_M1_Deck_v0.1.pptx`) and the
+`split_spec.json` that cut it; `scripts/` holds the scripts-only companion of each video and of the module
+(`KP4_M1_1.1_Scripts_v0.1.md`).
 
 The steps of production, from script to finished video, are the ones KP1 and KP2 used, written down in
 `../../KP1-GEA/videos/README.md`. Finished videos (`.mp4`) are not kept in git.
@@ -35,8 +44,9 @@ The steps of production, from script to finished video, are the ones KP1 and KP2
    supplementary), and section 3 holds one part per subtopic.
 2. **The spoken track.** Under "Script (voice-over over text-only slides)": the voice-over paragraphs,
    with the slide cues as shaded lines between them.
-3. **The slides.** The deck of each video is `../decks/module_N/KP4_MN_<video>_Deck_v0.1.pptx`, for
-   example `../decks/module_1/KP4_M1_1.1_Deck_v0.1.pptx`; its speaker notes carry the voice-over. Every
+3. **The slides.** The deck of each video is `module_N/en/decks/KP4_MN_<video>_Deck_v0.1.pptx`, for
+   example `module_1/en/decks/KP4_M1_1.1_Deck_v0.1.pptx` (Modules 4 to 6: `../decks/module_N/`, see
+   above); its speaker notes carry the voice-over. Every
    deck is its specification plus one opening slide, so **a slide's number in the deck is its row number
    in the bundle's "On-screen slide specification" plus one**. The specification gives one row per slide,
    with its text and its layout on ITU's template (title Arial Bold 28 pt, body Arial 18 pt, background
@@ -63,15 +73,29 @@ video's script say the same thing. The worked example of every subtopic is in `.
 file each (`E1-1_…` to `E6-7_…`); those of modules 4 to 6 are taken there, as they stand, from their module's
 bundle. Each module's self-check is on its own page of the guide, `module-N/self-check.md`.
 
-**The decks.** Where each module's decks are, and how they are made again (the two commands are for the
-team that holds the production kit; set `KP_KIT` to the kit's `itu-giga-kp` folder first):
+**The decks (steps 1 and 2 of the track).** Each module's decks come from a build program in `../decks/`,
+`build_kp4_moduleN_deck_v01.py`, content only, every helper from the kit's `kp-deck-builder`, and are never
+hand-edited. One run builds the combined deck, writes the split spec, cuts the per-video decks
+(`split_module_deck.py --infer-ranges`), writes the scripts-only companions (`scripts_from_deck.py`) and
+proves that the speaker notes narrate the bundle word for word (`vo_diff.py`). The programs of Modules 1 to
+3 read every slide from the bundle through `kp4_deck_common.py` and write to this folder; those of Modules
+4 to 6 write to `../decks/module_N/` until those modules join the track. The commands are for the team
+that holds the production kit; set `KP_KIT` to the kit's `itu-giga-kp` folder first:
 
 ```
-KP4-DSD/decks/module_N/       the video decks, the combined deck, scripts/ and split_spec.json
+KP4-DSD/videos/module_N/en/decks/     the video decks, the combined deck and split_spec.json  (Modules 1–3)
+KP4-DSD/videos/module_N/en/scripts/   the scripts-only companions                              (Modules 1–3)
+KP4-DSD/decks/module_N/               the same, with scripts/ inside, for Modules 4–6 (built 4 Oct 2026)
 KP4-DSD/decks/build_kp4_moduleN_deck_v01.py      the program that builds the decks of module N
 cd KP4-DSD/decks && for n in 1 2 3; do python3 build_kp4_module${n}_deck_v01.py || break; done
 cd KP4-DSD/decks && for n in 4 5 6; do python3 build_kp4_module${n}_deck_v01.py || break; done
+bash "$KP_KIT"/skills/kp-deck-builder/scripts/qa_deck.sh KP4-DSD/videos/module_1/en/decks/KP4_M1_Deck_v0.1.pptx /tmp/deckqa   # then look at the sheets
 ```
+
+A video is title card, opener (hook), its content slides, the recap with the un-narrated practice box
+and, where the subtopic cites a source, Sources. The decks of Modules 1 to 3 were rebuilt into this
+folder on 5 October 2026 and their contact sheets looked at: no overflow, no overlap, one practice box
+per video, `vo_diff` at zero mismatches (44, 57 and 58 slides).
 
 ## Module by module
 
@@ -82,7 +106,7 @@ segment and where its storyboard is.
 ### Module 1 — Why digital services go wrong, and the method that prevents it
 
 Script bundle: `../KP4_Module1_Script_Bundle_v0.1.md`. Five videos, all core. No demonstration segment.
-Slide decks: `../decks/module_1/`.
+Slide decks: `module_1/en/decks/`; scripts: `module_1/en/scripts/`.
 
 | Video | Class | Figures | AI usage tip | Demonstration |
 |---|---|---|---|---|
@@ -95,7 +119,7 @@ Slide decks: `../decks/module_1/`.
 ### Module 2 — Break the service down before you design it
 
 Script bundle: `../KP4_Module2_Script_Bundle_v0.1.md`. Six videos, all core. No demonstration segment.
-Slide decks: `../decks/module_2/`.
+Slide decks: `module_2/en/decks/`; scripts: `module_2/en/scripts/`.
 
 | Video | Class | Figures | AI usage tip | Demonstration |
 |---|---|---|---|---|
@@ -109,7 +133,7 @@ Slide decks: `../decks/module_2/`.
 ### Module 3 — Design one service as a story your officials can check
 
 Script bundle: `../KP4_Module3_Script_Bundle_v0.1.md`. Six videos; 3.4 is supplementary.
-Slide decks: `../decks/module_3/`.
+Slide decks: `module_3/en/decks/`; scripts: `module_3/en/scripts/`.
 
 | Video | Class | Figures | AI usage tip | Demonstration |
 |---|---|---|---|---|
@@ -123,7 +147,7 @@ Slide decks: `../decks/module_3/`.
 ### Module 4 — Settle the whole application once, then describe it for the machine
 
 Script bundle: `../KP4_Module4_Script_Bundle_v0.1.md`. Six videos, all core.
-Slide decks: `../decks/module_4/`.
+Slide decks: `../decks/module_4/` (not on the video track yet: 4.6 waits for the application).
 
 | Video | Class | Figures | AI usage tip | Demonstration |
 |---|---|---|---|---|
@@ -137,7 +161,7 @@ Slide decks: `../decks/module_4/`.
 ### Module 5 — Generate the service on a low-code platform and connect the blocks
 
 Script bundle: `../KP4_Module5_Script_Bundle_v0.1.md`. Seven videos; 5.6 is supplementary.
-Slide decks: `../decks/module_5/`.
+Slide decks: `../decks/module_5/` (not on the video track yet: 5.1, 5.2, 5.4, 5.5 and 5.7 wait for the application).
 
 | Video | Class | Figures | AI usage tip | Demonstration |
 |---|---|---|---|---|
@@ -152,7 +176,7 @@ Slide decks: `../decks/module_5/`.
 ### Module 6 — Run the method in your administration
 
 Script bundle: `../KP4_Module6_Script_Bundle_v0.1.md`. Seven videos; 6.7 is supplementary.
-Slide decks: `../decks/module_6/`.
+Slide decks: `../decks/module_6/` (not on the video track yet: 6.2 waits for the application).
 
 | Video | Class | Figures | AI usage tip | Demonstration |
 |---|---|---|---|---|
@@ -198,3 +222,25 @@ the stand-in, until it is recorded, is slide 8 of its deck.
 Everything in the 37 videos except the seven segments above can be recorded now: every voice-over, every
 slide and every description. The seven segments hold up only themselves; each video they belong to is
 complete without them, with its stand-in slide, and is re-cut when the recording exists.
+
+## Production log — what works and what does not
+
+Kept for the next session that picks up the KP4 video track. Newest first; add to it, do not rewrite it.
+
+**5 October 2026 — the track opened for Modules 1 to 3.**
+
+- The stage folders `module_{1,2,3}/en/{scripts,decks,notebooklm,audio,cues,video}` were created, and the
+  decks and scripts-only companions built on 4 October under `../decks/module_N/` were moved into them.
+  `kp4_deck_common.py` now writes there by default (`OUT_DIR=` still overrides), so a rebuild lands in the
+  tree the tracker reads. Modules 4 to 6 keep their 4 October decks under `../decks/module_N/`; their
+  build programs are untouched.
+- All three modules were rebuilt from their bundles in the new location: `vo_diff` at zero mismatches,
+  one practice box per video, none narrated; the splits inferred as 1.1–1.5 → slides 3–43, 2.1–2.6 →
+  3–56, 3.1–3.6 → 3–57. Contact sheets looked at for all three combined decks: nothing overflows or
+  overlaps; the 3.5 stand-in (slide 47 of the combined deck, slide 8 of its own) shows the seven storyboard
+  steps under "Not yet recorded".
+- Modules 4 to 6 are kept off the track on purpose: each holds a video whose demonstration waits for the
+  education application. The build programs of those modules write to `../decks/module_N/`; when they
+  join, build with `OUT_DIR=../videos/module_N/en/decks` (the scripts then land in `OUT_DIR/scripts` and
+  need moving up to `en/scripts/`), or give them the default `kp4_deck_common.py` uses.
+- Next: step 3, the audio briefs and prompts (`kp-audio-brief`, `make_brief.py` as KP3 did), then the takes.

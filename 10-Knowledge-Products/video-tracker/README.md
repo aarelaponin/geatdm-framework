@@ -56,7 +56,7 @@ newest take, or an `accepted:` pin that no longer matches the newest take on dis
 - Publish: `en: {accepted: v0.7, published: https://youtu.be/xxxx}`.
 - Flag a problem: `blocker: "waiting on ITU §4.3 decision"` — the row goes red and lands under
   BLOCKED in the next-actions list.
-- Add a KP: copy the commented KP3 stub at the bottom. Add a module: `number`, `title`, `path`,
+- Add a KP: copy the KP4 block at the bottom (every KP is now tracked; KP4's Modules 4–6 are listed but off the track until the education application exists). Add a module: `number`, `title`, `path`,
   `intro`, `topics`. Topic titles are display-only; the file matching uses the `code`.
 - Retire a topic without losing it from view: `retired: "why"`.
 - French (or any language) rows appear automatically once a file exists under `fr/`; until then

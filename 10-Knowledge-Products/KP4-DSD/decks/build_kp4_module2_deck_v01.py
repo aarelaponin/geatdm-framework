@@ -6,7 +6,7 @@
 # narrate the bundle verbatim (vo_diff.py proves it, run at the end of every build). This file holds
 # only what a person writes: the cover, the agenda, the opener (hook) slide of each video, and the
 # one slide whose cue is not a list of rows (2.4's two lists, one per body).
-# One run writes, under module_2/: the combined deck with the voice-over in the speaker notes, the
+# One run writes, under ../videos/module_2/en/ (decks/ and scripts/): the combined deck with the voice-over in the speaker notes, the
 # split spec, the per-video decks (each opening on its title card) and the scripts-only companion.
 # Generated .pptx is NEVER hand-edited — fix here or in the bundle, then run this again.
 # Conventions and design rules: the kit's kp-deck-builder SKILL.md. Override paths with KP_KIT=,
