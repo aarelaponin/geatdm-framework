@@ -1,0 +1,244 @@
+1
+00:00:00,140 --> 00:00:03,420
+So module six, video 6.5.
+
+2
+00:00:04,140 --> 00:00:06,500
+Right. The next service on the same foundation.
+
+3
+00:00:07,040 --> 00:00:09,060
+Yeah. And today's mission for this deep dive is,
+
+4
+00:00:09,780 --> 00:00:13,320
+well, really exploring digital public infrastructure, or DPI.
+
+5
+00:00:13,860 --> 00:00:22,560
+Exactly. We are looking at how reusing existing digital foundations stops the systems in your ministry from becoming fragmented, siloed, or duplicated.
+
+6
+00:00:22,980 --> 00:00:28,000
+God, that happens a lot, you know? So to get into this, we are looking at Progressa.
+
+7
+00:00:28,540 --> 00:00:32,140
+Right. And just to be clear, Progressa is the fictional country of these examples?
+
+8
+00:00:32,320 --> 00:00:33,340
+Yes, totally fictional.
+
+9
+00:00:33,980 --> 00:00:38,940
+But, um, in Progressa, institutions register just once with a quality authority.
+
+10
+00:00:39,300 --> 00:00:41,780
+PHEQA. Yeah, PHEQA.
+
+11
+00:00:42,400 --> 00:00:44,800
+And the ministry, they simply read that register.
+
+12
+00:00:45,320 --> 00:00:48,340
+Exactly. But now there is a new request on the table for them.
+
+13
+00:00:48,880 --> 00:00:53,740
+Graduates want proof of their degree, and it has to be something an employer can actually trust.
+
+14
+00:00:54,160 --> 00:01:02,440
+Right. And I mean, if I am running this new digital credential project, my first thought is, "Wouldn't it be faster to just build my own standalone sign-in?"
+
+15
+00:01:02,940 --> 00:01:03,440
+Oh, for sure.
+
+16
+00:01:03,620 --> 00:01:06,400
+Like, just do it all myself so I don't have to wait on anyone else.
+
+17
+00:01:06,760 --> 00:01:11,580
+Well, and individual procurement rules might even make a single contract look cheaper initially.
+
+18
+00:01:11,680 --> 00:01:16,380
+Yeah. But only whole-of-government planning actually makes reuse possible.
+
+19
+00:01:16,780 --> 00:01:19,900
+Because otherwise you end up locked into one supplier, right?
+
+20
+00:01:20,100 --> 00:01:22,700
+Exactly, or it becomes incredibly costly to change later.
+
+21
+00:01:23,160 --> 00:01:25,940
+The GovStack reference architecture is really clear on this.
+
+22
+00:01:26,340 --> 00:01:29,440
+It says that digital public infrastructure is not neutral.
+
+23
+00:01:29,660 --> 00:01:33,300
+It's not. No, it actually shapes what can be built on top of it.
+
+24
+00:01:33,820 --> 00:01:38,320
+I mean, the UNDP describes this DPI as a set of shared digital systems.
+
+25
+00:01:38,680 --> 00:01:44,380
+Okay, so a shared system. So how does the Digital Credentials Authority, um, PDCA,
+
+26
+00:01:45,020 --> 00:01:47,960
+actually avoid doing all that duplicated work for this new service?
+
+27
+00:01:48,300 --> 00:01:50,340
+Well, they use a specific blueprint for reuse.
+
+28
+00:01:50,720 --> 00:01:52,960
+Let's just, uh, number the reuses here so it's clear.
+
+29
+00:01:53,120 --> 00:01:56,740
+Okay. First, they are reusing PNIA's sign-in.
+
+30
+00:01:56,960 --> 00:01:58,760
+Okay, so the existing identity sign-in.
+
+31
+00:01:59,000 --> 00:01:59,580
+Yeah, exactly.
+
+32
+00:02:00,200 --> 00:02:04,920
+Second, they are reusing PHEQA's register of institutions.
+
+33
+00:02:05,060 --> 00:02:06,440
+Right, which they don't have to copy, right?
+
+34
+00:02:06,580 --> 00:02:08,440
+No, not at all. It is read across linkup.
+
+35
+00:02:08,620 --> 00:02:10,020
+Linkup being the data exchange.
+
+36
+00:02:10,240 --> 00:02:10,460
+Yes.
+
+37
+00:02:11,080 --> 00:02:13,860
+So PDCA keeps no copy of the register whatsoever.
+
+38
+00:02:14,020 --> 00:02:18,880
+Wow. Okay. It only adds the credential, and that credential is kept in the graduate's wallet.
+
+39
+00:02:19,440 --> 00:02:23,520
+So they are just leveraging what is already there, no rekeyed data.
+
+40
+00:02:23,980 --> 00:02:24,140
+None.
+
+41
+00:02:24,880 --> 00:02:27,460
+And it all runs on, you know, established standards.
+
+42
+00:02:27,920 --> 00:02:32,800
+Specifically, there are three roles of the W3C standard for verifiable credentials.
+
+43
+00:02:33,280 --> 00:02:34,800
+Okay. What are the three roles?
+
+44
+00:02:35,360 --> 00:02:38,100
+So first, the issuer, PDCA, gives the credential.
+
+45
+00:02:38,340 --> 00:02:40,920
+Right. Second, the holder, the graduate, keeps it.
+
+46
+00:02:41,360 --> 00:02:42,560
+In their digital wallet.
+
+47
+00:02:42,800 --> 00:02:45,860
+Exactly. And third, the verifier, the employer, checks it.
+
+48
+00:02:46,460 --> 00:02:49,800
+Oh, so the employer can just trust it directly from the graduate.
+
+49
+00:02:50,200 --> 00:02:50,420
+Yes.
+
+50
+00:02:51,040 --> 00:02:55,420
+And the UNDP actually counts these verifiable credentials among trust services.
+
+51
+00:02:56,220 --> 00:02:58,260
+So coming back to your program and your ministry,
+
+52
+00:02:58,980 --> 00:03:05,100
+what is the bottom line here? The PDCA team still has to, like, write the standard documents for a new service, right?
+
+53
+00:03:05,360 --> 00:03:09,900
+Oh, yeah. They still write the same 12 documents, but the architecture changes.
+
+54
+00:03:10,120 --> 00:03:11,700
+Because they are reusing blocks.
+
+55
+00:03:12,120 --> 00:03:15,300
+Right. Each reuse is confirmed with a body that keeps the block.
+
+56
+00:03:15,840 --> 00:03:16,040
+Which
+
+57
+00:03:16,900 --> 00:03:18,900
+is such a powerful argument for your minister.
+
+58
+00:03:19,300 --> 00:03:22,160
+It really is. The foundation is already paid for.
+
+59
+00:03:22,340 --> 00:03:24,880
+Exactly. The second service only pays for what it adds.
+
+60
+00:03:25,400 --> 00:03:32,700
+Yeah, so look at your own program. Are you paying to rebuild foundations, or are you leveraging existing blocks to move faster?
+
+61
+00:03:33,260 --> 00:03:35,780
+And stop things from being siloed or duplicated.
+

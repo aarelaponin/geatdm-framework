@@ -1,0 +1,27 @@
+# Slide cue file — KP4 Module 6, Video 6.2 "When something changes, correct the document that owns the fact"
+# Deck:  KP4_M6_6.2_Deck_v0.1.pptx (7 slides; slide 3 carries a figure, slide variant; slide 6 is the
+#        demonstration stand-in, a storyboard until it is recorded)
+# Audio: KP4_M6_6.2_Audio_v0.6.m4a (runs to 3:44.0; brief v0.2; try 2 of the 6 Oct re-roll, untrimmed —
+#        trim_outro found no outro to cut)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Fixed against v0.2: Harbourview asks "PHEQA, and only PHEQA" ("so the Ministry of Education is not asked");
+# a registration officer could write the name early; PHEQA's Registrar, who owns the rules, confirms the
+# correction; slide 6 says MoEYS's documents are not stale and, in the future tense, what the recording will show
+# (the list, the application generated again, the change on the running service) and the pass; the recap is the
+# last thing said, then "Sources are in the video description." Opens on the scripted title + Host B's sentence.
+#
+# Flaws of this take: short (3:44 against 5:00; covers every slide). Slide 2 recites the vocabulary list as a
+# consequence ("leaves the architecture fragmented and very costly to change"; slide 4 "siloed and duplicated")
+# and adds "the old fault simply overwrites the surface level fix". Slide 4 drops "people notice a screen first"
+# and "ask which story the change belongs to". Slide 6's stale list is partial (no interaction design, no model;
+# "the goals" for "two goals"). MoEYS spoken as initials ("MOEYS") rather than "the ministry"; captioned
+# "Harborview" (fixed by kp4_srt_fix). Heavy backchannel ("Mm-hmm", "Right", "Got it", "Ugh") and some "um/uh".
+
+0:00   # slide 1 — title card (cold open as scripted)
+0:12   # slide 2 — Hook: the quickest fix is the one that brings the problem back later
+0:52   # slide 3 — Up to the owner, then down again (figure; three steps numbered)
+1:28   # slide 4 — When the behaviour itself changes (four steps numbered)
+2:08   # slide 5 — An institution asks to change its name (illustrative)
+2:58   # slide 6 — What the change makes stale (demonstration stand-in)
+3:36   # slide 7 — In one sentence

@@ -188,7 +188,7 @@ Right.
 
 48
 00:03:09,780 --> 00:03:15,640
-So in Progressa, let's say Harbor View University College registers with PHEQA.
+So in Progressa, let's say Harbourview University College registers with PHEQA.
 
 49
 00:03:15,980 --> 00:03:17,180

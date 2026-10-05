@@ -1,0 +1,183 @@
+1
+00:00:00,160 --> 00:00:04,160
+Module 6, Video 6.3, Read Where the Work Stands from the Work.
+
+2
+00:00:04,840 --> 00:00:09,620
+Um, so when a vendor providing systems in your ministry offers a figure for
+
+3
+00:00:10,340 --> 00:00:15,520
+how complete the work is, uh, why is that percentage an ineffective measure for a status update?
+
+4
+00:00:15,940 --> 00:00:19,380
+Well, simply put, a percentage cannot be checked by anyone in the room.
+
+5
+00:00:19,640 --> 00:00:22,640
+Right. And it completely fails to show what work remains.
+
+6
+00:00:23,060 --> 00:00:26,240
+I mean, nobody can say what the rest of the work actually is.
+
+7
+00:00:26,700 --> 00:00:27,580
+Because it's just a number.
+
+8
+00:00:27,940 --> 00:00:33,100
+Exactly. Progress must be read from fixed form documents that record exactly what they were made from.
+
+9
+00:00:33,220 --> 00:00:40,720
+Mm-hmm. This allows anyone at any time to generate a report from those documents that gives the exact same verifiable answer.
+
+10
+00:00:41,220 --> 00:00:46,420
+Okay, so how does the trace report mechanically follow the work to prevent your program from becoming,
+
+11
+00:00:47,120 --> 00:00:50,660
+say, fragmented, siloed, or locked into one supplier?
+
+12
+00:00:51,020 --> 00:00:54,920
+Well, the trace report follows every requested entry of what was asked.
+
+13
+00:00:55,080 --> 00:00:56,800
+Okay. It traces it to its goal,
+
+14
+00:00:57,440 --> 00:01:04,620
+uh, then to the screens of that goal- Right... to the part of the application generated for it, and finally to the acceptance check written for it.
+
+15
+00:01:04,900 --> 00:01:06,400
+So it tracks every single step.
+
+16
+00:01:06,740 --> 00:01:13,340
+Yes. Then it lists by name every entry that is not yet traced to the end and, uh, says where each one stops.
+
+17
+00:01:14,100 --> 00:01:24,060
+I see. So in the fictional country of these examples, Progressa, how does the head of the ICT unit at the Ministry of Education translate this report into an actionable status for your minister?
+
+18
+00:01:24,480 --> 00:01:25,120
+Right. So
+
+19
+00:01:25,740 --> 00:01:29,900
+the head of ICT numbers the four goals from the trace report for their application.
+
+20
+00:01:30,740 --> 00:01:34,620
+Uh, number one, deciding a license- Mm-hmm... which is traced to the end.
+
+21
+00:01:35,380 --> 00:01:35,940
+Number two,
+
+22
+00:01:36,580 --> 00:01:39,620
+approving a change of name, which is also traced to the end.
+
+23
+00:01:39,940 --> 00:01:41,740
+Okay, so those two are fully traced.
+
+24
+00:01:42,020 --> 00:01:45,640
+Exactly. Now, number three, publishing the list in the Gazette.
+
+25
+00:01:46,560 --> 00:01:50,980
+This has its goal and its screens, but, uh, nothing is generated for it yet.
+
+26
+00:01:51,200 --> 00:01:51,820
+Ah, okay.
+
+27
+00:01:52,420 --> 00:01:53,160
+And the fourth?
+
+28
+00:01:53,700 --> 00:01:58,900
+Number four, reviewing a decision of PHEQA at a person's request.
+
+29
+00:01:59,320 --> 00:02:04,380
+Right. For that one, the part is generated, but no acceptance check has been written for it.
+
+30
+00:02:04,900 --> 00:02:05,660
+Okay, got it.
+
+31
+00:02:06,280 --> 00:02:11,060
+The head of ICT then writes the minister's status on one page in plain words
+
+32
+00:02:11,720 --> 00:02:13,980
+with the date of the report beside every figure.
+
+33
+00:02:14,820 --> 00:02:21,580
+So what rules ensure this data remains accurate when progress is slow or, you know, becomes costly to change?
+
+34
+00:02:22,120 --> 00:02:23,260
+Well, there are three rules.
+
+35
+00:02:24,020 --> 00:02:24,520
+Number one,
+
+36
+00:02:25,400 --> 00:02:28,660
+a gap stays open and counted. Okay. Number two,
+
+37
+00:02:29,280 --> 00:02:32,100
+a check is never changed to make its number look better.
+
+38
+00:02:32,440 --> 00:02:33,060
+That makes sense.
+
+39
+00:02:33,620 --> 00:02:37,000
+And number three, an empty column is information.
+
+40
+00:02:37,620 --> 00:02:39,580
+An empty column is information?
+
+41
+00:02:40,220 --> 00:02:40,440
+Yes.
+
+42
+00:02:41,260 --> 00:02:44,700
+An empty column is an honest gap that shows what is not yet done.
+
+43
+00:02:45,300 --> 00:02:47,360
+It is often the most useful thing on the page.
+
+44
+00:02:47,940 --> 00:02:50,360
+Because it shows you exactly what's missing.
+
+45
+00:02:51,180 --> 00:02:55,720
+Right. The warning sign is a supplier's report with no empty cell anywhere,
+
+46
+00:02:56,420 --> 00:02:59,100
+and that is when the minister asks what was left out of it.

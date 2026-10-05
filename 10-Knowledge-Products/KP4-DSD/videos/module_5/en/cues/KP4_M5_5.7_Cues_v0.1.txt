@@ -1,0 +1,25 @@
+# Slide cue file — KP4 Module 5, Video 5.7 "Proof on the running system: a task a person finishes"
+# Deck:  KP4_M5_5.7_Deck_v0.1.pptx (9 slides; slide 7 is the demonstration storyboard stand-in)
+# Audio: KP4_M5_5.7_Audio_v0.1.m4a (runs to 3:36.3; brief v0.1 with the slide-7 demo line; try 1, not trimmed)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:36 against 5:00). Title line as scripted, but the cold open's single message not
+# said. Slide 3 adds an invented consequence list ("fragmented, siloed, duplicated, rekeyed, locked into one
+# supplier, costly to change") — the severity vocabulary read aloud. Slide 4 omits the menu entry and the role,
+# and "written from the story your officials agreed, not from the screens the supplier built". Slide 5 step 3
+# drops "the college as PHEQA's register shows it". Slide 6 adds an invented "like they ran out of time" and
+# omits "stopped at step three" and "keep each record with the acceptance file". Slide 7 (demonstration) is in
+# the future tense throughout — nothing claimed to have run. Closing message paraphrased ("generates a record of
+# the run"); "a journey not run is not passed" not repeated there; no sources line. MoEYS spelt "M-O-E-Y-S"
+# (listen). Filler and backchannel ("Wow", "Mm-hmm", "um"). The Sources card comes in at 3:32 (4.3 s), over the
+# last two seconds of the closing sentence, to avoid a 1 s window.
+
+0:00   # slide 1 — title card
+0:07   # slide 2 — Hook: every check reports a pass; can an officer finish a real task?
+0:16   # slide 3 — The third rule
+1:13   # slide 4 — A journey, written before it is run (three parts numbered)
+1:37   # slide 5 — Progressa: approving a change of name (five steps numbered)
+2:21   # slide 6 — The record that it happened (four things numbered)
+2:57   # slide 7 — The change of name, on the running application (storyboard, future tense)
+3:21   # slide 8 — In one sentence
+3:32   # slide 9 — Sources

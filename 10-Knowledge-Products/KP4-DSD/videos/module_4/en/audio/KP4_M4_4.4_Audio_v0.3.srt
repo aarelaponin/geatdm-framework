@@ -1,0 +1,252 @@
+1
+00:00:00,120 --> 00:00:02,180
+Module four, video 4.4:
+
+2
+00:00:02,820 --> 00:00:05,680
+One file a program reads: the application model.
+
+3
+00:00:06,640 --> 00:00:10,180
+Uh, welcome to this deep dive into low-code application models.
+
+4
+00:00:10,960 --> 00:00:11,780
+Yeah. Thanks for having me.
+
+5
+00:00:12,720 --> 00:00:22,080
+So the mission today is to uncover how turning your agreed workflows into just, like, one single file fundamentally changes how digital platforms are built in your ministry.
+
+6
+00:00:22,800 --> 00:00:27,180
+Right, because usually you agree on a design and then a builder just, you know, manually clicks it together.
+
+7
+00:00:27,720 --> 00:00:32,740
+Exactly. And with every click, the final result drifts from your vision, right?
+
+8
+00:00:33,120 --> 00:00:39,140
+You end up with platforms where data's fragmented, siloed, duplicated or, you know, constantly rekeyed.
+
+9
+00:00:39,740 --> 00:00:45,500
+Yeah, or locked into one supplier and really costly to change, which is why we need the application model instead.
+
+10
+00:00:46,020 --> 00:00:46,200
+Right.
+
+11
+00:00:46,820 --> 00:00:52,160
+So, uh, before we get to the file itself, we have to number the four kinds of parts that make up these platforms.
+
+12
+00:00:52,720 --> 00:00:53,780
+Yeah. Let's lay out the basics.
+
+13
+00:00:54,160 --> 00:00:56,120
+Okay. So one, forms.
+
+14
+00:00:56,780 --> 00:00:59,600
+Those are the screens where people actually enter and read values.
+
+15
+00:01:00,380 --> 00:01:03,980
+Two, lists. The tables of records that people search and open.
+
+16
+00:01:04,440 --> 00:01:08,540
+Mm-hmm. Three, menus. That's the user interface leading to those forms and lists.
+
+17
+00:01:09,040 --> 00:01:12,620
+And four, processes, which are the actual steps of the work.
+
+18
+00:01:13,340 --> 00:01:18,140
+Right. And the traditional way of clicking those four parts together is what guarantees that drift we mentioned.
+
+19
+00:01:18,520 --> 00:01:20,620
+Because humans just, you know, make mistakes.
+
+20
+00:01:21,020 --> 00:01:24,120
+Exactly. So the solution is this application model.
+
+21
+00:01:24,460 --> 00:01:29,060
+It's literally one file holding all your agreed stories, screens, lists and workflows.
+
+22
+00:01:29,520 --> 00:01:30,520
+Wait, just one file?
+
+23
+00:01:30,720 --> 00:01:32,900
+Yeah, just one. Like, everything? Yeah, just one.
+
+24
+00:01:33,220 --> 00:01:37,520
+A program builds the application directly from this file, ensuring nothing is ever retyped.
+
+25
+00:01:38,080 --> 00:01:39,480
+You never touch the parts directly.
+
+26
+00:01:39,740 --> 00:01:41,060
+You never touch the parts directly.
+
+27
+00:01:41,640 --> 00:01:46,640
+Okay. I mean, how does human agreement actually translate into this programmable file?
+
+28
+00:01:46,960 --> 00:01:48,320
+Like, what exactly is going into it?
+
+29
+00:01:48,800 --> 00:01:50,980
+Well, the file carries four specific things.
+
+30
+00:01:51,120 --> 00:01:54,280
+Number one: stories and screens become forms and lists.
+
+31
+00:01:54,460 --> 00:01:55,020
+Okay. Got it.
+
+32
+00:01:55,220 --> 00:01:59,540
+Number two: the interaction design decides how lists, searches, moves and acts behave.
+
+33
+00:01:59,880 --> 00:02:03,180
+Number three: the service workflow becomes states and moves.
+
+34
+00:02:03,700 --> 00:02:07,600
+All right. And what about the stuff that just doesn't fit cleanly into those boxes?
+
+35
+00:02:07,960 --> 00:02:12,000
+That's number four. What cannot be placed cleanly is written down for a person to rule on.
+
+36
+00:02:12,400 --> 00:02:16,680
+Oh, right. Because an AI assistant writes this file, right?
+
+37
+00:02:16,960 --> 00:02:22,420
+It does, yeah. But the crucial thing here is that the AI must absolutely refuse to guess.
+
+38
+00:02:23,000 --> 00:02:25,700
+So it won't just, you know, make up an answer to keep going.
+
+39
+00:02:26,020 --> 00:02:29,420
+Never. Ambiguities are never quietly decided by the machine.
+
+40
+00:02:29,600 --> 00:02:32,960
+It flags them for a human in your program to explicitly resolve.
+
+41
+00:02:33,340 --> 00:02:36,600
+Okay. I wanna see this in practice. Let's consider Progressa.
+
+42
+00:02:37,000 --> 00:02:41,340
+And I should explicitly note here, Progressa is the fictional country of these examples.
+
+43
+00:02:42,020 --> 00:02:48,080
+Right. So in Progressa, take their MoEYS ministry file for approving an institution's name change.
+
+44
+00:02:48,300 --> 00:02:49,140
+Okay. How's that work?
+
+45
+00:02:49,740 --> 00:02:56,280
+Well, it reads the present name directly from PHEQA's register across the Linkup data exchange.
+
+46
+00:02:56,640 --> 00:02:57,880
+So the data's never copied.
+
+47
+00:02:58,260 --> 00:03:03,240
+Exactly. It's read across the exchange, never copied, and then the approval decision is chosen.
+
+48
+00:03:03,380 --> 00:03:04,280
+It is not typed.
+
+49
+00:03:04,580 --> 00:03:10,180
+Oh, wow. That exactness really prevents information from being rekeyed or duplicated, doesn't it?
+
+50
+00:03:10,400 --> 00:03:11,500
+Yeah. It stops it entirely.
+
+51
+00:03:11,960 --> 00:03:16,200
+But, um, if this file is written purely for a program to read,
+
+52
+00:03:16,920 --> 00:03:20,120
+how do you, like, as the human official, actually verify it?
+
+53
+00:03:20,420 --> 00:03:24,920
+You ask the supplier for a plain sentence reading directly beside the file.
+
+54
+00:03:25,240 --> 00:03:26,560
+A plain sentence reading?
+
+55
+00:03:27,140 --> 00:03:30,220
+Yeah. You check this reading against the screens you originally agreed upon.
+
+56
+00:03:30,720 --> 00:03:34,600
+What happens if the plain sentence reading and the machine file just don't match up?
+
+57
+00:03:35,060 --> 00:03:38,120
+Then you fix it, because where the reading and the file differ-
+
+58
+00:03:38,520 --> 00:03:39,480
+The file always wins.
+
+59
+00:03:39,900 --> 00:03:42,600
+Every single time. The file is always what gets built.
+
+60
+00:03:43,140 --> 00:03:44,480
+Which brings us to the main takeaway:
+
+61
+00:03:45,120 --> 00:03:52,840
+always ask for the one file the application is generated from and its plain sentence reading to ensure your vision matches the platform.
+
+62
+00:03:53,340 --> 00:03:57,320
+It's really the only way to be sure your minister gets exactly what was agreed upon.
+
+63
+00:03:57,580 --> 00:03:57,740
+Right.
+

@@ -1,0 +1,22 @@
+# Slide cue file — KP4 Module 6, Video 6.3 "Read where the work stands from the work"
+# Deck:  KP4_M6_6.3_Deck_v0.1.pptx (7 slides; no Sources slide — the recap slide is last)
+# Audio: KP4_M6_6.3_Audio_v0.9.m4a (runs to 2:59.4; brief v0.3; try 4 of the re-roll, not trimmed — raw = take)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (2:59; every content slide 2-6 covered in order — author's decision, under 3:00 is
+# fine). Opens exactly on the scripted title; Host B's cold-open sentence is not said. The percentage has no
+# value ("a figure for how complete the work is"). Slide 3 drops "ask for that report, with its date". Slide 4's
+# question glosses the trace report as preventing a program "becoming fragmented, siloed, or locked into one
+# supplier" (the vocabulary table recited; not in §2). Slide 5: "the head of ICT numbers the four goals"
+# (narration: he reads the report); MoEYS never named (says "the Ministry of Education"). Slide 6's question adds
+# "becomes costly to change". The recap message (slide 7) is never said: the take ends on slide 6's warning-sign
+# line "that is when the minister asks what was left out of it"; no sources line. Light filler and backchannel
+# ("Mm-hmm", "Okay, got it", "uh"). Spoken "Progresa" (SRT corrected to Progressa): listen.
+
+0:00   # slide 1 — title card (scripted title line)
+0:05   # slide 2 — Hook: the supplier answers with a percentage (no number)
+0:28   # slide 3 — Read from the work, never remembered
+0:41   # slide 4 — The trace report (told whole before slide 5)
+1:14   # slide 5 — MoEYS's trace report (illustrative) (four goals numbered; one-page status, dated)
+2:14   # slide 6 — Three rules that keep the report honest (numbered; empty column = honest gap)
+2:51   # slide 7 — In one sentence (recap not said; card holds over the warning-sign line)

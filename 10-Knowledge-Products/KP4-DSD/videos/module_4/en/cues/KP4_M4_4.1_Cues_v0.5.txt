@@ -1,0 +1,24 @@
+# Slide cue file — KP4 Module 4, Video 4.1 "Four questions decided once for every screen"
+# Deck:  KP4_M4_4.1_Deck_v0.1.pptx (9 slides; slide 3 carries figure F10, slide variant)
+# Audio: KP4_M4_4.1_Audio_v0.5.m4a (runs to 5:00.7; brief v0.3; the raw take — re-cued 6 Oct 2026 from v0.6's cues, +11 s)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: no cold open — it opens "Welcome to today's deep dive. So our mission today is to uncover…"
+# (a show-open, non-blocking) under the title card; the scripted title line is not said. The trimmed v0.6 cut
+# those 10.9 s and so began mid-sentence; this raw take is used instead. Slide 2's "the program settles them
+# for you" is told after the four questions (with slide 4's "settled differently on every page"), same beat, so the
+# cues hold. "Locked in to one supplier" and "re-keyed everywhere" added (not in the deck). Slide 4's one analyst
+# and "before described for the machine" arrive on slide 7 and slide 8. Slide 7 drops the analyst's recommended
+# answer where the goals were silent. Hosts' "blueprint", "brilliantly simple", backchannel ("Oh, wow", "Exactly").
+# SRT spells the country "Progresa" and the ministry "MOES"/"MOEFS": listen for Progressa and for MoEYS said as a
+# word. Closing message as the deck's slide 8, then "Sources are in the video description." at 4:47.9.
+
+0:00   # slide 1 — title card
+0:19   # slide 2 — Hook: four questions cross every screen; screens agreed one goal at a time
+0:55   # slide 3 — Four questions no single goal can answer (numbered; figure F10)
+1:17   # slide 4 — One document, settled once (left open, the program settles them by default)
+1:58   # slide 5 — MoEYS: pick and find
+3:08   # slide 6 — MoEYS: move and act (five menu categories numbered)
+4:14   # slide 7 — Who accepts it, and what she reads
+4:44   # slide 8 — In one sentence
+4:57   # slide 9 — Sources

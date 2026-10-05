@@ -1,0 +1,231 @@
+1
+00:00:00,120 --> 00:00:02,440
+Module six, video 6.2,
+
+2
+00:00:03,160 --> 00:00:06,820
+when something changes, correct the document that owns the fact
+
+3
+00:00:08,020 --> 00:00:12,020
+A change goes up to its source, and everything below is produced again.
+
+4
+00:00:12,460 --> 00:00:13,840
+Right. So, um,
+
+5
+00:00:14,920 --> 00:00:15,960
+thinking about this practically,
+
+6
+00:00:16,720 --> 00:00:21,200
+when a service is actively in use in your ministry and someone asks for a change,
+
+7
+00:00:21,920 --> 00:00:26,880
+why is changing the screen or the running system where the problem was seen problematic?
+
+8
+00:00:27,520 --> 00:00:31,560
+Well, simply put, the quickest fix is the one that brings the problem back later.
+
+9
+00:00:31,720 --> 00:00:38,480
+Mm-hmm. Because, uh, if a change is made only to the running system, the underlying source remains completely unaltered.
+
+10
+00:00:38,760 --> 00:00:46,020
+Right. So the next time your program generates the service from that source document, the old fault simply overwrites the surface level fix.
+
+11
+00:00:46,340 --> 00:00:47,920
+Ugh, leaving it all fragmented.
+
+12
+00:00:48,220 --> 00:00:52,520
+Exactly. It leaves the architecture fragmented and, uh, very costly to change.
+
+13
+00:00:52,800 --> 00:00:53,200
+Okay, so
+
+14
+00:00:53,900 --> 00:00:59,180
+what is the SDD method's rule for every change to ensure that the old fault does not return?
+
+15
+00:01:00,140 --> 00:01:02,800
+The rule requires three steps executed in order.
+
+16
+00:01:02,940 --> 00:01:06,040
+Okay. One, find the document that owns the fact.
+
+17
+00:01:06,160 --> 00:01:09,500
+Mm-hmm. Two, correct the fact there and nowhere else.
+
+18
+00:01:10,160 --> 00:01:12,680
+And three, produce everything below it again.
+
+19
+00:01:13,260 --> 00:01:15,180
+Produce everything below it again. Yes. Right.
+
+20
+00:01:15,540 --> 00:01:22,160
+Yes. Because correcting a fact where it was noticed, um, leaves the owning document unchanged.
+
+21
+00:01:22,280 --> 00:01:27,780
+By updating only the source, we ensure that one statement of each fact is the only arrangement that stays true.
+
+22
+00:01:28,640 --> 00:01:33,840
+Now, when the behavior of the service itself must change, why does holding that order matter even more?
+
+23
+00:01:34,640 --> 00:01:34,800
+Well,
+
+24
+00:01:36,120 --> 00:01:40,900
+failing to hold the order leads to services that are, uh, siloed and duplicated.
+
+25
+00:01:41,040 --> 00:01:43,800
+When behavior changes, there are four steps to follow in order.
+
+26
+00:01:44,500 --> 00:01:45,160
+Okay, what are they?
+
+27
+00:01:45,940 --> 00:01:46,160
+One,
+
+28
+00:01:46,800 --> 00:01:49,440
+first the story of the goal agreed. Right.
+
+29
+00:01:49,840 --> 00:01:51,600
+Two, then the screens.
+
+30
+00:01:52,280 --> 00:01:52,540
+Three,
+
+31
+00:01:53,200 --> 00:01:57,440
+then the walkthrough. Mm-hmm. Four, only then what was built.
+
+32
+00:01:57,860 --> 00:01:58,880
+Only then what was built.
+
+33
+00:01:59,320 --> 00:01:59,660
+Got it.
+
+34
+00:02:00,720 --> 00:02:05,360
+Because, uh, a screen changed ahead of its story is a decision nobody agreed to.
+
+35
+00:02:06,660 --> 00:02:07,160
+That makes sense.
+
+36
+00:02:08,259 --> 00:02:13,760
+So how does this trace through an institution's request, um, maybe using Progressa?
+
+37
+00:02:14,460 --> 00:02:14,700
+Sure.
+
+38
+00:02:15,800 --> 00:02:20,380
+Using Progressa, and just to be clear, strictly as the fictional country of these examples.
+
+39
+00:02:20,660 --> 00:02:21,220
+Right, of course.
+
+40
+00:02:21,860 --> 00:02:28,200
+Let's say Harbourview University College asks PHEQA, and only PHEQA, to change its name.
+
+41
+00:02:28,940 --> 00:02:31,220
+So the Ministry of Education is not asked.
+
+42
+00:02:31,880 --> 00:02:38,360
+Correct. Now, a registration officer could, uh, write the new name into the register before your minister approves.
+
+43
+00:02:38,640 --> 00:02:40,340
+Right, they could just manually enter it.
+
+44
+00:02:40,660 --> 00:02:41,640
+They could. Mm-hmm.
+
+45
+00:02:41,840 --> 00:02:47,520
+But the screen does not own that fact. PHEQA's register of business rules owns it.
+
+46
+00:02:47,800 --> 00:02:53,160
+Ah, okay. So it is corrected there to require minister approval from MoEYS.
+
+47
+00:02:53,700 --> 00:02:57,820
+And finally, PHEQA's registrar, who owns the rules, confirms the correction.
+
+48
+00:02:58,120 --> 00:02:58,680
+Okay, so then
+
+49
+00:02:59,340 --> 00:03:03,200
+what does the program list as stale, and what will the recording actually show?
+
+50
+00:03:03,580 --> 00:03:06,720
+Well, the program lists everything made from the old version of the rule.
+
+51
+00:03:07,000 --> 00:03:13,600
+Which includes... Uh, that includes the shared groundwork, uh, the goals, their screens, the walkthroughs- Mm-hmm... and the application itself.
+
+52
+00:03:14,200 --> 00:03:20,520
+But importantly, MoEYS's documents are not stale because none of them was made from PHEQA's rule.
+
+53
+00:03:20,780 --> 00:03:22,080
+Right. That distinction makes sense.
+
+54
+00:03:22,320 --> 00:03:29,820
+Exactly. Now, the recording will show the list of everything the change reaches, uh, the application generated again, and the change on the running service.
+
+55
+00:03:30,200 --> 00:03:35,820
+Okay. And it passes only when the list names everything the change reaches and nothing is stale afterwards.
+
+56
+00:03:36,100 --> 00:03:39,180
+Mm-hmm. A change goes up to the document that owns the fact.
+
+57
+00:03:39,640 --> 00:03:41,980
+Correct it there, then produce everything below it again.
+
+58
+00:03:42,340 --> 00:03:43,800
+Sources are in the video description.

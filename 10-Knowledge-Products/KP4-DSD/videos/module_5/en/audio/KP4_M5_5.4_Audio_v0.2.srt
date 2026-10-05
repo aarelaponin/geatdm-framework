@@ -1,0 +1,227 @@
+1
+00:00:00,140 --> 00:00:04,180
+Module 5, video 5.4, Identity and Registries.
+
+2
+00:00:04,820 --> 00:00:07,400
+Use the block. Do not rebuild it. Right.
+
+3
+00:00:08,039 --> 00:00:11,140
+I mean, the core principle here is that the service takes a person's identity
+
+4
+00:00:11,840 --> 00:00:15,560
+and, you know, an institution's record directly from the body that actually keeps them.
+
+5
+00:00:15,920 --> 00:00:16,360
+Exactly.
+
+6
+00:00:17,060 --> 00:00:17,900
+So picture this.
+
+7
+00:00:18,980 --> 00:00:21,220
+A supplier offers to add a table of users
+
+8
+00:00:21,820 --> 00:00:25,160
+and, uh, maybe a table of institutions to your ministry's new application.
+
+9
+00:00:25,960 --> 00:00:27,120
+I mean, should you accept?
+
+10
+00:00:27,580 --> 00:00:35,740
+No, definitely not, because accepting this just creates local copies, meaning your data becomes, well, fragmented and siloed.
+
+11
+00:00:36,060 --> 00:00:37,480
+And duplicated everywhere, right?
+
+12
+00:00:37,620 --> 00:00:40,060
+Yeah, duplicated and super costly to change.
+
+13
+00:00:40,180 --> 00:00:45,260
+Basically, your application traps facts that it just has, you know, no reason to keep.
+
+14
+00:00:46,140 --> 00:00:48,120
+Okay, so if we avoid that,
+
+15
+00:00:49,040 --> 00:00:52,940
+how does the GovStack identity specification actually establish who is signing in?
+
+16
+00:00:53,900 --> 00:00:59,000
+Well, the specification uses OpenID Connect, and it relies on a central identity block.
+
+17
+00:00:59,560 --> 00:01:04,879
+The flow itself occurs in three steps. Step one, the user is sent to the identity block's own page.
+
+18
+00:01:05,560 --> 00:01:08,880
+Oh, so they aren't logging in on your application at all.
+
+19
+00:01:09,040 --> 00:01:09,240
+Right.
+
+20
+00:01:10,040 --> 00:01:14,140
+Then step two, the user signs in and approves exactly which facts are shared.
+
+21
+00:01:14,640 --> 00:01:16,400
+Makes sense. And the last step.
+
+22
+00:01:17,040 --> 00:01:19,160
+Step three, the application receives a code.
+
+23
+00:01:19,540 --> 00:01:22,700
+It exchanges it for a token and then reads those approved facts.
+
+24
+00:01:23,260 --> 00:01:28,360
+But wait, does this token exchange risk exposing a person's master identity across all these
+
+25
+00:01:29,020 --> 00:01:30,320
+different government applications?
+
+26
+00:01:30,800 --> 00:01:37,000
+You would think so, but no. The identity block gives each service a different unique identifier for the exact same person.
+
+27
+00:01:37,420 --> 00:01:40,820
+Oh, wow. So it's scoped just to that one specific service.
+
+28
+00:01:41,160 --> 00:01:46,700
+Yeah. Your application just keeps the specific identifier it was given, and absolutely no national number.
+
+29
+00:01:47,040 --> 00:01:47,340
+Got it.
+
+30
+00:01:48,160 --> 00:01:52,340
+So what does the GovStack digital registry specification require for
+
+31
+00:01:53,060 --> 00:01:54,520
+managing institutional records?
+
+32
+00:01:55,020 --> 00:02:04,140
+Well, a register lets other systems search, read, create, and, um, update its records through open interfaces, and it authorizes which systems and users may actually do so.
+
+33
+00:02:05,060 --> 00:02:10,000
+So how does this operate in, uh, Progressa, the, you know, the fictional country of these examples?
+
+34
+00:02:10,400 --> 00:02:15,660
+Right. So say an officer in your ministry signs in through the National Identity Authority, PNIA.
+
+35
+00:02:16,280 --> 00:02:23,460
+When opening a case, the application reads the record for Harbourview University College directly from PHEQA's register.
+
+36
+00:02:24,320 --> 00:02:26,720
+Directly from the source rather than a local database.
+
+37
+00:02:26,960 --> 00:02:36,760
+Exactly. Now, in Progressa, this design is the ministry's own choice, not the specification's, because only PHEQA's application writes the register of institutions.
+
+38
+00:02:37,480 --> 00:02:42,980
+Okay, so what is the consequence if your program relies on a local copy of the college's record instead?
+
+39
+00:02:43,820 --> 00:02:51,440
+Well, if PHEQA updates the college's name in the register, your local copy remains duplicated and locked into one supplier.
+
+40
+00:02:52,200 --> 00:02:53,680
+It's just completely stuck in the past.
+
+41
+00:02:53,960 --> 00:02:59,560
+Yeah. Your minister could literally sign a legal decision under a name the college no longer even holds.
+
+42
+00:03:00,240 --> 00:03:02,880
+Wow, that is a massive liability.
+
+43
+00:03:03,160 --> 00:03:03,700
+Definitely.
+
+44
+00:03:04,480 --> 00:03:10,760
+The reference architecture notes that digital public infrastructure is not neutral, and it actually shapes what can be built on top of it.
+
+45
+00:03:11,380 --> 00:03:13,680
+Because a block paid for once serves many, right?
+
+46
+00:03:13,760 --> 00:03:17,060
+Right. Whereas a copy is, well, it's really just a second register.
+
+47
+00:03:17,820 --> 00:03:19,800
+So what will the demonstration show for all this?
+
+48
+00:03:20,600 --> 00:03:23,720
+The recording will show a test officer signing in through the identity sign-in.
+
+49
+00:03:24,080 --> 00:03:28,100
+You'll see the application showing the identifier it was given, and, uh, no national number.
+
+50
+00:03:28,440 --> 00:03:29,740
+Just that unique identifier.
+
+51
+00:03:30,100 --> 00:03:35,260
+Exactly. And then an institution's record is opened, read directly from PHEQA's register.
+
+52
+00:03:36,000 --> 00:03:41,400
+It will pass when the sign-in completes, no national number appears, and the record agrees with the register.
+
+53
+00:03:42,160 --> 00:03:44,940
+So what is the core instruction when designing these systems?
+
+54
+00:03:45,560 --> 00:03:46,300
+It comes down to this.
+
+55
+00:03:47,140 --> 00:03:52,280
+Take who someone is from the identity block and what an institution is from its register.
+
+56
+00:03:52,940 --> 00:03:55,500
+Keep the identifier you are given and no copy.
+
+57
+00:03:56,420 --> 00:03:57,860
+Sources are in the video description.

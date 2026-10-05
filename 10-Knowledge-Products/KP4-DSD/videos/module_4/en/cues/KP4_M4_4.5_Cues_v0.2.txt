@@ -1,0 +1,26 @@
+# Slide cue file — KP4 Module 4, Video 4.5 "Reviewing the model: what it assumed, and what it could not express"
+# Deck:  KP4_M4_4.5_Deck_v0.1.pptx (9 slides)
+# Audio: KP4_M4_4.5_Audio_v0.2.m4a (runs to 4:24.3; brief v0.1; trimmed take of the first completed try)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: cold open as scripted, then the hook is told as an invented "imagine an AI assistant…"
+# scenario and followed by a "today's deep dive explores…" show-open. A cargo-flight analogy on slide 3 (boxes,
+# oversized items left behind, the warehouse), extended over four lines. Slide 4 adds an invented efficiency
+# objection ("isn't the whole appeal of an AI assistant to save time?") and recites the whole vocabulary list
+# ("fragmented, siloed, duplicated, rekeyed, locked into one supplier, costly to change") as the cost of a silent
+# gap. Slide 5 is thin: the card's plain-words consequence and the document it rests on are not said, and the
+# name-and-date ruling comes only on slide 6. "The original policy story document" (deck: the goal's story);
+# "single source of truth" added on slide 7; the head of the ICT unit is not named. Filler/backchannel
+# throughout. No sources line: the recap runs to the last second, so the Sources card cues on its last clause
+# (4:20, 4.3 s) — the recap's "rule on each one and record who ruled and when" is spoken over it. "loss" heard as
+# "laws" in the recap (SRT). Listen for Progressa (SRT: Progresa).
+
+0:00   # slide 1 — title card (cold open as scripted)
+0:08   # slide 2 — Hook: does the AI assistant tell you, or quietly decide?
+0:50   # slide 3 — Four ways a thing reaches the file (four numbered)
+1:42   # slide 4 — An assumption, and a loss
+2:43   # slide 5 — The cards the owner reads
+2:58   # slide 6 — MoEYS: two cards
+3:35   # slide 7 — When the answer is no (four steps numbered)
+4:08   # slide 8 — In one sentence
+4:20   # slide 9 — Sources

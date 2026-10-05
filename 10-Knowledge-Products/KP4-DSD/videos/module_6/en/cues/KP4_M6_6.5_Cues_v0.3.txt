@@ -1,0 +1,23 @@
+# Slide cue file — KP4 Module 6, Video 6.5 "The next service on the same foundation"
+# Deck:  KP4_M6_6.5_Deck_v0.1.pptx (8 slides; slide 3 carries figure F5, slide variant)
+# Audio: KP4_M6_6.5_Audio_v0.3.m4a (runs to 3:35.8; brief v0.1; trimmed take of try 2)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:36 against 5:00). Cold open names the video, then "today's mission for this
+# deep dive is ... digital public infrastructure" (show-open). The recap message (slide 7) is never said as
+# such — the take ends on slide 6's "the foundation is already paid for / pays only for what it adds", then
+# turns to the listener ("look at your own program ... leveraging existing blocks") — podcast close, and no
+# sources line. Slide 3 adds "locked into one supplier" / "costly to change" (house words, not on the slide).
+# Slide 5: "the employer can just trust it directly from the graduate" (loose). Slide 6 is thin: "named
+# person" acceptance and "written down before the plan is approved" not said. Heavy backchannel and filler
+# ("Oh, for sure", "Wow", "like", "um"). Reference architecture credited once, correctly (not neutral).
+# SRT spells the country "Progresa": listen for Progressa. PDCA said as letters.
+
+0:00   # slide 1 — title card (cold open: "Module six, video 6.5 ... the next service on the same foundation")
+0:22   # slide 2 — Hook: the next request is already on the table (Progressa, register once, graduates want proof)
+0:54   # slide 3 — Planning enables re-use (figure F5): faster to build my own sign-in? whole-of-government planning
+1:38   # slide 4 — The credential, one row of the catalogue (first PNIA sign-in, second PHEQA register over Linkup, adds the credential)
+2:24   # slide 5 — Three of the roles in the W3C standard (issuer, holder, verifier)
+2:56   # slide 6 — The same twelve documents, written once more
+3:22   # slide 7 — In one sentence ("the second service only pays for what it adds")
+3:30   # slide 8 — Sources (no sources line spoken; card holds 5.8 s over the closing turn to the listener)

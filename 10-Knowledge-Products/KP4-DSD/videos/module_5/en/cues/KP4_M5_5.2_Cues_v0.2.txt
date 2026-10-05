@@ -1,0 +1,24 @@
+# Slide cue file — KP4 Module 5, Video 5.2 "Nothing generated is edited by hand"
+# Deck:  KP4_M5_5.2_Deck_v0.1.pptx (10 slides; slide 7 is the demonstration stand-in, a storyboard)
+# Audio: KP4_M5_5.2_Audio_v0.2.m4a (runs to 3:38.2; brief v0.1; trimmed)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:38 against 5:00). Slide 6 is thin (~11 s): the Progressa form is named only as
+# "a label on a MoEYS form changed by hand right before a demo" and leads straight into the demonstration; the
+# form for approving a new name, the read-back's listing and the head of the ICT unit are not told. Slide 7 told in
+# the future tense as scripted, with its pass. Slide 3 adds "fragmented, siloed, costly to change"; slide 5 says
+# "the blueprint changed" for the description; idiom "caught red-handed"; "Find the link in the description" not said
+# (deck slide 7). Ends on an ad-lib after the recap ("That is how you stop your platform from being duplicated and
+# rekeyed. So true.") — no sources line. Gate's "in the description" outro hit is a false positive ("correct it in the
+# description", slide 8). MoEYS spelt "MOEYS" — listen for it said as a word. Filler/backchannel throughout.
+
+0:00   # slide 1 — title card (cold open as scripted)
+0:06   # slide 2 — Hook: a wrong label, the evening before the demonstration
+0:25   # slide 3 — Two versions of the truth (two outcomes numbered)
+1:17   # slide 4 — Correct up, generate down (three steps numbered)
+1:42   # slide 5 — The read-back (three marks numbered)
+2:14   # slide 6 — Progressa: a label on MoEYS's form
+2:25   # slide 7 — A hand edit shown up (demonstration stand-in, future tense)
+2:53   # slide 8 — Write it into the contract (three terms numbered)
+3:22   # slide 9 — In one sentence
+3:34   # slide 10 — Sources

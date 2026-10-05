@@ -1,0 +1,336 @@
+1
+00:00:00,420 --> 00:00:06,360
+So, uh, if you're a government IT official running these large systems, you've probably faced this exact scenario.
+
+2
+00:00:06,640 --> 00:00:14,440
+Oh, yeah. Right. Totally. You, um, you hire a vendor, and their contract promises something like, uh, a working system and its documentation,
+
+3
+00:00:14,840 --> 00:00:16,480
+and well, they get to work.
+
+4
+00:00:16,840 --> 00:00:17,940
+And it sounds fine at first.
+
+5
+00:00:18,120 --> 00:00:28,120
+It sounds great. But, you know, the second you try to change a feature, like a year later, you realize the systems have become completely fragmented, siloed, and, um, just incredibly costly to change.
+
+6
+00:00:28,300 --> 00:00:29,720
+Yeah. It happens all the time.
+
+7
+00:00:30,200 --> 00:00:37,680
+Welcome to the Deep Dive. Today, our mission is to, um, really look at how to manage technology suppliers so you prevent your systems from becoming duplicated or,
+
+8
+00:00:38,240 --> 00:00:39,740
+you know, locked into one supplier.
+
+9
+00:00:40,080 --> 00:00:43,620
+Right. Because that phrase you mentioned, a working system and its documentation,
+
+10
+00:00:44,320 --> 00:00:47,320
+is, uh, it's actually a massive risk for your ministry.
+
+11
+00:00:48,140 --> 00:00:49,780
+Really? Why is that so dangerous?
+
+12
+00:00:50,140 --> 00:00:53,640
+Well, I mean, it doesn't specify what you actually receive.
+
+13
+00:00:54,080 --> 00:00:59,120
+And crucially, you know, it doesn't state who on your side actually decides if it's good enough.
+
+14
+00:00:59,660 --> 00:01:02,980
+Oh, so you're just leaving the definition of success up to the vendor.
+
+15
+00:01:03,220 --> 00:01:07,640
+Exactly. You're paying them to build it, but they're basically grading their own homework.
+
+16
+00:01:08,060 --> 00:01:11,080
+Yeah, that's a direct path to getting locked into one supplier.
+
+17
+00:01:11,240 --> 00:01:16,160
+It really is. So to fix this, we need to look at specification-driven development,
+
+18
+00:01:17,000 --> 00:01:22,240
+or, uh, SDD. Right, SDD. Yeah. And instead of just one vague deliverable,
+
+19
+00:01:23,000 --> 00:01:26,460
+SDD breaks a service down into 12 distinct documents.
+
+20
+00:01:26,740 --> 00:01:30,340
+Oh, wow. Yeah. And they're delivered in a very fixed sequence.
+
+21
+00:01:30,740 --> 00:01:36,700
+It starts with the law or the mandate. That's the very first document, and it is never edited by the supplier.
+
+22
+00:01:37,020 --> 00:01:43,320
+Got it. And it goes sequentially all the way down to the 12th deliverable, which is, you know, the working application itself.
+
+23
+00:01:43,680 --> 00:01:47,040
+But, I mean, isn't requiring 12 separate deliverables just, uh,
+
+24
+00:01:47,660 --> 00:01:49,620
+overcomplicating the procurement process?
+
+25
+00:01:49,680 --> 00:01:51,140
+Like, won't that just slow everything down?
+
+26
+00:01:51,420 --> 00:01:58,340
+It sounds like a lot, but no, because each document has to be completely finished and accepted before the next one is even written.
+
+27
+00:01:58,620 --> 00:01:59,020
+Oh, I see.
+
+28
+00:01:59,280 --> 00:02:00,780
+Yeah. It prevents you from being locked in.
+
+29
+00:02:01,420 --> 00:02:04,260
+If they fail early on, you just take what you have to a new vendor.
+
+30
+00:02:04,780 --> 00:02:07,200
+So you always own the exact specifications.
+
+31
+00:02:07,240 --> 00:02:12,580
+Precisely. Okay, so how exactly should these deliverables be, you know, written into the contract?
+
+32
+00:02:12,700 --> 00:02:16,760
+Well, you have to name three specific things for every single deliverable.
+
+33
+00:02:16,960 --> 00:02:17,720
+Okay, what's number one?
+
+34
+00:02:18,140 --> 00:02:21,800
+Number one is the form, like the actual blank instrument it's written on.
+
+35
+00:02:22,540 --> 00:02:24,880
+So you know exactly what it should look like when it arrives?
+
+36
+00:02:25,280 --> 00:02:25,500
+Right.
+
+37
+00:02:26,200 --> 00:02:31,160
+And number two is the person who accepts it, but they have to be named by their role.
+
+38
+00:02:31,520 --> 00:02:35,340
+And, uh, the critical rule here is the supplier never accepts its own work.
+
+39
+00:02:35,800 --> 00:02:36,480
+Makes total sense.
+
+40
+00:02:37,000 --> 00:02:39,260
+And number three is the check it must pass.
+
+41
+00:02:39,640 --> 00:02:43,000
+So like a checklist, a comparison, or an automated program.
+
+42
+00:02:43,780 --> 00:02:46,360
+Okay, so it's sort of like, um, building a house, right?
+
+43
+00:02:46,480 --> 00:02:48,800
+You wouldn't let the contractor approve their own blueprints.
+
+44
+00:02:49,320 --> 00:02:49,720
+Exactly.
+
+45
+00:02:50,580 --> 00:02:55,720
+But, uh, how do we protect the ministry once the software's actually being built, like during the actual coding?
+
+46
+00:02:56,600 --> 00:02:59,800
+For that, you need two really strict clauses in the contract.
+
+47
+00:03:00,120 --> 00:03:01,060
+Okay, two clauses?
+
+48
+00:03:01,720 --> 00:03:06,200
+Yeah. Clause one: The application is generated entirely from the accepted model.
+
+49
+00:03:06,840 --> 00:03:07,820
+Meaning what exactly?
+
+50
+00:03:08,420 --> 00:03:12,520
+Meaning, uh, an engine builds it, and absolutely nothing is edited by hand.
+
+51
+00:03:13,060 --> 00:03:14,480
+Wait, really? No hand coding at all?
+
+52
+00:03:15,020 --> 00:03:21,400
+None. Because if the developer manually patches something, the system and the documentation are now inconsistent.
+
+53
+00:03:21,740 --> 00:03:25,840
+Ah, which makes it, uh, rekeyed and costly to change later.
+
+54
+00:03:26,140 --> 00:03:32,240
+Exactly. And clause two: Every open question is delivered with an owner and a date.
+
+55
+00:03:32,980 --> 00:03:34,180
+An owner and a date.
+
+56
+00:03:34,560 --> 00:03:39,680
+Right. Because if a supplier encounters a problem and just, you know, guesses an answer to keep moving,
+
+57
+00:03:40,360 --> 00:03:42,060
+that is legally a fault in delivery.
+
+58
+00:03:42,560 --> 00:03:42,740
+Wow.
+
+59
+00:03:43,700 --> 00:03:46,160
+Okay, so let's look at how this plays out in practice.
+
+60
+00:03:46,800 --> 00:03:50,240
+We have this example of, uh, the fictional country of Progressa.
+
+61
+00:03:50,620 --> 00:03:53,580
+Yes, Progressa. And their Ministry of Education used this.
+
+62
+00:03:54,120 --> 00:03:56,800
+How did they handle the acceptances in their annex?
+
+63
+00:03:57,220 --> 00:03:59,920
+They explicitly mapped out four key acceptances.
+
+64
+00:04:00,460 --> 00:04:02,700
+First, the register of what was asked.
+
+65
+00:04:03,280 --> 00:04:04,240
+And who accepted that?
+
+66
+00:04:04,860 --> 00:04:06,980
+That was accepted by the director of higher education.
+
+67
+00:04:07,620 --> 00:04:08,420
+Okay, pretty high level.
+
+68
+00:04:08,760 --> 00:04:08,900
+Yeah.
+
+69
+00:04:09,660 --> 00:04:15,240
+Then the second acceptance was the screens of each goal, and that required a three-person review.
+
+70
+00:04:15,800 --> 00:04:18,100
+Three people. Who were they? The owner,
+
+71
+00:04:18,740 --> 00:04:24,060
+the builder, and the user. So the actual officer using it is right there in the room.
+
+72
+00:04:24,600 --> 00:04:25,640
+Oh, that's incredibly smart.
+
+73
+00:04:26,300 --> 00:04:27,420
+What about the technical side?
+
+74
+00:04:27,920 --> 00:04:30,380
+That's the third one, the files a program reads.
+
+75
+00:04:30,820 --> 00:04:33,240
+That was approved by the head of the ICT unit.
+
+76
+00:04:33,680 --> 00:04:35,000
+Got it. And the fourth.
+
+77
+00:04:35,500 --> 00:04:38,280
+The fourth is the working application itself,
+
+78
+00:04:38,920 --> 00:04:42,380
+and it's only accepted when an officer finishes a real task on it.
+
+79
+00:04:42,620 --> 00:04:44,840
+Not just a demo, but a real task. Exactly.
+
+80
+00:04:45,520 --> 00:04:45,620
+So
+
+81
+00:04:46,380 --> 00:04:56,140
+to summarize, to avoid those siloed systems, you have to explicitly name all 12 documents as deliverables, detailing the form, the acceptor, and the check for each.
+
+82
+00:04:56,520 --> 00:04:57,960
+And enforce those two clauses.
+
+83
+00:04:58,560 --> 00:05:03,740
+Nothing generated is edited by hand, and every open question gets an owner and a date.
+
+84
+00:05:04,140 --> 00:05:04,400
+Right.
+

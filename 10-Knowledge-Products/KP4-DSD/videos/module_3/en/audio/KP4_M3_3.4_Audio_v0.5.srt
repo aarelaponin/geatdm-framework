@@ -1,0 +1,255 @@
+1
+00:00:00,360 --> 00:00:04,600
+Module 3, Video 3.4, Screens Officers Can Use
+
+2
+00:00:05,240 --> 00:00:10,020
+An officer never types what the system already knows and never chooses from an endless list.
+
+3
+00:00:10,840 --> 00:00:17,660
+So, uh, thinking about that, why does a seemingly small waste on an internal screen even matter to a ministry's operations?
+
+4
+00:00:18,080 --> 00:00:19,780
+Well, it really comes down to the frequency.
+
+5
+00:00:20,040 --> 00:00:24,040
+I mean, an applicant uses a self-service portal, you know, maybe once or twice.
+
+6
+00:00:24,300 --> 00:00:25,120
+Right. Just occasionally.
+
+7
+00:00:25,300 --> 00:00:28,840
+Exactly. But an officer uses their screens many times a day.
+
+8
+00:00:29,160 --> 00:00:36,380
+Oh, wow. Yeah. So a small waste is repeated thousands of times a year, and, uh, every single value typed again is a chance for a mistake.
+
+9
+00:00:36,760 --> 00:00:37,860
+Which really adds up for
+
+10
+00:00:38,500 --> 00:00:40,020
+the official running these systems.
+
+11
+00:00:40,260 --> 00:00:41,100
+It definitely does.
+
+12
+00:00:41,820 --> 00:00:41,940
+So
+
+13
+00:00:42,600 --> 00:00:48,460
+how do we prevent screens from just becoming like public web forms where everything is typed in free text?
+
+14
+00:00:49,220 --> 00:00:51,680
+By applying the five rules of the SDD method.
+
+15
+00:00:52,000 --> 00:00:52,760
+I'll number them aloud.
+
+16
+00:00:53,400 --> 00:00:55,940
+One, never type what the system already knows.
+
+17
+00:00:56,360 --> 00:00:57,200
+Okay. Makes sense.
+
+18
+00:00:57,760 --> 00:00:59,780
+Two, never choose from an endless list.
+
+19
+00:01:00,540 --> 00:01:03,140
+Three, choose a decision from the decisions allowed.
+
+20
+00:01:03,340 --> 00:01:04,780
+Do not write it as free text.
+
+21
+00:01:05,180 --> 00:01:06,520
+Right. No free text decisions.
+
+22
+00:01:07,320 --> 00:01:10,280
+Four, state on the screen the rule that governs the work.
+
+23
+00:01:11,200 --> 00:01:13,780
+And five, show an open question with its owner.
+
+24
+00:01:14,180 --> 00:01:15,420
+Never answer it with a guess.
+
+25
+00:01:16,080 --> 00:01:23,820
+Let's ground this a bit. What does an initial unoptimized screen look like, say, for a PHEQA inspection visit in
+
+26
+00:01:24,120 --> 00:01:24,620
+Progressa?
+
+27
+00:01:25,400 --> 00:01:28,860
+And, uh, Progressa is purely the fictional country of these examples.
+
+28
+00:01:29,480 --> 00:01:30,240
+Right. Of course.
+
+29
+00:01:30,840 --> 00:01:37,340
+So imagine an AI-drafted screen. The inspector has to pick from a list of all two hundred and fourteen institutions.
+
+30
+00:01:37,900 --> 00:01:40,760
+Wow. That is a massive list to scroll through.
+
+31
+00:01:41,400 --> 00:01:44,340
+It really is. Then she types the address manually.
+
+32
+00:01:45,000 --> 00:01:46,480
+Wait, even if it's already known?
+
+33
+00:01:47,100 --> 00:01:48,060
+Yes, manually.
+
+34
+00:01:48,800 --> 00:01:52,440
+After that, she writes the outcome as a completely free text sentence.
+
+35
+00:01:52,800 --> 00:01:56,260
+Plus, there's a box arbitrarily requiring two signatures with no source.
+
+36
+00:01:56,780 --> 00:01:57,640
+That sounds
+
+37
+00:01:58,420 --> 00:01:59,480
+highly prone to errors.
+
+38
+00:02:00,220 --> 00:02:03,960
+It is. And to top it off, she can save a visit on literally any date.
+
+39
+00:02:04,720 --> 00:02:07,640
+Okay, so how do the first four rules fix this draft?
+
+40
+00:02:08,440 --> 00:02:13,180
+Well, instead of scrolling, the officer just types part of the register number to pick from a few matches.
+
+41
+00:02:13,660 --> 00:02:15,180
+Huh, skipping that huge list.
+
+42
+00:02:15,660 --> 00:02:18,960
+Yes. Second, the address autofills from the register.
+
+43
+00:02:19,740 --> 00:02:20,140
+Much better.
+
+44
+00:02:20,880 --> 00:02:25,500
+Third, the outcome is restricted to three specific choices, though there is a box for findings.
+
+45
+00:02:26,000 --> 00:02:26,340
+Got it.
+
+46
+00:02:27,260 --> 00:02:28,020
+And what about the date?
+
+47
+00:02:28,420 --> 00:02:33,760
+A line right under the date states the rule that a recommendation must rest on a visit made within ninety days.
+
+48
+00:02:34,260 --> 00:02:35,320
+That covers the first four.
+
+49
+00:02:36,040 --> 00:02:40,640
+How does the fifth rule resolve the AI's guess that, uh, two inspectors must sign?
+
+50
+00:02:41,220 --> 00:02:47,960
+Well, the regulations actually gave no specific number, so now the field states, "To be confirmed by the Registrar of PHEQA."
+
+51
+00:02:48,700 --> 00:02:51,300
+Oh, I see. So it clearly assigns an owner.
+
+52
+00:02:51,740 --> 00:02:57,780
+Exactly. The screen's design cannot be accepted while that mark stands, so the question reached the registrar who answered it.
+
+53
+00:02:58,220 --> 00:02:59,200
+And what was the answer?
+
+54
+00:02:59,900 --> 00:03:01,880
+One inspector and the head of the inspectorate.
+
+55
+00:03:02,800 --> 00:03:05,480
+What did an actual inspector say about these changes?
+
+56
+00:03:06,040 --> 00:03:10,540
+She confirmed that retyping addresses or scrolling long lists directly causes errors.
+
+57
+00:03:11,760 --> 00:03:13,580
+I can completely see why.
+
+58
+00:03:13,800 --> 00:03:18,660
+Yeah. So my advice, before you accept a screen in your program, sit beside an officer.
+
+59
+00:03:19,800 --> 00:03:20,940
+Just to observe how they work.
+
+60
+00:03:21,380 --> 00:03:24,780
+Right. Count the values she types that the system already holds.
+
+61
+00:03:25,560 --> 00:03:29,760
+Okay. Count the lists she scrolls and the decisions she writes in her own words.
+
+62
+00:03:30,820 --> 00:03:33,240
+That is a highly practical way to measure it.
+
+63
+00:03:33,780 --> 00:03:37,760
+Count what an officer types that the system already knows and every list she scrolls.
+
+64
+00:03:38,060 --> 00:03:41,040
+Each one is a rule not followed and a mistake waiting to happen.

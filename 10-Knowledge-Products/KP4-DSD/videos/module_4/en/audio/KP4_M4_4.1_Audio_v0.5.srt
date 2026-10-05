@@ -1,0 +1,291 @@
+1
+00:00:00,280 --> 00:00:08,119
+Welcome to today's deep dive. So our mission today is to uncover exactly why our digital systems in government become so,
+
+2
+00:00:08,680 --> 00:00:10,420
+you know, siloed or fragmented. Right.
+
+3
+00:00:11,080 --> 00:00:18,840
+And we're gonna look at how answering just four core questions can prevent these systems from becoming duplicated, and honestly, just really costly to change.
+
+4
+00:00:19,240 --> 00:00:21,280
+It is a critical mission, really, because,
+
+5
+00:00:21,900 --> 00:00:26,320
+um, we tend to blame the technology itself when software in your ministry doesn't work well.
+
+6
+00:00:26,560 --> 00:00:32,140
+Oh, absolutely. But the root cause is almost always how the design was agreed upon in the first place.
+
+7
+00:00:32,659 --> 00:00:37,480
+Usually, officials will agree on the screens for a new application, like one goal at a time.
+
+8
+00:00:37,760 --> 00:00:39,700
+Right, which seems to make sense at first.
+
+9
+00:00:39,920 --> 00:00:44,780
+Exactly. It seems logical. But doing it that way leaves these massive structural gaps.
+
+10
+00:00:45,420 --> 00:00:50,460
+So why is it so dangerous to design screens one by one based on specific goals?
+
+11
+00:00:50,520 --> 00:00:50,660
+I mean,
+
+12
+00:00:51,320 --> 00:00:55,580
+it seems like the most straightforward way to focus on what a specific screen needs to accomplish.
+
+13
+00:00:55,920 --> 00:01:01,440
+Well, there are four universal questions that cross every single screen, and, uh, no single goal can answer them.
+
+14
+00:01:01,900 --> 00:01:02,660
+Okay, what are they?
+
+15
+00:01:03,000 --> 00:01:05,560
+Number one, how do you pick a value from a list?
+
+16
+00:01:06,080 --> 00:01:09,140
+Number two, how do you find one record among many?
+
+17
+00:01:09,460 --> 00:01:13,580
+Right. Number three, how does a case move from one state to the next?
+
+18
+00:01:13,720 --> 00:01:16,660
+And number four, what happens when you act on a record?
+
+19
+00:01:16,920 --> 00:01:25,340
+Wait, let me pause you there. Are you saying if we don't, like, explicitly document the answers to those four questions across the entire system,
+
+20
+00:01:26,060 --> 00:01:26,660
+the code just
+
+21
+00:01:27,880 --> 00:01:28,880
+decides for us?
+
+22
+00:01:29,600 --> 00:01:37,940
+Basically, yes. If you don't settle these four questions in one central document, the program that builds the application just settles them for you by default.
+
+23
+00:01:38,320 --> 00:01:39,000
+Oh, wow.
+
+24
+00:01:39,680 --> 00:01:46,520
+Yeah, and because different developers might be building different screens, the software will often settle those questions differently on every single page.
+
+25
+00:01:47,160 --> 00:01:52,020
+Ah, so that's exactly why systems become so duplicated and locked in to one supplier.
+
+26
+00:01:52,080 --> 00:01:53,920
+It's all just rekeyed everywhere.
+
+27
+00:01:54,460 --> 00:01:57,240
+Exactly, and incredibly costly to change.
+
+28
+00:01:57,860 --> 00:02:01,260
+Okay, so if standardizing these decisions solves the problem,
+
+29
+00:02:02,060 --> 00:02:11,140
+how do they actually do it in practice? Because, you know, it sounds like standardizing all of this would require this massive, overwhelming master list for users to scroll through.
+
+30
+00:02:11,780 --> 00:02:19,960
+It's a, it's a really common assumption, but let's look at the fictional country of these examples, Progressa, specifically their Ministry of Education, or MoEYS.
+
+31
+00:02:20,180 --> 00:02:25,980
+Okay. To answer that first question, how to pick a value, an officer uses just seven lists.
+
+32
+00:02:26,380 --> 00:02:31,180
+Only seven. Just seven, and each is fixed by Progressa's higher education regulations.
+
+33
+00:02:31,640 --> 00:02:33,700
+The ministry keeps none of those lists themselves.
+
+34
+00:02:33,980 --> 00:02:38,440
+Oh, I see. So no individual screen in their application has the power to change them.
+
+35
+00:02:38,740 --> 00:02:39,240
+Exactly.
+
+36
+00:02:40,080 --> 00:02:43,460
+Okay, so that solves the picking problem, but what about finding a record?
+
+37
+00:02:43,840 --> 00:02:47,820
+How do they stop users from just drowning in data when they need a specific file?
+
+38
+00:02:48,180 --> 00:02:51,880
+So to find an institution, the officer searches PHEQA's register.
+
+39
+00:02:52,420 --> 00:02:54,780
+They search by the institution's name or register number.
+
+40
+00:02:54,940 --> 00:02:56,820
+Right. They never scroll a massive list.
+
+41
+00:02:57,380 --> 00:02:59,480
+In fact, most of the time, they don't search at all.
+
+42
+00:02:59,840 --> 00:03:04,920
+They just open a curated list of what's waiting for their specific attention, and well, they just pick a row.
+
+43
+00:03:05,740 --> 00:03:08,300
+That makes finding things so much more manageable.
+
+44
+00:03:08,460 --> 00:03:11,540
+But, uh, what happens when a case actually progresses?
+
+45
+00:03:11,800 --> 00:03:15,800
+Because moving and acting on records is usually where things get super fragmented.
+
+46
+00:03:16,600 --> 00:03:20,200
+Their solution for moving and acting is actually brilliantly simple.
+
+47
+00:03:20,680 --> 00:03:24,500
+So in Progressa, no record in this application has states.
+
+48
+00:03:24,760 --> 00:03:25,300
+Wait, really?
+
+49
+00:03:26,040 --> 00:03:29,120
+No states at all? Like, no pending or approved?
+
+50
+00:03:29,780 --> 00:03:32,600
+Nope, no states. Decisions are written once.
+
+51
+00:03:32,940 --> 00:03:37,220
+If a correction is needed, it's just saved as a new version, so nothing technically moves.
+
+52
+00:03:38,280 --> 00:03:39,800
+That is fascinating.
+
+53
+00:03:40,560 --> 00:03:42,800
+And what about when they act on a record?
+
+54
+00:03:43,240 --> 00:03:46,260
+The record she acts on is carried into the next screen that opens.
+
+55
+00:03:46,360 --> 00:03:49,420
+It's perfectly filled in and locked. The officer never types it again.
+
+56
+00:03:50,780 --> 00:03:53,700
+Oh, so no rekeying information.
+
+57
+00:03:54,200 --> 00:03:57,680
+None, and everything sits neatly in just five menu categories.
+
+58
+00:03:58,000 --> 00:04:01,920
+Number one, licenses. Number two, names, the list and reviews.
+
+59
+00:04:02,360 --> 00:04:04,080
+Number three, suspension and cancellation.
+
+60
+00:04:04,400 --> 00:04:07,340
+Number four, the Gazette. And number five, requests for review.
+
+61
+00:04:08,000 --> 00:04:08,980
+Just five categories.
+
+62
+00:04:10,220 --> 00:04:13,520
+I mean, that limitation forces the software to behave predictably.
+
+63
+00:04:14,300 --> 00:04:18,660
+But someone has to actually enforce this blueprint before the machine is built, right?
+
+64
+00:04:19,320 --> 00:04:24,080
+It seems surprising that the ultimate decision-maker doesn't have to review every single screen.
+
+65
+00:04:24,640 --> 00:04:26,520
+And that is the power of the single document.
+
+66
+00:04:27,000 --> 00:04:31,360
+One analyst writes it, then the director of higher education at MoEYS accepts it.
+
+67
+00:04:32,180 --> 00:04:33,400
+Without reading every screen again.
+
+68
+00:04:33,820 --> 00:04:38,260
+Right. She reads a short answer, a table for each question, and clicks a few sample pages.
+
+69
+00:04:38,480 --> 00:04:43,500
+She signs and dates it, and from then on, everything built is measured against that single document.
+
+70
+00:04:44,240 --> 00:04:46,380
+So the takeaway here for your program
+
+71
+00:04:46,980 --> 00:04:51,080
+is that before any application is described for the machine, you need that document.
+
+72
+00:04:51,820 --> 00:04:57,600
+You ask for the one document that settles pick, find, move, and act, click its pages, then accept it in writing.
+
+73
+00:04:58,820 --> 00:05:00,260
+Sources are in the video description.

@@ -1,0 +1,23 @@
+# Slide cue file — KP4 Module 5, Video 5.1 "From one file to a running application"
+# Deck:  KP4_M5_5.1_Deck_v0.1.pptx (10 slides; slide 8 is the demonstration stand-in, a storyboard)
+# Audio: KP4_M5_5.1_Audio_v0.9.m4a (runs to 3:31.8; brief v0.3; not trimmed — the raw take ends on the sources line)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:32 against 5:00), segments brief. Slide 3 drops "each document accepted before the
+# next begins" and the records/screens list; slide 6 tells the PHEQA register before the five menu categories
+# (deck: after) and drops the forms and lists the model asks for. Slide 5 adds "locked into one supplier" and
+# "costly to change" (not in the deck). Slide 8 told in the future tense as scripted, but Host B reads a brief line
+# aloud ("you need to understand this slide as a storyboard"). MoEYS said "Moy's"; PHEQA said "PHEQ" (listen);
+# SRT spells the country "Progessa": listen for Progressa. Filler/backchannel ("um", "Right", "Got it", "I'm like").
+# Recap at 3:19, "Sources are in the video description." at 3:30 — Sources card at 3:29 (2.8 s, the audio ends there).
+
+0:00   # slide 1 — title card (cold open as scripted: title + Host B's sentence)
+0:11   # slide 2 — Hook: "The application is built." Built from what?
+0:27   # slide 3 — One file, read by a program
+0:54   # slide 4 — What the kit makes from it (four things numbered)
+1:21   # slide 5 — Installed, not rebuilt
+1:45   # slide 6 — Progressa: MoEYS's application (five categories numbered)
+2:18   # slide 7 — The questions you ask of the result (four numbered)
+2:47   # slide 8 — From the file to the menu (demonstration stand-in, future tense)
+3:18   # slide 9 — In one sentence
+3:29   # slide 10 — Sources

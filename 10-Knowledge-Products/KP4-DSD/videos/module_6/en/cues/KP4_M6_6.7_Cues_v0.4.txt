@@ -1,0 +1,26 @@
+# Slide cue file — KP4 Module 6, Video 6.7 "Before you rely on it: what the method does not claim"
+# Deck:  KP4_M6_6.7_Deck_v0.1.pptx (7 slides; no Sources slide — the recap slide is last)
+# Audio: KP4_M6_6.7_Audio_v0.4.m4a (runs to 3:48.1; brief v0.1; trimmed take of try 2 — the raw v0.3 opened
+#        "Welcome to the Deep Dive ... today's mission", cut by the trim)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:48 against 5:00). No scripted cold open: the take starts mid-show-open ("Right.
+# Yep. And we're looking at a really counterintuitive concept today"), so the title card holds over an
+# improvised framing of slide 1's message. Podcast framing ("I have to push back", "shiny sales pitch",
+# "silver bullet"), a car engine/transmission metaphor on slide 3. Invented: "reading these written limits is
+# literally mandatory before you even start using it" (deck: read them before you rely on it); "a massive
+# risk"; "costly to change ... if discipline is not strictly maintained" (close to the deck). Slide 5 is thin:
+# "which of the limits bear on the service and what the ministry will do" and "the head of ICT signs" not said;
+# "we have the Progressa example, right?" (loose framing, not a source named). Slide 6 omits the named-reviewer
+# and watch-more-closely examples. The recap message (slide 7) is never said; the take ends "That is such a
+# powerful takeaway for today." No overclaim of the method (it never says the method guarantees or proves
+# anything). Backchannel ("Wow", "Right", "Got it"). Both lists numbered aloud (four limits, two missing
+# standards). SRT spells the country "Progessa": listen for Progressa.
+
+0:00   # slide 1 — title card (improvised opener on why a method documents its limits)
+0:13   # slide 2 — Hook: what could go wrong with this method?
+0:53   # slide 3 — What the method does not claim (four numbered)
+2:14   # slide 4 — What it says is still missing (two numbered; write it into the register)
+2:52   # slide 5 — The risk paragraph (illustrative): Progressa's head of ICT, briefing note, all seven quoted
+3:27   # slide 6 — Why stated limits help you
+3:42   # slide 7 — In one sentence (recap not said; card holds over the last line)

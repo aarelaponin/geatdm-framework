@@ -1,0 +1,155 @@
+1
+00:00:00,140 --> 00:00:02,420
+Module five, video 5.5.
+
+2
+00:00:03,460 --> 00:00:07,720
+The services contract with the registration block and its data interface
+
+3
+00:00:09,000 --> 00:00:14,040
+And, uh, the contract another system reads is produced from the description, not written beside it.
+
+4
+00:00:14,760 --> 00:00:15,040
+Right.
+
+5
+00:00:15,700 --> 00:00:20,220
+So, um, if we look at how two applications actually rely on a single contract,
+
+6
+00:00:21,200 --> 00:00:24,940
+a question a director general might ask is, well, how does that work in practice?
+
+7
+00:00:25,400 --> 00:00:27,200
+Like when your ministry's application
+
+8
+00:00:27,860 --> 00:00:30,800
+asks the quality authority's application for an institution.
+
+9
+00:00:31,860 --> 00:00:36,420
+Well, they rely on a contract dictating exactly what may be asked, and you know, what comes back.
+
+10
+00:00:37,080 --> 00:00:41,020
+Because if that contract is written by hand, they inevitably drift apart over time.
+
+11
+00:00:41,820 --> 00:00:42,580
+Yeah, that makes sense.
+
+12
+00:00:43,560 --> 00:00:46,160
+So, uh, what exactly does this contract entail?
+
+13
+00:00:47,080 --> 00:00:50,240
+It says three things. Number one, what another system may ask for.
+
+14
+00:00:50,540 --> 00:00:53,700
+Number two, what it must send. And number three, what comes back.
+
+15
+00:00:53,820 --> 00:00:59,800
+And, um, it is written in a published standard form, the OpenAPI specification, so programs can read it.
+
+16
+00:01:00,360 --> 00:01:00,740
+Oh, wow.
+
+17
+00:01:01,380 --> 00:01:03,280
+Okay, so if programs read it directly,
+
+18
+00:01:04,060 --> 00:01:07,060
+how is the contract produced under the, uh, SDD method?
+
+19
+00:01:07,560 --> 00:01:11,780
+Under that method, the description already dictates what the register holds and publishes.
+
+20
+00:01:12,240 --> 00:01:15,200
+So a program produces the contract from that description.
+
+21
+00:01:15,360 --> 00:01:16,880
+I see. So it's totally automated.
+
+22
+00:01:17,120 --> 00:01:20,800
+Exactly. If the description changes, the contract is simply produced again.
+
+23
+00:01:21,060 --> 00:01:22,940
+You correct the description, never the copy.
+
+24
+00:01:23,400 --> 00:01:28,740
+Right. Correct the description. So how does all of this apply to the GovStack registration block?
+
+25
+00:01:29,360 --> 00:01:35,620
+It applies across three areas. Number one, operations for applying online, which covers services, forms, and documents.
+
+26
+00:01:36,200 --> 00:01:40,700
+Number two, operations for processing, so applications and officers' tasks.
+
+27
+00:01:41,180 --> 00:01:45,760
+And number three, for designing services and workflows, noting no interface is specified yet.
+
+28
+00:01:46,480 --> 00:01:51,160
+Okay, can we actually see this in, um, Progressa, the fictional country of these examples?
+
+29
+00:01:51,700 --> 00:02:00,020
+Yes. Progressa's short contract outlines that MoEYS may ask for an institution by register number, like INS dash zero zero two one seven,
+
+30
+00:02:00,520 --> 00:02:03,380
+or a list, but they cannot ask for unpublished data.
+
+31
+00:02:04,100 --> 00:02:07,780
+By unpublished, you mean things like inspections or fees?
+
+32
+00:02:08,060 --> 00:02:13,160
+Exactly. And all calls go through Linkup, giving business and IT one shared language.
+
+33
+00:02:13,520 --> 00:02:18,420
+That shared language is key. So what will the demonstration storyboard actually show us?
+
+34
+00:02:19,100 --> 00:02:24,620
+It will show MoEYS's application asking for INS dash zero zero two one seven,
+
+35
+00:02:25,280 --> 00:02:30,200
+and, uh, it will pass when the record returned agrees with PHEQA's register.
+
+36
+00:02:30,820 --> 00:02:33,580
+Keep in mind this is a storyboard, so nothing has been recorded yet.
+
+37
+00:02:33,820 --> 00:02:38,140
+Understood. A contract produced from the accepted documents cannot drift from them.
+
+38
+00:02:38,820 --> 00:02:41,920
+Read it as a plain list of what may be asked and what may not.
+
+39
+00:02:42,500 --> 00:02:44,260
+Sources are in the video description.

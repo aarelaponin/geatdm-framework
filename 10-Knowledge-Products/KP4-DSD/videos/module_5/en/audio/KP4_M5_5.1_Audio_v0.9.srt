@@ -1,0 +1,207 @@
+1
+00:00:00,140 --> 00:00:02,260
+Module 5, Video 5.1:
+
+2
+00:00:02,880 --> 00:00:05,180
+From one file to a running application.
+
+3
+00:00:05,740 --> 00:00:11,040
+The kit turns the model into the platform's forms, lists, menus, and workflow, and installs them.
+
+4
+00:00:11,660 --> 00:00:14,660
+Your supplier reports that the ministry's new application is built.
+
+5
+00:00:15,720 --> 00:00:16,800
+Built from what?
+
+6
+00:00:18,000 --> 00:00:18,180
+Well,
+
+7
+00:00:18,960 --> 00:00:27,140
+before you accept that report, you really must know what was built from what because, um, a single file decides almost everything you will see on the platform.
+
+8
+00:00:27,580 --> 00:00:33,060
+Just one file. So, uh, how is this file evaluated before the build even begins?
+
+9
+00:00:33,880 --> 00:00:43,400
+Right. So through the specification driven development method, the SDD method, the application model is actually written last specifically for a program to read.
+
+10
+00:00:44,100 --> 00:00:46,180
+Oh, I see. So a program checks it.
+
+11
+00:00:46,540 --> 00:00:53,660
+Exactly. A program checks the file, and it will flat out refuse it if it contradicts the documents your officials have already accepted.
+
+12
+00:00:54,040 --> 00:00:57,980
+Got it. So what exactly does the kit make from this accepted file?
+
+13
+00:00:58,760 --> 00:01:02,320
+The kit explicitly makes four things. Uh, one, the forms.
+
+14
+00:01:02,600 --> 00:01:05,340
+Those are the screens where officers enter or read records.
+
+15
+00:01:05,500 --> 00:01:06,720
+Right, the actual interface.
+
+16
+00:01:06,960 --> 00:01:10,660
+Yeah. Two, the lists, meaning the work lists and registers.
+
+17
+00:01:11,240 --> 00:01:15,440
+Three, the menus, which show what specific roles see grouped in categories.
+
+18
+00:01:15,600 --> 00:01:16,220
+Okay, and the fourth?
+
+19
+00:01:16,620 --> 00:01:20,820
+Four is the workflow, which sets the order of steps and, you know, who actually takes them.
+
+20
+00:01:20,980 --> 00:01:22,000
+Makes sense. So, uh,
+
+21
+00:01:22,700 --> 00:01:27,160
+how does the application move between servers without requiring manual work?
+
+22
+00:01:27,700 --> 00:01:34,260
+Well, the kit packs the design, not the data, just the design, and installs it on the test server and then the live server.
+
+23
+00:01:34,440 --> 00:01:35,700
+Without any hand coding.
+
+24
+00:01:35,920 --> 00:01:44,440
+Right. Absolutely nothing is rebuilt by hand, which is crucial because that keeps the system from becoming costly to change or, uh, locked into one supplier.
+
+25
+00:01:44,740 --> 00:01:49,920
+Yeah, that avoids a lot of issues. So how does this apply to MoEYS's specific application?
+
+26
+00:01:50,520 --> 00:01:59,240
+Well, looking at Progressa, which is the fictional country of these examples by the way, the application just reads PHEQA's register instead of creating a new table.
+
+27
+00:01:59,600 --> 00:02:02,560
+Which means data isn't duplicated or rekeyed, right?
+
+28
+00:02:02,740 --> 00:02:03,180
+Exactly.
+
+29
+00:02:03,800 --> 00:02:07,880
+And for the user interface, the model specifies exactly five menu categories.
+
+30
+00:02:08,220 --> 00:02:11,760
+One, licenses, two, names, the lists and reviews.
+
+31
+00:02:11,980 --> 00:02:17,880
+Okay. Three, suspension and cancellation, uh, four, the Gazette, and five, requests for review.
+
+32
+00:02:18,200 --> 00:02:21,640
+Got it. So what specific questions must be asked of the result?
+
+33
+00:02:22,400 --> 00:02:24,600
+You must ask four questions of the running result.
+
+34
+00:02:25,040 --> 00:02:27,960
+One, where does each goal start and who can start it?
+
+35
+00:02:28,680 --> 00:02:32,560
+Two, is each menu category present for its role only?
+
+36
+00:02:32,880 --> 00:02:34,000
+Right, checking the permissions.
+
+37
+00:02:34,460 --> 00:02:35,060
+Yeah, exactly.
+
+38
+00:02:35,720 --> 00:02:39,040
+Three, is each list showing only what awaits an act?
+
+39
+00:02:39,700 --> 00:02:43,560
+And four, is there any screen no accepted document asked for?
+
+40
+00:02:44,160 --> 00:02:46,240
+I'm like looking for unauthorized additions.
+
+41
+00:02:47,220 --> 00:02:49,120
+So, uh, what will the demonstration show?
+
+42
+00:02:50,400 --> 00:02:56,820
+The recording will show the check admitting the file, then the kit building the application and installing it on MoEYS's installation.
+
+43
+00:02:57,720 --> 00:02:59,920
+And we'll see the actual menus open.
+
+44
+00:03:00,160 --> 00:03:03,380
+Yes, and the menu, one form, and one list open.
+
+45
+00:03:04,060 --> 00:03:10,020
+It will pass when the build ends without error, the application appears on the installation, and every menu category is there.
+
+46
+00:03:10,980 --> 00:03:12,000
+But, uh, keep in mind,
+
+47
+00:03:12,680 --> 00:03:16,500
+until it is recorded, you need to understand this slide as a storyboard.
+
+48
+00:03:16,960 --> 00:03:18,180
+Ah, okay. Understood.
+
+49
+00:03:18,960 --> 00:03:19,780
+One accepted file
+
+50
+00:03:20,440 --> 00:03:25,400
+read by a program becomes the forms, lists, menus, and workflow on the platform.
+
+51
+00:03:26,220 --> 00:03:29,120
+Ask your questions of the running result one goal at a time.
+
+52
+00:03:29,880 --> 00:03:31,460
+Sources are in the video description.

@@ -1,0 +1,240 @@
+1
+00:00:00,120 --> 00:00:05,520
+Module 5, Video 5.6, Payments and Information Mediation as Named Crossings.
+
+2
+00:00:06,120 --> 00:00:08,020
+Uh, that is our starting point for today's deep dive.
+
+3
+00:00:08,300 --> 00:00:17,920
+Yeah, and you know, our mission today is really to help you, uh, the official running these systems in your ministry, because you need to understand how to prevent your services from becoming
+
+4
+00:00:17,960 --> 00:00:21,120
+fragmented, siloed, or, you know, costly to change.
+
+5
+00:00:21,400 --> 00:00:29,420
+Right. Costly to change. Because when you build a government digital service, how do you actually ensure it communicates seamlessly with other departments, uh, without just
+
+6
+00:00:29,740 --> 00:00:30,620
+duplicating effort?
+
+7
+00:00:31,000 --> 00:00:32,659
+Well, before writing any code,
+
+8
+00:00:33,600 --> 00:00:37,280
+you really have to map exactly how your system talks to the outside world.
+
+9
+00:00:37,860 --> 00:00:40,560
+I mean, take a standard registration service in your program.
+
+10
+00:00:41,040 --> 00:00:43,100
+Okay. So it, uh, it does three things, right?
+
+11
+00:00:43,200 --> 00:00:46,460
+It takes a fee, reads another body's register, and signs people in.
+
+12
+00:00:46,760 --> 00:00:47,540
+Exactly. Hmm.
+
+13
+00:00:47,740 --> 00:00:52,280
+And every single one of those actions leaves the service and has to come back.
+
+14
+00:00:52,980 --> 00:00:56,420
+So a crossing is basically any flow that enters or leaves,
+
+15
+00:00:57,160 --> 00:01:04,580
+and, uh, the GovStack registration specification expects all traffic into or out of a block to go through an information mediator.
+
+16
+00:01:04,959 --> 00:01:06,100
+Or a secure gateway, right?
+
+17
+00:01:06,480 --> 00:01:07,540
+Right, a secure gateway.
+
+18
+00:01:07,940 --> 00:01:14,220
+Because bypassing that information mediator is, uh, I mean, it's basically like building a private road that nobody else can check.
+
+19
+00:01:14,900 --> 00:01:18,920
+But why does the architecture require such a strict table for all these flows?
+
+20
+00:01:19,400 --> 00:01:23,580
+Uh, well, it's because the architecture must name four specific things for every crossing.
+
+21
+00:01:24,200 --> 00:01:26,860
+Number one, what crosses, and in which direction.
+
+22
+00:01:27,180 --> 00:01:27,880
+Okay. Got it.
+
+23
+00:01:28,100 --> 00:01:29,760
+Number two, the body on the other side.
+
+24
+00:01:30,420 --> 00:01:35,160
+Three, the block it passes through, and four, who on the other side actually agreed to it.
+
+25
+00:01:36,000 --> 00:01:37,540
+Wait, who on the other side agreed to it?
+
+26
+00:01:38,000 --> 00:01:43,460
+Let's, uh, let's apply this mapping framework to, you know, the most common crossing, which is collecting a fee.
+
+27
+00:01:44,020 --> 00:01:47,040
+Right. So a service shouldn't just build its own payment screen.
+
+28
+00:01:47,520 --> 00:01:48,200
+It, it, um,
+
+29
+00:01:48,840 --> 00:01:51,280
+it sends a request to the central payments block.
+
+30
+00:01:51,900 --> 00:01:57,160
+And the GovStack payment specification actually requires this request to carry a few specific things, right?
+
+31
+00:01:57,200 --> 00:02:02,220
+Like, uh, the payer, payee, amount, currency, policy, and a transaction number?
+
+32
+00:02:02,700 --> 00:02:05,580
+Yes, exactly. And the service only keeps the confirmation.
+
+33
+00:02:05,820 --> 00:02:08,020
+I mean, it never touches the actual payment details.
+
+34
+00:02:08,900 --> 00:02:13,480
+But what happens on day one of your program if the central payments block just isn't ready yet?
+
+35
+00:02:14,100 --> 00:02:16,280
+Well, a manual backup is perfectly fine.
+
+36
+00:02:16,880 --> 00:02:22,720
+I mean, an applicant pays into a bank, and then a finance officer manually records who, how much, and when.
+
+37
+00:02:23,720 --> 00:02:24,260
+Oh, wow.
+
+38
+00:02:24,940 --> 00:02:26,840
+So you literally just do it manually?
+
+39
+00:02:27,400 --> 00:02:29,100
+It's honest, and it works.
+
+40
+00:02:29,860 --> 00:02:34,300
+But crucially, the architecture still logs this as a crossing to move to the payments block later,
+
+41
+00:02:34,920 --> 00:02:38,040
+and that ensures the upgrade is, you know, planned and budgeted for.
+
+42
+00:02:38,600 --> 00:02:39,380
+That makes total sense.
+
+43
+00:02:40,000 --> 00:02:47,720
+Let's visualize this in practice using the fictional country of Progressa, specifically their Higher Education Quality Authority, uh, PHEQA.
+
+44
+00:02:48,500 --> 00:02:53,240
+Right. So PHEQA's registration service has four specific crossings.
+
+45
+00:02:53,960 --> 00:02:57,220
+One, the fee out to the payments block and the confirmation back.
+
+46
+00:02:57,980 --> 00:03:03,280
+Two, an institution's record out to MoEYS through Linkup, which PDGA operates.
+
+47
+00:03:03,660 --> 00:03:04,580
+Okay, and the third one?
+
+48
+00:03:05,180 --> 00:03:08,060
+Three is who signs in from PNIA.
+
+49
+00:03:08,760 --> 00:03:14,500
+And four, ahead, a graduate's credential issued by PDCA into the learner's digital wallet.
+
+50
+00:03:15,220 --> 00:03:20,600
+So why is it so vital that each row in the architecture table names a specific agreeing body?
+
+51
+00:03:21,440 --> 00:03:23,840
+Well, because a crossing is ultimately a shared promise.
+
+52
+00:03:24,760 --> 00:03:26,320
+You require four agreements here.
+
+53
+00:03:27,100 --> 00:03:29,840
+One, the operator of the payments block confirms the fee.
+
+54
+00:03:30,640 --> 00:03:33,800
+Two, PDGA confirms the linkup use. Right.
+
+55
+00:03:34,520 --> 00:03:37,000
+Three, PNIA confirms the sign-in.
+
+56
+00:03:37,720 --> 00:03:40,140
+And four, MoEYS confirms what it reads.
+
+57
+00:03:40,520 --> 00:03:45,220
+So if the other side hasn't seen the row, it's a promise made on their behalf that will just fail its first test.
+
+58
+00:03:45,360 --> 00:03:50,360
+Exactly. The rule of thumb here is never rebuild a block that a crossing can use.
+
+59
+00:03:51,480 --> 00:04:00,380
+So to wrap up, in your ministry, name every crossing, the body on the other side, and the block it goes through to avoid rekeyed, duplicated systems locked into one supplier.
+
+60
+00:04:00,900 --> 00:04:02,600
+Yes. That is exactly the goal.
+

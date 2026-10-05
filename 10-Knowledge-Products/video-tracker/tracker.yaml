@@ -360,20 +360,20 @@ kps:
     root: KP4-DSD
     note: >-
       Six script bundles authored (all v0.1), 37 videos; worked examples, toolkit and 14 figures done. Decks v0.1 for
-      all six modules built 4 Oct 2026 (vo_diff clean). Video track opened 5 Oct 2026 for Modules 1–3 only — the
-      modules in which no video waits for the education demonstration application: scripts + decks v0.1 in
-      KP4-DSD/videos/module_N/en/ (rebuilt there from the bundles, contact sheets looked at). Modules 4–6 stay
-      off the track until the application is generated (4.6, 5.1, 5.2, 5.4, 5.5, 5.7 and 6.2 hold a segment that
-      shows it); their decks are under KP4-DSD/decks/module_N/ and are not read here. The 3.5 walkthrough can be
-      recorded now from the Progressa pages; until then its stand-in slide holds. 5 Oct: audio briefs + prompts
-      v0.1 for the 17 videos of Modules 1–3 (make_brief.py, KP3's lessons applied up front: PAERA never spoken,
-      the three rules, terminology rows for PHEQA/PNIA/MoEYS/PDGA/SDD); takes running, three lanes, one per
-      module. 5 Oct (evening): all 17 English videos of Modules 1–3 have a candidate take, hand-written cue
-      file and MP4 (duration checked, a frame after every cue looked at; no KP acronym, PAERA or 'the
-      brief' in any candidate transcript), each read against the author's bar — KP2's, plus no KP acronym.
-      Each topic's note names the candidate and its flaws. Next: the author listens and sets accepted:
-      (3.4's slide-6 reading and the 1.4 figure labels are open questions). KP4-DSD/videos/README.md
-      "Production log" has the learnings.
+      all six modules built 4 Oct 2026 (vo_diff clean). Video track opened 5 Oct 2026 for Modules 1–3 (scripts + decks
+      v0.1 in KP4-DSD/videos/module_N/en/, rebuilt from the bundles, contact sheets looked at); the same evening all
+      17 English videos of Modules 1–3 got briefs, candidate takes, cue files and MP4s, awaiting the author's listen.
+      5 Oct, late: Modules 4–6 joined the track — decks moved into videos/module_N/en/ and rebuilt, twelve of their
+      slides now carrying a figure's slide variant (eighteen figure slides across the KP; calibration item for ITU
+      under the text-only rule). Seven videos of Modules 4–6 (4.6, 5.1, 5.2, 5.4, 5.5, 5.7, 6.2) hold a segment that
+      waits for the education demonstration application; each video is still made in full with its stand-in slide.
+      vo_diff flags three mid-video "Find the link in the description" lines in the Modules 4–5 bundles (4.3 s3,
+      4.4 s4, 5.2 s7) for the author. The 3.5 walkthrough can be recorded now from the Progressa pages. 5 Oct, night:
+      briefs + prompts v0.1 for all 20 videos of Modules 4–6, with every Module 1–3 fix built in; 5 Oct, late night: all 20 have a candidate
+      take, hand-written cue file and MP4 — all 37 KP4 videos now (durations checked, a frame after every cue looked
+      at, no KP acronym, PAERA or brief named in any transcript, captions' names corrected). Each topic's note names
+      the candidate and its flaws; accepted: is the author's call. Author's decision 6 Oct: a take under 3:00
+      that covers every slide is fine (5.5 at 2:45, 6.6 at 2:55 stand). 6 Oct: the Module 4 deck text leak ("Footer line: '…'") on 4.2 s6, 4.3 s4, 4.5 s6 fixed in the builder; those three MP4s rebuilt on the same audio. KP4-DSD/videos/README.md "Production log" has the learnings.
     intro:
       title: KP4 introduction — what the six modules cover (on camera)
       path: videos/intro
@@ -427,7 +427,7 @@ kps:
           - {code: "3.3", title: "Screens worked out from the story, every value with its source", mins: ~5,
              en: {note: "candidate v0.6 (5:05) — cued + assembled 5 Oct 2026; brief v0.2; 'deep dive' show-open and invented puzzle-pieces opener, no cold open; 'firewall' metaphor; PHEQA never named; the specification 'describes this exact workflow' (deck: much the same order); slide 8's four lists not named; no sources line; filler; listen for Progressa (SRT 'Progresa'/'Progresia'). v0.2 (6:30; 'our sources', 'case study', Registrar's answer invented) and v0.4 (source named, four sources credited to GovStack, slide 7 skipped) rejected on brief v0.1"}}
           - {code: "3.4", title: "Screens officers can use (supplementary)", mins: ~5,
-             en: {note: "candidate v0.2 (5:14) — cued + assembled 5 Oct 2026; invented opener ('costing taxpayers millions of dollars'), no cold open, 'deep dive'; restaurant/kitchen metaphor; the five rules not stated together on slide 3 — given while walking the before/after screens; slide 6 misreads 'cannot be accepted' as 'the screen freezes' and officers kept from their paperwork; invented 'ten years from now, an auditor ... AI hallucination'; 'thousands of times a week' (deck: many times a day); slide 7 gets one sentence; filler; listen for Progressa (SRT 'Progresa'). v0.4 (brief v0.2, 3:47) rejected: 'we actually saw real world feedback on this in the research'"}}
+             en: {note: "candidate v0.5 (3:41) — re-rolled + cued + assembled 6 Oct 2026; brief v0.3; cold open as scripted, five rules numbered together on slide 3, slide 6 'the screen's design cannot be accepted' (sign-off) — fixes v0.2's 'the screen freezes'; flaws: short (3:41), heavy backchannel/filler ('Oh, wow', 'Right', 'Got it', 'I mean', 'you know'), 'self-service portal', 'the AI's guess', slide 5 names only 'the register number' and not the three outcomes, slide 7's two inspector remarks compressed to one summary line, 'your program'; no sources line (deck has none). Old candidate v0.2 cue + MP4 kept on disk."}}
           - {code: "3.5", title: "The walk-through your officials click", mins: ~5,
              en: {note: "walkthrough segment storyboarded (slide 8 of its deck), recordable now from the Progressa pages of 'apply for a provisional licence'; stand-in holds until it is recorded; candidate v0.6 (4:16) — cued + assembled 5 Oct 2026; no cold open (starts on 'Yeah. And we're specifically focusing...'); slide 4's drawing/hand-correction point pulled ahead of slide 3; storyboard slide 8 framed as what the recording will show (nothing claimed to have run); slide 8's pass criteria not spoken; reflective outro after the single message ('Consider how... shifts the balance of power'); invented hook framing; filler and backchannel; listen for Progressa (SRT 'Progresa'). v0.2 ('our sources', 'found in these sources', 5:52) and v0.4 (slides 6/7 reversed, 3:47) rejected"}}
           - {code: "3.6", title: "The review: three people, every open line given a name", mins: ~5,
@@ -438,13 +438,18 @@ kps:
         persona: Architect
         path: videos/module_4
         topics:
-          - {code: "4.1", title: "Four questions decided once for every screen", mins: ~5}
-          - {code: "4.2", title: "No list longer than nine: choose by category", mins: ~5}
-          - {code: "4.3", title: "The service workflow: states, moves and who may make each", mins: ~5}
-          - {code: "4.4", title: "One file a program reads: the application model", mins: ~5}
-          - {code: "4.5", title: "Reviewing the model: what it assumed, and what it could not express", mins: ~5}
+          - {code: "4.1", title: "Four questions decided once for every screen", mins: ~5,
+             en: {note: "candidate v0.5 (5:01) — raw take, re-cued from v0.6 (+11 s) + assembled 6 Oct 2026; brief v0.3; opens on a 'Welcome to today's deep dive' show-open under the title card (no mid-sentence start now), title line not said; every slide covered in order; 'locked in to one supplier' and 're-keyed everywhere' added; slide 4's analyst and 'before described for the machine' arrive late (slides 7-8); slide 7 drops the analyst's recommended answer; 'blueprint', backchannel; closing message + sources line present; listen for Progressa; MoEYS said as a word ('MOES'/'MOEFS')"}}
+          - {code: "4.2", title: "No list longer than nine: choose by category", mins: ~5,
+             en: {note: "candidate v0.2 (3:06) — cued + assembled 5 Oct 2026; brief v0.2; short but every slide covered in order, close to the deck; cold open as scripted; sources line present; 'Progressive' said twice for Progressa (listen for Progressa); MoEYS said as a word ('Moyes'); backchannel and 'uh' filler; slide 7 drops 'the list now shows only that advice'; Sources card 3.2 s"}}
+          - {code: "4.3", title: "The service workflow: states, moves and who may make each", mins: ~5,
+             en: {note: "candidate v0.6 (4:19) — cued + assembled 5 Oct 2026; brief v0.3; the RAW take (trim_outro's v0.7 cut slide 8's message along with the outro); states and moves exactly as the deck (minister grants/suspends/cancels, ends a suspension on PHEQA's advice, registration officer records, set aside on appeal or review); both GovStack specs named on slide 4 only; 'Welcome to the Deep Dive… unpacking' show-open, no title line; reflective question spoken over the Sources card, no sources line; backchannel; 'a person can ask the minister to review' follows the brief but F11 says MoEYS reviews a PHEQA decision (deck issue); listen for Progressa"}}
+          - {code: "4.4", title: "One file a program reads: the application model", mins: ~5,
+             en: {note: "candidate v0.3 (3:58) — cued + assembled 5 Oct 2026; brief v0.1; short; 'welcome to this deep dive' show-open with an invented 'mission today'; slide 4's clicks-and-drift point pulled into the opener before slide 3 (told again in place); 'locked into one supplier' and 'humans make mistakes' added; slide 5 does not say the file names the interaction design; slide 6 thin (PHEQA's advice list, 'as PHEQA sent them', approval sent back to PHEQA not said); 'the file always wins'; no sources line; filler/backchannel; MoEYS said as a word ('MOEYS ministry', listen)"}}
+          - {code: "4.5", title: "Reviewing the model: what it assumed, and what it could not express", mins: ~5,
+             en: {note: "candidate v0.2 (4:24) — cued + assembled 5 Oct 2026; brief v0.1; invented 'imagine an AI assistant' hook scenario and 'today's deep dive' show-open; cargo-flight analogy extended on slide 3; invented efficiency objection and the whole vocabulary list recited on slide 4; slide 5 thin (plain-words consequence and the document it rests on not said); 'policy story document'; head of the ICT unit not named; no sources line, Sources card cues on the recap's last clause (4.3 s); 'loss' transcribed 'laws' in the recap; filler/backchannel; listen for Progressa"}}
           - {code: "4.6", title: "Refused, not worked around", mins: ~5,
-             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); not on the video track yet"}}
+             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); candidate v0.1 (3:47) — cued + assembled 5 Oct 2026; brief v0.1; demonstration rule kept (the two runs told as what the recording will show, nothing said to have run); short; hook told as an 'imagine…' scenario, Host B's cold-open sentence not said; slide 4 thin (the acceptance line as the check's evidence not said); 'fragmented, siloed, locked into one supplier' added as the cost of a bypass; the refused run told on slide 6 as the storyboard, slide 7 has the correction and admitted run; 'nothing is generated' not said; no sources line, Sources card cues on the recap's second sentence (5.4 s); filler/backchannel"}}
 
       - number: 5
         title: Generate the service on a low-code platform and connect the blocks
@@ -452,30 +457,38 @@ kps:
         path: videos/module_5
         topics:
           - {code: "5.1", title: "From one file to a running application", mins: ~5,
-             en: {note: "principal demonstration of KP4 — demonstration segment waits for the education application (storyboard stand-in, slide 8 of its deck); not on the video track yet"}}
+             en: {note: "principal demonstration of KP4 — demonstration segment waits for the education application (storyboard stand-in, slide 8 of its deck); candidate v0.9 (3:32) — cued + assembled 5 Oct 2026; brief v0.3; short, segments brief; slide 6 tells the PHEQA register before the five categories and drops the forms and lists; 'locked into one supplier'/'costly to change' added on slide 5; slide 8 reads a brief line aloud ('understand this slide as a storyboard'); MoEYS said 'Moy's', PHEQA said 'PHEQ' (listen); filler/backchannel; Sources card only 2.8 s (audio ends); sources line present; listen for Progressa"}}
           - {code: "5.2", title: "Nothing generated is edited by hand", mins: ~5,
-             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); not on the video track yet"}}
-          - {code: "5.3", title: "The platform's traps, caught before deployment", mins: ~5}
+             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); candidate v0.2 (3:38) — cued + assembled 5 Oct 2026; brief v0.1; short; slide 6 thin (~11 s: the new-name form, the read-back's listing and the head of the ICT unit not told, it leads straight into the demonstration); 'fragmented, siloed, costly to change' added on slide 3; idiom 'caught red-handed'; ends on an ad-lib after the recap, no sources line; filler/backchannel; MoEYS may be said as a word"}}
+          - {code: "5.3", title: "The platform's traps, caught before deployment", mins: ~5,
+             en: {note: "candidate v0.1 (3:06) — cued + assembled 5 Oct 2026; brief v0.1; short but every slide covered in order, both lists numbered; drops 'read both lists before you agree the release', 'the release Progressa's installations run', the two ways to correct the model and 'a rule only described is a promise'; MoEYS called 'the Ministry of Education'; filler/backchannel ('Jeez'); Sources card only 2.5 s (audio ends); sources line present; listen for Progressa"}}
           - {code: "5.4", title: "Identity and registries: use the block, do not rebuild it", mins: ~5,
-             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 8 of its deck); not on the video track yet"}}
+             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 8 of its deck); candidate v0.2 (3:58) — re-rolled + cued + assembled 6 Oct 2026; brief v0.2; cued on the raw take (trimmed v0.3 cut the recap); short; heavy filler/backchannel; slide 2 'picture this'/'maybe' around the scripted question, adds 'fragmented and siloed', 'duplicated', 'super costly to change'; slide 3 'the specification uses OpenID Connect … relies on a central identity block'; slide 4 opened by an invented 'master identity' question, privacy reason and known-identifier check dropped; slide 6 PNIA glossed 'the National Identity Authority' (true to the row), stale copy 'duplicated and locked into one supplier' (invented), 'a massive liability'; slide 7 thin (~13 s), Host A adds 'because a block paid for once serves many' after the reference architecture's not-neutral point (loose link), 'nobody corrects'/'next service inherits' dropped; slide 8 future tense with pass, 'storyboard' not said; Sources card ~1.9 s; sources line present"}}
           - {code: "5.5", title: "The service's contract with the registration block, and its data interface", mins: ~5,
-             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); not on the video track yet — the data interface itself was tried with a test application, so recordable as soon as both applications are generated"}}
-          - {code: "5.6", title: "Payments and information mediation as named crossings (supplementary)", mins: ~5}
+             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); candidate v0.8 (2:45) — cued + assembled 5 Oct 2026; brief v0.2 (5th counted try); short (2:45 vs 5:00), segments thin; 'a question a director general might ask' read aloud; slide 6 omits what comes back and the manager/builder line; slide 7 in the future tense but omits the contract beside the call and the second pass condition; closing message spoken by the interviewer; MoEYS spelt out 'M-O-E-Y-S' once; 'Oh, wow', filler; sources card 3.5 s; listen for Progressa (SRT 'Progresia'). Rejected on v0.1: v0.2, v0.3, v0.5 (slide 7 demo never covered; slides 2/3 or 3/4 swapped); on v0.2: v0.7 (PHEQA expanded as 'Health and Quality Authorities', slides 6/7 merged)"}}
+          - {code: "5.6", title: "Payments and information mediation as named crossings (supplementary)", mins: ~5,
+             en: {note: "candidate v0.4 (4:03) — cued + assembled 5 Oct 2026; brief v0.1 (3rd counted try); short (4:03 vs 5:00); 'today's deep dive' + invented 'our mission today' show-open after the title line, cold-open message not said; hook arrives at 0:37; PHEQA glossed 'Higher Education Quality Authority'; slide 7 omits the head of PHEQA's ICT unit accepting the table; closing message split across hosts with an added 'to avoid rekeyed, duplicated systems locked into one supplier'; no sources line; MoEYS heard as 'Moi'; filler and backchannel; listen for Progressa (SRT 'Progresa'). Initials PDGA/PNIA/PDCA said as letters, no invented expansions. v0.1 (hook skipped, no sources line) and v0.2 (hook replaced by an invented 'builds from scratch' opener; ends before the closing message) not chosen"}}
           - {code: "5.7", title: "Proof on the running system: a task a person finishes", mins: ~5,
-             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); not on the video track yet"}}
+             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 7 of its deck); candidate v0.1 (3:36) — cued + assembled 5 Oct 2026; brief v0.1 with the slide-7 demo line (1st counted try; runner stopped after it); short (3:36 vs 5:00); cold-open message not said; slide 3 recites the severity vocabulary as an invented consequence list; slide 4 omits the menu entry/role and 'written from the story, not the screens'; slide 6 adds 'like they ran out of time', omits 'stopped at step three'; slide 7 in the future tense throughout (nothing claimed to have run); closing message paraphrased; no sources line, Sources card over the last 2 s of the close; MoEYS spelt 'M-O-E-Y-S'; filler and backchannel"}}
 
       - number: 6
         title: Run the method in your administration
         persona: Strategist
         path: videos/module_6
         topics:
-          - {code: "6.1", title: "What to require from a supplier", mins: ~5}
+          - {code: "6.1", title: "What to require from a supplier", mins: ~5,
+             en: {note: "candidate v0.2 (5:05) — cued + assembled 5 Oct 2026; cold open ignored, invented vendor scenario + 'Welcome to the Deep Dive' at 0:30; slide 3 thin (only the first and twelfth documents named); invented elaboration ('take what you have to a new vendor', 'an engine builds it', 'legally a fault'); building-a-house metaphor; slide 6 'files' plural, three-person review as 'owner, builder, user'; MoEYS never named; heavy filler/backchannel; no sources line; listen for Progressa"}}
           - {code: "6.2", title: "When something changes, correct the document that owns the fact", mins: ~5,
-             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 6 of its deck); not on the video track yet"}}
-          - {code: "6.3", title: "Read where the work stands from the work", mins: ~5}
-          - {code: "6.4", title: "The AI assistant at every step, and the person who rules", mins: ~5}
-          - {code: "6.5", title: "The next service on the same foundation", mins: ~5}
-          - {code: "6.6", title: "Carry the method to another sector", mins: ~5}
-          - {code: "6.7", title: "Before you rely on it: what the method does not claim (supplementary)", mins: ~5}
+             en: {note: "demonstration segment waits for the education application (storyboard stand-in, slide 6 of its deck); candidate v0.6 (3:44) — re-rolled + cued + assembled 6 Oct 2026; brief v0.2; short (covers every slide); Harbourview asks PHEQA only, Registrar confirms, MoEYS's documents not stale, demo told in the future tense with pass, recap last + sources line; flaws: vocabulary list recited as consequence ('fragmented… costly to change', 'siloed and duplicated'), 'the old fault simply overwrites the surface level fix', slide 4 drops 'people notice a screen first' and 'ask which story', slide 6 stale list partial (no interaction design/model), MoEYS spoken as initials, heavy backchannel and um/uh"}}
+          - {code: "6.3", title: "Read where the work stands from the work", mins: ~5,
+             en: {note: "candidate v0.9 (2:59) — re-rolled + cued + assembled 6 Oct 2026; brief v0.3; short (every content slide 2-6 covered in order); opens on the scripted title, Host B's cold-open sentence not said; percentage given no value; slide 3 drops 'ask for the report, with its date'; slide 4 question recites 'fragmented, siloed, locked into one supplier' (not in §2); slide 5 'the head of ICT numbers the four goals', MoEYS never named (the Ministry of Education); slide 6 question adds 'costly to change'; recap message (slide 7) never said — ends on slide 6's warning-sign line; no sources line; light filler/backchannel (previous candidate v0.2 kept on disk)"}}
+          - {code: "6.4", title: "The AI assistant at every step, and the person who rules", mins: ~5,
+             en: {note: "candidate v0.3 (3:12) — cued + assembled 5 Oct 2026; short but every slide covered in order; opens exactly on the scripted title; slide 2 answer previews slide 4's 'recorded gap' in one line; personal-data check before the head of ICT adopts the page dropped; slide 6's file-a-program-reads point shortened; small glosses ('a very clear boundary', 'checking accountability'); filler; no sources line; listen for Progressa (try 2 v0.2 rejected: 'our sources', 'a stack of system management sources')"}}
+          - {code: "6.5", title: "The next service on the same foundation", mins: ~5,
+             en: {note: "candidate v0.3 (3:36) — cued + assembled 5 Oct 2026; short (3:36); show-open 'today's mission for this deep dive'; recap (slide 7) never said as such and no sources line — ends turning to the listener ('look at your own program'); slide 6 thin (named person, written down before approval not said); loose 'employer can trust it directly'; heavy backchannel/filler; listen for Progressa"}}
+          - {code: "6.6", title: "Carry the method to another sector", mins: ~5,
+             en: {note: "candidate v0.1 (2:55) — cued + assembled 5 Oct 2026; short (2:55); cold open as scripted; slide 5's headline ('carry the method, not the results') pulled into slide 4's opening, slide 5 thin (program check, 'education only' not said); twelve documents called 'blank instruments'; invented 'locked into one supplier' question before slide 6; reflective outro after the recap ('consider which technical hurdles…'); backchannel"}}
+          - {code: "6.7", title: "Before you rely on it: what the method does not claim (supplementary)", mins: ~5,
+             en: {note: "candidate v0.4 (3:48) — cued + assembled 5 Oct 2026; short (3:48); no scripted cold open, starts mid show-open ('we're looking at a really counterintuitive concept'); podcast framing ('push back', 'silver bullet') and a car metaphor; invented 'reading the limits is literally mandatory'; slide 5 thin (which limits bear on the service / what the ministry will do / ICT signs not said), 'we have the Progressa example, right?'; recap never said, ends 'such a powerful takeaway'; no overclaim of the method; listen for Progressa"}}
 
   # Add a KP: copy the KP4 block above (modules, topics, notes); bump `version` when the topic list changes.

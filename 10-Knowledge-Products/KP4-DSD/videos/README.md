@@ -12,10 +12,13 @@ per-topic files are here, in the same layout as KP2's (`../../KP2-GIF/videos/`) 
 module and one per language, with the stage folders inside it; steps 1 and 2 of the track (the
 scripts-only companions and the decks, v0.1) are done. **5 October 2026, evening:** all 17 English videos of
 Modules 1 to 3 have a candidate take, cue file and MP4, each read against the author's bar (KP2's, plus no KP
-acronym); they await the author's listen before `accepted:` is set in the tracker. See the production log. The
-tracker at `../../video-tracker/` reads this folder. Modules 4 to 6, each of which holds at least one
-video that waits for the application (4.6; 5.1, 5.2, 5.4, 5.5, 5.7; 6.2), are not on the track yet:
-their decks, built 4 October, stay in `../decks/module_4/` to `../decks/module_6/` until their turn.
+acronym); they await the author's listen before `accepted:` is set in the tracker. See the production log. **6 October 2026:** the same for all 20 videos of Modules 4 to 6, so all 37 videos have a candidate. The
+tracker at `../../video-tracker/` reads this folder. **5 October 2026, late:** Modules 4 to 6 joined the
+track: their decks (built 4 October under `../decks/module_N/`) and scripts-only companions were moved
+into `module_4/` to `module_6/` here and rebuilt from the bundles, twelve of their slides now carrying a
+figure (see "The figures"). Seven of their videos hold a segment that waits for the education demonstration
+application (4.6; 5.1, 5.2, 5.4, 5.5, 5.7; 6.2); each of those videos is still made in full, with its
+stand-in slide, as the section at the end of this page says.
 
 ```
 KP4-DSD/videos/
@@ -47,13 +50,12 @@ The steps of production, from script to finished video, are the ones KP1 and KP2
 2. **The spoken track.** Under "Script (voice-over over text-only slides)": the voice-over paragraphs,
    with the slide cues as shaded lines between them.
 3. **The slides.** The deck of each video is `module_N/en/decks/KP4_MN_<video>_Deck_v0.1.pptx`, for
-   example `module_1/en/decks/KP4_M1_1.1_Deck_v0.1.pptx` (Modules 4 to 6: `../decks/module_N/`, see
-   above); its speaker notes carry the voice-over. Every
+   example `module_1/en/decks/KP4_M1_1.1_Deck_v0.1.pptx`; its speaker notes carry the voice-over. Every
    deck is its specification plus one opening slide, so **a slide's number in the deck is its row number
    in the bundle's "On-screen slide specification" plus one**. The specification gives one row per slide,
    with its text and its layout on ITU's template (title Arial Bold 28 pt, body Arial 18 pt, background
-   `#E5F5FB`, text only, no person on screen). Six slides carry a drawn figure instead of their rows (see
-   "The figures" below); their cue says so. The slides are generated from the bundle; never edit a deck by
+   `#E5F5FB`, text only, no person on screen). Eighteen slides carry a drawn figure instead of, or beside,
+   their rows (see "The figures" below); their cue says so. The slides are generated from the bundle; never edit a deck by
    hand.
 4. **The demonstration, where the video has one.** Its storyboard: a table of the steps the recording
    shows, what the viewer sees at each and what counts as a pass. Where the storyboard is in each bundle
@@ -66,17 +68,25 @@ The steps of production, from script to finished video, are the ones KP1 and KP2
 **The figures.** The fourteen figures are in `../figures/` (`F1_structure.png` to `F14_data-interface.png`),
 each drawn by the program beside it, and the guide carries copies in `../../gitbook/kp4/figures/`, listed
 with the subtopics that use them on `../../gitbook/kp4/figures.md`. The figures are drawn for the written
-guide. **Six of them also stand on a slide**, since 5 October 2026, in a slide variant drawn by the same
+guide. **Twelve of them also stand on a slide**, since 5 October 2026, in a slide variant drawn by the same
 program (`../figures/slides/`, made by `python3 ../figures/draw_all.py --slides`: no figure title, cropped
-to the drawing, type two points larger where the layout allows): F2 on 1.1 "Each loss, placed", F3 on
-1.4 "Twelve documents, in a fixed order" (one slide for all twelve, in place of the two six-row slides),
-F5 on 2.1 "Progressa's higher-education services", F7 on 2.6 "Progressa: two applications on one page",
-F8 on 3.2 "Progressa: five failures, five endings", F9 on 3.3 "Where each value comes from". Each is
-boxes, arrows and words, no imagery and no person, drawn in the figures' own style; the cue that places it
-ends "Figure Fn, slide variant (...), stands on the slide in place of the rows", and the rows stay in the
-bundle as the figure's text equivalent. **Calibration item for ITU:** a drawn figure of this kind under the
-guide's text-only rule, declared in each of the six slide specifications. Every other slide stays text
-only, and where it shows the same idea as a figure, its specification says which figure the guide carries.
+to the drawing, type two points larger where the layout allows), on eighteen slides. Modules 1 to 3: F2 on
+1.1 "Each loss, placed", F3 on 1.4 "Twelve documents, in a fixed order" (one slide for all twelve, in place
+of the two six-row slides), F5 on 2.1 "Progressa's higher-education services", F7 on 2.6 "Progressa: two
+applications on one page", F8 on 3.2 "Progressa: five failures, five endings", F9 on 3.3 "Where each value
+comes from". Modules 4 to 6: F10 on 4.1 "Four questions no single goal can answer", F11 on 4.3 "The moves,
+and who may make each", F12 on 4.4 "One file instead of a thousand clicks" and on 5.1 "What the kit makes
+from it", F13 on 5.2 "Correct up, generate down" and on 6.2 "Up to the owner, then down again" (a tall
+figure: it stands on the left, beside its three rows), F7 on 5.4 "Progressa: one sign-in, one register, no
+copies" and on 5.6 "Progressa: the crossings of PHEQA's registration service", F14 on 5.5 "Progressa:
+PHEQA's register, as MoEYS reads it", F3 on 6.1 "Twelve deliverables, not one system", F4 on 6.4 "The
+assistant drafts; a person rules", F5 on 6.5 "Planning enables re-use". Each is boxes, arrows and words,
+no imagery and no person, drawn in the figures' own style; the cue that places it ends "Figure Fn, slide
+variant (...), stands on the slide in place of (or beside) the rows", and the rows stay in the bundle as the
+figure's text equivalent. 4.6 "What the program checks first" names F12 but stays text: its four questions
+are not in the figure. **Calibration item for ITU:** a drawn figure of this kind under the guide's
+text-only rule, declared in each of the eighteen slide specifications. Every other slide stays text only,
+and where it shows the same idea as a figure, its specification says which figure the guide carries.
 F1, the structure of the course (`F1_structure.png`), belongs to the guide's opening page and to no single
 video.
 
@@ -90,25 +100,28 @@ bundle. Each module's self-check is on its own page of the guide, `module-N/self
 `build_kp4_moduleN_deck_v01.py`, content only, every helper from the kit's `kp-deck-builder`, and are never
 hand-edited. One run builds the combined deck, writes the split spec, cuts the per-video decks
 (`split_module_deck.py --infer-ranges`), writes the scripts-only companions (`scripts_from_deck.py`) and
-proves that the speaker notes narrate the bundle word for word (`vo_diff.py`). The programs of Modules 1 to
-3 read every slide from the bundle through `kp4_deck_common.py` and write to this folder; those of Modules
-4 to 6 write to `../decks/module_N/` until those modules join the track. The commands are for the team
-that holds the production kit; set `KP_KIT` to the kit's `itu-giga-kp` folder first:
+proves that the speaker notes narrate the bundle word for word (`vo_diff.py`; in Modules 4 to 6 its result
+is printed, not enforced, because three voice-over paragraphs of those bundles say "Find the link in the
+description" mid-video, which it flags as a narrated handoff: 4.3 slide 3, 4.4 slide 4, 5.2 slide 7). The
+programs of Modules 1 to 3 read every slide from the bundle through `kp4_deck_common.py`; those of Modules
+4 to 6 write each slide out by hand and call `kp4_deck_common.figure_slide` for their figure slides. All
+six write to this folder (`OUT_DIR=` overrides). The commands are for the team that holds the production
+kit; set `KP_KIT` to the kit's `itu-giga-kp` folder first:
 
 ```
-KP4-DSD/videos/module_N/en/decks/     the video decks, the combined deck and split_spec.json  (Modules 1–3)
-KP4-DSD/videos/module_N/en/scripts/   the scripts-only companions                              (Modules 1–3)
-KP4-DSD/decks/module_N/               the same, with scripts/ inside, for Modules 4–6 (built 4 Oct 2026)
+KP4-DSD/videos/module_N/en/decks/     the video decks, the combined deck and split_spec.json
+KP4-DSD/videos/module_N/en/scripts/   the scripts-only companions
 KP4-DSD/decks/build_kp4_moduleN_deck_v01.py      the program that builds the decks of module N
+python3 KP4-DSD/figures/draw_all.py --slides     the slide variants of the figures, before any deck build
 cd KP4-DSD/decks && for n in 1 2 3; do python3 build_kp4_module${n}_deck_v01.py || break; done
 cd KP4-DSD/decks && for n in 4 5 6; do python3 build_kp4_module${n}_deck_v01.py || break; done
 bash "$KP_KIT"/skills/kp-deck-builder/scripts/qa_deck.sh KP4-DSD/videos/module_1/en/decks/KP4_M1_Deck_v0.1.pptx /tmp/deckqa   # then look at the sheets
 ```
 
 A video is title card, opener (hook), its content slides, the recap with the un-narrated practice box
-and, where the subtopic cites a source, Sources. The decks of Modules 1 to 3 were rebuilt into this
-folder on 5 October 2026 and their contact sheets looked at: no overflow, no overlap, one practice box
-per video, `vo_diff` at zero mismatches (44, 57 and 58 slides).
+and, where the subtopic cites a source, Sources. All six modules' decks were rebuilt into this folder on
+5 October 2026 and their contact sheets looked at: no overflow, no overlap, one practice box per video,
+`vo_diff` at zero mismatches (44, 57, 58, 57, 69 and 53 slides).
 
 ## Module by module
 
@@ -161,7 +174,7 @@ Slide decks: `module_3/en/decks/`; scripts: `module_3/en/scripts/`.
 ### Module 4 — Settle the whole application once, then describe it for the machine
 
 Script bundle: `../KP4_Module4_Script_Bundle_v0.1.md`. Six videos, all core.
-Slide decks: `../decks/module_4/` (not on the video track yet: 4.6 waits for the application).
+Slide decks: `module_4/en/decks/`; scripts: `module_4/en/scripts/`.
 
 | Video | Class | Figures | AI usage tip | Demonstration |
 |---|---|---|---|---|
@@ -175,7 +188,7 @@ Slide decks: `../decks/module_4/` (not on the video track yet: 4.6 waits for the
 ### Module 5 — Generate the service on a low-code platform and connect the blocks
 
 Script bundle: `../KP4_Module5_Script_Bundle_v0.1.md`. Seven videos; 5.6 is supplementary.
-Slide decks: `../decks/module_5/` (not on the video track yet: 5.1, 5.2, 5.4, 5.5 and 5.7 wait for the application).
+Slide decks: `module_5/en/decks/`; scripts: `module_5/en/scripts/`.
 
 | Video | Class | Figures | AI usage tip | Demonstration |
 |---|---|---|---|---|
@@ -190,7 +203,7 @@ Slide decks: `../decks/module_5/` (not on the video track yet: 5.1, 5.2, 5.4, 5.
 ### Module 6 — Run the method in your administration
 
 Script bundle: `../KP4_Module6_Script_Bundle_v0.1.md`. Seven videos; 6.7 is supplementary.
-Slide decks: `../decks/module_6/` (not on the video track yet: 6.2 waits for the application).
+Slide decks: `module_6/en/decks/`; scripts: `module_6/en/scripts/`.
 
 | Video | Class | Figures | AI usage tip | Demonstration |
 |---|---|---|---|---|
@@ -240,6 +253,102 @@ complete without them, with its stand-in slide, and is re-cut when the recording
 ## Production log — what works and what does not
 
 Kept for the next session that picks up the KP4 video track. Newest first; add to it, do not rewrite it.
+
+**6 October 2026 — takes newer than their candidate moved to `audio/_rejected/`.**
+
+- The tracker reads the newest `…_Audio_v0.N.m4a` in `audio/` as "the take", so a rejected try or an unused trimmed
+  copy numbered above the candidate showed as "MP4 is v0.2 but newest take is v0.3" (11 videos). The 36 such files
+  (18 takes with their SRTs; none was in git) are moved to `module_N/en/audio/_rejected/`, which the tracker does not
+  read and `.gitignore` excludes. Nothing was deleted. The candidate of each video is the version of its cue file.
+- Do the same after any re-roll whose winner is not the newest take: the raw take kept because `trim_outro` cut the
+  recap (4.3, 5.4) always leaves a newer, unused trimmed copy.
+- **Catch:** the take runner numbers a new take from `audio/` alone, so with v0.3 in `_rejected/` its next take would be
+  v0.3 again and moving it later would clash. Before re-rolling a video, move its `_rejected/` takes back into `audio/`;
+  set them aside again once a winner is cued (the 6.2 re-roll did this). 4.1's raw take v0.5 is now its candidate,
+  re-cued from v0.6's cues +11 s, and v0.6 (trimmed, began mid-sentence) with its cue file and MP4 sits in `_rejected/`.
+
+**6 October 2026 — Module 4: cue text no longer printed on three slides.**
+
+- `build_kp4_module4_deck_v01.py` carried three rows copied from their cues with the cue's footer still inside the
+  quoted text, so the slides showed `…' Footer line: '…` (4.2 slide 6, 4.5 slide 6) and `…' Footer: '…` (4.3 slide 4).
+  Each footer is now the slide's closing line (`closing=`), as on the other slides. Module 4 rebuilt: only those three
+  slides changed (combined deck 17, 24, 44), every speaker note is identical and `vo_diff` shows no mismatch; its two
+  "problems" are the mid-video "Find the link in the description" lines already noted for 4.3 and 4.4.
+- The audio did not change. The MP4s of 4.2 (v0.2), 4.3 (v0.6) and 4.5 (v0.2) were rebuilt from the same take and
+  cue file; each still matches its m4a, and a frame of each fixed slide was looked at.
+- "No step longer than 8" on 4.2's slide is right, not a slip: the longest category holds 8 matters, under the
+  rule's nine.
+
+**5–6 October 2026, night — all 20 videos of Modules 4 to 6 have a candidate; 37 of 37 in all.**
+
+- Six lanes. 15 of 20 candidates came from the v0.1 brief, most on the first or second counted try; only 4.1, 4.2,
+  4.3, 5.1 and 5.5 needed a later version. That is the payoff of building Modules 1–3's fixes into v0.1: those
+  modules needed a later brief version for 7 of their 17 videos. Every MP4 matches its m4a, a frame after every cue was
+  looked at, and no candidate transcript says a KP acronym, PAERA or names the brief.
+- Six generations at once did trigger the silent throttle: one wave hit five lanes in a row (18:53–18:58), about
+  seven failures in all, none counted as a try. Waiting 10 minutes cleared it. Six lanes is about the ceiling.
+- **The prompt's "the question a Director-General would ask" plants the wrong official.** In 4.1 the hosts had a
+  Director-General accept where the deck names the Director of Higher Education. Write "a senior official".
+  Fixed in Module 4's later versions only; it is still in `make_brief.py`'s template (kit change, not yet made).
+- **The hook swallows a later slide** (4.1, 4.2, 4.4, 5.1, 6.6): with nothing given to open on, the hosts open on
+  slide 4's point. Scripting the slide-2 question held in 4 of 4 takes (5.1–5.4); an order line on slide 2 also works.
+- **Demonstration videos skip the storyboard slide** unless it is "must be covered", told in the future tense,
+  with an order line (5.1, 5.5; held on 5.2, 5.4, 5.7 and 4.6 first time). With it, no take in the seven
+  demonstration videos claimed a run.
+- **An imperative brief line is read aloud** ("name each move… in this order", 4.3); write §2 content as statements.
+- **"The materials" slipped past the never-say-what-you-read list** (5.1) and needs naming. The specification
+  catch-all came back once (5.4 credits Progressa to the Digital Registries specification).
+- **`trim_outro` can cut the recap with the outro** (4.3): check the trimmed tail against the last content slide
+  before cueing; 4.3 is cued on its raw take.
+- Clean takes run short (2:45–3:40 is common). **Author's decision, 6 October 2026: a take under 3:00 is
+  acceptable when it covers every slide** — KP3's 3:00 floor no longer applies to KP4. 5.5 (2:45) and 6.6 (2:55)
+  stand; do not re-roll for runtime alone.
+- Brief bug: KP3's PAERA swap doubled "the reference architecture" in 5.4 §2 (fixed in place); 4.4's §4 had no
+  Progressa row, so no term rows went in and MoEYS was said as a word.
+- Captions: `kp4_srt_fix.py` now also corrects Linkup ("link-up"), Harbourview ("Harborview"), MoEYS (MOEFS,
+  Moyes, MOEAS, Moi, Moy's, M-O-E-Y-S), PHEQA ("PHEQ") and mid-sentence "Progressive". Run on all 37.
+- Deck issues for the author (not take flaws): the Module 4 builder prints spec text on screen — `' Footer line: '…'`
+  on 4.2 slide 6 and 4.5 slide 6, `' Footer: '…'` on 4.3 slide 4; 4.2 slide 6 says "no step longer than 8" where the
+  rule is nine; 4.6 slide 6 says "The program refused." in the past tense in a demonstration video; figures — all
+  closed 6 Oct 2026, no change: F3 on 1.4 keeps the plan's document names ("the register of requirements", "the use
+  case model"…) while the narration says them in plain words (author's decision: the figure is correct, the narration
+  simplified); F11's "MoEYS reviews a decision of PHEQA" and 4.3's "ask the minister to review" agree (the minister
+  heads MoEYS); F12 on 4.4 previews 4.6's check and refusal, as a figure shared by 4.4, 4.6 and 5.1 does. The recap slide shows
+  the single message while the narration speaks a different closing sentence — by design, as in KP3.
+
+**5 October 2026, late night — Modules 4 to 6: briefs v0.1 with every Module 1–3 fix built in; six lanes.**
+
+- `make_brief.py` drafted the 20 briefs from the decks the author rebuilt into `module_4/` to `module_6/`
+  (`brief_deck_check.py`: no drift). One script (`kp4_rules2.py`, session scratchpad) then put into v0.1 what
+  Modules 1–3 had needed later versions for: PAERA in words and KP3's three rules; the terminology rows (PDCA
+  added); "this video cites no reference architecture" for the 18 videos whose §2 cites none (5.4 and 6.5
+  keep KP3's lines); no "policy briefing" framing in the prompt and a rule never to say what the hosts are
+  reading from; the cold open scripted as "Module N, video x.y: <title>." with an order line; a specification
+  spoken of only where §2 names it; and, for the seven demonstration videos (4.6, 5.1, 5.2, 5.4, 5.5, 5.7,
+  6.2), "nothing in this video has been run or recorded: say what the recording will show".
+- Six lanes, two per module where a module has six or seven videos (4.1–4.3, 4.4–4.6, 5.1–5.4, 5.5–5.7,
+  6.1–6.4, 6.5–6.7). Lanes on one module share its `notebooks.json`, which `nlm_take.py` rewrites whole:
+  two lanes creating notebooks at once can drop an id, and the next take of that video then makes a new
+  notebook. Harmless, but the account may hold a stray notebook or two.
+
+**5 October 2026, late — Modules 4 to 6 on the track, with twelve figure slides.**
+
+- `module_{4,5,6}/en/{scripts,decks,notebooklm,audio,cues,video}` created; the 4 October decks and
+  companions moved in from `../decks/module_N/`; the three build programs now write here by default
+  (`OUT_DIR=` overrides) and end with `vo_diff.py`, whose result is printed, not enforced (see "The decks").
+- `figures/draw_all.py --slides` now draws twelve slide variants (F4, F10, F11, F12, F13, F14 added); all
+  twelve pass the fit check. Drawn here with Liberation Sans (the kit's fallback when Arial is absent); a
+  run on a machine with Arial gives the same layout in Arial and other checksums.
+- Twelve slides of Modules 4 to 6 carry a figure: the bundles' cues and specification rows say so in the
+  Module 1 wording, the `.md` bundles were regenerated (`bundle_to_md.py`), `qa_bundle.py` passes every hard
+  check, and `figure()` in each build program calls `kp4_deck_common.figure_slide`, which gained a "beside
+  the rows" mode for F13. Judged slide by slide against the figures: where the figure says what the rows
+  say, it stands in for them; 4.6 slide 2 names F12 but keeps its four questions as text.
+- Contact sheets of all three combined decks looked at: the twelve figure slides and the storyboard
+  stand-ins render as intended; nothing overflows or overlaps.
+- Open for the author: the three "Find the link in the description" lines spoken mid-video (4.3 slide 3,
+  4.4 slide 4, 5.2 slide 7) — Modules 1 to 3 had these moved to the Sources slide.
+- Next: step 3, the audio briefs and prompts for the twenty videos of Modules 4 to 6, as for Modules 1 to 3.
 
 **5 October 2026, night — all 17 videos of Modules 1 to 3 have a candidate.**
 

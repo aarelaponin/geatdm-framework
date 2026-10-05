@@ -1,0 +1,24 @@
+# Slide cue file — KP4 Module 5, Video 5.5 "The service's contract with the registration block, and its data interface"
+# Deck:  KP4_M5_5.5_Deck_v0.1.pptx (9 slides; slide 7 is the demonstration storyboard stand-in)
+# Audio: KP4_M5_5.5_Audio_v0.8.m4a (runs to 2:44.5; brief v0.2; try 2 of the v0.2 run, not trimmed — ends on the sources line)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (2:45 against 5:00), every segment thin. Cold open as scripted (title + single message).
+# Host A frames slide 2 as "a question a director general might ask" (reads a brief line aloud). Slide 3 drops "the
+# data exchange carries the call; the contract says what the call may be". Slide 6 does not list what comes back
+# (name, kind, licence, standing) and drops "the manager reads this list; the builder's program reads the same
+# contract as a file". Slide 7 (demonstration) is in the future tense and says nothing has been recorded — but omits
+# the contract shown beside the call and the second pass condition (the call is one the contract publishes). The
+# closing message is spoken by the interviewer after "Understood." MoEYS spelt out once as "M-O-E-Y-S" (listen),
+# "Oh, wow", "totally automated", filler. SRT spells the country "Progresia": listen for Progressa.
+# Sources line at 2:42; Sources card cued at 2:41 (3.5 s).
+
+0:00   # slide 1 — title card (cold open as scripted: title + single message)
+0:15   # slide 2 — Hook: two applications rely on one contract; written by hand, they drift
+0:43   # slide 3 — What a contract is (three things numbered; OpenAPI Specification)
+1:01   # slide 4 — Produced from the description
+1:23   # slide 5 — The contract with the registration block (three areas numbered)
+1:46   # slide 6 — Progressa: PHEQA's register, as MoEYS reads it
+2:13   # slide 7 — One institution, read across the exchange (storyboard, future tense)
+2:33   # slide 8 — In one sentence
+2:41   # slide 9 — Sources

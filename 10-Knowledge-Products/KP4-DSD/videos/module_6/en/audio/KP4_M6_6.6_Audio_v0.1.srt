@@ -1,0 +1,191 @@
+1
+00:00:00,220 --> 00:00:03,640
+Module six, video 6.6: Carry the method to another sector.
+
+2
+00:00:04,580 --> 00:00:04,700
+So,
+
+3
+00:00:05,420 --> 00:00:14,580
+uh, when another ministry asks to use a successful method, how do we scale it without creating systems that are, you know, fragmented, siloed, duplicated, or costly to change?
+
+4
+00:00:14,720 --> 00:00:19,240
+Right. Well, we use Progressa, the fictional country of these examples, to demonstrate this.
+
+5
+00:00:19,880 --> 00:00:25,380
+The whole goal for your ministry is to lift the method without dragging over irrelevant rules from that first sector.
+
+6
+00:00:25,740 --> 00:00:26,020
+I see.
+
+7
+00:00:26,640 --> 00:00:29,360
+So if your minister asks to, um,
+
+8
+00:00:29,980 --> 00:00:35,060
+l- lift this method from education to agriculture, does the method itself contain anything specific to schools?
+
+9
+00:00:35,240 --> 00:00:35,940
+No, not at all.
+
+10
+00:00:36,700 --> 00:00:40,740
+Nothing in the method itself is about schools because it holds no sector's content.
+
+11
+00:00:41,160 --> 00:00:43,580
+Oh, okay. Yeah. There are actually four things that stay:
+
+12
+00:00:44,260 --> 00:00:46,360
+one, the 12 documents in the same order;
+
+13
+00:00:46,980 --> 00:00:49,340
+two, the people who accept them by role.
+
+14
+00:00:49,860 --> 00:00:50,460
+Right, the roles.
+
+15
+00:00:50,700 --> 00:00:55,480
+Exactly. Three, the checks at each step, and four, the rules that always hold.
+
+16
+00:00:56,280 --> 00:01:03,860
+So those 12 documents act like, uh, blank instruments, providing the business side and the builders with one shared language, so decisions mean the exact same thing.
+
+17
+00:01:04,080 --> 00:01:04,560
+Yes, they do.
+
+18
+00:01:05,640 --> 00:01:13,480
+But if the blank instruments stay the same, what exactly is the new sector responsible for bringing so data isn't just duplicated or, uh, rekeyed?
+
+19
+00:01:14,160 --> 00:01:14,240
+Well,
+
+20
+00:01:15,100 --> 00:01:16,740
+you carry the method, not the results,
+
+21
+00:01:17,380 --> 00:01:20,020
+because nothing found in education is a fact about health.
+
+22
+00:01:20,620 --> 00:01:21,580
+That makes a lot of sense.
+
+23
+00:01:22,060 --> 00:01:25,060
+Right. So there are four things the sector brings:
+
+24
+00:01:25,860 --> 00:01:28,040
+one, its own catalog of services;
+
+25
+00:01:28,840 --> 00:01:32,220
+two, its register of what was asked from its own law.
+
+26
+00:01:32,480 --> 00:01:32,740
+Okay.
+
+27
+00:01:33,340 --> 00:01:35,780
+Three, its records and who keeps each one;
+
+28
+00:01:36,420 --> 00:01:38,060
+and four, its own reference pack.
+
+29
+00:01:38,900 --> 00:01:46,640
+And for that reference pack, which includes, you know, usual procedures, reusable pieces of design, a realistic checklist, and one finished example,
+
+30
+00:01:47,220 --> 00:01:50,560
+who actually ensures the drafts align with the new sector's regulations?
+
+31
+00:01:50,980 --> 00:01:51,060
+Well,
+
+32
+00:01:51,700 --> 00:01:53,800
+an assistant can help adapt the examples, sure.
+
+33
+00:01:54,160 --> 00:01:59,680
+But the new sector's officials must correct the drafts because they alone know their sector's law.
+
+34
+00:02:00,660 --> 00:02:02,400
+Right. They have the actual domain knowledge.
+
+35
+00:02:02,840 --> 00:02:09,020
+So before the new sector even writes its first document, how do we ensure your program doesn't become, like, locked into one supplier?
+
+36
+00:02:09,800 --> 00:02:10,960
+That is a great point.
+
+37
+00:02:12,260 --> 00:02:15,700
+Before anything else begins, the sector must write down three names.
+
+38
+00:02:16,740 --> 00:02:17,440
+Oh, just three names?
+
+39
+00:02:17,680 --> 00:02:18,060
+Just three.
+
+40
+00:02:18,960 --> 00:02:21,380
+One, who owns the service in that ministry;
+
+41
+00:02:22,280 --> 00:02:24,380
+two, who writes the sector's catalog;
+
+42
+00:02:25,000 --> 00:02:28,200
+and three, which officials correct the adapted examples.
+
+43
+00:02:29,120 --> 00:02:29,760
+Wow, okay.
+
+44
+00:02:31,200 --> 00:02:33,140
+Yeah. The method holds no sector's content.
+
+45
+00:02:33,500 --> 00:02:38,700
+Another sector brings its own catalog, its own records, and its own reference pack, and keeps the rest.
+
+46
+00:02:39,440 --> 00:02:40,660
+Such a crucial distinction.
+
+47
+00:02:41,340 --> 00:02:50,080
+As you look at the systems running in your ministry today, consider which technical hurdles are actually just sector-specific rules disguised as universal laws.
+
+48
+00:02:50,640 --> 00:02:54,900
+Disentangling the two might just be your shortcut to building highly adaptable services.

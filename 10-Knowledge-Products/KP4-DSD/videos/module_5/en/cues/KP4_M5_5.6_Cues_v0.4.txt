@@ -1,0 +1,24 @@
+# Slide cue file — KP4 Module 5, Video 5.6 "Payments and information mediation as named crossings"
+# Deck:  KP4_M5_5.6_Deck_v0.1.pptx (9 slides)
+# Audio: KP4_M5_5.6_Audio_v0.4.m4a (runs to 4:02.9; brief v0.1; try 3, trimmed)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (4:03 against 5:00). Title line as scripted, then "our starting point for today's deep
+# dive" and an invented "our mission today is to help you" show-open; the single message of the cold open not
+# said. Slide 2's hook arrives late (0:37) after an improvised question. Slide 3: the four table items numbered;
+# "private road" kept (it is in the deck's words). Slide 6 calls PHEQA "their Higher Education Quality Authority"
+# (consistent with the deck, an expansion of the hosts' own). Slide 7 omits the head of PHEQA's ICT unit accepting
+# the table. Closing message split across both hosts with a "rule of thumb" phrasing and an added "to avoid
+# rekeyed, duplicated systems locked into one supplier"; no sources line. MoEYS heard as "Moi" (listen). Filler
+# and backchannel ("Oh, wow", "you know", "Right"). SRT spells the country "Progresa": listen for Progressa.
+# Sources card cued after the close at 3:58 (4.9 s).
+
+0:00   # slide 1 — title card
+0:06   # slide 2 — Hook: a fee, another body's register, a sign-in (hook spoken at 0:37)
+0:52   # slide 3 — A crossing, named (four items numbered)
+1:38   # slide 4 — The fee: through the Payments block
+2:08   # slide 5 — When the block is not yet there
+2:40   # slide 6 — Progressa: the crossings of PHEQA's registration service (four numbered)
+3:15   # slide 7 — Each row agreed by the other side (four bodies numbered)
+3:45   # slide 8 — In one sentence
+3:58   # slide 9 — Sources

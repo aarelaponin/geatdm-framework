@@ -1,0 +1,22 @@
+# Slide cue file — KP4 Module 6, Video 6.4 "The AI assistant at every step, and the person who rules"
+# Deck:  KP4_M6_6.4_Deck_v0.1.pptx (7 slides; slide 3 carries a figure, slide variant)
+# Audio: KP4_M6_6.4_Audio_v0.3.m4a (runs to 3:11.7; brief v0.1; try 3, not trimmed)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:12 against 5:00), segments brief but every slide covered in order. Opens exactly on
+# the scripted title line and single message. Slide 2's answer pulls slide 4's point forward in one line ("what
+# the assistant doesn't know becomes a recorded gap… retains its specific name") — the slide order is kept.
+# Slide 5 drops the check against the ministry's duties on personal data before the head of ICT adopts the page.
+# Slide 6 shortens the file-a-program-reads point to "an approver must trace all assumptions back to the document
+# they rest on". Added glosses: "that's a very clear boundary for a program", "checking accountability". Filler
+# ("uh", "ugh", "Oh, wow"). Recap at 3:04 is the deck's sentence; no sources line. SRT spells the country
+# "Progresa": listen for Progressa. (Try 2, v0.2, was rejected: "a stack of system management sources",
+# "our sources talk about", "the sources mention a framework from Progresa", an "over-caffeinated intern" metaphor.)
+
+0:00   # slide 1 — title card (cold open as scripted)
+0:14   # slide 2 — Hook: a register of requirements drafted in an afternoon
+0:42   # slide 3 — The assistant drafts; a person rules (figure)
+1:22   # slide 4 — Every gap keeps its name
+1:53   # slide 5 — MoEYS's rules of use (illustrative) (five numbered)
+2:31   # slide 6 — What you check in an assisted document (three numbered)
+3:04   # slide 7 — In one sentence

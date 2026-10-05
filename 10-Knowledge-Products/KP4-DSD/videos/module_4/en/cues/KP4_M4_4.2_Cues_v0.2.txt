@@ -1,0 +1,21 @@
+# Slide cue file — KP4 Module 4, Video 4.2 "No list longer than nine: choose by category"
+# Deck:  KP4_M4_4.2_Deck_v0.1.pptx (9 slides)
+# Audio: KP4_M4_4.2_Audio_v0.2.m4a (runs to 3:06.2; brief v0.2; not trimmed — the raw take opens on the title)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:06 against 5:00), but every slide covered in order and close to the deck's words.
+# Cold open as scripted (title + single message). The country is said "Progressive" twice (SRT) — listen for
+# Progressa; the ministry is said as a word ("Moyes") once. Backchannel ("Right", "Got it", "Seven, okay") and
+# "uh" filler. The gate's 'think about' hit is the deck's own "how your officers think about them" (slide 5).
+# Slide 7 ends without "the list now shows only that advice". Sources line said at 3:04.5 — the Sources card
+# gets 3.2 s (no more room after the closing sentence).
+
+0:00   # slide 1 — title card (cold open: title + single message)
+0:12   # slide 2 — Hook: a list of twenty, she sometimes picks the neighbour
+0:32   # slide 3 — The rule (nine, seven the aim, categories, a level above)
+1:09   # slide 4 — Why nine
+1:33   # slide 5 — Who decides the categories
+2:01   # slide 6 — Progressa: the matters PHEQA advises on (three categories numbered)
+2:29   # slide 7 — Two steps on the screen
+2:51   # slide 8 — In one sentence
+3:03   # slide 9 — Sources

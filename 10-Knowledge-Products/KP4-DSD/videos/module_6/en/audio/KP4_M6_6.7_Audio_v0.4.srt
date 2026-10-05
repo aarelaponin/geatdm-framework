@@ -1,0 +1,248 @@
+1
+00:00:00,150 --> 00:00:02,330
+Right. Yep. And we're looking at a really, uh,
+
+2
+00:00:02,950 --> 00:00:08,250
+counterintuitive concept today. Basically, why documenting exactly what a method cannot do
+
+3
+00:00:08,990 --> 00:00:10,310
+is actually its greatest asset.
+
+4
+00:00:10,830 --> 00:00:13,150
+It sounds a bit backwards at first, I know.
+
+5
+00:00:13,290 --> 00:00:16,210
+It really does. I mean, I have to push back on this right away.
+
+6
+00:00:16,910 --> 00:00:21,310
+When you are adopting a new framework for your ministry or, you know, your program,
+
+7
+00:00:22,150 --> 00:00:24,049
+you usually only get the shiny sales pitch.
+
+8
+00:00:24,270 --> 00:00:26,790
+Oh, absolutely. Everything is pitched as a silver bullet.
+
+9
+00:00:26,870 --> 00:00:35,170
+Exactly. So why on earth would a method explicitly advertise its own limitations in writing and just lay out all its potential failures?
+
+10
+00:00:35,650 --> 00:00:37,590
+Well, think about it from a leadership perspective.
+
+11
+00:00:38,070 --> 00:00:43,070
+Before relying on any method, a competent manager always asks what could go wrong.
+
+12
+00:00:43,190 --> 00:00:44,610
+Sure. You have to know the risks.
+
+13
+00:00:44,730 --> 00:00:47,870
+Right. And, uh, the SDD method answers this directly.
+
+14
+00:00:48,190 --> 00:00:52,970
+In fact, reading these explicitly written limits is literally mandatory before you even start using it.
+
+15
+00:00:53,150 --> 00:00:56,250
+Wow. Mandatory. Okay, well, let's get into the specifics then.
+
+16
+00:00:56,909 --> 00:01:02,470
+Let's number aloud the four major limits this method claims because these are what matter most to a manager.
+
+17
+00:01:02,610 --> 00:01:03,950
+What is limit number one?
+
+18
+00:01:04,610 --> 00:01:09,330
+So limit number one: it does not claim that its standards have been shown to work well together yet.
+
+19
+00:01:09,850 --> 00:01:10,830
+Wait, really?
+
+20
+00:01:11,450 --> 00:01:15,910
+Because, like, if I buy a car, I fully expect the engine and the transmission to work together.
+
+21
+00:01:16,630 --> 00:01:20,190
+How can a manager trust a system where the standards aren't proven to integrate?
+
+22
+00:01:20,770 --> 00:01:25,510
+It is a massive risk because no one has tested all the standards together at once.
+
+23
+00:01:25,910 --> 00:01:29,850
+Parts of your program could easily become, um, fragmented or siloed.
+
+24
+00:01:30,370 --> 00:01:32,670
+Or even duplicated across different departments?
+
+25
+00:01:33,010 --> 00:01:35,650
+Exactly, which brings us directly to limit number two.
+
+26
+00:01:36,150 --> 00:01:39,930
+It does not claim that every standard has been tested by use on a real project.
+
+27
+00:01:40,470 --> 00:01:42,150
+So it's basically unproven in the field.
+
+28
+00:01:42,850 --> 00:01:47,730
+In many ways, yeah. And then limit number three: a program does not check every step.
+
+29
+00:01:48,570 --> 00:01:50,630
+Meaning there is still a huge human element.
+
+30
+00:01:51,170 --> 00:01:54,530
+Yeah. Important handovers still rely entirely on a person.
+
+31
+00:01:54,890 --> 00:01:57,130
+Okay. Got it. And what is the fourth limit?
+
+32
+00:01:57,590 --> 00:02:03,870
+Number four: it is not cheap. The method relies on 12 different documents, which means there are, uh,
+
+33
+00:02:04,650 --> 00:02:06,810
+many places for corrections to be made.
+
+34
+00:02:07,290 --> 00:02:09,550
+And I'm guessing that gets costly to change?
+
+35
+00:02:10,290 --> 00:02:13,730
+Very costly to change, especially if discipline is not strictly maintained.
+
+36
+00:02:14,030 --> 00:02:14,230
+Right.
+
+37
+00:02:14,910 --> 00:02:19,350
+Now, beyond those four operational limits, let's talk about what is entirely missing.
+
+38
+00:02:19,870 --> 00:02:22,770
+There are two big ones, so let's number those aloud too.
+
+39
+00:02:23,110 --> 00:02:24,830
+What is the first missing standard?
+
+40
+00:02:25,370 --> 00:02:26,750
+Number one is accessibility,
+
+41
+00:02:27,510 --> 00:02:30,470
+and number two is services in more than one language.
+
+42
+00:02:31,130 --> 00:02:35,170
+Those seem like massive oversights for any government service you might be running.
+
+43
+00:02:35,830 --> 00:02:43,230
+They do. But here is the crucial part. If those requirements aren't specifically written into the, uh, register of what was asked,
+
+44
+00:02:43,870 --> 00:02:44,990
+they simply will not be built.
+
+45
+00:02:45,650 --> 00:02:46,870
+They just get ignored entirely.
+
+46
+00:02:47,270 --> 00:02:52,150
+Yes. If you don't explicitly ask for them in that register, your program will lack them completely.
+
+47
+00:02:52,950 --> 00:02:57,190
+So how does a manager actually handle this reality when briefing leadership?
+
+48
+00:02:57,350 --> 00:02:59,670
+Like, we have the Progressa example, right?
+
+49
+00:03:00,490 --> 00:03:05,370
+Yes. Looking at Progressa, and just a reminder, that is the fictional country of these examples.
+
+50
+00:03:05,630 --> 00:03:06,950
+Right. A totally fictional country.
+
+51
+00:03:07,290 --> 00:03:13,170
+But in their scenario, the head of ICT writes a briefing to the minister about adopting the SDD method.
+
+52
+00:03:13,570 --> 00:03:15,070
+And what exactly do they say?
+
+53
+00:03:15,550 --> 00:03:18,230
+They quote all seven limits exactly as written.
+
+54
+00:03:18,390 --> 00:03:19,510
+They don't hide anything.
+
+55
+00:03:20,010 --> 00:03:23,770
+Wow. So they make sure the minister decides with full knowledge of the risks.
+
+56
+00:03:24,110 --> 00:03:27,110
+Exactly. It ensures absolute transparency.
+
+57
+00:03:27,690 --> 00:03:33,310
+A list of limits looks like a weakness, but a method that hides its limits teaches the wrong lesson.
+
+58
+00:03:33,750 --> 00:03:36,510
+Because if you know the limit, you can actually plan around it.
+
+59
+00:03:36,930 --> 00:03:39,030
+Yes. A stated limit can be planned around.
+
+60
+00:03:39,150 --> 00:03:42,590
+An unstated limit is only found after the money is already spent.
+
+61
+00:03:43,030 --> 00:03:45,070
+And by then, it is way too late.
+
+62
+00:03:45,870 --> 00:03:47,850
+That is such a powerful takeaway for today.
+

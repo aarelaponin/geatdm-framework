@@ -1,0 +1,23 @@
+# Slide cue file — KP4 Module 6, Video 6.6 "Carry the method to another sector"
+# Deck:  KP4_M6_6.6_Deck_v0.1.pptx (7 slides; no Sources slide — the recap slide is last)
+# Audio: KP4_M6_6.6_Audio_v0.1.m4a (runs to 2:55.2; brief v0.1; first counted take, not trimmed)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (2:55 against 5:00), segments brief. Cold open as scripted. Slide 2's question is
+# framed with house words ("fragmented, siloed, duplicated, or costly to change") not in the deck. Slide 3
+# calls the twelve documents "blank instruments" (deck: the blank instruments stay too, a separate item).
+# Slide 4 opens on slide 5's headline ("carry the method, not the results ... nothing found in education is a
+# fact about health") before numbering its four items — slide 5's point brought forward; slide 5 itself is
+# then thin (assistant helps adapt, officials correct; "rebuilt on its own records", the reference pack's
+# program check and "this course works through education only" not said). Slide 6 is introduced by an
+# invented "locked into one supplier" question. After the recap, a reflective outro to the listener ("consider
+# which technical hurdles ... your shortcut") over the recap slide. Backchannel ("Wow, okay", "I see",
+# "Right"). Every list numbered aloud in order (4, 4, 3).
+
+0:00   # slide 1 — title card (cold open as scripted)
+0:04   # slide 2 — Hook: another ministry asks to use the same method
+0:26   # slide 3 — What stays the same (four numbered)
+1:05   # slide 4 — What the sector brings (four numbered; reference pack)
+1:47   # slide 5 — Carry the method, not the results (officials correct the drafts)
+2:02   # slide 6 — Names before the first document (three numbered)
+2:31   # slide 7 — In one sentence (recap, then the outro)

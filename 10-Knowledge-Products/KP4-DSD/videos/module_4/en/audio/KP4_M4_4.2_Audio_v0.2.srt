@@ -1,0 +1,203 @@
+1
+00:00:00,240 --> 00:00:02,360
+Module four, video four point two.
+
+2
+00:00:03,040 --> 00:00:06,000
+No list longer than nine. Choose by category
+
+3
+00:00:06,780 --> 00:00:11,240
+A long list is divided into categories, and the officer picks the category first
+
+4
+00:00:12,060 --> 00:00:17,420
+So, um, what happens when an officer in your ministry faces a list of twenty values?
+
+5
+00:00:18,000 --> 00:00:26,120
+Well, ask an officer to pick one value from a list of twenty, and she scrolls, reads, and, uh, sometimes picks the neighbor Right
+
+6
+00:00:26,620 --> 00:00:28,660
+But the method has a plain rule for this, you see.
+
+7
+00:00:29,040 --> 00:00:31,780
+And it costs nothing to apply while the application is designed
+
+8
+00:00:32,420 --> 00:00:35,740
+Okay, so what is the specific rule for these list lengths?
+
+9
+00:00:36,420 --> 00:00:42,680
+No step of a choice offers more than nine values, and, uh, seven is really the aim Seven, okay Yeah.
+
+10
+00:00:42,720 --> 00:00:46,540
+A longer list is divided into categories, each holding no more than nine values
+
+11
+00:00:47,320 --> 00:00:49,500
+So the officer picks the category first
+
+12
+00:00:49,880 --> 00:00:52,060
+Exactly, the category first, then the value.
+
+13
+00:00:52,680 --> 00:00:57,000
+And if a list ever needs more than nine categories, well, another level is added above them
+
+14
+00:00:57,640 --> 00:00:57,980
+Got it.
+
+15
+00:00:58,580 --> 00:01:00,340
+And what about the categories themselves?
+
+16
+00:01:00,680 --> 00:01:02,960
+The categories are just a list like any other.
+
+17
+00:01:03,320 --> 00:01:08,520
+They have names, someone keeps them, and, uh, each new value is placed in one of them when it is added
+
+18
+00:01:09,340 --> 00:01:11,940
+So why does this limit of nine matter for your program?
+
+19
+00:01:12,560 --> 00:01:16,540
+Well, a short list is read at a glance. A long list must be scrolled
+
+20
+00:01:17,220 --> 00:01:18,920
+Which means the wrong value is...
+
+21
+00:01:19,280 --> 00:01:20,920
+Just one line away, precisely.
+
+22
+00:01:21,740 --> 00:01:23,980
+A wrong value chosen sends a file to the wrong desk
+
+23
+00:01:24,760 --> 00:01:26,000
+Ah, and nobody notices
+
+24
+00:01:26,460 --> 00:01:28,720
+Right. Nobody notices until someone asks where it went.
+
+25
+00:01:29,200 --> 00:01:32,540
+So two short choices are faster and safer than one long one
+
+26
+00:01:33,180 --> 00:01:35,820
+Does a program decide how to group these categories automatically?
+
+27
+00:01:36,720 --> 00:01:40,940
+No, a program can count the values, but it cannot know how your officers think about them
+
+28
+00:01:41,640 --> 00:01:42,380
+So who decides?
+
+29
+00:01:42,940 --> 00:01:46,400
+The categories of each long list are decided once in the interaction design.
+
+30
+00:01:47,000 --> 00:01:53,320
+The analyst proposes them, and, uh, the officers who use the list confirm that each value sits where they would naturally look for it
+
+31
+00:01:53,900 --> 00:01:54,760
+That makes a lot of sense
+
+32
+00:01:55,300 --> 00:02:00,320
+Yeah. And the program checking the application's description then refuses a long list with no categories
+
+33
+00:02:01,060 --> 00:02:07,220
+How does this apply to PHEQA advising the minister at MoEYS in Progressa, the fictional country of these examples?
+
+34
+00:02:07,880 --> 00:02:12,120
+Well, in Progressa, PHEQA advises the minister on twenty kinds of matters
+
+35
+00:02:12,560 --> 00:02:14,440
+And twenty is too many for one step?
+
+36
+00:02:15,000 --> 00:02:19,360
+Exactly. The list has three categories. One, licenses, eight matters.
+
+37
+00:02:19,980 --> 00:02:22,480
+Two, suspension and cancellation, seven matters
+
+38
+00:02:22,960 --> 00:02:23,420
+And the third?
+
+39
+00:02:24,240 --> 00:02:28,420
+Three, other matters, five matters. So no category holds more than nine
+
+40
+00:02:29,040 --> 00:02:31,660
+How does the officer actually interact with this on screen?
+
+41
+00:02:32,380 --> 00:02:33,980
+The interaction happens in two steps.
+
+42
+00:02:34,940 --> 00:02:38,520
+Step one, the officer picks the category, suspension and cancellation
+
+43
+00:02:39,100 --> 00:02:39,760
+And step two?
+
+44
+00:02:40,400 --> 00:02:45,000
+Step two, seven matters appear, and she picks the one she wants, suspending a full license
+
+45
+00:02:45,700 --> 00:02:47,560
+So she never saw all twenty at once
+
+46
+00:02:48,060 --> 00:02:48,260
+Right.
+
+47
+00:02:48,960 --> 00:02:50,920
+And she never scrolled past unneeded values
+
+48
+00:02:51,520 --> 00:02:54,560
+To summarize this approach for the application in one sentence, what is it?
+
+49
+00:02:55,500 --> 00:02:58,700
+When a screen offers a long list, ask how it is divided.
+
+50
+00:02:59,260 --> 00:03:03,940
+No step should offer more than nine values, and the officers who use it should agree the categories
+
+51
+00:03:04,540 --> 00:03:05,840
+Sources are in the video description

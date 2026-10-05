@@ -1,0 +1,25 @@
+# Slide cue file — KP4 Module 4, Video 4.4 "One file a program reads: the application model"
+# Deck:  KP4_M4_4.4_Deck_v0.1.pptx (9 slides; slide 4 carries figure F12, slide variant)
+# Audio: KP4_M4_4.4_Audio_v0.3.m4a (runs to 3:58.1; brief v0.1; trimmed take of try 2)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:58 against 5:00). Cold open as scripted, then a "welcome to this deep dive"
+# show-open with an invented "mission today" line. Slide 4's point (a builder clicks parts together, every
+# click drifts) is pulled forward into the opener before slide 3, then told again after the four parts; slide 2
+# and the opener are one beat. "Locked into one supplier", "costly to change" and "humans make mistakes" added
+# (not in the deck). Slide 5 does not say the file names the interaction design. Slide 6 is thin: the minister's
+# list of PHEQA's advice, the new name and advice "as PHEQA sent them", and the approval sent back to PHEQA are
+# not said. "The file always wins" (deck: the file is what gets built). Filler/backchannel throughout
+# ("you know", "like", "Right", "Oh, wow"). No sources line: the recap (3:43) ends with an added "the only way to
+# be sure your minister gets exactly what was agreed"; Sources card cues after it at 3:53 (5.1 s). MoEYS said
+# as "MOEYS ministry" (listen). The slide-3 "Find the link in the description" line is not said (not a flaw).
+
+0:00   # slide 1 — title card (cold open as scripted)
+0:06   # slide 2 — Hook: everything agreed must reach the platform without retyping
+0:46   # slide 3 — What a low-code platform is made of (four parts numbered)
+1:13   # slide 4 — One file instead of a thousand clicks (figure F12)
+1:41   # slide 5 — Nothing in the file is new (four numbered)
+2:33   # slide 6 — MoEYS: one section, in plain sentences
+3:11   # slide 7 — Ask for it in plain sentences
+3:43   # slide 8 — In one sentence
+3:53   # slide 9 — Sources

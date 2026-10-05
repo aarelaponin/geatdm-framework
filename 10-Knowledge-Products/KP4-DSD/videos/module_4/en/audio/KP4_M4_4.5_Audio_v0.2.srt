@@ -1,0 +1,256 @@
+1
+00:00:00,120 --> 00:00:06,720
+Module 4, Video 4.5: Reviewing the model, what it assumed, and what it could not express.
+
+2
+00:00:07,920 --> 00:00:08,080
+Um,
+
+3
+00:00:09,140 --> 00:00:14,560
+imagine an AI assistant generating the core configuration file for your ministry's newest application.
+
+4
+00:00:14,900 --> 00:00:16,700
+Oh, yeah. That's a very common scenario these days.
+
+5
+00:00:16,940 --> 00:00:17,060
+Right.
+
+6
+00:00:17,840 --> 00:00:21,720
+But what happens when that AI encounters a scenario nobody wrote down?
+
+7
+00:00:22,540 --> 00:00:25,580
+Or, I don't know, a task the platform simply cannot do.
+
+8
+00:00:26,180 --> 00:00:29,940
+Does it alert you, or does it just quietly decide on its own?
+
+9
+00:00:30,820 --> 00:00:33,540
+Well, when systems quietly decide things, um,
+
+10
+00:00:34,400 --> 00:00:36,240
+you basically lose control of your own policy.
+
+11
+00:00:36,440 --> 00:00:36,980
+Exactly.
+
+12
+00:00:37,940 --> 00:00:47,260
+So today's deep dive explores how to maintain absolute control over digital models in your programs, ensuring system limitations and missing information are explicitly managed,
+
+13
+00:00:47,780 --> 00:00:49,140
+uh, rather than silently guessed.
+
+14
+00:00:49,780 --> 00:00:51,660
+Right. So let's start at the beginning.
+
+15
+00:00:52,680 --> 00:00:56,240
+How does agreed information actually reach the applications file?
+
+16
+00:00:57,020 --> 00:01:00,400
+So everything agreed upon reaches the file in one of four specific ways.
+
+17
+00:01:00,520 --> 00:01:02,100
+Okay. First, it's placed directly.
+
+18
+00:01:02,940 --> 00:01:06,900
+Second, it's placed by a judgment, uh, which is written down as an assumption.
+
+19
+00:01:07,140 --> 00:01:08,820
+Written down as an assumption. Exactly. Got it.
+
+20
+00:01:09,420 --> 00:01:14,920
+Third, it cannot be placed, so it is written down as a loss, and fourth, it just, you know, stays in its own document.
+
+21
+00:01:15,340 --> 00:01:20,200
+Okay, so thinking about this, it's almost like packing a really complex cargo flight.
+
+22
+00:01:20,420 --> 00:01:21,360
+Oh, I like that analogy.
+
+23
+00:01:21,580 --> 00:01:27,680
+Yeah. So standard boxes load directly. Oddly shaped items, well, they require a judgment call, so those are your assumptions.
+
+24
+00:01:28,360 --> 00:01:30,660
+Oversized items are left behind. Those are the losses.
+
+25
+00:01:31,000 --> 00:01:33,060
+And some items just, you know, stay in the warehouse.
+
+26
+00:01:33,540 --> 00:01:42,180
+That is a perfect way to picture it, and we really need to clarify the difference between those judgment calls and the left behind items because, well, that's where faults originate.
+
+27
+00:01:42,680 --> 00:01:47,840
+Right. So if an assumption is like a decision made because the original documents were silent,
+
+28
+00:01:48,520 --> 00:01:50,400
+what exactly defines a loss?
+
+29
+00:01:50,980 --> 00:01:54,240
+A loss is an agreed limitation that the file cannot express.
+
+30
+00:01:54,740 --> 00:01:57,020
+It sits alongside a note of what is being done instead.
+
+31
+00:01:57,460 --> 00:02:00,660
+Both of these assumptions and losses are normal parts of the process.
+
+32
+00:02:01,180 --> 00:02:07,040
+But wait, I mean, if the goal is efficiency here, why shouldn't the AI simply fill in these gaps automatically?
+
+33
+00:02:07,240 --> 00:02:10,039
+Isn't the whole appeal of an AI assistant to save time?
+
+34
+00:02:10,440 --> 00:02:16,900
+I hear that argument a lot, but a gap filled silently by invention actually becomes a fault in the running service.
+
+35
+00:02:17,180 --> 00:02:18,760
+Oh, wow. Wait, really?
+
+36
+00:02:19,080 --> 00:02:28,900
+Yes. If nobody is told, it leads directly to systems that are fragmented, siloed, duplicated, rekeyed, locked into one supplier, and
+
+37
+00:02:29,020 --> 00:02:30,000
+costly to change.
+
+38
+00:02:30,560 --> 00:02:33,220
+That sounds incredibly risky for any ministry.
+
+39
+00:02:33,460 --> 00:02:42,220
+It is. The AI must refuse to guess because, you know, a gap it names can be ruled on, but a gap it fills silently is just a liability.
+
+40
+00:02:43,060 --> 00:02:49,360
+So how do you review a system to catch those gaps without, you know, forcing a director general to read the raw code itself?
+
+41
+00:02:49,920 --> 00:02:51,400
+Well, you don't read the application file.
+
+42
+00:02:51,620 --> 00:02:56,160
+Instead, you read plain language cards. You get one for each assumption and one for each loss.
+
+43
+00:02:56,500 --> 00:02:57,500
+Okay. Cards?
+
+44
+00:02:58,220 --> 00:03:00,220
+Can we ground this with a specific example?
+
+45
+00:03:00,540 --> 00:03:00,740
+Sure.
+
+46
+00:03:01,400 --> 00:03:03,780
+Let's look at the Ministry of Education in Progressa.
+
+47
+00:03:04,200 --> 00:03:06,840
+Progressa, which is the fictional country of these examples.
+
+48
+00:03:07,100 --> 00:03:09,560
+Right, Progressa. Imagine two cards are generated.
+
+49
+00:03:09,980 --> 00:03:17,780
+First, the assumption that a change of name takes effect on the day the minister approves it, uh, because the original policy story document didn't specify.
+
+50
+00:03:18,140 --> 00:03:25,000
+Makes sense. Then the loss that the platform cannot send an institutional notice, so it's kept as a manual task for an officer.
+
+51
+00:03:25,660 --> 00:03:27,780
+Okay, so what happens with these two cards?
+
+52
+00:03:28,120 --> 00:03:34,920
+The director of higher education reads these plain language cards, rules yes on both, and records her name and the date.
+
+53
+00:03:35,760 --> 00:03:39,000
+But what if the director says no to that name change assumption?
+
+54
+00:03:39,620 --> 00:03:42,400
+Like, what if it actually needs to wait for official publication?
+
+55
+00:03:42,860 --> 00:03:47,460
+That is a great question. The rejection is never simply typed into the file to patch it.
+
+56
+00:03:48,340 --> 00:03:52,120
+Because patching directly means the code and the policy document fall out of sync.
+
+57
+00:03:52,540 --> 00:03:56,840
+Exactly. It triggers a strict loop to maintain a single source of truth.
+
+58
+00:03:56,940 --> 00:03:59,720
+So first, the story is corrected. Right.
+
+59
+00:03:59,940 --> 00:04:03,560
+Second, the file is written again. Third, the cards are read again.
+
+60
+00:04:03,860 --> 00:04:07,860
+Uh-huh. And fourth, approval waits until every card carries a ruling.
+
+61
+00:04:08,480 --> 00:04:11,440
+Wow. So it is a very rigorous process. So
+
+62
+00:04:12,100 --> 00:04:19,300
+to summarize, before approving new systems for your program, you must demand every assumption and laws as a plain language card.
+
+63
+00:04:19,680 --> 00:04:20,180
+Absolutely.
+
+64
+00:04:20,899 --> 00:04:23,980
+You rule on each one and record who ruled and when.
+

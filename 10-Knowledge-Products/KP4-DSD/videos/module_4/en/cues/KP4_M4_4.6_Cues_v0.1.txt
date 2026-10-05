@@ -1,0 +1,27 @@
+# Slide cue file — KP4 Module 4, Video 4.6 "Refused, not worked around"
+# Deck:  KP4_M4_4.6_Deck_v0.1.pptx (9 slides; slide 7 is the demonstration storyboard stand-in)
+# Audio: KP4_M4_4.6_Audio_v0.1.m4a (runs to 3:47.4; brief v0.1; try 1, the trim left it unchanged)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:47 against 5:00). Cold open title only (Host B's sentence not said); the hook is
+# told as an "imagine it is two days before a deadline" scenario. Slide 4 is thin: no setting / no switch / no
+# exception for a deadline and the deadline line are said, but "the check reads what the document says, so your
+# acceptance line is evidence — write it exactly, never for a document nobody has read" is not. Slide 4 adds
+# "fragmented, siloed, locked into one supplier, costly to change" as the cost of a bypass (not in the deck).
+# Slide 6 is introduced as "a storyboard demonstration of what these runs will show" and tells the first
+# (refused) run there, in future tense ("the recording will show two runs"); slide 7 then tells the correction
+# and the admitted run. Demonstration rule kept: nothing is said to have run, been shown or passed. Slide 6's
+# "the program refuses it before anything is built" is told as what the recording will show; "nothing is
+# generated" not said. Filler/backchannel ("Wow", "Mm-hmm", "Right", "you know"). No sources line: the recap
+# runs to the end, so the Sources card cues on its second sentence (3:42, 5.4 s). Ministry of Education, MoEYS
+# not said. Progressa introduced as the fictional country of these examples.
+
+0:00   # slide 1 — title card (cold open: title only)
+0:05   # slide 2 — Hook: "Switch the check off, just this once."
+0:34   # slide 3 — What the program checks first (four questions numbered)
+1:14   # slide 4 — Nothing switches it off
+1:50   # slide 5 — Answered, not worked around (two answers numbered)
+2:24   # slide 6 — MoEYS: one list of twenty, refused
+3:10   # slide 7 — Corrected, and admitted (storyboard stand-in)
+3:31   # slide 8 — In one sentence
+3:42   # slide 9 — Sources

@@ -1,0 +1,25 @@
+# Slide cue file — KP4 Module 3, Video 3.4 "Screens officers can use"
+# Deck:  KP4_M3_3.4_Deck_v0.1.pptx (8 slides; no Sources card)
+# Audio: KP4_M3_3.4_Audio_v0.5.m4a (runs to 3:41.4; untrimmed, the runner made no trimmed pair)
+# Brief: KP4_M3_3.4_AudioBrief_v0.3.md. Re-roll of candidate v0.2, 6 Oct 2026.
+# Approximate — derived by matching SRT content beats to slide content. Cued by hand.
+#
+# Fixed against v0.2: cold open said as scripted; the five rules numbered one to five together on slide 3; slide 6
+# says "the screen's design cannot be accepted while that mark stands" (sign-off, nothing freezes); no metaphor,
+# no invented cost.
+# Flaws of the take: short (3:41). Heavy backchannel and filler ("Oh, wow", "Right", "Got it", "I mean", "you know",
+# "uh"). "Self-service portal"; "the AI's guess". Slide 5: the institution is picked by "part of the register number"
+# (deck: part of the name or the register number); the three outcomes are not named ("three specific choices").
+# Slide 7: the inspector's two remarks (address copied wrong one day; two names that begin the same way) are
+# compressed to one summary line, "retyping addresses or scrolling long lists directly causes errors".
+# "In your program" (deck spelling: programme). SRT spells the country "Progresa" (listen for Progressa).
+# No sources line (the deck has no Sources card).
+
+0:00   # slide 1 — title card
+0:10   # slide 2 — Hook: a small waste on an officer's screen is repeated thousands of times a year
+0:42   # slide 3 — Five rules for an officer's screen
+1:16   # slide 4 — Before: the inspector's first draft
+2:04   # slide 5 — After: rules 1 to 4
+2:36   # slide 6 — Rule 5: to be confirmed, with an owner
+3:02   # slide 7 — Sit beside an officer
+3:33   # slide 8 — In one sentence

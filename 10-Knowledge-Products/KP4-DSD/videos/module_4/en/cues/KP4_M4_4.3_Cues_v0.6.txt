@@ -1,0 +1,29 @@
+# Slide cue file — KP4 Module 4, Video 4.3 "The service workflow: states, moves and who may make each"
+# Deck:  KP4_M4_4.3_Deck_v0.1.pptx (9 slides; slide 6 carries figure F11, slide variant)
+# Audio: KP4_M4_4.3_Audio_v0.6.m4a (runs to 4:19.3; brief v0.3; the RAW take, not the trimmed v0.7)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Why the raw take: trim_outro cut v0.7 at 3:48, removing slide 8's message together with the reflective outro, so
+# the trimmed take has no narration for slides 8-9. The raw v0.6 covers every slide; its cost is the show-open and
+# the outro below.
+# Flaws of this take: opens "Welcome to the Deep Dive. Today we're doing a really close look into the hidden
+# architecture of digital government services… we're unpacking the service workflow" — no scripted title line.
+# Adds "locked"/"fragmented, siloed, duplicated" framing and "which is incredibly risky". States and moves checked
+# against the deck and F11: granted / suspended / cancelled with their meanings; the minister grants, suspends and
+# cancels, ends a suspension on PHEQA's advice; the registration officer records each decision; a cancellation
+# is undone only by a decision on appeal or on review — all as the deck. Slide 4 names both GovStack specs (Workflow,
+# Registration) and only there; "find the link in the description" not said; the officers' task list is not said.
+# Slide 8's message as "the ultimate takeaway for you listening right now", then a reflective question ("we'll leave
+# you with this thought to mull over… how many unintentional dead ends might you discover") is spoken over the
+# Sources card; no sources line. Backchannel ("Wow", "Got it", "Exactly"). SRT spells "Progresa": listen for
+# Progressa.
+
+0:00   # slide 1 — title card (show-open)
+0:10   # slide 2 — Hook: a licence, an application, an appeal: each case passes through stages
+0:46   # slide 3 — Three things, written once (numbered)
+1:38   # slide 4 — What the published specifications say (Workflow, Registration; three decisions numbered)
+2:17   # slide 5 — PHEQA: the states of a licence (numbered)
+2:48   # slide 6 — The moves, and who may make each (figure F11)
+3:13   # slide 7 — The check: can every state be left?
+3:50   # slide 8 — In one sentence
+4:06   # slide 9 — Sources (reflective outro spoken over it)

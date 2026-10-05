@@ -1,0 +1,199 @@
+1
+00:00:00,400 --> 00:00:04,059
+Module five, video 5.7, proof on the running system,
+
+2
+00:00:04,700 --> 00:00:06,000
+a task a person finishes.
+
+3
+00:00:07,600 --> 00:00:11,620
+Uh, so if every document is accepted, you know, and the software is installed,
+
+4
+00:00:12,740 --> 00:00:15,220
+why wouldn't the system be ready for your ministry to use?
+
+5
+00:00:16,280 --> 00:00:20,740
+Well, um, the checks before installation are really just reading documents.
+
+6
+00:00:20,920 --> 00:00:26,480
+They compare a screen to its original story, uh, or a model to the interaction design.
+
+7
+00:00:26,860 --> 00:00:28,000
+Right. It's all on paper.
+
+8
+00:00:28,340 --> 00:00:33,780
+Exactly. And, well, a pass on a document does not equal a working service for your program.
+
+9
+00:00:34,360 --> 00:00:34,860
+That makes sense.
+
+10
+00:00:35,660 --> 00:00:43,880
+Yeah. Without testing the running system, data can remain fragmented, siloed, um, duplicated, rekeyed-
+
+11
+00:00:44,340 --> 00:00:47,120
+Wow... locked into one supplier, or even costly to change.
+
+12
+00:00:47,940 --> 00:00:54,340
+So does the specification-driven development method require a test that goes beyond, um, reading those documents?
+
+13
+00:00:54,800 --> 00:00:59,260
+It does. It requires the third rule of the specification-driven development method.
+
+14
+00:01:00,040 --> 00:01:00,640
+Okay. And
+
+15
+00:01:01,280 --> 00:01:02,520
+what is that rule exactly?
+
+16
+00:01:03,220 --> 00:01:05,640
+At least one check must end on the running system.
+
+17
+00:01:06,040 --> 00:01:12,160
+Uh, a real person must go through a real task on the installed application, and that run must be recorded.
+
+18
+00:01:13,020 --> 00:01:17,840
+Okay. So how is the exact anatomy of this test written out before it's actually run?
+
+19
+00:01:18,360 --> 00:01:26,300
+It's written as a journey. A journey is a story the business side recognizes, which, um, doubles as a test the builder can execute.
+
+20
+00:01:26,620 --> 00:01:27,340
+Oh, got it.
+
+21
+00:01:27,680 --> 00:01:31,160
+And it has three mandatory parts. Number one, where it starts.
+
+22
+00:01:31,380 --> 00:01:33,000
+Okay. Number two, the steps.
+
+23
+00:01:33,660 --> 00:01:35,840
+And number three, what counts as finished.
+
+24
+00:01:36,160 --> 00:01:36,340
+Right.
+
+25
+00:01:37,000 --> 00:01:40,220
+So in the fictional country of these examples, Progressa,
+
+26
+00:01:40,900 --> 00:01:44,400
+what are the exact steps the change of name journey is written to take?
+
+27
+00:01:45,060 --> 00:01:50,560
+So we look at the five specific steps of Progressa's journey for approving a change of an institution's name.
+
+28
+00:01:51,160 --> 00:01:57,320
+Number one, a test officer at the ministry, MoEYS Mm-hmm... signs in with the minister's role.
+
+29
+00:01:58,260 --> 00:02:05,000
+Number two, she opens the names list, um, and chooses the advice for Harbourview University College.
+
+30
+00:02:05,260 --> 00:02:06,200
+Okay. Step two.
+
+31
+00:02:06,440 --> 00:02:10,699
+Number three, she reads the advice from the quality authority, PHEQA.
+
+32
+00:02:10,800 --> 00:02:13,960
+PHEQA, right. Number four, she approves the new name.
+
+33
+00:02:14,500 --> 00:02:20,860
+And number five, the journey is finished only when the approval is recorded, um, and sent back to PHEQA.
+
+34
+00:02:21,400 --> 00:02:24,760
+So when your minister requires concrete evidence of acceptance,
+
+35
+00:02:25,420 --> 00:02:27,140
+what must the record of the run name?
+
+36
+00:02:28,160 --> 00:02:30,040
+Well, the record of the run must name four things.
+
+37
+00:02:30,700 --> 00:02:35,020
+Uh, number one, which journey. Okay. Number two, on which installation.
+
+38
+00:02:35,640 --> 00:02:36,860
+Number three, at what time.
+
+39
+00:02:37,540 --> 00:02:40,320
+And, um, number four, with what result at each step.
+
+40
+00:02:41,000 --> 00:02:44,440
+What if, um, what if a journey is written but not run,
+
+41
+00:02:45,160 --> 00:02:46,160
+like they ran out of time?
+
+42
+00:02:46,980 --> 00:02:50,940
+A journey written but not run is reported strictly as not run.
+
+43
+00:02:51,440 --> 00:02:56,760
+Ministers sign records of what actually happened, uh, not descriptions of what should happen.
+
+44
+00:02:57,400 --> 00:03:02,020
+Okay. So what will the recording show when the demonstration of this journey takes place?
+
+45
+00:03:03,020 --> 00:03:07,420
+The recording will show the test officer signing into the live installation with the minister's role.
+
+46
+00:03:07,620 --> 00:03:17,360
+Right. It will show her executing each step of the change of name journey, and the test will pass only when the system generates the factual record of the run- Mm-hmm... confirming the
+
+47
+00:03:17,400 --> 00:03:20,780
+approval is successfully recorded and sent back to PHEQA.
+
+48
+00:03:21,620 --> 00:03:23,460
+So just to be absolutely clear,
+
+49
+00:03:24,540 --> 00:03:28,200
+what constitutes true acceptance of a system under this method?
+
+50
+00:03:29,240 --> 00:03:36,080
+True acceptance of a system only ends when a person finishes a real task on the running service and generates a record of the run.

@@ -1,0 +1,256 @@
+1
+00:00:00,280 --> 00:00:04,960
+Module five, video five point two. Nothing generated is edited by hand.
+
+2
+00:00:06,420 --> 00:00:10,920
+The evening before the minister's demonstration, someone notices a wrong label on a form.
+
+3
+00:00:11,860 --> 00:00:12,920
+What is the quickest fix?
+
+4
+00:00:13,960 --> 00:00:18,840
+Well, uh, the instinct is to just jump right into the platform and, you know, fix it manually.
+
+5
+00:00:18,920 --> 00:00:21,500
+It is just so tempting when you are under pressure.
+
+6
+00:00:22,060 --> 00:00:24,680
+Right. Just a quick platform edit to save the demo.
+
+7
+00:00:25,300 --> 00:00:28,800
+But, um, why is that actually so dangerous for a system?
+
+8
+00:00:29,560 --> 00:00:33,980
+Because that hand edit instantly creates two versions of the truth.
+
+9
+00:00:34,540 --> 00:00:36,320
+Two versions, like they get out of sync.
+
+10
+00:00:36,580 --> 00:00:42,420
+Exactly. I mean, the accepted description says one thing, but the live platform now shows another.
+
+11
+00:00:42,980 --> 00:00:47,440
+And during the next generation, uh, one of two bad things happens.
+
+12
+00:00:48,040 --> 00:00:49,340
+Okay, number one being?
+
+13
+00:00:49,960 --> 00:00:54,600
+Number one, the edit is overwritten, so that wrong label just returns.
+
+14
+00:00:55,100 --> 00:00:57,520
+Ah, which completely defeats the purpose of the fix.
+
+15
+00:00:57,860 --> 00:00:58,140
+Right.
+
+16
+00:00:59,300 --> 00:01:02,660
+Or number two, generation is quietly stopped.
+
+17
+00:01:03,360 --> 00:01:05,640
+Wait, they just stop the generation entirely?
+
+18
+00:01:05,860 --> 00:01:06,240
+They do.
+
+19
+00:01:07,000 --> 00:01:08,760
+Just to protect one manual edit.
+
+20
+00:01:08,940 --> 00:01:12,280
+They do. And then nobody knows what the application is built from anymore.
+
+21
+00:01:12,680 --> 00:01:16,900
+Your whole system becomes, you know, fragmented, siloed, and just really costly to change.
+
+22
+00:01:17,760 --> 00:01:24,400
+So if we can't do a quick fix, uh, what is the actual SDD method for handling this in your ministry?
+
+23
+00:01:25,220 --> 00:01:28,600
+It is a really strict procedure. Mm. Um, there are three steps.
+
+24
+00:01:29,000 --> 00:01:31,920
+Step one: find the document that owns the fact.
+
+25
+00:01:32,680 --> 00:01:34,780
+Okay, so go back to the original description?
+
+26
+00:01:35,200 --> 00:01:35,440
+Yes.
+
+27
+00:01:36,040 --> 00:01:38,940
+Step two: correct it there and have it accepted.
+
+28
+00:01:39,460 --> 00:01:41,660
+And step three: generate the application again.
+
+29
+00:01:42,720 --> 00:01:44,700
+Okay, that sounds foolproof in theory,
+
+30
+00:01:45,340 --> 00:01:49,880
+but I mean, how do you actually catch a supplier who just sneaks in a hand edit anyway?
+
+31
+00:01:50,680 --> 00:01:52,900
+Well, that is where the read back program comes in.
+
+32
+00:01:53,200 --> 00:01:55,600
+It compares the files and gives one of three marks.
+
+33
+00:01:56,500 --> 00:01:56,980
+And those are?
+
+34
+00:01:57,820 --> 00:02:01,740
+Mark one is in step. That means everything matches the design perfectly.
+
+35
+00:02:02,440 --> 00:02:04,040
+Mark two is out of date.
+
+36
+00:02:04,920 --> 00:02:08,220
+Meaning, uh, the blueprint changed, but the file wasn't regenerated.
+
+37
+00:02:08,820 --> 00:02:09,820
+Exactly. Okay.
+
+38
+00:02:10,020 --> 00:02:13,560
+And mark three is the one you really don't want: edited by hand.
+
+39
+00:02:14,180 --> 00:02:18,860
+Ah, caught red-handed. So let's look at the fictional country of Progressa.
+
+40
+00:02:19,560 --> 00:02:21,260
+Say someone changes a label on a
+
+41
+00:02:21,920 --> 00:02:24,540
+MoEYS form by hand right before a demo.
+
+42
+00:02:25,400 --> 00:02:27,420
+What will the demonstration actually show?
+
+43
+00:02:28,100 --> 00:02:31,080
+The recording will show a label changed by hand on the platform.
+
+44
+00:02:31,660 --> 00:02:35,520
+Then it will show the read back run and naming the form as edited by hand.
+
+45
+00:02:35,840 --> 00:02:36,900
+So it flags it immediately.
+
+46
+00:02:37,160 --> 00:02:37,320
+Right.
+
+47
+00:02:38,020 --> 00:02:41,540
+Then it will show the correction made in the model and the application generated again.
+
+48
+00:02:42,080 --> 00:02:43,720
+Finally, the read back run once more.
+
+49
+00:02:44,360 --> 00:02:46,760
+And it only passes when it is completely clear.
+
+50
+00:02:47,220 --> 00:02:52,660
+Yes. It will pass when the first run names the edited file and the second shows every file in step.
+
+51
+00:02:53,140 --> 00:02:57,260
+Wow. Okay, but how do we force suppliers to actually follow this process?
+
+52
+00:02:57,760 --> 00:03:00,680
+You lock it down. There are three essential contract terms.
+
+53
+00:03:01,040 --> 00:03:01,500
+Term one:
+
+54
+00:03:02,140 --> 00:03:03,920
+no generated file is edited by hand.
+
+55
+00:03:04,160 --> 00:03:06,000
+Nice and strict. What is the second?
+
+56
+00:03:06,540 --> 00:03:07,140
+Term two:
+
+57
+00:03:07,820 --> 00:03:11,380
+the read back run before every acceptance and its list handed over.
+
+58
+00:03:11,980 --> 00:03:13,880
+So the ministry sees the actual proof.
+
+59
+00:03:14,220 --> 00:03:19,000
+Exactly. And term three: a file edited by hand is an automatic defect.
+
+60
+00:03:19,440 --> 00:03:21,760
+Correct it in the description. No exceptions.
+
+61
+00:03:22,220 --> 00:03:31,740
+So to recap for anyone managing these programs, always correct the accepted document, never the platform, and rely on the read back program to catch those manual
+
+62
+00:03:31,800 --> 00:03:33,700
+changes. Absolutely. Absolutely.
+
+63
+00:03:34,320 --> 00:03:37,140
+That is how you stop your platform from being duplicated and rekeyed.
+
+64
+00:03:37,520 --> 00:03:37,840
+So true.
+

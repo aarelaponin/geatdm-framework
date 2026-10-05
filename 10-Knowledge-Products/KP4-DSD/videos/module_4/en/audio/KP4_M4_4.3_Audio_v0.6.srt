@@ -1,0 +1,263 @@
+1
+00:00:00,160 --> 00:00:01,160
+Welcome to the Deep Dive.
+
+2
+00:00:01,920 --> 00:00:08,600
+Today we're doing a, uh, a really close look into the hidden architecture of digital government services.
+
+3
+00:00:08,940 --> 00:00:11,760
+Specifically, we're unpacking the service workflow.
+
+4
+00:00:12,520 --> 00:00:14,920
+Right. And our mission here is to understand how
+
+5
+00:00:15,560 --> 00:00:23,460
+mapping this all out prevents the systems in your ministry from becoming, you know, fragmented, siloed, duplicated, or just extremely costly to change.
+
+6
+00:00:23,700 --> 00:00:28,260
+Exactly. Because whether you're managing a license or an application in your program,
+
+7
+00:00:28,880 --> 00:00:30,500
+each case passes through stages.
+
+8
+00:00:31,160 --> 00:00:33,940
+And if those stages aren't written down once centrally...
+
+9
+00:00:34,560 --> 00:00:37,620
+Then every individual screen basically invents its own rules.
+
+10
+00:00:37,760 --> 00:00:38,020
+Right. I mean,
+
+11
+00:00:38,660 --> 00:00:42,500
+the law ends up being enforced on some screens, but completely ignored on others.
+
+12
+00:00:42,740 --> 00:00:45,000
+Which is incredibly risky for any government official.
+
+13
+00:00:46,000 --> 00:00:52,080
+So to prevent that, a functional service workflow has to be written once for the whole application,
+
+14
+00:00:52,700 --> 00:00:55,760
+and it explicitly defines three things. Number one,
+
+15
+00:00:56,440 --> 00:00:56,780
+states.
+
+16
+00:00:57,820 --> 00:01:02,020
+Yeah, states. So that is every stage a case can possibly be in.
+
+17
+00:01:02,820 --> 00:01:03,300
+Number two,
+
+18
+00:01:04,060 --> 00:01:07,060
+moves, which is every step from one state to another.
+
+19
+00:01:07,900 --> 00:01:14,960
+Exactly. And number three is who, the specific person who may make each move, and, uh, on what decision.
+
+20
+00:01:15,440 --> 00:01:18,720
+But wait, I have a question on that. If a move isn't written down in this
+
+21
+00:01:19,660 --> 00:01:20,520
+central workflow,
+
+22
+00:01:21,340 --> 00:01:24,780
+does it mean it literally, like physically cannot happen?
+
+23
+00:01:25,300 --> 00:01:27,480
+Absolutely. Unwritten moves cannot happen.
+
+24
+00:01:28,060 --> 00:01:33,280
+Every screen will then only offer the moves the workflow allows and strictly to the people it names.
+
+25
+00:01:33,880 --> 00:01:34,300
+Wow.
+
+26
+00:01:34,920 --> 00:01:37,920
+Okay, so there are no workarounds. No workarounds.
+
+27
+00:01:38,220 --> 00:01:41,900
+And we see this structure handled really well in the GovStack specifications, right?
+
+28
+00:01:41,940 --> 00:01:46,440
+Yes, exactly. The GovStack workflow specification handles the broader process.
+
+29
+00:01:46,880 --> 00:01:50,780
+It describes a process as linked activities done by a person or a machine.
+
+30
+00:01:51,100 --> 00:01:58,480
+Okay. It basically asks a workflow block to run a process, and that could be started by another system, a click, or even just the passage of time.
+
+31
+00:01:58,740 --> 00:01:59,160
+Got it.
+
+32
+00:02:00,240 --> 00:02:02,080
+And then you have the registration specification.
+
+33
+00:02:02,180 --> 00:02:04,600
+Right, which is much more specific about human decisions.
+
+34
+00:02:05,060 --> 00:02:08,479
+It gives an officer exactly three decisions on an application.
+
+35
+00:02:08,860 --> 00:02:10,860
+Number one, approve. Number two, reject.
+
+36
+00:02:11,280 --> 00:02:13,560
+Or number three, send back for correction.
+
+37
+00:02:13,720 --> 00:02:16,240
+Okay, no making up rules on the fly. Exactly.
+
+38
+00:02:16,860 --> 00:02:22,060
+So to really see this in action, let's look at Progressa, which is the fictional country of these examples.
+
+39
+00:02:22,720 --> 00:02:27,320
+Specifically, we're looking at their Higher Education Quality Authority, PHEQA.
+
+40
+00:02:27,760 --> 00:02:34,680
+Right. So let's apply the states. For a PHEQA institution license, there are three specific states.
+
+41
+00:02:34,960 --> 00:02:38,360
+Number one, granted, meaning the institution may operate.
+
+42
+00:02:38,560 --> 00:02:43,520
+Okay. Number two, suspended, meaning it may not admit new students until the suspension ends.
+
+43
+00:02:43,960 --> 00:02:47,800
+And number three, canceled, where it may no longer operate under this license.
+
+44
+00:02:48,140 --> 00:02:51,780
+But who actually pulls the levers to move a license between those states?
+
+45
+00:02:52,160 --> 00:02:54,260
+Well, every move rests on a legal decision.
+
+46
+00:02:54,560 --> 00:02:57,960
+The minister decides to grant a license and to suspend or cancel it.
+
+47
+00:02:58,500 --> 00:03:02,120
+The minister also ends a suspension on PHEQA's advice.
+
+48
+00:03:02,620 --> 00:03:04,320
+And what about the registration officer?
+
+49
+00:03:04,560 --> 00:03:06,920
+The registration officer just records each decision.
+
+50
+00:03:06,980 --> 00:03:13,160
+They don't make them. And crucially, a cancellation is undone only by a decision on appeal or on review that sets it aside.
+
+51
+00:03:13,520 --> 00:03:17,060
+Oh, interesting. Which actually brings up the dead-end check.
+
+52
+00:03:17,320 --> 00:03:22,080
+This is a critical system test you must ask: Can every state be left?
+
+53
+00:03:22,600 --> 00:03:24,140
+Yes, you always have to ask that.
+
+54
+00:03:24,580 --> 00:03:26,200
+But wait, let me push back on that.
+
+55
+00:03:26,900 --> 00:03:32,120
+Looking at the Progressa example, wouldn't canceled inherently be a permanent dead end?
+
+56
+00:03:32,840 --> 00:03:42,760
+I mean, it definitely looks like one. But no, because an institution can appeal or a person can ask the minister to review, a set aside cancellation returns the license to
+
+57
+00:03:42,800 --> 00:03:44,460
+the state it held before.
+
+58
+00:03:44,660 --> 00:03:45,300
+Ah, I see.
+
+59
+00:03:45,720 --> 00:03:49,680
+Therefore, no state is a true dead end, and the workflow shows the way out.
+
+60
+00:03:49,860 --> 00:03:56,740
+That makes total sense. Mm-hmm. So the ultimate takeaway for you listening right now is to ask for your service workflow on a single page.
+
+61
+00:03:56,800 --> 00:04:01,320
+Yes. You need to see every state, every move, and who may make each move.
+
+62
+00:04:01,700 --> 00:04:03,460
+And check each move against the law,
+
+63
+00:04:04,080 --> 00:04:06,340
+and obviously look for dead ends. Exactly.
+
+64
+00:04:06,920 --> 00:04:08,820
+So we'll leave you with this thought to mull over.
+
+65
+00:04:09,620 --> 00:04:12,760
+If you were to map out a critical process in your program today,
+
+66
+00:04:13,520 --> 00:04:19,040
+how many unintentional dead ends might you discover simply because the workflow wasn't properly defined from the start?

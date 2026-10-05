@@ -1,0 +1,22 @@
+# Slide cue file — KP4 Module 5, Video 5.3 "The platform's traps, caught before deployment"
+# Deck:  KP4_M5_5.3_Deck_v0.1.pptx (9 slides)
+# Audio: KP4_M5_5.3_Audio_v0.1.m4a (runs to 3:05.8; brief v0.1; not trimmed — the raw take ends on the sources line)
+# Approximate — derived by matching SRT content beats to slide content.
+#
+# Flaws of this take: short (3:06 against 5:00), segments brief but every slide covered in order, both lists
+# numbered. Slide 3 drops "each entry was found once, the hard way"; slide 4 drops "the one Progressa's two
+# installations run" and "read both lists before you agree the release"; slide 6 drops "to one filter or to a kind of
+# list that honours both"; slide 7 drops "a rule only described is a promise, not evidence". Slide 5 says "the
+# Ministry of Education" for MoEYS and leaves out that the list reads straight from the database. Filler/backchannel
+# ("um", "you know", "Jeez", "Wow"). Recap at 2:56, "Sources are in the video description" at 3:04 — Sources card at
+# 3:03.3 (2.5 s, the audio ends there). SRT spells the country "Progresa": listen for Progressa.
+
+0:00   # slide 1 — title card (cold open as scripted: title + Host B's sentence)
+0:10   # slide 2 — Hook: every low-code platform has places where it does not do what its screens suggest
+0:25   # slide 3 — Known, written down, checked
+0:54   # slide 4 — The maker's own lists (two numbered; release 9.0.7, 18 May 2026)
+1:28   # slide 5 — Progressa: a list with two filters
+2:04   # slide 6 — Caught by the check, not by an officer
+2:26   # slide 7 — What to ask a supplier (three numbered)
+2:55.5 # slide 8 — In one sentence
+3:03.3 # slide 9 — Sources
