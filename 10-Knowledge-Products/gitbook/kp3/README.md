@@ -5,7 +5,7 @@ icon: house
 
 # Education Digital Public Infrastructure (DPI) Roadmap
 
-**ITU/Giga Knowledge Product** · 45 videos in six modules · about 217 minutes of video · an AI usage tip on every page · nine worked examples · an assessment toolkit · self-paced · free and open
+45 videos in six modules · about 217 minutes of video · an AI usage tip on every page · nine worked examples · an assessment toolkit · self-paced · free and open
 
 This guide teaches a government team how to produce a national roadmap for digital public infrastructure, and it shows the first step of such a roadmap working in the education sector. Digital public infrastructure, DPI for short, is the set of shared digital systems that many services of a country stand on: digital identity, digital payments and the exchange of data between public bodies, with others emerging.
 

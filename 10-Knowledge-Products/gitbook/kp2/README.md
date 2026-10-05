@@ -5,7 +5,7 @@ icon: house
 
 # Building a Government Interoperability Framework (GIF)
 
-**ITU/Giga Knowledge Product** · 38 videos in five modules · about 176 minutes of video · 38 AI plays · a runnable build pack · self-paced · free and open
+38 videos in five modules · about 176 minutes of video · 38 AI plays · a runnable build pack · self-paced · free and open
 
 This is the companion to the video series on building a Government Interoperability Framework — the legal, organisational and technical configuration that lets public bodies exchange data so that a citizen is asked once. Where [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) taught how to *plan* an Enterprise Architecture, this course teaches how to *build* the interoperability layer over that plan. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
 

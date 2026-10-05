@@ -14,6 +14,97 @@
   "gitbook_id": "JNuorzQQvwgBvtnUuf3d"
  },
  {
+  "ref": "kp4-module-2",
+  "title": "Module 2 — Break the service down before you design it",
+  "parent": "kp4",
+  "path": "kp4/module-2/README.md",
+  "gitbook_id": "EAiLKsgMUw6QAsnJhET1"
+ },
+ {
+  "ref": "kp4-module-3",
+  "title": "Module 3 — Design one service as a story your officials can check",
+  "parent": "kp4",
+  "path": "kp4/module-3/README.md",
+  "gitbook_id": "NrQWNhBZwt9NwRmJ1X0I"
+ },
+ {
+  "ref": "kp4-module-4",
+  "title": "Module 4 — Settle the whole application once, then describe it for the machine",
+  "parent": "kp4",
+  "path": "kp4/module-4/README.md",
+  "gitbook_id": "2lhLMoLWk7MRrY3Lk6UG"
+ },
+ {
+  "ref": "kp4-module-5",
+  "title": "Module 5 — Generate the service on a low-code platform and connect the blocks",
+  "parent": "kp4",
+  "path": "kp4/module-5/README.md",
+  "gitbook_id": "XtzWRvdjVgVowbR4TGgb"
+ },
+ {
+  "ref": "kp4-module-6",
+  "title": "Module 6 — Run the method in your administration",
+  "parent": "kp4",
+  "path": "kp4/module-6/README.md",
+  "gitbook_id": "jLhyv68VrI8TK2kK3H6y"
+ },
+ {
+  "ref": "kp4-twelve-documents",
+  "title": "The twelve documents",
+  "parent": "kp4",
+  "path": "kp4/twelve-documents.md",
+  "gitbook_id": "rswnjbtn9P24oXRwVCo3"
+ },
+ {
+  "ref": "kp4-toolkit",
+  "title": "The blank instruments",
+  "parent": "kp4",
+  "path": "kp4/toolkit/README.md",
+  "gitbook_id": "3CjlnKoCrQ5RMYkBgFdf"
+ },
+ {
+  "ref": "kp4-examples",
+  "title": "The worked examples",
+  "parent": "kp4",
+  "path": "kp4/examples/README.md",
+  "gitbook_id": "r5E5t6LD2sVR27tGT9G8"
+ },
+ {
+  "ref": "kp4-frameworks",
+  "title": "Frameworks and standards",
+  "parent": "kp4",
+  "path": "kp4/frameworks-and-standards.md",
+  "gitbook_id": "Q20qNt1rEQCKWywHYLYI"
+ },
+ {
+  "ref": "kp4-public-sources",
+  "title": "The public sources",
+  "parent": "kp4",
+  "path": "kp4/public-sources.md",
+  "gitbook_id": "m5aIJPEoCUYL4JZzr2CM"
+ },
+ {
+  "ref": "kp4-standings",
+  "title": "The standings of the method's standards",
+  "parent": "kp4",
+  "path": "kp4/standings.md",
+  "gitbook_id": "BBHQZ4RRbHAMeQxcDjG4"
+ },
+ {
+  "ref": "kp4-glossary",
+  "title": "Glossary",
+  "parent": "kp4",
+  "path": "kp4/glossary.md",
+  "gitbook_id": "zZe71RQFBGShgvFOYX4T"
+ },
+ {
+  "ref": "kp4-figures",
+  "title": "Figures",
+  "parent": "kp4",
+  "path": "kp4/figures.md",
+  "gitbook_id": "NO8SRMAj7E43emkmibyF"
+ },
+ {
   "ref": "kp4-1-1",
   "title": "1.1 Where an agreed service gets lost",
   "parent": "kp4-module-1",
@@ -54,13 +145,6 @@
   "parent": "kp4-module-1",
   "path": "kp4/module-1/self-check.md",
   "gitbook_id": "KDvPKGgam3h3GA7sV9c1"
- },
- {
-  "ref": "kp4-module-2",
-  "title": "Module 2 — Break the service down before you design it",
-  "parent": "kp4",
-  "path": "kp4/module-2/README.md",
-  "gitbook_id": "EAiLKsgMUw6QAsnJhET1"
  },
  {
   "ref": "kp4-2-1",
@@ -112,13 +196,6 @@
   "gitbook_id": "D6xjIb1Oi2mlgSuvBVhX"
  },
  {
-  "ref": "kp4-module-3",
-  "title": "Module 3 — Design one service as a story your officials can check",
-  "parent": "kp4",
-  "path": "kp4/module-3/README.md",
-  "gitbook_id": "NrQWNhBZwt9NwRmJ1X0I"
- },
- {
   "ref": "kp4-3-1",
   "title": "3.1 One goal, written as a story a builder can follow",
   "parent": "kp4-module-3",
@@ -168,13 +245,6 @@
   "gitbook_id": "0zmwjT6FzrqNhoKc1u5F"
  },
  {
-  "ref": "kp4-module-4",
-  "title": "Module 4 — Settle the whole application once, then describe it for the machine",
-  "parent": "kp4",
-  "path": "kp4/module-4/README.md",
-  "gitbook_id": "2lhLMoLWk7MRrY3Lk6UG"
- },
- {
   "ref": "kp4-4-1",
   "title": "4.1 Four questions decided once for every screen",
   "parent": "kp4-module-4",
@@ -222,13 +292,6 @@
   "parent": "kp4-module-4",
   "path": "kp4/module-4/self-check.md",
   "gitbook_id": "jhEfg49kfPhaZK5n1Ifm"
- },
- {
-  "ref": "kp4-module-5",
-  "title": "Module 5 — Generate the service on a low-code platform and connect the blocks",
-  "parent": "kp4",
-  "path": "kp4/module-5/README.md",
-  "gitbook_id": "XtzWRvdjVgVowbR4TGgb"
  },
  {
   "ref": "kp4-5-1",
@@ -287,13 +350,6 @@
   "gitbook_id": "W7CuflH2XeX2lyOf9JtP"
  },
  {
-  "ref": "kp4-module-6",
-  "title": "Module 6 — Run the method in your administration",
-  "parent": "kp4",
-  "path": "kp4/module-6/README.md",
-  "gitbook_id": "jLhyv68VrI8TK2kK3H6y"
- },
- {
   "ref": "kp4-6-1",
   "title": "6.1 What to require from a supplier",
   "parent": "kp4-module-6",
@@ -348,20 +404,6 @@
   "parent": "kp4-module-6",
   "path": "kp4/module-6/self-check.md",
   "gitbook_id": "lszoil7wp9DB973aPAJV"
- },
- {
-  "ref": "kp4-twelve-documents",
-  "title": "The twelve documents",
-  "parent": "kp4",
-  "path": "kp4/twelve-documents.md",
-  "gitbook_id": "rswnjbtn9P24oXRwVCo3"
- },
- {
-  "ref": "kp4-toolkit",
-  "title": "The blank instruments",
-  "parent": "kp4",
-  "path": "kp4/toolkit/README.md",
-  "gitbook_id": "3CjlnKoCrQ5RMYkBgFdf"
  },
  {
   "ref": "kp4-toolkit-00_catalogue-of-services",
@@ -439,13 +481,6 @@
   "parent": "kp4-toolkit",
   "path": "kp4/toolkit/A_deliverables-annex.md",
   "gitbook_id": "8esBuTRN8u0BHP0NHMms"
- },
- {
-  "ref": "kp4-examples",
-  "title": "The worked examples",
-  "parent": "kp4",
-  "path": "kp4/examples/README.md",
-  "gitbook_id": "r5E5t6LD2sVR27tGT9G8"
  },
  {
   "ref": "kp4-example-e0",
@@ -712,40 +747,5 @@
   "parent": "kp4-examples",
   "path": "kp4/examples/E6-7_before-you-rely-on-it-what-the-method-does-not-claim.md",
   "gitbook_id": "wCURVRGZKHBGEacziB20"
- },
- {
-  "ref": "kp4-frameworks",
-  "title": "Frameworks and standards",
-  "parent": "kp4",
-  "path": "kp4/frameworks-and-standards.md",
-  "gitbook_id": "Q20qNt1rEQCKWywHYLYI"
- },
- {
-  "ref": "kp4-public-sources",
-  "title": "The public sources",
-  "parent": "kp4",
-  "path": "kp4/public-sources.md",
-  "gitbook_id": "m5aIJPEoCUYL4JZzr2CM"
- },
- {
-  "ref": "kp4-standings",
-  "title": "The standings of the method's standards",
-  "parent": "kp4",
-  "path": "kp4/standings.md",
-  "gitbook_id": "BBHQZ4RRbHAMeQxcDjG4"
- },
- {
-  "ref": "kp4-glossary",
-  "title": "Glossary",
-  "parent": "kp4",
-  "path": "kp4/glossary.md",
-  "gitbook_id": "zZe71RQFBGShgvFOYX4T"
- },
- {
-  "ref": "kp4-figures",
-  "title": "Figures",
-  "parent": "kp4",
-  "path": "kp4/figures.md",
-  "gitbook_id": "NO8SRMAj7E43emkmibyF"
  }
 ]

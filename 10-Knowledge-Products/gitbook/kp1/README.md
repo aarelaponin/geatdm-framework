@@ -5,7 +5,7 @@ icon: house
 
 # Developing a Gov Enterprise Architecture (GEA)
 
-**ITU/Giga Knowledge Product** · 36 videos in five modules · about 146 minutes of video · 36 AI plays · self-paced · free and open
+36 videos in five modules · about 146 minutes of video · 36 AI plays · self-paced · free and open
 
 This is the companion to the video series on building a national Enterprise Architecture anchored on PAERA, the Public Administration Ecosystem Reference Architecture published under GovStack. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
 

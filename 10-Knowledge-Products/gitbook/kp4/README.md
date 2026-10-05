@@ -5,7 +5,7 @@ icon: house
 
 # Designing Digital Government Services using a Building Block Approach
 
-**ITU/Giga Knowledge Product** · 37 videos in six modules · about 185 minutes of video · an AI usage tip on every page · 38 worked examples · ten blank instruments and a deliverables annex · self-paced · free and open
+37 videos in six modules · about 185 minutes of video · an AI usage tip on every page · 38 worked examples · ten blank instruments and a deliverables annex · self-paced · free and open
 
 This guide teaches a government team to design a digital public service on shared building blocks and have it built on a low-code platform. It uses specification-driven development, SDD for short: a method in which every document a person writes is accepted before the next is begun, and the last is turned into the running service by a program, never by hand. The shared building blocks are the digital systems that many services of a country stand on: digital identity, registries, payments and the exchange of data between public bodies.
 
