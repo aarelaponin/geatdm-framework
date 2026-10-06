@@ -275,7 +275,7 @@ An interoperability framework is built, not bought — and once it exists, procu
 **Bring:** the first exchange, agencies and constraints. From **B5, B28** (see [Your framework workbook](your-framework-workbook.md)).
 **Get:** a one-page no-framework-to-first-service storyboard mapped to the modules and phases. As text in the chat, not a file or a chart.
 **Time:** ~15 min · **Assistant:** any; the plays are tool-neutral.
-**With the kit:** `gif-foundation-drafter` — the two Strategist narratives: the foundation document and the country storyboard. It also runs `cite-or-discard`. Optional: the prompt runs bare.
+**With the kit:** no skill in this release, so the prompt runs bare in any assistant.
 **Watch for:** A storyboard is a plan to inspire and align, not a guarantee — keep the timeline honest (the foundation before the build, the first cross-ministry exchange in the second build phase, national coverage over years) and avoid promising a big-bang.
 {% endhint %}
 
@@ -314,7 +314,7 @@ File the output as **B38** in [your framework workbook](your-framework-workbook.
 | --- | --- |
 | **A real subject** | A sector, an exchange, or a pair of agencies you can describe in a few paragraphs. The plays act on your context, not on a case study. No subject to hand? Run everything on [Progressa](../start-here/progressa.md) instead. |
 | **Enough access to describe it** | You should be able to name your country's main registers, the bodies that hold them, the exchanges that exist today and the law they sit under — or spend an afternoon on [Play 0](../start-here/play-0.md) and its [supplement](play-0-supplement.md) building that picture from public sources. |
-| **An AI assistant** | Any general assistant — Claude, ChatGPT, Gemini. A free account is enough. Nothing to install; the [ea-plays kit](../start-here/ea-plays-kit.md) is optional and only sharpens some of the plays for Claude users. Eight of its skills are this course's own, named `gif-*` in the **With the kit** line of each play; source at [github.com/alaponin/ea-plays-kit](https://github.com/alaponin/ea-plays-kit). |
+| **An AI assistant** | Any general assistant — Claude, ChatGPT, Gemini. A free account is enough. Nothing to install; the [ea-plays kit](../start-here/ea-plays-kit.md) is optional and only sharpens some of the plays for Claude users. One of its skills, `gif-decree-draft`, is this course's own; the **With the kit** line of each play names the skill that helps, if one does; source at [github.com/alaponin/ea-plays-kit](https://github.com/alaponin/ea-plays-kit). |
 | **A machine, for the build pack only** | Modules 1–3 write no code. The build pack needs Docker and about 11 GiB of RAM; the [Run it](build-pack/run.md) page says exactly what. You can complete every play without running it. |
 | **About fifteen minutes, once** | The first three pages of [Start here](../start-here/README.md) cover how the plays work and the ground rules for using an assistant on government material. Read them before your first play. |
 

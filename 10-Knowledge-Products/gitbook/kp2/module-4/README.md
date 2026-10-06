@@ -16,14 +16,14 @@ Eight videos on the technical layer: the four functional layers and three trust 
 
 | # | Subtopic | Single message | Your play | Kit skill |
 | --- | --- | --- | --- | --- |
-| [4.1](./4-1.md) | Place every component — the four functional layers | Four functional layers — Service Access, Event Distribution, Trust and Security, Governance and Administration — give every component of the platform a place. | 🔍 B20 | `bb-landscape-check` |
-| [4.2](./4-2.md) | Secure every call — the three trust zones | Public, Member-Internal, Trust-Anchor — knowing which zone a call crosses tells you exactly what security it needs. | ✍️ B21 | `bb-landscape-check` |
-| [4.3](./4-3.md) | Adopt the standards portfolio | Adopt the published standards — REST/OpenAPI, OAuth/OIDC, mTLS, X-Road — instead of writing your own; the portfolio is the menu every member shares. | 🔍 B22 | `ea-comparator-evidence` |
-| [4.4](./4-4.md) | Generate the semantic map | Generate a semantic map so two agencies mean the same 'learner' before they exchange one — the hardest layer, made tractable. | ✍️ B23 | `gif-semantic-map` |
-| [4.5](./4-5.md) | Generate a service contract | Turn a service brief into an OpenAPI contract, then an X-Road service description — the configuration that puts a service on the bus. | ✍️ B24 | `gif-openapi-gen` |
-| [4.6](./4-6.md) | Put a real data source on the bus — the Giga case | Take Giga's real school data through a bronze/silver/gold pipeline onto the bus — a worked exchange you can copy for your sector. | ✍️ B25 | `gif-semantic-map` |
-| [4.7](./4-7.md) | Wire a service onto the bus | The OpenAPI contract becomes an X-Road service description and the call resolves — the GovStack Information Mediation pattern. | ✍️ B26 | `gif-openapi-gen` |
-| [4.8](./4-8.md) | Make the exchange lawful — the data-protection envelope | Letters of Interest plus a data-protection envelope make a real exchange lawful as well as technically possible. | ✍️ B27 | `ea-legal-context` |
+| [4.1](./4-1.md) | Place every component — the four functional layers | Four functional layers — Service Access, Event Distribution, Trust and Security, Governance and Administration — give every component of the platform a place. | 🔍 B20 | — |
+| [4.2](./4-2.md) | Secure every call — the three trust zones | Public, Member-Internal, Trust-Anchor — knowing which zone a call crosses tells you exactly what security it needs. | ✍️ B21 | — |
+| [4.3](./4-3.md) | Adopt the standards portfolio | Adopt the published standards — REST/OpenAPI, OAuth/OIDC, mTLS, X-Road — instead of writing your own; the portfolio is the menu every member shares. | 🔍 B22 | `paera-reference-check` |
+| [4.4](./4-4.md) | Generate the semantic map | Generate a semantic map so two agencies mean the same 'learner' before they exchange one — the hardest layer, made tractable. | ✍️ B23 | — |
+| [4.5](./4-5.md) | Generate a service contract | Turn a service brief into an OpenAPI contract, then an X-Road service description — the configuration that puts a service on the bus. | ✍️ B24 | — |
+| [4.6](./4-6.md) | Put a real data source on the bus — the Giga case | Take Giga's real school data through a bronze/silver/gold pipeline onto the bus — a worked exchange you can copy for your sector. | ✍️ B25 | — |
+| [4.7](./4-7.md) | Wire a service onto the bus | The OpenAPI contract becomes an X-Road service description and the call resolves — the GovStack Information Mediation pattern. | ✍️ B26 | — |
+| [4.8](./4-8.md) | Make the exchange lawful — the data-protection envelope | Letters of Interest plus a data-protection envelope make a real exchange lawful as well as technically possible. | ✍️ B27 | — |
 
 ## How the plays chain in this module
 

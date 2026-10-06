@@ -13,7 +13,7 @@ icon: magnifying-glass-plus
 
 ## §8 Current exchange approach
 
-**Feeds:** 1.1. **Kit skill that helps:** `country-context-pack`.
+**Feeds:** 1.1.
 
 ```text
 I am preparing to assess [country X]'s readiness for a Government Interoperability Framework. Using public sources only, describe how cross-agency data exchange happens in [country X] today, under these headings: (1) whether an interoperability platform or data-exchange layer exists (name, technology, year, operator, number of connected bodies) or is planned; (2) how interoperability is currently required — procurement clauses, an interoperability framework document, a law, or nothing; (3) the two or three best-known point-to-point integrations between public bodies and who maintains them; (4) any published assessment of duplication or of citizens re-submitting the same data. Name institutions, systems and documents with the year of each; cite a public source URL for every substantive claim and state the data year; do not name office-holders. Return 3–4 paragraphs as text in this chat.
@@ -24,7 +24,7 @@ I am preparing to assess [country X]'s readiness for a Government Interoperabili
 **You get:** A dated, sourced description of how exchange works today — the input to the procured-vs-planned diagnostic (1.1).
 ## §9 Integration map
 
-**Feeds:** 1.2, 1.3, 1.5. **Kit skill that helps:** `country-context-pack`.
+**Feeds:** 1.2, 1.3, 1.5.
 
 ```text
 Using public sources only, build an integration map for [country X]'s [sector] sector. List the 6–10 exchanges of data between public bodies that the sector's services depend on or would benefit from — for each: the providing body and the registry it holds; the consuming body and the service that needs the data; what data is exchanged (the entity, e.g. 'person identity', 'enrolment'); how it happens today (live integration / file transfer / citizen carries a certificate / not at all); and whether a citizen is asked to re-supply the data. Mark each row as documented (with a source URL) or inferred from the services involved. Add three observations on where the same data is asked for more than once. Return the map as a table plus the observations, as text in this chat.
@@ -35,7 +35,7 @@ Using public sources only, build an integration map for [country X]'s [sector] s
 **You get:** An integration map with today's mechanism and the citizen's burden per exchange — the input to the four-layer map (1.2), the once-only ranking (1.3) and the Use-Case Catalogue (1.5).
 ## §10 Data-protection law and DPA
 
-**Feeds:** 2.1, 4.8. **Kit skill that helps:** `ea-legal-context`.
+**Feeds:** 2.1, 4.8.
 
 ```text
 Using public sources only, describe the legal basis for sharing personal data between public bodies in [country X]: (1) the data-protection law in force (title, year, the article or section that governs public-sector sharing, and whether a lawful basis for once-only sharing exists); (2) the data-protection authority or equivalent (name, year established, powers, whether it is operational); (3) any law, decree or regulation that already mandates or restricts exchange between named bodies — identity, civil registration, tax, the sector's own act; (4) the gaps a lawyer would name before an interoperability decree could be enacted. Cite the instrument and a public source URL for every claim; where a document cannot be found, say so — an honest gap is a finding. Return as text in this chat.

@@ -19,16 +19,16 @@ Ten videos on standing the framework up and running it: the four-phase plan on a
 
 | # | Subtopic | Single message | Your play | Kit skill |
 | --- | --- | --- | --- | --- |
-| [5.1](./5-1.md) | Plan the build in four phases | Foundation, Pilot, Expansion, Optimisation — four phases with decision gates, an honest calendar, and the four plans beside the schedule that a funder actually reads. | ✍️ B28 | `ea-method-runner` |
+| [5.1](./5-1.md) | Plan the build in four phases | Foundation, Pilot, Expansion, Optimisation — four phases with decision gates, an honest calendar, and the four plans beside the schedule that a funder actually reads. | ✍️ B28 | — |
 | [5.2](./5-2.md) | State what a member must have — the Member Requirements | The Member Requirements template tells an agency exactly what it must have before it can join — no surprises at go-live. | ✍️ B29 | `ea-governance-drafter` |
 | [5.3](./5-3.md) | Make 'connected' mean 'dependable' — the SLA | A Service-Level Agreement turns 'connected' into 'dependable' — the template makes it a fill-in, not a negotiation from scratch. | ✍️ B30 | `ea-governance-drafter` |
-| [5.4](./5-4.md) | Admit a member to the bus | An agency is admitted by a validated request and a recorded committee decision — then the join runs itself and proves itself with a real call. | ✍️ B31 | `gif-federation-standup` |
-| [5.5](./5-5.md) | Stand up the federation | Central Server, Test CA, four Security Servers — the Linkup federation, stood up from the run book and shown healthy, registered and granted exactly. | ✍️ B32 | `gif-federation-standup` |
-| [5.6](./5-6.md) | Run the once-only exchange, live | PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real cross-server call, the data asked once. | ✍️ B33 | `gif-federation-standup` |
-| [5.7](./5-7.md) | From demonstration to production | What changes between the sandboxed Linkup demonstration and a production-grade federation a country would actually run. | 🔍 B34 | `ea-method-runner` |
-| [5.8](./5-8.md) | Watch the bus — monitoring and anomaly detection | Point Claude at the bus's operational monitoring data — never its message log — to spot a failing or unusual exchange early. | 🔍 B35 | `gif-bus-monitor` |
-| [5.9](./5-9.md) | Keep the documents honest — the consistency cross-check | Keep the decree, the Governance Pack and the standards portfolio saying the same thing — a cross-check that catches drift across the three. | 🔍 B36 | `gif-consistency-check` |
-| [5.10](./5-10.md) | Carry the framework to the next sector | The same four-layer framework stands up interoperability beyond education — the method is sector-portable, and the second sector is cheaper than the first. | ✍️ B37 | `ea-method-runner` |
+| [5.4](./5-4.md) | Admit a member to the bus | An agency is admitted by a validated request and a recorded committee decision — then the join runs itself and proves itself with a real call. | ✍️ B31 | — |
+| [5.5](./5-5.md) | Stand up the federation | Central Server, Test CA, four Security Servers — the Linkup federation, stood up from the run book and shown healthy, registered and granted exactly. | ✍️ B32 | — |
+| [5.6](./5-6.md) | Run the once-only exchange, live | PNEA issues a credential and pre-fills identity from PNIA and enrolment from PLR — a real cross-server call, the data asked once. | ✍️ B33 | — |
+| [5.7](./5-7.md) | From demonstration to production | What changes between the sandboxed Linkup demonstration and a production-grade federation a country would actually run. | 🔍 B34 | — |
+| [5.8](./5-8.md) | Watch the bus — monitoring and anomaly detection | Point Claude at the bus's operational monitoring data — never its message log — to spot a failing or unusual exchange early. | 🔍 B35 | — |
+| [5.9](./5-9.md) | Keep the documents honest — the consistency cross-check | Keep the decree, the Governance Pack and the standards portfolio saying the same thing — a cross-check that catches drift across the three. | 🔍 B36 | — |
+| [5.10](./5-10.md) | Carry the framework to the next sector | The same four-layer framework stands up interoperability beyond education — the method is sector-portable, and the second sector is cheaper than the first. | ✍️ B37 | — |
 
 ## How the plays chain in this module
 

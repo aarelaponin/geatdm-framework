@@ -17,7 +17,7 @@ Every play in this knowledge base begins "Below is a description of [country X]'
 
 ## §1 Digital-landscape brief
 
-**Feeds:** 1.1, 1.2. **Kit skill that helps:** `country-context-pack`.
+**Feeds:** 1.1, 1.2.
 
 ```text
 I am preparing to assess [country X]'s readiness for a national Enterprise Architecture. Using public sources only, write 3–4 paragraphs of context on [country X]'s digital landscape, under these headings: (1) connectivity and affordability; (2) the digital-government strategy in force and the body that owns it; (3) the identity programme and any cross-agency systems — data exchange, payments, civil registration; (4) maturity and key gaps, citing any published index or readiness assessment. Name institutions, systems and documents, with the year of each. Cite a public source URL for every substantive claim and state the data year. Do not name individual office-holders. Return the brief as text in this chat.
@@ -29,7 +29,7 @@ I am preparing to assess [country X]'s readiness for a national Enterprise Archi
 
 ## §2 Programme list
 
-**Feeds:** 1.3, 1.5. **Kit skill that helps:** `country-context-pack`.
+**Feeds:** 1.3, 1.5.
 
 ```text
 List 3–5 current or planned digital-government programmes in [country X]'s [sector] sector. For each give: name; status (planned / procurement / live / scaling); year started or approved; funder(s) and budget envelope if public; the lead body; and which of identity, payments, data exchange, registration and consent components the programme needs. Add 2–3 cross-cutting observations (connectivity, financing, sequencing). Cite a public source URL for each programme. Return the list as text in this chat.
@@ -41,7 +41,7 @@ List 3–5 current or planned digital-government programmes in [country X]'s [se
 
 ## §3 Ministry operating context
 
-**Feeds:** 1.4. **Kit skill that helps:** `country-context-pack`.
+**Feeds:** 1.4.
 
 ```text
 Describe how [country X]'s [ministry] works, from public sources, under these headings: institutional structure (including any split between ministries and the degree of decentralisation); policy framework and sector plan in force; legal constraints; financial constraints, including donor dependence and any documented public-financial-management failures; technical and data-system constraints; human-resource constraints; and political context (reporting obligations, delivery forums). End with a one-paragraph note on what is absent from the public record. Cite a source URL per claim. Refer to posts, not named individuals. Return as text in this chat.
@@ -53,7 +53,7 @@ Describe how [country X]'s [ministry] works, from public sources, under these he
 
 ## §4 Institutional roles register
 
-**Feeds:** 1.6, 1.7. **Kit skill that helps:** `country-context-pack`.
+**Feeds:** 1.6, 1.7.
 
 ```text
 Build a register of the institutional roles relevant to a national Enterprise Architecture programme in [country X], by post — not by the name of the current holder. Cover: the CDO/CTO or political equivalent; the head of the civil service; the national ICT or e-government agency and its board; sector ministry CIOs or ICT unit heads; any existing EA function or chief architect; any governance board with cross-government authority; the procurement authority; the data-protection regulator; the budget authority; the government CISO; the interoperability-standards function. For each role give: the institution, a one-line mandate, and a status tag — confirmed (exists, holder in post), partial (exists but unclear or unstaffed) or gap (does not exist). End with a list of roles an EA programme needs that are missing. Base everything on public material; where something cannot be found, say so and move on. Return as text in this chat.
@@ -65,7 +65,7 @@ Build a register of the institutional roles relevant to a national Enterprise Ar
 
 ## §5 Country characteristics
 
-**Feeds:** Module 5 (5.1). **Kit skill that helps:** `country-context-pack`.
+**Feeds:** Module 5 (5.1).
 
 ```text
 Write a one-paragraph characteristics line for [country X] to be used when searching for comparable countries: population; income classification; governance type (unitary / federal / hybrid) and degree of sub-national autonomy; region and regional bodies; digital-government maturity (published index rankings, readiness assessments); state of national ID, civil registration, data exchange and payments infrastructure; the coordinating digital body and whether its mandate is binding; budget-cycle constraints; main donors funding sectoral systems; and whether an EA function or governance board exists. Cite sources. Return as text in this chat.
@@ -77,7 +77,7 @@ Write a one-paragraph characteristics line for [country X] to be used when searc
 
 ## §6 Public bodies, systems and registries
 
-**Feeds:** Module 2 (2.1, 2.4, 2.5), Module 4 (4.1). **Kit skill that helps:** `bdat-assessor, ea-method-runner`.
+**Feeds:** Module 2 (2.1, 2.4, 2.5), Module 4 (4.1).
 
 ```text
 For [country X]'s [sector] sector, list the public bodies that matter — the ministry or ministries, examinations or regulatory bodies, registries, and the shared-platform providers (identity, civil registration, payments, data exchange). For each give: name; mandate; known systems it runs; known registries it holds; and a confidence note (confirmed / inferred). Base it on public material; where a body you would expect does not appear to exist, say so. Return as a table plus notes, as text in this chat.
@@ -89,7 +89,7 @@ For [country X]'s [sector] sector, list the public bodies that matter — the mi
 
 ## §7 Legal and policy list
 
-**Feeds:** Module 2 (2.3). **Kit skill that helps:** `country-context-pack`.
+**Feeds:** Module 2 (2.3).
 
 ```text
 From public material, list the laws and policy instruments that constrain digital-government and [sector] programmes in [country X]: the data-protection act (status, regulator, key obligations for minors' data if relevant), the procurement law and any e-procurement rules, any e-government or digital-transactions act or decree, the access-to-information act, the sector act, and the strategies in force. For each: title, year, status (enacted / bill / draft), owning body, and the one constraint it places on a data-sharing or shared-platform design. Cite sources. Return as text in this chat.

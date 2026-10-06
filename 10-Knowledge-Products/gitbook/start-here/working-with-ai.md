@@ -65,7 +65,7 @@ The plays are tool-neutral. They work in Claude, ChatGPT, Gemini or a locally ho
 
 ## With the kit
 
-The optional [ea-plays kit](ea-plays-kit.md) automates the safeguard that is easiest to skip. Its `cite-or-discard` skill fetches every URL a draft rests on, grades the source by tier, and drops what does not survive — then puts the count of unverified lines in a header at the top of the output. It does not remove your judgement; it makes the gap visible.
+The optional [ea-plays kit](ea-plays-kit.md) automates the safeguard that is easiest to skip. Its skills run the *cite or discard* loop: they fetch every URL a draft rests on, grade the source by tier, and drop what does not survive — then put the count of unverified lines in a header at the top of the output. It does not remove your judgement; it makes the gap visible.
 
 ## Reading list
 
@@ -84,6 +84,6 @@ Everything asserted above, with dates. Open the source rather than trusting this
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
 <tr><td><strong>🧭 How to use the plays</strong></td><td>What a play is, the badges, the two-step rhythm.</td><td><a href="how-to-use-the-plays.md">how-to-use-the-plays</a></td></tr>
-<tr><td><strong>🔌 The ea-plays kit</strong></td><td>The optional Claude layer: twenty-two skills, one per artefact family.</td><td><a href="ea-plays-kit.md">ea-plays-kit</a></td></tr>
+<tr><td><strong>🔌 The ea-plays kit</strong></td><td>The optional Claude layer: sixteen skills in two plugins.</td><td><a href="ea-plays-kit.md">ea-plays-kit</a></td></tr>
 <tr><td><strong>🔍 Play 0</strong></td><td>Build the country context pack every play consumes.</td><td><a href="play-0.md">play-0</a></td></tr>
 </tbody></table>

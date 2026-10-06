@@ -16,8 +16,8 @@ Six videos on the organisational layer: naming the owner before the first member
 
 | # | Subtopic | Single message | Your play | Kit skill |
 | --- | --- | --- | --- | --- |
-| [3.1](./3-1.md) | Why a bus needs an owner | An interoperability platform with no owner decays in its second year — name the owner before the first member joins, and split the body that sets the rules from the body that runs the bus. | ✍️ B14 | `ea-institution-mapper` |
-| [3.2](./3-2.md) | The three tiers of governance | Strategic Council, Steering Committee, Technical Working Groups — political authority, programme leadership and the specialists, each with one job. | ✍️ B15 | `ea-institution-mapper` |
+| [3.1](./3-1.md) | Why a bus needs an owner | An interoperability platform with no owner decays in its second year — name the owner before the first member joins, and split the body that sets the rules from the body that runs the bus. | ✍️ B14 | — |
+| [3.2](./3-2.md) | The three tiers of governance | Strategic Council, Steering Committee, Technical Working Groups — political authority, programme leadership and the specialists, each with one job. | ✍️ B15 | — |
 | [3.3](./3-3.md) | The RACI matrix | Write down who decides, who runs, who is consulted, once — it is what stops every onboarding turning into a turf fight. | ✍️ B16 | `ea-governance-drafter` |
 | [3.4](./3-4.md) | Member obligations | What an agency signs up to when it joins is the difference between a federation and a free-for-all. | ✍️ B17 | `ea-governance-drafter` |
 | [3.5](./3-5.md) | The four Technical Working Groups | Security, semantics, APIs, platform operations — the four standing groups that keep the bus coherent as it grows. | ✍️ B18 | `ea-governance-drafter` |
