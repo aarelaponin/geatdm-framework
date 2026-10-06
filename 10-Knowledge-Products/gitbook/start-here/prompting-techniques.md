@@ -83,7 +83,7 @@ A *skill* is a prompt with its procedure, its references and its output contract
 | [Prompt Engineering Guide](https://www.promptingguide.ai/) | DAIR.AI · living | the technique vocabulary; hallucination-reduction section | T3 community reference |
 | [AI Fluency: Framework & Foundations](https://academy.claude.com/courses/ai-fluency-framework-foundations) | Anthropic / Claude Academy · free course | the four Ds — Delegation, Description, Discernment, Diligence | T2 vendor course |
 
-*Links re-checked 2026-09-07 with `cite-or-discard`. "Living" pages are cited by title, not by a quoted passage — the wording changes.*
+*Links re-checked 2026-09-07. "Living" pages are cited by title, not by a quoted passage — the wording changes.*
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
 <tr><td><strong>🧭 How to use the plays</strong></td><td>What a play is, the badges, the two-step rhythm.</td><td><a href="how-to-use-the-plays.md">how-to-use-the-plays</a></td></tr>

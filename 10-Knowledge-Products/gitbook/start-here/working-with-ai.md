@@ -80,7 +80,7 @@ Everything asserted above, with dates. Open the source rather than trusting this
 | [Expanding on what we missed with sycophancy](https://openai.com/index/expanding-on-sycophancy/) | OpenAI · May 2025 | why it agrees with your framing | T2 vendor |
 | [AI Hallucination Cases](https://www.damiencharlotin.com/hallucinations/) | Damien Charlotin · 2023→, updated daily | what unchecked citations cost | T2 curated primary sources |
 
-*Links re-checked 2026-09-07 with `cite-or-discard`. "Living" pages are cited by title, not by a quoted passage — the wording changes.*
+*Links re-checked 2026-09-07. "Living" pages are cited by title, not by a quoted passage — the wording changes.*
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
 <tr><td><strong>🧭 How to use the plays</strong></td><td>What a play is, the badges, the two-step rhythm.</td><td><a href="how-to-use-the-plays.md">how-to-use-the-plays</a></td></tr>
