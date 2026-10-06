@@ -1,5 +1,6 @@
 ---
 description: "These nine files show what each step of the method for assessing a country's digital public infrastructure and writing its roadmap produces, using Progressa."
+icon: file-circle-check
 ---
 
 # The worked examples

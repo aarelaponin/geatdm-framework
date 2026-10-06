@@ -1,5 +1,6 @@
 ---
 description: "A blank instrument is an empty form for one document of the method. Each has the same shape: what the document is for, who writes it and who accepts it, the lines to fill in."
+icon: file-pen
 ---
 
 # The blank instruments

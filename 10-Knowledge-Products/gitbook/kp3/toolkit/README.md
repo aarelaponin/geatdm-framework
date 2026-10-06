@@ -1,5 +1,6 @@
 ---
 description: "The assessment toolkit is the set of blank instruments a government team uses to find out where its country's digital public infrastructure for education stands."
+icon: file-pen
 ---
 
 # The assessment toolkit

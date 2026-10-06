@@ -1,5 +1,6 @@
 ---
 description: "These files show what each document of the specification-driven method looks like when it is filled in, using Progressa."
+icon: file-circle-check
 ---
 
 # The worked examples
