@@ -44,7 +44,7 @@ The on-camera video — one intro per KP; modules have no intro video of their o
 does not go through the pipeline, so it gets
 its own four stages: Script (`…_IntroScript_v*.md`) → Filmed (any `.mov` in `video/`) → Mastered
 (`…_0.0_Video_v*.mp4`, i.e. cut and normalised to the series spec per `camera-intro.md`) →
-Published (manual). `filmed:` / `mastered:` in the YAML override the detection when the file is
+Published (manual). `script:` / `filmed:` / `mastered:` in the YAML override the detection when the file is
 somewhere else.
 
 The tracker also warns when the chain drifts — an MP4 or cue file whose version is older than the

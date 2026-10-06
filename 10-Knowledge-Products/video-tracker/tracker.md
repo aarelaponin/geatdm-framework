@@ -1,10 +1,10 @@
-# KP video tracker — generated 2026-10-05 20:35 (data v4)
+# KP video tracker — generated 2026-10-06 23:37 (data v4)
 
 Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `tracker.yaml`. Regenerate with `python3 video-tracker/render_tracker.py`.
 
 ## KP1 — Government Enterprise Architecture
 
-- **KP1.0 KP1 introduction — what the five modules cover (on camera)** [en] ○○○○ 0/4 — next: Script
+- **KP1.0 KP1 introduction — what the five modules cover (on camera)** [en] ●●●○ 3/4 — next: Published
 
 ### Module 1 — Why a PAERA-anchored EA, and the lifecycle in one page (Strategist)
 
@@ -70,7 +70,7 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 ## KP2 — Government Interoperability Framework
 
-- **KP2.0 KP2 introduction — what the five modules cover (on camera)** [en] ○○○○ 0/4 — next: Script
+- **KP2.0 KP2 introduction — what the five modules cover (on camera)** [en] ●●●○ 3/4 — next: Published
 
 ### Module 1 — Why interoperability, the four layers, and the foundation to start (Strategist)
 
@@ -136,7 +136,7 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 ## KP3 — Education DPI Roadmap
 
-- **KP3.0 KP3 introduction — what the six modules cover (on camera)** [en] ○○○○ 0/4 — next: Script
+- **KP3.0 KP3 introduction — what the six modules cover (on camera)** [en] ●●●○ 3/4 — next: Published
 
 ### Module 1 — Where your country stands, and what to build first (Strategist)
 
@@ -215,7 +215,7 @@ Auto-detected from `videos/` on disk; *Accepted* and *Published* come from `trac
 
 ## KP4 — Designing Digital Government Services using a Building Block Approach
 
-- **KP4.0 KP4 introduction — what the six modules cover (on camera)** [en] ○○○○ 0/4 — next: Script
+- **KP4.0 KP4 introduction — what the six modules cover (on camera)** [en] ●●●○ 3/4 — next: Published
 
 ### Module 1 — Why digital services go wrong, and the method that prevents it (Strategist)
 

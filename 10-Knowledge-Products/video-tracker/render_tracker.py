@@ -149,7 +149,9 @@ def detect_camera(kp: dict, lang: str, manual: dict) -> dict:
     script_glob = str(base / "scripts" / f"KP{n}_IntroScript_v*.md")
     out = {}
     v, f = latest(script_glob)
-    out["script"] = {"done": v is not None, "label": v or "", "file": f}
+    script = manual.get("script")
+    done = bool(script) if script is not None else v is not None
+    out["script"] = {"done": done, "label": v or ("✓" if done else ""), "file": f}
 
     movs = [Path(p).name for p in glob.glob(str(base / "video" / "*.mov"))]
     filmed = manual.get("filmed")

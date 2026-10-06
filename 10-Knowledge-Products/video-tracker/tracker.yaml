@@ -11,6 +11,7 @@
 #   blocker:   "text"           shows red; the row lands under BLOCKED in "Next actions"
 #   note:      "text"           anything worth seeing next to the row
 # The on-camera row (the KP intro; modules have no intro since 1 Oct 2026) additionally accepts:
+#   script:    true|false       overrides the KP1_IntroScript_v*.md detection (filmed without a script)
 #   filmed:    true|false       overrides the .mov-on-disk detection
 #   mastered:  true|false       overrides the KP1_0.0_Video_v*.mp4 detection
 #
@@ -27,12 +28,13 @@ kps:
     note: >-
       35 content videos after the Sep 2026 tightening pass. Module 1 videos were rebuilt 9 Sep with
       the hook slide; Modules 2–4 cued and assembled 10 Sep. Modules 1–4 are finished videos —
-      what remains is publication (YouTube metadata, the on-camera KP intro) and the French mirror.
+      what remains is publication (YouTube metadata) and the French mirror. 6 Oct: the on-camera KP intro filmed and mastered.
     intro:                              # KP-level on-camera introduction (introduces the five modules)
       title: KP1 introduction — what the five modules cover (on camera)
-      path: videos/intro                # not created yet; scripts/ video/ under <path>/<lang>/
+      path: videos/intro                # scripts/ video/ under <path>/<lang>/
       en:
-        note: Replaces the retired Module 5 (AI plays). Script not started.
+        filmed: true                    # raw footage is videos/kp1-intro.mov (git-ignored)
+        note: "Replaces the retired Module 5 (AI plays). 6 Oct: filmed on script v0.2, mastered v0.1 (7:46). YouTube metadata v0.1 drafted (KP1_0.0_YouTube_Upload_Metadata_v0.1.md); audio + SRT extracted. Next: upload."
 
     modules:
       - number: 1
@@ -135,11 +137,14 @@ kps:
       Module 5 complete (5.6 on four observations, one known slip; 5.8 theory-only per plan 2026-10-01).
       1 Oct, per-video decks moved on where the takes demanded it: 5.6 v0.5 (four observations, agency-side
       narration), 5.7 v0.4 (slides reordered to the hosts' order), 5.10 v0.3 (cost wording) — combined deck v0.3.
-      all 37 lesson videos cued and assembled; the on-camera KP intro not started. Every take is read in
+      all 37 lesson videos cued and assembled; 6 Oct: the on-camera KP intro filmed and mastered. Every take is read in
       full against its brief before acceptance — the gate alone passed takes that read weak.
     intro:
       title: KP2 introduction — what the five modules cover (on camera)
       path: videos/intro
+      en:
+        filmed: true                    # raw footage is videos/kp2-intro.mov (git-ignored)
+        note: "6 Oct: filmed on script v0.1, mastered v0.1 (9:18). YouTube metadata v0.1 drafted (KP2_0.0_YouTube_Upload_Metadata_v0.1.md); audio + SRT extracted. Next: upload."
     modules:
       - number: 1
         title: Why interoperability, the four layers, and the foundation to start
@@ -225,7 +230,9 @@ kps:
       title: KP3 introduction — what the six modules cover (on camera)
       path: videos/intro
       en:
-        note: Script not started.
+        script: true                    # filmed without a written script
+        filmed: true                    # raw footage is videos/kp3-intro.mov (git-ignored)
+        note: "6 Oct: filmed without a written script, mastered v0.1 (6:03). YouTube metadata v0.1 drafted (KP3_0.0_YouTube_Upload_Metadata_v0.1.md); audio + SRT extracted. Next: upload."
 
     modules:
       - number: 1
@@ -378,7 +385,9 @@ kps:
       title: KP4 introduction — what the six modules cover (on camera)
       path: videos/intro
       en:
-        note: Script not started.
+        script: true                    # filmed from the cue deck KP4-DSD/KP4_Intro_Cues_v0.3.pptx, no script
+        filmed: true                    # raw footage is videos/kp4-intro.mov (git-ignored)
+        note: "6 Oct: filmed from the cue deck KP4_Intro_Cues_v0.3.pptx, mastered v0.1 (7:04). YouTube metadata v0.1 drafted (KP4_0.0_YouTube_Upload_Metadata_v0.1.md); audio + SRT extracted. Next: upload."
 
     modules:
       - number: 1
