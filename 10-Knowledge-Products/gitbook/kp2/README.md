@@ -1,5 +1,5 @@
 ---
-description: "Companion site to the ITU/Giga *Building a Government Interoperability Framework (GIF)* video series — the concepts, the AI plays, the worked example and the runnable build pack, in one place."
+description: "Knowledge base for the *Building a Government Interoperability Framework (GIF)* video series — the concepts, the AI plays, the worked example and the runnable build pack, in one place."
 icon: house
 ---
 
@@ -7,7 +7,7 @@ icon: house
 
 38 videos in five modules · about 176 minutes of video · 38 AI plays · a runnable build pack · self-paced · free and open
 
-This is the companion to the video series on building a Government Interoperability Framework — the legal, organisational and technical configuration that lets public bodies exchange data so that a citizen is asked once. Where [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) taught how to *plan* an Enterprise Architecture, this course teaches how to *build* the interoperability layer over that plan. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
+This is the companion to the video series on building a Government Interoperability Framework — the legal, organisational and technical configuration that lets public bodies exchange data so that a citizen is asked once. Where [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) taught how to *plan* an Enterprise Architecture, this course teaches how to *build* the interoperability layer over that plan. The videos give you the concept in four to five minutes each. This knowledge base is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
 
 This course ships two things. The videos and plays, which teach the build. And the [**build pack**](build-pack/README.md), which *is* the ready solution: a real once-only exchange running on an X-Road federation across Progressa's institutions — the decree, the Governance Pack, the semantic map and contracts, the member registrations, and the acceptance check that proves it. Run the plays and you leave with your own country's configuration; run the pack and you see the finished one.
 
@@ -329,10 +329,10 @@ Time: each subtopic is a four-to-five-minute video plus a ten-to-twenty-five-min
 
 ## Where this sits
 
-This course is the second of four ITU/Giga Knowledge Products. The first is [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md), and the third is [Education Digital Public Infrastructure (DPI) Roadmap](../kp3/README.md); a fourth, on building-block services, is planned. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md).
+This course is the second of four Knowledge Products. The first is [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md), and the third is [Education Digital Public Infrastructure (DPI) Roadmap](../kp3/README.md); a fourth, on building-block services, is planned. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md).
 
 **What this course is the companion to.** Behind the videos sits a five-piece interoperability toolkit, each piece at a different altitude: a **Reference Model** (what a framework is — the four interoperability layers and the four functional layers), an eight-step **Method** (how to develop one; Modules 1–5 follow its steps), a **Toolkit** of fourteen templates (the artefacts the plays draft — the Strategic Foundation Document, the Use-Case Catalogue, the Decree Drafting Kit, the Governance Model, the standards catalogue, Member Requirements, the SLA, the onboarding workflow, the conformance test plan, the risk register, the success metrics), a **Reference Architecture** (the enforceable target design and its rules, on five layers — the four plus infrastructure — with governance and legal cross-cutting), and an **RA-to-RFP path** that turns the reference architecture plus a country's own enterprise architecture into an issuable tender. The videos teach the first three and point at the last two: a framework is planned first, and then procurement is how it is enforced. The four-layer interoperability model — Technical, Semantic, Organisational, Legal — is the EU European Interoperability Framework's and the NIIS X-Road documentation's; PAERA v1.0 ([paera.govstack.global](https://paera.govstack.global)) anchors the interoperability framing (§3.4.3), the Once-Only principle (§5.2), the legal layer (§3.2) and the governance setup (§3.1.3).
 
 {% hint style="info" %}
-**Use this site from your AI assistant.** Every page is also published as plain Markdown, and the site exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the site and ask it to *run play 2.3 with the following context* — the site becomes the tool's reference, not just yours.
+**Use this knowledge base from your AI assistant.** Every page is also published as plain Markdown, and the knowledge base exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the knowledge base and ask it to *run play 2.3 with the following context* — the knowledge base becomes the tool's reference, not just yours.
 {% endhint %}

@@ -5,7 +5,7 @@ icon: scale-balanced
 
 # Frameworks and standards
 
-Every framework and standard this guide cites is public, and each is given here with the address where it can be read. They are arranged in the five kinds that section 4.2 of ITU's terms of reference names. The short name in bold is the one the subtopic pages use. The full table of public sources, with the edition of each, is on [the page of the public sources](public-sources.md).
+Every framework and standard this guide cites is public, and each is given here with the address where it can be read. They are arranged in the five kinds that section 4.2 of the terms of reference names. The short name in bold is the one the subtopic pages use. The full table of public sources, with the edition of each, is on [the page of the public sources](public-sources.md).
 
 ## Frameworks for digital public infrastructure
 
@@ -20,7 +20,7 @@ Section 2.3 of PAERA, on the role of enterprise architecture. The frameworks the
 
 - **PAERA** — *Public Administration Ecosystem Reference Architecture (PAERA)*, version 1.0, GovStack, dated 25.05.2024. Cited by section. The site shows no version or date on its pages, only "Last updated 2 years ago" (read 4 October 2026). — https://paera.govstack.global/
 
-The enterprise architecture course on this site is [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md).
+The enterprise architecture course in this knowledge base is [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md).
 
 ## Interoperability standards
 
@@ -30,7 +30,7 @@ How public bodies exchange data: the Information Mediator specification, the X-R
 - **X-Road documents** — NIIS, X-Road release 7.7.0: Architecture (ARC-G), Message Protocol for REST (PR-REST) — https://github.com/nordic-institute/X-Road/tree/7.7.0/doc
 - **EIF** — European Commission, European Interoperability Framework, cited through the interoperability course, which teaches its four layers — https://interoperable-europe.ec.europa.eu/collection/iopeu-monitoring/european-interoperability-framework-detail
 
-The interoperability course on this site is [Building a Government Interoperability Framework (GIF)](../kp2/README.md).
+The interoperability course in this knowledge base is [Building a Government Interoperability Framework (GIF)](../kp2/README.md).
 
 ## Reference architectures for digital government
 

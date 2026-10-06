@@ -5,7 +5,7 @@ icon: magnifying-glass
 
 # Play 0 — Build your country context
 
-Every play on this site begins "Below is a description of [country X]'s…". This page is where that description comes from. Run these research prompts once, with an assistant that can browse and cite, and keep the results together as your **country context pack — artefact A0** in [Your country workbook](../kp1/your-country-workbook.md). Each later play names the section it consumes.
+Every play in this knowledge base begins "Below is a description of [country X]'s…". This page is where that description comes from. Run these research prompts once, with an assistant that can browse and cite, and keep the results together as your **country context pack — artefact A0** in [Your country workbook](../kp1/your-country-workbook.md). Each later play names the section it consumes.
 
 {% hint style="info" %}
 **Rules for the pack.** Public sources only; a source URL and data year on every claim; posts, not names; date-stamp the pack; ask for text in the chat, not files. Where a document or body cannot be found, record that — an honest gap is itself a finding. If you have no country to hand, the same sections are already written for [Progressa](progressa.md).

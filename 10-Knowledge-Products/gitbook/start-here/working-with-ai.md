@@ -33,7 +33,7 @@ You are not the first public servant to use one of these tools on official work,
 
 ## The four safeguards
 
-Every play on this site depends on these. They are not advice; they are the conditions under which the plays are safe to run.
+Every play in this knowledge base depends on these. They are not advice; they are the conditions under which the plays are safe to run.
 
 **1. Verify against a named source.** Every fact the assistant states is a hypothesis until you check it against a document, a system or a named person. A wrong reference in a deliverable or a made-up statistic in a cabinet briefing damages your credibility more than a gap in the work would. *(UK Playbook principle: know the limitations.)*
 

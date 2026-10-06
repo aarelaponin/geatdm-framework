@@ -1,5 +1,5 @@
 ---
-description: "The four-part prompt every play on this site uses, how the vendor guides say the same thing, and where to go deeper."
+description: "The four-part prompt every play in this knowledge base uses, how the vendor guides say the same thing, and where to go deeper."
 icon: wand-magic-sparkles
 ---
 
@@ -71,7 +71,7 @@ For working with an assistant rather than only prompting one, [AI Fluency: Frame
 
 ## Skills — what they are
 
-A *skill* is a prompt with its procedure, its references and its output contract packaged so an assistant loads it on demand instead of you pasting it. The plays on this site run bare as prompts; the [ea-plays kit](ea-plays-kit.md) is the same twenty-two procedures as skills, for Claude.
+A *skill* is a prompt with its procedure, its references and its output contract packaged so an assistant loads it on demand instead of you pasting it. The plays in this knowledge base run bare as prompts; the [ea-plays kit](ea-plays-kit.md) is the same twenty-two procedures as skills, for Claude.
 
 ## Reading list
 

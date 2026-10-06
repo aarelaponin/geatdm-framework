@@ -170,7 +170,7 @@ Every AI usage tip has four parts: the problem it solves, the prompt, what goes 
 
 Every worked example is built for Progressa. Its values are invented for Progressa, and nothing in it is taken from the results of any country. Figures from public sources are given with their source, their year and their page.
 
-Before your first prompt, read [Working with AI](../start-here/working-with-ai.md) and [How to use the plays](../start-here/how-to-use-the-plays.md): they hold the ground rules for using an assistant on government material, and they apply to every course on this site.
+Before your first prompt, read [Working with AI](../start-here/working-with-ai.md) and [How to use the plays](../start-here/how-to-use-the-plays.md): they hold the ground rules for using an assistant on government material, and they apply to every course in this knowledge base.
 
 ## Prerequisites
 
@@ -209,7 +209,7 @@ Time: each subtopic is a video of about five minutes, its page, and an AI usage 
 
 ## Where this sits
 
-This course is the third of four ITU/Giga Knowledge Products, after [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) and [Building a Government Interoperability Framework (GIF)](../kp2/README.md); a fourth, on building-block services, is planned.
+This course is the third of four Knowledge Products, after [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) and [Building a Government Interoperability Framework (GIF)](../kp2/README.md); a fourth, on building-block services, is planned.
 
 | Part | What it takes | What it gives |
 | --- | --- | --- |
@@ -219,8 +219,8 @@ This course is the third of four ITU/Giga Knowledge Products, after [Developing 
 | Module 6 | The findings of the assessment, and the proof | The gap register, the order of funding, the roadmap over time, the investment case, the choice of sourcing, the governance, the adopted roadmap and its upkeep |
 | The course after this one | The blocks this course has proven | Further education services built over them |
 
-All the courses on this site use [Progressa](../start-here/progressa.md) as the one worked example and share one set of [ground rules](../start-here/working-with-ai.md).
+All the courses in this knowledge base use [Progressa](../start-here/progressa.md) as the one worked example and share one set of [ground rules](../start-here/working-with-ai.md).
 
 {% hint style="info" %}
-**Use this site from your AI assistant.** Every page is also published as plain Markdown, and the site exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the site and ask it to *run the AI usage tip of 1.4 with the following context* — the site becomes the tool's reference, not just yours.
+**Use this knowledge base from your AI assistant.** Every page is also published as plain Markdown, and the knowledge base exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the knowledge base and ask it to *run the AI usage tip of 1.4 with the following context* — the knowledge base becomes the tool's reference, not just yours.
 {% endhint %}

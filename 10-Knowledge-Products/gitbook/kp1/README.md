@@ -1,5 +1,5 @@
 ---
-description: "Companion site to the ITU/Giga *Developing a Gov Enterprise Architecture (GEA)* video series — the concepts, the AI plays, and the worked example, in one place."
+description: "Knowledge base for the *Developing a Gov Enterprise Architecture (GEA)* video series — the concepts, the AI plays, and the worked example, in one place."
 icon: house
 ---
 
@@ -7,7 +7,7 @@ icon: house
 
 36 videos in five modules · about 146 minutes of video · 36 AI plays · self-paced · free and open
 
-This is the companion to the video series on building a national Enterprise Architecture anchored on PAERA, the Public Administration Ecosystem Reference Architecture published under GovStack. The videos give you the concept in four to five minutes each. This site is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
+This is the companion to the video series on building a national Enterprise Architecture anchored on PAERA, the Public Administration Ecosystem Reference Architecture published under GovStack. The videos give you the concept in four to five minutes each. This knowledge base is where you do the work: every subtopic ends with a **play** (a structured prompt you run against your own country's context), a worked example on the fictional country Progressa, and an annotated reading of the result.
 
 You do not leave with a certificate. You leave with a briefing pack about your own country.
 
@@ -135,7 +135,7 @@ Before you commit an afternoon, open one page and look at what a play actually p
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
 <tr><td><strong>▶️ A finished play, end to end</strong></td><td>1.1 carries the prompt, the Progressa input, the raw model output and a four-point annotated reading of it — what is earned, what is invented, what is missing.</td><td><a href="module-1/1-1.md">1-1</a></td></tr>
-<tr><td><strong>🚩 The demonstration country</strong></td><td>Progressa: bodies, systems, symptoms and a stalled flagship. Paste it into any play on the site and follow along without using your own country's data.</td><td><a href="../start-here/progressa.md">progressa</a></td></tr>
+<tr><td><strong>🚩 The demonstration country</strong></td><td>Progressa: bodies, systems, symptoms and a stalled flagship. Paste it into any play in the knowledge base and follow along without using your own country's data.</td><td><a href="../start-here/progressa.md">progressa</a></td></tr>
 <tr><td><strong>📒 What you walk away with</strong></td><td>The artefact chain in dependency order — the pack of documents about your own country that the plays assemble.</td><td><a href="your-country-workbook.md">your-country-workbook</a></td></tr>
 </tbody></table>
 
@@ -164,8 +164,8 @@ Time: each subtopic is a four-minute video plus a ten-to-fifteen-minute play. A 
 
 ## Where this sits
 
-This course is the first of four ITU/Giga Knowledge Products. [Building a Government Interoperability Framework (GIF)](../kp2/README.md) is the second and [Education Digital Public Infrastructure (DPI) Roadmap](../kp3/README.md) the third; a fourth, on building-block services, is planned. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md). The underlying method is GEATDM, the Generic EA Target Architecture Development Method; PAERA v1.0 is at [paera.govstack.global](https://paera.govstack.global).
+This course is the first of four Knowledge Products. [Building a Government Interoperability Framework (GIF)](../kp2/README.md) is the second and [Education Digital Public Infrastructure (DPI) Roadmap](../kp3/README.md) the third; a fourth, on building-block services, is planned. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md). The underlying method is GEATDM, the Generic EA Target Architecture Development Method; PAERA v1.0 is at [paera.govstack.global](https://paera.govstack.global).
 
 {% hint style="info" %}
-**Use this site from your AI assistant.** Every page is also published as plain Markdown, and the site exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the site and ask it to *run play 1.1 with the following context* — the site becomes the tool's reference, not just yours.
+**Use this knowledge base from your AI assistant.** Every page is also published as plain Markdown, and the knowledge base exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the knowledge base and ask it to *run play 1.1 with the following context* — the knowledge base becomes the tool's reference, not just yours.
 {% endhint %}

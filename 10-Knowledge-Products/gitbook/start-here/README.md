@@ -1,5 +1,5 @@
 ---
-description: "The shared chapter for all four ITU/Giga Knowledge Products — how the plays work, how to work with an AI assistant, and the demonstration country."
+description: "The shared chapter for all four Knowledge Products — how the plays work, how to work with an AI assistant, and the demonstration country."
 icon: signs-post
 ---
 
@@ -16,7 +16,7 @@ This chapter holds everything that is true across all four Knowledge Products. R
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
 <tr><td><h3>🧭</h3></td><td><strong>How to use the plays</strong></td><td>The mechanics: what a play is, the three kinds, the two-step rhythm, and the five habits from the test runs.</td><td><a href="how-to-use-the-plays.md">how-to-use-the-plays</a></td></tr>
 <tr><td><h3>🛡️</h3></td><td><strong>Working with AI — the ground rules</strong></td><td>A drafting partner, not an oracle. Why it invents, why it agrees with you, what that costs, and the four safeguards.</td><td><a href="working-with-ai.md">working-with-ai</a></td></tr>
-<tr><td><h3>🪄</h3></td><td><strong>Prompting techniques</strong></td><td>The four-part prompt that every play on this site uses, and how the vendor guides say the same thing.</td><td><a href="prompting-techniques.md">prompting-techniques</a></td></tr>
+<tr><td><h3>🪄</h3></td><td><strong>Prompting techniques</strong></td><td>The four-part prompt that every play in this knowledge base uses, and how the vendor guides say the same thing.</td><td><a href="prompting-techniques.md">prompting-techniques</a></td></tr>
 <tr><td><h3>🔌</h3></td><td><strong>The ea-plays kit</strong></td><td>The optional Claude layer. Two lines to install; the plays run bare without it.</td><td><a href="ea-plays-kit.md">ea-plays-kit</a></td></tr>
 <tr><td><h3>🔍</h3></td><td><strong>Play 0 — Build your country context</strong></td><td>Seven research prompts that produce A0, the pack every other play asks you to paste.</td><td><a href="play-0.md">play-0</a></td></tr>
 <tr><td><h3>🚩</h3></td><td><strong>Progressa</strong></td><td>The fictional demonstration country used in every worked example, in every Knowledge Product.</td><td><a href="progressa.md">progressa</a></td></tr>

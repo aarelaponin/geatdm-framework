@@ -5,7 +5,7 @@ icon: flag
 
 # Progressa — the demonstration country
 
-Progressa is fictional, on purpose. It is the single worked example across all four Knowledge Products: Module 4 of [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) runs the whole lifecycle on its education sector, the build pack in [Building a Government Interoperability Framework (GIF)](../kp2/README.md) proves an exchange between its bodies, and every play on this site has a Progressa worked example. If you have no country of your own to hand — a student, a donor analyst, a trainer — run the plays on Progressa with the sections below as your context pack. An assistant reading this site over its MCP endpoint can pull this page directly.
+Progressa is fictional, on purpose. It is the single worked example across all four Knowledge Products: Module 4 of [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) runs the whole lifecycle on its education sector, the build pack in [Building a Government Interoperability Framework (GIF)](../kp2/README.md) proves an exchange between its bodies, and every play in this knowledge base has a Progressa worked example. If you have no country of your own to hand — a student, a donor analyst, a trainer — run the plays on Progressa with the sections below as your context pack. An assistant reading this knowledge base over its MCP endpoint can pull this page directly.
 
 ## The sector in one paragraph
 

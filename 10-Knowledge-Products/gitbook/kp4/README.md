@@ -166,7 +166,7 @@ The twelve documents of the method are on one page, and each document a person w
 
 Each module ends with a self-check: four questions on what a manager decides, each with the answer the module gives, to compare with after answering. The terms the guide uses are explained in its glossary.
 
-Before your first prompt, read [Working with AI](../start-here/working-with-ai.md) and [How to use the plays](../start-here/how-to-use-the-plays.md): they hold the ground rules for using an assistant on government material, and they apply to every course on this site.
+Before your first prompt, read [Working with AI](../start-here/working-with-ai.md) and [How to use the plays](../start-here/how-to-use-the-plays.md): they hold the ground rules for using an assistant on government material, and they apply to every course in this knowledge base.
 
 ## Prerequisites
 
@@ -185,7 +185,7 @@ Before your first prompt, read [Working with AI](../start-here/working-with-ai.m
 Time: each subtopic is a video of about five minutes, its page, and an AI usage tip of ten to fifteen minutes. A module is an afternoon. The whole course is roughly two working days spread over as long as you like.
 
 <table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
-<tr><td><h3>🛡️</h3></td><td><strong>Working with AI</strong></td><td>What an assistant is good for, the four ways it misleads you, and the safeguards. Read once; applies to every course on this site.</td><td><a href="../start-here/working-with-ai.md">working-with-ai</a></td></tr>
+<tr><td><h3>🛡️</h3></td><td><strong>Working with AI</strong></td><td>What an assistant is good for, the four ways it misleads you, and the safeguards. Read once; applies to every course in this knowledge base.</td><td><a href="../start-here/working-with-ai.md">working-with-ai</a></td></tr>
 <tr><td><h3>🏁</h3></td><td><strong>Module 1 — Why digital services go wrong, and the method that prevents it</strong></td><td>5 videos for the Strategist: the three places a service gets lost, the three rules, the twelve documents and who accepts each.</td><td><a href="module-1/README.md">module-1</a></td></tr>
 <tr><td><h3>📒</h3></td><td><strong>The worked examples</strong></td><td>One for each subtopic, built for Progressa and linked to one another: the shape of the documents you will commission.</td><td><a href="examples/README.md">examples/README</a></td></tr>
 <tr><td><h3>🧰</h3></td><td><strong>The blank instruments</strong></td><td>A blank to copy and fill in for each document a person writes, with the questions to ask before accepting it.</td><td><a href="toolkit/README.md">toolkit/README</a></td></tr>
@@ -215,8 +215,8 @@ Time: each subtopic is a video of about five minutes, its page, and an AI usage 
 | Module 5 | The admitted model and the shared blocks | The generated service on the low-code platform, connected to identity, registries, payments and the data exchange, proved on the running system |
 | Module 6 | The proved service | The supplier's deliverables, the handling of change, progress read from the work, the rules for the AI assistant, the next service and another sector |
 
-All the courses on this site use [Progressa](../start-here/progressa.md) as the one worked example and share one set of [ground rules](../start-here/working-with-ai.md).
+All the courses in this knowledge base use [Progressa](../start-here/progressa.md) as the one worked example and share one set of [ground rules](../start-here/working-with-ai.md).
 
 {% hint style="info" %}
-**Use this site from your AI assistant.** Every page is also published as plain Markdown, and the site exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the site and ask it to *run the AI usage tip of 2.2 with the following context* — the site becomes the tool's reference, not just yours.
+**Use this knowledge base from your AI assistant.** Every page is also published as plain Markdown, and the knowledge base exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the knowledge base and ask it to *run the AI usage tip of 2.2 with the following context* — the knowledge base becomes the tool's reference, not just yours.
 {% endhint %}
