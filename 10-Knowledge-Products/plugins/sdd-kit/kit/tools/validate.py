@@ -1164,7 +1164,7 @@ class Lint:
                                     f"- an unbounded set must be a search-select "
                                     f"(lookup / smart_search), not a dropdown (UX-01 IDR-05)")
                         # U-PK: an editable ref to an operational entity is unwireable unless
-                        # that entity declares a pk (the dm-spine failure #1). Hard, both modes.
+                        # that entity declares a pk (a failure seen in an earlier exploration). Hard, both modes.
                         if op and not fld.get("readonly") and not (te.get("pk") or {}).get("attr"):
                             self.err("U-PK", fp,
                                      f"editable reference to operational entity '{tgt}' "
@@ -1510,7 +1510,7 @@ class PlatformRules:
 
         D-066: id_generator produces FORMATTED ids, not uniqueness — its counter state is
         instance-local, so re-imports and concurrency collide (observed: two DC-000001 on
-        dm-spine). A pk that uses id_generator is therefore NOT self-enforcing, so a unique
+        a reference build). A pk that uses id_generator is therefore NOT self-enforcing, so a unique
         attr does not earn the pk exemption. An unenforced `unique:` is an ERROR (a silent
         key collision corrupts record identity — DP-7 corruption class); an unenforced
         `pattern:` stays a warning."""

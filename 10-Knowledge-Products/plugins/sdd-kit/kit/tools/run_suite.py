@@ -4,7 +4,7 @@
 The kit's own KIT_TEST_CMD engine: it executes a model's `acceptance` block (fixtures +
 given/when/then scenarios) against the DEPLOYED app on a live instance, so an enforcement
 claim can be BACKED by an observed refusal instead of a static binding. It generalises the
-proven dm-core harness (evidence/tax/dm-core/design/run_scenarios.py) to every action and
+proven reference-build harness to every action and
 assert in the schema, resolving the instance (base URL, DB, data-API) from instances.yaml.
 
 Behavioural honesty (nothing under test is faked):

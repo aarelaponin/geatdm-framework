@@ -35,12 +35,12 @@
 # raises the round.
 #
 # Its first five entries were the estate's rows of the table in an engagement's
-# review, _reviews/REVIEW_FIX_the_taxpayer_search_the_codes_and_the_menu_2026-09-25.md, part one,
-# section 1.1 (b), rows 2, 3, 4, 7 and the estate's part of 13. Row 1 (LS-85) has no entry: point
+# review, part one,
+# section 1.1 (b), rows 2, 3, 4, 7 and the estate's part of 13. Row 1 (an issue found in testing) has no entry: point
 # 19 (a) of the same round removes it. Rows 8 and 9 are removed by its point 18. Rows 5, 6, 10, 11
 # and 12 are the engagement's.
 #
-# REMOVED. G4 (row 7, the engagement's LS-70), the choice from the taxpayer search, left the
+# REMOVED. G4 (row 7), the choice from the taxpayer search, left the
 # register with the search round METHOD-2026-09-28-01, which removed the gap: the library's smart
 # search element searches the record its properties name (joget-smart-search 8.2.0), the forms
 # projector writes those properties from the model (tools/project_forms.py, record_search), and
@@ -51,20 +51,20 @@
 # G1, G2, G3 and G5 left the register with the schema round METHOD-2026-09-28-07, which removed the
 # first two gaps, settled the third against the owner's ruling on long lists, and settled the part
 # of the fourth that is the kit's:
-#   G1 (the engagement's LS-83) — a list's row act names the record it carries (`record`,
+#   G1 — a list's row act names the record it carries (`record`,
 #      `carries`) and may open a list (`open_list`); a list has acts on the rows chosen
 #      (`chosen_actions`); a form's act stands on a value of the form (`stands_on`).
 #      Projected onto the platform's hyperlink action and the kit's act bar; rule L021's check 9
 #      reads each (tools/validate.py; tools/project_datalists.py; tools/project_forms.py).
-#   G2 (LS-40) — a list is sourced from an act on chosen rows (`source.act`), the records it was
+#   G2 — a list is sourced from an act on chosen rows (`source.act`), the records it was
 #      taken on, read by the platform's JDBC list binder from the statement the kit writes.
-#   G3 (LS-72) — no change to the kit: the schema already states a divided list and its
+#   G3 — no change to the kit: the schema already states a divided list and its
 #      categories as lists the application maintains, with their first values (`groups`, each
 #      row's `group`, `rows`), and lint U026 keeps them so, as point 2 of the ruling on long
 #      lists makes the categories a list the application maintains. A design row that fixes such
 #      a list disagrees with the ruling, and the disagreement is the design's words — the
 #      engagement's own kind, never an entry here.
-#   G5 (LS-52) — a search's record may be one of the model's queries, made a view of the
+#   G5 — a search's record may be one of the model's queries, made a view of the
 #      database (`queries[].view`), so that the view carries another record's value or the copy
 #      of a value another system holds; a field names the system that holds its value
 #      (`held_by`) and is shown read-only. Where the application holds no copy of such a value,

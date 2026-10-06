@@ -16,7 +16,7 @@ realised_by: >-
   (enterprise MultiPagedForm displayMode=tab, ajaxMode; encoding verified against the
   JogetDxShowcase app — ADR-068, kit). Styling via the theme TabComponent tokens (--jgt-tab-*).
   Context-header CHROME (identity card, status-since) still needs its own pattern (CTX-02).
-maturity: piloted    # deployed + API-verified on dm-core (jdx7); stable after the owner's walkthrough
-source: "dm-core M7 W-9 · UX-01 CTX-02/CTX-03 · design: rsr/evidence/tax/dm-core/design/CASE360-DESIGN.md"
+maturity: piloted    # deployed + API-verified on a reference build; stable after the owner's walkthrough
+source: "UX-01 CTX-02/CTX-03 · a reference build's design"
 deferred: ["party-360 target needs a taxpayer-register surface (Run 3 — no registry integration yet)",
            "instalments/objections/documents tabs (waived procedures, Run 2+)"]

@@ -83,7 +83,7 @@ model:
     path: ...
     sha256: ...
     losses:
-      - { id: LS-72, gap: G3, rows: [212], x-note: the fixed list the design divides }
+      - { id: LOSS-1, gap: G3, rows: [212], x-note: the fixed list the design divides }
 ```
 
 `gap` names an entry of the kit's register of its own gaps, `templates/spec/kit-gaps.yaml` (G1 to
@@ -100,13 +100,13 @@ kind:
 | G5 | a choice that fills, or locks, some of the values its References row names and not all of them — not a choice that fills nothing, and not a value the form does not place |
 
 Each disagreement admitted is printed under the verdict as a warning, `~ [L021] … — admitted as the
-recorded loss LS-72, on the kit's gap G3, which the estate's round names open: …`, and the
+recorded loss LOSS-1, on the kit's gap G3, which the estate's round names open: …`, and the
 admission line counts them. A loss covering a row whose disagreement is of another kind is refused
 in words that name the kind the disagreement is and the kind the entry admits, and the
 disagreement stands:
 
 ```
-  - [L021] model/interaction_design/losses/LS-72: the recorded losses — the loss LS-72 covers the document's line 45, where the disagreement is: the list shows its code as its label in one of the two and its label in the other (check 6, code-shown). Its entry G3 (checks 6) admits only: the list is maintained in the application in one of the two and fixed in the other, and the model maintains the list and the row fixes it, and the model's list is divided into categories (it names `groups`) (check 6, maintained-or-fixed: maintained-in-the-model-fixed-in-the-row, divided-into-categories). A loss admits only the kind of disagreement its entry names, and this one stands
+  - [L021] model/interaction_design/losses/LOSS-1: the recorded losses — the loss LOSS-1 covers the document's line 45, where the disagreement is: the list shows its code as its label in one of the two and its label in the other (check 6, code-shown). Its entry G3 (checks 6) admits only: the list is maintained in the application in one of the two and fixed in the other, and the model maintains the list and the row fixes it, and the model's list is divided into categories (it names `groups`) (check 6, maintained-or-fixed: maintained-in-the-model-fixed-in-the-row, divided-into-categories). A loss admits only the kind of disagreement its entry names, and this one stands
 ```
 
 (the worked reference with `display_code: true` on `facility_type`, recorded as a loss on G3). A
@@ -385,28 +385,21 @@ python3 tools/deploy_dx9.py --instance jdx7 --app facilityPermit \
 **Deprecated:** any earlier toolkit DX9 import path. Use `deploy_dx9.py` only; it is the sole
 home of the DX9 deploy deltas.
 
-## Worked example — taxRegistration → jdx7
+## Worked example — a registration app → your instance
 
 ```bash
 export JOGET_PLUGINS_HOME=$PWD/../joget-platform-plugins
-python3 tools/build_app.py --model ../ta-ref-arch/_02_Solution/registration/<its model>.app.yaml \
-    --app taxRegistration --name "Tax Registration" --out build/out \
-    --forms   ../ta-ref-arch/_02_Solution/registration/build/F0*/forms \
-    --datalists ../ta-ref-arch/_02_Solution/registration/build/F0*/datalists \
-    --userview  ../ta-ref-arch/_02_Solution/registration/build/uvRegistration.uv.yml \
-    --dashboard ../ta-ref-arch/_02_Solution/registration/build/dash_reg.dash.yml \
-    --workflow  ../ta-ref-arch/_02_Solution/registration/build/WF-reg_review.spec.yml \
+python3 tools/build_app.py --model <your-project>/<its model>.app.yaml \
+    --app registrationApp --name "Registration" --out build/out \
+    --forms   <your-project>/build/F0*/forms \
+    --datalists <your-project>/build/F0*/datalists \
+    --userview  <your-project>/build/<its userview>.uv.yml \
+    --dashboard <your-project>/build/<its dashboard>.dash.yml \
+    --workflow  <your-project>/build/<its workflow>.spec.yml \
     --kit-yaml .kit.yaml
-python3 tools/deploy_dx9.py --instance jdx7 --app taxRegistration --jwa build/out/taxRegistration.jwa
+python3 tools/deploy_dx9.py --instance <your-instance> --app registrationApp --jwa build/out/registrationApp.jwa
 ```
 
-> Note (METHOD-2026-09-25-12): this example was written before the admission. The build now
-> needs `--model`, that model must name an accepted interaction design, and each spec given must
-> carry that model's provenance line; the build refuses the example unless all three hold. The
-> round did not find the folder it names on the machine it ran on, so the example is kept as a
-> shape, not as a command known to run.
->
-> Note (open, tracked as G5): taxRegistration on jdx7 is not yet *clean-regenerable* — five
-> on-instance patches are not yet folded to source, so a fresh build+deploy does not yet
-> reproduce live byte-for-byte. G5 closes that; until then this path rebuilds the app, not
-> the five manual fixes.
+> Note: the build needs `--model`, that model must name an accepted interaction design, and each
+> spec given must carry that model's provenance line; the build refuses the example unless all
+> three hold. The paths are placeholders, so the example is a shape, not a command known to run.

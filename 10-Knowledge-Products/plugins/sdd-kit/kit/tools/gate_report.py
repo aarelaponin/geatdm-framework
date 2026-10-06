@@ -51,7 +51,7 @@ KIT = HERE / "kit.py"
 # against: the guard threw, FAILED OPEN, and a deregistration went through with no liability
 # safeguard. `totality` is the only check that is an INDEPENDENT second encoding of the
 # projection contract — it asks whether what the MODEL declared is present in what was produced.
-# Its first runs blocked all three apps (registration 32 findings, dm-core 4, dm-spine 24).
+# Its first runs blocked all three apps (32, 4 and 24 findings in the three reference apps).
 # 2026-08-13: `requirements_coverage` joins the required set (verification-seam ruling).
 # It is the only constituent whose denominator is the CUSTOMER'S document rather than
 # something the design authored, so it is the only one that can see a requirement the

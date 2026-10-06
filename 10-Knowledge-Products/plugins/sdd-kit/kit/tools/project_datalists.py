@@ -314,8 +314,7 @@ def _fixed_label_formatter(ix: Index, vid, path: str) -> dict:
     9.0.7, OptionsValueFormatter.getOptionMap), which the pinned gen_datalists (registry 0.11.0)
     writes from the spec's `options`. A list that shows its code (display_code) shows the code.
     Until this round the column was refused ("a fixed list has no table to read its labels
-    from"), and a model that fixed a list the design fixes lost its labels (the engagement's
-    LS-85)."""
+    from"), and a model that fixed a list the design fixes lost its labels (an issue found in testing)."""
     v = ix.vocabularies.get(vid)
     if v is None:
         raise ProjectionError(f"{path}: the column's list '{vid}' is not a list of the model")
@@ -725,7 +724,7 @@ def project_list(lst: dict, ix: Index) -> dict:
         # default_scope is REALIZED here as of 2026-08-02, and until then it was not realized
         # anywhere. `validate` U005 has required every list to declare it (or waive it) since
         # WRK-04, so every list in every app has been carrying a first-paint scope that was
-        # silently dropped on the way to the binder: dm-core's "open work only" comment described
+        # silently dropped on the way to the binder: a reference app's "open work only" comment described
         # behaviour its app did not have, and registration's intake queue showed other people's
         # unsubmitted drafts. A check that demands a declaration nothing realizes is worse than no
         # check — it manufactures the appearance of a decision.

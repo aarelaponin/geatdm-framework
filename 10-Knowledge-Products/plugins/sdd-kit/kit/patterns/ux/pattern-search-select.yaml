@@ -15,7 +15,7 @@ realised_by: >-
   enterprise PopupSelectBox (listId/displayField/idField; shape verified against the
   JogetDxShowcase app). Enforced at projection — the dropdown-over-everything path is no
   longer reachable for operational targets.
-maturity: piloted    # kit-tested (6 cases) + dmCore regen-identical (its refs are correctly readonly/hidden); first live editable use arrives with the taxpayer registry ref (W-2, Run 3)
-source: "UX-01 IDR-01/02/05 · UX-02 §3 · AP-04 · dm-core M7 W-2/W-3"
+maturity: piloted    # kit-tested (6 cases) + a reference build regen-identical (its refs are correctly readonly/hidden); first live editable use arrives with the taxpayer registry ref (W-2, Run 3)
+source: "UX-01 IDR-01/02/05 · UX-02 §3 · AP-04"
 deferred: ["identifier-first type-ahead variant (min-chars, result cap + refine) — PopupSelectBox is dialog-only",
            "identity card after selection (IDR-04) — pairs with the context-header pattern"]

@@ -43,7 +43,7 @@ KEY_FIELD = "record_key"              # the trigger form's read-only field namin
 # that exists), so a parameter of the address that opened the form is gone when it is saved. The
 # prefill binder reads its key again on the submit, from the request's parameters: under the
 # field's own name it finds the value the page posts; under any other name it found nothing, and
-# the act was saved naming no record (the engagement's version 9, "no debt_case record is named").
+# the act was saved naming no record (an issue found in testing: "no record is named").
 RECORD_PARAM = KEY_FIELD
 STATE_FIELD = "record_state"          # the trigger form's badge of the record's state
 ACTION_FIELD = "lc_action"            # the move a trigger form makes (hidden, fixed)

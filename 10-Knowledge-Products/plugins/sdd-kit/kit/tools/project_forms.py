@@ -89,7 +89,7 @@ ATTR_TYPE_MAP = {
     "date":     ("date",       False),
     # METHOD-2026-09-26-02, point 5: a date and time is the platform's DatePicker in its dateTime
     # mode, shown day first with the time (DD/MM/YYYY HH:mm; DATETIME_PROPS). It was a text field
-    # showing the stored value, year first (the engagement's LS-86) — MAPPING-forms.md
+    # showing the stored value, year first (an issue found in testing) — MAPPING-forms.md
     "datetime": ("date",       False),
     "enum":     ("select",     False),
     "ref":      ("select",     False),
@@ -1047,7 +1047,7 @@ def project_field(fld: dict, entity: dict, ix: Index, sec_managed: bool, path: s
     # ---- how the value is shown (METHOD-2026-09-25-04, item 1) ---------------
     # A coded value, a reference or a directory user the person may only read is shown as its
     # label — a labelled value, the platform's own read-only rendering of a SelectBox
-    # (`readonlyLabel`, selectBox.ftl) — never as a disabled drop-down (RL-41, LS-56).
+    # (`readonlyLabel`, selectBox.ftl) — never as a disabled drop-down (RL-41).
     if desired and out.get("type") == "select":
         _with_props(out, readonlyLabel="true")
     # Every date control shows the date day first, in the one form the application names; a date
@@ -1351,7 +1351,7 @@ def project_form(form: dict, ix: Index) -> dict:
     status_attr_x = lcx.get("status_attr")
     is_create = bool(status_attr_x) and form.get("purpose") == "create"
     if is_create:
-        # ADR-034 refinement (dm-core M7 walkthrough): a create-purpose form advances no
+        # ADR-034 refinement (a reference build's walkthrough): a create-purpose form advances no
         # lifecycle — no Action select, no TRANSITION guard (a record being created has no
         # move to make). It DOES stamp the lifecycle INITIAL state as the status field's
         # default, because the mm-config guard matches exact from->to rows: '' has no legal

@@ -5,7 +5,7 @@ Every other kit check reads the L1 model; the generators (gen_userview / gen_for
 observed introducing UX violations AFTER the gates — a dead selection column, a dropped
 storeValue (RCA RC-3). This lint reads the EMITTED JSON in a build dir, with the model
 beside it, and fails on the corruption / integrity class. Seed rules A001–A006 are the six
-dm-spine failures; error-severity is limited to that class; the family grows by the §12.3
+earlier-exploration failures; error-severity is limited to that class; the family grows by the §12.3
 ritual. It is a constituent of the gate-report and runs in build_app.py after generation.
 
     ux_lint.py <app.yaml> --build <build_dir>
@@ -99,7 +99,7 @@ class UxLint:
           EVERY FORM MENU IS READONLY — the userview declares FormMenus, which exist to let a
             person enter something, and not one of them accepts input.
         What is deliberately NOT an error: a userview with no FormMenu at all. An app whose
-        records enter only through an engine or an audited API — dm-core's case worklists are
+        records enter only through an engine or an audited API — a reference app's case worklists are
         exactly this — has no manual creation surface by design, and demanding one would be the
         lint inventing a requirement. The check fires on a DECLARED entry point that cannot be
         used, not on the absence of one.

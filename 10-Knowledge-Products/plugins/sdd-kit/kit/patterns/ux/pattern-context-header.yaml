@@ -15,8 +15,8 @@ realised_by: >-
   TransitionGuard on apply), placed in the header as a readonly field labelled "Status
   since". DX9 delta captured in gen_forms: CustomHTML properties MUST carry a label key
   (customHTML.ftl reads it unguarded; a missing key makes the element vanish silently).
-maturity: piloted    # live on the dmCore case console (jdx7): band renders, stamp verified through the engine
-source: "UX-01 CTX-02/CTX-04 · dm-core M7 W-9 · CASE360-DESIGN.md §2"
+maturity: piloted    # live on a reference case console: band renders, stamp verified through the engine
+source: "UX-01 CTX-02/CTX-04 · a reference build's design"
 deferred: ["identity-card visual (IDR-04: party card with registry link) — needs the taxpayer registry surface (Run 3)",
            "state-coloured status pill (needs a safe per-state CSS hook)",
            "as-of stamps on ledger figures (FIN-04) — separate pattern"]

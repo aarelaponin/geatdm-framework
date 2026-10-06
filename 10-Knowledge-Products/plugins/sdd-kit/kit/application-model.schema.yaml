@@ -93,7 +93,7 @@ properties:
               required: [id, gap, rows]
               additionalProperties: false
               properties:
-                id: { type: string, minLength: 1, description: "The loss's identifier in the model's own record of losses (e.g. LS-83)." }
+                id: { type: string, minLength: 1, description: "The loss's identifier in the model's own record of losses (e.g. LOSS-1)." }
                 gap: { type: string, minLength: 1, description: "The entry of the kit's register of its gaps the loss stands on (e.g. G1)." }
                 rows:
                   type: array

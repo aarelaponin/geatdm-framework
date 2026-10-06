@@ -21,7 +21,7 @@ the course pages and their prompts serve the manager.
 | `references/SKILL-form.md` | The one form every skill of the method is written from. |
 
 Every path a skill names is written relative to the skill's own folder: the standards are at
-`../../standards/` and the kit at `../../kit/`. Nothing in the plugin names a path on anybody's
+`../../standards/` and the kit at `../../kit/`. Nothing in the plugin names a path on the author's
 machine, so the folder works wherever it is placed.
 
 ## Which KP4 module each skill serves
