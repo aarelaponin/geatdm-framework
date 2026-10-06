@@ -13,8 +13,6 @@ The guide has six modules and 45 subtopics. Each subtopic is one short video wit
 
 ![F1. The structure of the guide: its modules and the two ways through them](figures/F1_structure.png)
 
-*F1. The structure of the guide: its modules and the two ways through them.*
-
 ## Outline
 
 | Module | Topic | Persona | Videos | AI tips | Status |

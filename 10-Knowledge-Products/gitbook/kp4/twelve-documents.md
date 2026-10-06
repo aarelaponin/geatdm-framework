@@ -9,8 +9,6 @@ The method has twelve documents, from the customer's own request to the working 
 
 ![F3. The twelve documents in order, with where the manager stands](figures/F3_twelve-documents.png)
 
-*F3. The twelve documents in order, with where the manager stands.*
-
 ## The table of the twelve documents
 
 In the column of what goes in, a number is the number of a document in this table. The customer's own documents are kept as received and never edited. The walk-through is produced from the screens, and the working application is generated from the application model; no person writes either, so neither has a blank instrument.

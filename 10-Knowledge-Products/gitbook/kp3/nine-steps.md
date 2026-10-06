@@ -9,8 +9,6 @@ A roadmap is produced in nine steps, and for each step you can say who acts, wha
 
 ![F3. The nine steps with their roles and outputs](figures/F3_nine-steps.png)
 
-*F3. The nine steps with their roles and outputs.*
-
 ## The roles
 
 | Role | Who holds it |
