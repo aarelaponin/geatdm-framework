@@ -1,0 +1,16 @@
+{
+  "name": "sdd-kit",
+  "version": "0.1.0",
+  "description": "The specification-driven development (SDD) method's skills for KP4, Designing Digital Government Services using a Building Block Approach: the twelve skills that help a team write the method's documents, the standards they read (as Markdown), and the kit of programs they run. Every example is set in Progressa.",
+  "author": {
+    "name": "Aare Lapõnin"
+  },
+  "keywords": [
+    "sdd",
+    "specification",
+    "kp4",
+    "digital-government",
+    "building-blocks",
+    "standards"
+  ]
+}
