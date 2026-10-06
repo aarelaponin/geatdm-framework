@@ -1,5 +1,7 @@
 # Camera intro — filming the KP intro and folding it into the series
 
+These rules apply to the course introduction (0.0) of every Knowledge Product; KP1 is used as the example, and for another KP replace `KP1`, `KP1-GEA` and the module video named in the measurement with that KP's own.
+
 **One on-camera artefact per KP: the course introduction (`0.0`), filmed by hand.** Modules have no
 intro video of their own (decided 1 October 2026).
 It does not come out of the pipeline — no deck, no brief, no NotebookLM take, no cue file. It is
@@ -9,7 +11,7 @@ The script is authored like any other subtopic — it lives in `«lang»/scripts
 `KP«n»_IntroScript_v0.«v».md` in `videos/intro/«lang»/scripts/`, where the video tracker looks for it.
 
 > **Before you film**, read the compliance note in the script. An on-camera intro is a deliberate
-> exception to §4.3 *"no individuals on screen"* and belongs in §5.4 as a calibration item. If ITU
+> exception to §4.3 of the module script bundle's compliance rules *"no individuals on screen"* and belongs among the calibration items of the module bundle. If ITU
 > declines it, the same script becomes a screen-only voice-over and nothing else changes.
 
 ---
@@ -63,14 +65,13 @@ way down, a little space on the side you are angled toward.
 
 ## 2 — Get the words out without reading
 
-Around 270 words — two minutes — is more than you want to read off a page, and reading it will show.
+About two minutes, between 240 and 290 spoken words, is more than you want to read off a page, and reading it will show.
 Three options, best first:
 
-- **Learn the five beats, speak them.** Hello/who → the question → who this is for → what a play is
-  and who runs it
-  → the four things you will be able to do → "start with 1.1." Say it your way each take. This gives
+- **Learn the beats, speak them.** The beats are the positions in your script's own message table,
+  which differ between Knowledge Products. Say it your way each take. This gives
   the register §4.4 asks for and no other method does.
-- **Notes at the lens.** Stick the five beats, in large type, on a card taped just beside the
+- **Notes at the lens.** Write the beats from that table, in large type, on a card taped just beside the
   camera lens — not on the screen below it. Eyes stay near the lens.
 - **Teleprompter.** If you use one, drop the pace another notch; prompter reading always sounds
   faster than it looks.
@@ -78,7 +79,7 @@ Three options, best first:
 Say the whole thing three or four times before you hit record. The take you want is usually the
 fourth.
 
-**Film the long version even if you plan to publish the short one.** The script marks three
+**Film the long version even if you plan to publish the short one.** The script marks the
 ⟦bracketed⟧ passages that cut cleanly back to ~60 seconds. If they are in the take you can remove
 them in the edit; if they are not, you are filming again.
 
@@ -115,9 +116,11 @@ One command. Set the three variables and run it from anywhere.
 
 ```bash
 TAKE=~/Movies/KP1-intro/take3.mov
-OUT="$HOME/mnt/10-Knowledge-Products/KP1-GEA/videos/intro/en/video/KP1_0.0_Video_v0.1.mp4"
+OUT="$HOME/IdeaProjects/rsr/itu/GEATDM-Method-Repository/10-Knowledge-Products/KP1-GEA/videos/intro/en/video/KP1_0.0_Video_v0.1.mp4"
 IN_POINT=00:00:01.5      # first frame you want
 OUT_POINT=00:02:01.0     # last frame you want
+
+mkdir -p "$(dirname "$OUT")"   # create the output folder first
 
 ffmpeg -ss "$IN_POINT" -to "$OUT_POINT" -i "$TAKE" \
   -vf "scale=1920:1080:force_original_aspect_ratio=decrease,\
@@ -133,11 +136,14 @@ What each part is doing: `-ss`/`-to` trim the dead air off both ends; `scale`+`p
 series loudness measured above; `faststart` lets YouTube start processing before the whole file
 lands.
 
-Then verify you actually match:
+Then verify you actually match. The rendered module videos are kept in `videos/module_«n»/en/video/`
+(the `.mp4` files are gitignored, and none was found on this Mac on 4 October 2026); set `REF` to the
+path of any finished KP1 subtopic video, for example the `KP1_M1_1.1_Video` render:
 
 ```bash
-cd "$HOME/mnt/10-Knowledge-Products/KP1-GEA/videos/intro/en/video"
-for f in KP1_0.0_Video_v0.1.mp4 ../../../module_1/en/video/KP1_M1_1.1_Video_v0.7.mp4; do
+REF=/path/to/a/finished/KP1_subtopic_video.mp4
+cd "$(dirname "$OUT")"
+for f in "$OUT" "$REF"; do
   echo "== $f"
   ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,sample_rate,channels \
     -of default=noprint_wrappers=1 "$f"
@@ -175,13 +181,13 @@ KP1_0.0_Audio_v0.1.srt
 
 Run it through the same skill the series uses — `kp-scribe-transcribe` (ElevenLabs Scribe), or
 `kp-whisper-transcribe` offline. Two minutes of speech is a few cents. Read the result before
-uploading; "PAERA" and "Lapõnin" are exactly the words a transcriber gets wrong.
+uploading; "PAERA" and "Lapõnin", and any other proper name in the script, are exactly the words a transcriber gets wrong.
 
 ## 7 — Where it lands
 
 ```
 videos/intro/en/
-├── scripts/  KP1_IntroScript_v0.1.md            the script (committed)
+├── scripts/  the script in `intro/en/scripts/`   (committed)
 ├── audio/    KP1_0.0_Audio_v0.1.srt             the captions (committed)
 └── video/    KP1_0.0_Video_v0.1.mp4             the deliverable (gitignored)
 ```
