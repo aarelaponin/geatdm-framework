@@ -1,0 +1,179 @@
+[
+  {
+    "L": "LEG",
+    "title": "Lawful basis for each exchange",
+    "intent": "Linkup will carry learners' data, and most learners are minors. Progressa's Data Protection Act 2023 allows a minor's data to be shared only on a legal basis, so no exchange may go live before its basis is written down.",
+    "std": "Data Protection Act 2023 (Progressa); Civil Registration Act (Progressa)",
+    "accept": "Legal gap assessment delivered in the Foundation phase and approved by PDGA; a lawful basis recorded for each exchange before its go-live, verified by the independent verification agent.",
+    "reqs": [
+      "The Supplier shall assess Progressa's legal framework (the Data Protection Act 2023, the Civil Registration Act, the Public Procurement Act and the draft interoperability decree) against the three first-wave exchanges of this tender, identify the gaps, and recommend the instruments and agreements each exchange needs to operate lawfully.",
+      "The Supplier shall configure Linkup so that no exchange can go into production without a recorded lawful basis that cites the instrument and its article."
+    ]
+  },
+  {
+    "L": "LEG",
+    "title": "The two agreements: membership and data sharing",
+    "intent": "Joining Linkup and reading another body's data are two different permissions. Keeping them in two agreements stops membership from becoming a key to every register.",
+    "std": "This RFP, Annex G",
+    "accept": "Templates delivered in the Foundation phase for PDGA's lawyers; at the Pilot gate, a call made without a data-sharing grant is refused.",
+    "reqs": [
+      "The Supplier shall draft, for PDGA's lawyers to finalise, the Linkup membership agreement and one data-sharing agreement for each first-wave exchange, to the structure of Annex G.",
+      "The Supplier shall configure Linkup's access rights so that membership alone gives access to no service; each service is reachable only by the members its data-sharing agreement names."
+    ]
+  },
+  {
+    "L": "ORG",
+    "title": "Operator procedures and admission",
+    "intent": "PDGA runs Linkup, and the Steering Committee decides who may join. Written procedures make each decision repeatable and leave a record of who decided what.",
+    "std": "This RFP",
+    "accept": "Procedures accepted by PDGA in the Foundation phase; PNEA's admission run end to end under them before the Pilot gate.",
+    "reqs": [
+      "The Supplier shall deliver PDGA's operating procedures for Linkup: admitting a member, issuing and revoking certificates, handling an incident, and giving notice of a change.",
+      "The Supplier shall set up the admission steps so that a member goes into production only after the Steering Committee's minuted decision is recorded."
+    ]
+  },
+  {
+    "L": "ORG",
+    "title": "Member onboarding",
+    "intent": "A member that joins without meeting the requirements weakens every exchange it takes part in. The six member requirements make 'connected' mean the same thing for every member.",
+    "std": "This RFP, Annex C",
+    "accept": "Each first-wave member passes the readiness check of the six requirements before its go-live (Pilot); evidence filed with the verification log.",
+    "reqs": [
+      "The Supplier shall onboard PNEA, and support PLR and MoEYS to onboard, against the six member requirements: a security server, a registered subsystem, the adopted standards, data conformed to the semantic map, a lawful basis for each exchange, and a named contact post with an incident channel.",
+      "The Supplier shall provide a test environment in which a new member makes a test call before it goes into production."
+    ]
+  },
+  {
+    "L": "ORG",
+    "title": "Capacity building and transfer",
+    "intent": "Linkup must keep running after the programme ends, with PDGA's own staff. The skills have to move to them during delivery, not in a handover week.",
+    "std": "This RFP",
+    "accept": "PDGA's operating team certified against the agreed competencies at the Transfer gate; operation handed over and signed by PDGA.",
+    "reqs": [
+      "The Supplier shall train PDGA's operating team and the technical focal point of each first-wave member, against competencies agreed with PDGA at inception, and shall measure them.",
+      "The Supplier shall embed PDGA staff in the delivery team from the Foundation phase, and shall hand over the operation of Linkup to PDGA at the end of the operate period."
+    ]
+  },
+  {
+    "L": "SEM",
+    "title": "The semantic map of learner data",
+    "intent": "PNEA, PLR and MoEYS must mean the same thing by 'learner', 'enrolment' and 'result'. One map of the fields, agreed before the build, is what lets their systems match records.",
+    "std": "ISO/IEC 11179; OneRoster or CEDS [to be confirmed]",
+    "accept": "Semantic map accepted by PDGA and MoEYS in the Foundation phase.",
+    "reqs": [
+      "The Supplier shall publish the semantic map of the first-wave data (identity, enrolment and results), with each field described to ISO/IEC 11179 and anchored to the learner-data standard PDGA confirms at inception (to be confirmed).",
+      "The Supplier shall key learner records on the national identity number where PNIA has issued one, and shall document how a learner without one is matched, since PNIA issues identity numbers only at 16 (to be confirmed with PNIA and the Civil Registration Department)."
+    ]
+  },
+  {
+    "L": "SEM",
+    "title": "Service catalogue and member register",
+    "intent": "A service nobody can find is a service nobody reuses. The catalogue and the member register let the next ministry see what already exists before it builds its own.",
+    "std": "This RFP",
+    "accept": "Catalogue and member register live, with the three first-wave services, at the Pilot gate.",
+    "reqs": [
+      "The Supplier shall deliver a service catalogue that records, for every service on Linkup, its provider, its service contract, its lawful basis and its service levels.",
+      "The Supplier shall publish Linkup's member register, and shall keep the catalogue and the register current through the operate period."
+    ]
+  },
+  {
+    "L": "TEC",
+    "title": "Linkup's core in production",
+    "intent": "Linkup already runs in pilot with four members. The lot takes it to production; it does not rebuild it, and reuse comes before building.",
+    "std": "X-Road 7.x, message protocol for REST (NIIS)",
+    "accept": "Production configuration accepted at the Foundation gate; the check that lists the members and finds each first-wave service passed and recorded with its date.",
+    "reqs": [
+      "The Supplier shall take Linkup from pilot to production on X-Road 7.x: the Central Server, a security server for each first-wave member, and the store of the message log.",
+      "The Supplier shall reuse Linkup's existing members and configuration, and shall justify in writing, with a documented gap, any component it replaces or builds new."
+    ]
+  },
+  {
+    "L": "TEC",
+    "title": "Trust services",
+    "intent": "Every call on Linkup rests on certificates. A test certification authority vouches for anyone who asks, so production needs a real one.",
+    "std": "TLS 1.3 (IETF); RFC 3161 time-stamping; OCSP (RFC 6960)",
+    "accept": "Production trust services live at the Foundation gate; revocation of a certificate tested and recorded.",
+    "reqs": [
+      "The Supplier shall replace Linkup's test certification authority with production trust services (a certification authority, OCSP and time-stamping) operated under PDGA, or under an accredited provider if Progressa's law requires one (to be confirmed).",
+      "The Supplier shall enforce mutual TLS on every call between security servers."
+    ]
+  },
+  {
+    "L": "TEC",
+    "title": "Service contracts",
+    "intent": "A service contract tells a consumer exactly what it can ask for and what it gets back. Written in the adopted standard and tested, it lets the next consumer connect without a meeting.",
+    "std": "OpenAPI 3.1 [confirm]",
+    "accept": "Each contract linted by the operator's test suite and a live test call passed before the service's go-live (Pilot).",
+    "reqs": [
+      "The Supplier shall describe each first-wave service (identity-api of PNIA, enrolment-api of PLR and results-api of PNEA) in OpenAPI 3.1, and shall validate each description with the operator's test suite.",
+      "The Supplier shall version each service contract, and shall give consumers the notice of change set in Annex F before a breaking change."
+    ]
+  },
+  {
+    "L": "TEC",
+    "title": "The first-wave exchanges",
+    "intent": "One real once-only exchange, working end to end, convinces more agencies to join than any strategy. The first wave lets a candidate sit an examination without proving identity or enrolment on paper.",
+    "std": "This RFP, Annex E",
+    "accept": "For each exchange, the call with a grant answered and the same call without a grant refused, and the whole run passed, each recorded with its date at the Pilot gate.",
+    "reqs": [
+      "The Supplier shall connect the three first-wave exchanges end to end: PNIA to PNEA (identity), PLR to PNEA (enrolment) and PNEA to MoEYS (results).",
+      "The Supplier shall prove each exchange with a call that carries a grant and is answered, and the same call without a grant, which is refused."
+    ]
+  },
+  {
+    "L": "TEC",
+    "title": "Monitoring and the message log",
+    "intent": "PDGA must see the bus run, and a data owner must be able to see who read its data. Without both, nobody can answer a complaint or an audit.",
+    "std": "This RFP, Annex C",
+    "accept": "Demonstrated at the Pilot gate; a query of the message log by a data owner tested.",
+    "reqs": [
+      "The Supplier shall deliver a collector that gathers monitoring data from every security server, and a dashboard for PDGA's operating team.",
+      "The Supplier shall keep a tamper-evident log of every call, which PDGA and the owner of the data can query."
+    ]
+  },
+  {
+    "L": "TEC",
+    "title": "Event distribution (target-state)",
+    "intent": "Linkup carries requests and answers only. Events such as 'learner enrolled' will be needed by later services, so the design is made now and the build waits for PDGA's decision.",
+    "std": "CloudEvents 1.0 [confirm]",
+    "accept": "Design accepted at the Pilot gate; build only on PDGA's confirmation.",
+    "reqs": [
+      "The Supplier shall design a publish-subscribe channel on Linkup for events such as 'learner enrolled' (target-state), and shall build it only if PDGA confirms it at the Pilot gate (to be confirmed)."
+    ]
+  },
+  {
+    "L": "TEC",
+    "title": "Openness, data export and exit",
+    "intent": "Lock-in is written into contracts clause by clause. These four obligations keep PDGA free to change supplier without losing its data or its platform.",
+    "std": "This RFP; the standards named in Annex C",
+    "accept": "Export of all data and configuration tested at the Pilot gate; licence terms checked at contract signature; transition plan accepted at the Transfer gate.",
+    "reqs": [
+      "The Supplier shall name the edition of every standard it implements.",
+      "The Supplier shall make every record, schema and configuration of what it delivers exportable at any time, in an open format, at no extra charge.",
+      "The Supplier shall provide, at the end of the contract, a transition period with defined tasks and a stated price, to hand over to PDGA or to a successor.",
+      "The Supplier shall grant licences for all the software it delivers that allow PDGA to keep running Linkup after the contract ends."
+    ]
+  },
+  {
+    "L": "INF",
+    "title": "Hosting and continuity",
+    "intent": "A national platform must survive a failed server or a lost site. Separate environments and a tested recovery are what make that true rather than promised.",
+    "std": "This RFP, Annex F",
+    "accept": "Recovery tested and passed before Operational Acceptance at the Pilot gate.",
+    "reqs": [
+      "The Supplier shall deploy Linkup on the hosting PDGA provides (to be confirmed at inception), with separate test and production environments.",
+      "The Supplier shall meet the recovery targets of Annex F, and shall test recovery before Operational Acceptance."
+    ]
+  },
+  {
+    "L": "INF",
+    "title": "Security baseline",
+    "intent": "Linkup will carry the data of every learner in the country. Its security is checked by someone other than the builder before anything goes live.",
+    "std": "OWASP API Security Top 10 (2023)",
+    "accept": "Independent penetration test passed, and every high and critical finding fixed, at the Pilot gate.",
+    "reqs": [
+      "The Supplier shall pass an independent penetration test before production go-live, and shall fix every high and critical finding before Operational Acceptance.",
+      "The Supplier shall meet the OWASP API Security Top 10 for every service it builds."
+    ]
+  }
+]

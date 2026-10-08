@@ -69,7 +69,6 @@ GEATDM-Method-Repository/
 │   ├── GEATDM-Interop-Reference-Architecture-v1.0.docx   (target design + rules — the enforceable RA)
 │   ├── GEATDM-Interop-Toolkit-v1.0.md                    (templates)
 │   ├── GEATDM-Interop-RA-to-RFP-Guide-v1.0.md            (why & how + the Module-08 conceptual model)
-│   └── RA-to-RFP-Plugin/                                 (interop-ra-to-rfp plugin: 10 skills — RA → RFP)
 │
 ├── 09-DPI/                                 ← Digital Public Infrastructure module (v1.2)
 │   ├── GEATDM-DPI-Reference-Model-v1.0.md

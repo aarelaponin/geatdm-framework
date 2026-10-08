@@ -32,8 +32,8 @@
 | Artefact | File | Role |
 |---|---|---|
 | Interoperability Reference Architecture | `GEATDM-Interop-Reference-Architecture-v1.0.docx` | The full RA — the layered rulebook (legal, organisational, semantic, technical, infrastructure + governance) the requirements are drawn from. |
-| RA-to-RFP plugin (packaged) | `RA-to-RFP-Plugin/interop-ra-to-rfp.plugin` | One-click installable bundle of the 10 skills. |
-| RA-to-RFP plugin (source) | `RA-to-RFP-Plugin/skills/*`, `RA-to-RFP-Plugin/.claude-plugin/plugin.json` | Version-controlled source of every skill. |
+| Tender kit (plugin) | `10-Knowledge-Products/plugins/tender-kit/` | Installable plugin bundling the 10 skills. |
+| Tender kit (source) | `10-Knowledge-Products/plugins/tender-kit/skills/*`, `10-Knowledge-Products/plugins/tender-kit/.claude-plugin/plugin.json` | Version-controlled source of every skill. |
 | Existing Module-08 baseline | `GEATDM-Interop-Reference-Model-v1.0.md`, `GEATDM-Interop-Method-v1.0.md`, `GEATDM-Interop-Toolkit-v1.0.md` | The conceptual model (the GIF's architectural shape), the 8-step method, and the template toolkit. The RA below **complements** these — it is the enforceable, detailed target design and the procurement engine, not a replacement. |
 
 ---
@@ -139,7 +139,7 @@ local-participation-designer ─┘                                             
 ## 4. How to use it
 
 ### 4.1 Install
-Install `RA-to-RFP-Plugin/interop-ra-to-rfp.plugin` once (the “Save/Install plugin” action). All ten skills become available; they trigger automatically on the right requests (e.g. “turn this architecture into requirements”, “which procurement vehicle?”, “build the RFP”, “QA the package”).
+Install the tender kit once, from `10-Knowledge-Products/plugins/tender-kit/` (its `.claude-plugin/plugin.json` is the plugin manifest). All ten skills become available; they trigger automatically on the right requests (e.g. “turn this architecture into requirements”, “which procurement vehicle?”, “build the RFP”, “QA the package”).
 
 ### 4.2 Run a country, end to end
 1. **Decide the vehicle** — confirm it is an obligation of result → supply RFP with rated criteria (`procurement-vehicle-selector`).

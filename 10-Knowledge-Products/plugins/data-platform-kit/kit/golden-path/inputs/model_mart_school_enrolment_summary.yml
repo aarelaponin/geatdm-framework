@@ -1,0 +1,7 @@
+kind: mart
+domain: school
+desc: enrolment_summary
+key: school_code
+description: Enrolment, staffing and grant per school for the enrolment dashboard and API.
+from: int_school__master
+select: [school_code, school_name, district, capacity, capitation_grant, learners_enrolled, teachers_in_post, _extracted_at]

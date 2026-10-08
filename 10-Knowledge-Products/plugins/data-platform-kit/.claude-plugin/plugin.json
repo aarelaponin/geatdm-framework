@@ -1,0 +1,17 @@
+{
+  "name": "data-platform-kit",
+  "version": "0.1.0",
+  "description": "The skills for building and running a government data platform — sources, models, quality checks, catalogue, dashboards and APIs — for KP3's registers and KP2's data exchange: thirteen skills, the data-quality framework they apply, and an end-to-end worked example. Every example is set in Progressa.",
+  "author": {
+    "name": "Aare Lapõnin"
+  },
+  "keywords": [
+    "data-platform",
+    "dbt",
+    "openmetadata",
+    "superset",
+    "data-quality",
+    "registers",
+    "digital-government"
+  ]
+}

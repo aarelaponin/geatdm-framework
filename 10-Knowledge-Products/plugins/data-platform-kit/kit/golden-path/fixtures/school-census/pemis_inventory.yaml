@@ -1,0 +1,18 @@
+# Schema inventory of PEMIS, Progressa's legacy education management information system.
+# Simulated case: Progressa is a fictional country; every table name here is invented.
+# One entry per table in the PEMIS database, as a database administrator would list it.
+tables:
+  - {table_name: appuser,       database: pemis}
+  - {table_name: censusreturn,  database: pemis}
+  - {table_name: district,      database: pemis}
+  - {table_name: grade,         database: pemis}
+  - {table_name: learner,       database: pemis}
+  - {table_name: learnerstatus, database: pemis}
+  - {table_name: level,         database: pemis}
+  - {table_name: msgtext,       database: pemis}
+  - {table_name: qualification, database: pemis}
+  - {table_name: school,        database: pemis}
+  - {table_name: setting,       database: pemis}
+  - {table_name: subject,       database: pemis}
+  - {table_name: teacher,       database: pemis}
+  - {table_name: timetable,     database: pemis}

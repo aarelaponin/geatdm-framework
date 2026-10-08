@@ -1,0 +1,23 @@
+{
+  "skill_name": "legacy-module-to-openmetadata",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I've got a legacy PowerBuilder module at '../../kit/golden-path/fixtures/school-census/census.pbl' and our schema inventory is '../../kit/golden-path/fixtures/school-census/pemis_inventory.yaml'. I can't get database access yet. Which tables and columns does this module use, and can you produce something I can load into OpenMetadata?",
+      "expected_output": "Runs the extractor against census.pbl with the inventory; produces a finished <Module>_OpenMetadata.yaml + .md covering the School Census tables (school, learner, learnerstatus, teacher, qualification, censusreturn, transfer, district, grade, level, examcandidate) with app->table lineage and DRAFT business descriptions; prunes framework false-positives (appuser, setting, msgtext); maps the abbreviation and ambiguous prefixes (crt, lst, trf, lvl, qua, exm, lea); marks output DRAFT with a verification note.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Document the data this PowerBuilder app touches so the catalogue team can review it. The .pbl is at ../../kit/golden-path/fixtures/school-census/census.pbl. I don't have a table list to cross-check against.",
+      "expected_output": "Runs the extractor with no inventory (fallback mode), is appropriately more cautious about the table list, surfaces tables seen in DML/DataWindow contexts, groups columns, writes a markdown review sheet, and flags that the table list needs tighter confirmation because no inventory was supplied.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We have dozens of legacy PowerBuilder modules in our education management information system to bring into OpenMetadata before the learner register is built. Can you show me the workflow on one module and what the output looks like, so my team can repeat it on the rest?",
+      "expected_output": "Explains the run-script-then-finish-by-judgement workflow, runs it on the available module (the kit's School Census fixture) as the demonstration, produces the YAML+MD, and points at the per-module repeatability (one command + the finishing steps), including the verification gate before publishing.",
+      "files": []
+    }
+  ]
+}

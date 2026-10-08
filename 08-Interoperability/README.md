@@ -64,7 +64,7 @@ The value chain above explains the *altitudes* for understanding; for KP2 accoun
 | [`GEATDM-Interop-Method-v1.0.md`](GEATDM-Interop-Method-v1.0.md) | **Method** — the 8 steps to develop a country's GIF |
 | [`GEATDM-Interop-Toolkit-v1.0.md`](GEATDM-Interop-Toolkit-v1.0.md) | **Toolkit** — the 14 templates (TK-IO-01 … TK-IO-14) |
 | [`GEATDM-Interop-Reference-Architecture-v1.0.docx`](GEATDM-Interop-Reference-Architecture-v1.0.docx) | **Reference Architecture (RA)** — the enforceable, layered target design + RULES |
-| [`RA-to-RFP-Plugin/`](RA-to-RFP-Plugin/) | **RA-to-RFP plugin** — 10 Claude skills (source + packaged `.plugin`) that turn the RA + a National EA into a tender |
+| [`tender-kit/`](../10-Knowledge-Products/plugins/tender-kit/) | **Tender kit** — 10 Claude skills that turn the RA + a National EA into a tender, with every example set in Progressa |
 | [`GEATDM-Interop-RA-to-RFP-Guide-v1.0.md`](GEATDM-Interop-RA-to-RFP-Guide-v1.0.md) | **Guide** — why & how to use the RA + plugin, with the worked Gambia GIP example |
 
 ## Where this module sits in GEATDM

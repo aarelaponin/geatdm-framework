@@ -1,0 +1,19 @@
+{
+  "skill_name": "regbb-integration",
+  "evals": [
+    {
+      "id": 0,
+      "eval_name": "design-note-submission-channel",
+      "prompt": "We're starting the GovStack RegBB integration for our spec-to-code Joget build in Progressa. Write a short design note (markdown) for how learner_registration submissions get transmitted from the school-facing Joget instance to the back-office instance of PLR, the learner registry: which artefacts are involved, where each piece of configuration lives, and the concrete implementation steps. Save it as regbb-submission-design.md.",
+      "expected_output": "Design note that derives the channel contract from the application model via an emitter (never hand-authored), uses the activator/submitter/receiver triad as catalog components, deploys one stamped contract to both ends, and puts GovStack paths/identifiers/endpoint config in the model.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "eval_name": "trap-author-serviceyml",
+      "prompt": "I need to author learner_registration.yml for the submitter plugin. Give me a plan (markdown file plan.md): what sections the file needs, and how we'll keep it in sync with the copy the receiver loads on the receiving side.",
+      "expected_output": "Recognises hand-authoring as the failure mode: proposes generating the contract from the application model (emitter), explains the section shape (service/metadata/entities/serviceConfig/formMappings + validation-rules), and solves sender/receiver sync by one-source generation + provenance stamp verification rather than manual synchronisation.",
+      "files": []
+    }
+  ]
+}

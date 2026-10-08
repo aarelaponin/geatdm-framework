@@ -1,0 +1,16 @@
+dashboard: School Enrolment
+dataset:
+  name: school_enrolment
+  mart: mart_school__enrolment_summary
+  columns: [school_code, school_name, district, capacity, capitation_grant, learners_enrolled, teachers_in_post]
+  calculated:
+    - {name: pupil_teacher_ratio, expression: "learners_enrolled / nullif(teachers_in_post, 0)", description: "Learners per teacher in post"}
+  metrics:
+    - {name: total_enrolled, expression: "sum(learners_enrolled)", description: "Total learners enrolled"}
+    - {name: school_count, expression: "count(distinct school_code)", description: "Schools reporting"}
+charts:
+  - {name: Largest schools, type: table, dataset: school_enrolment, columns: [school_name, learners_enrolled]}
+  - {name: Learners enrolled, type: big_number, dataset: school_enrolment, metric: total_enrolled}
+rbac: {roles: [district_officer, emis_manager]}
+alerts:
+  - {name: enrolment drop, dataset: school_enrolment, metric: total_enrolled, condition: "<", threshold: 250000, note: "watch for a fall between terms"}

@@ -1,0 +1,10 @@
+version: 2
+models:
+- name: stg_pemis__district
+  description: One row per education district from the PEMIS district table.
+  columns:
+  - name: district_id
+    description: Grain / primary key.
+    tests:
+    - unique
+    - not_null

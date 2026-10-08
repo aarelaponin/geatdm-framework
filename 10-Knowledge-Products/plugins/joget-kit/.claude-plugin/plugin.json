@@ -1,0 +1,18 @@
+{
+  "name": "joget-kit",
+  "version": "0.1.0",
+  "description": "The skills for building government services on the low-code platform Joget DX, including GovStack registration, for KP2, Building a Government Interoperability Framework, and KP3, Education DPI Roadmap: thirteen skills from the requirements to the running, verified application. Every example is set in Progressa.",
+  "author": {
+    "name": "Aare Lapõnin"
+  },
+  "keywords": [
+    "joget",
+    "low-code",
+    "govstack",
+    "registration",
+    "kp2",
+    "kp3",
+    "digital-government",
+    "building-blocks"
+  ]
+}

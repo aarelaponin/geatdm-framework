@@ -1,0 +1,10 @@
+version: 2
+models:
+- name: stg_pemis__school
+  description: One row per school from the PEMIS school table.
+  columns:
+  - name: school_code
+    description: Grain / primary key.
+    tests:
+    - unique
+    - not_null

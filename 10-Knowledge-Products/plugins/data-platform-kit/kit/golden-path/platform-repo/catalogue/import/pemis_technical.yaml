@@ -1,0 +1,97 @@
+service: dataplatform-clickhouse
+database: bronze
+schema: bronze
+_meta:
+  generated: '2026-10-08'
+  note: Technical metadata only; OM's ClickHouse connector is authoritative for types. Business descriptions
+    are added/verified separately.
+tables:
+- name: pemis__censusreturn
+  description: ''
+  columns:
+  - name: crt_serial
+    dataType: Int64
+    nullable: false
+    sourceType: serial
+    description: ''
+  - name: crt_schref
+    dataType: Int32
+    nullable: false
+    sourceType: integer
+    description: ''
+  - name: crt_year
+    dataType: Int16
+    nullable: false
+    sourceType: smallint
+    description: ''
+  - name: crt_boys
+    dataType: Int32
+    nullable: true
+    sourceType: integer
+    description: ''
+  - name: crt_girls
+    dataType: Int32
+    nullable: true
+    sourceType: integer
+    description: ''
+  - name: crt_total
+    dataType: Int32
+    nullable: true
+    sourceType: integer
+    description: ''
+  - name: crt_teachers
+    dataType: Int32
+    nullable: true
+    sourceType: integer
+    description: ''
+- name: pemis__district
+  description: ''
+  columns:
+  - name: dis_serial
+    dataType: Int64
+    nullable: false
+    sourceType: serial
+    description: ''
+  - name: dis_name
+    dataType: String
+    nullable: false
+    sourceType: varchar(60)
+    description: ''
+  - name: dis_province
+    dataType: String
+    nullable: true
+    sourceType: varchar(40)
+    description: ''
+- name: pemis__school
+  description: ''
+  columns:
+  - name: sch_serial
+    dataType: Int64
+    nullable: false
+    sourceType: serial
+    description: ''
+  - name: sch_code
+    dataType: String
+    nullable: false
+    sourceType: varchar(10)
+    description: ''
+  - name: sch_name
+    dataType: String
+    nullable: true
+    sourceType: varchar(120)
+    description: ''
+  - name: sch_disref
+    dataType: Int32
+    nullable: true
+    sourceType: integer
+    description: ''
+  - name: sch_capacity
+    dataType: Int32
+    nullable: true
+    sourceType: integer
+    description: ''
+  - name: sch_grant
+    dataType: Decimal(38, 2)
+    nullable: true
+    sourceType: decimal(14,2)
+    description: ''

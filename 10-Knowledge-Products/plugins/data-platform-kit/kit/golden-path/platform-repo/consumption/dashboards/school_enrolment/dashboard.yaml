@@ -1,0 +1,35 @@
+dashboard_title: School Enrolment
+slug: school_enrolment
+_meta:
+  generated: '2026-10-08'
+  note: Charts + RBAC + alerts. Realise the layout in Superset from these chart definitions; datasets
+    import directly.
+rbac_roles:
+- district_officer
+- emis_manager
+charts:
+- name: Largest schools
+  viz_type: table
+  dataset: school_enrolment
+  metric: null
+  dimension: null
+  columns:
+  - school_name
+  - learners_enrolled
+  filters: []
+  row_limit: 1000
+- name: Learners enrolled
+  viz_type: big_number_total
+  dataset: school_enrolment
+  metric: total_enrolled
+  dimension: null
+  columns: null
+  filters: []
+  row_limit: 1000
+alerts:
+- name: enrolment drop
+  dataset: school_enrolment
+  metric: total_enrolled
+  condition: <
+  threshold: 250000
+  note: watch for a fall between terms

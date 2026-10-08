@@ -1,0 +1,14 @@
+consumer:
+  name: pnea-exams
+  description: PNEA, the examination authority, planning examination centres — the platform's second consumer.
+  surface: feed
+  freshness: warm
+  writes_back:
+    - {mart: mart_exam__results, fields: [school_code, exam_session, pass_rate]}
+needs:
+  - entity: school
+    fields: [school_code, school_name, district]
+    metrics: []
+  - entity: staffing
+    fields: [teachers_in_post]
+rbac: [pnea_analyst, exam_planner]

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Worked example, set in Progressa (the fictional country of the courses; every name and
+  figure is invented): the application fees PHEQA, the Progressa Higher Education Quality
+  Authority, has received, by kind of institution, as at a date. The tables are those of an
+  example application: app_fd_institution (c_registernumber, c_name, c_kind) and
+  app_fd_fee_payment (c_institution, c_amount, c_paymentdate). PostgreSQL syntax.
+-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="feeStatement" language="java"
+              pageWidth="595" pageHeight="842" columnWidth="535"
+              leftMargin="30" rightMargin="30" topMargin="30" bottomMargin="30">
+
+    <style name="Title" fontName="SansSerif" fontSize="20" isBold="true" pdfFontName="Helvetica-Bold"/>
+    <style name="Sub" fontName="SansSerif" fontSize="13"/>
+    <style name="Muted" fontName="SansSerif" fontSize="9" forecolor="#666666"/>
+    <style name="Section" fontName="SansSerif" fontSize="11" isBold="true" forecolor="#1d4ed8"/>
+    <style name="ColHdr" fontName="SansSerif" fontSize="9" isBold="true" forecolor="#444444"/>
+    <style name="Row" fontName="SansSerif" fontSize="10" pdfFontName="Helvetica">
+        <conditionalStyle>
+            <conditionExpression><![CDATA[!"detail".equals($F{line_type})]]></conditionExpression>
+            <style isBold="true">
+                <box><topPen lineWidth="0.5" lineColor="#999999"/></box>
+            </style>
+        </conditionalStyle>
+        <conditionalStyle>
+            <conditionExpression><![CDATA["net".equals($F{line_type})]]></conditionExpression>
+            <style isBold="true" fontSize="11" forecolor="#1d4ed8">
+                <box><topPen lineWidth="1.0" lineColor="#1d4ed8"/></box>
+            </style>
+        </conditionalStyle>
+    </style>
+
+    <parameter name="asOfDate" class="java.lang.String">
+        <defaultValueExpression><![CDATA[new java.text.SimpleDateFormat("yyyy-MM-dd").format(new java.util.Date())]]></defaultValueExpression>
+    </parameter>
+
+    <queryString language="SQL">
+        <![CDATA[WITH base AS (
+  SELECT i.c_kind AS kind, COALESCE(i.c_name, i.c_registernumber) AS nm,
+         SUM(COALESCE(NULLIF(p.c_amount,'')::numeric,0)) AS amt
+  FROM app_fd_fee_payment p
+  JOIN app_fd_institution i ON i.c_registernumber = p.c_institution
+  WHERE p.c_paymentdate <= COALESCE(NULLIF($P{asOfDate},''), to_char(CURRENT_DATE,'YYYY-MM-DD'))
+  GROUP BY i.c_kind, COALESCE(i.c_name, i.c_registernumber)),
+k AS (
+  SELECT kind,
+         CASE kind WHEN 'university' THEN 1 WHEN 'university_college' THEN 2 ELSE 3 END AS ord,
+         CASE kind WHEN 'university' THEN 'Universities' WHEN 'university_college' THEN 'University colleges' ELSE 'Technical institutes' END AS title
+  FROM (SELECT DISTINCT kind FROM base) d),
+det AS (SELECT kind, nm, amt, ROW_NUMBER() OVER (PARTITION BY kind ORDER BY nm) AS rn FROM base),
+tot AS (SELECT kind, SUM(amt) AS t FROM base GROUP BY kind)
+SELECT sort, statement, line_type, label, amount FROM (
+  SELECT (k.ord*10000 + d.rn)::int AS sort, k.title AS statement, 'detail' AS line_type, d.nm AS label, d.amt AS amount
+    FROM det d JOIN k ON k.kind = d.kind
+  UNION ALL SELECT (k.ord*10000 + 9000)::int, k.title, 'subtotal', 'Total, ' || lower(k.title), t.t
+    FROM tot t JOIN k ON k.kind = t.kind
+  UNION ALL SELECT 90000, 'All institutions', 'net', 'Total fees received', COALESCE((SELECT SUM(t) FROM tot),0)
+) x ORDER BY sort]]>
+    </queryString>
+
+    <field name="sort" class="java.lang.Integer"/>
+    <field name="statement" class="java.lang.String"/>
+    <field name="line_type" class="java.lang.String"/>
+    <field name="label" class="java.lang.String"/>
+    <field name="amount" class="java.math.BigDecimal"/>
+
+    <group name="statement" isStartNewColumn="false" isReprintHeaderOnEachPage="true">
+        <groupExpression><![CDATA[$F{statement}]]></groupExpression>
+        <groupHeader>
+            <band height="40">
+                <textField>
+                    <reportElement style="Section" x="0" y="6" width="535" height="16"/>
+                    <textElement/>
+                    <textFieldExpression class="java.lang.String"><![CDATA[$F{statement}.toUpperCase()]]></textFieldExpression>
+                </textField>
+                <staticText>
+                    <reportElement style="ColHdr" x="18" y="24" width="370" height="12"/>
+                    <textElement/>
+                    <text><![CDATA[Institution]]></text>
+                </staticText>
+                <staticText>
+                    <reportElement style="ColHdr" x="388" y="24" width="147" height="12"/>
+                    <textElement textAlignment="Right"/>
+                    <text><![CDATA[Fees received]]></text>
+                </staticText>
+                <line>
+                    <reportElement x="0" y="38" width="535" height="1" forecolor="#cccccc"/>
+                </line>
+            </band>
+        </groupHeader>
+        <groupFooter>
+            <band height="8"/>
+        </groupFooter>
+    </group>
+
+    <title>
+        <band height="78">
+            <staticText>
+                <reportElement style="Title" x="0" y="0" width="535" height="26"/>
+                <textElement/>
+                <text><![CDATA[Progressa Higher Education Quality Authority]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Sub" x="0" y="28" width="535" height="18"/>
+                <textElement/>
+                <text><![CDATA[Application fees received, by kind of institution]]></text>
+            </staticText>
+            <textField>
+                <reportElement style="Muted" x="0" y="48" width="535" height="12"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String"><![CDATA["As at " + ((($P{asOfDate}==null)||($P{asOfDate}.trim().isEmpty())) ? new java.text.SimpleDateFormat("yyyy-MM-dd").format(new java.util.Date()) : $P{asOfDate}) + "  —  in Progressa's currency (simulated data)"]]></textFieldExpression>
+            </textField>
+            <line>
+                <reportElement x="0" y="68" width="535" height="1" forecolor="#1d4ed8"/>
+            </line>
+        </band>
+    </title>
+
+    <detail>
+        <band height="16">
+            <textField isStretchWithOverflow="true">
+                <reportElement style="Row" x="18" y="0" width="370" height="15"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String"><![CDATA[$F{label}]]></textFieldExpression>
+            </textField>
+            <textField pattern="#,##0.00;(#,##0.00)">
+                <reportElement style="Row" x="388" y="0" width="147" height="15"/>
+                <textElement textAlignment="Right"/>
+                <textFieldExpression class="java.math.BigDecimal"><![CDATA[$F{amount}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+
+    <pageFooter>
+        <band height="20">
+            <line>
+                <reportElement x="0" y="2" width="535" height="1" forecolor="#cccccc"/>
+            </line>
+            <textField>
+                <reportElement style="Muted" x="0" y="5" width="300" height="12"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String"><![CDATA["Generated " + new java.text.SimpleDateFormat("d MMM yyyy HH:mm").format(new java.util.Date())]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement style="Muted" x="435" y="5" width="100" height="12"/>
+                <textElement textAlignment="Right"/>
+                <textFieldExpression class="java.lang.String"><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageFooter>
+
+</jasperReport>

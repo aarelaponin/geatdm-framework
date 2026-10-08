@@ -1,0 +1,21 @@
+version: 2
+models:
+- name: int_school__master
+  description: School-360 golden record joining the PEMIS school, its district and its current census
+    return.
+  columns:
+  - name: school_code
+    description: Grain / primary key.
+    tests:
+    - unique
+    - not_null
+    - relationships:
+        to: ref('stg_pemis__school')
+        field: school_code
+  - name: district_id
+    description: "Join key \u2014 contract-tested against the parent."
+    tests:
+    - not_null
+    - relationships:
+        to: ref('stg_pemis__district')
+        field: district_id

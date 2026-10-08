@@ -1,0 +1,108 @@
+# Data Platform — Architectural Principles Register (v0.1)
+# Numbered, priority-ordered, CITABLE. Distilled from the platform's design principles and the Data Quality Framework
+# (../../references/data-quality-framework/ from the skill folder). Examples are set in Progressa, the
+# fictional country of the courses (simulated case: every body, system and figure is invented).
+# These settle "X-or-Y / build-or-buy / now-or-later" decisions by citation; they are deliberately
+# silent on tactical questions (file paths, syntax, ops). Confirm/extend with the data governance board.
+version: "0.1"
+principles:
+  - id: P1
+    title: Open-source, no lock-in
+    statement: >-
+      Prefer open-source, on-platform components; choose tools for the workload, not because a
+      licence is already held. An existing licence is a cost fact, not an architecture reason.
+    rationale: >-
+      Lock-in and per-seat licensing constrain a platform that must serve the whole ministry for years;
+      open components keep capability with the ministry.
+    cites: [DQF DQ-7]
+    example: >-
+      "We already own an analytics suite" does not make it the data-quality tool — DQ is owned by dbt +
+      OpenMetadata; the suite is a Gold consumer (P2/P9).
+  - id: P2
+    title: One comprehensive platform; ingest once, serve many
+    statement: >-
+      The platform ingests and catalogues ALL of the ministry's education data once and serves every
+      consumer from the shared layers. Consumers come in sequence (the enrolment dashboard first, the
+      examination authority's feed second, …), not as separate builds.
+    rationale: Avoids N drifting copies of the same data and N places to fix a bug.
+    cites: [DQF §1, onboard-consumer]
+    example: A new consumer's unmet need becomes a shared Gold mart, never a private side-pipeline (P6).
+  - id: P3
+    title: Classification is foundational; Restricted-by-default
+    statement: >-
+      Data classification is set first and cascades; access is least-privilege via role-based access
+      control; a data protection impact assessment (DPIA) cleared by the data protection officer gates
+      the use of real Restricted data.
+    rationale: Learner data is personal data about children; protection is a precondition of production, not an add-on.
+    cites: [DQF §7, Progressa's Data Protection Act 2023 (simulated)]
+    example: No go-live on real learner data without the data protection officer's DPIA (production-readiness SEC-2).
+  - id: P4
+    title: Automation-first
+    statement: Prefer deterministic generation and repeatable cookbooks/skills over manual steps.
+    rationale: Manual steps don't scale to hundreds of legacy tables and don't survive staff turnover.
+    cites: [this kit's skills]
+    example: Models, DDL, tests, catalogue input are generated from specs, not hand-built.
+  - id: P5
+    title: Generated artefacts are never hand-edited
+    statement: If a skill/generator produced it, fix the spec or the generator and regenerate; never patch the output.
+    rationale: A hand edit is silently lost on the next regeneration and the divergence is hard to spot.
+    cites: [repo-scaffold conventions]
+    example: A wrong int_ join is fixed in the model spec, then regenerated — not edited in the SQL.
+  - id: P6
+    title: Single source of truth; pull from Gold
+    statement: >-
+      One definition per fact. School identity is one int_ golden record; a metric is defined once
+      and reused by every surface; consumers pull from Gold, never a bespoke copy.
+    rationale: One definition means one number everywhere and one place to correct it.
+    cites: [build-dbt-model (School-360), build-superset-dashboard, onboard-consumer]
+    example: The KPI tile and the API return the same total_enrolled because both read the same mart.
+  - id: P7
+    title: Tables and rules live in configuration
+    statement: Reference data, thresholds and rules are configuration (Git), not hard-coded logic.
+    rationale: Config can be reviewed, versioned and changed without a code deploy.
+    cites: [DQF DQ-3]
+    example: Reference vocabularies drive accepted_values; DQ targets live in quality/thresholds.
+  - id: P8
+    title: Build capability, not dependency
+    statement: The ministry's team progressively owns each part of the platform (shadow → pair → lead); suppliers transfer, not retain.
+    rationale: The platform must run after the supplier leaves.
+    cites: [DQF §7.1]
+    example: Each skill is a teaching harness the team runs themselves, not a black box.
+  - id: P9
+    title: Technology follows workload
+    statement: Choose technology for the job in front of you; don't bend the workload to a preferred tool.
+    rationale: Tool-led decisions produce mismatched architectures.
+    cites: [DQF §5 division of labour]
+    example: ClickHouse for the analytical medallion; dbt for transforms; an analytics suite only where advanced analytics fit.
+  - id: P10
+    title: Evidence, not assertion
+    statement: "\"Done\" means demonstrated — manifests, test results, reconciliations, a green report. Not \"it should work\"."
+    rationale: A public platform must be auditable; claims without evidence are how wrong numbers ship.
+    cites: [DQF DQ-5]
+    example: A load isn't done without a SUCCESS reconciliation manifest (P12); a release isn't ready without a green readiness report.
+  - id: P11
+    title: Verify before publish
+    statement: >-
+      A description/semantic is DRAFT until VERIFIED against an authoritative source or data arithmetic;
+      only VERIFIED meaning may drive a mart or the hand-over package.
+    rationale: A wrong description becomes a wrong number downstream.
+    cites: [DQF §4 S5, verify-catalogue-semantics]
+    example: A census-return box described as "learners enrolled" must be confirmed against the form before any indicator uses it.
+  - id: P12
+    title: Reconcile every custody transfer
+    statement: Every data hand-off (source→Bronze, and onward) is reconciled exactly; no silent fallback.
+    rationale: Silent truncation/partial loads corrupt everything downstream.
+    cites: [DQF S2, onboard-source]
+    example: ClickHouse count must equal the source count; a degraded mode exits non-zero and marks the manifest FAILED.
+  - id: P13
+    title: Version-controlled by default
+    statement: Everything-as-code, committed and PR-reviewed; nothing lives only in a chat, a Downloads folder or a personal drive.
+    rationale: History, review and a single source of truth are preconditions of a maintainable platform.
+    cites: [repo-scaffold]
+    example: Every skill's last step writes its output into the repo and commits it on the workstation.
+  - id: P14
+    title: Cross-platform by default
+    statement: The team works on Windows and macOS; tooling and commands work on both, with no single-OS assumption.
+    rationale: A mixed-OS team can't depend on one shell; OS-agnostic tooling keeps everyone productive.
+    cites: [dataplatform-dev-workflow]
+    example: Every cookbook gives PowerShell and bash; git runs on the workstation, same workflow on both.

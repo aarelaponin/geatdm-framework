@@ -1,0 +1,15 @@
+api:
+  name: enrolment
+  base_path: /api/enrolment
+  auth: keycloak
+  gold_schema: gold
+endpoints:
+  - path: /schools
+    mart: mart_school__enrolment_summary
+    method: get
+    description: Enrolment and staffing for one school, or for schools above a size.
+    fields: [school_code, school_name, {name: learners_enrolled, type: integer}]
+    filters:
+      - {name: school_code, type: string, column: school_code, op: "="}
+      - {name: min_learners, type: integer, column: learners_enrolled, op: ">="}
+rbac: [emis_reader]

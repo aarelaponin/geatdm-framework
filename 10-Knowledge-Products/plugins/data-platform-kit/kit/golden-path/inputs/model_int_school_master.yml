@@ -1,0 +1,24 @@
+kind: intermediate
+domain: school
+concept: master
+key: school_code
+description: School-360 golden record joining the PEMIS school, its district and its current census return.
+base: stg_pemis__school
+joins:
+  - {model: stg_pemis__district, type: left, "on": "stg_pemis__school.district_id = stg_pemis__district.district_id"}
+  - {model: stg_pemis__censusreturn, type: left, "on": "stg_pemis__school.school_id = stg_pemis__censusreturn.school_id"}
+select:
+  - stg_pemis__school.school_code
+  - stg_pemis__school.school_id
+  - stg_pemis__school.school_name
+  - stg_pemis__school.district_id
+  - stg_pemis__district.district
+  - stg_pemis__school.capacity
+  - stg_pemis__school.capitation_grant
+  - stg_pemis__censusreturn.learners_enrolled
+  - stg_pemis__censusreturn.teachers_in_post
+  - stg_pemis__censusreturn.census_year
+  - stg_pemis__school._extracted_at
+relationships:
+  - {column: school_code, to: "ref('stg_pemis__school')", field: school_code}
+  - {column: district_id, to: "ref('stg_pemis__district')", field: district_id}

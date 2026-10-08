@@ -1,0 +1,11 @@
+version: 2
+models:
+- name: stg_pemis__censusreturn
+  description: "One row per school \u2014 the census return of the current census year (the load takes\
+    \ the current year only)."
+  columns:
+  - name: school_id
+    description: Grain / primary key.
+    tests:
+    - unique
+    - not_null

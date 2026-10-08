@@ -1,0 +1,101 @@
+version: 2
+sources:
+- name: bronze
+  schema: bronze
+  description: Raw, as-ingested layer for source 'pemis' (legacy source -> ClickHouse).
+  tables:
+  - name: pemis__censusreturn
+    description: Bronze copy of pemis.censusreturn (raw, as-ingested).
+    columns:
+    - name: crt_serial
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: serial
+        ch_type: Int64
+    - name: crt_schref
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: integer
+        ch_type: Int32
+    - name: crt_year
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: smallint
+        ch_type: Int16
+    - name: crt_boys
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: integer
+        ch_type: Int32
+    - name: crt_girls
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: integer
+        ch_type: Int32
+    - name: crt_total
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: integer
+        ch_type: Int32
+    - name: crt_teachers
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: integer
+        ch_type: Int32
+    meta:
+      source_row_count_at_onboard: 52917
+  - name: pemis__district
+    description: Bronze copy of pemis.district (raw, as-ingested).
+    columns:
+    - name: dis_serial
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: serial
+        ch_type: Int64
+    - name: dis_name
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: varchar(60)
+        ch_type: String
+    - name: dis_province
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: varchar(40)
+        ch_type: String
+    meta:
+      source_row_count_at_onboard: 38
+  - name: pemis__school
+    description: Bronze copy of pemis.school (raw, as-ingested).
+    columns:
+    - name: sch_serial
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: serial
+        ch_type: Int64
+    - name: sch_code
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: varchar(10)
+        ch_type: String
+    - name: sch_name
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: varchar(120)
+        ch_type: String
+    - name: sch_disref
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: integer
+        ch_type: Int32
+    - name: sch_capacity
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: integer
+        ch_type: Int32
+    - name: sch_grant
+      description: TODO — verify via verify-catalogue-semantics.
+      meta:
+        source_type: decimal(14,2)
+        ch_type: Decimal(38, 2)
+    meta:
+      source_row_count_at_onboard: 4812

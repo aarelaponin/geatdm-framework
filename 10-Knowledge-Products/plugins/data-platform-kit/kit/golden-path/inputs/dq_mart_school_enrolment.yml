@@ -1,0 +1,13 @@
+model: mart_school__enrolment_summary
+tier: warm
+description: DQ checks for the school enrolment summary mart.
+grain: [school_code]
+mandatory: [school_code, learners_enrolled]
+ranges:
+  learners_enrolled: {min: 0}
+relationships:
+  - {column: school_code, to: "ref('int_school__master')", field: school_code}
+freshness: {column: _extracted_at}
+row_budget: {min_rows: 1}
+accuracy:
+  - {name: census_vs_register, description: "Learners on the census return vs active learners in the learner register, within tolerance"}

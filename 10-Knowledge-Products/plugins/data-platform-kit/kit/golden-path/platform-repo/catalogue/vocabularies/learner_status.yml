@@ -1,0 +1,17 @@
+vocabulary: learner_status
+source_table: learner_status.csv
+term_count: 4
+accepted_values:
+- CO
+- EN
+- LF
+- TR
+terms:
+- code: CO
+  label: Completed
+- code: EN
+  label: Enrolled
+- code: LF
+  label: Left
+- code: TR
+  label: Transferred

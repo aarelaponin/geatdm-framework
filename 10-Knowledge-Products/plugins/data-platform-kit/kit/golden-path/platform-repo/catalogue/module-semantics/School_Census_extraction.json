@@ -1,0 +1,224 @@
+{
+ "module": "School_Census",
+ "confirmed_tables": {
+  "learner": {
+   "db": [
+    "pemis"
+   ],
+   "via": [
+    "FROM",
+    "UPDATE"
+   ]
+  },
+  "school": {
+   "db": [
+    "pemis"
+   ],
+   "via": [
+    "FROM"
+   ]
+  },
+  "censusreturn": {
+   "db": [
+    "pemis"
+   ],
+   "via": [
+    "FROM",
+    "INSERT",
+    "UPDATE"
+   ]
+  },
+  "learnerstatus": {
+   "db": [
+    "pemis"
+   ],
+   "via": [
+    "FROM"
+   ]
+  },
+  "teacher": {
+   "db": [
+    "pemis"
+   ],
+   "via": [
+    "FROM"
+   ]
+  },
+  "setting": {
+   "db": [
+    "pemis"
+   ],
+   "via": [
+    "FROM"
+   ]
+  },
+  "appuser": {
+   "db": [
+    "pemis"
+   ],
+   "via": [
+    "FROM"
+   ]
+  },
+  "msgtext": {
+   "db": [
+    "pemis"
+   ],
+   "via": [
+    "FROM"
+   ]
+  },
+  "district": {
+   "db": [
+    "pemis"
+   ],
+   "via": [
+    "DataWindow"
+   ]
+  },
+  "grade": {
+   "db": [
+    "pemis"
+   ],
+   "via": [
+    "DataWindow"
+   ]
+  }
+ },
+ "operational_tables_dml_only": {
+  "transfer": {
+   "db": [],
+   "via": [
+    "INSERT"
+   ]
+  }
+ },
+ "dbname_pairs": {
+  "district": [
+   "dis_name",
+   "dis_province",
+   "dis_serial"
+  ],
+  "grade": [
+   "gra_code",
+   "gra_desc",
+   "gra_serial"
+  ]
+ },
+ "column_prefix_families": {
+  "dis": [
+   "dis_name",
+   "dis_province",
+   "dis_serial"
+  ],
+  "gra": [
+   "gra_code",
+   "gra_desc",
+   "gra_serial"
+  ],
+  "lea": [
+   "lea_admdate",
+   "lea_dobirth",
+   "lea_fullname",
+   "lea_graref",
+   "lea_lstref",
+   "lea_name",
+   "lea_number",
+   "lea_schref",
+   "lea_serial",
+   "lea_sex",
+   "lea_surname",
+   "lea_timestamp",
+   "lea_userid"
+  ],
+  "lst": [
+   "lst_code",
+   "lst_desc",
+   "lst_serial"
+  ],
+  "sch": [
+   "sch_capacity",
+   "sch_code",
+   "sch_disref",
+   "sch_grant",
+   "sch_lvlref",
+   "sch_name",
+   "sch_opendate",
+   "sch_serial",
+   "sch_timestamp",
+   "sch_userid"
+  ],
+  "lvl": [
+   "lvl_desc",
+   "lvl_serial"
+  ],
+  "crt": [
+   "crt_boys",
+   "crt_girls",
+   "crt_schref",
+   "crt_serial",
+   "crt_submitted",
+   "crt_teachers",
+   "crt_total",
+   "crt_userid",
+   "crt_year"
+  ],
+  "exm": [
+   "exm_centre",
+   "exm_learef",
+   "exm_session"
+  ],
+  "gs": [
+   "gs_role",
+   "gs_userid"
+  ],
+  "trf": [
+   "trf_date",
+   "trf_fromsch",
+   "trf_learef",
+   "trf_tosch",
+   "trf_userid"
+  ],
+  "tea": [
+   "tea_name",
+   "tea_number",
+   "tea_postdate",
+   "tea_quaref",
+   "tea_schref",
+   "tea_serial",
+   "tea_timestamp",
+   "tea_userid"
+  ],
+  "qua": [
+   "qua_code",
+   "qua_desc",
+   "qua_serial"
+  ],
+  "set": [
+   "set_name",
+   "set_value"
+  ],
+  "app": [
+   "app_login",
+   "app_role"
+  ]
+ },
+ "prefix_to_table_automap": {
+  "dis": "district",
+  "gra": "grade",
+  "sch": "school",
+  "tea": "teacher",
+  "set": "setting",
+  "app": "appuser"
+ },
+ "unmapped_prefixes_for_human": [
+  "crt",
+  "exm",
+  "gs",
+  "lea",
+  "lst",
+  "lvl",
+  "qua",
+  "trf"
+ ]
+}

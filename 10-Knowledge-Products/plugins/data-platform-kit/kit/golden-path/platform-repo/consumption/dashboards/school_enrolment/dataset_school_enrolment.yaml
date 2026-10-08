@@ -1,0 +1,43 @@
+version: 1.0.0
+uuid: 4a5f7499-c403-4064-bab7-b11f05d33259
+table_name: school_enrolment
+schema: gold
+sql: select * from gold.mart_school__enrolment_summary
+main_dttm_col: null
+database_uuid: REPLACE_ON_IMPORT
+cache_timeout: null
+columns:
+- column_name: school_code
+  is_dttm: false
+  type: VARCHAR
+- column_name: school_name
+  is_dttm: false
+  type: VARCHAR
+- column_name: district
+  is_dttm: false
+  type: VARCHAR
+- column_name: capacity
+  is_dttm: false
+  type: VARCHAR
+- column_name: capitation_grant
+  is_dttm: false
+  type: VARCHAR
+- column_name: learners_enrolled
+  is_dttm: false
+  type: VARCHAR
+- column_name: teachers_in_post
+  is_dttm: false
+  type: VARCHAR
+- column_name: pupil_teacher_ratio
+  expression: learners_enrolled / nullif(teachers_in_post, 0)
+  description: Learners per teacher in post
+  is_dttm: false
+metrics:
+- metric_name: total_enrolled
+  expression: sum(learners_enrolled)
+  description: Total learners enrolled
+  extra: '{"dq_note": "one definition, reused everywhere"}'
+- metric_name: school_count
+  expression: count(distinct school_code)
+  description: Schools reporting
+  extra: '{"dq_note": "one definition, reused everywhere"}'

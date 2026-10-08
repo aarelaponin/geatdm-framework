@@ -1,0 +1,10 @@
+version: 2
+models:
+- name: mart_school__enrolment_summary
+  description: Enrolment, staffing and grant per school for the enrolment dashboard and API.
+  columns:
+  - name: school_code
+    description: Grain / primary key.
+    tests:
+    - unique
+    - not_null
