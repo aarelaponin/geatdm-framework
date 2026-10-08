@@ -11,19 +11,20 @@ This is the companion to the video series on building a national Enterprise Arch
 
 You do not leave with a certificate. You leave with a briefing pack about your own country.
 
-{% hint style="info" %}
-🎬 **Video in production:** *Introduction to the course* (~3 min).
-The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../start-here/video-index.md).
-{% endhint %}
+{% embed url="https://youtu.be/0bd2MJl2Pic" %}
+Introduction to the course (~8 min)
+{% endembed %}
+
+**Watch first (~8 min).** Then come back for the play. The video's recap slide carries an on-screen practice box — it is not narrated — and this page is where that box points.
 
 ## Outline
 
 | Module | Topic | Persona | Videos | Plays | Status |
 | --- | --- | --- | --- | --- | --- |
-| [1](module-1/README.md) | Why a PAERA-anchored EA | Strategist | 7 | 7 plays | Worked examples live |
-| [2](module-2/README.md) | Principles, the metamodel and the BDAT layers | Architect | 7 | 7 plays | Prompts live |
-| [3](module-3/README.md) | EA repository, tooling and governance | Architect | 7 | 7 plays | Prompts live |
-| [4](module-4/README.md) | Progressa end-to-end — the method on one sector | Architect | 8 | 8 plays | Prompts live |
+| [1](module-1/README.md) | Why a PAERA-anchored EA | Strategist | 7 | 7 plays | Videos live |
+| [2](module-2/README.md) | Principles, the metamodel and the BDAT layers | Architect | 7 | 7 plays | Videos live |
+| [3](module-3/README.md) | EA repository, tooling and governance | Architect | 7 | 7 plays | Videos live |
+| [4](module-4/README.md) | Progressa end-to-end — the method on one sector | Architect | 8 | 8 plays | Videos live |
 | [5](module-5/README.md) | Evidence, rollout and the case | Strategist | 6 | 7 plays | Prompts live |
 
 *Prompts live — concept and play on every page, worked example pending. Worked examples live — Progressa run and annotated. Videos live — embeds on every page.*
@@ -51,13 +52,13 @@ This is not a course for developers. It covers what to commission, how to judge 
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [1.1](module-1/1-1.md) | Why your country needs a national EA | ~4 min | *in production* |
-| [1.2](module-1/1-2.md) | What an EA actually is, in one breath | ~3 min | *in production* |
-| [1.3](module-1/1-3.md) | Why projects can't do this themselves | ~5 min | *in production* |
-| [1.4](module-1/1-4.md) | Why an EA matters more now — and what it lets your minister actually do | ~5 min | *in production* |
-| [1.5](module-1/1-5.md) | Why PAERA-anchored — the head start you do not pay for twice | ~4 min | *in production* |
-| [1.6](module-1/1-6.md) | The lifecycle on one page | ~5 min | *in production* |
-| [1.7](module-1/1-7.md) | What you will need from your minister — and how to ask for it | ~5 min | *in production* |
+| [1.1](module-1/1-1.md) | Why your country needs a national EA | ~4 min | [watch](https://youtu.be/_wqJhBxG0hk) |
+| [1.2](module-1/1-2.md) | What an EA actually is, in one breath | ~3 min | [watch](https://youtu.be/Lhk7jqX9Q1g) |
+| [1.3](module-1/1-3.md) | Why projects can't do this themselves | ~5 min | [watch](https://youtu.be/GbuFFt5NiF4) |
+| [1.4](module-1/1-4.md) | Why an EA matters more now — and what it lets your minister actually do | ~5 min | [watch](https://youtu.be/CHtYlj1UZxs) |
+| [1.5](module-1/1-5.md) | Why PAERA-anchored — the head start you do not pay for twice | ~4 min | [watch](https://youtu.be/zP6eZvJ4OHg) |
+| [1.6](module-1/1-6.md) | The lifecycle on one page | ~5 min | [watch](https://youtu.be/6B_itQVbMgU) |
+| [1.7](module-1/1-7.md) | What you will need from your minister — and how to ask for it | ~5 min | [watch](https://youtu.be/x9Z_s31UAx0) |
 
 </details>
 
@@ -67,13 +68,13 @@ This is not a course for developers. It covers what to commission, how to judge 
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [2.1](module-2/2-1.md) | Read any government in four layers | ~5 min | *in production* |
-| [2.2](module-2/2-2.md) | The shared vocabulary that makes re-use possible | ~5 min | *in production* |
-| [2.3](module-2/2-3.md) | Adopt your principles, don't draft them | ~4 min | *in production* |
-| [2.4](module-2/2-4.md) | Classify any public body before you model it | ~4 min | *in production* |
-| [2.5](module-2/2-5.md) | BDAT on a real ministry — the Progressa walkthrough | ~5 min | *in production* |
-| [2.6](module-2/2-6.md) | Run a Phase 2 Assess — what good looks like, and the gaps you'll find | ~5 min | *in production* |
-| [2.7](module-2/2-7.md) | The two traps to catch at Assess — bespoke and vendor-driven | ~4 min | *in production* |
+| [2.1](module-2/2-1.md) | Read any government in four layers | ~5 min | [watch](https://youtu.be/6zlQEhfwcys) |
+| [2.2](module-2/2-2.md) | The shared vocabulary that makes re-use possible | ~5 min | [watch](https://youtu.be/Sehx-cX-YjM) |
+| [2.3](module-2/2-3.md) | Adopt your principles, don't draft them | ~4 min | [watch](https://youtu.be/msyeumtCnV0) |
+| [2.4](module-2/2-4.md) | Classify any public body before you model it | ~4 min | [watch](https://youtu.be/4jmR8196iNc) |
+| [2.5](module-2/2-5.md) | BDAT on a real ministry — the Progressa walkthrough | ~5 min | [watch](https://youtu.be/6RjCtfJ4wPg) |
+| [2.6](module-2/2-6.md) | Run a Phase 2 Assess — what good looks like, and the gaps you'll find | ~5 min | [watch](https://youtu.be/9YLWyUql6wg) |
+| [2.7](module-2/2-7.md) | The two traps to catch at Assess — bespoke and vendor-driven | ~4 min | [watch](https://youtu.be/w0-t_f_UJA8) |
 
 </details>
 
@@ -83,13 +84,13 @@ This is not a course for developers. It covers what to commission, how to judge 
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [3.1](module-3/3-1.md) | Set up the one place your architecture lives | ~4 min | *in production* |
-| [3.2](module-3/3-2.md) | Choose EA tooling without locking yourself in | ~4 min | *in production* |
-| [3.3](module-3/3-3.md) | Keep the repository true — the update discipline | ~4 min | *in production* |
-| [3.4](module-3/3-4.md) | Stand up an EA Board that can actually say no | ~4 min | *in production* |
-| [3.5](module-3/3-5.md) | Review projects against the architecture | ~4 min | *in production* |
-| [3.6](module-3/3-6.md) | Show the EA is working — the few metrics that matter | ~4 min | *in production* |
-| [3.7](module-3/3-7.md) | Keep the practice alive past year two | ~5 min | *in production* |
+| [3.1](module-3/3-1.md) | Set up the one place your architecture lives | ~4 min | [watch](https://youtu.be/wQlxQscO6n0) |
+| [3.2](module-3/3-2.md) | Choose EA tooling without locking yourself in | ~4 min | [watch](https://youtu.be/svzkAS-lZlQ) |
+| [3.3](module-3/3-3.md) | Keep the repository true — the update discipline | ~4 min | [watch](https://youtu.be/PB7gpWBRwK8) |
+| [3.4](module-3/3-4.md) | Stand up an EA Board that can actually say no | ~4 min | [watch](https://youtu.be/hwxnHnQ5Pzc) |
+| [3.5](module-3/3-5.md) | Review projects against the architecture | ~4 min | [watch](https://youtu.be/S-kPZmf6ZmQ) |
+| [3.6](module-3/3-6.md) | Show the EA is working — the few metrics that matter | ~4 min | [watch](https://youtu.be/UmlE-NFgROo) |
+| [3.7](module-3/3-7.md) | Keep the practice alive past year two | ~5 min | [watch](https://youtu.be/pBQe_4KfaDA) |
 
 </details>
 
@@ -99,14 +100,14 @@ This is not a course for developers. It covers what to commission, how to judge 
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [4.1](module-4/4-1.md) | Meet Progressa — a real sector with a real fragmentation problem | ~3 min | *in production* |
-| [4.2](module-4/4-2.md) | Phase 1, Discover — map what the sector has today | ~4 min | *in production* |
-| [4.3](module-4/4-3.md) | Phase 2, Assess — find the gaps and rank them | ~3 min | *in production* |
-| [4.4](module-4/4-4.md) | Phase 3, Adapt — fit PAERA and decide build, buy or share | ~3 min | *in production* |
-| [4.5](module-4/4-5.md) | Phase 4, Plan — design the target architecture | ~4 min | *in production* |
-| [4.6](module-4/4-6.md) | Phase 4, Plan — sequence the roadmap and cost it | ~4 min | *in production* |
-| [4.7](module-4/4-7.md) | Phase 5, Execute & Govern — stand up the living EA | ~3 min | *in production* |
-| [4.8](module-4/4-8.md) | Run this on your own sector — the transferable recipe | ~4 min | *in production* |
+| [4.1](module-4/4-1.md) | Meet Progressa — a real sector with a real fragmentation problem | ~3 min | [watch](https://youtu.be/6A4gev1E_DI) |
+| [4.2](module-4/4-2.md) | Phase 1, Discover — map what the sector has today | ~4 min | [watch](https://youtu.be/lb3DIjim2uI) |
+| [4.3](module-4/4-3.md) | Phase 2, Assess — find the gaps and rank them | ~3 min | [watch](https://youtu.be/eU4cKNvP5r4) |
+| [4.4](module-4/4-4.md) | Phase 3, Adapt — fit PAERA and decide build, buy or share | ~3 min | [watch](https://youtu.be/AMh9r8JI9tg) |
+| [4.5](module-4/4-5.md) | Phase 4, Plan — design the target architecture | ~4 min | [watch](https://youtu.be/nZf9WPZaatU) |
+| [4.6](module-4/4-6.md) | Phase 4, Plan — sequence the roadmap and cost it | ~4 min | [watch](https://youtu.be/ywmhNGtPHM0) |
+| [4.7](module-4/4-7.md) | Phase 5, Execute & Govern — stand up the living EA | ~3 min | [watch](https://youtu.be/qmdt-kregBU) |
+| [4.8](module-4/4-8.md) | Run this on your own sector — the transferable recipe | ~4 min | [watch](https://youtu.be/wuM_eMIeP_A) |
 
 </details>
 

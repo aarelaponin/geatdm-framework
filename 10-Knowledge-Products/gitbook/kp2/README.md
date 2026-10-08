@@ -11,19 +11,20 @@ This is the companion to the video series on building a Government Interoperabil
 
 This course ships two things. The videos and plays, which teach the build. And the [**build pack**](build-pack/README.md), which *is* the ready solution: a real once-only exchange running on an X-Road federation across Progressa's institutions — the decree, the Governance Pack, the semantic map and contracts, the member registrations, and the acceptance check that proves it. Run the plays and you leave with your own country's configuration; run the pack and you see the finished one.
 
-{% hint style="info" %}
-🎬 **Video in production:** *Introduction to the course: the storyboard* (~4 min).
-The play below does not depend on the video: the concept section carries what the video will say. Come back for the embed, or follow the [video index](../start-here/video-index.md).
-{% endhint %}
+{% embed url="https://youtu.be/17aOOlRftLc" %}
+Introduction to the course (~9 min)
+{% endembed %}
+
+**Watch first (~9 min).** Then come back for the play.
 
 ## Outline
 
 | Module | Topic | Persona | Videos | Plays | Status |
 | --- | --- | --- | --- | --- | --- |
-| [1](module-1/README.md) | Why interoperability and the four layers | Strategist | 7 | 7 plays | Worked examples live |
-| [2](module-2/README.md) | Legal framework — the Decree Drafting Kit | Strategist | 6 | 6 plays | Worked examples live |
-| [3](module-3/README.md) | Governance model — three tiers with RACI | Strategist | 6 | 6 plays | Worked examples live |
-| [4](module-4/README.md) | Architecture and technical standards | Architect | 8 | 8 plays | Worked examples live |
+| [1](module-1/README.md) | Why interoperability and the four layers | Strategist | 7 | 7 plays | Videos live |
+| [2](module-2/README.md) | Legal framework — the Decree Drafting Kit | Strategist | 6 | 6 plays | Videos live |
+| [3](module-3/README.md) | Governance model — three tiers with RACI | Strategist | 6 | 6 plays | Videos live |
+| [4](module-4/README.md) | Architecture and technical standards | Architect | 8 | 8 plays | Videos live |
 | [5](module-5/README.md) | Implementation and onboarding | Architect / Strategist | 10 | 10 plays | Worked examples live |
 
 *Prompts live — concept and play on every page, worked example pending. Worked examples live — Progressa run and annotated. Videos live — embeds on every page.*
@@ -65,13 +66,13 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [1.1](module-1/1-1.md) | Why interoperability can't be bought, only built | ~5 min | *in production* |
-| [1.2](module-1/1-2.md) | The four layers of interoperability | ~5 min | *in production* |
-| [1.3](module-1/1-3.md) | The once-only promise | ~4 min | *in production* |
-| [1.4](module-1/1-4.md) | The Strategic Foundation Document | ~4 min | *in production* |
-| [1.5](module-1/1-5.md) | The Use-Case Catalogue | ~5 min | *in production* |
-| [1.6](module-1/1-6.md) | Mapping your stakeholders | ~4 min | *in production* |
-| [1.7](module-1/1-7.md) | What the world already proved | ~4 min | *in production* |
+| [1.1](module-1/1-1.md) | Why interoperability can't be bought, only built | ~5 min | [watch](https://youtu.be/IRWI9kPg7P8) |
+| [1.2](module-1/1-2.md) | The four layers of interoperability | ~5 min | [watch](https://youtu.be/NMLSiWteIdQ) |
+| [1.3](module-1/1-3.md) | The once-only promise | ~4 min | [watch](https://youtu.be/Ow_1eXwKvr0) |
+| [1.4](module-1/1-4.md) | The Strategic Foundation Document | ~4 min | [watch](https://youtu.be/XyRrSGZIu6c) |
+| [1.5](module-1/1-5.md) | The Use-Case Catalogue | ~5 min | [watch](https://youtu.be/ZngzlZgK-IA) |
+| [1.6](module-1/1-6.md) | Mapping your stakeholders | ~4 min | [watch](https://youtu.be/78TLKd_YAqU) |
+| [1.7](module-1/1-7.md) | What the world already proved | ~4 min | [watch](https://youtu.be/htVz40z5Lgs) |
 
 </details>
 
@@ -81,12 +82,12 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [2.1](module-2/2-1.md) | Why the platform needs a legal mandate | ~4 min | *in production* |
-| [2.2](module-2/2-2.md) | Anatomy of an interoperability decree | ~5 min | *in production* |
-| [2.3](module-2/2-3.md) | The Explanatory Memorandum and Preamble | ~5 min | *in production* |
-| [2.4](module-2/2-4.md) | The Draft Articles Package | ~5 min | *in production* |
-| [2.5](module-2/2-5.md) | The Cover Note and Two-Track Regulatory Memo | ~5 min | *in production* |
-| [2.6](module-2/2-6.md) | The decree as configuration | ~5 min | *in production* |
+| [2.1](module-2/2-1.md) | Why the platform needs a legal mandate | ~4 min | [watch](https://youtu.be/GH_3B0nkkRs) |
+| [2.2](module-2/2-2.md) | Anatomy of an interoperability decree | ~5 min | [watch](https://youtu.be/dPC09rQ9PO8) |
+| [2.3](module-2/2-3.md) | The Explanatory Memorandum and Preamble | ~5 min | [watch](https://youtu.be/_BKpa-tjvqo) |
+| [2.4](module-2/2-4.md) | The Draft Articles Package | ~5 min | [watch](https://youtu.be/umVPqUvKEuQ) |
+| [2.5](module-2/2-5.md) | The Cover Note and Two-Track Regulatory Memo | ~5 min | [watch](https://youtu.be/SCGu-whKdVg) |
+| [2.6](module-2/2-6.md) | The decree as configuration | ~5 min | [watch](https://youtu.be/C5DeXidWSI8) |
 
 </details>
 
@@ -96,12 +97,12 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [3.1](module-3/3-1.md) | Why a bus needs an owner | ~5 min | *in production* |
-| [3.2](module-3/3-2.md) | The three tiers of governance | ~5 min | *in production* |
-| [3.3](module-3/3-3.md) | The RACI matrix | ~5 min | *in production* |
-| [3.4](module-3/3-4.md) | Member obligations | ~4 min | *in production* |
-| [3.5](module-3/3-5.md) | The four Technical Working Groups | ~4 min | *in production* |
-| [3.6](module-3/3-6.md) | Governance as living configuration | ~5 min | *in production* |
+| [3.1](module-3/3-1.md) | Why a bus needs an owner | ~5 min | [watch](https://youtu.be/eYtxj7uiCDE) |
+| [3.2](module-3/3-2.md) | The three tiers of governance | ~5 min | [watch](https://youtu.be/GfH3xhTbv5k) |
+| [3.3](module-3/3-3.md) | The RACI matrix | ~5 min | [watch](https://youtu.be/VAvK-lqodjE) |
+| [3.4](module-3/3-4.md) | Member obligations | ~4 min | [watch](https://youtu.be/MA3EguW6R-8) |
+| [3.5](module-3/3-5.md) | The four Technical Working Groups | ~4 min | [watch](https://youtu.be/udt4dpv_hDk) |
+| [3.6](module-3/3-6.md) | Governance as living configuration | ~5 min | [watch](https://youtu.be/-RwVBNenaGs) |
 
 </details>
 
@@ -111,14 +112,14 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [4.1](module-4/4-1.md) | Place every component — the four functional layers | ~5 min | *in production* |
-| [4.2](module-4/4-2.md) | Secure every call — the three trust zones | ~5 min | *in production* |
-| [4.3](module-4/4-3.md) | Adopt the standards portfolio | ~5 min | *in production* |
-| [4.4](module-4/4-4.md) | Generate the semantic map | ~5 min | *in production* |
-| [4.5](module-4/4-5.md) | Generate a service contract | ~5 min | *in production* |
-| [4.6](module-4/4-6.md) | Put a real data source on the bus — the Giga case | ~5 min | *in production* |
-| [4.7](module-4/4-7.md) | Wire a service onto the bus | ~5 min | *in production* |
-| [4.8](module-4/4-8.md) | Make the exchange lawful — the data-protection envelope | ~5 min | *in production* |
+| [4.1](module-4/4-1.md) | Place every component — the four functional layers | ~5 min | [watch](https://youtu.be/MBwLWDEYn4I) |
+| [4.2](module-4/4-2.md) | Secure every call — the three trust zones | ~5 min | [watch](https://youtu.be/fJs6W9tB1ZY) |
+| [4.3](module-4/4-3.md) | Adopt the standards portfolio | ~5 min | [watch](https://youtu.be/XAJ2NiX9lKI) |
+| [4.4](module-4/4-4.md) | Generate the semantic map | ~5 min | [watch](https://youtu.be/sTFEXDY45NQ) |
+| [4.5](module-4/4-5.md) | Generate a service contract | ~5 min | [watch](https://youtu.be/sB3dhN7FdP8) |
+| [4.6](module-4/4-6.md) | Put a real data source on the bus — the Giga case | ~5 min | [watch](https://youtu.be/Vj1ra1hPzC0) |
+| [4.7](module-4/4-7.md) | Wire a service onto the bus | ~5 min | [watch](https://youtu.be/BIxUJd--lxM) |
+| [4.8](module-4/4-8.md) | Make the exchange lawful — the data-protection envelope | ~5 min | [watch](https://youtu.be/9vBLQxBAykw) |
 
 </details>
 
@@ -128,8 +129,8 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [5.1](module-5/5-1.md) | Plan the build in four phases | ~5 min | *in production* |
-| [5.2](module-5/5-2.md) | State what a member must have — the Member Requirements | ~4 min | *in production* |
+| [5.1](module-5/5-1.md) | Plan the build in four phases | ~5 min | [watch](https://youtu.be/1e0Q2k71goo) |
+| [5.2](module-5/5-2.md) | State what a member must have — the Member Requirements | ~4 min | [watch](https://youtu.be/bQqV6sEGIEU) |
 | [5.3](module-5/5-3.md) | Make 'connected' mean 'dependable' — the SLA | ~4 min | *in production* |
 | [5.4](module-5/5-4.md) | Admit a member to the bus | ~5 min | *in production* |
 | [5.5](module-5/5-5.md) | Stand up the federation | ~5 min | *in production* |

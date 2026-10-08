@@ -5,9 +5,6 @@ icon: flag-checkered
 
 # Module 4 — Progressa end-to-end — the method on one sector
 
-{% hint style="info" %}
-**Worked examples for this module are pending** — every prompt on these pages runs today.
-{% endhint %}
 
 **Persona:** Architect (chief or senior architect in a national digital agency or sector ICT unit).
 

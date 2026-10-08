@@ -5,9 +5,6 @@ icon: flag-checkered
 
 # Module 3 — EA repository, tooling and governance
 
-{% hint style="info" %}
-**Worked examples for this module are pending** — every prompt on these pages runs today.
-{% endhint %}
 
 **Persona:** Architect (chief or senior architect in a national digital agency or sector ICT unit).
 
