@@ -10,6 +10,13 @@ buying unit finalises against its procurement plan and the estimated contract va
 structure and guidance for the buyer's lawyers, not legal text. The procurement officer, the lawyer
 and the funder decide what the issued annexes say.
 
+**Where the values come from.** A value cited to a course page (KP2 5.1, KP2 5.3) is the course's
+own. Every other policy value is a placeholder in square brackets, often with a neutral range,
+marked **[confirm]**. The ranges are there to show the kind of figure the line needs; they are not
+taken from any funder's document and are not a recommendation. The buying unit reads the figure in
+the standard procurement document of the funder that pays for the lot, and in its procurement
+plan, and writes that.
+
 ---
 
 ## Bid Data Sheet
@@ -33,9 +40,9 @@ The Bid Data Sheet sets the values the instructions to proposers leave open.
 |---|---|---|
 | 7 | Method | Request for proposals for an information system, single stage, technical and price envelopes opened separately [confirm] |
 | 8 | Award | Most Advantageous Proposal: the best combined technical and price score among proposals that pass Stage 1 |
-| 9 | Weighting | Technical 70 per cent, price 30 per cent [confirm] |
-| 10 | Minimum technical score | 70 of 100 [confirm] |
-| 11 | Rated criteria (points) | Technical solution 35; approach and phasing 15; key personnel 20; operation and transfer 10; skills transfer and local capability 10; live demonstration 10. Total 100 |
+| 9 | Weighting | Technical [60 to 80] per cent, price [20 to 40] per cent [confirm] |
+| 10 | Minimum technical score | [60 to 80] of 100 [confirm] |
+| 11 | Rated criteria (points) | Technical solution [points]; approach and phasing [points]; key personnel [points]; operation and transfer [points]; skills transfer and local capability [points]; live demonstration [points]. Total 100 [confirm each against the funder's rules] |
 | 12 | Live demonstration | Required and scored: the proposer runs a scenario PDGA supplies (a call with a grant answered, the same call without one refused) on its own installation; slides are not a demonstration |
 | 13 | Stage 1, pass or fail | Eligibility; financial standing; at least one delivered national X-Road or equivalent platform; the mandatory requirements of Annex A; no conflict with the verification role |
 
@@ -44,8 +51,8 @@ The Bid Data Sheet sets the values the instructions to proposers leave open.
 | Ref | Item | Provision |
 |---|---|---|
 | 14 | Joint ventures and subcontracting | Allowed and encouraged. The combined capacity of the members, and of named subcontractors, counts toward qualification, except for the capability in ref 17. Members are jointly and severally liable |
-| 15 | Turnover | Average annual turnover over three years of at least 1.5 times the estimated annual contract value [confirm against the contract value] |
-| 16 | Liquidity | Liquid assets, or access to them, covering at least two months of estimated cash flow [confirm] |
+| 15 | Turnover | Average annual turnover over [three to five] years of at least [1 to 2] times the estimated annual contract value [confirm against the contract value] |
+| 16 | Liquidity | Liquid assets, or access to them, covering at least [one to three] months of estimated cash flow [confirm] |
 | 17 | The critical capability | At least one delivered national X-Road or equivalent platform, held by a jointly and severally liable member of the joint venture. A specialist firm may add to it only as a named, committed team member who cannot be replaced; it cannot hold it alone |
 | 18 | Skills transfer and local capability | A plan for training, embedding and sustaining local and PDGA capability, scored under ref 11 on what it delivers, not on any firm's nationality. Open competition; no domestic preference beyond the funder's rules |
 
@@ -53,19 +60,19 @@ The Bid Data Sheet sets the values the instructions to proposers leave open.
 
 | Ref | Item | Provision |
 |---|---|---|
-| 19 | Proposal security | A proposal-securing declaration, or a security of 0.5 to 1 per cent of the estimated value [confirm] |
-| 20 | Validity of proposals | 120 days from the submission deadline [confirm] |
-| 21 | Performance security | 10 per cent of the contract price, valid until Operational Acceptance plus the warranty period [confirm] |
-| 22 | Advance payment | Up to 10 per cent, against a guarantee for the full amount [confirm] |
-| 23 | Damages for delay | 0.5 per cent of the delayed milestone's value for each week, capped at 10 per cent [confirm] |
+| 19 | Proposal security | A proposal-securing declaration, or a security of [a fixed amount the funder's rules allow] [confirm] |
+| 20 | Validity of proposals | [90 to 120] days from the submission deadline [confirm] |
+| 21 | Performance security | [5 to 10] per cent of the contract price, valid until Operational Acceptance plus the warranty period [confirm] |
+| 22 | Advance payment | [None, or up to the share the funder's rules allow], against a guarantee for the full amount [confirm] |
+| 23 | Damages for delay | [A percentage] of the delayed milestone's value for each [day or week], capped at [a percentage] [confirm] |
 | 24 | Service credits | As Annex F sets them, with the caps it sets |
-| 25 | Warranty | 12 months from Operational Acceptance [confirm] |
+| 25 | Warranty | [12 to 24] months from Operational Acceptance [confirm] |
 
 ### E. Timeline and submission
 
 | Ref | Item | Provision |
 |---|---|---|
-| 26 | Duration | About 18 months from signature: 12 to the Pilot gate, six of operation, then transfer; all of it before the programme closes [confirm] |
+| 26 | Duration | 12 months to the Pilot gate, as KP2 5.1 sets the Foundation and Pilot phases; then [n] months of operation; then transfer; all of it before the programme closes [confirm] |
 | 27 | Pre-proposal meeting | [date and place: PDGA to set] |
 | 28 | Last date for questions | [number] days before the deadline [PDGA to set] |
 | 29 | Submission | [date, time and address: PDGA to set] |
@@ -84,13 +91,13 @@ agent checks each line. Targets marked [confirm] are fixed at inception against 
 | CFR-SEC-01 | Mutual TLS on every system-to-system call | TLS 1.3; no plain-text call accepted [confirm] | Configuration review; scan |
 | CFR-SEC-02 | Every caller is identified | X-Road subsystem certificates; OAuth 2.0 and OpenID Connect only where a service needs end-user authorisation [confirm] | Test |
 | CFR-SEC-03 | No secrets in code or configuration files | Secrets held in a managed store and rotated | Code and configuration review |
-| CFR-SEC-04 | Patches applied | Critical patches within [15] days [confirm] | Scan reports |
+| CFR-SEC-04 | Patches applied | Critical patches within [7 to 30] days [confirm] | Scan reports |
 | CFR-SEC-05 | API security | OWASP API Security Top 10 (2023) met | Scan; independent penetration test |
-| CFR-AVL-01 | Linkup's core is available | 99.5 per cent a month in the pilot; 99.9 per cent in production [confirm] | Monitoring (Annex F) |
+| CFR-AVL-01 | Linkup's core is available | 99.5 per cent a month in the pilot; 99.9 per cent in production, as KP2 5.3 sets them [confirm] | Monitoring (Annex F) |
 | CFR-AVL-02 | No single point of failure in the core | Redundant core components | Architecture review; failover test |
-| CFR-AVL-03 | Recovery | Recovery point within [1] hour, recovery time within [4] hours [confirm] | Recovery test (Annex F) |
-| CFR-PRF-01 | Calls are answered fast | 95 per cent of calls within 1 second in production [confirm] | Load test; monitoring |
-| CFR-PRF-02 | Room to grow | The pilot's peak load plus 100 per cent [confirm] | Load test |
+| CFR-AVL-03 | Recovery | Recovery point within [1 to 4] hours, recovery time within [4 to 24] hours [confirm] | Recovery test (Annex F) |
+| CFR-PRF-01 | Calls are answered fast | 95 per cent of calls within 1 second in production, as KP2 5.3 sets it [confirm] | Load test; monitoring |
+| CFR-PRF-02 | Room to grow | The pilot's peak load plus [50 to 100] per cent [confirm] | Load test |
 | CFR-IOP-01 | Service contracts | OpenAPI 3.1, valid for every service [confirm] | Operator's test suite |
 | CFR-IOP-02 | The bus | X-Road 7.x, message protocol for REST | Registration; live test call |
 | CFR-IOP-03 | Data described | Fields as the semantic map defines them (ISO/IEC 11179) | Self-assessment against the map |
@@ -207,7 +214,7 @@ A gate is passed only when every mandatory item is a pass.
 
 ### E.3 The Operational Acceptance Test
 
-Operational Acceptance is granted when, over a stability period of [30] consecutive days
+Operational Acceptance is granted when, over a stability period of [30 to 90] consecutive days
 [confirm] with the first-wave exchanges running in production:
 
 - availability meets Annex F, with no open incident of priority 1;
@@ -222,8 +229,10 @@ PDGA then issues the Operational Acceptance Certificate, verified by the verific
 
 ## Annex F — service levels in the operate period
 
-Measured monthly in the six-month operate period. These are the supplier's levels for Linkup's
-core; each member's service has its own agreement, as KP2 5.3 shows.
+Measured monthly in the operate period that the Bid Data Sheet sets (ref 26). These are the
+supplier's levels for Linkup's core; each member's service has its own agreement, as KP2 5.3 shows.
+The availability and speed targets, the P1 times, the support hours, the notice of change and the
+rule for raising a target are KP2 5.3's; the other values are placeholders.
 
 ### F.1 Availability and speed
 
@@ -238,8 +247,8 @@ core; each member's service has its own agreement, as KP2 5.3 shows.
 | Priority | Meaning | Acknowledged within | Resolved within |
 |---|---|---|---|
 | P1 | Linkup down, a first-wave exchange unavailable, or a security breach | 1 hour [confirm] | 8 hours [confirm] |
-| P2 | A major function degraded, no workaround | 4 business hours [confirm] | 2 business days [confirm] |
-| P3 | A function degraded, with a workaround | 1 business day | The next release |
+| P2 | Part of Linkup or of an exchange does not work, and the members have no way around it | 4 business hours [confirm] | [1 to 5] business days [confirm] |
+| P3 | Something does not work as it should, but the members can still do their work | [1 to 2] business days [confirm] | [A date agreed with PDGA] [confirm] |
 
 ### F.3 Support, change, recovery and reporting
 
@@ -254,8 +263,8 @@ core; each member's service has its own agreement, as KP2 5.3 shows.
 
 | Breach | Credit | Cap |
 |---|---|---|
-| Availability under target | [2] per cent of the monthly operate fee for each 0.5 per cent below target [confirm] | [10] per cent of the monthly fee [confirm] |
-| P1 resolution time missed | [2] per cent of the monthly operate fee for each breach [confirm] | [10] per cent of the monthly fee [confirm] |
+| Availability under target | [A percentage] of the monthly operate fee for each [step] below target [confirm] | [A percentage] of the monthly fee [confirm] |
+| P1 resolution time missed | [A percentage] of the monthly operate fee for each breach [confirm] | [A percentage] of the monthly fee [confirm] |
 | Persistent breach | A cure period, then default under the contract | As the contract sets |
 
 ---

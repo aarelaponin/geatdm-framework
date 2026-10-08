@@ -57,8 +57,8 @@ against PLR's test service and goes live when PLR does [confirm].
 
 ## 6. Implementation approach and phasing
 
-Foundation (months 0–6) and Pilot and validation (7–12), as KP2 5.1 sets them, then a six-month
-operate period and the transfer. Each phase ends in a decision gate; the next phase is paid for
+Foundation (months 0–6) and Pilot and validation (7–12), as KP2 5.1 sets them, then an operate
+period of [n] months [confirm] and the transfer. Each phase ends in a decision gate; the next phase is paid for
 only after the gate is passed. All work ends inside the programme's three years.
 
 ## 7. Technical and functional requirements
@@ -69,7 +69,7 @@ descriptions [confirm]. Each is named with its edition.
 
 ## 8. Operate and transfer
 
-Six months of operation after pilot go-live, under the service levels of Annex F; then transfer to
+[n] months of operation after pilot go-live [confirm], under the service levels of Annex F; then transfer to
 PDGA, with the transition tasks and their price stated.
 
 ## 9. Capacity building and knowledge transfer
@@ -93,8 +93,8 @@ subcontractor alone. Skills transfer is scored on substance, not on nationality 
 
 ## 12. Duration and timeline
 
-About 18 months from signature: 12 months to the Pilot gate, six months of operation, then
-transfer [confirm]. Inside the programme's three years.
+12 months from signature to the Pilot gate, as KP2 5.1 sets the phases; then [n] months of
+operation and the transfer [confirm]. Inside the programme's three years.
 
 ## 13. Client inputs and facilities
 

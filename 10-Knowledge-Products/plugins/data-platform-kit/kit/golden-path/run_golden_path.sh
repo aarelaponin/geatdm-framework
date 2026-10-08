@@ -1,12 +1,22 @@
 #!/usr/bin/env bash
 # Golden path: run the whole skill chain on the bundled Progressa fixtures to build a worked platform repo.
-# Run from kit/golden-path/.  Pure Python; no DB needed (generation is offline / Track A).
+# Pure Python; no DB needed (generation is offline / Track A).
 # Simulated case: Progressa is a fictional country; every source, table and figure is invented.
+#
+# Writes to an output folder: the first argument, or out/ beside this script. The committed
+# example (platform-repo/ and readiness.yml beside this script) is never written over; to refresh
+# it, run into an empty folder and copy that folder's platform-repo/ and readiness.yml over it.
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 SK="$HERE/../../skills"
 IN="$HERE/inputs"
-REPO="$HERE/platform-repo"
+OUT="${1:-$HERE/out}"
+mkdir -p "$OUT"
+OUT="$(cd "$OUT" && pwd)"
+if [ "$OUT" = "$HERE" ]; then
+  echo "refusing to write over the committed example in $HERE; name another folder" >&2; exit 2
+fi
+REPO="$OUT/platform-repo"
 PB="${PB_MODULE:-$HERE/fixtures/school-census/census.pbl}"
 INV="${PB_INVENTORY:-$HERE/fixtures/school-census/pemis_inventory.yaml}"
 
@@ -50,15 +60,15 @@ echo "== 9. production-readiness-check: add CI + runbook, then gate =="
 mkdir -p "$REPO/.github/workflows" "$REPO/ops/runbooks"
 printf 'name: ci\njobs:\n  test:\n    steps: [dbt test]\n' > "$REPO/.github/workflows/ci.yml"
 printf '# Deploy runbook\n## Rollback\nRevert the release tag and redeploy the previous build; verify DQ gates green.\n' > "$REPO/ops/runbooks/deploy.md"
-py "$SK/production-readiness-check/scripts/prodcheck.py" --emit-manifest -o "$HERE/readiness.yml" >/dev/null
+py "$SK/production-readiness-check/scripts/prodcheck.py" --emit-manifest -o "$OUT/readiness.yml" >/dev/null
 # fill attestations pass (a demo "ready" release); the repo is named relative to the manifest
-python3 - "$HERE/readiness.yml" <<'PY'
+python3 - "$OUT/readiness.yml" <<'PY'
 import sys,yaml
 m=yaml.safe_load(open(sys.argv[1])); m["repo"]="platform-repo"; m["release"]="enrolment-v1.0-golden-path"
 for v in m["attestations"].values(): v.update(status="pass",evidence="golden-path demo",signed_by="example",date="2026-10-08")
 yaml.safe_dump(m,open(sys.argv[1],"w"),sort_keys=False)
 PY
-py "$SK/production-readiness-check/scripts/prodcheck.py" --check --manifest "$HERE/readiness.yml" --report "$REPO/ops/readiness_report.md" || true
+py "$SK/production-readiness-check/scripts/prodcheck.py" --check --manifest "$OUT/readiness.yml" --report "$REPO/ops/readiness_report.md" || true
 
 echo
-echo "== DONE — worked platform repo at: platform-repo/ =="
+echo "== DONE — worked platform repo at: $REPO =="

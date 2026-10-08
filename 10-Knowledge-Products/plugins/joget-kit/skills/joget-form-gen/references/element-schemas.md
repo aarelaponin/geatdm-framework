@@ -490,6 +490,10 @@ Use exact property names from these templates.
 ---
 
 ## GisPolygonCaptureElement (custom plugin)
+
+This section documents a custom plugin that is not part of Joget and is not shipped with this
+kit: to use the element, the learner must build such a plugin themselves (see `joget-plugin-dev`).
+
 ```json
 {
   "className": "<your.package>.gisui.element.GisPolygonCaptureElement",

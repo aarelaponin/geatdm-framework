@@ -2,7 +2,8 @@
 """deploy_dx9.py — one-command deploy of a Joget DX9 app archive (.jwa) to a
 registered instance, encoding the DX9 deploy deltas (rules/JOGET-DEPLOY-DELTAS.md).
 
-    deploy_dx9.py --instance jdx7 --app taxRegistration --jwa path/to/app.jwa
+    deploy_dx9.py --instance <instance> --instances <your-instance-register>
+        --app taxRegistration --jwa path/to/app.jwa
 
 Sequence (each step maps to a delta):
     resolve instance (+/jw, DD-001) -> login -> import via CSRF (DD-002/003)
@@ -10,7 +11,8 @@ Sequence (each step maps to a delta):
     -> isolated Tomcat restart to clear the definition cache (DD-005)
     -> smoke-test the userview(s) render (the gate).
 
-Reads ~/.joget/instances.yaml (or $JOGET_INSTANCES) for URL, install path, DB and
+Reads the instance register named by --instances <your-instance-register> (or by
+$JOGET_INSTANCES) for URL, install path, DB and
 admin credentials; secrets come from the env vars the registry names
 (`<INST>_PASSWORD`, the DB `password_env`) — nothing is stored here. PostgreSQL
 instances; MySQL degrades (DB-backed steps are skipped with a warning).
@@ -354,7 +356,7 @@ def required_external_classes(jwa_path):
     # Not every `className` slot holds a class. MultiPagedForm keeps its PAGE COUNT
     # in one — `"numberOfPage": {"className": "8", ...}` — so a bare regex reported
     # "8" as a missing plugin and refused an app whose plugins were all installed
-    # (measured on the reference-portal wizards, jdx7, 2026-08-09). A Java class name
+    # (measured on the reference-portal wizards, on a test instance, 2026-08-09). A Java class name
     # is package-qualified; a page count is not.
     return sorted(c for c in classes
                   if c and "." in c and not _ships_with_joget(c))

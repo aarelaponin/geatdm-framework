@@ -43,15 +43,15 @@ tables:
   confirmedAgainstInventory: true
   columnsReferencedByModule: 3
   columns:
+  - name: dis_id
+    description: Surrogate primary key (system-generated).
+    inferredType: integer
   - name: dis_name
     description: Name.
     inferredType: varchar
   - name: dis_province
     description: (to confirm with the Data Owner)
     inferredType: varchar
-  - name: dis_serial
-    description: Surrogate primary key (system-generated serial).
-    inferredType: integer
 - name: grade
   description: TODO — business description (Data-Owner to confirm).
   confirmedAgainstInventory: true
@@ -63,8 +63,8 @@ tables:
   - name: gra_desc
     description: Description / display text.
     inferredType: varchar
-  - name: gra_serial
-    description: Surrogate primary key (system-generated serial).
+  - name: gra_id
+    description: Surrogate primary key (system-generated).
     inferredType: integer
 - name: learner
   description: TODO — business description (Data-Owner to confirm).
@@ -89,33 +89,33 @@ tables:
   - name: sch_capacity
     description: (to confirm with the Data Owner)
     inferredType: varchar
+  - name: sch_changed_at
+    description: Row last-modified timestamp (audit).
+    inferredType: datetime
+  - name: sch_changed_by
+    description: User who last modified the row (audit).
+    inferredType: varchar
   - name: sch_code
     description: (to confirm with the Data Owner)
     inferredType: varchar
-  - name: sch_disref
-    description: (to confirm with the Data Owner)
-    inferredType: varchar
+  - name: sch_dis_id
+    description: Foreign-key reference.
+    inferredType: integer
   - name: sch_grant
     description: (to confirm with the Data Owner)
     inferredType: varchar
-  - name: sch_lvlref
-    description: (to confirm with the Data Owner)
-    inferredType: varchar
+  - name: sch_id
+    description: Surrogate primary key (system-generated).
+    inferredType: integer
+  - name: sch_lvl_id
+    description: Foreign-key reference.
+    inferredType: integer
   - name: sch_name
     description: Name.
     inferredType: varchar
   - name: sch_opendate
     description: (to confirm with the Data Owner)
     inferredType: datetime
-  - name: sch_serial
-    description: Surrogate primary key (system-generated serial).
-    inferredType: integer
-  - name: sch_timestamp
-    description: Row last-modified timestamp (audit).
-    inferredType: datetime
-  - name: sch_userid
-    description: User who last modified the row (audit).
-    inferredType: varchar
 - name: setting
   description: TODO — business description (Data-Owner to confirm).
   confirmedAgainstInventory: true
@@ -132,6 +132,15 @@ tables:
   confirmedAgainstInventory: true
   columnsReferencedByModule: 8
   columns:
+  - name: tea_changed_at
+    description: Row last-modified timestamp (audit).
+    inferredType: datetime
+  - name: tea_changed_by
+    description: User who last modified the row (audit).
+    inferredType: varchar
+  - name: tea_id
+    description: Surrogate primary key (system-generated).
+    inferredType: integer
   - name: tea_name
     description: Name.
     inferredType: varchar
@@ -141,21 +150,12 @@ tables:
   - name: tea_postdate
     description: (to confirm with the Data Owner)
     inferredType: datetime
-  - name: tea_quaref
-    description: (to confirm with the Data Owner)
-    inferredType: varchar
-  - name: tea_schref
-    description: (to confirm with the Data Owner)
-    inferredType: varchar
-  - name: tea_serial
-    description: Surrogate primary key (system-generated serial).
+  - name: tea_qua_id
+    description: Foreign-key reference.
     inferredType: integer
-  - name: tea_timestamp
-    description: Row last-modified timestamp (audit).
-    inferredType: datetime
-  - name: tea_userid
-    description: User who last modified the row (audit).
-    inferredType: varchar
+  - name: tea_sch_id
+    description: Foreign-key reference.
+    inferredType: integer
 - name: transfer
   description: TODO — business description (Data-Owner to confirm).
   confirmedAgainstInventory: false

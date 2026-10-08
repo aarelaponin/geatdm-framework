@@ -70,7 +70,7 @@ The report flags; it decides nothing. The procurement officer, the lawyer and th
 |---|---|---|---|
 | 1. Naming | The matrix says "National Learner Registry (NLR)"; the RFP and the annexes say "Progressa Learner Registry (PLR)" | Matrix, sheet 3 | Use PLR for the register; keep "National Learner Registry programme" for the programme only |
 | 4. Coverage | Annex E's Pilot gate cites REQ-TEC-16; sheet 5 ends at REQ-TEC-15 | Annex E, E.2 | Point the item at REQ-TEC-15, or add the missing requirement to Annex A |
-| 5. Arithmetic | Rated criteria 35 + 15 + 20 + 10 + 10 + 10 = 100: pass | Bid Data Sheet, ref 11 | — |
+| 5. Arithmetic | Rated criteria: a draft line sets the points at 40 + 15 + 15 + 15 + 10 + 10 = 105 | Bid Data Sheet, ref 11 | Bring the six to 100 before issue; in the template they are still `[points]` |
 | 6. Scope | A draft line "the Supplier shall deliver the learner register" while Section 3 puts PLR out of scope | Annex A, draft | Rewrite as "connect PLR to Linkup as the provider of `enrolment-api`" |
 | 7. Placeholders | Language, submission address and the programme's end date still bracketed | Bid Data Sheet, refs 5 and 29; RFP Section 1 | List them in the transmittal as decisions for the authority |
 

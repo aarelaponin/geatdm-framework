@@ -156,20 +156,25 @@ def automap_prefix_to_table(prefixes, tables):
 
 # ----------------------------- descriptions / types -----------------------------
 def col_desc(c):
+    # Two naming conventions are recognised: <p>_serial / _ref / _timestamp / _userid, and
+    # <p>_id (the key) / <p>_<other>_id (a reference) / _changed_at / _changed_by.
+    if re.fullmatch(r"[a-z]{2,4}_id", c): return "Surrogate primary key (system-generated)."
     rules = [("_serial","Surrogate primary key (system-generated serial)."),
              ("_timestamp","Row last-modified timestamp (audit)."),
+             ("_changed_at","Row last-modified timestamp (audit)."),
              ("_userid","User who last modified the row (audit)."),
+             ("_changed_by","User who last modified the row (audit)."),
              ("_user","User who last modified the row (audit)."),
              ("_desc","Description / display text."),
              ("_name","Name."),
-             ("_ref","Foreign-key reference."), ("_year","Year.")]
+             ("_ref","Foreign-key reference."), ("_id","Foreign-key reference."), ("_year","Year.")]
     for suf, d in rules:
         if c.endswith(suf): return d
     return "(to confirm with the Data Owner)"
 
 def infer_type(c):
-    if any(k in c for k in ["date","birth","death","timestamp"]): return "datetime"
-    if any(c.endswith(s) for s in ["_serial","_year","_number","_value","_ref"]): return "integer"
+    if any(k in c for k in ["date","birth","death","timestamp"]) or c.endswith("_changed_at"): return "datetime"
+    if any(c.endswith(s) for s in ["_serial","_year","_number","_value","_ref","_id"]): return "integer"
     return "varchar"
 
 # ----------------------------- yaml writer (fallback) -----------------------------

@@ -4,7 +4,7 @@ table: censusreturn
 key: school_id
 description: One row per school — the census return of the current census year (the load takes the current year only).
 columns:
-  - {src: crt_schref, as: school_id, cast: Int64}
+  - {src: crt_sch_id, as: school_id, cast: Int64}
   - {src: crt_year, as: census_year, cast: Int16}
   - {src: crt_total, as: learners_enrolled, cast: Int32}
   - {src: crt_teachers, as: teachers_in_post, cast: Int32}

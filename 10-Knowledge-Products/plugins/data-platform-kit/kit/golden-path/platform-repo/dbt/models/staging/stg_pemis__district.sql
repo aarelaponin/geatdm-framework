@@ -3,7 +3,7 @@ with source as (
     select * from {{ source('bronze', 'pemis__district') }}
 )
 select
-    cast(`dis_serial` as Int64) as `district_id`,
+    cast(`dis_id` as Int64) as `district_id`,
     `dis_name` as `district`,
     `dis_province` as `province`
 from source

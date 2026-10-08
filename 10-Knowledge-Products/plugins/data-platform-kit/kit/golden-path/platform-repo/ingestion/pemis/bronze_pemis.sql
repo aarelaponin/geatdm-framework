@@ -4,8 +4,8 @@
 -- pemis.censusreturn (52,917 rows)
 CREATE TABLE IF NOT EXISTS `bronze`.`pemis__censusreturn`
 (
-    `crt_serial` Int64,
-    `crt_schref` Int32,
+    `crt_id` Int64,
+    `crt_sch_id` Int32,
     `crt_year` Int16,
     `crt_boys` Nullable(Int32),
     `crt_girls` Nullable(Int32),
@@ -17,12 +17,12 @@ CREATE TABLE IF NOT EXISTS `bronze`.`pemis__censusreturn`
 )
 ENGINE = MergeTree
 PARTITION BY toYYYYMM(`_extracted_at`)
-ORDER BY (`crt_serial`);
+ORDER BY (`crt_id`);
 
 -- pemis.district (38 rows)
 CREATE TABLE IF NOT EXISTS `bronze`.`pemis__district`
 (
-    `dis_serial` Int64,
+    `dis_id` Int64,
     `dis_name` String,
     `dis_province` Nullable(String),
     `_extracted_at` DateTime64(3),
@@ -31,15 +31,15 @@ CREATE TABLE IF NOT EXISTS `bronze`.`pemis__district`
 )
 ENGINE = MergeTree
 PARTITION BY toYYYYMM(`_extracted_at`)
-ORDER BY (`dis_serial`);
+ORDER BY (`dis_id`);
 
 -- pemis.school (4,812 rows)
 CREATE TABLE IF NOT EXISTS `bronze`.`pemis__school`
 (
-    `sch_serial` Int64,
+    `sch_id` Int64,
     `sch_code` String,
     `sch_name` Nullable(String),
-    `sch_disref` Nullable(Int32),
+    `sch_dis_id` Nullable(Int32),
     `sch_capacity` Nullable(Int32),
     `sch_grant` Nullable(Decimal(38, 2)),
     `_extracted_at` DateTime64(3),
@@ -48,5 +48,5 @@ CREATE TABLE IF NOT EXISTS `bronze`.`pemis__school`
 )
 ENGINE = MergeTree
 PARTITION BY toYYYYMM(`_extracted_at`)
-ORDER BY (`sch_serial`);
+ORDER BY (`sch_id`);
 

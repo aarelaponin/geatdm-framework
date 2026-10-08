@@ -9,12 +9,12 @@ tables:
 - name: pemis__censusreturn
   description: ''
   columns:
-  - name: crt_serial
+  - name: crt_id
     dataType: Int64
     nullable: false
     sourceType: serial
     description: ''
-  - name: crt_schref
+  - name: crt_sch_id
     dataType: Int32
     nullable: false
     sourceType: integer
@@ -47,7 +47,7 @@ tables:
 - name: pemis__district
   description: ''
   columns:
-  - name: dis_serial
+  - name: dis_id
     dataType: Int64
     nullable: false
     sourceType: serial
@@ -65,7 +65,7 @@ tables:
 - name: pemis__school
   description: ''
   columns:
-  - name: sch_serial
+  - name: sch_id
     dataType: Int64
     nullable: false
     sourceType: serial
@@ -80,7 +80,7 @@ tables:
     nullable: true
     sourceType: varchar(120)
     description: ''
-  - name: sch_disref
+  - name: sch_dis_id
     dataType: Int32
     nullable: true
     sourceType: integer

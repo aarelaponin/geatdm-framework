@@ -49,10 +49,10 @@ Ask or check which instance is currently running:
 # Find running Joget/Tomcat processes
 ps aux | grep catalina | grep -v grep
 
-# Check which port is in use
+# Check which port is in use: 8080 is Joget's own default; add each port your
+# instances are set to
 lsof -i :8080
-lsof -i :8085
-lsof -i :8888
+lsof -i :<port>
 ```
 
 **Record in each plugin project's own notes which instance (and which Joget version)

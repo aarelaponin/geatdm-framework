@@ -44,21 +44,27 @@ attributable to a dimension and a DQF control.
 
 ```yaml
 model: mart_school__enrolment_summary
-tier: warm                     # sets the timeliness SLA (hot|warm|cold|archive)
-description: DQ checks for the school enrolment summary mart.
+tier: cold                     # census data changes once a year (hot|warm|cold|archive)
+description: DQ checks for the school enrolment summary mart, refreshed after each census.
 grain: [school_code]           # uniqueness + not_null
-mandatory: [school_code, learners_enrolled, ptr_band]   # completeness (not_null)
-enums:
-  ptr_band: ["<=40","41-60",">60"]                 # validity (accepted_values)
-ranges:
-  learners_enrolled: {min: 0}  # validity (range; needs the dbt_expectations package)
-relationships:                 # consistency (referential)
+mandatory: [school_code, district, learners_enrolled, teachers_in_post]   # completeness (not_null)
+ranges:                        # validity (range; needs the dbt_expectations package)
+  capacity: {min: 1}
+  teachers_in_post: {min: 0, max: 500}
+relationships:                 # consistency (referential), one line per parent
   - {column: school_code, to: "ref('int_school__master')", field: school_code}
+  - {column: district, to: "ref('stg_pemis__district')", field: district}
 freshness: {column: _extracted_at}   # timeliness column (default _extracted_at)
-row_budget: {min_rows: 1}      # completeness (zero-row / minimum)
-accuracy:                      # accuracy reconciliation(s) — generates a stub to implement
-  - {name: census_vs_register, description: "Learners on the census return vs active learners in the register, within tolerance"}
+row_budget: {min_rows: 1000}   # completeness: fewer schools than this means a partial load
+accuracy:                      # accuracy checks — each generates a stub to implement
+  - {name: grant_vs_rate, description: "Capitation grant equals learners enrolled times the year's per-learner rate, within tolerance (a rule across two fields)"}
+  - {name: census_vs_register, description: "Learners on the census return vs active learners in the learner register, within tolerance"}
 ```
+
+A code column takes one more key, `enums:` (`{column: [allowed values]}`, validity by
+`accepted_values`); this mart has no code column, so the spec has none. A rule across two fields,
+such as the grant against the learners, is written as an `accuracy` entry: the generator gives it
+a stub, and the team writes the comparison.
 
 ### 2 — Generate
 

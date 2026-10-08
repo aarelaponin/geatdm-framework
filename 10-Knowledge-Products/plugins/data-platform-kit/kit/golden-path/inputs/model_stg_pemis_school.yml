@@ -4,10 +4,10 @@ table: school
 key: school_code
 description: One row per school from the PEMIS school table.
 columns:
-  - {src: sch_serial, as: school_id, cast: Int64}
+  - {src: sch_id, as: school_id, cast: Int64}
   - {src: sch_code, as: school_code}
   - {src: sch_name, as: school_name}
-  - {src: sch_disref, as: district_id, cast: Int64}
+  - {src: sch_dis_id, as: district_id, cast: Int64}
   - {src: sch_capacity, as: capacity, cast: Int32}
   - {src: sch_grant, as: capitation_grant, cast: "Decimal(38,2)"}
   - _extracted_at

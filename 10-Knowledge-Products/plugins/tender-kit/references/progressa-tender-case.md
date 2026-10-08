@@ -169,7 +169,7 @@ Posts, never names (the Progressa page, §4, and *added for this kit* where mark
 From KP2 5.1: Foundation (months 0–6), Pilot and validation (7–12), Expansion (13–18) and
 Optimisation (19–24), each ending in a decision gate where the funder and the Steering Committee
 confirm that the phase delivered before the next is funded. The first lot covers Foundation and
-Pilot, then a six-month operate period and the transfer to PDGA (*added for this kit*).
+Pilot, then an operate period of [n] months [confirm] and the transfer to PDGA (*added for this kit*).
 
 ## How acceptance is proven
 

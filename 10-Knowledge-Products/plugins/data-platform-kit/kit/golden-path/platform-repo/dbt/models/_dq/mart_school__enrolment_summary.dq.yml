@@ -1,7 +1,7 @@
 version: 2
 models:
 - name: mart_school__enrolment_summary
-  description: DQ checks for the school enrolment summary mart.
+  description: DQ checks for the school enrolment summary mart, refreshed after each census.
   columns:
   - name: school_code
     tests:
@@ -28,7 +28,34 @@ models:
             control: DQC-S4-03
         to: ref('int_school__master')
         field: school_code
+  - name: district
+    tests:
+    - not_null:
+        config:
+          tags:
+          - dq:completeness
+          meta:
+            dq_dimension: completeness
+            control: DQC-S4-02
+    - relationships:
+        config:
+          tags:
+          - dq:consistency
+          meta:
+            dq_dimension: consistency
+            control: DQC-S4-03
+        to: ref('stg_pemis__district')
+        field: district
   - name: learners_enrolled
+    tests:
+    - not_null:
+        config:
+          tags:
+          - dq:completeness
+          meta:
+            dq_dimension: completeness
+            control: DQC-S4-02
+  - name: teachers_in_post
     tests:
     - not_null:
         config:
@@ -45,4 +72,15 @@ models:
             dq_dimension: validity
             control: DQC-S4-02
         min_value: 0
+        max_value: 500
+  - name: capacity
+    tests:
+    - dbt_expectations.expect_column_values_to_be_between:
+        config:
+          tags:
+          - dq:validity
+          meta:
+            dq_dimension: validity
+            control: DQC-S4-02
+        min_value: 1
 

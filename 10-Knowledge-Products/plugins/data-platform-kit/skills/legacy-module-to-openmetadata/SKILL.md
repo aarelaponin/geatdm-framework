@@ -127,14 +127,14 @@ column names, the SQL context, and domain sense. From the School Census run, the
 | `exm_*` | `examcandidate` | table only present as a family |
 | `lea_*` | `learner` | ambiguous (`learner` vs `learnerstatus`) |
 
-Ignore genuine noise prefixes (application globals and short fragments like `gs_userid`, `gs_role`). When in doubt,
+Ignore genuine noise prefixes (application globals and short fragments like `gs_login`, `gs_role`). When in doubt,
 the cleaned column names in the family tell you what the table is.
 
 ### 4 — Write DRAFT business descriptions
 
 For every kept table and every column without a rule-based description, write a short business
 description from the naming and the module's purpose. The script already filled audit/key columns
-(`*_serial`, `*_timestamp`, `*_userid`, `*_ref`, …) via suffix rules — leave those unless wrong.
+(`*_id`, `*_changed_at`, `*_changed_by`, `*_ref`, …) via suffix rules — leave those unless wrong.
 Keep descriptions factual and concise; you are seeding a catalogue, not writing prose. Where you
 are genuinely unsure, keep `(to confirm with the Data Owner)` rather than guessing — an honest gap
 is more useful to a reviewer than a confident error.
@@ -149,7 +149,7 @@ still needs confirming. Two specifics that always need verifying:
 
 - **Data types.** `inferredType` is a hint from the column name only. The *authoritative* type
   comes from the OpenMetadata database connector (or the DDL). Don't present inferred types as fact.
-- **FK / lineage edges** you assert beyond the obvious `*_ref`/`*_schref` conventions.
+- **FK / lineage edges** you assert beyond the obvious `*_ref`/`*_sch_id` conventions.
 
 ### 6 — Produce the final artifacts
 

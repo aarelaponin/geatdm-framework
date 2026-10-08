@@ -25,9 +25,9 @@ _(no columns resolved — confirm from the connector)_
 
 | Column | Inferred type | Description |
 |---|---|---|
+| `dis_id` | integer | Surrogate primary key (system-generated). |
 | `dis_name` | varchar | Name. |
 | `dis_province` | varchar | (to confirm with the Data Owner) |
-| `dis_serial` | integer | Surrogate primary key (system-generated serial). |
 
 ## `grade`
 
@@ -35,7 +35,7 @@ _(no columns resolved — confirm from the connector)_
 |---|---|---|
 | `gra_code` | varchar | (to confirm with the Data Owner) |
 | `gra_desc` | varchar | Description / display text. |
-| `gra_serial` | integer | Surrogate primary key (system-generated serial). |
+| `gra_id` | integer | Surrogate primary key (system-generated). |
 
 ## `learner`
 
@@ -57,15 +57,15 @@ _(no columns resolved — confirm from the connector)_
 | Column | Inferred type | Description |
 |---|---|---|
 | `sch_capacity` | varchar | (to confirm with the Data Owner) |
+| `sch_changed_at` | datetime | Row last-modified timestamp (audit). |
+| `sch_changed_by` | varchar | User who last modified the row (audit). |
 | `sch_code` | varchar | (to confirm with the Data Owner) |
-| `sch_disref` | varchar | (to confirm with the Data Owner) |
+| `sch_dis_id` | integer | Foreign-key reference. |
 | `sch_grant` | varchar | (to confirm with the Data Owner) |
-| `sch_lvlref` | varchar | (to confirm with the Data Owner) |
+| `sch_id` | integer | Surrogate primary key (system-generated). |
+| `sch_lvl_id` | integer | Foreign-key reference. |
 | `sch_name` | varchar | Name. |
 | `sch_opendate` | datetime | (to confirm with the Data Owner) |
-| `sch_serial` | integer | Surrogate primary key (system-generated serial). |
-| `sch_timestamp` | datetime | Row last-modified timestamp (audit). |
-| `sch_userid` | varchar | User who last modified the row (audit). |
 
 ## `setting`
 
@@ -78,14 +78,14 @@ _(no columns resolved — confirm from the connector)_
 
 | Column | Inferred type | Description |
 |---|---|---|
+| `tea_changed_at` | datetime | Row last-modified timestamp (audit). |
+| `tea_changed_by` | varchar | User who last modified the row (audit). |
+| `tea_id` | integer | Surrogate primary key (system-generated). |
 | `tea_name` | varchar | Name. |
 | `tea_number` | integer | (to confirm with the Data Owner) |
 | `tea_postdate` | datetime | (to confirm with the Data Owner) |
-| `tea_quaref` | varchar | (to confirm with the Data Owner) |
-| `tea_schref` | varchar | (to confirm with the Data Owner) |
-| `tea_serial` | integer | Surrogate primary key (system-generated serial). |
-| `tea_timestamp` | datetime | Row last-modified timestamp (audit). |
-| `tea_userid` | varchar | User who last modified the row (audit). |
+| `tea_qua_id` | integer | Foreign-key reference. |
+| `tea_sch_id` | integer | Foreign-key reference. |
 
 ## `transfer`  _(via DML; not in inventory — confirm)_
 

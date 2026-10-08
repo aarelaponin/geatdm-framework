@@ -1,5 +1,5 @@
 model: mart_school__enrolment_summary
-tier: warm
+tier: cold
 note: DQF proposed targets — CONFIRM with Data Owners & the data governance board.
 dimensions:
   completeness:

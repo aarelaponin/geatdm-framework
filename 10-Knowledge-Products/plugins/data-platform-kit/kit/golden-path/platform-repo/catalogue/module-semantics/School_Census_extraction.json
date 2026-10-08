@@ -95,104 +95,104 @@
  },
  "dbname_pairs": {
   "district": [
+   "dis_id",
    "dis_name",
-   "dis_province",
-   "dis_serial"
+   "dis_province"
   ],
   "grade": [
    "gra_code",
    "gra_desc",
-   "gra_serial"
+   "gra_id"
   ]
  },
  "column_prefix_families": {
   "dis": [
+   "dis_id",
    "dis_name",
-   "dis_province",
-   "dis_serial"
+   "dis_province"
   ],
   "gra": [
    "gra_code",
    "gra_desc",
-   "gra_serial"
+   "gra_id"
   ],
   "lea": [
    "lea_admdate",
-   "lea_dobirth",
+   "lea_birth_date",
+   "lea_changed_at",
+   "lea_changed_by",
    "lea_fullname",
-   "lea_graref",
-   "lea_lstref",
+   "lea_gra_id",
+   "lea_id",
+   "lea_lst_id",
    "lea_name",
    "lea_number",
-   "lea_schref",
-   "lea_serial",
+   "lea_sch_id",
    "lea_sex",
-   "lea_surname",
-   "lea_timestamp",
-   "lea_userid"
+   "lea_surname"
   ],
   "lst": [
    "lst_code",
    "lst_desc",
-   "lst_serial"
+   "lst_id"
   ],
   "sch": [
    "sch_capacity",
+   "sch_changed_at",
+   "sch_changed_by",
    "sch_code",
-   "sch_disref",
+   "sch_dis_id",
    "sch_grant",
-   "sch_lvlref",
+   "sch_id",
+   "sch_lvl_id",
    "sch_name",
-   "sch_opendate",
-   "sch_serial",
-   "sch_timestamp",
-   "sch_userid"
+   "sch_opendate"
   ],
   "lvl": [
    "lvl_desc",
-   "lvl_serial"
+   "lvl_id"
   ],
   "crt": [
    "crt_boys",
+   "crt_changed_by",
    "crt_girls",
-   "crt_schref",
-   "crt_serial",
+   "crt_id",
+   "crt_sch_id",
    "crt_submitted",
    "crt_teachers",
    "crt_total",
-   "crt_userid",
    "crt_year"
   ],
   "exm": [
    "exm_centre",
-   "exm_learef",
+   "exm_lea_id",
    "exm_session"
   ],
   "gs": [
-   "gs_role",
-   "gs_userid"
+   "gs_login",
+   "gs_role"
   ],
   "trf": [
+   "trf_changed_by",
    "trf_date",
    "trf_fromsch",
-   "trf_learef",
-   "trf_tosch",
-   "trf_userid"
+   "trf_lea_id",
+   "trf_tosch"
   ],
   "tea": [
+   "tea_changed_at",
+   "tea_changed_by",
+   "tea_id",
    "tea_name",
    "tea_number",
    "tea_postdate",
-   "tea_quaref",
-   "tea_schref",
-   "tea_serial",
-   "tea_timestamp",
-   "tea_userid"
+   "tea_qua_id",
+   "tea_sch_id"
   ],
   "qua": [
    "qua_code",
    "qua_desc",
-   "qua_serial"
+   "qua_id"
   ],
   "set": [
    "set_name",

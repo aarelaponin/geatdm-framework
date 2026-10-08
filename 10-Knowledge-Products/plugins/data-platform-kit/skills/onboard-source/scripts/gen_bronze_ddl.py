@@ -16,9 +16,9 @@ Schema spec format (JSON):
   "tables": {
     "school": {
       "row_count": 12345,
-      "primary_key": ["sch_serial"],
+      "primary_key": ["sch_id"],
       "columns": [
-        {"name": "sch_serial",  "type": "serial",        "nullable": false},
+        {"name": "sch_id",  "type": "serial",        "nullable": false},
         {"name": "sch_name",    "type": "varchar(120)",   "nullable": true},
         {"name": "sch_grant",   "type": "decimal(14,2)",  "nullable": true},
         {"name": "sch_opendate","type": "date",           "nullable": true}

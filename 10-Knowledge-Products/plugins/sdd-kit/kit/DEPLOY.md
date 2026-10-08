@@ -323,7 +323,8 @@ without a server:
 `kit deploy <app>.app.yaml --instance <jdxN>` runs the gate on the model first too, before its
 pre-deploy match.
 
-Once the archive is admitted, it reads `~/.joget/instances.yaml` for the URL,
+Once the archive is admitted, it reads the instance register you name with
+`--instances <your-instance-register>` (or with `$JOGET_INSTANCES`) for the URL,
 install path, DB and admin credentials (secrets from the env vars the registry names), and
 performs, each step mapped to a delta in `rules/JOGET-DEPLOY-DELTAS.md`:
 
@@ -347,7 +348,7 @@ its `appDefinition.xml`) and sets aside those that ship with Joget: every class 
 plugins, which a server installs one by one (`NOT_SHIPPED_WITH_JOGET` in `tools/deploy_dx9.py`;
 today one family, the API Builder's `org.joget.api.`). Every class left must be found as a class
 file in one of the jars in the instance's `wflow/app_plugins` folder, under the `installation_path`
-that `~/.joget/instances.yaml` gives the instance. If any is missing, the deploy stops before the
+that the instance register gives the instance. If any is missing, the deploy stops before the
 import and names each missing class, and for a class of a Joget marketplace family the plugin that
 carries it. When the instance has no installation path on this machine the check cannot be made:
 the deploy says how many classes it could not verify and proceeds. `--no-dep-check` skips the
@@ -359,12 +360,16 @@ The plugins an application the kit builds needs, and what in the model calls for
 | Plugin | Needed when | The class the archive binds |
 |---|---|---|
 | Joget's API Builder, the marketplace plugin `apibuilder_plugins`, installed through the console's plugin upload | always: every archive carries the data interface `API-<appId>-data`, through which the starting data loads and the acceptance runner acts | `org.joget.api.lib.AppFormAPI` |
-| `joget-transition-guard` 1.2.0 or later, with the two library bundles it imports, `joget-status-manager` and `joget-event-chain` (2.0.0) | an entity with a lifecycle: its engine-events form, and the trigger form of each move a person makes | `com.fiscaladmin.joget.transitionguard.TransitionGuard` |
-| `joget-unique-guard` | a maintained list of values (the administration's forms keep each code unique), and an entity uniqueness constraint enforced by a guard | `com.fiscaladmin.joget.uniqueguard.UniqueGuard` |
-| `joget-require-guard` | an entity's `validations`, a reference that must name an existing record, and a record carried to the form an act opens | `com.fiscaladmin.joget.requireguard.RequireGuard` |
-| `joget-form-prefill` 1.0.0 | a form whose `prefill` names `form-prefill` | `com.fiscaladmin.joget.formprefill.FormPrefillLoadBinder` |
-| `joget-lookup-field` | a look-up that shows a record's name beside the key typed | `global.govstack.lookupfield.element.LookupFieldElement` |
-| `joget-smart-search` | an editable reference to a register that is searched rather than chosen from a list | `global.govstack.smartsearch.element.SmartSearchElement` |
+| `joget-transition-guard` 1.2.0 or later, with the two library bundles it imports, `joget-status-manager` and `joget-event-chain` (2.0.0) | an entity with a lifecycle: its engine-events form, and the trigger form of each move a person makes | `<plugin.package>.transitionguard.TransitionGuard` |
+| `joget-unique-guard` | a maintained list of values (the administration's forms keep each code unique), and an entity uniqueness constraint enforced by a guard | `<plugin.package>.uniqueguard.UniqueGuard` |
+| `joget-require-guard` | an entity's `validations`, a reference that must name an existing record, and a record carried to the form an act opens | `<plugin.package>.requireguard.RequireGuard` |
+| `joget-form-prefill` 1.0.0 | a form whose `prefill` names `form-prefill` | `<plugin.package>.formprefill.FormPrefillLoadBinder` |
+| `joget-lookup-field` | a look-up that shows a record's name beside the key typed | `<plugin.package>.lookupfield.element.LookupFieldElement` |
+| `joget-smart-search` | an editable reference to a register that is searched rather than chosen from a list | `<plugin.package>.smartsearch.element.SmartSearchElement` |
+
+`<plugin.package>` stands for the Java package of the plugin library the kit's generators were
+built against; the class names they write are in `tools/acts.py` and `tools/project_forms.py`, and a
+team that builds its own plugins changes them there.
 
 The API Builder is the one a server most often lacks: without it every call to the data interface
 answers 500. The check has named it since 24 September 2026 (METHOD-2026-09-24-03); before that it
@@ -378,7 +383,7 @@ same grant-admin → restart → `--seed` → smoke steps (the smoke is an unaut
 to run the **entire** path with one command where only DB access is available:
 
 ```bash
-python3 tools/deploy_dx9.py --instance jdx7 --app facilityPermit \
+python3 tools/deploy_dx9.py --instance <instance> --instances <your-instance-register> --app facilityPermit \
     --jwa build/out/facilityPermit.jwa --db-import --seed build/gen/_seed
 ```
 

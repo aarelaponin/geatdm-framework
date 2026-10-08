@@ -88,7 +88,8 @@ framework document (`onboard-source`, `add-dq-checks`, and the principles regist
     python3 skills/dataplatform-architecture-principles/scripts/principles.py --list
 
 The first runs the programs of ten skills end to end on the Progressa inputs and ends with
-`GATE PASS — 0 blocker(s), 0 warning(s)`; the second lists the fourteen principles.
+`GATE PASS — 0 blocker(s), 0 warning(s)`; it writes into `kit/golden-path/out/` and leaves the
+committed example beside it as it is. The second lists the fourteen principles.
 
 ## Alone, or beside ea-plays and sdd-kit
 
@@ -104,7 +105,8 @@ On 8 October 2026, from the author's data-platform skills, for KP3's and KP2's l
 
 - **The skills** are the thirteen skills of the source pack, with every path made relative to the
   plugin. Their method and their gates are unchanged, and so is their programs' logic, except that the
-  legacy-code extractor's heuristics no longer carry the column names of the source's client schema. The source was written on
+  legacy-code extractor's heuristics no longer carry the column names of the source's client schema,
+  and also read the naming convention of the kit's own fixture. The source was written on
   the author's client work: every name, system, person, figure and path of that work was taken out,
   and every example that used its case now uses Progressa's — the school, learner and teacher registers
   of PEMIS, Progressa's education management information system.

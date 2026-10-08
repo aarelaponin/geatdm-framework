@@ -35,7 +35,7 @@ Two sources, very different yield depending on how the module was built:
   unambiguous — but only present when the DataWindow spells out the table. In the School Census fixture
   only 2 tables do this (`district`, `grade`); most use the prefix convention instead.
 - **Column-prefix families.** Many legacy schemas name every column with a short table-derived
-  prefix: `school` → `sch_serial`, `sch_name`, `sch_code`; `district` → `dis_serial`,
+  prefix: `school` → `sch_id`, `sch_name`, `sch_code`; `district` → `dis_id`,
   `dis_name`. The script harvests all `prefix_suffix` tokens, drops PowerBuilder UI/variable
   prefixes (`ll_`, `ls_`, `dw_`, `lbl_`, …), and groups the rest into families. This is the main
   column signal for prefix-convention modules and how most columns of a real module are found.
@@ -73,7 +73,7 @@ skill makes from the column names and domain — see the table in `SKILL.md` §3
   Workflow step 2.
 - **Short noise prefixes** (single-column families) are suppressed by requiring a family to have
   ≥2 distinct columns before it's surfaced as unmapped. Two-column noise, such as the application's
-  globals `gs_userid` and `gs_role`, still surfaces — ignore it.
+  globals `gs_login` and `gs_role`, still surfaces — ignore it.
 
 ## If extraction looks wrong on a new module
 

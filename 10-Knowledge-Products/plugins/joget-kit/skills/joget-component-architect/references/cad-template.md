@@ -9,7 +9,7 @@ Amendment log: | Date | Slice | Sections touched |
 ### 2.1 Reference-model alignment
 | Component entity | Reference-model source (file :: entity) | Divergence + reason |
 |---|---|---|
-Subject–service–period spine exceptions (entity + justification):
+Transactional entities without the subject, service and period keys (entity + justification):
 Country handling decision (universal NULL / ISO-3 / FK omitted):
 
 ### 2.2 Entity inventory

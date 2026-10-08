@@ -10,9 +10,9 @@ The same JSON `onboard-source`'s `profile_source.py --emit-schema` writes:
   "tables": {
     "school": {
       "row_count": 1234567,
-      "primary_key": ["sch_serial"],
+      "primary_key": ["sch_id"],
       "columns": [
-        {"name": "sch_serial",  "type": "serial",       "nullable": false},
+        {"name": "sch_id",  "type": "serial",       "nullable": false},
         {"name": "sch_grant",   "type": "decimal(14,2)", "nullable": true}
       ]
     }

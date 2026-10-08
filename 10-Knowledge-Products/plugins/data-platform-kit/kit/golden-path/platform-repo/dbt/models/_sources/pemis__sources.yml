@@ -7,12 +7,12 @@ sources:
   - name: pemis__censusreturn
     description: Bronze copy of pemis.censusreturn (raw, as-ingested).
     columns:
-    - name: crt_serial
+    - name: crt_id
       description: TODO — verify via verify-catalogue-semantics.
       meta:
         source_type: serial
         ch_type: Int64
-    - name: crt_schref
+    - name: crt_sch_id
       description: TODO — verify via verify-catalogue-semantics.
       meta:
         source_type: integer
@@ -47,7 +47,7 @@ sources:
   - name: pemis__district
     description: Bronze copy of pemis.district (raw, as-ingested).
     columns:
-    - name: dis_serial
+    - name: dis_id
       description: TODO — verify via verify-catalogue-semantics.
       meta:
         source_type: serial
@@ -67,7 +67,7 @@ sources:
   - name: pemis__school
     description: Bronze copy of pemis.school (raw, as-ingested).
     columns:
-    - name: sch_serial
+    - name: sch_id
       description: TODO — verify via verify-catalogue-semantics.
       meta:
         source_type: serial
@@ -82,7 +82,7 @@ sources:
       meta:
         source_type: varchar(120)
         ch_type: String
-    - name: sch_disref
+    - name: sch_dis_id
       description: TODO — verify via verify-catalogue-semantics.
       meta:
         source_type: integer

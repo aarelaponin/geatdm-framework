@@ -4,6 +4,6 @@ table: district
 key: district_id
 description: One row per education district from the PEMIS district table.
 columns:
-  - {src: dis_serial, as: district_id, cast: Int64}
+  - {src: dis_id, as: district_id, cast: Int64}
   - {src: dis_name, as: district}
   - {src: dis_province, as: province}

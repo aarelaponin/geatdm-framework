@@ -56,11 +56,12 @@ Database server ports are separate from instance ports:
 
 ## Example Allocation
 
-Given existing instances joget1 (8080), joget2 (8082), joget3 (8083),
-joget4 (8085):
+Given existing instances joget1 (8080, Joget's own default), joget2 (8082),
+joget3 (8083), joget4 (<port>):
 
 Next instance joget5 could get:
-- HTTP: 8086 (8081 and 8084 are free but 8086 follows the pattern better)
+- HTTP: the next free port after joget4's (8081 and 8084 are free, but the next one after
+  the highest in use follows the pattern better)
 - Shutdown: 8015
 - AJP: 8025
 - Glowroot: 4015

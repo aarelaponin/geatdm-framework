@@ -1,24 +1,24 @@
 { "source": "pemis",
   "tables": {
-    "school": { "row_count": 4812, "primary_key": ["sch_serial"],
+    "school": { "row_count": 4812, "primary_key": ["sch_id"],
       "columns": [
-        {"name":"sch_serial","type":"serial","nullable":false},
+        {"name":"sch_id","type":"serial","nullable":false},
         {"name":"sch_code","type":"varchar(10)","nullable":false},
         {"name":"sch_name","type":"varchar(120)","nullable":true},
-        {"name":"sch_disref","type":"integer","nullable":true},
+        {"name":"sch_dis_id","type":"integer","nullable":true},
         {"name":"sch_capacity","type":"integer","nullable":true},
         {"name":"sch_grant","type":"decimal(14,2)","nullable":true}
       ]},
-    "district": { "row_count": 38, "primary_key": ["dis_serial"],
+    "district": { "row_count": 38, "primary_key": ["dis_id"],
       "columns": [
-        {"name":"dis_serial","type":"serial","nullable":false},
+        {"name":"dis_id","type":"serial","nullable":false},
         {"name":"dis_name","type":"varchar(60)","nullable":false},
         {"name":"dis_province","type":"varchar(40)","nullable":true}
       ]},
-    "censusreturn": { "row_count": 52917, "primary_key": ["crt_serial"],
+    "censusreturn": { "row_count": 52917, "primary_key": ["crt_id"],
       "columns": [
-        {"name":"crt_serial","type":"serial","nullable":false},
-        {"name":"crt_schref","type":"integer","nullable":false},
+        {"name":"crt_id","type":"serial","nullable":false},
+        {"name":"crt_sch_id","type":"integer","nullable":false},
         {"name":"crt_year","type":"smallint","nullable":false},
         {"name":"crt_boys","type":"integer","nullable":true},
         {"name":"crt_girls","type":"integer","nullable":true},

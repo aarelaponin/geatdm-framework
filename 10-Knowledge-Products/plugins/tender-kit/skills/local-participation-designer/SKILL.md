@@ -38,7 +38,7 @@ Governments rightly want local and smaller firms to compete and to build nationa
 
 ## Worked example — Progressa
 
-*Simulated case: Progressa is the fictional country of the courses; the case is in `../../references/progressa-tender-case.md`.* For Linkup's first lot, the Bid Data Sheet of `../../references/annex-pack-progressa.md` (refs 14 to 18) carries the four moves: joint ventures and subcontracting allowed, with combined capacity counted; the one exception, a delivered national X-Road or equivalent platform, held by a jointly and severally liable member; skills transfer to PDGA's team and to local firms scored at 10 points of 100 on what it delivers, not on any firm's nationality; and turnover and liquidity set against the lot's contract value, not inflated. A Progressa firm may lead the joint venture, provided the platform capability sits with a liable member.
+*Simulated case: Progressa is the fictional country of the courses; the case is in `../../references/progressa-tender-case.md`.* For Linkup's first lot, the Bid Data Sheet of `../../references/annex-pack-progressa.md` (refs 14 to 18) carries the four moves: joint ventures and subcontracting allowed, with combined capacity counted; the one exception, a delivered national X-Road or equivalent platform, held by a jointly and severally liable member; skills transfer to PDGA's team and to local firms scored under ref 11 on what it delivers, not on any firm's nationality; and turnover and liquidity set against the lot's contract value, not inflated. A Progressa firm may lead the joint venture, provided the platform capability sits with a liable member.
 
 ## Doctrine to preserve
 

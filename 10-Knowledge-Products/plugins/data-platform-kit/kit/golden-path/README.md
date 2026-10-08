@@ -15,12 +15,16 @@ school, table, column and figure here are invented.
 ```bash
 cd kit/golden-path
 bash run_golden_path.sh          # macOS / Linux; pure Python (PyYAML for one step), no database needed
+bash run_golden_path.sh /tmp/gp  # or name the output folder
 ```
 Step 4 reads the School Census fixture in `fixtures/school-census/` — `census.pbl`, a synthetic
 stand-in for a PowerBuilder library (it holds only the text the extractor reads: DataWindow definitions
 and embedded SQL, encoded UTF-16LE as a real library stores them), and `pemis_inventory.yaml`, the
-schema inventory. Set `PB_MODULE` / `PB_INVENTORY` to point at a real module instead. The result is
-`platform-repo/`, and the readiness manifest `readiness.yml` beside this file.
+schema inventory. Set `PB_MODULE` / `PB_INVENTORY` to point at a real module instead. The run writes
+its own `platform-repo/` and `readiness.yml` into `out/` beside this file, or into the folder you
+name; it never writes over the committed example, `platform-repo/` and `readiness.yml` here, which
+are the output of the same run. To refresh the example after changing an input, run into an empty
+folder and copy its two outputs over the committed ones.
 
 ## What each step produced (the loop)
 

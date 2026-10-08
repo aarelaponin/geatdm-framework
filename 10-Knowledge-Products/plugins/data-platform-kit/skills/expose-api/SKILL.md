@@ -38,24 +38,40 @@ api:
   gold_schema: gold
   server: https://api.example.org
 endpoints:
-  - path: /schools
+  - path: /district/schools
     mart: mart_school__enrolment_summary
     method: get
-    description: Enrolment and staffing for one school, or for schools above a size.
+    schema_name: DistrictSchool
+    description: The schools of one district, with learners and teachers in post.
     fields:
       - school_code
       - school_name
+      - district
       - {name: learners_enrolled, type: integer}
-      - ptr_band
+      - {name: teachers_in_post, type: integer}
     filters:
-      - {name: school_code, type: string, column: school_code, op: "="}
-      - {name: min_learners, type: integer, column: learners_enrolled, op: ">="}
+      - {name: district, type: string, column: district, op: "=", required: true}
+  - path: /schools/capacity
+    mart: mart_school__enrolment_summary
+    method: get
+    schema_name: SchoolCapacity
+    description: Schools up to a given capacity, with learners enrolled and the grant they receive.
+    fields:
+      - school_code
+      - {name: capacity, type: integer}
+      - {name: learners_enrolled, type: integer}
+      - {name: capitation_grant, type: number}
+    filters:
+      - {name: district, type: string, column: district, op: "="}
+      - {name: max_capacity, type: integer, column: capacity, op: "<="}
 rbac: [emis_reader, district_officer]
 ```
 `fields` accept a bare name (defaults to string) or `{name, type}` (`string|number|integer|boolean|
 date|datetime`). Each `filter` becomes an optional query parameter and an optional `WHERE` clause
-(`{{param}} IS NULL OR column op {{param}}`), so absent params widen rather than break. A `limit`
-parameter (default 100, max 1000) is always added.
+(`{{param}} IS NULL OR column op {{param}}`), so absent params widen rather than break;
+`required: true` makes the contract demand it. A `limit` parameter (default 100, max 1000) is
+always added. `schema_name` names an endpoint's row schema; give one to each endpoint when two
+endpoints read the same mart, or the second schema replaces the first.
 
 ### 2 — Generate
 

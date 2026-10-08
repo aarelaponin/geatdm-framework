@@ -33,11 +33,11 @@ verbatim where possible), and its position in the module dependency graph.
 For every noun the FR slice manipulates:
 
 1. **Find its source in the reference model.** Record the mapping and
-   every divergence with a reason. New entities with no L2 source are flagged —
-   they are either (a) Joget-operational (worklist, log) and exempt, or
-   (b) a candidate L2 extension to feed back into the reference model.
+   every divergence with a reason. New entities with no source in the reference
+   model are flagged — they are either (a) Joget-operational (worklist, log) and
+   exempt, or (b) a candidate extension to feed back into the reference model.
 2. **Apply the reference model's discipline:**
-   - **Subject–service–period spine:** every transactional entity carries FKs
+   - **Subject, service and period on every transaction:** every transactional entity carries FKs
      to its subject, the service it belongs to and the period it covers, or
      the CAD documents why not. (In Progressa's learner registration: the
      learner's register number, the school and the school year.)

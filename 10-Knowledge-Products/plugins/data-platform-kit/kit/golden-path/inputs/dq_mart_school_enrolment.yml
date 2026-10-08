@@ -1,13 +1,16 @@
 model: mart_school__enrolment_summary
-tier: warm
-description: DQ checks for the school enrolment summary mart.
-grain: [school_code]
-mandatory: [school_code, learners_enrolled]
-ranges:
-  learners_enrolled: {min: 0}
-relationships:
+tier: cold                     # census data changes once a year (hot|warm|cold|archive)
+description: DQ checks for the school enrolment summary mart, refreshed after each census.
+grain: [school_code]           # uniqueness + not_null
+mandatory: [school_code, district, learners_enrolled, teachers_in_post]   # completeness (not_null)
+ranges:                        # validity (range; needs the dbt_expectations package)
+  capacity: {min: 1}
+  teachers_in_post: {min: 0, max: 500}
+relationships:                 # consistency (referential), one line per parent
   - {column: school_code, to: "ref('int_school__master')", field: school_code}
-freshness: {column: _extracted_at}
-row_budget: {min_rows: 1}
-accuracy:
+  - {column: district, to: "ref('stg_pemis__district')", field: district}
+freshness: {column: _extracted_at}   # timeliness column (default _extracted_at)
+row_budget: {min_rows: 1000}   # completeness: fewer schools than this means a partial load
+accuracy:                      # accuracy checks — each generates a stub to implement
+  - {name: grant_vs_rate, description: "Capitation grant equals learners enrolled times the year's per-learner rate, within tolerance (a rule across two fields)"}
   - {name: census_vs_register, description: "Learners on the census return vs active learners in the learner register, within tolerance"}

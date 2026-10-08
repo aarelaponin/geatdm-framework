@@ -116,6 +116,11 @@ skill folder uploaded alone still works, but loses the Progressa examples and te
 The answer should come from `procurement-vehicle-selector` and recommend a supply contract with
 rated criteria, recording the consulting option as rejected.
 
+Then ask `procurement-qa` to check the four templates in `references/`. It should return a clean
+result: the documents agree, and the bracketed values are listed as the buyer's open decisions,
+which they are by design. The faults in the skill's worked example are invented, to show what the
+checks catch; the shipped templates do not have them.
+
 ## Alone, or beside ea-plays and sdd-kit
 
 tender-kit works alone. It also works beside `ea-plays`, the learner kit of the series, and beside
@@ -133,8 +138,10 @@ On 8 October 2026, from the author's own buyer-side skills for interoperability 
   client work was replaced by Progressa's case or cut.
 - **The bundled files were not copied.** Three source skills carried example programs and a
   requirements file built for an earlier client's tender. In their place this copy carries the
-  four Progressa templates in `references/`, of the same shape and with nothing of that case in
-  them, and the three skills now return text instead of Word and Excel files.
+  four Progressa templates in `references/`, with no name, system or figure of that case, and the
+  three skills now return text instead of Word and Excel files. The policy values of the annex pack
+  are the course's own where a course page is cited, and placeholders in square brackets otherwise,
+  for the buying unit to set from its funder's standard procurement document.
 - **The covering memorandum** is written from the buying unit's point of view.
 
 Status: solid first drafts, not yet tested against real phrasings. Under which licence, and in whose
