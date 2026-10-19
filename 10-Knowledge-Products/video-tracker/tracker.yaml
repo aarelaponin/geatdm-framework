@@ -344,25 +344,25 @@ kps:
         path: videos/module_6
         topics:
           - {code: "6.1", title: "From findings to priorities: the gap register", mins: ~5,
-             en: {note: "candidate v0.9 (5:39) — cued + assembled 4 Oct; numbers match the deck; UNDP playbook 'draws from the reference architecture' (wrong); listen for Progressa"}}
+             en: {published: https://youtu.be/6R7DmO78cHY, note: "candidate v0.9 (5:39) — cued + assembled 4 Oct; numbers match the deck; UNDP playbook 'draws from the reference architecture' (wrong); listen for Progressa"}}
           - {code: "6.2", title: "What to fund first: cost against reuse", mins: ~5,
-             en: {note: "candidate v0.9 (5:24) — cued + assembled 4 Oct; 'the research' named; illustrative figures not called illustrative; listen for Progressa"}}
+             en: {published: https://youtu.be/A2iZ7izh5bM, note: "candidate v0.9 (5:24) — cued + assembled 4 Oct; 'the research' named; illustrative figures not called illustrative; listen for Progressa"}}
           - {code: "6.3", title: "The roadmap over time: horizons, waves and tracks", mins: ~5,
-             en: {note: "candidate v0.8 (5:47, settled) — cued + assembled 4 Oct; waves 1 and 2 never described; no recap; listen for Progressa"}}
+             en: {published: https://youtu.be/mrPyotLER08, note: "candidate v0.8 (5:47, settled) — cued + assembled 4 Oct; waves 1 and 2 never described; no recap; listen for Progressa"}}
           - {code: "6.4", title: "The investment case your finance ministry can read", mins: ~5,
-             en: {note: "candidate v0.16 (4:37, brief v0.5) — cued + assembled 4 Oct; no percentage on Progressa's range (the range itself is never spoken); opens mid-analogy; recap slide 4 s; listen for Progressa"}}
+             en: {published: https://youtu.be/6VfrJPWnKYE, note: "candidate v0.16 (4:37, brief v0.5) — cued + assembled 4 Oct; no percentage on Progressa's range (the range itself is never spoken); opens mid-analogy; recap slide 4 s; listen for Progressa"}}
           - {code: "6.5", title: "Sourcing each block without lock-in", mins: ~5,
-             en: {note: "candidate v0.8 (5:19) — cued + assembled 4 Oct; contract checks credited to the UN Safeguards Framework; listen for Progressa"}}
+             en: {published: https://youtu.be/xzuK7QWa5DU, note: "candidate v0.8 (5:19) — cued + assembled 4 Oct; contract checks credited to the UN Safeguards Framework; listen for Progressa"}}
           - {code: "6.6", title: "Governance that keeps shared blocks shared", mins: ~5,
-             en: {note: "candidate v0.9 (5:48, settled) — cued + assembled 4 Oct; 'the research' named; invented Pix/consent details"}}
+             en: {published: https://youtu.be/-35pUXlxJfQ, note: "candidate v0.9 (5:48, settled) — cued + assembled 4 Oct; 'the research' named; invented Pix/consent details"}}
           - {code: "6.7", title: "Validate, revise, adopt", mins: ~5,
-             en: {note: "candidate v0.6 (5:28) — cued + assembled 4 Oct; month-6 timeline blurred; score change credited to 'the reference architecture'; listen for Progressa"}}
+             en: {published: https://youtu.be/AT0hIIciYLc, note: "candidate v0.6 (5:28) — cued + assembled 4 Oct; month-6 timeline blurred; score change credited to 'the reference architecture'; listen for Progressa"}}
           - {code: "6.8", title: "Keep the foundation healthy and safe", mins: ~5,
-             en: {note: "candidate v0.2 (4:45) — cued + assembled 4 Oct; podcast framing; bridge/bouncer metaphors"}}
+             en: {published: https://youtu.be/oJct8zenrsY, note: "candidate v0.2 (4:45) — cued + assembled 4 Oct; podcast framing; bridge/bouncer metaphors"}}
           - {code: "6.9", title: "The AI plays, step by step", mins: ~5,
-             en: {note: "walkthrough stand-in (slide 5) until the scorer run is recorded — needs only the toolkit, no build; candidate v0.11 (4:40) — cued + assembled 4 Oct; 'one Basic, five Opportunistic' never said; loose attribution"}}
+             en: {published: https://youtu.be/1FXdWZVUwkI, note: "walkthrough stand-in (slide 5) until the scorer run is recorded — needs only the toolkit, no build; candidate v0.11 (4:40) — cued + assembled 4 Oct; 'one Basic, five Opportunistic' never said; loose attribution"}}
           - {code: "6.10", title: "Carry the method to another sector", mins: ~5,
-             en: {note: "candidate v0.12 (5:11, borderline) — cued + assembled 4 Oct; slide 5 table only partly covered; 'UN Development Program framework' for the compendium"}}
+             en: {published: https://youtu.be/C7x6V5Ht0AA, note: "candidate v0.12 (5:11, borderline) — cued + assembled 4 Oct; slide 5 table only partly covered; 'UN Development Program framework' for the compendium"}}
 
   - id: KP4
     number: 4
