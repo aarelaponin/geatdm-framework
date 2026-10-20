@@ -5,9 +5,6 @@ icon: flag-checkered
 
 # Module 5 — Evidence, rollout and the case
 
-{% hint style="info" %}
-**Worked examples for this module are pending** — every prompt on these pages runs today.
-{% endhint %}
 
 **Persona:** Strategist (CDO, Director-General, sector minister or ministerial-equivalent sponsor).
 

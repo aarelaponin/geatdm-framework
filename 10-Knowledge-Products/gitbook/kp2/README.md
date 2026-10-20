@@ -25,7 +25,7 @@ Introduction to the course (~9 min)
 | [2](module-2/README.md) | Legal framework — the Decree Drafting Kit | Strategist | 6 | 6 plays | Videos live |
 | [3](module-3/README.md) | Governance model — three tiers with RACI | Strategist | 6 | 6 plays | Videos live |
 | [4](module-4/README.md) | Architecture and technical standards | Architect | 8 | 8 plays | Videos live |
-| [5](module-5/README.md) | Implementation and onboarding | Architect / Strategist | 10 | 10 plays | Worked examples live |
+| [5](module-5/README.md) | Implementation and onboarding | Architect / Strategist | 10 | 10 plays | Videos live |
 
 *Prompts live — concept and play on every page, worked example pending. Worked examples live — Progressa run and annotated. Videos live — embeds on every page.*
 
@@ -131,14 +131,14 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 | --- | --- | --- | --- |
 | [5.1](module-5/5-1.md) | Plan the build in four phases | ~5 min | [watch](https://youtu.be/1e0Q2k71goo) |
 | [5.2](module-5/5-2.md) | State what a member must have — the Member Requirements | ~4 min | [watch](https://youtu.be/bQqV6sEGIEU) |
-| [5.3](module-5/5-3.md) | Make 'connected' mean 'dependable' — the SLA | ~4 min | *in production* |
-| [5.4](module-5/5-4.md) | Admit a member to the bus | ~5 min | *in production* |
-| [5.5](module-5/5-5.md) | Stand up the federation | ~5 min | *in production* |
-| [5.6](module-5/5-6.md) | Run the once-only exchange, live | ~3 min | *in production* |
-| [5.7](module-5/5-7.md) | From demonstration to production | ~5 min | *in production* |
-| [5.8](module-5/5-8.md) | Watch the bus — monitoring and anomaly detection | ~4 min | *in production* |
-| [5.9](module-5/5-9.md) | Keep the documents honest — the consistency cross-check | ~5 min | *in production* |
-| [5.10](module-5/5-10.md) | Carry the framework to the next sector | ~4 min | *in production* |
+| [5.3](module-5/5-3.md) | Make 'connected' mean 'dependable' — the SLA | ~4 min | [watch](https://youtu.be/Apqzgaj2-5o) |
+| [5.4](module-5/5-4.md) | Admit a member to the bus | ~5 min | [watch](https://youtu.be/FiWcZi8l0vc) |
+| [5.5](module-5/5-5.md) | Stand up the federation | ~5 min | [watch](https://youtu.be/VvemGlPBa6E) |
+| [5.6](module-5/5-6.md) | Run the once-only exchange, live | ~3 min | [watch](https://youtu.be/_6F_eXrJNSY) |
+| [5.7](module-5/5-7.md) | From demonstration to production | ~5 min | [watch](https://youtu.be/EOfPIVAUYdU) |
+| [5.8](module-5/5-8.md) | Watch the bus — monitoring and anomaly detection | ~4 min | [watch](https://youtu.be/DKQHuEa8cxs) |
+| [5.9](module-5/5-9.md) | Keep the documents honest — the consistency cross-check | ~5 min | [watch](https://youtu.be/rn6kfOj6rVo) |
+| [5.10](module-5/5-10.md) | Carry the framework to the next sector | ~4 min | [watch](https://youtu.be/b2lSmCLgYHo) |
 
 </details>
 

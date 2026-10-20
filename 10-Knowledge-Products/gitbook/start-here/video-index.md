@@ -78,12 +78,12 @@ Playlist: *Module 4 — Progressa demonstration, applying the method end-to-end*
 
 | # | Title | Runtime | Page | Status |
 | --- | --- | --- | --- | --- |
-| 5.1 | Is national Enterprise Architecture proven? What four real government programmes show | ~4 min | [5.1 Is this proven, or just theory? — evidence from real programmes](../kp1/module-5/5-1.md) | *in production* |
-| 5.2 | Why digital-government architecture programmes fail — and it's never the technology | ~3 min | [5.2 What the evidence says works — and what quietly kills these programmes](../kp1/module-5/5-2.md) | *in production* |
-| 5.3 | Scaling Enterprise Architecture across government sectors: the wave rollout | ~5 min | [5.3 Roll it out across sectors — and why the second is cheaper](../kp1/module-5/5-3.md) | *in production* |
-| 5.4 | How to get ministerial sign-off for a national EA: the one-page business case | ~4 min | [5.4 Win the commitment — the business case that gets your minister to yes](../kp1/module-5/5-4.md) | *in production* |
-| 5.5 | Building EA capability on a budget: use open knowledge products, not consultants | ~4 min | [5.5 Build your team's capability with open knowledge products](../kp1/module-5/5-5.md) | *in production* |
-| 5.6 | The case for a national Enterprise Architecture: proven, portable, and necessary now | ~3 min | [5.6 The closing case — proven, portable, and necessary now](../kp1/module-5/5-6.md) | *in production* |
+| 5.1 | Is national Enterprise Architecture proven? What four real government programmes show | ~4 min | [5.1 Is this proven, or just theory? — evidence from real programmes](../kp1/module-5/5-1.md) | [watch](https://youtu.be/_XLpj-5n4Tc) |
+| 5.2 | Why digital-government architecture programmes fail — and it's never the technology | ~3 min | [5.2 What the evidence says works — and what quietly kills these programmes](../kp1/module-5/5-2.md) | [watch](https://youtu.be/FhdHOFi67u8) |
+| 5.3 | Scaling Enterprise Architecture across government sectors: the wave rollout | ~5 min | [5.3 Roll it out across sectors — and why the second is cheaper](../kp1/module-5/5-3.md) | [watch](https://youtu.be/UbvX5DU5yNk) |
+| 5.4 | How to get ministerial sign-off for a national EA: the one-page business case | ~4 min | [5.4 Win the commitment — the business case that gets your minister to yes](../kp1/module-5/5-4.md) | [watch](https://youtu.be/nTntAR4IV2c) |
+| 5.5 | Building EA capability on a budget: use open knowledge products, not consultants | ~4 min | [5.5 Build your team's capability with open knowledge products](../kp1/module-5/5-5.md) | [watch](https://youtu.be/N-5FQyyEEnI) |
+| 5.6 | The case for a national Enterprise Architecture: proven, portable, and necessary now | ~3 min | [5.6 The closing case — proven, portable, and necessary now](../kp1/module-5/5-6.md) | [watch](https://youtu.be/-S0v5iWQiV4) |
 
 Playlist: *Module 5 — Evidence, applicability and dissemination* (pending).
 

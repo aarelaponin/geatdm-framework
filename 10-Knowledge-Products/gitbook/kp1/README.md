@@ -25,7 +25,7 @@ Introduction to the course (~8 min)
 | [2](module-2/README.md) | Principles, the metamodel and the BDAT layers | Architect | 7 | 7 plays | Videos live |
 | [3](module-3/README.md) | EA repository, tooling and governance | Architect | 7 | 7 plays | Videos live |
 | [4](module-4/README.md) | Progressa end-to-end — the method on one sector | Architect | 8 | 8 plays | Videos live |
-| [5](module-5/README.md) | Evidence, rollout and the case | Strategist | 6 | 7 plays | Prompts live |
+| [5](module-5/README.md) | Evidence, rollout and the case | Strategist | 6 | 7 plays | Videos live |
 
 *Prompts live — concept and play on every page, worked example pending. Worked examples live — Progressa run and annotated. Videos live — embeds on every page.*
 
@@ -117,12 +117,12 @@ This is not a course for developers. It covers what to commission, how to judge 
 
 | # | Video | Runtime | Status |
 | --- | --- | --- | --- |
-| [5.1](module-5/5-1.md) | Is this proven, or just theory? — evidence from real programmes | ~4 min | *in production* |
-| [5.2](module-5/5-2.md) | What the evidence says works — and what quietly kills these programmes | ~3 min | *in production* |
-| [5.3](module-5/5-3.md) | Roll it out across sectors — and why the second is cheaper | ~5 min | *in production* |
-| [5.4](module-5/5-4.md) | Win the commitment — the business case that gets your minister to yes | ~4 min | *in production* |
-| [5.5](module-5/5-5.md) | Build your team's capability with open knowledge products | ~4 min | *in production* |
-| [5.6](module-5/5-6.md) | The closing case — proven, portable, and necessary now | ~3 min | *in production* |
+| [5.1](module-5/5-1.md) | Is this proven, or just theory? — evidence from real programmes | ~4 min | [watch](https://youtu.be/_XLpj-5n4Tc) |
+| [5.2](module-5/5-2.md) | What the evidence says works — and what quietly kills these programmes | ~3 min | [watch](https://youtu.be/FhdHOFi67u8) |
+| [5.3](module-5/5-3.md) | Roll it out across sectors — and why the second is cheaper | ~5 min | [watch](https://youtu.be/UbvX5DU5yNk) |
+| [5.4](module-5/5-4.md) | Win the commitment — the business case that gets your minister to yes | ~4 min | [watch](https://youtu.be/nTntAR4IV2c) |
+| [5.5](module-5/5-5.md) | Build your team's capability with open knowledge products | ~4 min | [watch](https://youtu.be/N-5FQyyEEnI) |
+| [5.6](module-5/5-6.md) | The closing case — proven, portable, and necessary now | ~3 min | [watch](https://youtu.be/-S0v5iWQiV4) |
 
 </details>
 
