@@ -1,17 +1,19 @@
 ---
-description: "Every video, its status and its link — the tracker while the series is in production."
+description: "Every video and its link, module by module."
 icon: video
 ---
 
 # Video index
 
-Each subtopic page carries its video at the top. While a video is still in production the page shows a placeholder box and the play below it works anyway — the concept section carries what the video will say. This page is the index and the tracker.
+Each subtopic page carries its video at the top, and the play below it works on its own — the concept section carries what the video says. This page is the index.
 
 {% hint style="info" %}
 **The handoff convention.** Every video's recap slide carries an on-screen practice box, un-narrated: *Do this on your own sector. Run the prompt in the description on your own ministry — it gives you [the artefact]. Before the next video.* The YouTube description links the **play page**, never the raw prompt, so a prompt can be improved without touching the video. A pinned comment repeats the link as a backup.
 {% endhint %}
 
 ## Developing a Gov Enterprise Architecture (GEA)
+
+The whole series is one YouTube playlist: [Developing a Government Enterprise Architecture — DIY Video Series](https://www.youtube.com/playlist?list=PLT70ks7jKcUw).
 
 | | Title | Runtime | Page | Status |
 | --- | --- | --- | --- | --- |
@@ -29,8 +31,6 @@ Each subtopic page carries its video at the top. While a video is still in produ
 | 1.6 | The 5-phase Enterprise Architecture lifecycle — commission a national EA in six months | ~5 min | [1.6 The lifecycle on one page](../kp1/module-1/1-6.md) | [watch](https://youtu.be/6B_itQVbMgU) |
 | 1.7 | Four asks every digital-government middle manager must make to commission a national EA | ~5 min | [1.7 What you will need from your minister — and how to ask for it](../kp1/module-1/1-7.md) | [watch](https://youtu.be/x9Z_s31UAx0) |
 
-Playlist: *Module 1 — Why a PAERA-anchored EA* (pending).
-
 **Module 2 — Principles, the metamodel and the BDAT layers** · ~32 minutes across seven videos
 
 | # | Title | Runtime | Page | Status |
@@ -43,8 +43,6 @@ Playlist: *Module 1 — Why a PAERA-anchored EA* (pending).
 | 2.6 | How to run an EA current-state assessment — quality tests and the 4 gaps you'll always find | ~5 min | [2.6 Run a Phase 2 Assess — what good looks like, and the gaps you'll find](../kp1/module-2/2-6.md) | [watch](https://youtu.be/9YLWyUql6wg) |
 | 2.7 | Two traps that cost governments millions — and how architects catch them early | ~4 min | [2.7 The two traps to catch at Assess — bespoke and vendor-driven](../kp1/module-2/2-7.md) | [watch](https://youtu.be/w0-t_f_UJA8) |
 
-Playlist: *Module 2 — EA principles, the metamodel and the BDAT layers* (pending).
-
 **Module 3 — EA repository, tooling and governance** · ~29 minutes across seven videos
 
 | # | Title | Runtime | Page | Status |
@@ -56,8 +54,6 @@ Playlist: *Module 2 — EA principles, the metamodel and the BDAT layers* (pendi
 | 3.5 | The architecture review gate — how an EA Board actually enforces re-use across government | ~4 min | [3.5 Review projects against the architecture](../kp1/module-3/3-5.md) | [watch](https://youtu.be/S-kPZmf6ZmQ) |
 | 3.6 | How to measure whether your Enterprise Architecture is actually working (4 metrics, not 40) | ~4 min | [3.6 Show the EA is working — the few metrics that matter](../kp1/module-3/3-6.md) | [watch](https://youtu.be/UmlE-NFgROo) |
 | 3.7 | Why EA programmes fade in year two — and the four moves that keep them alive | ~5 min | [3.7 Keep the practice alive past year two](../kp1/module-3/3-7.md) | [watch](https://youtu.be/pBQe_4KfaDA) |
-
-Playlist: *Module 3 — EA repository, tooling and governance* (pending).
 
 **Module 4 — Progressa end-to-end — the method on one sector** · ~28 minutes across eight videos
 
@@ -72,8 +68,6 @@ Playlist: *Module 3 — EA repository, tooling and governance* (pending).
 | 4.7 | EA lifecycle Phase 5: how governance actually enforces re-use across government | ~3 min | [4.7 Phase 5, Execute & Govern — stand up the living EA](../kp1/module-4/4-7.md) | [watch](https://youtu.be/qmdt-kregBU) |
 | 4.8 | The EA method in one recipe: five phases you can run on any government sector | ~4 min | [4.8 Run this on your own sector — the transferable recipe](../kp1/module-4/4-8.md) | [watch](https://youtu.be/wuM_eMIeP_A) |
 
-Playlist: *Module 4 — Progressa demonstration, applying the method end-to-end* (pending).
-
 **Module 5 — Evidence, rollout and the case** · ~23 minutes across six videos
 
 | # | Title | Runtime | Page | Status |
@@ -85,9 +79,7 @@ Playlist: *Module 4 — Progressa demonstration, applying the method end-to-end*
 | 5.5 | Building EA capability on a budget: use open knowledge products, not consultants | ~4 min | [5.5 Build your team's capability with open knowledge products](../kp1/module-5/5-5.md) | [watch](https://youtu.be/N-5FQyyEEnI) |
 | 5.6 | The case for a national Enterprise Architecture: proven, portable, and necessary now | ~3 min | [5.6 The closing case — proven, portable, and necessary now](../kp1/module-5/5-6.md) | [watch](https://youtu.be/-S0v5iWQiV4) |
 
-Playlist: *Module 5 — Evidence, applicability and dissemination* (pending).
-
-*Building a Government Interoperability Framework (GIF)* is in production; its rows are added as each module's pages are published.
+*Building a Government Interoperability Framework (GIF)* lists its videos on its [course home page](../kp2/README.md), and its series is one playlist: [Building a Government Interoperability Framework — DIY Video Series](https://www.youtube.com/playlist?list=PLFaDK827hOnA).
 
 ## When a video lands
 

@@ -20,7 +20,7 @@ This chapter holds everything that is true across all four Knowledge Products. R
 <tr><td><h3>🔌</h3></td><td><strong>The ea-plays kit</strong></td><td>The optional Claude layer. Two lines to install; the plays run bare without it.</td><td><a href="ea-plays-kit.md">ea-plays-kit</a></td></tr>
 <tr><td><h3>🔍</h3></td><td><strong>Play 0 — Build your country context</strong></td><td>Seven research prompts that produce A0, the pack every other play asks you to paste.</td><td><a href="play-0.md">play-0</a></td></tr>
 <tr><td><h3>🚩</h3></td><td><strong>Progressa</strong></td><td>The fictional demonstration country used in every worked example, in every Knowledge Product.</td><td><a href="progressa.md">progressa</a></td></tr>
-<tr><td><h3>🎬</h3></td><td><strong>Video index</strong></td><td>Every video, its status and its link. The tracker while the series is in production.</td><td><a href="video-index.md">video-index</a></td></tr>
+<tr><td><h3>🎬</h3></td><td><strong>Video index</strong></td><td>Every video and its link, module by module.</td><td><a href="video-index.md">video-index</a></td></tr>
 <tr><td><h3>🏛️</h3></td><td><strong>Developing a Gov Enterprise Architecture (GEA)</strong></td><td>Five modules on commissioning a national EA anchored on PAERA. Modules 1–5 videos live.</td><td><a href="../kp1/README.md">kp1</a></td></tr>
 </tbody></table>
 
@@ -29,8 +29,8 @@ This chapter holds everything that is true across all four Knowledge Products. R
 | | Knowledge Product | For | Status |
 | --- | --- | --- | --- |
 | 1 | [Developing a Gov Enterprise Architecture (GEA)](../kp1/README.md) | Strategist and Architect — commissioning and running a national EA | Modules 1–5 videos live |
-| 2 | [Building a Government Interoperability Framework (GIF)](../kp2/README.md) | Strategist and Architect — the legal, organisational and technical configuration of exchange | In production |
-| 3 | National DPI roadmap | Strategist | Planned |
-| 4 | Building-block services | Architect | Planned |
+| 2 | [Building a Government Interoperability Framework (GIF)](../kp2/README.md) | Strategist and Architect — the legal, organisational and technical configuration of exchange | Modules 1–5 videos live |
+| 3 | [Education Digital Public Infrastructure (DPI) Roadmap](../kp3/README.md) | Strategist and Architect — assessing a country's DPI and planning what to build first | Modules 1–6 videos live |
+| 4 | [Designing Digital Government Services using a Building Block Approach](../kp4/README.md) | Architect — specifying a digital service so the supplier builds what was asked | Modules 1–6 videos live |
 
 All four use [**Progressa**](progressa.md) as the single worked example, and all four point back to this chapter for the ground rules.

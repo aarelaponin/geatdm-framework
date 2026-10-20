@@ -142,10 +142,6 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 </details>
 
-{% hint style="info" %}
-**Videos are in production.** Every page carries a placeholder where its embed will go; the plays below them work today. The [video index](../start-here/video-index.md) is the tracker, and it is the page to watch for links.
-{% endhint %}
-
 ## The AI-play catalogue
 
 Across this course you meet thirty-seven AI plays — named tools, each turning a slow specialist task into a fast, reviewed draft. They are worth reading as one catalogue, because they are not one-off tricks. They are a reusable toolkit your framework keeps and applies to every decree, every exchange, every service it builds. Three of them stand out: the decree drafter turns your Strategic Foundation Document into the components of a decree (2.3, 2.4); the semantic mapper turns two agencies' field lists into a shared semantic map (4.4); and the service-contract generator turns a service brief and that semantic map into a callable contract (4.5). Three slow specialist tasks — legal drafting, semantic reconciliation, interface design — each compressed from weeks into a reviewed afternoon.

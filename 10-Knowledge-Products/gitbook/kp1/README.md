@@ -126,10 +126,6 @@ This is not a course for developers. It covers what to commission, how to judge 
 
 </details>
 
-{% hint style="info" %}
-**Videos are in production.** Every page carries a placeholder where its embed will go; the plays below them work today. The [video index](../start-here/video-index.md) is the tracker, and it is the page to watch for links.
-{% endhint %}
-
 ## Something to see
 
 Before you commit an afternoon, open one page and look at what a play actually produces.
@@ -165,7 +161,7 @@ Time: each subtopic is a four-minute video plus a ten-to-fifteen-minute play. A 
 
 ## Where this sits
 
-This course is the first of four Knowledge Products. [Building a Government Interoperability Framework (GIF)](../kp2/README.md) is the second and [Education Digital Public Infrastructure (DPI) Roadmap](../kp3/README.md) the third; a fourth, on building-block services, is planned. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md). The underlying method is GEATDM, the Generic EA Target Architecture Development Method; PAERA v1.0 is at [paera.govstack.global](https://paera.govstack.global).
+This course is the first of four Knowledge Products. [Building a Government Interoperability Framework (GIF)](../kp2/README.md) is the second and [Education Digital Public Infrastructure (DPI) Roadmap](../kp3/README.md) the third, and [Designing Digital Government Services using a Building Block Approach](../kp4/README.md) the fourth. All four use [**Progressa**](../start-here/progressa.md) as the single worked example and share one set of [ground rules](../start-here/working-with-ai.md). The underlying method is GEATDM, the Generic EA Target Architecture Development Method; PAERA v1.0 is at [paera.govstack.global](https://paera.govstack.global).
 
 {% hint style="info" %}
 **Use this knowledge base from your AI assistant.** Every page is also published as plain Markdown, and the knowledge base exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the knowledge base and ask it to *run play 1.1 with the following context* — the knowledge base becomes the tool's reference, not just yours.
