@@ -60,6 +60,8 @@ Both tracks share the [Start here](../start-here/README.md) chapter and the same
 
 ## All videos
 
+The whole series is one YouTube playlist: [Building a Government Interoperability Framework — DIY Video Series](https://www.youtube.com/playlist?list=PLFaDK827hOnA).
+
 <details>
 
 <summary><strong>Module 1 — Why interoperability and the four layers</strong> · ~31 minutes across 7 videos</summary>

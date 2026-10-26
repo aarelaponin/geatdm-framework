@@ -35,7 +35,7 @@ kps:
       en:
         published: https://youtu.be/0bd2MJl2Pic
         filmed: true                    # raw footage is videos/kp1-intro.mov (git-ignored)
-        note: "Replaces the retired Module 5 (AI plays). 6 Oct: filmed on script v0.2, mastered v0.1 (7:46). YouTube metadata v0.1 drafted (KP1_0.0_YouTube_Upload_Metadata_v0.1.md); audio + SRT extracted. Next: upload."
+        note: "Replaces the retired Module 5 (AI plays). 6 Oct: filmed on script v0.2, mastered v0.1 (7:46). YouTube metadata v0.1 drafted (KP1_0.0_YouTube_Upload_Metadata_v0.1.md); audio + SRT extracted. Published on YouTube and embedded on the course home page."
 
     modules:
       - number: 1
@@ -146,7 +146,7 @@ kps:
       en:
         published: https://youtu.be/17aOOlRftLc
         filmed: true                    # raw footage is videos/kp2-intro.mov (git-ignored)
-        note: "6 Oct: filmed on script v0.1, mastered v0.1 (9:18). YouTube metadata v0.1 drafted (KP2_0.0_YouTube_Upload_Metadata_v0.1.md); audio + SRT extracted. Next: upload."
+        note: "6 Oct: filmed on script v0.1, mastered v0.1 (9:18). YouTube metadata v0.1 drafted (KP2_0.0_YouTube_Upload_Metadata_v0.1.md); audio + SRT extracted. Published on YouTube and embedded on the course home page."
     modules:
       - number: 1
         title: Why interoperability, the four layers, and the foundation to start
@@ -235,7 +235,7 @@ kps:
         published: https://youtu.be/ikhW_hlSrNo
         script: true                    # filmed without a written script
         filmed: true                    # raw footage is videos/kp3-intro.mov (git-ignored)
-        note: "6 Oct: filmed without a written script, mastered v0.1 (6:03). YouTube metadata v0.1 drafted (KP3_0.0_YouTube_Upload_Metadata_v0.1.md); audio + SRT extracted. Next: upload."
+        note: "6 Oct: filmed without a written script, mastered v0.1 (6:03). YouTube metadata v0.1 drafted (KP3_0.0_YouTube_Upload_Metadata_v0.1.md); audio + SRT extracted. Published on YouTube and embedded on the course home page."
 
     modules:
       - number: 1
@@ -391,7 +391,7 @@ kps:
         published: https://youtu.be/K7DpqnleREE
         script: true                    # filmed from the cue deck KP4-DSD/KP4_Intro_Cues_v0.3.pptx, no script
         filmed: true                    # raw footage is videos/kp4-intro.mov (git-ignored)
-        note: "6 Oct: filmed from the cue deck KP4_Intro_Cues_v0.3.pptx, mastered v0.1 (7:04). YouTube metadata v0.1 drafted (KP4_0.0_YouTube_Upload_Metadata_v0.1.md); audio + SRT extracted. Next: upload."
+        note: "6 Oct: filmed from the cue deck KP4_Intro_Cues_v0.3.pptx, mastered v0.1 (7:04). YouTube metadata v0.1 drafted (KP4_0.0_YouTube_Upload_Metadata_v0.1.md); audio + SRT extracted. Published on YouTube and embedded on the course home page."
 
     modules:
       - number: 1

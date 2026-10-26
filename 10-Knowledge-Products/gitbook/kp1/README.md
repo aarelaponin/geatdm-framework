@@ -46,6 +46,8 @@ This is not a course for developers. It covers what to commission, how to judge 
 
 ## All videos
 
+The whole series is one YouTube playlist: [Developing a Government Enterprise Architecture — DIY Video Series](https://www.youtube.com/playlist?list=PLT70ks7jKcUw).
+
 <details>
 
 <summary><strong>Module 1 — Why a PAERA-anchored EA</strong> · ~31 minutes across seven videos</summary>

@@ -5,11 +5,17 @@ icon: house
 
 # Education Digital Public Infrastructure (DPI) Roadmap
 
-45 videos in six modules · about 217 minutes of video · an AI usage tip on every page · nine worked examples · an assessment toolkit · self-paced · free and open
+46 videos in six modules · about 223 minutes of video · an AI usage tip on every page · nine worked examples · an assessment toolkit · self-paced · free and open
 
 This guide teaches a government team how to produce a national roadmap for digital public infrastructure, and it shows the first step of such a roadmap working in the education sector. Digital public infrastructure, DPI for short, is the set of shared digital systems that many services of a country stand on: digital identity, digital payments and the exchange of data between public bodies, with others emerging.
 
 The guide has six modules and 45 subtopics. Each subtopic is one short video with a written page and an AI usage tip. Module 1 teaches how to find out where the country stands and how to choose what to build first. Modules 2 to 5 build one education service, the registration of a learner, on four shared building blocks, and prove that the blocks work together. Module 6 teaches how to turn that proof into a national roadmap: priorities, sequence, investment, sourcing, governance, adoption and upkeep. Everything is shown on Progressa, a fictional country, and the method is written so that another sector can use it.
+
+{% embed url="https://youtu.be/ikhW_hlSrNo" %}
+Introduction to the course (~6 min)
+{% endembed %}
+
+**Watch first (~6 min).** Then read on: the outline below gives the modules, and the path for your role.
 
 ![F1. The structure of the guide: its modules and the two ways through them](figures/F1_structure.png)
 
@@ -17,14 +23,14 @@ The guide has six modules and 45 subtopics. Each subtopic is one short video wit
 
 | Module | Topic | Persona | Videos | AI tips | Status |
 | --- | --- | --- | --- | --- | --- |
-| [1](module-1/README.md) | Where your country stands, and what to build first | Strategist | 10 | 10 tips | Prompts live |
-| [2](module-2/README.md) | The Registration block | Architect | 6 | 6 tips | Prompts live |
-| [3](module-3/README.md) | The Registry block | Architect | 7 | 7 tips | Prompts live |
-| [4](module-4/README.md) | Identity and payments | Architect | 6 | 6 tips | Prompts live |
-| [5](module-5/README.md) | Join the blocks and prove the foundation | Architect | 6 | 6 tips | Prompts live |
-| [6](module-6/README.md) | From a proven foundation to a national roadmap | Strategist | 10 | 10 tips | Prompts live |
+| [1](module-1/README.md) | Where your country stands, and what to build first | Strategist | 10 | 10 tips | Videos live |
+| [2](module-2/README.md) | The Registration block | Architect | 6 | 6 tips | Videos live |
+| [3](module-3/README.md) | The Registry block | Architect | 7 | 7 tips | Videos live |
+| [4](module-4/README.md) | Identity and payments | Architect | 6 | 6 tips | Videos live |
+| [5](module-5/README.md) | Join the blocks and prove the foundation | Architect | 6 | 6 tips | Videos live |
+| [6](module-6/README.md) | From a proven foundation to a national roadmap | Strategist | 10 | 10 tips | Videos live |
 
-*Prompts live — every page of the module is written, with its prompt. In production — the module's pages are added as its scripts are written.*
+*Prompts live — every page of the module is written, with its prompt. Videos live — every page also embeds its video.*
 
 {% hint style="success" %}
 **How the course works.** **Watch** the video → **Read** its page, the video written out in full → **Prompt** with its AI usage tip on your own country → **Compare** your draft with the worked example for Progressa. The nine [worked examples](examples/README.md), E1 to E9, follow the nine steps of the method and link to one another: findings, gaps, roadmap components, investment lines and comments, so that any budget line can be followed back to the evidence behind it. Work through them in order and you have the shape of your own country's roadmap, step by step.
@@ -59,24 +65,26 @@ The order of the modules follows the order in which a country that starts from l
 
 ## All videos
 
+The whole series is one YouTube playlist: [DPI Roadmap — DIY Video Series](https://www.youtube.com/playlist?list=PLd5zU_fcWLy0).
+
 Core marks the content without which the method cannot be followed from assessment to roadmap, or the build from its first configuration to its proof. Supplementary marks a video that deepens a core one and can be left out without losing the thread.
 
 <details>
 
 <summary><strong>Module 1 — Where your country stands, and what to build first</strong></summary>
 
-| # | Video | Class | Demonstration | Page |
-| --- | --- | --- | --- | --- |
-| [1.1](module-1/1-1.md) | What makes infrastructure foundational | Core | — | Page live |
-| [1.2](module-1/1-2.md) | The five domains, as a map | Core | — | Page live |
-| [1.3](module-1/1-3.md) | The roadmap method in nine steps: who does what | Core | — | Page live |
-| [1.4](module-1/1-4.md) | Start at the desk: a first assessment from public sources, with AI | Core | Yes | Page live |
-| [1.5](module-1/1-5.md) | Ask the people who run the systems: the five questionnaires | Core | — | Page live |
-| [1.6](module-1/1-6.md) | Verify before you score | Core | — | Page live |
-| [1.7](module-1/1-7.md) | Score each domain: five stages and one table | Core | Yes | Page live |
-| [1.8](module-1/1-8.md) | Foundational blocks and the sector's own | Core | — | Page live |
-| [1.9](module-1/1-9.md) | What comes first: the order of building | Core | — | Page live |
-| [1.10](module-1/1-10.md) | The first proof for education: one service on four blocks | Core | — | Page live |
+| # | Video | Class | Demonstration | Page | Watch |
+| --- | --- | --- | --- | --- | --- |
+| [1.1](module-1/1-1.md) | What makes infrastructure foundational | Core | — | Page live | [watch](https://youtu.be/zU7FAGDn4Mw) |
+| [1.2](module-1/1-2.md) | The five domains, as a map | Core | — | Page live | [watch](https://youtu.be/gweToUgQOYk) |
+| [1.3](module-1/1-3.md) | The roadmap method in nine steps: who does what | Core | — | Page live | [watch](https://youtu.be/xv6IL_meHUU) |
+| [1.4](module-1/1-4.md) | Start at the desk: a first assessment from public sources, with AI | Core | Yes | Page live | [watch](https://youtu.be/Kk80aD9bXao) |
+| [1.5](module-1/1-5.md) | Ask the people who run the systems: the five questionnaires | Core | — | Page live | [watch](https://youtu.be/mfsqfcEIsxY) |
+| [1.6](module-1/1-6.md) | Verify before you score | Core | — | Page live | [watch](https://youtu.be/vuy6qz1EUrA) |
+| [1.7](module-1/1-7.md) | Score each domain: five stages and one table | Core | Yes | Page live | [watch](https://youtu.be/xN1lW_4uafs) |
+| [1.8](module-1/1-8.md) | Foundational blocks and the sector's own | Core | — | Page live | [watch](https://youtu.be/yFsCdYj29us) |
+| [1.9](module-1/1-9.md) | What comes first: the order of building | Core | — | Page live | [watch](https://youtu.be/eAMYN9g6UDk) |
+| [1.10](module-1/1-10.md) | The first proof for education: one service on four blocks | Core | — | Page live | [watch](https://youtu.be/eWaXk5mZgZE) |
 
 </details>
 
@@ -84,14 +92,14 @@ Core marks the content without which the method cannot be followed from assessme
 
 <summary><strong>Module 2 — The Registration block</strong></summary>
 
-| # | Video | Class | Demonstration | Page |
-| --- | --- | --- | --- | --- |
-| [2.1](module-2/2-1.md) | What the Registration block does | Core | — | Page live |
-| [2.2](module-2/2-2.md) | The published specification, and how to judge a product against it | Supplementary | — | Page live |
-| [2.3](module-2/2-3.md) | Generating the registration service | Core | Yes | Page live |
-| [2.4](module-2/2-4.md) | Checks before the officer decides | Core | Yes | Page live |
-| [2.5](module-2/2-5.md) | The officer decides, and the record is written | Core | Yes | Page live |
-| [2.6](module-2/2-6.md) | The whole service as a description you can move | Supplementary | Yes | Page live |
+| # | Video | Class | Demonstration | Page | Watch |
+| --- | --- | --- | --- | --- | --- |
+| [2.1](module-2/2-1.md) | What the Registration block does | Core | — | Page live | [watch](https://youtu.be/ucevbwHsiZg) |
+| [2.2](module-2/2-2.md) | The published specification, and how to judge a product against it | Supplementary | — | Page live | [watch](https://youtu.be/0Sgq35tHyZk) |
+| [2.3](module-2/2-3.md) | Generating the registration service | Core | Yes | Page live | [watch](https://youtu.be/7Lk4ipkYgOc) |
+| [2.4](module-2/2-4.md) | Checks before the officer decides | Core | Yes | Page live | [watch](https://youtu.be/GzXl0hw6U-0) |
+| [2.5](module-2/2-5.md) | The officer decides, and the record is written | Core | Yes | Page live | [watch](https://youtu.be/M8cge_Gm8_0) |
+| [2.6](module-2/2-6.md) | The whole service as a description you can move | Supplementary | Yes | Page live | [watch](https://youtu.be/IfYnLXoLzTo) |
 
 </details>
 
@@ -99,15 +107,15 @@ Core marks the content without which the method cannot be followed from assessme
 
 <summary><strong>Module 3 — The Registry block</strong></summary>
 
-| # | Video | Class | Demonstration | Page |
-| --- | --- | --- | --- | --- |
-| [3.1](module-3/3-1.md) | What a register is for: one authoritative record | Core | — | Page live |
-| [3.2](module-3/3-2.md) | Five tiers between a messy file and a trusted record | Core | Yes | Page live |
-| [3.3](module-3/3-3.md) | Generating the register's schema | Core | Yes | Page live |
-| [3.4](module-3/3-4.md) | Quality checks that stop a bad row | Core | Yes | Page live |
-| [3.5](module-3/3-5.md) | A published pattern, followed in the open | Supplementary | — | Page live |
-| [3.6](module-3/3-6.md) | Account for every load | Core | Yes | Page live |
-| [3.7](module-3/3-7.md) | The register as a service others can use | Core | Yes | Page live |
+| # | Video | Class | Demonstration | Page | Watch |
+| --- | --- | --- | --- | --- | --- |
+| [3.1](module-3/3-1.md) | What a register is for: one authoritative record | Core | — | Page live | [watch](https://youtu.be/RlEnXJ5bNyA) |
+| [3.2](module-3/3-2.md) | Five tiers between a messy file and a trusted record | Core | Yes | Page live | [watch](https://youtu.be/o4hEInRUM0g) |
+| [3.3](module-3/3-3.md) | Generating the register's schema | Core | Yes | Page live | [watch](https://youtu.be/Uqv4ckj4eIo) |
+| [3.4](module-3/3-4.md) | Quality checks that stop a bad row | Core | Yes | Page live | [watch](https://youtu.be/DbAYfDKhrNY) |
+| [3.5](module-3/3-5.md) | A published pattern, followed in the open | Supplementary | — | Page live | [watch](https://youtu.be/MgQnAXi8WLI) |
+| [3.6](module-3/3-6.md) | Account for every load | Core | Yes | Page live | [watch](https://youtu.be/tzSM2WLv0-w) |
+| [3.7](module-3/3-7.md) | The register as a service others can use | Core | Yes | Page live | [watch](https://youtu.be/lIJUo_NKrYk) |
 
 </details>
 
@@ -115,14 +123,14 @@ Core marks the content without which the method cannot be followed from assessme
 
 <summary><strong>Module 4 — Identity and payments</strong></summary>
 
-| # | Video | Class | Demonstration | Page |
-| --- | --- | --- | --- | --- |
-| [4.1](module-4/4-1.md) | Why identity is built once | Core | — | Page live |
-| [4.2](module-4/4-2.md) | The published Identity block, and what the identity authority offers today | Core | — | Page live |
-| [4.3](module-4/4-3.md) | Generating the identity connection | Core | Yes | Page live |
-| [4.4](module-4/4-4.md) | The Payments block and the payment systems behind it | Core | — | Page live |
-| [4.5](module-4/4-5.md) | Generating the payment connection | Core | Yes | Page live |
-| [4.6](module-4/4-6.md) | Reuse is the return on planning | Core | — | Page live |
+| # | Video | Class | Demonstration | Page | Watch |
+| --- | --- | --- | --- | --- | --- |
+| [4.1](module-4/4-1.md) | Why identity is built once | Core | — | Page live | [watch](https://youtu.be/N_HJ966QdAU) |
+| [4.2](module-4/4-2.md) | The published Identity block, and what the identity authority offers today | Core | — | Page live | [watch](https://youtu.be/pEQEUZdi6Kk) |
+| [4.3](module-4/4-3.md) | Generating the identity connection | Core | Yes | Page live | [watch](https://youtu.be/n6qD0-hPh3Y) |
+| [4.4](module-4/4-4.md) | The Payments block and the payment systems behind it | Core | — | Page live | [watch](https://youtu.be/tZIkLDaE-7A) |
+| [4.5](module-4/4-5.md) | Generating the payment connection | Core | Yes | Page live | [watch](https://youtu.be/cO3O7pcd1V8) |
+| [4.6](module-4/4-6.md) | Reuse is the return on planning | Core | — | Page live | [watch](https://youtu.be/OEVXPR9PFY8) |
 
 </details>
 
@@ -130,14 +138,14 @@ Core marks the content without which the method cannot be followed from assessme
 
 <summary><strong>Module 5 — Join the blocks and prove the foundation</strong></summary>
 
-| # | Video | Class | Demonstration | Page |
-| --- | --- | --- | --- | --- |
-| [5.1](module-5/5-1.md) | What must be in place before the blocks can call each other | Core | Yes | Page live |
-| [5.2](module-5/5-2.md) | Who puts the steps in order: contracts, and the block that calls them | Core | — | Page live |
-| [5.3](module-5/5-3.md) | The once-only registration, from beginning to end | Core | Yes | Page live |
-| [5.4](module-5/5-4.md) | The acceptance checks: from "set up" to "proven" | Core | Yes | Page live |
-| [5.5](module-5/5-5.md) | Reading the evidence of a call | Supplementary | Yes | Page live |
-| [5.6](module-5/5-6.md) | What the next services can now use | Core | — | Page live |
+| # | Video | Class | Demonstration | Page | Watch |
+| --- | --- | --- | --- | --- | --- |
+| [5.1](module-5/5-1.md) | What must be in place before the blocks can call each other | Core | Yes | Page live | [watch](https://youtu.be/xQLfvpMOlZI) |
+| [5.2](module-5/5-2.md) | Who puts the steps in order: contracts, and the block that calls them | Core | — | Page live | [watch](https://youtu.be/eqrBpCDrh2Y) |
+| [5.3](module-5/5-3.md) | The once-only registration, from beginning to end | Core | Yes | Page live | [watch](https://youtu.be/Vyr673fkv28) |
+| [5.4](module-5/5-4.md) | The acceptance checks: from "set up" to "proven" | Core | Yes | Page live | [watch](https://youtu.be/MpHq787vXWw) |
+| [5.5](module-5/5-5.md) | Reading the evidence of a call | Supplementary | Yes | Page live | [watch](https://youtu.be/3-n5PQVMDao) |
+| [5.6](module-5/5-6.md) | What the next services can now use | Core | — | Page live | [watch](https://youtu.be/BE5KNOKi9rA) |
 
 </details>
 
@@ -145,18 +153,18 @@ Core marks the content without which the method cannot be followed from assessme
 
 <summary><strong>Module 6 — From a proven foundation to a national roadmap</strong></summary>
 
-| # | Video | Class | Demonstration | Page |
-| --- | --- | --- | --- | --- |
-| [6.1](module-6/6-1.md) | From findings to priorities: the gap register | Core | — | Page live |
-| [6.2](module-6/6-2.md) | What to fund first: cost against reuse | Core | — | Page live |
-| [6.3](module-6/6-3.md) | The roadmap over time: horizons, waves and tracks | Core | — | Page live |
-| [6.4](module-6/6-4.md) | The investment case your finance ministry can read | Core | — | Page live |
-| [6.5](module-6/6-5.md) | Sourcing each block without lock-in | Core | — | Page live |
-| [6.6](module-6/6-6.md) | Governance that keeps shared blocks shared | Core | — | Page live |
-| [6.7](module-6/6-7.md) | Validate, revise, adopt | Core | — | Page live |
-| [6.8](module-6/6-8.md) | Keep the foundation healthy and safe | Core | — | Page live |
-| [6.9](module-6/6-9.md) | The AI plays, step by step | Core | Yes | Page live |
-| [6.10](module-6/6-10.md) | Carry the method to another sector | Core | — | Page live |
+| # | Video | Class | Demonstration | Page | Watch |
+| --- | --- | --- | --- | --- | --- |
+| [6.1](module-6/6-1.md) | From findings to priorities: the gap register | Core | — | Page live | [watch](https://youtu.be/6R7DmO78cHY) |
+| [6.2](module-6/6-2.md) | What to fund first: cost against reuse | Core | — | Page live | [watch](https://youtu.be/A2iZ7izh5bM) |
+| [6.3](module-6/6-3.md) | The roadmap over time: horizons, waves and tracks | Core | — | Page live | [watch](https://youtu.be/mrPyotLER08) |
+| [6.4](module-6/6-4.md) | The investment case your finance ministry can read | Core | — | Page live | [watch](https://youtu.be/6VfrJPWnKYE) |
+| [6.5](module-6/6-5.md) | Sourcing each block without lock-in | Core | — | Page live | [watch](https://youtu.be/xzuK7QWa5DU) |
+| [6.6](module-6/6-6.md) | Governance that keeps shared blocks shared | Core | — | Page live | [watch](https://youtu.be/-35pUXlxJfQ) |
+| [6.7](module-6/6-7.md) | Validate, revise, adopt | Core | — | Page live | [watch](https://youtu.be/AT0hIIciYLc) |
+| [6.8](module-6/6-8.md) | Keep the foundation healthy and safe | Core | — | Page live | [watch](https://youtu.be/oJct8zenrsY) |
+| [6.9](module-6/6-9.md) | The AI plays, step by step | Core | Yes | Page live | [watch](https://youtu.be/1FXdWZVUwkI) |
+| [6.10](module-6/6-10.md) | Carry the method to another sector | Core | — | Page live | [watch](https://youtu.be/C7x6V5Ht0AA) |
 
 </details>
 

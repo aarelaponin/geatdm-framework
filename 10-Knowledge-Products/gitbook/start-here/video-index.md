@@ -81,6 +81,10 @@ The whole series is one YouTube playlist: [Developing a Government Enterprise Ar
 
 *Building a Government Interoperability Framework (GIF)* lists its videos on its [course home page](../kp2/README.md), and its series is one playlist: [Building a Government Interoperability Framework — DIY Video Series](https://www.youtube.com/playlist?list=PLFaDK827hOnA).
 
+*Education Digital Public Infrastructure (DPI) Roadmap* lists its videos on its [course home page](../kp3/README.md), and its series is one playlist: [DPI Roadmap — DIY Video Series](https://www.youtube.com/playlist?list=PLd5zU_fcWLy0).
+
+*Designing Digital Government Services using a Building Block Approach* lists its videos on its [course home page](../kp4/README.md), and its series is one playlist: [Building Block Approach to Digital Services — DIY Video Series](https://www.youtube.com/playlist?list=PLO-5c0yYsOHU).
+
 ## When a video lands
 
 Set the URL in the module data and re-render: the placeholder block on the subtopic page becomes the embed, the **Watch first** line appears, and the row above flips to *watch*.

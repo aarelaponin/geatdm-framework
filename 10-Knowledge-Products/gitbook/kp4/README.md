@@ -5,11 +5,17 @@ icon: house
 
 # Designing Digital Government Services using a Building Block Approach
 
-37 videos in six modules · about 185 minutes of video · an AI usage tip on every page · 38 worked examples · ten blank instruments and a deliverables annex · self-paced · free and open
+38 videos in six modules · about 192 minutes of video · an AI usage tip on every page · 38 worked examples · ten blank instruments and a deliverables annex · self-paced · free and open
 
 This guide teaches a government team to design a digital public service on shared building blocks and have it built on a low-code platform. It uses specification-driven development, SDD for short: a method in which every document a person writes is accepted before the next is begun, and the last is turned into the running service by a program, never by hand. The shared building blocks are the digital systems that many services of a country stand on: digital identity, registries, payments and the exchange of data between public bodies.
 
 The guide has six modules and 37 subtopics. Each subtopic is one short video with a written page and an AI usage tip. Module 1 explains why digital services go wrong and what the method puts in the way. Modules 2 to 5 break a service down, design one goal of it, settle the whole application and generate it on the platform. Module 6 runs the method in an administration. Every example is set in Progressa, a fictional country: its quality authority for higher education and its ministry of education commission two applications so that a private institution gives its particulars to the state once.
+
+{% embed url="https://youtu.be/K7DpqnleREE" %}
+Introduction to the course (~7 min)
+{% endembed %}
+
+**Watch first (~7 min).** Then read on: the outline below gives the modules, and the path for your role.
 
 ![F1. The structure of this course: its modules and the two ways through them](figures/F1_structure.png)
 
@@ -17,14 +23,14 @@ The guide has six modules and 37 subtopics. Each subtopic is one short video wit
 
 | Module | Topic | Persona | Videos | AI tips | Status |
 | --- | --- | --- | --- | --- | --- |
-| [1](module-1/README.md) | Why digital services go wrong, and the method that prevents it | Strategist | 5 | 5 tips | Prompts live |
-| [2](module-2/README.md) | Break the service down before you design it | Strategist | 6 | 6 tips | Prompts live |
-| [3](module-3/README.md) | Design one service as a story your officials can check | Architect | 6 | 6 tips | Prompts live |
-| [4](module-4/README.md) | Settle the whole application once, then describe it for the machine | Architect | 6 | 6 tips | Prompts live |
-| [5](module-5/README.md) | Generate the service on a low-code platform and connect the blocks | Architect | 7 | 7 tips | Prompts live |
-| [6](module-6/README.md) | Run the method in your administration | Strategist | 7 | 7 tips | Prompts live |
+| [1](module-1/README.md) | Why digital services go wrong, and the method that prevents it | Strategist | 5 | 5 tips | Videos live |
+| [2](module-2/README.md) | Break the service down before you design it | Strategist | 6 | 6 tips | Videos live |
+| [3](module-3/README.md) | Design one service as a story your officials can check | Architect | 6 | 6 tips | Videos live |
+| [4](module-4/README.md) | Settle the whole application once, then describe it for the machine | Architect | 6 | 6 tips | Videos live |
+| [5](module-5/README.md) | Generate the service on a low-code platform and connect the blocks | Architect | 7 | 7 tips | Videos live |
+| [6](module-6/README.md) | Run the method in your administration | Strategist | 7 | 7 tips | Videos live |
 
-*Prompts live — every page of the module is written, with its prompt. In production — the module's pages are added as its scripts are written.*
+*Prompts live — every page of the module is written, with its prompt. Videos live — every page also embeds its video.*
 
 {% hint style="success" %}
 **How the course works.** **Watch** the video → **Read** its page, the video written out in full → **Prompt** with its AI usage tip on your own service → **Compare** your draft with the worked example for Progressa. The [worked examples](examples/README.md) follow the [twelve documents](twelve-documents.md) of the method in order and link to one another, from the catalogue of the sector's services to the running application, so that any screen can be followed back to the request behind it. Each document a person writes has a [blank instrument](toolkit/README.md) to copy and fill in.
@@ -59,19 +65,21 @@ The order of the modules follows the order in which an administration meets the 
 
 ## All videos
 
+The whole series is one YouTube playlist: [Building Block Approach to Digital Services — DIY Video Series](https://www.youtube.com/playlist?list=PLO-5c0yYsOHU).
+
 Core marks the content without which the method cannot be followed from the request to the running service. Supplementary marks a video that deepens a core one and can be left out without losing the thread.
 
 <details>
 
 <summary><strong>Module 1 — Why digital services go wrong, and the method that prevents it</strong></summary>
 
-| # | Video | Class | Demonstration | Page |
-| --- | --- | --- | --- | --- |
-| [1.1](module-1/1-1.md) | Where an agreed service gets lost | Core | — | Page live |
-| [1.2](module-1/1-2.md) | Three rules you can hold a supplier to | Core | — | Page live |
-| [1.3](module-1/1-3.md) | A question with a name on it is part of the specification | Core | — | Page live |
-| [1.4](module-1/1-4.md) | Twelve documents from the request to the running service | Core | — | Page live |
-| [1.5](module-1/1-5.md) | Who writes, who checks, who accepts | Core | — | Page live |
+| # | Video | Class | Demonstration | Page | Watch |
+| --- | --- | --- | --- | --- | --- |
+| [1.1](module-1/1-1.md) | Where an agreed service gets lost | Core | — | Page live | [watch](https://youtu.be/2NkO31Gcsqg) |
+| [1.2](module-1/1-2.md) | Three rules you can hold a supplier to | Core | — | Page live | [watch](https://youtu.be/-Y8IKnqPMk8) |
+| [1.3](module-1/1-3.md) | A question with a name on it is part of the specification | Core | — | Page live | [watch](https://youtu.be/dN20uAmTxEU) |
+| [1.4](module-1/1-4.md) | Twelve documents from the request to the running service | Core | — | Page live | [watch](https://youtu.be/zpwcnmQ26WA) |
+| [1.5](module-1/1-5.md) | Who writes, who checks, who accepts | Core | — | Page live | [watch](https://youtu.be/bJeaWWqJCJ4) |
 
 </details>
 
@@ -79,14 +87,14 @@ Core marks the content without which the method cannot be followed from the requ
 
 <summary><strong>Module 2 — Break the service down before you design it</strong></summary>
 
-| # | Video | Class | Demonstration | Page |
-| --- | --- | --- | --- | --- |
-| [2.1](module-2/2-1.md) | One catalogue of the sector's services, and the blocks they share | Core | — | Page live |
-| [2.2](module-2/2-2.md) | Write down what was asked before anyone designs | Core | — | Page live |
-| [2.3](module-2/2-3.md) | The records the service keeps, and whose each one is | Core | — | Page live |
-| [2.4](module-2/2-4.md) | Every goal named, and each tied to what was asked | Core | — | Page live |
-| [2.5](module-2/2-5.md) | What every goal may use, and may not invent | Core | — | Page live |
-| [2.6](module-2/2-6.md) | What the service is built on, and what crosses its boundary | Core | — | Page live |
+| # | Video | Class | Demonstration | Page | Watch |
+| --- | --- | --- | --- | --- | --- |
+| [2.1](module-2/2-1.md) | One catalogue of the sector's services, and the blocks they share | Core | — | Page live | [watch](https://youtu.be/8DOAj_y7Z8U) |
+| [2.2](module-2/2-2.md) | Write down what was asked before anyone designs | Core | — | Page live | [watch](https://youtu.be/aAKuN8gs34E) |
+| [2.3](module-2/2-3.md) | The records the service keeps, and whose each one is | Core | — | Page live | [watch](https://youtu.be/aVmZvMO4E10) |
+| [2.4](module-2/2-4.md) | Every goal named, and each tied to what was asked | Core | — | Page live | [watch](https://youtu.be/JxIESGdVQWc) |
+| [2.5](module-2/2-5.md) | What every goal may use, and may not invent | Core | — | Page live | [watch](https://youtu.be/CjX-jKWVOJc) |
+| [2.6](module-2/2-6.md) | What the service is built on, and what crosses its boundary | Core | — | Page live | [watch](https://youtu.be/2AiQC305Dyc) |
 
 </details>
 
@@ -94,14 +102,14 @@ Core marks the content without which the method cannot be followed from the requ
 
 <summary><strong>Module 3 — Design one service as a story your officials can check</strong></summary>
 
-| # | Video | Class | Demonstration | Page |
-| --- | --- | --- | --- | --- |
-| [3.1](module-3/3-1.md) | One goal, written as a story a builder can follow | Core | — | Page live |
-| [3.2](module-3/3-2.md) | Every way it can go wrong, written down | Core | — | Page live |
-| [3.3](module-3/3-3.md) | Screens worked out from the story, every value with its source | Core | — | Page live |
-| [3.4](module-3/3-4.md) | Screens officers can use | Supplementary | — | Page live |
-| [3.5](module-3/3-5.md) | The walk-through your officials click | Core | Yes | Page live |
-| [3.6](module-3/3-6.md) | The review: three people, every open line given a name | Core | — | Page live |
+| # | Video | Class | Demonstration | Page | Watch |
+| --- | --- | --- | --- | --- | --- |
+| [3.1](module-3/3-1.md) | One goal, written as a story a builder can follow | Core | — | Page live | [watch](https://youtu.be/4TyP7o4xEoo) |
+| [3.2](module-3/3-2.md) | Every way it can go wrong, written down | Core | — | Page live | [watch](https://youtu.be/gy9qRIDXj2s) |
+| [3.3](module-3/3-3.md) | Screens worked out from the story, every value with its source | Core | — | Page live | [watch](https://youtu.be/cDlZ8WkSfbY) |
+| [3.4](module-3/3-4.md) | Screens officers can use | Supplementary | — | Page live | [watch](https://youtu.be/zeMcZJSCNUE) |
+| [3.5](module-3/3-5.md) | The walk-through your officials click | Core | Yes | Page live | [watch](https://youtu.be/Yybcpp2xAbM) |
+| [3.6](module-3/3-6.md) | The review: three people, every open line given a name | Core | — | Page live | [watch](https://youtu.be/guqmPvoChjk) |
 
 </details>
 
@@ -109,14 +117,14 @@ Core marks the content without which the method cannot be followed from the requ
 
 <summary><strong>Module 4 — Settle the whole application once, then describe it for the machine</strong></summary>
 
-| # | Video | Class | Demonstration | Page |
-| --- | --- | --- | --- | --- |
-| [4.1](module-4/4-1.md) | Four questions decided once for every screen | Core | — | Page live |
-| [4.2](module-4/4-2.md) | No list longer than nine: choose by category | Core | — | Page live |
-| [4.3](module-4/4-3.md) | The service workflow: states, moves and who may make each | Core | — | Page live |
-| [4.4](module-4/4-4.md) | One file a program reads: the application model | Core | — | Page live |
-| [4.5](module-4/4-5.md) | Reviewing the model: what it assumed, and what it could not express | Core | — | Page live |
-| [4.6](module-4/4-6.md) | Refused, not worked around | Core | Yes | Page live |
+| # | Video | Class | Demonstration | Page | Watch |
+| --- | --- | --- | --- | --- | --- |
+| [4.1](module-4/4-1.md) | Four questions decided once for every screen | Core | — | Page live | [watch](https://youtu.be/C-kxEITCxPo) |
+| [4.2](module-4/4-2.md) | No list longer than nine: choose by category | Core | — | Page live | [watch](https://youtu.be/7QWaAkUbyyY) |
+| [4.3](module-4/4-3.md) | The service workflow: states, moves and who may make each | Core | — | Page live | [watch](https://youtu.be/7_bAurxYgJ0) |
+| [4.4](module-4/4-4.md) | One file a program reads: the application model | Core | — | Page live | [watch](https://youtu.be/wlxGqnC4m3g) |
+| [4.5](module-4/4-5.md) | Reviewing the model: what it assumed, and what it could not express | Core | — | Page live | [watch](https://youtu.be/kBkavpkzp7Q) |
+| [4.6](module-4/4-6.md) | Refused, not worked around | Core | Yes | Page live | [watch](https://youtu.be/n_tXrC9VFw4) |
 
 </details>
 
@@ -124,15 +132,15 @@ Core marks the content without which the method cannot be followed from the requ
 
 <summary><strong>Module 5 — Generate the service on a low-code platform and connect the blocks</strong></summary>
 
-| # | Video | Class | Demonstration | Page |
-| --- | --- | --- | --- | --- |
-| [5.1](module-5/5-1.md) | From one file to a running application | Core | Yes | Page live |
-| [5.2](module-5/5-2.md) | Nothing generated is edited by hand | Core | Yes | Page live |
-| [5.3](module-5/5-3.md) | The platform's traps, caught before deployment | Core | — | Page live |
-| [5.4](module-5/5-4.md) | Identity and registries: use the block, do not rebuild it | Core | Yes | Page live |
-| [5.5](module-5/5-5.md) | The service's contract with the registration block, and its data interface | Core | Yes | Page live |
-| [5.6](module-5/5-6.md) | Payments and information mediation as named crossings | Supplementary | — | Page live |
-| [5.7](module-5/5-7.md) | Proof on the running system: a task a person finishes | Core | Yes | Page live |
+| # | Video | Class | Demonstration | Page | Watch |
+| --- | --- | --- | --- | --- | --- |
+| [5.1](module-5/5-1.md) | From one file to a running application | Core | Yes | Page live | [watch](https://youtu.be/w_9VNUCnCF0) |
+| [5.2](module-5/5-2.md) | Nothing generated is edited by hand | Core | Yes | Page live | [watch](https://youtu.be/dGGJ5PNVTPU) |
+| [5.3](module-5/5-3.md) | The platform's traps, caught before deployment | Core | — | Page live | [watch](https://youtu.be/_wtM4p52HJA) |
+| [5.4](module-5/5-4.md) | Identity and registries: use the block, do not rebuild it | Core | Yes | Page live | [watch](https://youtu.be/ZYqAzPhcr6A) |
+| [5.5](module-5/5-5.md) | The service's contract with the registration block, and its data interface | Core | Yes | Page live | [watch](https://youtu.be/5yO3gzBFzGQ) |
+| [5.6](module-5/5-6.md) | Payments and information mediation as named crossings | Supplementary | — | Page live | [watch](https://youtu.be/pOW2ocCJJZU) |
+| [5.7](module-5/5-7.md) | Proof on the running system: a task a person finishes | Core | Yes | Page live | [watch](https://youtu.be/k8Os8idMu7Q) |
 
 </details>
 
@@ -140,15 +148,15 @@ Core marks the content without which the method cannot be followed from the requ
 
 <summary><strong>Module 6 — Run the method in your administration</strong></summary>
 
-| # | Video | Class | Demonstration | Page |
-| --- | --- | --- | --- | --- |
-| [6.1](module-6/6-1.md) | What to require from a supplier | Core | — | Page live |
-| [6.2](module-6/6-2.md) | When something changes, correct the document that owns the fact | Core | Yes | Page live |
-| [6.3](module-6/6-3.md) | Read where the work stands from the work | Core | — | Page live |
-| [6.4](module-6/6-4.md) | The AI assistant at every step, and the person who rules | Core | — | Page live |
-| [6.5](module-6/6-5.md) | The next service on the same foundation | Core | — | Page live |
-| [6.6](module-6/6-6.md) | Carry the method to another sector | Core | — | Page live |
-| [6.7](module-6/6-7.md) | Before you rely on it: what the method does not claim | Supplementary | — | Page live |
+| # | Video | Class | Demonstration | Page | Watch |
+| --- | --- | --- | --- | --- | --- |
+| [6.1](module-6/6-1.md) | What to require from a supplier | Core | — | Page live | [watch](https://youtu.be/3GGjfLgWHRE) |
+| [6.2](module-6/6-2.md) | When something changes, correct the document that owns the fact | Core | Yes | Page live | [watch](https://youtu.be/lG7_PPCInfE) |
+| [6.3](module-6/6-3.md) | Read where the work stands from the work | Core | — | Page live | [watch](https://youtu.be/sOcP5TwI8dA) |
+| [6.4](module-6/6-4.md) | The AI assistant at every step, and the person who rules | Core | — | Page live | [watch](https://youtu.be/4hvLx-V0UqU) |
+| [6.5](module-6/6-5.md) | The next service on the same foundation | Core | — | Page live | [watch](https://youtu.be/MQyakyylqHY) |
+| [6.6](module-6/6-6.md) | Carry the method to another sector | Core | — | Page live | [watch](https://youtu.be/GYCGBAIGAVw) |
+| [6.7](module-6/6-7.md) | Before you rely on it: what the method does not claim | Supplementary | — | Page live | [watch](https://youtu.be/euDWrUpa5k0) |
 
 </details>
 
