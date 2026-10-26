@@ -315,6 +315,7 @@ body.push(...renderPage({
   },
   aiTip: {
     title: "Trim a context pack to what one task needs",
+    time: "~10 min",
     problem: "A context pack is written once and is long; a task needs only part of it. Pasting the whole pack buries what matters, and choosing by hand each time is slow and misses things.",
     prompt: "Below is my context pack, dated [the date], in sections [paste the pack]. Below that is the task I am about to give an AI assistant [paste the task, or the prompt you will run]. Select only what the task needs. For each section, say: (a) whether the task needs it: all of it, part of it, or none; (b) if part, the sentences to keep, quoted word for word; (c) one line on why. Then list anything the task needs that the pack does not hold, and anything in the kept part that may be out of date, with the reason. Do not rewrite or summarise the kept sentences. Output: the trimmed pack, as the kept sentences under their section headings; then the table of sections; then the two lists.",
     io: "Input: your context pack and the task. Output: the trimmed pack, the sections dropped with the reason, and what the pack lacks or may have let go stale.",
@@ -365,6 +366,7 @@ body.push(...renderPage({
   },
   aiTip: {
     title: "Draft the standing instructions for your team's project",
+    time: "~20 min",
     problem: "A team knows how it works but has never written it down for an assistant, so every chat starts again from nothing, and each colleague starts differently.",
     prompt: "Below is a description of my unit and its work with an AI assistant: who we are, what we produce and for whom, the rules we follow, and the documents we use [paste the description]. Draft the standing instructions for a project our team will share, under these seven headings: who we are; what this project is for; what we produce; standing rules; the files; what never goes in; review. Under 'standing rules', always include: posts, not names; cite or discard; text in the chat, not files; open questions listed at the end of every draft. Under 'the files', list each document I named with a blank for its date and approver. Use only what my description says; where it says nothing for a heading, write 'to be decided' and the question to answer. Output: the brief, under the seven headings, in no more than 400 words, then a list of the points marked 'to be decided'.",
     io: "Input: a description of your unit and its work. Output: the standing instructions for your team's project under seven headings, with the points still to be decided.",
@@ -404,6 +406,7 @@ body.push(...renderPage({
   },
   aiTip: {
     title: "Decide which tasks need a prompt, a project, a skill or a connector",
+    time: "~15 min",
     problem: "A unit uses an assistant for many tasks, set up anyhow. Some are pasted again every week; some reach for a source that has changed. Nobody has decided which setup each task deserves.",
     prompt: "Below is a list of the tasks my unit does with an AI assistant, with how often each is done and what it uses [paste the list]. For each task, recommend one of four setups: (1) a prompt, for a task done once or rarely; (2) a project, for context the unit's work always needs; (3) a skill, for a procedure repeated the same way; (4) a connector, for a source that changes and must be read as it is today. For each task produce one row with: (a) the task; (b) the setup; (c) the reason, in one line, from how often it is done, whether its steps repeat, and whether its source changes; (d) what the setup would hold. Recommend the lightest setup that does the job. Where a task would put personal or confidential data into a project, skill or connector, say so and recommend a prompt with placeholders instead. Output: a table with one row per task, then the setups in the order to build them.",
     io: "Input: the list of the unit's tasks with an assistant, with how often each is done and what it uses. Output: a table of which tasks need a prompt, a project, a skill or a connector, with the reason for each and the order to build them.",
@@ -444,6 +447,7 @@ body.push(...renderPage({
   },
   aiTip: {
     title: "Audit what a project holds",
+    time: "~15–20 min",
     problem: "A project grows by addition. Files are added and rarely removed, and the brief drifts from the work. Nobody checks what every chat in it is now reading, or whether it should.",
     prompt: "Below are the standing instructions of a project my team shares in an AI assistant [paste the instructions], and the list of its files, each with its title and date [paste the list]. Audit the project. For the instructions and for each file, produce one row with: (a) the item; (b) its date, or 'no date'; (c) any risk: personal data or names, unpublished or confidential material, out of date, contradicted by another item, or two versions of the same document; (d) the action: keep, replace, remove, or ask the owner. Then list the goals, limits and reasons the work depends on that the instructions do not state, as lines to add. Judge only the titles, dates and text given; where a risk can only be seen in a file's content, say 'read the file'. Output: the table, then the lines to add, then the number of items marked for each action.",
     io: "Input: the project's standing instructions and the list of its files with titles and dates. Output: an audit of what the project holds, with an action for each item and the lines of intent to add.",
