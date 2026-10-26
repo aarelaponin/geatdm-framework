@@ -8,7 +8,8 @@
 //   rendered by renderPage(), not a five-minute video; and the module has one video, V1, with a person on camera,
 //   covering pages 1.1 to 1.4, rendered by renderVideo(). The speaker's own case is left as a marked story beat
 //   (plan decision 4); the script around it is written in full (plan decision 5, the recommended option).
-// Each tip's time is the run plus reading the result; it shows on the GitBook page's tip box.
+// Each tip's time is the run plus reading the result, and its watch is the one short phrase the GitBook tip box
+//   shows as Watch for; the safeguard below the prompt says it in full.
 // Every page has the concept, In the tool (shown in Claude, said as such), a worked example set in Progressa, an AI
 //   usage tip in the four-part shape, and its sources. Sections 1 to 6 keep the KP4 shape.
 const fs = require('fs');
@@ -320,6 +321,7 @@ body.push(...renderPage({
   aiTip: {
     title: "List the claims in a draft that need a source",
     time: "~10 min",
+    watch: "The table lists the claims; it checks none of them.",
     problem: "A draft from an assistant reads well, and the claims in it that need checking are hidden among the sentences that do not. Before the draft goes into a briefing, someone has to find every figure, date, name, legal reference and citation, and say how each will be checked.",
     prompt: "Below is a draft written with an AI assistant, which I intend to use in [a briefing note, a report, a letter] for [the reader] [paste the draft]. List every claim in it that a reader could check: figures, dates, names of bodies, legal or policy references, quotations, and statements about what a country, body or standard did or requires. For each claim produce one row with: (a) the claim, quoted word for word; (b) its kind: figure, date, name, legal reference, quotation or statement of fact; (c) the source the draft gives for it, or 'none'; (d) where I could check it: the document, body or system that would hold the answer; (e) what goes wrong if it is false, in one line. Do not judge whether any claim is true, and do not add claims the draft does not make. Output: a table with one row per claim, then the number of claims with no source.",
     io: "Input: the draft, as written. Output: a table of the claims in the draft that need a source, with where to check each one and what goes wrong if it is false.",
@@ -361,6 +363,7 @@ body.push(...renderPage({
   aiTip: {
     title: "Rewrite a vague prompt into the four parts",
     time: "~5–10 min",
+    watch: "The new safeguard line is the assistant's guess at your risk.",
     problem: "A prompt that gives vague or unreliable results is usually missing one of the four parts, most often the safeguard line. Rewriting it by hand takes practice; this tip does it, and shows what was weak.",
     prompt: "Below is a prompt I use for work in [the ministry or agency], whose results are too vague or unreliable [paste the prompt]. Rewrite it in four parts: (1) a clear statement of the input I will paste; (2) the task broken into named outputs; (3) an exact output format, such as a table with named columns and a short summary; (4) one safeguard line that names the specific way this prompt could mislead me, not a general line such as 'AI can make mistakes'. Keep my task: do not add tasks I did not ask for. Output: the rewritten prompt, then three bullets on what was weak in the original and what you changed.",
     io: "Input: your own prompt, as you use it. Output: the prompt rewritten in the four parts, with a note on what was weak in the original.",
@@ -402,6 +405,7 @@ body.push(...renderPage({
   aiTip: {
     title: "Mark what a draft rests on",
     time: "~15 min",
+    watch: "Quotations the source does not hold.",
     problem: "A draft has been written from a source, but nobody can tell which of its sentences the source supports, which the assistant inferred, and which came from nowhere. Until that is known, the draft cannot be signed or sent.",
     prompt: "Below is a source document [paste the source], and below that a draft written from it [paste the draft]. For each sentence of the draft, produce one row with: (a) the sentence, word for word; (b) its standing: 'stated' if the source says it, 'inferred' if it is a conclusion the source does not state, or 'not in the source'; (c) for 'stated', the words of the source that say it, quoted exactly; for 'inferred', the passage it was inferred from. Then list the questions the draft should have raised and did not: the points on which the source is silent or unclear, and the decision each one needs. Do not correct the draft. Output: the table, then the list of questions, then the number of sentences of each standing.",
     io: "Input: the source document and the draft written from it. Output: a table of the draft's sentences, each marked stated, inferred or not in the source, with the questions the draft should have raised.",
@@ -441,6 +445,7 @@ body.push(...renderPage({
   aiTip: {
     title: "De-identify a prompt before you send it",
     time: "~10 min",
+    watch: "Never run this one on a public assistant.",
     problem: "A prompt about real work often carries names, records or unpublished material that must not reach a public assistant. Stripping it by eye misses things, and a prompt stripped too far no longer works.",
     prompt: "Below is a prompt I am about to send to a public AI assistant, with the material I would paste into it [paste the prompt and the material]. Rewrite it so that any personal data, record of a citizen or learner, security setting, and unpublished or confidential government material is replaced with a neutral placeholder, such as 'a learner', 'the ministry', 'country X' or 'the registry', while keeping enough of the structure that the task still works. Keep the kinds of data and the kinds of difference between records, so the task can still be done on invented rows. Then list everything you replaced. Output: the de-identified prompt, then a table with the columns removed item, kind, and placeholder used.",
     io: "Input: the prompt and the material you would paste into it. Output: the de-identified prompt, with a table of what was removed, its kind and the placeholder used.",

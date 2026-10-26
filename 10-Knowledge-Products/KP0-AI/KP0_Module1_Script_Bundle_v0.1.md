@@ -130,6 +130,8 @@ Below is a draft written with an AI assistant, which I intend to use in [a brief
 
 **Safeguard:** The table lists claims to check; it does not check them, and it can miss a claim. Read the draft yourself as well, and check each row against the source it names, never by asking an assistant whether the claim is true: it tends to agree with the way you ask.
 
+**Time:** ~10 min · **Watch for:** The table lists the claims; it checks none of them.
+
 ### Sources
 
 | Source | Publisher · date | Used for |
@@ -191,6 +193,8 @@ Below is a prompt I use for work in [the ministry or agency], whose results are 
 
 **Safeguard:** The assistant writes the safeguard line from what it guesses your risk is. Read that line before you use the prompt, and replace it if it names a risk your task does not have, or misses the one you worry about.
 
+**Time:** ~5–10 min · **Watch for:** The new safeguard line is the assistant's guess at your risk.
+
 ### Sources
 
 | Source | Publisher · date | Used for |
@@ -251,6 +255,8 @@ Below is a source document [paste the source], and below that a draft written fr
 
 **Safeguard:** An assistant marking a draft tends to be generous to it, and can quote words the source does not hold. Find each quotation in the source yourself, with the search of your document reader, before you rely on a sentence marked 'stated'. Run the tip in a new chat, not the one that wrote the draft.
 
+**Time:** ~15 min · **Watch for:** Quotations the source does not hold.
+
 ### Sources
 
 | Source | Publisher · date | Used for |
@@ -308,6 +314,8 @@ Below is a prompt I am about to send to a public AI assistant, with the material
 **Inputs and outputs:** Input: the prompt and the material you would paste into it. Output: the de-identified prompt, with a table of what was removed, its kind and the placeholder used.
 
 **Safeguard:** Run this tip only on an assistant that runs on your own computer or your ministry's servers, never on a public one: sending the material to be stripped is the very thing it prevents. With no such assistant, apply the table by hand.
+
+**Time:** ~10 min · **Watch for:** Never run this one on a public assistant.
 
 ### Sources
 

@@ -126,6 +126,8 @@ Below is my context pack, dated [the date], in sections [paste the pack]. Below 
 
 **Safeguard:** The assistant can drop a constraint the task needs without saying so: a law, a limit on data, a body that must agree. Before you use the trimmed pack, read the list of dropped sections and put back anything that binds the task.
 
+**Time:** ~10 min · **Watch for:** A law or a limit dropped without a word.
+
 ### Sources
 
 | Source | Publisher · date | Used for |
@@ -198,6 +200,8 @@ Below is a description of my unit and its work with an AI assistant: who we are,
 
 **Safeguard:** Standing instructions are read by every chat in the project, so a wrong rule is repeated in every answer. The head of the unit reads the brief line by line before it goes into the project, and fills each blank date and approver from the documents themselves.
 
+**Time:** ~20 min · **Watch for:** A wrong rule is repeated in every chat.
+
 ### Sources
 
 | Source | Publisher · date | Used for |
@@ -257,6 +261,8 @@ Below is a list of the tasks my unit does with an AI assistant, with how often e
 **Inputs and outputs:** Input: the list of the unit's tasks with an assistant, with how often each is done and what it uses. Output: a table of which tasks need a prompt, a project, a skill or a connector, with the reason for each and the order to build them.
 
 **Safeguard:** A connector lets the assistant read a source in every chat that uses it, and what it reads can be repeated in any answer. Agree each connector with the owner of the source before you add it, whatever the table recommends.
+
+**Time:** ~15 min · **Watch for:** A connector reaches its source from every chat.
 
 ### Sources
 
@@ -318,6 +324,8 @@ Below are the standing instructions of a project my team shares in an AI assista
 **Inputs and outputs:** Input: the project's standing instructions and the list of its files with titles and dates. Output: an audit of what the project holds, with an action for each item and the lines of intent to add.
 
 **Safeguard:** The assistant sees only the titles and the text you paste, not what is inside each file: a file with a harmless title can hold names or confidential material. The owner of each file reads it before it is marked 'keep'.
+
+**Time:** ~15–20 min · **Watch for:** A harmless title can hide what a file holds.
 
 ### Sources
 
