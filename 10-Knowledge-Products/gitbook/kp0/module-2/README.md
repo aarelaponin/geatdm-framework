@@ -18,6 +18,4 @@ Module 1 taught one good chat. Module 2 teaches the setup that makes every later
 | [2.3](2-3.md) | Skills and connections | A skill packages a procedure you repeat; a connector lets the assistant reach a source; choose the lightest setup that does the job. |
 | [2.4](2-4.md) | Judgement: what never goes into the setup | A setup is used by every later chat, so nothing confidential goes into it, every file carries a date, and the intent is written down. |
 
-**Reference.** [Assistants compared](../assistants-compared.md): where each setting of Modules 1 and 2 sits in four assistants.
-
 **Self-check.** [Four questions](self-check.md), with the answer the module gives to each.

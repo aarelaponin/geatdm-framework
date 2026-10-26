@@ -4,14 +4,13 @@
 
 | Field | Value |
 | --- | --- |
-| Document | Script bundle for Module 2 of KP0: four written pages, one video and the reference table Assistants compared |
+| Document | Script bundle for Module 2 of KP0: four written pages and one video |
 | Version | v0.1 — written on the KP0 plan, version 0.4, of 22 October 2026 |
 | Date | 26 October 2026 |
 | Module persona | S (Strategist) — the public servant who commissions and accepts AI-assisted work and answers for it: a director, a head of unit, a technical secretary briefing the principal. No programming assumed |
 | Subtopics | Four written pages (2.1 – 2.4); the fourth is the module's Judgement page |
 | Video | One, V2 'Context once, then skills', about four minutes, a person on camera, covering pages 2.1 to 2.4 |
 | Worked examples | One for each page, set in Progressa: Progressa's country context pack trimmed for one task, MoEYS's project brief, a skill installed and the course's knowledge base connected, and a project setup audited |
-| Reference | Assistants compared: where each setting of Modules 1 and 2 sits in Claude, ChatGPT, Gemini and Microsoft 365 Copilot, in section 3.6 |
 | Self-check | Four questions drawn from the four single messages, in section 2.1 |
 | Prepared by | FiscalAdmin OÜ |
 
@@ -21,7 +20,7 @@ This bundle is the v0.1 working draft of Module 2 of KP0 — Working with AI in 
 
 ### 1.1 What this document is
 
-This document collects the four pages and the one video script of Module 2 of Knowledge Product 0 (Working with AI in Government), with the reference table Assistants compared, the module's self-check, production notes and calibration items. It is the v0.1 working draft, written on the KP0 plan, version 0.4, sections 4 and 7.
+This document collects the four pages and the one video script of Module 2 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items. It is the v0.1 working draft, written on the KP0 plan, version 0.4, sections 4 and 7.
 
 Module 2 is the Prepare layer. Where Module 1 is about what a person types into one chat, Module 2 is about what the assistant already knows and can do before the person types anything. The principle is the one context engineering names: give the assistant the smallest set of high-signal information that makes the result you want most likely.
 
@@ -47,11 +46,11 @@ Module 2 carries the first argument of the series in small: a context pack writt
 
 ### 1.5 How to read this document
 
-Section 2 gives Module 2 at a glance, with the module's self-check. Section 3 holds the four pages, the script of the video and the reference table Assistants compared. Section 4 collects the production notes, section 5 the open calibration items, and section 6 the aggregate external-link list.
+Section 2 gives Module 2 at a glance, with the module's self-check. Section 3 holds the four pages, and the script of the video. Section 4 collects the production notes, section 5 the open calibration items, and section 6 the aggregate external-link list.
 
 ## 2. Module 2 at a glance
 
-Four written pages, one reference page and one video of about four minutes. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two and a half hours, most of it spent building the context pack.
+Four written pages and one video of about four minutes. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two and a half hours, most of it spent building the context pack.
 
 | # | Title | Single message | Form |
 | --- | --- | --- | --- |
@@ -60,7 +59,6 @@ Four written pages, one reference page and one video of about four minutes. One 
 | 2.3 | Skills and connections | A skill packages a procedure you repeat; a connector lets the assistant reach a source; choose the lightest setup that does the job. | Page |
 | 2.4 | Judgement: what never goes into the setup | A setup is used by every later chat, so nothing confidential goes into it, every file carries a date, and the intent is written down. | Page |
 | V2 | Context once, then skills | Write the context once and the procedure once; then every chat starts from them. | Video, ~4 min |
-| Ref. | Assistants compared | Where each setting of Modules 1 and 2 sits in four assistants. | Reference page |
 
 ### 2.1 The module's self-check
 
@@ -166,7 +164,7 @@ Keeping it current. Change the brief when the work changes, and replace a file w
 
 Sharing it. In an organisation's account, a project can be shared with colleagues, who then work from the same brief and files. Share it only with the people the files may be shown to.
 
-The blank project brief below is the form to fill. In ChatGPT the same thing is called a project, in Gemini a Gem, and in Microsoft 365 Copilot a notebook: see the reference page of this course, Assistants compared.
+The blank project brief below is the form to fill. In ChatGPT the same thing is called a project, in Gemini a Gem, and in Microsoft 365 Copilot a notebook.
 
 | Part of the brief | What to write |
 | --- | --- |
@@ -301,8 +299,6 @@ Checking memory. If memory is on, the settings show what the assistant has kept 
 
 Checking connectors. The settings list the connectors in use. Remove any that no current task needs.
 
-Where the same controls sit in other assistants is in the table on the reference page of this course, Assistants compared.
-
 ### Worked example — A project audited
 
 On the first working day of the quarter, the head of the data unit of MoEYS audited the National Learner Registry project, as its brief requires. The tip below read the brief and the list of files.
@@ -391,22 +387,6 @@ Write the context once, and the procedure once. Then every chat starts from them
 | PAERA citations | None. This course is about working with an AI assistant, not about the reference architecture. |
 | External-link list | The four pages of Module 2, which carry the sources: Effective context engineering for AI agents (Anthropic, 2025); Skills explained (Anthropic, 2025). |
 
-### 3.6 Reference — Assistants compared
-
-The concept on every page of this course works in any assistant. The half headed In the tool is shown in Claude. This table says where the same settings sit in three other assistants a ministry may have approved. It names what each setting does rather than the exact words of a menu, because menus change. Checked on 26 October 2026; check your own assistant's help pages for the current names.
-
-| Setting | Claude | ChatGPT | Gemini | Microsoft 365 Copilot |
-| --- | --- | --- | --- | --- |
-| Choosing the model (1.1) | A model menu beside the message box | A model menu at the top of the chat | A model menu beside the message box | Mostly set by the organisation; some plans offer a choice |
-| Web search with citations (1.1, 1.3) | Web search, turned on in the tools menu; claims carry citations | Search, used when needed or asked for; answers carry citations | Answers grounded in Google Search, with a check that marks supported sentences | Web grounding, which an administrator can turn off; answers carry references |
-| Instructions for every chat (2.2) | Profile preferences in the settings | Custom instructions in the settings | Instructions saved in the settings | Personalisation in the settings, where the organisation allows it |
-| A project with instructions and files (2.2) | Projects | Projects | Gems | Notebooks, with Copilot instructions |
-| Packaged procedures (2.3) | Skills, uploaded in the settings | Check the current help pages | Check the current help pages | Agents, built by the organisation |
-| Connections to sources (2.3) | Connectors, including custom ones by address (MCP) | Apps and connectors | Apps linked to Google services | The organisation's own files and mail, and connectors an administrator adds |
-| Memory and how to clear it (2.4) | Memory in the settings, viewable and editable; incognito chats | Memory in the settings; temporary chats | Saved information and activity in the settings; temporary chats | Memory in the settings, where the organisation allows it |
-
-Two cells say 'check the current help pages': at the date of the check, the vendor's own pages did not settle the point. In an organisation's account, an administrator may have turned any of these settings on or off for everyone.
-
 ## 4. Production notes
 
 ### 4.1 Design standard
@@ -425,10 +405,6 @@ Direct address. Plain language at about an eighth-grade English level. Two techn
 
 Page 2.3 names the optional ea-plays kit and shows one of its skills. The tips of every page run without it. The page says how to install one skill in the Claude app; the kit's own page in the GEA space carries the other routes.
 
-### 4.5 The reference table
-
-Assistants compared (section 3.6) is a KP0 reference page, linked from every page whose In the tool names a setting. It is carried in this bundle because most of its rows are Module 2's. When the GitBook guide is rendered it becomes its own page.
-
 ## 5. Open calibration items
 
 The drafting raised the items below. They are forwarded for discussion with ITU.
@@ -441,21 +417,17 @@ As in Module 1: a person on screen in V2; four written pages covered by one vide
 
 V2's story beat is left to the speaker, who is asked to name a real case, with a date, before the cut is decided (plan decision 4).
 
-### 5.3 The reference table goes stale
-
-The cells of Assistants compared describe four vendors' products as checked on 26 October 2026. Two cells could not be settled from the vendors' own pages. The table is to be checked again before release and at each review of the course; the page carries the date of the last check.
-
-### 5.4 A connector to the course
+### 5.3 A connector to the course
 
 Page 2.3 tells learners to connect the course's knowledge base through the read-only connector GitBook publishes for every site. That connector works only while the site keeps its page actions turned on. Whether ITU wants the courses offered this way is a question for ITU.
 
-### 5.5 Vendor features named
+### 5.4 Vendor features named
 
-Module 2 names features of commercial products (projects, skills, connectors, memory) because learners will meet them in their assistant's settings. The concept of each page is tool-neutral, and the reference table covers four vendors. Whether ITU wants the vendor names reduced is a question for ITU.
+Module 2 names features of commercial products (projects, skills, connectors, memory) because learners will meet them in their assistant's settings. The concept of each page is tool-neutral, and other assistants are named where a setting is shown. Whether ITU wants the vendor names reduced is a question for ITU.
 
 ## 6. Annex — aggregate external-link list
 
-Compiled across the four pages, the video and the reference table. Every source is public.
+Compiled across the four pages, and the video. Every source is public.
 
 | Page | Sources referenced, with addresses |
 | --- | --- |
@@ -464,6 +436,5 @@ Compiled across the four pages, the video and the reference table. Every source 
 | 2.3 | Skills explained, as above. Agent Skills (open standard), https://agentskills.io. MCP servers for published docs (GitBook), https://gitbook.com/docs/ai-for-your-readers/mcp-servers-for-published-docs. The ea-plays kit, https://github.com/alaponin/ea-plays-kit. |
 | 2.4 | How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. Fragments: April 2 (Martin Fowler, 2 April 2026), https://www.martinfowler.com/fragments/2026-04-02.html. AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government. |
 | V2 | None of its own; the description points to the pages. |
-| Reference | The help pages of Claude, ChatGPT, Gemini and Microsoft 365 Copilot, as checked on 26 October 2026. |
 
 All references are publicly accessible and verifiable.

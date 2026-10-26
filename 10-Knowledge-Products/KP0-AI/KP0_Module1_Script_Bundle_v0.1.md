@@ -30,7 +30,7 @@ In KP1 to KP4 every subtopic is a video of about five minutes. In KP0 every subt
 
 ### 1.3 Concept and tool
 
-Each page has two halves. The concept is tool-neutral: it works in any assistant, including the ones a ministry has already approved. The half headed In the tool says what to click, type or set, and is shown in Claude, said as such on the page. Where the same setting sits in other assistants is one comparison table on a KP0 reference page, carried in the Module 2 bundle, and linked from the pages that need it.
+Each page has two halves. The concept is tool-neutral: it works in any assistant, including the ones a ministry has already approved. The half headed In the tool says what to click, type or set, and is shown in Claude, said as such on the page. Other assistants are named once, on page 1.1 and on the course's home page, with the advice to find each setting in their own help pages: a table of where each setting sits in four vendors' products would be out of date within months.
 
 ### 1.4 The names used for Progressa
 
@@ -106,7 +106,7 @@ The model. Assistants offer more than one model. A larger model reasons more car
 
 Search and citations. With web search turned on, the assistant looks up current pages and marks each claim it took from one with a citation you can open. With search off, it answers from what it learned in training, which stops at a date and carries no sources. Turn search on for any question about what a country, a body or a standard did or says. Then open the citations: a citation proves only that a page exists, not that it says what the draft claims.
 
-Where the same two settings sit in ChatGPT, Gemini and Microsoft 365 Copilot is in the table on the reference page of this course, Assistants compared.
+Other assistants a ministry may have approved, such as ChatGPT, Gemini and Microsoft 365 Copilot, have the same settings under their own names, and their help pages say where. This course names each setting by what it does, so you can find it in any of them.
 
 ### Worked example — A law it was never shown
 
@@ -291,8 +291,6 @@ De-identify before you send. If your material holds anything sensitive, strip it
 
 Use the approved tool. A ministry that has approved an assistant has usually bought an account in which chats are not used to train the vendor's models and are kept under a contract. Use that account for official work, not a personal one. In Claude, the privacy settings say whether chats may be used to improve the models; in an organisation's account, an administrator sets this for everyone.
 
-Where the same settings sit in other assistants is in the table on the reference page of this course, Assistants compared.
-
 ### Worked example — Matching learners without their names
 
 The data unit of MoEYS wanted to know how many learners appear in all three lists: the school census, the examinations authority's candidate list and the social grant programme's register. An officer prepared to paste two hundred rows from each list into a public assistant and ask it to match them. The rows held names, dates of birth and the schools of children.
@@ -403,7 +401,7 @@ The sources of each page are listed at its foot, with publisher and date, and ar
 
 ### 4.5 Concept and tool
 
-Each page's In the tool is shown in Claude and says so. Settings are named by what they do, not by the words of a menu, because menus change. The comparison table of where the same settings sit in ChatGPT, Gemini and Microsoft 365 Copilot is carried in the Module 2 bundle, section 3.6.
+Each page's In the tool is shown in Claude and says so. Settings are named by what they do, not by the words of a menu, because menus change. Other assistants are named, not mapped: page 1.1 says that ChatGPT, Gemini and Microsoft 365 Copilot have the same settings under their own names.
 
 ## 5. Open calibration items
 
@@ -423,7 +421,7 @@ Pages 1.1 and 1.2 cite vendors (OpenAI, Google, Anthropic) on how their own tool
 
 ### 5.4 The tool shown
 
-The half of each page headed In the tool is shown in Claude. A ministry that has approved another assistant follows the concept and uses the comparison table. Whether ITU wants a second assistant shown in full is a question for ITU.
+The half of each page headed In the tool is shown in Claude. A ministry that has approved another assistant follows the concept and finds each setting in that assistant's own help pages. Whether ITU wants a second assistant shown in full is a question for ITU.
 
 ### 5.5 Editorial tone calls
 

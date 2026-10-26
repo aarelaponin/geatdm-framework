@@ -89,12 +89,5 @@
   "parent": "kp0-module-2",
   "path": "kp0/module-2/self-check.md",
   "gitbook_id": null
- },
- {
-  "ref": "kp0-assistants-compared",
-  "title": "Assistants compared",
-  "parent": "kp0",
-  "path": "kp0/assistants-compared.md",
-  "gitbook_id": null
  }
 ]

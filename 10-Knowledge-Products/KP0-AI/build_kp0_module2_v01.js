@@ -5,9 +5,8 @@
 //   and from the layers note's reading list (context engineering, Skills explained, the Agent Skills standard, Storey
 //   and Fowler on cognitive and intent debt).
 // Same shape as Module 1: four written pages (renderPage), one video with a person on camera (renderVideo), the
-//   speaker's own case left as a marked story beat. Section 3.6 carries the KP0 reference table Assistants compared,
-//   which every page's In the tool links to (plan section 1); its cells were checked on 26 October 2026 and are a
-//   calibration item until kp-citation-verify has run on them.
+//   speaker's own case left as a marked story beat. Other assistants are named, not mapped (the author's
+//   decision of 26 October 2026: a table of where each setting sits would go out of date within months).
 const fs = require('fs');
 const path = require('path');
 const {
@@ -199,14 +198,13 @@ body.push(
     children: [new TextRun({ text: "Module 2 — Prepare: set up what the AI knows and can do", font: ARIAL, size: 24, italics: true, color: COLOR_ACCENT })] }),
   spacer(600),
   specTable([
-    ["Document",        "Script bundle for Module 2 of KP0: four written pages, one video and the reference table Assistants compared"],
+    ["Document",        "Script bundle for Module 2 of KP0: four written pages and one video"],
     ["Version",         "v0.1 — written on the KP0 plan, version 0.4, of 22 October 2026"],
     ["Date",            "26 October 2026"],
     ["Module persona",  PERSONA_S],
     ["Subtopics",       "Four written pages (2.1 – 2.4); the fourth is the module's Judgement page"],
     ["Video",           "One, V2 'Context once, then skills', about four minutes, a person on camera, covering pages 2.1 to 2.4"],
     ["Worked examples", "One for each page, set in Progressa: Progressa's country context pack trimmed for one task, MoEYS's project brief, a skill installed and the course's knowledge base connected, and a project setup audited"],
-    ["Reference",       "Assistants compared: where each setting of Modules 1 and 2 sits in Claude, ChatGPT, Gemini and Microsoft 365 Copilot, in section 3.6"],
     ["Self-check",      "Four questions drawn from the four single messages, in section 2.1"],
     ["Prepared by",     "FiscalAdmin OÜ"]
   ]),
@@ -220,7 +218,7 @@ body.push(
   H1("1. Document context"),
 
   H3("1.1 What this document is"),
-  P("This document collects the four pages and the one video script of Module 2 of Knowledge Product 0 (Working with AI in Government), with the reference table Assistants compared, the module's self-check, production notes and calibration items. It is the v0.1 working draft, written on the KP0 plan, version 0.4, sections 4 and 7."),
+  P("This document collects the four pages and the one video script of Module 2 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items. It is the v0.1 working draft, written on the KP0 plan, version 0.4, sections 4 and 7."),
   P("Module 2 is the Prepare layer. Where Module 1 is about what a person types into one chat, Module 2 is about what the assistant already knows and can do before the person types anything. The principle is the one context engineering names: give the assistant the smallest set of high-signal information that makes the result you want most likely."),
 
   H3("1.2 How KP0 differs from KP1 to KP4"),
@@ -240,7 +238,7 @@ body.push(
   P("Module 2 carries the first argument of the series in small: a context pack written once and re-used by every later task is the same idea as a building block planned once and re-used by every programme, and 2.1 says so in one sentence. The second argument, a shared language between the business side and IT, is not argued in Module 2."),
 
   H3("1.5 How to read this document"),
-  P("Section 2 gives Module 2 at a glance, with the module's self-check. Section 3 holds the four pages, the script of the video and the reference table Assistants compared. Section 4 collects the production notes, section 5 the open calibration items, and section 6 the aggregate external-link list."),
+  P("Section 2 gives Module 2 at a glance, with the module's self-check. Section 3 holds the four pages, and the script of the video. Section 4 collects the production notes, section 5 the open calibration items, and section 6 the aggregate external-link list."),
 
   pageBreak()
 );
@@ -248,7 +246,7 @@ body.push(
 // ---------- MODULE AT A GLANCE ----------
 body.push(
   H1("2. Module 2 at a glance"),
-  P("Four written pages, one reference page and one video of about four minutes. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two and a half hours, most of it spent building the context pack."),
+  P("Four written pages and one video of about four minutes. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two and a half hours, most of it spent building the context pack."),
   genericTable([700, 2700, 4900, 1400], ["#", "Title", "Single message", "Form"], [
     ["2.1", "Build the context once",
       "Write down once, with dates and sources, what every task needs to know about your country and your unit, and give each task only the part it needs.", "Page"],
@@ -259,9 +257,7 @@ body.push(
     ["2.4", "Judgement: what never goes into the setup",
       "A setup is used by every later chat, so nothing confidential goes into it, every file carries a date, and the intent is written down.", "Page"],
     ["V2", "Context once, then skills",
-      "Write the context once and the procedure once; then every chat starts from them.", "Video, ~4 min"],
-    ["Ref.", "Assistants compared",
-      "Where each setting of Modules 1 and 2 sits in four assistants.", "Reference page"]
+      "Write the context once and the procedure once; then every chat starts from them.", "Video, ~4 min"]
   ]),
 
   H3("2.1 The module's self-check"),
@@ -345,7 +341,7 @@ body.push(...renderPage({
     "Setting up a project. Create a project, give it a name, and paste the brief into its instructions. Add the files: the context pack, the strategy, the template the unit writes to. Then start every chat on that work from inside the project.",
     "Keeping it current. Change the brief when the work changes, and replace a file when a newer version is approved, rather than adding the new one beside the old. Two versions of the same document in one project give two different answers.",
     "Sharing it. In an organisation's account, a project can be shared with colleagues, who then work from the same brief and files. Share it only with the people the files may be shown to.",
-    "The blank project brief below is the form to fill. In ChatGPT the same thing is called a project, in Gemini a Gem, and in Microsoft 365 Copilot a notebook: see the reference page of this course, Assistants compared.",
+    "The blank project brief below is the form to fill. In ChatGPT the same thing is called a project, in Gemini a Gem, and in Microsoft 365 Copilot a notebook.",
     { table: [
       ["Part of the brief", "What to write"],
       ["Who we are", "The unit, its body, and the post that owns this project"],
@@ -437,8 +433,7 @@ body.push(...renderPage({
     "Shown in Claude.",
     "Checking a project. Open the project and read its instructions and its list of files, as a stranger would. For each file, ask what it is, its date, and whether it may be shown to everyone the project is shared with.",
     "Checking memory. If memory is on, the settings show what the assistant has kept about you from earlier chats. Read it, correct what is wrong, and delete what should not be kept. For a chat that must leave nothing behind, use an incognito chat, which is not saved and not remembered.",
-    "Checking connectors. The settings list the connectors in use. Remove any that no current task needs.",
-    "Where the same controls sit in other assistants is in the table on the reference page of this course, Assistants compared."
+    "Checking connectors. The settings list the connectors in use. Remove any that no current task needs."
   ],
   example: {
     title: "A project audited",
@@ -506,26 +501,6 @@ body.push(...renderVideo({
   ]
 }));
 
-// ---------- REFERENCE: ASSISTANTS COMPARED ----------
-// The reference page every In the tool links to (plan section 1). Cells name what a setting does and where it is,
-// not the words of a menu. Checked on 26 October 2026 against the vendors' help pages; menus change, so the
-// GitBook page carries the date of the check and a calibration item asks for it to be re-run before release.
-body.push(
-  H2("3.6 Reference — Assistants compared"),
-  P("The concept on every page of this course works in any assistant. The half headed In the tool is shown in Claude. This table says where the same settings sit in three other assistants a ministry may have approved. It names what each setting does rather than the exact words of a menu, because menus change. Checked on 26 October 2026; check your own assistant's help pages for the current names."),
-  genericTable([1900, 1950, 1950, 1950, 1950], ["Setting", "Claude", "ChatGPT", "Gemini", "Microsoft 365 Copilot"], [
-    ["Choosing the model (1.1)", "A model menu beside the message box", "A model menu at the top of the chat", "A model menu beside the message box", "Mostly set by the organisation; some plans offer a choice"],
-    ["Web search with citations (1.1, 1.3)", "Web search, turned on in the tools menu; claims carry citations", "Search, used when needed or asked for; answers carry citations", "Answers grounded in Google Search, with a check that marks supported sentences", "Web grounding, which an administrator can turn off; answers carry references"],
-    ["Instructions for every chat (2.2)", "Profile preferences in the settings", "Custom instructions in the settings", "Instructions saved in the settings", "Personalisation in the settings, where the organisation allows it"],
-    ["A project with instructions and files (2.2)", "Projects", "Projects", "Gems", "Notebooks, with Copilot instructions"],
-    ["Packaged procedures (2.3)", "Skills, uploaded in the settings", "Check the current help pages", "Check the current help pages", "Agents, built by the organisation"],
-    ["Connections to sources (2.3)", "Connectors, including custom ones by address (MCP)", "Apps and connectors", "Apps linked to Google services", "The organisation's own files and mail, and connectors an administrator adds"],
-    ["Memory and how to clear it (2.4)", "Memory in the settings, viewable and editable; incognito chats", "Memory in the settings; temporary chats", "Saved information and activity in the settings; temporary chats", "Memory in the settings, where the organisation allows it"]
-  ]),
-  P("Two cells say 'check the current help pages': at the date of the check, the vendor's own pages did not settle the point. In an organisation's account, an administrator may have turned any of these settings on or off for everyone."),
-  pageBreak()
-);
-
 // ---------- PRODUCTION NOTES ----------
 body.push(
   H1("4. Production notes"),
@@ -542,9 +517,6 @@ body.push(
   H3("4.4 The kit"),
   P("Page 2.3 names the optional ea-plays kit and shows one of its skills. The tips of every page run without it. The page says how to install one skill in the Claude app; the kit's own page in the GEA space carries the other routes."),
 
-  H3("4.5 The reference table"),
-  P("Assistants compared (section 3.6) is a KP0 reference page, linked from every page whose In the tool names a setting. It is carried in this bundle because most of its rows are Module 2's. When the GitBook guide is rendered it becomes its own page."),
-
   pageBreak()
 );
 
@@ -559,14 +531,11 @@ body.push(
   H3("5.2 The speaker's case"),
   P("V2's story beat is left to the speaker, who is asked to name a real case, with a date, before the cut is decided (plan decision 4)."),
 
-  H3("5.3 The reference table goes stale"),
-  P("The cells of Assistants compared describe four vendors' products as checked on 26 October 2026. Two cells could not be settled from the vendors' own pages. The table is to be checked again before release and at each review of the course; the page carries the date of the last check."),
-
-  H3("5.4 A connector to the course"),
+  H3("5.3 A connector to the course"),
   P("Page 2.3 tells learners to connect the course's knowledge base through the read-only connector GitBook publishes for every site. That connector works only while the site keeps its page actions turned on. Whether ITU wants the courses offered this way is a question for ITU."),
 
-  H3("5.5 Vendor features named"),
-  P("Module 2 names features of commercial products (projects, skills, connectors, memory) because learners will meet them in their assistant's settings. The concept of each page is tool-neutral, and the reference table covers four vendors. Whether ITU wants the vendor names reduced is a question for ITU."),
+  H3("5.4 Vendor features named"),
+  P("Module 2 names features of commercial products (projects, skills, connectors, memory) because learners will meet them in their assistant's settings. The concept of each page is tool-neutral, and other assistants are named where a setting is shown. Whether ITU wants the vendor names reduced is a question for ITU."),
 
   pageBreak()
 );
@@ -574,14 +543,13 @@ body.push(
 // ---------- ANNEX ----------
 body.push(
   H1("6. Annex — aggregate external-link list"),
-  P("Compiled across the four pages, the video and the reference table. Every source is public."),
+  P("Compiled across the four pages, and the video. Every source is public."),
   genericTable([1100, 8600], ["Page", "Sources referenced, with addresses"], [
     ["2.1", "Effective context engineering for AI agents (Anthropic Engineering, September 2025), https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents. Technology Radar, Volume 34 (Thoughtworks, April 2026), https://www.thoughtworks.com/radar."],
     ["2.2", "Skills explained (Anthropic, 2025), https://claude.com/blog/skills-explained. Effective context engineering for AI agents, as above."],
     ["2.3", "Skills explained, as above. Agent Skills (open standard), https://agentskills.io. MCP servers for published docs (GitBook), https://gitbook.com/docs/ai-for-your-readers/mcp-servers-for-published-docs. The ea-plays kit, https://github.com/alaponin/ea-plays-kit."],
     ["2.4", "How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. Fragments: April 2 (Martin Fowler, 2 April 2026), https://www.martinfowler.com/fragments/2026-04-02.html. AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government."],
-    ["V2", "None of its own; the description points to the pages."],
-    ["Reference", "The help pages of Claude, ChatGPT, Gemini and Microsoft 365 Copilot, as checked on 26 October 2026."]
+    ["V2", "None of its own; the description points to the pages."]
   ]),
   spacer(120),
   P("All references are publicly accessible and verifiable.")

@@ -22,7 +22,7 @@ The course is ordered by how much work you hand to the assistant.
 
 ## Concept and tool, on every page
 
-Each page has two halves. **The concept** says why something works, in plain words, with its source. It works in any assistant, including the one your ministry has approved. **In the tool** says what to click, type or set, and is shown in Claude. Where the same settings sit in ChatGPT, Gemini and Microsoft 365 Copilot is on one reference page, [Assistants compared](assistants-compared.md).
+Each page has two halves. **The concept** says why something works, in plain words, with its source. It works in any assistant, including the one your ministry has approved. **In the tool** says what to click, type or set, and is shown in Claude. Other assistants a ministry may have approved, such as ChatGPT, Gemini and Microsoft 365 Copilot, have the same settings under their own names, and their help pages say where. The pages name each setting by what it does, so you can find it in any of them.
 
 Each page also carries a worked example set in [Progressa](../start-here/progressa.md), the fictional country every course here uses, and an AI usage tip you can run on your own work.
 

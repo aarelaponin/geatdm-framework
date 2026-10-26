@@ -13,7 +13,7 @@ module has **one video**, a person on camera, covering its pages (plan, section 
 |---|---|---|---|---|---|
 | 0 | Introduction | 0.0 | V0 | — | not started |
 | 1 | Chat | 1.1 – 1.4 | V1 *The draft that looked right* | `build_kp0_module1_v01.js` | v0.1 draft, gate passed |
-| 2 | Prepare | 2.1 – 2.4, and the reference page *Assistants compared* | V2 *Context once, then skills* | `build_kp0_module2_v01.js` | v0.1 draft, gate passed |
+| 2 | Prepare | 2.1 – 2.4 | V2 *Context once, then skills* | `build_kp0_module2_v01.js` | v0.1 draft, gate passed |
 | 3 – 5 | Orchestrate | — | V3 – V6 | — | not started |
 
 Each video's story beat is left to its speaker, who names a real case with a date before the cut is decided
@@ -26,7 +26,7 @@ Each video's story beat is left to its speaker, who names a real case with a dat
 | The script of each module: every page (the concept, In the tool, the worked example, the AI usage tip, the sources), the module's video, its self-check, production notes and calibration items | `build_kp0_moduleN_v01.js` | Written by hand. This file is the one source of the module |
 | The same module as readable text | `KP0_ModuleN_Script_Bundle_v0.1.md` | Generated from the script beside it; never edited by hand |
 | The Word document for review | not kept here | Generated from the script |
-| The course guide: a home page, one page per module, each subtopic page, each module's self-check, and the reference page Assistants compared. No video is embedded or announced yet | `../gitbook/kp0/`, with its manifest `../gitbook/pages-kp0.json` | Generated from the scripts by the kit's `render_kp0.py`; never edited by hand |
+| The course guide: a home page, one page per module, each subtopic page, and each module's self-check. No video is embedded or announced yet | `../gitbook/kp0/`, with its manifest `../gitbook/pages-kp0.json` | Generated from the scripts by the kit's `render_kp0.py`; never edited by hand |
 
 The worked examples are carried by each page of the script, and the blank project brief by page 2.2. The GitBook
 space itself is not yet created, and the decks, the figures and the videos are not yet made (plan, section 13,

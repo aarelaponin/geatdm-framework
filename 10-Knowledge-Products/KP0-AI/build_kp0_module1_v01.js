@@ -230,7 +230,7 @@ body.push(
   P("In KP1 to KP4 every subtopic is a video of about five minutes. In KP0 every subtopic is a written page, and the pages carry the whole content. Each module has one video, a person on camera telling what only experience can bring: a case from the team's own work, a mistake and how it was found. A learner who never watches the video misses nothing that is taught, only the story. The three departures from the series rules this needs (people on screen, fewer videos than subtopics, on-camera cues) are calibration items for ITU, in section 5."),
 
   H3("1.3 Concept and tool"),
-  P("Each page has two halves. The concept is tool-neutral: it works in any assistant, including the ones a ministry has already approved. The half headed In the tool says what to click, type or set, and is shown in Claude, said as such on the page. Where the same setting sits in other assistants is one comparison table on a KP0 reference page, carried in the Module 2 bundle, and linked from the pages that need it."),
+  P("Each page has two halves. The concept is tool-neutral: it works in any assistant, including the ones a ministry has already approved. The half headed In the tool says what to click, type or set, and is shown in Claude, said as such on the page. Other assistants are named once, on page 1.1 and on the course's home page, with the advice to find each setting in their own help pages: a table of where each setting sits in four vendors' products would be out of date within months."),
 
   H3("1.4 The names used for Progressa"),
   genericTable([2200, 7500], ["Name", "What it is, and its part in Module 1"], [
@@ -308,7 +308,7 @@ body.push(...renderPage({
     "Shown in Claude. Two settings change how far you can trust a draft, and both are next to the box where you type.",
     "The model. Assistants offer more than one model. A larger model reasons more carefully and is slower; a smaller one is quicker and good for short, routine drafting. Choose the larger one for analysis, a comparison or anything with figures. Choosing a larger model makes errors rarer. It does not remove them, and it does not change what you must check.",
     "Search and citations. With web search turned on, the assistant looks up current pages and marks each claim it took from one with a citation you can open. With search off, it answers from what it learned in training, which stops at a date and carries no sources. Turn search on for any question about what a country, a body or a standard did or says. Then open the citations: a citation proves only that a page exists, not that it says what the draft claims.",
-    "Where the same two settings sit in ChatGPT, Gemini and Microsoft 365 Copilot is in the table on the reference page of this course, Assistants compared."
+    "Other assistants a ministry may have approved, such as ChatGPT, Gemini and Microsoft 365 Copilot, have the same settings under their own names, and their help pages say where. This course names each setting by what it does, so you can find it in any of them."
   ],
   example: {
     title: "A law it was never shown",
@@ -431,8 +431,7 @@ body.push(...renderPage({
   inTool: [
     "Shown in Claude, and the same in any assistant.",
     "De-identify before you send. If your material holds anything sensitive, strip it first, with the tip below. Run that one step on an assistant that runs on your own computer or your ministry's own servers, never on a public one, or the stripping defeats itself. With no such assistant, do it by hand: the table the tip asks for, of what was removed, its kind and the placeholder used, is a ten-minute checklist a person can apply before pasting.",
-    "Use the approved tool. A ministry that has approved an assistant has usually bought an account in which chats are not used to train the vendor's models and are kept under a contract. Use that account for official work, not a personal one. In Claude, the privacy settings say whether chats may be used to improve the models; in an organisation's account, an administrator sets this for everyone.",
-    "Where the same settings sit in other assistants is in the table on the reference page of this course, Assistants compared."
+    "Use the approved tool. A ministry that has approved an assistant has usually bought an account in which chats are not used to train the vendor's models and are kept under a contract. Use that account for official work, not a personal one. In Claude, the privacy settings say whether chats may be used to improve the models; in an organisation's account, an administrator sets this for everyone."
   ],
   example: {
     title: "Matching learners without their names",
@@ -518,7 +517,7 @@ body.push(
   P("The sources of each page are listed at its foot, with publisher and date, and are linked on the written page. The video's description points to the pages, which carry the links. The aggregate list, with addresses, is in section 6."),
 
   H3("4.5 Concept and tool"),
-  P("Each page's In the tool is shown in Claude and says so. Settings are named by what they do, not by the words of a menu, because menus change. The comparison table of where the same settings sit in ChatGPT, Gemini and Microsoft 365 Copilot is carried in the Module 2 bundle, section 3.6."),
+  P("Each page's In the tool is shown in Claude and says so. Settings are named by what they do, not by the words of a menu, because menus change. Other assistants are named, not mapped: page 1.1 says that ChatGPT, Gemini and Microsoft 365 Copilot have the same settings under their own names."),
 
   pageBreak()
 );
@@ -538,7 +537,7 @@ body.push(
   P("Pages 1.1 and 1.2 cite vendors (OpenAI, Google, Anthropic) on how their own tools behave. They are cited because they are the primary account; each is tagged as a vendor source on the written page. Whether ITU wants a non-vendor source beside each is a question for ITU."),
 
   H3("5.4 The tool shown"),
-  P("The half of each page headed In the tool is shown in Claude. A ministry that has approved another assistant follows the concept and uses the comparison table. Whether ITU wants a second assistant shown in full is a question for ITU."),
+  P("The half of each page headed In the tool is shown in Claude. A ministry that has approved another assistant follows the concept and finds each setting in that assistant's own help pages. Whether ITU wants a second assistant shown in full is a question for ITU."),
 
   H3("5.5 Editorial tone calls"),
   P("Lines that deserve a deliberate keep, soften or cut decision: 'The most dangerous thing an AI assistant has ever given me was not a wrong answer' (V1); 'Treat the prompt box as a public place' (1.4); 'the answer is never \"the AI said so\"' (1.4)."),
