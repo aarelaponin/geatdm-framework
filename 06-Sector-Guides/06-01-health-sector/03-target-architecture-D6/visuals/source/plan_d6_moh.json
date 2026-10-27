@@ -1,0 +1,268 @@
+{
+  "source_file": "moh_d6_infographic.svg",
+  "deliverable_code": "D6",
+  "ministry": "MoH",
+  "section_number": 7,
+  "section_title": "Future State Architecture — MoH",
+  "total_slides": 7,
+  "slides": [
+    {
+      "slide_number": 1,
+      "slide_type": "title",
+      "title": "Future State Architecture",
+      "subtitle": "Ministry of Health — Deliverable D6",
+      "elements": [
+        {
+          "type": "badge",
+          "text": "D6",
+          "size": "48pt"
+        },
+        {
+          "type": "subtitle_line",
+          "text": "Ministry of Health (MoH) — Progressa"
+        },
+        {
+          "type": "subtitle_line",
+          "text": "Target Architecture 2025–2033"
+        },
+        {
+          "type": "subtitle_line",
+          "text": "OpenHIE-Based · FHIR R4 Standard · Integrated Health Information Ecosystem"
+        },
+        {
+          "type": "subtitle_line",
+          "text": "[contract reference] • ITU Consultant Team"
+        }
+      ],
+      "layout": "title_slide",
+      "speaker_notes": "This deliverable presents the future state architecture for the Ministry of Health — designed as an integrated, interoperable health information ecosystem built on the OpenHIE architecture. The architecture addresses the current fragmentation of 8+ siloed systems and ~90% paper-based clinical registers, targeting a unified ecosystem connected via FHIR-based interfaces through a Master Patient Index and OpenHIM integration layer. The design follows 12 key architectural decisions aligned with WHO Digital Health Guidelines and the National Health Sector Strategic Plan."
+    },
+    {
+      "slide_number": 2,
+      "slide_type": "stats",
+      "title": "MoH Future State at a Glance",
+      "elements": [
+        {
+          "type": "hero_stat",
+          "value": "2–3M",
+          "label": "Population Served",
+          "color": "primary_mid"
+        },
+        {
+          "type": "hero_stat",
+          "value": "~90",
+          "label": "Health Facilities Nationwide",
+          "color": "primary_mid"
+        },
+        {
+          "type": "hero_stat",
+          "value": "8+",
+          "label": "Siloed Systems (Current State)",
+          "color": "warning_deep_orange"
+        },
+        {
+          "type": "hero_stat",
+          "value": "~90%",
+          "label": "Paper-Based Clinical Registers",
+          "color": "warning_deep_orange"
+        },
+        {
+          "type": "hero_stat",
+          "value": "12",
+          "label": "Design Decisions",
+          "color": "accent_gold"
+        }
+      ],
+      "layout": "stat_grid_3x2",
+      "speaker_notes": "Five headline metrics frame the MoH challenge and ambition. The health system serves 2–3 million people across ~90 facilities. The current state has 8+ siloed health information systems with no interoperability. Some 90% of clinical registers remain paper-based — the highest paper dependency of any Tier 1 ministry. 12 architectural design decisions will govern the transformation from fragmented paper-based operations to an integrated digital health ecosystem."
+    },
+    {
+      "slide_number": 3,
+      "slide_type": "content_cards",
+      "title": "Business & Data Architecture",
+      "elements": [
+        {
+          "type": "domain_card",
+          "label": "B",
+          "title": "Business Architecture",
+          "color": "accent_orange",
+          "items": [
+            "Target vision 2033: Integrated health information ecosystem built on OpenHIE architecture",
+            "4-layer application model: National Platform → Clinical Systems → Health Administration → Surveillance",
+            "Dual-mode concept: Interim (2025–2028) with ProgTel hosting + offline-first, then Target (2028–2033) with G-Cloud + national connectivity"
+          ]
+        },
+        {
+          "type": "domain_card",
+          "label": "D",
+          "title": "Data Architecture",
+          "color": "info_blue",
+          "items": [
+            "Master Patient Index (OpenCR) anchored to NIN via eCRVS feed — unified patient identity across all systems",
+            "FHIR R4 standard: 14 resource profiles with façade wrappers for legacy system compatibility",
+            "Shared Health Record (HAPI FHIR) for longitudinal patient summaries",
+            "6 priority data flows: Birth→MPI→NHIS, Immunisation, Lab, Clinical, Claims, Reporting"
+          ]
+        }
+      ],
+      "layout": "card_grid_1x2_tall",
+      "speaker_notes": "The Business Architecture envisions a complete transformation from 8+ siloed systems and ~90% paper registers to an integrated digital health ecosystem by 2033. The 4-layer application model organizes the target portfolio: Layer 1 is the National Health Platform (DHIS2, MPI, Shared Health Record), Layer 2 provides Clinical Systems (EHR, EIR, LIS), Layer 3 covers Health Administration (e-NHIS insurance, eCRVS, eLMIS supply chain), and Layer 4 handles Surveillance (IDSR+, event-based, community-based). A dual-mode architecture recognizes infrastructure realities: the Interim mode (2025–2028) uses ProgTel hosting and offline-first design; the Target mode (2028–2033) migrates to G-Cloud sovereign hosting with full broadband connectivity. Data Architecture centres on a Master Patient Index anchored to the National Identity Number through eCRVS, creating a single patient identity across all health systems. FHIR R4 is the interoperability standard, with legacy systems wrapped behind façade adapters."
+    },
+    {
+      "slide_number": 4,
+      "slide_type": "content_cards",
+      "title": "Application & Technology Architecture",
+      "elements": [
+        {
+          "type": "domain_card",
+          "label": "A",
+          "title": "Application Architecture — 4-Layer Model",
+          "color": "accent_gold",
+          "items": [
+            "Layer 1 — National Platform: DHIS2 (HMIS), MPI (OpenCR), Shared Health Record (HAPI FHIR)",
+            "Layer 2 — Clinical: EHR (OpenMRS) for 30–40 priority facilities, EIR (DHIS2 Tracker) for 350,000–400,000 children, LIS (A-LIS/OpenELIS)",
+            "Layer 3 — Administration: e-NHIS (60,000+ beneficiaries), eCRVS/CIVIS (civil registration), eLMIS (OpenLMIS supply chain)",
+            "Layer 4 — Surveillance: IDSR+ (DHIS2 Tracker), Event-Based Surveillance, Community-Based Surveillance (CHW mobile/USSD)"
+          ]
+        },
+        {
+          "type": "domain_card",
+          "label": "T",
+          "title": "Technology Architecture",
+          "color": "primary_dark",
+          "items": [
+            "Interim: ProgTel/e-Gov hosting, offline-first with satellite connectivity, bilateral cross-ministry integrations",
+            "Target: G-Cloud sovereign hosting (MoH spoke), RDIP broadband, national Government Service Bus, ProgressaPay health payment flows",
+            "Open-source first stack: DHIS2, OpenMRS, OpenHIM, OpenCR, OpenLMIS — community-supported with global adoption",
+            "DHDD (Digital Health Data Division) recruitment: 3–5 staff as foundation"
+          ]
+        }
+      ],
+      "layout": "card_grid_1x2_tall",
+      "speaker_notes": "The Application Architecture organizes all health IT into 4 purpose-defined layers. Layer 1 provides the foundation: DHIS2 as the national HMIS (targeting ≥95% reporting), OpenCR as the Master Patient Index linked to NIN, and HAPI FHIR for the Shared Health Record. Layer 2 brings clinical systems to the point of care: OpenMRS EHR at 30–40 priority facilities, the Electronic Immunisation Registry tracking 350,000–400,000 children, and laboratory information systems. Layer 3 automates health administration: e-NHIS insurance for 60,000+ beneficiaries with mobile enrollment, eCRVS for vital events, and OpenLMIS for pharmaceutical supply chain management. Layer 4 builds modern surveillance: upgrading from basic IDSR to electronic case-based surveillance with event-based and community-based channels. Technology Architecture follows a dual-mode path: interim ProgTel hosting with offline-first design acknowledges current infrastructure constraints, while the target state leverages G-Cloud sovereign hosting and RDIP broadband connectivity. The entire stack is open-source first, reducing vendor lock-in and licensing costs."
+    },
+    {
+      "slide_number": 5,
+      "slide_type": "content_mixed",
+      "title": "OpenHIM Integration Hub — Zero Point-to-Point",
+      "elements": [
+        {
+          "type": "hub_diagram",
+          "title": "Integration Layer — OpenHIM",
+          "hub_label": "OpenHIM",
+          "capabilities": [
+            "Routing",
+            "FHIR Mediation",
+            "Audit Logging",
+            "Legacy Adapters",
+            "Security (mTLS + OAuth 2.0)"
+          ],
+          "principle": "All inter-system data flows mediated — zero point-to-point connections",
+          "color": "accent_orange"
+        },
+        {
+          "type": "integration_split",
+          "left_title": "Non-Disruptive Transition",
+          "left_items": [
+            "Interim: OpenHIM as self-contained HIE",
+            "OpenCR MPI with eCRVS NIN feed",
+            "Bilateral cross-ministry integrations",
+            "Offline-first with satellite connectivity"
+          ],
+          "right_title": "Target State Integration",
+          "right_items": [
+            "National Government Service Bus connection",
+            "National Digital Identity integration",
+            "ProgressaPay health payment flows",
+            "RDIP broadband connectivity"
+          ]
+        }
+      ],
+      "layout": "hub_plus_split",
+      "speaker_notes": "OpenHIM is the centrepiece of MoH's integration architecture — a proven open-source Health Information Mediator that replaces the current fragmented point-to-point connections with a single mediation layer. All inter-system data flows pass through OpenHIM, which provides message routing, FHIR mediation for standards translation, comprehensive audit logging, legacy adapters for non-FHIR systems, and security through mutual TLS and OAuth 2.0. The non-disruptive transition is critical: in the interim phase, OpenHIM operates as a self-contained Health Information Exchange within MoH's ecosystem, using bilateral integrations with other ministries. As national infrastructure matures, OpenHIM connects to the Government Service Bus, National Digital Identity, and ProgressaPay for health payment automation. This avoids the common failure pattern of waiting for national platforms before acting — MoH proceeds independently and plugs in later."
+    },
+    {
+      "slide_number": 6,
+      "slide_type": "content_mixed",
+      "title": "Three-Phase Implementation Roadmap",
+      "elements": [
+        {
+          "type": "phase_card",
+          "phase": "FOUNDATION",
+          "years": "2025–2027",
+          "color": "accent_orange",
+          "focus": "Establish core platform and integration layer",
+          "items": [
+            "DHIS2 strengthening (≥95% reporting)",
+            "OpenHIM HIE deployment",
+            "MPI (OpenCR) with eCRVS feed",
+            "IDSR+ pilot (7 diseases)",
+            "DHDD recruitment (3–5 staff)"
+          ]
+        },
+        {
+          "type": "phase_card",
+          "phase": "CLINICAL SCALE-UP",
+          "years": "2027–2030",
+          "color": "success_green",
+          "focus": "Expand clinical systems and interoperability",
+          "items": [
+            "OpenMRS EHR → 30–40 facilities",
+            "FHIR-based integration flows",
+            "e-NHIS → 60,000 beneficiaries",
+            "Lab results routing (A-LIS→HIE)",
+            "Claims & eligibility automation"
+          ]
+        },
+        {
+          "type": "phase_card",
+          "phase": "ECOSYSTEM MATURITY",
+          "years": "2030–2033",
+          "color": "purple_violet",
+          "focus": "Full mediation and national integration",
+          "items": [
+            "Full HIE mediation (all flows)",
+            "SPT retired → DHIS2 Tracker EIR",
+            "G-Cloud migration complete",
+            "Shared Health Record operational",
+            "International reporting automated"
+          ]
+        }
+      ],
+      "layout": "three_phase_timeline",
+      "speaker_notes": "The three-phase roadmap moves from foundation through clinical scale-up to ecosystem maturity. Phase 1 (2025–2027) establishes the core: strengthening DHIS2 to ≥95% reporting coverage, deploying OpenHIM as the integration layer, setting up the Master Patient Index linked to eCRVS, and piloting electronic surveillance for 7 priority diseases. Critically, the DHDD (Digital Health Data Division) recruitment of 3–5 staff provides the human foundation. Phase 2 (2027–2030) scales clinical systems: OpenMRS EHR deployment to 30–40 priority facilities, FHIR-based integration flows through OpenHIM, e-NHIS insurance expansion to 60,000+ beneficiaries with claims automation, and laboratory results routing. Phase 3 (2030–2033) achieves ecosystem maturity: full HIE mediation of all data flows, retirement of legacy SPT in favour of DHIS2 Tracker, G-Cloud migration completion, and the Shared Health Record becoming operational for longitudinal patient summaries."
+    },
+    {
+      "slide_number": 7,
+      "slide_type": "takeaway",
+      "title": "Key Takeaway: Connect Before You Collect",
+      "elements": [
+        {
+          "type": "principles_strip",
+          "items": [
+            {"title": "OpenHIE-Based", "detail": "Standards-based health interoperability framework"},
+            {"title": "Offline-First", "detail": "All facility systems work without connectivity"},
+            {"title": "Open-Source First", "detail": "DHIS2, OpenMRS, OpenHIM, OpenCR, OpenLMIS stack"},
+            {"title": "Build on What Works", "detail": "Retain & invest in proven systems (DHIS2, eCRVS, SPT)"},
+            {"title": "FHIR R4 Standard", "detail": "14 resource profiles with façade wrappers for legacy"},
+            {"title": "Sovereign Hosting", "detail": "All identifiable health data on in-country G-Cloud"},
+            {"title": "NIN Patient Identity", "detail": "eCRVS NIN as foundational patient identifier via MPI"},
+            {"title": "6 Priority Flows", "detail": "Birth→MPI→NHIS, Immunisation, Lab, Clinical, Claims, Reporting"}
+          ]
+        },
+        {
+          "type": "takeaway_text",
+          "text": "MoH's architecture deploys OpenHIM as the integration hub with zero point-to-point connections — building an interoperable health ecosystem that starts independently and plugs into national infrastructure as it matures.",
+          "style": "bold_centered"
+        },
+        {
+          "type": "dependency_strip",
+          "title": "National Dependencies",
+          "items": ["RDIP Infrastructure", "G-Cloud Sovereign Hosting", "Government Service Bus", "National Digital Identity", "ProgressaPay", "IFMIS", "Data Protection Legislation"]
+        }
+      ],
+      "layout": "takeaway_with_visual",
+      "speaker_notes": "Eight architectural principles govern all MoH design decisions. OpenHIE-Based ensures alignment with global health information exchange standards. Offline-First acknowledges that rural health facilities cannot rely on connectivity. Open-Source First reduces costs and vendor lock-in through a globally-supported stack. Build on What Works retains proven investments in DHIS2 and eCRVS. FHIR R4 provides the interoperability standard. Sovereign Hosting ensures all identifiable health data stays in-country. NIN Patient Identity creates a single longitudinal patient record. 6 Priority Flows define the critical integration pathways. The non-disruptive dual-mode approach is key: MoH doesn't wait for national infrastructure — it builds its own integration ecosystem through OpenHIM and connects to the Government Service Bus when ready. Seven national dependencies must be tracked: RDIP infrastructure, G-Cloud hosting, Government Service Bus, National Digital Identity, ProgressaPay, IFMIS, and Data Protection Legislation."
+    }
+  ]
+}

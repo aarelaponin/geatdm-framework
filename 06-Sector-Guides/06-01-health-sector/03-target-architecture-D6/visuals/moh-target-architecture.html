@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MoH Progressa — Target Application Architecture</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg: #f8f9fa;
+    --white: #ffffff;
+    --border: #dee2e6;
+    --text: #212529;
+    --text-light: #495057;
+    --text-muted: #6c757d;
+
+    /* Layer colors — professional, muted palette */
+    --surv: #7b2d8e;
+    --surv-bg: #f3e8f7;
+    --surv-border: #d4a5e0;
+
+    --admin: #1565c0;
+    --admin-bg: #e3f2fd;
+    --admin-border: #90caf9;
+
+    --clinical: #2e7d32;
+    --clinical-bg: #e8f5e9;
+    --clinical-border: #a5d6a7;
+
+    --integ: #e65100;
+    --integ-bg: #fff3e0;
+    --integ-border: #ffcc80;
+
+    --platform: #01579b;
+    --platform-bg: #e1f5fe;
+    --platform-border: #81d4fa;
+
+    --data-tag: #c62828;
+    --data-tag-bg: #ffebee;
+
+    --ext: #37474f;
+    --ext-bg: #eceff1;
+    --ext-border: #b0bec5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px;
+    min-height: 100vh;
+  }
+
+  .diagram-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+
+  .diagram-header {
+    text-align: center;
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--border);
+  }
+
+  .diagram-header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.3px;
+  }
+
+  .diagram-header .subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 4px;
+    font-weight: 400;
+  }
+
+  .diagram-header .doc-ref {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 6px;
+  }
+
+  /* === LAYER STRUCTURE === */
+  .layer {
+    margin-bottom: 6px;
+    border-radius: 6px;
+    padding: 14px 16px;
+    position: relative;
+  }
+
+  .layer-label {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 3px 12px;
+    border-radius: 6px 0 6px 0;
+    color: white;
+  }
+
+  .layer-systems {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  /* === SYSTEM BOXES === */
+  .system {
+    background: var(--white);
+    border: 1.5px solid;
+    border-radius: 5px;
+    padding: 10px 12px;
+    min-width: 150px;
+    max-width: 210px;
+    flex: 1;
+    position: relative;
+  }
+
+  .system-name {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+
+  .system-platform {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+
+  .system-status {
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+
+  .status-operational { background: #e8f5e9; color: #2e7d32; }
+  .status-new { background: #fff3e0; color: #e65100; }
+  .status-pilot { background: #fce4ec; color: #c62828; }
+  .status-transition { background: #f3e5f5; color: #7b1fa2; }
+
+  /* === DATA ENTITIES === */
+  .data-entities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-top: 4px;
+  }
+
+  .data-entity {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    padding: 1px 5px;
+    border-radius: 2px;
+    background: var(--data-tag-bg);
+    color: var(--data-tag);
+    border: 1px solid #ffcdd2;
+    white-space: nowrap;
+  }
+
+  /* === LAYER-SPECIFIC COLORS === */
+  .layer-surv {
+    background: var(--surv-bg);
+    border: 1.5px solid var(--surv-border);
+  }
+  .layer-surv .layer-label { background: var(--surv); }
+  .layer-surv .system { border-color: var(--surv-border); }
+  .layer-surv .system-name { color: var(--surv); }
+
+  .layer-admin {
+    background: var(--admin-bg);
+    border: 1.5px solid var(--admin-border);
+  }
+  .layer-admin .layer-label { background: var(--admin); }
+  .layer-admin .system { border-color: var(--admin-border); }
+  .layer-admin .system-name { color: var(--admin); }
+
+  .layer-clinical {
+    background: var(--clinical-bg);
+    border: 1.5px solid var(--clinical-border);
+  }
+  .layer-clinical .layer-label { background: var(--clinical); }
+  .layer-clinical .system { border-color: var(--clinical-border); }
+  .layer-clinical .system-name { color: var(--clinical); }
+
+  .layer-integ {
+    background: var(--integ-bg);
+    border: 1.5px solid var(--integ-border);
+  }
+  .layer-integ .layer-label { background: var(--integ); }
+
+  .layer-platform {
+    background: var(--platform-bg);
+    border: 1.5px solid var(--platform-border);
+  }
+  .layer-platform .layer-label { background: var(--platform); }
+  .layer-platform .system { border-color: var(--platform-border); }
+  .layer-platform .system-name { color: var(--platform); }
+
+  .layer-ext {
+    background: var(--ext-bg);
+    border: 1.5px dashed var(--ext-border);
+  }
+  .layer-ext .layer-label { background: var(--ext); }
+  .layer-ext .system { border-color: var(--ext-border); border-style: dashed; }
+  .layer-ext .system-name { color: var(--ext); }
+
+  /* === INTEGRATION LAYER SPECIAL === */
+  .integ-functions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .integ-func {
+    background: var(--white);
+    border: 1.5px solid var(--integ-border);
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--integ);
+    text-align: center;
+    min-width: 120px;
+  }
+
+  .integ-hub {
+    background: var(--integ);
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px 24px;
+    border-radius: 5px;
+  }
+
+  /* === FLOW ARROWS === */
+  .flow-connector {
+    text-align: center;
+    padding: 4px 0;
+    color: var(--text-muted);
+    font-size: 18px;
+    letter-spacing: 6px;
+    line-height: 1;
+  }
+
+  .flow-label {
+    font-size: 9px;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* === DATA FLOW SUMMARY === */
+  .data-flow-summary {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 2px solid var(--border);
+  }
+
+  .data-flow-summary h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+
+  .flow-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+
+  .flow-table th {
+    background: #f1f3f5;
+    font-weight: 600;
+    text-align: left;
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-light);
+  }
+
+  .flow-table td {
+    padding: 5px 10px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  .flow-table tr:nth-child(even) td {
+    background: #f8f9fa;
+  }
+
+  .fhir-res {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--data-tag);
+    background: var(--data-tag-bg);
+    padding: 0 4px;
+    border-radius: 2px;
+  }
+
+  /* === LEGEND === */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    justify-content: center;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    color: var(--text-muted);
+  }
+
+  .legend-swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid;
+    flex-shrink: 0;
+  }
+
+  .legend-divider {
+    width: 1px;
+    height: 16px;
+    background: var(--border);
+  }
+
+  /* === FOOTER === */
+  .diagram-footer {
+    margin-top: 16px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: var(--text-muted);
+  }
+
+  /* Print styles */
+  @media print {
+    body { padding: 0; background: white; }
+    .diagram-container { box-shadow: none; border: none; padding: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="diagram-container">
+
+  <!-- HEADER -->
+  <div class="diagram-header">
+    <h1>MoH Target Application Architecture — Progressa</h1>
+    <div class="subtitle">Future State ("To-Be") — Four-Layer Application Portfolio with Integration and Data Entities</div>
+    <div class="doc-ref">Source: D6 — MoH Future State Architecture v1.0 &nbsp;|&nbsp; Sections 5.1–5.7, 6.2, 8.2</div>
+  </div>
+
+  <!-- LAYER 4: SURVEILLANCE -->
+  <div class="layer layer-surv">
+    <div class="layer-label">Layer 4 — Surveillance</div>
+    <div class="layer-systems">
+
+      <div class="system">
+        <div class="system-name">IDSR+ Case-Based Surveillance</div>
+        <div class="system-platform">DHIS2 Tracker</div>
+        <span class="system-status status-new">New — Phase 1 Pilot</span>
+        <div class="data-entities">
+          <span class="data-entity">Condition</span>
+          <span class="data-entity">Encounter</span>
+          <span class="data-entity">DiagnosticReport</span>
+          <span class="data-entity">Patient</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">Event-Based Surveillance</div>
+        <div class="system-platform">Media + Signal Detection</div>
+        <span class="system-status status-new">New — Phase 2</span>
+        <div class="data-entities">
+          <span class="data-entity">Alert Signal</span>
+          <span class="data-entity">RiskAssessment</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">Community-Based Surveillance</div>
+        <div class="system-platform">SMS / USSD / CHW Mobile</div>
+        <span class="system-status status-new">New — Phase 2</span>
+        <div class="data-entities">
+          <span class="data-entity">Communication</span>
+          <span class="data-entity">Observation</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="flow-connector">▼ ▼ ▼</div>
+  <div class="flow-label">FHIR Condition · DiagnosticReport · IHR Notifications</div>
+
+  <!-- LAYER 3: HEALTH ADMINISTRATION -->
+  <div class="layer layer-admin">
+    <div class="layer-label">Layer 3 — Health Administration</div>
+    <div class="layer-systems">
+
+      <div class="system">
+        <div class="system-name">e-NHIS</div>
+        <div class="system-platform">National Health Insurance</div>
+        <span class="system-status status-operational">Operational — Scaling</span>
+        <div class="data-entities">
+          <span class="data-entity">Claim</span>
+          <span class="data-entity">ClaimResponse</span>
+          <span class="data-entity">Coverage</span>
+          <span class="data-entity">Patient</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">eCRVS / CIVIS</div>
+        <div class="system-platform">Civil Registration & Vital Stats</div>
+        <span class="system-status status-operational">Operational — ~50% coverage</span>
+        <div class="data-entities">
+          <span class="data-entity">Patient</span>
+          <span class="data-entity">RelatedPerson</span>
+          <span class="data-entity">Encounter</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">eLMIS</div>
+        <div class="system-platform">OpenLMIS — Supply Chain</div>
+        <span class="system-status status-new">New — Phase 2</span>
+        <div class="data-entities">
+          <span class="data-entity">SupplyDelivery</span>
+          <span class="data-entity">SupplyRequest</span>
+          <span class="data-entity">MedicationRequest</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">iHRIS / HRMIS</div>
+        <div class="system-platform">Health Workforce Registry</div>
+        <span class="system-status status-transition">Transition — Phase 3</span>
+        <div class="data-entities">
+          <span class="data-entity">Practitioner</span>
+          <span class="data-entity">PractitionerRole</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="flow-connector">▼ ▼ ▼</div>
+  <div class="flow-label">FHIR Claim · Coverage · SupplyDelivery · Patient (birth→enrollment)</div>
+
+  <!-- LAYER 2: CLINICAL SYSTEMS -->
+  <div class="layer layer-clinical">
+    <div class="layer-label">Layer 2 — Clinical Systems</div>
+    <div class="layer-systems">
+
+      <div class="system">
+        <div class="system-name">EHR</div>
+        <div class="system-platform">OpenMRS</div>
+        <span class="system-status status-new">New — Phase 2</span>
+        <div class="data-entities">
+          <span class="data-entity">Encounter</span>
+          <span class="data-entity">Observation</span>
+          <span class="data-entity">Condition</span>
+          <span class="data-entity">MedicationRequest</span>
+          <span class="data-entity">Patient</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">EIR (Immunisation Registry)</div>
+        <div class="system-platform">DHIS2 Tracker + SPT (coexistence)</div>
+        <span class="system-status status-pilot">Pilot Phase 1 → Scale Phase 2</span>
+        <div class="data-entities">
+          <span class="data-entity">Immunization</span>
+          <span class="data-entity">Patient</span>
+          <span class="data-entity">Location</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">LIS (Laboratory)</div>
+        <div class="system-platform">A-LIS / OpenELIS</div>
+        <span class="system-status status-pilot">Pilot → Expand</span>
+        <div class="data-entities">
+          <span class="data-entity">DiagnosticReport</span>
+          <span class="data-entity">Observation</span>
+          <span class="data-entity">Specimen</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">RMNCH Tracking</div>
+        <div class="system-platform">DHIS2 Tracker</div>
+        <span class="system-status status-new">New — Phase 2</span>
+        <div class="data-entities">
+          <span class="data-entity">Encounter</span>
+          <span class="data-entity">Observation</span>
+          <span class="data-entity">Patient</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="flow-connector">▼ ▼ ▼</div>
+  <div class="flow-label">All inter-system data exchange passes through OpenHIM — no point-to-point integrations</div>
+
+  <!-- INTEGRATION LAYER -->
+  <div class="layer layer-integ">
+    <div class="layer-label">Integration Layer — OpenHIE Architecture</div>
+    <div class="integ-functions">
+      <div class="integ-func">Routing &<br>Orchestration</div>
+      <div class="integ-hub">OpenHIM<br><span style="font-weight:400;font-size:10px;">Health Information Mediator</span></div>
+      <div class="integ-func">FHIR R4<br>Façades</div>
+      <div class="integ-func">Data<br>Transformation</div>
+      <div class="integ-func">Security<br>mTLS + Auth</div>
+      <div class="integ-func">Audit Logging<br>7-Year Retention</div>
+      <div class="integ-func">ADX Aggregate<br>Exchange</div>
+      <div class="integ-func">Error Handling<br>Queue + Retry</div>
+    </div>
+  </div>
+
+  <div class="flow-connector">▼ ▼ ▼</div>
+  <div class="flow-label">FHIR R4 · ADX · REST/JSON (transitional) · mTLS secured</div>
+
+  <!-- LAYER 1: NATIONAL HEALTH PLATFORM -->
+  <div class="layer layer-platform">
+    <div class="layer-label">Layer 1 — National Health Platform</div>
+    <div class="layer-systems">
+
+      <div class="system">
+        <div class="system-name">DHIS2</div>
+        <div class="system-platform">National HMIS + Tracker + Analytics</div>
+        <span class="system-status status-operational">Operational — Strengthening</span>
+        <div class="data-entities">
+          <span class="data-entity">Measure</span>
+          <span class="data-entity">MeasureReport</span>
+          <span class="data-entity">Location</span>
+          <span class="data-entity">Organization</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">MPI (Master Patient Index)</div>
+        <div class="system-platform">OpenCR</div>
+        <span class="system-status status-new">New — Phase 1 Core</span>
+        <div class="data-entities">
+          <span class="data-entity">Patient</span>
+          <span class="data-entity">RelatedPerson</span>
+          <span class="data-entity">Identifier</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">Shared Health Record</div>
+        <div class="system-platform">HAPI FHIR Server</div>
+        <span class="system-status status-new">New — Phase 1</span>
+        <div class="data-entities">
+          <span class="data-entity">Bundle</span>
+          <span class="data-entity">Provenance</span>
+          <span class="data-entity">All FHIR profiles</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">Terminology Service</div>
+        <div class="system-platform">Open Concept Lab (OCL)</div>
+        <span class="system-status status-new">New — Phase 1</span>
+        <div class="data-entities">
+          <span class="data-entity">CodeSystem</span>
+          <span class="data-entity">ValueSet</span>
+          <span class="data-entity">ConceptMap</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">Facility Registry</div>
+        <div class="system-platform">DHIS2 Org Units + mCSD FHIR</div>
+        <span class="system-status status-operational">Operational — Extending</span>
+        <div class="data-entities">
+          <span class="data-entity">Location</span>
+          <span class="data-entity">Organization</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="flow-connector" style="color: #b0bec5;">┈ ┈ ┈ ┈ ┈ ┈</div>
+  <div class="flow-label" style="color: #90a4ae;">External dependencies — outside MoH direct control</div>
+
+  <!-- EXTERNAL / CROSS-SECTORAL -->
+  <div class="layer layer-ext">
+    <div class="layer-label">External / Cross-Sectoral Dependencies</div>
+    <div class="layer-systems">
+
+      <div class="system">
+        <div class="system-name">GIP (Gov Interoperability)</div>
+        <div class="system-platform">X-Road — MoDE/PDGA</div>
+        <div class="data-entities">
+          <span class="data-entity">Cross-ministry exchange</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">ProgressaPay</div>
+        <div class="system-platform">Gov Payment Gateway — CBP</div>
+        <div class="data-entities">
+          <span class="data-entity">PaymentNotice</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">National Digital Identity</div>
+        <div class="system-platform">Immigration Dept + eCRVS NIN</div>
+        <div class="data-entities">
+          <span class="data-entity">NIN Identifier</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">G-Cloud / RDIP Infra</div>
+        <div class="system-platform">Sovereign Cloud + Broadband</div>
+        <div class="data-entities">
+          <span class="data-entity">Hosting &amp; Connectivity</span>
+        </div>
+      </div>
+
+      <div class="system">
+        <div class="system-name">WHO / RHO / PBoS</div>
+        <div class="system-platform">International Reporting</div>
+        <div class="data-entities">
+          <span class="data-entity">ADX</span>
+          <span class="data-entity">IHR</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PRIORITY INTEGRATION FLOWS -->
+  <div class="data-flow-summary">
+    <h3>Priority Integration Flows &amp; FHIR Data Entities</h3>
+    <table class="flow-table">
+      <thead>
+        <tr>
+          <th style="width:5%;">#</th>
+          <th style="width:28%;">Integration Flow</th>
+          <th style="width:27%;">System Path</th>
+          <th style="width:25%;">FHIR Resources</th>
+          <th style="width:15%;">Phase</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Birth Registration → MPI → Insurance Enrollment</td>
+          <td>eCRVS → OpenHIM → OpenCR → e-NHIS</td>
+          <td><span class="fhir-res">Patient</span> <span class="fhir-res">RelatedPerson</span></td>
+          <td>Phase 1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Immunisation Recording → Aggregate Reporting</td>
+          <td>SPT / EIR → OpenHIM → DHIS2 + SHR</td>
+          <td><span class="fhir-res">Immunization</span> <span class="fhir-res">ADX</span></td>
+          <td>Phase 1–2</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Lab Result → Surveillance Notification</td>
+          <td>A-LIS → OpenHIM → IDSR+ (DHIS2 Tracker)</td>
+          <td><span class="fhir-res">DiagnosticReport</span> <span class="fhir-res">Condition</span></td>
+          <td>Phase 2</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Clinical Encounter → Aggregate Reporting</td>
+          <td>OpenMRS → OpenHIM → SHR → DHIS2</td>
+          <td><span class="fhir-res">Bundle</span> <span class="fhir-res">Encounter</span> <span class="fhir-res">Observation</span></td>
+          <td>Phase 2</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Insurance Eligibility & Claims</td>
+          <td>e-NHIS ↔ OpenHIM ↔ EHR ↔ ProgressaPay</td>
+          <td><span class="fhir-res">Claim</span> <span class="fhir-res">Coverage</span> <span class="fhir-res">ClaimResponse</span></td>
+          <td>Phase 2</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>National → Global Reporting</td>
+          <td>DHIS2 → OpenHIM → WHO / RHO / PBoS</td>
+          <td><span class="fhir-res">ADX</span> <span class="fhir-res">IHR formats</span></td>
+          <td>Phase 1–2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:var(--surv-bg);border-color:var(--surv-border);"></div>
+      Surveillance
+    </div>
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:var(--admin-bg);border-color:var(--admin-border);"></div>
+      Administration
+    </div>
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:var(--clinical-bg);border-color:var(--clinical-border);"></div>
+      Clinical
+    </div>
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:var(--integ-bg);border-color:var(--integ-border);"></div>
+      Integration (OpenHIM)
+    </div>
+    <div class="legend-item">
+      <div class="legend-swatch" style="background:var(--platform-bg);border-color:var(--platform-border);"></div>
+      National Platform
+    </div>
+    <div class="legend-divider"></div>
+    <div class="legend-item">
+      <span class="system-status status-operational" style="margin:0;">Operational</span>
+    </div>
+    <div class="legend-item">
+      <span class="system-status status-new" style="margin:0;">New</span>
+    </div>
+    <div class="legend-item">
+      <span class="system-status status-pilot" style="margin:0;">Pilot</span>
+    </div>
+    <div class="legend-item">
+      <span class="system-status status-transition" style="margin:0;">Transition</span>
+    </div>
+    <div class="legend-divider"></div>
+    <div class="legend-item">
+      <span class="data-entity" style="margin:0;">FHIR Resource</span>
+      Data Entity
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="diagram-footer">
+    <span>The Progressa Enterprise Architecture Initiative — ITU / World Bank RDIP</span>
+    <span>D6 — MoH Future State Architecture v1.0 — Section 8.2</span>
+  </div>
+
+</div>
+
+</body>
+</html>

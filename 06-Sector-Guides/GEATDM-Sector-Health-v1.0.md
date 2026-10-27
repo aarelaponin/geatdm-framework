@@ -330,7 +330,7 @@ The application-domain mapping is the key input to procurement decomposition (T6
 
 Health-sector applications exchange data through a small number of canonical integration patterns. The patterns generalise across countries.
 
-### 3.3.1 FHIR-first integration (the Localistan pattern, ADR-001 in the e-Health Reference Model)
+### 3.3.1 FHIR-first integration (the Progressa pattern, ADR-001 in the e-Health Reference Model)
 
 A FHIR Intermediary Server (HAPI FHIR or equivalent) sits at the centre of the health information exchange. Every application that produces clinical data publishes FHIR resources. Every application that consumes clinical data reads FHIR resources. The intermediary server provides identity resolution, terminology services, audit, and consent enforcement. The pattern is suited to greenfield deployments and to mid-maturity countries adopting modern integration without an existing X-Road-class bus.
 
@@ -474,7 +474,7 @@ Consent management is a sector-specific data architecture concern in health. The
 
 **Break-the-glass override.** Emergency access to clinical data over consent restrictions, with mandatory audit and patient notification (ADR-009).
 
-ADR-004 in the e-Health Reference Model documents the recommended choice (opt-out with break-the-glass and patient access logs) for the Localistan reference implementation.
+ADR-004 in the e-Health Reference Model documents the recommended choice (opt-out with break-the-glass and patient access logs) for the Progressa reference implementation.
 
 ---
 

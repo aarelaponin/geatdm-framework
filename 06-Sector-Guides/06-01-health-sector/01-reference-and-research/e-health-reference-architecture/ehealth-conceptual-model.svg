@@ -1,0 +1,97 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="700" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#2c3e50">
+    High-Level e-Health Ecosystem Conceptual Model
+  </text>
+  
+  <!-- Stakeholder Layer -->
+  <rect x="50" y="60" width="700" height="90" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+  <text x="400" y="85" text-anchor="middle" font-size="16" font-weight="bold" fill="#1565c0">
+    STAKEHOLDER LAYER
+  </text>
+  <text x="400" y="110" text-anchor="middle" font-size="13" fill="#333">
+    Patients • Healthcare Providers • Payers • Government •
+  </text>
+  <text x="400" y="130" text-anchor="middle" font-size="13" fill="#333">
+    Researchers • Public Health • Regulators • Vendors
+  </text>
+  
+  <!-- Arrow 1 -->
+  <path d="M 400 150 L 400 170" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 180 L 400 160" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Service Layer -->
+  <rect x="50" y="180" width="700" height="90" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+  <text x="400" y="205" text-anchor="middle" font-size="16" font-weight="bold" fill="#6a1b9a">
+    SERVICE LAYER
+  </text>
+  <text x="400" y="230" text-anchor="middle" font-size="13" fill="#333">
+    Patient Portal • Provider Portal • ePrescription • eReferral •
+  </text>
+  <text x="400" y="250" text-anchor="middle" font-size="13" fill="#333">
+    eBooking • eLab • PACS • Clinical Decision Support • BI • Cross-Border
+  </text>
+  
+  <!-- Arrow 2 -->
+  <path d="M 400 270 L 400 290" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 300 L 400 280" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Data & Integration Layer -->
+  <rect x="50" y="300" width="700" height="90" fill="#fff3e0" stroke="#e65100" stroke-width="2" rx="5"/>
+  <text x="400" y="325" text-anchor="middle" font-size="16" font-weight="bold" fill="#d84315">
+    DATA &amp; INTEGRATION LAYER
+  </text>
+  <text x="400" y="350" text-anchor="middle" font-size="13" fill="#333">
+    EHR Repository • Master Data Management • Terminology Server •
+  </text>
+  <text x="400" y="370" text-anchor="middle" font-size="13" fill="#333">
+    FHIR Intermediary • API Gateway • Data Warehouse • Standards Center
+  </text>
+  
+  <!-- Arrow 3 -->
+  <path d="M 400 390 L 400 410" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 420 L 400 400" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Infrastructure Layer -->
+  <rect x="50" y="420" width="700" height="90" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="5"/>
+  <text x="400" y="445" text-anchor="middle" font-size="16" font-weight="bold" fill="#1b5e20">
+    INFRASTRUCTURE LAYER
+  </text>
+  <text x="400" y="470" text-anchor="middle" font-size="13" fill="#333">
+    Secure Data Exchange (X-Road/equivalent) • Identity &amp; Access Management •
+  </text>
+  <text x="400" y="490" text-anchor="middle" font-size="13" fill="#333">
+    Security Infrastructure • Data Centers • Networks • Cloud Services
+  </text>
+  
+  <!-- Arrow 4 -->
+  <path d="M 400 510 L 400 530" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 400 540 L 400 520" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Governance & Standards Layer -->
+  <rect x="50" y="540" width="700" height="90" fill="#fce4ec" stroke="#c2185b" stroke-width="2" rx="5"/>
+  <text x="400" y="565" text-anchor="middle" font-size="16" font-weight="bold" fill="#ad1457">
+    GOVERNANCE &amp; STANDARDS LAYER
+  </text>
+  <text x="400" y="590" text-anchor="middle" font-size="13" fill="#333">
+    Legal Framework • Governance Bodies • Standards • Policies •
+  </text>
+  <text x="400" y="610" text-anchor="middle" font-size="13" fill="#333">
+    Security Requirements • Funding Models
+  </text>
+  
+  <!-- Legend/Note -->
+  <text x="400" y="660" text-anchor="middle" font-size="11" fill="#666" font-style="italic">
+    Bidirectional arrows indicate dependencies and information flows between layers
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

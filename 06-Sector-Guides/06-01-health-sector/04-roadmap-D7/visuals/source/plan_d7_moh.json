@@ -1,0 +1,332 @@
+{
+  "source_file": "MoH_D7_EA_Roadmap_Infographic.svg",
+  "deliverable_code": "D7",
+  "ministry": "MoH",
+  "section_number": 11,
+  "section_title": "EA Implementation Roadmap — MoH",
+  "total_slides": 7,
+  "slides": [
+    {
+      "slide_number": 1,
+      "slide_type": "title",
+      "title": "EA Implementation Roadmap",
+      "subtitle": "Ministry of Health — Deliverable D7",
+      "elements": [
+        {
+          "type": "badge",
+          "text": "D7",
+          "size": "48pt"
+        },
+        {
+          "type": "subtitle_line",
+          "text": "Ministry of Health — Progressa"
+        },
+        {
+          "type": "subtitle_line",
+          "text": "Digital Health Transformation 2025–2033"
+        },
+        {
+          "type": "subtitle_line",
+          "text": "28 Initiatives • 3 Transformation Waves • USD 8.5M Midpoint"
+        },
+        {
+          "type": "subtitle_line",
+          "text": "[contract reference] • ITU Consultant Team"
+        }
+      ],
+      "layout": "title_slide",
+      "speaker_notes": "This deliverable translates MoH's D6 Future State Architecture into a costed, phased implementation roadmap. The roadmap spans 8 years (2025–2033) across three transformation waves, requiring an estimated USD 8.5M midpoint investment. It addresses 38 identified gaps across 6 architecture domains through 28 initiatives. The roadmap is built entirely on an open-source technology stack with zero software licence fees, transitioning from 94% donor-funded in 2025 to ≥50% government-funded by 2033."
+    },
+    {
+      "slide_number": 2,
+      "slide_type": "stats",
+      "title": "MoH Roadmap at a Glance",
+      "elements": [
+        {
+          "type": "hero_stat",
+          "value": "USD 8.5M",
+          "label": "Midpoint Investment (8 Years)",
+          "sublabel": "3 Transformation Waves",
+          "color": "accent_gold"
+        },
+        {
+          "type": "hero_stat",
+          "value": "38",
+          "label": "Gaps Identified",
+          "sublabel": "9 Critical · 22 High · 7 Medium",
+          "color": "accent_orange"
+        },
+        {
+          "type": "hero_stat",
+          "value": "28",
+          "label": "Initiatives Planned",
+          "sublabel": "11 + 10 + 7 Across 3 Waves",
+          "color": "primary_mid"
+        },
+        {
+          "type": "hero_stat",
+          "value": "2.19 → 4.0+",
+          "label": "EA Maturity Target",
+          "sublabel": "L1 (Ad-Hoc) → L4 Integration",
+          "color": "success_green"
+        },
+        {
+          "type": "hero_stat",
+          "value": "~90%",
+          "label": "Paper-Based Clinical Records",
+          "sublabel": "Current State Baseline",
+          "color": "warning_deep_orange"
+        },
+        {
+          "type": "hero_stat",
+          "value": "100%",
+          "label": "Open-Source Technology Stack",
+          "sublabel": "Zero Software Licence Fees",
+          "color": "info_blue"
+        }
+      ],
+      "layout": "stat_grid_3x2",
+      "speaker_notes": "The MoH roadmap is the most ambitious of the four Tier 1 ministry plans. USD 8.5M midpoint investment reflects the scale of health sector digitization required. 38 gaps were identified across 6 domains: Cross-Sectoral (6), Business (5), Data (6), Application (8), Technology (6), and Integration (7). 28 initiatives are distributed across 3 waves: 11 in Wave 1 (Foundation), 10 in Wave 2 (Expansion), and 7 in Wave 3 (Maturity). EA maturity targets a jump from 2.19 to 4.0+ by 2033, moving from Level 1 (Ad-Hoc) to Level 4 (Managed) integration maturity. The ~90% paper-based clinical records baseline underscores the transformation challenge. All technology choices are open-source — OpenHIM, OpenCR, OpenMRS, DHIS2, Keycloak, HAPI FHIR — eliminating licence fees entirely."
+    },
+    {
+      "slide_number": 3,
+      "slide_type": "transformation_journey",
+      "title": "The Transformation Journey",
+      "elements": [
+        {
+          "type": "state_comparison",
+          "current": {
+            "title": "CURRENT STATE (2025)",
+            "subtitle": "Paper-Based · Siloed · Fragmented",
+            "items": [
+              "8 siloed information systems · 1 automated data flow",
+              "No HIE, no MPI, no EHR in public facilities",
+              "NHIS enrollment at ~30% of target (15–20K of 60K)",
+              "No unified digital health governance or directorate"
+            ]
+          },
+          "target": {
+            "title": "TARGET STATE (2033)",
+            "subtitle": "Digital · Interoperable · Sustainable",
+            "items": [
+              "OpenHIE-based HIE with 6 integration flows live",
+              "EHR (OpenMRS) at 30–40 facilities (33–44%)",
+              "100,000+ NHIS beneficiaries enrolled",
+              "DHDD fully staffed (14 positions) with NDHSC governance"
+            ]
+          }
+        },
+        {
+          "type": "journey_arrow",
+          "label": "8 YEARS · 3 WAVES"
+        },
+        {
+          "type": "gap_severity_strip",
+          "title": "38 Gaps by Severity",
+          "items": [
+            {"severity": "CRITICAL", "count": 9, "color": "accent_red"},
+            {"severity": "HIGH", "count": 22, "color": "accent_orange"},
+            {"severity": "MEDIUM", "count": 7, "color": "accent_gold"}
+          ]
+        },
+        {
+          "type": "gap_domain_strip",
+          "title": "38 Gaps by Domain",
+          "items": [
+            {"domain": "Cross-Sectoral", "code": "GEN", "count": 6, "detail": "2C · 4H · 0M"},
+            {"domain": "Business", "code": "BUS", "count": 5, "detail": "1C · 3H · 1M"},
+            {"domain": "Data", "code": "DAT", "count": 6, "detail": "1C · 3H · 2M"},
+            {"domain": "Application", "code": "APP", "count": 8, "detail": "3C · 4H · 1M"},
+            {"domain": "Technology", "code": "TEC", "count": 6, "detail": "1C · 3H · 2M"},
+            {"domain": "Integration", "code": "INT", "count": 7, "detail": "1C · 5H · 1M"}
+          ]
+        }
+      ],
+      "layout": "comparison_with_gap_dashboard",
+      "speaker_notes": "The transformation journey visualizes the 8-year arc from paper-based to digital health. Current state: ~90% paper clinical records, 8 siloed systems with only 1 automated flow, no HIE/MPI/EHR in public facilities, NHIS at just ~30% of enrollment target, and no digital health governance. Target state: OpenHIE-based health information exchange with 6 live integration flows, EHR at 30–40 facilities, 100,000+ NHIS beneficiaries, and a fully staffed Digital Health & Data Directorate with NDHSC governance. The 38 gaps split across severity: 9 critical (requiring immediate attention), 22 high, and 7 medium. Application architecture has the most gaps (8, with 3 critical), reflecting the need for new clinical systems. Integration architecture also features heavily (7 gaps) given the current near-zero interoperability baseline."
+    },
+    {
+      "slide_number": 4,
+      "slide_type": "phase_detail",
+      "title": "Wave 1: Govern, Connect, Register (2025–2026)",
+      "elements": [
+        {
+          "type": "phase_header",
+          "phase": "WAVE 1",
+          "name": "Govern, Connect, Register",
+          "years": "2025–2026 · Foundation & Stabilisation",
+          "color": "accent_orange"
+        },
+        {
+          "type": "hero_stat",
+          "value": "USD 1.8 – 3.0M",
+          "label": "Wave 1 Investment",
+          "sublabel": "11 Initiatives",
+          "color": "accent_gold"
+        },
+        {
+          "type": "deliverable_row",
+          "items": [
+            {"title": "NDHSC + DHDD Established", "detail": "Ministerial Order · 3-tier governance"},
+            {"title": "HIE (OpenHIM) + MPI (OpenCR)", "detail": "Interim hosting · First integration flow"},
+            {"title": "eCRVS→MPI→e-NHIS Flow", "detail": "Birth registration to insurance enrollment"}
+          ]
+        },
+        {
+          "type": "deliverable_row",
+          "items": [
+            {"title": "DHIS2 Tracker Pilots", "detail": "EIR (10–15 facilities) + IDSR+ surveillance"},
+            {"title": "National eLMIS Rollout", "detail": "≥85 facilities · Supply chain visibility"},
+            {"title": "6 DHDD Staff + 100+ Trained", "detail": "Workforce foundation · Change champions"}
+          ]
+        }
+      ],
+      "layout": "phase_card_with_deliverables",
+      "speaker_notes": "Wave 1 establishes the governance, connectivity, and registration foundations over 2025–2026 with USD 1.8–3.0M investment across 11 initiatives. The highest priority is establishing the National Digital Health Steering Committee (NDHSC) and Digital Health & Data Directorate (DHDD) through Ministerial Order with 3-tier governance. The Health Information Exchange (OpenHIM) and Master Patient Index (OpenCR) are deployed with interim hosting and the first integration flow. The eCRVS→MPI→e-NHIS flow creates the foundational data pipeline from birth registration through to health insurance enrollment. DHIS2 Tracker pilots begin at 10–15 facilities for immunization (EIR) and IDSR+ surveillance. National eLMIS rollout reaches ≥85 facilities for supply chain visibility. 6 DHDD staff are recruited and 100+ health workers trained as the workforce foundation."
+    },
+    {
+      "slide_number": 5,
+      "slide_type": "phase_detail",
+      "title": "Wave 2: Digitise, Integrate, Scale (2027–2029)",
+      "elements": [
+        {
+          "type": "phase_header",
+          "phase": "WAVE 2",
+          "name": "Digitise, Integrate, Scale",
+          "years": "2027–2029 · Expansion & Integration",
+          "color": "success_green"
+        },
+        {
+          "type": "hero_stat",
+          "value": "USD 2.75 – 4.76M",
+          "label": "Wave 2 Investment",
+          "sublabel": "10 Initiatives",
+          "color": "accent_gold"
+        },
+        {
+          "type": "deliverable_row",
+          "items": [
+            {"title": "EHR (OpenMRS) at 15–20 Sites", "detail": "Maternal health · HIV/ART · Clinical records"},
+            {"title": "4–5 Integration Flows Active", "detail": "HIE-mediated · FHIR · Real-time"},
+            {"title": "G-Cloud Migration Complete", "detail": "Sovereign hosting · All central systems"}
+          ]
+        },
+        {
+          "type": "deliverable_row",
+          "items": [
+            {"title": "National EIR Transition", "detail": "SPT → DHIS2 Tracker nationally"},
+            {"title": "e-NHIS at 60,000+ Beneficiaries", "detail": "Offline claims · Mobile enrollment"},
+            {"title": "Keycloak IAM + Full DHDD (14)", "detail": "MFA · 7 Regional Health Data Officers"}
+          ]
+        }
+      ],
+      "layout": "phase_card_with_deliverables",
+      "speaker_notes": "Wave 2 is the most investment-intensive wave at USD 2.75–4.76M, delivering the core digital health infrastructure over 2027–2029 with 10 initiatives. EHR (OpenMRS) deploys to 15–20 sites covering maternal health, HIV/ART, and clinical records. 4–5 integration flows become active through HIE-mediated FHIR-based real-time exchanges. G-Cloud migration completes — all central health systems move to sovereign government hosting. The national Electronic Immunization Registry (EIR) transitions from SMS for Health/Paper Tracker to DHIS2 Tracker nationally. e-NHIS reaches 60,000+ beneficiaries with offline claims capability and mobile enrollment. Keycloak IAM delivers multi-factor authentication, and DHDD reaches full staffing of 14 positions including 7 Regional Health Data Officers."
+    },
+    {
+      "slide_number": 6,
+      "slide_type": "phase_with_investment",
+      "title": "Wave 3: Optimise, Sustain, Innovate (2030–2033)",
+      "elements": [
+        {
+          "type": "phase_header",
+          "phase": "WAVE 3",
+          "name": "Optimise, Sustain, Innovate",
+          "years": "2030–2033 · Maturity & Sustainability",
+          "color": "purple_violet"
+        },
+        {
+          "type": "hero_stat",
+          "value": "USD 1.65 – 2.94M",
+          "label": "Wave 3 Investment",
+          "sublabel": "7 Initiatives",
+          "color": "accent_gold"
+        },
+        {
+          "type": "deliverable_row",
+          "items": [
+            {"title": "EHR Expanded to 30–40 Sites", "detail": "33–44% facility coverage"},
+            {"title": "All 6 Flows at Level 3–4", "detail": "Full interoperability maturity"},
+            {"title": "Legacy System Retirement", "detail": "SPT · SMS for Health · Paper registers"}
+          ]
+        },
+        {
+          "type": "deliverable_row",
+          "items": [
+            {"title": "Health Data Warehouse", "detail": "Cross-system analytics · Dashboards"},
+            {"title": "≥50% Government Funding", "detail": "Sustainability transition · $515K/yr recurrent"},
+            {"title": "100,000+ NHIS Beneficiaries", "detail": "Universal coverage trajectory"}
+          ]
+        },
+        {
+          "type": "investment_summary",
+          "title": "Investment by Domain",
+          "items": [
+            {"domain": "Applications & Clinical", "percentage": "43%", "amount": "$2.67–4.69M"},
+            {"domain": "Integration & Interop.", "percentage": "15%", "amount": "$0.94–1.60M"},
+            {"domain": "Capacity Building", "percentage": "13%"},
+            {"domain": "Technology Infra.", "percentage": "12%", "amount": "$0.78–1.33M"},
+            {"domain": "Data & Registries", "percentage": "9%", "amount": "$0.54–0.96M"},
+            {"domain": "Governance & Policy", "percentage": "8%", "amount": "$0.47–0.77M"}
+          ]
+        },
+        {
+          "type": "funding_sources",
+          "title": "Funding Sources (75–77% Mapped)",
+          "items": [
+            {"source": "RDIP", "percentage": "22–23%", "detail": "World Bank · Largest source"},
+            {"source": "Government of Progressa", "percentage": "18–19%", "detail": "Growing to ≥50%"},
+            {"source": "Global Fund", "percentage": "14–16%", "detail": "2024–2027 cycle"},
+            {"source": "GAVI", "percentage": "6–8%", "detail": "Immunisation systems"},
+            {"source": "WHO + Others", "percentage": "15–18%", "detail": "6 additional sources"},
+            {"source": "Funding Gap", "amount": "$500K–1M", "detail": "Primarily Wave 2"}
+          ]
+        }
+      ],
+      "layout": "phase_card_with_investment_detail",
+      "speaker_notes": "Wave 3 (2030–2033, USD 1.65–2.94M, 7 initiatives) completes the transformation and establishes sustainability. EHR expands to 30–40 sites (33–44% facility coverage). All 6 integration flows reach Level 3–4 maturity. Legacy systems (SPT, SMS for Health, paper registers) are retired. A Health Data Warehouse enables cross-system analytics. The critical sustainability milestone: government funding reaches ≥50%, with steady-state recurrent costs of ~$515K/year covering DHDD salaries, G-Cloud hosting, and connectivity. Investment by domain shows Applications & Clinical at 43% ($2.67–4.69M) as the largest category, followed by Integration (15%), Capacity Building (13%), Technology (12%), Data (9%), and Governance (8%). Funding sources are diversified: RDIP (22–23%), Government (18–19%), Global Fund (14–16%), GAVI (6–8%), WHO + others (15–18%), with a $500K–1M gap primarily in Wave 2."
+    },
+    {
+      "slide_number": 7,
+      "slide_type": "takeaway",
+      "title": "Key Takeaway: Open-Source Foundation, Sustainable Digital Health",
+      "elements": [
+        {
+          "type": "tech_stack_strip",
+          "title": "OpenHIE-Based Architecture",
+          "items": [
+            {"name": "OpenHIM", "role": "Health Info Exchange"},
+            {"name": "OpenCR", "role": "Master Patient Index"},
+            {"name": "OpenMRS", "role": "Electronic Health Record"},
+            {"name": "HAPI FHIR", "role": "Clinical Data Store"},
+            {"name": "DHIS2", "role": "HMIS + Tracker"},
+            {"name": "Keycloak", "role": "IAM / SSO / MFA"},
+            {"name": "eLMIS", "role": "Supply Chain"},
+            {"name": "e-NHIS", "role": "Health Insurance"}
+          ]
+        },
+        {
+          "type": "governance_strip",
+          "title": "Three-Tier Governance",
+          "items": [
+            {"tier": "Tier 1", "name": "NDHSC", "detail": "14 members · PS Chair · Quarterly · Strategic"},
+            {"tier": "Tier 2", "name": "DHDD", "detail": "14 positions · 6 functional areas · Operational"},
+            {"tier": "Tier 3", "name": "TWGs", "detail": "Architecture · Data Standards · Implementation"}
+          ]
+        },
+        {
+          "type": "sustainability_strip",
+          "trajectory": "94% donor-funded (2025) → ≥50% government-funded (2033)",
+          "recurrent": "~USD 515,000/year steady-state"
+        },
+        {
+          "type": "takeaway_text",
+          "text": "MoH's 8-year roadmap transforms health services from paper-based and siloed to digitally connected and interoperable — built entirely on open-source platforms with zero licence fees, governed through a dedicated Digital Health directorate, and designed for financial sustainability.",
+          "style": "bold_centered"
+        }
+      ],
+      "layout": "takeaway_with_visual",
+      "speaker_notes": "The MoH roadmap's defining narrative is sustainable digital health built on open-source foundations. The OpenHIE-based architecture — OpenHIM, OpenCR, OpenMRS, HAPI FHIR, DHIS2, Keycloak, eLMIS, e-NHIS — eliminates all software licence costs, directing 100% of investment to implementation, capacity, and infrastructure. Three-tier governance ensures sustainability: the NDHSC (14 members, PS Chair, strategic oversight), DHDD (14 positions across 6 functional areas for operational delivery), and Technical Working Groups for Architecture, Data Standards, and Implementation. The sustainability trajectory is the critical success metric: moving from ~94% donor-funded in 2025 to ≥50% government-funded by 2033, with steady-state recurrent costs of ~$515K/year. This is the most complex ministry roadmap — 28 initiatives across 8 years — but the open-source foundation ensures maximum value from every dollar invested."
+    }
+  ]
+}

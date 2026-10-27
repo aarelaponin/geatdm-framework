@@ -1,0 +1,455 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 2400" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#145A44"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E8A838"/>
+      <stop offset="100%" stop-color="#F0C060"/>
+    </linearGradient>
+    <linearGradient id="layer1Grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A6B50"/>
+      <stop offset="100%" stop-color="#0F4D38"/>
+    </linearGradient>
+    <linearGradient id="layer2Grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E86AB"/>
+      <stop offset="100%" stop-color="#1E6B8E"/>
+    </linearGradient>
+    <linearGradient id="layer3Grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7B68A8"/>
+      <stop offset="100%" stop-color="#5D4E8C"/>
+    </linearGradient>
+    <linearGradient id="layer4Grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C75233"/>
+      <stop offset="100%" stop-color="#A63E24"/>
+    </linearGradient>
+    <linearGradient id="hubGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8A838"/>
+      <stop offset="100%" stop-color="#D49020"/>
+    </linearGradient>
+    <linearGradient id="phaseGrad1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1A6B50"/>
+      <stop offset="100%" stop-color="#2E9970"/>
+    </linearGradient>
+    <linearGradient id="phaseGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2E86AB"/>
+      <stop offset="100%" stop-color="#3FA0CC"/>
+    </linearGradient>
+    <linearGradient id="phaseGrad3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7B68A8"/>
+      <stop offset="100%" stop-color="#9B88C8"/>
+    </linearGradient>
+    <linearGradient id="depGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2C3E50"/>
+      <stop offset="100%" stop-color="#1A2530"/>
+    </linearGradient>
+    <!-- Patterns -->
+    <pattern id="dotPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.06)"/>
+    </pattern>
+    <pattern id="crossHatch" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 10L10 0M-1 1L1 -1M9 11L11 9" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+    </pattern>
+    <!-- Filters -->
+    <filter id="softShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.15)"/>
+    </filter>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ======================= BACKGROUND ======================= -->
+  <rect width="1200" height="2400" fill="#F5F0E8"/>
+  <rect width="1200" height="2400" fill="url(#crossHatch)"/>
+
+  <!-- Decorative side accent bars -->
+  <rect x="0" y="0" width="6" height="2400" fill="url(#headerGrad)"/>
+  <rect x="1194" y="0" width="6" height="2400" fill="url(#headerGrad)"/>
+
+  <!-- ======================= HEADER ======================= -->
+  <rect x="0" y="0" width="1200" height="260" fill="url(#headerGrad)" rx="0"/>
+  <rect x="0" y="0" width="1200" height="260" fill="url(#dotPattern)"/>
+
+  <!-- Progressa flag accent stripe -->
+  <rect x="0" y="0" width="1200" height="5" fill="#CE1126"/>
+  <rect x="0" y="5" width="1200" height="3" fill="#FFFFFF"/>
+  <rect x="0" y="8" width="1200" height="5" fill="#3A7728"/>
+  <rect x="0" y="13" width="1200" height="3" fill="#FFFFFF"/>
+  <rect x="0" y="16" width="1200" height="5" fill="#0C3B7C"/>
+
+  <!-- Header decorative circles -->
+  <circle cx="1100" cy="130" r="180" fill="none" stroke="rgba(232,168,56,0.08)" stroke-width="1"/>
+  <circle cx="1100" cy="130" r="140" fill="none" stroke="rgba(232,168,56,0.06)" stroke-width="1"/>
+  <circle cx="1100" cy="130" r="100" fill="none" stroke="rgba(232,168,56,0.04)" stroke-width="1"/>
+
+  <!-- Header badge -->
+  <rect x="50" y="48" width="100" height="32" rx="4" fill="url(#accentGrad)"/>
+  <text x="100" y="70" text-anchor="middle" fill="#0B3D2E" font-size="13" font-weight="700" letter-spacing="1.5">D6</text>
+
+  <text x="50" y="120" fill="#FFFFFF" font-size="38" font-weight="800" letter-spacing="-0.5">Future State Architecture</text>
+  <text x="50" y="160" fill="#E8A838" font-size="22" font-weight="600">Ministry of Health — Progressa</text>
+  <text x="50" y="192" fill="rgba(255,255,255,0.7)" font-size="14" letter-spacing="0.5">[contract reference] &#160;·&#160; Architecture Validity 2025–2033</text>
+
+  <!-- Gold accent line -->
+  <rect x="50" y="210" width="160" height="3" rx="1.5" fill="url(#accentGrad)"/>
+  <text x="50" y="240" fill="rgba(255,255,255,0.55)" font-size="12" letter-spacing="2">ENTERPRISE ARCHITECTURE INITIATIVE — ITU / PDGA</text>
+
+  <!-- ======================= KEY STATS STRIP ======================= -->
+  <rect x="40" y="280" width="1120" height="100" rx="14" fill="#FFFFFF" filter="url(#cardShadow)"/>
+
+  <!-- Stat 1 -->
+  <text x="140" y="320" text-anchor="middle" fill="#0B3D2E" font-size="32" font-weight="800">2–3M</text>
+  <text x="140" y="345" text-anchor="middle" fill="#666" font-size="12" letter-spacing="0.5">POPULATION</text>
+  <text x="140" y="363" text-anchor="middle" fill="#999" font-size="11">served</text>
+
+  <line x1="260" y1="300" x2="260" y2="370" stroke="#E0D8CC" stroke-width="1"/>
+
+  <!-- Stat 2 -->
+  <text x="380" y="320" text-anchor="middle" fill="#0B3D2E" font-size="32" font-weight="800">~90</text>
+  <text x="380" y="345" text-anchor="middle" fill="#666" font-size="12" letter-spacing="0.5">HEALTH FACILITIES</text>
+  <text x="380" y="363" text-anchor="middle" fill="#999" font-size="11">nationwide</text>
+
+  <line x1="500" y1="300" x2="500" y2="370" stroke="#E0D8CC" stroke-width="1"/>
+
+  <!-- Stat 3 -->
+  <text x="620" y="320" text-anchor="middle" fill="#C75233" font-size="32" font-weight="800">8+</text>
+  <text x="620" y="345" text-anchor="middle" fill="#666" font-size="12" letter-spacing="0.5">SILOED SYSTEMS</text>
+  <text x="620" y="363" text-anchor="middle" fill="#999" font-size="11">current state</text>
+
+  <line x1="740" y1="300" x2="740" y2="370" stroke="#E0D8CC" stroke-width="1"/>
+
+  <!-- Stat 4 -->
+  <text x="860" y="320" text-anchor="middle" fill="#1A6B50" font-size="32" font-weight="800">~90%</text>
+  <text x="860" y="345" text-anchor="middle" fill="#666" font-size="12" letter-spacing="0.5">PAPER-BASED</text>
+  <text x="860" y="363" text-anchor="middle" fill="#999" font-size="11">clinical registers</text>
+
+  <line x1="980" y1="300" x2="980" y2="370" stroke="#E0D8CC" stroke-width="1"/>
+
+  <!-- Stat 5 -->
+  <text x="1060" y="320" text-anchor="middle" fill="#E8A838" font-size="32" font-weight="800">12</text>
+  <text x="1060" y="345" text-anchor="middle" fill="#666" font-size="12" letter-spacing="0.5">DESIGN</text>
+  <text x="1060" y="363" text-anchor="middle" fill="#999" font-size="11">decisions</text>
+
+  <!-- ======================= VISION STATEMENT ======================= -->
+  <rect x="40" y="405" width="1120" height="95" rx="14" fill="#0B3D2E" filter="url(#softShadow)"/>
+  <rect x="40" y="405" width="1120" height="95" rx="14" fill="url(#dotPattern)"/>
+  <rect x="58" y="428" width="4" height="50" rx="2" fill="#E8A838"/>
+  <text x="80" y="450" fill="#E8A838" font-size="13" font-weight="700" letter-spacing="1.5">TARGET STATE VISION — 2033</text>
+  <text x="80" y="477" fill="rgba(255,255,255,0.92)" font-size="15" font-weight="400">An integrated, interoperable health information ecosystem built on the OpenHIE architecture,</text>
+  <text x="80" y="495" fill="rgba(255,255,255,0.75)" font-size="14">connecting all health systems via FHIR-based interfaces through a unified Master Patient Index.</text>
+
+  <!-- ======================= SECTION: ARCHITECTURE LAYERS ======================= -->
+  <text x="600" y="545" text-anchor="middle" fill="#0B3D2E" font-size="13" font-weight="700" letter-spacing="3">TARGET APPLICATION ARCHITECTURE</text>
+  <rect x="530" y="555" width="140" height="2" rx="1" fill="url(#accentGrad)"/>
+
+  <!-- LAYER 4: SURVEILLANCE (top) -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="580" width="1080" height="135" rx="12" fill="url(#layer4Grad)"/>
+    <rect x="60" y="580" width="1080" height="135" rx="12" fill="url(#dotPattern)"/>
+  </g>
+  <!-- Layer label -->
+  <rect x="78" y="593" width="120" height="24" rx="12" fill="rgba(0,0,0,0.25)"/>
+  <text x="138" y="610" text-anchor="middle" fill="#FFF" font-size="10" font-weight="700" letter-spacing="1.5">LAYER 4</text>
+  <text x="210" y="611" fill="#FFF" font-size="16" font-weight="700">Surveillance</text>
+
+  <!-- Surveillance cards -->
+  <rect x="90" y="630" width="300" height="68" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="110" y="656" fill="#FFF" font-size="14" font-weight="600">IDSR+ (DHIS2 Tracker)</text>
+  <text x="110" y="678" fill="rgba(255,255,255,0.7)" font-size="11">Electronic case-based surveillance</text>
+
+  <rect x="420" y="630" width="300" height="68" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="440" y="656" fill="#FFF" font-size="14" font-weight="600">Event-Based Surveillance</text>
+  <text x="440" y="678" fill="rgba(255,255,255,0.7)" font-size="11">Signal detection &amp; verification</text>
+
+  <rect x="750" y="630" width="370" height="68" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="770" y="656" fill="#FFF" font-size="14" font-weight="600">Community-Based Surveillance</text>
+  <text x="770" y="678" fill="rgba(255,255,255,0.7)" font-size="11">CHW mobile tools &amp; USSD channels</text>
+
+  <!-- Connector arrows down -->
+  <line x1="600" y1="715" x2="600" y2="735" stroke="#B0A894" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="596,735 600,743 604,735" fill="#B0A894"/>
+
+  <!-- LAYER 3: HEALTH ADMINISTRATION -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="745" width="1080" height="135" rx="12" fill="url(#layer3Grad)"/>
+    <rect x="60" y="745" width="1080" height="135" rx="12" fill="url(#dotPattern)"/>
+  </g>
+  <rect x="78" y="758" width="120" height="24" rx="12" fill="rgba(0,0,0,0.25)"/>
+  <text x="138" y="775" text-anchor="middle" fill="#FFF" font-size="10" font-weight="700" letter-spacing="1.5">LAYER 3</text>
+  <text x="210" y="776" fill="#FFF" font-size="16" font-weight="700">Health Administration</text>
+
+  <rect x="90" y="795" width="300" height="68" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="110" y="821" fill="#FFF" font-size="14" font-weight="600">e-NHIS (Insurance)</text>
+  <text x="110" y="843" fill="rgba(255,255,255,0.7)" font-size="11">60,000+ beneficiaries · mobile enrollment</text>
+
+  <rect x="420" y="795" width="300" height="68" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="440" y="821" fill="#FFF" font-size="14" font-weight="600">eCRVS / CIVIS</text>
+  <text x="440" y="843" fill="rgba(255,255,255,0.7)" font-size="11">Civil registration · NIN foundation</text>
+
+  <rect x="750" y="795" width="370" height="68" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="770" y="821" fill="#FFF" font-size="14" font-weight="600">eLMIS (OpenLMIS)</text>
+  <text x="770" y="843" fill="rgba(255,255,255,0.7)" font-size="11">Pharmaceutical supply chain</text>
+
+  <!-- Connector arrows down -->
+  <line x1="600" y1="880" x2="600" y2="900" stroke="#B0A894" stroke-width="2" stroke-dasharray="4,3"/>
+  <polygon points="596,900 600,908 604,900" fill="#B0A894"/>
+
+  <!-- LAYER 2: CLINICAL SYSTEMS -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="910" width="1080" height="135" rx="12" fill="url(#layer2Grad)"/>
+    <rect x="60" y="910" width="1080" height="135" rx="12" fill="url(#dotPattern)"/>
+  </g>
+  <rect x="78" y="923" width="120" height="24" rx="12" fill="rgba(0,0,0,0.25)"/>
+  <text x="138" y="940" text-anchor="middle" fill="#FFF" font-size="10" font-weight="700" letter-spacing="1.5">LAYER 2</text>
+  <text x="210" y="941" fill="#FFF" font-size="16" font-weight="700">Clinical Systems</text>
+
+  <rect x="90" y="960" width="300" height="68" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="110" y="986" fill="#FFF" font-size="14" font-weight="600">EHR (OpenMRS)</text>
+  <text x="110" y="1008" fill="rgba(255,255,255,0.7)" font-size="11">30–40 priority facilities · MCH + HIV/ART</text>
+
+  <rect x="420" y="960" width="300" height="68" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="440" y="986" fill="#FFF" font-size="14" font-weight="600">EIR (DHIS2 Tracker / SPT)</text>
+  <text x="440" y="1008" fill="rgba(255,255,255,0.7)" font-size="11">Immunisation registry · 350–400K children</text>
+
+  <rect x="750" y="960" width="370" height="68" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="770" y="986" fill="#FFF" font-size="14" font-weight="600">LIS (A-LIS / OpenELIS)</text>
+  <text x="770" y="1008" fill="rgba(255,255,255,0.7)" font-size="11">Laboratory information system</text>
+
+  <!-- Connector arrows into hub -->
+  <line x1="240" y1="1045" x2="240" y2="1070" stroke="#E8A838" stroke-width="2"/>
+  <line x1="600" y1="1045" x2="600" y2="1070" stroke="#E8A838" stroke-width="2"/>
+  <line x1="935" y1="1045" x2="935" y2="1070" stroke="#E8A838" stroke-width="2"/>
+  <polygon points="236,1070 240,1078 244,1070" fill="#E8A838"/>
+  <polygon points="596,1070 600,1078 604,1070" fill="#E8A838"/>
+  <polygon points="931,1070 935,1078 939,1070" fill="#E8A838"/>
+
+  <!-- ======================= INTEGRATION HUB (OpenHIM) ======================= -->
+  <g filter="url(#cardShadow)">
+    <rect x="60" y="1080" width="1080" height="100" rx="14" fill="url(#hubGrad)"/>
+    <rect x="60" y="1080" width="1080" height="100" rx="14" fill="url(#dotPattern)"/>
+  </g>
+  <!-- Hub icon -->
+  <circle cx="130" cy="1130" r="28" fill="rgba(11,61,46,0.2)" stroke="rgba(11,61,46,0.3)" stroke-width="2"/>
+  <text x="130" y="1136" text-anchor="middle" fill="#0B3D2E" font-size="18" font-weight="800">⬡</text>
+
+  <text x="175" y="1118" fill="#0B3D2E" font-size="19" font-weight="800">Integration Layer — OpenHIM</text>
+  <text x="175" y="1140" fill="rgba(11,61,46,0.75)" font-size="13">Routing · FHIR Mediation · Audit Logging · Legacy Adapters · Security (mTLS + OAuth 2.0)</text>
+  <text x="175" y="1160" fill="rgba(11,61,46,0.6)" font-size="12" font-style="italic">All inter-system data flows mediated — zero point-to-point connections</text>
+
+  <!-- Connector arrows from hub down to platform -->
+  <line x1="240" y1="1180" x2="240" y2="1210" stroke="#E8A838" stroke-width="2"/>
+  <line x1="600" y1="1180" x2="600" y2="1210" stroke="#E8A838" stroke-width="2"/>
+  <line x1="935" y1="1180" x2="935" y2="1210" stroke="#E8A838" stroke-width="2"/>
+  <polygon points="236,1210 240,1218 244,1210" fill="#E8A838"/>
+  <polygon points="596,1210 600,1218 604,1210" fill="#E8A838"/>
+  <polygon points="931,1210 935,1218 939,1210" fill="#E8A838"/>
+
+  <!-- LAYER 1: NATIONAL HEALTH PLATFORM -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="1220" width="1080" height="135" rx="12" fill="url(#layer1Grad)"/>
+    <rect x="60" y="1220" width="1080" height="135" rx="12" fill="url(#dotPattern)"/>
+  </g>
+  <rect x="78" y="1233" width="120" height="24" rx="12" fill="rgba(0,0,0,0.25)"/>
+  <text x="138" y="1250" text-anchor="middle" fill="#FFF" font-size="10" font-weight="700" letter-spacing="1.5">LAYER 1</text>
+  <text x="210" y="1251" fill="#FFF" font-size="16" font-weight="700">National Health Platform</text>
+
+  <rect x="90" y="1270" width="300" height="68" rx="8" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <text x="110" y="1296" fill="#FFF" font-size="14" font-weight="600">DHIS2 (National HMIS)</text>
+  <text x="110" y="1318" fill="rgba(255,255,255,0.7)" font-size="11">Aggregate data · Analytics · WHO packages</text>
+
+  <rect x="420" y="1270" width="300" height="68" rx="8" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <text x="440" y="1296" fill="#FFF" font-size="14" font-weight="600">MPI (OpenCR)</text>
+  <text x="440" y="1318" fill="rgba(255,255,255,0.7)" font-size="11">Unified patient identity · NIN-anchored</text>
+
+  <rect x="750" y="1270" width="370" height="68" rx="8" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <text x="770" y="1296" fill="#FFF" font-size="14" font-weight="600">Shared Health Record (HAPI FHIR)</text>
+  <text x="770" y="1318" fill="rgba(255,255,255,0.7)" font-size="11">Longitudinal patient summaries</text>
+
+  <!-- ======================= SECTION: DUAL-MODE CONCEPT ======================= -->
+  <text x="600" y="1410" text-anchor="middle" fill="#0B3D2E" font-size="13" font-weight="700" letter-spacing="3">DUAL-MODE ARCHITECTURE CONCEPT</text>
+  <rect x="530" y="1420" width="140" height="2" rx="1" fill="url(#accentGrad)"/>
+
+  <!-- Two mode cards -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="1442" width="530" height="170" rx="12" fill="#FFFFFF" stroke="#E0D8CC" stroke-width="1"/>
+  </g>
+  <rect x="78" y="1458" width="100" height="26" rx="13" fill="#2E86AB"/>
+  <text x="128" y="1476" text-anchor="middle" fill="#FFF" font-size="11" font-weight="700" letter-spacing="1">INTERIM</text>
+  <text x="190" y="1476" fill="#2E86AB" font-size="15" font-weight="700">2025 – 2028</text>
+  <text x="85" y="1508" fill="#444" font-size="13">▸ ProgTel / e-Gov interim hosting</text>
+  <text x="85" y="1530" fill="#444" font-size="13">▸ Offline-first with satellite connectivity</text>
+  <text x="85" y="1552" fill="#444" font-size="13">▸ OpenHIM as self-contained HIE</text>
+  <text x="85" y="1574" fill="#444" font-size="13">▸ OpenCR MPI with eCRVS NIN</text>
+  <text x="85" y="1596" fill="#444" font-size="13">▸ Bilateral cross-ministry integrations</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="610" y="1442" width="530" height="170" rx="12" fill="#FFFFFF" stroke="#E0D8CC" stroke-width="1"/>
+  </g>
+  <rect x="628" y="1458" width="100" height="26" rx="13" fill="#1A6B50"/>
+  <text x="678" y="1476" text-anchor="middle" fill="#FFF" font-size="11" font-weight="700" letter-spacing="1">TARGET</text>
+  <text x="740" y="1476" fill="#1A6B50" font-size="15" font-weight="700">2028 – 2033</text>
+  <text x="635" y="1508" fill="#444" font-size="13">▸ G-Cloud sovereign hosting (MoH spoke)</text>
+  <text x="635" y="1530" fill="#444" font-size="13">▸ RDIP broadband connectivity</text>
+  <text x="635" y="1552" fill="#444" font-size="13">▸ National Government Service Bus</text>
+  <text x="635" y="1574" fill="#444" font-size="13">▸ National Digital Identity integration</text>
+  <text x="635" y="1596" fill="#444" font-size="13">▸ ProgressaPay health payment flows</text>
+
+  <!-- Arrow between modes -->
+  <line x1="590" y1="1527" x2="610" y2="1527" stroke="#E8A838" stroke-width="3"/>
+  <polygon points="607,1522 615,1527 607,1532" fill="#E8A838"/>
+  <text x="600" y="1555" text-anchor="middle" fill="#E8A838" font-size="10" font-weight="700" transform="rotate(-90, 600, 1555)">NON-DISRUPTIVE</text>
+
+  <!-- ======================= SECTION: IMPLEMENTATION PHASES ======================= -->
+  <text x="600" y="1670" text-anchor="middle" fill="#0B3D2E" font-size="13" font-weight="700" letter-spacing="3">INTEGRATION MATURITY PHASES</text>
+  <rect x="530" y="1680" width="140" height="2" rx="1" fill="url(#accentGrad)"/>
+
+  <!-- Phase 1 -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="1705" width="350" height="200" rx="12" fill="#FFFFFF"/>
+    <rect x="60" y="1705" width="350" height="6" rx="3" fill="url(#phaseGrad1)"/>
+  </g>
+  <text x="80" y="1738" fill="#1A6B50" font-size="12" font-weight="700" letter-spacing="1.5">PHASE 1</text>
+  <text x="80" y="1760" fill="#333" font-size="16" font-weight="700">Foundation</text>
+  <text x="80" y="1778" fill="#888" font-size="12">2025 – 2027</text>
+  <rect x="80" y="1790" width="310" height="1" fill="#EEE"/>
+  <text x="80" y="1812" fill="#555" font-size="12">✓ DHIS2 strengthening (≥95%)</text>
+  <text x="80" y="1832" fill="#555" font-size="12">✓ OpenHIM HIE deployment</text>
+  <text x="80" y="1852" fill="#555" font-size="12">✓ MPI (OpenCR) with eCRVS feed</text>
+  <text x="80" y="1872" fill="#555" font-size="12">✓ IDSR+ pilot (7 diseases)</text>
+  <text x="80" y="1892" fill="#555" font-size="12">✓ DHDD recruitment (3–5 staff)</text>
+
+  <!-- Phase 2 -->
+  <g filter="url(#softShadow)">
+    <rect x="425" y="1705" width="350" height="200" rx="12" fill="#FFFFFF"/>
+    <rect x="425" y="1705" width="350" height="6" rx="3" fill="url(#phaseGrad2)"/>
+  </g>
+  <text x="445" y="1738" fill="#2E86AB" font-size="12" font-weight="700" letter-spacing="1.5">PHASE 2</text>
+  <text x="445" y="1760" fill="#333" font-size="16" font-weight="700">Clinical Scale-Up</text>
+  <text x="445" y="1778" fill="#888" font-size="12">2027 – 2030</text>
+  <rect x="445" y="1790" width="310" height="1" fill="#EEE"/>
+  <text x="445" y="1812" fill="#555" font-size="12">✓ OpenMRS EHR → 30–40 facilities</text>
+  <text x="445" y="1832" fill="#555" font-size="12">✓ FHIR-based integration flows</text>
+  <text x="445" y="1852" fill="#555" font-size="12">✓ e-NHIS → 60,000 beneficiaries</text>
+  <text x="445" y="1872" fill="#555" font-size="12">✓ Lab results routing (A-LIS→HIE)</text>
+  <text x="445" y="1892" fill="#555" font-size="12">✓ Claims &amp; eligibility automation</text>
+
+  <!-- Phase 3 -->
+  <g filter="url(#softShadow)">
+    <rect x="790" y="1705" width="350" height="200" rx="12" fill="#FFFFFF"/>
+    <rect x="790" y="1705" width="350" height="6" rx="3" fill="url(#phaseGrad3)"/>
+  </g>
+  <text x="810" y="1738" fill="#7B68A8" font-size="12" font-weight="700" letter-spacing="1.5">PHASE 3</text>
+  <text x="810" y="1760" fill="#333" font-size="16" font-weight="700">Ecosystem Maturity</text>
+  <text x="810" y="1778" fill="#888" font-size="12">2030 – 2033</text>
+  <rect x="810" y="1790" width="310" height="1" fill="#EEE"/>
+  <text x="810" y="1812" fill="#555" font-size="12">✓ Full HIE mediation (all flows)</text>
+  <text x="810" y="1832" fill="#555" font-size="12">✓ SPT retired → DHIS2 Tracker EIR</text>
+  <text x="810" y="1852" fill="#555" font-size="12">✓ G-Cloud migration complete</text>
+  <text x="810" y="1872" fill="#555" font-size="12">✓ Shared Health Record operational</text>
+  <text x="810" y="1892" fill="#555" font-size="12">✓ International reporting automated</text>
+
+  <!-- Phase connector arrows -->
+  <line x1="410" y1="1805" x2="425" y2="1805" stroke="#B0A894" stroke-width="2"/>
+  <polygon points="422,1801 430,1805 422,1809" fill="#B0A894"/>
+  <line x1="775" y1="1805" x2="790" y2="1805" stroke="#B0A894" stroke-width="2"/>
+  <polygon points="787,1801 795,1805 787,1809" fill="#B0A894"/>
+
+  <!-- ======================= SECTION: KEY DESIGN PRINCIPLES ======================= -->
+  <text x="600" y="1960" text-anchor="middle" fill="#0B3D2E" font-size="13" font-weight="700" letter-spacing="3">KEY ARCHITECTURAL PRINCIPLES</text>
+  <rect x="530" y="1970" width="140" height="2" rx="1" fill="url(#accentGrad)"/>
+
+  <!-- Principles grid -->
+  <!-- Row 1 -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="1992" width="255" height="100" rx="10" fill="#FFFFFF"/>
+  </g>
+  <circle cx="90" cy="2022" r="16" fill="#1A6B50" opacity="0.12"/>
+  <text x="90" y="2028" text-anchor="middle" fill="#1A6B50" font-size="16">🔌</text>
+  <text x="115" y="2020" fill="#333" font-size="13" font-weight="700">OpenHIE-Based</text>
+  <text x="115" y="2040" fill="#777" font-size="11">Standards-based health</text>
+  <text x="115" y="2055" fill="#777" font-size="11">interoperability framework</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="333" y="1992" width="255" height="100" rx="10" fill="#FFFFFF"/>
+  </g>
+  <circle cx="363" cy="2022" r="16" fill="#2E86AB" opacity="0.12"/>
+  <text x="363" y="2028" text-anchor="middle" fill="#2E86AB" font-size="16">📴</text>
+  <text x="388" y="2020" fill="#333" font-size="13" font-weight="700">Offline-First</text>
+  <text x="388" y="2040" fill="#777" font-size="11">All facility systems work</text>
+  <text x="388" y="2055" fill="#777" font-size="11">without connectivity</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="606" y="1992" width="255" height="100" rx="10" fill="#FFFFFF"/>
+  </g>
+  <circle cx="636" cy="2022" r="16" fill="#7B68A8" opacity="0.12"/>
+  <text x="636" y="2028" text-anchor="middle" fill="#7B68A8" font-size="16">🔓</text>
+  <text x="661" y="2020" fill="#333" font-size="13" font-weight="700">Open-Source First</text>
+  <text x="661" y="2040" fill="#777" font-size="11">DHIS2, OpenMRS, OpenHIM,</text>
+  <text x="661" y="2055" fill="#777" font-size="11">OpenCR, OpenLMIS stack</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="879" y="1992" width="261" height="100" rx="10" fill="#FFFFFF"/>
+  </g>
+  <circle cx="909" cy="2022" r="16" fill="#C75233" opacity="0.12"/>
+  <text x="909" y="2028" text-anchor="middle" fill="#C75233" font-size="16">🏗️</text>
+  <text x="934" y="2020" fill="#333" font-size="13" font-weight="700">Build on What Works</text>
+  <text x="934" y="2040" fill="#777" font-size="11">Retain &amp; invest in proven</text>
+  <text x="934" y="2055" fill="#777" font-size="11">systems (DHIS2, eCRVS, SPT)</text>
+
+  <!-- Row 2 -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="2108" width="255" height="100" rx="10" fill="#FFFFFF"/>
+  </g>
+  <circle cx="90" cy="2138" r="16" fill="#E8A838" opacity="0.15"/>
+  <text x="90" y="2144" text-anchor="middle" fill="#D49020" font-size="16">🔥</text>
+  <text x="115" y="2136" fill="#333" font-size="13" font-weight="700">FHIR R4 Standard</text>
+  <text x="115" y="2156" fill="#777" font-size="11">14 resource profiles with</text>
+  <text x="115" y="2171" fill="#777" font-size="11">Façade wrappers for legacy</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="333" y="2108" width="255" height="100" rx="10" fill="#FFFFFF"/>
+  </g>
+  <circle cx="363" cy="2138" r="16" fill="#1A6B50" opacity="0.12"/>
+  <text x="363" y="2144" text-anchor="middle" fill="#1A6B50" font-size="16">🛡️</text>
+  <text x="388" y="2136" fill="#333" font-size="13" font-weight="700">Sovereign Hosting</text>
+  <text x="388" y="2156" fill="#777" font-size="11">All identifiable health data</text>
+  <text x="388" y="2171" fill="#777" font-size="11">on in-country G-Cloud</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="606" y="2108" width="255" height="100" rx="10" fill="#FFFFFF"/>
+  </g>
+  <circle cx="636" cy="2138" r="16" fill="#2E86AB" opacity="0.12"/>
+  <text x="636" y="2144" text-anchor="middle" fill="#2E86AB" font-size="16">🆔</text>
+  <text x="661" y="2136" fill="#333" font-size="13" font-weight="700">NIN Patient Identity</text>
+  <text x="661" y="2156" fill="#777" font-size="11">eCRVS NIN as foundational</text>
+  <text x="661" y="2171" fill="#777" font-size="11">patient identifier via MPI</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="879" y="2108" width="261" height="100" rx="10" fill="#FFFFFF"/>
+  </g>
+  <circle cx="909" cy="2138" r="16" fill="#7B68A8" opacity="0.12"/>
+  <text x="909" y="2144" text-anchor="middle" fill="#7B68A8" font-size="16">🔄</text>
+  <text x="934" y="2136" fill="#333" font-size="13" font-weight="700">6 Priority Flows</text>
+  <text x="934" y="2156" fill="#777" font-size="11">Birth→MPI→NHIS, Immunisation,</text>
+  <text x="934" y="2171" fill="#777" font-size="11">Lab, Clinical, Claims, Reporting</text>
+
+  <!-- ======================= DEPENDENCIES FOOTER ======================= -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="2240" width="1080" height="75" rx="12" fill="url(#depGrad)"/>
+    <rect x="60" y="2240" width="1080" height="75" rx="12" fill="url(#dotPattern)"/>
+  </g>
+  <text x="80" y="2266" fill="#E8A838" font-size="11" font-weight="700" letter-spacing="1.5">NATIONAL DEPENDENCIES</text>
+  <text x="80" y="2292" fill="rgba(255,255,255,0.75)" font-size="12">RDIP Infrastructure &#160;·&#160; G-Cloud Sovereign Hosting &#160;·&#160; Government Service Bus &#160;·&#160; National Digital Identity &#160;·&#160; ProgressaPay &#160;·&#160; IFMIS &#160;·&#160; Data Protection Legislation</text>
+
+  <!-- ======================= FOOTER ======================= -->
+  <text x="600" y="2350" text-anchor="middle" fill="#999" font-size="11" letter-spacing="0.5">Deliverable D6 — Contract [contract reference] — ITU Enterprise Architecture Initiative</text>
+  <text x="600" y="2370" text-anchor="middle" fill="#BBB" font-size="10">Aligned with national digital master plan (ten-year) &#160;·&#160; National Health Sector Strategic Plan &#160;·&#160; WHO CCS</text>
+  <text x="600" y="2390" text-anchor="middle" fill="#CCC" font-size="10">February 2026 — Draft for Stakeholder Review</text>
+</svg>

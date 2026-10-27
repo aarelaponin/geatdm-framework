@@ -1,0 +1,1953 @@
+{
+  "source_file": "moh_d6_infographic.svg",
+  "deliverable_code": "D6",
+  "ministry": "MoH",
+  "title": "Future State Architecture",
+  "total_text_elements": 139,
+  "text_type_distribution": {
+    "body": 86,
+    "heading": 6,
+    "subheading": 3,
+    "label": 44
+  },
+  "sections": [
+    {
+      "section_id": 1,
+      "section_title": "Future State Architecture",
+      "comment_marker": "BACKGROUND",
+      "y_range": [
+        0.0,
+        218.2
+      ],
+      "items": [
+        {
+          "type": "body",
+          "text": "D6",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 100.0,
+            "y": 70.0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Future State Architecture",
+          "font_size": 38.0,
+          "font_weight": "800",
+          "position": {
+            "x": 50.0,
+            "y": 120.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "Ministry of Health — Progressa",
+          "font_size": 22.0,
+          "font_weight": "600",
+          "position": {
+            "x": 50.0,
+            "y": 160.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "[contract reference]  ·  Architecture Validity 2025–2033",
+          "font_size": 14.0,
+          "font_weight": "400",
+          "position": {
+            "x": 50.0,
+            "y": 192.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "[contract reference]  ·  Architecture Validity 2025–2033",
+          "value": "13.2",
+          "type": "decimal",
+          "raw_number": 13.2
+        },
+        {
+          "label": "[contract reference]  ·  Architecture Validity 2025–2033",
+          "value": "2025–2033",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "[contract reference]  ·  Architecture Validity 2025–2033",
+          "value": "2024",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "[contract reference]  ·  Architecture Validity 2025–2033",
+          "value": "2025",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "[contract reference]  ·  Architecture Validity 2025–2033",
+          "value": "2033",
+          "type": "year",
+          "raw_number": null
+        }
+      ],
+      "item_count": 4
+    },
+    {
+      "section_id": 2,
+      "section_title": "2–3M",
+      "comment_marker": "HEADER",
+      "y_range": [
+        218.2,
+        436.4
+      ],
+      "items": [
+        {
+          "type": "body",
+          "text": "ENTERPRISE ARCHITECTURE INITIATIVE — ITU / PDGA",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 50.0,
+            "y": 240.0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "2–3M",
+          "font_size": 32.0,
+          "font_weight": "800",
+          "position": {
+            "x": 140.0,
+            "y": 320.0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "~90",
+          "font_size": 32.0,
+          "font_weight": "800",
+          "position": {
+            "x": 380.0,
+            "y": 320.0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "8+",
+          "font_size": 32.0,
+          "font_weight": "800",
+          "position": {
+            "x": 620.0,
+            "y": 320.0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "~90%",
+          "font_size": 32.0,
+          "font_weight": "800",
+          "position": {
+            "x": 860.0,
+            "y": 320.0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "12",
+          "font_size": 32.0,
+          "font_weight": "800",
+          "position": {
+            "x": 1060.0,
+            "y": 320.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "POPULATION",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 140.0,
+            "y": 345.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "HEALTH FACILITIES",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 380.0,
+            "y": 345.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "SILOED SYSTEMS",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 620.0,
+            "y": 345.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "PAPER-BASED",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 860.0,
+            "y": 345.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "DESIGN",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1060.0,
+            "y": 345.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "served",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 140.0,
+            "y": 363.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "nationwide",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 380.0,
+            "y": 363.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "current state",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 620.0,
+            "y": 363.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "clinical registers",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 860.0,
+            "y": 363.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "decisions",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1060.0,
+            "y": 363.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "~90%",
+          "value": "~90%",
+          "type": "percentage",
+          "raw_number": 90.0
+        }
+      ],
+      "item_count": 16
+    },
+    {
+      "section_id": 3,
+      "section_title": "KEY STATS STRIP",
+      "comment_marker": "KEY STATS STRIP",
+      "y_range": [
+        436.4,
+        654.5
+      ],
+      "items": [
+        {
+          "type": "body",
+          "text": "TARGET STATE VISION — 2033",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 80.0,
+            "y": 450.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "An integrated, interoperable health information ecosystem built on the OpenHIE architecture,",
+          "font_size": 15.0,
+          "font_weight": "400",
+          "position": {
+            "x": 80.0,
+            "y": 477.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "connecting all health systems via FHIR-based interfaces through a unified Master Patient Index.",
+          "font_size": 14.0,
+          "font_weight": "400",
+          "position": {
+            "x": 80.0,
+            "y": 495.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "TARGET APPLICATION ARCHITECTURE",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 600.0,
+            "y": 545.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "LAYER 4",
+          "font_size": 10.0,
+          "font_weight": "700",
+          "position": {
+            "x": 138.0,
+            "y": 610.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Surveillance",
+          "font_size": 16.0,
+          "font_weight": "700",
+          "position": {
+            "x": 210.0,
+            "y": 611.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "TARGET STATE VISION — 2033",
+          "value": "2033",
+          "type": "year",
+          "raw_number": null
+        }
+      ],
+      "item_count": 6
+    },
+    {
+      "section_id": 4,
+      "section_title": "VISION STATEMENT",
+      "comment_marker": "VISION STATEMENT",
+      "y_range": [
+        654.5,
+        872.7
+      ],
+      "items": [
+        {
+          "type": "body",
+          "text": "IDSR+ (DHIS2 Tracker)",
+          "font_size": 14.0,
+          "font_weight": "600",
+          "position": {
+            "x": 110.0,
+            "y": 656.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Event-Based Surveillance",
+          "font_size": 14.0,
+          "font_weight": "600",
+          "position": {
+            "x": 440.0,
+            "y": 656.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Community-Based Surveillance",
+          "font_size": 14.0,
+          "font_weight": "600",
+          "position": {
+            "x": 770.0,
+            "y": 656.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Electronic case-based surveillance",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 110.0,
+            "y": 678.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Signal detection & verification",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 440.0,
+            "y": 678.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "CHW mobile tools & USSD channels",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 770.0,
+            "y": 678.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "LAYER 3",
+          "font_size": 10.0,
+          "font_weight": "700",
+          "position": {
+            "x": 138.0,
+            "y": 775.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Health Administration",
+          "font_size": 16.0,
+          "font_weight": "700",
+          "position": {
+            "x": 210.0,
+            "y": 776.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "e-NHIS (Insurance)",
+          "font_size": 14.0,
+          "font_weight": "600",
+          "position": {
+            "x": 110.0,
+            "y": 821.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "eCRVS / CIVIS",
+          "font_size": 14.0,
+          "font_weight": "600",
+          "position": {
+            "x": 440.0,
+            "y": 821.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "eLMIS (OpenLMIS)",
+          "font_size": 14.0,
+          "font_weight": "600",
+          "position": {
+            "x": 770.0,
+            "y": 821.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "60,000+ beneficiaries · mobile enrollment",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 110.0,
+            "y": 843.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Civil registration · NIN foundation",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 440.0,
+            "y": 843.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Pharmaceutical supply chain",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 770.0,
+            "y": 843.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "60,000+ beneficiaries · mobile enrollment",
+          "value": "60,000",
+          "type": "number",
+          "raw_number": 60000.0
+        }
+      ],
+      "item_count": 14
+    },
+    {
+      "section_id": 5,
+      "section_title": "SECTION: ARCHITECTURE LAYERS",
+      "comment_marker": "SECTION: ARCHITECTURE LAYERS",
+      "y_range": [
+        872.7,
+        1090.9
+      ],
+      "items": [
+        {
+          "type": "label",
+          "text": "LAYER 2",
+          "font_size": 10.0,
+          "font_weight": "700",
+          "position": {
+            "x": 138.0,
+            "y": 940.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Clinical Systems",
+          "font_size": 16.0,
+          "font_weight": "700",
+          "position": {
+            "x": 210.0,
+            "y": 941.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "EHR (OpenMRS)",
+          "font_size": 14.0,
+          "font_weight": "600",
+          "position": {
+            "x": 110.0,
+            "y": 986.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "EIR (DHIS2 Tracker / SPT)",
+          "font_size": 14.0,
+          "font_weight": "600",
+          "position": {
+            "x": 440.0,
+            "y": 986.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "LIS (A-LIS / OpenELIS)",
+          "font_size": 14.0,
+          "font_weight": "600",
+          "position": {
+            "x": 770.0,
+            "y": 986.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "30–40 priority facilities · MCH + HIV/ART",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 110.0,
+            "y": 1008.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Immunisation registry · 350–400K children",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 440.0,
+            "y": 1008.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Laboratory information system",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 770.0,
+            "y": 1008.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "Immunisation registry · 350–400K children",
+          "value": "350–400K",
+          "type": "number",
+          "raw_number": 375000.0
+        }
+      ],
+      "item_count": 8
+    },
+    {
+      "section_id": 6,
+      "section_title": "Integration Layer — OpenHIM",
+      "comment_marker": "INTEGRATION HUB (OpenHIM)",
+      "y_range": [
+        1090.9,
+        1309.1
+      ],
+      "items": [
+        {
+          "type": "subheading",
+          "text": "Integration Layer — OpenHIM",
+          "font_size": 19.0,
+          "font_weight": "800",
+          "position": {
+            "x": 175.0,
+            "y": 1118.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "⬡",
+          "font_size": 18.0,
+          "font_weight": "800",
+          "position": {
+            "x": 130.0,
+            "y": 1136.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Routing · FHIR Mediation · Audit Logging · Legacy Adapters · Security (mTLS + OAuth 2.0)",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 175.0,
+            "y": 1140.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "All inter-system data flows mediated — zero point-to-point connections",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 175.0,
+            "y": 1160.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "LAYER 1",
+          "font_size": 10.0,
+          "font_weight": "700",
+          "position": {
+            "x": 138.0,
+            "y": 1250.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "National Health Platform",
+          "font_size": 16.0,
+          "font_weight": "700",
+          "position": {
+            "x": 210.0,
+            "y": 1251.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "DHIS2 (National HMIS)",
+          "font_size": 14.0,
+          "font_weight": "600",
+          "position": {
+            "x": 110.0,
+            "y": 1296.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "MPI (OpenCR)",
+          "font_size": 14.0,
+          "font_weight": "600",
+          "position": {
+            "x": 440.0,
+            "y": 1296.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Shared Health Record (HAPI FHIR)",
+          "font_size": 14.0,
+          "font_weight": "600",
+          "position": {
+            "x": 770.0,
+            "y": 1296.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "Routing · FHIR Mediation · Audit Logging · Legacy Adapters · Security (mTLS + OA",
+          "value": "2.0",
+          "type": "decimal",
+          "raw_number": 2.0
+        }
+      ],
+      "item_count": 9
+    },
+    {
+      "section_id": 7,
+      "section_title": "SECTION: DUAL-MODE CONCEPT",
+      "comment_marker": "SECTION: DUAL-MODE CONCEPT",
+      "y_range": [
+        1309.1,
+        1527.3
+      ],
+      "items": [
+        {
+          "type": "label",
+          "text": "Aggregate data · Analytics · WHO packages",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 110.0,
+            "y": 1318.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Unified patient identity · NIN-anchored",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 440.0,
+            "y": 1318.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Longitudinal patient summaries",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 770.0,
+            "y": 1318.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "DUAL-MODE ARCHITECTURE CONCEPT",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 600.0,
+            "y": 1410.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "INTERIM",
+          "font_size": 11.0,
+          "font_weight": "700",
+          "position": {
+            "x": 128.0,
+            "y": 1476.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "2025 – 2028",
+          "font_size": 15.0,
+          "font_weight": "700",
+          "position": {
+            "x": 190.0,
+            "y": 1476.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "TARGET",
+          "font_size": 11.0,
+          "font_weight": "700",
+          "position": {
+            "x": 678.0,
+            "y": 1476.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "2028 – 2033",
+          "font_size": 15.0,
+          "font_weight": "700",
+          "position": {
+            "x": 740.0,
+            "y": 1476.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "▸ ProgTel / e-Gov interim hosting",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 85.0,
+            "y": 1508.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "▸ G-Cloud sovereign hosting (MoH spoke)",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 635.0,
+            "y": 1508.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "2025 – 2028",
+          "value": "2025 – 2028",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "2025 – 2028",
+          "value": "2025",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "2025 – 2028",
+          "value": "2028",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "2028 – 2033",
+          "value": "2028 – 2033",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "2028 – 2033",
+          "value": "2033",
+          "type": "year",
+          "raw_number": null
+        }
+      ],
+      "item_count": 10
+    },
+    {
+      "section_id": 8,
+      "section_title": "SECTION: IMPLEMENTATION PHASES",
+      "comment_marker": "SECTION: IMPLEMENTATION PHASES",
+      "y_range": [
+        1527.3,
+        1745.5
+      ],
+      "items": [
+        {
+          "type": "body",
+          "text": "▸ Offline-first with satellite connectivity",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 85.0,
+            "y": 1530.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "▸ RDIP broadband connectivity",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 635.0,
+            "y": 1530.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "▸ OpenHIM as self-contained HIE",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 85.0,
+            "y": 1552.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "▸ National Government Service Bus",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 635.0,
+            "y": 1552.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "NON-DISRUPTIVE",
+          "font_size": 10.0,
+          "font_weight": "700",
+          "position": {
+            "x": 600.0,
+            "y": 1555.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "▸ OpenCR MPI with eCRVS NIN",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 85.0,
+            "y": 1574.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "▸ National Digital Identity integration",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 635.0,
+            "y": 1574.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "▸ Bilateral cross-ministry integrations",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 85.0,
+            "y": 1596.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "▸ ProgressaPay health payment flows",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 635.0,
+            "y": 1596.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "INTEGRATION MATURITY PHASES",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 600.0,
+            "y": 1670.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "PHASE 1",
+          "font_size": 12.0,
+          "font_weight": "700",
+          "position": {
+            "x": 80.0,
+            "y": 1738.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "PHASE 2",
+          "font_size": 12.0,
+          "font_weight": "700",
+          "position": {
+            "x": 445.0,
+            "y": 1738.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "PHASE 3",
+          "font_size": 12.0,
+          "font_weight": "700",
+          "position": {
+            "x": 810.0,
+            "y": 1738.0
+          }
+        }
+      ],
+      "statistics": [],
+      "item_count": 13
+    },
+    {
+      "section_id": 9,
+      "section_title": "SECTION: KEY DESIGN PRINCIPLES",
+      "comment_marker": "SECTION: KEY DESIGN PRINCIPLES",
+      "y_range": [
+        1745.5,
+        1963.6
+      ],
+      "items": [
+        {
+          "type": "body",
+          "text": "Foundation",
+          "font_size": 16.0,
+          "font_weight": "700",
+          "position": {
+            "x": 80.0,
+            "y": 1760.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Clinical Scale-Up",
+          "font_size": 16.0,
+          "font_weight": "700",
+          "position": {
+            "x": 445.0,
+            "y": 1760.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Ecosystem Maturity",
+          "font_size": 16.0,
+          "font_weight": "700",
+          "position": {
+            "x": 810.0,
+            "y": 1760.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "2025 – 2027",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 80.0,
+            "y": 1778.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "2027 – 2030",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 445.0,
+            "y": 1778.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "2030 – 2033",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 810.0,
+            "y": 1778.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ DHIS2 strengthening (≥95%)",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 80.0,
+            "y": 1812.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ OpenMRS EHR → 30–40 facilities",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 445.0,
+            "y": 1812.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ Full HIE mediation (all flows)",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 810.0,
+            "y": 1812.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ OpenHIM HIE deployment",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 80.0,
+            "y": 1832.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ FHIR-based integration flows",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 445.0,
+            "y": 1832.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ SPT retired → DHIS2 Tracker EIR",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 810.0,
+            "y": 1832.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ MPI (OpenCR) with eCRVS feed",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 80.0,
+            "y": 1852.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ e-NHIS → 60,000 beneficiaries",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 445.0,
+            "y": 1852.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ G-Cloud migration complete",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 810.0,
+            "y": 1852.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ IDSR+ pilot (7 diseases)",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 80.0,
+            "y": 1872.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ Lab results routing (A-LIS→HIE)",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 445.0,
+            "y": 1872.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ Shared Health Record operational",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 810.0,
+            "y": 1872.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ DHDD recruitment (3–5 staff)",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 80.0,
+            "y": 1892.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ Claims & eligibility automation",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 445.0,
+            "y": 1892.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "✓ International reporting automated",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 810.0,
+            "y": 1892.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "KEY ARCHITECTURAL PRINCIPLES",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 600.0,
+            "y": 1960.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "2025 – 2027",
+          "value": "2025 – 2027",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "2025 – 2027",
+          "value": "2025",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "2025 – 2027",
+          "value": "2027",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "2027 – 2030",
+          "value": "2027 – 2030",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "2027 – 2030",
+          "value": "2030",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "2030 – 2033",
+          "value": "2030 – 2033",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "2030 – 2033",
+          "value": "2033",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "✓ DHIS2 strengthening (≥95%)",
+          "value": "95%",
+          "type": "percentage",
+          "raw_number": 95.0
+        },
+        {
+          "label": "✓ e-NHIS → 60,000 beneficiaries",
+          "value": "60,000",
+          "type": "number",
+          "raw_number": 60000.0
+        }
+      ],
+      "item_count": 22
+    },
+    {
+      "section_id": 10,
+      "section_title": "DEPENDENCIES FOOTER",
+      "comment_marker": "DEPENDENCIES FOOTER",
+      "y_range": [
+        1963.6,
+        2181.8
+      ],
+      "items": [
+        {
+          "type": "body",
+          "text": "OpenHIE-Based",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 115.0,
+            "y": 2020.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Offline-First",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 388.0,
+            "y": 2020.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Open-Source First",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 661.0,
+            "y": 2020.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Build on What Works",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 934.0,
+            "y": 2020.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "🔌",
+          "font_size": 16.0,
+          "font_weight": "400",
+          "position": {
+            "x": 90.0,
+            "y": 2028.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "📴",
+          "font_size": 16.0,
+          "font_weight": "400",
+          "position": {
+            "x": 363.0,
+            "y": 2028.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "🔓",
+          "font_size": 16.0,
+          "font_weight": "400",
+          "position": {
+            "x": 636.0,
+            "y": 2028.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "🏗️",
+          "font_size": 16.0,
+          "font_weight": "400",
+          "position": {
+            "x": 909.0,
+            "y": 2028.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Standards-based health",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 115.0,
+            "y": 2040.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "All facility systems work",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 388.0,
+            "y": 2040.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "DHIS2, OpenMRS, OpenHIM,",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 661.0,
+            "y": 2040.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Retain & invest in proven",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 934.0,
+            "y": 2040.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "interoperability framework",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 115.0,
+            "y": 2055.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "without connectivity",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 388.0,
+            "y": 2055.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "OpenCR, OpenLMIS stack",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 661.0,
+            "y": 2055.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "systems (DHIS2, eCRVS, SPT)",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 934.0,
+            "y": 2055.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "FHIR R4 Standard",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 115.0,
+            "y": 2136.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Sovereign Hosting",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 388.0,
+            "y": 2136.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "NIN Patient Identity",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 661.0,
+            "y": 2136.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "6 Priority Flows",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 934.0,
+            "y": 2136.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "🔥",
+          "font_size": 16.0,
+          "font_weight": "400",
+          "position": {
+            "x": 90.0,
+            "y": 2144.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "🛡️",
+          "font_size": 16.0,
+          "font_weight": "400",
+          "position": {
+            "x": 363.0,
+            "y": 2144.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "🆔",
+          "font_size": 16.0,
+          "font_weight": "400",
+          "position": {
+            "x": 636.0,
+            "y": 2144.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "🔄",
+          "font_size": 16.0,
+          "font_weight": "400",
+          "position": {
+            "x": 909.0,
+            "y": 2144.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "14 resource profiles with",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 115.0,
+            "y": 2156.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "All identifiable health data",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 388.0,
+            "y": 2156.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "eCRVS NIN as foundational",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 661.0,
+            "y": 2156.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Birth→MPI→NHIS, Immunisation,",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 934.0,
+            "y": 2156.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Façade wrappers for legacy",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 115.0,
+            "y": 2171.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "on in-country G-Cloud",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 388.0,
+            "y": 2171.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "patient identifier via MPI",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 661.0,
+            "y": 2171.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Lab, Clinical, Claims, Reporting",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 934.0,
+            "y": 2171.0
+          }
+        }
+      ],
+      "statistics": [],
+      "item_count": 32
+    },
+    {
+      "section_id": 11,
+      "section_title": "FOOTER",
+      "comment_marker": "FOOTER",
+      "y_range": [
+        2181.8,
+        2400.0
+      ],
+      "items": [
+        {
+          "type": "label",
+          "text": "NATIONAL DEPENDENCIES",
+          "font_size": 11.0,
+          "font_weight": "700",
+          "position": {
+            "x": 80.0,
+            "y": 2266.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "RDIP Infrastructure  ·  G-Cloud Sovereign Hosting  ·  Government Service Bus  ·  National Digital Identity  ·  ProgressaPay  ·  IFMIS  ·  Data Protection Legislation",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 80.0,
+            "y": 2292.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Deliverable D6 — Contract [contract reference] — ITU Enterprise Architecture Initiative",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 600.0,
+            "y": 2350.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Aligned with national digital master plan (ten-year)  ·  National Health Sector Strategic Plan  ·  WHO CCS",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 600.0,
+            "y": 2370.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "February 2026 — Draft for Stakeholder Review",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 600.0,
+            "y": 2390.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "Deliverable D6 — Contract [contract reference] — ITU Enterprise Architectur",
+          "value": "13.2",
+          "type": "decimal",
+          "raw_number": 13.2
+        },
+        {
+          "label": "Deliverable D6 — Contract [contract reference] — ITU Enterprise Architectur",
+          "value": "2024",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "Aligned with national digital master plan (ten-year)  ·  National Health Sector St",
+          "value": "ten-year",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "Aligned with national digital master plan (ten-year)  ·  National Health Sector St",
+          "value": "five-year",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "Aligned with national digital master plan (ten-year)  ·  National Health Sector St",
+          "value": "2034",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "Aligned with national digital master plan (ten-year)  ·  National Health Sector St",
+          "value": "2028",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "February 2026 — Draft for Stakeholder Review",
+          "value": "2026",
+          "type": "year",
+          "raw_number": null
+        }
+      ],
+      "item_count": 5
+    }
+  ],
+  "flow_structures": {
+    "count": 26,
+    "items": [
+      {
+        "type": "line",
+        "from": {
+          "x": 260.0,
+          "y": 300.0
+        },
+        "to": {
+          "x": 260.0,
+          "y": 370.0
+        },
+        "stroke": "#E0D8CC"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 500.0,
+          "y": 300.0
+        },
+        "to": {
+          "x": 500.0,
+          "y": 370.0
+        },
+        "stroke": "#E0D8CC"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 740.0,
+          "y": 300.0
+        },
+        "to": {
+          "x": 740.0,
+          "y": 370.0
+        },
+        "stroke": "#E0D8CC"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 980.0,
+          "y": 300.0
+        },
+        "to": {
+          "x": 980.0,
+          "y": 370.0
+        },
+        "stroke": "#E0D8CC"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 600.0,
+          "y": 715.0
+        },
+        "to": {
+          "x": 600.0,
+          "y": 735.0
+        },
+        "stroke": "#B0A894"
+      },
+      {
+        "type": "polygon",
+        "points": "596,735 600,743 604,735",
+        "fill": "#B0A894"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 600.0,
+          "y": 880.0
+        },
+        "to": {
+          "x": 600.0,
+          "y": 900.0
+        },
+        "stroke": "#B0A894"
+      },
+      {
+        "type": "polygon",
+        "points": "596,900 600,908 604,900",
+        "fill": "#B0A894"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 240.0,
+          "y": 1045.0
+        },
+        "to": {
+          "x": 240.0,
+          "y": 1070.0
+        },
+        "stroke": "#E8A838"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 600.0,
+          "y": 1045.0
+        },
+        "to": {
+          "x": 600.0,
+          "y": 1070.0
+        },
+        "stroke": "#E8A838"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 935.0,
+          "y": 1045.0
+        },
+        "to": {
+          "x": 935.0,
+          "y": 1070.0
+        },
+        "stroke": "#E8A838"
+      },
+      {
+        "type": "polygon",
+        "points": "236,1070 240,1078 244,1070",
+        "fill": "#E8A838"
+      },
+      {
+        "type": "polygon",
+        "points": "596,1070 600,1078 604,1070",
+        "fill": "#E8A838"
+      },
+      {
+        "type": "polygon",
+        "points": "931,1070 935,1078 939,1070",
+        "fill": "#E8A838"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 240.0,
+          "y": 1180.0
+        },
+        "to": {
+          "x": 240.0,
+          "y": 1210.0
+        },
+        "stroke": "#E8A838"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 600.0,
+          "y": 1180.0
+        },
+        "to": {
+          "x": 600.0,
+          "y": 1210.0
+        },
+        "stroke": "#E8A838"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 935.0,
+          "y": 1180.0
+        },
+        "to": {
+          "x": 935.0,
+          "y": 1210.0
+        },
+        "stroke": "#E8A838"
+      },
+      {
+        "type": "polygon",
+        "points": "236,1210 240,1218 244,1210",
+        "fill": "#E8A838"
+      },
+      {
+        "type": "polygon",
+        "points": "596,1210 600,1218 604,1210",
+        "fill": "#E8A838"
+      },
+      {
+        "type": "polygon",
+        "points": "931,1210 935,1218 939,1210",
+        "fill": "#E8A838"
+      }
+    ]
+  },
+  "metadata": {
+    "width": 1200.0,
+    "height": 2400.0,
+    "total_sections": 11,
+    "total_statistics": 31,
+    "section_comments_found": 11,
+    "comment_names": [
+      "BACKGROUND",
+      "HEADER",
+      "KEY STATS STRIP",
+      "VISION STATEMENT",
+      "SECTION: ARCHITECTURE LAYERS",
+      "INTEGRATION HUB (OpenHIM)",
+      "SECTION: DUAL-MODE CONCEPT",
+      "SECTION: IMPLEMENTATION PHASES",
+      "SECTION: KEY DESIGN PRINCIPLES",
+      "DEPENDENCIES FOOTER",
+      "FOOTER"
+    ],
+    "file_size_kb": 28.9
+  }
+}

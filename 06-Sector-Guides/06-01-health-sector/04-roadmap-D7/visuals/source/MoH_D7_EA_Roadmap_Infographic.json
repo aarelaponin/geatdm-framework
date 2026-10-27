@@ -1,0 +1,3007 @@
+{
+  "source_file": "MoH_D7_EA_Roadmap_Infographic.svg",
+  "deliverable_code": "D7",
+  "ministry": "MoH",
+  "title": "EA Implementation Roadmap",
+  "total_text_elements": 231,
+  "text_type_distribution": {
+    "body": 82,
+    "heading": 7,
+    "subheading": 36,
+    "label": 93,
+    "footnote": 13
+  },
+  "sections": [
+    {
+      "section_id": 1,
+      "section_title": "EA Implementation Roadmap",
+      "comment_marker": null,
+      "y_range": [
+        70.0,
+        195.0
+      ],
+      "items": [
+        {
+          "type": "body",
+          "text": "DELIVERABLE D7  ·  CONTRACT [contract reference]",
+          "font_size": 16.0,
+          "font_weight": "400",
+          "position": {
+            "x": 60.0,
+            "y": 70.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Prepared under",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1225.0,
+            "y": 90.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "ITU",
+          "font_size": 20.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1225.0,
+            "y": 118.0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "EA Implementation Roadmap",
+          "font_size": 40.0,
+          "font_weight": "700",
+          "position": {
+            "x": 60.0,
+            "y": 120.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Digital Transformation for Africa",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1225.0,
+            "y": 145.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "Ministry of Health — Progressa",
+          "font_size": 28.0,
+          "font_weight": "400",
+          "position": {
+            "x": 60.0,
+            "y": 160.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "RDIP / World Bank",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1225.0,
+            "y": 165.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Validity Period: 2025–2033  |  28 Initiatives  |  3 Transformation Waves  |  USD 8.5M Midpoint Investment",
+          "font_size": 15.0,
+          "font_weight": "400",
+          "position": {
+            "x": 60.0,
+            "y": 195.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "DELIVERABLE D7  ·  CONTRACT [contract reference]",
+          "value": "13.2",
+          "type": "decimal",
+          "raw_number": 13.2
+        },
+        {
+          "label": "DELIVERABLE D7  ·  CONTRACT [contract reference]",
+          "value": "2024",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "Validity Period: 2025–2033  |  28 Initiatives  |  3 Transformation Waves  |  USD",
+          "value": "2025–2033",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "Validity Period: 2025–2033  |  28 Initiatives  |  3 Transformation Waves  |  USD",
+          "value": "2025",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "Validity Period: 2025–2033  |  28 Initiatives  |  3 Transformation Waves  |  USD",
+          "value": "2033",
+          "type": "year",
+          "raw_number": null
+        }
+      ],
+      "item_count": 8
+    },
+    {
+      "section_id": 2,
+      "section_title": "The Transformation Journey",
+      "comment_marker": null,
+      "y_range": [
+        268.0,
+        268.0
+      ],
+      "items": [
+        {
+          "type": "subheading",
+          "text": "The Transformation Journey",
+          "font_size": 22.0,
+          "font_weight": "700",
+          "position": {
+            "x": 60.0,
+            "y": 268.0
+          }
+        }
+      ],
+      "statistics": [],
+      "item_count": 1
+    },
+    {
+      "section_id": 3,
+      "section_title": "Paper-Based · Siloed · Fragmented",
+      "comment_marker": null,
+      "y_range": [
+        345.0,
+        380.0
+      ],
+      "items": [
+        {
+          "type": "body",
+          "text": "CURRENT STATE (2025)",
+          "font_size": 14.0,
+          "font_weight": "400",
+          "position": {
+            "x": 80.0,
+            "y": 345.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "TARGET STATE (2033)",
+          "font_size": 14.0,
+          "font_weight": "400",
+          "position": {
+            "x": 780.0,
+            "y": 345.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "Paper-Based · Siloed · Fragmented",
+          "font_size": 22.0,
+          "font_weight": "700",
+          "position": {
+            "x": 80.0,
+            "y": 380.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "Digital · Interoperable · Sustainable",
+          "font_size": 22.0,
+          "font_weight": "700",
+          "position": {
+            "x": 780.0,
+            "y": 380.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "CURRENT STATE (2025)",
+          "value": "2025",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "TARGET STATE (2033)",
+          "value": "2033",
+          "type": "year",
+          "raw_number": null
+        }
+      ],
+      "item_count": 4
+    },
+    {
+      "section_id": 4,
+      "section_title": "~90%",
+      "comment_marker": null,
+      "y_range": [
+        445.0,
+        602.0
+      ],
+      "items": [
+        {
+          "type": "heading",
+          "text": "~90%",
+          "font_size": 32.0,
+          "font_weight": "700",
+          "position": {
+            "x": 145.0,
+            "y": 445.0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "2.19",
+          "font_size": 32.0,
+          "font_weight": "700",
+          "position": {
+            "x": 290.0,
+            "y": 445.0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "L1",
+          "font_size": 32.0,
+          "font_weight": "700",
+          "position": {
+            "x": 435.0,
+            "y": 445.0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "4.0+",
+          "font_size": 32.0,
+          "font_weight": "700",
+          "position": {
+            "x": 845.0,
+            "y": 445.0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "L4",
+          "font_size": 32.0,
+          "font_weight": "700",
+          "position": {
+            "x": 990.0,
+            "y": 445.0
+          }
+        },
+        {
+          "type": "heading",
+          "text": "≥50%",
+          "font_size": 32.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1135.0,
+            "y": 445.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Paper-Based",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 145.0,
+            "y": 468.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "EA Maturity",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 290.0,
+            "y": 468.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Integration",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 435.0,
+            "y": 468.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "EA Maturity",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 845.0,
+            "y": 468.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Integration",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 990.0,
+            "y": 468.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Government",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1135.0,
+            "y": 468.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "8 YEARS",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 720.0,
+            "y": 475.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Clinical Records",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 145.0,
+            "y": 482.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Score (of 5)",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 290.0,
+            "y": 482.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Maturity (Ad-Hoc)",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 435.0,
+            "y": 482.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Score",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 845.0,
+            "y": 482.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Maturity",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 990.0,
+            "y": 482.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Funded",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1135.0,
+            "y": 482.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "3 WAVES",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 720.0,
+            "y": 490.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "8 siloed information systems · 1 automated data flow",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 102.0,
+            "y": 521.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "OpenHIE-based HIE with 6 integration flows live",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 802.0,
+            "y": 521.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "No HIE, no MPI, no EHR in public facilities",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 102.0,
+            "y": 548.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "EHR (OpenMRS) at 30–40 facilities (33–44%)",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 802.0,
+            "y": 548.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "NHIS enrollment at ~30% of target (15–20K of 60K)",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 102.0,
+            "y": 575.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "100,000+ NHIS beneficiaries enrolled",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 802.0,
+            "y": 575.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "No unified digital health governance or directorate",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 102.0,
+            "y": 602.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "DHDD fully staffed (14 positions) with NDHSC governance",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 802.0,
+            "y": 602.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "~90%",
+          "value": "~90%",
+          "type": "percentage",
+          "raw_number": 90.0
+        },
+        {
+          "label": "2.19",
+          "value": "2.19",
+          "type": "decimal",
+          "raw_number": 2.19
+        },
+        {
+          "label": "4.0+",
+          "value": "4.0",
+          "type": "decimal",
+          "raw_number": 4.0
+        },
+        {
+          "label": "≥50%",
+          "value": "50%",
+          "type": "percentage",
+          "raw_number": 50.0
+        },
+        {
+          "label": "EHR (OpenMRS) at 30–40 facilities (33–44%)",
+          "value": "44%",
+          "type": "percentage",
+          "raw_number": 44.0
+        },
+        {
+          "label": "NHIS enrollment at ~30% of target (15–20K of 60K)",
+          "value": "~30%",
+          "type": "percentage",
+          "raw_number": 30.0
+        },
+        {
+          "label": "NHIS enrollment at ~30% of target (15–20K of 60K)",
+          "value": "15–20K",
+          "type": "number",
+          "raw_number": 17500.0
+        },
+        {
+          "label": "NHIS enrollment at ~30% of target (15–20K of 60K)",
+          "value": "60,000",
+          "type": "number",
+          "raw_number": 60000.0
+        },
+        {
+          "label": "100,000+ NHIS beneficiaries enrolled",
+          "value": "100,000",
+          "type": "number",
+          "raw_number": 100000.0
+        }
+      ],
+      "item_count": 28
+    },
+    {
+      "section_id": 5,
+      "section_title": "Gap Analysis — 38 Gaps Identified",
+      "comment_marker": null,
+      "y_range": [
+        668.0,
+        668.0
+      ],
+      "items": [
+        {
+          "type": "subheading",
+          "text": "Gap Analysis — 38 Gaps Identified",
+          "font_size": 22.0,
+          "font_weight": "700",
+          "position": {
+            "x": 60.0,
+            "y": 668.0
+          }
+        }
+      ],
+      "statistics": [],
+      "item_count": 1
+    },
+    {
+      "section_id": 6,
+      "section_title": "6",
+      "comment_marker": null,
+      "y_range": [
+        738.0,
+        882.0
+      ],
+      "items": [
+        {
+          "type": "body",
+          "text": "SEVERITY DISTRIBUTION",
+          "font_size": 14.0,
+          "font_weight": "400",
+          "position": {
+            "x": 60.0,
+            "y": 738.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "BY ARCHITECTURE DOMAIN",
+          "font_size": 14.0,
+          "font_weight": "400",
+          "position": {
+            "x": 620.0,
+            "y": 738.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "9",
+          "font_size": 24.0,
+          "font_weight": "700",
+          "position": {
+            "x": 140.0,
+            "y": 778.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "22",
+          "font_size": 24.0,
+          "font_weight": "700",
+          "position": {
+            "x": 315.0,
+            "y": 778.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "7",
+          "font_size": 24.0,
+          "font_weight": "700",
+          "position": {
+            "x": 490.0,
+            "y": 778.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "CRITICAL",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 140.0,
+            "y": 796.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "HIGH",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 315.0,
+            "y": 796.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "MEDIUM",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 490.0,
+            "y": 796.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "6",
+          "font_size": 28.0,
+          "font_weight": "700",
+          "position": {
+            "x": 674.0,
+            "y": 798.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "5",
+          "font_size": 28.0,
+          "font_weight": "700",
+          "position": {
+            "x": 794.0,
+            "y": 798.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "6",
+          "font_size": 28.0,
+          "font_weight": "700",
+          "position": {
+            "x": 914.0,
+            "y": 798.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "8",
+          "font_size": 28.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1034.0,
+            "y": 798.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "6",
+          "font_size": 28.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1154.0,
+            "y": 798.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "7",
+          "font_size": 28.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1274.0,
+            "y": 798.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Cross-",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 674.0,
+            "y": 818.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Business",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 794.0,
+            "y": 818.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Data",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 914.0,
+            "y": 818.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Application",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1034.0,
+            "y": 818.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Technology",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1154.0,
+            "y": 818.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Integration",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1274.0,
+            "y": 818.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Sectoral",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 674.0,
+            "y": 832.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Architecture",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 794.0,
+            "y": 832.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Architecture",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 914.0,
+            "y": 832.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Architecture",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1034.0,
+            "y": 832.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Architecture",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1154.0,
+            "y": 832.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Architecture",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1274.0,
+            "y": 832.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "GEN",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 674.0,
+            "y": 868.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "BUS",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 794.0,
+            "y": 868.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "DAT",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 914.0,
+            "y": 868.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "APP",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1034.0,
+            "y": 868.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "TEC",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1154.0,
+            "y": 868.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "INT",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1274.0,
+            "y": 868.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "2C · 4H · 0M",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 674.0,
+            "y": 882.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "1C · 3H · 1M",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 794.0,
+            "y": 882.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "1C · 3H · 2M",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 914.0,
+            "y": 882.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "3C · 4H · 1M",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1034.0,
+            "y": 882.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "1C · 3H · 2M",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1154.0,
+            "y": 882.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "1C · 5H · 1M",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1274.0,
+            "y": 882.0
+          }
+        }
+      ],
+      "statistics": [],
+      "item_count": 38
+    },
+    {
+      "section_id": 7,
+      "section_title": "Three Transformation Waves",
+      "comment_marker": null,
+      "y_range": [
+        975.0,
+        975.0
+      ],
+      "items": [
+        {
+          "type": "subheading",
+          "text": "Three Transformation Waves",
+          "font_size": 22.0,
+          "font_weight": "700",
+          "position": {
+            "x": 60.0,
+            "y": 975.0
+          }
+        }
+      ],
+      "statistics": [],
+      "item_count": 1
+    },
+    {
+      "section_id": 8,
+      "section_title": "11",
+      "comment_marker": null,
+      "y_range": [
+        1055.0,
+        1236.0
+      ],
+      "items": [
+        {
+          "type": "subheading",
+          "text": "Govern, Connect, Register",
+          "font_size": 20.0,
+          "font_weight": "700",
+          "position": {
+            "x": 155.0,
+            "y": 1055.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "WAVE",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 105.0,
+            "y": 1057.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "INVESTMENT",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1195.0,
+            "y": 1065.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "11",
+          "font_size": 28.0,
+          "font_weight": "700",
+          "position": {
+            "x": 988.0,
+            "y": 1068.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "2025–2026  ·  Foundation & Stabilisation",
+          "font_size": 15.0,
+          "font_weight": "400",
+          "position": {
+            "x": 155.0,
+            "y": 1080.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "1",
+          "font_size": 24.0,
+          "font_weight": "700",
+          "position": {
+            "x": 105.0,
+            "y": 1081.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "USD 1.8 – 3.0M",
+          "font_size": 22.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1195.0,
+            "y": 1092.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "INITIATIVES",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 988.0,
+            "y": 1092.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "KEY DELIVERABLES",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 75.0,
+            "y": 1134.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "NDHSC + DHDD Established",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 113.0,
+            "y": 1168.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "HIE (OpenHIM) + MPI (OpenCR)",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 418.0,
+            "y": 1168.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "eCRVS→MPI→e-NHIS Flow",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 723.0,
+            "y": 1168.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 95.0,
+            "y": 1175.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 400.0,
+            "y": 1175.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 705.0,
+            "y": 1175.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Ministerial Order · 3-tier governance",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 113.0,
+            "y": 1184.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Interim hosting · First integration flow",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 418.0,
+            "y": 1184.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Birth registration to insurance enrollment",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 723.0,
+            "y": 1184.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "DHIS2 Tracker Pilots",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 113.0,
+            "y": 1220.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "National eLMIS Rollout",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 418.0,
+            "y": 1220.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "6 DHDD Staff + 100+ Trained",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 723.0,
+            "y": 1220.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 95.0,
+            "y": 1227.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 400.0,
+            "y": 1227.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 705.0,
+            "y": 1227.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "EIR (10–15 facilities) + IDSR+ surveillance",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 113.0,
+            "y": 1236.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "≥85 facilities · Supply chain visibility",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 418.0,
+            "y": 1236.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Workforce foundation · Change champions",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 723.0,
+            "y": 1236.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "2025–2026  ·  Foundation & Stabilisation",
+          "value": "2025–2026",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "2025–2026  ·  Foundation & Stabilisation",
+          "value": "2025",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "2025–2026  ·  Foundation & Stabilisation",
+          "value": "2026",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "USD 1.8 – 3.0M",
+          "value": "1.8",
+          "type": "decimal",
+          "raw_number": 1.8
+        }
+      ],
+      "item_count": 27
+    },
+    {
+      "section_id": 9,
+      "section_title": "10",
+      "comment_marker": null,
+      "y_range": [
+        1410.0,
+        1591.0
+      ],
+      "items": [
+        {
+          "type": "subheading",
+          "text": "Digitise, Integrate, Scale",
+          "font_size": 20.0,
+          "font_weight": "700",
+          "position": {
+            "x": 155.0,
+            "y": 1410.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "WAVE",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 105.0,
+            "y": 1412.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "INVESTMENT",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1195.0,
+            "y": 1420.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "10",
+          "font_size": 28.0,
+          "font_weight": "700",
+          "position": {
+            "x": 988.0,
+            "y": 1423.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "2027–2029  ·  Expansion & Integration",
+          "font_size": 15.0,
+          "font_weight": "400",
+          "position": {
+            "x": 155.0,
+            "y": 1435.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "2",
+          "font_size": 24.0,
+          "font_weight": "700",
+          "position": {
+            "x": 105.0,
+            "y": 1436.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "USD 2.75 – 4.76M",
+          "font_size": 22.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1195.0,
+            "y": 1447.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "INITIATIVES",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 988.0,
+            "y": 1447.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "KEY DELIVERABLES",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 75.0,
+            "y": 1489.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "EHR (OpenMRS) at 15–20 Sites",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 113.0,
+            "y": 1523.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "4–5 Integration Flows Active",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 418.0,
+            "y": 1523.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "G-Cloud Migration Complete",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 723.0,
+            "y": 1523.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 95.0,
+            "y": 1530.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 400.0,
+            "y": 1530.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 705.0,
+            "y": 1530.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Maternal health · HIV/ART · Clinical records",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 113.0,
+            "y": 1539.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "HIE-mediated · FHIR · Real-time",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 418.0,
+            "y": 1539.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Sovereign hosting · All central systems",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 723.0,
+            "y": 1539.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "National EIR Transition",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 113.0,
+            "y": 1575.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "e-NHIS at 60,000+ Beneficiaries",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 418.0,
+            "y": 1575.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Keycloak IAM + Full DHDD (14)",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 723.0,
+            "y": 1575.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 95.0,
+            "y": 1582.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 400.0,
+            "y": 1582.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 705.0,
+            "y": 1582.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "SPT → DHIS2 Tracker nationally",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 113.0,
+            "y": 1591.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Offline claims · Mobile enrollment",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 418.0,
+            "y": 1591.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "MFA · 7 Regional Health Data Officers",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 723.0,
+            "y": 1591.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "2027–2029  ·  Expansion & Integration",
+          "value": "2027–2029",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "2027–2029  ·  Expansion & Integration",
+          "value": "2027",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "2027–2029  ·  Expansion & Integration",
+          "value": "2029",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "USD 2.75 – 4.76M",
+          "value": "2.75",
+          "type": "decimal",
+          "raw_number": 2.75
+        },
+        {
+          "label": "e-NHIS at 60,000+ Beneficiaries",
+          "value": "60,000",
+          "type": "number",
+          "raw_number": 60000.0
+        }
+      ],
+      "item_count": 27
+    },
+    {
+      "section_id": 10,
+      "section_title": "7",
+      "comment_marker": null,
+      "y_range": [
+        1765.0,
+        1946.0
+      ],
+      "items": [
+        {
+          "type": "subheading",
+          "text": "Optimise, Sustain, Innovate",
+          "font_size": 20.0,
+          "font_weight": "700",
+          "position": {
+            "x": 155.0,
+            "y": 1765.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "WAVE",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 105.0,
+            "y": 1767.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "INVESTMENT",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1195.0,
+            "y": 1775.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "7",
+          "font_size": 28.0,
+          "font_weight": "700",
+          "position": {
+            "x": 988.0,
+            "y": 1778.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "2030–2033  ·  Maturity & Sustainability",
+          "font_size": 15.0,
+          "font_weight": "400",
+          "position": {
+            "x": 155.0,
+            "y": 1790.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "3",
+          "font_size": 24.0,
+          "font_weight": "700",
+          "position": {
+            "x": 105.0,
+            "y": 1791.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "USD 1.65 – 2.94M",
+          "font_size": 22.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1195.0,
+            "y": 1802.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "INITIATIVES",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 988.0,
+            "y": 1802.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "KEY DELIVERABLES",
+          "font_size": 13.0,
+          "font_weight": "400",
+          "position": {
+            "x": 75.0,
+            "y": 1844.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "EHR Expanded to 30–40 Sites",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 113.0,
+            "y": 1878.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "All 6 Flows at Level 3–4",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 418.0,
+            "y": 1878.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Legacy System Retirement",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 723.0,
+            "y": 1878.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 95.0,
+            "y": 1885.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 400.0,
+            "y": 1885.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 705.0,
+            "y": 1885.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "33–44% facility coverage",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 113.0,
+            "y": 1894.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Full interoperability maturity",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 418.0,
+            "y": 1894.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "SPT · SMS for Health · Paper registers",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 723.0,
+            "y": 1894.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Health Data Warehouse",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 113.0,
+            "y": 1930.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "≥50% Government Funding",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 418.0,
+            "y": 1930.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "100,000+ NHIS Beneficiaries",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 723.0,
+            "y": 1930.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 95.0,
+            "y": 1937.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 400.0,
+            "y": 1937.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "✓",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 705.0,
+            "y": 1937.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Cross-system analytics · Dashboards",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 113.0,
+            "y": 1946.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Sustainability transition · $515K/yr recurrent",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 418.0,
+            "y": 1946.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Universal coverage trajectory",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 723.0,
+            "y": 1946.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "2030–2033  ·  Maturity & Sustainability",
+          "value": "2030–2033",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "2030–2033  ·  Maturity & Sustainability",
+          "value": "2030",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "2030–2033  ·  Maturity & Sustainability",
+          "value": "2033",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "USD 1.65 – 2.94M",
+          "value": "1.65",
+          "type": "decimal",
+          "raw_number": 1.65
+        },
+        {
+          "label": "33–44% facility coverage",
+          "value": "44%",
+          "type": "percentage",
+          "raw_number": 44.0
+        },
+        {
+          "label": "≥50% Government Funding",
+          "value": "50%",
+          "type": "percentage",
+          "raw_number": 50.0
+        },
+        {
+          "label": "100,000+ NHIS Beneficiaries",
+          "value": "100,000",
+          "type": "number",
+          "raw_number": 100000.0
+        },
+        {
+          "label": "Sustainability transition · $515K/yr recurrent",
+          "value": "$515K",
+          "type": "currency",
+          "raw_number": 515000.0
+        }
+      ],
+      "item_count": 27
+    },
+    {
+      "section_id": 11,
+      "section_title": "Investment Profile — USD 8.5M over 8 Years",
+      "comment_marker": null,
+      "y_range": [
+        2085.0,
+        2085.0
+      ],
+      "items": [
+        {
+          "type": "subheading",
+          "text": "Investment Profile — USD 8.5M over 8 Years",
+          "font_size": 22.0,
+          "font_weight": "700",
+          "position": {
+            "x": 60.0,
+            "y": 2085.0
+          }
+        }
+      ],
+      "statistics": [],
+      "item_count": 1
+    },
+    {
+      "section_id": 12,
+      "section_title": "22–23%",
+      "comment_marker": null,
+      "y_range": [
+        2153.0,
+        2435.0
+      ],
+      "items": [
+        {
+          "type": "body",
+          "text": "BY ARCHITECTURE DOMAIN",
+          "font_size": 14.0,
+          "font_weight": "400",
+          "position": {
+            "x": 60.0,
+            "y": 2153.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "FUNDING SOURCES (75–77% MAPPED)",
+          "font_size": 14.0,
+          "font_weight": "400",
+          "position": {
+            "x": 740.0,
+            "y": 2153.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Applications & Clinical",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 60.0,
+            "y": 2187.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "43%",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 650.0,
+            "y": 2189.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "$2.67–4.69M",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 440.0,
+            "y": 2189.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "RDIP",
+          "font_size": 14.0,
+          "font_weight": "700",
+          "position": {
+            "x": 760.0,
+            "y": 2197.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Government of Progressa",
+          "font_size": 14.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1060.0,
+            "y": 2197.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "22–23%",
+          "font_size": 20.0,
+          "font_weight": "700",
+          "position": {
+            "x": 760.0,
+            "y": 2217.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "World Bank · Largest source",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 870.0,
+            "y": 2217.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "18–19%",
+          "font_size": 20.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1060.0,
+            "y": 2217.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Growing to ≥50%",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1170.0,
+            "y": 2217.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Integration & Interop.",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 60.0,
+            "y": 2223.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "15%",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 650.0,
+            "y": 2225.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "$0.94–1.60M",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 320.0,
+            "y": 2225.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Capacity Building",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 60.0,
+            "y": 2259.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "13%",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 650.0,
+            "y": 2261.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Global Fund",
+          "font_size": 14.0,
+          "font_weight": "700",
+          "position": {
+            "x": 760.0,
+            "y": 2272.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "GAVI",
+          "font_size": 14.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1060.0,
+            "y": 2272.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "14–16%",
+          "font_size": 20.0,
+          "font_weight": "700",
+          "position": {
+            "x": 760.0,
+            "y": 2292.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "2024–2027 cycle",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 870.0,
+            "y": 2292.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "6–8%",
+          "font_size": 20.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1060.0,
+            "y": 2292.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Immunisation systems",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1170.0,
+            "y": 2292.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Technology Infra.",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 60.0,
+            "y": 2295.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "12%",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 650.0,
+            "y": 2297.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "$0.78–1.33M",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 308.0,
+            "y": 2297.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Data & Registries",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 60.0,
+            "y": 2331.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "9%",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 650.0,
+            "y": 2333.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "$0.54–0.96M",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 298.0,
+            "y": 2333.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "WHO + Others",
+          "font_size": 14.0,
+          "font_weight": "700",
+          "position": {
+            "x": 760.0,
+            "y": 2347.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Funding Gap",
+          "font_size": 14.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1060.0,
+            "y": 2347.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Governance & Policy",
+          "font_size": 12.0,
+          "font_weight": "400",
+          "position": {
+            "x": 60.0,
+            "y": 2367.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "15–18%",
+          "font_size": 20.0,
+          "font_weight": "700",
+          "position": {
+            "x": 760.0,
+            "y": 2367.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "6 additional sources",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 870.0,
+            "y": 2367.0
+          }
+        },
+        {
+          "type": "subheading",
+          "text": "$500K–1M",
+          "font_size": 20.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1060.0,
+            "y": 2367.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Primarily Wave 2",
+          "font_size": 11.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1210.0,
+            "y": 2367.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "8%",
+          "font_size": 12.0,
+          "font_weight": "600",
+          "position": {
+            "x": 650.0,
+            "y": 2369.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "$0.47–0.77M",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 298.0,
+            "y": 2369.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "📈 Sustainability Trajectory: ~94% donor-funded (2025) → ≥50% government-funded (2033)",
+          "font_size": 11.0,
+          "font_weight": "600",
+          "position": {
+            "x": 755.0,
+            "y": 2415.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "💡 100% Open-Source Technology Stack",
+          "font_size": 11.0,
+          "font_weight": "600",
+          "position": {
+            "x": 85.0,
+            "y": 2420.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Steady-state recurrent costs: ~USD 515,000/year (DHDD salaries, G-Cloud hosting, connectivity)",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 755.0,
+            "y": 2430.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Zero software licence fees — all investment goes to implementation, capacity, and infrastructure",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 85.0,
+            "y": 2435.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "FUNDING SOURCES (75–77% MAPPED)",
+          "value": "77%",
+          "type": "percentage",
+          "raw_number": 77.0
+        },
+        {
+          "label": "43%",
+          "value": "43%",
+          "type": "percentage",
+          "raw_number": 43.0
+        },
+        {
+          "label": "$2.67–4.69M",
+          "value": "$2.67",
+          "type": "currency",
+          "raw_number": 2.67
+        },
+        {
+          "label": "$2.67–4.69M",
+          "value": "2.67",
+          "type": "decimal",
+          "raw_number": 2.67
+        },
+        {
+          "label": "22–23%",
+          "value": "23%",
+          "type": "percentage",
+          "raw_number": 23.0
+        },
+        {
+          "label": "18–19%",
+          "value": "19%",
+          "type": "percentage",
+          "raw_number": 19.0
+        },
+        {
+          "label": "Growing to ≥50%",
+          "value": "50%",
+          "type": "percentage",
+          "raw_number": 50.0
+        },
+        {
+          "label": "15%",
+          "value": "15%",
+          "type": "percentage",
+          "raw_number": 15.0
+        },
+        {
+          "label": "$0.94–1.60M",
+          "value": "$0.94",
+          "type": "currency",
+          "raw_number": 0.94
+        },
+        {
+          "label": "$0.94–1.60M",
+          "value": "0.94",
+          "type": "decimal",
+          "raw_number": 0.94
+        },
+        {
+          "label": "13%",
+          "value": "13%",
+          "type": "percentage",
+          "raw_number": 13.0
+        },
+        {
+          "label": "14–16%",
+          "value": "16%",
+          "type": "percentage",
+          "raw_number": 16.0
+        },
+        {
+          "label": "2024–2027 cycle",
+          "value": "2024–2027",
+          "type": "year_range",
+          "raw_number": null
+        },
+        {
+          "label": "2024–2027 cycle",
+          "value": "2024",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "2024–2027 cycle",
+          "value": "2027",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "6–8%",
+          "value": "8%",
+          "type": "percentage",
+          "raw_number": 8.0
+        },
+        {
+          "label": "12%",
+          "value": "12%",
+          "type": "percentage",
+          "raw_number": 12.0
+        },
+        {
+          "label": "$0.78–1.33M",
+          "value": "$0.78",
+          "type": "currency",
+          "raw_number": 0.78
+        },
+        {
+          "label": "$0.78–1.33M",
+          "value": "0.78",
+          "type": "decimal",
+          "raw_number": 0.78
+        },
+        {
+          "label": "9%",
+          "value": "9%",
+          "type": "percentage",
+          "raw_number": 9.0
+        },
+        {
+          "label": "$0.54–0.96M",
+          "value": "$0.54",
+          "type": "currency",
+          "raw_number": 0.54
+        },
+        {
+          "label": "$0.54–0.96M",
+          "value": "0.54",
+          "type": "decimal",
+          "raw_number": 0.54
+        },
+        {
+          "label": "15–18%",
+          "value": "18%",
+          "type": "percentage",
+          "raw_number": 18.0
+        },
+        {
+          "label": "$500K–1M",
+          "value": "$500K",
+          "type": "currency",
+          "raw_number": 500000.0
+        },
+        {
+          "label": "$0.47–0.77M",
+          "value": "$0.47",
+          "type": "currency",
+          "raw_number": 0.47
+        },
+        {
+          "label": "$0.47–0.77M",
+          "value": "0.47",
+          "type": "decimal",
+          "raw_number": 0.47
+        },
+        {
+          "label": "📈 Sustainability Trajectory: ~94% donor-funded (2025) → ≥50% government-funded (",
+          "value": "94%",
+          "type": "percentage",
+          "raw_number": 94.0
+        },
+        {
+          "label": "📈 Sustainability Trajectory: ~94% donor-funded (2025) → ≥50% government-funded (",
+          "value": "2025",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "📈 Sustainability Trajectory: ~94% donor-funded (2025) → ≥50% government-funded (",
+          "value": "2033",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "💡 100% Open-Source Technology Stack",
+          "value": "100%",
+          "type": "percentage",
+          "raw_number": 100.0
+        },
+        {
+          "label": "Steady-state recurrent costs: ~USD 515,000/year (DHDD salaries, G-Cloud hosting,",
+          "value": "515,000",
+          "type": "number",
+          "raw_number": 515000.0
+        }
+      ],
+      "item_count": 41
+    },
+    {
+      "section_id": 13,
+      "section_title": "Open-Source Technology Stack & Governance Model",
+      "comment_marker": null,
+      "y_range": [
+        2530.0,
+        2530.0
+      ],
+      "items": [
+        {
+          "type": "subheading",
+          "text": "Open-Source Technology Stack & Governance Model",
+          "font_size": 22.0,
+          "font_weight": "700",
+          "position": {
+            "x": 60.0,
+            "y": 2530.0
+          }
+        }
+      ],
+      "statistics": [],
+      "item_count": 1
+    },
+    {
+      "section_id": 14,
+      "section_title": "OpenHIM",
+      "comment_marker": null,
+      "y_range": [
+        2598.0,
+        2795.0
+      ],
+      "items": [
+        {
+          "type": "body",
+          "text": "OPENHIE-BASED ARCHITECTURE",
+          "font_size": 14.0,
+          "font_weight": "400",
+          "position": {
+            "x": 60.0,
+            "y": 2598.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "THREE-TIER GOVERNANCE",
+          "font_size": 14.0,
+          "font_weight": "400",
+          "position": {
+            "x": 880.0,
+            "y": 2598.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "NDHSC",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1110.0,
+            "y": 2636.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "OpenHIM",
+          "font_size": 15.0,
+          "font_weight": "700",
+          "position": {
+            "x": 145.0,
+            "y": 2640.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "OpenCR",
+          "font_size": 15.0,
+          "font_weight": "700",
+          "position": {
+            "x": 330.0,
+            "y": 2640.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "OpenMRS",
+          "font_size": 15.0,
+          "font_weight": "700",
+          "position": {
+            "x": 515.0,
+            "y": 2640.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "HAPI FHIR",
+          "font_size": 15.0,
+          "font_weight": "700",
+          "position": {
+            "x": 700.0,
+            "y": 2640.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "14 members · PS Chair · Quarterly · Strategic",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1110.0,
+            "y": 2652.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Health Info Exchange",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 145.0,
+            "y": 2659.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Master Patient Index",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 330.0,
+            "y": 2659.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Electronic Health Record",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 515.0,
+            "y": 2659.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Clinical Data Store",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 700.0,
+            "y": 2659.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "DHDD — Digital Health & Data Directorate",
+          "font_size": 13.0,
+          "font_weight": "700",
+          "position": {
+            "x": 1110.0,
+            "y": 2696.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "14 positions · 6 functional areas · Operational",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 1110.0,
+            "y": 2712.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "DHIS2",
+          "font_size": 15.0,
+          "font_weight": "700",
+          "position": {
+            "x": 145.0,
+            "y": 2713.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "Keycloak",
+          "font_size": 15.0,
+          "font_weight": "700",
+          "position": {
+            "x": 330.0,
+            "y": 2713.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "eLMIS",
+          "font_size": 15.0,
+          "font_weight": "700",
+          "position": {
+            "x": 515.0,
+            "y": 2713.0
+          }
+        },
+        {
+          "type": "body",
+          "text": "e-NHIS",
+          "font_size": 15.0,
+          "font_weight": "700",
+          "position": {
+            "x": 700.0,
+            "y": 2713.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "HMIS + Tracker",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 145.0,
+            "y": 2732.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "IAM / SSO / MFA",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 330.0,
+            "y": 2732.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Supply Chain",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 515.0,
+            "y": 2732.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "Health Insurance",
+          "font_size": 10.0,
+          "font_weight": "400",
+          "position": {
+            "x": 700.0,
+            "y": 2732.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "TWG: Architecture",
+          "font_size": 10.0,
+          "font_weight": "600",
+          "position": {
+            "x": 954.0,
+            "y": 2758.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "TWG: Data Standards",
+          "font_size": 10.0,
+          "font_weight": "600",
+          "position": {
+            "x": 1112.0,
+            "y": 2758.0
+          }
+        },
+        {
+          "type": "label",
+          "text": "TWG: Implementation",
+          "font_size": 10.0,
+          "font_weight": "600",
+          "position": {
+            "x": 1270.0,
+            "y": 2758.0
+          }
+        },
+        {
+          "type": "footnote",
+          "text": "D7 — EA Implementation Roadmap  ·  Ministry of Health  ·  Progressa  ·  Contract [contract reference]  ·  ITU Enterprise Architecture Initiative  ·  February 2026  ·  v1.0",
+          "font_size": 9.0,
+          "font_weight": "400",
+          "position": {
+            "x": 700.0,
+            "y": 2795.0
+          }
+        }
+      ],
+      "statistics": [
+        {
+          "label": "D7 — EA Implementation Roadmap  ·  Ministry of Health  ·  Progressa  ·  Contrac",
+          "value": "13.2",
+          "type": "decimal",
+          "raw_number": 13.2
+        },
+        {
+          "label": "D7 — EA Implementation Roadmap  ·  Ministry of Health  ·  Progressa  ·  Contrac",
+          "value": "2024",
+          "type": "year",
+          "raw_number": null
+        },
+        {
+          "label": "D7 — EA Implementation Roadmap  ·  Ministry of Health  ·  Progressa  ·  Contrac",
+          "value": "2026",
+          "type": "year",
+          "raw_number": null
+        }
+      ],
+      "item_count": 26
+    }
+  ],
+  "flow_structures": {
+    "count": 8,
+    "items": [
+      {
+        "type": "line",
+        "from": {
+          "x": 60.0,
+          "y": 278.0
+        },
+        "to": {
+          "x": 350.0,
+          "y": 278.0
+        },
+        "stroke": "#C0392B"
+      },
+      {
+        "type": "polygon",
+        "points": "0,15 30,0 30,8 80,8 80,22 30,22 30,30",
+        "fill": "#E67E22"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 60.0,
+          "y": 678.0
+        },
+        "to": {
+          "x": 420.0,
+          "y": 678.0
+        },
+        "stroke": "#2C3E50"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 60.0,
+          "y": 985.0
+        },
+        "to": {
+          "x": 370.0,
+          "y": 985.0
+        },
+        "stroke": "#27AE60"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 60.0,
+          "y": 2095.0
+        },
+        "to": {
+          "x": 480.0,
+          "y": 2095.0
+        },
+        "stroke": "#E67E22"
+      },
+      {
+        "type": "line",
+        "from": {
+          "x": 60.0,
+          "y": 2540.0
+        },
+        "to": {
+          "x": 530.0,
+          "y": 2540.0
+        },
+        "stroke": "#2471A3"
+      },
+      {
+        "type": "polygon",
+        "points": "225,84 230,94 235,84",
+        "fill": "#7F8C8D"
+      },
+      {
+        "type": "polygon",
+        "points": "225,144 230,154 235,144",
+        "fill": "#7F8C8D"
+      }
+    ]
+  },
+  "metadata": {
+    "width": 1400.0,
+    "height": 2800.0,
+    "total_sections": 14,
+    "total_statistics": 67,
+    "section_comments_found": 0,
+    "comment_names": [],
+    "file_size_kb": 51.1
+  }
+}
