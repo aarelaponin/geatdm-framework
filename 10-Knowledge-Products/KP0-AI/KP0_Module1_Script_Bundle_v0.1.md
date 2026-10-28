@@ -11,7 +11,7 @@
 | Subtopics | Four written pages (1.1 – 1.4); the fourth is the module's Judgement page |
 | Video | One, V1 'The draft that looked right', about four minutes, a person on camera, covering pages 1.1 to 1.4 |
 | Worked examples | One for each page, set in Progressa: a fluent summary of a law it was never shown, a prompt before and after its safeguard line, a draft marked for what it rests on, and a request to match learners that never needed their names |
-| Self-check | Four questions drawn from the four single messages, in section 2.1 |
+| Self-check | Five questions drawn from the four pages, in section 2.1 |
 | Prepared by | FiscalAdmin OÜ |
 
 This bundle is the v0.1 working draft of Module 1 of KP0 — Working with AI in Government. Module 1 teaches a public servant to get a good answer from an AI assistant in one chat, and to know what to do with it: why an assistant invents and why it agrees with you, the four-part prompt every AI usage tip in the series uses, how to read an output before using it, and what never goes into a chat and what stays yours. The register is plain English at about an eighth-grade level. Each page carries the concept, what to do in the tool, a worked example on Progressa, an AI usage tip with a copy-paste prompt, and its sources. The module's video carries the stories the pages cannot.
@@ -30,15 +30,15 @@ In KP1 to KP4 every subtopic is a video of about five minutes. In KP0 every subt
 
 ### 1.3 Concept and tool
 
-Each page has two halves. The concept is tool-neutral: it works in any assistant, including the ones a ministry has already approved. The half headed In the tool says what to click, type or set, and is shown in Claude, said as such on the page. Other assistants are named once, on page 1.1 and on the course's home page, with the advice to find each setting in their own help pages: a table of where each setting sits in four vendors' products would be out of date within months.
+Each page has two halves. The concept is tool-neutral: it works in any assistant, including the ones a ministry has already approved. The half headed In the tool says what to click, type or set, and is shown in Claude, said as such on the page. Other assistants are named once, on the course's home page, and each page links to their help pages for its settings: a table of where each setting sits in four vendors' products would be out of date within months.
 
 ### 1.4 The names used for Progressa
 
 | Name | What it is, and its part in Module 1 |
 | --- | --- |
-| MoEYS | Progressa's Ministry of Education, Youth and Skills. Its ICT Director and its data unit run three of the four worked examples. |
+| MoEYS | Progressa's Ministry of Education, Youth and Skills. Its ICT Director and its planning unit, which keeps the ministry's education statistics, run three of the four worked examples. |
 | PDGA | The Progressa Digital Government Authority, a coordinating unit under the Ministry of ICT. Its analyst marks a draft in 1.3. |
-| The Data Protection Act 2023 | Progressa's data-protection law: a legal basis is needed to share a minor's data, and parental consent for any non-statutory use. The assistant summarises it in 1.1 without having read it. |
+| The Data Protection Act 2023 | Progressa's data-protection law: a legal basis is needed to share a minor's data, and parental consent for any use the law does not require. The assistant summarises it in 1.1 without having read it. |
 | The three learner lists | The school census, the examinations authority's candidate list and the social grant programme's register, which do not agree. They are the subject of 1.2 and 1.4. |
 | PNEA | The Progressa National Examinations Authority, which keeps the candidate list. |
 
@@ -58,22 +58,33 @@ Four written pages and one video of about four minutes. One Strategist persona t
 
 | # | Title | Single message | Form |
 | --- | --- | --- | --- |
-| 1.1 | A drafting partner, not an oracle | An assistant writes a wrong answer as fluently as a right one, and tends to agree with you, so a fluent draft is where your checking starts, not where it ends. | Page |
+| 1.1 | A drafting partner, not an oracle | An assistant writes a wrong answer as fluently as a right one, and tends to agree with you, so how well a draft reads tells you nothing about whether it is right. | Page |
 | 1.2 | The four-part prompt | Name the input, name the outputs, fix the format, and add one safeguard line for the way this prompt can mislead you. | Page |
 | 1.3 | Read the output before you use it | Before you use a draft, find what it rests on: what the source states, what the assistant inferred, and what it should have asked you. | Page |
-| 1.4 | Judgement: what stays out of the chat, and what stays yours | Nothing confidential goes into a chat, and the decision stays with the person whose name is on it. | Page |
+| 1.4 | Judgement: what stays out of the chat, and what stays yours | Nothing confidential goes into a chat, the decision stays with the person whose name is on it, and that person says an assistant was used. | Page |
 | V1 | The draft that looked right | A fluent draft is where checking starts; the safeguard line names how this one can fool you. | Video, ~4 min |
 
 ### 2.1 The module's self-check
 
-Four questions, drawn from the single messages of the four pages, to be answered after reading them. Questions 1 and 3 are multiple choice. Questions 2 and 4 ask for a short answer, which is right if it makes the point of the model answer. Three or four right means the module's point has landed; below three, read again the page named beside each question you missed. The threshold is a proposal, to be tested with the first learners.
+Five questions, drawn from the four pages, to be answered after reading them. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means the module's point has landed; below four, read again the page named beside each question you missed. The threshold is a proposal, to be tested with the first learners.
 
 | # | Question | Model answer | Drawn from |
 | --- | --- | --- | --- |
 | 1 | An assistant gives you a clear, well-written summary of your country's data-protection law, with section numbers. You did not paste the law. What do you do? (a) Use it: it is clear and specific. (b) Ask the same assistant whether it is sure. (c) Treat every section number and obligation as a claim to check against the law itself before it goes anywhere. (d) Ask it to shorten the summary. | (c). Fluency is not evidence: an assistant writes an invented section number in the same tone as a real one. (b) does not help, because an assistant tends to agree with the framing of your question, including 'are you sure?'. | 1.1 A drafting partner, not an oracle |
 | 2 | A colleague's prompt reads: 'Write a briefing on why our learner data is fragmented.' Name the four parts it lacks, and write the safeguard line you would add. | It lacks a named input (what is pasted), named outputs, a fixed format, and a safeguard line. A safeguard line for it: 'Name a cause only if the pasted documents state it; list any cause you inferred separately, as a question.' A generic line such as 'AI can make mistakes' does not count. | 1.2 The four-part prompt |
 | 3 | A draft note from an assistant has no open questions at all, on a subject your unit has never settled. What does that most likely mean? (a) The subject is simpler than you thought. (b) The assistant answered the hard questions itself, so the draft needs a second reading. (c) The prompt was well written. (d) The source documents were complete. | (b). A draft on an unsettled subject with no open questions usually means the gaps were filled with plausible answers. Ask it to mark what it inferred and what it should have asked. | 1.3 Read the output before you use it |
-| 4 | Your unit wants an assistant to find learners who appear in all three learner lists. What may go into the chat, and who answers for the result? | No names, numbers or records of real learners: only the column headings and a few invented rows, so the assistant can propose a matching method. The matching itself runs inside the ministry's own systems, and the head of the data unit, not the assistant, answers for the method and the result. | 1.4 Judgement: what stays out of the chat, and what stays yours |
+| 4 | Your unit wants an assistant to find learners who appear in all three learner lists. What may go into the chat, and who answers for the result? | No names, numbers or records of real learners: only the column headings and a few invented rows, so the assistant can propose a matching method. The matching itself runs inside the ministry's own systems, and the head of the planning unit, not the assistant, answers for the method and the result. | 1.4 Judgement: what stays out of the chat, and what stays yours |
+| 5 | You used an assistant to draft half of a briefing note, then checked its figures against the census. The note goes to the Permanent Secretary under your name. What do you tell the reader about the assistant? | That you used it: which assistant, what it drafted, and how far you checked the result (here, the figures against the census). Say it to your manager and, where your government's rules ask, in the note itself. Using an assistant is not a fault; hiding it is. | 1.4 Judgement: what stays out of the chat, and what stays yours |
+
+### 2.2 Go further
+
+Shown on the module's home page, apart from the sources: one to three things to do next, each with its time.
+
+| Title | Publisher | Address | Why | Time |
+| --- | --- | --- | --- | --- |
+| AI Skills Coalition | ITU | https://aiforgood.itu.int/ai-skills-coalition/ai-courses-portfolio/ | ITU's free course catalogue; start with 'AI and digital transformation in government'. | About 12 hours |
+| Elements of AI | University of Helsinki and MinnaLearn | https://www.elementsofai.com/ | A free course for non-specialists on what AI is and is not; many governments use it as a first course. | At your own pace |
+| AI Fluency: Framework and Foundations | Anthropic Academy | https://academy.claude.com/courses/ai-fluency-framework-foundations | The four skills of working with an assistant, of which this module teaches description and discernment. | About 3 hours |
 
 ## 3. The pages and the video
 
@@ -84,17 +95,19 @@ Four questions, drawn from the single messages of the four pages, to be answered
 | Persona | S (Strategist) — the public servant who commissions and accepts AI-assisted work and answers for it: a director, a head of unit, a technical secretary briefing the principal. No programming assumed |
 | Form | Written page |
 
-> **Single message —** _An assistant writes a wrong answer as fluently as a right one, and tends to agree with you, so a fluent draft is where your checking starts, not where it ends._
+> **Single message —** _An assistant writes a wrong answer as fluently as a right one, and tends to agree with you, so how well a draft reads tells you nothing about whether it is right._
 
 ### The concept
 
-An AI assistant writes a strong first draft in minutes: a briefing note, a terms of reference, a comparison of options. It does not write a finding you can trust without checking. A wrong section number, an invented figure and a claim with no basis come out in exactly the same confident tone as a correct one. So the draft is where your work starts, not where it ends.
+An AI assistant writes a strong first draft in minutes: a briefing note, a terms of reference, a comparison of options. It does not write a finding you can trust without checking. A wrong section number, an invented figure and a claim with no basis come out in exactly the same confident tone as a correct one.
 
-This is not a fault that the next, better model will remove. Assistants are trained and scored in ways that reward a confident guess over the words 'I do not know'. A system that always answers scores better on the tests the industry uses than one that admits a gap. One vendor, OpenAI, set this out in 2025, from the inside. The lesson for a public servant is one sentence: fluency is not evidence. A smooth paragraph and a correct paragraph look the same from the outside.
+The next, better model will not remove this. The US standards body NIST lists it among the risks of generative AI and calls it confabulation: false content stated with confidence. One cause is the way assistants are trained and scored. The tests the industry uses reward a confident guess over the words 'I do not know', so a system that always answers scores better than one that admits a gap. OpenAI, one of the vendors, explained this in 2025. For a public servant it means that fluency is not evidence: a smooth paragraph and a correct one look the same.
 
 An assistant also tends to accept the framing of your question. Ask why your data problem is severe, and you get reasons it is severe. Ask why it is minor, and you get reasons it is minor. OpenAI described shipping a model that flattered its users this way and having to withdraw it. The same habit makes 'are you sure?' a weak check: the assistant tends to agree that it is sure, or to agree that it was wrong, whichever your question suggests.
 
-What this costs when nobody checks is on public record. A database kept since 2023 lists well over a thousand court decisions worldwide in which a lawyer filed an invented citation or a made-up quotation produced by an assistant. These are professionals with a duty of care, filing documents they did not check. A government programme has the same risk: a country that did not do what the briefing says, a clause of a standard that does not exist, a figure with no source.
+Working with an assistant also changes what people conclude. In a field experiment with 758 consultants of the Boston Consulting Group, those given an assistant did better on tasks inside what it does well. On a task chosen to lie just outside it, they were 19% less likely to reach the right answer than colleagues working without one: the assistant's fluent answer took the place of their own judgement.
+
+What this costs when nobody checks is on public record. A database kept since 2023 lists 2,217 court decisions worldwide, as at 25 October 2026, in which a lawyer filed an invented citation or a made-up quotation produced by an assistant. These are professionals with a duty of care, filing documents they did not check. A government programme has the same risk: a country that did not do what the briefing says, a clause of a standard that does not exist, a figure with no source.
 
 So use the assistant as a drafting partner. It is fast, tireless and good with structure. Give it your material, take its draft, and then check every claim that matters against a named source before the draft leaves your desk.
 
@@ -106,7 +119,7 @@ The model. Assistants offer more than one model. A larger model reasons more car
 
 Search and citations. With web search turned on, the assistant looks up current pages and marks each claim it took from one with a citation you can open. With search off, it answers from what it learned in training, which stops at a date and carries no sources. Turn search on for any question about what a country, a body or a standard did or says. Then open the citations: a citation proves only that a page exists, not that it says what the draft claims.
 
-Other assistants a ministry may have approved, such as ChatGPT, Gemini and Microsoft 365 Copilot, have the same settings under their own names, and their help pages say where. This course names each setting by what it does, so you can find it in any of them.
+**Where this is in each assistant:** Claude: model (https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings) · Claude: web search (https://support.claude.com/en/articles/10684626-enable-and-use-web-search) · ChatGPT: search (https://help.openai.com/en/articles/9237897-chatgpt-search) · Gemini: models (https://support.google.com/gemini/answer/13275745) · Gemini: sources (https://support.google.com/gemini/answer/14143489) · Microsoft 365 Copilot: web search (https://learn.microsoft.com/en-us/microsoft-365/copilot/manage-public-web-access)
 
 ### Worked example — A law it was never shown
 
@@ -114,7 +127,22 @@ The ICT Director of MoEYS, Progressa's ministry of education, asked an assistant
 
 None of the three came from the Act. The Director had not pasted it, and the assistant could not have read it. The Act, when the Director opened it, says two things on the point: a legal basis is needed to share a minor's data, and parental consent is needed for any use the law does not require. There is no section 14(3) on data sharing, and the Act sets no breach deadline.
 
-The second run pasted the Act's text and asked for the obligations, each with the words of the Act quoted beside it. The answer was shorter, less impressive and right. That is the pattern to expect: the first draft sounded more expert because it was not limited by a source.
+The second run pasted the Act's text and asked for the obligations, each with the words of the Act quoted beside it. The answer was shorter, less impressive and right. The first draft had sounded more expert because no source limited it.
+
+**The prompt:**
+
+```text
+Below is the text of Progressa's Data Protection Act 2023 [the Act, pasted]. List what the Act requires before learner data is shared with another ministry. For each obligation give one row: (a) the obligation, in plain words; (b) the words of the Act that state it, quoted exactly. Name an obligation only if the Act states it. Then list what a reader would expect the Act to settle on this point and it does not, such as a deadline for reporting a breach. Output: the table, then the list.
+```
+
+**Part of the output (written for this page, not a recorded run):**
+
+| Obligation | The words of the Act |
+| --- | --- |
+| A legal basis before a minor's data is shared | '…personal data of a minor shall not be shared without a legal basis…' |
+| A parent's consent for any use the law does not require | '…the consent of a parent or guardian is required for any processing of a minor's data that is not required by law…' |
+
+The Act does not settle: a deadline for reporting a breach; whether a learner of 16 or over may consent for themselves; whether a data-sharing agreement needs the Data Protection Commission's approval.
 
 ### AI usage tip — List the claims in a draft that need a source
 
@@ -132,12 +160,28 @@ Below is a draft written with an AI assistant, which I intend to use in [a brief
 
 **Time:** ~10 min · **Watch for:** The table lists the claims; it checks none of them.
 
+**Practise on Progressa — input:**
+
+A draft note, written with an assistant, for the Permanent Secretary of MoEYS: Sharing learner data with the examinations authority.
+
+(1) The Data Protection Act 2023 needs a legal basis before a minor's data is shared, and a parent's consent for any use the law does not require. (2) Section 22 of the Act allows ministries to share learner data with each other without consent. (3) Linkup, the national data-exchange layer, has run as a pilot since 2025 with four members; MoEYS is not one of them. (4) MoEYS will join Linkup in 2027. (5) PNIA issues national IDs to children from the age of 12 (PNIA annual report 2025). (6) Birth registration stands at 71%. (7) About 40% of learner records carry a misspelt name. (8) The Data Protection Commission fined a ministry in 2025 for sharing learner data. (9) The Education Sector Plan 2023–2028 calls for the Progressa Learner Registry (PLR), which has not started.
+
+**Practise on Progressa — answer key:**
+
+The table should hold nine rows, one per numbered sentence, and say that eight have no source: only sentence 5 names one. The main kind of each: 1 and 2 legal references; 3, 5, 6 and 7 figures; 4 a date; 8 and 9 statements of fact. Some hold more than one kind: 3 and 8 also hold a date, and 9 names a plan.
+
+Checked against the Progressa page of this knowledge base, sentences 1, 3, 6 and 9 hold. Five do not, and they are the kinds this page warns of: (2) an invented section number, the Act allows no such thing; (4) a date the draft inferred and states as fact, no plan names one; (5) a wrong figure behind a real-looking source, PNIA issues IDs at 16; (7) a figure with no source at all; (8) an event that did not happen, the Commission has taken no enforcement action.
+
+If your table marked any of the nine as true or false, the assistant went beyond the prompt: the tip lists claims, it does not judge them.
+
 ### Sources
 
 | Source | Publisher · date | Used for |
 | --- | --- | --- |
-| Why language models hallucinate | OpenAI · September 2025 | Why an assistant guesses rather than admits a gap; fluency is not evidence |
-| Expanding on what we missed with sycophancy | OpenAI · May 2025 | Why an assistant agrees with the framing of your question |
+| Artificial Intelligence Risk Management Framework: Generative AI Profile (NIST AI 600-1) | NIST · July 2024 | Confabulation named as a risk of generative AI by a government standards body |
+| Navigating the Jagged Technological Frontier | Dell'Acqua et al., Harvard Business School · 2023 | Field experiment: worse answers with an assistant on a task outside what it does well |
+| Why language models hallucinate | OpenAI · September 2025 | Why an assistant guesses rather than admits a gap (vendor source) |
+| Expanding on what we missed with sycophancy | OpenAI · May 2025 | Why an assistant agrees with the framing of your question (vendor source) |
 | AI Hallucination Cases | Damien Charlotin · 2023 onwards, updated daily | What unchecked citations have cost in court |
 
 ## 3.2 Subtopic 1.2 — The four-part prompt
@@ -151,15 +195,15 @@ Below is a draft written with an AI assistant, which I intend to use in [a brief
 
 ### The concept
 
-Every AI usage tip in this series has the same shape, and you can use it for any prompt of your own. It has four parts.
+Every AI usage tip in this knowledge base has the same shape, and you can use it for any prompt of your own. It has four parts.
 
-First, name the input you are pasting: 'Below is our school census note.' The assistant should know what kind of thing it is looking at, and that it must work from it. Second, break the task into named outputs: 'List the causes, rank them, and name the body that owns each.' Not 'help me with our data'. Third, fix the exact output format: 'A table with these four columns, then three bullets.' A format you can paste into your own document saves you an hour of reshaping. Fourth, add a safeguard line for this prompt's own risk.
+First, name the input you are pasting: 'Below is our school census note.' The assistant should know what kind of thing it is looking at, and that it must work from it. Second, break the task into named outputs: 'List the causes, rank them, and name the body that owns each,' instead of 'help me with our data'. Third, fix the exact output format: 'A table with these four columns, then three bullets.' A format you can paste into your own document saves you an hour of reshaping. Fourth, add a safeguard line for this prompt's own risk.
 
-The safeguard line is the part that matters most in government, and it is the part the vendors' own guides leave out. It is not 'AI can make mistakes'; that helps nobody. It names the way this prompt can mislead you. A prompt that asks for causes can invent causes, so its line is 'name a cause only if the document states it'. A prompt that asks for country examples can invent countries, so its line is 'drop any example whose source does not say what you claim'.
+The safeguard line is the part that matters most in government. A line such as 'AI can make mistakes' helps nobody. The safeguard line names the way this prompt can mislead you. A prompt that asks for causes can invent causes, so its line is 'name a cause only if the document states it'. A prompt that asks for country examples can invent countries, so its line is 'drop any example whose source does not say what you claim'.
 
-Two more habits beat any clever wording. Context and one example beat cleverness: an assistant given your real material and one sample of the result you want does better than one given a perfectly worded request and nothing else. And iterate rather than restart: when the result is close but wrong, say what is wrong and run it again in the same chat, so the assistant keeps what it got right.
+Two habits matter more than clever wording: give context and one example, because an assistant given your real material and one sample of the result you want does better than one given a perfectly worded request and nothing else; and when the result is close but wrong, say what is wrong and run it again in the same chat instead of starting over, so the assistant keeps what it got right.
 
-Google, OpenAI and Anthropic each publish a guide to prompting. They use different words for the same structure: Google's persona, task, context and format; OpenAI's 'be specific' and 'iterate'; Anthropic's clarity, examples and structure. A prompt in the four-part shape is also a prompt a colleague can read, check and run again, which a vague one is not.
+The vendors each publish a guide to prompting, and they use different words for the same structure: Microsoft's goal, context, expectations and source for Copilot; Google's persona, task, context and format; OpenAI's 'be specific' and 'iterate'; Anthropic's clarity, examples and structure. Microsoft's source is the first part here, and its context goes with it; its goal is the second, and its expectations the third. None of the four guides asks for the fourth part, the safeguard line: that is this course's own. A prompt in the four-part shape is also a prompt a colleague can read, check and run again, which a vague one is not.
 
 ### In the tool
 
@@ -169,15 +213,35 @@ Writing it. Type the four parts in order, in one message. Paste the input after 
 
 Running it again. To change the prompt, edit your own message and send it again: the assistant answers the new version from the start. To correct the answer, reply in the same chat with what is wrong ('row 3 has no source; drop it and re-rank'): the assistant keeps the rest. Edit when the request was wrong; reply when the answer was.
 
-The rewrite play. When your own prompt gives vague results, paste it into the tip below. It returns your prompt in the four-part shape, and says what was weak in the first one.
+Pasting or attaching. Paste a short text into the message. Attach a long document as a file, and name it in the prompt: 'the attached census note'. A scanned page or a complex table may be read badly, so ask for a quotation from the file before you rely on what the assistant says it holds.
+
+Starting again. A long chat drifts: as it grows, the instructions at its start weigh less. When the answers stop following your format or your safeguard line, start a new chat with the prompt and the best answer so far.
+
+Rewriting a weak prompt. When a prompt of your own gives vague results, run the AI usage tip under Your turn, after the worked example, with your prompt pasted where its prompt says [paste the prompt]. Your prompt comes back in the four parts, with a note on what was weak in the first version.
 
 ### Worked example — One prompt, before and after its safeguard line
 
-The data unit of MoEYS needed a note for the Permanent Secretary on why Progressa's three learner lists do not agree. The first prompt was: 'Write a briefing on why our learner data is fragmented.' The answer was a page of general causes found in many countries: weak governance, legacy systems, lack of standards. Nothing in it was about Progressa, and nothing in it could be checked.
+The planning unit of MoEYS needed a note for the Permanent Secretary on why Progressa's three learner lists do not agree. The first prompt was: 'Write a briefing on why our learner data is fragmented.' The answer was a page of general causes found in many countries: weak governance, legacy systems, lack of standards. Nothing in it was about Progressa, and nothing in it could be checked.
 
-The second prompt used the four parts: 'Below are three notes: the school census note, the examinations authority's note on its candidate list, and the social grant programme's note on its register [pasted]. (1) List each reason the notes give for a learner appearing differently in two lists. (2) Name the body that controls each. (3) Output a table with the columns reason, the note that states it, quoted, and the body; then three bullets for the Permanent Secretary. (4) Name a reason only if a note states it; list any reason you inferred separately, as a question for the data unit.'
+The second prompt used the four parts, and is in the first tab below: the three notes as its input; the reasons, the bodies and three bullets as its outputs; a table as its format; and a safeguard line against reasons no note states.
 
 The answer had six reasons, each with a quotation. Two inferred reasons came out separately as questions, as the safeguard line asked: whether head teachers re-key names by hand, and whether the examinations authority keeps a learner's former name. Without that line, both would have stood in the table as facts.
+
+**The prompt:**
+
+```text
+Below are three notes: the school census note, the examinations authority's note on its candidate list, and the social grant programme's note on its register [pasted]. (1) List each reason the notes give for a learner appearing differently in two lists. (2) Name the body that controls each. (3) Output a table with the columns reason, the note that states it, quoted, and the body; then three bullets for the Permanent Secretary. (4) Name a reason only if a note states it; list any reason you inferred separately, as a question for the planning unit.
+```
+
+**Part of the output (written for this page, not a recorded run):**
+
+| Reason | The note that states it, quoted | Body |
+| --- | --- | --- |
+| A learner's name is spelt differently in two lists | Census note: 'names are entered as written on the enrolment form' | MoEYS |
+| The candidate list holds only learners entered for an examination | PNEA note: 'the list holds candidates registered for the session' | PNEA |
+| The grant register records the household, not the learner | Grant note: 'beneficiaries are registered by household' | Social Protection Agency |
+
+Inferred, as questions for the planning unit: Do head teachers re-key names by hand? (No note says so.) Does PNEA keep a learner's former name? (Its note is silent.)
 
 ### AI usage tip — Rewrite a vague prompt into the four parts
 
@@ -195,14 +259,31 @@ Below is a prompt I use for work in [the ministry or agency], whose results are 
 
 **Time:** ~5–10 min · **Watch for:** The new safeguard line is the assistant's guess at your risk.
 
+**Practise on Progressa — input:**
+
+Three vague prompts from MoEYS. Rewrite each one with the tip, one chat each.
+
+(A) Summarise the Education Sector Plan. (B) Give me examples of countries with a good learner registry. (C) Help me write the data-sharing request to the examinations authority.
+
+**Practise on Progressa — answer key:**
+
+(A) lacks the input: the plan is not pasted, so the assistant summarises what it guesses the plan says. A good rewrite pastes the plan, asks for named outputs (the objectives, the targets with their dates, the bodies named) in a table, and its safeguard line reads: quote the plan for every target, and mark any target you cannot find in it.
+
+(B) invites invented examples. A good rewrite asks for each country's registry, its owner and the source, and its safeguard line reads: give only examples whose source you name and I can open, and drop any whose source does not say what you claim.
+
+(C) lacks the input and the format. A good rewrite pastes the legal-basis section of the context pack and names the parts of the request; its safeguard line reads: name a legal basis only if the pasted law states it.
+
+If a rewrite's safeguard line says only 'AI can make mistakes', or 'check the output', it misses the point of the tip: replace it with the line for that prompt's own risk.
+
 ### Sources
 
 | Source | Publisher · date | Used for |
 | --- | --- | --- |
-| Prompting guide 101 | Google · October 2024 | Persona, task, context and format |
-| Prompt engineering best practices for ChatGPT | OpenAI · living page | Be specific; iterate |
-| Prompt engineering overview | Anthropic · living page | Clarity, examples, structure, roles and chaining |
-| AI Fluency: Framework and Foundations | Anthropic Academy · free course | Description: describing goals so the output is useful |
+| Get started writing prompts in Microsoft 365 Copilot | Microsoft · living page | Goal, context, expectations and source (vendor source) |
+| Prompting guide 101 | Google · October 2024 | Persona, task, context and format (vendor source) |
+| Prompt engineering best practices for ChatGPT | OpenAI · living page | Be specific; iterate (vendor source) |
+| Prompt engineering overview | Anthropic · living page | Clarity, examples, structure, roles and chaining (vendor source) |
+| AI Fluency: Framework and Foundations | Anthropic Academy · free course | Description: describing goals so the output is useful (vendor source) |
 
 ## 3.3 Subtopic 1.3 — Read the output before you use it
 
@@ -215,13 +296,15 @@ Below is a prompt I use for work in [the ministry or agency], whose results are 
 
 ### The concept
 
-A draft from an assistant mixes three kinds of sentence, and they look the same. Some state what your source says. Some are inferred: the assistant drew a conclusion the source does not state. And some come from nowhere in particular: they are plausible, they fill a gap, and nobody gave them. Reading the output means telling these apart before the draft is used.
+A draft from an assistant mixes three kinds of sentence, and they look the same. Some state what your source says. Some are inferred: the assistant drew a conclusion the source does not state. And some come from nowhere: plausible sentences that fill a gap with something nobody supplied. Reading the output means telling these apart before the draft is used.
 
-Ask for the open questions. A good draft on a hard subject says what it could not settle: a figure it did not have, a decision nobody has taken. Ask the assistant to list them at the end of every draft. And be wary of a draft with no open questions at all. On a subject your unit has never settled, that is a warning, not a result. It usually means the assistant answered the hard questions itself.
+Ask for the open questions. A good draft on a hard subject says what it could not settle: a figure it did not have, a decision nobody has taken. Ask the assistant to list them at the end of every draft. And be wary of a draft with no open questions at all. On a subject your unit has never settled, that is a warning sign: it usually means the assistant answered the hard questions itself.
 
 Cite or discard. Any claim about the outside world, such as what a country did or what a standard requires, needs a source you can open. Assistants invent citations as fluently as they write prose. Open the source. If it does not say what the draft claims, discard the claim, not only the citation: a claim whose source has gone is a guess again.
 
-Reading is a skill, and the AI Fluency course of Anthropic gives it a name: discernment, judging how useful an output is. It is the step most often skipped, because the draft already looks finished. A minute spent reading against the source is cheaper than a correction sent after the briefing.
+Anthropic's AI Fluency course calls this skill discernment: judging how useful an output is. It is the step people skip, because the draft already looks finished. A Microsoft Research survey of 319 knowledge workers found that the more they trusted the assistant, the less they checked its output critically. The Government of Canada tells its public servants the same: do not treat an output as authoritative, and do not use an assistant as a search engine unless it gives sources you can check. A minute spent reading against the source is cheaper than a correction sent after the briefing.
+
+One more check, where your work crosses languages. Assistants may be weaker in languages with less text online. If a draft is translated, or written in a local language, have a colleague who speaks it fluently read it before it is used.
 
 ### In the tool
 
@@ -233,6 +316,8 @@ Asking what it inferred. Add one line to the end of a prompt, or send it after t
 
 Using a second chat. To have a draft checked, open a new chat and paste the draft and its source there. A chat that did not write the draft has no draft of its own to defend.
 
+**Where this is in each assistant:** Claude: web search (https://support.claude.com/en/articles/10684626-enable-and-use-web-search) · ChatGPT: search (https://help.openai.com/en/articles/9237897-chatgpt-search) · Gemini: sources (https://support.google.com/gemini/answer/14143489) · Microsoft 365 Copilot: web search (https://learn.microsoft.com/en-us/microsoft-365/copilot/manage-public-web-access)
+
 ### Worked example — A gap note, marked
 
 An analyst of PDGA, Progressa's digital government authority, asked an assistant to read the draft Digital Transformation Roadmap 2024–2030 and write a one-page note on its gaps for data exchange. The note was twelve sentences long and had no open questions.
@@ -240,6 +325,22 @@ An analyst of PDGA, Progressa's digital government authority, asked an assistant
 The analyst sent the marking line. Eight sentences came back as stated, each with a quotation. Three came back as inferred, among them 'the Roadmap assumes every ministry will join Linkup by 2027', which the Roadmap does not say. One was not in the source: 'the 2021 e-Government Interoperability Framework requires all exchanges to use X-Road.' The analyst opened the 2021 framework. It names message formats and a list of approved standards. It does not name X-Road.
 
 The analyst discarded that sentence, turned the inferred 2027 date into a question for the Roadmap's owner, and asked the assistant again for the open questions. It listed four, among them who decides which ministries join Linkup first. The final note was ten sentences and four questions, and every sentence in it could be traced.
+
+**The prompt:**
+
+```text
+Mark each sentence of your note as stated in the source, inferred, or not in the source. For 'stated', quote the words of the Roadmap that say it. Then list the questions you should have asked me.
+```
+
+**Part of the output (written for this page, not a recorded run):**
+
+| Sentence | Standing | The words of the Roadmap |
+| --- | --- | --- |
+| The Roadmap names DPI as one of its five pillars. | stated | 'five pillars: connectivity, DPI, services, skills and governance' |
+| The Roadmap assumes every ministry will join Linkup by 2027. | inferred | From the list of priority projects, which names Linkup but gives no date |
+| The 2021 e-Government Interoperability Framework requires all exchanges to use X-Road. | not in the source | — |
+
+Questions I should have asked: Who decides which ministries join Linkup first? Is the 2021 framework still applied? Which body funds a ministry's joining?
 
 ### AI usage tip — Mark what a draft rests on
 
@@ -257,11 +358,34 @@ Below is a source document [paste the source], and below that a draft written fr
 
 **Time:** ~15 min · **Watch for:** Quotations the source does not hold.
 
+**Practise on Progressa — input:**
+
+The source: an extract of the Progressa page of this knowledge base. The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require. Linkup, the national data-exchange layer, went live in 2025 in pilot with four members: PNIA, the business register, the tax authority and PDGA; MoEYS is not a member. PNIA covers 78% of adults but issues child IDs only at 16; birth registration is at 71%. The Data Protection Commission was established in 2023, has 6 staff and has taken no enforcement action yet. The Education Sector Plan 2023–2028 calls for the Progressa Learner Registry (PLR), not yet started. The same child may appear in a district file, a provincial secondary file and the examinations authority's candidate list with different spellings.
+
+The draft: a note for the Permanent Secretary of MoEYS. (1) The Data Protection Act 2023 needs a legal basis before a minor's data is shared, and a parent's consent for any use the law does not require. (2) Section 22 of the Act allows ministries to share learner data with each other without consent. (3) Linkup, the national data-exchange layer, has run as a pilot since 2025 with four members; MoEYS is not one of them. (4) MoEYS will join Linkup in 2027. (5) PNIA issues national IDs to children from the age of 12 (PNIA annual report 2025). (6) Birth registration stands at 71%. (7) About 40% of learner records carry a misspelt name. (8) The Data Protection Commission fined a ministry in 2025 for sharing learner data. (9) The Education Sector Plan 2023–2028 calls for the Progressa Learner Registry (PLR), which has not started.
+
+**Practise on Progressa — answer key:**
+
+| Sentence | Standing | Why |
+| --- | --- | --- |
+| 1, 3, 6, 9 | stated | Each is in the source, in other words |
+| 2 | not in the source | The source names no section, and no exception to consent |
+| 4 | not in the source | The source says MoEYS is not a member; no date is given anywhere |
+| 5 | not in the source | The source says 16, and cites no annual report |
+| 7 | not in the source | The source says spellings differ; it gives no figure. An assistant often marks this one 'inferred' |
+| 8 | not in the source | The source says the Commission has taken no enforcement action |
+
+Questions the draft should have raised: which legal basis applies to sharing with the examinations authority; whether that authority would need to join Linkup; how consent works for a learner with no birth record.
+
+If your run marked 7 as 'stated', find the quotation it gave in the source: it is not there. That is the safeguard's point.
+
 ### Sources
 
 | Source | Publisher · date | Used for |
 | --- | --- | --- |
-| AI Fluency: Framework and Foundations | Anthropic Academy · free course | Discernment: judging how useful an output is |
+| Guide on the use of generative artificial intelligence | Government of Canada · updated 24 September 2026 | Do not treat output as authoritative; an assistant is not a search engine unless it cites sources you can check |
+| The Impact of Generative AI on Critical Thinking | Lee et al., Microsoft Research · CHI 2025 | The more people trust the assistant, the less critically they check its output |
+| AI Fluency: Framework and Foundations | Anthropic Academy · free course | Discernment: judging how useful an output is (vendor source) |
 | AI Hallucination Cases | Damien Charlotin · 2023 onwards, updated daily | Why every citation is opened |
 
 ## 3.4 Subtopic 1.4 — Judgement: what stays out of the chat, and what stays yours
@@ -271,33 +395,69 @@ Below is a source document [paste the source], and below that a draft written fr
 | Persona | S (Strategist) — the public servant who commissions and accepts AI-assisted work and answers for it: a director, a head of unit, a technical secretary briefing the principal. No programming assumed |
 | Form | Written page |
 
-> **Single message —** _Nothing confidential goes into a chat, and the decision stays with the person whose name is on it._
+> **Single message —** _Nothing confidential goes into a chat, the decision stays with the person whose name is on it, and that person says an assistant was used._
 
 ### The concept
 
-Four safeguards make every AI usage tip in this series safe to run. They are not advice. They are the conditions.
+Every AI usage tip in this knowledge base is safe to run only under five rules, and they are binding.
 
-One: verify against a named source. Every fact an assistant states is a claim until you check it against a document, a system or a named person. Two: cite or discard. A claim about the outside world needs a source you can open, and a claim whose source does not say it is dropped. Three: never paste confidential or personal data. No records of citizens or learners, no security settings, no unpublished cabinet papers, nothing your data-protection law covers. Treat the prompt box as a public place. The tips never need such data: run them with placeholders such as 'a learner', 'the ministry', 'country X'. Four: keep the decision human. The assistant prepares; a person decides. When something drafted with an assistant turns out wrong, the answer is never 'the AI said so'. It is the name of the person who signed.
+1. Verify against a named source. Every fact an assistant states is a claim until you check it against a document, a system or a named person.
 
-Some work should not go to an assistant at all. A decision about one person, such as an appeal, a grant or a sanction, is made by an official who can be asked why. Work you cannot check is work you cannot accept: if nobody in the unit can tell whether the answer is right, the assistant's answer is not an answer. And where the text itself is the authority, such as the law, the contract or the minutes, read the text, not a summary of it.
+2. Cite or discard. A claim about the outside world needs a source you can open, and a claim whose source does not say it is dropped.
 
-You are not the first public servant to use these tools on official work, and the expectations are written down. The UK government's AI Playbook of February 2025 sets ten principles for civil servants, among them: know the tools' limits, use them lawfully and responsibly, and know who is responsible. The African Union's Continental AI Strategy of 2024 sets the regional frame for responsible use. Read your own government's rules first: they decide which assistants you may use, and for what.
+3. Never paste confidential or personal data. No records of citizens or learners, no security settings, no unpublished cabinet papers, nothing your data-protection law covers. Treat the prompt box as a public place. The tips never need such data: run them with placeholders such as 'learner A', 'school 1' and 'district X'.
+
+4. Keep the decision human. The assistant prepares; a person decides. When something drafted with an assistant turns out wrong, the person who signed it answers for it, and 'the AI said so' is no answer.
+
+5. Say that you used it: which assistant, what it drafted, and how far you checked the result. Tell your manager, and say it in the document where your government's rules ask for that. The Government of Canada asks this of its public servants.
+
+Some work should not go to an assistant at all, and a government trial shows where the line falls. When 20,000 UK civil servants used Microsoft 365 Copilot from September to December 2024, it saved most time on drafting documents and preparing presentations, about 26 minutes a day on average by users' own estimate, and struggled with nuanced, context-heavy material and with policy work whose sources disagreed. The same trial found that it can surface files a user has access to but should not. Canada's guide puts it as a principle: an assistant is not the right tool for every task. A decision about one person, such as an appeal, a grant or a sanction, is made by an official who can be asked why. Work you cannot check is work you cannot accept: if nobody in the unit can tell whether the answer is right, the assistant's answer is not an answer. And where the text itself is the authority, such as the law, the contract or the minutes, read the text, not a summary of it.
+
+Governments have already written down what they expect of public servants who use these tools on official work. The UK government's AI Playbook of February 2025 sets ten principles for civil servants, among them: know the tools' limits, use them lawfully and responsibly, and know who is responsible. The African Union's Continental AI Strategy of 2024 sets the regional frame for responsible use. UNESCO's framework of AI competencies for civil servants says what a public servant needs to know to use these tools well. And where the data is about learners, it is about children: UNICEF's guidance on AI and children is the frame for that. Read your own government's rules first: they decide which assistants you may use, and for what.
 
 ### In the tool
 
 Shown in Claude, and the same in any assistant.
 
-De-identify before you send. If your material holds anything sensitive, strip it first, with the tip below. Run that one step on an assistant that runs on your own computer or your ministry's own servers, never on a public one, or the stripping defeats itself. With no such assistant, do it by hand: the table the tip asks for, of what was removed, its kind and the placeholder used, is a ten-minute checklist a person can apply before pasting.
+De-identify before you send, by hand. If your material holds anything sensitive, strip it before you paste, with the card below. Replace each kind of data with its placeholder, and keep the shape the task needs: a date of birth becomes an invented date with the same kind of error, not nothing. It takes about ten minutes.
 
-Use the approved tool. A ministry that has approved an assistant has usually bought an account in which chats are not used to train the vendor's models and are kept under a contract. Use that account for official work, not a personal one. In Claude, the privacy settings say whether chats may be used to improve the models; in an organisation's account, an administrator sets this for everyone.
+| Kind of data | For example | Replace with |
+| --- | --- | --- |
+| Names of people | Learners, parents, staff, office-holders | 'learner A', 'parent of learner A'; a post, not a name |
+| ID and record numbers | National ID, census number, candidate number | 'ID-001', 'ID-002', kept consistent across lists |
+| Dates of birth | Any real date | An invented date in the same year, with the same kind of error |
+| Places | Schools, villages, addresses | 'school 1', 'district X' |
+| Case details | Health, disability, family, grants, discipline | 'a case of kind X' |
+| Unpublished documents | Cabinet papers, draft laws, security settings | A one-line description of what it is, never its text |
+
+The AI usage tip under Your turn, after the worked example, does the same with a prompt. It is for a ministry that runs an assistant on its own computers or servers: on a public assistant, sending the material to be stripped is the very thing it prevents.
+
+Use the approved tool. The business and enterprise accounts of the major vendors come under commercial terms in which, by default, chats are not used to train the vendor's models; each vendor's page on business data says so. Use the account your ministry approved for official work, not a personal one. In Claude, the privacy settings say whether chats may be used to improve the models; in an organisation's account, an administrator sets this for everyone.
+
+**Where this is in each assistant:** Claude: training (https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training) · Claude: incognito chat (https://support.claude.com/en/articles/12260368-use-incognito-chats) · ChatGPT: data controls (https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt) · ChatGPT: temporary chat (https://help.openai.com/en/articles/8914046-temporary-chat-faq) · Gemini: privacy (https://support.google.com/gemini/answer/13594961) · Google Workspace: business data (https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub) · Microsoft 365 Copilot: business data (https://learn.microsoft.com/en-us/microsoft-365/copilot/enterprise-data-protection)
 
 ### Worked example — Matching learners without their names
 
-The data unit of MoEYS wanted to know how many learners appear in all three lists: the school census, the examinations authority's candidate list and the social grant programme's register. An officer prepared to paste two hundred rows from each list into a public assistant and ask it to match them. The rows held names, dates of birth and the schools of children.
+The planning unit of MoEYS wanted to know how many learners appear in all three lists: the school census, the examinations authority's candidate list and the social grant programme's register. An officer prepared to paste two hundred rows from each list into a public assistant and ask it to match them. The rows held names, dates of birth and the schools of children.
 
-The head of the unit stopped it, on the third safeguard: these are records of minors, and Progressa's Data Protection Act 2023 needs a legal basis to share them. The question did not need the data anyway. The officer pasted the column headings of each list and five invented rows with the same kinds of difference the real lists have: a name spelt two ways, a date of birth with day and month swapped, a learner who changed school.
+The head of the unit stopped it, on the third rule: these are records of minors, and Progressa's Data Protection Act 2023 needs a legal basis to share them. The question did not need the data anyway. The officer pasted the column headings of each list and five invented rows with the same kinds of difference the real lists have: a name spelt two ways, a date of birth with day and month swapped, a learner who changed school.
 
-The assistant proposed a matching method: which fields to compare, how to treat the spelling and the swapped dates, and which matches a person should review. The data unit ran the method inside the ministry, on its own systems. The head of the unit approved the method, and the report to the Permanent Secretary carried the unit's name, not the assistant's.
+The assistant proposed a matching method: which fields to compare, how to treat the spelling and the swapped dates, and which matches a person should review. The planning unit ran the method inside the ministry, on its own systems. The head of the unit approved the method, and the report to the Permanent Secretary carried the unit's name, not the assistant's, with one line saying that an assistant had proposed the method and the unit had tested it.
+
+**The prompt:**
+
+```text
+Below are the column headings of three learner lists, and five invented rows that show the kinds of difference between them [headings and rows]. Propose a method to find the learners who appear in all three lists. Give: (1) the fields to compare, in order; (2) how to treat a name spelt two ways and a date of birth with day and month swapped; (3) which matches a person should review. Do not ask for real records. Output: a numbered method, then a table of the kinds of match with the action for each.
+```
+
+**Part of the output (written for this page, not a recorded run):**
+
+| Kind of match | In the invented rows | Action |
+| --- | --- | --- |
+| Same name, date of birth and school | Learner A in all three lists | Accept |
+| Name spelt two ways; same date and school | 'Chipo' and 'Tshipo' | Accept if the names differ by one or two letters; log it |
+| Day and month swapped | 03/07 in one list, 07/03 in another | A person reviews |
+| Same name and date; different school | A learner who changed school | A person reviews, with the transfer record |
 
 ### AI usage tip — De-identify a prompt before you send it
 
@@ -306,14 +466,34 @@ The assistant proposed a matching method: which fields to compare, how to treat 
 **Prompt template (copy-paste into the assistant):**
 
 ```text
-Below is a prompt I am about to send to a public AI assistant, with the material I would paste into it [paste the prompt and the material]. Rewrite it so that any personal data, record of a citizen or learner, security setting, and unpublished or confidential government material is replaced with a neutral placeholder, such as 'a learner', 'the ministry', 'country X' or 'the registry', while keeping enough of the structure that the task still works. Keep the kinds of data and the kinds of difference between records, so the task can still be done on invented rows. Then list everything you replaced. Output: the de-identified prompt, then a table with the columns removed item, kind, and placeholder used.
+Below is a prompt I am about to send to a public AI assistant, with the material I would paste into it [paste the prompt and the material]. Rewrite it so that any personal data, record of a citizen or learner, security setting, and unpublished or confidential government material is replaced with a neutral placeholder, such as 'learner A', 'school 1', 'ID-001' or 'district X', while keeping enough of the structure that the task still works. Keep the kinds of data and the kinds of difference between records, so the task can still be done on invented rows. Then list everything you replaced. Output: the de-identified prompt, then a table with the columns removed item, kind, and placeholder used.
 ```
 
 **Inputs and outputs:** Input: the prompt and the material you would paste into it. Output: the de-identified prompt, with a table of what was removed, its kind and the placeholder used.
 
-**Safeguard:** Run this tip only on an assistant that runs on your own computer or your ministry's servers, never on a public one: sending the material to be stripped is the very thing it prevents. With no such assistant, apply the table by hand.
+**Safeguard:** Run this tip only on an assistant that runs on your own computer or your ministry's servers, never on a public one: sending the material to be stripped is the very thing it prevents. With no such assistant, use the card under In the tool, by hand.
 
-**Time:** ~10 min · **Watch for:** Never run this one on a public assistant.
+**Time:** ~10 min · **Watch for:** Real material never goes to a public assistant.
+
+**Practise on Progressa — input:**
+
+The prompt and material a MoEYS officer was about to send. Practise on it by hand with the card under In the tool, or with the prompt:
+
+'Why do these learners appear differently in our lists? Grace Banda, born 14/03/2013, Kasoro Primary School, census number CN-0412-0078, appears in the examinations list as Grace Bandah, born 03/14/2013. Her mother, Ruth Banda, receives the social grant for the household; the family is under review for a disability grant. The draft cabinet paper on the PLR, attached, proposes a fix.'
+
+**Practise on Progressa — answer key:**
+
+| Removed | Kind | Placeholder |
+| --- | --- | --- |
+| Grace Banda; Grace Bandah | Name of a learner | 'learner A'; 'learner A, spelt differently' |
+| 14/03/2013; 03/14/2013 | Date of birth | An invented date, kept with day and month swapped |
+| Kasoro Primary School | Place | 'school 1' |
+| CN-0412-0078 | Record number | 'ID-001' |
+| Ruth Banda | Name of a parent | 'the parent of learner A' |
+| Under review for a disability grant | Case detail | Removed: the task does not need it |
+| The draft cabinet paper | Unpublished document | Removed, not described: it is not needed to explain the difference |
+
+The de-identified prompt should still work: learner A appears in two lists with a name spelt two ways and a date with day and month swapped. If yours lost the swapped date, it stripped too far.
 
 ### Sources
 
@@ -321,6 +501,10 @@ Below is a prompt I am about to send to a public AI assistant, with the material
 | --- | --- | --- |
 | AI Playbook for the UK Government | GOV.UK · 10 February 2025 | Ten principles for civil servants: limits, lawful use, accountability |
 | Continental Artificial Intelligence Strategy | African Union · August 2024 | The regional frame for responsible and equitable use |
+| Guide on the use of generative artificial intelligence | Government of Canada · updated 24 September 2026 | The FASTER principles: say that you used it, and use it only where it is the right tool |
+| Microsoft 365 Copilot Experiment: Cross-Government Findings Report | Government Digital Service, UK · 2 June 2025 | Where an assistant helped civil servants in a trial, and where it did not |
+| AI and digital transformation competencies for civil servants | UNESCO · 2022 | What a civil servant needs to know to use AI |
+| Guidance on AI and children | UNICEF · December 2025 | The frame for AI and data about children |
 | Governing with Artificial Intelligence | OECD · 18 September 2025 | What governments do with these tools, and the oversight they set |
 
 ## 3.5 Video V1 — The draft that looked right
@@ -401,7 +585,7 @@ The sources of each page are listed at its foot, with publisher and date, and ar
 
 ### 4.5 Concept and tool
 
-Each page's In the tool is shown in Claude and says so. Settings are named by what they do, not by the words of a menu, because menus change. Other assistants are named, not mapped: page 1.1 says that ChatGPT, Gemini and Microsoft 365 Copilot have the same settings under their own names.
+Each page's In the tool is shown in Claude and says so. Settings are named by what they do, not by the words of a menu, because menus change. Other assistants are named, not mapped: the course's home page names ChatGPT, Gemini and Microsoft 365 Copilot, and each page links to their help pages for its settings.
 
 ## 5. Open calibration items
 
@@ -417,7 +601,7 @@ V1's story beat is left to the speaker, who is asked to name a real case, with a
 
 ### 5.3 Vendor sources
 
-Pages 1.1 and 1.2 cite vendors (OpenAI, Google, Anthropic) on how their own tools behave. They are cited because they are the primary account; each is tagged as a vendor source on the written page. Whether ITU wants a non-vendor source beside each is a question for ITU.
+Pages 1.1 and 1.2 cite vendors (OpenAI, Microsoft, Google, Anthropic) on how their own tools behave, as the primary account, tagged as vendor sources. Since the review of 26 October 2026, the argument of 1.1 and 1.3 rests first on a government source and an independent study, and 1.4 on government and intergovernmental sources; 1.2 compares the vendors' guides rather than resting on one.
 
 ### 5.4 The tool shown
 
@@ -433,10 +617,10 @@ Compiled across the four pages and the video. Every source is public.
 
 | Page | Sources referenced, with addresses |
 | --- | --- |
-| 1.1 | Why language models hallucinate (OpenAI, September 2025), https://openai.com/index/why-language-models-hallucinate/. Expanding on what we missed with sycophancy (OpenAI, May 2025), https://openai.com/index/expanding-on-sycophancy/. AI Hallucination Cases (Damien Charlotin, 2023 onwards), https://www.damiencharlotin.com/hallucinations/. |
-| 1.2 | Prompting guide 101 (Google, October 2024), https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf. Prompt engineering best practices for ChatGPT (OpenAI), https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt. Prompt engineering overview (Anthropic), https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview. AI Fluency: Framework and Foundations (Anthropic Academy), https://academy.claude.com/courses/ai-fluency-framework-foundations. |
-| 1.3 | AI Fluency: Framework and Foundations, as above. AI Hallucination Cases, as above. |
-| 1.4 | AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government. Continental Artificial Intelligence Strategy (African Union, August 2024), https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy. Governing with Artificial Intelligence (OECD, 18 September 2025), https://www.oecd.org/en/publications/2025/06/governing-with-artificial-intelligence_398fa287.html. |
+| 1.1 | Artificial Intelligence Risk Management Framework: Generative AI Profile (NIST, July 2024), https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf. Navigating the Jagged Technological Frontier (Dell'Acqua et al., Harvard Business School, 2023), https://www.hbs.edu/faculty/Pages/item.aspx?num=64700. Why language models hallucinate (OpenAI, September 2025), https://openai.com/index/why-language-models-hallucinate/. Expanding on what we missed with sycophancy (OpenAI, May 2025), https://openai.com/index/expanding-on-sycophancy/. AI Hallucination Cases (Damien Charlotin, 2023 onwards; 2,217 cases on 25 October 2026, to be re-counted before each publish), https://www.damiencharlotin.com/hallucinations/. |
+| 1.2 | Get started writing prompts in Microsoft 365 Copilot (Microsoft), https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot. Prompting guide 101 (Google, October 2024), https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf. Prompt engineering best practices for ChatGPT (OpenAI), https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt. Prompt engineering overview (Anthropic), https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview. AI Fluency: Framework and Foundations (Anthropic Academy), https://academy.claude.com/courses/ai-fluency-framework-foundations. |
+| 1.3 | Guide on the use of generative artificial intelligence (Government of Canada, updated 24 September 2026), https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/guide-use-generative-ai.html. The Impact of Generative AI on Critical Thinking (Lee et al., Microsoft Research, CHI 2025), https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/. AI Fluency: Framework and Foundations, as above. AI Hallucination Cases, as above. |
+| 1.4 | AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government. Continental Artificial Intelligence Strategy (African Union, August 2024), https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy. Guide on the use of generative artificial intelligence, as above. Microsoft 365 Copilot Experiment: Cross-Government Findings Report (Government Digital Service, 2 June 2025), https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report. AI and digital transformation competencies for civil servants (UNESCO, 2022), https://unesdoc.unesco.org/ark:/48223/pf0000384963. Guidance on AI and children (UNICEF, December 2025), https://www.unicef.org/innocenti/reports/policy-guidance-ai-children. Governing with Artificial Intelligence (OECD, 18 September 2025), https://www.oecd.org/en/publications/governing-with-artificial-intelligence_795de142-en.html. |
 | V1 | None of its own; the description points to the pages. |
 
 All references are publicly accessible and verifiable.

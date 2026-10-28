@@ -14,13 +14,6 @@
   "gitbook_id": "MZzFAfaCklx5YngGc1w2"
  },
  {
-  "ref": "kp0-module-2",
-  "title": "Module 2 — Prepare: set up what the AI knows and can do",
-  "parent": "kp0",
-  "path": "kp0/module-2/README.md",
-  "gitbook_id": "li3V1aEEctpyRkyXxqC4"
- },
- {
   "ref": "kp0-1-1",
   "title": "1.1 A drafting partner, not an oracle",
   "parent": "kp0-module-1",
@@ -54,6 +47,13 @@
   "parent": "kp0-module-1",
   "path": "kp0/module-1/self-check.md",
   "gitbook_id": "COhsVqnYpKaymcTLuLzu"
+ },
+ {
+  "ref": "kp0-module-2",
+  "title": "Module 2 — Prepare: set up what the AI knows and can do",
+  "parent": "kp0",
+  "path": "kp0/module-2/README.md",
+  "gitbook_id": "li3V1aEEctpyRkyXxqC4"
  },
  {
   "ref": "kp0-2-1",

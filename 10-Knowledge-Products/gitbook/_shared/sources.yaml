@@ -1,6 +1,10 @@
-# The reading list for the "Working with AI" chapter (structure draft §5.3).
-# Re-checked before every publish; bump `verified` when you do.
-verified: 2026-09-07
+# The reading list for Start here's "Working with AI" pages and for every page of Working with AI in Government
+# (the KP0 guide). Re-checked before every publish; bump `verified` when you do. gitbook_qa fails if a KP0 page
+# cites a source whose address is not here.
+# Sourcing rule (review of 26 Oct 2026): a page's argument rests first on a government or intergovernmental source
+# (T1) or independent research (T2 research); vendor sources are used for how a tool works.
+# Re-count before each publish: the AI Hallucination Cases total quoted on 1.1 (2,217 on 25 Oct 2026).
+verified: 2026-10-26
 sources:
   - key: uk-playbook
     title: AI Playbook for the UK Government
@@ -18,7 +22,7 @@ sources:
     tier: T1 intergovernmental
   - key: oecd-governing
     title: Governing with Artificial Intelligence
-    url: https://www.oecd.org/en/publications/2025/06/governing-with-artificial-intelligence_398fa287.html
+    url: https://www.oecd.org/en/publications/governing-with-artificial-intelligence_795de142-en.html
     publisher: OECD
     date: 18 Sep 2025
     used_for: 200 government AI cases, risks and oversight
@@ -65,7 +69,7 @@ sources:
     date: living
     used_for: clarity, examples, structure, roles, chaining
     tier: T2 vendor guide
-  - key: dair
+  - key: dair  # cited by Start here's Prompting techniques page, not by KP0
     title: Prompt Engineering Guide
     url: https://www.promptingguide.ai/
     publisher: DAIR.AI
@@ -79,3 +83,202 @@ sources:
     date: free course
     used_for: "the four Ds — Delegation, Description, Discernment, Diligence"
     tier: T2 vendor course
+  - key: kp0-artificial-intelligence-risk-management
+    title: "Artificial Intelligence Risk Management Framework: Generative AI Profile (NIST AI 600-1)"
+    url: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
+    publisher: "NIST"
+    date: "July 2024"
+    used_for: "confabulation named as a risk of generative AI by a government standards body"
+    tier: T1 government
+    pages: [1.1]
+  - key: kp0-navigating-the-jagged-technological-fron
+    title: "Navigating the Jagged Technological Frontier"
+    url: https://www.hbs.edu/faculty/Pages/item.aspx?num=64700
+    publisher: "Dell'Acqua et al., Harvard Business School"
+    date: "2023"
+    used_for: "field experiment: worse answers with an assistant on a task outside what it does well"
+    tier: T2 independent research
+    pages: [1.1]
+  - key: kp0-get-started-writing-prompts-in-microsoft
+    title: "Get started writing prompts in Microsoft 365 Copilot"
+    url: https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot
+    publisher: "Microsoft"
+    date: "living page"
+    used_for: "goal, context, expectations and source (vendor source)"
+    tier: T2 vendor guide
+    pages: [1.2]
+  - key: kp0-guide-on-the-use-of-generative-artificia
+    title: "Guide on the use of generative artificial intelligence"
+    url: https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/guide-use-generative-ai.html
+    publisher: "Government of Canada"
+    date: "updated 24 September 2026"
+    used_for: "do not treat output as authoritative; an assistant is not a search engine unless it cites sources you can check"
+    tier: T1 government
+    pages: [1.3, 1.4]
+  - key: kp0-the-impact-of-generative-ai-on-critical
+    title: "The Impact of Generative AI on Critical Thinking"
+    url: https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/
+    publisher: "Lee et al., Microsoft Research"
+    date: "CHI 2025"
+    used_for: "the more people trust the assistant, the less critically they check its output"
+    tier: T2 research (Microsoft Research)
+    pages: [1.3]
+  - key: kp0-microsoft-365-copilot-experiment-cross-g
+    title: "Microsoft 365 Copilot Experiment: Cross-Government Findings Report"
+    url: https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report
+    publisher: "Government Digital Service, UK"
+    date: "2 June 2025"
+    used_for: "where an assistant helped civil servants in a trial, and where it did not"
+    tier: T1 government
+    pages: [1.4, 2.2, 2.3]
+  - key: kp0-ai-and-digital-transformation-competenci
+    title: "AI and digital transformation competencies for civil servants"
+    url: https://unesdoc.unesco.org/ark:/48223/pf0000384963
+    publisher: "UNESCO"
+    date: "2022"
+    used_for: "what a civil servant needs to know to use AI"
+    tier: T1 intergovernmental
+    pages: [1.4]
+  - key: kp0-guidance-on-ai-and-children
+    title: "Guidance on AI and children"
+    url: https://www.unicef.org/innocenti/reports/policy-guidance-ai-children
+    publisher: "UNICEF"
+    date: "December 2025"
+    used_for: "the frame for AI and data about children"
+    tier: T1 intergovernmental
+    pages: [1.4]
+  - key: kp0-effective-context-engineering-for-ai-age
+    title: "Effective context engineering for AI agents"
+    url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+    publisher: "Anthropic Engineering"
+    date: "September 2025"
+    used_for: "the smallest set of high-signal information; why more context can make the result worse"
+    tier: T2 vendor
+    pages: [2.1, 2.2]
+  - key: kp0-lost-in-the-middle-how-language-models-u
+    title: "Lost in the Middle: How Language Models Use Long Contexts"
+    url: https://aclanthology.org/2024.tacl-1.9/
+    publisher: "Liu et al., Transactions of the ACL"
+    date: "2024"
+    used_for: "information in the middle of a long context is used less well (independent research)"
+    tier: T2 independent research
+    pages: [2.1]
+  - key: kp0-context-engineering-technology-radar
+    title: "Context engineering, Technology Radar"
+    url: https://www.thoughtworks.com/radar/techniques/context-engineering
+    publisher: "Thoughtworks"
+    date: "April 2026"
+    used_for: "context engineering moved to Adopt, in Volume 34"
+    tier: T3 practitioner
+    pages: [2.1]
+  - key: kp0-skills-explained-how-skills-compares-to
+    title: "Skills explained: how Skills compares to prompts, Projects, MCP and subagents"
+    url: https://claude.com/blog/skills-explained
+    publisher: "Anthropic"
+    date: "2025"
+    used_for: "what a project holds, and when to use one"
+    tier: T2 vendor
+    pages: [2.2, 2.3]
+  - key: kp0-use-skills-in-claude
+    title: "Use skills in Claude"
+    url: https://support.claude.com/en/articles/12512180-use-skills-in-claude
+    publisher: "Anthropic help"
+    date: "living page"
+    used_for: "how to upload a skill; install only from trusted sources (vendor source)"
+    tier: T2 vendor
+    pages: [2.3]
+  - key: kp0-agent-skills
+    title: "Agent Skills"
+    url: https://agentskills.io
+    publisher: "agentskills.io"
+    date: "open standard"
+    used_for: "what a skill holds; the header the assistant reads first"
+    tier: T2 open standard
+    pages: [2.3]
+  - key: kp0-model-context-protocol
+    title: "Model Context Protocol"
+    url: https://modelcontextprotocol.io
+    publisher: "modelcontextprotocol.io"
+    date: "open protocol"
+    used_for: "the protocol most connectors follow"
+    tier: T2 open standard
+    pages: [2.3]
+  - key: kp0-mcp-servers-for-published-docs
+    title: "MCP servers for published docs"
+    url: https://gitbook.com/docs/ai-for-your-readers/mcp-servers-for-published-docs
+    publisher: "GitBook"
+    date: "documentation"
+    used_for: "the read-only connector of a published GitBook site"
+    tier: T2 vendor documentation
+    pages: [2.3]
+  - key: kp0-llm01-2025-prompt-injection
+    title: "LLM01:2025 Prompt Injection"
+    url: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+    publisher: "OWASP GenAI Security Project"
+    date: "2025"
+    used_for: "text in a source or a skill that gives the assistant instructions"
+    tier: T2 industry security reference
+    pages: [2.3]
+  - key: kp0-how-generative-and-agentic-ai-shift-conc
+    title: "How generative and agentic AI shift concern from technical debt to cognitive debt"
+    url: https://margaretstorey.com/blog/2026/02/09/cognitive-debt/
+    publisher: "Margaret-Anne Storey"
+    date: "9 February 2026"
+    used_for: "technical, cognitive and intent debt"
+    tier: T2 independent research
+    pages: [2.4]
+  - key: kp0-fragments-april-2
+    title: "Fragments: April 2"
+    url: https://www.martinfowler.com/fragments/2026-04-02.html
+    publisher: "Martin Fowler"
+    date: "2 April 2026"
+    used_for: "the three debts summarised; cognitive offloading and cognitive surrender"
+    tier: T3 practitioner
+    pages: [2.4]
+
+# Go further, on the KP0 module home pages (not under Sources, so not checked by gitbook_qa; re-check them too).
+# The ITU course 'AI and digital transformation in government' was seen in the portfolio on 26 Oct 2026.
+go_further:
+  - {title: "AI Skills Coalition, course portfolio", url: "https://aiforgood.itu.int/ai-skills-coalition/ai-courses-portfolio/", publisher: ITU, modules: [1, 2]}
+  - {title: "Elements of AI", url: "https://www.elementsofai.com/", publisher: "University of Helsinki and MinnaLearn", modules: [1]}
+  - {title: "AI Fluency: Framework and Foundations", url: "https://academy.claude.com/courses/ai-fluency-framework-foundations", publisher: Anthropic Academy, modules: [1, 2]}
+  - {title: "AI and digital transformation competencies for civil servants", url: "https://unesdoc.unesco.org/ark:/48223/pf0000384963", publisher: UNESCO, modules: [2]}
+
+# Help links under In the tool on the KP0 pages (review C3). help.openai.com refused automated fetching on
+# 26 Oct 2026, so its links are marked verified: false; open them by hand before publishing.
+help_links:
+  - {page: "1.1", label: "Claude: model", url: https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings, verified: true}
+  - {page: "1.1", label: "Claude: web search", url: https://support.claude.com/en/articles/10684626-enable-and-use-web-search, verified: true}
+  - {page: "1.1", label: "ChatGPT: search", url: https://help.openai.com/en/articles/9237897-chatgpt-search, verified: false}
+  - {page: "1.1", label: "Gemini: models", url: https://support.google.com/gemini/answer/13275745, verified: true}
+  - {page: "1.1", label: "Gemini: sources", url: https://support.google.com/gemini/answer/14143489, verified: true}
+  - {page: "1.1", label: "Microsoft 365 Copilot: web search", url: https://learn.microsoft.com/en-us/microsoft-365/copilot/manage-public-web-access, verified: true}
+  - {page: "1.3", label: "Claude: web search", url: https://support.claude.com/en/articles/10684626-enable-and-use-web-search, verified: true}
+  - {page: "1.3", label: "ChatGPT: search", url: https://help.openai.com/en/articles/9237897-chatgpt-search, verified: false}
+  - {page: "1.3", label: "Gemini: sources", url: https://support.google.com/gemini/answer/14143489, verified: true}
+  - {page: "1.3", label: "Microsoft 365 Copilot: web search", url: https://learn.microsoft.com/en-us/microsoft-365/copilot/manage-public-web-access, verified: true}
+  - {page: "1.4", label: "Claude: training", url: https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training, verified: true}
+  - {page: "1.4", label: "Claude: incognito chat", url: https://support.claude.com/en/articles/12260368-use-incognito-chats, verified: true}
+  - {page: "1.4", label: "ChatGPT: data controls", url: https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt, verified: false}
+  - {page: "1.4", label: "ChatGPT: temporary chat", url: https://help.openai.com/en/articles/8914046-temporary-chat-faq, verified: false}
+  - {page: "1.4", label: "Gemini: privacy", url: https://support.google.com/gemini/answer/13594961, verified: true}
+  - {page: "1.4", label: "Google Workspace: business data", url: https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub, verified: true}
+  - {page: "1.4", label: "Microsoft 365 Copilot: business data", url: https://learn.microsoft.com/en-us/microsoft-365/copilot/enterprise-data-protection, verified: true}
+  - {page: "2.1", label: "Claude: web search", url: https://support.claude.com/en/articles/10684626-enable-and-use-web-search, verified: true}
+  - {page: "2.1", label: "ChatGPT: search", url: https://help.openai.com/en/articles/9237897-chatgpt-search, verified: false}
+  - {page: "2.1", label: "Gemini: sources", url: https://support.google.com/gemini/answer/14143489, verified: true}
+  - {page: "2.1", label: "Microsoft 365 Copilot: web search", url: https://learn.microsoft.com/en-us/microsoft-365/copilot/manage-public-web-access, verified: true}
+  - {page: "2.2", label: "Claude: projects", url: https://support.claude.com/en/articles/9517075-what-are-projects, verified: true}
+  - {page: "2.2", label: "ChatGPT: projects", url: https://help.openai.com/en/articles/10169521-projects-in-chatgpt, verified: false}
+  - {page: "2.2", label: "Gemini: Gems", url: https://support.google.com/gemini/answer/15146780, verified: true}
+  - {page: "2.2", label: "Microsoft 365 Copilot: notebooks", url: https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-microsoft-365-copilot-notebooks, verified: true}
+  - {page: "2.3", label: "Claude: skills", url: https://support.claude.com/en/articles/12512180-use-skills-in-claude, verified: true}
+  - {page: "2.3", label: "Claude: connectors", url: https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp, verified: true}
+  - {page: "2.3", label: "ChatGPT: apps", url: https://help.openai.com/en/articles/11487775-apps-in-chatgpt, verified: false}
+  - {page: "2.3", label: "Gemini: apps", url: https://support.google.com/gemini/answer/14959807, verified: true}
+  - {page: "2.3", label: "Microsoft 365 Copilot: connectors", url: https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/overview, verified: true}
+  - {page: "2.4", label: "Claude: memory", url: https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context, verified: true}
+  - {page: "2.4", label: "Claude: incognito chat", url: https://support.claude.com/en/articles/12260368-use-incognito-chats, verified: true}
+  - {page: "2.4", label: "ChatGPT: memory", url: https://help.openai.com/en/articles/8590148-memory-faq, verified: false}
+  - {page: "2.4", label: "Gemini: memory", url: https://support.google.com/gemini/answer/16598623, verified: true}
+  - {page: "2.4", label: "Microsoft 365 Copilot: memory", url: https://support.microsoft.com/en-us/microsoft-365-copilot/manage-copilot-memory-in-microsoft-365-copilot, verified: true}
