@@ -1,0 +1,11 @@
+kind: closed
+written: 2026-10-30T15:45:11Z
+code: PLR
+by: "PLR · orchestrator · the PLR prototype, 27 Oct"
+account: (removed)
+computer: MacBookPro
+id: PLR-011
+version: 1
+outcome: withdrawn
+ground: "The owner's word, 30 October 2026, 17:44 Tallinn time: run the four goals again one after another (PLR-D10). Running in parallel, G2 and V1 each started twice when the scheduled task fired after its run-now, and the rounds shared one tree"
+format: 2

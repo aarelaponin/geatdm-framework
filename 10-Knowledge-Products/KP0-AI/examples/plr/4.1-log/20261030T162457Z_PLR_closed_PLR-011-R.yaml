@@ -1,0 +1,12 @@
+kind: closed
+written: 2026-10-30T16:24:57Z
+code: PLR
+by: "PLR · orchestrator · the PLR prototype, 27 Oct"
+account: (removed)
+computer: MacBookPro
+id: PLR-011-R
+version: 2
+outcome: accepted
+subject: "PLR PLR-011"
+ground: "The review of version 2 accepted it: the check passes in its copy, G1 driven headless under all three switches does what its document writes, 44 of 44 items covered; the files are version 1's byte for byte, read and run by the reviewer"
+format: 2

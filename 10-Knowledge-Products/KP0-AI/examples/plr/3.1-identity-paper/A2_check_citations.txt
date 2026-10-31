@@ -1,0 +1,337 @@
+2026-10-28T17:17:25Z
+$ /usr/local/bin/python3.11 /Users/arnelaponin/Documents/Dev/orchestrator-local/plugins/fa-project-ops/skills/orchestrator/scripts/round_record.py run --record /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/plr-prototype/_working/PLR-003/_record -- /usr/local/bin/python3.11 /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/plr-prototype/_working/PLR-003/check_citations.py /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/plr-prototype/docs/paper-what-identifies-a-learner.md /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/plr-prototype
+== 1. Every citation, with the text at its line ==
+[1] paper:25 -> ../../gitbook/start-here/progressa.md:44 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:44
+     | Context: today enrolment is on paper at the school; the head teacher keys it into district EMIS; the same child may appear in a district file, a provincial secondary file and the examinations authority's candidate list with different spellings. The Education Sector Plan calls for the Progressa Learner Registry (PLR). Linkup exists but MoEYS is not a member. The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require. PNIA covers 78% of adults but issues child IDs only at 16; birth registration is at 71%. Head teachers are unionised and resisted the last EMIS change. The Minister wants a 'one learner, one record' announcement within 12 months.
+[2] paper:28 -> ../../gitbook/start-here/progressa.md:12 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:12
+     | Progressa's education sector has five bodies that matter. The Ministry of Education, Youth and Skills (MoEYS) sets policy and funds schools. The Progressa National Examinations Authority (PNEA) runs examinations and certifies results. The Progressa Learner Registry (PLR) is the single list of learners the Education Sector Plan calls for — planned, not started; today three bodies keep their own. The Progressa National ID Authority (PNIA) owns the person identity every sector reuses. And the Progressa Digital Government Authority (PDGA) runs the shared data-exchange backbone (Linkup) and coordinates payments (PayPro). A policy unit, a service authority, two registries and a shared-platform provider.
+[3] paper:29 -> ../../gitbook/start-here/progressa.md:26 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:26
+     | Identity: the Progressa National ID Authority (PNIA) has rolled out the National ID since 2018 (78% adult coverage) and runs an e-KYC platform since 2024. The Ministry of Education, Youth and Skills (MoEYS) keeps district-level EMIS records with its own learner numbering; the Social Protection Agency runs a separate beneficiary register built in 2016 by a vendor under a World Bank programme, with the vendor still holding the only maintenance contract; the Ministry of Health's patient index uses yet another identifier.
+[4] paper:30 -> ../../gitbook/start-here/progressa.md:14 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:14
+     | The problem the minister feels: a learner is registered three times — in the school census, by the Examinations Authority, and by a social grant programme — and none of the lists agree. A parent proves the child's identity on paper at every counter. The minister has promised a **single learner record** that follows the child from primary school to university, and it cannot be delivered because the systems do not fit together. That is the stalled flagship.
+[5] paper:35 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:185 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:185
+     | | PLR-003 | **What identifies a learner?** Position A: the PLR issues its own number at first enrolment and holds the birth registration number where one exists. Position B: the national identity is the key, which means PNIA issuing a number to every child at birth registration, a change in another body. Reviewer: Opus · high | analysis | open judgement · Fable · max | 1, 2 | 3.5, 4.5, 5.6 (example 8.3) |
+[6] paper:37 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:185 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:185
+     | | PLR-003 | **What identifies a learner?** Position A: the PLR issues its own number at first enrolment and holds the birth registration number where one exists. Position B: the national identity is the key, which means PNIA issuing a number to every child at birth registration, a change in another body. Reviewer: Opus · high | analysis | open judgement · Fable · max | 1, 2 | 3.5, 4.5, 5.6 (example 8.3) |
+[7] paper:71 -> ../../gitbook/start-here/progressa.md:44 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:44
+     | Context: today enrolment is on paper at the school; the head teacher keys it into district EMIS; the same child may appear in a district file, a provincial secondary file and the examinations authority's candidate list with different spellings. The Education Sector Plan calls for the Progressa Learner Registry (PLR). Linkup exists but MoEYS is not a member. The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require. PNIA covers 78% of adults but issues child IDs only at 16; birth registration is at 71%. Head teachers are unionised and resisted the last EMIS change. The Minister wants a 'one learner, one record' announcement within 12 months.
+[8] paper:72 -> ../../gitbook/start-here/progressa.md:14 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:14
+     | The problem the minister feels: a learner is registered three times — in the school census, by the Examinations Authority, and by a social grant programme — and none of the lists agree. A parent proves the child's identity on paper at every counter. The minister has promised a **single learner record** that follows the child from primary school to university, and it cannot be delivered because the systems do not fit together. That is the stalled flagship.
+[9] paper:74 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:38 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:38
+     | | **It touches all four KPs without belonging to any one of them** | KP1: the flagship and the gap register. KP2: MoEYS reads across Linkup, which it has not yet joined. KP3: identity and registries, and the hard question of what identifies a learner. KP4: the documents up to one goal written in full, using KP4's toolkit blanks |
+[10] paper:75 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:39 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:39
+     | | **It has a real open judgement in it** | PNIA issues child IDs only at 16, and birth registration covers 71%. What identifies a learner has two serious positions with a case on each side (section 5.3), the kind of open judgement example 8.3 needs |
+[11] paper:80 -> ../../gitbook/start-here/progressa.md:35 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:35
+     | 1. Progressa Learner Registry (PLR) (MoEYS): planned, USD 6.5m over 3 years (World Bank human-capital programme). Needs: learner identity (link to National ID), school facility data, data exchange with PNIA and examinations authority, parental consent.
+[12] paper:83 -> ../../gitbook/start-here/progressa.md:78 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:78
+     | | Civil Registration Act | in force | enacted | Civil Registration Department | Birth registration is the legal identity anchor for a child; PNIA issues IDs only at 16 |
+[13] paper:85 -> ../../gitbook/start-here/progressa.md:73 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:73
+     | | Data Protection Act | 2023 | enacted | Data Protection Commission (6 staff, no enforcement action yet) | A legal basis is needed to share a minor's data; parental consent for any use the law does not require |
+[14] paper:87 -> CONSTANTS.md:7 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/plr-prototype/CONSTANTS.md:7
+     | The project builds a clickable prototype of "one learner, one record" for Progressa's Ministry of Education, Youth and Sports, so that head teachers, PNIA, PNEA and the Data Protection Commission can agree what the Progressa Learner Registry means in practice. It is a prototype for agreement, not the registry itself. Its record (instructions, reports, reviews, the ledger, a handover note) is what Modules 3 to 5 of KP0 teach from.
+[15] paper:88 -> CONSTANTS.md:7 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/plr-prototype/CONSTANTS.md:7
+     | The project builds a clickable prototype of "one learner, one record" for Progressa's Ministry of Education, Youth and Sports, so that head teachers, PNIA, PNEA and the Data Protection Commission can agree what the Progressa Learner Registry means in practice. It is a prototype for agreement, not the registry itself. Its record (instructions, reports, reviews, the ledger, a handover note) is what Modules 3 to 5 of KP0 teach from.
+[16] paper:92 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:219 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:219
+     | | A conclusion that contradicts the asker | PLR-003 must be free to conclude against PNIA's preference and against MoEYS's. Whatever it concludes, the decision stays human |
+[17] paper:94 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+     | | G1 | **Enrol a learner** | A school clerk at a primary school | The PLR is searched first, so a learner already on it is found, not entered again. If not found, the birth record is looked up at Civil Registration across Linkup. A child with no birth record is enrolled with the flag *identity to be confirmed* and referred. The parent's identity is confirmed through PNIA's e-KYC. Consent is recorded for any use the law does not require. A PLR number is issued |
+[18] paper:99 -> ../../gitbook/start-here/progressa.md:44 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:44
+     | Context: today enrolment is on paper at the school; the head teacher keys it into district EMIS; the same child may appear in a district file, a provincial secondary file and the examinations authority's candidate list with different spellings. The Education Sector Plan calls for the Progressa Learner Registry (PLR). Linkup exists but MoEYS is not a member. The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require. PNIA covers 78% of adults but issues child IDs only at 16; birth registration is at 71%. Head teachers are unionised and resisted the last EMIS change. The Minister wants a 'one learner, one record' announcement within 12 months.
+[19] paper:102 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:81 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:81
+     | the grant programme's list, with known numbers of spelling variants and duplicates seeded in. About 29% of
+[20] paper:102 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:82 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:82
+     | the children have no birth registration number, matching Progressa's 71%. No real name, no real number, no
+[21] paper:117 -> ../../gitbook/start-here/progressa.md:44 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:44
+     | Context: today enrolment is on paper at the school; the head teacher keys it into district EMIS; the same child may appear in a district file, a provincial secondary file and the examinations authority's candidate list with different spellings. The Education Sector Plan calls for the Progressa Learner Registry (PLR). Linkup exists but MoEYS is not a member. The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require. PNIA covers 78% of adults but issues child IDs only at 16; birth registration is at 71%. Head teachers are unionised and resisted the last EMIS change. The Minister wants a 'one learner, one record' announcement within 12 months.
+[22] paper:119 -> ../../gitbook/start-here/progressa.md:78 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:78
+     | | Civil Registration Act | in force | enacted | Civil Registration Department | Birth registration is the legal identity anchor for a child; PNIA issues IDs only at 16 |
+[23] paper:122 -> ../../gitbook/start-here/progressa.md:78 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:78
+     | | Civil Registration Act | in force | enacted | Civil Registration Department | Birth registration is the legal identity anchor for a child; PNIA issues IDs only at 16 |
+[24] paper:126 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+     | | G1 | **Enrol a learner** | A school clerk at a primary school | The PLR is searched first, so a learner already on it is found, not entered again. If not found, the birth record is looked up at Civil Registration across Linkup. A child with no birth record is enrolled with the flag *identity to be confirmed* and referred. The parent's identity is confirmed through PNIA's e-KYC. Consent is recorded for any use the law does not require. A PLR number is issued |
+[25] paper:127 -> ../../gitbook/start-here/progressa.md:44 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:44
+     | Context: today enrolment is on paper at the school; the head teacher keys it into district EMIS; the same child may appear in a district file, a provincial secondary file and the examinations authority's candidate list with different spellings. The Education Sector Plan calls for the Progressa Learner Registry (PLR). Linkup exists but MoEYS is not a member. The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require. PNIA covers 78% of adults but issues child IDs only at 16; birth registration is at 71%. Head teachers are unionised and resisted the last EMIS change. The Minister wants a 'one learner, one record' announcement within 12 months.
+[26] paper:130 -> ../../gitbook/start-here/progressa.md:53 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:53
+     | - Civil Registration Department (under Ministry of Interior)
+[27] paper:132 -> ../../gitbook/start-here/progressa.md:24 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:24
+     | Progressa is a lower-middle-income country of 16.8 million people (median age 18.7). It joined GovStack in 2024 and is a 50-in-5 DPI pilot country. The Digital Transformation Roadmap 2024–2030 is awaiting cabinet approval; it was drafted by the Progressa Digital Government Authority (PDGA), a unit under the Ministry of ICT with a coordinating but not binding mandate.
+[28] paper:133 -> ../../gitbook/start-here/progressa.md:57 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:57
+     | - No EA Governance Board exists; an ICT Steering Committee met twice in 2024 and not since
+[29] paper:135 -> ../../gitbook/start-here/progressa.md:44 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:44
+     | Context: today enrolment is on paper at the school; the head teacher keys it into district EMIS; the same child may appear in a district file, a provincial secondary file and the examinations authority's candidate list with different spellings. The Education Sector Plan calls for the Progressa Learner Registry (PLR). Linkup exists but MoEYS is not a member. The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require. PNIA covers 78% of adults but issues child IDs only at 16; birth registration is at 71%. Head teachers are unionised and resisted the last EMIS change. The Minister wants a 'one learner, one record' announcement within 12 months.
+[30] paper:139 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+     | | G1 | **Enrol a learner** | A school clerk at a primary school | The PLR is searched first, so a learner already on it is found, not entered again. If not found, the birth record is looked up at Civil Registration across Linkup. A child with no birth record is enrolled with the flag *identity to be confirmed* and referred. The parent's identity is confirmed through PNIA's e-KYC. Consent is recorded for any use the law does not require. A PLR number is issued |
+[31] paper:140 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:69 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:69
+     | | G2 | **Move a learner to another school** | The receiving school's clerk | The record follows the child: the learner keeps the same number and the same history |
+[32] paper:141 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:71 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:71
+     | | V1 | **The planning unit's figures** | The planning unit of MoEYS | Learners on the PLR, duplicates caught at enrolment, enrolled learners without a birth record. These are the figures someone will quote (condition 3) |
+[33] paper:152 -> ../../gitbook/start-here/progressa.md:12 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:12
+     | Progressa's education sector has five bodies that matter. The Ministry of Education, Youth and Skills (MoEYS) sets policy and funds schools. The Progressa National Examinations Authority (PNEA) runs examinations and certifies results. The Progressa Learner Registry (PLR) is the single list of learners the Education Sector Plan calls for — planned, not started; today three bodies keep their own. The Progressa National ID Authority (PNIA) owns the person identity every sector reuses. And the Progressa Digital Government Authority (PDGA) runs the shared data-exchange backbone (Linkup) and coordinates payments (PayPro). A policy unit, a service authority, two registries and a shared-platform provider.
+[34] paper:153 -> ../../gitbook/start-here/progressa.md:35 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:35
+     | 1. Progressa Learner Registry (PLR) (MoEYS): planned, USD 6.5m over 3 years (World Bank human-capital programme). Needs: learner identity (link to National ID), school facility data, data exchange with PNIA and examinations authority, parental consent.
+[35] paper:157 -> ../../gitbook/start-here/progressa.md:26 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:26
+     | Identity: the Progressa National ID Authority (PNIA) has rolled out the National ID since 2018 (78% adult coverage) and runs an e-KYC platform since 2024. The Ministry of Education, Youth and Skills (MoEYS) keeps district-level EMIS records with its own learner numbering; the Social Protection Agency runs a separate beneficiary register built in 2016 by a vendor under a World Bank programme, with the vendor still holding the only maintenance contract; the Ministry of Health's patient index uses yet another identifier.
+[36] paper:158 -> ../../gitbook/start-here/progressa.md:14 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:14
+     | The problem the minister feels: a learner is registered three times — in the school census, by the Examinations Authority, and by a social grant programme — and none of the lists agree. A parent proves the child's identity on paper at every counter. The minister has promised a **single learner record** that follows the child from primary school to university, and it cannot be delivered because the systems do not fit together. That is the stalled flagship.
+[37] paper:162 -> ../../gitbook/start-here/progressa.md:42 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:42
+     | Question: should MoEYS move to a Once-Only model for learner data, so that a parent enrolling a child in school never re-supplies information already held by civil registration, PNIA or a previous school?
+[38] paper:164 -> ../../gitbook/start-here/progressa.md:63 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:63
+     | 1. Digital Transformation Roadmap 2024–2030 (draft, PDGA): a strategy with 5 pillars (connectivity, DPI, services, skills, governance); lists priority projects; contains a short 'guiding principles' section (8 principles including user-centricity, once-only, open standards).
+[39] paper:165 -> ../../gitbook/start-here/progressa.md:14 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:14
+     | The problem the minister feels: a learner is registered three times — in the school census, by the Examinations Authority, and by a social grant programme — and none of the lists agree. A parent proves the child's identity on paper at every counter. The minister has promised a **single learner record** that follows the child from primary school to university, and it cannot be delivered because the systems do not fit together. That is the stalled flagship.
+[40] paper:168 -> ../../gitbook/start-here/progressa.md:14 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:14
+     | The problem the minister feels: a learner is registered three times — in the school census, by the Examinations Authority, and by a social grant programme — and none of the lists agree. A parent proves the child's identity on paper at every counter. The minister has promised a **single learner record** that follows the child from primary school to university, and it cannot be delivered because the systems do not fit together. That is the stalled flagship.
+[41] paper:172 -> ../../gitbook/start-here/progressa.md:66 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:66
+     | 4. PNIA National ID and e-KYC (2018/2024): operational identity foundation, 78% adult coverage; API documented; no sector adoption framework.
+[42] paper:173 -> ../../gitbook/start-here/progressa.md:28 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:28
+     | Data exchange: Linkup, an X-Road 7.x deployment, went live in 2025 in pilot with four members (PNIA, the business register, the tax authority, PDGA). The tax-to-business-register link was built as a direct database link in 2022 before Linkup existed and has not been migrated. MoEYS and Health exchange data by spreadsheet on request.
+[43] paper:191 -> ../../gitbook/start-here/progressa.md:73 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:73
+     | | Data Protection Act | 2023 | enacted | Data Protection Commission (6 staff, no enforcement action yet) | A legal basis is needed to share a minor's data; parental consent for any use the law does not require |
+[44] paper:191 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+     | | G1 | **Enrol a learner** | A school clerk at a primary school | The PLR is searched first, so a learner already on it is found, not entered again. If not found, the birth record is looked up at Civil Registration across Linkup. A child with no birth record is enrolled with the flag *identity to be confirmed* and referred. The parent's identity is confirmed through PNIA's e-KYC. Consent is recorded for any use the law does not require. A PLR number is issued |
+[45] paper:191 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:70 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:70
+     | | G3 | **Register an examination candidate from the PLR** | A PNEA officer | PNEA reads the learner across Linkup, and receives only the fields its legal basis allows. A field without a basis is refused, and the refusal is logged |
+[46] paper:191 -> ../KP0_Module2_Script_Bundle_v0.1.md:140 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Module2_Script_Bundle_v0.1.md:140
+     | May be out of date: section 7 does not say whether the Data Protection Commission has issued guidance since 12 October 2026. Not in the pack: the examinations authority's own legal mandate to hold learner data.
+[47] paper:191 -> ../KP0_Module2_Script_Bundle_v0.1.md:140 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Module2_Script_Bundle_v0.1.md:140
+     | May be out of date: section 7 does not say whether the Data Protection Commission has issued guidance since 12 October 2026. Not in the pack: the examinations authority's own legal mandate to hold learner data.
+[48] paper:192 -> ../../gitbook/start-here/progressa.md:44 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:44
+     | Context: today enrolment is on paper at the school; the head teacher keys it into district EMIS; the same child may appear in a district file, a provincial secondary file and the examinations authority's candidate list with different spellings. The Education Sector Plan calls for the Progressa Learner Registry (PLR). Linkup exists but MoEYS is not a member. The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require. PNIA covers 78% of adults but issues child IDs only at 16; birth registration is at 71%. Head teachers are unionised and resisted the last EMIS change. The Minister wants a 'one learner, one record' announcement within 12 months.
+[49] paper:192 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+     | | G1 | **Enrol a learner** | A school clerk at a primary school | The PLR is searched first, so a learner already on it is found, not entered again. If not found, the birth record is looked up at Civil Registration across Linkup. A child with no birth record is enrolled with the flag *identity to be confirmed* and referred. The parent's identity is confirmed through PNIA's e-KYC. Consent is recorded for any use the law does not require. A PLR number is issued |
+[50] paper:193 -> ../../gitbook/start-here/progressa.md:44 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:44
+     | Context: today enrolment is on paper at the school; the head teacher keys it into district EMIS; the same child may appear in a district file, a provincial secondary file and the examinations authority's candidate list with different spellings. The Education Sector Plan calls for the Progressa Learner Registry (PLR). Linkup exists but MoEYS is not a member. The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require. PNIA covers 78% of adults but issues child IDs only at 16; birth registration is at 71%. Head teachers are unionised and resisted the last EMIS change. The Minister wants a 'one learner, one record' announcement within 12 months.
+[51] paper:193 -> ../../gitbook/start-here/progressa.md:28 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:28
+     | Data exchange: Linkup, an X-Road 7.x deployment, went live in 2025 in pilot with four members (PNIA, the business register, the tax authority, PDGA). The tax-to-business-register link was built as a direct database link in 2022 before Linkup existed and has not been migrated. MoEYS and Health exchange data by spreadsheet on request.
+[52] paper:193 -> ../../gitbook/start-here/progressa.md:53 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:53
+     | - Civil Registration Department (under Ministry of Interior)
+[53] paper:193 -> ../../gitbook/start-here/progressa.md:78 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:78
+     | | Civil Registration Act | in force | enacted | Civil Registration Department | Birth registration is the legal identity anchor for a child; PNIA issues IDs only at 16 |
+[54] paper:193 -> ../../gitbook/start-here/progressa.md:52 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:52
+     | - PNIA Director (National ID; owner of the identity register)
+[55] paper:193 -> ../../gitbook/start-here/progressa.md:78 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:78
+     | | Civil Registration Act | in force | enacted | Civil Registration Department | Birth registration is the legal identity anchor for a child; PNIA issues IDs only at 16 |
+[56] paper:193 -> ../../gitbook/start-here/progressa.md:76 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:76
+     | | Digital Transformation Roadmap 2024–2030 | 2024 | draft, awaiting cabinet | PDGA | Not yet binding, and PDGA's mandate coordinates rather than binds |
+[57] paper:194 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+     | | G1 | **Enrol a learner** | A school clerk at a primary school | The PLR is searched first, so a learner already on it is found, not entered again. If not found, the birth record is looked up at Civil Registration across Linkup. A child with no birth record is enrolled with the flag *identity to be confirmed* and referred. The parent's identity is confirmed through PNIA's e-KYC. Consent is recorded for any use the law does not require. A PLR number is issued |
+[58] paper:194 -> ../../gitbook/start-here/progressa.md:44 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:44
+     | Context: today enrolment is on paper at the school; the head teacher keys it into district EMIS; the same child may appear in a district file, a provincial secondary file and the examinations authority's candidate list with different spellings. The Education Sector Plan calls for the Progressa Learner Registry (PLR). Linkup exists but MoEYS is not a member. The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require. PNIA covers 78% of adults but issues child IDs only at 16; birth registration is at 71%. Head teachers are unionised and resisted the last EMIS change. The Minister wants a 'one learner, one record' announcement within 12 months.
+[59] paper:196 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+     | | G1 | **Enrol a learner** | A school clerk at a primary school | The PLR is searched first, so a learner already on it is found, not entered again. If not found, the birth record is looked up at Civil Registration across Linkup. A child with no birth record is enrolled with the flag *identity to be confirmed* and referred. The parent's identity is confirmed through PNIA's e-KYC. Consent is recorded for any use the law does not require. A PLR number is issued |
+[60] paper:196 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:71 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:71
+     | | V1 | **The planning unit's figures** | The planning unit of MoEYS | Learners on the PLR, duplicates caught at enrolment, enrolled learners without a birth record. These are the figures someone will quote (condition 3) |
+[61] paper:196 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:85 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:85
+     | **Civil Registration, PNIA and Linkup are simulated in the browser.** Each answers from the fixtures and
+[62] paper:196 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:81 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:81
+     | the grant programme's list, with known numbers of spelling variants and duplicates seeded in. About 29% of
+[63] paper:197 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:69 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:69
+     | | G2 | **Move a learner to another school** | The receiving school's clerk | The record follows the child: the learner keeps the same number and the same history |
+[64] paper:198 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:70 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:70
+     | | G3 | **Register an examination candidate from the PLR** | A PNEA officer | PNEA reads the learner across Linkup, and receives only the fields its legal basis allows. A field without a basis is refused, and the refusal is logged |
+[65] paper:198 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:70 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:70
+     | | G3 | **Register an examination candidate from the PLR** | A PNEA officer | PNEA reads the learner across Linkup, and receives only the fields its legal basis allows. A field without a basis is refused, and the refusal is logged |
+[66] paper:199 -> ../../gitbook/start-here/progressa.md:26 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:26
+     | Identity: the Progressa National ID Authority (PNIA) has rolled out the National ID since 2018 (78% adult coverage) and runs an e-KYC platform since 2024. The Ministry of Education, Youth and Skills (MoEYS) keeps district-level EMIS records with its own learner numbering; the Social Protection Agency runs a separate beneficiary register built in 2016 by a vendor under a World Bank programme, with the vendor still holding the only maintenance contract; the Ministry of Health's patient index uses yet another identifier.
+[67] paper:199 -> ../../gitbook/start-here/progressa.md:14 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:14
+     | The problem the minister feels: a learner is registered three times — in the school census, by the Examinations Authority, and by a social grant programme — and none of the lists agree. A parent proves the child's identity on paper at every counter. The minister has promised a **single learner record** that follows the child from primary school to university, and it cannot be delivered because the systems do not fit together. That is the stalled flagship.
+[68] paper:199 -> ../../gitbook/start-here/progressa.md:12 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:12
+     | Progressa's education sector has five bodies that matter. The Ministry of Education, Youth and Skills (MoEYS) sets policy and funds schools. The Progressa National Examinations Authority (PNEA) runs examinations and certifies results. The Progressa Learner Registry (PLR) is the single list of learners the Education Sector Plan calls for — planned, not started; today three bodies keep their own. The Progressa National ID Authority (PNIA) owns the person identity every sector reuses. And the Progressa Digital Government Authority (PDGA) runs the shared data-exchange backbone (Linkup) and coordinates payments (PayPro). A policy unit, a service authority, two registries and a shared-platform provider.
+[69] paper:200 -> ../../gitbook/start-here/progressa.md:44 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:44
+     | Context: today enrolment is on paper at the school; the head teacher keys it into district EMIS; the same child may appear in a district file, a provincial secondary file and the examinations authority's candidate list with different spellings. The Education Sector Plan calls for the Progressa Learner Registry (PLR). Linkup exists but MoEYS is not a member. The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require. PNIA covers 78% of adults but issues child IDs only at 16; birth registration is at 71%. Head teachers are unionised and resisted the last EMIS change. The Minister wants a 'one learner, one record' announcement within 12 months.
+[70] paper:200 -> CONSTANTS.md:13 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/plr-prototype/CONSTANTS.md:13
+     | | the hosted prototype: goals G1 to G3 and view V1, on invented data | 30 November 2026 | the owner's ruling of 26 October 2026 on the plan `../KP0_Orchestrate_Demo_App_Plan_v0.1.md`, sections 2 and 5.1 |
+[71] paper:230 -> ../../gitbook/start-here/progressa.md:35 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:35
+     | 1. Progressa Learner Registry (PLR) (MoEYS): planned, USD 6.5m over 3 years (World Bank human-capital programme). Needs: learner identity (link to National ID), school facility data, data exchange with PNIA and examinations authority, parental consent.
+[72] paper:255 -> ../../gitbook/start-here/progressa.md:35 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:35
+     | 1. Progressa Learner Registry (PLR) (MoEYS): planned, USD 6.5m over 3 years (World Bank human-capital programme). Needs: learner identity (link to National ID), school facility data, data exchange with PNIA and examinations authority, parental consent.
+[73] paper:260 -> ../../gitbook/start-here/progressa.md:76 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:76
+     | | Digital Transformation Roadmap 2024–2030 | 2024 | draft, awaiting cabinet | PDGA | Not yet binding, and PDGA's mandate coordinates rather than binds |
+[74] paper:275 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:186 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:186
+     | | PLR-004 | The groundwork: states, code lists, settings, the contract of each simulated body, the fields each reader may receive and on what basis. Waits for PLR-003 | drafting | exact · Opus · high | 1, 2 | 5.2 |
+[75] paper:284 -> ../../gitbook/start-here/progressa.md:35 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:35
+     | 1. Progressa Learner Registry (PLR) (MoEYS): planned, USD 6.5m over 3 years (World Bank human-capital programme). Needs: learner identity (link to National ID), school facility data, data exchange with PNIA and examinations authority, parental consent.
+[76] paper:285 -> ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+     | | G1 | **Enrol a learner** | A school clerk at a primary school | The PLR is searched first, so a learner already on it is found, not entered again. If not found, the birth record is looked up at Civil Registration across Linkup. A child with no birth record is enrolled with the flag *identity to be confirmed* and referred. The parent's identity is confirmed through PNIA's e-KYC. Consent is recorded for any use the law does not require. A PLR number is issued |
+[77] paper:294 -> ../../gitbook/start-here/progressa.md:78 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:78
+     | | Civil Registration Act | in force | enacted | Civil Registration Department | Birth registration is the legal identity anchor for a child; PNIA issues IDs only at 16 |
+[78] paper:295 -> ../../gitbook/start-here/progressa.md:44 [ok]
+     /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/gitbook/start-here/progressa.md:44
+     | Context: today enrolment is on paper at the school; the head teacher keys it into district EMIS; the same child may appear in a district file, a provincial secondary file and the examinations authority's candidate list with different spellings. The Education Sector Plan calls for the Progressa Learner Registry (PLR). Linkup exists but MoEYS is not a member. The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require. PNIA covers 78% of adults but issues child IDs only at 16; birth registration is at 71%. Head teachers are unionised and resisted the last EMIS change. The Minister wants a 'one learner, one record' announcement within 12 months.
+citations: 78
+== 2. Every quotation against the line(s) cited after it ==
+NO-CITATION  “curly quotes”
+FOUND        “issues child IDs only at 16; birth registration is at 71%” at ../../gitbook/start-here/progressa.md:44
+FOUND        “owns the person identity every
+sector reuses” at ../../gitbook/start-here/progressa.md:12
+FOUND        “its own learner
+numbering” at ../../gitbook/start-here/progressa.md:26
+FOUND        “none of the
+lists agree” at ../../gitbook/start-here/progressa.md:14
+FOUND        “the PLR issues its own number at first enrolment and holds the birth registration number
+  where one exists” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:185
+FOUND        “the national identity is the key, which means PNIA issuing a number to every child at
+  birth registration, a change in another body” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:185
+FOUND        “a 'one learner, one record' announcement within 12 months” at ../../gitbook/start-here/progressa.md:44
+FOUND        “that follows the child from primary school
+to university” at ../../gitbook/start-here/progressa.md:14
+FOUND        “the hard question of what identifies a learner” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:38
+FOUND        “What identifies a learner has two serious
+positions with a case on each side” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:39
+FOUND        “learner identity (link to National ID)” at ../../gitbook/start-here/progressa.md:35
+FOUND        “Birth registration is the legal identity anchor for a child” at ../../gitbook/start-here/progressa.md:78
+FOUND        “A legal basis is needed to share a minor's data; parental consent
+  for any use the law does not require” at ../../gitbook/start-here/progressa.md:73
+FOUND        “It is a prototype for agreement, not the registry itself.” at CONSTANTS.md:7, CONSTANTS.md:7
+FOUND        “must be free to conclude against
+PNIA's preference and against MoEYS's” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:219
+FOUND        “A PLR number is issued” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+FOUND        “birth registration is at 71%” at ../../gitbook/start-here/progressa.md:44
+FOUND        “About
+29% of” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:81
+FOUND        “the children have no birth registration number, matching Progressa's 71%” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:82
+FOUND        “issues child IDs only at 16” at ../../gitbook/start-here/progressa.md:44
+FOUND        “PNIA issues IDs only at 16” at ../../gitbook/start-here/progressa.md:78
+FOUND        “Birth registration is the legal identity anchor for a
+   child” at ../../gitbook/start-here/progressa.md:78
+FOUND        “A child with no birth record is enrolled with the flag” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+FOUND        “at 71%” at ../../gitbook/start-here/progressa.md:44
+FOUND        “under Ministry of Interior” at ../../gitbook/start-here/progressa.md:53
+FOUND        “a coordinating but not binding mandate” at ../../gitbook/start-here/progressa.md:24
+FOUND        “No EA Governance Board exists; an ICT Steering
+   Committee met twice in 2024 and not since” at ../../gitbook/start-here/progressa.md:57
+FOUND        “The Minister wants a 'one learner, one record' announcement
+   within 12 months” at ../../gitbook/start-here/progressa.md:44
+FOUND        “so a learner already on it is
+   found, not entered again” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+FOUND        “A PLR number is issued” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+FOUND        “the learner keeps the same number and the
+   same history” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:69
+FOUND        “enrolled learners
+   without a birth record” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:71
+FOUND        “owns the person identity every sector reuses” at ../../gitbook/start-here/progressa.md:12
+FOUND        “learner
+   identity (link to National ID)” at ../../gitbook/start-here/progressa.md:35
+FOUND        “keeps district-level EMIS
+   records with its own learner numbering” at ../../gitbook/start-here/progressa.md:26
+FOUND        “the Ministry of Health's patient index uses yet
+   another identifier” at ../../gitbook/start-here/progressa.md:26
+FOUND        “a learner is registered three
+   times” at ../../gitbook/start-here/progressa.md:14
+FOUND        “none of the lists agree” at ../../gitbook/start-here/progressa.md:14
+FOUND        “a parent
+   enrolling a child in school never re-supplies information already held by civil registration, PNIA
+   or a previous school” at ../../gitbook/start-here/progressa.md:42
+FOUND        “8 principles including user-centricity, once-only, open standards” at ../../gitbook/start-here/progressa.md:63
+FOUND        “A parent proves the child's identity on paper
+   at every counter” at ../../gitbook/start-here/progressa.md:14
+FOUND        “that
+   follows the child from primary school to university” at ../../gitbook/start-here/progressa.md:14
+FOUND        “API documented” at ../../gitbook/start-here/progressa.md:66
+FOUND        “four members (PNIA,
+   the business register, the tax authority, PDGA)” at ../../gitbook/start-here/progressa.md:28
+FOUND        “A legal basis is needed to share a minor's data; parental consent for any use the law does not require” at ../../gitbook/start-here/progressa.md:73
+FOUND        “receives only the fields its legal basis allows” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:70
+FOUND        “Not in the pack: the examinations authority's own legal mandate to hold learner data.” at ../KP0_Module2_Script_Bundle_v0.1.md:140
+FOUND        “birth registration is at 71%” at ../../gitbook/start-here/progressa.md:44
+FOUND        “Linkup exists but MoEYS is not a member.” at ../../gitbook/start-here/progressa.md:44
+FOUND        “four members (PNIA, the business register, the tax authority, PDGA)” at ../../gitbook/start-here/progressa.md:28
+FOUND        “owner of the identity register” at ../../gitbook/start-here/progressa.md:52
+FOUND        “coordinates rather than binds” at ../../gitbook/start-here/progressa.md:76
+FOUND        “so a learner already on it is found, not entered again” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+FOUND        “with different spellings” at ../../gitbook/start-here/progressa.md:44
+FOUND        “A PLR number” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:68
+FOUND        “enrolled learners without a birth record” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:71
+FOUND        “Civil Registration, PNIA and Linkup are simulated in the browser.” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:85
+FOUND        “the learner keeps the same number and the same history” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:69
+FOUND        “receives only the fields its legal basis allows” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:70
+FOUND        “its own learner numbering” at ../../gitbook/start-here/progressa.md:26
+FOUND        “yet another identifier” at ../../gitbook/start-here/progressa.md:26
+FOUND        “announcement within 12 months” at ../../gitbook/start-here/progressa.md:44
+FOUND        “30 November 2026” at CONSTANTS.md:13
+FOUND        “learner identity
+   (link to National ID)” at ../../gitbook/start-here/progressa.md:35
+FOUND        “USD 6.5m over 3 years” at ../../gitbook/start-here/progressa.md:35
+FOUND        “Not yet binding” at ../../gitbook/start-here/progressa.md:76
+FOUND        “Waits
+   for PLR-003” at ../KP0_Orchestrate_Demo_App_Plan_v0.1.md:186
+quotations checked: 68; not found at the cited line: 0
+RESULT: clean
+EXIT=0

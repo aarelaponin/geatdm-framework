@@ -235,6 +235,46 @@ sources:
     used_for: "the three debts summarised; cognitive offloading and cognitive surrender"
     tier: T3 practitioner
     pages: [2.4]
+  - key: kp0-llms-cannot-self-correct
+    title: "Large Language Models Cannot Self-Correct Reasoning Yet"
+    url: https://arxiv.org/abs/2310.01798
+    publisher: "Huang et al., ICLR"
+    date: "2024"
+    used_for: "models asked to check their own reasoning, with nothing new to go on, rarely find their errors"
+    tier: T2 independent research
+    pages: [3.1, 3.3]
+  - key: kp0-llm-as-a-judge
+    title: "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena"
+    url: https://arxiv.org/abs/2306.05685
+    publisher: "Zheng et al., NeurIPS"
+    date: "2023"
+    used_for: "self-enhancement bias: a model judge tends to favour its own answers"
+    tier: T2 independent research
+    pages: [3.3]
+  - key: kp0-building-effective-agents
+    title: "Building effective agents"
+    url: https://www.anthropic.com/engineering/building-effective-agents
+    publisher: "Anthropic Engineering"
+    date: "19 December 2024"
+    used_for: "the orchestrator-workers and evaluator-optimizer patterns"
+    tier: T3 vendor
+    pages: [3.1, 3.2]
+  - key: kp0-effective-harnesses
+    title: "Effective harnesses for long-running agents"
+    url: https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+    publisher: "Anthropic Engineering"
+    date: "26 November 2025"
+    used_for: "a progress file each fresh session reads, instead of a session's memory"
+    tier: T3 vendor
+    pages: [4.1, 4.3]
+  - key: kp0-checklist-manifesto
+    title: "The Checklist Manifesto"
+    url: https://atulgawande.com/book/the-checklist-manifesto/
+    publisher: "Atul Gawande, Metropolitan Books"
+    date: "2009"
+    used_for: "a short list of known failures, used every time, catches what experience misses"
+    tier: T2 independent research
+    pages: [4.2]
 
 # Go further, on the KP0 module home pages (not under Sources, so not checked by gitbook_qa; re-check them too).
 # The ITU course 'AI and digital transformation in government' was seen in the portfolio on 26 Oct 2026.

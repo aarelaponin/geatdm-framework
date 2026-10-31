@@ -2,7 +2,7 @@
 
 This folder holds the Knowledge Product that comes before the four others. It teaches a government team to
 work with an AI assistant, from one good chat to work handed over for days and checked by someone other than
-the one who did it. The plan is `KP0_Plan_v0.4.md`; the concept note is `ai-knowledge-product-layers.md`.
+the one who did it. The plan is `KP0_Plan_v0.4.md`, with the Orchestrate layer page by page in `KP0_Orchestrate_Section_Plan_v0.1.md`; the concept note is `ai-knowledge-product-layers.md`.
 
 KP0 differs from KP1 to KP4 in one way that shapes every file here: each subtopic is a **written page**, and each
 module has **one video**, a person on camera, covering its pages (plan, section 7).
@@ -14,7 +14,7 @@ module has **one video**, a person on camera, covering its pages (plan, section 
 | 0 | Introduction | 0.0 | V0 | — | not started |
 | 1 | Chat | 1.1 – 1.4 | V1 *The draft that looked right* | `build_kp0_module1_v01.js` | v0.1 draft, gate passed |
 | 2 | Prepare | 2.1 – 2.4 | V2 *Context once, then skills* | `build_kp0_module2_v01.js` | v0.1 draft, gate passed |
-| 3 – 5 | Orchestrate | — | V3 – V6 | — | not started |
+| 3 – 4 | Orchestrate | 3.1 – 3.4, 4.1 – 4.4 | V3 – V6 | — | scripts v0.1, bundles and GitBook pages written (31 Oct), not yet published; speakers' cases open |
 
 Each video's story beat is left to its speaker, who names a real case with a date before the cut is decided
 (plan, decision 4).

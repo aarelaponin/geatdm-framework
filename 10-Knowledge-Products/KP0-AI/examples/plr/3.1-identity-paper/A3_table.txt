@@ -1,0 +1,15 @@
+2026-10-28T17:17:25Z
+$ /usr/local/bin/python3.11 /Users/arnelaponin/Documents/Dev/orchestrator-local/plugins/fa-project-ops/skills/orchestrator/scripts/round_record.py run --record /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/plr-prototype/_working/PLR-003/_record -- /usr/local/bin/python3.11 /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/plr-prototype/_working/PLR-003/check_table.py /Users/arnelaponin/Documents/Dev/geatdm-framework/10-Knowledge-Products/KP0-AI/plr-prototype/docs/paper-what-identifies-a-learner.md
+header at paper:189: 3 columns: ['Test', "Position A — the PLR's own number, holding the birth registration number", 'Position B — the national identity is the key (PNIA issues at birth registration)']
+paper:191 "**T1. The law on a minor's data** — “A legal basis is needed to share " cells=3 lengths=[185, 575, 516] ok
+paper:192 '**T2. Coverage** — “birth registration is at 71%” (`../../gitbook/star' cells=3 lengths=[94, 220, 432] ok
+paper:193 '**T3. What another body must change, and who decides**' cells=3 lengths=[54, 573, 802] ok
+paper:194 '**T4. Duplicates caught at enrolment**' cells=3 lengths=[38, 485, 357] ok
+paper:195 '**T5. What is hard to reverse**' cells=3 lengths=[31, 312, 310] ok
+paper:196 '**T6a. The prototype — goal G1, enrol a learner**' cells=3 lengths=[49, 360, 479] ok
+paper:197 '**T6b. The prototype — goal G2, move a learner to another school**' cells=3 lengths=[66, 132, 165] ok
+paper:198 '**T6c. The prototype — goal G3, register an examination candidate from' cells=3 lengths=[80, 197, 241] ok
+paper:199 '**T7. The second number, and reuse across sectors**' cells=3 lengths=[51, 412, 374] ok
+paper:200 '**T8. Time against the promise** — “announcement within 12 months” (`.' cells=3 lengths=[173, 125, 249] ok
+test rows: 10; rows with a wrong cell count or an empty cell: 0
+EXIT=0
