@@ -484,7 +484,7 @@ body.push(...renderPage({
   ],
   inTool: [
     "Shown in Claude.",
-    "Installing one skill. Download the ea-plays kit from its public repository, and take the folder of the one skill you want; each skill folder is complete on its own. Read its files first, and try it on invented material, such as the Progressa practice material on these pages, before your own. Make a ZIP of that folder, keeping the folder's name, which must match the skill's name. Then, in Claude, open Customize, then Skills, choose +, and upload the ZIP. Open the skill's main file and read its header: the name and the one-paragraph description are what the assistant reads to decide when to use it. If the description does not match how your unit would ask, the skill will not be used when you expect.",
+    "Installing one skill. Download the ea-plays kit from its public repository, and take the folder of the one skill you want; each skill folder is complete on its own. Read its files first, and try it on invented material, such as the Progressa practice material on these pages, before your own. Make a ZIP of that folder, keeping the folder's name, which must match the skill's name. Then, in Claude, open Customize, then Skills, choose +, then Create skill, then Upload a skill, and choose the ZIP. Skills need code execution switched on: on a personal plan, under Settings, Capabilities; in an organisation's account, ask the administrator, who sets it for everyone. Open the skill's main file and read its header: the name and the one-paragraph description are what the assistant reads to decide when to use it. If the description does not match how your unit would ask, the skill will not be used when you expect.",
     "Connecting this knowledge base. This knowledge base is published on GitBook, and a published GitBook site offers a connector of its own: the site's address followed by /~gitbook/mcp. Add it in the settings as a custom connector. The assistant can then search and read this knowledge base's pages as they are published today. The connector can only read.",
     "Turning them off. Skills and connectors can be switched off in the settings, or for one chat in the tools menu. Switch off what a task does not need: fewer tools, like less context, gives a better answer."
   ],
@@ -556,7 +556,7 @@ body.push(...renderPage({
     "What goes into one chat is used once. What goes into a project, a memory, a skill or a connector is used by every later chat, and often by every colleague the setup is shared with. So the rules of Module 1 bind harder here. And a setup can bring in text that steers the assistant: a skill or a connected source written by someone else can carry instructions, so know who wrote each one.",
     "Nothing confidential goes into a setup: no records of citizens or learners, not even a sample, no unpublished cabinet papers, and no names of office-holders (posts, not names). A connector to a source that holds such data puts it within reach of every chat that uses the connector. And an assistant that remembers across chats can carry a detail from one conversation into another.",
     "Context goes stale. A file added in March is still read in October, and the assistant cannot tell that it has been replaced. Date every file, replace rather than add, and review the setup on a date written in the brief.",
-    "Write the intent down. The researcher Margaret-Anne Storey names three kinds of debt that work with assistants piles up. Technical debt lives in the code. Cognitive debt lives in people: work accepted that nobody in the team can explain. Intent debt lives in the documents: the goals and limits that were never written down, so neither the next colleague nor the assistant can follow them. A project brief that says what the unit is for, what it must never do and why, pays off intent debt. Without one, a setup runs on whatever the person who made it remembered."
+    "Write the intent down. The researcher Margaret-Anne Storey, in an article Martin Fowler summarises, names three kinds of debt that work with assistants piles up. Technical debt lives in the code. Cognitive debt lives in people: work accepted that nobody in the team can explain. Intent debt lives in the documents: the goals and limits that were never written down, so neither the next colleague nor the assistant can follow them. A project brief that says what the unit is for, what it must never do and why, pays off intent debt. Without one, a setup runs on whatever the person who made it remembered."
   ],
   inTool: [
     "Shown in Claude.",
@@ -616,8 +616,8 @@ body.push(...renderPage({
     ["Margaret-Anne Storey", "How generative and agentic AI shift concern from technical debt to cognitive debt"]
   ],
   sources: [
-    ["How generative and agentic AI shift concern from technical debt to cognitive debt", "Margaret-Anne Storey · 9 February 2026", "Technical, cognitive and intent debt"],
-    ["Fragments: April 2", "Martin Fowler · 2 April 2026", "The three debts summarised; cognitive offloading and cognitive surrender"],
+    ["How generative and agentic AI shift concern from technical debt to cognitive debt", "Margaret-Anne Storey · 9 February 2026", "Technical and cognitive debt"],
+    ["Fragments: April 2", "Martin Fowler · 2 April 2026", "Storey's three debts, intent debt among them; cognitive offloading and cognitive surrender"],
     ["AI Playbook for the UK Government", "GOV.UK · 10 February 2025", "Using the tools lawfully and responsibly; protecting data"]
   ]
 }));

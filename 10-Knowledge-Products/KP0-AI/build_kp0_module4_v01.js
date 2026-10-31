@@ -325,9 +325,9 @@ body.push(...renderPage({
       "The prototype was run with a plugin that starts each work chat on a timer (the sidebar of 4.4 says more). Each piece of work was also started by hand, and for two of the four the timer fired as well, so they ran twice. All four were writing in one shared folder. Two copies of the same work, and four pieces of work, were changing the same files at the same time.",
       "The owner withdrew all four and had them run again, one after another. Each was then accepted. The withdrawn rows stayed in the log, with the reason."
     ],
-    question: "What in the log would have shown the clash before it happened?",
+    question: "Read before each start, what in the log would have stopped the clash?",
     key: [
-      "Four rows saying 'instruction issued' at the same time, with no 'report back' between them: four pieces of work open at once. And, for two of them, the same version issued twice. A log read before each start shows what is already running, and a rule of 'one piece of work writes at a time' would have stopped the other three from starting at all.",
+      "Before the second start, a row saying 'instruction issued' with no 'report back' after it: a piece of work already open. Before the fourth, three such rows. A log read before each start shows what is already running, and a rule of 'one piece of work writes at a time' would have stopped the other three from starting at all. The double starts would then have had nothing to collide with; in the log, the same version issued twice is the sign of one.",
       "The lesson the record took: one piece of work writes at a time. Running in parallel saves minutes, and costs the whole round when two of them touch the same files."
     ]
   },
@@ -347,7 +347,7 @@ body.push(...renderPage({
     time: "~10 min",
     watch: "An answer that adds what the log does not say.",
     problem: "When you answer status questions from memory, you round off, forget the withdrawn work and remember the good news. The log does not.",
-    prompt: "Below is my work log, one row per event [paste the log, or attach it]. Use only the log; add nothing from anywhere else. For each piece of work, give: its latest version, its last event and date, whether it is open or closed, and, if open, who it is open with. Then give the totals: pieces of work closed, accepted at the first version, accepted after a second attempt, not accepted, and withdrawn. Then list anything in the log that looks wrong: two starts of the same version with no report between them, a verdict with no review row, a ruling with no verdict. Quote the rows. Output: the table, the totals, then the list.",
+    prompt: "Below is my work log, one row per event [paste the log, or attach it]. Use only the log; add nothing from anywhere else. For each piece of work, give: its latest version, its last event and date, whether it is open or closed, and, if open, who it is open with. Then give the totals: pieces of work closed, accepted at the first version, accepted after a second attempt, not accepted, and withdrawn. Then list anything in the log that looks wrong: two starts of the same version with no report between them, a verdict with no review row, a ruling with no verdict, a new version with no ruling before it. Quote the rows. Output: the table, the totals, then the list.",
     io: "Input: your log. Output: where each piece of work stands, the week's totals, and the rows that look wrong.",
     safeguard: "Compare the answer with what you remembered before you ran it. Where they differ, the log is the record; where the log is wrong, fix it with a new row that says why, never by deleting the old one.",
     practice: {
@@ -355,7 +355,7 @@ body.push(...renderPage({
         "A log of MoEYS's planning unit: '28 Oct, census count, v1, instruction issued. 28 Oct, census count, v1, report back. 29 Oct, census count, v1, review back, not accepted. 29 Oct, census count, v2, instruction issued. 29 Oct, school map, v1, instruction issued. 29 Oct, school map, v1, instruction issued. 30 Oct, census count, v2, report back.'"
       ],
       key: [
-        "Census count: version 2, report back on 30 October, open, waiting for its review. School map: version 1, issued twice on 29 October with no report: a possible double start, to check before anything else runs. Totals: nothing closed yet. A good run names the double start; a weak one counts the school map once and moves on."
+        "Census count: version 2, report back on 30 October, open, waiting for its review. School map: version 1, issued twice on 29 October with no report: a possible double start, to check before anything else runs. Census count again: version 2 was issued on 29 October with no 'my ruling' row after the review came back not accepted, so the decision to try again is not on record; add the ruling with its date. Totals: nothing closed yet. A good run names both; a weak one counts the school map once and moves on."
       ]
     }
   },
@@ -443,7 +443,7 @@ body.push(...renderPage({
   ],
   inTool: [
     "By hand, in any assistant. Write the note from the starter folder's handover form, in your own words or with the outgoing chat's help. Save it beside the log.",
-    "Open a new chat with memory off. Paste the first-task prompt, the note and the log. Read its answer: each claim marked holds or does not hold, with what it looked at. If it went further than checking, stop it: it was told to stop.",
+    "Open a new chat with memory off. Paste the first-task prompt, the note, the log, and every file a claim of the note names, such as a report or a review: the fresh chat can check a claim only against what it has been given. Read its answer: each claim marked holds or does not hold, with what it looked at. If it went further than checking, stop it: it was told to stop.",
     "Write a row in the log: 'handover', with the note's file name."
   ],
   aiTip: {

@@ -5,7 +5,7 @@ icon: house
 
 # Working with AI in Government
 
-Six modules · 22 written pages · seven short on-camera videos (in preparation) · an AI usage tip on every page · a self-check per module · self-paced · free and open
+Six modules · 22 written pages · an AI usage tipon every page · a self-check per module · self-paced · free and open
 
 This course teaches a government team to work with an AI assistant, from one good chat to work handed over for days and checked by someone other than the one who did it. It is written for public servants, most of them not developers, and assumes no programming and no command line.
 
@@ -25,7 +25,7 @@ Every page of the four other courses in this knowledge base ends with an AI usag
 *Pages live — every page of the module is written, with its tip and its self-check. In preparation — planned, not yet written.*
 
 {% hint style="success" %}
-**How the course works.** **Read** the page → **Do** what its *In the tool* half shows → **Run** its AI usage tip on your own work → **Compare** with the worked example for Progressa. Each module ends with a self-check. The videos, when they come, carry the stories from our own work that a page cannot; a learner who never watches one misses nothing that is taught.
+**How the course works.** **Read** the page → **Do** what its *In the tool* half shows → **Run** its AI usage tip on your own work → **Compare** with the worked example for Progressa. Each module ends with a self-check.
 {% endhint %}
 
 ## Audience — and the path for your role

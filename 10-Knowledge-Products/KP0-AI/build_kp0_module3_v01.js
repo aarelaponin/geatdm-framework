@@ -337,7 +337,7 @@ body.push(...renderPage({
   tryFirst: {
     title: "The paper that looked fair",
     body: [
-      "The registry prototype needed an answer to one question: what identifies a learner? A work chat wrote a paper that set two positions side by side. Position A: the registry gives each child its own number, and finds the child's birth record at the Civil Registration Department. Position B: the national ID authority issues every child a national number at birth, and the registry uses it. The Ministry is Progressa's Ministry of Education, Youth and Skills (MoEYS), which owns the registry. Bodies share data across a national data exchange, which some bodies have joined and some have not. The prototype simulates the other bodies, so that the registry can be tried before any of them has agreed to anything.",
+      "The registry prototype needed an answer to one question: what identifies a learner? A work chat wrote a paper that set two positions side by side. Position A: the registry gives each child its own number, and finds the child's birth record at the Civil Registration Department. Position B: the national ID authority issues every child a national number at birth, and the registry uses it. The Ministry is Progressa's Ministry of Education, Youth and Skills (MoEYS), which owns the registry. Bodies share data across a national data exchange. Neither the Civil Registration Department, which sits under another ministry, nor the Ministry has joined it yet. The prototype simulates the other bodies, so that the registry can be tried before any of them has agreed to anything.",
       "The paper compared the two in one table, position by test. The table had no empty cell. It carried 78 citations over 31 lines, and every citation held at its source. The work chat's own report said it had cross-checked every fact against both positions. By every check the work chat could run on itself, the paper was fair.",
       "Two cells, as the paper wrote them. B, on what the prototype shows: 'the simulation would show the ID authority issuing children's numbers it does not issue, before it has agreed'. A, on the same test: no such line. A, on the dependency on another body: 'within the Ministry's own authority'."
     ],
@@ -345,7 +345,7 @@ body.push(...renderPage({
     key: [
       "First: the prototype simulates bodies doing what they have not agreed to, and the paper counts this against B only. A does it too. Under A, the Civil Registration Department answers across the data exchange, which it has not joined, and the Ministry reads across it, though it is not a member either.",
       "Second: a dependency on a body the Ministry cannot oblige is counted against B, in the table and in the ground of the recommendation, but not against A. A depends on the Civil Registration Department, which sits under another ministry. The paper's own cross-check table claimed to count it against A, and the cell did not hold it.",
-      "A separate review chat found both, and the paper was not accepted. Look also at the length of the cells: B's are longer than A's, row after row. That lean is what a self-check cannot see, because the writer already knows what they meant."
+      "A separate review chat found both, and the paper was not accepted. The full table had one more lean, which the two cells above cannot show: B's cells were longer than A's, row after row. That lean is what a self-check cannot see, because the writer already knows what they meant."
     ]
   },
   concept: [
@@ -522,7 +522,7 @@ body.push(...renderPage({
     safeguard: "A review chat can agree for the wrong reason. Before you accept, find the figure it worked out again and check that its route really differs from the report's. If the review found nothing, treat that as a warning.",
     practice: {
       input: [
-        "A report from MoEYS's planning unit: 'Answer: 37 schools did not report enrolment in the 2026 census. Test T1 met: counted from the census file. Found, not fixed: none.' The census file lists 412 schools; 31 have no return at all and 6 have a return with the enrolment field empty."
+        "The instruction, from the practise tab of 3.2: 'Count the schools that did not report enrolment in the 2026 census and write a short paragraph for the Permanent Secretary. Material: the census file. Tests: the count is correct. Out of scope: none.' The report back from MoEYS's planning unit: 'Answer: 37 schools did not report enrolment in the 2026 census. Test T1 met: counted from the census file. Found, not fixed: none.' The census file lists 412 schools; 31 have no return at all and 6 have a return with the enrolment field empty."
       ],
       key: [
         "Not accepted. The figure 37 is 31 plus 6, so the report has counted two different things as one without saying so; the instruction needs to define 'did not report'. A good review works the figure out again by its own route, for example by listing the schools with no return separately from those with an empty field, and names the gap. A review that says 'T1 met, accepted' has only re-read the report."
