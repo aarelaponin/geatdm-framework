@@ -126,7 +126,7 @@ Building stays a PLR page and is not in the folder.
 
 ### Setting up your computer
 
-`START-HERE.md` opens with this list, and 3.2's **In the tool** walks through it before the first instruction is written. Each step is optional above the first. Each one takes some copying and pasting out of the cycle, and none of them changes the method.
+`START-HERE.md` opens with this list, and 3.2's **In the tool** walks through it before the first instruction is written. Each step is optional above the first. Each one saves some copying and pasting, and none of them changes the method.
 
 1. **The baseline: any assistant, in the browser.** Unzip the starter folder anywhere you can find it again. Turn memory off (section 2). Then paste the role prompt and the instruction into each chat, and save the reply into the folder yourself. This works in the ministry's approved assistant, whatever it is.
 2. **The Claude desktop app** (Windows or Mac). Chats sit beside your files rather than in a browser tab. A project holds the forms and your page of faults as its standing instructions, so you don't paste them each time (2.2). Make one project for the work chats and keep the review chat outside it, so the review does not see the work chat's project.

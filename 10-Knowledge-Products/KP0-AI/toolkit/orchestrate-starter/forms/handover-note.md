@@ -1,4 +1,4 @@
-# Handover note — <the work> · <date>
+# Handover note — [the work] · [date]
 
 *Write only what the files and the log cannot tell the next person. Leave out figures, a survey of the work and the story of the day. Every line is a claim someone can check.*
 

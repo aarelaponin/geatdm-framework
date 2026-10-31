@@ -7,7 +7,7 @@ icon: calendar
 
 **Written for:** the one who runs AI-assisted work day to day: the head of an ICT unit, a project lead, an analyst. No programming is assumed.
 
-Module 3 took one piece of work through the cycle once. Module 4 is for the person who runs the cycle every day, on several pieces of work, for weeks: a log that answers where the work stands, pages of faults that grow with every review, a handover to a fresh chat, and the setup and routine that keep it going.
+In Module 3 you took one piece of work through the cycle once. Module 4 is for running the cycle every day, on several pieces of work, for weeks: a log that answers where the work stands, pages of faults that grow with every review, a handover to a fresh chat, and the setup and routine that keep it going. The exercises come from the same project as Module 3, the registry prototype of the Progressa Learner Registry, which we built in October 2026 with this cycle, in its busiest days: by then it had many pieces of work under way, a chat in the orchestrator's role that had run for four days, and an owner deciding on each result.
 
 ## Pages
 

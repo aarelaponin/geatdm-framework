@@ -21,4 +21,3 @@ Accepted. The figure may go into the note: 20 of the 40 are caught from every en
 
 ## 5. Found, not fixed
 - The second start of the same piece of work, which the report raised, is for the owner to settle.
-- The work chat ran on a different model from the one the instruction named. The figures were checked independently, so the verdict does not turn on it.

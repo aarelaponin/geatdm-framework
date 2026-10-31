@@ -15,7 +15,7 @@
 | Self-check | Four questions drawn from the four pages, in section 2.1 |
 | Prepared by | FiscalAdmin OÜ |
 
-This bundle is the v0.1 working draft of Module 4 of KP0 — Working with AI in Government. Module 3 took one piece of work through the cycle once. Module 4 is for the person who runs the cycle every day, on several pieces of work, for weeks: a log that answers where the work stands, pages of faults that grow with every review, a handover to a fresh chat, and the setup and routine that keep it going. The register is plain English at about an eighth-grade level.
+This bundle is the v0.1 working draft of Module 4 of KP0 — Working with AI in Government. In Module 3 you took one piece of work through the cycle once. Module 4 is for running the cycle every day, on several pieces of work, for weeks: a log that answers where the work stands, pages of faults that grow with every review, a handover to a fresh chat, and the setup and routine that keep it going. The exercises come from the same project as Module 3, the registry prototype of the Progressa Learner Registry, which we built in October 2026 with this cycle, in its busiest days: by then it had many pieces of work under way, a chat in the orchestrator's role that had run for four days, and an owner deciding on each result. The register is plain English at about an eighth-grade level.
 
 ## 1. Document context
 
@@ -56,7 +56,7 @@ Four questions, drawn from the four pages. Questions 1 and 3 are multiple choice
 
 | # | Question | Model answer | Drawn from |
 | --- | --- | --- | --- |
-| 1 | Your director asks on Friday how many of this week's pieces of work were accepted. What do you do? (a) Answer from memory: you ran them all. (b) Ask the last work chat. (c) Count the verdict rows in the log, and give the figure with the withdrawn ones named. (d) Ask each review chat again. | (c). Status is produced from the log, never remembered. A figure from memory is quoted afterwards as fact, and nobody can find where it came from. | 4.1 The log |
+| 1 | Your director asks on Friday how many of this week's pieces of work were accepted. What do you do? (a) Answer from memory: you ran them all. (b) Ask the last work chat. (c) Count the 'my ruling' rows in the log, and give the figure with the withdrawn ones named. (d) Ask each review chat again. | (c). Status is produced from the log, never remembered. A figure from memory is quoted afterwards as fact, and nobody can find where it came from. | 4.1 The log |
 | 2 | A review of a drafting task finds that the draft supplied a figure the source does not carry. Your page of faults for drafting already says 'supply nothing the source does not carry'. What do you do with the finding, and what if the page did not say it? | The fault is already on the page, so it goes into version 2 of the instruction as a gap, and the page stays as it is. If the page did not carry it, add it to the page in the same sitting, so every later drafting instruction carries it. | 4.2 The faults you learn once |
 | 3 | You hand your work to a colleague for two weeks. What goes into the handover note? (a) Every figure so far, so they need not look. (b) A full story of the work. (c) What you did that you should not have done, what is owed, findings in no report, and a few claims to check first. (d) Nothing: the log says it all. | (c). The note carries only what the files cannot. Figures belong in the files, where they can be worked out again; a story cannot be checked; and the log does not record what you regret or what is owed. | 4.3 Handing over |
 | 4 | A colleague says: 'We ran it through the cycle, so the figure is true.' What does the pattern claim, and what does it not? | It does not make the output true, cheap or the same between runs. It makes each difference discussable and each failure countable: what was asked, what came back, how it was checked and who decided are all on file. | 4.4 Judgement |
@@ -83,9 +83,9 @@ Shown on the module's home page, apart from the sources: one to three things to 
 
 ### Try it first — The parallel mistake
 
-On 30 October 2026, four pieces of work on the registry prototype were ready to start: one for each of the prototype's four main tasks. The orchestrator recommended running all four at once to save time, and the owner agreed.
+On 30 October 2026, four pieces of work on the registry prototype were ready to start, each building one thing the prototype lets a user do: enrol a learner, move a learner to another school, register an examination candidate, and show the planning unit's figures. The chat in the orchestrator's role recommended running all four at once to save time, and the owner agreed.
 
-Each piece of work was started by hand, and a timer set to start it fired afterwards as well. Two of the four started twice in this way. All four were writing in one shared folder. Two copies of the same work, and four pieces of work, were changing the same files at the same time.
+The prototype was run with a plugin that starts each work chat on a timer (the sidebar of 4.4 says more). Each piece of work was also started by hand, and for two of the four the timer fired as well, so they ran twice. All four were writing in one shared folder. Two copies of the same work, and four pieces of work, were changing the same files at the same time.
 
 The owner withdrew all four and had them run again, one after another. Each was then accepted. The withdrawn rows stayed in the log, with the reason.
 
@@ -93,7 +93,7 @@ The owner withdrew all four and had them run again, one after another. Each was 
 
 **Answer key:**
 
-Two rows saying 'started' for the same piece of work and version, minutes apart, with no 'report back' between them. A log read before each start shows that a piece of work is already running, and a rule of 'one piece of work writes at a time' would have stopped the other three from starting at all.
+Four rows saying 'instruction issued' at the same time, with no 'report back' between them: four pieces of work open at once. And, for two of them, the same version issued twice. A log read before each start shows what is already running, and a rule of 'one piece of work writes at a time' would have stopped the other three from starting at all.
 
 The lesson the record took: one piece of work writes at a time. Running in parallel saves minutes, and costs the whole round when two of them touch the same files.
 
@@ -103,17 +103,17 @@ A log is one row per event. A piece of work is issued; its report comes back; it
 
 When anyone asks where the work stands, answer from the log, never from memory. A figure from memory is repeated as fact by people who were not there. A figure from the log can be produced again by anyone, and gives the same answer.
 
-Nothing is deleted. A withdrawn piece of work keeps its rows, with the reason. That way the log counts what really happened: the registry prototype closed 23 pieces of work in its first week, 13 of them accepted at the first version, 10 after a second attempt, and 4 withdrawn and run again. Expect about half of your work to need a second attempt. That is not failure; it is the review doing its job.
+Nothing is deleted. A withdrawn piece of work keeps its rows, with the reason. That way the log counts what really happened: the registry prototype closed 23 pieces of work in its first week, 26 to 30 October 2026: 13 accepted at the first version and 10 after a second attempt, 4 of those 10 being work that was withdrawn and run again. Expect nearly half of your work to need a second attempt. That is not failure; it is the review doing its job.
 
 One piece of work writes at a time. Two chats changing the same files at once is the one mistake the cycle cannot repair afterwards.
 
 ### In the tool
 
-By hand, in any spreadsheet. The starter folder's log has seven columns: date, piece of work, version, event, file, verdict or ruling, and who it is open with. Its event column offers five words: instruction issued, report back, review back, my ruling, withdrawn.
+By hand, in any spreadsheet. The starter folder's log has seven columns: date, piece of work, version, event, file, verdict or ruling, and who it is open with. Its event column offers six words: instruction issued, report back, review back, my ruling, withdrawn and handover.
 
 Write the row before you move on, not at the end of the day. Keep the log open beside the chats.
 
-To answer 'where does it stand?', filter the log by piece of work and read its last row. To count the week, count the ruling rows: accepted, not accepted, withdrawn.
+To answer 'where does it stand?', filter the log by piece of work and read its last row. To count the week, count the 'my ruling' rows: accepted, not accepted, withdrawn.
 
 ### AI usage tip — Answer 'where does it stand?' from the log alone
 
@@ -122,7 +122,7 @@ To answer 'where does it stand?', filter the log by piece of work and read its l
 **Prompt template (copy-paste into the assistant):**
 
 ```text
-Below is my work log, one row per event [paste the log, or attach it]. Use only the log; add nothing from anywhere else. For each piece of work, give: its latest version, its last event and date, whether it is open or closed, and, if open, who it is open with. Then give the totals: pieces of work closed, accepted at the first version, accepted after a second attempt, not accepted, and withdrawn. Then list anything in the log that looks wrong: two starts of the same version with no report between them, a verdict with no review row, a ruling with no verdict, a row with no file. Quote the rows. Output: the table, the totals, then the list.
+Below is my work log, one row per event [paste the log, or attach it]. Use only the log; add nothing from anywhere else. For each piece of work, give: its latest version, its last event and date, whether it is open or closed, and, if open, who it is open with. Then give the totals: pieces of work closed, accepted at the first version, accepted after a second attempt, not accepted, and withdrawn. Then list anything in the log that looks wrong: two starts of the same version with no report between them, a verdict with no review row, a ruling with no verdict. Quote the rows. Output: the table, the totals, then the list.
 ```
 
 **Inputs and outputs:** Input: your log. Output: where each piece of work stands, the week's totals, and the rows that look wrong.
@@ -176,7 +176,7 @@ So keep one page of faults for each kind of work you do. Each page says what the
 
 The pages grow. When a review finds a fault the page does not yet carry, add it to the page in the same sitting. Every later instruction of that kind copies the page's faults into its section on how the work can fail, so you learn each fault once and never pay for it again.
 
-A correction goes where the fact lives. If a review shows that a figure in your context pack is wrong, correct the pack, not the instruction that quoted it. Otherwise the next instruction quotes the same wrong figure.
+A correction goes where the fact lives. If a review shows that a figure in your context pack (the dated facts about your country and unit, from page 2.1) is wrong, correct the pack, not the instruction that quoted it. Otherwise the next instruction quotes the same wrong figure.
 
 ### In the tool
 
@@ -227,9 +227,9 @@ The page carries 'list the set first from its own source', which is close but no
 
 ### Try it first — The confessions
 
-On 30 October 2026, the chat that had orchestrated the registry prototype for four days was retired, and a fresh chat took over. The outgoing chat wrote a handover note. Its first section was headed 'What this session did that it should not have done'. Some of its lines, rewritten plainly:
+On 30 October 2026, the chat that had held the orchestrator's role on the registry prototype for four days was retired, and a fresh chat took over. The outgoing chat wrote a handover note. Its first section was headed 'What this session did that it should not have done'. Some of its lines, rewritten plainly:
 
-It edited the project's standing documents by hand, on the owner's rulings, where a piece of work should have done it. It started a review before the work it reviewed. It designed the four pieces of work to run at the same time in one folder, with no guard against a timer starting them a second time. It stopped a leftover process on the computer after the work was withdrawn.
+It edited the project's main documents itself, on the owner's rulings, where a piece of work should have done it. It started a review before the work it reviewed. It designed the four pieces of work to run at the same time in one folder, with no guard against a timer starting them a second time. It stopped a program still running in the background after the work was withdrawn.
 
 The note ended with four claims for the fresh chat to check first, each with where to check it. The fresh chat checked all four, and all four held. The note's other claims were left unchecked.
 
@@ -239,7 +239,7 @@ The note ended with four claims for the fresh chat to check first, each with whe
 
 A strong candidate: 'No piece of work is running twice.' It follows from the parallel mistake, it can be checked against the log in a minute, and if it were false every other claim would be in doubt.
 
-A good claim is one whose failure would change what the next chat does first, and that can be checked against a named file or row. 'The work is in good shape' is not a claim; 'every piece of work of the four tasks is accepted at version 2' is.
+A good claim is one whose failure would change what the next chat does first, and that can be checked against a named file or row. 'The work is in good shape' is not a claim; 'the four pieces of work of 4.1 are each accepted at version 2' is.
 
 ### The concept
 
@@ -386,11 +386,11 @@ And be clear about what the pattern does not claim. It does not make the output 
 
 ### In the tool
 
-Setting up your computer, from the baseline up. Only the first step is needed. (1) Any assistant in the browser: the starter folder unzipped, memory off, prompts pasted, replies saved by hand. This works in whatever assistant your organisation approves. (2) The Claude desktop app, on Windows or Mac: chats beside your files, and a project that holds the forms and your page of faults as standing instructions; keep the review chat outside the project. (3) File access, through Desktop Commander or the desktop app's own file extension: the work chat writes its report into the folder and the review chat reads it from there. Allow the starter folder only, never a folder with anything confidential, and turn down any command you did not ask for. (4) Plugins and skills, if your assistant has them. (5) Keep the folder somewhere it is copied, such as a synced OneDrive or SharePoint folder.
+Setting up your computer, from the baseline up. Only the first step is needed. (1) Any assistant in the browser: your working folder built from the starter folder's pages, memory off, prompts pasted, replies saved by hand. This works in whatever assistant your organisation approves. (2) The Claude desktop app, on Windows or Mac: chats beside your files, and a project that holds the forms and your page of faults as standing instructions; keep the review chat outside the project. (3) File access, through Desktop Commander or the desktop app's own file extension: the work chat writes its report into the folder and the review chat reads it from there. Allow the starter folder only, never a folder with anything confidential, and turn down any command you did not ask for. (4) Plugins and skills, if your assistant has them. (5) Keep the folder somewhere it is copied, such as a synced OneDrive or SharePoint folder.
 
 Practical tips. Check your organisation's rules before installing anything on a work computer; some organisations do not allow new software or extensions, and then the baseline is the route. Name each chat by piece of work, role and version, such as 'duplicates · review · v2'. Start the review in a new chat every time, version 2 included. Write the log row before you move on.
 
-Sidebar — What automation adds. Everything in this section was done by hand. A plugin can do the bookkeeping: an orchestrator plugin, like the one the course team used to build the registry prototype, starts each work chat and its review chat on a timer, writes the log itself, produces where the work stands on request, and checks that each report names only files it really wrote. It changes nothing in the method. The parallel mistake of 4.1 happened with such a plugin running: automation does the bookkeeping, and the rules stay yours.
+Sidebar — What automation adds. Everything in this section was done by hand. A plugin can do the bookkeeping: an orchestrator plugin, like the one we used to build the registry prototype, starts each work chat and its review chat on a timer, writes the log itself, produces where the work stands on request, and checks that each report names only files it really wrote. It changes nothing in the method, and the course does not need it: no such plugin is offered to learners yet. The parallel mistake of 4.1 happened with such a plugin running: automation does the bookkeeping, and the rules stay yours.
 
 ### AI usage tip — Write your readiness statement
 
@@ -399,7 +399,7 @@ Sidebar — What automation adds. Everything in this section was done by hand. A
 **Prompt template (copy-paste into the assistant):**
 
 ```text
-Below are my log from the cycles I ran in this course [paste it] and a list of the kinds of work I do in a normal month [list them, with how often]. Help me write a readiness statement in three parts. (1) What I now do alone, without the cycle, because none of the five conditions holds: more than three documents; a lasting document; a quoted figure; a change to a file; evidence the assistant cannot see. (2) What I do with an instruction and a separate review, and which page of faults each uses. (3) What I will revisit, and when: a date, and what would make me change the statement. Base it on my log and my list only. Keep it under 200 words. Ask me about anything you cannot tell from them.
+Below are my log from the cycles I ran in this course [paste it] and a list of the kinds of work I do in a normal month [list them, with how often]. Help me write a readiness statement in three parts. (1) What I now do alone, without the cycle, because none of the five conditions holds: more than three documents to read; a document that will last; a figure someone will quote; a change to a file; evidence the assistant cannot see for itself. (2) What I do with an instruction and a separate review, and which page of faults each uses. (3) What I will revisit, and when: a date, and what would make me change the statement. Base it on my log and my list only. Keep it under 200 words. Ask me about anything you cannot tell from them.
 ```
 
 **Inputs and outputs:** Input: your log and the kinds of work you do. Output: a readiness statement of under 200 words, in three parts.

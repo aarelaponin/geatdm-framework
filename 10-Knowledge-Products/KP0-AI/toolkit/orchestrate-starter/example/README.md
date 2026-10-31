@@ -9,4 +9,4 @@ Read the three files in order:
 2. `2-report.md`, by the work chat, with no verdict.
 3. `3-review.md`, by a review chat that worked the figures out again its own way.
 
-The original documents are longer, because they also carry the bookkeeping of the tool that ran them. That bookkeeping is left out here, because by hand you don't need it.
+The original documents are longer. This version keeps what you need to work by hand, and leaves out the rest.

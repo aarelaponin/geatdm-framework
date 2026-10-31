@@ -7,7 +7,7 @@ icon: sitemap
 
 **Written for:** the one who commissions and accepts AI-assisted work, and the one who runs it: a head of ICT unit, a project lead, an analyst. No programming is assumed.
 
-Modules 1 and 2 taught one good chat and the setup behind it. Module 3 teaches the learner to take one piece of their own work through the whole cycle: an instruction, a chat that does the work, a second chat that checks it and has never seen the first, and the learner's own decision. Every page opens with a fault to find in a real record, then gives the rule, how to do it by hand, and the step to take on the learner's own work.
+Modules 1 and 2 taught one good chat and the setup behind it. In Module 3 you take one piece of your own work through the whole cycle: an instruction you write, a chat that does the work, a second chat that checks it and has never seen the first, and your own decision. Every page opens with a fault to find in a real record, then gives the rule, how to do it by hand, and the step to take on your own work. The record comes from one project: a working prototype of the Progressa Learner Registry, which we built in October 2026 with this cycle. A chat held the orchestrator's role: it wrote the instructions, kept the log and gave each result to the owner, the person who commissioned the prototype and decided on every piece of work. Working by hand, you hold both roles.
 
 ## Pages
 

@@ -1,6 +1,6 @@
-# Report — <the same title as the instruction>
+# Report — [the same title as the instruction]
 
-*Answers: <instruction file, version> · <date>*
+*Answers: [instruction file, version] · [date]*
 
 ## 1. The answer first
 One paragraph: the figures or the finding, and what separates them. Say nothing wider than the tests below show.

@@ -1,6 +1,6 @@
-# Review — <the same title as the instruction>
+# Review — [the same title as the instruction]
 
-*Reviews: <report file> against <instruction file, version> · <date>*
+*Reviews: [report file] against [instruction file, version] · [date]*
 
 **Verdict: accepted / not accepted.** One sentence saying why.
 

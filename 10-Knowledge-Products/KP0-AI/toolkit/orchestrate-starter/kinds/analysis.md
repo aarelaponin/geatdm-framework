@@ -5,11 +5,11 @@
 *How this page grows: when a review finds a fault that is not on this page, add it here. Every later instruction of this kind then carries it.*
 
 ## 1. What the work chat refuses
-1. **To call a proposal a decision, or to restate a governing document instead of quoting it.** Where the paper rests on a law, a strategy or the brief, it quotes the passage and says where it is.
+1. **To call a proposal a decision, or to restate a governing document instead of quoting it.** Where the paper rests on a law, a strategy or the instruction, it quotes the passage and says where it is.
 2. **To make the case for one position without the passages that make the other strongest.** Each position is stated at its strongest, from the documents, before either is judged. The judgements go in one table, position by test, so that a fact counted against one and not the other can be seen.
 3. **To count over a set it has not listed.** The set a test names, such as every requirement or every goal, is listed first from its own source. Then what was covered is set against it before a total or a zero is reported.
 4. **To cite a source where it does not say what the paper says,** or to write a figure from anything but the passage that holds it.
-5. **To contradict itself or the brief.** A figure given twice is the same both times. A departure from the brief is stated, with its reason.
+5. **To contradict itself or the instruction.** A figure given twice is the same both times. A departure from the instruction is stated, with its reason.
 
 ## 2. What the review chat runs
 - Every citation read at its source, against the sentence that cites it.

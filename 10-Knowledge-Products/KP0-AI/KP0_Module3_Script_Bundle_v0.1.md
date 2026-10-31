@@ -15,7 +15,7 @@
 | Self-check | Four questions drawn from the four pages, in section 2.1 |
 | Prepared by | FiscalAdmin OÜ |
 
-This bundle is the v0.1 working draft of Module 3 of KP0 — Working with AI in Government. Modules 1 and 2 taught one good chat and the setup behind it. Module 3 teaches the learner to take one piece of their own work through the whole cycle: an instruction, a chat that does the work, a second chat that checks it and has never seen the first, and the learner's own decision. Every page opens with a fault to find in a real record, then gives the rule, how to do it by hand, and the step to take on the learner's own work. The register is plain English at about an eighth-grade level.
+This bundle is the v0.1 working draft of Module 3 of KP0 — Working with AI in Government. Modules 1 and 2 taught one good chat and the setup behind it. In Module 3 you take one piece of your own work through the whole cycle: an instruction you write, a chat that does the work, a second chat that checks it and has never seen the first, and your own decision. Every page opens with a fault to find in a real record, then gives the rule, how to do it by hand, and the step to take on your own work. The record comes from one project: a working prototype of the Progressa Learner Registry, which we built in October 2026 with this cycle. A chat held the orchestrator's role: it wrote the instructions, kept the log and gave each result to the owner, the person who commissioned the prototype and decided on every piece of work. Working by hand, you hold both roles. The register is plain English at about an eighth-grade level.
 
 ## 1. Document context
 
@@ -80,7 +80,7 @@ Four questions, drawn from the four pages. Questions 1 and 3 are multiple choice
 | 1 | You ask a chat to draft a two-paragraph reply to a citizen's letter, from the letter alone. Do you need the cycle? (a) Yes: every piece of work should be reviewed. (b) No: none of the five conditions holds, so just ask, and read the reply yourself. (c) Yes, because the reply goes outside. (d) Only if the chat is not sure. | (b). One short text from one document, which you read in full before it goes out, meets none of the five conditions. The cycle costs a second chat and a log row; spend it where a mistake would be quoted, built on or kept. | 3.1 Two failures |
 | 2 | The work chat writes: 'the system does not recognise duplicates', from a test of the search alone. What is wrong, and what do you ask for? | A limit of one step is stated as a limit of the whole. Ask what else could find the child, and have the sentence say only what was tested: 'the search misses a child spelt differently; whether a later step catches the child is not shown'. | 3.3 The report and the review |
 | 3 | Your review chat answers 'accepted, no issues found' on a 20-page draft. What do you do? (a) Accept: the review found nothing. (b) Ask the work chat whether the review is right. (c) Treat zero findings as a warning, and check that the review worked out at least one figure by a route of its own. (d) Run the same review again in the same chat. | (c). A review with zero findings on work that matters may not have checked anything. The work chat cannot judge its own review, and the same chat would repeat itself. | 3.3 The report and the review |
-| 4 | The review says 'accepted'. The draft recommends that MoEYS publish the figure in its annual report. Who decides whether it is published, and why? | You do, or the post that owns the annual report. A verdict says the work meets its instruction. What is delivered, cut, spent or said outside is always the person's decision, and accepted work can still be the wrong thing to publish. | 3.4 Judgement: you decide |
+| 4 | The review says 'accepted'. The draft recommends that MoEYS publish the figure in its annual report. Who decides whether it is published, and why? | You do, or whoever owns the annual report. A verdict says the work meets its instruction. What is delivered, cut, spent or said outside is always the person's decision, and accepted work can still be the wrong thing to publish. | 3.4 Judgement: you decide |
 
 ### 2.2 Go further
 
@@ -104,7 +104,7 @@ Shown on the module's home page, apart from the sources: one to three things to 
 
 ### Try it first — The paper that looked fair
 
-The registry prototype needed an answer to one question: what identifies a learner? A work chat wrote a paper that set two positions side by side. Position A: the registry gives each child its own number, and finds the child's birth record at the Civil Registration Department. Position B: the national ID authority issues every child a national number at birth, and the registry uses it.
+The registry prototype needed an answer to one question: what identifies a learner? A work chat wrote a paper that set two positions side by side. Position A: the registry gives each child its own number, and finds the child's birth record at the Civil Registration Department. Position B: the national ID authority issues every child a national number at birth, and the registry uses it. The Ministry is Progressa's Ministry of Education, Youth and Skills (MoEYS), which owns the registry. Bodies share data across a national data exchange, which some bodies have joined and some have not. The prototype simulates the other bodies, so that the registry can be tried before any of them has agreed to anything.
 
 The paper compared the two in one table, position by test. The table had no empty cell. It carried 78 citations over 31 lines, and every citation held at its source. The work chat's own report said it had cross-checked every fact against both positions. By every check the work chat could run on itself, the paper was fair.
 
@@ -128,11 +128,13 @@ The second: what a chat knows is lost when it ends. A figure worked out in a cha
 
 You know the answer already. A civil servant who writes a document does not accept it alone. Someone else reads it, against the brief, before it goes up. The Orchestrator pattern does the same with chats: separate parties, with documents between them. You write an instruction. One chat does the work and writes a report. Another chat, which never saw the first, checks the report and gives a verdict. You decide. And the state of the work lives in files, in a folder and a log, never in anyone's memory.
 
-The cycle costs a second chat and a few minutes of writing, so do not spend it on everything. Use it when one of five conditions holds: more than three documents to read; a document that will last; a figure someone will quote; a change to a file; or evidence the chat cannot see for itself. If none holds, just ask, and read the answer yourself.
+Two roles hold it together. The orchestrator writes the instructions, keeps the log and passes each result on; it does no work itself and judges none. The owner decides. Working by hand, you are both. In the registry prototype behind the examples of Modules 3 and 4, a chat held the orchestrator's role, and the person who commissioned the prototype was the owner.
+
+The cycle costs a second chat and a few minutes of writing, so do not spend it on everything. Use it when one of five conditions holds: more than three documents to read; a document that will last; a figure someone will quote; a change to a file; or evidence the assistant cannot see for itself. If none holds, just ask, and read the answer yourself.
 
 ### In the tool
 
-By hand, in any assistant. Download the starter folder and unzip it somewhere you will find it again. Its first page, START-HERE, sets out the cycle in six steps, and how to set up your computer for it.
+By hand, in any assistant. Build your working folder from the pages of the starter folder: a folder on your computer with the four forms (instruction, report, review, handover note), the three role prompts (work chat, review chat, first task) and the pages of faults in it. The starter folder's first page sets out the cycle in six steps, and how to set up your computer for it.
 
 The folder holds the forms you will write from, the three role prompts you will paste into each chat, a page of faults for each kind of work (analysis, drafting and checking), a log, and one finished cycle to copy from. You keep instructions, reports and reviews in three separate folders, one kind of document each, so that each one can be found and nothing is lost when a chat ends.
 
@@ -143,7 +145,7 @@ The folder holds the forms you will write from, the three role prompts you will 
 **Prompt template (copy-paste into the assistant):**
 
 ```text
-Below is a piece of work I am about to give an AI assistant [describe it in a few sentences: what it is, what it uses, who will see the result]. Do not do the work. Test it against these five conditions, one row each: (1) it needs more than three documents read; (2) it produces a document that will last or be built on; (3) it produces a figure someone will quote; (4) it changes a file; (5) it needs evidence the assistant cannot see for itself, such as a running system or a file it has not been given. For each: holds, does not hold, or cannot tell, with one line why. Then say: use the cycle, or just ask. If any condition holds, write a case card of five lines: what the work is, what it serves, who will use the result, the documents it uses, and the one figure or claim that most needs checking.
+Below is a piece of work I am about to give an AI assistant [describe it in a few sentences: what it is, what it uses, who will see the result]. Do not do the work. Test it against these five conditions, one row each: (1) it needs more than three documents read; (2) it produces a document that will last; (3) it produces a figure someone will quote; (4) it changes a file; (5) it needs evidence the assistant cannot see for itself, such as a running system or a file it has not been given. For each: holds, does not hold, or cannot tell, with one line why. Then say: use the cycle, or just ask. If any condition holds, write a case card of five lines, which becomes the first lines of your instruction in 3.2: what the work is, what it serves, who will use the result, the documents it uses, and the one figure or claim that most needs checking.
 ```
 
 **Inputs and outputs:** Input: a short description of one piece of your own work. Output: the five conditions tested, a recommendation, and a case card if the cycle is needed.
@@ -238,7 +240,7 @@ The registry must not register the same child twice. The prototype holds made-up
 
 The instruction asked two questions: how many children appear on more than one list, and how many of them the prototype's search catches. It defined 'caught' before the work started: a child is caught only when the search finds it from every one of its entries. And it said how the review would check the figure: by counting again from the three lists alone, without the prototype's search.
 
-Its section on how the work could fail named the faults of checking (from the page of faults) and then six ways particular to this task. Before you open the key, write down the ways you would have named.
+Its section on how the work could fail named the faults of checking, from the page of faults (a short list of the known ways that kind of work fails), and then six ways particular to this task. Before you open the key, write down the ways you would have named.
 
 **Your question:** Which of the six ways it could fail would you have missed?
 
@@ -262,13 +264,13 @@ Choose the assistant's model by the kind of work, never by how important the sub
 
 ### In the tool
 
-By hand, in any assistant. Set up first, as the starter folder's START-HERE says: turn memory off, and decide whether you will paste files or let the assistant read the folder.
+By hand, in any assistant. Set up first, as the first page of the starter folder says: turn memory off in your assistant's settings (page 2.4 shows where), and decide whether you will paste files or let the assistant read the folder.
 
-Copy the instruction form into a new file in the instructions folder. Name it by date, piece of work and version, for example '2026-10-30 duplicates v1'. Fill its eight sections. Copy the faults from the page for your kind of work into section 6, then add the ways particular to your task.
+Copy the instruction form into a new file in the instructions folder. Name it by date, piece of work and version, for example '2026-10-30 duplicates v1'. Start from your case card from 3.1. Fill the form's eight sections: what it serves, the material, the task, how you will know it is done, how the review will check it, how this work can fail, out of scope, and where the report goes. Copy the faults from the page for your kind of work into section 6, how this work can fail, then add the ways particular to your task.
 
 A chat may help you draft the instruction. If it does, that chat does no work afterwards and no review: it helped to commission the work.
 
-Write a row in the log: the date, the piece of work, version 1, 'instruction issued', and the file.
+Start your log: a spreadsheet with seven columns, date, piece of work, version, event, file, verdict or ruling, and who it is open with. The event is one of six words: instruction issued, report back, review back, my ruling, withdrawn, handover. Write the first row: the date, the piece of work, version 1, 'instruction issued', and the file.
 
 ### AI usage tip — Test your instruction on a stranger
 
@@ -314,7 +316,7 @@ A good run asks at least these: what 'did not report' means (no return at all, o
 
 The work chat's report on the duplicates count opened with its answer. 40 children appear on more than one list: 22 on two and 18 on three. 20 of them have one entry spelt differently. The prototype's search catches 20 of the 40 from every entry. It does not catch the other 20, and those are exactly the 20 with a spelling variant: each is missed from the one entry spelt differently, and found from every other. No entry returned the wrong child.
 
-The review chat had never seen the work chat. It counted again from the three lists alone, without the key to the made-up data and without the prototype's search. Its own rule was that two entries belong to the same child when the date of birth, the school and the given names are the same, and the family names are the same or differ by one letter. It got the same figures, entry by entry, for all 98 entries. The verdict was accepted.
+The review chat had never seen the work chat. It counted again from the three lists alone, without the key that says which entries belong to the same child and without the prototype's search. Its own rule was that two entries belong to the same child when the date of birth, the school and the given names are the same, and the family names are the same or differ by one letter. It got the same figures, entry by entry, for all 98 entries. The verdict was accepted.
 
 **Your question:** The review agreed with the report. Why does the review's route matter more than its agreement?
 
@@ -328,11 +330,11 @@ This review reached the figures from different material by a different method. T
 
 The report gives the answer first, in one paragraph. Then it goes through the tests one by one, each with its evidence. It says what it found and did not fix, and what it could not establish. It carries no verdict: the work chat does not judge its own work.
 
-Watch the report for one fault above all: a limit of one step stated as a limit of the whole. 'The search misses a child spelt differently' is what the duplicates count showed. 'The registry does not recognise the child' is wider, because a later step, the look-up at the birth register, may find the child, and that was not tested.
+Watch the report for one fault above all: a limit of one step stated as a limit of the whole. 'The search misses a child spelt differently' is what the duplicates count showed. 'The registry does not recognise the child' is wider, because a later step, in which the prototype looks up the child's birth record at the Civil Registration Department, may find the child, and that was not tested.
 
 The review is a check, not a reading. It goes through the instruction's tests and looks at the evidence for each one itself. It works out at least one figure again, by a route the report did not use. A check that cannot be run counts as not met. And it ends with one of two verdicts, accepted or not accepted, with no third word. 'Accepted with reservations' is not accepted.
 
-Be wary of a review with zero findings on work that matters: it may not have checked anything. Ask which figure it worked out again, and how. And remember what a check can and cannot see. A check sees that a field is filled, not that it is true; that a citation exists, not that it says what the sentence claims. One check should end at the real thing: the consent check of the prototype sent a learner's record to the examinations authority through the running system, and saw it refuse all seven fields the authority has no basis for and pass all six it has.
+Be wary of a review with zero findings on work that matters: it may not have checked anything. Ask which figure it worked out again, and how. And remember what a check can and cannot see. A check sees that a field is filled, not that it is true; that a citation exists, not that it says what the sentence claims. One check should end at the real thing: another piece of work on the prototype, a consent check, sent one learner's record through the running prototype to the National Examinations Authority (PNEA), and saw it hold back all seven fields of the record the authority has no legal basis to receive, and pass all six it has.
 
 Research on using models as judges gives one more reason to keep the reviewer separate: a model tends to favour answers that it wrote itself.
 
@@ -340,7 +342,7 @@ Research on using models as judges gives one more reason to keep the reviewer se
 
 By hand, in any assistant. The work chat: open a new chat with memory off. Paste the work-chat prompt from the starter folder, the report form, your instruction and the material. Save its report in the reports folder under the instruction's name, and write a log row: 'report back'.
 
-The review chat: open another new chat. Never use the work chat, and never a chat that helped write the instruction. Paste the review-chat prompt, the review form, the instruction, the report and the material. Save its review in the reviews folder, and write a log row with its verdict.
+The review chat: open another new chat. Never use the work chat, and never a chat that helped write the instruction. Paste the review-chat prompt, the review form, the instruction, the report and the material. Save its review in the reviews folder, and write a log row: 'review back', with its verdict.
 
 Memory must be off before the review chat starts. A review chat that remembers the work chat is no longer independent. The setting is in your assistant's settings; Claude, ChatGPT, Gemini and Copilot each have one under their own name. An incognito chat, which is not saved and not remembered, also serves.
 
@@ -353,7 +355,7 @@ If your assistant can read your folder, through the desktop app and a file tool,
 **Prompt template (copy-paste into the assistant):**
 
 ```text
-You are a review chat. You did not write this instruction and you did not do this work. Below are the instruction [paste it], the report [paste it] and the material [paste it or attach it]. Check the report against the instruction, test by test: for each, say met or not met, and point to the evidence you looked at yourself. Work out at least one figure of the report again by a route the report did not use, and say what your route was and what you got. A check that cannot run counts as not met. Look for any sentence that states a limit of one step as a limit of the whole. Fix nothing. End with exactly one verdict, accepted or not accepted. If not accepted, list the gaps, numbered, each one written so that it can be added to the instruction as version 2.
+You are a review chat. You did not write this instruction and you did not do this work. Below are the instruction [paste it], the report [paste it] and the material [paste it or attach it]. Check the report against the instruction, test by test: for each, say met or not met, and point to the evidence you looked at yourself. Work out at least one figure of the report again by a route the report did not use, and say what your route was and what you got. A check that cannot run counts as not met. If you find nothing wrong, say which figure you worked out again and how: zero findings is a warning, not a pass. Look for any sentence that states a limit of one step as a limit of the whole. Fix nothing. End with exactly one verdict, accepted or not accepted. If not accepted, list the gaps, numbered, each one written so that it can be added to the instruction as version 2.
 ```
 
 **Inputs and outputs:** Input: the instruction, the report and the material, in a new chat that never saw the work chat. Output: each test checked, one figure worked out again, a verdict, and the gaps for version 2.
@@ -454,7 +456,7 @@ Version 2 corrected those sentences. Its review found that it now left out two l
 
 The two sentences state a limit of one step, the search, as a limit of the whole prototype. The record shows only that the search misses a child spelt differently. A later step, the look-up at the birth register, may find the child, and whether it does was never tested. The note's own later sentence said so, and contradicted them.
 
-Two failures on the same instruction is the signal to write the task again, not to send version 3. The owner did: the note was defined again as a new piece of work, which listed every limit the record names before the note was written, and that version was accepted.
+Two failures on the same instruction is the signal to write the task again, not to send version 3. The owner, the person who commissioned the prototype, did: the note was defined again as a new piece of work, which listed every limit the record names before the note was written, and that version was accepted.
 
 Then the decisions that no review makes. Whether the note goes to the Permanent Secretary, what it leaves out, and whether the figure is said outside the Ministry are the owner's, however the review reads.
 
@@ -472,9 +474,9 @@ Write your decision in the log, with a line on why. The decision is part of the 
 
 ### In the tool
 
-By hand, in any assistant. Read the review yourself, not only its verdict. Then write your ruling in the log: accepted, not accepted, or withdrawn, and one line on what follows, such as 'the figure goes into the note' or 'version 2: gaps 1 and 2'.
+By hand, in any assistant. Read the review yourself, not only its verdict. Then write a log row, 'my ruling': accepted, not accepted, or withdrawn, and one line on what follows, such as 'the figure goes into the note' or 'version 2: gaps 1 and 2'. The verdict is the review's; the ruling is yours. They usually agree; when they do not, your ruling stands and its line says why. Withdrawn means you stop the piece of work without a verdict, for example because it was started wrongly.
 
-For version 2, copy the instruction to a new file named 'v2'. Add the review's gaps at its end, each with the test it adds or changes. Start a new work chat and a new review chat. Never reuse the chats of version 1.
+For version 2, copy the instruction to a new file with v2 in place of v1 in its name. Add the review's gaps at its end, each with the test it adds or changes. Start a new work chat and a new review chat. Never reuse the chats of version 1.
 
 A withdrawn piece of work keeps its rows in the log, with the reason. Nothing is deleted.
 

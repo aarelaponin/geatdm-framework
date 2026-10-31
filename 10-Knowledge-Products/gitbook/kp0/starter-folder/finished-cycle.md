@@ -1,10 +1,12 @@
 ---
-description: "One finished cycle, from the starter folder: copy them into your own folder."
+description: "One finished cycle, from the starter folder: read it as a model before you write your own."
 ---
 
 # One finished cycle
 
 ## A finished cycle: children on more than one list
+
+*Save as `example/README.md`.*
 
 This is one real piece of work from a prototype learner registry, built for the fictional country of Progressa. Here it is rewritten in plain language, one page per document. The prototype holds made-up data for 300 children, spread over three lists: the school census kept by the Ministry of Education (MoEYS), the candidate list of the National Examinations Authority (PNEA), and the list of the social grant programme. Some children appear on more than one list, and some of them have their name spelt differently on one of the lists.
 
@@ -15,11 +17,13 @@ Read the three files in order:
 2. `2-report.md`, by the work chat, with no verdict.
 3. `3-review.md`, by a review chat that worked the figures out again its own way.
 
-The original documents are longer, because they also carry the bookkeeping of the tool that ran them. That bookkeeping is left out here, because by hand you don't need it.
+The original documents are longer. This version keeps what you need to work by hand, and leaves out the rest.
 
 ---
 
 ## Instruction — How many children appear on more than one list, and how many does the prototype catch?
+
+*Save as `example/1-instruction.md`.*
 
 *Version 1 · 30 October 2026 · kind of work: checking*
 
@@ -67,6 +71,8 @@ Change nothing you check. Whether the search *should* catch a spelling variant i
 
 ## Report — How many children appear on more than one list, and how many does the prototype catch?
 
+*Save as `example/2-report.md`.*
+
 *Answers: the instruction, version 1 · 30 October 2026*
 
 ### 1. The answer first
@@ -105,6 +111,8 @@ The set, the table of entries, the planted run, the two screenshots and this rep
 
 ## Review — How many children appear on more than one list, and how many does the prototype catch?
 
+*Save as `example/3-review.md`.*
+
 *Reviews: the report against the instruction, version 1 · 30 October 2026*
 
 **Verdict: accepted.** Both figures were worked out again from the three lists alone, by a route the report did not use, and they agree entry by entry.
@@ -126,6 +134,5 @@ Accepted. The figure may go into the note: 20 of the 40 are caught from every en
 
 ### 5. Found, not fixed
 - The second start of the same piece of work, which the report raised, is for the owner to settle.
-- The work chat ran on a different model from the one the instruction named. The figures were checked independently, so the verdict does not turn on it.
 
 Back to [the starter folder](README.md).

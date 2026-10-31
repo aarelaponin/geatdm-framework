@@ -1,10 +1,12 @@
 ---
-description: "The three chat prompts, from the starter folder: copy them into your own folder."
+description: "The three chat prompts, from the starter folder: save each one in your working folder."
 ---
 
 # The three chat prompts
 
 ## The work chat
+
+*Save as `0-chat-prompts/work-chat.md`.*
 
 *Paste this as the first message of a new chat, followed by the instruction and the material. Memory must be off.*
 
@@ -23,6 +25,8 @@ You are a work chat. Carry out the instruction below and nothing else.
 ---
 
 ## The review chat
+
+*Save as `0-chat-prompts/review-chat.md`.*
 
 *Paste this as the first message of another new chat, followed by the instruction, the report and the material. Never use the chat that did the work. Memory must be off.*
 
@@ -44,6 +48,8 @@ Write the review from the review form below.
 ---
 
 ## The first task of a fresh chat
+
+*Save as `0-chat-prompts/first-task-chat.md`.*
 
 *Paste this into a new chat when you pick the work up again after a break, or from someone else, followed by the handover note and the log.*
 

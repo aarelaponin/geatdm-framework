@@ -1,12 +1,14 @@
 ---
-description: "The four forms, from the starter folder: copy them into your own folder."
+description: "The four forms, from the starter folder: save each one in your working folder."
 ---
 
 # The four forms
 
-## Instruction — <the one task, as a question or a command>
+## Instruction — [the one task, as a question or a command]
 
-*Version 1 · <date> · kind of work: analysis / drafting / checking*
+*Save as `forms/instruction.md`.*
+
+*Version 1 · [date] · kind of work: analysis / drafting / checking*
 
 *Write it for a reader who knows nothing of your conversations. If a stranger could not carry it out from this page and the material, it is not finished.*
 
@@ -34,16 +36,18 @@ First, the faults of its kind, from the page in `kinds/`. Then the two or three 
 What not to touch, and which questions stay with you. *If something you need is not in the material, say so and name who could supply it, and do not supply it.*
 
 ### 8. Where the report goes
-`2-reports/<the same name as this file>`, written from `forms/report.md`, with no verdict.
+`2-reports/[the same name as this file]`, written from `forms/report.md`, with no verdict.
 
 ---
 *Version 2 and later: add the review's gaps here, each one with the test it adds or changes.*
 
 ---
 
-## Report — <the same title as the instruction>
+## Report — [the same title as the instruction]
 
-*Answers: <instruction file, version> · <date>*
+*Save as `forms/report.md`.*
+
+*Answers: [instruction file, version] · [date]*
 
 ### 1. The answer first
 One paragraph: the figures or the finding, and what separates them. Say nothing wider than the tests below show.
@@ -73,9 +77,11 @@ Every file this work produced, by name.
 
 ---
 
-## Review — <the same title as the instruction>
+## Review — [the same title as the instruction]
 
-*Reviews: <report file> against <instruction file, version> · <date>*
+*Save as `forms/review.md`.*
+
+*Reviews: [report file] against [instruction file, version] · [date]*
 
 **Verdict: accepted / not accepted.** One sentence saying why.
 
@@ -97,7 +103,9 @@ What you saw outside the tests. Fix nothing.
 
 ---
 
-## Handover note — <the work> · <date>
+## Handover note — [the work] · [date]
+
+*Save as `forms/handover-note.md`.*
 
 *Write only what the files and the log cannot tell the next person. Leave out figures, a survey of the work and the story of the day. Every line is a claim someone can check.*
 
