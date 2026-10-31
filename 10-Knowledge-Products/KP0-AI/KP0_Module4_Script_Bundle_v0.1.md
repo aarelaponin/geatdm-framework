@@ -139,6 +139,8 @@ A log of MoEYS's planning unit: '28 Oct, census count, v1, instruction issued. 2
 
 Census count: version 2, report back on 30 October, open, waiting for its review. School map: version 1, issued twice on 29 October with no report: a possible double start, to check before anything else runs. Totals: nothing closed yet. A good run names the double start; a weak one counts the school map once and moves on.
 
+**With the kit:** the orchestrator plugin (in preparation) writes the log itself, one entry per event, and answers 'where does it stand?' from it whenever you ask. It cannot stop two pieces of work you start yourself from colliding: one writes at a time is still your rule. Optional: the cycle runs by hand.
+
 ### Sources
 
 | Source | Publisher · date | Used for |
@@ -283,6 +285,8 @@ The census log from 4.1, and these notes: 'Version 2 of the census count is wait
 
 Section 1: the school map started twice and not checked; a figure given to the director informally before it was reviewed. Section 2: the census figure, owed to the director by 5 November. Claims: 'the census count version 2 has a report and no review yet' (the log); 'only one school map chat ran' (the log and the reports folder). A good run leaves out 'about 30': it is a figure, and an unreviewed one.
 
+**With the kit:** the orchestrator plugin (in preparation) writes the handover note from its form and the fresh session's first task, and the fresh session records in the log that it has taken over before it does anything else. Optional: the cycle runs by hand.
+
 ### Sources
 
 | Source | Publisher · date | Used for |
@@ -390,7 +394,7 @@ Setting up your computer, from the baseline up. Only the first step is needed. (
 
 Practical tips. Check your organisation's rules before installing anything on a work computer; some organisations do not allow new software or extensions, and then the baseline is the route. Name each chat by piece of work, role and version, such as 'duplicates · review · v2'. Start the review in a new chat every time, version 2 included. Write the log row before you move on.
 
-Sidebar — What automation adds. Everything in this section was done by hand. A plugin can do the bookkeeping: an orchestrator plugin, like the one we used to build the registry prototype, starts each work chat and its review chat on a timer, writes the log itself, produces where the work stands on request, and checks that each report names only files it really wrote. It changes nothing in the method, and the course does not need it: no such plugin is offered to learners yet. The parallel mistake of 4.1 happened with such a plugin running: automation does the bookkeeping, and the rules stay yours.
+Sidebar — What automation adds. Everything in this section was done by hand. A plugin can do the bookkeeping: an orchestrator plugin, like the one we used to build the registry prototype, starts each work chat and its review chat on a timer, writes the log itself, produces where the work stands on request, and checks that each report names only files it really wrote. It changes nothing in the method, and the course does not need it. A learner edition of the plugin is in preparation; the starter folder's page With the plugin says what it will take, and Module 5 builds a small prototype with it. The parallel mistake of 4.1 happened with such a plugin running: automation does the bookkeeping, and the rules stay yours.
 
 ### AI usage tip — Write your readiness statement
 

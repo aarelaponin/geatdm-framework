@@ -200,3 +200,22 @@ Eight pages, plus two self-checks and the sidebar, against 17 pages in plan v0.4
 5. ~~The bodies' names on the pages~~ *Settled 30 October: plain descriptions ("the identity authority", "the examinations authority", "the exchange"), each with its Progressa name (PNIA, PNEA, Linkup) in brackets once per page.*
 
 All five decisions are settled, and section 9 has been applied to `KP0_Plan_v0.4.md` (30 October 2026).
+
+---
+
+## 11. Module 5 — Orchestrate with the plugin: build a toy prototype
+
+*Added 31 October 2026, on the owner's ruling: a module that teaches the method in practice, with the orchestrator plugin, on a toy prototype. It is not KP4's subject (a no-code service), and it overlaps the starter folder's page* With the plugin *on purpose: that page is the checklist, this module teaches it.*
+
+**The toy.** The mini registry, cut from the PLR prototype: one goal (enrol a learner) of four, 60 made-up children of 300, 3 schools, 8 on more than one list, 4 of them spelt differently, eight rounds of 23. Its brief is `toolkit/orchestrate-starter/MINI-REGISTRY-BRIEF.md`; the building page of faults is added to the starter folder (`kinds/building.md`). The toy's figures follow from the brief, so its tips have answer keys in advance; every Try it first is from the full-size record, frozen in `examples/plr/`.
+
+| # | Page | Try it first | On your work (the toy) |
+|---|---|---|---|
+| 5.1 | Set up the project, and the first round | The constants refused for a dated fact; the fault was the instruction's (PLR-001 v1 review G1) | Check the instruction before it is issued; round 1 |
+| 5.2 | Decide before you build | 36 requirements, 25 carried, 11 by none, each with a reason; two planted mistakes found (PLR-006) | Read a design document before you rule; rounds 2–4 |
+| 5.3 | Build one goal per round | The data in known numbers: 300, 10 schools, 40, 20, 87 (PLR-009) | Read a building report before you rule; rounds 5–6 |
+| 5.4 | Check at the real thing, and write the note | 7 of 7 refused, but three of the seven empty for that learner (PLR-015) | Find what a passed check cannot show; rounds 7–8 |
+| 5.5 | Judgement: what a toy proves | Which of five sentences the note may say (the accepted note) | Decide whether the prototype has shown enough |
+
+**No video.** Eleven screenshot marks over the five pages, each saying what the picture must show; the team takes them on a real run with the released plugin. **Depends on** the plugin's release into `ea-plays-kit` (plan v0.4 section 10); until then the course home shows Module 5 as needing the plugin.
+

@@ -45,9 +45,11 @@ Only step 1 is needed. Each later step saves some copying and pasting, and none 
 |---|---|
 | `0-chat-prompts/` | The three role prompts, ready to paste |
 | `forms/` | The instruction, the report, the review and the handover note, one page each |
-| `kinds/` | The faults of analysis, drafting and checking, with what each review runs |
+| `kinds/` | The faults of analysis, drafting and checking, with what each review runs; and of building, for Module 5 |
 | `1-instructions/` `2-reports/` `3-reviews/` | Empty. Each holds one kind of document |
 | `log.xlsx` | The log: one row per event. Six words for the event: instruction issued, report back, review back, my ruling, withdrawn, handover |
 | `example/` | One finished cycle: counting the children who appear on more than one list |
+| `WITH-THE-PLUGIN.md` | Your first project with the orchestrator plugin, once it is installed |
+| `MINI-REGISTRY-BRIEF.md` | The toy prototype Module 5 builds with the plugin |
 
 Name each file by date, piece of work and version, for example `2026-10-30 duplicates v1.md`. A report and its review carry the same name as their instruction.

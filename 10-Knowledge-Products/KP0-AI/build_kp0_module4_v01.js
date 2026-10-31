@@ -140,7 +140,7 @@ function content(items) {
 // prompt and part of its output; aiTip.practice, Progressa material to practise on, with its answer key.
 // Modules 3 and 4 add tryFirst: the fault to find in the record, its question, and its key (collapsed on the GitBook page),
 // shown before the concept; the AI usage tip is the page's step on the learner's own work.
-function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, where, example, aiTip, sources, video = "V2", persona = PERSONA_A }) {
+function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, where, example, aiTip, withKit, sources, video = "V2", persona = PERSONA_A }) {
   const out = [];
   out.push(H2(num + " — " + title));
   out.push(specTable([["Persona", persona], ["Form", "Written page; covered by video " + video]]));
@@ -168,6 +168,7 @@ function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, wher
   }
   }
   out.push(aiPromptBox(aiTip.title, aiTip.problem, aiTip.prompt, aiTip.io, aiTip.safeguard));
+  if (withKit) out.push(P("With the kit: the orchestrator plugin (in preparation) " + withKit + " Optional: the cycle runs by hand."));
   if (aiTip.practice) {
     out.push(H3("Practise on Progressa"));
     out.push(...content(aiTip.practice.input));
@@ -314,6 +315,7 @@ body.push(H1("3. The pages, the videos and the reference"));
 body.push(...renderPage({
   num: "3.1 Subtopic 4.1",
   title: "The log: status is produced, never remembered",
+  withKit: "writes the log itself, one entry per event, and answers 'where does it stand?' from it whenever you ask. It cannot stop two pieces of work you start yourself from colliding: one writes at a time is still your rule.",
   video: "V5",
   singleMessage: "Write one row for every event, and answer 'where does it stand?' from the log, never from memory.",
   tryFirst: {
@@ -417,6 +419,7 @@ body.push(...renderPage({
 body.push(...renderPage({
   num: "3.3 Subtopic 4.3",
   title: "Handing over to a fresh chat",
+  withKit: "writes the handover note from its form and the fresh session's first task, and the fresh session records in the log that it has taken over before it does anything else.",
   video: "V5",
   singleMessage: "Hand over only what the files cannot say, as claims someone can check, and make the next chat's first task to check a few of them and stop.",
   tryFirst: {
@@ -539,7 +542,7 @@ body.push(...renderPage({
   inTool: [
     "Setting up your computer, from the baseline up. Only the first step is needed. (1) Any assistant in the browser: your working folder built from the starter folder's pages, memory off, prompts pasted, replies saved by hand. This works in whatever assistant your organisation approves. (2) The Claude desktop app, on Windows or Mac: chats beside your files, and a project that holds the forms and your page of faults as standing instructions; keep the review chat outside the project. (3) File access, through Desktop Commander or the desktop app's own file extension: the work chat writes its report into the folder and the review chat reads it from there. Allow the starter folder only, never a folder with anything confidential, and turn down any command you did not ask for. (4) Plugins and skills, if your assistant has them. (5) Keep the folder somewhere it is copied, such as a synced OneDrive or SharePoint folder.",
     "Practical tips. Check your organisation's rules before installing anything on a work computer; some organisations do not allow new software or extensions, and then the baseline is the route. Name each chat by piece of work, role and version, such as 'duplicates · review · v2'. Start the review in a new chat every time, version 2 included. Write the log row before you move on.",
-    "Sidebar — What automation adds. Everything in this section was done by hand. A plugin can do the bookkeeping: an orchestrator plugin, like the one we used to build the registry prototype, starts each work chat and its review chat on a timer, writes the log itself, produces where the work stands on request, and checks that each report names only files it really wrote. It changes nothing in the method, and the course does not need it: no such plugin is offered to learners yet. The parallel mistake of 4.1 happened with such a plugin running: automation does the bookkeeping, and the rules stay yours."
+    "Sidebar — What automation adds. Everything in this section was done by hand. A plugin can do the bookkeeping: an orchestrator plugin, like the one we used to build the registry prototype, starts each work chat and its review chat on a timer, writes the log itself, produces where the work stands on request, and checks that each report names only files it really wrote. It changes nothing in the method, and the course does not need it. A learner edition of the plugin is in preparation; the starter folder's page With the plugin says what it will take, and Module 5 builds a small prototype with it. The parallel mistake of 4.1 happened with such a plugin running: automation does the bookkeeping, and the rules stay yours."
   ],
   aiTip: {
     title: "Write your readiness statement",

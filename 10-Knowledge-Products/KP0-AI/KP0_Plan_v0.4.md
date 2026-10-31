@@ -14,7 +14,7 @@ KP0 teaches a government team to work with an AI assistant, from one good chat t
 |---|---|---|
 | 1. Chat | Get good answers in one chat | 1 module, 4 subtopics |
 | 2. Prepare | Set up what the AI knows and can do | 1 module, 4 subtopics |
-| 3. Orchestrate | Give bigger jobs to AI, and check the results | 2 modules, 8 subtopics |
+| 3. Orchestrate | Give bigger jobs to AI, and check the results | 3 modules, 13 subtopics |
 | Judgement | A core competency across every layer | the closing subtopic of Modules 1–5, and one reference page |
 
 **The audience.** Public servants, most of them not developers: the same two personas as KP1–KP4. The **Strategist** commissions and accepts AI-assisted work and answers for it. The **Architect** (the head of an ICT unit, a project lead, an analyst) runs the work. KP0 assumes no programming, no command line and no version control. The by-hand route needs none of them; whatever the Orchestrator route needs is settled with the learner edition (decision 1) and taught where it first appears, as the analysts' SDD course does.
@@ -55,7 +55,7 @@ The site's other section names carry a gloss in brackets (*Government Enterprise
 
 ## 4. Structure
 
-Five modules (0 to 4) and 17 subtopics. Every subtopic is a written page. There are seven videos, each covering a run of pages, and every page is covered by one (section 7). The pages carry the whole content, so a learner who never watches a video misses nothing that is taught, only the stories.
+Six modules (0 to 5) and 22 subtopics. Every subtopic is a written page. There are seven videos, each covering a run of pages, and every page of Modules 0 to 4 is covered by one (section 7); Module 5 has screenshots instead (added 31 October 2026). The pages carry the whole content, so a learner who never watches a video misses nothing that is taught, only the stories.
 
 | Module | Layer | Persona | Subtopics |
 |---|---|---|---|
@@ -64,10 +64,11 @@ Five modules (0 to 4) and 17 subtopics. Every subtopic is a written page. There 
 | 2 | Prepare | Strategist | 4 |
 | 3 | Orchestrate — one piece of work, start to finish | Strategist | 4 |
 | 4 | Orchestrate — running it for days | Architect | 4 |
+| 5 | Orchestrate with the plugin — build a toy prototype | Architect | 5 |
 
-**Two ways through.** *Strategist*: 0, 1, 2, 3 — enough to run any KP tip, and to accept work done the orchestrated way after taking one piece of their own work through the cycle. *Architect*: all five — enough to run the work, as KP4's modules 3–5 expect.
+**Two ways through.** *Strategist*: 0, 1, 2, 3 — enough to run any KP tip, and to accept work done the orchestrated way after taking one piece of their own work through the cycle. *Architect*: all six — enough to run the work, as KP4's modules 3–5 expect, and to run it with the orchestrator plugin on a small project from start to finish.
 
-Each subtopic page carries, as in KP1–KP4: the concept, **In the tool**, a worked example on Progressa, an **AI usage tip** (Bring / Get / Time / With the kit / Watch for), and sources. Each of Modules 1–4 ends with a self-check of four questions; Module 0 has one page and neither a Judgement page nor a self-check.
+Each subtopic page carries, as in KP1–KP4: the concept, **In the tool**, a worked example on Progressa, an **AI usage tip** (Bring / Get / Time / With the kit / Watch for), and sources. Each of Modules 1–5 ends with a self-check of four questions; Module 0 has one page and neither a Judgement page nor a self-check.
 
 ### Module 0 — Introduction
 
@@ -113,9 +114,21 @@ The learner works on one piece of their own work from 3.1 onward; PLR is the wor
 | 4.3 | Handing over to a fresh chat | Fails by quoting what it no longer works out again; the note carries what it should not have done, what is owed, findings in no report; no figures, survey or story; every line a claim; the first task checks a handful, then stops | *Try it first:* the outgoing note's confessions; four claims checked, the rest not. *On your work:* your note and first task | 7.1–7.6 |
 | 4.4 | **Judgement:** setting up, every day, and what this does not claim | What you need before the first session (the setup list and practical tips of the section plan, section 5); the daily routine; the common mistakes by hand; cognitive debt; the pattern does not make the output true, cheap or the same between runs | *Try it first:* seven mixed-up moments, each a mistake to name. *On your work:* the readiness statement. *Sidebar:* what automation adds (the Orchestrator plugin) | 10, 9 |
 
+### Module 5 — Orchestrate with the plugin: build a toy prototype
+
+*Added 31 October 2026. For the Architect, after Modules 3–4. The one module that needs the orchestrator plugin (section 10); its pages are written against the plugin as it will be released into `ea-plays-kit`, and the home page shows it as needing the plugin until then. The toy is the mini registry (`toolkit/orchestrate-starter/MINI-REGISTRY-BRIEF.md`): one goal, enrol a learner, 60 made-up children over three lists, eight rounds. It is not KP4's subject: KP4 specifies and generates a service with no code, while Module 5 builds a throwaway prototype to teach the method in practice. No video; each step that needs a picture carries a screenshot mark, taken by the team on a real run. Page by page in the section plan, section 11.*
+
+| # | Subtopic | Try it first (PLR record) | The toy's rounds |
+|---|---|---|---|
+| 5.1 | Set up the project, and the first round | The constants refused for a dated fact (PLR-001) | Setup, the role, round 1: the register of requirements |
+| 5.2 | Decide before you build | The count both ways: 36 requirements, 25 carried, 11 by none, each with its reason (PLR-006) | Rounds 2–4: groundwork, the goal in full, the count |
+| 5.3 | Build one goal per round | The data in known numbers (PLR-009) | Rounds 5–6: scaffold and data, the goal built |
+| 5.4 | Check at the real thing, and write the note | The consent check that passed, and what it could not show (PLR-015) | Rounds 7–8: the duplicates count, the note |
+| 5.5 | **Judgement:** what a toy proves | Which of five sentences the note may say (PLR-023's note) | Where it stands, the last ruling, the handover |
+
 ### The Judgement page
 
-One reference page that collects 1.4, 2.4, 3.4 and 4.4, with the frame (technical, cognitive and intent debt; offloading versus surrender) and the government reading list (UK AI Playbook, AU Continental AI Strategy, OECD *Governing with AI*). This is the page KP1–KP4 link to in place of "Working with AI".
+One reference page that collects 1.4, 2.4, 3.4, 4.4 and 5.5, with the frame (technical, cognitive and intent debt; offloading versus surrender) and the government reading list (UK AI Playbook, AU Continental AI Strategy, OECD *Governing with AI*). This is the page KP1–KP4 link to in place of "Working with AI".
 
 ---
 
@@ -236,6 +249,8 @@ Seven videos, about 29 minutes. Each is a person on camera, with slides cut in f
 
 All plugin work is in `claude-marketplace`.
 
+**Porting it into `ea-plays-kit` (31 October 2026).** The owner ports `orchestrator-local` into the kit at his own pace; the plugin's learner README (prerequisites, install, check, update) is noted in `ea-plays-kit/docs/plans/2026-10-31-orchestrator-plugin-readme.md`. KP0 carries the rest: the **With the kit** lines on 3.2, 3.3, 4.1 and 4.3, the 4.4 sidebar, the starter folder's page *With the plugin*, and Module 5.
+
 **For learners: the Orchestrator, an optional second route.** KP0 v0.1 does not depend on it: the by-hand route (section 1) is the baseline every Layer 3 page is complete with, and the plugin is what **In the tool** shows as the second route when it ships.
 
 Its source today is the `orchestrator` skill of `fa-project-ops`: the rules (`SKILL.md`), the forms (`references/`: instruction, report, review, handover note, first task, constants, the record of what is running, the delivery record, the four pages of kinds of work) and the programs (`scripts/`: the ledger, the trace, placement and record checks, each with its self-test). That plugin is the team's own: it also carries the super-orchestrator, the account-drift and project-status tools and a hook, all written for one owner with several accounts.
@@ -300,7 +315,7 @@ The GitBook guide goes to `../gitbook/kp0/`, generated from the scripts as KP4's
 
 1. Settle the decisions above: first the schedule (7), then the speakers' cases and the video cut (4), which decide what the scripts ask of the speakers.
 2. Freeze the PLR excerpts into `examples/` and write the starter folder: the forms, the three chat prompts, the log, the pages of faults and the filled duplicates count (section plan, section 5). *Done 31 October: `examples/plr/` and `toolkit/orchestrate-starter/`.*
-3. Write the scripts of Modules 3–4 from the section plan and the PLR record, then Modules 1–2 from the two moved pages, then 0.0; the pages are generated from the scripts. The by-hand half of every **In the tool** is written first and is complete on its own. The seven video scripts are written inside the module scripts they cover. *Modules 3–4 done 31 October: `build_kp0_module3_v01.js` and `build_kp0_module4_v01.js`, with their bundles; the bundle converter and the QA gate in `claude-marketplace` read the new Try it first block; the GitBook renderer does not yet (step 6).*
+3. Write the scripts of Modules 3–4 from the section plan and the PLR record, then Modules 1–2 from the two moved pages, then 0.0; the pages are generated from the scripts. The by-hand half of every **In the tool** is written first and is complete on its own. The seven video scripts are written inside the module scripts they cover. *Modules 3–5 done 31 October: `build_kp0_module3_v01.js` to `build_kp0_module5_v01.js`, with their bundles; Module 5's screenshots wait on the released plugin; the bundle converter and the QA gate in `claude-marketplace` read the new Try it first block; the GitBook renderer does not yet (step 6).*
 4. Scope and build the learner edition of the Orchestrator in `claude-marketplace` (section 10), in parallel with step 3 and off its critical path; the pages' Orchestrator halves are added when it is settled.
 5. Run the gates with the KP0 profile; send the bundles for ITU review with the three departures in the calibration items.
 6. Build figures, decks and the GitBook guide; create the space; switch the KP1–KP4 links in the renderers (section 8) and re-render.

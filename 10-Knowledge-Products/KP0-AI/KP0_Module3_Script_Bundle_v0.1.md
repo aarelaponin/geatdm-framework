@@ -296,6 +296,8 @@ An instruction from MoEYS's planning unit, version 1: 'Count the schools that di
 
 A good run asks at least these: what 'did not report' means (no return at all, or a return with the enrolment field empty?); which census file, and which version; how 'correct' will be tested, and by whom; who the paragraph is for and how long it may be; whether schools closed during the year count; what to do if a school appears twice. Each is a line the instruction should carry.
 
+**With the kit:** the orchestrator plugin (in preparation) writes the instruction with you from the same form, gives its session a name, files it in the place for instructions and writes its log row. You still decide what it asks. Optional: the cycle runs by hand.
+
 ### Sources
 
 | Source | Publisher · date | Used for |
@@ -371,6 +373,8 @@ A report from MoEYS's planning unit: 'Answer: 37 schools did not report enrolmen
 **Practise on Progressa — answer key:**
 
 Not accepted. The figure 37 is 31 plus 6, so the report has counted two different things as one without saying so; the instruction needs to define 'did not report'. A good review works the figure out again by its own route, for example by listing the schools with no return separately from those with an empty field, and names the gap. A review that says 'T1 met, accepted' has only re-read the report.
+
+**With the kit:** the orchestrator plugin (in preparation) starts the work chat, and when its report is in, the review chat as a separate session with an empty memory, so the memory setting can no longer break the separation. You still read the review and rule. Optional: the cycle runs by hand.
 
 ### Sources
 

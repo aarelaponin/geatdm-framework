@@ -139,7 +139,7 @@ function content(items) {
 // prompt and part of its output; aiTip.practice, Progressa material to practise on, with its answer key.
 // Module 3 adds tryFirst: the fault to find in the record, its question, and its key (collapsed on the GitBook page),
 // shown before the concept; the AI usage tip is the page's step on the learner's own work.
-function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, where, example, aiTip, sources, video = "V2", persona = PERSONA_SA }) {
+function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, where, example, aiTip, withKit, sources, video = "V2", persona = PERSONA_SA }) {
   const out = [];
   out.push(H2(num + " — " + title));
   out.push(specTable([["Persona", persona], ["Form", "Written page; covered by video " + video]]));
@@ -167,6 +167,7 @@ function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, wher
   }
   }
   out.push(aiPromptBox(aiTip.title, aiTip.problem, aiTip.prompt, aiTip.io, aiTip.safeguard));
+  if (withKit) out.push(P("With the kit: the orchestrator plugin (in preparation) " + withKit + " Optional: the cycle runs by hand."));
   if (aiTip.practice) {
     out.push(H3("Practise on Progressa"));
     out.push(...content(aiTip.practice.input));
@@ -427,6 +428,7 @@ body.push(...renderVideo({
 body.push(...renderPage({
   num: "3.6 Subtopic 3.2",
   title: "Write the instruction",
+  withKit: "writes the instruction with you from the same form, gives its session a name, files it in the place for instructions and writes its log row. You still decide what it asks.",
   video: "V4",
   singleMessage: "Write the instruction for a stranger: what it serves, the tests, how this work can fail while seeming to succeed, and how the review will check it, all before the work starts.",
   tryFirst: {
@@ -482,6 +484,7 @@ body.push(...renderPage({
 body.push(...renderPage({
   num: "3.7 Subtopic 3.3",
   title: "The report and the review",
+  withKit: "starts the work chat, and when its report is in, the review chat as a separate session with an empty memory, so the memory setting can no longer break the separation. You still read the review and rule.",
   video: "V4",
   singleMessage: "The work chat reports with no verdict; a second chat that never saw it checks the report by its own route and says accepted or not accepted.",
   tryFirst: {

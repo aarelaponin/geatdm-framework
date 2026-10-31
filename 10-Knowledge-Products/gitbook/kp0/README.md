@@ -5,7 +5,7 @@ icon: house
 
 # Working with AI in Government
 
-Five modules · 17 written pages · seven short on-camera videos (in preparation) · an AI usage tip on every page · a self-check per module · self-paced · free and open
+Six modules · 22 written pages · seven short on-camera videos (in preparation) · an AI usage tip on every page · a self-check per module · self-paced · free and open
 
 This course teaches a government team to work with an AI assistant, from one good chat to work handed over for days and checked by someone other than the one who did it. It is written for public servants, most of them not developers, and assumes no programming and no command line.
 
@@ -20,6 +20,7 @@ Every page of the four other courses in this knowledge base ends with an AI usag
 | [2](module-2/README.md) | Prepare: set up what the AI knows and can do | Strategist | 4 | 4 tips | Pages live |
 | [3](module-3/README.md) | Orchestrate: one piece of work, start to finish | Strategist and Architect | 4 | 4 tips | Pages live |
 | [4](module-4/README.md) | Orchestrate: running it for days | Architect | 4 | 4 tips | Pages live |
+| [5](module-5/README.md) | Orchestrate with the plugin: build a toy prototype | Architect | 5 | 5 tips | Pages written; needs the plugin, in preparation |
 
 *Pages live — every page of the module is written, with its tip and its self-check. In preparation — planned, not yet written.*
 
@@ -32,14 +33,14 @@ Every page of the four other courses in this knowledge base ends with an AI usag
 | Persona | Who that is in practice | Modules | What you leave with |
 | --- | --- | --- | --- |
 | **Strategist** | The public servant who commissions and accepts AI-assisted work and answers for it: a director, a head of unit, a technical secretary briefing the principal | 0, [1](module-1/README.md), [2](module-2/README.md), [3](module-3/README.md) | Good answers from one chat, an assistant set up once for your team's work, one piece of your own work taken through the cycle, and the judgement to accept work done the orchestrated way. |
-| **Architect** | The head of an ICT unit, a project lead or an analyst who runs the work | All five | All of the above, and the running of the work: writing an instruction, reading a report, reviewing it, and keeping the log over weeks, with a starter folder you keep using. |
+| **Architect** | The head of an ICT unit, a project lead or an analyst who runs the work | All six | All of the above, and the running of the work: writing an instruction, reading a report, reviewing it, and keeping the log over weeks, with a starter folder you keep using. |
 
 ### Two ways through
 
 | Way | Modules | What it gives |
 | --- | --- | --- |
 | **Strategist** | 0, 1, 2, 3 | Enough to run any AI usage tip in this knowledge base and to accept work done the orchestrated way. |
-| **Architect** | 0 to 4 | Enough to run the work, as the building-block course's modules 3 to 5 expect. |
+| **Architect** | 0 to 5 | Enough to run the work, as the building-block course's modules 3 to 5 expect. |
 
 ## How to use this guide
 
@@ -66,6 +67,7 @@ Time: each page is a short read and a tip of five to twenty minutes. A module is
 <tr><td><h3>🧰</h3></td><td><strong>Module 2 — Prepare: set up what the AI knows and can do</strong></td><td>Four pages on setting the assistant up once: the context, projects and standing instructions, skills and connectors, and what never goes into the setup.</td><td><a href="module-2/README.md">module-2</a></td></tr>
 <tr><td><h3>🔀</h3></td><td><strong>Module 3 — Orchestrate: one piece of work, start to finish</strong></td><td>Four pages that take one piece of your own work through the cycle: an instruction, a work chat, a separate review chat, and your decision.</td><td><a href="module-3/README.md">module-3</a></td></tr>
 <tr><td><h3>🗓️</h3></td><td><strong>Module 4 — Orchestrate: running it for days</strong></td><td>Four pages on running the cycle for days: the log, the pages of faults, handing over to a fresh chat, and the daily routine.</td><td><a href="module-4/README.md">module-4</a></td></tr>
+<tr><td><h3>🔌</h3></td><td><strong>Module 5 — Orchestrate with the plugin: build a toy prototype</strong></td><td>Five pages that build a toy learner registry with the orchestrator plugin, from setting up the project to a note for a senior reader.</td><td><a href="module-5/README.md">module-5</a></td></tr>
 <tr><td><h3>🗂️</h3></td><td><strong>The starter folder</strong></td><td>The forms, the chat prompts, the pages of faults and one finished cycle, to copy and keep.</td><td><a href="starter-folder/README.md">starter-folder</a></td></tr>
 <tr><td><h3>🚩</h3></td><td><strong>The demonstration country</strong></td><td>Progressa: the fictional country every worked example in this knowledge base is set in.</td><td><a href="../start-here/progressa.md">progressa</a></td></tr>
 </tbody></table>

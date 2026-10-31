@@ -175,6 +175,55 @@
   "gitbook_id": null
  },
  {
+  "ref": "kp0-module-5",
+  "title": "Module 5 — Orchestrate with the plugin: build a toy prototype",
+  "parent": "kp0",
+  "path": "kp0/module-5/README.md",
+  "gitbook_id": null
+ },
+ {
+  "ref": "kp0-5-1",
+  "title": "5.1 Set up the project, and the first round",
+  "parent": "kp0-module-5",
+  "path": "kp0/module-5/5-1.md",
+  "gitbook_id": null
+ },
+ {
+  "ref": "kp0-5-2",
+  "title": "5.2 Decide before you build",
+  "parent": "kp0-module-5",
+  "path": "kp0/module-5/5-2.md",
+  "gitbook_id": null
+ },
+ {
+  "ref": "kp0-5-3",
+  "title": "5.3 Build one goal per round",
+  "parent": "kp0-module-5",
+  "path": "kp0/module-5/5-3.md",
+  "gitbook_id": null
+ },
+ {
+  "ref": "kp0-5-4",
+  "title": "5.4 Check at the real thing, and write the note",
+  "parent": "kp0-module-5",
+  "path": "kp0/module-5/5-4.md",
+  "gitbook_id": null
+ },
+ {
+  "ref": "kp0-5-5",
+  "title": "5.5 Judgement: what a toy proves",
+  "parent": "kp0-module-5",
+  "path": "kp0/module-5/5-5.md",
+  "gitbook_id": null
+ },
+ {
+  "ref": "kp0-module-5-self-check",
+  "title": "Self-check — Module 5",
+  "parent": "kp0-module-5",
+  "path": "kp0/module-5/self-check.md",
+  "gitbook_id": null
+ },
+ {
   "ref": "kp0-starter",
   "title": "The starter folder",
   "parent": "kp0",
@@ -207,6 +256,20 @@
   "title": "One finished cycle",
   "parent": "kp0-starter",
   "path": "kp0/starter-folder/finished-cycle.md",
+  "gitbook_id": null
+ },
+ {
+  "ref": "kp0-starter-with-the-plugin",
+  "title": "With the plugin: your first project",
+  "parent": "kp0-starter",
+  "path": "kp0/starter-folder/with-the-plugin.md",
+  "gitbook_id": null
+ },
+ {
+  "ref": "kp0-starter-mini-registry",
+  "title": "The mini registry: the brief for Module 5",
+  "parent": "kp0-starter",
+  "path": "kp0/starter-folder/mini-registry.md",
   "gitbook_id": null
  }
 ]

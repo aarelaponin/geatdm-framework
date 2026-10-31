@@ -14,7 +14,7 @@ module has **one video**, a person on camera, covering its pages (plan, section 
 | 0 | Introduction | 0.0 | V0 | — | not started |
 | 1 | Chat | 1.1 – 1.4 | V1 *The draft that looked right* | `build_kp0_module1_v01.js` | v0.1 draft, gate passed |
 | 2 | Prepare | 2.1 – 2.4 | V2 *Context once, then skills* | `build_kp0_module2_v01.js` | v0.1 draft, gate passed |
-| 3 – 4 | Orchestrate | 3.1 – 3.4, 4.1 – 4.4 | V3 – V6 | — | scripts v0.1, bundles and GitBook pages written (31 Oct), not yet published; speakers' cases open |
+| 3 – 5 | Orchestrate | 3.1 – 3.4, 4.1 – 4.4, 5.1 – 5.5 | V3 – V6 (Module 5: screenshots) | — | scripts v0.1, bundles and GitBook pages written (31 Oct), not yet published; speakers' cases open |
 
 Each video's story beat is left to its speaker, who names a real case with a date before the cut is decided
 (plan, decision 4).
