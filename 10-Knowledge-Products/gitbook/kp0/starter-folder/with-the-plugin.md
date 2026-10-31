@@ -48,7 +48,7 @@ Copy the pages of faults you use from this folder's `kinds/` into the project, a
 
 ## 4. Give one session the orchestrator's role
 
-Start a session named with your code, the word *orchestrator* and a few words, for example *REG · orchestrator · the visit register*. In its first message, ask it to take up the orchestrator's role for the project, and give it the full path of the constants. It reads the rules and the constants, and writes in the log that it holds the role. From then on it writes instructions and keeps the log, and it does no work itself.
+Start a session named with your code, the word *orchestrator* and a few words, for example *REG · orchestrator · the visit register*. Before you send anything, set the model to **Opus** and the effort to **High**: the orchestrator judges every result and writes every instruction, so it gets the most capable setting. In its first message, ask it to take up the orchestrator's role for the project, and give it the full path of the constants. It reads the rules and the constants, and writes in the log that it holds the role. From then on it writes instructions and keeps the log, and it does no work itself.
 
 ## 5. Run the first round
 
@@ -60,6 +60,7 @@ Ask the orchestrator for the first piece of work. A good first one is small and 
 
 ## 6. Keep going, one piece of work at a time
 
+- **Whenever you do not understand something the orchestrator or a work session did, ask it to explain, in plain words, before you go on. Always.** A ruling on work you cannot explain is not a ruling.
 - Start the next piece of work only when the last one's ruling is in the log. Never press *Run now* on a round that is also set to start on a timer.
 - Ask "where does it stand?" at the start of each day, and read the answer against what you remember.
 - After a few days, or when the orchestrator starts quoting figures instead of working them out again, ask it to hand over: it writes the handover note and the fresh session's first task.

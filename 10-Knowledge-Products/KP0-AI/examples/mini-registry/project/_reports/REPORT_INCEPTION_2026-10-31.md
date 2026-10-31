@@ -37,7 +37,7 @@ The mini registry is set up at `~/Documents/Dev/wai-demo/mini-registry` and read
 
 ## 3. Found, not fixed
 
-- The new coordination's table of computers carries `MacBookPro` alone. The coordination at `~/Documents/Dev/[another coordination]` also carries `[the other name of the computer]`, the other name `hostname` reports for the same Mac. A round that runs while the Mac reports that name will not match the table.
+- The new coordination's table of computers carries `MacBookPro` alone. The coordination at `[another coordination]` also carries `[the other name of the computer]`, the other name `hostname` reports for the same Mac. A round that runs while the Mac reports that name will not match the table.
 - The new coordination at `~/Documents/Dev/wai-demo/_coordination` sits outside this project's repository and is under no version control of its own. Its constants say the ledger is kept by git `no`.
 - Section 6 of the constants names the installed plugin's folder under Claude Desktop's Application Support. The constants already say how to correct it if the folder moves.
 - The brief that governs the project, `../brief/MINI-REGISTRY-BRIEF.md`, sits outside this repository, so its versions are not in the project's history.

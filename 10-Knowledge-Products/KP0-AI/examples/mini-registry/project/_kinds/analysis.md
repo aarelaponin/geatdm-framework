@@ -11,6 +11,7 @@
 4. **To cite a source where it does not say what the paper says,** or to write a figure from anything but the passage that holds it.
 5. **To contradict itself or the instruction.** A figure given twice is the same both times. A departure from the instruction is stated, with its reason.
 6. **To credit one position with a setting, a count or a screen that any position could take.** Positions that differ on more than the question asks are cut back to that one difference, and everything else open to all is given to all, before any is judged. *(Added 31 October 2026 from the review `_reviews/REVIEW_GAPS_2026-10-31.md`, gap G3.)*
+7. **To judge the positions of one question under another question's answer other than the one recommended, or under different answers for each position; or to declare a dependency between two answers in one direction only.** *(Added 31 October 2026 from the review `_reviews/REVIEW_QUESTIONS_2026-10-31.md`, gap G1, in the reviewer's proposed words.)*
 
 ## 2. What the review chat runs
 - Every citation read at its source, against the sentence that cites it.
@@ -22,3 +23,4 @@
 - The question is one you have not already decided, and the instruction asks for a recommendation.
 - Every document the analysis rests on is in the material.
 - Each set a test counts is named, with the source it is listed from.
+- Where the questions depend on one another, the instruction asks for every dependency, listed from every proposal's words and declared both ways, and for every rival judged under the other questions' recommendations, with a run that builds each rival beside them and reads it against the ruled settings and the other recommendations' words, not the counts alone. *(Added 31 October 2026 from the reviews `_reviews/REVIEW_QUESTIONS_2026-10-31.md`, gap G1, and `_reviews/REVIEW_QUESTIONS_2026-10-31_v2.md`, gap G1.)*

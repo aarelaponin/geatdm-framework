@@ -10,7 +10,7 @@
 | Module persona | A (Architect) — the one who runs AI-assisted work day to day: the head of an ICT unit, a project lead, an analyst. No programming assumed |
 | Subtopics | Five written pages (5.1 – 5.5); the fifth is the module's Judgement page |
 | Videos | None. The steps that need a picture carry a marked place for a screenshot, to be taken by the course team on a real run |
-| The toy | The mini registry: one goal, enrol a learner, on 60 made-up children over three lists, built in eight rounds with the orchestrator plugin (the brief is in the starter folder) |
+| The toy | The mini registry: one goal, enrol a learner, on 60 made-up children over three lists, built from the brief's eight rounds with the orchestrator plugin (17 rounds in the course's own run) (the brief is in the starter folder) |
 | Worked examples | From the registry prototype's record, the full-size project the toy is cut from: the constants refused, the count both ways, the data in known numbers, the consent check, and the note |
 | Self-check | Four questions drawn from the five pages, in section 2.1 |
 | Prepared by | FiscalAdmin OÜ |
@@ -45,7 +45,7 @@ Section 2 gives Module 5 at a glance, with the module's self-check. Section 3 ho
 
 ## 2. Module 5 at a glance
 
-Five written pages. A learner who builds the toy alongside the pages needs about a day spread over a week: eight rounds, each a few minutes of reading and ruling, and the time the work sessions take.
+Five written pages. A learner who builds the toy alongside the pages needs about a day spread over a week: the brief's eight rounds and those the run adds, 17 in the course's own run, each a few minutes of reading and ruling, and the time the work sessions take.
 
 | # | Title | Single message | Form |
 | --- | --- | --- | --- |
@@ -105,7 +105,9 @@ With the plugin, you no longer make the folders and forms yourself. One session 
 
 The constants are the heart of it: what the project is for, what it delivers, the documents that govern it, who receives its results, the standing constraints, and where each kind of thing lives. Nothing in them carries a date, because they must stay true for as long as the project runs. Everything that happens goes in the log instead.
 
-Then one session takes the orchestrator's role. It writes in the log that it holds the role, and from then on it writes the instructions and keeps the log, and it does no work itself. You are the owner: you rule on every result.
+Then one session takes the orchestrator's role. It writes in the log that it holds the role, and from then on it writes the instructions and keeps the log, and it does no work itself. You are the owner: you rule on every result. Start the orchestrator on the most capable model with high effort, in the Claude desktop app Opus with effort set to High: it judges every result and writes every instruction, and a weaker setting saves little and costs most there.
+
+Whenever you do not understand something the orchestrator or a work session did, a step, a word, a number, or why it stopped, ask it to explain, in plain words, before you go on. Always. It costs one message, and the answer is often where you find that something is wrong. A ruling on work you cannot explain is not a ruling.
 
 Make the first round small and checkable. The register of requirements is a good one: a numbered list of what the prototype must do, each with a test someone could run. It is short, every later round builds on it, and a review can check it line by line. The engineers who build agents found the same: a first session that only sets up the project and writes the list of features, before any of them is built, made the work that followed steadier.
 
@@ -137,13 +139,15 @@ Then setup makes everything in one go, and reports. Read the report: what it mad
 
 IMAGE: M5-06-setup-report.png | Setup's report: what it made, where the owner went against its suggestions, and what is worth knowing.
 
-Taking up the role. Start a second session in the same project of the app. Ask it to take up the orchestrator's role, and give it the full path of the constants.
+Taking up the role. Start a second session in the same project of the app. Before you send anything, set the model to Opus and the effort to High, in the menu below the message box. Then ask it to take up the orchestrator's role, and give it the full path of the constants.
 
-IMAGE: M5-07-take-the-role.png | The second session's first message.
+IMAGE: M5-07-take-the-role.png | The second session's first message, on Opus with effort High.
 
 Name the session with the project's code, the word orchestrator and a few words, such as 'MR · orchestrator · the mini registry', and pin it: you will come back to it every day. It reads the procedure and the constants before it does anything else.
 
 IMAGE: M5-08-orchestrator-reads.png | The orchestrator's session, named and pinned, reading the procedure first.
+
+A note on the pictures: in this run the orchestrator's session was first named 'MINI · orchestrator · the mini registry'. The project's code is MR, the one setup gave it, and the right name is 'MR · orchestrator · the mini registry'. Read MINI as MR wherever it shows in the pictures that follow.
 
 The first round. Ask the orchestrator for round 1 of the brief, the register of requirements. It decides first whether to do the work or to commission it, using the five conditions of Module 3. A lasting document others will rely on is commissioned.
 
@@ -153,7 +157,7 @@ It writes the instruction and its review, and starts the work session as a sched
 
 IMAGE: M5-10-scheduling-blocked.png | The first scheduled task blocked. The orchestrator gives the two lines to paste, and the instruction in short.
 
-Either paste the two lines yourself, or tell the orchestrator that it may schedule tasks for the demo's folder, and ask it to try again.
+Either paste the two lines into a new session yourself, on the model and effort the orchestrator names, or tell the orchestrator that it may schedule tasks for the demo's folder, and ask it to try again.
 
 IMAGE: M5-11-allow-scheduling.png | The owner allows scheduled tasks for the demo's folder.
 
@@ -305,9 +309,14 @@ Read the groundwork as tables: the settings must be the brief's numbers exactly,
 
 The groundwork, too, came back not accepted at version 1, with one gap: the round's own check of what it had read failed when the review ran it again. Version 2 fixed that alone and was accepted. Its review also noted, outside its tests, that the log named the project's folder wrongly, and raised one question nobody had asked, whether two different children may differ only in capitals. Read what a review found and did not fix as closely as its verdict: that is where the next question comes from.
 
-For the count, read its first paragraph: the two totals, the requirements carried by no goal with their reasons, and the planted mistakes it found.
+For the count, read its two totals first, then each list of what nothing carries. In this run:
 
-SCREENSHOT: the count's report, its first paragraph and the line showing the planted mistakes found.
+| Way | Reached | Not reached | Of |
+| --- | --- | --- | --- |
+| Requirements to the goal | 13 | 10 | 23 |
+| The goal to the requirements | 12 | 7 | 19 |
+
+Neither list is a fault in itself. Of the ten requirements no step of the goal carries, seven are about the made-up data, one about the other bodies being simulated, one about the checks running without a window, and one is the note. The seven parts of the goal no requirement's test reaches are all seven ways the goal can go wrong: each is there by the brief's rule or a ruling, and its check in the build is the only test it will have. A mistake planted on purpose, two requirements taken out, was caught. The review counted a second way, from the goal's own references, and got other totals, 8 and 15; it went through every pair that differed and found the count right each time. Two totals that disagree are not yet a fault: ask why they differ.
 
 ### AI usage tip — Read a design document before you rule
 
@@ -378,11 +387,29 @@ Accept nothing that was not seen running. The page of faults for building refuse
 
 With the orchestrator plugin. Ask the orchestrator for round 5 of the brief, the scaffold and the made-up data. Check before it is issued that its first step is to check the tools answer, and that its tests include counting the data against the brief's numbers.
 
-SCREENSHOT: the report of round 5, its first paragraph giving each count of the made-up data against its setting.
+Read the report's first paragraph against the settings. In this run every count matched:
+
+| Setting | In the brief | Counted in the made-up data |
+| --- | --- | --- |
+| Children | 60 | 60 |
+| Schools | 3 | 3, of 20 children each |
+| List entries | 68 | 68: 24, 22 and 22 on the three lists |
+| Children on two lists | 8 | 8 |
+| Of those, family name spelt differently | 4 | 4 |
+| Ages | 6 to 12 | 6 to 12 |
+| Learners after a reset | 64 | 64, numbered 1 to 64 |
+
+All 29 of the round's checks passed, each counting the files the reset wrote. One child dropped on purpose, in a copy, failed 7 checks by name; the reset made twice gave the same data. The review counted again in a program of its own and planted two faults of its own. Note why there are 64 learners and not 60: the search fails to join the 4 children spelt differently, so each is held twice. The number shows the search's limit before anyone has opened a screen.
+
+Round 6 came back not accepted at version 1. The prototype did what the goal says on every screen the review tried, but the check that no window opens did not look at the windows. Version 2 read the computer's list of windows before, during and after the checks, and was accepted with all 57 checks passing.
 
 Then round 6, the goal built. Its review must run the checks and go through enrolling a learner as a clerk would, once for a child the registry finds and once for a new child.
 
-SCREENSHOT: the prototype's enrolment screen as the review saw it, for a child already on the registry, with the banner 'Invented data, Progressa is fictional'.
+IMAGE: M5-26-child-found.png | The finished prototype, a child already on the registry. The clerk enters the four details; the registry finds the learner and enters nothing new. Every screen carries the line 'Invented data, Progressa is fictional'.
+
+IMAGE: M5-27-new-child.png | A child the registry does not hold. A new learner number is given and the record saved.
+
+IMAGE: M5-28-entry-refused.png | An entry the goal refuses before any search: the family name missing and the date in the wrong form. Each fault is named on its own line, and the way back keeps what the clerk typed.
 
 Nothing opens a window on your screen: the checks run without one, and the screenshots of the review are taken the same way.
 
@@ -455,11 +482,36 @@ Then the note: one page for a senior reader, saying what the prototype shows and
 
 With the orchestrator plugin. Ask for round 7, the duplicates count. Check that its instruction names the review's own route, counting again from the three lists without the prototype's search, and plants one fault before counting.
 
-SCREENSHOT: the duplicates count's report, its first paragraph with the 8, the 4 caught and the 4 missed.
+Read the count's first line, then its table. In this run: the search catches 4 of the 8.
+
+| Child, as on the first list | Caught | What differs between its two entries |
+| --- | --- | --- |
+| Praquinvel | yes | nothing |
+| Prarasel | no | the family name, by one letter: Praresel on the candidate list |
+| Velnokgal | yes | nothing |
+| Miquin | yes | nothing |
+| Temnok | no | the family name, by one letter: Tomnok on the grant list |
+| Orobenwes | yes | nothing |
+| Orowes | no | the family name, by one letter: Orowus on the grant list |
+| Tumitem | no | the family name, by one letter: Tomitem on the grant list |
+
+Each child missed is held twice, under two learner numbers. The review counted again from the three lists alone, without the prototype's search, and found the same 4 and the same eight reasons; a fault planted in the count moved it from 4 to 3. The answer given in advance held.
+
+IMAGE: M5-29-one-letter-off.png | What a miss looks like on the screen. The child of the first picture, entered with one letter of the family name different: the registry finds no one and gives a second learner number. Nothing on the screen says anything went wrong, which is why the count is made from the three lists and not from the screens.
 
 Then round 8, the note. Its instruction must ask for the list of limits first, every one the record names, before the note is written.
 
-SCREENSHOT: the note's section 'What it does not show', as the review accepted it.
+The note came back not accepted at version 1. Every claim in it stood at a source, but the record named one limit the note neither stated nor listed as left out: a name is not limited in length, and no character in it is refused. Version 2 listed the limits again from every ruling, 38 of them, added what was missing, and was accepted; the review's own list found none unaccounted for. Its section on what the prototype does not show, as accepted:
+
+“It is not the registry. It is for agreement, it offers enrolment only, with no way to look a learner up, and it holds only invented data: Progressa is fictional, and every screen says so.”
+
+“It is connected to no other body. The three lists are part of the invented data; no system of the census, the examinations authority or the social grant programme is linked to it.”
+
+“It cannot tell apart two different children who share a family name, given names and date of birth. The second would be taken for the first, and nothing new saved. No two children in the invented data share all three.”
+
+“Three points are kept in their simplest form. An entry of blank characters of any kind, not only spaces, is treated as missing. A school other than the three, once refused, is not shown again when the clerk returns to correct the entry. Where the search finds more than one matching learner, the entry is refused and nothing is saved; this never arises in the invented data, and is checked only on a record added for the purpose.”
+
+Note what the note says of the 4 of the 8: a limit of the search step as it is defined, and a figure that shows how the rule behaves, not how many children a registry would hold twice on real lists.
 
 ### AI usage tip — Find what a passed check cannot show
 
@@ -527,23 +579,25 @@ The full-size prototype's accepted note to the Permanent Secretary opens: 'It is
 
 A prototype is for agreement. It shows the people who decide that something can work, on made-up data, on one computer, with the other bodies simulated. It never shows that the thing is ready: not with real data, not under load, not with a real connection, not with the law confirmed. Say so on the first page of anything you write about it.
 
-Know what it cost. The full-size prototype took 23 pieces of work over five days: 13 accepted at the first version, 10 after a second attempt. The toy takes eight. Each round costs a few minutes of your reading and ruling, and the review costs a second session. That is cheap next to a design accepted without a check, and dear next to a question you could have asked in one chat. Use the five conditions of Module 3 to decide.
+Know what it cost. The full-size prototype took 23 pieces of work over five days: 13 accepted at the first version, 10 after a second attempt. The toy was planned as eight rounds and took 17, in one day of about nine hours: the brief's eight, three papers putting open questions to you, four rounds saving the work in the project's history, one moving the log under that history, and one bringing a page of faults up to date. Nine were accepted at the first version and five at the second; three were withdrawn after a second version not accepted, and ruled on directly. Each round costs a few minutes of your reading and ruling, and the review costs a second session. That is cheap next to a design accepted without a check, and dear next to a question you could have asked in one chat. Use the five conditions of Module 3 to decide.
 
 You decide when it has shown enough. Stop when the question it was built to answer is answered, and the note says what it shows and what it does not. A prototype that keeps growing is turning into the system without anyone having decided to build one.
 
 Then take what it showed to where the real thing is built. In government, a service is specified and built the way the service design course teaches: from the agreed requirements and design, by the people and tools the ministry has chosen. The prototype's documents, the register, the groundwork and the goal written in full, travel; its code does not.
 
-Watch for cognitive debt here more than anywhere: a prototype that works on screen is easy to accept without being able to say why it is right. Before your last ruling, say in your own words what each round found.
+Watch for cognitive debt here more than anywhere: a prototype that works on screen is easy to accept without being able to say why it is right. Before your last ruling, say in your own words what each round found. Where you cannot, ask the orchestrator to explain until you can.
 
 ### In the tool
 
 With the orchestrator plugin. Ask the orchestrator where the project stands. Read the answer against the log: every round, its version, its ruling.
 
-SCREENSHOT: the orchestrator's answer to 'where does it stand?' at the end of the toy, with its eight rounds and their rulings.
-
 Write your last ruling: accept the note, or ask for what is missing. Then ask the orchestrator to hand over and stop. The project stays in its folder, with its history, as the record of what was decided and why.
 
+IMAGE: M5-30-final-handover.png | The handover. The orchestrator writes a note for whoever takes the role next: what it did that it should not have, and what is still owed, each line a claim for the successor to check, not a fact to inherit. It issues the successor's first task, which checks five of those claims and does nothing else, and gives up the role as its last act. To pick the project up again, start a session on Opus with effort High from the two lines it gives.
+
 End the session by asking whether everything is saved in the project's history.
+
+IMAGE: M5-25-final-check.png | The end of the toy. The orchestrator gives what was delivered, the checks and the duplicates count, corrects a reason it wrote in its own log, and names what is not yet saved in the history. Read the last two as closely as the first: a session that reports its own mistake and what it left undone is one you can rule on.
 
 ### AI usage tip — Decide whether the prototype has shown enough
 
@@ -563,7 +617,7 @@ Below are my prototype's brief [paste it], its log [paste it] and its note [past
 
 **Practise on Progressa — input:**
 
-The mini registry's brief, its log of eight rounds all accepted, and its note, which says: the search finds 4 of the 8 children on more than one list from every list and misses each of the other 4 on the list where the family name is spelt differently; whether anything else would find them is not shown; all data is made up; nothing is connected to another body.
+The mini registry's brief, its log of 17 rounds, each closed by a ruling, and its note, which says: the search finds 4 of the 8 children on more than one list from every list and misses each of the other 4 on the list where the family name is spelt differently; whether anything else would find them is not shown; all data is made up; nothing is connected to another body.
 
 **Practise on Progressa — answer key:**
 
@@ -586,11 +640,11 @@ An Architect with the page on one half of the screen and the Claude desktop app 
 
 ### 4.2 Screenshots instead of a video
 
-Module 5 has no video. Its pictures are screenshots of one real run of the toy, 31 October 2026, with invented data only, kept in figures/ as M5-01 to M5-24: 21 on page 5.1 (setup, the orchestrator's role, round 1 and its scheduled task with the two permissions the app asked for, and the round the orchestrator added) and 3 on page 5.2 (that round's task, and the round not accepted and sent again as version 2). Where the run's record says more than a picture, the page gives it as a table: round 1 in the course's log, and the first rows of the groundwork's settings. Six places are still marked SCREENSHOT, for the rounds the run has not reached: rounds 4, 5, 6, 7 and 8, and the end. The run used a local build of the plugin; before publication, check the screens against the released plugin and crop anything that shows other projects.
+Module 5 has no video. Its pictures are screenshots of one real run of the toy, 31 October 2026, with invented data only, kept in figures/ as M5-01 to M5-30: 21 on page 5.1 (setup, the orchestrator's role, round 1 and its scheduled task with the two permissions the app asked for, and the round the orchestrator added), 3 on page 5.2 (that round's task, and the round not accepted and sent again as version 2), 3 on page 5.3 and 1 on page 5.4 (the finished prototype: a child found, a new child, an entry refused, and a name one letter off; each is the entry beside the screen it gave, taken without a window from a copy of the prototype after a reset), and 2 on page 5.5 (the handover, and the orchestrator's final check). Where the run's record says more than a picture, the page gives it as a table: round 1 in the course's log, and the first rows of the groundwork's settings. Rounds 4, 5, 7 and 8 are given from the run's record, as tables and the note's own words. No place is still marked SCREENSHOT. The run used a local build of the plugin; before publication, check the screens against the released plugin and crop anything that shows other projects.
 
 ### 4.3 The toy and the full-size record
 
-The toy is cut from the registry prototype: one goal of its four, 60 children of its 300, eight rounds of its 23. The brief is in the starter folder (MINI-REGISTRY-BRIEF.md), and the page of faults for building is added there for this module. Every Try it first comes from the full-size record, frozen in examples/plr/, so that each answer key rests on a run that happened. The toy's own figures follow from the brief's numbers, so the answer keys of its tips are known in advance. The toy's own run, which the screenshots and the tables of 5.1 and 5.2 come from, is frozen in examples/mini-registry/, as far as round 2.
+The toy is cut from the registry prototype: one goal of its four, 60 children of its 300, the brief's eight rounds of its 23. The brief is in the starter folder (MINI-REGISTRY-BRIEF.md), and the page of faults for building is added there for this module. Every Try it first comes from the full-size record, frozen in examples/plr/, so that each answer key rests on a run that happened. The toy's own figures follow from the brief's numbers, so the answer keys of its tips are known in advance. The toy's own run, which the screenshots and the tables of 5.1 to 5.4 come from, is frozen in examples/mini-registry/, to its end, with rounds 4, 5, 7 and 8 given as tables and the note's own words in 5.2 to 5.4.
 
 ### 4.4 Depends on the plugin
 
