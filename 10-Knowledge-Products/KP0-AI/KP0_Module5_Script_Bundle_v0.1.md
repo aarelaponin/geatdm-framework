@@ -37,7 +37,7 @@ The Claude desktop app with Desktop Commander, the orchestrator plugin, Python, 
 
 ### 1.4 Screenshots
 
-Where a step needs a picture, the page carries a marked place: SCREENSHOT, then what the picture must show. The course team takes them on a real run of the toy, with invented data only, and replaces each mark before publication. The GitBook guide shows each mark as a box saying a screenshot is to come.
+Where a step needs a picture, the page shows a screenshot from one real run of the toy, with invented data only, and a caption. They are granular on purpose: setup and the first round are shown step by step, including where the app asks for a permission, because that is where a first-time user gets stuck. A picture not yet taken is a marked place: SCREENSHOT, then what it must show; the GitBook guide shows it as a box saying a screenshot is to come.
 
 ### 1.5 How to read this document
 
@@ -111,25 +111,100 @@ Make the first round small and checkable. The register of requirements is a good
 
 ### In the tool
 
-With the orchestrator plugin, in the Claude desktop app. Have your answers ready, as the starter folder's page With the plugin lists them. For the mini registry, the brief gives most of them: its purpose, what it delivers, and what it must not do.
+With the orchestrator plugin, in the Claude desktop app. The pictures on this page are from one real run of the mini registry, step by step, including the places where the app stopped to ask for a permission. Your screens will differ in small ways; what each step is for does not.
 
-Setting up. Start a new session and ask it to start a new project called the mini registry. Answer its questions; for the governing documents, name the mini registry brief.
+Before you start. Check that the plugin is installed and switched on: under Customize, its page lists three skills, one to set up a project, one to hold the orchestrator's role, and one to check at the end of a session that everything is saved.
 
-SCREENSHOT: the setup's first question form, with the recommended answers marked, for the mini registry.
+IMAGE: M5-01-plugin-installed.png | The plugin installed and switched on, with its three skills.
 
-Read the map of folders before you accept it. It is your ruling.
+Make a folder for the demo and put two things in it: the mini registry brief, and the pages of faults from the starter folder. Leave out the project's own folder. Setup makes it, and it treats a folder that already holds files as a project under way.
 
-SCREENSHOT: the map of folders as setup proposes it, shown for the owner's ruling.
+IMAGE: M5-02-demo-folder.png | The demo's folder before setup: the brief and the four pages of faults, and no project folder yet.
 
-Copy the pages of faults into the project: analysis, drafting, checking, and building, which Module 5 uses for the first time.
+Setting up. Keep the project's sessions together in one project of the desktop app, here called Working with AI, and give it the demo's folder. Start a new session there and ask it to start a new project: name it, say where its folder goes, and give the full path of the brief.
 
-Taking up the role. Start a session named with the project's code, the word orchestrator and a few words, such as 'MINI · orchestrator · the mini registry'. Ask it to take up the orchestrator's role, and give it the full path of the constants.
+IMAGE: M5-03-first-message.png | The first message: the project's name, its folder and its brief.
 
-SCREENSHOT: the orchestrator's first answer, saying that it holds the role and what it read.
+Setup first checks your computer and looks at the folder. Then it asks its questions, a few at a time. Each comes with a recommended answer drawn from the brief, and a line to type something else.
 
-The first round. Ask the orchestrator for round 1 of the brief, the register of requirements. Read its instruction before it is issued: its tests and its ways to fail are what you judge. Then let the work session run, and read the review when it comes back.
+IMAGE: M5-04-setup-questions.png | Setup's questions, drafted from the brief. The open one is the standing constraints.
 
-SCREENSHOT: the log after round 1, with its rows from instruction issued to the owner's ruling.
+Read every answer before you send it. Two matter most. The kinds of thing the project will produce: the map of folders is made from them, so this answer is your ruling on the map. The short code: it starts the name of every session of the project. Setup proposes one that no other project of yours uses, here MR.
+
+IMAGE: M5-05-setup-answers.png | All the answers. Here the history is kept on this computer only, against the recommended backup.
+
+Then setup makes everything in one go, and reports. Read the report: what it made, where you went against its suggestions, and what is worth knowing. Here it also copied the four pages of faults into the project, because they sat beside the brief; if yours did not, copy them into the project's folder for kinds of work yourself.
+
+IMAGE: M5-06-setup-report.png | Setup's report: what it made, where the owner went against its suggestions, and what is worth knowing.
+
+Taking up the role. Start a second session in the same project of the app. Ask it to take up the orchestrator's role, and give it the full path of the constants.
+
+IMAGE: M5-07-take-the-role.png | The second session's first message.
+
+Name the session with the project's code, the word orchestrator and a few words, such as 'MR · orchestrator · the mini registry', and pin it: you will come back to it every day. It reads the procedure and the constants before it does anything else.
+
+IMAGE: M5-08-orchestrator-reads.png | The orchestrator's session, named and pinned, reading the procedure first.
+
+The first round. Ask the orchestrator for round 1 of the brief, the register of requirements. It decides first whether to do the work or to commission it, using the five conditions of Module 3. A lasting document others will rely on is commissioned.
+
+IMAGE: M5-09-round-1-asked.png | Round 1 asked for. The orchestrator commissions it, and says which conditions decided that.
+
+It writes the instruction and its review, and starts the work session as a scheduled task of the app. The first time, the app may block it. The orchestrator then hands the start to you: two lines to paste into a new session, and what the round is asked to do. Read that part: its tests and its warnings are what you judge.
+
+IMAGE: M5-10-scheduling-blocked.png | The first scheduled task blocked. The orchestrator gives the two lines to paste, and the instruction in short.
+
+Either paste the two lines yourself, or tell the orchestrator that it may schedule tasks for the demo's folder, and ask it to try again.
+
+IMAGE: M5-11-allow-scheduling.png | The owner allows scheduled tasks for the demo's folder.
+
+IMAGE: M5-12-creating-task.png | The orchestrator creates the task.
+
+The app asks you to approve the task. Check what it shows: the first line is the session's name, the second points at the instruction, the folder is the demo's, and it runs once, on your computer. Then press Schedule.
+
+IMAGE: M5-13-approve-task.png | The app's approval of the task: its prompt, its folder and its time.
+
+Open the task under Scheduled. A warning beside the folder means the task may not read it yet.
+
+IMAGE: M5-14-folder-warning.png | The task waiting, with a warning beside its folder.
+
+Click the warning, and the app asks whether the task may use the folder on every run. Read what it says: the app says the task runs in the cloud, so the files it uses leave your computer and are processed on the provider's servers. That is why the toy holds invented data only. Check your organisation's rules before you allow it for real work. Each new task asks again.
+
+IMAGE: M5-15-folder-access.png | The app's question about the folder. This one is for the next round's task; each task asks once.
+
+Once you allow it, the folder is ticked and the task is queued to run. Do not also press Run now: a round started twice is two sessions writing the same files.
+
+IMAGE: M5-16-task-queued.png | The folder ticked, and the task queued to run.
+
+Back in the orchestrator's session, it says what happens next. The work session runs without stopping for your clicks. When its report is written, it starts its own review in a separate session. Tell the orchestrator 'check' when the review is back.
+
+IMAGE: M5-17-orchestrator-scheduled.png | The orchestrator after scheduling: what will run, and what to say when it is back.
+
+The work session appears under the project, marked as a scheduled run. Open it to watch, but do not type in it.
+
+IMAGE: M5-18-sidebar.png | The work session in the side bar, under the project.
+
+IMAGE: M5-19-work-session.png | The work session running the instruction.
+
+It ends with one line: the review's verdict, and where the review is. That verdict is the reviewer's judgement, not yet your ruling.
+
+IMAGE: M5-20-review-accepted.png | The work session's last line: the review's verdict, accepted, with no gaps.
+
+Say 'check' to the orchestrator. It checks the review against the record before it acts on it. Then it may add a round the brief did not list. Here the register had left questions open that round 2 builds on, so the orchestrator first commissioned answers to them, and the app asked again to approve the task.
+
+IMAGE: M5-21-check-next-round.png | The orchestrator checks the review, then issues a round the brief did not list: answers to the register's open questions.
+
+Then rule on round 1 yourself. The orchestrator puts each ruling to you as a decision on a question form: what is to be decided, its recommendation, and the rival it weighed. It writes your answer in the log. A ruling can wait while other work goes on, as round 1's did here, but the next round that builds on it cannot.
+
+In this run, round 1 found 29 sentences, list items and table rows in the brief's five sections, marked 20 of them as saying what the registry must do, and wrote them as 23 numbered requirements, each with a test of what is set up, what is done and what is seen. It left 14 questions open that the brief does not answer, such as how a learner number is made. The review counted the brief again by its own route, found the same, and accepted with no gaps. In the course's log, round 1 reads:
+
+| Date | Piece of work | Version | Event | File | Verdict or ruling | Open with |
+| --- | --- | --- | --- | --- | --- | --- |
+| 31 Oct, 15:00 | The register of requirements | 1 | instruction issued | the instruction, in the folder for instructions | — | the work session |
+| 31 Oct, 15:13 | The register of requirements | 1 | report back | the report, in the folder for reports | 23 requirements, 14 questions open | the review |
+| 31 Oct, 15:18 | The register of requirements | 1 | review back | the review, in the folder for reviews | accepted, no gaps | me |
+| 31 Oct, 16:12 | The register of requirements | 1 | my ruling | the decision in the log | accepted | — |
+
+The plugin keeps this log for you, in its own form: a short entry for each event, in a folder beside the project. Until it is set up, the orchestrator keeps the rows by hand in the record of what is running. Setting it up needs the log's folder kept under version control, so in this run the orchestrator asked first whether a history on this computer alone was enough, and commissioned a small round to make it so.
 
 ### AI usage tip — Check the instruction before it is issued
 
@@ -200,9 +275,35 @@ You rule on each document before the next one starts. A design accepted in a hur
 
 With the orchestrator plugin. Ask the orchestrator for rounds 2, 3 and 4 of the brief, one at a time: the groundwork, the goal written in full, and the count. Start each round only when the last one's ruling is in the log.
 
-Read the groundwork as tables: the settings must be the brief's numbers exactly, 60 children, 3 schools, 8 on more than one list, 4 spelt differently.
+The orchestrator may put a round in between, as it did after round 1 with the answers to the register's open questions. Each new round is a new scheduled task, and asks again for its folder.
 
-SCREENSHOT: the groundwork's settings table as the work session wrote it, beside the brief's table of the made-up data.
+IMAGE: M5-22-next-task-allowed.png | The in-between round's task, its folder allowed, waiting for its time.
+
+A round can come back not accepted. Here the review of the answers found three gaps. The work session's last line says so, with the number of gaps of each kind.
+
+IMAGE: M5-23-not-accepted.png | A round not accepted: the review found three gaps.
+
+The orchestrator does what Module 3 taught. It writes version 2 of the instruction with the gaps added, and adds a line to the page of faults so that every later round carries it. It issues a new review beside the first, and schedules the second attempt. If that fails too, it withdraws the task and writes it again. Read its account, and note what is still waiting on you: here, the ruling on round 1, which it recommends but does not give.
+
+IMAGE: M5-24-version-2.png | The orchestrator's account of version 2: the gaps, what it changed, and the decisions still open for the owner.
+
+Version 2 came back not accepted too, with three new gaps. So the orchestrator did not send a third version. It withdrew the piece of work and changed what was asked: all thirteen recommendations had stood unchanged through both versions, and neither review had called one wrong; the faults were in how the rival answers were argued. It put the thirteen to you directly, as one decision, with the reviews' open faults named beside them. That is what Module 3 teaches for a task that fails twice: write the task again, rather than its wording a third time.
+
+Read such a decision as carefully as a review. Its recommendations fix numbers that every later round inherits. Here they gave two answers in advance: the duplicates count of round 7 must find 4 of the 8, and a reset of the made-up data must give 64 learners, the 60 children and a second record for each of the 4 the search does not catch.
+
+Read the groundwork as tables: the settings must be the brief's numbers exactly, 60 children, 3 schools, 8 on more than one list, 4 spelt differently. Every row names where it comes from: a line of the brief, a requirement, or your ruling. A row with no source is a guess. In this run the settings began:
+
+| Setting | Value | Source |
+| --- | --- | --- |
+| Children | 60 different children | brief, line 23; R-09, R-14; ruling on G-04 |
+| Schools | 3 | brief, line 24; R-10, R-14 |
+| Children on more than one list | 8 | brief, line 25; R-11, R-14 |
+| Of those, family name spelt differently on one list | 4 | brief, line 26; R-12, R-14 |
+| Ages | 6 to 12 | brief, line 27; R-13, R-14 |
+| List entries | 68 | ruling on G-04 |
+| Of the 8, caught by the search | 4 | ruling on G-05 |
+
+The groundwork, too, came back not accepted at version 1, with one gap: the round's own check of what it had read failed when the review ran it again. Version 2 fixed that alone and was accepted. Its review also noted, outside its tests, that the log named the project's folder wrongly, and raised one question nobody had asked, whether two different children may differ only in capitals. Read what a review found and did not fix as closely as its verdict: that is where the next question comes from.
 
 For the count, read its first paragraph: the two totals, the requirements carried by no goal with their reasons, and the planted mistakes it found.
 
@@ -485,11 +586,11 @@ An Architect with the page on one half of the screen and the Claude desktop app 
 
 ### 4.2 Screenshots instead of a video
 
-Module 5 has no video. Each step that needs a picture carries a SCREENSHOT mark saying what the picture must show. The course team takes them on one real run of the toy, with the released plugin, invented data only, and no window opened by a session; each replaces its mark before publication. 11 marks over five pages.
+Module 5 has no video. Its pictures are screenshots of one real run of the toy, 31 October 2026, with invented data only, kept in figures/ as M5-01 to M5-24: 21 on page 5.1 (setup, the orchestrator's role, round 1 and its scheduled task with the two permissions the app asked for, and the round the orchestrator added) and 3 on page 5.2 (that round's task, and the round not accepted and sent again as version 2). Where the run's record says more than a picture, the page gives it as a table: round 1 in the course's log, and the first rows of the groundwork's settings. Six places are still marked SCREENSHOT, for the rounds the run has not reached: rounds 4, 5, 6, 7 and 8, and the end. The run used a local build of the plugin; before publication, check the screens against the released plugin and crop anything that shows other projects.
 
 ### 4.3 The toy and the full-size record
 
-The toy is cut from the registry prototype: one goal of its four, 60 children of its 300, eight rounds of its 23. The brief is in the starter folder (MINI-REGISTRY-BRIEF.md), and the page of faults for building is added there for this module. Every Try it first comes from the full-size record, frozen in examples/plr/, so that each answer key rests on a run that happened. The toy's own figures follow from the brief's numbers, so the answer keys of its tips are known in advance.
+The toy is cut from the registry prototype: one goal of its four, 60 children of its 300, eight rounds of its 23. The brief is in the starter folder (MINI-REGISTRY-BRIEF.md), and the page of faults for building is added there for this module. Every Try it first comes from the full-size record, frozen in examples/plr/, so that each answer key rests on a run that happened. The toy's own figures follow from the brief's numbers, so the answer keys of its tips are known in advance. The toy's own run, which the screenshots and the tables of 5.1 and 5.2 come from, is frozen in examples/mini-registry/, as far as round 2.
 
 ### 4.4 Depends on the plugin
 
