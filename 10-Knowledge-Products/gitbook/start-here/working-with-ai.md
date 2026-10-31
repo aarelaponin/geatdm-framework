@@ -29,7 +29,7 @@ This is why every diagnostic play in this course carries a line like *claim Seve
 
 ## What a government expects of its staff
 
-You are not the first public servant to use one of these tools on official work, and the expectations are written down. [AI Playbook for the UK Government](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government) (GOV.UK · 10 Feb 2025) sets ten principles for civil servants — know the limitations, keep a human accountable, protect data, buy responsibly. It is the reference point behind two of the four safeguards below. For the regional policy frame, [Continental Artificial Intelligence Strategy](https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy) (African Union · Aug 2024) covers responsible and equitable use across the African Union; for the wider picture of what governments are actually doing with these tools, [Governing with Artificial Intelligence](https://www.oecd.org/en/publications/2025/06/governing-with-artificial-intelligence_398fa287.html) (OECD · 18 Sep 2025) surveys some two hundred cases.
+You are not the first public servant to use one of these tools on official work, and the expectations are written down. [AI Playbook for the UK Government](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government) (GOV.UK · 10 Feb 2025) sets ten principles for civil servants — know the limitations, keep a human accountable, protect data, buy responsibly. It is the reference point behind two of the four safeguards below. For the regional policy frame, [Continental Artificial Intelligence Strategy](https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy) (African Union · Aug 2024) covers responsible and equitable use across the African Union; for the wider picture of what governments are actually doing with these tools, [Governing with Artificial Intelligence](https://www.oecd.org/en/publications/governing-with-artificial-intelligence_795de142-en.html) (OECD · 18 Sep 2025) surveys some two hundred cases.
 
 ## The four safeguards
 
@@ -75,12 +75,12 @@ Everything asserted above, with dates. Open the source rather than trusting this
 | --- | --- | --- | --- |
 | [AI Playbook for the UK Government](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government) | GOV.UK · 10 Feb 2025 | the ten principles: verification, accountability, data protection | T1 government |
 | [Continental Artificial Intelligence Strategy](https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy) | African Union · Aug 2024 | regional policy frame; responsible and equitable use | T1 intergovernmental |
-| [Governing with Artificial Intelligence](https://www.oecd.org/en/publications/2025/06/governing-with-artificial-intelligence_398fa287.html) | OECD · 18 Sep 2025 | 200 government AI cases, risks and oversight | T1 intergovernmental |
+| [Governing with Artificial Intelligence](https://www.oecd.org/en/publications/governing-with-artificial-intelligence_795de142-en.html) | OECD · 18 Sep 2025 | 200 government AI cases, risks and oversight | T1 intergovernmental |
 | [Why language models hallucinate](https://openai.com/index/why-language-models-hallucinate/) | OpenAI · Sep 2025 | why fluency is not evidence | T2 vendor research |
 | [Expanding on what we missed with sycophancy](https://openai.com/index/expanding-on-sycophancy/) | OpenAI · May 2025 | why it agrees with your framing | T2 vendor |
 | [AI Hallucination Cases](https://www.damiencharlotin.com/hallucinations/) | Damien Charlotin · 2023→, updated daily | what unchecked citations cost | T2 curated primary sources |
 
-*Links re-checked 2026-09-07. "Living" pages are cited by title, not by a quoted passage — the wording changes.*
+*Links re-checked 2026-10-26. "Living" pages are cited by title, not by a quoted passage — the wording changes.*
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody>
 <tr><td><strong>🧭 How to use the plays</strong></td><td>What a play is, the badges, the two-step rhythm.</td><td><a href="how-to-use-the-plays.md">how-to-use-the-plays</a></td></tr>
