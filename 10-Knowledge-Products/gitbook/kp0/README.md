@@ -88,7 +88,7 @@ Every module ends with a judgement page: what stays out of the assistant, and wh
 
 </details>
 
-## How to use this guide
+## How to use this knowledge base
 
 Each page has two halves. **The concept** says why something works, in plain words, with its source, and holds in any assistant, including the one your ministry has approved. **In the tool** says what to click, type or set, and is shown in Claude. Other assistants a ministry may have approved, such as ChatGPT, Gemini and Microsoft 365 Copilot, have the same settings under their own names, and their help pages say where. The pages name each setting by what it does, so you can find it in any of them.
 
