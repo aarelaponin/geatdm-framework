@@ -1,5 +1,5 @@
 ---
-description: "A course for public servants on working with an AI assistant: one good chat, a setup that makes every chat better, and bigger work handed over and checked."
+description: "Work with an AI assistant, from one good chat to work handed over for days and checked by someone other than the one who did it."
 icon: house
 ---
 
@@ -7,9 +7,19 @@ icon: house
 
 Six modules · 21 written pages · an AI usage tip on every page · a self-check per module · self-paced · free and open
 
-This course teaches a government team to work with an AI assistant, from one good chat to work handed over for days and checked by someone other than the one who did it. It is written for public servants, most of them not developers, and assumes no programming and no command line. Module 5 is the one exception: its plugin needs a few things installed on your computer, and it says which.
+This course teaches a government team to work with an AI assistant, from one good chat to work handed over for days and checked by someone other than the one who did it. It is written for public servants, most of them not developers, and assumes no programming.
 
-Every page of the four other courses in this knowledge base ends with an AI usage tip. This course is where you learn to run those tips well, to set an assistant up for them, and to judge what comes back. It is ordered by how much work you hand to the assistant: one chat, then a setup that makes every chat better, then bigger jobs handed over and checked. Judgement runs through all of it: the last page of every module says what stays out of the assistant and what stays yours.
+## What you will learn
+
+- **[Module 1 — one good chat](module-1/README.md).** Ask so that you get a usable answer, and check it before you use it.
+- **[Module 2 — set the assistant up once](module-2/README.md).** Give it your context, standing instructions and skills, so that every chat starts from them.
+- **[Module 3 — one piece of work, start to finish](module-3/README.md).** Take one piece of your own work through the cycle once, by hand: you write the instruction, one chat does the work, a second chat checks it, and you decide.
+- **[Module 4 — many pieces of work, for weeks](module-4/README.md).** Keep the cycle going, still by hand: a log that says where the work stands, a list of the faults you have learned, and handovers to a fresh chat.
+- **[Module 5 — the same method, with a plugin](module-5/README.md).** Let a plugin do the bookkeeping while you build a small practice prototype, a toy learner registry, and you still make every decision.
+
+Every module ends with a judgement page: what stays out of the assistant, and what stays yours. Module 0, the introduction, is in preparation.
+
+**Your way through.** If you commission and accept AI-assisted work, as a director or a head of unit, take Modules 1 to 3: enough to run any AI usage tip in this knowledge base, and to accept work done this way. If you run the work, as the head of an ICT unit, a project lead or an analyst, take all of them. Modules 1 to 4 need nothing installed; Module 5 needs the plugin.
 
 ## Outline
 
@@ -27,20 +37,6 @@ Every page of the four other courses in this knowledge base ends with an AI usag
 {% hint style="success" %}
 **How the course works.** **Read** the page → **Do** what its *In the tool* half shows → **Run** its AI usage tip on your own work → **Compare** with the worked example for Progressa. Each module ends with a self-check.
 {% endhint %}
-
-## Audience — and the path for your role
-
-| Persona | Who that is in practice | Modules | What you leave with |
-| --- | --- | --- | --- |
-| **Strategist** | The public servant who commissions and accepts AI-assisted work and answers for it: a director, a head of unit, a technical secretary briefing the principal | 0, [1](module-1/README.md), [2](module-2/README.md), [3](module-3/README.md) | Good answers from one chat, an assistant set up once for your team's work, one piece of your own work taken through the cycle, and the judgement to accept work done the orchestrated way. |
-| **Architect** | The head of an ICT unit, a project lead or an analyst who runs the work | All six | All of the above, and the running of the work: writing an instruction, reading a report, reviewing it, and keeping the log over weeks, with a starter folder you keep using. |
-
-### Two ways through
-
-| Way | Modules | What it gives |
-| --- | --- | --- |
-| **Strategist** | 0, 1, 2, 3 | Enough to run any AI usage tip in this knowledge base and to accept work done the orchestrated way. |
-| **Architect** | 0 to 5 | Enough to run the work, as the building-block course's modules 3 to 5 expect. |
 
 ## How to use this guide
 
