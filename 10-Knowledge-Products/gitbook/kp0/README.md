@@ -5,7 +5,7 @@ icon: house
 
 # Working with AI in Government
 
-Six modules · 22 written pages · an AI usage tipon every page · a self-check per module · self-paced · free and open
+Six modules · 21 written pages · an AI usage tip on every page · a self-check per module · self-paced · free and open
 
 This course teaches a government team to work with an AI assistant, from one good chat to work handed over for days and checked by someone other than the one who did it. It is written for public servants, most of them not developers, and assumes no programming and no command line. Module 5 is the one exception: its plugin needs a few things installed on your computer, and it says which.
 
@@ -20,9 +20,9 @@ Every page of the four other courses in this knowledge base ends with an AI usag
 | [2](module-2/README.md) | Prepare: set up what the AI knows and can do | Strategist | 4 | 4 tips | Pages live |
 | [3](module-3/README.md) | Orchestrate: one piece of work, start to finish | Strategist and Architect | 4 | 4 tips | Pages live |
 | [4](module-4/README.md) | Orchestrate: running it for days | Architect | 4 | 4 tips | Pages live |
-| [5](module-5/README.md) | Orchestrate with the plugin: build a toy prototype | Architect | 5 | 5 tips | Pages written; needs the plugin, in preparation |
+| [5](module-5/README.md) | Orchestrate with the plugin: build a toy prototype | Architect | 5 | 5 tips | Pages written |
 
-*Pages live — every page of the module is written, with its tip and its self-check. In preparation — planned, not yet written.*
+*Pages live — every page of the module is written, with its tip and its self-check. Pages written — the same, but the tool the module uses is not released yet; Module 5 needs the orchestrator plugin, in preparation. In preparation — planned, not yet written.*
 
 {% hint style="success" %}
 **How the course works.** **Read** the page → **Do** what its *In the tool* half shows → **Run** its AI usage tip on your own work → **Compare** with the worked example for Progressa. Each module ends with a self-check.

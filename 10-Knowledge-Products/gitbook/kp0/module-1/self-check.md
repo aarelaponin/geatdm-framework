@@ -7,7 +7,7 @@ icon: circle-check
 
 **Module 1 — Chat: get good answers in one chat.** Answer each question before you read the answer beside it.
 
-Five questions, drawn from the four pages, to be answered after reading them. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means the module's point has landed; below four, read again the page named beside each question you missed. The threshold is a proposal, to be tested with the first learners.
+Five questions, drawn from the four pages, to be answered after reading them. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means the module's point has landed; below four, read again the page named beside each question you missed.
 
 | # | Question | Model answer | Drawn from |
 | --- | --- | --- | --- |

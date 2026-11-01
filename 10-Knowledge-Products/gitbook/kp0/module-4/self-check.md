@@ -7,7 +7,7 @@ icon: circle-check
 
 **Module 4 — Orchestrate: running it for days.** Answer each question before you read the answer beside it.
 
-Four questions, drawn from the four pages. Questions 1 and 3 are multiple choice. Questions 2 and 4 ask for a short answer, which is right if it makes the point of the model answer. Three or four right means Ready; below three, read again the page named beside each question you missed. The threshold is a proposal, to be tested with the first learners.
+Four questions, drawn from the four pages. Questions 1 and 3 are multiple choice. Questions 2 and 4 ask for a short answer, which is right if it makes the point of the model answer. Three or four right means Ready; below three, read again the page named beside each question you missed.
 
 | # | Question | Model answer | Drawn from |
 | --- | --- | --- | --- |
