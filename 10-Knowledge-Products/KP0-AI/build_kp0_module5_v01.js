@@ -661,7 +661,8 @@ body.push(...renderPage({
     "Write your last ruling: accept the note, or ask for what is missing. Then ask whether everything is saved in the project's history.",
     "IMAGE: M5-25-final-check.png | The end of the toy. The orchestrator gives what was delivered, the checks and the duplicates count, corrects a reason it wrote in its own log, and names what is not yet saved in the history. Read the last two as closely as the first: a session that reports its own mistake and what it left undone is one you can rule on.",
     "Then ask the orchestrator to hand over and stop. The project stays in its folder, with its history, as the record of what was decided and why.",
-    "IMAGE: M5-30-final-handover.png | The handover. The orchestrator writes a note for whoever takes the role next: what it did that it should not have, and what is still owed, each line a claim for the successor to check, not a fact to inherit. It issues the successor's first task, which checks five of those claims and does nothing else, and gives up the role as its last act. To pick the project up again, start a session on Opus with effort High from the two lines it gives."
+    "IMAGE: M5-30-final-handover.png | The handover. The orchestrator writes a note for whoever takes the role next: what it did that it should not have, and what is still owed, each line a claim for the successor to check, not a fact to inherit. It issues the successor's first task, which checks five of those claims and does nothing else, and gives up the role as its last act. To pick the project up again, start a session on Opus with effort High from the two lines it gives.",
+    "The whole toy, as the course ran it, is public in working-with-ai-in-government-demo (https://github.com/alaponin/working-with-ai-in-government-demo): the brief, every instruction, report and review, the log, the working prototype and the note to the Permanent Secretary, all with invented data. Set your own run beside it, or run the prototype from its instructions."
   ],
   aiTip: {
     title: "Decide whether the prototype has shown enough",
@@ -737,7 +738,7 @@ body.push(
     ["5.2", "Effective harnesses for long-running agents, as in 5.1. Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl (Birgitta Böckeler, martinfowler.com, 15 October 2025), https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html."],
     ["5.3", "Effective harnesses for long-running agents, as in 5.1."],
     ["5.4", "Effective harnesses for long-running agents, as in 5.1. Large Language Models Cannot Self-Correct Reasoning Yet (Huang et al., ICLR, 2024), https://arxiv.org/abs/2310.01798."],
-    ["5.5", "How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government. Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl, as in 5.2."]
+    ["5.5", "How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government. Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl, as in 5.2. The toy's own run (working-with-ai-in-government-demo, GitHub), https://github.com/alaponin/working-with-ai-in-government-demo."]
   ]),
   spacer(120),
   P("All references are publicly accessible and verifiable.")
