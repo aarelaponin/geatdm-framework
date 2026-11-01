@@ -14,6 +14,41 @@
   "gitbook_id": "MZzFAfaCklx5YngGc1w2"
  },
  {
+  "ref": "kp0-module-2",
+  "title": "Module 2 — Prepare: set up what the AI knows and can do",
+  "parent": "kp0",
+  "path": "kp0/module-2/README.md",
+  "gitbook_id": "li3V1aEEctpyRkyXxqC4"
+ },
+ {
+  "ref": "kp0-module-3",
+  "title": "Module 3 — Orchestrate: one piece of work, start to finish",
+  "parent": "kp0",
+  "path": "kp0/module-3/README.md",
+  "gitbook_id": "xsa2gJKZ657Vwx6rDwen"
+ },
+ {
+  "ref": "kp0-module-4",
+  "title": "Module 4 — Orchestrate: running it for days",
+  "parent": "kp0",
+  "path": "kp0/module-4/README.md",
+  "gitbook_id": "9bTlmsoDBtUqfiA56gnV"
+ },
+ {
+  "ref": "kp0-module-5",
+  "title": "Module 5 — Orchestrate with the plugin: build a toy prototype",
+  "parent": "kp0",
+  "path": "kp0/module-5/README.md",
+  "gitbook_id": "9KEnUOrPXkU47MjqenSd"
+ },
+ {
+  "ref": "kp0-starter",
+  "title": "The starter folder",
+  "parent": "kp0",
+  "path": "kp0/starter-folder/README.md",
+  "gitbook_id": "dgD2jUwwNLOEXNRJW20S"
+ },
+ {
   "ref": "kp0-1-1",
   "title": "1.1 A drafting partner, not an oracle",
   "parent": "kp0-module-1",
@@ -47,13 +82,6 @@
   "parent": "kp0-module-1",
   "path": "kp0/module-1/self-check.md",
   "gitbook_id": "COhsVqnYpKaymcTLuLzu"
- },
- {
-  "ref": "kp0-module-2",
-  "title": "Module 2 — Prepare: set up what the AI knows and can do",
-  "parent": "kp0",
-  "path": "kp0/module-2/README.md",
-  "gitbook_id": "li3V1aEEctpyRkyXxqC4"
  },
  {
   "ref": "kp0-2-1",
@@ -91,185 +119,157 @@
   "gitbook_id": "3oxgVrWxI7f7jFQ28gcw"
  },
  {
-  "ref": "kp0-module-3",
-  "title": "Module 3 — Orchestrate: one piece of work, start to finish",
-  "parent": "kp0",
-  "path": "kp0/module-3/README.md",
-  "gitbook_id": null
- },
- {
   "ref": "kp0-3-1",
   "title": "3.1 Two failures, and the rule that answers them",
   "parent": "kp0-module-3",
   "path": "kp0/module-3/3-1.md",
-  "gitbook_id": null
+  "gitbook_id": "itMLLhG9UG7mOeW1XRAR"
  },
  {
   "ref": "kp0-3-2",
   "title": "3.2 Write the instruction",
   "parent": "kp0-module-3",
   "path": "kp0/module-3/3-2.md",
-  "gitbook_id": null
+  "gitbook_id": "j8PvaJEqI1d2FAcjtYCe"
  },
  {
   "ref": "kp0-3-3",
   "title": "3.3 The report and the review",
   "parent": "kp0-module-3",
   "path": "kp0/module-3/3-3.md",
-  "gitbook_id": null
+  "gitbook_id": "DdkDQLjW2ZdCpilwB2mh"
  },
  {
   "ref": "kp0-3-4",
   "title": "3.4 Judgement: you decide",
   "parent": "kp0-module-3",
   "path": "kp0/module-3/3-4.md",
-  "gitbook_id": null
+  "gitbook_id": "Ex2e7J6jrRzcj0rVUW30"
  },
  {
   "ref": "kp0-module-3-self-check",
   "title": "Self-check — Module 3",
   "parent": "kp0-module-3",
   "path": "kp0/module-3/self-check.md",
-  "gitbook_id": null
- },
- {
-  "ref": "kp0-module-4",
-  "title": "Module 4 — Orchestrate: running it for days",
-  "parent": "kp0",
-  "path": "kp0/module-4/README.md",
-  "gitbook_id": null
+  "gitbook_id": "dGUuO39Z3OBDYZ4SlpxF"
  },
  {
   "ref": "kp0-4-1",
   "title": "4.1 The log: status is produced, never remembered",
   "parent": "kp0-module-4",
   "path": "kp0/module-4/4-1.md",
-  "gitbook_id": null
+  "gitbook_id": "OkZcw2mxYfzZwLWXKLdD"
  },
  {
   "ref": "kp0-4-2",
   "title": "4.2 The faults you learn once",
   "parent": "kp0-module-4",
   "path": "kp0/module-4/4-2.md",
-  "gitbook_id": null
+  "gitbook_id": "Goj3mi5DiATDZHsFXReV"
  },
  {
   "ref": "kp0-4-3",
   "title": "4.3 Handing over to a fresh chat",
   "parent": "kp0-module-4",
   "path": "kp0/module-4/4-3.md",
-  "gitbook_id": null
+  "gitbook_id": "yUFPWltdcLmgDDSfYFSA"
  },
  {
   "ref": "kp0-4-4",
   "title": "4.4 Judgement: every day, and what this does not claim",
   "parent": "kp0-module-4",
   "path": "kp0/module-4/4-4.md",
-  "gitbook_id": null
+  "gitbook_id": "QtJcbit81Lg9jBdU9dEj"
  },
  {
   "ref": "kp0-module-4-self-check",
   "title": "Self-check — Module 4",
   "parent": "kp0-module-4",
   "path": "kp0/module-4/self-check.md",
-  "gitbook_id": null
- },
- {
-  "ref": "kp0-module-5",
-  "title": "Module 5 — Orchestrate with the plugin: build a toy prototype",
-  "parent": "kp0",
-  "path": "kp0/module-5/README.md",
-  "gitbook_id": null
+  "gitbook_id": "eZIkE5cCZ9C3XbJnJ5d8"
  },
  {
   "ref": "kp0-5-1",
   "title": "5.1 Set up the project, and the first round",
   "parent": "kp0-module-5",
   "path": "kp0/module-5/5-1.md",
-  "gitbook_id": null
+  "gitbook_id": "xSzVHCWv7IOAyV0ZWlrj"
  },
  {
   "ref": "kp0-5-2",
   "title": "5.2 Decide before you build",
   "parent": "kp0-module-5",
   "path": "kp0/module-5/5-2.md",
-  "gitbook_id": null
+  "gitbook_id": "AZvoe5WtFbKOCyYDFNzc"
  },
  {
   "ref": "kp0-5-3",
   "title": "5.3 Build one goal per round",
   "parent": "kp0-module-5",
   "path": "kp0/module-5/5-3.md",
-  "gitbook_id": null
+  "gitbook_id": "06YFO4482pJOl66QVckn"
  },
  {
   "ref": "kp0-5-4",
   "title": "5.4 Check at the real thing, and write the note",
   "parent": "kp0-module-5",
   "path": "kp0/module-5/5-4.md",
-  "gitbook_id": null
+  "gitbook_id": "dfumkqTungUKsC0HAbBM"
  },
  {
   "ref": "kp0-5-5",
   "title": "5.5 Judgement: what a toy proves",
   "parent": "kp0-module-5",
   "path": "kp0/module-5/5-5.md",
-  "gitbook_id": null
+  "gitbook_id": "JdXxEh6zw9b66PVAooBz"
  },
  {
   "ref": "kp0-module-5-self-check",
   "title": "Self-check — Module 5",
   "parent": "kp0-module-5",
   "path": "kp0/module-5/self-check.md",
-  "gitbook_id": null
- },
- {
-  "ref": "kp0-starter",
-  "title": "The starter folder",
-  "parent": "kp0",
-  "path": "kp0/starter-folder/README.md",
-  "gitbook_id": null
+  "gitbook_id": "NdQNSznA3hUwzGBmAaO9"
  },
  {
   "ref": "kp0-starter-chat-prompts",
   "title": "The three chat prompts",
   "parent": "kp0-starter",
   "path": "kp0/starter-folder/chat-prompts.md",
-  "gitbook_id": null
+  "gitbook_id": "n1cqLdaB4MxNhyMbJCnM"
  },
  {
   "ref": "kp0-starter-forms",
   "title": "The four forms",
   "parent": "kp0-starter",
   "path": "kp0/starter-folder/forms.md",
-  "gitbook_id": null
+  "gitbook_id": "D681RbAvHsI1lFN5Bk0V"
  },
  {
   "ref": "kp0-starter-pages-of-faults",
   "title": "The pages of faults",
   "parent": "kp0-starter",
   "path": "kp0/starter-folder/pages-of-faults.md",
-  "gitbook_id": null
+  "gitbook_id": "L5qIcPGhARId6PoN3Xbu"
  },
  {
   "ref": "kp0-starter-finished-cycle",
   "title": "One finished cycle",
   "parent": "kp0-starter",
   "path": "kp0/starter-folder/finished-cycle.md",
-  "gitbook_id": null
+  "gitbook_id": "lyNyFX7TPJ2BGl7FexiA"
  },
  {
   "ref": "kp0-starter-with-the-plugin",
   "title": "With the plugin: your first project",
   "parent": "kp0-starter",
   "path": "kp0/starter-folder/with-the-plugin.md",
-  "gitbook_id": null
+  "gitbook_id": "3aH63KyG7qmJnPkBOThL"
  },
  {
   "ref": "kp0-starter-mini-registry",
   "title": "The mini registry: the brief for Module 5",
   "parent": "kp0-starter",
   "path": "kp0/starter-folder/mini-registry.md",
-  "gitbook_id": null
+  "gitbook_id": "RE6mZ6xXghCl5t3US8Z4"
  }
 ]
