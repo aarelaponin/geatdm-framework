@@ -240,7 +240,7 @@ An instruction from MoEYS's planning unit, version 1: 'Count the schools that di
 
 A good run asks at least these: what 'did not report' means (no return at all, or a return with the enrolment field empty?); which census file, and which version; how 'correct' will be tested, and by whom; who the paragraph is for and how long it may be; whether schools closed during the year count; what to do if a school appears twice. Each is a line the instruction should carry.
 
-**With the kit:** the orchestrator plugin (in preparation) writes the instruction with you from the same form, gives its session a name, files it in the place for instructions and writes its log row. You still decide what it asks. Optional: the cycle runs by hand.
+**With the kit:** the orchestrator plugin (in preparation) writes the instruction with you from the same form, gives its chat a name, files it in the place for instructions and writes its log row. You still decide what it asks. Optional: the cycle runs by hand.
 
 ### Sources
 
@@ -262,13 +262,13 @@ A good run asks at least these: what 'did not report' means (no return at all, o
 
 The work chat's report on the duplicates count opened with its answer. 40 children appear on more than one list: 22 on two and 18 on three. 20 of them have one entry spelt differently. The prototype's search catches 20 of the 40 from every entry. It does not catch the other 20, and those are exactly the 20 with a spelling variant: each is missed from the one entry spelt differently, and found from every other. No entry returned the wrong child.
 
-The review chat had never seen the work chat. It counted again from the three lists alone, without the key that says which entries belong to the same child and without the prototype's search. Its own rule was that two entries belong to the same child when the date of birth, the school and the given names are the same, and the family names are the same or differ by one letter. It got the same figures, entry by entry, for all 98 entries. The verdict was accepted.
+The review chat had never seen the work chat. It counted again from the three lists alone, without the work chat's matching list of which entries belong to the same child and without the prototype's search. Its own rule was that two entries belong to the same child when the date of birth, the school and the given names are the same, and the family names are the same or differ by one letter. It got the same figures, entry by entry, for all 98 entries. The verdict was accepted.
 
 **Your question:** The review agreed with the report. Why does the review's route matter more than its agreement?
 
 **Answer key:**
 
-A review that repeats the report's own steps will agree with it, mistakes included: it would have used the same key and the same search, and an empty registry would have looked clean twice. Agreement by the same route proves only that the steps were followed.
+A review that repeats the report's own steps will agree with it, mistakes included: it would have used the same matching list and the same search, and an empty registry would have looked clean twice. Agreement by the same route proves only that the steps were followed.
 
 This review reached the figures from different material by a different method. Two routes that start apart and arrive at the same figures are evidence; one route walked twice is not. The review also altered one entry in its own count and saw the figures move, which showed that its count could fail.
 
@@ -318,7 +318,7 @@ The instruction, from the practise tab of 3.2: 'Count the schools that did not r
 
 Not accepted. The figure 37 is 31 plus 6, so the report has counted two different things as one without saying so; the instruction needs to define 'did not report'. A good review works the figure out again by its own route, for example by listing the schools with no return separately from those with an empty field, and names the gap. A review that says 'T1 met, accepted' has only re-read the report.
 
-**With the kit:** the orchestrator plugin (in preparation) starts the work chat, and when its report is in, the review chat as a separate session with an empty memory, so the memory setting can no longer break the separation. You still read the review and rule. Optional: the cycle runs by hand.
+**With the kit:** the orchestrator plugin (in preparation) starts the work chat, and when its report is in, the review chat as a separate chat with an empty memory, so the memory setting can no longer break the separation. You still read the review and rule. Optional: the cycle runs by hand.
 
 ### Sources
 
@@ -340,9 +340,9 @@ Not accepted. The figure 37 is 31 plus 6, so the report has counted two differen
 
 The figures of the duplicates count went into a one-page note to the Permanent Secretary. Version 1 had 21 sentences. Every figure in it was right. Two of its sentences read: 'It does not recognise a child already registered under a different spelling', and 'A registered learner is found only when family name, given names and date of birth match, capitals aside.'
 
-Version 2 corrected those sentences. Its review found that version 2 now left out two limits that the record names: that the Ministry itself is not yet on the data exchange it reads across, and that a child with no birth record can be matched only by names and dates.
+Version 2 corrected those sentences, but its review did not accept it: it now left out two limits that the record names: that the Ministry itself is not yet on the data exchange it reads across, and that a child with no birth record can be matched only by names and dates.
 
-**Your question:** What is wrong with the two sentences of version 1? And when version 2 also failed, what should the person do next?
+**Your question:** What is wrong with the two sentences of version 1? And since version 2 was not accepted either, what should the person do next?
 
 **Answer key:**
 

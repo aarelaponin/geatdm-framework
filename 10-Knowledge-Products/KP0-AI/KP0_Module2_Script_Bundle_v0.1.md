@@ -105,7 +105,7 @@ A context pack goes stale. A strategy is approved, a body is renamed, a programm
 
 Shown in Claude, and the same in any assistant that can search the web.
 
-Building it. The research prompts of Play 0 build the country context pack section by section: digital landscape, programmes, the operating-model question, roles register, characteristics, initiatives, and legal and policy. Run them with web search on, one per chat, and ask for text in the chat, not a file.
+Building it. The research prompts of Play 0, in the Start Here section of this knowledge base, build the country context pack section by section: digital landscape, programmes, the operating-model question, roles register, characteristics, initiatives, and legal and policy. Run them with web search on, one per chat, and ask for text in the chat, not a file.
 
 Keeping it. Copy each answer into one document of your own, under its section heading, with the date you ran it. Open the sources on anything you will carry into a briefing, and mark any claim you could not check. Keep posts, not names: take out the names of office-holders before the pack is shared.
 
@@ -290,7 +290,7 @@ Both bring in text that someone else wrote, and an assistant can take instructio
 
 Choose the lightest setup that does the job. A task you do once is a prompt. Context the unit's work always needs goes in a project. A procedure you repeat the same way, ten times a month, is a skill. A source that changes, and must be read as it is today, is a connector. Each step up is more work to set up and more to keep current, so step up only when the lighter one is no longer enough.
 
-This knowledge base already offers skills. The optional ea-plays kit packages the procedures of some AI usage tips as skills. They bring the named source in before the draft is written, and check the draft after: every output opens with a header that counts the sources by kind and the lines nobody could verify. The tips run without the kit. With it, the source check, the step most people skip, is harder to leave out.
+This knowledge base already offers skills. The optional ea-plays kit, a free set of ready-made skills, packages the procedures of some AI usage tips as skills. They bring the named source in before the draft is written, and check the draft after: every output opens with a header that counts the sources by kind and the lines nobody could verify. The tips run without the kit. With it, the source check, the step most people skip, is harder to leave out.
 
 ### In the tool
 
@@ -308,7 +308,7 @@ Turning them off. Skills and connectors can be switched off in the settings, or 
 
 The architecture unit of PDGA checks its papers against PAERA, GovStack's reference architecture for public administration, by section, ten or more times a month. Each analyst did it differently, and one paper cited a section that PAERA does not have.
 
-The unit installed one skill of the ea-plays kit, the PAERA reference check, and connected this knowledge base. The next paper, a note on Progressa's data-exchange gaps, came back with the header the kit puts on every output: nine sources, seven of them primary; one line unverified. Two lines named PAERA sections. The skill had looked each one up at its public address; one existed and one did not, and the header marked the one that did not.
+The unit installed one skill of the ea-plays kit, the PAERA reference check, and connected this knowledge base. The next paper, a note on Progressa's data-exchange gaps, came back with the header the kit puts on every output: nine sources, seven of them primary (the original documents, not summaries); one line unverified. Two lines named PAERA sections. The skill looked each one up at its public address. One section existed. The other did not exist, and the header marked that line as unverified.
 
 The unit kept the project for its standing context, the skill for the check, and the connector for this knowledge base. A one-off question about a meeting stayed a prompt.
 
@@ -393,7 +393,7 @@ Checking connectors and skills. The settings list the connectors and skills in u
 
 On the first working day of the quarter, the head of the planning unit of MoEYS audited the project for the Progressa Learner Registry (PLR), as its brief requires. The AI usage tip under Your turn read the brief and the list of files.
 
-Since the brief in 2.2 was written, the unit had added three files, and the audit found three things. The roles register was last year's, and named two office-holders: it was replaced by the current one, by post. There were two versions of the Digital Transformation Roadmap 2024–2030, the draft now awaiting cabinet and an earlier working draft, and some answers had quoted the Roadmap as if it were in force: the working draft was removed, and the brief now says the Roadmap is a draft and not binding. And the brief never said why the Registry needs parental consent, so drafts kept treating consent as optional: one line was added under standing rules, quoting the Data Protection Act 2023.
+Since the brief in 2.2 was written, the unit had added three files: a roles register and two versions of the Roadmap. The audit found three things. The roles register was last year's, and named two office-holders: it was replaced by the current one, by post. There were two versions of the Digital Transformation Roadmap 2024–2030, the draft awaiting cabinet and an earlier working draft, and some answers had quoted the Roadmap as if it were in force: the working draft was removed, and the brief now says the Roadmap is a draft and not binding. And the brief never said why the Registry needs parental consent, so drafts kept treating consent as optional: one line was added under standing rules, quoting the Data Protection Act 2023.
 
 Memory held one item worth removing: the name of a head teacher mentioned in an earlier chat. The head of the unit deleted it, and recorded the audit and its date at the foot of the brief.
 
@@ -409,7 +409,7 @@ Below are the standing instructions of a project my team shares in an AI assista
 | --- | --- | --- | --- |
 | Roles register | 2025 | Out of date; may name office-holders | Replace with the current one, by post |
 | Digital Transformation Roadmap, working draft | 2024 | Two versions of the same document | Remove |
-| Digital Transformation Roadmap, cabinet draft | 2024 | A draft, not in force; the brief does not say so | Keep; add a line to the brief |
+| Digital Transformation Roadmap, draft awaiting cabinet | 2024 | A draft, not in force; the brief does not say so | Keep; add a line to the brief |
 | Data Protection Act 2023 | 2023 | None seen from the title | Keep |
 
 Lines to add: why the PLR needs parental consent, quoting the Act; that the Roadmap is a draft and not binding.

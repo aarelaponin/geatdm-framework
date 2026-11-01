@@ -164,7 +164,7 @@ function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, wher
   }
   }
   out.push(aiPromptBox(aiTip.title, aiTip.problem, aiTip.prompt, aiTip.io, aiTip.safeguard));
-  if (withKit) out.push(P("With the kit: the orchestrator plugin (in preparation) " + withKit + " Optional: the cycle runs by hand."));
+  if (withKit) out.push(P("With the plugin: the orchestrator plugin (in preparation) " + withKit + " Optional: the cycle runs by hand."));
   if (aiTip.practice) {
     out.push(H3("Practise on Progressa"));
     out.push(...content(aiTip.practice.input));
@@ -296,10 +296,10 @@ body.push(...renderPage({
     ]
   },
   concept: [
-    "A log is one row per event. A piece of work is issued; its report comes back; its review comes back with a verdict; you rule on it. Each event is a row, with the date, the piece of work, its version, the event, the file, and the verdict or ruling. Nothing else goes in.",
+    "A log is one row per event. A piece of work is issued; its report comes back; its review comes back with a verdict; you rule on it. Each event is a row, with seven columns: the date, the piece of work, its version, the event, the file, the verdict or ruling, and who it is open with. The event is one of five words: instruction issued, report back, review back, my ruling, handover. A ruling is accepted, not accepted or withdrawn. Nothing else goes in.",
     "When anyone asks where the work stands, answer from the log, never from memory. A figure from memory is repeated as fact by people who were not there. A figure from the log can be produced again by anyone, and gives the same answer.",
-    "Nothing is deleted. A withdrawn piece of work keeps its rows, with the reason. That way the log counts what really happened: the registry prototype closed 23 pieces of work in its first week, 26 to 30 October 2026: 13 accepted at the first version and 10 that needed a second attempt. Of those 10, 4 were withdrawn and run again, and 2 were closed by changing what was asked, not by being accepted. Expect nearly half of your work to need a second attempt. That is not failure; it is the review doing its job.",
-    "One piece of work writes at a time. Two chats changing the same files at once is the one mistake the cycle cannot repair afterwards."
+    "Nothing is deleted. A withdrawn piece of work keeps its rows, with the reason. That way the log counts what really happened: the registry prototype closed 23 pieces of work in its first week, 26 to 30 October 2026: 13 accepted at the first version and 10 that needed a second attempt. Of those 10, 4 were withdrawn and run again, 2 were closed by changing what was asked, and 4 were accepted at version 2. Expect nearly half of your work to need a second attempt. That is not failure; it is the review doing its job.",
+    "One piece of work writes at a time. Two chats changing the same files at once is the one mistake no review can repair: nothing in that round can be trusted, and all of it must be run again."
   ],
   inTool: [
     "By hand, in the log you started on page 3.2. One piece of work is not enough to run the cycle for days, so start two more now: two pieces of your own work that meet one of the five conditions of 3.1, each with its instruction from the form. Run them over the next week or two, one writing at a time, beside the pages of this module. By 4.3 your log holds three pieces of work.",
@@ -324,7 +324,7 @@ body.push(...renderPage({
     }
   },
   sources: [
-    ["Effective harnesses for long-running agents", "Anthropic Engineering · November 2025", "Keeping progress in a file that each new session reads, rather than in a session's memory (vendor source)"]
+    ["Effective harnesses for long-running agents", "Anthropic Engineering · November 2025", "Keeping progress in a file that each new chat reads, rather than in a chat's memory (vendor source)"]
   ]
 }));
 
@@ -387,7 +387,7 @@ body.push(...renderPage({
 body.push(...renderPage({
   num: "3.3 Subtopic 4.3",
   title: "Handing over to a fresh chat",
-  withKit: "writes the handover note from its form and the fresh session's first task, and the fresh session records in the log that it has taken over before it does anything else.",
+  withKit: "writes the handover note from its form and the fresh chat's first task, and the fresh chat records in the log that it has taken over before it does anything else.",
   singleMessage: "Hand over only what the files cannot say, as claims someone can check, and make the next chat's first task to check a few of them and stop.",
   tryFirst: {
     title: "The confessions",
@@ -431,7 +431,7 @@ body.push(...renderPage({
     }
   },
   sources: [
-    ["Effective harnesses for long-running agents", "Anthropic Engineering · November 2025", "A fresh session's first steps: read the progress file and check the state before doing new work (vendor source)"]
+    ["Effective harnesses for long-running agents", "Anthropic Engineering · November 2025", "A fresh chat's first steps: read the progress file and check the state before doing new work (vendor source)"]
   ]
 }));
 

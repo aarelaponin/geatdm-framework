@@ -20,4 +20,4 @@ The figure was worked out again, the check was repeated on other members of the 
 Accepted. The figure may go into the note: 20 of the 40 are caught from every entry, and the search misses each of the other 20 from the one entry spelt differently.
 
 ## 5. Found, not fixed
-- The second start of the same piece of work, which the report raised, is for the owner to settle.
+- None.

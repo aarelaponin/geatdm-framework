@@ -162,7 +162,7 @@ function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, wher
   }
   }
   out.push(aiPromptBox(aiTip.title, aiTip.problem, aiTip.prompt, aiTip.io, aiTip.safeguard));
-  if (withKit) out.push(P("With the kit: the orchestrator plugin (in preparation) " + withKit + " Optional: the cycle runs by hand."));
+  if (withKit) out.push(P("With the plugin: the orchestrator plugin (in preparation) " + withKit + " Optional: the cycle runs by hand."));
   if (aiTip.practice) {
     out.push(H3("Practise on Progressa"));
     out.push(...content(aiTip.practice.input));
@@ -355,7 +355,7 @@ body.push(...renderPage({
 body.push(...renderPage({
   num: "3.2 Subtopic 3.2",
   title: "Write the instruction",
-  withKit: "writes the instruction with you from the same form, gives its session a name, files it in the place for instructions and writes its log row. You still decide what it asks.",
+  withKit: "writes the instruction with you from the same form, gives its chat a name, files it in the place for instructions and writes its log row. You still decide what it asks.",
   singleMessage: "Write the instruction for a stranger: what it serves, the tests, how this work can fail while seeming to succeed, and how the review will check it, all before the work starts.",
   tryFirst: {
     title: "The duplicates count",
@@ -411,17 +411,17 @@ body.push(...renderPage({
 body.push(...renderPage({
   num: "3.3 Subtopic 3.3",
   title: "The report and the review",
-  withKit: "starts the work chat, and when its report is in, the review chat as a separate session with an empty memory, so the memory setting can no longer break the separation. You still read the review and rule.",
+  withKit: "starts the work chat, and when its report is in, the review chat as a separate chat with an empty memory, so the memory setting can no longer break the separation. You still read the review and rule.",
   singleMessage: "The work chat reports with no verdict; a second chat that never saw it checks the report by its own route and says accepted or not accepted.",
   tryFirst: {
     title: "The 20 that slipped through",
     body: [
       "The work chat's report on the duplicates count opened with its answer. 40 children appear on more than one list: 22 on two and 18 on three. 20 of them have one entry spelt differently. The prototype's search catches 20 of the 40 from every entry. It does not catch the other 20, and those are exactly the 20 with a spelling variant: each is missed from the one entry spelt differently, and found from every other. No entry returned the wrong child.",
-      "The review chat had never seen the work chat. It counted again from the three lists alone, without the key that says which entries belong to the same child and without the prototype's search. Its own rule was that two entries belong to the same child when the date of birth, the school and the given names are the same, and the family names are the same or differ by one letter. It got the same figures, entry by entry, for all 98 entries. The verdict was accepted."
+      "The review chat had never seen the work chat. It counted again from the three lists alone, without the work chat's matching list of which entries belong to the same child and without the prototype's search. Its own rule was that two entries belong to the same child when the date of birth, the school and the given names are the same, and the family names are the same or differ by one letter. It got the same figures, entry by entry, for all 98 entries. The verdict was accepted."
     ],
     question: "The review agreed with the report. Why does the review's route matter more than its agreement?",
     key: [
-      "A review that repeats the report's own steps will agree with it, mistakes included: it would have used the same key and the same search, and an empty registry would have looked clean twice. Agreement by the same route proves only that the steps were followed.",
+      "A review that repeats the report's own steps will agree with it, mistakes included: it would have used the same matching list and the same search, and an empty registry would have looked clean twice. Agreement by the same route proves only that the steps were followed.",
       "This review reached the figures from different material by a different method. Two routes that start apart and arrive at the same figures are evidence; one route walked twice is not. The review also altered one entry in its own count and saw the figures move, which showed that its count could fail."
     ]
   },
@@ -473,9 +473,9 @@ body.push(...renderPage({
     title: "The note that said too much",
     body: [
       "The figures of the duplicates count went into a one-page note to the Permanent Secretary. Version 1 had 21 sentences. Every figure in it was right. Two of its sentences read: 'It does not recognise a child already registered under a different spelling', and 'A registered learner is found only when family name, given names and date of birth match, capitals aside.'",
-      "Version 2 corrected those sentences. Its review found that version 2 now left out two limits that the record names: that the Ministry itself is not yet on the data exchange it reads across, and that a child with no birth record can be matched only by names and dates."
+      "Version 2 corrected those sentences, but its review did not accept it: it now left out two limits that the record names: that the Ministry itself is not yet on the data exchange it reads across, and that a child with no birth record can be matched only by names and dates."
     ],
-    question: "What is wrong with the two sentences of version 1? And when version 2 also failed, what should the person do next?",
+    question: "What is wrong with the two sentences of version 1? And since version 2 was not accepted either, what should the person do next?",
     key: [
       "The two sentences state a limit of one step, the search, as a limit of the whole prototype. The record shows only that the search misses a child spelt differently. A later step, the look-up at the birth register, may find the child, and whether it does was never tested. The note's own later sentence said so, and contradicted them.",
       "Two failures on the same instruction is the signal to write the task again, not to send version 3. The owner, the person who commissioned the prototype, did: the note was defined again as a new piece of work, which listed every limit the record names before the note was written, and that version was accepted.",

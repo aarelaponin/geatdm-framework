@@ -53,7 +53,7 @@ One piece of work at a time. Each is an instruction, a work session, a review an
 | 2 | The groundwork: the tables the build reads (the lists, the settings above, the search rule) | drafting |
 | 3 | The goal written in full: every step of enrolling a learner, and every way it can go wrong | drafting |
 | 4 | The count: every requirement against the goal, both ways | checking |
-| 5 | The scaffold and the made-up data, in the known numbers above | building |
+| 5 | The empty frame of the prototype (its folders and starting files) and the made-up data, in the known numbers above | building |
 | 6 | The goal built | building |
 | 7 | The duplicates count: how many of the 8 the search catches | checking |
 | 8 | The note to the Permanent Secretary | drafting |

@@ -14,12 +14,12 @@ This course teaches a government team to work with an AI assistant, from one goo
 - **[Module 1: one good chat](module-1/README.md).** Ask in a way that gets a usable answer, and check the answer before you use it. You leave with prompts of your own, written in four parts, and answers you have checked.
 - **[Module 2: set the assistant up once](module-2/README.md).** Give it your context, standing instructions and skills, so that every chat starts from them. You leave with a trimmed context pack and a project brief for your team.
 - **[Module 3: one piece of work, start to finish](module-3/README.md).** Take one piece of your own work through the cycle once, by hand: you write the instruction, one chat does the work, a second chat checks it, and you decide. You leave with one instruction, one report, one review and your own ruling, in a folder and a log you keep using.
-- **[Module 4: many pieces of work, for weeks](module-4/README.md).** Keep the cycle going, still by hand: a log that says where the work stands, a list of the faults you have learned, and handovers to a fresh chat. You leave with a log you answer from, a page of faults with a line of your own, a handover note checked by a fresh chat, and a readiness statement.
+- **[Module 4: many pieces of work, for days](module-4/README.md).** Keep the cycle going, still by hand: a log that says where the work stands, a list of the faults you have learned, and handovers to a fresh chat. You leave with a log you answer from, a page of faults with a line of your own, a handover note checked by a fresh chat, and a readiness statement.
 - **[Module 5: the same method, with a plugin](module-5/README.md).** A plugin does the bookkeeping while you build a toy learner registry for practice. Every decision is still yours. You leave with the toy registry in a folder, with its log of every round and its note, and your last ruling.
 
 Every module ends with a judgement page: what stays out of the assistant, and what stays yours.
 
-**Your way through.** If you commission and accept AI-assisted work, as a director or a head of unit (the course calls you the Strategist), take Modules 1 to 3. That is enough to run any AI usage tip in this knowledge base, and to accept work done this way. If you run the work, as the head of an ICT unit, a project lead or an analyst (the Architect), take all five. Modules 1 to 4 need nothing installed; Module 5 needs the plugin.
+**Your way through.** If you commission and accept AI-assisted work, as a director or a head of unit, take Modules 1 to 3. That is enough to run any AI usage tip in this knowledge base, and to accept work done this way. If you run the work, as the head of an ICT unit, a project lead or an analyst, take all five. Modules 1 to 4 need nothing installed; Module 5 needs the plugin.
 
 {% hint style="success" %}
 **How the course works.** On each page you read the concept, do what its *In the tool* half shows, run its AI usage tip on your own work, and compare your result with the worked example for Progressa. Each module ends with a self-check.
@@ -104,7 +104,7 @@ You need no technical background: no programming, no command line and no version
 | --- | --- |
 | **A piece of your own work** | A briefing, a draft, a note you are about to write: the tips are meant to be run on it. Nothing to hand? Follow everything on [Progressa](../start-here/progressa.md) instead. |
 | **An AI assistant** | The one your ministry has approved, or any general assistant. The *In the tool* halves are shown in Claude. |
-| **Nothing to install, up to Module 4** | The optional [ea-plays kit](../start-here/ea-plays-kit.md) packages some tips as skills; [2.3](module-2/2-3.md) shows how to install one. Module 5 needs the orchestrator plugin and Desktop Commander; see [With the plugin](starter-folder/with-the-plugin.md). |
+| **Nothing to install, up to Module 4** | The optional [ea-plays kit](../start-here/ea-plays-kit.md) packages some tips as skills, ready-made instructions the assistant loads when a task needs them; [2.3](module-2/2-3.md) shows how to install one. Module 5 needs the orchestrator plugin and Desktop Commander; see [With the plugin](starter-folder/with-the-plugin.md). |
 
 Time: each page is a short read and a tip of five to twenty minutes. A module is an afternoon.
 
@@ -125,5 +125,5 @@ This course comes before the four others in this knowledge base: [Developing a G
 All the courses use [Progressa](../start-here/progressa.md) as the one worked example and share one set of [ground rules](../start-here/working-with-ai.md).
 
 {% hint style="info" %}
-**Use this knowledge base from your AI assistant.** Every page is also published as plain Markdown, and the knowledge base exposes an `llms.txt` and an MCP endpoint at `/~gitbook/mcp`. Point Claude, ChatGPT or another assistant at the knowledge base and ask it to *run the AI usage tip of 1.2 with the following context*. The assistant then uses the knowledge base as its reference, as you do.
+**Use this knowledge base from your AI assistant.** Every page is also published as plain Markdown, which an assistant can read. (For whoever sets up your assistant: the knowledge base exposes an `llms.txt` file and an MCP endpoint at `/~gitbook/mcp`.) Point Claude, ChatGPT or another assistant at the knowledge base and ask it to *run the AI usage tip of 1.2 with the following context*. The assistant then uses the knowledge base as its reference, as you do.
 {% endhint %}

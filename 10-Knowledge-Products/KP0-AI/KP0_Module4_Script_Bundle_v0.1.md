@@ -96,13 +96,13 @@ The lesson the record took: one piece of work writes at a time. Running in paral
 
 ### The concept
 
-A log is one row per event. A piece of work is issued; its report comes back; its review comes back with a verdict; you rule on it. Each event is a row, with the date, the piece of work, its version, the event, the file, and the verdict or ruling. Nothing else goes in.
+A log is one row per event. A piece of work is issued; its report comes back; its review comes back with a verdict; you rule on it. Each event is a row, with seven columns: the date, the piece of work, its version, the event, the file, the verdict or ruling, and who it is open with. The event is one of five words: instruction issued, report back, review back, my ruling, handover. A ruling is accepted, not accepted or withdrawn. Nothing else goes in.
 
 When anyone asks where the work stands, answer from the log, never from memory. A figure from memory is repeated as fact by people who were not there. A figure from the log can be produced again by anyone, and gives the same answer.
 
-Nothing is deleted. A withdrawn piece of work keeps its rows, with the reason. That way the log counts what really happened: the registry prototype closed 23 pieces of work in its first week, 26 to 30 October 2026: 13 accepted at the first version and 10 that needed a second attempt. Of those 10, 4 were withdrawn and run again, and 2 were closed by changing what was asked, not by being accepted. Expect nearly half of your work to need a second attempt. That is not failure; it is the review doing its job.
+Nothing is deleted. A withdrawn piece of work keeps its rows, with the reason. That way the log counts what really happened: the registry prototype closed 23 pieces of work in its first week, 26 to 30 October 2026: 13 accepted at the first version and 10 that needed a second attempt. Of those 10, 4 were withdrawn and run again, 2 were closed by changing what was asked, and 4 were accepted at version 2. Expect nearly half of your work to need a second attempt. That is not failure; it is the review doing its job.
 
-One piece of work writes at a time. Two chats changing the same files at once is the one mistake the cycle cannot repair afterwards.
+One piece of work writes at a time. Two chats changing the same files at once is the one mistake no review can repair: nothing in that round can be trusted, and all of it must be run again.
 
 ### In the tool
 
@@ -142,7 +142,7 @@ Census count: version 2, report back on 30 October, open, waiting for its review
 
 | Source | Publisher · date | Used for |
 | --- | --- | --- |
-| Effective harnesses for long-running agents | Anthropic Engineering · November 2025 | Keeping progress in a file that each new session reads, rather than in a session's memory (vendor source) |
+| Effective harnesses for long-running agents | Anthropic Engineering · November 2025 | Keeping progress in a file that each new chat reads, rather than in a chat's memory (vendor source) |
 
 ## 3.2 Subtopic 4.2 — The faults you learn once
 
@@ -285,13 +285,13 @@ The census log from 4.1, and these notes: 'Version 2 of the census count is wait
 
 Section 1: the school map started twice and not checked; a figure given to the director informally before it was reviewed. Section 2: the census figure, owed to the director by 5 November. Claims: 'the census count version 2 has a report and no review yet' (the log); 'only one school map chat ran' (the log and the reports folder). A good run leaves out 'about 30': it is a figure, and an unreviewed one.
 
-**With the kit:** the orchestrator plugin (in preparation) writes the handover note from its form and the fresh session's first task, and the fresh session records in the log that it has taken over before it does anything else. Optional: the cycle runs by hand.
+**With the kit:** the orchestrator plugin (in preparation) writes the handover note from its form and the fresh chat's first task, and the fresh chat records in the log that it has taken over before it does anything else. Optional: the cycle runs by hand.
 
 ### Sources
 
 | Source | Publisher · date | Used for |
 | --- | --- | --- |
-| Effective harnesses for long-running agents | Anthropic Engineering · November 2025 | A fresh session's first steps: read the progress file and check the state before doing new work (vendor source) |
+| Effective harnesses for long-running agents | Anthropic Engineering · November 2025 | A fresh chat's first steps: read the progress file and check the state before doing new work (vendor source) |
 
 ## 3.4 Subtopic 4.4 — Judgement: every day, and what this does not claim
 

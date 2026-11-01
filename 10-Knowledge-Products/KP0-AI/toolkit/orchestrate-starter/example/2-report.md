@@ -21,7 +21,6 @@
 
 ## 4. What I could not establish
 - Only two of the 98 entries were tried on screen, as instructed.
-- A second start of this same piece of work appears in the record, 82 seconds after this one. This chat did not make it, and could not tell whether that other chat is still running.
 
 ## 5. Corrections to the instruction
 None.

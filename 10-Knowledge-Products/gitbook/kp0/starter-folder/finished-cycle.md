@@ -38,7 +38,7 @@ A note to the Permanent Secretary will say how well the registry avoids register
 ### 3. The task
 1. **The set.** From the key, list every child who appears on more than one list, with each entry and whether it is spelt differently. Count them. Then list the entries from the three lists themselves, and set the two lists against each other.
 2. **The catch.** For every entry of those children, run the prototype's own search. An entry is *found* when the search returns exactly that child, *missed* when it returns nothing, and *wrong* for anything else. A child is *caught* only when every one of its entries is found.
-3. **The planted fault.** Alter one found entry, in memory only, and see that the child leaves the caught count.
+3. **The planted fault**, a deliberate error that shows whether the test can fail. Alter one found entry, in memory only and never saved, and see that the child leaves the caught count.
 4. **At the real thing.** In the running prototype, try two entries, one found and one missed, and record what the screen shows.
 5. **The figures.** In one paragraph: how many children are on more than one list, how many are caught, how many are not, and why.
 
@@ -94,7 +94,6 @@ Change nothing you check. Whether the search *should* catch a spelling variant i
 
 ### 4. What I could not establish
 - Only two of the 98 entries were tried on screen, as instructed.
-- A second start of this same piece of work appears in the record, 82 seconds after this one. This chat did not make it, and could not tell whether that other chat is still running.
 
 ### 5. Corrections to the instruction
 None.
@@ -133,6 +132,6 @@ The figure was worked out again, the check was repeated on other members of the 
 Accepted. The figure may go into the note: 20 of the 40 are caught from every entry, and the search misses each of the other 20 from the one entry spelt differently.
 
 ### 5. Found, not fixed
-- The second start of the same piece of work, which the report raised, is for the owner to settle.
+- None.
 
 Back to [the starter folder](README.md).

@@ -221,14 +221,14 @@ Rewriting a weak prompt. When a prompt of your own gives vague results, run the 
 
 The planning unit of MoEYS needed a note for the Permanent Secretary on why Progressa's three learner lists do not agree. The first prompt was: 'Write a briefing on why our learner data is fragmented.' The answer was a page of general causes found in many countries: weak governance, legacy systems, lack of standards. Nothing in it was about Progressa, and nothing in it could be checked.
 
-The second prompt used the four parts, and is in the first tab below: the three notes as its input; the reasons, the bodies and three bullets as its outputs; a table as its format; and a safeguard line against reasons no note states.
+The second prompt used the four parts, and is in the first tab below: the three notes as its input; the reasons, the bodies and three bullets as its outputs; a table as its format; and a safeguard line against reasons no note states. The prompt labels the four parts.
 
 The answer had six reasons, each with a quotation. Two inferred reasons came out separately as questions, as the safeguard line asked: whether head teachers re-key names by hand, and whether the examinations authority keeps a learner's former name. Without that line, both would have stood in the table as facts.
 
 **The prompt:**
 
 ```text
-Below are three notes: the school census note, the examinations authority's note on its candidate list, and the social grant programme's note on its register [pasted]. (1) List each reason the notes give for a learner appearing differently in two lists. (2) Name the body that controls each. (3) Output a table with the columns reason, the note that states it, quoted, and the body; then three bullets for the Permanent Secretary. (4) Name a reason only if a note states it; list any reason you inferred separately, as a question for the planning unit.
+Input: below are three notes: the school census note, the examinations authority's note on its candidate list, and the social grant programme's note on its register [pasted]. Outputs: list each reason the notes give for a learner appearing differently in two lists, and name the body that controls each. Format: a table with three columns: Reason; The note that states it, quoted; Body. Then three bullets for the Permanent Secretary. Safeguard: name a reason only if a note states it; list any reason you inferred separately, as a question for the planning unit.
 ```
 
 **Part of the output (written for this page, not a recorded run):**
@@ -248,7 +248,7 @@ Inferred, as questions for the planning unit: Do head teachers re-key names by h
 **Prompt template (copy-paste into the assistant):**
 
 ```text
-Below is a prompt I use for work in [the ministry or agency], whose results are too vague or unreliable [paste the prompt]. Rewrite it in four parts: (1) a clear statement of the input I will paste; (2) the task broken into named outputs; (3) an exact output format, such as a table with named columns and a short summary; (4) one safeguard line that names the specific way this prompt could mislead me, not a general line such as 'AI can make mistakes'. Keep my task: do not add tasks I did not ask for. Output: the rewritten prompt, then three bullets on what was weak in the original and what you changed.
+Below is a prompt I use for work in [the ministry or agency], whose results are too vague or unreliable [paste the prompt]. Rewrite it in four parts. Input: a clear statement of the input I will paste. Outputs: the task broken into named outputs. Format: an exact output format, such as a table with named columns and a short summary. Safeguard: one safeguard line that names the specific way this prompt could mislead me, not a general line such as 'AI can make mistakes'. Keep my task: do not add tasks I did not ask for. Output: the rewritten prompt, then three bullets on what was weak in the original and what you changed.
 ```
 
 **Inputs and outputs:** Input: your own prompt, as you use it. Output: the prompt rewritten in the four parts, with a note on what was weak in the original.

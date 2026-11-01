@@ -172,7 +172,7 @@ function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, wher
   }
   }
   out.push(aiPromptBox(aiTip.title, aiTip.problem, aiTip.prompt, aiTip.io, aiTip.safeguard));
-  if (withKit) out.push(P("With the kit: the orchestrator plugin (in preparation) " + withKit + " Optional: the cycle runs by hand."));
+  if (withKit) out.push(P("With the plugin: the orchestrator plugin (in preparation) " + withKit + " Optional: the cycle runs by hand."));
   if (aiTip.practice) {
     out.push(H3("Practise on Progressa"));
     out.push(...content(aiTip.practice.input));
@@ -215,7 +215,7 @@ body.push(
     ["Prepared by",     "FiscalAdmin OÜ"]
   ]),
   spacer(140),
-  P("This bundle is the v0.1 working draft of Module 5 of KP0 — Working with AI in Government. In Modules 3 and 4 you ran the cycle by hand. In Module 5 you run it with the orchestrator plugin, on a small project from start to finish: a toy prototype of a learner registry, built round by round, from the first document to a note for a senior reader. You do not write any code. You write what each round serves, read every instruction before it is issued and every review before you rule, and decide when it is done. Each page opens with a fault to find in the record of the full-size registry prototype we built in October 2026, then shows the step on the toy. The orchestrator plugin is in preparation, and its name and version will change; the pictures are from the author's pre-release setup. Until it is released, read the pages alongside the record, and run the cycle by hand as Modules 3 and 4 teach. Unlike the rest of the course, the plugin needs software installed and runs commands. The page With the plugin says which software, and what you agree to. The register is plain English at about an eighth-grade level."),
+  P("This bundle is the v0.1 working draft of Module 5 of KP0 — Working with AI in Government. In Modules 3 and 4 you ran the cycle by hand. In Module 5 you run it with the orchestrator plugin, on a small project from start to finish: a toy prototype of a learner registry, built round by round, from the first document to a note for a senior reader. You do not write any code. You write what each round serves, read every instruction before it is issued and every review before you rule, and decide when it is done. Each page opens with a fault to find in the record of the full-size registry prototype we built in October 2026, then shows the step on the toy. The orchestrator plugin is in preparation, and its name and version will change; the pictures are from the author's pre-release setup. Until it is released, read the pages alongside that record, and run the cycle by hand as Modules 3 and 4 teach. Unlike the rest of the course, the plugin needs software installed and runs commands. The page With the plugin says which software, and what you agree to. The register is plain English at about an eighth-grade level."),
   pageBreak()
 );
 
@@ -313,7 +313,7 @@ body.push(...renderPage({
     ]
   },
   concept: [
-    "With the plugin, you no longer make the folders and forms yourself. One session sets the project up: it checks your computer, asks you a few questions with recommended answers, shows you the map of folders to rule on, and then makes everything in one go. That is the place where the project's structure is decided, once, before any work.",
+    "With the plugin, you no longer make the folders and forms yourself. One session sets the project up. (A session is what the app calls a chat: the plugin's work session is the work chat of Modules 3 and 4, and its review session the review chat.) It checks your computer, asks you a few questions with recommended answers, shows you the map of folders to rule on, and then makes everything in one go. That is the place where the project's structure is decided, once, before any work.",
     "The constants are the heart of it: what the project is for, what it delivers, the documents that govern it, who receives its results, the standing constraints, and where each kind of thing lives. Nothing in them carries a date except one: when each deliverable is due. The rest must stay true for as long as the project runs. Everything that happens goes in the log instead.",
     "Then one session takes the orchestrator's role. It writes in the log that it holds the role, and from then on it writes the instructions and keeps the log, and it does no work itself. You are the owner: you rule on every result. Start the orchestrator on the most capable model, with high effort; in the Claude desktop app, that is Opus with effort set to High. It judges every result and writes every instruction, so a weaker setting saves little and costs the most.",
     "Whenever you do not understand something the orchestrator or a work session did, a step, a word, a number, or why it stopped, ask it to explain, in plain words, before you go on. Always. It costs one message, and the answer is often where you find that something is wrong. A ruling on work you cannot explain is not a ruling.",
@@ -321,7 +321,7 @@ body.push(...renderPage({
   ],
   inTool: [
     "With the orchestrator plugin, in the Claude desktop app.",
-    "WARNING: The plugin is not released yet, and its name and version will change. The pictures on this page are from one real run of the mini registry on the author's own pre-release setup, step by step, including the places where the app stopped to ask for a permission. The plugin's name, its skills and some screens will differ on yours; what each step is for does not. Until the plugin is released, read this module alongside the record and run the cycle by hand. What it needs installed, and what you agree to when it runs commands, is on the page With the plugin.",
+    "WARNING: The plugin is not released yet, and its name and version will change. The pictures on this page are from one real run of the mini registry on the author's own pre-release setup, step by step, including the places where the app stopped to ask for a permission. The plugin's name, its skills and some screens will differ on yours; what each step is for does not. Until the plugin is released, read this module alongside the record of the full-size registry prototype we built in October 2026 (its instructions, reports, reviews and log), which each page's \"Try it first\" quotes, and run the cycle by hand. What it needs installed, and what you agree to when it runs commands, is on the page With the plugin.",
     "Before you start. Check that the plugin is installed and switched on: under Customize, its page lists its skills, here three: one to set up a project, one to hold the orchestrator's role, and one to check at the end of a session that everything is saved.",
     "IMAGE: M5-01-plugin-installed.png | The plugin installed and switched on, with its three skills.",
     "Make a folder for the demo and put two things in it: the mini registry brief, and the pages of faults from the starter folder. Leave out the project's own folder. Setup makes it, and a folder that already holds files is treated as a project under way.",
@@ -372,7 +372,7 @@ body.push(...renderPage({
       ["31 Oct, 15:18", "The register of requirements", "1", "review back", "the review, in the folder for reviews", "accepted, no gaps", "me"],
       ["31 Oct, 16:12", "The register of requirements", "1", "my ruling", "the decision in the log", "accepted", "—"]
     ] },
-    "The plugin keeps this log for you, in its own form: a short entry for each event, in a folder beside the project. Until it is set up, the orchestrator keeps the rows by hand in the record of what is running. Setting it up needs the log's folder kept under version control. In this run the orchestrator first asked whether a history on this computer alone was enough, then commissioned a small round to set that up."
+    "The plugin keeps this log for you, in its own form: a short entry for each event, in a folder beside the project. The log holds every event. The record of what is running is a separate short file that lists only the work under way now. Until the plugin's log is set up, the orchestrator keeps the log's rows by hand. Setting it up needs the log's folder kept under version control. In this run the orchestrator first asked whether a history on this computer alone was enough, then commissioned a small round to set that up."
   ],
   aiTip: {
     title: "Check the instruction before it is issued",
@@ -499,13 +499,13 @@ body.push(...renderPage({
     ]
   },
   concept: [
-    "Build in small rounds. First the scaffold and the made-up data, then each goal in a round of its own. A round that builds one thing can be reviewed by running that one thing; a round that builds everything can only be read. The engineers who build agents found the same: an agent asked to build a whole application at once tries to do too much and declares it finished too early, while one asked to build one feature at a time, and leave the project in a clean state, makes steady progress.",
+    "Build in small rounds. First the empty frame of the prototype (its folders and starting files) and the made-up data, then each goal in a round of its own. A round that builds one thing can be reviewed by running that one thing; a round that builds everything can only be read. The engineers who build agents found the same: an agent asked to build a whole application at once tries to do too much and declares it finished too early, while one asked to build one feature at a time, and leave the project in a clean state, makes steady progress.",
     "One round at a time, never two at once. The full-size prototype lost a whole round when four goals were built in parallel in one folder, as Module 4 described.",
     "Made-up data in known numbers. The brief fixes them: 60 children, 3 schools, 8 on more than one list, 4 spelt differently. The data is made the same way every time it is reset, and it never holds a real person.",
-    "Accept nothing that was not seen running. The page of faults for building refuses a report of a screen nobody opened, and a build that compiles but was never run. The review runs the project's checks itself, and goes through the goal as the school clerk would."
+    "Accept nothing that was not seen running. The page of faults for building refuses a report of a screen nobody opened, and a build that compiles but was never run. (Compiles means the program can be assembled, which does not show that it works.) The review runs the project's checks itself, and goes through the goal as the school clerk would."
   ],
   inTool: [
-    "With the orchestrator plugin. Ask the orchestrator for round 5 of the brief, the scaffold and the made-up data. Before it is issued, check that its first step is to see that the tools respond, and that its tests include counting the data against the brief's numbers.",
+    "With the orchestrator plugin. Ask the orchestrator for round 5 of the brief, the empty frame and the made-up data. Before it is issued, check that its first step is to check that the software it needs is installed and starts, and that its tests include counting the data against the brief's numbers.",
     "Read the report's first paragraph against the settings. In this run every count matched:",
     { table: [
       ["Setting", "In the brief", "Counted in the made-up data"],
