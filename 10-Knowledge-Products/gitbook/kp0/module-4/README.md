@@ -24,5 +24,5 @@ In Module 3 you took one piece of work through the cycle once. Module 4 is for r
 
 When you have run this module's tips, one of these takes you further. The Sources on each page say what a claim rests on; this list is what to do next.
 
-- [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) — Anthropic. How engineers keep long work going across fresh chats: a progress file, and a first task that reads it. *20 minutes.*
-- [The Checklist Manifesto](https://atulgawande.com/book/the-checklist-manifesto/) — Atul Gawande. Why a short list of the faults you already know beats experience alone; the idea behind the pages of faults. *A book.*
+- [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents), Anthropic. How engineers keep long work going across fresh chats: a progress file, and a first task that reads it. *20 minutes.*
+- [The Checklist Manifesto](https://atulgawande.com/book/the-checklist-manifesto/), Atul Gawande. Why a short list of the faults you already know beats experience alone; the idea behind the pages of faults. *A book.*

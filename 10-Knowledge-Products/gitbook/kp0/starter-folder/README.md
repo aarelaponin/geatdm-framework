@@ -56,6 +56,6 @@ Only step 1 is needed. Each later step saves some copying and pasting, and none 
 - [One finished cycle](finished-cycle.md)
 - [With the plugin: your first project](with-the-plugin.md)
 - [The mini registry: the brief for Module 5](mini-registry.md)
-- The log: a spreadsheet with seven columns — date, piece of work, version, event, file, verdict or ruling, and who it is open with. The event is one of five words: instruction issued, report back, review back, my ruling, handover. A ruling is accepted, not accepted or withdrawn. *Open with* says who acts next: the work chat, the review chat, you, or no one once the piece of work is ruled on. One row per event; never delete a row.
+- The log: a spreadsheet with seven columns: date, piece of work, version, event, file, verdict or ruling, and who it is open with. The event is one of five words: instruction issued, report back, review back, my ruling, handover. A ruling is accepted, not accepted or withdrawn. *Open with* says who acts next: the work chat, the review chat, you, or no one once the piece of work is ruled on. One row per event; never delete a row.
 
 Name each file by date, piece of work and version, for example `2026-10-30 duplicates v1.md`. A report and its review carry the same name as their instruction.

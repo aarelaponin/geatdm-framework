@@ -18,7 +18,7 @@ Unlike the rest of the course, the plugin needs a few things installed on your c
 
 - **The Claude desktop app, with Desktop Commander added.** The plugin runs every command through Desktop Commander, because the app's own shell cannot reach your folders. Desktop Commander has to be installed; on a Mac it also asks for permission to run Node, the program it runs on.
 - **Python.** Most Macs already have it. The plugin checks before it asks you anything, and says what to install if it is missing.
-- **git, if you want it.** git keeps the project's history. It is optional: without it, tell the setup session not to commit, and the orchestrator keeps the log's rows by hand in the record of what is running, as page 5.1 shows.
+- **git, if you want it.** git keeps the project's history. It is optional: without it, tell the setup session not to commit. The orchestrator then keeps the log's rows by hand in the record of what is running, as page 5.1 shows.
 - **One cycle done by hand, from Module 3.** The plugin is easier to trust when you know what it is doing for you.
 
 **The plugin runs commands, and its scheduled tasks run them without asking you each time.** That is the difference from working by hand, where you turn down every command you did not ask for. So, as always: before you allow anything, ask Claude what you are agreeing to, in plain words, and allow it only for the demo's folder. Check your organisation's rules before installing anything on a work computer.
@@ -64,12 +64,12 @@ Start a session named with your code, the word *orchestrator* and a few words, f
 Ask the orchestrator for the first piece of work. A good first one is small and checkable: a register of what the project must do, or one count. Then:
 
 1. Read the instruction it writes before it is issued. Its tests and its ways to fail are the part you judge.
-2. The work session starts, on a timer or from a start message the orchestrator gives you to paste. It ends with a report and starts its own review in a separate session.
+2. The work session starts, on a timer or from a start message the orchestrator gives you to paste. That session ends with a report and starts its own review in a separate session.
 3. Read the review, then tell the orchestrator your ruling. It writes the ruling in the log.
 
 ## 6. Keep going, one piece of work at a time
 
-- **Whenever you do not understand something the orchestrator or a work session did, ask it to explain, in plain words, before you go on. Always.** A ruling on work you cannot explain is not a ruling.
+- Whenever you do not understand something the orchestrator or a work session did, ask it to explain, in plain words, before you go on. A ruling on work you cannot explain is not a ruling.
 - Start the next piece of work only when the last one's ruling is in the log. Never press *Run now* on a round that is also set to start on a timer.
 - Ask "where does it stand?" at the start of each day, and read the answer against what you remember.
 - After a few days, or when the orchestrator starts quoting figures instead of working them out again, ask it to hand over: it writes the handover note and the fresh session's first task.

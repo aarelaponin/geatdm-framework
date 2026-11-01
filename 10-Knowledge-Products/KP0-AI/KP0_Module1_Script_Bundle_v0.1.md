@@ -53,7 +53,7 @@ Section 2 gives Module 1 at a glance, with the module's self-check. Section 3 ho
 
 ## 2. Module 1 at a glance
 
-Four written pages. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two hours.
+The module has four written pages and one Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two hours.
 
 | # | Title | Single message | Form |
 | --- | --- | --- | --- |
@@ -64,7 +64,7 @@ Four written pages. One Strategist persona throughout. A learner who reads the f
 
 ### 2.1 The module's self-check
 
-Five questions, drawn from the four pages, to be answered after reading them. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means the module's point has landed; below four, read again the page named beside each question you missed.
+Five questions, drawn from the four pages, to be answered after reading them. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means the module's point has landed; below four, reread the page named beside each question you missed.
 
 | # | Question | Model answer | Drawn from |
 | --- | --- | --- | --- |
@@ -82,7 +82,7 @@ Shown on the module's home page, apart from the sources: one to three things to 
 | --- | --- | --- | --- | --- |
 | AI Skills Coalition | ITU | https://aiforgood.itu.int/ai-skills-coalition/ai-courses-portfolio/ | ITU's free course catalogue; start with 'AI and digital transformation in government'. | About 12 hours |
 | Elements of AI | University of Helsinki and MinnaLearn | https://www.elementsofai.com/ | A free course for non-specialists on what AI is and is not; many governments use it as a first course. | At your own pace |
-| AI Fluency: Framework and Foundations | Anthropic Academy | https://academy.claude.com/courses/ai-fluency-framework-foundations | The four skills of working with an assistant, of which this module teaches description and discernment. | About 3 hours |
+| AI Fluency: Framework and Foundations | Anthropic Academy | https://academy.claude.com/courses/ai-fluency-framework-foundations | The four skills of working with an assistant. This module teaches two of them, description and discernment. | About 3 hours |
 
 ## 3. The pages and the reference
 
@@ -199,7 +199,7 @@ First, name the input you are pasting: 'Below is our school census note.' The as
 
 The safeguard line is the part that matters most in government. A line such as 'AI can make mistakes' helps nobody. The safeguard line names the way this prompt can mislead you. A prompt that asks for causes can invent causes, so its line is 'name a cause only if the document states it'. A prompt that asks for country examples can invent countries, so its line is 'drop any example whose source does not say what you claim'.
 
-Two habits matter more than clever wording: give context and one example, because an assistant given your real material and one sample of the result you want does better than one given a perfectly worded request and nothing else; and when the result is close but wrong, say what is wrong and run it again in the same chat instead of starting over, so the assistant keeps what it got right.
+Two habits matter more than clever wording. Give context and one example: an assistant given your real material and one sample of the result you want does better than one given a perfectly worded request and nothing else. And when the result is close but wrong, say what is wrong and run it again in the same chat instead of starting over, so the assistant keeps what it got right.
 
 The vendors each publish a guide to prompting, and they use different words for the same structure: Microsoft's goal, context, expectations and source for Copilot; Google's persona, task, context and format; OpenAI's 'be specific' and 'iterate'; Anthropic's clarity, examples and structure. Microsoft's source is the first part here, and its context goes with it; its goal is the second, and its expectations the third. None of the four guides asks for the fourth part, the safeguard line: that is this course's own. A prompt in the four-part shape is also a prompt a colleague can read, check and run again, which a vague one is not.
 
@@ -375,7 +375,7 @@ The draft: a note for the Permanent Secretary of MoEYS. (1) The Data Protection 
 
 Questions the draft should have raised: which legal basis applies to sharing with the examinations authority; whether that authority would need to join Linkup; how consent works for a learner with no birth record.
 
-If your run marked 7 as 'stated', find the quotation it gave in the source: it is not there. That is the safeguard's point.
+If your run marked 7 as 'stated', find the quotation it gave in the source: it is not there.
 
 ### Sources
 
@@ -408,7 +408,7 @@ Every AI usage tip in this knowledge base is safe to run only under five rules, 
 
 5. Say that you used it: which assistant, what it drafted, and how far you checked the result. Tell your manager, and say it in the document where your government's rules ask for that. The Government of Canada asks this of its public servants.
 
-Some work should not go to an assistant at all, and a government trial shows where the line falls. When 20,000 UK civil servants used Microsoft 365 Copilot from September to December 2024, it saved most time on drafting documents and preparing presentations, about 26 minutes a day on average by users' own estimate, and struggled with nuanced, context-heavy material and with policy work whose sources disagreed. The same trial found that it can surface files a user has access to but should not. Canada's guide puts it as a principle: an assistant is not the right tool for every task. A decision about one person, such as an appeal, a grant or a sanction, is made by an official who can be asked why. Work you cannot check is work you cannot accept: if nobody in the unit can tell whether the answer is right, the assistant's answer is not an answer. And where the text itself is the authority, such as the law, the contract or the minutes, read the text, not a summary of it.
+Some work should not go to an assistant at all, and a government trial shows where the line falls. When 20,000 UK civil servants used Microsoft 365 Copilot from September to December 2024, it saved most time on drafting documents and preparing presentations, about 26 minutes a day on average by users' own estimate. It struggled with nuanced, context-heavy material and with policy work whose sources disagreed. The same trial found that it can surface files a user has access to but should not. Canada's guide puts it as a principle: an assistant is not the right tool for every task. A decision about one person, such as an appeal, a grant or a sanction, is made by an official who can be asked why. Work you cannot check is work you cannot accept: if nobody in the unit can tell whether the answer is right, the assistant's answer is not an answer. And where the text itself is the authority, such as the law, the contract or the minutes, read the text itself.
 
 Governments have already written down what they expect of public servants who use these tools on official work. The UK government's AI Playbook of February 2025 sets ten principles for civil servants, among them: know the tools' limits, use them lawfully and responsibly, and know who is responsible. The African Union's Continental AI Strategy of 2024 sets the regional frame for responsible use. UNESCO's framework of AI competencies for civil servants says what a public servant needs to know to use these tools well. And where the data is about learners, it is about children: UNICEF's guidance on AI and children is the frame for that. Read your own government's rules first: they decide which assistants you may use, and for what.
 

@@ -24,6 +24,6 @@ Module 1 taught one good chat. Module 2 teaches the setup that makes every later
 
 When you have run this module's tips, one of these takes you further. The Sources on each page say what a claim rests on; this list is what to do next.
 
-- [AI Fluency: Framework and Foundations](https://academy.claude.com/courses/ai-fluency-framework-foundations) — Anthropic Academy. Delegation, the skill this module sets up: what to hand to an assistant, and how. *About 3 hours.*
-- [AI and digital transformation competencies for civil servants](https://unesdoc.unesco.org/ark:/48223/pf0000384963) — UNESCO. The competencies a government expects of staff who set up and govern these tools. *A report to read.*
-- [AI Skills Coalition](https://aiforgood.itu.int/ai-skills-coalition/ai-courses-portfolio/) — ITU. ITU's free course catalogue; start with 'AI and digital transformation in government'. *About 12 hours.*
+- [AI Fluency: Framework and Foundations](https://academy.claude.com/courses/ai-fluency-framework-foundations), Anthropic Academy. Delegation, the skill this module sets up: what to hand to an assistant, and how. *About 3 hours.*
+- [AI and digital transformation competencies for civil servants](https://unesdoc.unesco.org/ark:/48223/pf0000384963), UNESCO. The competencies a government expects of staff who set up and govern these tools. *A report to read.*
+- [AI Skills Coalition](https://aiforgood.itu.int/ai-skills-coalition/ai-courses-portfolio/), ITU. ITU's free course catalogue; start with 'AI and digital transformation in government'. *About 12 hours.*

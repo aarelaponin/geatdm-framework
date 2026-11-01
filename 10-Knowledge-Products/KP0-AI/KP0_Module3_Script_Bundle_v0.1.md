@@ -132,9 +132,9 @@ The cycle costs a second chat and a few minutes of writing, so do not spend it o
 
 ### In the tool
 
-By hand, in any assistant. Build your working folder from the pages of the starter folder: a folder on your computer with the four forms (instruction, report, review, handover note), the three role prompts (work chat, review chat, first task) and the pages of faults in it. The starter folder's first page sets out the cycle in six steps, and how to set up your computer for it.
+By hand, in any assistant. Build your working folder from the pages of the starter folder. It is a folder on your computer with the four forms (instruction, report, review, handover note) and the three role prompts (work chat, review chat, first task). The starter folder's first page sets out the cycle in six steps, and how to set up your computer for it.
 
-The folder holds the forms you will write from, the three role prompts you will paste into each chat, a page of faults for each kind of work (analysis, drafting, checking and building), a log, and one finished cycle to copy from. Of its six folders, three keep instructions, reports and reviews apart, one kind of document each, so that each one can be found and nothing is lost when a chat ends.
+The folder also holds a page of faults for each kind of work (analysis, drafting, checking and building), a log, and one finished cycle to copy from. Of its six folders, three keep instructions, reports and reviews apart, one kind of document each, so that each one can be found and nothing is lost when a chat ends.
 
 ### AI usage tip — Does this piece of work need the cycle?
 
@@ -208,13 +208,13 @@ Choose the assistant's model by the kind of work, never by how important the sub
 
 By hand, in any assistant. Set up first, as the first page of the starter folder says: turn memory off in your assistant's settings (page 2.4 shows where), and decide whether you will paste files or let the assistant read the folder.
 
-Setting up your computer, from the baseline up. Only the first step is needed. (1) Any assistant in the browser: your working folder built from the starter folder's pages, memory off, prompts pasted, replies saved by hand. This works in whatever assistant your organisation approves. (2) The Claude desktop app, on Windows or Mac: chats beside your files, and a project that holds the forms and your page of faults as standing instructions; keep the review chat outside the project. (3) File access, through Desktop Commander or the desktop app's own file extension: the work chat writes its report into the folder and the review chat reads it from there. Allow the starter folder only, never a folder with anything confidential, and turn down any command you did not ask for. (4) Plugins and skills, if your assistant has them. (5) Keep the folder somewhere it is copied, such as a synced OneDrive or SharePoint folder. Check your organisation's rules before installing anything on a work computer; some organisations do not allow new software or extensions, and then the baseline is the route.
+Set up your computer in steps, from the baseline up. Only the first step is needed. (1) Use any assistant in the browser: build your working folder from the starter folder's pages, turn memory off, paste the prompts and save the replies by hand. This works in whatever assistant your organisation approves. (2) Use the Claude desktop app, on Windows or Mac. It puts chats beside your files, and a project in it can hold the forms and your page of faults as standing instructions. Keep the review chat outside the project. (3) Add file access, through Desktop Commander or the desktop app's own file extension. The work chat then writes its report into the folder and the review chat reads it from there. Allow the starter folder only, never a folder with anything confidential, and turn down any command you did not ask for. (4) Plugins and skills, if your assistant has them. (5) Keep the folder somewhere it is copied, such as a synced OneDrive or SharePoint folder. Check your organisation's rules before installing anything on a work computer; if new software or extensions are not allowed, use the baseline.
 
 Copy the instruction form into a new file in the instructions folder. Name it by date, piece of work and version, for example '2026-10-30 duplicates v1'. Start from your case card from 3.1. Fill the form's eight sections: what it serves, the material, the task, how you will know it is done, how the review will check it, how this work can fail, out of scope, and where the report goes. Copy the faults from the page for your kind of work into section 6, how this work can fail, then add the ways particular to your task.
 
 A chat may help you draft the instruction. If it does, that chat does no work afterwards and no review: it helped to commission the work.
 
-Start your log: a spreadsheet with seven columns, date, piece of work, version, event, file, verdict or ruling, and who it is open with. The event is one of five words: instruction issued, report back, review back, my ruling, handover; withdrawn is a ruling, not an event. *Open with* says who acts next: the work chat, the review chat, you, or no one once the piece of work is ruled on. Write the first row: the date, the piece of work, version 1, 'instruction issued', and the file.
+Start your log: a spreadsheet with seven columns: date, piece of work, version, event, file, verdict or ruling, and who it is open with. The event is one of five words: instruction issued, report back, review back, my ruling, handover; withdrawn is a ruling, not an event. *Open with* says who acts next: the work chat, the review chat, you, or no one once the piece of work is ruled on. Write the first row: the date, the piece of work, version 1, 'instruction issued', and the file.
 
 ### AI usage tip — Test your instruction on a stranger
 
@@ -276,11 +276,11 @@ This review reached the figures from different material by a different method. T
 
 The report gives the answer first, in one paragraph. Then it goes through the tests one by one, each with its evidence. It says what it found and did not fix, and what it could not establish. It carries no verdict: the work chat does not judge its own work.
 
-Watch the report for one fault above all: a limit of one step stated as a limit of the whole. 'The search misses a child spelt differently' is what the duplicates count showed. 'The registry does not recognise the child' is wider, because a later step, in which the prototype looks up the child's birth record at the Civil Registration Department, may find the child, and that was not tested.
+Watch the report for one fault above all: a limit of one step stated as a limit of the whole. 'The search misses a child spelt differently' is what the duplicates count showed. 'The registry does not recognise the child' is wider. A later step may find the child: the prototype looks up the child's birth record at the Civil Registration Department. That step was not tested.
 
 The review is a check, not a reading. It goes through the instruction's tests and looks at the evidence for each one itself. It works out at least one figure again, by a route the report did not use. A check that cannot be run counts as not met. And it ends with one of two verdicts, accepted or not accepted, with no third word. 'Accepted with reservations' is not accepted.
 
-Be wary of a review with zero findings on work that matters: it may not have checked anything. Ask which figure it worked out again, and how. And remember what a check can and cannot see. A check sees that a field is filled, not that it is true; that a citation exists, not that it says what the sentence claims. One check should end at the real thing: another piece of work on the prototype, a consent check, sent one learner's record through the running prototype to the National Examinations Authority (PNEA), and saw it hold back all seven fields of the record the authority has no legal basis to receive, and pass all six it has.
+Be wary of a review with zero findings on work that matters: it may not have checked anything. Ask which figure it worked out again, and how. And remember what a check can and cannot see. A check sees that a field is filled, not that it is true; that a citation exists, not that it says what the sentence claims. One check should end at the real thing. Another piece of work on the prototype, a consent check, sent one learner's record through the running prototype to the National Examinations Authority (PNEA). It saw the prototype hold back all seven fields of the record the authority has no legal basis to receive, and pass all six it has.
 
 Research on using models as judges finds that a model tends to favour answers that it wrote itself. A new chat of the same model is still the same model, so a separate chat does not remove that lean. What makes the review independent is that it shares nothing with the work chat and reaches the figure by a route of its own. If your organisation offers more than one model, run the review on a different one from the work.
 
@@ -340,7 +340,7 @@ Not accepted. The figure 37 is 31 plus 6, so the report has counted two differen
 
 The figures of the duplicates count went into a one-page note to the Permanent Secretary. Version 1 had 21 sentences. Every figure in it was right. Two of its sentences read: 'It does not recognise a child already registered under a different spelling', and 'A registered learner is found only when family name, given names and date of birth match, capitals aside.'
 
-Version 2 corrected those sentences. Its review found that it now left out two limits that the record names: that the Ministry itself is not yet on the data exchange it reads across, and that a child with no birth record can be matched only by names and dates.
+Version 2 corrected those sentences. Its review found that version 2 now left out two limits that the record names: that the Ministry itself is not yet on the data exchange it reads across, and that a child with no birth record can be matched only by names and dates.
 
 **Your question:** What is wrong with the two sentences of version 1? And when version 2 also failed, what should the person do next?
 
@@ -350,7 +350,7 @@ The two sentences state a limit of one step, the search, as a limit of the whole
 
 Two failures on the same instruction is the signal to write the task again, not to send version 3. The owner, the person who commissioned the prototype, did: the note was defined again as a new piece of work, which listed every limit the record names before the note was written, and that version was accepted.
 
-Then the decisions that no review makes. Whether the note goes to the Permanent Secretary, what it leaves out, and whether the figure is said outside the Ministry are the owner's, however the review reads.
+Some decisions no review makes: whether the note goes to the Permanent Secretary, what it leaves out, and whether the figure is said outside the Ministry. These are the owner's, however the review reads.
 
 ### The concept
 

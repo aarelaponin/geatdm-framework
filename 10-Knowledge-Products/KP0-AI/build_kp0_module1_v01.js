@@ -244,7 +244,7 @@ body.push(
 // ---------- MODULE AT A GLANCE ----------
 body.push(
   H1("2. Module 1 at a glance"),
-  P("Four written pages. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two hours."),
+  P("The module has four written pages and one Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two hours."),
   genericTable([700, 2700, 4900, 1400], ["#", "Title", "Single message", "Form"], [
     ["1.1", "A drafting partner, not an oracle",
       "An assistant writes a wrong answer as fluently as a right one, and tends to agree with you, so how well a draft reads tells you nothing about whether it is right.", "Page"],
@@ -257,7 +257,7 @@ body.push(
   ]),
 
   H3("2.1 The module's self-check"),
-  P("Five questions, drawn from the four pages, to be answered after reading them. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means the module's point has landed; below four, read again the page named beside each question you missed."),
+  P("Five questions, drawn from the four pages, to be answered after reading them. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means the module's point has landed; below four, reread the page named beside each question you missed."),
   genericTable([600, 3900, 3700, 1500], ["#", "Question", "Model answer", "Drawn from"], [
     ["1", "An assistant gives you a clear, well-written summary of your country's data-protection law, with section numbers. You did not paste the law. What do you do? (a) Use it: it is clear and specific. (b) Ask the same assistant whether it is sure. (c) Treat every section number and obligation as a claim to check against the law itself before it goes anywhere. (d) Ask it to shorten the summary.",
       "(c). Fluency is not evidence: an assistant writes an invented section number in the same tone as a real one. (b) does not help, because an assistant tends to agree with the framing of your question, including 'are you sure?'.",
@@ -281,7 +281,7 @@ body.push(
   genericTable([2300, 1700, 2600, 2100, 1000], ["Title", "Publisher", "Address", "Why", "Time"], [
     ["AI Skills Coalition", "ITU", "https://aiforgood.itu.int/ai-skills-coalition/ai-courses-portfolio/", "ITU's free course catalogue; start with 'AI and digital transformation in government'.", "About 12 hours"],
     ["Elements of AI", "University of Helsinki and MinnaLearn", "https://www.elementsofai.com/", "A free course for non-specialists on what AI is and is not; many governments use it as a first course.", "At your own pace"],
-    ["AI Fluency: Framework and Foundations", "Anthropic Academy", "https://academy.claude.com/courses/ai-fluency-framework-foundations", "The four skills of working with an assistant, of which this module teaches description and discernment.", "About 3 hours"]
+    ["AI Fluency: Framework and Foundations", "Anthropic Academy", "https://academy.claude.com/courses/ai-fluency-framework-foundations", "The four skills of working with an assistant. This module teaches two of them, description and discernment.", "About 3 hours"]
   ]),
   pageBreak()
 );
@@ -381,7 +381,7 @@ body.push(...renderPage({
     "Every AI usage tip in this knowledge base has the same shape, and you can use it for any prompt of your own. It has four parts.",
     "First, name the input you are pasting: 'Below is our school census note.' The assistant should know what kind of thing it is looking at, and that it must work from it. Second, break the task into named outputs: 'List the causes, rank them, and name the body that owns each,' instead of 'help me with our data'. Third, fix the exact output format: 'A table with these four columns, then three bullets.' A format you can paste into your own document saves you an hour of reshaping. Fourth, add a safeguard line for this prompt's own risk.",
     "The safeguard line is the part that matters most in government. A line such as 'AI can make mistakes' helps nobody. The safeguard line names the way this prompt can mislead you. A prompt that asks for causes can invent causes, so its line is 'name a cause only if the document states it'. A prompt that asks for country examples can invent countries, so its line is 'drop any example whose source does not say what you claim'.",
-    "Two habits matter more than clever wording: give context and one example, because an assistant given your real material and one sample of the result you want does better than one given a perfectly worded request and nothing else; and when the result is close but wrong, say what is wrong and run it again in the same chat instead of starting over, so the assistant keeps what it got right.",
+    "Two habits matter more than clever wording. Give context and one example: an assistant given your real material and one sample of the result you want does better than one given a perfectly worded request and nothing else. And when the result is close but wrong, say what is wrong and run it again in the same chat instead of starting over, so the assistant keeps what it got right.",
     "The vendors each publish a guide to prompting, and they use different words for the same structure: Microsoft's goal, context, expectations and source for Copilot; Google's persona, task, context and format; OpenAI's 'be specific' and 'iterate'; Anthropic's clarity, examples and structure. Microsoft's source is the first part here, and its context goes with it; its goal is the second, and its expectations the third. None of the four guides asks for the fourth part, the safeguard line: that is this course's own. A prompt in the four-part shape is also a prompt a colleague can read, check and run again, which a vague one is not."
   ],
   inTool: [
@@ -516,7 +516,7 @@ body.push(...renderPage({
           ["8", "not in the source", "The source says the Commission has taken no enforcement action"]
         ] },
         "Questions the draft should have raised: which legal basis applies to sharing with the examinations authority; whether that authority would need to join Linkup; how consent works for a learner with no birth record.",
-        "If your run marked 7 as 'stated', find the quotation it gave in the source: it is not there. That is the safeguard's point."
+        "If your run marked 7 as 'stated', find the quotation it gave in the source: it is not there."
       ]
     }
   },
@@ -544,7 +544,7 @@ body.push(...renderPage({
     "3. Never paste confidential or personal data. No records of citizens or learners, no security settings, no unpublished cabinet papers, nothing your data-protection law covers. Treat the prompt box as a public place. The tips never need such data: run them with placeholders such as 'learner A', 'school 1' and 'district X'.",
     "4. Keep the decision human. The assistant prepares; a person decides. When something drafted with an assistant turns out wrong, the person who signed it answers for it, and 'the AI said so' is no answer.",
     "5. Say that you used it: which assistant, what it drafted, and how far you checked the result. Tell your manager, and say it in the document where your government's rules ask for that. The Government of Canada asks this of its public servants.",
-    "Some work should not go to an assistant at all, and a government trial shows where the line falls. When 20,000 UK civil servants used Microsoft 365 Copilot from September to December 2024, it saved most time on drafting documents and preparing presentations, about 26 minutes a day on average by users' own estimate, and struggled with nuanced, context-heavy material and with policy work whose sources disagreed. The same trial found that it can surface files a user has access to but should not. Canada's guide puts it as a principle: an assistant is not the right tool for every task. A decision about one person, such as an appeal, a grant or a sanction, is made by an official who can be asked why. Work you cannot check is work you cannot accept: if nobody in the unit can tell whether the answer is right, the assistant's answer is not an answer. And where the text itself is the authority, such as the law, the contract or the minutes, read the text, not a summary of it.",
+    "Some work should not go to an assistant at all, and a government trial shows where the line falls. When 20,000 UK civil servants used Microsoft 365 Copilot from September to December 2024, it saved most time on drafting documents and preparing presentations, about 26 minutes a day on average by users' own estimate. It struggled with nuanced, context-heavy material and with policy work whose sources disagreed. The same trial found that it can surface files a user has access to but should not. Canada's guide puts it as a principle: an assistant is not the right tool for every task. A decision about one person, such as an appeal, a grant or a sanction, is made by an official who can be asked why. Work you cannot check is work you cannot accept: if nobody in the unit can tell whether the answer is right, the assistant's answer is not an answer. And where the text itself is the authority, such as the law, the contract or the minutes, read the text itself.",
     "Governments have already written down what they expect of public servants who use these tools on official work. The UK government's AI Playbook of February 2025 sets ten principles for civil servants, among them: know the tools' limits, use them lawfully and responsibly, and know who is responsible. The African Union's Continental AI Strategy of 2024 sets the regional frame for responsible use. UNESCO's framework of AI competencies for civil servants says what a public servant needs to know to use these tools well. And where the data is about learners, it is about children: UNICEF's guidance on AI and children is the frame for that. Read your own government's rules first: they decide which assistants you may use, and for what."
   ],
   inTool: [

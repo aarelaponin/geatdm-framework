@@ -45,9 +45,9 @@ Only step 1 is needed. Each later step saves some copying and pasting, and none 
 |---|---|
 | `0-chat-prompts/` | The three role prompts, ready to paste |
 | `forms/` | The instruction, the report, the review and the handover note, one page each |
-| `kinds/` | The faults of analysis, drafting and checking, with what each review runs; and of building, for Module 5 |
-| `1-instructions/` `2-reports/` `3-reviews/` | Empty. Each holds one kind of document |
-| `log.xlsx` | The log: one row per event. Six words for the event: instruction issued, report back, review back, my ruling, withdrawn, handover |
+| `kinds/` | The faults of analysis, drafting and checking, with what each review runs, and the faults of building, for Module 5 |
+| `1-instructions/` `2-reports/` `3-reviews/` | Empty folders, each for one kind of document |
+| `log.xlsx` | The log: one row per event. Five words for the event: instruction issued, report back, review back, my ruling, handover; withdrawn is a ruling, written in a *my ruling* row |
 | `example/` | One finished cycle: counting the children who appear on more than one list |
 | `WITH-THE-PLUGIN.md` | Your first project with the orchestrator plugin, once it is installed |
 | `MINI-REGISTRY-BRIEF.md` | The toy prototype Module 5 builds with the plugin |

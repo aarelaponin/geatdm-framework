@@ -215,7 +215,7 @@ body.push(
     ["Prepared by",     "FiscalAdmin OÜ"]
   ]),
   spacer(140),
-  P("This bundle is the v0.1 working draft of Module 5 of KP0 — Working with AI in Government. In Modules 3 and 4 you ran the cycle by hand. In Module 5 you run it with the orchestrator plugin, on a small project from start to finish: a toy prototype of a learner registry, built round by round, from the first document to a note for a senior reader. You do not write any code. You write what each round serves, read every instruction before it is issued and every review before you rule, and decide when it is done. Each page opens with a fault to find in the record of the full-size registry prototype we built in October 2026, then shows the step on the toy. The orchestrator plugin is in preparation, and its name and version will change; the pictures are from the author's pre-release setup. Until it is released, read the pages alongside the record, and run the cycle by hand as Modules 3 and 4 teach. Unlike the rest of the course, the plugin needs things installed and runs commands: the page With the plugin says what, and what you agree to. The register is plain English at about an eighth-grade level."),
+  P("This bundle is the v0.1 working draft of Module 5 of KP0 — Working with AI in Government. In Modules 3 and 4 you ran the cycle by hand. In Module 5 you run it with the orchestrator plugin, on a small project from start to finish: a toy prototype of a learner registry, built round by round, from the first document to a note for a senior reader. You do not write any code. You write what each round serves, read every instruction before it is issued and every review before you rule, and decide when it is done. Each page opens with a fault to find in the record of the full-size registry prototype we built in October 2026, then shows the step on the toy. The orchestrator plugin is in preparation, and its name and version will change; the pictures are from the author's pre-release setup. Until it is released, read the pages alongside the record, and run the cycle by hand as Modules 3 and 4 teach. Unlike the rest of the course, the plugin needs software installed and runs commands. The page With the plugin says which software, and what you agree to. The register is plain English at about an eighth-grade level."),
   pageBreak()
 );
 
@@ -246,7 +246,7 @@ body.push(
 // ---------- MODULE AT A GLANCE ----------
 body.push(
   H1("2. Module 5 at a glance"),
-  P("Five written pages. A learner who builds the toy alongside the pages needs about a day spread over a week: the brief's eight rounds and those the run adds, 17 in the course's own run, each a few minutes of reading and ruling, and the time the work sessions take."),
+  P("Five written pages. Building the toy alongside the pages takes about a day, spread over a week. That covers the brief's eight rounds and the rounds the run adds (17 in the course's own run), a few minutes of reading and ruling for each, and the time the work sessions take."),
   genericTable([700, 2700, 4900, 1400], ["#", "Title", "Single message", "Form"], [
     ["5.1", "Set up the project, and the first round",
       "Set up once, with the constants written before any work, then give one session the orchestrator's role and start with a round small enough to check.", "Page"],
@@ -263,7 +263,7 @@ body.push(
   H3("2.1 The module's self-check"),
   P("Five questions, drawn from the five pages. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means Ready; below four, read again the page named beside each question you missed."),
   genericTable([600, 3900, 3700, 1500], ["#", "Question", "Model answer", "Drawn from"], [
-    ["1", "Setting up the project refuses a constraint you typed: 'No session publishes anything (decided 26 October)'. What do you do? (a) Ask the session to accept it anyway. (b) Remove the date: the constraint stands without it, and the date belongs in the log. (c) Leave the constraint out. (d) Start a new project.",
+    ["1", "Setup refuses a constraint you typed: 'No session publishes anything (decided 26 October)'. What do you do? (a) Ask the session to accept it anyway. (b) Remove the date: the constraint stands without it, and the date belongs in the log. (c) Leave the constraint out. (d) Start a new project.",
       "(b). The constants hold only what does not change with time. The rule is a constant; when it was decided is a dated fact, which the log keeps.",
       "5.1 Set up the project"],
     ["2", "The count of requirements against the goal says: 14 requirements, 11 carried by the goal, 3 by none. The orchestrator proposes to start building. What must be true first?",
@@ -272,8 +272,8 @@ body.push(
     ["3", "The work session reports: 'the goal is built and works'. Its evidence is that the code compiles. What do you rule? (a) Accepted. (b) Not accepted: building is reported only when it was seen running, with the checks' results. (c) Accepted, if the review agrees. (d) Ask the work session to say it again.",
       "(b). A build that compiles is not a build that runs. The page of faults for building refuses exactly this, and the review must run the checks itself.",
       "5.3 Build one goal per round"],
-    ["4", "Your toy's note says: 'The registry does not register a child twice.' Your duplicates count found 4 of the 8 children on more than one list caught from every entry. What should the note say instead?",
-      "What the count showed, as a limit of the one step it tested: the search finds 4 of the 8 from every list, and misses each of the other 4 on the list where the family name is spelt differently; whether any other step would find them is not shown. And that the numbers are set in the made-up data.",
+    ["4", "Your toy's note says: 'The registry does not register a child twice.' Your duplicates count found that, of the 8 children on more than one list, the search catches 4 from every entry. What should the note say instead?",
+      "What the count showed, as a limit of the one step it tested: the search finds 4 of the 8 from every list, and misses each of the other 4 on the list where the family name is spelt differently; whether any other step would find them is not shown. The note should also say that the numbers are set in the made-up data.",
       "5.4 Check at the real thing"],
     ["5", "The toy works on screen, and its note says what it shows and what it does not. The orchestrator proposes one more round: a way to look a learner up. What do you check before you rule?",
       "Whether the question the prototype was built to answer is already answered. If it is, stop: a prototype that keeps growing turns into the system without anyone deciding to build one. Take its documents, not its code, to where the real thing is built. Deciding to stop is yours, not the orchestrator's.",
@@ -284,7 +284,7 @@ body.push(
   P("Shown on the module's home page, apart from the sources: one to three things to do next, each with its time."),
   genericTable([2300, 1700, 2600, 2100, 1000], ["Title", "Publisher", "Address", "Why", "Time"], [
     ["Effective harnesses for long-running agents", "Anthropic", "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents", "The engineers' version of this module: set up first, one feature at a time, and check every feature as a user would.", "20 minutes"],
-    ["Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl", "Birgitta Böckeler, on martinfowler.com", "https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html", "Three tools that write the spec before the code, tried by hand, with an honest account of where they are too heavy. Module 5's way of working, as software teams know it.", "25 minutes"],
+    ["Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl", "Birgitta Böckeler, on martinfowler.com", "https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html", "Three tools that write the spec before the code, tried by hand, with an honest account of where they are too heavy. It covers the way of working Module 5 teaches, as software teams know it.", "25 minutes"],
     ["Harness Engineering for Coding Agent Users", "Birgitta Böckeler, on martinfowler.com", "https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html", "Guides that steer an assistant and sensors that check it: the pages of faults and the review, in an engineer's terms.", "25 minutes"]
   ]),
   pageBreak()
@@ -315,7 +315,7 @@ body.push(...renderPage({
   concept: [
     "With the plugin, you no longer make the folders and forms yourself. One session sets the project up: it checks your computer, asks you a few questions with recommended answers, shows you the map of folders to rule on, and then makes everything in one go. That is the place where the project's structure is decided, once, before any work.",
     "The constants are the heart of it: what the project is for, what it delivers, the documents that govern it, who receives its results, the standing constraints, and where each kind of thing lives. Nothing in them carries a date except one: when each deliverable is due. The rest must stay true for as long as the project runs. Everything that happens goes in the log instead.",
-    "Then one session takes the orchestrator's role. It writes in the log that it holds the role, and from then on it writes the instructions and keeps the log, and it does no work itself. You are the owner: you rule on every result. Start the orchestrator on the most capable model, with high effort; in the Claude desktop app, that is Opus with effort set to High. It judges every result and writes every instruction, so a weaker setting saves little there and costs the most.",
+    "Then one session takes the orchestrator's role. It writes in the log that it holds the role, and from then on it writes the instructions and keeps the log, and it does no work itself. You are the owner: you rule on every result. Start the orchestrator on the most capable model, with high effort; in the Claude desktop app, that is Opus with effort set to High. It judges every result and writes every instruction, so a weaker setting saves little and costs the most.",
     "Whenever you do not understand something the orchestrator or a work session did, a step, a word, a number, or why it stopped, ask it to explain, in plain words, before you go on. Always. It costs one message, and the answer is often where you find that something is wrong. A ruling on work you cannot explain is not a ruling.",
     "Make the first round small and checkable. The register of requirements is a good one: a numbered list of what the prototype must do, each with a test someone could run. It is short, every later round builds on it, and a review can check it line by line. The engineers who build agents found the same: a first session that only sets up the project and writes the list of features, before any of them is built, made the work that followed steadier."
   ],
@@ -324,13 +324,13 @@ body.push(...renderPage({
     "WARNING: The plugin is not released yet, and its name and version will change. The pictures on this page are from one real run of the mini registry on the author's own pre-release setup, step by step, including the places where the app stopped to ask for a permission. The plugin's name, its skills and some screens will differ on yours; what each step is for does not. Until the plugin is released, read this module alongside the record and run the cycle by hand. What it needs installed, and what you agree to when it runs commands, is on the page With the plugin.",
     "Before you start. Check that the plugin is installed and switched on: under Customize, its page lists its skills, here three: one to set up a project, one to hold the orchestrator's role, and one to check at the end of a session that everything is saved.",
     "IMAGE: M5-01-plugin-installed.png | The plugin installed and switched on, with its three skills.",
-    "Make a folder for the demo and put two things in it: the mini registry brief, and the pages of faults from the starter folder. Leave out the project's own folder. Setup makes it, and it treats a folder that already holds files as a project under way.",
+    "Make a folder for the demo and put two things in it: the mini registry brief, and the pages of faults from the starter folder. Leave out the project's own folder. Setup makes it, and a folder that already holds files is treated as a project under way.",
     "IMAGE: M5-02-demo-folder.png | The demo's folder before setup: the brief and the four pages of faults, and no project folder yet.",
     "Setting up. Keep the project's sessions together in one project of the desktop app, here called Working with AI, and give it the demo's folder. Start a new session there and ask it to start a new project: name it, say where its folder goes, and give the full path of the brief.",
     "IMAGE: M5-03-first-message.png | The first message: the project's name, its folder and its brief.",
     "Setup first checks your computer and looks at the folder. Then it asks its questions, a few at a time. Each comes with a recommended answer drawn from the brief, and a line to type something else.",
     "IMAGE: M5-04-setup-questions.png | Setup's questions, drafted from the brief. The open one is the standing constraints.",
-    "Read every answer before you send it. Two matter most. The kinds of thing the project will produce: the map of folders is made from them, so this answer is your ruling on the map. The short code: it starts the name of every session of the project. Setup proposes one that no other project of yours uses, here MR.",
+    "Read every answer before you send it. Two matter most. The first is the kinds of thing the project will produce: the map of folders is made from them, so this answer is your ruling on the map. The second is the short code, which starts the name of every session of the project. Setup proposes one that no other project of yours uses, here MR.",
     "IMAGE: M5-05-setup-answers.png | All the answers. Here the history is kept on this computer only, against the recommended backup.",
     "Then setup makes everything in one go, and reports. Read the report: what it made, where you went against its suggestions, and what is worth knowing. Here it also copied the four pages of faults into the project, because they sat beside the brief; if yours did not, copy them into the project's folder for kinds of work yourself.",
     "IMAGE: M5-06-setup-report.png | Setup's report: what it made, where the owner went against its suggestions, and what is worth knowing.",
@@ -350,11 +350,11 @@ body.push(...renderPage({
     "IMAGE: M5-13-approve-task.png | The app's approval of the task: its prompt, its folder and its time.",
     "Open the task under Scheduled. A warning beside the folder means the task may not read it yet.",
     "IMAGE: M5-14-folder-warning.png | The task waiting, with a warning beside its folder.",
-    "Click the warning, and the app asks whether the task may use the folder on every run. Read what it says: the app says the task runs in the cloud, so the files it uses leave your computer and are processed on the provider's servers. That is why the toy holds invented data only. Check your organisation's rules before you allow it for real work. Each new task asks again.",
+    "Click the warning, and the app asks whether the task may use the folder on every run. Read what it says: the task runs in the cloud, so the files it uses leave your computer and are processed on the provider's servers. That is why the toy holds invented data only. Check your organisation's rules before you allow it for real work. Each new task asks again.",
     "IMAGE: M5-15-folder-access.png | The app's question about the folder. This one is for the next round's task; each task asks once.",
     "Once you allow it, the folder is ticked and the task is queued to run. Do not also press Run now: a round started twice is two sessions writing the same files.",
     "IMAGE: M5-16-task-queued.png | The folder ticked, and the task queued to run.",
-    "Back in the orchestrator's session, it says what happens next. The work session runs without stopping for your clicks. When its report is written, it starts its own review in a separate session. Tell the orchestrator 'check' when the review is back.",
+    "Back in the orchestrator's session, read what it says happens next. The work session runs without stopping for your clicks. When its report is written, it starts its own review in a separate session. Tell the orchestrator 'check' when the review is back.",
     "IMAGE: M5-17-orchestrator-scheduled.png | The orchestrator after scheduling: what will run, and what to say when it is back.",
     "The work session appears under the project, marked as a scheduled run. Open it to watch, but do not type in it.",
     "IMAGE: M5-18-sidebar.png | The work session in the side bar, under the project.",
@@ -372,7 +372,7 @@ body.push(...renderPage({
       ["31 Oct, 15:18", "The register of requirements", "1", "review back", "the review, in the folder for reviews", "accepted, no gaps", "me"],
       ["31 Oct, 16:12", "The register of requirements", "1", "my ruling", "the decision in the log", "accepted", "—"]
     ] },
-    "The plugin keeps this log for you, in its own form: a short entry for each event, in a folder beside the project. Until it is set up, the orchestrator keeps the rows by hand in the record of what is running. Setting it up needs the log's folder kept under version control, so in this run the orchestrator asked first whether a history on this computer alone was enough, and commissioned a small round to make it so."
+    "The plugin keeps this log for you, in its own form: a short entry for each event, in a folder beside the project. Until it is set up, the orchestrator keeps the rows by hand in the record of what is running. Setting it up needs the log's folder kept under version control. In this run the orchestrator first asked whether a history on this computer alone was enough, then commissioned a small round to set that up."
   ],
   aiTip: {
     title: "Check the instruction before it is issued",
@@ -413,16 +413,16 @@ body.push(...renderPage({
     ],
     question: "11 requirements are carried by no goal. What must be true of them before the building starts?",
     key: [
-      "Each of the 11 must be listed in the design with the reason it is left out of the goals, and each reason must hold when read against its requirement. In the record they were: each of the 11 was listed in the design with its reason, and the round read every reason against its requirement. Only then could the round say 'the build can be commissioned against the whole register'.",
+      "Each of the 11 must be listed in the design with the reason it is left out of the goals, and each reason must hold when read against its requirement. In the record both were done, and only then could the round say 'the build can be commissioned against the whole register'.",
       "Without that list, the build would quietly leave out 11 things the prototype was meant to do, and nobody would notice until the note. The planted mistakes matter too: a count that has never been seen to fail proves nothing by coming back clean."
     ]
   },
   concept: [
-    "The cheapest place to find a mistake is before anything is built. So the toy, like the full-size prototype, spends its first rounds on documents, not code. Each is written by a work session, checked by a review, and ruled on by you.",
+    "The cheapest place to find a mistake is before anything is built. So the toy, like the full-size prototype, spends its first rounds on documents, before any code. Each is written by a work session, checked by a review, and ruled on by you.",
     "The register of requirements says what the prototype must do, one numbered line each, with a test. The groundwork holds the tables the build will read: the three lists, the settings of the made-up data, and the rule the search follows. Writing them as tables means the build reads them instead of copying them, so a change is made in one place. The goal written in full says every step of enrolling a learner, and every way it can go wrong, such as the search finding two children.",
     "Then a checking round counts every requirement against the goal, both ways. A requirement the goal does not carry is either listed with its reason or is a gap. A requirement the goal names that the register does not hold is a gap the other way. Plant one mistake of each kind first, and see the count find them.",
     "You rule on each document before the next one starts. A design accepted in a hurry is the most expensive mistake of a prototype, because every round after it builds on it.",
-    "Software teams that build with AI assistants call this way of working spec-driven development: the description of what to build, the spec, is written before any code, and the assistant builds from it. Birgitta Böckeler compared three of its tools and told three levels apart. Spec-first: the spec is written for one task and then set aside. Spec-anchored: it is kept, and every later change is checked against it. Spec-as-source: people change only the spec, never the code. The toy works at the second level: every round is counted against the register, and at the end its documents travel to the real build and its code does not. The tools she compared are made for developers, in a code editor or at a command line, and the person who writes the spec is also the one who judges what is built from it. This course keeps the spec and adds what the tools leave to you: a review by a session that never saw the work, and your ruling on each document."
+    "Software teams that build with AI assistants call this way of working spec-driven development: the description of what to build, the spec, is written before any code, and the assistant builds from it. Birgitta Böckeler compared three of its tools and described three levels of it. Spec-first: the spec is written for one task and then set aside. Spec-anchored: it is kept, and every later change is checked against it. Spec-as-source: people change only the spec, never the code. The toy works at the second level: every round is counted against the register, and at the end its documents travel to the real build and its code does not. The tools she compared are made for developers, in a code editor or at a command line, and the person who writes the spec is also the one who judges what is built from it. This course keeps the spec and adds what the tools leave to you: a review by a session that never saw the work, and your ruling on each document."
   ],
   inTool: [
     "With the orchestrator plugin. Ask the orchestrator for rounds 2, 3 and 4 of the brief, one at a time: the groundwork, the goal written in full, and the count. Start each round only when the last one's ruling is in the log.",
@@ -500,12 +500,12 @@ body.push(...renderPage({
   },
   concept: [
     "Build in small rounds. First the scaffold and the made-up data, then each goal in a round of its own. A round that builds one thing can be reviewed by running that one thing; a round that builds everything can only be read. The engineers who build agents found the same: an agent asked to build a whole application at once tries to do too much and declares it finished too early, while one asked to build one feature at a time, and leave the project in a clean state, makes steady progress.",
-    "One round at a time, never two at once. The full-size prototype lost a whole round when four goals were built in parallel in one folder, as Module 4 told.",
+    "One round at a time, never two at once. The full-size prototype lost a whole round when four goals were built in parallel in one folder, as Module 4 described.",
     "Made-up data in known numbers. The brief fixes them: 60 children, 3 schools, 8 on more than one list, 4 spelt differently. The data is made the same way every time it is reset, and it never holds a real person.",
     "Accept nothing that was not seen running. The page of faults for building refuses a report of a screen nobody opened, and a build that compiles but was never run. The review runs the project's checks itself, and goes through the goal as the school clerk would."
   ],
   inTool: [
-    "With the orchestrator plugin. Ask the orchestrator for round 5 of the brief, the scaffold and the made-up data. Check before it is issued that its first step is to check the tools answer, and that its tests include counting the data against the brief's numbers.",
+    "With the orchestrator plugin. Ask the orchestrator for round 5 of the brief, the scaffold and the made-up data. Before it is issued, check that its first step is to see that the tools respond, and that its tests include counting the data against the brief's numbers.",
     "Read the report's first paragraph against the settings. In this run every count matched:",
     { table: [
       ["Setting", "In the brief", "Counted in the made-up data"],
@@ -517,7 +517,7 @@ body.push(...renderPage({
       ["Ages", "6 to 12", "6 to 12"],
       ["Learners after a reset", "64", "64, numbered 1 to 64"]
     ] },
-    "All 29 of the round's checks passed, each counting the files the reset wrote. One child dropped on purpose, in a copy, failed 7 checks by name; the reset made twice gave the same data. The review counted again in a program of its own and planted two faults of its own. Note why there are 64 learners and not 60: the search fails to join the 4 children spelt differently, so each is held twice. The number shows the search's limit before anyone has opened a screen.",
+    "All 29 of the round's checks passed, each counting the files the reset wrote. One child dropped on purpose, in a copy, failed 7 checks by name; a reset run twice gave the same data. The review counted again in a program of its own and planted two faults of its own. Note why there are 64 learners and not 60: the search fails to join the 4 children spelt differently, so each is held twice. The number shows the search's limit before anyone has opened a screen.",
     "Then round 6, the goal built. Its review must run the checks and go through enrolling a learner as a clerk would, once for a child the registry finds and once for a new child.",
     "Round 6 came back not accepted at version 1. The prototype did what the goal says on every screen the review tried, but one test was not what it claimed. The checks are meant to run out of sight, without opening the prototype on your screen, and the test of that never looked at what was open on the screen. Version 2 looked before, during and after the checks, and was accepted with all 57 checks passing.",
     "IMAGE: M5-26-child-found.png | The finished prototype, a child already on the registry. The clerk enters the four details; the registry finds the learner and enters nothing new. Every screen carries the line 'Invented data, Progressa is fictional'.",
@@ -575,7 +575,7 @@ body.push(...renderPage({
     "Then the note: one page for a senior reader, saying what the prototype shows and what it does not. Every limit the record names is either in the note or listed with the reason it was left out. A limit of one step is stated as a limit of that step, not of the whole. The full-size note took three tries, and the third was accepted only when the work session first listed every limit from the record, 51 of them, before writing a word."
   ],
   inTool: [
-    "With the orchestrator plugin. Ask for round 7, the duplicates count. Check that its instruction names the review's own route, counting again from the three lists without the prototype's search, and plants one fault before counting.",
+    "With the orchestrator plugin. Ask for round 7, the duplicates count. Check that its instruction names the review's own route, which is counting again from the three lists without the prototype's search, and that it asks for one fault to be planted before counting.",
     "Read the count's first line, then its table. In this run: the search catches 4 of the 8.",
     { table: [
       ["Child, as on the first list", "Caught", "What differs between its two entries"],
@@ -596,7 +596,7 @@ body.push(...renderPage({
     "“It is connected to no other body. The three lists are part of the invented data; no system of the census, the examinations authority or the social grant programme is linked to it.”",
     "“It cannot tell apart two different children who share a family name, given names and date of birth. The second would be taken for the first, and nothing new saved. No two children in the invented data share all three.”",
     "“Three points are kept in their simplest form. An entry of blank characters of any kind, not only spaces, is treated as missing. A school other than the three, once refused, is not shown again when the clerk returns to correct the entry. Where the search finds more than one matching learner, the entry is refused and nothing is saved; this never arises in the invented data, and is checked only on a record added for the purpose.”",
-    "Note what the note says of the 4 of the 8: a limit of the search step as it is defined, and a figure that shows how the rule behaves, not how many children a registry would hold twice on real lists."
+    "Read what the note says about the 4 of the 8: a limit of the search step as it is defined, and a figure that shows how the rule behaves, not how many children a registry would hold twice on real lists."
   ],
   aiTip: {
     title: "Find what a passed check cannot show",
@@ -633,7 +633,7 @@ body.push(...renderPage({
   tryFirst: {
     title: "What the note may say",
     body: [
-      "The full-size prototype's accepted note to the Permanent Secretary opens: 'It is a prototype for agreement … it is not the registry itself.' Here are five sentences someone might want to write about it. Which can the record support?",
+      "The full-size prototype's accepted note to the Permanent Secretary opens: 'It is a prototype for agreement … it is not the registry itself.' Here are five sentences someone might want to write about it.",
       { table: [
         ["#", "Sentence"],
         ["1", "The registry will stop children being registered twice."],
@@ -651,7 +651,7 @@ body.push(...renderPage({
   },
   concept: [
     "A prototype is for agreement. It shows the people who decide that something can work, on made-up data, on one computer, with the other bodies simulated. It never shows that the thing is ready: not with real data, not under load, not with a real connection, not with the law confirmed. Say so on the first page of anything you write about it.",
-    "Know what it cost. The full-size prototype took 23 pieces of work over five days: 13 accepted at the first version, and 10 that needed a second attempt, 2 of which were closed by changing what was asked, not by being accepted. The toy was planned as eight rounds and took 17, in one day of about nine hours: the brief's eight, three papers putting open questions to you, four rounds saving the work in the project's history, one moving the log under that history, and one bringing a page of faults up to date. Nine were accepted at the first version and five at the second; three were withdrawn after a second version not accepted, and ruled on directly. Each round costs a few minutes of your reading and ruling, and the review costs a second session. That is cheap next to a design accepted without a check, and dear next to a question you could have asked in one chat. Böckeler found the same with the spec-driven tools she tried: one turned a small bug into four user stories with sixteen tests of acceptance, 'a sledgehammer to crack a nut'. A way of working sized for a prototype is the wrong one for a small change. The five conditions of Module 3 keep it in its place: use them to decide.",
+    "Know what it cost. The full-size prototype took 23 pieces of work over five days: 13 accepted at the first version, and 10 that needed a second attempt, 2 of which were closed by changing what was asked, not by being accepted. The toy was planned as eight rounds and took 17, in one day of about nine hours: the brief's eight, three papers putting open questions to you, four rounds saving the work in the project's history, one moving the log under that history, and one bringing a page of faults up to date. Nine were accepted at the first version and five at the second; three were withdrawn after a second version not accepted, and ruled on directly. Each round costs a few minutes of your reading and ruling, and the review costs a second session. That is cheap next to a design accepted without a check, and costly next to a question you could have asked in one chat. Böckeler found the same with the spec-driven tools she tried: one turned a small bug into four user stories with sixteen tests of acceptance, 'a sledgehammer to crack a nut'. A way of working sized for a prototype is the wrong one for a small change. The five conditions of Module 3 tell you when to use it.",
     "You decide when it has shown enough. Stop when the question it was built to answer is answered, and the note says what it shows and what it does not. A prototype that keeps growing is turning into the system without anyone having decided to build one.",
     "Then take what it showed to where the real thing is built. In government, a service is specified and built the way the service design course teaches: from the agreed requirements and design, by the people and tools the ministry has chosen. The prototype's documents, the register, the groundwork and the goal written in full, travel; its code does not.",
     "Watch for cognitive debt here more than anywhere: a prototype that works on screen is easy to accept without being able to say why it is right. Before your last ruling, say in your own words what each round found. Where you cannot, ask the orchestrator to explain until you can."

@@ -90,7 +90,7 @@ The owner withdrew all four and had them run again, one after another. Each was 
 
 **Answer key:**
 
-Before the second start, a row saying 'instruction issued' with no 'report back' after it: a piece of work already open. Before the fourth, three such rows. A log read before each start shows what is already running, and a rule of 'one piece of work writes at a time' would have stopped the other three from starting at all. The double starts would then have had nothing to collide with; in the log, the same version issued twice is the sign of one.
+Before the second start, a row saying 'instruction issued' with no 'report back' after it: a piece of work already open. Before the fourth, three such rows. A log read before each start shows what is already running. With the rule 'one piece of work writes at a time', the other three would not have started at all, and the double starts would have had nothing to collide with. In the log, the same version issued twice is the sign of a double start.
 
 The lesson the record took: one piece of work writes at a time. Running in parallel saves minutes, and costs the whole round when two of them touch the same files.
 
@@ -157,7 +157,7 @@ Census count: version 2, report back on 30 October, open, waiting for its review
 
 Module 3 ended with the note to the Permanent Secretary. Its review found two sentences that stated a limit of the registry's search as a limit of the whole prototype: 'it does not recognise a child already registered under a different spelling'.
 
-After that review, the page of faults for drafting gained a line. It now says that every limit of the thing described that an accepted document names is either in the draft or in the list of what was left out, and: 'a limit of one step is stated of that step, not of the whole'. Every drafting instruction written after that day carries the line.
+After that review, the page of faults for drafting gained a line. It now says two things: every limit of the thing described that an accepted document names is either in the draft or in the list of what was left out; and 'a limit of one step is stated of that step, not of the whole'. Every drafting instruction written after that day carries the line.
 
 **Your question:** Think of a review of your own work, in Module 3 or before it. Which finding would have added a line to your page?
 
@@ -247,7 +247,7 @@ A good claim is one whose failure would change what the next chat does first, an
 
 A chat that runs for days starts to quote figures it no longer works out again. That is the second failure of Module 3 coming back: what a chat knows lives in the chat. The answer is to retire the chat and start a fresh one, which reads the files instead of remembering.
 
-The handover note carries only what the files cannot. What the outgoing chat did that it should not have done. What is owed, to whom, and by when. Findings that appear in no report. It refuses figures, which belong in the files where they can be worked out again; a survey of the work, which the log already gives; and a story, which nobody can check. Every line is a claim.
+The handover note carries only what the files cannot: what the outgoing chat did that it should not have done; what is owed, to whom, and by when; and findings that appear in no report. It refuses figures, which belong in the files where they can be worked out again; a survey of the work, which the log already gives; and a story, which nobody can check. Every line is a claim.
 
 The fresh chat's first task is small: check a handful of the claims against the files, then stop and wait. Keep the list short. A list of everything is a list nobody checks.
 
@@ -326,11 +326,11 @@ Each moment below breaks one rule of this module. Name the rule.
 
 Keep a routine. Open the log, and answer where the work stands from it. Pick up the open piece of work with the earliest date: one writes at a time. Read the page of faults before each instruction. Add each new fault a review finds. Hand over before a chat gets long, and before a break.
 
-Check the setup against what you actually did. After the first week, look at the log and the folders: a folder you never used, a page of faults you never opened, a review chat that kept memory on. Change the setup to fit the work, not the work to fit the setup.
+Check the setup against what you actually did. After the first week, look at the log and the folders: a folder you never used, a page of faults you never opened, a review chat that kept memory on. Change the setup to fit the work.
 
 Watch for cognitive debt, which grows with the number of pieces of work. Page 3.4 asked you to explain one accepted piece of work in your own words. With many under way, it is easy to accept the fifth because the first four were fine. Once a week, take one piece of work accepted that week and say, without the files, what it found and why the review believed it. If you cannot, read it again before anything is built on it.
 
-And be clear about what the pattern does not claim. It does not make the output true: a review can miss what the instruction never asked. It does not make the work cheap: it costs a second chat, a log row and your time. It does not make two runs give the same answer. What it does is make every difference discussable, because what was asked, what came back, how it was checked and who decided are all on file, and make every failure countable.
+And be clear about what the pattern does not claim. It does not make the output true: a review can miss what the instruction never asked. It does not make the work cheap: it costs a second chat, a log row and your time. It does not make two runs give the same answer. What it does is make every difference discussable and every failure countable. What was asked, what came back, how it was checked and who decided are all on file.
 
 ### In the tool
 

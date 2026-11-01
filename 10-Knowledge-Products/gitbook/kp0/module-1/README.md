@@ -24,6 +24,6 @@ Module 1 teaches a public servant to get a good answer from an AI assistant in o
 
 When you have run this module's tips, one of these takes you further. The Sources on each page say what a claim rests on; this list is what to do next.
 
-- [AI Skills Coalition](https://aiforgood.itu.int/ai-skills-coalition/ai-courses-portfolio/) — ITU. ITU's free course catalogue; start with 'AI and digital transformation in government'. *About 12 hours.*
-- [Elements of AI](https://www.elementsofai.com/) — University of Helsinki and MinnaLearn. A free course for non-specialists on what AI is and is not; many governments use it as a first course. *At your own pace.*
-- [AI Fluency: Framework and Foundations](https://academy.claude.com/courses/ai-fluency-framework-foundations) — Anthropic Academy. The four skills of working with an assistant, of which this module teaches description and discernment. *About 3 hours.*
+- [AI Skills Coalition](https://aiforgood.itu.int/ai-skills-coalition/ai-courses-portfolio/), ITU. ITU's free course catalogue; start with 'AI and digital transformation in government'. *About 12 hours.*
+- [Elements of AI](https://www.elementsofai.com/), University of Helsinki and MinnaLearn. A free course for non-specialists on what AI is and is not; many governments use it as a first course. *At your own pace.*
+- [AI Fluency: Framework and Foundations](https://academy.claude.com/courses/ai-fluency-framework-foundations), Anthropic Academy. The four skills of working with an assistant. This module teaches two of them, description and discernment. *About 3 hours.*

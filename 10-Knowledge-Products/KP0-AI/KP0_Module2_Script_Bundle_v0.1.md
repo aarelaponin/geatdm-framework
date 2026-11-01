@@ -49,7 +49,7 @@ Section 2 gives Module 2 at a glance, with the module's self-check. Section 3 ho
 
 ## 2. Module 2 at a glance
 
-Four written pages. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two and a half hours, most of it spent building the context pack.
+This module has four written pages, all for the Strategist persona. A learner who reads the four pages and runs their four tips needs about two and a half hours, most of it spent building the context pack.
 
 | # | Title | Single message | Form |
 | --- | --- | --- | --- |
@@ -117,9 +117,9 @@ Using it. Paste the section a tip names, or attach the pack as a file and say wh
 
 Progressa's context pack has seven sections. They are on the Progressa page of this knowledge base, ready to paste. The planning unit of MoEYS had a task that needed only one of them: draft the legal-basis paragraph of a data-sharing request to the examinations authority.
 
-The first run pasted the whole pack. The paragraph that came back talked about connectivity, donors and the Digital Transformation Roadmap, and named the Data Protection Act only in passing. The second run pasted only section 7, legal and policy, with its date. The paragraph named the two obligations of the Data Protection Act 2023 for a minor's data, a legal basis and parental consent for any use the law does not require, and noted that Progressa has no access-to-information act.
+The first run pasted the whole pack. The paragraph that came back talked about connectivity, donors and the Digital Transformation Roadmap, and named the Data Protection Act only in passing. The second run pasted only section 7, legal and policy, with its date. The paragraph named the two obligations of the Data Protection Act 2023 for a minor's data, a legal basis and parental consent for any use the law does not require. It also noted that Progressa has no access-to-information act.
 
-The AI usage tip under Your turn does the trimming. Run on this task, it kept section 7 and one sentence of section 3, the operating-model question, which restates the consent rule, and it flagged one thing as stale: section 7 does not say whether the Data Protection Commission has issued guidance since the pack was dated.
+The AI usage tip under Your turn does the trimming. Run on this task, it kept section 7 and one sentence of section 3, the operating-model question, which restates the consent rule. It also flagged one thing as stale: section 7 does not say whether the Data Protection Commission has issued guidance since the pack was dated.
 
 **The prompt:**
 
@@ -189,11 +189,11 @@ A unit that uses an assistant every day starts most chats the same way. It says 
 
 Say it once. Most assistants let you set up a project: a place that holds standing instructions and a set of files, which every chat started in it can see. The instructions are read at the start of every chat in the project, before your first message. The files are there to be read when a chat needs them.
 
-Write the standing instructions as a project brief, the way you would brief a new member of staff. Who the unit is, and the post that owns the project. What the project is for. What the unit produces, and in what format. The standing rules: posts, not names; cite or discard; text in the chat, not files; open questions listed at the end of every draft. What each file is, and its date. What never goes in. And who reviews the brief, and when.
+Write the standing instructions as a project brief, the way you would brief a new member of staff. It says who the unit is and which post owns the project, what the project is for, and what the unit produces and in what format. It lists the standing rules: posts, not names; cite or discard; text in the chat, not files; open questions listed at the end of every draft. It also says what each file is and its date, what never goes in, and who reviews the brief and when.
 
 A brief makes every chat in the project start from the same place, so answers can be compared. It also writes down the unit's intent, the goals and limits that otherwise live only in people's heads. When the person who set the project up moves on, the brief stays.
 
-Teams that use assistants to write software keep the same kind of brief in a plain text file in their project, which the assistant reads first. It works the same way as a project brief.
+Teams that use assistants to write software keep the same kind of brief in a plain text file in their project, which the assistant reads first. That file works the same way as a project brief.
 
 ### In the tool
 
@@ -203,7 +203,7 @@ Setting up a project. Create a project, give it a name, and paste the brief into
 
 Keeping it current. Change the brief when the work changes, and replace a file when a newer version is approved, rather than adding the new one beside the old. Two versions of the same document in one project give two different answers.
 
-Sharing it. In an organisation's account, a project can be shared with colleagues, who then work from the same brief and files. Share it only with the people the files may be shown to. An assistant shows each user whatever that user can open: the UK government's Copilot trial found that it surfaced files users could open but should not have.
+Sharing it. In an organisation's account, a project can be shared with colleagues, who then work from the same brief and files. Share it only with the people the files may be shown to. An assistant shows each user whatever that user can open: the UK government's Copilot trial found that the assistant surfaced files users could open but should not have.
 
 The blank project brief below is the form to fill; copy it into a document of your own.
 
@@ -227,7 +227,7 @@ The planning unit of MoEYS set up a project for the Progressa Learner Registry (
 
 Who we are: the planning unit of the Ministry of Education, Youth and Skills of Progressa; the project is owned by the head of the planning unit. What this project is for: preparing the papers for the Progressa Learner Registry (PLR), the single list of learners the Education Sector Plan 2023–2028 calls for, for the Permanent Secretary and the MoEYS ICT Director. What we produce: briefing notes of one page, data-sharing requests, and gap tables; plain English; tables with named columns. Standing rules: posts, not names; every claim about a law, a body or a country with its source, or it is dropped; text in the chat; every draft ends with its open questions. The files: Progressa's country context pack, dated 12 October 2026; the Education Sector Plan 2023–2028; the Data Protection Act 2023. What never goes in: records of learners, even a sample; unpublished cabinet papers; the names of office-holders. Review: the head of the planning unit, on the first working day of each quarter.
 
-The first chat in the project asked for a one-page note on the Registry's legal basis. It came back with a table and four open questions, with no names, without being told any of it in the chat.
+The first chat in the project asked for a one-page note on the Registry's legal basis. The reply was a table with four open questions and no names, though nobody had stated these rules in the chat.
 
 ### AI usage tip — Draft the standing instructions for your team's project
 
@@ -314,7 +314,7 @@ The unit kept the project for its standing context, the skill for the check, and
 
 ### AI usage tip — Decide which tasks need a prompt, a project, a skill or a connector
 
-**What the prompt does:** A unit uses an assistant for many tasks, set up anyhow. Some are pasted again every week; some reach for a source that has changed. Nobody has decided which setup each task deserves.
+**What the prompt does:** A unit uses an assistant for many tasks, with no plan for how each one is set up. Some are pasted again every week; some reach for a source that has changed. Nobody has decided which setup each task deserves.
 
 **Prompt template (copy-paste into the assistant):**
 
@@ -375,7 +375,7 @@ Nothing confidential goes into a setup: no records of citizens or learners, not 
 
 Context goes stale. A file added in March is still read in October, and the assistant cannot tell that it has been replaced. Date every file, replace rather than add, and review the setup on a date written in the brief.
 
-Write the intent down. The researcher Margaret-Anne Storey, in an article Martin Fowler summarises, names three kinds of debt that work with assistants piles up. Technical debt lives in the code. Cognitive debt lives in people: work accepted that nobody in the team can explain. Intent debt lives in the documents: the goals and limits that were never written down, so neither the next colleague nor the assistant can follow them. A project brief that says what the unit is for, what it must never do and why, pays off intent debt. Without one, a setup runs on whatever the person who made it remembered.
+Write the intent down. The researcher Margaret-Anne Storey, in an article Martin Fowler summarises, names three kinds of debt that build up when people work with assistants. Technical debt lives in the code. Cognitive debt lives in people: work accepted that nobody in the team can explain. Intent debt lives in the documents: the goals and limits that were never written down, so neither the next colleague nor the assistant can follow them. A project brief that says what the unit is for, what it must never do and why, pays off intent debt. Without one, a setup runs on whatever the person who made it remembered.
 
 ### In the tool
 
@@ -442,7 +442,7 @@ Three planted problems, and one more. (1) The brief names an office-holder: repl
 
 Lines to add: what the project produces and for whom; 'posts, not names'; what never goes in; who reviews the brief, and when.
 
-If your run marked the meeting notes 'keep', it judged a file it could not see: the safeguard's point.
+If your run marked the meeting notes 'keep', it judged a file it could not see, which is the point of the safeguard.
 
 ### Sources
 

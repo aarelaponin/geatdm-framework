@@ -237,7 +237,7 @@ body.push(
 // ---------- MODULE AT A GLANCE ----------
 body.push(
   H1("2. Module 2 at a glance"),
-  P("Four written pages. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two and a half hours, most of it spent building the context pack."),
+  P("This module has four written pages, all for the Strategist persona. A learner who reads the four pages and runs their four tips needs about two and a half hours, most of it spent building the context pack."),
   genericTable([700, 2700, 4900, 1400], ["#", "Title", "Single message", "Form"], [
     ["2.1", "Build the context once",
       "Write down once, with dates and sources, what every task needs to know about your country and your unit, and give each task only the part it needs.", "Page"],
@@ -311,8 +311,8 @@ body.push(...renderPage({
     title: "Progressa's context pack, trimmed for one task",
     body: [
       "Progressa's context pack has seven sections. They are on the Progressa page of this knowledge base, ready to paste. The planning unit of MoEYS had a task that needed only one of them: draft the legal-basis paragraph of a data-sharing request to the examinations authority.",
-      "The first run pasted the whole pack. The paragraph that came back talked about connectivity, donors and the Digital Transformation Roadmap, and named the Data Protection Act only in passing. The second run pasted only section 7, legal and policy, with its date. The paragraph named the two obligations of the Data Protection Act 2023 for a minor's data, a legal basis and parental consent for any use the law does not require, and noted that Progressa has no access-to-information act.",
-      "The AI usage tip under Your turn does the trimming. Run on this task, it kept section 7 and one sentence of section 3, the operating-model question, which restates the consent rule, and it flagged one thing as stale: section 7 does not say whether the Data Protection Commission has issued guidance since the pack was dated."
+      "The first run pasted the whole pack. The paragraph that came back talked about connectivity, donors and the Digital Transformation Roadmap, and named the Data Protection Act only in passing. The second run pasted only section 7, legal and policy, with its date. The paragraph named the two obligations of the Data Protection Act 2023 for a minor's data, a legal basis and parental consent for any use the law does not require. It also noted that Progressa has no access-to-information act.",
+      "The AI usage tip under Your turn does the trimming. Run on this task, it kept section 7 and one sentence of section 3, the operating-model question, which restates the consent rule. It also flagged one thing as stale: section 7 does not say whether the Data Protection Commission has issued guidance since the pack was dated."
     ],
     run: {
       prompt: "Below is my context pack, dated 12 October 2026, in sections [the seven sections of the Progressa page]. Below that is the task I am about to give an AI assistant: 'Draft the legal-basis paragraph of a request to share learner data with the examinations authority.' Select only what the task needs. [The rest of the tip's prompt.]",
@@ -365,15 +365,15 @@ body.push(...renderPage({
   concept: [
     "A unit that uses an assistant every day starts most chats the same way. It says who it is, what it is working on, which rules apply, and pastes the same files. That is work done again and again, and done a little differently each time, so the answers differ too.",
     "Say it once. Most assistants let you set up a project: a place that holds standing instructions and a set of files, which every chat started in it can see. The instructions are read at the start of every chat in the project, before your first message. The files are there to be read when a chat needs them.",
-    "Write the standing instructions as a project brief, the way you would brief a new member of staff. Who the unit is, and the post that owns the project. What the project is for. What the unit produces, and in what format. The standing rules: posts, not names; cite or discard; text in the chat, not files; open questions listed at the end of every draft. What each file is, and its date. What never goes in. And who reviews the brief, and when.",
+    "Write the standing instructions as a project brief, the way you would brief a new member of staff. It says who the unit is and which post owns the project, what the project is for, and what the unit produces and in what format. It lists the standing rules: posts, not names; cite or discard; text in the chat, not files; open questions listed at the end of every draft. It also says what each file is and its date, what never goes in, and who reviews the brief and when.",
     "A brief makes every chat in the project start from the same place, so answers can be compared. It also writes down the unit's intent, the goals and limits that otherwise live only in people's heads. When the person who set the project up moves on, the brief stays.",
-    "Teams that use assistants to write software keep the same kind of brief in a plain text file in their project, which the assistant reads first. It works the same way as a project brief."
+    "Teams that use assistants to write software keep the same kind of brief in a plain text file in their project, which the assistant reads first. That file works the same way as a project brief."
   ],
   inTool: [
     "Shown in Claude.",
     "Setting up a project. Create a project, give it a name, and paste the brief into its instructions. Add the files: the context pack, the strategy, the template the unit writes to. Then start every chat on that work from inside the project.",
     "Keeping it current. Change the brief when the work changes, and replace a file when a newer version is approved, rather than adding the new one beside the old. Two versions of the same document in one project give two different answers.",
-    "Sharing it. In an organisation's account, a project can be shared with colleagues, who then work from the same brief and files. Share it only with the people the files may be shown to. An assistant shows each user whatever that user can open: the UK government's Copilot trial found that it surfaced files users could open but should not have.",
+    "Sharing it. In an organisation's account, a project can be shared with colleagues, who then work from the same brief and files. Share it only with the people the files may be shown to. An assistant shows each user whatever that user can open: the UK government's Copilot trial found that the assistant surfaced files users could open but should not have.",
     "The blank project brief below is the form to fill; copy it into a document of your own.",
     { table: [
       ["Part of the brief", "What to write"],
@@ -398,7 +398,7 @@ body.push(...renderPage({
     body: [
       "The planning unit of MoEYS set up a project for the Progressa Learner Registry (PLR). Its brief, in full:",
       "Who we are: the planning unit of the Ministry of Education, Youth and Skills of Progressa; the project is owned by the head of the planning unit. What this project is for: preparing the papers for the Progressa Learner Registry (PLR), the single list of learners the Education Sector Plan 2023–2028 calls for, for the Permanent Secretary and the MoEYS ICT Director. What we produce: briefing notes of one page, data-sharing requests, and gap tables; plain English; tables with named columns. Standing rules: posts, not names; every claim about a law, a body or a country with its source, or it is dropped; text in the chat; every draft ends with its open questions. The files: Progressa's country context pack, dated 12 October 2026; the Education Sector Plan 2023–2028; the Data Protection Act 2023. What never goes in: records of learners, even a sample; unpublished cabinet papers; the names of office-holders. Review: the head of the planning unit, on the first working day of each quarter.",
-      "The first chat in the project asked for a one-page note on the Registry's legal basis. It came back with a table and four open questions, with no names, without being told any of it in the chat."
+      "The first chat in the project asked for a one-page note on the Registry's legal basis. The reply was a table with four open questions and no names, though nobody had stated these rules in the chat."
     ]
   },
   aiTip: {
@@ -470,7 +470,7 @@ body.push(...renderPage({
     title: "Decide which tasks need a prompt, a project, a skill or a connector",
     time: "~15 min",
     watch: "A connector reaches its source from every chat.",
-    problem: "A unit uses an assistant for many tasks, set up anyhow. Some are pasted again every week; some reach for a source that has changed. Nobody has decided which setup each task deserves.",
+    problem: "A unit uses an assistant for many tasks, with no plan for how each one is set up. Some are pasted again every week; some reach for a source that has changed. Nobody has decided which setup each task deserves.",
     prompt: "Below is a list of the tasks my unit does with an AI assistant, with how often each is done and what it uses [paste the list]. For each task, recommend one of four setups: (1) a prompt, for a task done once or rarely; (2) a project, for context the unit's work always needs; (3) a skill, for a procedure repeated the same way; (4) a connector, for a source that changes and must be read as it is today. For each task produce one row with: (a) the task; (b) the setup; (c) the reason, in one line, from how often it is done, whether its steps repeat, and whether its source changes; (d) what the setup would hold. Recommend the lightest setup that does the job. Where a task would put personal or confidential data into a project, skill or connector, say so and recommend a prompt with placeholders instead. Output: a table with one row per task, then the setups in the order to build them.",
     io: "Input: the list of the unit's tasks with an assistant, with how often each is done and what it uses. Output: a table of which tasks need a prompt, a project, a skill or a connector, with the reason for each and the order to build them.",
     safeguard: "A connector lets the assistant read a source in every chat that uses it, with your permissions, and what it reads can be repeated in any answer. Agree each connector with the owner of the source before you add it, whatever the table recommends.",
@@ -519,7 +519,7 @@ body.push(...renderPage({
     "What goes into one chat is used once. What goes into a project, a memory, a skill or a connector is used by every later chat, and often by every colleague the setup is shared with. So the rules of Module 1 bind harder here. And a setup can bring in text that steers the assistant: a skill or a connected source written by someone else can carry instructions, so know who wrote each one.",
     "Nothing confidential goes into a setup: no records of citizens or learners, not even a sample, no unpublished cabinet papers, and no names of office-holders (posts, not names). A connector to a source that holds such data puts it within reach of every chat that uses the connector. And an assistant that remembers across chats can carry a detail from one conversation into another.",
     "Context goes stale. A file added in March is still read in October, and the assistant cannot tell that it has been replaced. Date every file, replace rather than add, and review the setup on a date written in the brief.",
-    "Write the intent down. The researcher Margaret-Anne Storey, in an article Martin Fowler summarises, names three kinds of debt that work with assistants piles up. Technical debt lives in the code. Cognitive debt lives in people: work accepted that nobody in the team can explain. Intent debt lives in the documents: the goals and limits that were never written down, so neither the next colleague nor the assistant can follow them. A project brief that says what the unit is for, what it must never do and why, pays off intent debt. Without one, a setup runs on whatever the person who made it remembered."
+    "Write the intent down. The researcher Margaret-Anne Storey, in an article Martin Fowler summarises, names three kinds of debt that build up when people work with assistants. Technical debt lives in the code. Cognitive debt lives in people: work accepted that nobody in the team can explain. Intent debt lives in the documents: the goals and limits that were never written down, so neither the next colleague nor the assistant can follow them. A project brief that says what the unit is for, what it must never do and why, pays off intent debt. Without one, a setup runs on whatever the person who made it remembered."
   ],
   inTool: [
     "Shown in Claude.",
@@ -571,7 +571,7 @@ body.push(...renderPage({
       key: [
         "Three planted problems, and one more. (1) The brief names an office-holder: replace 'Ms R. Phiri' with the post. (2) Two copies of the Education Sector Plan: keep one. (3) The head teachers' meeting notes have no date and may hold names: ask the owner, read the file. And the skill has no named author and nobody has read it: remove it until someone has.",
         "Lines to add: what the project produces and for whom; 'posts, not names'; what never goes in; who reviews the brief, and when.",
-        "If your run marked the meeting notes 'keep', it judged a file it could not see: the safeguard's point."
+        "If your run marked the meeting notes 'keep', it judged a file it could not see, which is the point of the safeguard."
       ]
     }
   },

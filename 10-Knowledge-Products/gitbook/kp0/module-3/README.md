@@ -24,5 +24,5 @@ Modules 1 and 2 taught one good chat and the setup behind it. In Module 3 you ta
 
 When you have run this module's tips, one of these takes you further. The Sources on each page say what a claim rests on; this list is what to do next.
 
-- [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) — Anthropic. The engineers' account of the same pattern, an orchestrator and workers, with an evaluator that is not the writer. *20 minutes.*
-- [AI Playbook for the UK Government](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government) — GOV.UK. Its principle of meaningful human control: the decisions this module leaves with you. *A chapter to read.*
+- [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents), Anthropic. The engineers' account of the same pattern, an orchestrator and workers, with an evaluator that is not the writer. *20 minutes.*
+- [AI Playbook for the UK Government](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government), GOV.UK. Its principle of meaningful human control: the decisions this module leaves with you. *A chapter to read.*
