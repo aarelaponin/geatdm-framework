@@ -4,29 +4,28 @@
 
 | Field | Value |
 | --- | --- |
-| Document | Script bundle for Module 1 of KP0: four written pages and one video |
-| Version | v0.1 — written on the KP0 plan, version 0.4, of 22 October 2026 |
+| Document | Script bundle for Module 1 of KP0: four written pages |
+| Version | v0.1 — working draft of 26 October 2026 |
 | Date | 26 October 2026 |
 | Module persona | S (Strategist) — the public servant who commissions and accepts AI-assisted work and answers for it: a director, a head of unit, a technical secretary briefing the principal. No programming assumed |
 | Subtopics | Four written pages (1.1 – 1.4); the fourth is the module's Judgement page |
-| Video | One, V1 'The draft that looked right', about four minutes, a person on camera, covering pages 1.1 to 1.4 |
 | Worked examples | One for each page, set in Progressa: a fluent summary of a law it was never shown, a prompt before and after its safeguard line, a draft marked for what it rests on, and a request to match learners that never needed their names |
 | Self-check | Five questions drawn from the four pages, in section 2.1 |
 | Prepared by | FiscalAdmin OÜ |
 
-This bundle is the v0.1 working draft of Module 1 of KP0 — Working with AI in Government. Module 1 teaches a public servant to get a good answer from an AI assistant in one chat, and to know what to do with it: why an assistant invents and why it agrees with you, the four-part prompt every AI usage tip in the series uses, how to read an output before using it, and what never goes into a chat and what stays yours. The register is plain English at about an eighth-grade level. Each page carries the concept, what to do in the tool, a worked example on Progressa, an AI usage tip with a copy-paste prompt, and its sources. The module's video carries the stories the pages cannot.
+This bundle is the v0.1 working draft of Module 1 of KP0 — Working with AI in Government. Module 1 teaches a public servant to get a good answer from an AI assistant in one chat, and to know what to do with it: why an assistant invents and why it agrees with you, the four-part prompt every AI usage tip in the series uses, how to read an output before using it, and what never goes into a chat and what stays yours. The register is plain English at about an eighth-grade level. Each page carries the concept, what to do in the tool, a worked example on Progressa, an AI usage tip with a copy-paste prompt, and its sources.
 
 ## 1. Document context
 
 ### 1.1 What this document is
 
-This document collects the four pages and the one video script of Module 1 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items. It is the v0.1 working draft, written on the KP0 plan, version 0.4, whose section 4 fixes each page's concept, what it shows in the tool and what it is built from, and whose section 7 fixes the video.
+This document collects the four pages of Module 1 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items. It is the v0.1 working draft.
 
 KP0 comes before the four Knowledge Products. Every subtopic of KP1 to KP4 ends with an AI usage tip; KP0 is where a learner learns to run those tips, to set an assistant up for them, and to run bigger work the way KP4 asks. It has three layers, ordered by how much work is handed to the assistant: Chat, Prepare and Orchestrate, with Judgement closing every module. Module 1 is the Chat layer.
 
 ### 1.2 How KP0 differs from KP1 to KP4
 
-In KP1 to KP4 every subtopic is a video of about five minutes. In KP0 every subtopic is a written page, and the pages carry the whole content. Each module has one video, a person on camera telling what only experience can bring: a case from the team's own work, a mistake and how it was found. A learner who never watches the video misses nothing that is taught, only the story. The three departures from the series rules this needs (people on screen, fewer videos than subtopics, on-camera cues) are calibration items for ITU, in section 5.
+In KP1 to KP4 every subtopic is a video of about five minutes. In KP0 every subtopic is a written page, and the pages carry the whole content.
 
 ### 1.3 Concept and tool
 
@@ -50,11 +49,11 @@ The two structural arguments of the series, that whole-of-government planning ma
 
 ### 1.6 How to read this document
 
-Section 2 gives Module 1 at a glance, with the module's self-check. Section 3 holds the four pages and then the script of the video: on the pages, each part is headed; in the video, shaded blue blocks are cut-in slides, the pink block is the speaker's own story, and plain paragraphs are said to camera. Section 4 collects the production notes. Section 5 records the open calibration items. Section 6 is the aggregate external-link list.
+Section 2 gives Module 1 at a glance, with the module's self-check. Section 3 holds the four pages; on each, every part is headed. Section 4 collects the production notes. Section 5 records the open calibration items. Section 6 is the aggregate external-link list.
 
 ## 2. Module 1 at a glance
 
-Four written pages and one video of about four minutes. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two hours.
+Four written pages. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two hours.
 
 | # | Title | Single message | Form |
 | --- | --- | --- | --- |
@@ -62,7 +61,6 @@ Four written pages and one video of about four minutes. One Strategist persona t
 | 1.2 | The four-part prompt | Name the input, name the outputs, fix the format, and add one safeguard line for the way this prompt can mislead you. | Page |
 | 1.3 | Read the output before you use it | Before you use a draft, find what it rests on: what the source states, what the assistant inferred, and what it should have asked you. | Page |
 | 1.4 | Judgement: what stays out of the chat, and what stays yours | Nothing confidential goes into a chat, the decision stays with the person whose name is on it, and that person says an assistant was used. | Page |
-| V1 | The draft that looked right | A fluent draft is where checking starts; the safeguard line names how this one can fool you. | Video, ~4 min |
 
 ### 2.1 The module's self-check
 
@@ -86,7 +84,7 @@ Shown on the module's home page, apart from the sources: one to three things to 
 | Elements of AI | University of Helsinki and MinnaLearn | https://www.elementsofai.com/ | A free course for non-specialists on what AI is and is not; many governments use it as a first course. | At your own pace |
 | AI Fluency: Framework and Foundations | Anthropic Academy | https://academy.claude.com/courses/ai-fluency-framework-foundations | The four skills of working with an assistant, of which this module teaches description and discernment. | About 3 hours |
 
-## 3. The pages and the video
+## 3. The pages and the reference
 
 ## 3.1 Subtopic 1.1 — A drafting partner, not an oracle
 
@@ -505,83 +503,21 @@ The de-identified prompt should still work: learner A appears in two lists with 
 | AI and digital transformation competencies for civil servants | UNESCO · 2022 | What a civil servant needs to know to use AI |
 | Guidance on AI and children | UNICEF · December 2025 | The frame for AI and data about children |
 
-## 3.5 Video V1 — The draft that looked right
-
-| Field | Value |
-| --- | --- |
-| Covers pages | 1.1 to 1.4 |
-| Target runtime | ~4 min (≈470 spoken words, the story beat included) |
-| Speaker | Aare (a suggestion) |
-| Form | A person on camera, with text-only slides cut in |
-
-> **Single message —** _A fluent draft is where checking starts; the safeguard line names how this one can fool you._
-
-### Script (on camera, slides cut in)
-
-> _Opening: the speaker on camera, at a desk or a plain wall. No title slide is cut in; the title is in the lower third: 'The draft that looked right'._
-
-The most dangerous thing an AI assistant has ever given me was not a wrong answer. It was a wrong answer that read better than my own work. I want to tell you about one.
-
-> **The speaker's story —** The speaker's own case, 60 to 90 seconds, about 150 to 200 words. It must show four things: (1) a real draft, from the team's work, that was fluent and wrong; (2) what was wrong in it, named exactly: a figure, a source, a country, a clause; (3) how it was caught, and by whom; (4) what it would have cost had it gone out. The test runs on The Gambia, August 2026, are one place to find it; the team's project folders are another. Give the date. Name posts, not persons. If the speaker cannot name a case with a date, this video becomes a page (plan decision 4).
-
-> _Slide cut in — Title: 'Fluency is not evidence'. Body, two text rows: 'A wrong answer is written as fluently as a right one.' 'An assistant tends to agree with the way you ask.'_
-
-That draft was not unlucky. Assistants are trained in a way that rewards a confident guess over the words 'I do not know'. And they lean towards the answer your question suggests. So a smooth paragraph and a correct paragraph look exactly the same. The only difference is whether someone checked it against a source.
-
-> _Slide cut in — Title: 'The four-part prompt'. Body, four numbered text rows: '1. Name the input.' '2. Name the outputs.' '3. Fix the format.' '4. Add the safeguard line for this prompt's risk.'_
-
-What would have caught it earlier is one line in the prompt. Every AI tip in these courses ends with what we call a safeguard line. Not 'AI can make mistakes'. A line that names how this prompt can fool you. For our draft, it would have been: name a figure only if the pasted document states it, and list everything else as a question. The assistant would have told us what it did not know, instead of filling the gap.
-
-> _Back to the speaker on camera._
-
-So when a draft comes back, I now read it in a fixed order. First, the questions it should have asked me. If there are none, on a subject we never settled, I read it twice. Then every figure, date and reference, against the source it names. A citation proves that a page exists. It does not prove that the page says what the draft claims.
-
-And two things never go into the chat. Records of real people, because the prompt box is a public place. And the decision. The assistant drafted that text. The person who would have signed it was me.
-
-> _Slide cut in — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A fluent draft is where checking starts; the safeguard line names how this one can fool you.'_
-
-A fluent draft is where your checking starts. Write the line that names how it can fool you.
-
-### Cut-in slide specification
-
-| Slide | Element (text-only) | Notes |
-| --- | --- | --- |
-| 1 | Two text rows: a wrong answer is as fluent as a right one; it agrees with the way you ask. | Cut in over the voice-over that follows the story. ITU template: title Arial Bold 28pt, body Arial 18pt, background #E5F5FB. |
-| 2 | Four numbered text rows: the four parts of a prompt. | The same wording as page 1.2. Text-only. |
-| 3 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The single message, word for word. No practice box: the pages carry the tips. No sources slide: the pages carry the sources. |
-
-### Metadata
-
-| Field | Value |
-| --- | --- |
-| Working title | The draft that looked right |
-| YouTube-optimised title | The AI draft that looked right: how to catch a fluent wrong answer |
-| Description (60 words) | An AI assistant writes a wrong answer as fluently as a right one, and tends to agree with the way you ask. A practitioner tells the story of a draft that read well and was wrong, how it was caught, and the one safeguard line in the prompt that would have caught it sooner. For public servants who use AI on official work. |
-| Tags | AI in government, generative AI, prompting, hallucination, public sector, civil service, responsible AI, AI literacy |
-| Playlist (YouTube) | Working with AI in Government |
-| ToR §4 coverage | §4.3 (AI integration: the competence every AI usage tip of the series assumes) |
-| PAERA citations | None. This course is about working with an AI assistant, not about the reference architecture. |
-| External-link list | The four pages of Module 1, which carry the sources: Why language models hallucinate (OpenAI, 2025); Expanding on what we missed with sycophancy (OpenAI, 2025). |
-
 ## 4. Production notes
 
 ### 4.1 Design standard
 
-The bar for each page is the split-screen test of the series, applied to reading: a public servant with the page on one half of the screen and an assistant on the other must be able to run the page's AI usage tip on their own work and judge its result. The bar for the video is that it carries something no page carries: the speaker's own case.
+The bar for each page is the split-screen test of the series, applied to reading: a public servant with the page on one half of the screen and an assistant on the other must be able to run the page's AI usage tip on their own work and judge its result.
 
-### 4.2 The video
-
-V1 is one person on camera, with three text-only slides cut in on the ITU template: title Arial Bold 28pt, body Arial 18pt, background #E5F5FB. The speaker's name and role may appear in the lower third. The story beat is the speaker's; the rest of the script may be said in the speaker's own words, provided the single message and the four parts of the prompt are said as written. It is recorded by the camera route of the series (the route of the four Knowledge Product introductions), not by the narration route.
-
-### 4.3 Voice and tone
+### 4.2 Voice and tone
 
 Direct address ('your draft', 'your unit'). Plain language at about an eighth-grade English level. Module 1 is written for the Strategist: the listener commissions and accepts work done with an assistant and answers for it, and does not need to write code or run a command.
 
-### 4.4 External links
+### 4.3 External links
 
-The sources of each page are listed at its foot, with publisher and date, and are linked on the written page. The video's description points to the pages, which carry the links. The aggregate list, with addresses, is in section 6.
+The sources of each page are listed at its foot, with publisher and date, and are linked on the written page. The aggregate list, with addresses, is in section 6.
 
-### 4.5 Concept and tool
+### 4.4 Concept and tool
 
 Each page's In the tool is shown in Claude and says so. Settings are named by what they do, not by the words of a menu, because menus change. Other assistants are named, not mapped: the course's home page names ChatGPT, Gemini and Microsoft 365 Copilot, and each page links to their help pages for its settings.
 
@@ -589,29 +525,25 @@ Each page's In the tool is shown in Claude and says so. Settings are named by wh
 
 The drafting raised the items below. They are forwarded for discussion with ITU.
 
-### 5.1 Three departures from the series rules
+### 5.1 No videos
 
-(1) A person is on screen in V1, where the series rule is no individuals on screen; the four Knowledge Product introductions are the one exception so far. (2) The module's four subtopics are written pages, and one video covers them all, where KP1 to KP4 have one video of about five minutes per subtopic. (3) The video script carries on-camera cues. The plan, section 7, gives the reason: a video is made only where the speaker has something a page cannot carry.
+KP0 has no videos for now, which departs from the series rule that every subtopic is a video. Every page is written and carries the whole content, so nothing taught is lost; the videos were taken out on 1 November 2026 because there is no time to record them in this round. A video can later be added over a run of pages without changing a page.
 
-### 5.2 The speaker's case
-
-V1's story beat is left to the speaker, who is asked to name a real case, with a date, before the cut is decided (plan decision 4). If no case can be named, V1 becomes a page and Module 1 has no video.
-
-### 5.3 Vendor sources
+### 5.2 Vendor sources
 
 Pages 1.1 and 1.2 cite vendors (OpenAI, Microsoft, Google, Anthropic) on how their own tools behave, as the primary account, tagged as vendor sources. Since the review of 26 October 2026, the argument of 1.1 and 1.3 rests first on a government source and an independent study, and 1.4 on government and intergovernmental sources; 1.2 compares the vendors' guides rather than resting on one.
 
-### 5.4 The tool shown
+### 5.3 The tool shown
 
 The half of each page headed In the tool is shown in Claude. A ministry that has approved another assistant follows the concept and finds each setting in that assistant's own help pages. Whether ITU wants a second assistant shown in full is a question for ITU.
 
-### 5.5 Editorial tone calls
+### 5.4 Editorial tone calls
 
-Lines that deserve a deliberate keep, soften or cut decision: 'The most dangerous thing an AI assistant has ever given me was not a wrong answer' (V1); 'Treat the prompt box as a public place' (1.4); 'the answer is never "the AI said so"' (1.4).
+Lines that deserve a deliberate keep, soften or cut decision: 'Treat the prompt box as a public place' (1.4); 'the answer is never "the AI said so"' (1.4).
 
 ## 6. Annex — aggregate external-link list
 
-Compiled across the four pages and the video. Every source is public.
+Compiled across the four pages. Every source is public.
 
 | Page | Sources referenced, with addresses |
 | --- | --- |
@@ -619,6 +551,5 @@ Compiled across the four pages and the video. Every source is public.
 | 1.2 | Get started writing prompts in Microsoft 365 Copilot (Microsoft), https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-writing-prompts-in-microsoft-365-copilot. Prompting guide 101 (Google, October 2024), https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf. Prompt engineering best practices for ChatGPT (OpenAI), https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt. Prompt engineering overview (Anthropic), https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview. AI Fluency: Framework and Foundations (Anthropic Academy), https://academy.claude.com/courses/ai-fluency-framework-foundations. |
 | 1.3 | Guide on the use of generative artificial intelligence (Government of Canada, updated 24 September 2026), https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/guide-use-generative-ai.html. The Impact of Generative AI on Critical Thinking (Lee et al., Microsoft Research, CHI 2025), https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/. AI Fluency: Framework and Foundations, as above. |
 | 1.4 | AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government. Continental Artificial Intelligence Strategy (African Union, August 2024), https://au.int/en/documents/20240809/continental-artificial-intelligence-strategy. Guide on the use of generative artificial intelligence, as above. Microsoft 365 Copilot Experiment: Cross-Government Findings Report (Government Digital Service, 2 June 2025), https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report. AI and digital transformation competencies for civil servants (UNESCO, 2022), https://unesdoc.unesco.org/ark:/48223/pf0000384963. Guidance on AI and children (UNICEF, December 2025), https://www.unicef.org/innocenti/reports/policy-guidance-ai-children. |
-| V1 | None of its own; the description points to the pages. |
 
 All references are publicly accessible and verifiable.

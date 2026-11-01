@@ -5,11 +5,11 @@
 | Field | Value |
 | --- | --- |
 | Document | Script bundle for Module 5 of KP0: five written pages, with places marked for screenshots |
-| Version | v0.1 — written on the KP0 plan, version 0.4 (as changed on 31 October 2026), and the Orchestrate section plan, version 0.1, section 11 |
+| Version | v0.1 — working draft of 31 October 2026 |
 | Date | 31 October 2026 |
 | Module persona | A (Architect) — the one who runs AI-assisted work day to day: the head of an ICT unit, a project lead, an analyst. No programming assumed |
 | Subtopics | Five written pages (5.1 – 5.5); the fifth is the module's Judgement page |
-| Videos | None. The steps that need a picture carry a marked place for a screenshot, to be taken by the course team on a real run |
+| Screenshots | The steps that need a picture carry a screenshot from a real run of the toy, or a marked place for one still to be taken |
 | The toy | The mini registry: one goal, enrol a learner, on 60 made-up children over three lists, built from the brief's eight rounds with the orchestrator plugin (17 rounds in the course's own run) (the brief is in the starter folder) |
 | Worked examples | From the registry prototype's record, the full-size project the toy is cut from: the constants refused, the count both ways, the data in known numbers, the consent check, and the note |
 | Self-check | Four questions drawn from the five pages, in section 2.1 |
@@ -21,7 +21,7 @@ This bundle is the v0.1 working draft of Module 5 of KP0 — Working with AI in 
 
 ### 1.1 What this document is
 
-This document collects the five pages of Module 5 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items. It is written on the KP0 plan, version 0.4, section 4, and on the Orchestrate section plan, section 11.
+This document collects the five pages of Module 5 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items.
 
 Module 5 is the third part of the Orchestrate layer, for the Architect. It assumes Modules 3 and 4: the learner has run one cycle by hand and knows the log, the pages of faults and the handover. It is the one part of the course that needs the orchestrator plugin, which is in preparation; the pages are written against it as it will be released.
 
@@ -647,9 +647,9 @@ The question was whether a clerk can enrol a child without the registry register
 
 An Architect with the page on one half of the screen and the Claude desktop app on the other must be able to take the toy's round for that page and rule on it. By the end of 5.5 they have the mini registry in a folder with its history, its log of every round, 17 in the course's own run, and its note, and their last ruling.
 
-### 4.2 Screenshots instead of a video
+### 4.2 Screenshots
 
-Module 5 has no video. Its pictures are screenshots of one real run of the toy, 31 October 2026, with invented data only, kept in figures/ as M5-01 to M5-30: 21 on page 5.1 (setup, the orchestrator's role, round 1 and its scheduled task with the two permissions the app asked for, and the round the orchestrator added), 3 on page 5.2 (that round's task, and the round not accepted and sent again as version 2), 3 on page 5.3 and 1 on page 5.4 (the finished prototype: a child found, a new child, an entry refused, and a name one letter off; each is the entry beside the screen it gave, taken without a window from a copy of the prototype after a reset), and 2 on page 5.5 (the handover, and the orchestrator's final check). Where the run's record says more than a picture, the page gives it as a table: round 1 in the course's log, and the first rows of the groundwork's settings. Rounds 4, 5, 7 and 8 are given from the run's record, as tables and the note's own words. No place is still marked SCREENSHOT. The run used a local build of the plugin; before publication, check the screens against the released plugin and crop anything that shows other projects.
+Module 5's pictures are screenshots of one real run of the toy, 31 October 2026, with invented data only, kept in figures/ as M5-01 to M5-30: 21 on page 5.1 (setup, the orchestrator's role, round 1 and its scheduled task with the two permissions the app asked for, and the round the orchestrator added), 3 on page 5.2 (that round's task, and the round not accepted and sent again as version 2), 3 on page 5.3 and 1 on page 5.4 (the finished prototype: a child found, a new child, an entry refused, and a name one letter off; each is the entry beside the screen it gave, taken without a window from a copy of the prototype after a reset), and 2 on page 5.5 (the handover, and the orchestrator's final check). Where the run's record says more than a picture, the page gives it as a table: round 1 in the course's log, and the first rows of the groundwork's settings. Rounds 4, 5, 7 and 8 are given from the run's record, as tables and the note's own words. No place is still marked SCREENSHOT. The run used a local build of the plugin; before publication, check the screens against the released plugin and crop anything that shows other projects.
 
 ### 4.3 The toy and the full-size record
 
@@ -667,13 +667,13 @@ The drafting raised the items below. They are forwarded for discussion with ITU.
 
 Module 5 needs the Claude desktop app, Desktop Commander, the orchestrator plugin, Python, git and Node on the learner's computer. Many civil servants cannot install software on a work computer. The by-hand cycle of Modules 3 and 4 remains complete without it. Whether ITU wants Module 5 in the core course or as an optional practical is a question for ITU.
 
-### 5.2 No video
+### 5.2 No videos
 
-Module 5 departs from the series rule that every page is covered by a video: it uses screenshots instead, because its subject is a sequence of steps on screen.
+As in Modules 1 to 4, KP0 has no videos for now, which departs from the series rule that every subtopic is a video. Module 5 uses screenshots instead, because its subject is a sequence of steps on screen.
 
 ### 5.3 Named products
 
-As in Module 4, the Claude desktop app and Desktop Commander are named, because the plugin runs in them. Whether ITU wants products named is a question for ITU.
+As on page 3.2, the Claude desktop app and Desktop Commander are named, because the plugin runs in them. Whether ITU wants products named is a question for ITU.
 
 ## 6. Annex — aggregate external-link list
 

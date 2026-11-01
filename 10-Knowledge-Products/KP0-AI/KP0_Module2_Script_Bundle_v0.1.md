@@ -4,12 +4,11 @@
 
 | Field | Value |
 | --- | --- |
-| Document | Script bundle for Module 2 of KP0: four written pages and one video |
-| Version | v0.1 — written on the KP0 plan, version 0.4, of 22 October 2026 |
+| Document | Script bundle for Module 2 of KP0: four written pages |
+| Version | v0.1 — working draft of 26 October 2026 |
 | Date | 26 October 2026 |
 | Module persona | S (Strategist) — the public servant who commissions and accepts AI-assisted work and answers for it: a director, a head of unit, a technical secretary briefing the principal. No programming assumed |
 | Subtopics | Four written pages (2.1 – 2.4); the fourth is the module's Judgement page |
-| Video | One, V2 'Context once, then skills', about four minutes, a person on camera, covering pages 2.1 to 2.4 |
 | Worked examples | One for each page, set in Progressa: Progressa's country context pack trimmed for one task, MoEYS's project brief, a skill installed and the course's knowledge base connected, and a project setup audited |
 | Self-check | Five questions drawn from the four pages, in section 2.1 |
 | Prepared by | FiscalAdmin OÜ |
@@ -20,13 +19,13 @@ This bundle is the v0.1 working draft of Module 2 of KP0 — Working with AI in 
 
 ### 1.1 What this document is
 
-This document collects the four pages and the one video script of Module 2 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items. It is the v0.1 working draft, written on the KP0 plan, version 0.4, sections 4 and 7.
+This document collects the four pages of Module 2 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items. It is the v0.1 working draft.
 
 Module 2 is the Prepare layer. Where Module 1 is about what a person types into one chat, Module 2 is about what the assistant already knows and can do before the person types anything. The principle is the one context engineering names: give the assistant the smallest set of information that makes the result you want most likely.
 
 ### 1.2 How KP0 differs from KP1 to KP4
 
-As in Module 1, every subtopic is a written page, and one video with a person on camera covers the module. The three departures from the series rules are calibration items, in section 5.
+As in Module 1, every subtopic is a written page, and the pages carry the whole content.
 
 ### 1.3 The names used for Progressa
 
@@ -46,11 +45,11 @@ Module 2 carries the first argument of the series in small: a context pack writt
 
 ### 1.5 How to read this document
 
-Section 2 gives Module 2 at a glance, with the module's self-check. Section 3 holds the four pages, and the script of the video. Section 4 collects the production notes, section 5 the open calibration items, and section 6 the aggregate external-link list.
+Section 2 gives Module 2 at a glance, with the module's self-check. Section 3 holds the four pages. Section 4 collects the production notes, section 5 the open calibration items, and section 6 the aggregate external-link list.
 
 ## 2. Module 2 at a glance
 
-Four written pages and one video of about four minutes. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two and a half hours, most of it spent building the context pack.
+Four written pages. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two and a half hours, most of it spent building the context pack.
 
 | # | Title | Single message | Form |
 | --- | --- | --- | --- |
@@ -58,7 +57,6 @@ Four written pages and one video of about four minutes. One Strategist persona t
 | 2.2 | Projects and standing instructions | Say once, in a project, what you would otherwise paste into every chat: who you are, what you produce, the rules, and the files. | Page |
 | 2.3 | Skills and connectors | A skill packages a procedure you repeat; a connector lets the assistant reach a source; choose the lightest setup that does the job. | Page |
 | 2.4 | Judgement: what never goes into the setup | A setup is used by every later chat, so nothing confidential goes into it, every file carries a date, and the intent is written down. | Page |
-| V2 | Context once, then skills | Write the context once and the procedure once; then every chat starts from them. | Video, ~4 min |
 
 ### 2.1 The module's self-check
 
@@ -82,7 +80,7 @@ Shown on the module's home page, apart from the sources: one to three things to 
 | AI and digital transformation competencies for civil servants | UNESCO | https://unesdoc.unesco.org/ark:/48223/pf0000384963 | The competencies a government expects of staff who set up and govern these tools. | A report to read |
 | AI Skills Coalition | ITU | https://aiforgood.itu.int/ai-skills-coalition/ai-courses-portfolio/ | ITU's free course catalogue; start with 'AI and digital transformation in government'. | About 12 hours |
 
-## 3. The pages, the video and the reference
+## 3. The pages and the reference
 
 ## 3.1 Subtopic 2.1 — Build the context once
 
@@ -452,77 +450,17 @@ If your run marked the meeting notes 'keep', it judged a file it could not see: 
 | --- | --- | --- |
 | How generative and agentic AI shift concern from technical debt to cognitive debt | Margaret-Anne Storey · 9 February 2026 | Technical and cognitive debt |
 
-## 3.5 Video V2 — Context once, then skills
-
-| Field | Value |
-| --- | --- |
-| Covers pages | 2.1 to 2.4 |
-| Target runtime | ~4 min (≈420 spoken words, the story beat included) |
-| Speaker | Arne (a suggestion) |
-| Form | A person on camera, with text-only slides cut in |
-
-> **Single message —** _Write the context once and the procedure once; then every chat starts from them._
-
-### Script (on camera, slides cut in)
-
-> _Opening: the speaker on camera. The title is in the lower third: 'Context once, then skills'._
-
-For the first weeks of writing these courses with an AI assistant, every chat began the same way. We pasted the country, the ministry, the rules. Every chat began slightly differently, and so every answer did too.
-
-> **The speaker's story —** The speaker's own case, 60 to 90 seconds, about 150 to 200 words. It must show three things: (1) building the country context pack once, for The Gambia or for Progressa, and what changed in every AI usage tip run after it: answers that could be compared, sources that had already been checked; (2) a step the test learners skipped, opening the sources, and why the ea-plays skills were written to make that step hard to skip; (3) one thing the speaker would set up differently now. Give the date. Name posts, not persons. If the speaker cannot name a case with a date, this video becomes a page (plan decision 4).
-
-> _Slide cut in — Title: 'Four setups, lightest first'. Body, four text rows: 'Once: a prompt.' 'Always needed: a project.' 'Repeated the same way: a skill.' 'A source that changes: a connector.'_
-
-Here is the rule we work by now. A task you do once is a prompt. Context your work always needs goes into a project, with a brief: who we are, what we produce, the rules, and the files, each with its date. A procedure you repeat the same way becomes a skill. And a source that changes is reached through a connector, so the assistant reads it as it is today. Step up only when the lighter setup is no longer enough.
-
-> _Slide cut in — Title: 'Less is better'. Body, two text rows: 'Give each task the smallest set of information it needs.' 'A pack of twenty pages buries the one section a task uses.'_
-
-And give each task only what it needs. We learned this the slow way. Pasting the whole context pack into every task felt thorough. It made the answers worse, because the one section that mattered was buried under nineteen that did not.
-
-> _Back to the speaker on camera._
-
-One warning. Everything in a setup is read by every chat that uses it, and often by every colleague it is shared with. So no records of real people, ever. No unpublished papers. Every file with its date. And write down why the work is done the way it is, because the person who set it up will not always be there to explain.
-
-> _Slide cut in — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Write the context once and the procedure once; then every chat starts from them.'_
-
-Write the context once, and the procedure once. Then every chat starts from them.
-
-### Cut-in slide specification
-
-| Slide | Element (text-only) | Notes |
-| --- | --- | --- |
-| 1 | Four text rows: the four setups, lightest first. | Cut in over the voice-over after the story. ITU template: title Arial Bold 28pt, body Arial 18pt, background #E5F5FB. The same wording as page 2.3. |
-| 2 | Two text rows: the smallest set of information; the buried section. | Text-only. |
-| 3 | Single-sentence summary slide. One large text block (Arial Bold 28pt). | The single message, word for word. No practice box and no sources slide: the pages carry both. |
-
-### Metadata
-
-| Field | Value |
-| --- | --- |
-| Working title | Context once, then skills |
-| YouTube-optimised title | Set up your AI assistant once: context packs, projects, skills and connectors |
-| Description (60 words) | Most teams paste the same context into every AI chat, a little differently each time. A practitioner tells how writing the context once changed every answer after it, why skills were built for the step people skip, and the rule for choosing a prompt, a project, a skill or a connector. For public servants who use AI on official work. |
-| Tags | AI in government, context engineering, AI assistant setup, projects, skills, MCP, public sector, AI literacy |
-| Playlist (YouTube) | Working with AI in Government |
-| ToR §4 coverage | §4.3 (AI integration: setting an assistant up for the AI usage tips of the series) |
-| PAERA citations | None. This course is about working with an AI assistant, not about the reference architecture. |
-| External-link list | The four pages of Module 2, which carry the sources: Effective context engineering for AI agents (Anthropic, 2025); Skills explained (Anthropic, 2025). |
-
 ## 4. Production notes
 
 ### 4.1 Design standard
 
 As in Module 1: a public servant with the page on one half of the screen and an assistant on the other must be able to run the page's AI usage tip on their own work and judge its result. For Module 2, the result is a setup: a trimmed context pack, a project brief, a decision on which setup each task needs, or an audit.
 
-### 4.2 The video
-
-V2 is one person on camera, with three text-only slides cut in on the ITU template: title Arial Bold 28pt, body Arial 18pt, background #E5F5FB. It is recorded by the camera route of the series. The story beat is the speaker's; the four setups and the single message are said as written.
-
-### 4.3 Voice and tone
+### 4.2 Voice and tone
 
 Direct address. Plain language at about an eighth-grade English level. Two technical names cannot be avoided, because learners will meet them in their assistant's settings: a skill and a connector, with MCP named once. Each is explained in plain words where it first appears.
 
-### 4.4 The kit
+### 4.3 The kit
 
 Page 2.3 names the optional ea-plays kit and shows one of its skills. The tips of every page run without it. The page says how to install one skill in the Claude app, as a ZIP of the skill's folder under Customize, Skills (Claude help, 'Use skills in Claude', checked 26 October 2026); the kit's own page in the GEA space carries the other routes.
 
@@ -530,25 +468,21 @@ Page 2.3 names the optional ea-plays kit and shows one of its skills. The tips o
 
 The drafting raised the items below. They are forwarded for discussion with ITU.
 
-### 5.1 Three departures from the series rules
+### 5.1 No videos
 
-As in Module 1: a person on screen in V2; four written pages covered by one video; on-camera cues in the script. The plan, section 7, gives the reason.
+KP0 has no videos for now, which departs from the series rule that every subtopic is a video. Every page is written and carries the whole content, so nothing taught is lost; the videos were taken out on 1 November 2026 because there is no time to record them in this round. A video can later be added over a run of pages without changing a page.
 
-### 5.2 The speaker's case
-
-V2's story beat is left to the speaker, who is asked to name a real case, with a date, before the cut is decided (plan decision 4).
-
-### 5.3 A connector to the course
+### 5.2 A connector to the course
 
 Page 2.3 tells learners to connect this knowledge base through the read-only connector GitBook publishes for every site. That connector works only while the site keeps its page actions turned on. Whether ITU wants the courses offered this way is a question for ITU.
 
-### 5.4 Vendor features named
+### 5.3 Vendor features named
 
 Module 2 names features of commercial products (projects, skills, connectors, memory) because learners will meet them in their assistant's settings. The concept of each page is tool-neutral, and other assistants are named where a setting is shown. Whether ITU wants the vendor names reduced is a question for ITU.
 
 ## 6. Annex — aggregate external-link list
 
-Compiled across the four pages, and the video. Every source is public.
+Compiled across the four pages. Every source is public.
 
 | Page | Sources referenced, with addresses |
 | --- | --- |
@@ -556,6 +490,5 @@ Compiled across the four pages, and the video. Every source is public.
 | 2.2 | Skills explained (Anthropic, 2025), https://claude.com/blog/skills-explained. Effective context engineering for AI agents, as above. Microsoft 365 Copilot Experiment: Cross-Government Findings Report, as in 2.3. |
 | 2.3 | Skills explained, as above. Use skills in Claude (Anthropic help), https://support.claude.com/en/articles/12512180-use-skills-in-claude. Agent Skills (open standard), https://agentskills.io. Model Context Protocol (open protocol), https://modelcontextprotocol.io. MCP servers for published docs (GitBook), https://gitbook.com/docs/ai-for-your-readers/mcp-servers-for-published-docs. LLM01:2025 Prompt Injection (OWASP, 2025), https://genai.owasp.org/llmrisk/llm01-prompt-injection/. Microsoft 365 Copilot Experiment: Cross-Government Findings Report (Government Digital Service, 2 June 2025), https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report. The ea-plays kit, https://github.com/alaponin/ea-plays-kit. |
 | 2.4 | How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. |
-| V2 | None of its own; the description points to the pages. |
 
 All references are publicly accessible and verifiable.

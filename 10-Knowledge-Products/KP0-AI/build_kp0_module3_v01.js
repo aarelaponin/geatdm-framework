@@ -1,10 +1,11 @@
 // Build KP0 Module 3 — Script Bundle v0.1
 // Working with AI in Government · Module 3 — Orchestrate: one piece of work, start to finish (Strategist and Architect).
-// v0.1 (31 Oct 2026): written on the KP0 plan, version 0.4 (as changed on 30 October 2026), and the Orchestrate section
-//   plan, version 0.1, sections 2 to 5. Every Try it first is rewritten from the registry prototype's record, frozen in
-//   examples/plr/ on 31 October 2026; the figures as the section plan's section 4 states them.
+// v0.1 (31 Oct 2026). Every Try it first is rewritten from the registry prototype's record, frozen in
+//   examples/plr/ on 31 October 2026.
 // Same shape as Modules 1 and 2, with one addition: tryFirst, the fault to find in the record before the concept, its
-//   key kept back. The AI usage tip of each page is its step on the learner's own work. Two videos (V3, V4).
+//   key kept back. The AI usage tip of each page is its step on the learner's own work.
+// 1 Nov 2026: the videos (V3, V4) taken out, no time to record them now; the pages carry the whole content. 3.2's In
+//   the tool gains the setup of the computer, moved from 4.4, where it came after the learner's first cycle.
 const fs = require('fs');
 const path = require('path');
 const {
@@ -20,10 +21,6 @@ const COLOR_ACCENT   = "2E75B6";
 const COLOR_GREY_TXT = "595959";
 const COLOR_GREY_BG  = "F2F2F2";
 const COLOR_BORDER   = "BFBFBF";
-const COLOR_VISUAL_BG    = "EAF1F8";  // visual / production cue
-const COLOR_VISUAL_BD    = "2E75B6";
-const COLOR_STORY_BG     = "FCE4EC";  // the speaker's own story, left free
-const COLOR_STORY_BD     = "AD1457";
 const COLOR_AI_BG        = "EEF7EE";  // AI usage tip
 const COLOR_AI_BD        = "2E7D32";
 const COLOR_PULL_BG      = "FFF8E1";  // single-message highlight
@@ -33,7 +30,7 @@ const border = { style: BorderStyle.SINGLE, size: 4, color: COLOR_BORDER };
 const cellBorders = { top: border, bottom: border, left: border, right: border };
 const cellMargin  = { top: 90, bottom: 90, left: 130, right: 130 };
 
-// Persona for KP0 Module 3 (both personas, as the plan's module table sets it).
+// Persona for KP0 Module 3 (both personas).
 const PERSONA_S = "S (Strategist) — the public servant who commissions and accepts AI-assisted work and answers for it: a director, a head of unit, a technical secretary briefing the principal. No programming assumed";
 const PERSONA_SA = "S and A (Strategist and Architect) — the one who commissions and accepts AI-assisted work, and the one who runs it: a head of ICT unit, a project lead, an analyst. No programming assumed";
 
@@ -100,8 +97,6 @@ function boxed(label, text, bg, bd, italic = true) {
         ] })] })
     ] })] });
 }
-function visualCueBox(text) { return boxed("VISUAL CUE — ", text, COLOR_VISUAL_BG, COLOR_VISUAL_BD); }
-function storyBox(text) { return boxed("THE SPEAKER'S STORY — ", text, COLOR_STORY_BG, COLOR_STORY_BD); }
 function singleMessageBox(text) { return boxed("Single message — ", text, COLOR_PULL_BG, COLOR_PULL_BD); }
 function aiPromptBox(title, problem, prompt, ioNote, safeguard) {
   const W = 9700;
@@ -132,17 +127,17 @@ function content(items) {
 }
 
 // ---------- helper: render a subtopic page ----------
-// KP0 subtopics are written pages (plan section 4). The tip's io line is split by the GitBook renderer into
+// KP0 subtopics are written pages. The tip's io line is split by the GitBook renderer into
 // Bring and Get, and the safeguard's first sentence becomes Watch for, as in KP4.
 // Optional parts (review of 26 Oct 2026): cite, a phrase in the prose and the source it names, linked on the
 // GitBook page (the Word document keeps plain text); where, the help links for the setting in each assistant; example.run, the
 // prompt and part of its output; aiTip.practice, Progressa material to practise on, with its answer key.
 // Module 3 adds tryFirst: the fault to find in the record, its question, and its key (collapsed on the GitBook page),
 // shown before the concept; the AI usage tip is the page's step on the learner's own work.
-function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, where, example, aiTip, withKit, sources, video = "V2", persona = PERSONA_SA }) {
+function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, where, example, aiTip, withKit, sources, persona = PERSONA_SA }) {
   const out = [];
   out.push(H2(num + " — " + title));
-  out.push(specTable([["Persona", persona], ["Form", "Written page; covered by video " + video]]));
+  out.push(specTable([["Persona", persona], ["Form", "Written page"]]));
   out.push(singleMessageBox(singleMessage));
   if (tryFirst) {
     out.push(H3("Try it first — " + tryFirst.title));
@@ -181,34 +176,6 @@ function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, wher
   return out;
 }
 
-// ---------- helper: render the module's video ----------
-// One person on camera with slides cut in (plan section 7). A story beat is the place the speaker tells their own
-// case; the script says what it must show and how long it may run, and leaves the telling to the speaker.
-function renderVideo({ id, title, covers, runtime, words, speaker, singleMessage, scriptBeats, slideSpecRows, metadataRows }) {
-  const out = [];
-  out.push(H2(id + " — " + title));
-  out.push(specTable([
-    ["Covers pages",   covers],
-    ["Target runtime", runtime + " (≈" + words + " spoken words, the story beat included)"],
-    ["Speaker",        speaker + " (a suggestion; plan decision 4)"],
-    ["Form",           "A person on camera, with text-only slides cut in for a list or a figure"]
-  ]));
-  out.push(singleMessageBox(singleMessage));
-  out.push(H3("Script (on camera, slides cut in)"));
-  for (const beat of scriptBeats) {
-    if (beat.cue) out.push(visualCueBox(beat.cue));
-    if (beat.story) out.push(storyBox(beat.story));
-    if (beat.text) out.push(P(beat.text));
-  }
-  out.push(H3("Cut-in slide specification"));
-  out.push(genericTable([900, 3400, 5400], ["Slide", "Element (text-only)", "Notes"], slideSpecRows));
-  out.push(H3("Metadata"));
-  out.push(specTable(metadataRows));
-  out.push(pageBreak());
-  return out;
-}
-
-
 // ============================================================================
 //                                  BODY
 // ============================================================================
@@ -226,12 +193,11 @@ body.push(
     children: [new TextRun({ text: "Module 3 — Orchestrate: one piece of work, start to finish", font: ARIAL, size: 24, italics: true, color: COLOR_ACCENT })] }),
   spacer(600),
   specTable([
-    ["Document",        "Script bundle for Module 3 of KP0: four written pages and two videos"],
-    ["Version",         "v0.1 — written on the KP0 plan, version 0.4 (as changed on 30 October 2026), and the Orchestrate section plan, version 0.1"],
+    ["Document",        "Script bundle for Module 3 of KP0: four written pages"],
+    ["Version",         "v0.1 — working draft of 31 October 2026"],
     ["Date",            "31 October 2026"],
     ["Module persona",  PERSONA_SA],
     ["Subtopics",       "Four written pages (3.1 – 3.4); the fourth is the module's Judgement page"],
-    ["Videos",          "Two, each a person on camera: V3 'Two failures we kept meeting' (page 3.1) and V4 'Why the reviewer is someone else' (pages 3.2 and 3.3)"],
     ["Worked examples", "One project throughout, the prototype of the Progressa Learner Registry: the identity paper that looked fair, the count of children on more than one list, the consent check, and the note to the Permanent Secretary"],
     ["Starter folder",  "toolkit/orchestrate-starter/: the forms, the three chat prompts, the log, the pages of faults and one finished cycle"],
     ["Self-check",      "Four questions drawn from the four pages, in section 2.1"],
@@ -247,7 +213,7 @@ body.push(
   H1("1. Document context"),
 
   H3("1.1 What this document is"),
-  P("This document collects the four pages and the two video scripts of Module 3 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items. It is written on the KP0 plan, version 0.4, section 4, and on the Orchestrate section plan, sections 2 to 5."),
+  P("This document collects the four pages of Module 3 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items."),
   P("Module 3 is the first half of the Orchestrate layer. It is for both personas. The Strategist's way through the course ends here, after taking one piece of work through the cycle once, which is the best preparation for accepting work that others have orchestrated. The Architect goes on to Module 4, which runs the cycle for days."),
 
   H3("1.2 How Module 3 differs from Modules 1 and 2"),
@@ -275,7 +241,7 @@ body.push(
   P("One rule has no exception: a chat never carries out work it helped to commission, and never judges work it helped to commission or carry out."),
 
   H3("1.5 How to read this document"),
-  P("Section 2 gives Module 3 at a glance, with the module's self-check. Section 3 holds the four pages and the two video scripts. Section 4 collects the production notes, section 5 the open calibration items, and section 6 the aggregate external-link list."),
+  P("Section 2 gives Module 3 at a glance, with the module's self-check. Section 3 holds the four pages. Section 4 collects the production notes, section 5 the open calibration items, and section 6 the aggregate external-link list."),
 
   pageBreak()
 );
@@ -283,7 +249,7 @@ body.push(
 // ---------- MODULE AT A GLANCE ----------
 body.push(
   H1("2. Module 3 at a glance"),
-  P("Four written pages and two videos of about three minutes each. A learner who does each page's exercise and its step on their own work needs about three hours, most of it running their own cycle."),
+  P("Four written pages. A learner who does each page's exercise and its step on their own work needs about three hours, most of it running their own cycle."),
   genericTable([700, 2700, 4900, 1400], ["#", "Title", "Single message", "Form"], [
     ["3.1", "Two failures, and the rule that answers them",
       "A chat that checks its own work confirms its own mistakes, and what a chat knows is lost when it ends; so the one who writes is not the one who checks, and the state of the work lives in files.", "Page"],
@@ -292,9 +258,7 @@ body.push(
     ["3.3", "The report and the review",
       "The work chat reports with no verdict; a second chat that never saw it checks the report by its own route and says accepted or not accepted.", "Page"],
     ["3.4", "Judgement: you decide",
-      "The review gives a verdict; the decision is yours, and four decisions are always yours: what is delivered, what is cut, what is spent and what is said outside.", "Page"],
-    ["V3", "Two failures we kept meeting", "A chat that checks its own work confirms its own mistakes.", "Video, ~3 min"],
-    ["V4", "Why the reviewer is someone else", "The review is worth its route, not its agreement.", "Video, ~3 min"]
+      "The review gives a verdict; the decision is yours, and four decisions are always yours: what is delivered, what is cut, what is spent and what is said outside.", "Page"]
   ]),
 
   H3("2.1 The module's self-check"),
@@ -327,15 +291,14 @@ body.push(
 );
 
 // ============================================================================
-// 3. THE PAGES, THE VIDEOS AND THE REFERENCE
+// 3. THE PAGES AND THE REFERENCE
 // ============================================================================
-body.push(H1("3. The pages, the videos and the reference"));
+body.push(H1("3. The pages and the reference"));
 
 // ---------- 3.1 ----------
 body.push(...renderPage({
   num: "3.1 Subtopic 3.1",
   title: "Two failures, and the rule that answers them",
-  video: "V3",
   singleMessage: "A chat that checks its own work confirms its own mistakes, and what a chat knows is lost when it ends; so the one who writes is not the one who checks, and the state of the work lives in files.",
   tryFirst: {
     title: "The paper that looked fair",
@@ -388,51 +351,11 @@ body.push(...renderPage({
   ]
 }));
 
-// ---------- V3 ----------
-body.push(...renderVideo({
-  id: "3.5 Video V3",
-  title: "Two failures we kept meeting",
-  covers: "3.1",
-  runtime: "~3 min",
-  words: 380,
-  speaker: "Aare",
-  singleMessage: "A chat that checks its own work confirms its own mistakes.",
-  scriptBeats: [
-    { cue: "Opening: the speaker on camera. The title is in the lower third: 'Two failures we kept meeting'." },
-    { text: "We wrote these courses, and built a working prototype, with AI assistants. Two things went wrong again and again, and they are worth knowing before you hand an assistant any work that matters." },
-    { story: "The speaker's own case, 60 to 90 seconds, about 150 to 200 words. It must show the first failure in a real piece of work: a chat that checked its own work, passed every check it set itself, and was still wrong, and what found the fault. The case the record offers is the identity paper of 28 October 2026: no empty cell, every citation holding, its own report claiming a cross-check of every fact, and two facts counted against one position only, found by a separate review. Give the date. Name posts, not persons. If the speaker cannot name a case with a date, this video becomes a page (plan decision 4)." },
-    { cue: "Slide cut in — Title: 'Two failures'. Body, two text rows: 'A chat that checks its own work confirms its own mistakes.' 'What a chat knows is lost when it ends.'" },
-    { text: "The first failure is the one you just heard. A chat that checks its own work reads what it meant, not what it wrote. The second is quieter. A figure worked out in a chat on Monday gets quoted on Thursday, from memory, by someone who was not there. When it is wrong, nobody can find where it came from." },
-    { cue: "Slide cut in — Title: 'The answer'. Body, three text rows: 'The one who writes is not the one who checks.' 'Documents between the parties.' 'The state of the work in files.'" },
-    { text: "The answer is one you already use. In any ministry, the person who writes a paper does not accept it alone. So we do the same with chats. One chat does the work. Another, which never saw the first, checks it. You decide. And what was asked, what came back and what was decided all go into files, so nothing depends on anyone remembering." },
-    { cue: "Back to the speaker on camera." },
-    { text: "It costs a second chat, so we do not use it for everything. A short reply you read yourself does not need it. A figure that will be quoted does." },
-    { cue: "Slide cut in — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'A chat that checks its own work confirms its own mistakes.'" },
-    { text: "A chat that checks its own work confirms its own mistakes. So the one who writes is never the one who checks." }
-  ],
-  slideSpecRows: [
-    ["1", "Two text rows: the two failures.", "Cut in over the voice-over after the story. ITU template: title Arial Bold 28pt, body Arial 18pt, background #E5F5FB. The same wording as page 3.1."],
-    ["2", "Three text rows: the answer.", "Text-only."],
-    ["3", "Single-sentence summary slide.", "The single message, word for word."]
-  ],
-  metadataRows: [
-    ["Working title",           "Two failures we kept meeting"],
-    ["YouTube-optimised title", "Why an AI assistant should never check its own work"],
-    ["Description (60 words)",  "Working with AI assistants on real government work, two failures came back again and again: a chat that checks its own work confirms its own mistakes, and what a chat knows is lost when it ends. A practitioner tells the case of a paper that passed every check it set itself, and the simple rule that answers both failures."],
-    ["Tags",                    "AI in government, AI review, human oversight, orchestration, public sector, AI literacy"],
-    ["Playlist (YouTube)",      "Working with AI in Government"],
-    ["ToR §4 coverage",         "§4.3 (AI integration: reviewing AI-assisted work before it is used)"],
-    ["PAERA citations",         "None. This course is about working with an AI assistant, not about the reference architecture."],
-    ["External-link list",      "Page 3.1, which carries the sources."]
-  ]
-}));
-
 // ---------- 3.2 ----------
 body.push(...renderPage({
-  num: "3.6 Subtopic 3.2",
+  num: "3.2 Subtopic 3.2",
   title: "Write the instruction",
   withKit: "writes the instruction with you from the same form, gives its session a name, files it in the place for instructions and writes its log row. You still decide what it asks.",
-  video: "V4",
   singleMessage: "Write the instruction for a stranger: what it serves, the tests, how this work can fail while seeming to succeed, and how the review will check it, all before the work starts.",
   tryFirst: {
     title: "The duplicates count",
@@ -456,6 +379,7 @@ body.push(...renderPage({
   ],
   inTool: [
     "By hand, in any assistant. Set up first, as the first page of the starter folder says: turn memory off in your assistant's settings (page 2.4 shows where), and decide whether you will paste files or let the assistant read the folder.",
+    "Setting up your computer, from the baseline up. Only the first step is needed. (1) Any assistant in the browser: your working folder built from the starter folder's pages, memory off, prompts pasted, replies saved by hand. This works in whatever assistant your organisation approves. (2) The Claude desktop app, on Windows or Mac: chats beside your files, and a project that holds the forms and your page of faults as standing instructions; keep the review chat outside the project. (3) File access, through Desktop Commander or the desktop app's own file extension: the work chat writes its report into the folder and the review chat reads it from there. Allow the starter folder only, never a folder with anything confidential, and turn down any command you did not ask for. (4) Plugins and skills, if your assistant has them. (5) Keep the folder somewhere it is copied, such as a synced OneDrive or SharePoint folder. Check your organisation's rules before installing anything on a work computer; some organisations do not allow new software or extensions, and then the baseline is the route.",
     "Copy the instruction form into a new file in the instructions folder. Name it by date, piece of work and version, for example '2026-10-30 duplicates v1'. Start from your case card from 3.1. Fill the form's eight sections: what it serves, the material, the task, how you will know it is done, how the review will check it, how this work can fail, out of scope, and where the report goes. Copy the faults from the page for your kind of work into section 6, how this work can fail, then add the ways particular to your task.",
     "A chat may help you draft the instruction. If it does, that chat does no work afterwards and no review: it helped to commission the work.",
     "Start your log: a spreadsheet with seven columns, date, piece of work, version, event, file, verdict or ruling, and who it is open with. The event is one of five words: instruction issued, report back, review back, my ruling, handover; withdrawn is a ruling, not an event. *Open with* says who acts next: the work chat, the review chat, you, or no one once the piece of work is ruled on. Write the first row: the date, the piece of work, version 1, 'instruction issued', and the file."
@@ -479,16 +403,15 @@ body.push(...renderPage({
   },
   sources: [
     ["Building effective agents", "Anthropic Engineering · December 2024", "Clear task definitions for each worker; the orchestrator decides the tasks (vendor source)"],
-    ["AI Playbook for the UK Government", "GOV.UK · 10 February 2025", "Knowing what the tool is used for, and its limits, before it is used"]
+    ["AI Playbook for the UK Government", "GOV.UK · 10 February 2025", "Knowing what the tool is used for, and its limits, before it is used; using approved tools and protecting data"]
   ]
 }));
 
 // ---------- 3.3 ----------
 body.push(...renderPage({
-  num: "3.7 Subtopic 3.3",
+  num: "3.3 Subtopic 3.3",
   title: "The report and the review",
   withKit: "starts the work chat, and when its report is in, the review chat as a separate session with an empty memory, so the memory setting can no longer break the separation. You still read the review and rule.",
-  video: "V4",
   singleMessage: "The work chat reports with no verdict; a second chat that never saw it checks the report by its own route and says accepted or not accepted.",
   tryFirst: {
     title: "The 20 that slipped through",
@@ -541,50 +464,10 @@ body.push(...renderPage({
   ]
 }));
 
-// ---------- V4 ----------
-body.push(...renderVideo({
-  id: "3.8 Video V4",
-  title: "Why the reviewer is someone else",
-  covers: "3.2 and 3.3",
-  runtime: "~3 min",
-  words: 350,
-  speaker: "Arne",
-  singleMessage: "The review is worth its route, not its agreement.",
-  scriptBeats: [
-    { cue: "Opening: the speaker on camera. The title is in the lower third: 'Why the reviewer is someone else'." },
-    { text: "When we built the registry prototype, every piece of work went through two chats. One did the work. The other checked it, and had never seen the first. Here is one count, and why the second chat mattered." },
-    { story: "The speaker's own case, 60 to 90 seconds, about 150 to 200 words. It must show three things: (1) the question, on 30 October 2026, of how many children on more than one list the prototype catches, and the figure: 40 children, 20 caught from every entry, each of the other 20 missed from the one entry spelt differently; (2) that the instruction named the review's route before the work started, counting again from the lists alone; (3) the review getting the same figures by that route, entry by entry, and why that was worth more than a second reading. Name posts, not persons. If the speaker cannot tell it with the date, this video becomes a page (plan decision 4)." },
-    { cue: "Slide cut in — Title: 'Before the work starts'. Body, four text rows: 'What it serves.' 'The tests.' 'How it can fail while seeming to succeed.' 'How the review will check it.'" },
-    { text: "Everything that decides whether the work is good is written before the work starts. What it serves. The tests. The ways this work can fail while looking fine, like searching an empty registry and getting a clean zero. And how the review will check it, so the work chat cannot borrow the review's route." },
-    { cue: "Slide cut in — Title: 'Two verdicts'. Body, two text rows: 'Accepted.' 'Not accepted.' Below, smaller: 'No third word.'" },
-    { text: "The work chat reports with no verdict. The review chat gives one of two: accepted, or not accepted. There is no 'accepted with comments'. And if a review on work that matters finds nothing at all, we ask what it checked." },
-    { cue: "Back to the speaker on camera." },
-    { text: "One setting can quietly break all of this: memory shared between chats. A review chat that remembers the work chat is not independent. Turn memory off, or use an incognito chat, before the review starts." },
-    { cue: "Slide cut in — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'The review is worth its route, not its agreement.'" },
-    { text: "The review is worth its route, not its agreement." }
-  ],
-  slideSpecRows: [
-    ["1", "Four text rows: what the instruction settles before the work starts.", "Cut in over the voice-over after the story. ITU template. The same wording as page 3.2."],
-    ["2", "Two text rows and a smaller line: the two verdicts.", "Text-only."],
-    ["3", "Single-sentence summary slide.", "The single message, word for word."]
-  ],
-  metadataRows: [
-    ["Working title",           "Why the reviewer is someone else"],
-    ["YouTube-optimised title", "How to review AI-assisted work: a second chat, a second route"],
-    ["Description (60 words)",  "One count from a working prototype: how many children on more than one list the registry catches. A practitioner shows how the instruction settled the tests before the work started, how a second chat that never saw the first counted again by its own route, and why that route is worth more than agreement. For public servants who accept AI-assisted work."],
-    ["Tags",                    "AI in government, AI review, independent review, orchestration, public sector, AI literacy"],
-    ["Playlist (YouTube)",      "Working with AI in Government"],
-    ["ToR §4 coverage",         "§4.3 (AI integration: reviewing AI-assisted work before it is used)"],
-    ["PAERA citations",         "None. This course is about working with an AI assistant, not about the reference architecture."],
-    ["External-link list",      "Pages 3.2 and 3.3, which carry the sources."]
-  ]
-}));
-
 // ---------- 3.4 ----------
 body.push(...renderPage({
-  num: "3.9 Subtopic 3.4",
+  num: "3.4 Subtopic 3.4",
   title: "Judgement: you decide",
-  video: "V6, in Module 4",
   singleMessage: "The review gives a verdict; the decision is yours, and four decisions are always yours: what is delivered, what is cut, what is spent and what is said outside.",
   tryFirst: {
     title: "The note that said too much",
@@ -644,16 +527,13 @@ body.push(
   H3("4.1 Design standard"),
   P("A public servant with the page on one half of the screen and an assistant on the other must be able to do the page's step on their own work. By the end of 3.4 they have one instruction, one report, one review and their own ruling, in a folder and a log they will keep using."),
 
-  H3("4.2 The videos"),
-  P("V3 and V4 are each one person on camera, with three text-only slides cut in on the ITU template: title Arial Bold 28pt, body Arial 18pt, background #E5F5FB. The story beats are the speakers'; the slides and the single messages are said as written."),
-
-  H3("4.3 Voice and tone"),
+  H3("4.2 Voice and tone"),
   P("Direct address. Plain language at about an eighth-grade English level. The pattern's own words are kept to four, each explained where it first appears: the instruction, the report, the review and the log. The record's codes, file names and the plugin's terms are never used on a page."),
 
-  H3("4.4 The record behind the examples"),
-  P("Every Try it first is rewritten from the record of the registry prototype, frozen on 31 October 2026 in examples/plr/. The figures as the pages state them are set out in the Orchestrate section plan, section 4, with the wordings each must avoid. The starter folder's finished cycle is the duplicates count, so the folder and pages 3.2 and 3.3 tell one story."),
+  H3("4.3 The record behind the examples"),
+  P("Every Try it first is rewritten from the record of the registry prototype, frozen on 31 October 2026 in examples/plr/. Every figure on a page is the frozen record's. The starter folder's finished cycle is the duplicates count, so the folder and pages 3.2 and 3.3 tell one story."),
 
-  H3("4.5 Try it first"),
+  H3("4.4 Try it first"),
   P("On the GitBook page, each answer key sits in a collapsed block below its question, so that learners try before they read. In this document the key follows the question."),
 
   pageBreak()
@@ -664,14 +544,14 @@ body.push(
   H1("5. Open calibration items"),
   P("The drafting raised the items below. They are forwarded for discussion with ITU."),
 
-  H3("5.1 Three departures from the series rules"),
-  P("As in Modules 1 and 2: a person on screen in V3 and V4; written pages covered by a video; on-camera cues in the script. The plan, section 7, gives the reason."),
+  H3("5.1 No videos"),
+  P("KP0 has no videos for now, which departs from the series rule that every subtopic is a video. Every page is written and carries the whole content, so nothing taught is lost; the videos were taken out on 1 November 2026 because there is no time to record them in this round. A video can later be added over a run of pages without changing a page."),
 
-  H3("5.2 The speakers' cases"),
-  P("V3 and V4 each name the record's case with its date as the case to tell. Each speaker confirms it, or names their own, before the cut is decided (plan decision 4)."),
-
-  H3("5.3 Memory off"),
+  H3("5.2 Memory off"),
   P("The by-hand cycle depends on one setting: memory shared between chats must be off, or the review chat must be incognito. The pages give no path through each assistant's menus, because those paths change; page 2.4 links each assistant's own help page for memory and incognito chats, and page 3.2 points to it."),
+
+  H3("5.3 Named products in the setup"),
+  P("Page 3.2 names the Claude desktop app and Desktop Commander as the recommended setup, with the browser in any assistant as the baseline. Install steps are not given on the page, because they date fast; each product's own instructions are linked, with the date they were checked, when the GitBook page is built. Whether ITU wants products named is a question for ITU."),
 
   pageBreak()
 );
@@ -679,13 +559,12 @@ body.push(
 // ---------- ANNEX ----------
 body.push(
   H1("6. Annex — aggregate external-link list"),
-  P("Compiled across the four pages and the two videos. Every source is public."),
+  P("Compiled across the four pages. Every source is public."),
   genericTable([1100, 8600], ["Page", "Sources referenced, with addresses"], [
     ["3.1", "Large Language Models Cannot Self-Correct Reasoning Yet (Huang et al., ICLR, 2024), https://arxiv.org/abs/2310.01798. Building effective agents (Anthropic Engineering, December 2024), https://www.anthropic.com/engineering/building-effective-agents."],
     ["3.2", "Building effective agents, as above. AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government."],
     ["3.3", "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena (Zheng et al., NeurIPS, 2023), https://arxiv.org/abs/2306.05685. Large Language Models Cannot Self-Correct Reasoning Yet, as in 3.1."],
-    ["3.4", "How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. AI Playbook for the UK Government, as in 3.2."],
-    ["V3, V4", "None of their own; the descriptions point to the pages."]
+    ["3.4", "How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. AI Playbook for the UK Government, as in 3.2."]
   ]),
   spacer(120),
   P("All references are publicly accessible and verifiable.")

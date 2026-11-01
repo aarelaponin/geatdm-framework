@@ -1,5 +1,5 @@
 ---
-description: "Module 4 of Working with AI in Government: The log: status is produced, never remembered; The faults you learn once; Handing over to a fresh chat; Judgement: setting up, every day, and what this does not claim"
+description: "Module 4 of Working with AI in Government: The log: status is produced, never remembered; The faults you learn once; Handing over to a fresh chat; Judgement: every day, and what this does not claim"
 icon: calendar
 ---
 
@@ -7,7 +7,7 @@ icon: calendar
 
 **Written for:** the one who runs AI-assisted work day to day: the head of an ICT unit, a project lead, an analyst. No programming is assumed.
 
-In Module 3 you took one piece of work through the cycle once. Module 4 is for running the cycle every day, on several pieces of work, for weeks: a log that answers where the work stands, pages of faults that grow with every review, a handover to a fresh chat, and the setup and routine that keep it going. The exercises come from the same project as Module 3, the registry prototype of the Progressa Learner Registry, which we built in October 2026 with this cycle, in its busiest days: by then it had many pieces of work under way, a chat in the orchestrator's role that had run for four days, and an owner deciding on each result.
+In Module 3 you took one piece of work through the cycle once. Module 4 is for running the cycle every day, on several pieces of work, for weeks: a log that answers where the work stands, pages of faults that grow with every review, a handover to a fresh chat, and the daily routine that keeps it going. The exercises come from the same project as Module 3, the registry prototype of the Progressa Learner Registry, which we built in October 2026 with this cycle, in its busiest days: by then it had many pieces of work under way, a chat in the orchestrator's role that had run for four days, and an owner deciding on each result.
 
 ## Pages
 
@@ -16,7 +16,7 @@ In Module 3 you took one piece of work through the cycle once. Module 4 is for r
 | [4.1](4-1.md) | The log: status is produced, never remembered | Write one row for every event, and answer 'where does it stand?' from the log, never from memory. |
 | [4.2](4-2.md) | The faults you learn once | Keep a page of faults for each kind of work, and add every fault a review finds, so that every later instruction carries it. |
 | [4.3](4-3.md) | Handing over to a fresh chat | Hand over only what the files cannot say, as claims someone can check, and make the next chat's first task to check a few of them and stop. |
-| [4.4](4-4.md) | Judgement: setting up, every day, and what this does not claim | Set up once, keep a daily routine, and remember what the pattern does not claim: it does not make the work true, cheap or the same every time. |
+| [4.4](4-4.md) | Judgement: every day, and what this does not claim | Keep a daily routine, and remember what the pattern does not claim: it does not make the work true, cheap or the same every time. |
 
 **Self-check.** [Four questions](self-check.md), with the answer the module gives to each.
 

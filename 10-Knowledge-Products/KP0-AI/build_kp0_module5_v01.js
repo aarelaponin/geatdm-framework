@@ -1,11 +1,11 @@
 // Build KP0 Module 5 — Script Bundle v0.1
 // Working with AI in Government · Module 5 — Orchestrate with the plugin: build a toy prototype (Architect).
-// v0.1 (31 Oct 2026): written on the KP0 plan, version 0.4 (as changed on 31 October 2026), and the Orchestrate section
-//   plan, version 0.1, section 11. The toy is the mini registry (toolkit/orchestrate-starter/MINI-REGISTRY-BRIEF.md),
+// v0.1 (31 Oct 2026). The toy is the mini registry (toolkit/orchestrate-starter/MINI-REGISTRY-BRIEF.md),
 //   cut from the registry prototype; every Try it first is from that prototype's record, frozen in examples/plr/.
-// Same page shape as Modules 3 and 4. No video: a step that needs a picture carries a string beginning "IMAGE:"
+// Same page shape as Modules 3 and 4. A step that needs a picture carries a string beginning "IMAGE:"
 //   (a screenshot in figures/, with its caption) or, until it is taken, "SCREENSHOT:" (what it must show), which the
 //   GitBook renderer shows as a box saying the screenshot is to come. The screenshots are from one real run of the toy.
+// 1 Nov 2026: the unused video helpers removed; Modules 1 to 4 no longer have videos either.
 const fs = require('fs');
 const path = require('path');
 const {
@@ -21,10 +21,6 @@ const COLOR_ACCENT   = "2E75B6";
 const COLOR_GREY_TXT = "595959";
 const COLOR_GREY_BG  = "F2F2F2";
 const COLOR_BORDER   = "BFBFBF";
-const COLOR_VISUAL_BG    = "EAF1F8";  // visual / production cue
-const COLOR_VISUAL_BD    = "2E75B6";
-const COLOR_STORY_BG     = "FCE4EC";  // the speaker's own story, left free
-const COLOR_STORY_BD     = "AD1457";
 const COLOR_AI_BG        = "EEF7EE";  // AI usage tip
 const COLOR_AI_BD        = "2E7D32";
 const COLOR_PULL_BG      = "FFF8E1";  // single-message highlight
@@ -34,7 +30,7 @@ const border = { style: BorderStyle.SINGLE, size: 4, color: COLOR_BORDER };
 const cellBorders = { top: border, bottom: border, left: border, right: border };
 const cellMargin  = { top: 90, bottom: 90, left: 130, right: 130 };
 
-// Persona for KP0 Module 5 (the Architect, as the plan's module table sets it).
+// Persona for KP0 Module 5 (the Architect).
 const PERSONA_S = "S (Strategist) — the public servant who commissions and accepts AI-assisted work and answers for it: a director, a head of unit, a technical secretary briefing the principal. No programming assumed";
 const PERSONA_A = "A (Architect) — the one who runs AI-assisted work day to day: the head of an ICT unit, a project lead, an analyst. No programming assumed";
 const PERSONA_SA = "S and A (Strategist and Architect) — the one who commissions and accepts AI-assisted work, and the one who runs it: a head of ICT unit, a project lead, an analyst. No programming assumed";
@@ -102,8 +98,6 @@ function boxed(label, text, bg, bd, italic = true) {
         ] })] })
     ] })] });
 }
-function visualCueBox(text) { return boxed("VISUAL CUE — ", text, COLOR_VISUAL_BG, COLOR_VISUAL_BD); }
-function storyBox(text) { return boxed("THE SPEAKER'S STORY — ", text, COLOR_STORY_BG, COLOR_STORY_BD); }
 function singleMessageBox(text) { return boxed("Single message — ", text, COLOR_PULL_BG, COLOR_PULL_BD); }
 function aiPromptBox(title, problem, prompt, ioNote, safeguard) {
   const W = 9700;
@@ -143,17 +137,17 @@ function content(items) {
 }
 
 // ---------- helper: render a subtopic page ----------
-// KP0 subtopics are written pages (plan section 4). The tip's io line is split by the GitBook renderer into
+// KP0 subtopics are written pages. The tip's io line is split by the GitBook renderer into
 // Bring and Get, and the safeguard's first sentence becomes Watch for, as in KP4.
 // Optional parts (review of 26 Oct 2026): cite, a phrase in the prose and the source it names, linked on the
 // GitBook page (the Word document keeps plain text); where, the help links for the setting in each assistant; example.run, the
 // prompt and part of its output; aiTip.practice, Progressa material to practise on, with its answer key.
 // Modules 3 and 4 add tryFirst: the fault to find in the record, its question, and its key (collapsed on the GitBook page),
 // shown before the concept; the AI usage tip is the page's step on the learner's own work.
-function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, where, example, aiTip, withKit, sources, video = "V2", persona = PERSONA_A }) {
+function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, where, example, aiTip, withKit, sources, persona = PERSONA_A }) {
   const out = [];
   out.push(H2(num + " — " + title));
-  out.push(specTable([["Persona", persona], ["Form", "Written page; covered by video " + video]]));
+  out.push(specTable([["Persona", persona], ["Form", "Written page"]]));
   out.push(singleMessageBox(singleMessage));
   if (tryFirst) {
     out.push(H3("Try it first — " + tryFirst.title));
@@ -192,34 +186,6 @@ function renderPage({ num, title, singleMessage, tryFirst, concept, inTool, wher
   return out;
 }
 
-// ---------- helper: render the module's video ----------
-// One person on camera with slides cut in (plan section 7). A story beat is the place the speaker tells their own
-// case; the script says what it must show and how long it may run, and leaves the telling to the speaker.
-function renderVideo({ id, title, covers, runtime, words, speaker, singleMessage, scriptBeats, slideSpecRows, metadataRows }) {
-  const out = [];
-  out.push(H2(id + " — " + title));
-  out.push(specTable([
-    ["Covers pages",   covers],
-    ["Target runtime", runtime + " (≈" + words + " spoken words, the story beat included)"],
-    ["Speaker",        speaker + " (a suggestion; plan decision 4)"],
-    ["Form",           "A person on camera, with text-only slides cut in for a list or a figure"]
-  ]));
-  out.push(singleMessageBox(singleMessage));
-  out.push(H3("Script (on camera, slides cut in)"));
-  for (const beat of scriptBeats) {
-    if (beat.cue) out.push(visualCueBox(beat.cue));
-    if (beat.story) out.push(storyBox(beat.story));
-    if (beat.text) out.push(P(beat.text));
-  }
-  out.push(H3("Cut-in slide specification"));
-  out.push(genericTable([900, 3400, 5400], ["Slide", "Element (text-only)", "Notes"], slideSpecRows));
-  out.push(H3("Metadata"));
-  out.push(specTable(metadataRows));
-  out.push(pageBreak());
-  return out;
-}
-
-
 // ============================================================================
 //                                  BODY
 // ============================================================================
@@ -238,11 +204,11 @@ body.push(
   spacer(600),
   specTable([
     ["Document",        "Script bundle for Module 5 of KP0: five written pages, with places marked for screenshots"],
-    ["Version",         "v0.1 — written on the KP0 plan, version 0.4 (as changed on 31 October 2026), and the Orchestrate section plan, version 0.1, section 11"],
+    ["Version",         "v0.1 — working draft of 31 October 2026"],
     ["Date",            "31 October 2026"],
     ["Module persona",  PERSONA_A],
     ["Subtopics",       "Five written pages (5.1 – 5.5); the fifth is the module's Judgement page"],
-    ["Videos",          "None. The steps that need a picture carry a marked place for a screenshot, to be taken by the course team on a real run"],
+    ["Screenshots",     "The steps that need a picture carry a screenshot from a real run of the toy, or a marked place for one still to be taken"],
     ["The toy",         "The mini registry: one goal, enrol a learner, on 60 made-up children over three lists, built from the brief's eight rounds with the orchestrator plugin (17 rounds in the course's own run) (the brief is in the starter folder)"],
     ["Worked examples", "From the registry prototype's record, the full-size project the toy is cut from: the constants refused, the count both ways, the data in known numbers, the consent check, and the note"],
     ["Self-check",      "Four questions drawn from the five pages, in section 2.1"],
@@ -258,7 +224,7 @@ body.push(
   H1("1. Document context"),
 
   H3("1.1 What this document is"),
-  P("This document collects the five pages of Module 5 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items. It is written on the KP0 plan, version 0.4, section 4, and on the Orchestrate section plan, section 11."),
+  P("This document collects the five pages of Module 5 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items."),
   P("Module 5 is the third part of the Orchestrate layer, for the Architect. It assumes Modules 3 and 4: the learner has run one cycle by hand and knows the log, the pages of faults and the handover. It is the one part of the course that needs the orchestrator plugin, which is in preparation; the pages are written against it as it will be released."),
 
   H3("1.2 How Module 5 differs"),
@@ -333,7 +299,6 @@ body.push(H1("3. The pages and the reference"));
 body.push(...renderPage({
   num: "3.1 Subtopic 5.1",
   title: "Set up the project, and the first round",
-  video: "— none; screenshots instead",
   singleMessage: "Set up once, with the constants written before any work, then give one session the orchestrator's role and start with a round small enough to check.",
   tryFirst: {
     title: "The constants that were refused",
@@ -439,7 +404,6 @@ body.push(...renderPage({
 body.push(...renderPage({
   num: "3.2 Subtopic 5.2",
   title: "Decide before you build",
-  video: "— none; screenshots instead",
   singleMessage: "Write down what the prototype must do, the tables it reads and the goal in full, and count each requirement against the goal both ways, before any code is written.",
   tryFirst: {
     title: "The count both ways",
@@ -521,7 +485,6 @@ body.push(...renderPage({
 body.push(...renderPage({
   num: "3.3 Subtopic 5.3",
   title: "Build one goal per round",
-  video: "— none; screenshots instead",
   singleMessage: "Build in small rounds, one at a time, on made-up data in known numbers, and accept nothing that was not seen running.",
   tryFirst: {
     title: "The data in known numbers",
@@ -592,7 +555,6 @@ body.push(...renderPage({
 body.push(...renderPage({
   num: "3.4 Subtopic 5.4",
   title: "Check at the real thing, and write the note",
-  video: "— none; screenshots instead",
   singleMessage: "Check what the prototype does on the running prototype, with a check that has been seen to fail, and write a note that says what it does not show.",
   tryFirst: {
     title: "The consent check that passed",
@@ -667,7 +629,6 @@ body.push(...renderPage({
 body.push(...renderPage({
   num: "3.5 Subtopic 5.5",
   title: "Judgement: what a toy proves",
-  video: "— none; screenshots instead",
   singleMessage: "A prototype is for agreement: it shows that something can work, never that it is ready, and you decide when it has shown enough.",
   tryFirst: {
     title: "What the note may say",
@@ -738,8 +699,8 @@ body.push(
   H3("4.1 Design standard"),
   P("An Architect with the page on one half of the screen and the Claude desktop app on the other must be able to take the toy's round for that page and rule on it. By the end of 5.5 they have the mini registry in a folder with its history, its log of every round, 17 in the course's own run, and its note, and their last ruling."),
 
-  H3("4.2 Screenshots instead of a video"),
-  P("Module 5 has no video. Its pictures are screenshots of one real run of the toy, 31 October 2026, with invented data only, kept in figures/ as M5-01 to M5-30: 21 on page 5.1 (setup, the orchestrator's role, round 1 and its scheduled task with the two permissions the app asked for, and the round the orchestrator added), 3 on page 5.2 (that round's task, and the round not accepted and sent again as version 2), 3 on page 5.3 and 1 on page 5.4 (the finished prototype: a child found, a new child, an entry refused, and a name one letter off; each is the entry beside the screen it gave, taken without a window from a copy of the prototype after a reset), and 2 on page 5.5 (the handover, and the orchestrator's final check). Where the run's record says more than a picture, the page gives it as a table: round 1 in the course's log, and the first rows of the groundwork's settings. Rounds 4, 5, 7 and 8 are given from the run's record, as tables and the note's own words. No place is still marked SCREENSHOT. The run used a local build of the plugin; before publication, check the screens against the released plugin and crop anything that shows other projects."),
+  H3("4.2 Screenshots"),
+  P("Module 5's pictures are screenshots of one real run of the toy, 31 October 2026, with invented data only, kept in figures/ as M5-01 to M5-30: 21 on page 5.1 (setup, the orchestrator's role, round 1 and its scheduled task with the two permissions the app asked for, and the round the orchestrator added), 3 on page 5.2 (that round's task, and the round not accepted and sent again as version 2), 3 on page 5.3 and 1 on page 5.4 (the finished prototype: a child found, a new child, an entry refused, and a name one letter off; each is the entry beside the screen it gave, taken without a window from a copy of the prototype after a reset), and 2 on page 5.5 (the handover, and the orchestrator's final check). Where the run's record says more than a picture, the page gives it as a table: round 1 in the course's log, and the first rows of the groundwork's settings. Rounds 4, 5, 7 and 8 are given from the run's record, as tables and the note's own words. No place is still marked SCREENSHOT. The run used a local build of the plugin; before publication, check the screens against the released plugin and crop anything that shows other projects."),
 
   H3("4.3 The toy and the full-size record"),
   P("The toy is cut from the registry prototype: one goal of its four, 60 children of its 300, the brief's eight rounds of its 23. The brief is in the starter folder (MINI-REGISTRY-BRIEF.md), and the page of faults for building is added there for this module. Every Try it first comes from the full-size record, frozen in examples/plr/, so that each answer key rests on a run that happened. The toy's own figures follow from the brief's numbers, so the answer keys of its tips are known in advance. The toy's own run, which the screenshots and the tables of 5.1 to 5.4 come from, is frozen in examples/mini-registry/, to its end, with rounds 4, 5, 7 and 8 given as tables and the note's own words in 5.2 to 5.4."),
@@ -758,11 +719,11 @@ body.push(
   H3("5.1 A module that needs software installed"),
   P("Module 5 needs the Claude desktop app, Desktop Commander, the orchestrator plugin, Python, git and Node on the learner's computer. Many civil servants cannot install software on a work computer. The by-hand cycle of Modules 3 and 4 remains complete without it. Whether ITU wants Module 5 in the core course or as an optional practical is a question for ITU."),
 
-  H3("5.2 No video"),
-  P("Module 5 departs from the series rule that every page is covered by a video: it uses screenshots instead, because its subject is a sequence of steps on screen."),
+  H3("5.2 No videos"),
+  P("As in Modules 1 to 4, KP0 has no videos for now, which departs from the series rule that every subtopic is a video. Module 5 uses screenshots instead, because its subject is a sequence of steps on screen."),
 
   H3("5.3 Named products"),
-  P("As in Module 4, the Claude desktop app and Desktop Commander are named, because the plugin runs in them. Whether ITU wants products named is a question for ITU."),
+  P("As on page 3.2, the Claude desktop app and Desktop Commander are named, because the plugin runs in them. Whether ITU wants products named is a question for ITU."),
 
   pageBreak()
 );

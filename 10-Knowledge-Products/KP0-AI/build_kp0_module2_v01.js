@@ -1,11 +1,10 @@
 // Build KP0 Module 2 — Script Bundle v0.1
 // Working with AI in Government · Module 2 — Prepare: set up what the AI knows and can do (Strategist register).
-// v0.1 (26 Oct 2026): written on the KP0 plan, version 0.4 (22 October 2026), sections 4 and 7, Module 2 and video V2.
+// v0.1 (26 Oct 2026).
 //   Built from the GEA space's pages "Play 0", "Prompting techniques" (its section on skills) and "The ea-plays kit",
 //   and from the layers note's reading list (context engineering, Skills explained, the Agent Skills standard, Storey
 //   and Fowler on cognitive and intent debt).
-// Same shape as Module 1: four written pages (renderPage), one video with a person on camera (renderVideo), the
-//   speaker's own case left as a marked story beat. Other assistants are named, not mapped (the author's
+// Same shape as Module 1: four written pages (renderPage). Other assistants are named, not mapped (the author's
 //   decision of 26 October 2026: a table of where each setting sits would go out of date within months).
 // Humanizer pass (26 Oct 2026): the page prose rewritten to drop AI writing patterns; facts, prompts and titles unchanged.
 // Review pass (26 Oct 2026, KP0_GitBook_Review_2026-10-26.md): 2.3's install steps corrected (a ZIP, under Customize,
@@ -16,6 +15,7 @@
 // Consistency pass (26 Oct 2026, KP0_GitBook_Review_2026-10-26b_consistency.md): 'connector' throughout, 2.3's title
 //   included; 'section 7', not '§7'; 'this knowledge base' for the site; practice material for 2.2 and 2.3; 2.2 gains
 //   a government source; the jargon of the fixture ('high-signal', 'non-statutory', 'operating-model') replaced.
+// 1 Nov 2026: the video taken out (no time to record it now); the pages carry the whole content, and the calibration item 'No videos' says so.
 const fs = require('fs');
 const path = require('path');
 const {
@@ -31,10 +31,6 @@ const COLOR_ACCENT   = "2E75B6";
 const COLOR_GREY_TXT = "595959";
 const COLOR_GREY_BG  = "F2F2F2";
 const COLOR_BORDER   = "BFBFBF";
-const COLOR_VISUAL_BG    = "EAF1F8";  // visual / production cue
-const COLOR_VISUAL_BD    = "2E75B6";
-const COLOR_STORY_BG     = "FCE4EC";  // the speaker's own story, left free
-const COLOR_STORY_BD     = "AD1457";
 const COLOR_AI_BG        = "EEF7EE";  // AI usage tip
 const COLOR_AI_BD        = "2E7D32";
 const COLOR_PULL_BG      = "FFF8E1";  // single-message highlight
@@ -44,7 +40,7 @@ const border = { style: BorderStyle.SINGLE, size: 4, color: COLOR_BORDER };
 const cellBorders = { top: border, bottom: border, left: border, right: border };
 const cellMargin  = { top: 90, bottom: 90, left: 130, right: 130 };
 
-// Persona for KP0 Module 2 (Strategist throughout, as the plan's module table sets it).
+// Persona for KP0 Module 2 (Strategist throughout).
 const PERSONA_S = "S (Strategist) — the public servant who commissions and accepts AI-assisted work and answers for it: a director, a head of unit, a technical secretary briefing the principal. No programming assumed";
 
 function P(text, opts = {}) {
@@ -110,8 +106,6 @@ function boxed(label, text, bg, bd, italic = true) {
         ] })] })
     ] })] });
 }
-function visualCueBox(text) { return boxed("VISUAL CUE — ", text, COLOR_VISUAL_BG, COLOR_VISUAL_BD); }
-function storyBox(text) { return boxed("THE SPEAKER'S STORY — ", text, COLOR_STORY_BG, COLOR_STORY_BD); }
 function singleMessageBox(text) { return boxed("Single message — ", text, COLOR_PULL_BG, COLOR_PULL_BD); }
 function aiPromptBox(title, problem, prompt, ioNote, safeguard) {
   const W = 9700;
@@ -142,7 +136,7 @@ function content(items) {
 }
 
 // ---------- helper: render a subtopic page ----------
-// KP0 subtopics are written pages (plan section 4). The tip's io line is split by the GitBook renderer into
+// KP0 subtopics are written pages. The tip's io line is split by the GitBook renderer into
 // Bring and Get, and the safeguard's first sentence becomes Watch for, as in KP4.
 // Optional parts (review of 26 Oct 2026): cite, a phrase in the prose and the source it names, linked on the
 // GitBook page (the Word document keeps plain text); where, the help links for the setting in each assistant; example.run, the
@@ -150,7 +144,7 @@ function content(items) {
 function renderPage({ num, title, singleMessage, concept, inTool, where, example, aiTip, sources, persona = PERSONA_S }) {
   const out = [];
   out.push(H2(num + " — " + title));
-  out.push(specTable([["Persona", persona], ["Form", "Written page; covered by the module's video, V2"]]));
+  out.push(specTable([["Persona", persona], ["Form", "Written page"]]));
   out.push(singleMessageBox(singleMessage));
   out.push(H3("The concept"));
   out.push(...content(concept));
@@ -179,33 +173,6 @@ function renderPage({ num, title, singleMessage, concept, inTool, where, example
   return out;
 }
 
-// ---------- helper: render the module's video ----------
-// One person on camera with slides cut in (plan section 7). A story beat is the place the speaker tells their own
-// case; the script says what it must show and how long it may run, and leaves the telling to the speaker.
-function renderVideo({ id, title, covers, runtime, words, speaker, singleMessage, scriptBeats, slideSpecRows, metadataRows }) {
-  const out = [];
-  out.push(H2(id + " — " + title));
-  out.push(specTable([
-    ["Covers pages",   covers],
-    ["Target runtime", runtime + " (≈" + words + " spoken words, the story beat included)"],
-    ["Speaker",        speaker + " (a suggestion; plan decision 4)"],
-    ["Form",           "A person on camera, with text-only slides cut in for a list or a figure"]
-  ]));
-  out.push(singleMessageBox(singleMessage));
-  out.push(H3("Script (on camera, slides cut in)"));
-  for (const beat of scriptBeats) {
-    if (beat.cue) out.push(visualCueBox(beat.cue));
-    if (beat.story) out.push(storyBox(beat.story));
-    if (beat.text) out.push(P(beat.text));
-  }
-  out.push(H3("Cut-in slide specification"));
-  out.push(genericTable([900, 3400, 5400], ["Slide", "Element (text-only)", "Notes"], slideSpecRows));
-  out.push(H3("Metadata"));
-  out.push(specTable(metadataRows));
-  out.push(pageBreak());
-  return out;
-}
-
 // ============================================================================
 //                                  BODY
 // ============================================================================
@@ -223,12 +190,11 @@ body.push(
     children: [new TextRun({ text: "Module 2 — Prepare: set up what the AI knows and can do", font: ARIAL, size: 24, italics: true, color: COLOR_ACCENT })] }),
   spacer(600),
   specTable([
-    ["Document",        "Script bundle for Module 2 of KP0: four written pages and one video"],
-    ["Version",         "v0.1 — written on the KP0 plan, version 0.4, of 22 October 2026"],
+    ["Document",        "Script bundle for Module 2 of KP0: four written pages"],
+    ["Version",         "v0.1 — working draft of 26 October 2026"],
     ["Date",            "26 October 2026"],
     ["Module persona",  PERSONA_S],
     ["Subtopics",       "Four written pages (2.1 – 2.4); the fourth is the module's Judgement page"],
-    ["Video",           "One, V2 'Context once, then skills', about four minutes, a person on camera, covering pages 2.1 to 2.4"],
     ["Worked examples", "One for each page, set in Progressa: Progressa's country context pack trimmed for one task, MoEYS's project brief, a skill installed and the course's knowledge base connected, and a project setup audited"],
     ["Self-check",      "Five questions drawn from the four pages, in section 2.1"],
     ["Prepared by",     "FiscalAdmin OÜ"]
@@ -243,11 +209,11 @@ body.push(
   H1("1. Document context"),
 
   H3("1.1 What this document is"),
-  P("This document collects the four pages and the one video script of Module 2 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items. It is the v0.1 working draft, written on the KP0 plan, version 0.4, sections 4 and 7."),
+  P("This document collects the four pages of Module 2 of Knowledge Product 0 (Working with AI in Government), with the module's self-check, production notes and calibration items. It is the v0.1 working draft."),
   P("Module 2 is the Prepare layer. Where Module 1 is about what a person types into one chat, Module 2 is about what the assistant already knows and can do before the person types anything. The principle is the one context engineering names: give the assistant the smallest set of information that makes the result you want most likely."),
 
   H3("1.2 How KP0 differs from KP1 to KP4"),
-  P("As in Module 1, every subtopic is a written page, and one video with a person on camera covers the module. The three departures from the series rules are calibration items, in section 5."),
+  P("As in Module 1, every subtopic is a written page, and the pages carry the whole content."),
 
   H3("1.3 The names used for Progressa"),
   genericTable([2200, 7500], ["Name", "What it is, and its part in Module 2"], [
@@ -263,7 +229,7 @@ body.push(
   P("Module 2 carries the first argument of the series in small: a context pack written once and re-used by every later task is the same idea as a building block planned once and re-used by every programme, and 2.1 says so in one sentence. The second argument, a shared language between the business side and IT, is not argued in Module 2."),
 
   H3("1.5 How to read this document"),
-  P("Section 2 gives Module 2 at a glance, with the module's self-check. Section 3 holds the four pages, and the script of the video. Section 4 collects the production notes, section 5 the open calibration items, and section 6 the aggregate external-link list."),
+  P("Section 2 gives Module 2 at a glance, with the module's self-check. Section 3 holds the four pages. Section 4 collects the production notes, section 5 the open calibration items, and section 6 the aggregate external-link list."),
 
   pageBreak()
 );
@@ -271,7 +237,7 @@ body.push(
 // ---------- MODULE AT A GLANCE ----------
 body.push(
   H1("2. Module 2 at a glance"),
-  P("Four written pages and one video of about four minutes. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two and a half hours, most of it spent building the context pack."),
+  P("Four written pages. One Strategist persona throughout. A learner who reads the four pages and runs their four tips needs about two and a half hours, most of it spent building the context pack."),
   genericTable([700, 2700, 4900, 1400], ["#", "Title", "Single message", "Form"], [
     ["2.1", "Build the context once",
       "Write down once, with dates and sources, what every task needs to know about your country and your unit, and give each task only the part it needs.", "Page"],
@@ -280,9 +246,7 @@ body.push(
     ["2.3", "Skills and connectors",
       "A skill packages a procedure you repeat; a connector lets the assistant reach a source; choose the lightest setup that does the job.", "Page"],
     ["2.4", "Judgement: what never goes into the setup",
-      "A setup is used by every later chat, so nothing confidential goes into it, every file carries a date, and the intent is written down.", "Page"],
-    ["V2", "Context once, then skills",
-      "Write the context once and the procedure once; then every chat starts from them.", "Video, ~4 min"]
+      "A setup is used by every later chat, so nothing confidential goes into it, every file carries a date, and the intent is written down.", "Page"]
   ]),
 
   H3("2.1 The module's self-check"),
@@ -316,9 +280,9 @@ body.push(
 );
 
 // ============================================================================
-// 3. THE PAGES, THE VIDEO AND THE REFERENCE
+// 3. THE PAGES AND THE REFERENCE
 // ============================================================================
-body.push(H1("3. The pages, the video and the reference"));
+body.push(H1("3. The pages and the reference"));
 
 // ---------- 2.1 ----------
 body.push(...renderPage({
@@ -619,48 +583,6 @@ body.push(...renderPage({
   ]
 }));
 
-// ---------- V2 ----------
-body.push(...renderVideo({
-  id: "3.5 Video V2",
-  title: "Context once, then skills",
-  covers: "2.1 to 2.4",
-  runtime: "~4 min",
-  words: 420,
-  speaker: "Arne",
-  singleMessage: "Write the context once and the procedure once; then every chat starts from them.",
-  scriptBeats: [
-    { cue: "Opening: the speaker on camera. The title is in the lower third: 'Context once, then skills'." },
-    { text: "For the first weeks of writing these courses with an AI assistant, every chat began the same way. We pasted the country, the ministry, the rules. Every chat began slightly differently, and so every answer did too." },
-    { story: "The speaker's own case, 60 to 90 seconds, about 150 to 200 words. It must show three things: (1) building the country context pack once, for The Gambia or for Progressa, and what changed in every AI usage tip run after it: answers that could be compared, sources that had already been checked; (2) a step the test learners skipped, opening the sources, and why the ea-plays skills were written to make that step hard to skip; (3) one thing the speaker would set up differently now. Give the date. Name posts, not persons. If the speaker cannot name a case with a date, this video becomes a page (plan decision 4)." },
-    { cue: "Slide cut in — Title: 'Four setups, lightest first'. Body, four text rows: 'Once: a prompt.' 'Always needed: a project.' 'Repeated the same way: a skill.' 'A source that changes: a connector.'" },
-    { text: "Here is the rule we work by now. A task you do once is a prompt. Context your work always needs goes into a project, with a brief: who we are, what we produce, the rules, and the files, each with its date. A procedure you repeat the same way becomes a skill. And a source that changes is reached through a connector, so the assistant reads it as it is today. Step up only when the lighter setup is no longer enough." },
-    { cue: "Slide cut in — Title: 'Less is better'. Body, two text rows: 'Give each task the smallest set of information it needs.' 'A pack of twenty pages buries the one section a task uses.'" },
-    { text: "And give each task only what it needs. We learned this the slow way. Pasting the whole context pack into every task felt thorough. It made the answers worse, because the one section that mattered was buried under nineteen that did not." },
-    { cue: "Back to the speaker on camera." },
-    { text: "One warning. Everything in a setup is read by every chat that uses it, and often by every colleague it is shared with. So no records of real people, ever. No unpublished papers. Every file with its date. And write down why the work is done the way it is, because the person who set it up will not always be there to explain." },
-    { cue: "Slide cut in — Title: 'In one sentence'. Body, large text (Arial Bold 28pt): 'Write the context once and the procedure once; then every chat starts from them.'" },
-    { text: "Write the context once, and the procedure once. Then every chat starts from them." }
-  ],
-  slideSpecRows: [
-    ["1", "Four text rows: the four setups, lightest first.",
-      "Cut in over the voice-over after the story. ITU template: title Arial Bold 28pt, body Arial 18pt, background #E5F5FB. The same wording as page 2.3."],
-    ["2", "Two text rows: the smallest set of information; the buried section.",
-      "Text-only."],
-    ["3", "Single-sentence summary slide. One large text block (Arial Bold 28pt).",
-      "The single message, word for word. No practice box and no sources slide: the pages carry both."]
-  ],
-  metadataRows: [
-    ["Working title",           "Context once, then skills"],
-    ["YouTube-optimised title", "Set up your AI assistant once: context packs, projects, skills and connectors"],
-    ["Description (60 words)",  "Most teams paste the same context into every AI chat, a little differently each time. A practitioner tells how writing the context once changed every answer after it, why skills were built for the step people skip, and the rule for choosing a prompt, a project, a skill or a connector. For public servants who use AI on official work."],
-    ["Tags",                    "AI in government, context engineering, AI assistant setup, projects, skills, MCP, public sector, AI literacy"],
-    ["Playlist (YouTube)",      "Working with AI in Government"],
-    ["ToR §4 coverage",         "§4.3 (AI integration: setting an assistant up for the AI usage tips of the series)"],
-    ["PAERA citations",         "None. This course is about working with an AI assistant, not about the reference architecture."],
-    ["External-link list",      "The four pages of Module 2, which carry the sources: Effective context engineering for AI agents (Anthropic, 2025); Skills explained (Anthropic, 2025)."]
-  ]
-}));
-
 // ---------- PRODUCTION NOTES ----------
 body.push(
   H1("4. Production notes"),
@@ -668,13 +590,10 @@ body.push(
   H3("4.1 Design standard"),
   P("As in Module 1: a public servant with the page on one half of the screen and an assistant on the other must be able to run the page's AI usage tip on their own work and judge its result. For Module 2, the result is a setup: a trimmed context pack, a project brief, a decision on which setup each task needs, or an audit."),
 
-  H3("4.2 The video"),
-  P("V2 is one person on camera, with three text-only slides cut in on the ITU template: title Arial Bold 28pt, body Arial 18pt, background #E5F5FB. It is recorded by the camera route of the series. The story beat is the speaker's; the four setups and the single message are said as written."),
-
-  H3("4.3 Voice and tone"),
+  H3("4.2 Voice and tone"),
   P("Direct address. Plain language at about an eighth-grade English level. Two technical names cannot be avoided, because learners will meet them in their assistant's settings: a skill and a connector, with MCP named once. Each is explained in plain words where it first appears."),
 
-  H3("4.4 The kit"),
+  H3("4.3 The kit"),
   P("Page 2.3 names the optional ea-plays kit and shows one of its skills. The tips of every page run without it. The page says how to install one skill in the Claude app, as a ZIP of the skill's folder under Customize, Skills (Claude help, 'Use skills in Claude', checked 26 October 2026); the kit's own page in the GEA space carries the other routes."),
 
   pageBreak()
@@ -685,16 +604,13 @@ body.push(
   H1("5. Open calibration items"),
   P("The drafting raised the items below. They are forwarded for discussion with ITU."),
 
-  H3("5.1 Three departures from the series rules"),
-  P("As in Module 1: a person on screen in V2; four written pages covered by one video; on-camera cues in the script. The plan, section 7, gives the reason."),
+  H3("5.1 No videos"),
+  P("KP0 has no videos for now, which departs from the series rule that every subtopic is a video. Every page is written and carries the whole content, so nothing taught is lost; the videos were taken out on 1 November 2026 because there is no time to record them in this round. A video can later be added over a run of pages without changing a page."),
 
-  H3("5.2 The speaker's case"),
-  P("V2's story beat is left to the speaker, who is asked to name a real case, with a date, before the cut is decided (plan decision 4)."),
-
-  H3("5.3 A connector to the course"),
+  H3("5.2 A connector to the course"),
   P("Page 2.3 tells learners to connect this knowledge base through the read-only connector GitBook publishes for every site. That connector works only while the site keeps its page actions turned on. Whether ITU wants the courses offered this way is a question for ITU."),
 
-  H3("5.4 Vendor features named"),
+  H3("5.3 Vendor features named"),
   P("Module 2 names features of commercial products (projects, skills, connectors, memory) because learners will meet them in their assistant's settings. The concept of each page is tool-neutral, and other assistants are named where a setting is shown. Whether ITU wants the vendor names reduced is a question for ITU."),
 
   pageBreak()
@@ -703,13 +619,12 @@ body.push(
 // ---------- ANNEX ----------
 body.push(
   H1("6. Annex — aggregate external-link list"),
-  P("Compiled across the four pages, and the video. Every source is public."),
+  P("Compiled across the four pages. Every source is public."),
   genericTable([1100, 8600], ["Page", "Sources referenced, with addresses"], [
     ["2.1", "Effective context engineering for AI agents (Anthropic Engineering, September 2025), https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents. Lost in the Middle: How Language Models Use Long Contexts (Liu et al., TACL, 2024), https://aclanthology.org/2024.tacl-1.9/."],
     ["2.2", "Skills explained (Anthropic, 2025), https://claude.com/blog/skills-explained. Effective context engineering for AI agents, as above. Microsoft 365 Copilot Experiment: Cross-Government Findings Report, as in 2.3."],
     ["2.3", "Skills explained, as above. Use skills in Claude (Anthropic help), https://support.claude.com/en/articles/12512180-use-skills-in-claude. Agent Skills (open standard), https://agentskills.io. Model Context Protocol (open protocol), https://modelcontextprotocol.io. MCP servers for published docs (GitBook), https://gitbook.com/docs/ai-for-your-readers/mcp-servers-for-published-docs. LLM01:2025 Prompt Injection (OWASP, 2025), https://genai.owasp.org/llmrisk/llm01-prompt-injection/. Microsoft 365 Copilot Experiment: Cross-Government Findings Report (Government Digital Service, 2 June 2025), https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report. The ea-plays kit, https://github.com/alaponin/ea-plays-kit."],
-    ["2.4", "How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/."],
-    ["V2", "None of its own; the description points to the pages."]
+    ["2.4", "How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/."]
   ]),
   spacer(120),
   P("All references are publicly accessible and verifiable.")
