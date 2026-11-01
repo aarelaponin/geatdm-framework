@@ -18,7 +18,7 @@ Modules 1 and 2 taught one good chat and the setup behind it. In Module 3 you ta
 | [3.3](3-3.md) | The report and the review | The work chat reports with no verdict; a second chat that never saw it checks the report by its own route and says accepted or not accepted. |
 | [3.4](3-4.md) | Judgement: you decide | The review gives a verdict; the decision is yours, and four decisions are always yours: what is delivered, what is cut, what is spent and what is said outside. |
 
-**Self-check.** [Four questions](self-check.md), with the answer the module gives to each.
+**Self-check.** [Five questions](self-check.md), with the answer the module gives to each.
 
 ## Go further
 

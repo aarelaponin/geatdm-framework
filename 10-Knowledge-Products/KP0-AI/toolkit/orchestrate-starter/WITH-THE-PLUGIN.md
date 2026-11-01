@@ -2,13 +2,22 @@
 
 The cycle in this folder runs by hand, in any assistant. The orchestrator plugin does its bookkeeping for you: it sets up the project's folders and its first documents, starts each work chat and its review chat, writes the log, and answers "where does it stand?" from it. The method does not change: you still write what the work serves, read every review and rule on it.
 
-*The learner edition of the plugin is in preparation. What to install, and how, will be in the plugin's own instructions, published with it. This page is what you do once it is installed.*
+{% hint style="warning" %}
+**The plugin is not released yet.** The learner edition is in preparation, and its name and version will change before and after it is released. What to install, and how, will be in the plugin's own instructions, published with it. Until then, read this page and Module 5 alongside the record, and run the cycle by hand. The pictures in Module 5 are from the author's own pre-release setup, so the plugin's name, its skills and some screens will look different on yours.
+{% endhint %}
+
+This page is what you do once it is installed.
 
 ## Before you start
 
-- The Claude desktop app, with Desktop Commander added. The plugin runs every command through Desktop Commander, because the app's own shell cannot reach your folders.
-- Python and git on your computer. The plugin checks for both before it asks you anything, and says what to install if one is missing.
-- One cycle done by hand, from Module 3. The plugin is easier to trust when you know what it is doing for you.
+Unlike the rest of the course, the plugin needs a few things installed on your computer:
+
+- **The Claude desktop app, with Desktop Commander added.** The plugin runs every command through Desktop Commander, because the app's own shell cannot reach your folders. Desktop Commander has to be installed; on a Mac it also asks for permission to run Node, the program it runs on.
+- **Python.** Most Macs already have it. The plugin checks before it asks you anything, and says what to install if it is missing.
+- **git, if you want it.** git keeps the project's history. It is optional: without it, tell the setup session not to commit, and the orchestrator keeps the log's rows by hand in the record of what is running, as page 5.1 shows.
+- **One cycle done by hand, from Module 3.** The plugin is easier to trust when you know what it is doing for you.
+
+**The plugin runs commands, and its scheduled tasks run them without asking you each time.** That is the difference from working by hand, where you turn down every command you did not ask for. So, as always: before you allow anything, ask Claude what you are agreeing to, in plain words, and allow it only for the demo's folder. Check your organisation's rules before installing anything on a work computer.
 
 ## 1. Have your answers ready
 
@@ -32,7 +41,7 @@ Start a new session and ask it to start a new project. It checks your computer, 
 
 - the three places for instructions, reports and reviews;
 - every folder on the map, each with a note saying what it holds;
-- the project's constants: one document of what does not change, with no dates in it;
+- the project's constants: one document of what does not change, with no dates in it except when each deliverable is due;
 - the record of what is running;
 - the history, its first save, and the backup if you chose one.
 

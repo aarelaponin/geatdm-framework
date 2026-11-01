@@ -7,7 +7,7 @@ icon: plug
 
 **Written for:** the one who runs AI-assisted work day to day: the head of an ICT unit, a project lead, an analyst. No programming is assumed.
 
-In Modules 3 and 4 you ran the cycle by hand. In Module 5 you run it with the orchestrator plugin, on a small project from start to finish: a toy prototype of a learner registry, built round by round, from the first document to a note for a senior reader. You do not write any code. You write what each round serves, read every instruction before it is issued and every review before you rule, and decide when it is done. Each page opens with a fault to find in the record of the full-size registry prototype we built in October 2026, then shows the step on the toy. The orchestrator plugin is in preparation, and its name and version will change; the pictures are from the author's pre-release setup. Until it is released, read the pages alongside the record, and run the cycle by hand as Modules 3 and 4 teach. Unlike the rest of the course, the plugin needs things installed and runs commands: [With the plugin](../starter-folder/with-the-plugin.md) says what, and what you agree to.
+In Modules 3 and 4 you ran the cycle by hand. In Module 5 you run it with the orchestrator plugin, on a small project from start to finish: a toy prototype of a learner registry, built round by round, from the first document to a note for a senior reader. You do not write any code. You write what each round serves, read every instruction before it is issued and every review before you rule, and decide when it is done. Each page opens with a fault to find in the record of the full-size registry prototype we built in October 2026, then shows the step on the toy. The orchestrator plugin is in preparation, and its name and version will change; the pictures are from the author's pre-release setup. Until it is released, read the pages alongside the record, and run the cycle by hand as Modules 3 and 4 teach. Unlike the rest of the course, the plugin needs things installed and runs commands: the page [With the plugin](../starter-folder/with-the-plugin.md) says what, and what you agree to.
 
 ## Pages
 
@@ -19,7 +19,7 @@ In Modules 3 and 4 you ran the cycle by hand. In Module 5 you run it with the or
 | [5.4](5-4.md) | Check at the real thing, and write the note | Check what the prototype does on the running prototype, with a check that has been seen to fail, and write a note that says what it does not show. |
 | [5.5](5-5.md) | Judgement: what a toy proves | A prototype is for agreement: it shows that something can work, never that it is ready, and you decide when it has shown enough. |
 
-**Self-check.** [Four questions](self-check.md), with the answer the module gives to each.
+**Self-check.** [Five questions](self-check.md), with the answer the module gives to each.
 
 ## Go further
 

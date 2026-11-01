@@ -62,13 +62,13 @@ Four written pages and one video of about four minutes. One Strategist persona t
 
 ### 2.1 The module's self-check
 
-Five questions, drawn from the four pages. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means the module's point has landed; below four, read again the page named beside each question you missed. The threshold is a proposal, to be tested with the first learners.
+Five questions, drawn from the four pages. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means the module's point has landed; below four, read again the page named beside each question you missed.
 
 | # | Question | Model answer | Drawn from |
 | --- | --- | --- | --- |
 | 1 | You have a country context pack of seven sections, about twenty pages. A tip asks only for your sector's laws. What do you paste? (a) The whole pack: more context is always better. (b) The section on laws and policy, with its date. (c) Nothing: the assistant can search for the laws. (d) A one-line summary of the pack. | (b). Give each task the smallest set of information it needs. The whole pack buries the laws among nineteen pages the task does not use; a search gives undated, unchecked results; a one-line summary loses the detail. | 2.1 Build the context once |
 | 2 | Your unit pastes the same four paragraphs into every chat: who the unit is, what it produces, 'posts, not names', and 'list open questions at the end'. What should it do instead, and what must the result carry? | Put them once into a project's standing instructions, with the files the unit's work uses. The brief should carry who the unit is, what it produces and in what format, the standing rules, what each file is and its date, what never goes in, and who reviews it and when. | 2.2 Projects and standing instructions |
-| 3 | Your unit checks every draft against PAERA, by section, ten times a month, always the same way. Which setup fits best? (a) A new prompt each time. (b) A project. (c) A skill that packages the check, with a connector to the published source. (d) None: do it by hand. | (c). A procedure that repeats the same way is what a skill packages, and a check against a published source needs a way to reach it. A project carries standing context, not a procedure; a fresh prompt repeats work and drifts. | 2.3 Skills and connectors |
+| 3 | Your unit checks every draft against PAERA, by section, ten times a month, always the same way. Which setup fits best? (a) A new prompt each time. (b) A project. (c) A skill that packages the check and looks each section up in the published source. (d) None: do it by hand. | (c). A procedure that repeats the same way is what a skill packages, and a check against a published source must look each section up there, not trust memory. A project carries standing context, not a procedure; a fresh prompt repeats work and drifts. | 2.3 Skills and connectors |
 | 4 | A colleague wants to add last year's roles register, which names the office-holders, and the draft cabinet paper on the Registry to the unit's project 'so the assistant knows everything'. What do you say? | No to both. The project is used by every chat in it and by everyone it is shared with. The cabinet paper is unpublished; names belong out of every setup (posts, not names). The roles register can go in by post, with its date, once it has been checked. | 2.4 Judgement: what never goes into the setup |
 | 5 | A colleague found a skill on a public website that 'writes ministerial briefings in your style', and wants to install it for the whole unit. What do you check first, and why? | Who wrote it, and what every file in it says: read them before installing. Text inside a skill, or inside any source the assistant reads, can carry instructions the assistant follows, such as sending your material elsewhere. Install only from a source you trust, and try it first on invented material. | 2.3 Skills and connectors |
 
@@ -107,7 +107,7 @@ A context pack goes stale. A strategy is approved, a body is renamed, a programm
 
 Shown in Claude, and the same in any assistant that can search the web.
 
-Building it. The research prompts of Play 0 build the country context pack, called A0 in the other courses' workbooks, section by section: the digital landscape, the programmes, how the ministry works, the roles, the country's characteristics, the public bodies and systems, and the laws. Run them with web search on, one per chat, and ask for text in the chat, not a file.
+Building it. The research prompts of Play 0 build the country context pack section by section: digital landscape, programmes, the operating-model question, roles register, characteristics, initiatives, and legal and policy. Run them with web search on, one per chat, and ask for text in the chat, not a file.
 
 Keeping it. Copy each answer into one document of your own, under its section heading, with the date you ran it. Open the sources on anything you will carry into a briefing, and mark any claim you could not check. Keep posts, not names: take out the names of office-holders before the pack is shared.
 
@@ -119,9 +119,9 @@ Using it. Paste the section a tip names, or attach the pack as a file and say wh
 
 Progressa's context pack has seven sections. They are on the Progressa page of this knowledge base, ready to paste. The planning unit of MoEYS had a task that needed only one of them: draft the legal-basis paragraph of a data-sharing request to the examinations authority.
 
-The first run pasted the whole pack. The paragraph that came back talked about connectivity, donors and the Digital Transformation Roadmap, and named the Data Protection Act only in passing. The second run pasted only section 7, the laws and policy, with its date. The paragraph named the two obligations of the Data Protection Act 2023 for a minor's data, a legal basis and parental consent for any use the law does not require, and noted that Progressa has no access-to-information act.
+The first run pasted the whole pack. The paragraph that came back talked about connectivity, donors and the Digital Transformation Roadmap, and named the Data Protection Act only in passing. The second run pasted only section 7, legal and policy, with its date. The paragraph named the two obligations of the Data Protection Act 2023 for a minor's data, a legal basis and parental consent for any use the law does not require, and noted that Progressa has no access-to-information act.
 
-The AI usage tip under Your turn does the trimming. Run on this task, it kept section 7 and one sentence of section 3, the question the ministry faces, which restates the consent rule, and it flagged one thing as stale: section 7 does not say whether the Data Protection Commission has issued guidance since the pack was dated.
+The AI usage tip under Your turn does the trimming. Run on this task, it kept section 7 and one sentence of section 3, the operating-model question, which restates the consent rule, and it flagged one thing as stale: section 7 does not say whether the Data Protection Commission has issued guidance since the pack was dated.
 
 **The prompt:**
 
@@ -134,7 +134,7 @@ Below is my context pack, dated 12 October 2026, in sections [the seven sections
 | Section | Needed | Why |
 | --- | --- | --- |
 | Section 7, legal and policy | Part: the Data Protection Act row and the Civil Registration Act row | The legal basis, consent, and how a child's identity is anchored |
-| Section 3, the question the ministry faces | One sentence: 'The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require.' | Restates the consent rule the paragraph rests on |
+| Section 3, operating-model question | One sentence: 'The Data Protection Act 2023 requires a legal basis for sharing minors' data and parental consent for any use the law does not require.' | Restates the consent rule the paragraph rests on |
 | Sections 1, 2, 4, 5 and 6 | None | Connectivity, donors and programmes do not bear on the legal basis |
 
 May be out of date: section 7 does not say whether the Data Protection Commission has issued guidance since 12 October 2026. Not in the pack: the examinations authority's own legal mandate to hold learner data.
@@ -175,7 +175,6 @@ Not in the pack: what Linkup's onboarding procedure asks of a new member, and wh
 | --- | --- | --- |
 | Effective context engineering for AI agents | Anthropic Engineering · September 2025 | In its own words, 'the smallest set of high-signal tokens'; why more context can make the result worse (vendor source) |
 | Lost in the Middle: How Language Models Use Long Contexts | Liu et al., Transactions of the ACL · 2024 | Information in the middle of a long context is used less well |
-| Context engineering, Technology Radar | Thoughtworks · April 2026 | Context engineering moved to Adopt, in Volume 34 |
 
 ## 3.2 Subtopic 2.2 — Projects and standing instructions
 
@@ -196,7 +195,7 @@ Write the standing instructions as a project brief, the way you would brief a ne
 
 A brief makes every chat in the project start from the same place, so answers can be compared. It also writes down the unit's intent, the goals and limits that otherwise live only in people's heads. When the person who set the project up moves on, the brief stays.
 
-Teams that use assistants to write software keep the same kind of brief in a file the assistant reads first, such as one named CLAUDE.md or AGENTS.md. It works the same way as a project brief.
+Teams that use assistants to write software keep the same kind of brief in a plain text file in their project, which the assistant reads first. It works the same way as a project brief.
 
 ### In the tool
 
@@ -260,7 +259,7 @@ Who we are: the architecture unit of PDGA; the project is owned by the senior ar
 
 What this project is for: notes on ministries' requests to join Linkup, for the Director-General. What we produce: two-page notes in plain English, with a table of the data exchanged and with whom.
 
-Standing rules: the four the prompt always adds. The files: the four documents named, each with a blank date and approver. A good brief marks the Roadmap as a draft awaiting cabinet, or asks whether it is.
+Standing rules: the four the prompt always adds. The files: the four documents named, each with a blank date and approver. The description does not say whether the Roadmap is final, so a good brief does not mark it either way; at most it asks, under 'to be decided'.
 
 To be decided: what never goes in, and who reviews the brief and when. The description says nothing on either, so the brief should not invent them.
 
@@ -299,7 +298,7 @@ This knowledge base already offers skills. The optional ea-plays kit packages th
 
 Shown in Claude.
 
-Installing one skill. Download the ea-plays kit from its public repository, and take the folder of the one skill you want; each skill folder is complete on its own. Read its files first, and try it on invented material, such as the Progressa practice material on these pages, before your own. Make a ZIP of that folder, keeping the folder's name, which must match the skill's name. Then, in Claude, open Customize, then Skills, choose +, and upload the ZIP. Open the skill's main file and read its header: the name and the one-paragraph description are what the assistant reads to decide when to use it. If the description does not match how your unit would ask, the skill will not be used when you expect.
+Installing one skill. Download the ea-plays kit from its public repository, and take the folder of the one skill you want; each skill folder is complete on its own. Read its files first, and try it on invented material, such as the Progressa practice material on these pages, before your own. Make a ZIP of that folder, keeping the folder's name, which must match the skill's name. Then, in Claude, open Customize, then Skills, choose +, then Create skill, then Upload a skill, and choose the ZIP. Skills need code execution switched on: on a personal plan, under Settings, Capabilities; in an organisation's account, ask the administrator, who sets it for everyone. Open the skill's main file and read its header: the name and the one-paragraph description are what the assistant reads to decide when to use it. If the description does not match how your unit would ask, the skill will not be used when you expect.
 
 Connecting this knowledge base. This knowledge base is published on GitBook, and a published GitBook site offers a connector of its own: the site's address followed by /~gitbook/mcp. Add it in the settings as a custom connector. The assistant can then search and read this knowledge base's pages as they are published today. The connector can only read.
 
@@ -311,7 +310,7 @@ Turning them off. Skills and connectors can be switched off in the settings, or 
 
 The architecture unit of PDGA checks its papers against PAERA, GovStack's reference architecture for public administration, by section, ten or more times a month. Each analyst did it differently, and one paper cited a section that PAERA does not have.
 
-The unit installed one skill of the ea-plays kit, the PAERA reference check, and connected this knowledge base. The next paper, a note on Progressa's data-exchange gaps, came back with the header the kit puts on every output: nine sources, seven of them primary; two lines unverified. The two lines named PAERA sections. The skill had looked each one up at its public address; one existed and one did not, and the header said which.
+The unit installed one skill of the ea-plays kit, the PAERA reference check, and connected this knowledge base. The next paper, a note on Progressa's data-exchange gaps, came back with the header the kit puts on every output: nine sources, seven of them primary; one line unverified. Two lines named PAERA sections. The skill had looked each one up at its public address; one existed and one did not, and the header marked the one that did not.
 
 The unit kept the project for its standing context, the skill for the check, and the connector for this knowledge base. A one-off question about a meeting stayed a prompt.
 
@@ -341,7 +340,7 @@ The tasks of PDGA's architecture unit with an assistant:
 
 | Task | Setup | Why |
 | --- | --- | --- |
-| 1, 2 | Skill | The same procedure, repeated; 2 also needs a connector to PAERA's published text |
+| 1, 2 | Skill | The same procedure, repeated; for 2, the skill looks each section up in PAERA's published text |
 | 3 | Project | Context every chat needs |
 | 4, 7, 8 | Prompt | Done once or rarely; 8 is read by a fluent colleague before use |
 | 5 | Connector | A source that changes, read as it is today; only once its owner agrees |
@@ -378,7 +377,7 @@ Nothing confidential goes into a setup: no records of citizens or learners, not 
 
 Context goes stale. A file added in March is still read in October, and the assistant cannot tell that it has been replaced. Date every file, replace rather than add, and review the setup on a date written in the brief.
 
-Write the intent down. The researcher Margaret-Anne Storey names three kinds of debt that work with assistants piles up. Technical debt lives in the code. Cognitive debt lives in people: work accepted that nobody in the team can explain. Intent debt lives in the documents: the goals and limits that were never written down, so neither the next colleague nor the assistant can follow them. A project brief that says what the unit is for, what it must never do and why, pays off intent debt. Without one, a setup runs on whatever the person who made it remembered.
+Write the intent down. The researcher Margaret-Anne Storey, in an article Martin Fowler summarises, names three kinds of debt that work with assistants piles up. Technical debt lives in the code. Cognitive debt lives in people: work accepted that nobody in the team can explain. Intent debt lives in the documents: the goals and limits that were never written down, so neither the next colleague nor the assistant can follow them. A project brief that says what the unit is for, what it must never do and why, pays off intent debt. Without one, a setup runs on whatever the person who made it remembered.
 
 ### In the tool
 
@@ -451,9 +450,7 @@ If your run marked the meeting notes 'keep', it judged a file it could not see: 
 
 | Source | Publisher · date | Used for |
 | --- | --- | --- |
-| How generative and agentic AI shift concern from technical debt to cognitive debt | Margaret-Anne Storey · 9 February 2026 | Technical, cognitive and intent debt |
-| Fragments: April 2 | Martin Fowler · 2 April 2026 | The three debts summarised; cognitive offloading and cognitive surrender |
-| AI Playbook for the UK Government | GOV.UK · 10 February 2025 | Using the tools lawfully and responsibly; protecting data |
+| How generative and agentic AI shift concern from technical debt to cognitive debt | Margaret-Anne Storey · 9 February 2026 | Technical and cognitive debt |
 
 ## 3.5 Video V2 — Context once, then skills
 
@@ -555,10 +552,10 @@ Compiled across the four pages, and the video. Every source is public.
 
 | Page | Sources referenced, with addresses |
 | --- | --- |
-| 2.1 | Effective context engineering for AI agents (Anthropic Engineering, September 2025), https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents. Lost in the Middle: How Language Models Use Long Contexts (Liu et al., TACL, 2024), https://aclanthology.org/2024.tacl-1.9/. Context engineering, Technology Radar (Thoughtworks, April 2026), https://www.thoughtworks.com/radar/techniques/context-engineering. |
+| 2.1 | Effective context engineering for AI agents (Anthropic Engineering, September 2025), https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents. Lost in the Middle: How Language Models Use Long Contexts (Liu et al., TACL, 2024), https://aclanthology.org/2024.tacl-1.9/. |
 | 2.2 | Skills explained (Anthropic, 2025), https://claude.com/blog/skills-explained. Effective context engineering for AI agents, as above. Microsoft 365 Copilot Experiment: Cross-Government Findings Report, as in 2.3. |
 | 2.3 | Skills explained, as above. Use skills in Claude (Anthropic help), https://support.claude.com/en/articles/12512180-use-skills-in-claude. Agent Skills (open standard), https://agentskills.io. Model Context Protocol (open protocol), https://modelcontextprotocol.io. MCP servers for published docs (GitBook), https://gitbook.com/docs/ai-for-your-readers/mcp-servers-for-published-docs. LLM01:2025 Prompt Injection (OWASP, 2025), https://genai.owasp.org/llmrisk/llm01-prompt-injection/. Microsoft 365 Copilot Experiment: Cross-Government Findings Report (Government Digital Service, 2 June 2025), https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report. The ea-plays kit, https://github.com/alaponin/ea-plays-kit. |
-| 2.4 | How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. Fragments: April 2 (Martin Fowler, 2 April 2026), https://www.martinfowler.com/fragments/2026-04-02.html. AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government. |
+| 2.4 | How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. |
 | V2 | None of its own; the description points to the pages. |
 
 All references are publicly accessible and verifiable.

@@ -73,7 +73,7 @@ Four written pages and two videos of about three minutes each. A learner who doe
 
 ### 2.1 The module's self-check
 
-Four questions, drawn from the four pages. Questions 1 and 3 are multiple choice. Questions 2 and 4 ask for a short answer, which is right if it makes the point of the model answer. Three or four right means Ready; below three, read again the page named beside each question you missed. The threshold is a proposal, to be tested with the first learners.
+Five questions, drawn from the four pages. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means Ready; below four, read again the page named beside each question you missed.
 
 | # | Question | Model answer | Drawn from |
 | --- | --- | --- | --- |
@@ -81,6 +81,7 @@ Four questions, drawn from the four pages. Questions 1 and 3 are multiple choice
 | 2 | The work chat writes: 'the system does not recognise duplicates', from a test of the search alone. What is wrong, and what do you ask for? | A limit of one step is stated as a limit of the whole. Ask what else could find the child, and have the sentence say only what was tested: 'the search misses a child spelt differently; whether a later step catches the child is not shown'. | 3.3 The report and the review |
 | 3 | Your review chat answers 'accepted, no issues found' on a 20-page draft. What do you do? (a) Accept: the review found nothing. (b) Ask the work chat whether the review is right. (c) Treat zero findings as a warning, and check that the review worked out at least one figure by a route of its own. (d) Run the same review again in the same chat. | (c). A review with zero findings on work that matters may not have checked anything. The work chat cannot judge its own review, and the same chat would repeat itself. | 3.3 The report and the review |
 | 4 | The review says 'accepted'. The draft recommends that MoEYS publish the figure in its annual report. Who decides whether it is published, and why? | You do, or whoever owns the annual report. A verdict says the work meets its instruction. What is delivered, cut, spent or said outside is always the person's decision, and accepted work can still be the wrong thing to publish. | 3.4 Judgement: you decide |
+| 5 | Your instruction for a count of duplicates says: 'Test: the count is correct. The review checks the count.' What is wrong, and what do you write instead? | Only the work chat could pass that test by its own say-so, and the review has no route of its own. Define each figure before the work starts, such as when a child counts as caught; give tests a stranger could run; and name the review's route, such as counting again from the three lists alone, without the search. | 3.2 Write the instruction |
 
 ### 2.2 Go further
 
@@ -104,7 +105,7 @@ Shown on the module's home page, apart from the sources: one to three things to 
 
 ### Try it first — The paper that looked fair
 
-The registry prototype needed an answer to one question: what identifies a learner? A work chat wrote a paper that set two positions side by side. Position A: the registry gives each child its own number, and finds the child's birth record at the Civil Registration Department. Position B: the national ID authority issues every child a national number at birth, and the registry uses it. The Ministry is Progressa's Ministry of Education, Youth and Skills (MoEYS), which owns the registry. Bodies share data across a national data exchange, which some bodies have joined and some have not. The prototype simulates the other bodies, so that the registry can be tried before any of them has agreed to anything.
+The registry prototype needed an answer to one question: what identifies a learner? A work chat wrote a paper that set two positions side by side. Position A: the registry gives each child its own number, and finds the child's birth record at the Civil Registration Department. Position B: the national ID authority issues every child a national number at birth, and the registry uses it. The Ministry is Progressa's Ministry of Education, Youth and Skills (MoEYS), which owns the registry. Bodies share data across a national data exchange. Neither the Civil Registration Department, which sits under another ministry, nor the Ministry has joined it yet. The prototype simulates the other bodies, so that the registry can be tried before any of them has agreed to anything.
 
 The paper compared the two in one table, position by test. The table had no empty cell. It carried 78 citations over 31 lines, and every citation held at its source. The work chat's own report said it had cross-checked every fact against both positions. By every check the work chat could run on itself, the paper was fair.
 
@@ -118,7 +119,7 @@ First: the prototype simulates bodies doing what they have not agreed to, and th
 
 Second: a dependency on a body the Ministry cannot oblige is counted against B, in the table and in the ground of the recommendation, but not against A. A depends on the Civil Registration Department, which sits under another ministry. The paper's own cross-check table claimed to count it against A, and the cell did not hold it.
 
-A separate review chat found both, and the paper was not accepted. Look also at the length of the cells: B's are longer than A's, row after row. That lean is what a self-check cannot see, because the writer already knows what they meant.
+A separate review chat found both, and the paper was not accepted. The full table had one more lean, which the two cells above cannot show: B's cells were longer than A's, row after row. That lean is what a self-check cannot see, because the writer already knows what they meant.
 
 ### The concept
 
@@ -136,7 +137,7 @@ The cycle costs a second chat and a few minutes of writing, so do not spend it o
 
 By hand, in any assistant. Build your working folder from the pages of the starter folder: a folder on your computer with the four forms (instruction, report, review, handover note), the three role prompts (work chat, review chat, first task) and the pages of faults in it. The starter folder's first page sets out the cycle in six steps, and how to set up your computer for it.
 
-The folder holds the forms you will write from, the three role prompts you will paste into each chat, a page of faults for each kind of work (analysis, drafting and checking), a log, and one finished cycle to copy from. You keep instructions, reports and reviews in three separate folders, one kind of document each, so that each one can be found and nothing is lost when a chat ends.
+The folder holds the forms you will write from, the three role prompts you will paste into each chat, a page of faults for each kind of work (analysis, drafting, checking and building), a log, and one finished cycle to copy from. Of its six folders, three keep instructions, reports and reviews apart, one kind of document each, so that each one can be found and nothing is lost when a chat ends.
 
 ### AI usage tip — Does this piece of work need the cycle?
 
@@ -270,7 +271,7 @@ Copy the instruction form into a new file in the instructions folder. Name it by
 
 A chat may help you draft the instruction. If it does, that chat does no work afterwards and no review: it helped to commission the work.
 
-Start your log: a spreadsheet with seven columns, date, piece of work, version, event, file, verdict or ruling, and who it is open with. The event is one of six words: instruction issued, report back, review back, my ruling, withdrawn, handover. Write the first row: the date, the piece of work, version 1, 'instruction issued', and the file.
+Start your log: a spreadsheet with seven columns, date, piece of work, version, event, file, verdict or ruling, and who it is open with. The event is one of five words: instruction issued, report back, review back, my ruling, handover; withdrawn is a ruling, not an event. *Open with* says who acts next: the work chat, the review chat, you, or no one once the piece of work is ruled on. Write the first row: the date, the piece of work, version 1, 'instruction issued', and the file.
 
 ### AI usage tip — Test your instruction on a stranger
 
@@ -338,7 +339,7 @@ The review is a check, not a reading. It goes through the instruction's tests an
 
 Be wary of a review with zero findings on work that matters: it may not have checked anything. Ask which figure it worked out again, and how. And remember what a check can and cannot see. A check sees that a field is filled, not that it is true; that a citation exists, not that it says what the sentence claims. One check should end at the real thing: another piece of work on the prototype, a consent check, sent one learner's record through the running prototype to the National Examinations Authority (PNEA), and saw it hold back all seven fields of the record the authority has no legal basis to receive, and pass all six it has.
 
-Research on using models as judges gives one more reason to keep the reviewer separate: a model tends to favour answers that it wrote itself.
+Research on using models as judges finds that a model tends to favour answers that it wrote itself. A new chat of the same model is still the same model, so a separate chat does not remove that lean. What makes the review independent is that it shares nothing with the work chat and reaches the figure by a route of its own. If your organisation offers more than one model, run the review on a different one from the work.
 
 ### In the tool
 
@@ -368,7 +369,7 @@ You are a review chat. You did not write this instruction and you did not do thi
 
 **Practise on Progressa — input:**
 
-A report from MoEYS's planning unit: 'Answer: 37 schools did not report enrolment in the 2026 census. Test T1 met: counted from the census file. Found, not fixed: none.' The census file lists 412 schools; 31 have no return at all and 6 have a return with the enrolment field empty.
+The instruction, from the practise tab of 3.2: 'Count the schools that did not report enrolment in the 2026 census and write a short paragraph for the Permanent Secretary. Material: the census file. Tests: the count is correct. Out of scope: none.' The report back from MoEYS's planning unit: 'Answer: 37 schools did not report enrolment in the 2026 census. Test T1 met: counted from the census file. Found, not fixed: none.' The census file lists 412 schools; 31 have no return at all and 6 have a return with the enrolment field empty.
 
 **Practise on Progressa — answer key:**
 
@@ -380,7 +381,7 @@ Not accepted. The figure 37 is 31 plus 6, so the report has counted two differen
 
 | Source | Publisher · date | Used for |
 | --- | --- | --- |
-| Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena | Zheng et al., NeurIPS · 2023 | Self-enhancement bias: a model judge tends to favour its own answers |
+| Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena | Zheng et al., NeurIPS · 2023 | Self-enhancement bias: a model judge tends to favour its own answers, which a new chat of the same model keeps |
 | Large Language Models Cannot Self-Correct Reasoning Yet | Huang et al., ICLR · 2024 | Why the check needs something the writer did not have |
 
 ## 3.8 Video V4 — Why the reviewer is someone else
@@ -551,7 +552,7 @@ V3 and V4 each name the record's case with its date as the case to tell. Each sp
 
 ### 5.3 Memory off
 
-The by-hand cycle depends on one setting: memory shared between chats must be off, or the review chat must be incognito. The pages name the setting without a path through each assistant's menus, because those paths change. Whether ITU wants help links for each assistant, as Module 2 gives, is a question for ITU.
+The by-hand cycle depends on one setting: memory shared between chats must be off, or the review chat must be incognito. The pages give no path through each assistant's menus, because those paths change; page 2.4 links each assistant's own help page for memory and incognito chats, and page 3.2 points to it.
 
 ## 6. Annex — aggregate external-link list
 

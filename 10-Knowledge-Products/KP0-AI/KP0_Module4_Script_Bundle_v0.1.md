@@ -52,7 +52,7 @@ Four written pages and two videos of about three minutes each. A learner who doe
 
 ### 2.1 The module's self-check
 
-Four questions, drawn from the four pages. Questions 1 and 3 are multiple choice. Questions 2 and 4 ask for a short answer, which is right if it makes the point of the model answer. Three or four right means Ready; below three, read again the page named beside each question you missed. The threshold is a proposal, to be tested with the first learners.
+Four questions, drawn from the four pages. Questions 1 and 3 are multiple choice. Questions 2 and 4 ask for a short answer, which is right if it makes the point of the model answer. Three or four right means Ready; below three, read again the page named beside each question you missed.
 
 | # | Question | Model answer | Drawn from |
 | --- | --- | --- | --- |
@@ -89,11 +89,11 @@ The prototype was run with a plugin that starts each work chat on a timer (the s
 
 The owner withdrew all four and had them run again, one after another. Each was then accepted. The withdrawn rows stayed in the log, with the reason.
 
-**Your question:** What in the log would have shown the clash before it happened?
+**Your question:** Read before each start, what in the log would have stopped the clash?
 
 **Answer key:**
 
-Four rows saying 'instruction issued' at the same time, with no 'report back' between them: four pieces of work open at once. And, for two of them, the same version issued twice. A log read before each start shows what is already running, and a rule of 'one piece of work writes at a time' would have stopped the other three from starting at all.
+Before the second start, a row saying 'instruction issued' with no 'report back' after it: a piece of work already open. Before the fourth, three such rows. A log read before each start shows what is already running, and a rule of 'one piece of work writes at a time' would have stopped the other three from starting at all. The double starts would then have had nothing to collide with; in the log, the same version issued twice is the sign of one.
 
 The lesson the record took: one piece of work writes at a time. Running in parallel saves minutes, and costs the whole round when two of them touch the same files.
 
@@ -103,13 +103,13 @@ A log is one row per event. A piece of work is issued; its report comes back; it
 
 When anyone asks where the work stands, answer from the log, never from memory. A figure from memory is repeated as fact by people who were not there. A figure from the log can be produced again by anyone, and gives the same answer.
 
-Nothing is deleted. A withdrawn piece of work keeps its rows, with the reason. That way the log counts what really happened: the registry prototype closed 23 pieces of work in its first week, 26 to 30 October 2026: 13 accepted at the first version and 10 after a second attempt, 4 of those 10 being work that was withdrawn and run again. Expect nearly half of your work to need a second attempt. That is not failure; it is the review doing its job.
+Nothing is deleted. A withdrawn piece of work keeps its rows, with the reason. That way the log counts what really happened: the registry prototype closed 23 pieces of work in its first week, 26 to 30 October 2026: 13 accepted at the first version and 10 that needed a second attempt. Of those 10, 4 were withdrawn and run again, and 2 were closed by changing what was asked, not by being accepted. Expect nearly half of your work to need a second attempt. That is not failure; it is the review doing its job.
 
 One piece of work writes at a time. Two chats changing the same files at once is the one mistake the cycle cannot repair afterwards.
 
 ### In the tool
 
-By hand, in any spreadsheet. The starter folder's log has seven columns: date, piece of work, version, event, file, verdict or ruling, and who it is open with. Its event column offers six words: instruction issued, report back, review back, my ruling, withdrawn and handover.
+By hand, in any spreadsheet. The starter folder's log has seven columns: date, piece of work, version, event, file, verdict or ruling, and who it is open with. Its event column offers five words: instruction issued, report back, review back, my ruling and handover; withdrawn is a ruling, written in a 'my ruling' row. *Open with* says who acts next: the work chat, the review chat, you, or no one once the piece of work is ruled on.
 
 Write the row before you move on, not at the end of the day. Keep the log open beside the chats.
 
@@ -122,7 +122,7 @@ To answer 'where does it stand?', filter the log by piece of work and read its l
 **Prompt template (copy-paste into the assistant):**
 
 ```text
-Below is my work log, one row per event [paste the log, or attach it]. Use only the log; add nothing from anywhere else. For each piece of work, give: its latest version, its last event and date, whether it is open or closed, and, if open, who it is open with. Then give the totals: pieces of work closed, accepted at the first version, accepted after a second attempt, not accepted, and withdrawn. Then list anything in the log that looks wrong: two starts of the same version with no report between them, a verdict with no review row, a ruling with no verdict. Quote the rows. Output: the table, the totals, then the list.
+Below is my work log, one row per event [paste the log, or attach it]. Use only the log; add nothing from anywhere else. For each piece of work, give: its latest version, its last event and date, whether it is open or closed, and, if open, who it is open with. Then give the totals: pieces of work closed, accepted at the first version, accepted after a second attempt, not accepted, and withdrawn. Then list anything in the log that looks wrong: two starts of the same version with no report between them, a verdict with no review row, a ruling with no verdict, a new version with no ruling before it. Quote the rows. Output: the table, the totals, then the list.
 ```
 
 **Inputs and outputs:** Input: your log. Output: where each piece of work stands, the week's totals, and the rows that look wrong.
@@ -137,7 +137,7 @@ A log of MoEYS's planning unit: '28 Oct, census count, v1, instruction issued. 2
 
 **Practise on Progressa — answer key:**
 
-Census count: version 2, report back on 30 October, open, waiting for its review. School map: version 1, issued twice on 29 October with no report: a possible double start, to check before anything else runs. Totals: nothing closed yet. A good run names the double start; a weak one counts the school map once and moves on.
+Census count: version 2, report back on 30 October, open, waiting for its review. School map: version 1, issued twice on 29 October with no report: a possible double start, to check before anything else runs. Census count again: version 2 was issued on 29 October with no 'my ruling' row after the review came back not accepted, so the decision to try again is not on record; add the ruling with its date. Totals: nothing closed yet. A good run names both; a weak one counts the school map once and moves on.
 
 **With the kit:** the orchestrator plugin (in preparation) writes the log itself, one entry per event, and answers 'where does it stand?' from it whenever you ask. It cannot stop two pieces of work you start yourself from colliding: one writes at a time is still your rule. Optional: the cycle runs by hand.
 
@@ -174,9 +174,11 @@ A line belongs on the page when the fault could recur in other work of the same 
 
 Each kind of work fails in its own ways. Analysis tends to lean towards one position, or to count over a set it never listed. Drafting tends to supply what the source does not carry, or to say more than the record does. Checking tends to trust a clean result from a check that was never seen to fail.
 
-So keep one page of faults for each kind of work you do. Each page says what the work chat refuses to do, what the review chat runs before it judges, and what you check before you issue an instruction of that kind. The starter folder has three pages to begin with: analysis, drafting and checking.
+So keep one page of faults for each kind of work you do. Each page says what the work chat refuses to do, what the review chat runs before it judges, and what you check before you issue an instruction of that kind. The starter folder has four pages to begin with: analysis, drafting, checking and building.
 
 The pages grow. When a review finds a fault the page does not yet carry, add it to the page in the same sitting. Every later instruction of that kind copies the page's faults into its section on how the work can fail, so you learn each fault once and never pay for it again.
+
+Birgitta Böckeler sorts what you put around an assistant into two kinds: guides, which steer it before it works, and sensors, which check what it did so that it can be corrected. A page of faults is both. What the work chat refuses is a guide; what the review chat runs is a sensor. Each needs the other. A guide that is never checked never finds out whether it worked, and a check with no guide catches the same fault again and again. That is why a fault the review finds goes back onto the page.
 
 A correction goes where the fact lives. If a review shows that a figure in your context pack (the dated facts about your country and unit, from page 2.1) is wrong, correct the pack, not the instruction that quoted it. Otherwise the next instruction quotes the same wrong figure.
 
@@ -217,6 +219,7 @@ The page carries 'list the set first from its own source', which is close but no
 | Source | Publisher · date | Used for |
 | --- | --- | --- |
 | The Checklist Manifesto | Atul Gawande · Metropolitan Books · 2009 | A short list of known failures, kept and used every time, catches what experience misses |
+| Harness Engineering for Coding Agent Users | Birgitta Böckeler, on martinfowler.com · 2 April 2026 | Guides, which steer an assistant before it acts, and sensors, which check after; each fails without the other |
 
 ## 3.3 Subtopic 4.3 — Handing over to a fresh chat
 
@@ -257,7 +260,7 @@ The same note serves when you hand the work to a colleague, or come back to it y
 
 By hand, in any assistant. Write the note from the starter folder's handover form, in your own words or with the outgoing chat's help. Save it beside the log.
 
-Open a new chat with memory off. Paste the first-task prompt, the note and the log. Read its answer: each claim marked holds or does not hold, with what it looked at. If it went further than checking, stop it: it was told to stop.
+Open a new chat with memory off. Paste the first-task prompt, the note, the log, and every file a claim of the note names, such as a report or a review: the fresh chat can check a claim only against what it has been given. Read its answer: each claim marked holds or does not hold, with what it looked at. If it went further than checking, stop it: it was told to stop.
 
 Write a row in the log: 'handover', with the note's file name.
 
@@ -380,7 +383,7 @@ Each moment below breaks one rule of the cycle. Name the rule.
 
 ### The concept
 
-Set up once. Before the first session you need a folder with three places in it, one each for instructions, reports and reviews; a log; a page of faults for each kind of work you do; and memory off, or an incognito chat for every review. The starter folder holds all of it. After a first cycle, check the setup again against what you actually did.
+Set up once. Before the first session you need the starter folder's six folders, three of them for instructions, reports and reviews; a log; a page of faults for each kind of work you do; and memory off, or an incognito chat for every review. The starter folder holds all of it. After a first cycle, check the setup again against what you actually did.
 
 Then keep a routine. Open the log, and answer where the work stands from it. Pick up the open piece of work with the earliest date: one writes at a time. Read the page of faults before each instruction. Add each new fault a review finds. Hand over before a chat gets long, and before a break.
 
@@ -528,7 +531,7 @@ Compiled across the four pages and the two videos. Every source is public.
 | Page | Sources referenced, with addresses |
 | --- | --- |
 | 4.1 | Effective harnesses for long-running agents (Anthropic Engineering, November 2025), https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents. |
-| 4.2 | The Checklist Manifesto (Atul Gawande, Metropolitan Books, 2009), https://atulgawande.com/book/the-checklist-manifesto/. |
+| 4.2 | The Checklist Manifesto (Atul Gawande, Metropolitan Books, 2009), https://atulgawande.com/book/the-checklist-manifesto/. Harness Engineering for Coding Agent Users (Birgitta Böckeler, martinfowler.com, 2 April 2026), https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html. |
 | 4.3 | Effective harnesses for long-running agents, as in 4.1. |
 | 4.4 | How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government. |
 | V5, V6 | None of their own; the descriptions point to the pages. |

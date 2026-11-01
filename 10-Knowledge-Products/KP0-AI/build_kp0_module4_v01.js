@@ -281,7 +281,7 @@ body.push(
   ]),
 
   H3("2.1 The module's self-check"),
-  P("Four questions, drawn from the four pages. Questions 1 and 3 are multiple choice. Questions 2 and 4 ask for a short answer, which is right if it makes the point of the model answer. Three or four right means Ready; below three, read again the page named beside each question you missed. The threshold is a proposal, to be tested with the first learners."),
+  P("Four questions, drawn from the four pages. Questions 1 and 3 are multiple choice. Questions 2 and 4 ask for a short answer, which is right if it makes the point of the model answer. Three or four right means Ready; below three, read again the page named beside each question you missed."),
   genericTable([600, 3900, 3700, 1500], ["#", "Question", "Model answer", "Drawn from"], [
     ["1", "Your director asks on Friday how many of this week's pieces of work were accepted. What do you do? (a) Answer from memory: you ran them all. (b) Ask the last work chat. (c) Count the 'my ruling' rows in the log, and give the figure with the withdrawn ones named. (d) Ask each review chat again.",
       "(c). Status is produced from the log, never remembered. A figure from memory is quoted afterwards as fact, and nobody can find where it came from.",
@@ -334,11 +334,11 @@ body.push(...renderPage({
   concept: [
     "A log is one row per event. A piece of work is issued; its report comes back; its review comes back with a verdict; you rule on it. Each event is a row, with the date, the piece of work, its version, the event, the file, and the verdict or ruling. Nothing else goes in.",
     "When anyone asks where the work stands, answer from the log, never from memory. A figure from memory is repeated as fact by people who were not there. A figure from the log can be produced again by anyone, and gives the same answer.",
-    "Nothing is deleted. A withdrawn piece of work keeps its rows, with the reason. That way the log counts what really happened: the registry prototype closed 23 pieces of work in its first week, 26 to 30 October 2026: 13 accepted at the first version and 10 after a second attempt, 4 of those 10 being work that was withdrawn and run again. Expect nearly half of your work to need a second attempt. That is not failure; it is the review doing its job.",
+    "Nothing is deleted. A withdrawn piece of work keeps its rows, with the reason. That way the log counts what really happened: the registry prototype closed 23 pieces of work in its first week, 26 to 30 October 2026: 13 accepted at the first version and 10 that needed a second attempt. Of those 10, 4 were withdrawn and run again, and 2 were closed by changing what was asked, not by being accepted. Expect nearly half of your work to need a second attempt. That is not failure; it is the review doing its job.",
     "One piece of work writes at a time. Two chats changing the same files at once is the one mistake the cycle cannot repair afterwards."
   ],
   inTool: [
-    "By hand, in any spreadsheet. The starter folder's log has seven columns: date, piece of work, version, event, file, verdict or ruling, and who it is open with. Its event column offers six words: instruction issued, report back, review back, my ruling, withdrawn and handover.",
+    "By hand, in any spreadsheet. The starter folder's log has seven columns: date, piece of work, version, event, file, verdict or ruling, and who it is open with. Its event column offers five words: instruction issued, report back, review back, my ruling and handover; withdrawn is a ruling, written in a 'my ruling' row. *Open with* says who acts next: the work chat, the review chat, you, or no one once the piece of work is ruled on.",
     "Write the row before you move on, not at the end of the day. Keep the log open beside the chats.",
     "To answer 'where does it stand?', filter the log by piece of work and read its last row. To count the week, count the 'my ruling' rows: accepted, not accepted, withdrawn."
   ],
@@ -384,8 +384,9 @@ body.push(...renderPage({
   },
   concept: [
     "Each kind of work fails in its own ways. Analysis tends to lean towards one position, or to count over a set it never listed. Drafting tends to supply what the source does not carry, or to say more than the record does. Checking tends to trust a clean result from a check that was never seen to fail.",
-    "So keep one page of faults for each kind of work you do. Each page says what the work chat refuses to do, what the review chat runs before it judges, and what you check before you issue an instruction of that kind. The starter folder has three pages to begin with: analysis, drafting and checking.",
+    "So keep one page of faults for each kind of work you do. Each page says what the work chat refuses to do, what the review chat runs before it judges, and what you check before you issue an instruction of that kind. The starter folder has four pages to begin with: analysis, drafting, checking and building.",
     "The pages grow. When a review finds a fault the page does not yet carry, add it to the page in the same sitting. Every later instruction of that kind copies the page's faults into its section on how the work can fail, so you learn each fault once and never pay for it again.",
+    "Birgitta Böckeler sorts what you put around an assistant into two kinds: guides, which steer it before it works, and sensors, which check what it did so that it can be corrected. A page of faults is both. What the work chat refuses is a guide; what the review chat runs is a sensor. Each needs the other. A guide that is never checked never finds out whether it worked, and a check with no guide catches the same fault again and again. That is why a fault the review finds goes back onto the page.",
     "A correction goes where the fact lives. If a review shows that a figure in your context pack (the dated facts about your country and unit, from page 2.1) is wrong, correct the pack, not the instruction that quoted it. Otherwise the next instruction quotes the same wrong figure."
   ],
   inTool: [
@@ -410,8 +411,12 @@ body.push(...renderPage({
       ]
     }
   },
+  cite: [
+    ["Birgitta Böckeler", "Harness Engineering for Coding Agent Users"]
+  ],
   sources: [
-    ["The Checklist Manifesto", "Atul Gawande · Metropolitan Books · 2009", "A short list of known failures, kept and used every time, catches what experience misses"]
+    ["The Checklist Manifesto", "Atul Gawande · Metropolitan Books · 2009", "A short list of known failures, kept and used every time, catches what experience misses"],
+    ["Harness Engineering for Coding Agent Users", "Birgitta Böckeler, on martinfowler.com · 2 April 2026", "Guides, which steer an assistant before it acts, and sensors, which check after; each fails without the other"]
   ]
 }));
 
@@ -534,7 +539,7 @@ body.push(...renderPage({
     ]
   },
   concept: [
-    "Set up once. Before the first session you need a folder with three places in it, one each for instructions, reports and reviews; a log; a page of faults for each kind of work you do; and memory off, or an incognito chat for every review. The starter folder holds all of it. After a first cycle, check the setup again against what you actually did.",
+    "Set up once. Before the first session you need the starter folder's six folders, three of them for instructions, reports and reviews; a log; a page of faults for each kind of work you do; and memory off, or an incognito chat for every review. The starter folder holds all of it. After a first cycle, check the setup again against what you actually did.",
     "Then keep a routine. Open the log, and answer where the work stands from it. Pick up the open piece of work with the earliest date: one writes at a time. Read the page of faults before each instruction. Add each new fault a review finds. Hand over before a chat gets long, and before a break.",
     "Watch for cognitive debt: work accepted that nobody can explain. The cycle makes it easy to accept work, because a review stands behind it. Before you accept, be able to say in your own words what the work found and why the review believed it.",
     "And be clear about what the pattern does not claim. It does not make the output true: a review can miss what the instruction never asked. It does not make the work cheap: it costs a second chat, a log row and your time. It does not make two runs give the same answer. What it does is make every difference discussable, because what was asked, what came back, how it was checked and who decided are all on file, and make every failure countable."
@@ -654,7 +659,7 @@ body.push(
   P("Compiled across the four pages and the two videos. Every source is public."),
   genericTable([1100, 8600], ["Page", "Sources referenced, with addresses"], [
     ["4.1", "Effective harnesses for long-running agents (Anthropic Engineering, November 2025), https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents."],
-    ["4.2", "The Checklist Manifesto (Atul Gawande, Metropolitan Books, 2009), https://atulgawande.com/book/the-checklist-manifesto/."],
+    ["4.2", "The Checklist Manifesto (Atul Gawande, Metropolitan Books, 2009), https://atulgawande.com/book/the-checklist-manifesto/. Harness Engineering for Coding Agent Users (Birgitta Böckeler, martinfowler.com, 2 April 2026), https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html."],
     ["4.3", "Effective harnesses for long-running agents, as in 4.1."],
     ["4.4", "How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government."],
     ["V5, V6", "None of their own; the descriptions point to the pages."]

@@ -1,5 +1,5 @@
 ---
-description: "Four questions drawn from the pages of module 5."
+description: "Five questions drawn from the pages of module 5."
 icon: circle-check
 ---
 

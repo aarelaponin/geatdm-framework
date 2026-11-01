@@ -298,7 +298,7 @@ body.push(
   ]),
 
   H3("2.1 The module's self-check"),
-  P("Four questions, drawn from the four pages. Questions 1 and 3 are multiple choice. Questions 2 and 4 ask for a short answer, which is right if it makes the point of the model answer. Three or four right means Ready; below three, read again the page named beside each question you missed. The threshold is a proposal, to be tested with the first learners."),
+  P("Five questions, drawn from the four pages. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means Ready; below four, read again the page named beside each question you missed."),
   genericTable([600, 3900, 3700, 1500], ["#", "Question", "Model answer", "Drawn from"], [
     ["1", "You ask a chat to draft a two-paragraph reply to a citizen's letter, from the letter alone. Do you need the cycle? (a) Yes: every piece of work should be reviewed. (b) No: none of the five conditions holds, so just ask, and read the reply yourself. (c) Yes, because the reply goes outside. (d) Only if the chat is not sure.",
       "(b). One short text from one document, which you read in full before it goes out, meets none of the five conditions. The cycle costs a second chat and a log row; spend it where a mistake would be quoted, built on or kept.",
@@ -311,7 +311,10 @@ body.push(
       "3.3 The report and the review"],
     ["4", "The review says 'accepted'. The draft recommends that MoEYS publish the figure in its annual report. Who decides whether it is published, and why?",
       "You do, or whoever owns the annual report. A verdict says the work meets its instruction. What is delivered, cut, spent or said outside is always the person's decision, and accepted work can still be the wrong thing to publish.",
-      "3.4 Judgement: you decide"]
+      "3.4 Judgement: you decide"],
+    ["5", "Your instruction for a count of duplicates says: 'Test: the count is correct. The review checks the count.' What is wrong, and what do you write instead?",
+      "Only the work chat could pass that test by its own say-so, and the review has no route of its own. Define each figure before the work starts, such as when a child counts as caught; give tests a stranger could run; and name the review's route, such as counting again from the three lists alone, without the search.",
+      "3.2 Write the instruction"]
   ]),
 
   H3("2.2 Go further"),
@@ -357,7 +360,7 @@ body.push(...renderPage({
   ],
   inTool: [
     "By hand, in any assistant. Build your working folder from the pages of the starter folder: a folder on your computer with the four forms (instruction, report, review, handover note), the three role prompts (work chat, review chat, first task) and the pages of faults in it. The starter folder's first page sets out the cycle in six steps, and how to set up your computer for it.",
-    "The folder holds the forms you will write from, the three role prompts you will paste into each chat, a page of faults for each kind of work (analysis, drafting and checking), a log, and one finished cycle to copy from. You keep instructions, reports and reviews in three separate folders, one kind of document each, so that each one can be found and nothing is lost when a chat ends."
+    "The folder holds the forms you will write from, the three role prompts you will paste into each chat, a page of faults for each kind of work (analysis, drafting, checking and building), a log, and one finished cycle to copy from. Of its six folders, three keep instructions, reports and reviews apart, one kind of document each, so that each one can be found and nothing is lost when a chat ends."
   ],
   aiTip: {
     title: "Does this piece of work need the cycle?",
@@ -455,7 +458,7 @@ body.push(...renderPage({
     "By hand, in any assistant. Set up first, as the first page of the starter folder says: turn memory off in your assistant's settings (page 2.4 shows where), and decide whether you will paste files or let the assistant read the folder.",
     "Copy the instruction form into a new file in the instructions folder. Name it by date, piece of work and version, for example '2026-10-30 duplicates v1'. Start from your case card from 3.1. Fill the form's eight sections: what it serves, the material, the task, how you will know it is done, how the review will check it, how this work can fail, out of scope, and where the report goes. Copy the faults from the page for your kind of work into section 6, how this work can fail, then add the ways particular to your task.",
     "A chat may help you draft the instruction. If it does, that chat does no work afterwards and no review: it helped to commission the work.",
-    "Start your log: a spreadsheet with seven columns, date, piece of work, version, event, file, verdict or ruling, and who it is open with. The event is one of six words: instruction issued, report back, review back, my ruling, withdrawn, handover. Write the first row: the date, the piece of work, version 1, 'instruction issued', and the file."
+    "Start your log: a spreadsheet with seven columns, date, piece of work, version, event, file, verdict or ruling, and who it is open with. The event is one of five words: instruction issued, report back, review back, my ruling, handover; withdrawn is a ruling, not an event. *Open with* says who acts next: the work chat, the review chat, you, or no one once the piece of work is ruled on. Write the first row: the date, the piece of work, version 1, 'instruction issued', and the file."
   ],
   aiTip: {
     title: "Test your instruction on a stranger",
@@ -504,7 +507,7 @@ body.push(...renderPage({
     "Watch the report for one fault above all: a limit of one step stated as a limit of the whole. 'The search misses a child spelt differently' is what the duplicates count showed. 'The registry does not recognise the child' is wider, because a later step, in which the prototype looks up the child's birth record at the Civil Registration Department, may find the child, and that was not tested.",
     "The review is a check, not a reading. It goes through the instruction's tests and looks at the evidence for each one itself. It works out at least one figure again, by a route the report did not use. A check that cannot be run counts as not met. And it ends with one of two verdicts, accepted or not accepted, with no third word. 'Accepted with reservations' is not accepted.",
     "Be wary of a review with zero findings on work that matters: it may not have checked anything. Ask which figure it worked out again, and how. And remember what a check can and cannot see. A check sees that a field is filled, not that it is true; that a citation exists, not that it says what the sentence claims. One check should end at the real thing: another piece of work on the prototype, a consent check, sent one learner's record through the running prototype to the National Examinations Authority (PNEA), and saw it hold back all seven fields of the record the authority has no legal basis to receive, and pass all six it has.",
-    "Research on using models as judges gives one more reason to keep the reviewer separate: a model tends to favour answers that it wrote itself."
+    "Research on using models as judges finds that a model tends to favour answers that it wrote itself. A new chat of the same model is still the same model, so a separate chat does not remove that lean. What makes the review independent is that it shares nothing with the work chat and reaches the figure by a route of its own. If your organisation offers more than one model, run the review on a different one from the work."
   ],
   inTool: [
     "By hand, in any assistant. The work chat: open a new chat with memory off. Paste the work-chat prompt from the starter folder, the report form, your instruction and the material. Save its report in the reports folder under the instruction's name, and write a log row: 'report back'.",
@@ -533,7 +536,7 @@ body.push(...renderPage({
     ["a model tends to favour answers that it wrote itself", "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena"]
   ],
   sources: [
-    ["Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena", "Zheng et al., NeurIPS · 2023", "Self-enhancement bias: a model judge tends to favour its own answers"],
+    ["Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena", "Zheng et al., NeurIPS · 2023", "Self-enhancement bias: a model judge tends to favour its own answers, which a new chat of the same model keeps"],
     ["Large Language Models Cannot Self-Correct Reasoning Yet", "Huang et al., ICLR · 2024", "Why the check needs something the writer did not have"]
   ]
 }));
@@ -668,7 +671,7 @@ body.push(
   P("V3 and V4 each name the record's case with its date as the case to tell. Each speaker confirms it, or names their own, before the cut is decided (plan decision 4)."),
 
   H3("5.3 Memory off"),
-  P("The by-hand cycle depends on one setting: memory shared between chats must be off, or the review chat must be incognito. The pages name the setting without a path through each assistant's menus, because those paths change. Whether ITU wants help links for each assistant, as Module 2 gives, is a question for ITU."),
+  P("The by-hand cycle depends on one setting: memory shared between chats must be off, or the review chat must be incognito. The pages give no path through each assistant's menus, because those paths change; page 2.4 links each assistant's own help page for memory and incognito chats, and page 3.2 points to it."),
 
   pageBreak()
 );

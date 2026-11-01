@@ -15,7 +15,7 @@
 | Self-check | Four questions drawn from the five pages, in section 2.1 |
 | Prepared by | FiscalAdmin OÜ |
 
-This bundle is the v0.1 working draft of Module 5 of KP0 — Working with AI in Government. In Modules 3 and 4 you ran the cycle by hand. In Module 5 you run it with the orchestrator plugin, on a small project from start to finish: a toy prototype of a learner registry, built in eight rounds, from the first document to a note for a senior reader. You do not write any code. You write what each round serves, read every instruction before it is issued and every review before you rule, and decide when it is done. Each page opens with a fault to find in the record of the full-size registry prototype we built in October 2026, then shows the step on the toy. The orchestrator plugin is in preparation: until it is released, read the pages alongside the record, and run the cycle by hand as Modules 3 and 4 teach. The register is plain English at about an eighth-grade level.
+This bundle is the v0.1 working draft of Module 5 of KP0 — Working with AI in Government. In Modules 3 and 4 you ran the cycle by hand. In Module 5 you run it with the orchestrator plugin, on a small project from start to finish: a toy prototype of a learner registry, built round by round, from the first document to a note for a senior reader. You do not write any code. You write what each round serves, read every instruction before it is issued and every review before you rule, and decide when it is done. Each page opens with a fault to find in the record of the full-size registry prototype we built in October 2026, then shows the step on the toy. The orchestrator plugin is in preparation, and its name and version will change; the pictures are from the author's pre-release setup. Until it is released, read the pages alongside the record, and run the cycle by hand as Modules 3 and 4 teach. Unlike the rest of the course, the plugin needs things installed and runs commands: the page With the plugin says what, and what you agree to. The register is plain English at about an eighth-grade level.
 
 ## 1. Document context
 
@@ -57,7 +57,7 @@ Five written pages. A learner who builds the toy alongside the pages needs about
 
 ### 2.1 The module's self-check
 
-Four questions, drawn from the five pages. Questions 1 and 3 are multiple choice. Questions 2 and 4 ask for a short answer, which is right if it makes the point of the model answer. Three or four right means Ready; below three, read again the page named beside each question you missed. The threshold is a proposal, to be tested with the first learners.
+Five questions, drawn from the five pages. Questions 1 and 3 are multiple choice. Questions 2, 4 and 5 ask for a short answer, which is right if it makes the point of the model answer. Four or five right means Ready; below four, read again the page named beside each question you missed.
 
 | # | Question | Model answer | Drawn from |
 | --- | --- | --- | --- |
@@ -65,6 +65,7 @@ Four questions, drawn from the five pages. Questions 1 and 3 are multiple choice
 | 2 | The count of requirements against the goal says: 14 requirements, 11 carried by the goal, 3 by none. The orchestrator proposes to start building. What must be true first? | Each of the 3 is listed with a reason it is left out, and the reason holds; and the count was seen to fail once on a planted mistake. Otherwise the build silently drops three things the prototype was meant to do. | 5.2 Decide before you build |
 | 3 | The work session reports: 'the goal is built and works'. Its evidence is that the code compiles. What do you rule? (a) Accepted. (b) Not accepted: building is reported only when it was seen running, with the checks' results. (c) Accepted, if the review agrees. (d) Ask the work session to say it again. | (b). A build that compiles is not a build that runs. The page of faults for building refuses exactly this, and the review must run the checks itself. | 5.3 Build one goal per round |
 | 4 | Your toy's note says: 'The registry does not register a child twice.' Your duplicates count found 4 of the 8 children on more than one list caught from every entry. What should the note say instead? | What the count showed, as a limit of the one step it tested: the search finds 4 of the 8 from every list, and misses each of the other 4 on the list where the family name is spelt differently; whether any other step would find them is not shown. And that the numbers are set in the made-up data. | 5.4 Check at the real thing |
+| 5 | The toy works on screen, and its note says what it shows and what it does not. The orchestrator proposes one more round: a way to look a learner up. What do you check before you rule? | Whether the question the prototype was built to answer is already answered. If it is, stop: a prototype that keeps growing turns into the system without anyone deciding to build one. Take its documents, not its code, to where the real thing is built. Deciding to stop is yours, not the orchestrator's. | 5.5 Judgement: what a toy proves |
 
 ### 2.2 Go further
 
@@ -73,6 +74,8 @@ Shown on the module's home page, apart from the sources: one to three things to 
 | Title | Publisher | Address | Why | Time |
 | --- | --- | --- | --- | --- |
 | Effective harnesses for long-running agents | Anthropic | https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents | The engineers' version of this module: set up first, one feature at a time, and check every feature as a user would. | 20 minutes |
+| Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl | Birgitta Böckeler, on martinfowler.com | https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html | Three tools that write the spec before the code, tried by hand, with an honest account of where they are too heavy. Module 5's way of working, as software teams know it. | 25 minutes |
+| Harness Engineering for Coding Agent Users | Birgitta Böckeler, on martinfowler.com | https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html | Guides that steer an assistant and sensors that check it: the pages of faults and the review, in an engineer's terms. | 25 minutes |
 
 ## 3. The pages and the reference
 
@@ -89,7 +92,7 @@ Shown on the module's home page, apart from the sources: one to three things to 
 
 The first piece of work on the full-size registry prototype was to write its constants: the one document of what does not change, such as what the project is for, what governs it and where each kind of thing lives. The instruction gave the answers word for word and said not to change them.
 
-One of the answers was a constraint: 'No session commits or pushes; the owner commits in the repository (the owner's word, 26 October 2026).' The setup program refused it, and wrote no constants. The work session did what it was told: it stopped, reported the refusal word for word, and changed nothing.
+One of the answers was a constraint: 'No session saves the work into the project's history; only the owner does (the owner's word, 26 October 2026).' The setup program refused it, and wrote no constants. The work session did what it was told: it stopped, reported the refusal word for word, and changed nothing.
 
 **Your question:** Why did the program refuse the constraint, and whose mistake was it?
 
@@ -103,9 +106,9 @@ The mistake was the instruction's, not the work session's. The orchestrator had 
 
 With the plugin, you no longer make the folders and forms yourself. One session sets the project up: it checks your computer, asks you a few questions with recommended answers, shows you the map of folders to rule on, and then makes everything in one go. That is the place where the project's structure is decided, once, before any work.
 
-The constants are the heart of it: what the project is for, what it delivers, the documents that govern it, who receives its results, the standing constraints, and where each kind of thing lives. Nothing in them carries a date, because they must stay true for as long as the project runs. Everything that happens goes in the log instead.
+The constants are the heart of it: what the project is for, what it delivers, the documents that govern it, who receives its results, the standing constraints, and where each kind of thing lives. Nothing in them carries a date except one: when each deliverable is due. The rest must stay true for as long as the project runs. Everything that happens goes in the log instead.
 
-Then one session takes the orchestrator's role. It writes in the log that it holds the role, and from then on it writes the instructions and keeps the log, and it does no work itself. You are the owner: you rule on every result. Start the orchestrator on the most capable model with high effort, in the Claude desktop app Opus with effort set to High: it judges every result and writes every instruction, and a weaker setting saves little and costs most there.
+Then one session takes the orchestrator's role. It writes in the log that it holds the role, and from then on it writes the instructions and keeps the log, and it does no work itself. You are the owner: you rule on every result. Start the orchestrator on the most capable model, with high effort; in the Claude desktop app, that is Opus with effort set to High. It judges every result and writes every instruction, so a weaker setting saves little there and costs the most.
 
 Whenever you do not understand something the orchestrator or a work session did, a step, a word, a number, or why it stopped, ask it to explain, in plain words, before you go on. Always. It costs one message, and the answer is often where you find that something is wrong. A ruling on work you cannot explain is not a ruling.
 
@@ -113,9 +116,11 @@ Make the first round small and checkable. The register of requirements is a good
 
 ### In the tool
 
-With the orchestrator plugin, in the Claude desktop app. The pictures on this page are from one real run of the mini registry, step by step, including the places where the app stopped to ask for a permission. Your screens will differ in small ways; what each step is for does not.
+With the orchestrator plugin, in the Claude desktop app.
 
-Before you start. Check that the plugin is installed and switched on: under Customize, its page lists three skills, one to set up a project, one to hold the orchestrator's role, and one to check at the end of a session that everything is saved.
+WARNING: The plugin is not released yet, and its name and version will change. The pictures on this page are from one real run of the mini registry on the author's own pre-release setup, step by step, including the places where the app stopped to ask for a permission. The plugin's name, its skills and some screens will differ on yours; what each step is for does not. Until the plugin is released, read this module alongside the record and run the cycle by hand. What it needs installed, and what you agree to when it runs commands, is on the page With the plugin.
+
+Before you start. Check that the plugin is installed and switched on: under Customize, its page lists its skills, here three: one to set up a project, one to hold the orchestrator's role, and one to check at the end of a session that everything is saved.
 
 IMAGE: M5-01-plugin-installed.png | The plugin installed and switched on, with its three skills.
 
@@ -217,7 +222,7 @@ The plugin keeps this log for you, in its own form: a short entry for each event
 **Prompt template (copy-paste into the assistant):**
 
 ```text
-Below is an instruction my orchestrator session has written and not yet issued [paste it], and the brief of the project [paste it]. Do not carry out the work. Check the instruction as the person who will rule on its result. For each test of success, say whether a stranger could run it and what it would show; flag any test only the work session could run. List the ways this work can fail while seeming to succeed that the instruction does not name. Check that it says what the work serves, that it names the review's own route, and that every answer it fixes word for word would pass the project's own rules, such as no dates in the constants. Output: a table of the tests, then the missing ways to fail, then at most three changes to ask for, each one sentence.
+Below is an instruction my orchestrator session has written and not yet issued [paste it], and the brief of the project [paste it]. Do not carry out the work. Check the instruction as the person who will rule on its result. For each test of success, say whether a stranger could run it and what it would show; flag any test only the work session could run. List the ways this work can fail while seeming to succeed that the instruction does not name. Check that it says what the work serves, that it names the review's own route, and that every answer it fixes word for word would pass the project's own rules, such as no dates in the constants other than when a deliverable is due. Output: a table of the tests, then the missing ways to fail, then at most three changes to ask for, each one sentence.
 ```
 
 **Inputs and outputs:** Input: an instruction the orchestrator has written, and the project's brief. Output: its tests judged, the missing ways to fail, and up to three changes to ask the orchestrator for.
@@ -275,6 +280,8 @@ Then a checking round counts every requirement against the goal, both ways. A re
 
 You rule on each document before the next one starts. A design accepted in a hurry is the most expensive mistake of a prototype, because every round after it builds on it.
 
+Software teams that build with AI assistants call this way of working spec-driven development: the description of what to build, the spec, is written before any code, and the assistant builds from it. Birgitta Böckeler compared three of its tools and told three levels apart. Spec-first: the spec is written for one task and then set aside. Spec-anchored: it is kept, and every later change is checked against it. Spec-as-source: people change only the spec, never the code. The toy works at the second level: every round is counted against the register, and at the end its documents travel to the real build and its code does not. The tools she compared are made for developers, in a code editor or at a command line, and the person who writes the spec is also the one who judges what is built from it. This course keeps the spec and adds what the tools leave to you: a review by a session that never saw the work, and your ruling on each document.
+
 ### In the tool
 
 With the orchestrator plugin. Ask the orchestrator for rounds 2, 3 and 4 of the brief, one at a time: the groundwork, the goal written in full, and the count. Start each round only when the last one's ruling is in the log.
@@ -299,13 +306,13 @@ Read the groundwork as tables: the settings must be the brief's numbers exactly,
 
 | Setting | Value | Source |
 | --- | --- | --- |
-| Children | 60 different children | brief, line 23; R-09, R-14; ruling on G-04 |
+| Children | 60 different children | brief, line 23; requirements 9 and 14; the owner's ruling on what is counted |
 | Schools | 3 | brief, line 24; R-10, R-14 |
 | Children on more than one list | 8 | brief, line 25; R-11, R-14 |
 | Of those, family name spelt differently on one list | 4 | brief, line 26; R-12, R-14 |
 | Ages | 6 to 12 | brief, line 27; R-13, R-14 |
-| List entries | 68 | ruling on G-04 |
-| Of the 8, caught by the search | 4 | ruling on G-05 |
+| List entries | 68 | the owner's ruling on what is counted |
+| Of the 8, caught by the search | 4 | the owner's ruling on when two entries are one child |
 
 The groundwork, too, came back not accepted at version 1, with one gap: the round's own check of what it had read failed when the review ran it again. Version 2 fixed that alone and was accepted. Its review also noted, outside its tests, that the log named the project's folder wrongly, and raised one question nobody had asked, whether two different children may differ only in capitals. Read what a review found and did not fix as closely as its verdict: that is where the next question comes from.
 
@@ -349,6 +356,7 @@ Step 2 has no failure case: the goal does not say what happens when the search f
 | Source | Publisher · date | Used for |
 | --- | --- | --- |
 | Effective harnesses for long-running agents | Anthropic Engineering · November 2025 | A list of end-to-end features written from the specification before any is built, so the work is not declared finished early (vendor source) |
+| Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl | Birgitta Böckeler, on martinfowler.com · 15 October 2025 | Spec-driven development and its three levels, spec-first, spec-anchored and spec-as-source; the tools are built for developers |
 
 ## 3.3 Subtopic 5.3 — Build one goal per round
 
@@ -401,9 +409,9 @@ Read the report's first paragraph against the settings. In this run every count 
 
 All 29 of the round's checks passed, each counting the files the reset wrote. One child dropped on purpose, in a copy, failed 7 checks by name; the reset made twice gave the same data. The review counted again in a program of its own and planted two faults of its own. Note why there are 64 learners and not 60: the search fails to join the 4 children spelt differently, so each is held twice. The number shows the search's limit before anyone has opened a screen.
 
-Round 6 came back not accepted at version 1. The prototype did what the goal says on every screen the review tried, but the check that no window opens did not look at the windows. Version 2 read the computer's list of windows before, during and after the checks, and was accepted with all 57 checks passing.
-
 Then round 6, the goal built. Its review must run the checks and go through enrolling a learner as a clerk would, once for a child the registry finds and once for a new child.
+
+Round 6 came back not accepted at version 1. The prototype did what the goal says on every screen the review tried, but one test was not what it claimed. The checks are meant to run out of sight, without opening the prototype on your screen, and the test of that never looked at what was open on the screen. Version 2 looked before, during and after the checks, and was accepted with all 57 checks passing.
 
 IMAGE: M5-26-child-found.png | The finished prototype, a child already on the registry. The clerk enters the four details; the registry finds the learner and enters nothing new. Every screen carries the line 'Invented data, Progressa is fictional'.
 
@@ -411,7 +419,7 @@ IMAGE: M5-27-new-child.png | A child the registry does not hold. A new learner n
 
 IMAGE: M5-28-entry-refused.png | An entry the goal refuses before any search: the family name missing and the date in the wrong form. Each fault is named on its own line, and the way back keeps what the clerk typed.
 
-Nothing opens a window on your screen: the checks run without one, and the screenshots of the review are taken the same way.
+Nothing opens on your screen while the checks run, and the review's screenshots are taken the same way.
 
 ### AI usage tip — Read a building report before you rule
 
@@ -466,7 +474,7 @@ Before it trusted the result, the round told its check to expect one of the six 
 
 The report named it itself: three of the seven refused fields were empty in this learner's record. A leak of those three would have shown nothing, because there was no value to leak. The check shows the refusal against a real value for four of the seven fields, not for all seven.
 
-That limit went into the note: no invented learner holds a national number, so its refusal is not shown against a value. A check is only as wide as the data it ran on; a second learner with every field filled is the next round, not a footnote.
+The review then ran the check on a second learner, whose record holds two of those three fields, and both were refused against a real value. The third stayed open, and that limit went into the note: no invented learner holds a national number, so its refusal is not shown against a value. A check is only as wide as the data it ran on.
 
 ### The concept
 
@@ -571,7 +579,7 @@ The full-size prototype's accepted note to the Permanent Secretary opens: 'It is
 
 **Answer key:**
 
-2 and 5, as written; 3 only with its limits: on two learners, with three of the refused fields empty.
+2 and 5, as written; 3 only with its limits: on two learners, and never against a national number, which no invented learner holds.
 
 1 claims the whole registry from one step, the search, which misses a child spelt differently; whether anything else finds the child was not shown. 4 is a decision, and not the prototype's: whether to pilot is the owner's ruling, and nothing in the record tested a school, real data or a real connection to another body.
 
@@ -579,7 +587,7 @@ The full-size prototype's accepted note to the Permanent Secretary opens: 'It is
 
 A prototype is for agreement. It shows the people who decide that something can work, on made-up data, on one computer, with the other bodies simulated. It never shows that the thing is ready: not with real data, not under load, not with a real connection, not with the law confirmed. Say so on the first page of anything you write about it.
 
-Know what it cost. The full-size prototype took 23 pieces of work over five days: 13 accepted at the first version, 10 after a second attempt. The toy was planned as eight rounds and took 17, in one day of about nine hours: the brief's eight, three papers putting open questions to you, four rounds saving the work in the project's history, one moving the log under that history, and one bringing a page of faults up to date. Nine were accepted at the first version and five at the second; three were withdrawn after a second version not accepted, and ruled on directly. Each round costs a few minutes of your reading and ruling, and the review costs a second session. That is cheap next to a design accepted without a check, and dear next to a question you could have asked in one chat. Use the five conditions of Module 3 to decide.
+Know what it cost. The full-size prototype took 23 pieces of work over five days: 13 accepted at the first version, and 10 that needed a second attempt, 2 of which were closed by changing what was asked, not by being accepted. The toy was planned as eight rounds and took 17, in one day of about nine hours: the brief's eight, three papers putting open questions to you, four rounds saving the work in the project's history, one moving the log under that history, and one bringing a page of faults up to date. Nine were accepted at the first version and five at the second; three were withdrawn after a second version not accepted, and ruled on directly. Each round costs a few minutes of your reading and ruling, and the review costs a second session. That is cheap next to a design accepted without a check, and dear next to a question you could have asked in one chat. Böckeler found the same with the spec-driven tools she tried: one turned a small bug into four user stories with sixteen tests of acceptance, 'a sledgehammer to crack a nut'. A way of working sized for a prototype is the wrong one for a small change. The five conditions of Module 3 keep it in its place: use them to decide.
 
 You decide when it has shown enough. Stop when the question it was built to answer is answered, and the note says what it shows and what it does not. A prototype that keeps growing is turning into the system without anyone having decided to build one.
 
@@ -591,13 +599,13 @@ Watch for cognitive debt here more than anywhere: a prototype that works on scre
 
 With the orchestrator plugin. Ask the orchestrator where the project stands. Read the answer against the log: every round, its version, its ruling.
 
-Write your last ruling: accept the note, or ask for what is missing. Then ask the orchestrator to hand over and stop. The project stays in its folder, with its history, as the record of what was decided and why.
-
-IMAGE: M5-30-final-handover.png | The handover. The orchestrator writes a note for whoever takes the role next: what it did that it should not have, and what is still owed, each line a claim for the successor to check, not a fact to inherit. It issues the successor's first task, which checks five of those claims and does nothing else, and gives up the role as its last act. To pick the project up again, start a session on Opus with effort High from the two lines it gives.
-
-End the session by asking whether everything is saved in the project's history.
+Write your last ruling: accept the note, or ask for what is missing. Then ask whether everything is saved in the project's history.
 
 IMAGE: M5-25-final-check.png | The end of the toy. The orchestrator gives what was delivered, the checks and the duplicates count, corrects a reason it wrote in its own log, and names what is not yet saved in the history. Read the last two as closely as the first: a session that reports its own mistake and what it left undone is one you can rule on.
+
+Then ask the orchestrator to hand over and stop. The project stays in its folder, with its history, as the record of what was decided and why.
+
+IMAGE: M5-30-final-handover.png | The handover. The orchestrator writes a note for whoever takes the role next: what it did that it should not have, and what is still owed, each line a claim for the successor to check, not a fact to inherit. It issues the successor's first task, which checks five of those claims and does nothing else, and gives up the role as its last act. To pick the project up again, start a session on Opus with effort High from the two lines it gives.
 
 ### AI usage tip — Decide whether the prototype has shown enough
 
@@ -630,13 +638,14 @@ The question was whether a clerk can enrol a child without the registry register
 | Source | Publisher · date | Used for |
 | --- | --- | --- |
 | How generative and agentic AI shift concern from technical debt to cognitive debt | Margaret-Anne Storey · 9 February 2026 | Cognitive debt: work accepted that nobody can explain |
+| Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl | Birgitta Böckeler, on martinfowler.com · 15 October 2025 | One workflow for every size of problem, 'a sledgehammer to crack a nut' |
 | AI Playbook for the UK Government | GOV.UK · 10 February 2025 | Meaningful human control; testing before use; data protection |
 
 ## 4. Production notes
 
 ### 4.1 Design standard
 
-An Architect with the page on one half of the screen and the Claude desktop app on the other must be able to take the toy's round for that page and rule on it. By the end of 5.5 they have the mini registry in a folder with its history, its log of eight rounds and its note, and their last ruling.
+An Architect with the page on one half of the screen and the Claude desktop app on the other must be able to take the toy's round for that page and rule on it. By the end of 5.5 they have the mini registry in a folder with its history, its log of every round, 17 in the course's own run, and its note, and their last ruling.
 
 ### 4.2 Screenshots instead of a video
 
@@ -673,9 +682,9 @@ Compiled across the five pages. Every source is public.
 | Page | Sources referenced, with addresses |
 | --- | --- |
 | 5.1 | Effective harnesses for long-running agents (Anthropic Engineering, November 2025), https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents. |
-| 5.2 | Effective harnesses for long-running agents, as in 5.1. |
+| 5.2 | Effective harnesses for long-running agents, as in 5.1. Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl (Birgitta Böckeler, martinfowler.com, 15 October 2025), https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html. |
 | 5.3 | Effective harnesses for long-running agents, as in 5.1. |
 | 5.4 | Effective harnesses for long-running agents, as in 5.1. Large Language Models Cannot Self-Correct Reasoning Yet (Huang et al., ICLR, 2024), https://arxiv.org/abs/2310.01798. |
-| 5.5 | How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government. |
+| 5.5 | How generative and agentic AI shift concern from technical debt to cognitive debt (Margaret-Anne Storey, 9 February 2026), https://margaretstorey.com/blog/2026/02/09/cognitive-debt/. AI Playbook for the UK Government (GOV.UK, 10 February 2025), https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government. Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl, as in 5.2. |
 
 All references are publicly accessible and verifiable.
