@@ -6,7 +6,7 @@ icon: folder-open
 # The starter folder
 
 {% hint style="info" %}
-**On this site, the starter folder is these pages.** Build your working folder from them: make a folder with six folders in it, `0-chat-prompts`, `forms`, `kinds`, `1-instructions`, `2-reports` and `3-reviews`, and save each prompt, form and page of faults under the name its page gives. The last three stay empty until you start. Add a seventh, `example`, if you want the finished cycle to hand. Keep the log in any spreadsheet, with the seven columns listed at the end of this page.
+**In this knowledge base, the starter folder is these pages.** Build your working folder from them: make a folder with six folders in it, `0-chat-prompts`, `forms`, `kinds`, `1-instructions`, `2-reports` and `3-reviews`, and save each prompt, form and page of faults under the name its page gives. The last three stay empty until you start. Add a seventh, `example`, if you want the finished cycle to hand. Keep the log in any spreadsheet, with the seven columns listed at the end of this page.
 {% endhint %}
 
 This folder is everything you need to run the Orchestrator pattern by hand, in any AI assistant. Every piece of work goes the same way. You write an instruction. One chat does the work and writes a report. A second chat, which never saw the first, checks the report and gives a verdict. Then you decide, and you write each step in the log. Whoever writes the instructions, keeps the log and passes each result on holds the *orchestrator's* role; whoever decides is the *owner*. Working by hand, you are both.
