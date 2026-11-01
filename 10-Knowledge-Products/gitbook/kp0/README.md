@@ -23,15 +23,13 @@ Every module ends with a judgement page: what stays out of the assistant, and wh
 
 ## Outline
 
-| Module | Topic | Persona | Pages | AI tips | Status |
-| --- | --- | --- | --- | --- | --- |
-| [1](module-1/README.md) | Chat: get good answers in one chat | Strategist | 4 | 4 tips | Pages live |
-| [2](module-2/README.md) | Prepare: set up what the AI knows and can do | Strategist | 4 | 4 tips | Pages live |
-| [3](module-3/README.md) | Orchestrate: one piece of work, start to finish | Strategist and Architect | 4 | 4 tips | Pages live |
-| [4](module-4/README.md) | Orchestrate: running it for days | Architect | 4 | 4 tips | Pages live |
-| [5](module-5/README.md) | Orchestrate with the plugin: build a toy prototype | Architect | 5 | 5 tips | Pages written |
-
-*Pages live — every page of the module is written, with its tip and its self-check. Pages written — the same, but the tool the module uses is not released yet; Module 5 needs the orchestrator plugin, in preparation. In preparation — planned, not yet written.*
+| Module | Topic | Persona | Pages | AI tips |
+| --- | --- | --- | --- | --- |
+| [1](module-1/README.md) | Chat: get good answers in one chat | Strategist | 4 | 4 tips |
+| [2](module-2/README.md) | Prepare: set up what the AI knows and can do | Strategist | 4 | 4 tips |
+| [3](module-3/README.md) | Orchestrate: one piece of work, start to finish | Strategist and Architect | 4 | 4 tips |
+| [4](module-4/README.md) | Orchestrate: running it for days | Architect | 4 | 4 tips |
+| [5](module-5/README.md) | Orchestrate with the plugin: build a toy prototype | Architect | 5 | 5 tips |
 
 {% hint style="success" %}
 **How the course works.** **Read** the page → **Do** what its *In the tool* half shows → **Run** its AI usage tip on your own work → **Compare** with the worked example for Progressa. Each module ends with a self-check.
