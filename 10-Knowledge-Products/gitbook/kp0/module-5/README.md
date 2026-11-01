@@ -26,3 +26,5 @@ In Modules 3 and 4 you ran the cycle by hand. In Module 5 you run it with the or
 When you have run this module's tips, one of these takes you further. The Sources on each page say what a claim rests on; this list is what to do next.
 
 - [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) — Anthropic. The engineers' version of this module: set up first, one feature at a time, and check every feature as a user would. *20 minutes.*
+- [Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html) — Birgitta Böckeler, on martinfowler.com. Three tools that write the spec before the code, tried by hand, with an honest account of where they are too heavy. Module 5's way of working, as software teams know it. *25 minutes.*
+- [Harness Engineering for Coding Agent Users](https://martinfowler.com/articles/exploring-gen-ai/harness-engineering.html) — Birgitta Böckeler, on martinfowler.com. Guides that steer an assistant and sensors that check it: the pages of faults and the review, in an engineer's terms. *25 minutes.*
