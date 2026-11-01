@@ -1,5 +1,5 @@
 ---
-description: "The project Module 5 builds: a toy learner registry, one goal, made-up data in known numbers, eight rounds."
+description: "The project Module 5 builds: a toy learner registry, one goal, made-up data in known numbers, and the rounds in order."
 ---
 
 # The mini registry: the brief for Module 5

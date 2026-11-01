@@ -7,7 +7,7 @@ icon: house
 
 Six modules · 22 written pages · an AI usage tipon every page · a self-check per module · self-paced · free and open
 
-This course teaches a government team to work with an AI assistant, from one good chat to work handed over for days and checked by someone other than the one who did it. It is written for public servants, most of them not developers, and assumes no programming and no command line.
+This course teaches a government team to work with an AI assistant, from one good chat to work handed over for days and checked by someone other than the one who did it. It is written for public servants, most of them not developers, and assumes no programming and no command line. Module 5 is the one exception: its plugin needs a few things installed on your computer, and it says which.
 
 Every page of the four other courses in this knowledge base ends with an AI usage tip. This course is where you learn to run those tips well, to set an assistant up for them, and to judge what comes back. It is ordered by how much work you hand to the assistant: one chat, then a setup that makes every chat better, then bigger jobs handed over and checked. Judgement runs through all of it: the last page of every module says what stays out of the assistant and what stays yours.
 
@@ -50,7 +50,7 @@ Each page also carries a worked example set in [Progressa](../start-here/progres
 
 ## Prerequisites
 
-**No technical background is assumed.** No programming, no command line, no version control.
+**No technical background is assumed.** No programming, no command line, no version control. Module 5 asks you to install the plugin and what it runs on; [With the plugin](starter-folder/with-the-plugin.md) lists them.
 
 **What you do need:**
 
@@ -58,7 +58,7 @@ Each page also carries a worked example set in [Progressa](../start-here/progres
 | --- | --- |
 | **A piece of your own work** | A briefing, a draft, a note you are about to write. The tips act on your work, not on a case study. Nothing to hand? Follow everything on [Progressa](../start-here/progressa.md) instead. |
 | **An AI assistant** | The one your ministry has approved, or any general assistant. The *In the tool* halves are shown in Claude. |
-| **Nothing to install** | The optional [ea-plays kit](../start-here/ea-plays-kit.md) packages some tips as skills; [2.3](module-2/2-3.md) shows how to install one. |
+| **Nothing to install, up to Module 4** | The optional [ea-plays kit](../start-here/ea-plays-kit.md) packages some tips as skills; [2.3](module-2/2-3.md) shows how to install one. Module 5 needs the orchestrator plugin and Desktop Commander; see [With the plugin](starter-folder/with-the-plugin.md). |
 
 Time: each page is a short read and a tip of five to twenty minutes. A module is an afternoon.
 
