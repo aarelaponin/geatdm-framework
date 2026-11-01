@@ -15,14 +15,13 @@ changing a page.
 
 | Module | Layer | Pages | Script | Status |
 |---|---|---|---|---|
-| 0 | Introduction | 0.0 | — | not started |
 | 1 | Chat | 1.1 – 1.4 | `build_kp0_module1_v01.js` | v0.1 draft, gate passed, on GitBook |
 | 2 | Prepare | 2.1 – 2.4 | `build_kp0_module2_v01.js` | v0.1 draft, gate passed, on GitBook |
 | 3 | Orchestrate: one piece of work, start to finish | 3.1 – 3.4 | `build_kp0_module3_v01.js` | v0.1 draft, gate passed, GitBook pages made, not yet published |
 | 4 | Orchestrate: running it for days | 4.1 – 4.4 | `build_kp0_module4_v01.js` | v0.1 draft, gate passed, GitBook pages made, not yet published |
 | 5 | Orchestrate with the plugin: build a toy prototype | 5.1 – 5.5 | `build_kp0_module5_v01.js` | v0.1 draft, gate passed, GitBook pages made, not yet published; screenshots wait on the released plugin |
 
-Two ways through: the Strategist takes Modules 0 to 3; the Architect takes all six. Modules 3 and 4 run the cycle
+Two ways through: the Strategist takes Modules 1 to 3; the Architect takes all five. Modules 3 and 4 run the cycle
 by hand; Module 5 is the one module that needs the orchestrator plugin.
 
 ## What is in this folder
@@ -37,7 +36,8 @@ by hand; Module 5 is the one module that needs the orchestrator plugin.
 | The registry prototype's record, frozen on 31 October 2026, behind every Try it first | `examples/plr/` | Copied from the prototype's run |
 | Module 5's screenshots | `figures/` | Taken on a real run of the toy |
 
-The decks are not yet made, and Module 0 is not yet written.
+The decks are not yet made. A Module 0 introduction was planned and dropped on 1 November 2026: the course home
+page says what each module teaches.
 
 ## Making the generated files again
 

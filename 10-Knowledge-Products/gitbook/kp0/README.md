@@ -5,7 +5,7 @@ icon: house
 
 # Working with AI in Government
 
-Six modules · 21 written pages · an AI usage tip on every page · a self-check per module · self-paced · free and open
+Five modules · 21 written pages · an AI usage tip on every page · a self-check per module · self-paced · free and open
 
 This course teaches a government team to work with an AI assistant, from one good chat to work handed over for days and checked by someone other than the one who did it. It is written for public servants, most of them not developers, and assumes no programming.
 
@@ -17,7 +17,7 @@ This course teaches a government team to work with an AI assistant, from one goo
 - **[Module 4 — many pieces of work, for weeks](module-4/README.md).** Keep the cycle going, still by hand: a log that says where the work stands, a list of the faults you have learned, and handovers to a fresh chat.
 - **[Module 5 — the same method, with a plugin](module-5/README.md).** Let a plugin do the bookkeeping while you build a small practice prototype, a toy learner registry, and you still make every decision.
 
-Every module ends with a judgement page: what stays out of the assistant, and what stays yours. Module 0, the introduction, is in preparation.
+Every module ends with a judgement page: what stays out of the assistant, and what stays yours.
 
 **Your way through.** If you commission and accept AI-assisted work, as a director or a head of unit, take Modules 1 to 3: enough to run any AI usage tip in this knowledge base, and to accept work done this way. If you run the work, as the head of an ICT unit, a project lead or an analyst, take all of them. Modules 1 to 4 need nothing installed; Module 5 needs the plugin.
 
@@ -25,7 +25,6 @@ Every module ends with a judgement page: what stays out of the assistant, and wh
 
 | Module | Topic | Persona | Pages | AI tips | Status |
 | --- | --- | --- | --- | --- | --- |
-| 0 | How much work do you hand over? (the course introduction) | All | 1 | — | In preparation |
 | [1](module-1/README.md) | Chat: get good answers in one chat | Strategist | 4 | 4 tips | Pages live |
 | [2](module-2/README.md) | Prepare: set up what the AI knows and can do | Strategist | 4 | 4 tips | Pages live |
 | [3](module-3/README.md) | Orchestrate: one piece of work, start to finish | Strategist and Architect | 4 | 4 tips | Pages live |
