@@ -11,11 +11,11 @@ This course teaches a government team to work with an AI assistant, from one goo
 
 ## What you will learn
 
-- **[Module 1: one good chat](module-1/README.md).** Ask in a way that gets a usable answer, and check the answer before you use it.
-- **[Module 2: set the assistant up once](module-2/README.md).** Give it your context, standing instructions and skills, so that every chat starts from them.
-- **[Module 3: one piece of work, start to finish](module-3/README.md).** Take one piece of your own work through the cycle once, by hand: you write the instruction, one chat does the work, a second chat checks it, and you decide.
-- **[Module 4: many pieces of work, for weeks](module-4/README.md).** Keep the cycle going, still by hand: a log that says where the work stands, a list of the faults you have learned, and handovers to a fresh chat.
-- **[Module 5: the same method, with a plugin](module-5/README.md).** A plugin does the bookkeeping while you build a toy learner registry for practice. Every decision is still yours.
+- **[Module 1: one good chat](module-1/README.md).** Ask in a way that gets a usable answer, and check the answer before you use it. You leave with prompts of your own, written in four parts, and answers you have checked.
+- **[Module 2: set the assistant up once](module-2/README.md).** Give it your context, standing instructions and skills, so that every chat starts from them. You leave with a trimmed context pack and a project brief for your team.
+- **[Module 3: one piece of work, start to finish](module-3/README.md).** Take one piece of your own work through the cycle once, by hand: you write the instruction, one chat does the work, a second chat checks it, and you decide. You leave with one instruction, one report, one review and your own ruling, in a folder and a log you keep using.
+- **[Module 4: many pieces of work, for weeks](module-4/README.md).** Keep the cycle going, still by hand: a log that says where the work stands, a list of the faults you have learned, and handovers to a fresh chat. You leave with a log you answer from, a page of faults with a line of your own, a handover note checked by a fresh chat, and a readiness statement.
+- **[Module 5: the same method, with a plugin](module-5/README.md).** A plugin does the bookkeeping while you build a toy learner registry for practice. Every decision is still yours. You leave with the toy registry in a folder, with its log of every round and its note, and your last ruling.
 
 Every module ends with a judgement page: what stays out of the assistant, and what stays yours.
 
@@ -24,6 +24,69 @@ Every module ends with a judgement page: what stays out of the assistant, and wh
 {% hint style="success" %}
 **How the course works.** On each page you read the concept, do what its *In the tool* half shows, run its AI usage tip on your own work, and compare your result with the worked example for Progressa. Each module ends with a self-check.
 {% endhint %}
+
+## All pages
+
+<details>
+
+<summary><strong>Module 1 · Chat: get good answers in one chat</strong></summary>
+
+- [1.1](module-1/1-1.md) A drafting partner, not an oracle
+- [1.2](module-1/1-2.md) The four-part prompt
+- [1.3](module-1/1-3.md) Read the output before you use it
+- [1.4](module-1/1-4.md) Judgement: what stays out of the chat, and what stays yours
+- [Self-check](module-1/self-check.md)
+
+</details>
+
+<details>
+
+<summary><strong>Module 2 · Prepare: set up what the AI knows and can do</strong></summary>
+
+- [2.1](module-2/2-1.md) Build the context once
+- [2.2](module-2/2-2.md) Projects and standing instructions
+- [2.3](module-2/2-3.md) Skills and connectors
+- [2.4](module-2/2-4.md) Judgement: what never goes into the setup
+- [Self-check](module-2/self-check.md)
+
+</details>
+
+<details>
+
+<summary><strong>Module 3 · Orchestrate: one piece of work, start to finish</strong></summary>
+
+- [3.1](module-3/3-1.md) Two failures, and the rule that answers them
+- [3.2](module-3/3-2.md) Write the instruction
+- [3.3](module-3/3-3.md) The report and the review
+- [3.4](module-3/3-4.md) Judgement: you decide
+- [Self-check](module-3/self-check.md)
+
+</details>
+
+<details>
+
+<summary><strong>Module 4 · Orchestrate: running it for days</strong></summary>
+
+- [4.1](module-4/4-1.md) The log: status is produced, never remembered
+- [4.2](module-4/4-2.md) The faults you learn once
+- [4.3](module-4/4-3.md) Handing over to a fresh chat
+- [4.4](module-4/4-4.md) Judgement: every day, and what this does not claim
+- [Self-check](module-4/self-check.md)
+
+</details>
+
+<details>
+
+<summary><strong>Module 5 · Orchestrate with the plugin: build a toy prototype</strong></summary>
+
+- [5.1](module-5/5-1.md) Set up the project, and the first round
+- [5.2](module-5/5-2.md) Decide before you build
+- [5.3](module-5/5-3.md) Build one goal per round
+- [5.4](module-5/5-4.md) Check at the real thing, and write the note
+- [5.5](module-5/5-5.md) Judgement: what a toy proves
+- [Self-check](module-5/self-check.md)
+
+</details>
 
 ## How to use this guide
 
